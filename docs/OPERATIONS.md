@@ -317,3 +317,14 @@ pnpm parity:check       # on the change: writes .parity/current, compares, exits
 * **The result:** a diff grouped by file, with JSON pretty-printed, on screen and in `.parity/report.txt`. `.parity/` is gitignored.
 * **Time:** about 10 seconds for each command on a laptop once Next.js has compiled the app here before; the first build in a fresh checkout takes longer.
 * **Things to know:** it runs `next build`, so it replaces `apps/web/.next`. Take the baseline from the commit the change starts from: a newer `data/build` (the nightly data job) shows up as differences. MP pages need Parliament's API to answer; if it doesn't, those three pages differ, so run the check again. `--no-build` reuses the existing build, which only matches when it was built by this script.
+
+## 15. The OpenPromises check (report only)
+
+Public Ledger is moving onto the open-source OpenPromises engine ([github.com/xternal/openpromises](https://github.com/xternal/openpromises), its `docs/MIGRATING.md`; plan in `docs/OPENPROMISES_MIGRATION.md`). Steps that change nothing readers see come first: the engine is a pinned dev dependency (`@openpromises/cli` and `@openpromises/core` 0.3.0), `openpromises.config.ts` at the repository root describes the site, and CI runs the engine's check after our own one, as a report that never blocks a merge (`continue-on-error`).
+
+```bash
+pnpm exec openpromises validate --no-base   # everything the engine would object to today
+pnpm exec openpromises validate             # the same, plus its own append-only check against the base branch
+```
+
+Expected until the move: two kinds of error and nothing else. Every card lacks editors' approvals recorded in the card (the engine reads them from the card, against a private editors list kept as the CI secret `OPENPROMISES_EDITORS`, not yet set), and the 29 costs lack a quality label (filled in once after the conversion, with no corrections, because the configuration keeps `legacy: "public-ledger"`). Any other error means a change the engine cannot read: look at it before merging. The switch itself (converting the cards and reading them through the engine) is a separate change, after Budget day.

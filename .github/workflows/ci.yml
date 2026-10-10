@@ -24,6 +24,11 @@ jobs:
       - run: pnpm test
       # Promise history is append-only: compare every published card with main.
       - run: pnpm validate -- --base origin/main
+      # The OpenPromises engine's own check, report only while the move onto it is prepared
+      # (docs/OPERATIONS.md §15). Expected until then: editors' approvals on every card, quality labels on costs.
+      - name: OpenPromises check (report only)
+        continue-on-error: true
+        run: pnpm exec openpromises validate
       - run: pnpm typecheck
       - run: pnpm build
 
