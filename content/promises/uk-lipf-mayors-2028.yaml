@@ -1,0 +1,44 @@
+id: uk-lipf-mayors-2028
+headline: "Hand the Local Innovation Partnerships Fund to mayors"
+actor_id: hm-government
+made_on: "2026-10-09"
+venue: press_release
+venue_label: Press release (No 10), additional information
+policy_area: economic_affairs
+status: promised
+status_note: >-
+  The release says it applies only to Established Mayoral Strategic Authorities in England. It gives neither the
+  size of the fund nor a date within 2028.
+deadline: "2028-12-31"
+outcome_by:
+  actor_id: hm-government
+origin: llm_intake
+editor_check_required: true
+sources:
+  - title: "No 10 press release, 9 Oct 2026: Prime Minister to hand regions innovation funding to build world-leading industries"
+    url: https://www.gov.uk/government/news/prime-minister-to-hand-regions-innovation-funding-to-build-world-leading-industries
+versions:
+  - version: 1
+    text: The existing Local Innovation Partnerships Fund (LIPF) will be devolved to established Mayors from 2028.
+    recorded_on: "2026-10-09"
+    source_url: https://www.gov.uk/government/news/prime-minister-to-hand-regions-innovation-funding-to-build-world-leading-industries
+    quote_checked_on: "2026-10-10"
+    parameters:
+      who: Established Mayoral Strategic Authorities in England, which would decide how the fund is spent in their areas
+      how_much_bn_per_year: null
+      cost_note: An existing fund moves to mayors; it is not new money. The release does not give its size.
+      when: From 2028 (taken as during 2028)
+      funded_by: Not new money
+events:
+  - date: "2026-10-09"
+    type: promised
+    text: The government says the Local Innovation Partnerships Fund will be devolved to established mayors from 2028
+  - date: "2028-12-31"
+    type: deadline
+    text: End of 2028 (editorial date for "from 2028")
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    on: "2026-10-10"
+    note: Quote checked word for word at the source; dates, figures and links checked against the cited sources.
