@@ -181,7 +181,7 @@ function withField(entry: unknown, tail: string, value: unknown): unknown {
 }
 
 /** JSON with sorted keys, so two objects compare equal whatever order their keys were written in. */
-function stable(v: unknown): string {
+export function stable(v: unknown): string {
   if (Array.isArray(v)) return `[${v.map(stable).join(",")}]`;
   if (v && typeof v === "object")
     return `{${Object.keys(v)
@@ -197,13 +197,18 @@ function stable(v: unknown): string {
  * automated second check (every quote word for word at its source, dates,
  * evidence, status, cost, neutral wording, legal risk); "editor" and "legal" are
  * people. Reviews are append-only: a later review is added, never edited in.
+ * `approves: true` is an editor's approval to publish (docs/EDITORS.md, `pnpm review`); a card
+ * needs two, from different editors (approvals.ts). OpenPromises reads the same field.
  */
-export const Review = z.object({
-  by: z.string().min(1),
-  kind: z.enum(["automated", "editor", "legal"]),
-  on: IsoDate,
-  note: z.string().optional(),
-});
+export const Review = z
+  .object({
+    by: z.string().min(1),
+    kind: z.enum(["automated", "editor", "legal"]),
+    on: IsoDate,
+    note: z.string().optional(),
+    approves: z.literal(true).optional(),
+  })
+  .refine((r) => !r.approves || r.kind === "editor", { message: "only an editor's review approves a card", path: ["approves"] });
 export type Review = z.infer<typeof Review>;
 
 /**

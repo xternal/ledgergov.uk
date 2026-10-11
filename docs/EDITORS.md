@@ -79,6 +79,21 @@ Every status change is a new event with a link to its evidence. An announcement 
 
 **7. If it is about your own party,** don't approve it. Comment "Declaring an interest; leaving this one to another editor" and move on.
 
+## Recording your approval on the card
+
+Your approval on GitHub says a change is right. From October 2026 each card also records, on the card itself, which editors approved it. The site shows it ("Checked by … (editor)"), and when the cards move to the OpenPromises engine (not before 1 December 2026), the engine counts approvals from the card, not from GitHub. Every card needs two, from different editors; the cards published before October have none yet.
+
+**With the command line.** Keep your copy of the editors list (the owner sends it; it holds everyone's declared party, so never commit or share it) and point the command at it:
+
+```bash
+export OPENPROMISES_EDITORS=~/.config/openpromises/editors.yaml
+pnpm review uk-abolish-non-dom-2024 --by "Your Handle" --note "Checked the quote, sources, dates, status and cost"
+```
+
+Check the card against its sources first (step 4 above), exactly as for a pull request. The command adds one review to the card (`kind: editor`, `approves: true`) and changes nothing else in the file. It refuses an approval that would not count: a handle not on the list, a date before you became an editor, a second approval from you, or a card about your own party. When a card has its second approval, it drops `editor_check_required`, so the card stops saying "human editor review to come". Put your approvals on a branch and open a pull request; the owner merges it. `--dry-run` shows what it would do without writing.
+
+**Without the command line.** Approve on GitHub as usual and say in your review which cards you checked. The owner records it on the card for you, with the day you approved and where: `pnpm review <card> --by "Your Handle" --on <YYYY-MM-DD> --note "Approved in pull request xternal/public-ledger#<number>"`. Only approvals you really gave are recorded; nobody approves for you.
+
 ## What readers see
 
 Every card shows its cost, sources and timeline, and under **Corrections** every fix we have made, with the old and new values and the reason. Your review is what stands behind that page.

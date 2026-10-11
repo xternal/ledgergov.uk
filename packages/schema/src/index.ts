@@ -13,3 +13,4 @@ export type { Seed, SeedIssue, RawSeed } from "./seed";
 export * from "./t1";
 export * from "./people";
 export * from "./forecasts";
+export * from "./approvals";
