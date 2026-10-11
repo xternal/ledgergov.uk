@@ -172,6 +172,12 @@ importers:
       '@ledger/schema':
         specifier: workspace:*
         version: link:packages/schema
+      '@openpromises/cli':
+        specifier: 0.3.0
+        version: 0.3.0
+      '@openpromises/core':
+        specifier: 0.3.0
+        version: 0.3.0
       tsx:
         specifier: ^4.23.15
         version: 4.23.15
@@ -181,6 +187,9 @@ importers:
       yaml:
         specifier: ^2.9.1
         version: 2.9.1
+      zod:
+        specifier: ^4.6.5
+        version: 4.6.5
 
   apps/web:
     dependencies:
@@ -263,7 +272,7 @@ importers:
         version: 5.9.3
       vitest:
         specifier: ^5.0.3
-        version: 5.0.3(@types/node@22.20.5)(vite@8.3.2(@types/node@22.20.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+        version: 5.0.3(@types/node@22.20.5)(vite@8.3.2(@types/node@22.20.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))
 
   packages/schema:
     dependencies:
@@ -801,6 +810,27 @@ packages:
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
+
+  '@openpromises/cli@0.3.0':
+    resolution: {integrity: sha512-urenTasrP14zgOQPzhbD0A3r8qrdIDYgzxOrsZtMhroID6KddVTEBRnA5viempQTqpahqQBp7Nww76wEyfxBEA==}
+    engines: {node: '>=22.18.0'}
+    hasBin: true
+
+  '@openpromises/core@0.3.0':
+    resolution: {integrity: sha512-Xs+5F3BZROIIdNWE4efkKdSE2c20YjyZFrZs4AFasudE5BZrLWqwZJ4eXItrPxNaKJSbwHc8wxuKtzJ5IiGlqQ==}
+    engines: {node: '>=22.18.0'}
+
+  '@openpromises/files@0.3.0':
+    resolution: {integrity: sha512-XL/EL/DEGRHpgL4t7NNg6BnV4HSbTZQCh7FMnBND0Yo+8L2bzZCorOtsS4eD/2nXbI0zbRSBTvXvjAt5shEDMg==}
+    engines: {node: '>=22.18.0'}
+
+  '@openpromises/publish@0.3.0':
+    resolution: {integrity: sha512-Vt57U8GITAEz3WbseHu8dvG19DH007zMgED3uPu1ElgcjKqTMJqtlE4K6kS8vZytye6BH1hsdqWzo33YWcVXFg==}
+    engines: {node: '>=22.18.0'}
+
+  '@openpromises/quotes@0.3.0':
+    resolution: {integrity: sha512-kGD0HpxKvJaJokQsou7Zt5qxzxihyHOxqxEPUqYE2DVA8+XmxNXjdUNV8Rb/1WYJxR6fJBJGdH3vG5kJLNCvPA==}
+    engines: {node: '>=22.18.0'}
 
   '@oxc-project/types@0.152.0':
     resolution: {integrity: sha512-oM/5rLBm2tPkg0iBgkH/FOeR3PCDpY19GTgAZjMFM8h9WI9VW7cLgzp6nwtarYKmovavIQZ+Fe/RKX/8C8O/Rw==}
@@ -2119,6 +2149,30 @@ snapshots:
   '@next/swc-win32-x64-msvc@16.3.8':
     optional: true
 
+  '@openpromises/cli@0.3.0':
+    dependencies:
+      '@openpromises/core': 0.3.0
+      '@openpromises/files': 0.3.0
+      '@openpromises/publish': 0.3.0
+      '@openpromises/quotes': 0.3.0
+
+  '@openpromises/core@0.3.0':
+    dependencies:
+      '@openpromises/quotes': 0.3.0
+      zod: 4.6.5
+
+  '@openpromises/files@0.3.0':
+    dependencies:
+      '@openpromises/core': 0.3.0
+      '@openpromises/quotes': 0.3.0
+      yaml: 2.9.1
+
+  '@openpromises/publish@0.3.0':
+    dependencies:
+      '@openpromises/core': 0.3.0
+
+  '@openpromises/quotes@0.3.0': {}
+
   '@oxc-project/types@0.152.0': {}
 
   '@rolldown/binding-android-arm-eabi@1.2.12':
@@ -2333,15 +2387,6 @@ snapshots:
       magic-string: 1.4.3
     optionalDependencies:
       vite: 8.3.2(@types/node@22.20.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
-
-  '@vitest/mocker@5.0.3(vite@8.3.2(@types/node@22.20.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))':
-    dependencies:
-      '@jridgewell/trace-mapping': 0.3.31
-      '@vitest/spy': 5.0.3
-      estree-walker: 3.0.3
-      magic-string: 1.4.3
-    optionalDependencies:
-      vite: 8.3.2(@types/node@22.20.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)
 
   '@vitest/spy@5.0.3': {}
 
@@ -2794,20 +2839,6 @@ snapshots:
 
   undici-types@6.21.0: {}
 
-  vite@8.3.2(@types/node@22.20.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15):
-    dependencies:
-      lightningcss: 1.33.0
-      picomatch: 4.0.7
-      postcss: 8.5.29
-      rolldown: 1.2.12
-      tinyglobby: 0.2.17
-    optionalDependencies:
-      '@types/node': 22.20.5
-      esbuild: 0.28.2
-      fsevents: 2.3.3
-      jiti: 2.7.0
-      tsx: 4.23.15
-
   vite@8.3.2(@types/node@22.20.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1):
     dependencies:
       lightningcss: 1.33.0
@@ -2838,27 +2869,6 @@ snapshots:
       tinyexec: 1.3.1
       tinyglobby: 0.2.17
       vite: 8.3.2(@types/node@22.20.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
-      why-is-node-running: 3.2.1
-    optionalDependencies:
-      '@types/node': 22.20.5
-    transitivePeerDependencies:
-      - msw
-
-  vitest@5.0.3(@types/node@22.20.5)(vite@8.3.2(@types/node@22.20.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)):
-    dependencies:
-      '@types/chai': 5.2.3
-      '@vitest/mocker': 5.0.3(vite@8.3.2(@types/node@22.20.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
-      chai: 6.3.0
-      es-module-lexer: 2.3.2
-      expect-type: 1.4.0
-      magic-string: 1.4.3
-      obug: 2.2.1
-      picomatch: 4.0.7
-      std-env: 4.3.0
-      tinybench: 6.2.0
-      tinyexec: 1.3.1
-      tinyglobby: 0.2.17
-      vite: 8.3.2(@types/node@22.20.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)
       why-is-node-running: 3.2.1
     optionalDependencies:
       '@types/node': 22.20.5
