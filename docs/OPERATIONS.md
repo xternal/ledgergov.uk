@@ -338,4 +338,6 @@ gh secret set OPENPROMISES_EDITORS --repo xternal/public-ledger < ~/path/editors
 
 If CI shows `editors.yaml  should be a set of fields  (schema)`, the secret holds something other than that file: set it again from the file.
 
+Editors record approvals on the cards now, before the move, with `pnpm review` (docs/EDITORS.md, "Recording your approval on the card"); the engine counts them, so the approvals errors fall as reviews land. The command writes Public Ledger's own format because the engine's `openpromises review` only writes converted cards.
+
 Expected until the move: two kinds of error and nothing else. Every card lacks editors' approvals recorded in the card (the engine reads them from the card and checks them against the private editors list, kept as the repository secret `OPENPROMISES_EDITORS` and never committed; automated reviews never count), and every cost lacks a quality label (57 cards and 29 costs on 11 October, so 86 errors) (filled in once after the conversion, with no corrections, because the configuration keeps `legacy: "public-ledger"`). Any other error means a change the engine cannot read: look at it before merging. The switch itself (converting the cards and reading them through the engine) is a separate change, not before Tuesday 1 December 2026 (OpenPromises decision 20).
