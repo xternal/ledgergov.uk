@@ -1,5 +1,5 @@
 /**
- * pnpm validate: schemas (cards, data, forecasts, Budget scorecards), cross-file references, the balance check, a lint
+ * pnpm validate: schemas (cards, data, forecasts, Budget scorecards, fiscal targets, leaks), cross-file references, the balance check, a lint
  * that keeps data out of components, and the exact-match check on intake
  * drafts. Exits non-zero on any error; warnings (cards not yet publishable)
  * are printed but do not fail. A draft still in content/drafts/ is an error,
@@ -17,6 +17,8 @@ import { parseForecasts, readBacktestTable, readForecastFiles } from "@ledger/sc
 import { parseScorecards, readScorecardFiles } from "@ledger/schema/budget";
 import { predictIssues } from "@ledger/schema/predict";
 import { parseHouseholdSnapshots, parseMeasuresFile, readHouseholdSnapshotFiles, readMeasuresFiles, taxSeedIssues } from "@ledger/schema/household";
+import { loadFiscalTargets } from "@ledger/schema/fiscal-targets";
+import { parseLeaks } from "@ledger/schema/leaks";
 import { BALANCE_TOLERANCE_BN, appendOnlyIssues, comparableCard, contractAppendOnlyIssues, forecastAppendOnlyIssues } from "@ledger/schema";
 import { baseSettings, compute, createModel } from "@ledger/engine";
 import { checkDrafts } from "../packages/server/src/harvest/drafts";
@@ -64,6 +66,18 @@ if (households.data.length)
 
 // Predict the Budget (Day 9): every question set in content/predict parses, with unique ids and its answers among its options.
 errors.push(...predictIssues(root));
+
+// /budget/how-it-works: the OBR's headroom against the fiscal rules (data/build/fiscal_targets.json).
+try {
+  loadFiscalTargets();
+} catch (e) {
+  errors.push((e as Error).message);
+}
+
+// /budget/leaks: every pre-Budget leak entry (content/leaks/*.yaml); a report without an archived copy is a warning.
+const leaks = parseLeaks(root);
+for (const i of leaks.issues) (i.level === "error" ? errors : warnings).push(`${i.where}: ${i.message}`);
+if (leaks.leaks.length) console.log(`leaks: ${leaks.leaks.length} entr${leaks.leaks.length === 1 ? "y" : "ies"} checked`);
 
 // 2. Balance: receipts + borrowing == spending, at base and for every preset and card scenario
 if (seed) {

@@ -83,6 +83,8 @@ def publish(run: Run, store: Store, by_source: dict[str, list[Observation]], out
             write_json(BUILD_DIR / "people.json", outputs["people"])
         if outputs.get("borrowing"):
             write_json(BUILD_DIR / "borrowing.json", outputs["borrowing"])
+        if outputs.get("fiscal_targets"):
+            write_json(BUILD_DIR / "fiscal_targets.json", outputs["fiscal_targets"])
         write_json(
             BUILD_DIR / "app.json",
             {

@@ -5,7 +5,9 @@ import { loadBorrowing } from "@ledger/schema/borrowing";
 import { loadForecasts, readBuildText, type ForecastData } from "@ledger/schema/forecasts";
 import { loadScorecards } from "@ledger/schema/budget";
 import { loadHouseholdSnapshots } from "@ledger/schema/household";
-import type { BorrowingBundle, BudgetScorecard, HouseholdSnapshot, PeopleBundle, Seed } from "@ledger/schema";
+import { loadFiscalTargets } from "@ledger/schema/fiscal-targets";
+import { loadLeaks } from "@ledger/schema/leaks";
+import type { BorrowingBundle, BudgetScorecard, FiscalTargetsBundle, HouseholdSnapshot, LeakFile, PeopleBundle, Seed } from "@ledger/schema";
 import { buildRuns, vintageChangelog, type BuildRun, type Manifest, type VintageEntry } from "@ledger/server/api";
 
 /**
@@ -33,6 +35,19 @@ let borrowing: BorrowingBundle | null = null;
 export function getBorrowing(): BorrowingBundle {
   borrowing ??= loadBorrowing();
   return borrowing;
+}
+
+let fiscalTargets: FiscalTargetsBundle | null = null;
+
+/** /budget/how-it-works: the OBR's headroom against each fiscal rule (data/build/fiscal_targets.json), validated on first use. */
+export function getFiscalTargets(): FiscalTargetsBundle {
+  fiscalTargets ??= loadFiscalTargets();
+  return fiscalTargets;
+}
+
+/** /budget/leaks: measures briefed to the press before the Budget (content/leaks/*.yaml), newest first; a bad file throws. */
+export function getLeaks(): LeakFile[] {
+  return loadLeaks();
 }
 
 let forecasts: ForecastData | null = null;

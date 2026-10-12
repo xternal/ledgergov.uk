@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { constituencies, constituencyList } from "@ledger/server/mp";
-import { getBorrowing, getHouseholdSnapshots, getPeople, getScorecards, getSeed, getVintages } from "@/lib/data";
+import { getBorrowing, getFiscalTargets, getHouseholdSnapshots, getLeaks, getPeople, getScorecards, getSeed, getVintages } from "@/lib/data";
 import { areaPath } from "@ledger/server/seo";
 import { BUDGET_TOPICS, topicCards } from "@/lib/budget";
 import { getReckoner } from "@/lib/reckoner";
@@ -29,6 +29,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const borrowingChanged = getBorrowing().sources.map((s) => s.published_on ?? built).sort().at(-1) ?? built;
   // The method pages change when a new data edition arrives (and with it, possibly new forecasts or scores).
   const newestEdition = getVintages().changelog.map((e) => e.first_loaded ?? e.published_on ?? "").sort().at(-1) || built;
+  // /budget/how-it-works changes with a new OBR forecast; /budget/leaks with its newest report or Budget outcome.
+  const headroomChanged = getFiscalTargets().sources.map((s) => s.published_on ?? built).sort().at(-1) ?? built;
+  const leaksChanged = getLeaks().flatMap((l) => [...l.reported.map((r) => r.date), l.confirmed?.date ?? "", l.budget?.date ?? ""]).filter(Boolean).sort().at(-1) ?? built;
   const areas = [...new Set(seed.cards.map((c) => c.file.policy_area))];
   const actorIds = [...new Set(seed.cards.flatMap((c) => [c.actor.id, c.party?.id].filter((x): x is string => !!x)))];
   return [
@@ -53,6 +56,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absolute(PREDICT_PATH), lastModified: built, changeFrequency: "daily", priority: 0.7 },
     // What a Budget does to households changes only when the job is run again: date it by that run.
     ...getHouseholdSnapshots().map((h) => ({ url: absolute(`/budget/household/${h.id}`), lastModified: h.computed_at.slice(0, 10), changeFrequency: "yearly" as const, priority: 0.7 })),
+    { url: absolute("/budget/how-it-works"), lastModified: headroomChanged, changeFrequency: "weekly", priority: 0.7 },
+    { url: absolute("/budget/leaks"), lastModified: leaksChanged, changeFrequency: "daily", priority: 0.7 },
     { url: absolute("/editors"), lastModified: EDITORS_PAGE_UPDATED, changeFrequency: "monthly", priority: 0.4 },
     { url: absolute("/privacy"), lastModified: PRIVACY_UPDATED, changeFrequency: "yearly", priority: 0.3 },
     { url: absolute("/feeds"), lastModified: latest, changeFrequency: "daily", priority: 0.4 },

@@ -6,6 +6,7 @@ import { EVENT_LABEL } from "@/lib/copy";
 import { AREA_LABEL, todayIso } from "@/lib/promises";
 import { BUDGET, BUDGET_TOPICS, budgetDayEvents, budgetWatch, topicCards } from "@/lib/budget";
 import { SiteHeader } from "@/components/SiteHeader";
+import { BudgetNav } from "@/components/BudgetNav";
 import { PromiseList, StatusPill } from "@/components/PromiseList";
 import { FollowButton } from "@/components/FollowPanel";
 import { followOptions, followWindows } from "@/app/follow/targets";
@@ -92,6 +93,7 @@ export default function BudgetPage() {
       <SiteHeader current="/promises" />
       <main className="mx-auto grid max-w-[1000px] gap-12 px-4 pb-20 pt-10 sm:px-6">
         <header className="grid max-w-[68ch] gap-4">
+          <BudgetNav current="/budget" />
           <a href="/promises" className="justify-self-start text-label font-medium">
             All promises
           </a>

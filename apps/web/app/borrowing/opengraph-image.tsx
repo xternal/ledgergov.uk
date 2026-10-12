@@ -12,7 +12,9 @@ export const size = OG.size;
 export const contentType = "image/png";
 
 /** The chart in the share image: running totals for this year, the OBR's path (dashed) and last year (faint). */
-const CHART = { width: 500, height: 270, pad: 14 } as const;
+const CHART = { width: 500, height: 236, pad: 14 } as const;
+/** The length of a line in the key. */
+const KEY_W = 42;
 
 export default async function Image() {
   const b = getBorrowing();
@@ -61,8 +63,26 @@ export default async function Image() {
           </svg>
           <div style={{ display: "flex", justifyContent: "space-between", fontSize: 20, color: OG.muted, marginTop: 8 }}>
             <span>{monthShort(b.months[0]!)}</span>
-            <span>{b.profile ? "dashed: OBR forecast path" : ""}</span>
             <span>{monthShort(b.months.at(-1)!)}</span>
+          </div>
+          {/* A key for both thin lines, drawn as they are in the chart. */}
+          <div style={{ display: "flex", flexDirection: "column", gap: 4, fontSize: 20, color: OG.muted, marginTop: 6 }}>
+            {b.profile && (
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <svg width={KEY_W} height={8} viewBox={`0 0 ${KEY_W} 8`}>
+                  <line x1={0} x2={KEY_W} y1={4} y2={4} stroke={OG.muted} strokeWidth={4} strokeDasharray="12 9" />
+                </svg>
+                dashed: OBR forecast path
+              </div>
+            )}
+            {b.last_year && (
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <svg width={KEY_W} height={8} viewBox={`0 0 ${KEY_W} 8`}>
+                  <line x1={0} x2={KEY_W} y1={4} y2={4} stroke={OG.muted} strokeOpacity={0.3} strokeWidth={4} />
+                </svg>
+                grey: last year
+              </div>
+            )}
           </div>
         </div>
       </div>

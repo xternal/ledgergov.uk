@@ -104,6 +104,59 @@ Every card shows its cost, sources and timeline, and under **Corrections** every
 
 Readers send promises and evidence through the site. Editors triage them in the editors' area (`/admin`; the owner gives you the sign-in) within three working days: accept and turn into a draft card or a new event, or turn down with a reason (no primary source, not a promise, a duplicate, out of scope). Editors never see readers' email addresses. A submission is never published without the same two-editor review.
 
+## How to add a leak
+
+From **Monday 19 October** until the Budget on 28 October, [ledgergov.uk/budget/leaks](https://ledgergov.uk/budget/leaks) lists every tax or spending measure the press reports as planned for the Budget. Each measure is one file in `content/leaks/`, added by pull request and approved by two editors, like a card. A report is not a decision: the page keeps what was only trailed visibly apart from what the Budget documents contain.
+
+**What goes in.** A specific measure (a tax, a rate, a threshold, a spending line) that a national outlet reports as planned for this Budget, from its own reporting or named or unnamed briefing. Not columns, not speculation ("could", "is considering" with no source), not wish lists from lobby groups. One file per measure: when a second outlet reports the same thing, add it to that file's `reported` list.
+
+**The file.** `content/leaks/<id>.yaml`, where the id is a short name in lower case with hyphens and the file is named after it:
+
+```yaml
+# An example to copy, not a real report: every name, link and figure here is made up.
+id: income-tax-threshold-freeze-2031
+headline: Extend the freeze on income tax thresholds   # what was reported, neutral, 3 to 10 words, no full stop
+area: taxes                                            # one of the promise ledger's areas
+summary: >-                                            # what was reported, in our own words; say who briefed it if the report does
+  The Example Post reports, citing Treasury sources, that the freeze on income tax thresholds will be extended by two years, to April 2031.
+reported:                                              # earliest first: the first is the original report
+  - outlet: The Example Post
+    date: "2026-10-19"                                 # the day it was published online
+    url: https://example.org/news/threshold-freeze
+    archived_url: https://web.archive.org/web/20261019120000/https://example.org/news/threshold-freeze
+    title: The report's own headline, as published
+estimated_cost:                                        # only if a source gives one; leave it out otherwise
+  range: [-8.3, -8.3, -8.3]                            # £bn: negative raises money, positive costs it; one published figure is [x, x, x]
+  basis: per_year                                      # per_year, or total (several years together; never shown as yearly)
+  period: "2030-31"                                    # the year, or the years a total covers ("2026-27 to 2029-30")
+  by: { kind: independent, name: Example Institute }   # official (OBR, Treasury, HMRC), independent (IFS, think tanks) or press (the report's own figure)
+  source_url: https://example.org/analysis/threshold-freeze
+status: trailed
+```
+
+**Status.** It moves only on evidence:
+
+| Status | Reads | When |
+|---|---|---|
+| `trailed` | Trailed | Reported in the press; the government has not confirmed it |
+| `confirmed` | Confirmed before the Budget | A minister or the Treasury said it on the record (add `confirmed: { date, by, url }`) |
+| `announced` | In the Budget | On Budget day, it is in the Budget documents (add `budget:`, below) |
+| `not_in_budget` | Not in the Budget | On Budget day, the Budget documents do not include it (add `budget:` with the document you checked) |
+
+**On Budget day**, give every entry what the Budget actually did, with the page of the Budget documents that shows it (a link on gov.uk or obr.uk, with `#page=NN` for a PDF), and the official cost if the Treasury's table gives one:
+
+```yaml
+# Also an example: copy the shape, not the figures.
+status: announced
+budget:
+  date: "2026-10-28"
+  text: Income tax thresholds frozen for two more years, to April 2031.
+  evidence_url: https://assets.publishing.service.gov.uk/.../Budget_2026.pdf#page=NN
+  cost: { range: [-8.0, -8.0, -8.0], basis: per_year, period: "2030-31", by: { kind: official, name: HM Treasury }, source_url: https://... }
+```
+
+**Checks.** `pnpm validate` fails a file with a missing field, a status without its evidence, a Budget outcome that does not link an official page, a cost without its source or maker, or reports out of date order; it warns when a report has no archived copy (save one at [web.archive.org/save](https://web.archive.org/save)). In review, open the original report and check that the summary says no more than it does, that the headline is neutral, that the cost and who made it are as the source states, and that the same rules apply whichever party is in government. An entry quotes the press, so it is published only once two editors have approved it.
+
 ## Budget day
 
 On the day of a Budget many cards can move at once. [BUDGET_DAY.md](BUDGET_DAY.md) is the plan: which documents to read, what each watched card is waiting for, and ready-made entries.

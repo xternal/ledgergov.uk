@@ -1,4 +1,11 @@
 series_id,period,geography,value,unit,kind,source_id,vintage,quality,method_note
+fiscal.current_budget_deficit,2024-25,UK,76.739,gbp_bn,outturn,obr_efo,EFO-2026-03,sourced,Current spending plus depreciation minus current receipts; a negative value is a surplus.
+fiscal.current_budget_deficit,2025-26,UK,49.181816,gbp_bn,forecast,obr_efo,EFO-2026-03,sourced,Current spending plus depreciation minus current receipts; a negative value is a surplus.
+fiscal.current_budget_deficit,2026-27,UK,33.917536,gbp_bn,forecast,obr_efo,EFO-2026-03,sourced,Current spending plus depreciation minus current receipts; a negative value is a surplus.
+fiscal.current_budget_deficit,2027-28,UK,4.559471,gbp_bn,forecast,obr_efo,EFO-2026-03,sourced,Current spending plus depreciation minus current receipts; a negative value is a surplus.
+fiscal.current_budget_deficit,2028-29,UK,-3.288368,gbp_bn,forecast,obr_efo,EFO-2026-03,sourced,Current spending plus depreciation minus current receipts; a negative value is a surplus.
+fiscal.current_budget_deficit,2029-30,UK,-23.563635,gbp_bn,forecast,obr_efo,EFO-2026-03,sourced,Current spending plus depreciation minus current receipts; a negative value is a surplus.
+fiscal.current_budget_deficit,2030-31,UK,-30.293367,gbp_bn,forecast,obr_efo,EFO-2026-03,sourced,Current spending plus depreciation minus current receipts; a negative value is a surplus.
 fiscal.psnb,2024-25,UK,152.742,gbp_bn,outturn,obr_efo,EFO-2026-03,sourced,
 fiscal.psnb,2025-26,UK,132.735076,gbp_bn,forecast,obr_efo,EFO-2026-03,sourced,
 fiscal.psnb,2026-27,UK,115.461424,gbp_bn,forecast,obr_efo,EFO-2026-03,sourced,
@@ -20,6 +27,13 @@ fiscal.psnd_pct_gdp,2027-28,UK,95.738708,pct_gdp,forecast,obr_efo,EFO-2026-03,so
 fiscal.psnd_pct_gdp,2028-29,UK,96.281069,pct_gdp,forecast,obr_efo,EFO-2026-03,sourced,End-March position over nominal GDP centred on end-March (A.9 footnote).
 fiscal.psnd_pct_gdp,2029-30,UK,96.065091,pct_gdp,forecast,obr_efo,EFO-2026-03,sourced,End-March position over nominal GDP centred on end-March (A.9 footnote).
 fiscal.psnd_pct_gdp,2030-31,UK,95.050964,pct_gdp,forecast,obr_efo,EFO-2026-03,sourced,End-March position over nominal GDP centred on end-March (A.9 footnote).
+fiscal.psnfl_pct_gdp,2024-25,UK,81.011215,pct_gdp,outturn,obr_efo,EFO-2026-03,sourced,End-March position over nominal GDP centred on end-March (A.9 footnote).
+fiscal.psnfl_pct_gdp,2025-26,UK,82.408591,pct_gdp,forecast,obr_efo,EFO-2026-03,sourced,End-March position over nominal GDP centred on end-March (A.9 footnote).
+fiscal.psnfl_pct_gdp,2026-27,UK,82.64445,pct_gdp,forecast,obr_efo,EFO-2026-03,sourced,End-March position over nominal GDP centred on end-March (A.9 footnote).
+fiscal.psnfl_pct_gdp,2027-28,UK,82.946466,pct_gdp,forecast,obr_efo,EFO-2026-03,sourced,End-March position over nominal GDP centred on end-March (A.9 footnote).
+fiscal.psnfl_pct_gdp,2028-29,UK,82.931146,pct_gdp,forecast,obr_efo,EFO-2026-03,sourced,End-March position over nominal GDP centred on end-March (A.9 footnote).
+fiscal.psnfl_pct_gdp,2029-30,UK,82.172651,pct_gdp,forecast,obr_efo,EFO-2026-03,sourced,End-March position over nominal GDP centred on end-March (A.9 footnote).
+fiscal.psnfl_pct_gdp,2030-31,UK,81.133774,pct_gdp,forecast,obr_efo,EFO-2026-03,sourced,End-March position over nominal GDP centred on end-March (A.9 footnote).
 macro.nominal_gdp,2024-25,UK,2934.021,gbp_bn,outturn,obr_efo,EFO-2026-03,sourced,"Fiscal-year nominal GDP, non-seasonally adjusted; OBR's denominator for receipts, spending and deficit ratios."
 macro.nominal_gdp,2025-26,UK,3054.666113,gbp_bn,forecast,obr_efo,EFO-2026-03,sourced,"Fiscal-year nominal GDP, non-seasonally adjusted; OBR's denominator for receipts, spending and deficit ratios."
 macro.nominal_gdp,2026-27,UK,3164.074069,gbp_bn,forecast,obr_efo,EFO-2026-03,sourced,"Fiscal-year nominal GDP, non-seasonally adjusted; OBR's denominator for receipts, spending and deficit ratios."
