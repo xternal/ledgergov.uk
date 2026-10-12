@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "pnpm --filter @ledger/web dev",
     "build": "pnpm --filter @ledger/web build",
-    "test": "pnpm --filter \"./packages/*\" test",
+    "test": "pnpm --filter \"./packages/*\" --workspace-concurrency=1 test",
     "typecheck": "pnpm -r typecheck",
     "validate": "tsx scripts/validate.ts",
     "etl": "etl/.venv/bin/python -m etl.build",
