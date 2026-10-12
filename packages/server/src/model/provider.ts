@@ -24,6 +24,9 @@ export interface T1Provider {
    * result is ready. Each call is a single request to the provider.
    */
   simulate(reform: Reform, startYear: number, handle: number | null, now: Date): Promise<SimulateStep>;
-  /** Net income of each fixed example household (ARCHETYPES) under current law and under the reform. */
-  households(reform: Reform, startYear: number): Promise<T1Household[]>;
+  /**
+   * Net income of each fixed example household (ARCHETYPES) under the baseline and under the reform. The
+   * baseline is current law (`{}`) unless given: the Budget job passes the complete pre-Budget policy.
+   */
+  households(reform: Reform, startYear: number, baseline?: Reform): Promise<T1Household[]>;
 }

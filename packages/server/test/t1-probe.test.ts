@@ -1,0 +1,85 @@
+import { readFileSync } from "node:fs";
+import { describe, expect, it } from "vitest";
+import { toT1Population } from "../src/model";
+
+/**
+ * What the live test of PolicyEngine's public API found on 12 October 2026 (bundle 6.2.1, policyengine-uk
+ * 2.102.3; `pnpm pe:probe`, docs/MODEL.md T1 "Budget-night checks"). Every answer is a recorded fixture, so these
+ * tests pin the behaviour the Budget job relies on; run the probe again when PolicyEngine moves to a new
+ * bundle, and add its folder here.
+ */
+const DIR = "./fixtures/t1/probe/2026-10-12/";
+const fixture = <T = Record<string, unknown>>(name: string): T => JSON.parse(readFileSync(new URL(DIR + name, import.meta.url), "utf8")) as T;
+
+type HouseholdProbe = { result: { people: { you: { income_tax: Record<string, number> } } } };
+const incomeTax = (name: string) => fixture<HouseholdProbe>(`household-${name}.json`).result.people.you.income_tax;
+type EconomyProbe = { policy_id: number; baseline_id: number; time_period: number; result: Record<string, unknown> };
+const economy = (name: string) => fixture<EconomyProbe>(`economy-${name}.json`);
+const bn = (e: EconomyProbe) => (e.result as { budget: { budgetary_impact: number } }).budget.budgetary_impact / 1e9;
+
+describe("PolicyEngine's API, 12 October 2026: which fiscal year a dated change reaches", () => {
+  const base = incomeTax("current-law");
+
+  it("households: a change dated 1 January 2027 reaches 2027-28; one dated 6 April or 1 May 2027 only 2028-29", () => {
+    const styleA = incomeTax("basic21-2027-01-01");
+    const styleB = incomeTax("basic21-2027-04-06");
+    const may = incomeTax("basic21-2027-05-01");
+    // £45,000: (45,000 − 12,570) × 1 point = £324.30 more income tax.
+    expect(styleA["2026"]).toBe(base["2026"]);
+    expect(styleA["2027"]! - base["2027"]!).toBeCloseTo(324.3, 1);
+    expect(styleB["2027"]).toBe(base["2027"]);
+    expect(styleB["2028"]! - base["2028"]!).toBeCloseTo(324.3, 1);
+    expect(may).toEqual(styleB);
+  });
+
+  it("the population: the same, so a change must be dated 1 January of the fiscal year's first calendar year", () => {
+    const b = economy("basic21-2027-04-06-2027");
+    const a = economy("basic21-2027-01-01-2027");
+    expect([b.time_period, a.time_period]).toEqual([2027, 2027]);
+    expect(bn(b)).toBe(0);
+    expect(bn(a)).toBeCloseTo(6.91, 2);
+  });
+
+  it("a value set year by year holds each year's own value, and the open-ended last one carries on", () => {
+    const pa = incomeTax("pa-year-by-year");
+    // Allowance £13,000 in 2027 only, £12,570 in 2026 and 2028, £14,000 from 2029. From 2029 PolicyEngine's
+    // current law also trims pay by 0.16% (the salary sacrifice cap's spread cost), so taxable pay is £44,928.
+    expect([pa["2026"], pa["2027"], pa["2028"]]).toEqual([6486, 6400, 6486]);
+    expect(pa["2029"]).toBeCloseTo((44_928 - 14_000) * 0.2, 1);
+    expect(pa["2030"]).toBe(pa["2029"]);
+  });
+});
+
+describe("PolicyEngine's API, 12 October 2026: comparing two policies of our own", () => {
+  it("/uk/economy/{post}/over/{pre} takes two custom policies: thresholds frozen over uprated, 2028-29", () => {
+    const e = economy("freeze-over-uprated-2028");
+    expect(e.baseline_id).not.toBe(1);
+    expect(bn(e)).toBeCloseTo(3.67, 2);
+    const { population } = toT1Population(e.result, { policyId: e.policy_id, startYear: 2028, fetchedAt: new Date("2026-10-12T20:20:00Z") });
+    // Every decile pays: a frozen allowance costs everyone with taxable income.
+    for (const d of population.deciles) expect(d.rel_change_pct).toBeLessThan(0);
+  });
+
+  it("/budget-window answers budget totals by year only, no deciles, so the job asks year by year", () => {
+    const w = fixture<{ response: { status: string; result: { kind: string; annualImpacts: { year: string; budgetaryImpact: number }[] } } }>(
+      "budget-window-freeze-over-uprated-2027-2.json",
+    );
+    expect(w.response.status).toBe("ok");
+    expect(w.response.result.kind).toBe("budgetWindow");
+    expect(Object.keys(w.response.result.annualImpacts[0]!).sort()).toEqual(
+      ["benefitSpendingImpact", "budgetaryImpact", "federalTaxRevenueImpact", "spm_provenance", "stateTaxRevenueImpact", "taxRevenueImpact", "year"].sort(),
+    );
+    // Its 2028 is the annual run's figure exactly: the two share PolicyEngine's cache.
+    expect(w.response.result.annualImpacts[1]!.budgetaryImpact / 1e9).toBeCloseTo(bn(economy("freeze-over-uprated-2028")), 9);
+  });
+
+  it("one model throughout: bundle 6.2.1 before and after, policyengine-uk 2.102.3 for households and the population", () => {
+    const v = fixture<{ bundle_before: string; bundle_after: string; household_model_version: string; years: number[] }>("versions.json");
+    expect([v.bundle_before, v.bundle_after, v.household_model_version]).toEqual(["6.2.1", "6.2.1", "2.102.3"]);
+    expect(v.years).toEqual([2024, 2025, 2026, 2027, 2028, 2029, 2030]);
+    for (const name of ["basic21-2027-04-06-2027", "basic21-2027-01-01-2027", "freeze-over-uprated-2028"]) {
+      const b = economy(name).result.policyengine_bundle as { model_version: string; policyengine_version: string };
+      expect([b.model_version, b.policyengine_version]).toEqual(["2.102.3", "6.2.1"]);
+    }
+  });
+});

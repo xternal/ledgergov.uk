@@ -23,7 +23,9 @@
     "indexnow": "tsx scripts/indexnow.ts",
     "harvest": "tsx scripts/harvest.ts",
     "parity:snapshot": "tsx scripts/parity.ts snapshot",
-    "parity:check": "tsx scripts/parity.ts check"
+    "parity:check": "tsx scripts/parity.ts check",
+    "pe:probe": "tsx scripts/pe-probe.ts",
+    "household": "tsx scripts/household.ts"
   },
   "devDependencies": {
     "@ledger/engine": "workspace:*",
