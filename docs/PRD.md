@@ -1,4 +1,4 @@
-# PRD — Public Ledger (UK pilot)
+# PRD — LedgerGov.UK (UK pilot)
 
 ## Problem
 

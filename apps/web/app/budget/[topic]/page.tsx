@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const path = `/budget/${r.topic.id}`;
   const { heading: title, description } = r.topic;
   return {
-    title: `${title} | Public Ledger`,
+    title: `${title} | LedgerGov.UK`,
     description,
     alternates: { canonical: path },
     openGraph: { ...OPEN_GRAPH, title, description, type: "website", url: path },

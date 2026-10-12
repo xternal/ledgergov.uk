@@ -82,7 +82,7 @@ function outputSchema(content: IntakeContent): Record<string, unknown> {
   };
 }
 
-const SYSTEM = `You help the editors of Public Ledger, a non-partisan UK site that tracks political promises. A reader has sent in a source. Suggest the fields an editor will check and fill in for a promise card. Your output is a draft for a human editor and is never published as it is.
+const SYSTEM = `You help the editors of LedgerGov.UK, a non-partisan UK site that tracks political promises. A reader has sent in a source. Suggest the fields an editor will check and fill in for a promise card. Your output is a draft for a human editor and is never published as it is.
 
 Rules:
 - One standard for every party and person. Do not judge whether a promise is good, likely or sincere.

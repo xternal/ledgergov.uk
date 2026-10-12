@@ -1,6 +1,6 @@
 /**
  * Cards and actors in OpenPromises format v1 (`format: openpromises/1`), read
- * back into Public Ledger's own shape (docs/OPENPROMISES_MIGRATION.md, step 2).
+ * back into LedgerGov.UK's own shape (docs/OPENPROMISES_MIGRATION.md, step 2).
  *
  * The files moved to the engine's format; the site did not. Everything that
  * reads content (pages, API, feeds, alerts, validate, the scripts) goes through
@@ -88,7 +88,7 @@ function contract(r: unknown): unknown {
   return Object.keys(rest).length === 1 && typeof rest.ocid === "string" ? rest.ocid : rest;
 }
 
-/** A card in format v1 as a Public Ledger card file; anything else unchanged. */
+/** A card in format v1 as a LedgerGov.UK card file; anything else unchanged. */
 export function legacyCard(raw: unknown): unknown {
   if (!isV1(raw)) return raw;
   const { format: _format, area, responsible, links, x, versions, events, replies, corrections, reviews, ...c } = raw;
@@ -131,7 +131,7 @@ export function legacyCard(raw: unknown): unknown {
 
 const STANDING: Record<string, string> = { in_power: "government", opposition: "opposition", public_body: "public_body" };
 
-/** An actor in format v1 as a Public Ledger actor file; anything else unchanged. */
+/** An actor in format v1 as a LedgerGov.UK actor file; anything else unchanged. */
 export function legacyActor(raw: unknown): unknown {
   if (!isV1(raw)) return raw;
   const { format: _format, name, short_name, standing, identifiers, roles, same_as_checked_on: _checked, x, ...a } = raw;

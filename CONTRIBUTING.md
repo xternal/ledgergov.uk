@@ -1,4 +1,4 @@
-# Contributing to Public Ledger
+# Contributing to LedgerGov.UK
 
 Thank you. There are three ways to help, from the easiest. And we are looking for **volunteer editors**, who check promise cards against their sources: about two hours a week, no coding ([ledgergov.uk/editors](https://ledgergov.uk/editors)). Editors start with [docs/EDITORS.md](docs/EDITORS.md).
 

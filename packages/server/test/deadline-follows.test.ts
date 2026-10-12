@@ -212,7 +212,7 @@ describe("the monthly coming-due list", () => {
     expect(mail.map((m) => m.to).sort()).toEqual(["both@example.org", "weekly@example.org"]);
     const m = mail[0]!;
     expect(m.subject).toBe("Coming due: 3 promises between November 2026 and January 2027");
-    expect(m.text).toContain("3 promises on Public Ledger are due between November 2026 and January 2027, nearest deadline first.");
+    expect(m.text).toContain("3 promises on LedgerGov.UK are due between November 2026 and January 2027, nearest deadline first.");
     expect(m.text).toContain(
       "2 November 2026: Someone: “Something due on 2 November” (Promised)\n  https://ledger.test/promise/uk-overdue-2026\n\n24 December 2026: Wes Streeting: “A new mental health strategy” (Promised)",
     );

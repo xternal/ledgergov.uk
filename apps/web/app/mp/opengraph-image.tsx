@@ -1,7 +1,7 @@
 import { OG } from "@/lib/og";
 import { mpShareImage } from "@/lib/mp-og";
 
-export const alt = "Public Ledger: find your MP by postcode, with their promises and votes";
+export const alt = "LedgerGov.UK: find your MP by postcode, with their promises and votes";
 export const size = OG.size;
 export const contentType = "image/png";
 

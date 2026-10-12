@@ -9,7 +9,7 @@ import { LOOKUP_STEPS, MP_DESCRIPTION, MP_FAQ, MP_TITLE, ONSPD_ATTRIBUTION, OGL_
 const TITLE = "Your MP: find them by postcode, see their promises and votes";
 
 export const metadata: Metadata = {
-  title: `${TITLE} | Public Ledger`,
+  title: `${TITLE} | LedgerGov.UK`,
   description: MP_DESCRIPTION,
   alternates: { canonical: "/mp" },
   openGraph: { ...OPEN_GRAPH, title: TITLE, description: MP_DESCRIPTION, type: "website", url: "/mp" },

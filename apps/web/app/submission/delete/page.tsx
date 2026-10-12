@@ -5,7 +5,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
-  title: "Delete your email | Public Ledger",
+  title: "Delete your email | LedgerGov.UK",
   robots: { index: false, follow: false },
   referrer: "no-referrer",
 };

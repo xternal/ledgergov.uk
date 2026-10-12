@@ -148,7 +148,7 @@ export function cardMarkdown(c: CardView, ctx: SeoContext, level: 1 | 2 = 1): st
 /** The licence note that ends every Markdown file. */
 export function licenceMarkdown(ctx: SeoContext): string {
   return [
-    `Public Ledger's own writing (headlines, status notes, cost notes, summaries) is licensed under ${link(OWN_WORK_LICENCE.name, OWN_WORK_LICENCE.url)}: reuse it, crediting Public Ledger with a link to the card.`,
+    `LedgerGov.UK's own writing (headlines, status notes, cost notes, summaries) is licensed under ${link(OWN_WORK_LICENCE.name, OWN_WORK_LICENCE.url)}: reuse it, crediting LedgerGov.UK with a link to the card.`,
     `Official figures are under the ${link(OGL.name, OGL.url)} unless their source says otherwise; quotes from Parliament under the ${link(OPEN_PARLIAMENT_LICENCE.name, OPEN_PARLIAMENT_LICENCE.url)}; other quotes are short extracts whose rights stay with the speaker.`,
     `How the numbers and statuses are made: ${absoluteUrl(ctx, "/method")}.`,
   ].join(" ");
@@ -184,7 +184,7 @@ export function llmsFull(cards: CardView[], ctx: SeoContext, intro: { descriptio
     "",
     `> ${intro.description}`,
     "",
-    `Every UK political promise Public Ledger tracks, ${cards.length} cards (${mix}), as Markdown, newest promise first. Built on ${ukDate(ctx.today)} from the same data as the site. Each card is also a web page at ${absoluteUrl(ctx, "/promise/<id>")} and a Markdown file at ${absoluteUrl(ctx, "/promise/<id>.md")}. A shorter guide to the whole site: ${absoluteUrl(ctx, "/llms.txt")}.`,
+    `Every UK political promise LedgerGov.UK tracks, ${cards.length} cards (${mix}), as Markdown, newest promise first. Built on ${ukDate(ctx.today)} from the same data as the site. Each card is also a web page at ${absoluteUrl(ctx, "/promise/<id>")} and a Markdown file at ${absoluteUrl(ctx, "/promise/<id>.md")}. A shorter guide to the whole site: ${absoluteUrl(ctx, "/llms.txt")}.`,
     "",
     "## How a card works",
     "",

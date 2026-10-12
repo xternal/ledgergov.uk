@@ -8,7 +8,7 @@ import { htmlToText } from "../../intake/text";
 
 export type FetchLike = typeof fetch;
 
-export const USER_AGENT = "PublicLedgerBot/1.0 (promise intake)";
+export const USER_AGENT = "LedgerGovUKBot/1.0 (promise intake)";
 const TIMEOUT_MS = 30_000;
 
 export class HttpError extends Error {

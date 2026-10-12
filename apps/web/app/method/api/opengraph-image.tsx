@@ -3,7 +3,7 @@ import { OG } from "@/lib/og";
 import { methodImage } from "@/lib/method-og";
 import { API_TITLE } from "@/lib/method-copy";
 
-export const alt = "Public Ledger open data API: JSON and CSV, free, no key";
+export const alt = "LedgerGov.UK open data API: JSON and CSV, free, no key";
 export const size = OG.size;
 export const contentType = "image/png";
 

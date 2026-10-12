@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = mpPageTitle(c.name);
   const description = mpPageDescription(c.name, page?.seat.mp?.name ?? null);
   return {
-    title: `${title} | Public Ledger`,
+    title: `${title} | LedgerGov.UK`,
     description,
     alternates: { canonical: `/mp/${c.slug}` },
     openGraph: { ...OPEN_GRAPH, title, description, type: "profile", url: `/mp/${c.slug}` },

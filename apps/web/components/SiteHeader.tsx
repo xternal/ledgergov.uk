@@ -9,7 +9,7 @@ export function SiteHeader({ current }: { current?: string }) {
       <div className="mx-auto flex h-14 max-w-[1200px] items-center gap-6 px-4 sm:px-6">
         <a href="/" className="flex items-center gap-2 whitespace-nowrap text-[15px] font-semibold tracking-[-0.01em] text-ink no-underline">
           <LogoMark />
-          Public Ledger
+          LedgerGov.UK
         </a>
         <NavLinks links={SITE_LINKS} current={current} />
       </div>

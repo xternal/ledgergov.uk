@@ -8,15 +8,15 @@ import { fixed, gbpBn, grouped, longDate, monthYear } from "./format";
 
 export const METHOD_TITLE = "How the numbers are made";
 export const METHOD_DESCRIPTION =
-  "Where every number on Public Ledger comes from: the official sources and their editions, the quality labels, why model results are ranges, who checks the promise cards, and a changelog of every data edition.";
+  "Where every number on LedgerGov.UK comes from: the official sources and their editions, the quality labels, why model results are ranges, who checks the promise cards, and a changelog of every data edition.";
 
 export const BACKTEST_TITLE = "Forecasts against what happened";
 export const BACKTEST_DESCRIPTION =
-  "Every forecast Public Ledger shows is recorded on the day it is shown and checked when the official outturn arrives: how often the outturn landed inside the range, and every miss, above or below.";
+  "Every forecast LedgerGov.UK shows is recorded on the day it is shown and checked when the official outturn arrives: how often the outturn landed inside the range, and every miss, above or below.";
 
 export const API_TITLE = "Open data API";
 export const API_DESCRIPTION =
-  "Public Ledger's data as JSON or CSV, free and with no key: the statement for every year, every promise card, actors, forecasts and how they scored, contracts and data editions. Every number carries its source, edition and quality.";
+  "LedgerGov.UK's data as JSON or CSV, free and with no key: the statement for every year, every promise card, actors, forecasts and how they scored, contracts and data editions. Every number carries its source, edition and quality.";
 
 /** The three method pages, for the sub-menu. */
 export const METHOD_PAGES = [
@@ -26,13 +26,13 @@ export const METHOD_PAGES = [
 ] as const;
 
 export const MAKER_LABEL: Record<ForecastMaker, string> = {
-  public_ledger: "Public Ledger",
+  public_ledger: "LedgerGov.UK",
   obr: "OBR",
   ons: "ONS",
 };
 
 export const MAKER_LONG: Record<ForecastMaker, string> = {
-  public_ledger: "Public Ledger (our own)",
+  public_ledger: "LedgerGov.UK (our own)",
   obr: "Office for Budget Responsibility",
   ons: "Office for National Statistics",
 };
@@ -81,7 +81,7 @@ export function backtestLead(shown: BacktestSummary, firstRecorded: string | nul
 export function backtestFaq(s: { shown: BacktestSummary; context: BacktestSummary }): { q: string; a: string }[] {
   return [
     {
-      q: "Does Public Ledger make forecasts?",
+      q: "Does LedgerGov.UK make forecasts?",
       a: "Mostly it shows other people's: the OBR's forecasts of the public finances and the ONS's population projections. Our own are few and simple, such as splitting the OBR's total spending by function in years with no published split. Sandbox results and promise costs are what-ifs, not forecasts.",
     },
     {

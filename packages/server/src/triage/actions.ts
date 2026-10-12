@@ -104,7 +104,7 @@ async function sendUpdate(ctx: TriageContext, encryptedAddress: string | null, m
   }
 }
 
-const SIGN_OFF = ["", "Public Ledger editors"];
+const SIGN_OFF = ["", "LedgerGov.UK editors"];
 const LAST_EMAIL = "This is the last email about this submission. We delete your email address from it once this is sent.";
 
 /** After the last email: forget the address and retire its delete link; on a final "no", the unused credit name too. */
@@ -184,7 +184,7 @@ const REASON_TEXT: Record<RejectReason, string> = {
   no_primary_source: "we could not find a primary source for it: an official document, or a recording or transcript of the person saying it",
   not_a_promise: "it is not a promise we can track: a specific commitment by a named politician, party or government",
   duplicate: "we already have it",
-  out_of_scope: "it is outside what Public Ledger covers",
+  out_of_scope: "it is outside what LedgerGov.UK covers",
 };
 
 export function isRejectReason(x: unknown): x is RejectReason {

@@ -11,7 +11,7 @@ import { API_DESCRIPTION, API_TITLE } from "@/lib/method-copy";
 import { absolute, OPEN_GRAPH, MAKER, SITE_NAME, siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: `${API_TITLE} | Public Ledger`,
+  title: `${API_TITLE} | LedgerGov.UK`,
   description: API_DESCRIPTION,
   alternates: { canonical: "/method/api" },
   openGraph: { ...OPEN_GRAPH, title: API_TITLE, description: API_DESCRIPTION, type: "article", url: "/method/api" },
@@ -117,7 +117,7 @@ export default function ApiPage() {
     {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Public Ledger: UK public finances, promises and forecasts",
+      name: "LedgerGov.UK: UK public finances, promises and forecasts",
       description: API_DESCRIPTION,
       url: absolute("/method/api"),
       inLanguage: "en-GB",

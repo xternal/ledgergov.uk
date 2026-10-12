@@ -4,7 +4,7 @@ import { figuresImage } from "@/lib/method-og";
 import { BUDGET, budgetDay, budgetWatch } from "@/lib/budget";
 import { todayIso } from "@/lib/promises";
 
-export const alt = "Public Ledger: the government's promises the Budget could fund or break, with what each would cost";
+export const alt = "LedgerGov.UK: the government's promises the Budget could fund or break, with what each would cost";
 export const size = OG.size;
 export const contentType = "image/png";
 /** Same as the page: the image turns from "to watch" to "what it did" on Budget day without a deploy. */

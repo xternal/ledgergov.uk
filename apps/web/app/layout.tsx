@@ -6,11 +6,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
-  title: "Public Ledger: where UK public money comes from and goes",
+  title: "LedgerGov.UK: where UK public money comes from and goes",
   description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,
   // No canonical here: each public page names its own, and a page without one (a 404, a private link) must not claim to be the home page.
-  alternates: { types: { "application/atom+xml": [{ url: "/feeds/all.xml", title: "Public Ledger: every change" }] } },
+  alternates: { types: { "application/atom+xml": [{ url: "/feeds/all.xml", title: "LedgerGov.UK: every change" }] } },
   openGraph: { ...OPEN_GRAPH, type: "website" },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },

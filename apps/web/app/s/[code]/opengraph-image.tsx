@@ -4,7 +4,7 @@ import { summarise } from "@/lib/scenario-summary";
 import { OG, ogFonts } from "@/lib/og";
 import { fixed, gbp, rangeText, signed, signedBn } from "@/lib/format";
 
-export const alt = "A Public Ledger sandbox scenario: borrowing, per household and debt, with ranges";
+export const alt = "A LedgerGov.UK sandbox scenario: borrowing, per household and debt, with ranges";
 export const size = OG.size;
 export const contentType = "image/png";
 
@@ -18,7 +18,7 @@ export default async function Image({ params }: { params: Promise<{ code: string
   if (!s) {
     return new ImageResponse(
       <div style={{ display: "flex", width: "100%", height: "100%", background: OG.bg, color: OG.ink, fontSize: 48, alignItems: "center", justifyContent: "center", fontFamily: "Geist" }}>
-        Public Ledger
+        LedgerGov.UK
       </div>,
       { ...size, fonts },
     );
@@ -42,7 +42,7 @@ export default async function Image({ params }: { params: Promise<{ code: string
             <div style={{ width: "55%", height: "100%", background: OG.rec }} />
             <div style={{ width: "45%", height: "100%", background: OG.debt }} />
           </div>
-          Public Ledger
+          LedgerGov.UK
         </div>
         <div style={{ display: "flex", fontSize: 22, color: OG.muted, background: OG.sunk, padding: "6px 16px", borderRadius: 999 }}>
           {`Sandbox scenario, UK ${s.decoded.baseYear}`}
@@ -66,7 +66,7 @@ export default async function Image({ params }: { params: Promise<{ code: string
         <div style={{ display: "flex", fontSize: 24, color: OG.ink }}>
           {`${shown.join("; ")}${more > 0 ? `; and ${more} more` : ""}`}
         </div>
-        <div style={{ display: "flex", fontSize: 20, color: OG.muted }}>Built in the sandbox by a reader. Not a Public Ledger forecast. HMRC and OBR costings, no wider economic effects.</div>
+        <div style={{ display: "flex", fontSize: 20, color: OG.muted }}>Built in the sandbox by a reader. Not a LedgerGov.UK forecast. HMRC and OBR costings, no wider economic effects.</div>
       </div>
     </div>,
     { ...size, fonts },

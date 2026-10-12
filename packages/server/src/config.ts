@@ -80,7 +80,7 @@ export function loadConfig(env: Record<string, string | undefined> = process.env
     altchaKey: required("ALTCHA_HMAC_KEY", env.ALTCHA_HMAC_KEY, production, "dev-altcha-key"),
     mail: {
       provider,
-      from: required("MAIL_FROM", env.MAIL_FROM, sends, "Public Ledger <alerts@localhost>"),
+      from: required("MAIL_FROM", env.MAIL_FROM, sends, "LedgerGov.UK <alerts@localhost>"),
       replyTo: env.MAIL_REPLY_TO || undefined,
       sesRegion: env.SES_REGION || "eu-west-2",
       resendApiKey: provider === "resend" ? required("RESEND_API_KEY", env.RESEND_API_KEY, true, "") : null,

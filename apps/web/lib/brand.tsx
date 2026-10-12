@@ -1,5 +1,5 @@
 /**
- * The Public Ledger mark: the Statement's Sankey in one glyph. Income (blue)
+ * The LedgerGov.UK mark: the Statement's Sankey in one glyph. Income (blue)
  * and borrowing (orange) flow into spending (the light block), on a navy
  * tile. app/icon.svg, the PNG and .ico icons (scripts/icons.sh) and the share
  * images draw the same paths; change them together.

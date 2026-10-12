@@ -10,11 +10,11 @@
  * If MAIL_PROVIDER changes from Resend, change the words and the version too.
  * Legal review is pending (docs/OPERATIONS.md §9).
  */
-export const CONSENT_VERSION = "2026-10-08";
+export const CONSENT_VERSION = "2026-10-12";
 
 /** One point per line; the web form shows them as a list, Telegram as lines. */
 export const CONSENT_POINTS: readonly string[] = [
-  "Empatiq Limited runs Public Ledger, independently of any party. It holds your data and is responsible for it.",
+  "Empatiq Limited runs LedgerGov.UK, independently of any party. It holds your data and is responsible for it.",
   "We store your email address (or your Telegram chat), encrypted, and the list of what you follow. Nothing else: no name, no IP address, no tracking.",
   "We use it only to send you alerts when something you follow changes. Resend delivers our emails and Telegram carries the bot's messages, so each sees what an alert is about.",
   "What you follow can reveal your political opinions, so we treat it as sensitive data. We never show who follows what, and we never share or sell our lists.",

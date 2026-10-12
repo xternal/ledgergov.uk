@@ -25,7 +25,7 @@ import {
 } from "@/lib/privacy-copy";
 
 export const metadata: Metadata = {
-  title: `${PRIVACY_TITLE} | Public Ledger`,
+  title: `${PRIVACY_TITLE} | LedgerGov.UK`,
   description: PRIVACY_DESCRIPTION,
   alternates: { canonical: "/privacy" },
   openGraph: { ...OPEN_GRAPH, title: PRIVACY_TITLE, description: PRIVACY_DESCRIPTION, type: "article", url: "/privacy" },
@@ -129,7 +129,7 @@ function ServiceList({ items }: { items: typeof SERVICES }) {
 }
 
 /**
- * The privacy notice (DPIA M1): who runs Public Ledger, what each feature
+ * The privacy notice (DPIA M1): who runs LedgerGov.UK, what each feature
  * keeps and why, the lawful bases, the services that handle data, how long
  * things are kept (from the code), readers' rights and how to complain.
  * Short sections in plain words; detail behind "show more" where it helps.
@@ -182,7 +182,7 @@ export default function PrivacyPage() {
         <div className="grid gap-4">
           <h1 className="m-0 text-[clamp(30px,4.4vw,44px)] font-semibold leading-[1.06] tracking-[-0.035em]">{PRIVACY_TITLE}</h1>
           <p className="m-0 text-lead text-muted">
-            Public Ledger keeps as little about you as it can. This page says what we keep when you follow something, send something in or look up your MP,
+            LedgerGov.UK keeps as little about you as it can. This page says what we keep when you follow something, send something in or look up your MP,
             why, for how long, and how to have it deleted.
           </p>
           <ul className="m-0 grid list-disc gap-1.5 rounded-control bg-sunk py-3.5 pl-8 pr-4">
@@ -198,7 +198,7 @@ export default function PrivacyPage() {
             Who we are
           </h2>
           <p className="m-0">
-            Public Ledger is run by {CONTROLLER.name}, Pavel Guzhikov&apos;s company, independently of any party. {CONTROLLER.name} is the controller of
+            LedgerGov.UK is run by {CONTROLLER.name}, Pavel Guzhikov&apos;s company, independently of any party. {CONTROLLER.name} is the controller of
             your personal data: it decides what is collected and why, and is responsible for it.
           </p>
           <p className="m-0">{CONTROLLER_INTERESTS}</p>
@@ -310,7 +310,7 @@ export default function PrivacyPage() {
           <h2 id="services-h" className={h2}>
             Who else handles your data
           </h2>
-          <p className="m-0 text-muted">These services run parts of Public Ledger for us. None may use your data for anything else.</p>
+          <p className="m-0 text-muted">These services run parts of LedgerGov.UK for us. None may use your data for anything else.</p>
           <ServiceList items={SERVICES} />
           <details>
             <summary className="cursor-pointer font-medium text-accent">Six more, for submissions, Your MP and email to us</summary>

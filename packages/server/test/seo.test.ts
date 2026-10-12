@@ -104,12 +104,12 @@ describe("card headlines, titles and descriptions", () => {
 
   it("titles follow the pattern, name who and where it stands, and are unique", () => {
     const great = cards.find((c) => c.id === "uk-great-british-energy-2024")!;
-    expect(cardTitle(great).title).toBe("Create Great British Energy – Labour promise, Delivering | Public Ledger");
+    expect(cardTitle(great).title).toBe("Create Great British Energy – Labour promise, Delivering | LedgerGov.UK");
     for (const c of cards) {
       const { title, social } = cardTitle(c);
       expect(title.startsWith(`${cardHeadline(c)} – `), c.id).toBe(true);
       // The site name goes only when it fits; who and the status always stay.
-      if (title.endsWith("| Public Ledger")) expect(title.length, c.id).toBeLessThanOrEqual(TITLE_MAX);
+      if (title.endsWith("| LedgerGov.UK")) expect(title.length, c.id).toBeLessThanOrEqual(TITLE_MAX);
       else expect(title, c.id).toBe(social);
     }
     expect(new Set(cards.map((c) => cardTitle(c).title)).size).toBe(cards.length);

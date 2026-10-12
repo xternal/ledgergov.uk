@@ -1,8 +1,8 @@
-# Public Ledger — an open P&L of the state
+# LedgerGov.UK — an open P&L of the state
 
 **Live at [ledgergov.uk](https://ledgergov.uk).** This file covers the concept, the product logic and the build order. Specs for implementation live in `CLAUDE.md` and `docs/`; known issues in `docs/PRE_SHIP_REVIEW.md`. To run it yourself, see [Run it locally](#run-it-locally); to help, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-**Who is behind it.** Public Ledger is built by [Pavel Guzhikov](https://guzh.uk), a UK resident, as an active citizen: someone who wants a better-informed society and new, more accountable forms of government. It is run through Empatiq Limited, Pavel Guzhikov's company, which holds any data readers give the site ([privacy notice](https://ledgergov.uk/privacy)). Empatiq Limited has no clients or contracts with government, political parties or any body this site tracks; if that ever changes, it will be declared here. It is independent. No party, campaign or government funds or directs it, and it holds every party, in government or opposition, to the same published standard.
+**Who is behind it.** LedgerGov.UK is built by [Pavel Guzhikov](https://guzh.uk), a UK resident, as an active citizen: someone who wants a better-informed society and new, more accountable forms of government. It is run through Empatiq Limited, Pavel Guzhikov's company, which holds any data readers give the site ([privacy notice](https://ledgergov.uk/privacy)). Empatiq Limited has no clients or contracts with government, political parties or any body this site tracks; if that ever changes, it will be declared here. It is independent. No party, campaign or government funds or directs it, and it holds every party, in government or opposition, to the same published standard.
 
 ## 1. The idea in one paragraph
 
@@ -124,7 +124,7 @@ Nothing else is needed to read and edit locally: without a `DATABASE_URL` the ap
 ## Licence
 
 * **Code** (everything in this repository that is software): [GNU Affero General Public License v3.0 or later](LICENSE). You may run, study, change and share it; if you run a changed version as a website, you must offer its source to the people who use it.
-* **Our writing** (status notes, cost notes, summaries, method pages, the promise cards' own text): [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/). Credit Public Ledger with a link to the page.
+* **Our writing** (status notes, cost notes, summaries, method pages, the promise cards' own text): [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/). Credit LedgerGov.UK with a link to the page.
 * **Official figures** keep their own licences, mostly the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/); quotes from Parliament are under the [Open Parliament Licence](https://www.parliament.uk/site-information/copyright-parliament/open-parliament-licence/); other quotes are short extracts whose rights stay with the speaker. See `/method#licence` on the site.
 
 Copyright © 2026 Pavel Guzhikov and contributors.

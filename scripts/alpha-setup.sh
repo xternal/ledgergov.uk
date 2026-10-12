@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Public Ledger alpha: one-time setup on Vercel. Run it yourself, from the
+# LedgerGov.UK alpha: one-time setup on Vercel. Run it yourself, from the
 # repository root, after the two steps in docs/ALPHA.md (a Neon database in
 # London, and the Vercel project imported from GitHub with root apps/web).
 #
@@ -42,7 +42,7 @@ else
   ADMIN_USER="editor"; ADMIN_PASSWORD="$(word 24)"
   umask 077
   cat > "$SECRETS" <<SECRETS_EOF
-# Public Ledger alpha secrets ($(date "+%Y-%m-%d")). Keep a copy in your password manager.
+# LedgerGov.UK alpha secrets ($(date "+%Y-%m-%d")). Keep a copy in your password manager.
 LEDGER_ENCRYPTION_KEY='$LEDGER_ENCRYPTION_KEY'
 LEDGER_LOOKUP_PEPPER='$LEDGER_LOOKUP_PEPPER'
 ALTCHA_HMAC_KEY='$ALTCHA_HMAC_KEY'
@@ -87,7 +87,7 @@ if [ -n "$prod" ] && [ "$prod" != "$SITE_URL" ]; then
 fi
 
 echo
-echo "Done. Public Ledger alpha:"
+echo "Done. LedgerGov.UK alpha:"
 echo "  Site:            $SITE_URL"
 echo "  Editors' page:   $SITE_URL/admin   user $ADMIN_USER, password in $SECRETS"
 echo "  Health check:    $SITE_URL/api/health"

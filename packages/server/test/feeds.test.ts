@@ -145,11 +145,11 @@ const opts = { siteUrl: SITE, today: "2026-10-06" };
 
 describe("Atom feeds", () => {
   it("escapes everything and parses back as well-formed XML", () => {
-    const xml = buildFeed(fixtureCards(), "all", "*", { ...opts, title: `Public Ledger: "all" & <everything>`, alternatePath: "/promises" });
+    const xml = buildFeed(fixtureCards(), "all", "*", { ...opts, title: `LedgerGov.UK: "all" & <everything>`, alternatePath: "/promises" });
     const feed = parseXml(xml);
     expect(feed.name).toBe("feed");
     expect(feed.attrs.xmlns).toBe("http://www.w3.org/2005/Atom");
-    expect(text(kid(feed, "title"))).toBe(`Public Ledger: "all" & <everything>`);
+    expect(text(kid(feed, "title"))).toBe(`LedgerGov.UK: "all" & <everything>`);
     const nasty = kids(feed, "entry").find((e) => text(kid(e, "title")).includes("Tom") && text(kid(e, "title")).endsWith("(Andy Burnham)"))!;
     expect(text(kid(nasty, "title"))).toBe(`In plan: Tom & Jerry's "<b>bold</b>" plan ]]>  ✓ (Andy Burnham)`);
     expect(text(kid(nasty, "content"))).toContain("Evidence: https://example.org/b?x=1&y=2");
@@ -200,7 +200,7 @@ describe("Atom feeds", () => {
 
   it("builds a valid feed from every real card", () => {
     const seed = loadSeed();
-    const feed = parseXml(buildFeed(seed.cards, "all", "*", { siteUrl: SITE, title: "Public Ledger", alternatePath: "/promises" }));
+    const feed = parseXml(buildFeed(seed.cards, "all", "*", { siteUrl: SITE, title: "LedgerGov.UK", alternatePath: "/promises" }));
     const entries = kids(feed, "entry");
     expect(entries.length).toBeGreaterThan(seed.cards.length);
     const ids = entries.map((e) => text(kid(e, "id")));
@@ -416,7 +416,7 @@ describe("data and deadline feeds", () => {
     const headlines = Object.values(seed.statements).map((s) => headlineOf(s)!);
     expect(headlines.every(Boolean)).toBe(true);
     for (const [kind, key] of [["updates", "*"], ["deadlines", "next-12-months"], ["all", "*"]] as const) {
-      const feed = parseXml(buildFeed(seed.cards, kind, key, { siteUrl: SITE, title: "Public Ledger", alternatePath: "/", headlines }));
+      const feed = parseXml(buildFeed(seed.cards, kind, key, { siteUrl: SITE, title: "LedgerGov.UK", alternatePath: "/", headlines }));
       const ids = kids(feed, "entry").map((e) => text(kid(e, "id")));
       expect(new Set(ids).size).toBe(ids.length);
       const dates = kids(feed, "entry").map((e) => text(kid(e, "updated")));

@@ -4,7 +4,7 @@ import { SUBMITTER_EMAIL_RETENTION_DAYS } from "@ledger/server/intake";
 import { OG, ogFonts } from "@/lib/og";
 import { PRIVACY_TITLE } from "@/lib/privacy-copy";
 
-export const alt = "Public Ledger privacy notice: what we keep, why, for how long, and how to have it deleted";
+export const alt = "LedgerGov.UK privacy notice: what we keep, why, for how long, and how to have it deleted";
 export const size = OG.size;
 export const contentType = "image/png";
 
@@ -23,7 +23,7 @@ export default async function Image() {
           <div style={{ width: "55%", height: "100%", background: OG.rec }} />
           <div style={{ width: "45%", height: "100%", background: OG.debt }} />
         </div>
-        Public Ledger
+        LedgerGov.UK
       </div>
       <div style={{ display: "flex", fontSize: 64, fontWeight: 600, letterSpacing: -2.4, lineHeight: 1.05, marginTop: 44, maxWidth: 1000 }}>{PRIVACY_TITLE}</div>
       <div style={{ display: "flex", fontSize: 30, color: OG.muted, marginTop: 16, maxWidth: 1000 }}>We keep as little about you as we can, and delete it for real.</div>

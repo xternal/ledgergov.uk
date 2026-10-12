@@ -19,14 +19,14 @@ const SHARE_TITLE = "UK political promises, word for word, and where each stands
 const DESCRIPTION = "What UK parties and the government have promised, quoted word for word, and where each promise stands now: cost, who pays, and evidence. One standard for every party.";
 
 export const metadata: Metadata = {
-  title: "UK political promises: what was promised and where each stands | Public Ledger",
+  title: "UK political promises: what was promised and where each stands | LedgerGov.UK",
   description: DESCRIPTION,
   alternates: {
     canonical: "/promises",
     types: {
       "application/atom+xml": [
-        { url: "/feeds/all.xml", title: "Public Ledger: every change" },
-        { url: "/feeds/deadlines/next-3-months.xml", title: "Public Ledger: promises due in the next 3 months" },
+        { url: "/feeds/all.xml", title: "LedgerGov.UK: every change" },
+        { url: "/feeds/deadlines/next-3-months.xml", title: "LedgerGov.UK: promises due in the next 3 months" },
       ],
     },
   },

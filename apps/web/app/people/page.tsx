@@ -14,7 +14,7 @@ import { absolute, OPEN_GRAPH, MAKER, SITE_NAME } from "@/lib/site";
 const SHORT_TITLE = "People and long-term spending";
 
 export const metadata: Metadata = {
-  title: `${SHORT_TITLE} | Public Ledger`,
+  title: `${SHORT_TITLE} | LedgerGov.UK`,
   description: PEOPLE_DESCRIPTION,
   alternates: { canonical: "/people" },
   openGraph: { ...OPEN_GRAPH, title: PEOPLE_TITLE, description: PEOPLE_DESCRIPTION, type: "website", url: "/people" },

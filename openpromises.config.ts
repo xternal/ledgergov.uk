@@ -2,7 +2,7 @@ import { z } from "zod";
 import { defineConfig } from "@openpromises/core";
 
 /**
- * Public Ledger on the OpenPromises engine (step 1 of the move, docs/MIGRATING.md
+ * LedgerGov.UK on the OpenPromises engine (step 1 of the move, docs/MIGRATING.md
  * in github.com/xternal/openpromises). Started from OpenPromises 0.3.0's
  * tools/dry-run/ledgergov.config.ts with fixtures/public-ledger/openpromises.config.ts
  * inlined. Nothing reads it yet except the report-only check in CI: the site still
@@ -12,7 +12,7 @@ import { defineConfig } from "@openpromises/core";
  */
 export default defineConfig({
   site: {
-    name: "Public Ledger",
+    name: "LedgerGov.UK",
     url: "https://ledgergov.uk",
     description: { en: "What UK governments and parties promise: the exact words, the cost a year, and a timeline that moves only on evidence." },
   },

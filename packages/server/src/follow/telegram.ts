@@ -134,7 +134,7 @@ function short(s: string, n = 60): string {
 
 function helpText(config: Config): string {
   return [
-    "Public Ledger tells you here when a promise you follow changes: its status, a deadline, its wording, its cost, or a reply from the people named on it.",
+    "LedgerGov.UK tells you here when a promise you follow changes: its status, a deadline, its wording, its cost, or a reply from the people named on it.",
     "",
     `To follow one promise, a politician, a policy area or what is coming due, open it on ${config.siteUrl}/promises, choose Follow, then Telegram.`,
     "",
@@ -144,7 +144,7 @@ function helpText(config: Config): string {
     "/stop – stop all alerts and delete your chat id",
     "/help – this message",
     "",
-    `Who runs Public Ledger, what we keep and your rights: ${config.siteUrl}${PRIVACY_PATH}`,
+    `Who runs LedgerGov.UK, what we keep and your rights: ${config.siteUrl}${PRIVACY_PATH}`,
   ].join("\n");
 }
 

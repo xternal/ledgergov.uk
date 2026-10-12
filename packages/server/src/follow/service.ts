@@ -72,7 +72,7 @@ export function manageUrl(config: Config, token: string): string {
   return `${config.siteUrl}/follow/manage?t=${encodeURIComponent(token)}`;
 }
 
-/** The privacy notice: who runs Public Ledger, what is kept, for how long, and readers' rights. */
+/** The privacy notice: who runs LedgerGov.UK, what is kept, for how long, and readers' rights. */
 export function privacyUrl(config: Config): string {
   return `${config.siteUrl}${PRIVACY_PATH}`;
 }
@@ -123,7 +123,7 @@ export function mailFooter(manage: string): string {
     manage,
     "",
     "Keep this link to yourself: anyone who has it can change your alerts.",
-    "Public Ledger never shows who follows what, and never shares or sells its lists.",
+    "LedgerGov.UK never shows who follows what, and never shares or sells its lists.",
   ].join("\n");
 }
 
@@ -249,9 +249,9 @@ export async function requestEmailFollow(ctx: FollowContext, input: { email: str
   if (plan.kind === "confirm") {
     await ctx.mail.send({
       to: email,
-      subject: "Confirm your alerts from Public Ledger",
+      subject: "Confirm your alerts from LedgerGov.UK",
       text: [
-        "Please confirm that you want alerts from Public Ledger about:",
+        "Please confirm that you want alerts from LedgerGov.UK about:",
         "",
         bullets(names),
         "",
@@ -263,9 +263,9 @@ export async function requestEmailFollow(ctx: FollowContext, input: { email: str
         `The link works for ${CONFIRM_TTL_DAYS} days. If you did not ask for this, ignore this email. We will delete your address after ${CONFIRM_TTL_DAYS} days and send you nothing more.`,
         "",
         "We store your email address, encrypted, and what you follow. Nothing else. We never show who follows what, and never share or sell our lists.",
-        `Who runs Public Ledger, what we keep and your rights: ${privacyUrl(config)}`,
+        `Who runs LedgerGov.UK, what we keep and your rights: ${privacyUrl(config)}`,
         "",
-        "Public Ledger",
+        "LedgerGov.UK",
         config.siteUrl,
       ].join("\n"),
     });
@@ -273,9 +273,9 @@ export async function requestEmailFollow(ctx: FollowContext, input: { email: str
     const manage = manageUrl(config, plan.manageToken);
     await ctx.mail.send({
       to: email,
-      subject: "Confirm what to add to your Public Ledger alerts",
+      subject: "Confirm what to add to your LedgerGov.UK alerts",
       text: [
-        "A request came in to add these to the alerts this address gets from Public Ledger:",
+        "A request came in to add these to the alerts this address gets from LedgerGov.UK:",
         "",
         bullets(names),
         "",
@@ -292,7 +292,7 @@ export async function requestEmailFollow(ctx: FollowContext, input: { email: str
     const manage = manageUrl(config, plan.manageToken);
     await ctx.mail.send({
       to: email,
-      subject: "You already follow this on Public Ledger",
+      subject: "You already follow this on LedgerGov.UK",
       text: ["A request came in to follow:", "", bullets(names), "", "This address already gets alerts about it, so nothing has changed.", "", mailFooter(manage)].join("\n"),
       unsubscribeUrl: unsubscribeUrl(config, plan.manageToken),
     });
@@ -400,7 +400,7 @@ export async function confirmEmailFollow(ctx: FollowContext, token: unknown): Pr
   try {
     await ctx.mail.send({
       to: decrypt(config.encryptionKey, result.row.address_enc),
-      subject: "Your alerts from Public Ledger are on",
+      subject: "Your alerts from LedgerGov.UK are on",
       text: ["Thanks for confirming. You follow:", "", bullets(result.targets.map(describeOf(ctx))), "", cadenceLine(result.row.cadence), "", mailFooter(manage)].join("\n"),
       unsubscribeUrl: unsubscribeUrl(config, result.manageToken),
     });

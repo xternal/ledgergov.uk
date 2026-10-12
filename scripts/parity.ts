@@ -38,7 +38,7 @@ const PARITY = join(root, ".parity");
 /** The production address, so absolute URLs read as they do on the live site. */
 const SITE_URL = "https://ledgergov.uk";
 /** A share crawler, so the page metadata is in the HTML as previews see it (Next streams it later for browsers). */
-const USER_AGENT = "LinkedInBot/1.0 (compatible; Public Ledger parity check)";
+const USER_AGENT = "LinkedInBot/1.0 (compatible; LedgerGov.UK parity check)";
 /** Each route type named in the migration plan; the sitemap adds every card, area, actor, topic and MP page. */
 const ROUTE_TYPES = ["/", "/promises", "/budget", "/method", "/method/api", "/method/backtest", "/people", "/editors", "/feeds", "/mp", "/privacy"];
 const ROUTE_PATTERNS: [string, RegExp][] = [

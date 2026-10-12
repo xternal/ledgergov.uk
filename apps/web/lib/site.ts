@@ -5,7 +5,7 @@ import { cardLastUpdated, type SeoContext } from "@ledger/server/seo";
  * SITE_URL is set in production (docs/OPERATIONS.md); Vercel previews fall back
  * to their own production URL, local development to localhost.
  */
-export const SITE_NAME = "Public Ledger";
+export const SITE_NAME = "LedgerGov.UK";
 export const SITE_DESCRIPTION =
   "An open P&L of the UK state: where public money comes from, where it goes, and what every political promise would cost, with every number linked to its official source.";
 

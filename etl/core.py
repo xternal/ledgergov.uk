@@ -41,7 +41,7 @@ log = logging.getLogger(__name__)
 ROOT = Path(__file__).resolve().parent.parent
 RAW_DIR = ROOT / "data" / "raw"
 BUILD_DIR = ROOT / "data" / "build"
-USER_AGENT = "PublicLedgerETL/0.1 (+https://github.com/xternal/public-ledger)"
+USER_AGENT = "LedgerGovUKETL/0.1 (+https://github.com/xternal/public-ledger)"
 # What a bot shield (OBR's Cloudflare) answers to a datacenter address; download(archive=True) then asks the Internet Archive.
 REFUSED = {403, 429, 503}
 

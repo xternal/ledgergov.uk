@@ -47,7 +47,7 @@ export function describeTarget(t: Target): string {
     case "area":
       return `${AREA_LABEL[t.id as PolicyArea] ?? t.id}, all promises`;
     case "all":
-      return "Every promise on Public Ledger";
+      return "Every promise on LedgerGov.UK";
   }
 }
 

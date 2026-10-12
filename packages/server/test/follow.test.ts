@@ -95,7 +95,7 @@ describe("email follow: start → confirm → manage → unsubscribe → delete"
     // Following more is confirmed by email too, like the first sign-up.
     await requestEmailFollow(ctx(new Date(T0.getTime() + 7200_000)), { email: "reader@example.org", targets: [BURNHAM], cadence: "instant" });
     const added = mail.sent[2]!;
-    expect(added.subject).toBe("Confirm what to add to your Public Ledger alerts");
+    expect(added.subject).toBe("Confirm what to add to your LedgerGov.UK alerts");
     const manage2 = tokenIn(added.text, "/follow/manage")!;
     expect(manage2).toBe(res.manageToken); // the same link in every email, so any email's link keeps working
     expect((await manageView({ db, config }, manage2))!.targets).toEqual([BUS]);
@@ -165,7 +165,7 @@ describe("email follow: start → confirm → manage → unsubscribe → delete"
 describe("consent text", () => {
   it("names the controller and the services that carry messages, in a version newer than the first", () => {
     const text = CONSENT_POINTS.join(" ");
-    expect(text).toContain("Empatiq Limited runs Public Ledger");
+    expect(text).toContain("Empatiq Limited runs LedgerGov.UK");
     expect(text).toContain("Resend delivers our emails");
     expect(text).toContain("Telegram carries the bot's messages");
     expect(CONSENT_VERSION > "2026-10-06").toBe(true);
@@ -173,7 +173,7 @@ describe("consent text", () => {
 
   it("links the privacy notice from the confirmation email", async () => {
     await requestEmailFollow(ctx(), { email: EMAIL, targets: [BUS], cadence: "instant" });
-    expect(mail.sent[0]!.text).toContain("Who runs Public Ledger, what we keep and your rights: https://ledger.test/privacy");
+    expect(mail.sent[0]!.text).toContain("Who runs LedgerGov.UK, what we keep and your rights: https://ledger.test/privacy");
   });
 });
 
@@ -266,7 +266,7 @@ describe("follow requests for an address that is already confirmed", () => {
     expect(mail.sent).toHaveLength(sentBefore + 1);
     const ask = mail.sent.at(-1)!;
     expect(ask.to).toBe("reader@example.org");
-    expect(ask.text).toContain("A request came in to add these to the alerts this address gets from Public Ledger:\n\n- name of actor andy-burnham");
+    expect(ask.text).toContain("A request came in to add these to the alerts this address gets from LedgerGov.UK:\n\n- name of actor andy-burnham");
     expect(ask.text).toContain("Nothing changes until you confirm.");
     expect(ask.unsubscribeUrl).toContain("/api/follow/unsubscribe?t=");
 
@@ -309,7 +309,7 @@ describe("follow requests for an address that is already confirmed", () => {
     const { manage } = await confirmed([BUS, BURNHAM]);
     await requestEmailFollow(ctx(later(1000)), { email: EMAIL, targets: [BURNHAM], cadence: "weekly" });
     const note = mail.sent.at(-1)!;
-    expect(note.subject).toBe("You already follow this on Public Ledger");
+    expect(note.subject).toBe("You already follow this on LedgerGov.UK");
     expect(note.text).not.toContain("/follow/confirm");
     expect(await db.query("SELECT 1 FROM pending_target")).toHaveLength(0);
     expect((await manageView({ db, config }, manage))!.cadence).toBe("instant");

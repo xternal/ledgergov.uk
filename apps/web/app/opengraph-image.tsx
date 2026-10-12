@@ -4,7 +4,7 @@ import { OG, ogFonts } from "@/lib/og";
 import { fixed, gbpBn, shareOf } from "@/lib/format";
 import { MARK_DATA_URI } from "@/lib/brand";
 
-export const alt = "Public Ledger: where UK public money went, and where it came from";
+export const alt = "LedgerGov.UK: where UK public money went, and where it came from";
 export const size = OG.size;
 export const contentType = "image/png";
 
@@ -21,7 +21,7 @@ export default async function Image() {
     <div style={{ display: "flex", flexDirection: "column", width: "100%", height: "100%", background: OG.bg, color: OG.ink, padding: "56px 64px", fontFamily: "Geist" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 28, fontWeight: 600 }}>
         <img src={MARK_DATA_URI} width={28} height={28} alt="" />
-        Public Ledger
+        LedgerGov.UK
       </div>
       <div style={{ display: "flex", fontSize: 66, fontWeight: 600, letterSpacing: -2.4, lineHeight: 1.05, marginTop: 52, maxWidth: 980 }}>
         {`Where ${gbpBn(spending)} of public money went in ${s.meta.fiscal_year}, and where it came from`}

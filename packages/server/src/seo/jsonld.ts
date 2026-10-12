@@ -23,7 +23,7 @@ const currentRoles = (a: ActorFile, today: string) => a.roles.filter((r) => (!r.
 
 /**
  * A speaker as a Person, Organization or GovernmentOrganization, with its
- * page on Public Ledger and the official pages that identify it (sameAs). A
+ * page on LedgerGov.UK and the official pages that identify it (sameAs). A
  * person carries their party as affiliation.
  */
 export function actorEntity(a: ActorFile, party: ActorFile | null, ctx: SeoContext, opts: { jobTitle?: boolean } = {}): JsonLdObject {
@@ -62,7 +62,7 @@ export const latestUpdate = (cards: Pick<CardView, "file">[], ctx: SeoContext) =
 /**
  * A promise card: a WebPage about its policy area whose main entity is the
  * promise as a Quotation by its speaker, and the breadcrumb trail
- * Public Ledger › Promise ledger › area › card.
+ * LedgerGov.UK › Promise ledger › area › card.
  */
 export function cardJsonLd(c: CardView, ctx: SeoContext): JsonLdObject[] {
   const path = `/promise/${c.id}`;

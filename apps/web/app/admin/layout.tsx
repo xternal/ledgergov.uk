@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { requireAdmin } from "./guard";
 
 export const metadata: Metadata = {
-  title: "Editors’ triage | Public Ledger",
+  title: "Editors’ triage | LedgerGov.UK",
   robots: { index: false, follow: false, nocache: true },
 };
 
@@ -13,7 +13,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
       <header className="border-b border-line">
         <div className="mx-auto flex h-14 max-w-[1000px] items-center gap-4 px-4 sm:px-6">
           <a href="/admin" className="text-[15px] font-semibold tracking-[-0.01em] text-ink no-underline">
-            Public Ledger · Editors’ triage
+            LedgerGov.UK · Editors’ triage
           </a>
         </div>
       </header>

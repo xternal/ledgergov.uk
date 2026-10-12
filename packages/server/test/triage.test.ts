@@ -68,7 +68,7 @@ describe("admin access (proxy gate)", () => {
     for (const auth of [undefined, basic("editor", "wrong"), basic("someone", ENV.ADMIN_PASSWORD), "Bearer abc", "Basic !!!", basic("editor", `${ENV.ADMIN_PASSWORD}x`)]) {
       const res = through(req(auth), ENV);
       expect(res.status).toBe(401);
-      expect(res.headers.get("www-authenticate")).toMatch(/^Basic realm="Public Ledger editors"/);
+      expect(res.headers.get("www-authenticate")).toMatch(/^Basic realm="LedgerGov.UK editors"/);
       expect(res.headers.get("x-robots-tag")).toBe("noindex, nofollow");
       expect(res.headers.get("cache-control")).toBe("no-store");
     }

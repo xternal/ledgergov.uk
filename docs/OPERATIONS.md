@@ -62,7 +62,7 @@ Mail needs a domain you own, for example `alerts@<your-domain>`: neither provide
 1. In Resend, add the sending **domain** in the **EU region (eu-west-1, Ireland)**, and publish the DNS records it gives you (DKIM, SPF via a `send` subdomain, and a DMARC record: `p=quarantine` once mail flows cleanly).
 2. On the domain, turn **open tracking and click tracking off**. Our mail is plain text with no images or rewritten links, and tracking would break the privacy promise.
 3. Create an API key with **sending access** to that domain only.
-4. Set `MAIL_PROVIDER=resend`, `RESEND_API_KEY`, `MAIL_FROM` (e.g. `Public Ledger <alerts@your-domain>`) and optionally `MAIL_REPLY_TO`, in Vercel and, for alerts, in GitHub Actions secrets.
+4. Set `MAIL_PROVIDER=resend`, `RESEND_API_KEY`, `MAIL_FROM` (e.g. `LedgerGov.UK <alerts@your-domain>`) and optionally `MAIL_REPLY_TO`, in Vercel and, for alerts, in GitHub Actions secrets.
 5. **Bounces and complaints.** In Resend, *Webhooks → Add endpoint*: URL `https://<your-domain>/api/mail/resend`, events `email.bounced` and `email.complained`. Copy the endpoint's signing secret (`whsec_…`) into Vercel as `RESEND_WEBHOOK_SECRET` (Production, sensitive) and redeploy. A permanent bounce or a spam complaint then deletes that address's alert subscription at once; temporary bounces change nothing. Without the secret the endpoint answers 404.
 
 **Amazon SES** (`MAIL_PROVIDER=ses`): keeps mail in London, at the cost of more setup.
@@ -78,7 +78,7 @@ Mail needs a domain you own, for example `alerts@<your-domain>`: neither provide
    Our mail is plain text with no images, so there is nothing to track anyway.
 5. Create an IAM user (or, later, an OIDC role) allowed only `ses:SendEmail` on
    that identity. Put its keys in `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
-6. Set `MAIL_PROVIDER=ses`, `MAIL_FROM` (e.g. `Public Ledger <alerts@your-domain>`),
+6. Set `MAIL_PROVIDER=ses`, `MAIL_FROM` (e.g. `LedgerGov.UK <alerts@your-domain>`),
    optionally `MAIL_REPLY_TO`.
 
 ## 4. Telegram bot
@@ -280,7 +280,7 @@ Pull requests from people outside the repository run their workflows only after 
 What the site publishes for them, all built from the same content as the pages:
 
 * `/sitemap.xml` (every public page with the date it last changed) and `/robots.txt` (search and AI crawlers welcome; forms, tokens, `/admin`, `/alpha` and `/api/` other than `/api/v1/` kept out).
-* Each card's `<title>` is `<headline> – <speaker> promise, <status> | Public Ledger` (the site name drops when the title would pass about 70 characters) and its description starts with the facts: status, cost a year, who pays, who promised it and when. Headlines are in the card files (`content/README.md`).
+* Each card's `<title>` is `<headline> – <speaker> promise, <status> | LedgerGov.UK` (the site name drops when the title would pass about 70 characters) and its description starts with the facts: status, cost a year, who pays, who promised it and when. Headlines are in the card files (`content/README.md`).
 * JSON-LD on every public page: a card is a WebPage about its policy area whose main entity is the quote, spoken by a Person or Organization with `sameAs` links (UK Parliament page from `parliament_member_id`, plus the actor's checked `same_as` pages); `/promises` and each `/promises/area/<area>` page are a CollectionPage with an ItemList of headlines; actor pages are ProfilePages. Shapes are checked by `packages/server/test/seo.test.ts`.
 * For AI assistants: `/llms.txt` (a guide to the site), `/llms-full.txt` (every card in Markdown with the method in short and the licences) and `/promise/<id>.md` (one card; each card page links to it with `<link rel="alternate" type="text/markdown">`).
 
@@ -320,7 +320,7 @@ pnpm parity:check       # on the change: writes .parity/current, compares, exits
 
 ## 15. The OpenPromises check
 
-Public Ledger's cards are in the format of the open-source OpenPromises engine ([github.com/xternal/openpromises](https://github.com/xternal/openpromises), its `docs/MIGRATING.md`) since 12 October 2026; the site reads them into its own shape (`packages/schema/src/v1.ts`), so nothing readers see changed. The engine is a pinned dev dependency (`@openpromises/cli` and `@openpromises/core` 0.4.0), `openpromises.config.ts` at the repository root describes the site, and CI runs the engine's check after our own one. Since the switch on 12 October 2026 it blocks a merge like any other check; on a fork's pull request, which gets no secrets and so no editors list, it runs as a report only.
+LedgerGov.UK's cards are in the format of the open-source OpenPromises engine ([github.com/xternal/openpromises](https://github.com/xternal/openpromises), its `docs/MIGRATING.md`) since 12 October 2026; the site reads them into its own shape (`packages/schema/src/v1.ts`), so nothing readers see changed. The engine is a pinned dev dependency (`@openpromises/cli` and `@openpromises/core` 0.4.0), `openpromises.config.ts` at the repository root describes the site, and CI runs the engine's check after our own one. Since the switch on 12 October 2026 it blocks a merge like any other check; on a fork's pull request, which gets no secrets and so no editors list, it runs as a report only.
 
 ```bash
 pnpm exec openpromises validate --no-base   # everything the engine would object to today
@@ -338,6 +338,6 @@ gh secret set OPENPROMISES_EDITORS --repo xternal/public-ledger < ~/path/editors
 
 If CI shows `editors.yaml  should be a set of fields  (schema)`, the secret holds something other than that file: set it again from the file.
 
-Editors record approvals on the cards now, before the move, with `pnpm review` (docs/EDITORS.md, "Recording your approval on the card"); the engine counts them, so the approvals errors fall as reviews land. The command writes Public Ledger's own format because the engine's `openpromises review` only writes converted cards.
+Editors record approvals on the cards now, before the move, with `pnpm review` (docs/EDITORS.md, "Recording your approval on the card"); the engine counts them, so the approvals errors fall as reviews land. The command writes LedgerGov.UK's own format because the engine's `openpromises review` only writes converted cards.
 
 Since 12 October 2026 every card and actor is in OpenPromises format v1 and the check passes: 0 errors, 0 warnings. It reads every card's editors' approvals against the private editors list (the repository secret `OPENPROMISES_EDITORS`, never committed; automated reviews never count), every cost's quality label, and history against the base branch. Any error means a change the engine would refuse: fix it before merging.

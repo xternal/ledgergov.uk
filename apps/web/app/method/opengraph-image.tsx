@@ -3,7 +3,7 @@ import { OG } from "@/lib/og";
 import { methodImage } from "@/lib/method-og";
 import { METHOD_TITLE } from "@/lib/method-copy";
 
-export const alt = "Public Ledger: how the numbers are made, with every data edition listed";
+export const alt = "LedgerGov.UK: how the numbers are made, with every data edition listed";
 export const size = OG.size;
 export const contentType = "image/png";
 

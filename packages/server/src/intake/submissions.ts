@@ -118,7 +118,7 @@ export async function findDuplicate(db: Db, s: ValidSubmission, now: Date): Prom
 
 function receiptText(config: Config, reference: string, s: ValidSubmission, deleteToken: string): string {
   const lines = [
-    "Thank you. Public Ledger has received your submission.",
+    "Thank you. LedgerGov.UK has received your submission.",
     "",
     `Your reference: ${reference}`,
     `Link you sent: ${s.url}${s.video_time !== null ? ` (at ${formatVideoTime(s.video_time)})` : ""}`,
@@ -133,7 +133,7 @@ function receiptText(config: Config, reference: string, s: ValidSubmission, dele
     "To delete your email from our records, open this link and press the button:",
     `${config.siteUrl}/submission/delete?t=${deleteToken}`,
     "",
-    "Public Ledger",
+    "LedgerGov.UK",
   ];
   return lines.join("\n");
 }
@@ -141,7 +141,7 @@ function receiptText(config: Config, reference: string, s: ValidSubmission, dele
 /** The receipt for a duplicate on arrival: the editors already have it, so the address is not kept. */
 function duplicateReceiptText(reference: string, s: ValidSubmission): string {
   return [
-    "Thank you. Public Ledger has received your submission.",
+    "Thank you. LedgerGov.UK has received your submission.",
     "",
     `Your reference: ${reference}`,
     `Link you sent: ${s.url}${s.video_time !== null ? ` (at ${formatVideoTime(s.video_time)})` : ""}`,
@@ -150,7 +150,7 @@ function duplicateReceiptText(reference: string, s: ValidSubmission): string {
     "",
     "We have not kept your email address, so this is the only email about this submission.",
     "",
-    "Public Ledger",
+    "LedgerGov.UK",
   ].join("\n");
 }
 
