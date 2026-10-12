@@ -3,11 +3,21 @@
     "country": "UK",
     "tax_year": "2025-26",
     "geography": "England, Wales and Northern Ireland",
-    "quality": "training",
-    "method_note": "TODO(source): thresholds and rates from model memory. Replace with GOV.UK 'Income Tax rates and Personal Allowances' and 'National Insurance rates and thresholds' for 2025-26. Scotland has its own income tax bands (review H8).",
-    "intended_sources": [
-      "https://www.gov.uk/income-tax-rates",
-      "https://www.gov.uk/national-insurance-rates-letters"
+    "quality": "sourced",
+    "method_note": "Income tax for 2025-26 from GOV.UK 'Income Tax rates and Personal Allowances' (section 'Previous tax years'); employee National Insurance from HMRC 'Rates and thresholds for employers 2025 to 2026' (annual figures). The allowance falls by £1 for every £2 of income above the taper threshold, as GOV.UK states. Each figure equals the committed ETL edition named in its source (etl/sources/govuk_tax_rates.py), which checks the two documents against each other. National Insurance applies across the UK; Scotland sets its own income tax bands.",
+    "sources": [
+      {
+        "title": "GOV.UK, Income Tax rates and allowances for previous tax years",
+        "url": "https://www.gov.uk/income-tax-rates/income-tax-rates-and-allowances-for-previous-tax-years",
+        "gives": "personal allowance, its taper, the basic, higher and additional rate bands and rates",
+        "vintage": "income-tax-rates@2026-10-01"
+      },
+      {
+        "title": "HMRC, Rates and thresholds for employers 2025 to 2026",
+        "url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026",
+        "gives": "employee National Insurance primary threshold, upper earnings limit, main and upper rates",
+        "vintage": "rates-and-thresholds-for-employers-2025-to-2026@2026-09-30"
+      }
     ]
   },
   "income_tax": {

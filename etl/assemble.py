@@ -592,11 +592,17 @@ def latest_tax_year(store: Store) -> str | None:
     return years[-1] if years else None
 
 
+def latest_tax_seed() -> dict:
+    """The newest hand-sourced tax seed, data/seed/uk_tax_YYYY-YY.json (the post-Budget template is not one)."""
+    files = sorted(SEED.glob("uk_tax_[0-9][0-9][0-9][0-9]-[0-9][0-9].json"))
+    return json.loads(files[-1].read_text())
+
+
 def build_tax(store: Store, run: Run) -> dict:
-    seed = json.loads((SEED / "uk_tax_2025-26.json").read_text())
+    seed = latest_tax_seed()
     year = latest_tax_year(store)
     if year is None:
-        run.add("coverage", "warning", "tax", "GOV.UK tax rates missing; keeping the training file")
+        run.add("coverage", "warning", "tax", f"GOV.UK tax rates missing; using the seed for {seed['meta']['tax_year']}")
         return seed
     g = lambda s: store.get(s, year, ["govuk_tax_rates"])
     it = {

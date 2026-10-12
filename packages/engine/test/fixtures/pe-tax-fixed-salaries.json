@@ -1,0 +1,362 @@
+{
+ "source": "POST https://api.policyengine.org/uk/calculate, current law, one adult per household in England",
+ "model_version": "2.102.3",
+ "retrieved_on": "2026-10-12",
+ "salaries": [
+  12000,
+  15000,
+  30000,
+  50000,
+  55000,
+  60000,
+  110000,
+  130000,
+  150000
+ ],
+ "years": [
+  2025,
+  2026,
+  2027
+ ],
+ "result": {
+  "benunits": {
+   "salary_110000": {
+    "members": [
+     "salary_110000"
+    ]
+   },
+   "salary_12000": {
+    "members": [
+     "salary_12000"
+    ]
+   },
+   "salary_130000": {
+    "members": [
+     "salary_130000"
+    ]
+   },
+   "salary_15000": {
+    "members": [
+     "salary_15000"
+    ]
+   },
+   "salary_150000": {
+    "members": [
+     "salary_150000"
+    ]
+   },
+   "salary_30000": {
+    "members": [
+     "salary_30000"
+    ]
+   },
+   "salary_50000": {
+    "members": [
+     "salary_50000"
+    ]
+   },
+   "salary_55000": {
+    "members": [
+     "salary_55000"
+    ]
+   },
+   "salary_60000": {
+    "members": [
+     "salary_60000"
+    ]
+   }
+  },
+  "households": {
+   "salary_110000": {
+    "members": [
+     "salary_110000"
+    ],
+    "region": {
+     "2025": "EAST_MIDLANDS",
+     "2026": "EAST_MIDLANDS",
+     "2027": "EAST_MIDLANDS"
+    }
+   },
+   "salary_12000": {
+    "members": [
+     "salary_12000"
+    ],
+    "region": {
+     "2025": "EAST_MIDLANDS",
+     "2026": "EAST_MIDLANDS",
+     "2027": "EAST_MIDLANDS"
+    }
+   },
+   "salary_130000": {
+    "members": [
+     "salary_130000"
+    ],
+    "region": {
+     "2025": "EAST_MIDLANDS",
+     "2026": "EAST_MIDLANDS",
+     "2027": "EAST_MIDLANDS"
+    }
+   },
+   "salary_15000": {
+    "members": [
+     "salary_15000"
+    ],
+    "region": {
+     "2025": "EAST_MIDLANDS",
+     "2026": "EAST_MIDLANDS",
+     "2027": "EAST_MIDLANDS"
+    }
+   },
+   "salary_150000": {
+    "members": [
+     "salary_150000"
+    ],
+    "region": {
+     "2025": "EAST_MIDLANDS",
+     "2026": "EAST_MIDLANDS",
+     "2027": "EAST_MIDLANDS"
+    }
+   },
+   "salary_30000": {
+    "members": [
+     "salary_30000"
+    ],
+    "region": {
+     "2025": "EAST_MIDLANDS",
+     "2026": "EAST_MIDLANDS",
+     "2027": "EAST_MIDLANDS"
+    }
+   },
+   "salary_50000": {
+    "members": [
+     "salary_50000"
+    ],
+    "region": {
+     "2025": "EAST_MIDLANDS",
+     "2026": "EAST_MIDLANDS",
+     "2027": "EAST_MIDLANDS"
+    }
+   },
+   "salary_55000": {
+    "members": [
+     "salary_55000"
+    ],
+    "region": {
+     "2025": "EAST_MIDLANDS",
+     "2026": "EAST_MIDLANDS",
+     "2027": "EAST_MIDLANDS"
+    }
+   },
+   "salary_60000": {
+    "members": [
+     "salary_60000"
+    ],
+    "region": {
+     "2025": "EAST_MIDLANDS",
+     "2026": "EAST_MIDLANDS",
+     "2027": "EAST_MIDLANDS"
+    }
+   }
+  },
+  "people": {
+   "salary_110000": {
+    "age": {
+     "2025": 40,
+     "2026": 40,
+     "2027": 40
+    },
+    "employment_income": {
+     "2025": 110000,
+     "2026": 110000,
+     "2027": 110000
+    },
+    "income_tax": {
+     "2025": 33432,
+     "2026": 33432,
+     "2027": 33432
+    },
+    "national_insurance": {
+     "2025": 4210.6006,
+     "2026": 4210.6006,
+     "2027": 4210.6006
+    }
+   },
+   "salary_12000": {
+    "age": {
+     "2025": 40,
+     "2026": 40,
+     "2027": 40
+    },
+    "employment_income": {
+     "2025": 12000,
+     "2026": 12000,
+     "2027": 12000
+    },
+    "income_tax": {
+     "2025": 0,
+     "2026": 0,
+     "2027": 0
+    },
+    "national_insurance": {
+     "2025": 0,
+     "2026": 0,
+     "2027": 0
+    }
+   },
+   "salary_130000": {
+    "age": {
+     "2025": 40,
+     "2026": 40,
+     "2027": 40
+    },
+    "employment_income": {
+     "2025": 130000,
+     "2026": 130000,
+     "2027": 130000
+    },
+    "income_tax": {
+     "2025": 44703,
+     "2026": 44703,
+     "2027": 44703
+    },
+    "national_insurance": {
+     "2025": 4610.601,
+     "2026": 4610.601,
+     "2027": 4610.601
+    }
+   },
+   "salary_15000": {
+    "age": {
+     "2025": 40,
+     "2026": 40,
+     "2027": 40
+    },
+    "employment_income": {
+     "2025": 15000,
+     "2026": 15000,
+     "2027": 15000
+    },
+    "income_tax": {
+     "2025": 486,
+     "2026": 486,
+     "2027": 486
+    },
+    "national_insurance": {
+     "2025": 194.40314,
+     "2026": 194.40314,
+     "2027": 194.40314
+    }
+   },
+   "salary_150000": {
+    "age": {
+     "2025": 40,
+     "2026": 40,
+     "2027": 40
+    },
+    "employment_income": {
+     "2025": 150000,
+     "2026": 150000,
+     "2027": 150000
+    },
+    "income_tax": {
+     "2025": 53703,
+     "2026": 53703,
+     "2027": 53703
+    },
+    "national_insurance": {
+     "2025": 5010.6016,
+     "2026": 5010.6016,
+     "2027": 5010.6016
+    }
+   },
+   "salary_30000": {
+    "age": {
+     "2025": 40,
+     "2026": 40,
+     "2027": 40
+    },
+    "employment_income": {
+     "2025": 30000,
+     "2026": 30000,
+     "2027": 30000
+    },
+    "income_tax": {
+     "2025": 3486,
+     "2026": 3486,
+     "2027": 3486
+    },
+    "national_insurance": {
+     "2025": 1394.4033,
+     "2026": 1394.4033,
+     "2027": 1394.4033
+    }
+   },
+   "salary_50000": {
+    "age": {
+     "2025": 40,
+     "2026": 40,
+     "2027": 40
+    },
+    "employment_income": {
+     "2025": 50000,
+     "2026": 50000,
+     "2027": 50000
+    },
+    "income_tax": {
+     "2025": 7486,
+     "2026": 7486,
+     "2027": 7486
+    },
+    "national_insurance": {
+     "2025": 2994.4033,
+     "2026": 2994.4033,
+     "2027": 2994.4033
+    }
+   },
+   "salary_55000": {
+    "age": {
+     "2025": 40,
+     "2026": 40,
+     "2027": 40
+    },
+    "employment_income": {
+     "2025": 55000,
+     "2026": 55000,
+     "2027": 55000
+    },
+    "income_tax": {
+     "2025": 9432,
+     "2026": 9432,
+     "2027": 9432
+    },
+    "national_insurance": {
+     "2025": 3110.6013,
+     "2026": 3110.6013,
+     "2027": 3110.6013
+    }
+   },
+   "salary_60000": {
+    "age": {
+     "2025": 40,
+     "2026": 40,
+     "2027": 40
+    },
+    "employment_income": {
+     "2025": 60000,
+     "2026": 60000,
+     "2027": 60000
+    },
+    "income_tax": {
+     "2025": 11432,
+     "2026": 11432,
+     "2027": 11432
+    },
+    "national_insurance": {
+     "2025": 3210.6008,
+     "2026": 3210.6008,
+     "2027": 3210.6008
+    }
+   }
+  }
+ }
+}

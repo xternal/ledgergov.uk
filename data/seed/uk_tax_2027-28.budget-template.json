@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "country": "UK",
+    "tax_year": "2027-28",
+    "geography": "England, Wales and Northern Ireland",
+    "quality": "training",
+    "method_note": "TODO(source): the post-Budget template (docs/BUDGET_DAY.md, 'The Budget for your household'). On Budget night copy it to data/seed/uk_tax_2027-28.json and set each figure the Budget changes for 2027-28 from the Budget document and HMRC's tax information and impact notes, with the page in the source; leave the rest at 2026-27's values, which the freeze to April 2031 carries over. Then set quality to 'sourced' and replace these sources with the pages used. When GOV.UK's rates pages show 2027-28, the nightly ETL takes over (data/build/tax.json).",
+    "sources": [
+      {
+        "title": "Budget 2026 document (Red Book), table of tax rates or the measure's paragraph",
+        "url": "https://www.gov.uk/government/publications/budget-2026-document",
+        "gives": "TODO(source): page for each changed figure"
+      },
+      {
+        "title": "HMRC tax information and impact notes, Budget 2026",
+        "url": "https://www.gov.uk/government/collections/tax-information-and-impact-notes-tiins",
+        "gives": "TODO(source): the note for each changed figure"
+      }
+    ]
+  },
+  "income_tax": {
+    "personal_allowance_gbp": 12570,
+    "allowance_taper_threshold_gbp": 100000,
+    "allowance_taper_rate": 0.5,
+    "basic_band_gbp": 37700,
+    "additional_threshold_gbp": 125140,
+    "basic_rate_lever": "income_tax_basic",
+    "higher_rate_pct": 40,
+    "additional_rate_pct": 45
+  },
+  "employee_ni": {
+    "primary_threshold_gbp": 12570,
+    "upper_earnings_limit_gbp": 50270,
+    "main_rate_lever": "nics_main",
+    "upper_rate_pct": 2
+  },
+  "your_share_defaults": {
+    "salary_gbp": 38000
+  }
+}
