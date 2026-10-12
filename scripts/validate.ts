@@ -14,6 +14,7 @@ import { parseSeed } from "@ledger/schema/seed";
 import { loadPeople } from "@ledger/schema/people";
 import { parseForecasts, readBacktestTable, readForecastFiles } from "@ledger/schema/forecasts";
 import { parseScorecards, readScorecardFiles } from "@ledger/schema/budget";
+import { predictIssues } from "@ledger/schema/predict";
 import { BALANCE_TOLERANCE_BN, appendOnlyIssues, comparableCard, contractAppendOnlyIssues, forecastAppendOnlyIssues } from "@ledger/schema";
 import { baseSettings, compute, createModel } from "@ledger/engine";
 import { checkDrafts } from "../packages/server/src/harvest/drafts";
@@ -38,6 +39,9 @@ errors.push(...parseForecasts(readForecastFiles(root), readBacktestTable(root)).
 const scorecards = parseScorecards(readScorecardFiles(root));
 errors.push(...scorecards.issues);
 if (scorecards.data.length) console.log(`budget scorecards: ${scorecards.data.map((s) => `${s.id} (${s.measures.length} lines)`).join(", ")}`);
+
+// Predict the Budget (Day 9): every question set in content/predict parses, with unique ids and its answers among its options.
+errors.push(...predictIssues(root));
 
 // 2. Balance: receipts + borrowing == spending, at base and for every preset and card scenario
 if (seed) {

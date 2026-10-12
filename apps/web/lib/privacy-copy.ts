@@ -3,6 +3,7 @@ import { DELIVERY_RETENTION_DAYS } from "@ledger/server/alerts";
 import { SUBMITTER_EMAIL_RETENTION_DAYS, TURNED_DOWN_RETENTION_MONTHS } from "@ledger/server/intake";
 import { loadConfig } from "@ledger/server";
 import { ALPHA_COOKIE_MAX_AGE } from "@ledger/server/alpha";
+import { PREDICTION_RETENTION_MONTHS } from "@ledger/server/predict";
 
 /**
  * Words for the privacy notice (/privacy), shared by the page, its structured
@@ -15,7 +16,7 @@ import { ALPHA_COOKIE_MAX_AGE } from "@ledger/server/alpha";
 
 export const PRIVACY_TITLE = "Privacy notice";
 export const PRIVACY_DESCRIPTION =
-  "What LedgerGov.UK keeps about you and why: alerts by email or Telegram, submissions and the Your MP postcode search. Who runs it, which services handle your data, how long we keep it, and how to have it deleted.";
+  "What LedgerGov.UK keeps about you and why: alerts by email or Telegram, submissions, Budget predictions and the Your MP postcode search. Who runs it, which services handle your data, how long we keep it, and how to have it deleted.";
 /** The date this notice last changed in substance. */
 export const PRIVACY_UPDATED = "2026-10-12";
 /** Where readers write about their data (set up and forwarding, 8 October 2026). */
@@ -80,6 +81,10 @@ export function retention(): RetentionRow[] {
       what: "An application to be an editor",
       howLong: `Deleted within ${EDITOR_APPLICATION_RETENTION_MONTHS} months if you do not join. If you do, kept while you are an editor and deleted ${EDITOR_APPLICATION_RETENTION_MONTHS} months after you stop`,
     },
+    {
+      what: "Your Budget predictions: a random code, your answers and the hour",
+      howLong: `${PREDICTION_RETENTION_MONTHS} months after you make them, about a year after the Budget they are about. Your link stops working then`,
+    },
     { what: "Scrambled codes made from your IP address, for rate limits", howLong: "Deleted at the next daily clean-up after the day ends: within about 28 hours" },
     { what: "Your postcode", howLong: "Not kept at all" },
     { what: "Daily usage counts", howLong: "Kept. They hold no personal data" },
@@ -108,4 +113,4 @@ export const PRIVACY_FAQ = (threshold: number): { q: string; a: string }[] => [
 ];
 
 /** One paragraph for llms.txt. */
-export const PRIVACY_SUMMARY = `LedgerGov.UK is run by ${CONTROLLER.name}, Pavel Guzhikov's company, independently of any party; ${CONTROLLER.name} is the controller and is registered with the ICO${ICO_REGISTRATION_NUMBER ? ` (${ICO_REGISTRATION_NUMBER})` : ""}. Reading stores nothing. Alerts keep only an encrypted email address or Telegram chat and what is followed, on explicit consent; follows are never shown individually. Submitters' emails are deleted once editors decide, or after ${SUBMITTER_EMAIL_RETENTION_DAYS} days. Postcodes are never kept. Applications to be an editor are deleted within ${EDITOR_APPLICATION_RETENTION_MONTHS} months if the applicant does not join. Contact: ${PRIVACY_EMAIL}.`;
+export const PRIVACY_SUMMARY = `LedgerGov.UK is run by ${CONTROLLER.name}, Pavel Guzhikov's company, independently of any party; ${CONTROLLER.name} is the controller and is registered with the ICO${ICO_REGISTRATION_NUMBER ? ` (${ICO_REGISTRATION_NUMBER})` : ""}. Reading stores nothing. Alerts keep only an encrypted email address or Telegram chat and what is followed, on explicit consent; follows are never shown individually. Submitters' emails are deleted once editors decide, or after ${SUBMITTER_EMAIL_RETENTION_DAYS} days. Budget predictions keep only a random code, the answers and the hour, for ${PREDICTION_RETENTION_MONTHS} months. Postcodes are never kept. Applications to be an editor are deleted within ${EDITOR_APPLICATION_RETENTION_MONTHS} months if the applicant does not join. Contact: ${PRIVACY_EMAIL}.`;

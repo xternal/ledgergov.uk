@@ -1,3 +1,4 @@
+import type { ShareMethod } from "@ledger/schema";
 import type { Db } from "./db";
 
 /**
@@ -22,7 +23,12 @@ export type UsageEvent =
   | { event: "mail_feedback"; props: { kind: "bounce" | "complaint"; removed: "yes" | "no" } }
   | { event: "t1_requested"; props: { outcome: T1Outcome } }
   /** /mp: how a search went. Never the postcode, name or constituency searched for. */
-  | { event: "mp_lookup"; props: { by: "postcode" | "name"; outcome: "found" | "choices" | "not_found" | "unavailable" } };
+  | { event: "mp_lookup"; props: { by: "postcode" | "name"; outcome: "found" | "choices" | "not_found" | "unavailable" } }
+  /** Predict the Budget: a set of predictions made, by question set (a fixed id), never with its code or answers. */
+  | { event: "prediction_made"; props: { round: string } }
+  | { event: "prediction_blocked"; props: { reason: "closed" | "invalid" | "spam_check" | "rate_limited" } }
+  /** A reader pressed a share button on their predictions: how, never which. */
+  | { event: "prediction_shared"; props: { method: ShareMethod } };
 
 /** What a request for "who gains and loses" came to: for cache-hit and failure rates. */
 export type T1Outcome = "cached" | "started" | "pending" | "ready" | "not_applicable" | "error" | "rate_limited";

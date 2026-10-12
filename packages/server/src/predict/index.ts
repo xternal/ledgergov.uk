@@ -1,0 +1,21 @@
+// Predict the Budget (Day 9): readers' predictions, how everyone predicted, and the daily clean-up.
+export {
+  CODE_ALPHABET,
+  CODE_LENGTH,
+  PREDICT_DAILY_LIMIT,
+  PREDICTION_RETENTION_MONTHS,
+  countShare,
+  crowd,
+  getPrediction,
+  isPredictionCode,
+  makePrediction,
+  newPredictionCode,
+  parsePrediction,
+  predictionPath,
+  prunePredictions,
+  type Crowd,
+  type MakeDeps,
+  type MakeResult,
+  type Prediction,
+  type PredictParse,
+} from "./service";

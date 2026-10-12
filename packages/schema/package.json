@@ -9,7 +9,8 @@
     "./seed": "./src/seed.ts",
     "./people": "./src/people-data.ts",
     "./forecasts": "./src/forecasts-data.ts",
-    "./budget": "./src/budget-data.ts"
+    "./budget": "./src/budget-data.ts",
+    "./predict": "./src/predict-data.ts"
   },
   "scripts": {
     "test": "vitest run",

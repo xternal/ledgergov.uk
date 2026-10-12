@@ -16,6 +16,8 @@ import { BUDGET, BUDGET_TOPICS, topicCards } from "@/lib/budget";
 import { capitalise, fromTo, getReckoner, pointsText, rangeLike, sourceName, twoYears } from "@/lib/reckoner";
 import { RECKONER_PATH, RECKONER_TITLE } from "@/lib/reckoner-copy";
 import { scorecardCopy, scorecardPath } from "@/lib/scorecard";
+import { currentRound } from "@/lib/predict";
+import { PREDICT_PATH, predictDescription, predictTitle } from "@/lib/predict-copy";
 
 export const dynamic = "force-static";
 
@@ -57,6 +59,7 @@ export function GET() {
     ...BUDGET_TOPICS.filter((t) => topicCards(seed.cards, t).length > 0).map((t) => `- [${t.heading}](${absolute(`/budget/${t.id}`)}): ${t.description}`),
     `- [${RECKONER_TITLE}](${absolute(RECKONER_PATH)}): what one change to each main tax would raise a year, HMRC's figures from ${sourceName(reckoner.edition)} (edition published ${reckoner.edition.published}), one page each with the year, a range, HMRC's caveat and a link that makes the change in the sandbox. Listed below under "${RECKONER_TITLE}".`,
     ...getScorecards().map((sc) => `- [${scorecardCopy(sc).title}](${absolute(scorecardPath(sc))}): ${scorecardCopy(sc).description} Figures are the Treasury's, in £ million, positive where a measure raises money and negative where it costs.`),
+    `- [${predictTitle(currentRound())}](${absolute(PREDICT_PATH)}): ${predictDescription(currentRound())} Each question is settled by a named Budget document; editors record the answers after the Budget and every set of predictions is scored.`,
     `- [Coming up](${absolute("/promises#coming-up")}): open promises due in the next 12 months, nearest deadline first. Readers can follow a deadline window (this month, next 3 months, next 12 months) by email, Telegram or feed.`,
     `- [Privacy notice](${absolute("/privacy")}): ${PRIVACY_SUMMARY}`,
     `- [Become an editor](${absolute("/editors")}): volunteer editors check promise cards against their sources; two must approve every card. About two hours a week, remote, no coding; any party or none, declared.`,
