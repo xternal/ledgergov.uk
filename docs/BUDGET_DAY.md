@@ -189,7 +189,7 @@ It is data, not a card: the two-editor rule for cards does not apply, but one re
    pnpm build
    (cd apps/web && ./node_modules/.bin/next start -p 3202) & sleep 5
    curl -s -A LinkedInBot http://localhost:3202/budget/scorecard/autumn-budget-2026 | grep -oE '<title>[^<]*|og:(title|description|image)" content="[^"]*'
-   pkill -f "next start -p 3202"
+   lsof -ti tcp:3202 | xargs kill   # next start hands over to a next-server process: stop it by its port
    ```
 
    The tests pick the new event up by themselves: its total must equal the one you typed, every check must pass, and the committed JSON must be what the recorded table gives. On the page, check the first line, the last line and the largest against the PDF, and that each page number opens the right page.
