@@ -11,7 +11,6 @@ status_note: >-
   £20,000 as a long-term ambition.
 origin: manual
 outcome_by: null
-editor_check_required: true
 sources:
   - title: "Reform UK: The First 100 Days: Our Pledges to You (PDF), September 2026"
     url: https://www.reformparty.uk/policies/the-first-100-days-our-pledges-to-you/pdf
@@ -107,4 +106,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true

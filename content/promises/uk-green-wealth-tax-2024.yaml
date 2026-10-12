@@ -11,7 +11,6 @@ status_note: >-
   in a speech on 18 March 2026 and put the yield at around £15bn a year.
 origin: manual
 outcome_by: null
-editor_check_required: true
 sources:
   - title: "Green Party: Real Hope. Real Change. 2024 manifesto (PDF), page 20"
     url: https://greenparty.org.uk/app/uploads/2024/06/Green-Party-2024-General-Election-Manifesto-Long-version-with-cover.pdf
@@ -99,4 +98,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true

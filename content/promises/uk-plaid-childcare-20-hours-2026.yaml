@@ -14,7 +14,6 @@ origin: manual
 outcome_by:
   actor_id: welsh-government
   note: Childcare is devolved; the Welsh Government's Programme for Government 2026 to 2030 commits to the offer.
-editor_check_required: true
 sources:
   - title: "Plaid Cymru: For Wales, Senedd manifesto 2026 (PDF), page 8"
     url: https://assets.nationbuilder.com/plaid2016/pages/41843/attachments/original/1775140240/For_Wales_-_2026_Manifesto.pdf
@@ -64,4 +63,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true

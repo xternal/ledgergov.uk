@@ -18,7 +18,6 @@ status_note: >-
 origin: llm_intake
 outcome_by:
   actor_id: hm-government
-editor_check_required: true
 sources:
   - title: "DHSC press release, 9 Sep 2026: Over £1.5 billion to help NHS withstand year-round pressure"
     url: https://www.gov.uk/government/news/over-15-billion-to-help-nhs-withstand-year-round-pressure
@@ -76,4 +75,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true

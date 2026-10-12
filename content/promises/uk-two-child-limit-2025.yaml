@@ -13,7 +13,6 @@ deadline: "2026-04-06"
 origin: manual
 outcome_by:
   actor_id: hm-government
-editor_check_required: true
 sources:
   - title: "Hansard, House of Commons, 26 Nov 2025: Financial Statement and Budget Report"
     url: https://hansard.parliament.uk/commons/2025-11-26/debates/0FD15A2E-84B6-49F0-939A-24B7AABFB798/FinancialStatementAndBudgetReport
@@ -92,4 +91,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true

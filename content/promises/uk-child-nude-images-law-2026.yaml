@@ -14,7 +14,6 @@ status_note: >-
 origin: llm_intake
 outcome_by:
   actor_id: hm-government
-editor_check_required: true
 sources:
   - title: "DCMS press release, 9 Sep 2026: UK to have world's strongest online child safety laws as government prepares legislation on nude images"
     url: https://www.gov.uk/government/news/uk-to-have-worlds-strongest-online-child-safety-laws-as-government-prepares-legislation-on-nude-images
@@ -77,4 +76,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true

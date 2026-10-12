@@ -12,7 +12,6 @@ status_note: >-
   separate cards.
 origin: manual
 outcome_by: null
-editor_check_required: true
 sources:
   - title: "Plaid Cymru: For fairness, for ambition, for Wales, 2024 manifesto (PDF), page 2"
     url: https://assets.nationbuilder.com/plaid2016/pages/13170/attachments/original/1721133624/Plaid_Cymru_Maniffesto_2024_ENGLISH.pdf?1721133624
@@ -41,4 +40,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true

@@ -12,7 +12,6 @@ status_note: >-
   welfare state, which is too general to score.
 origin: manual
 outcome_by: null
-editor_check_required: true
 sources:
   - title: "Green Party: Zack Polanski's speech to conference in full (2 Oct 2026)"
     url: https://greenparty.org.uk/2026/10/02/zack-polanskis-speech-to-conference-in-full/
@@ -61,4 +60,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true

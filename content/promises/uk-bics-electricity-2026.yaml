@@ -15,7 +15,6 @@ status_note: >-
 origin: llm_intake
 outcome_by:
   actor_id: hm-government
-editor_check_required: true
 sources:
   - title: "Hansard, House of Commons, 9 Sep 2026: Jaguar Land Rover: Redundancies (statement)"
     url: https://hansard.parliament.uk/Commons/2026-09-09/debates/CAB0EF73-A8DD-4708-AF57-2221AD011A5A/JaguarLandRoverRedundancies
@@ -96,4 +95,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true
