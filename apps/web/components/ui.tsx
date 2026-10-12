@@ -104,7 +104,8 @@ export function Segmented<T extends string>({
   onChange,
 }: {
   label: string;
-  options: { value: T; label: string }[];
+  /** `disabled` (with `why`, read as the button's title and to screen readers) for a choice that cannot be made now. */
+  options: { value: T; label: string; disabled?: boolean; why?: string }[];
   value: T;
   onChange: (v: T) => void;
 }) {
@@ -115,10 +116,13 @@ export function Segmented<T extends string>({
           key={o.value}
           type="button"
           aria-pressed={o.value === value}
+          disabled={o.disabled}
+          title={o.disabled ? o.why : undefined}
           onClick={() => onChange(o.value)}
-          className="cursor-pointer rounded-md px-3 py-1.5 text-label font-medium text-muted transition-colors hover:text-ink aria-pressed:bg-bg aria-pressed:text-ink aria-pressed:shadow-[var(--shadow-control)]"
+          className="cursor-pointer rounded-md px-3 py-1.5 text-label font-medium text-muted transition-colors hover:text-ink disabled:cursor-not-allowed disabled:text-faint disabled:hover:text-faint aria-pressed:bg-bg aria-pressed:text-ink aria-pressed:shadow-[var(--shadow-control)]"
         >
           {o.label}
+          {o.disabled && o.why && <span className="sr-only">: {o.why}</span>}
         </button>
       ))}
     </div>

@@ -25,6 +25,10 @@ describe("which requests count", () => {
       "/editors",
       "/feeds",
       "/follow",
+      "/pay-for-it",
+      "/borrowing",
+      "/receipt",
+      "/receipt/35k",
     ])
       expect(isCountedPage(path), path).toBe(true);
   });
@@ -33,6 +37,11 @@ describe("which requests count", () => {
     expect(isCountedPage("/budget/predict/r/abcdefgh23")).toBe(false);
     expect(isCountedPage("/budget/predict/r")).toBe(false);
     expect(isCountedPage("/s/abc123")).toBe(false);
+    // A receipt address other than the four examples could hold a typed salary.
+    expect(isCountedPage("/receipt/52300")).toBe(false);
+    expect(isCountedPage("/receipt/36k")).toBe(false);
+    expect(isCountedPage("/pay-for-it/uk-bus-cap-2-2026/borrow")).toBe(false);
+    expect(isCountedPage("/pay-for-it/uk-bus-cap-2-2026/tax-income_tax_basic-100")).toBe(false);
   });
 
   it("skips the API, admin, forms, files and scanners' guesses", () => {

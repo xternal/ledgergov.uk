@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { baseSettings, createModel, encodeScenario } from "@ledger/engine";
+import { ALL_BORROWED, baseSettings, createModel, encodeScenario, pledgeOf } from "@ledger/engine";
 import { areaPath, cardDescription, cardHeadline, cardJsonLd, cardTitle, relatedCards } from "@ledger/server/seo";
 import { getSeed } from "@/lib/data";
 import { AREA_LABEL, whoShort } from "@/lib/promises";
@@ -9,6 +9,7 @@ import { PromiseDetail } from "@/components/PromiseDetail";
 import { SourcesProvider } from "@/components/ui";
 import { JsonLd } from "@/components/JsonLd";
 import { lastChanged, OPEN_GRAPH, seoContext } from "@/lib/site";
+import { PAY_PATH } from "@/lib/pay-for-it-view";
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -61,6 +62,8 @@ export default async function PromisePage({ params }: Props) {
   const runHref = card.file.lever_settings
     ? `/?s=${encodeScenario(model, { ...baseSettings(model), ...card.file.lever_settings }, seed.baseYear)}#scenario`
     : null;
+  // Every card with a yearly cost to the public purse opens in Pay for it, whoever made it (invariant 6).
+  const payHref = pledgeOf(card, model) ? `${PAY_PATH}/${card.id}/${ALL_BORROWED}` : null;
   const { macro } = seed.statement;
   const spendingBn = seed.statement.spending.reduce((a, l) => a + l.bn, 0);
   const related = relatedCards(card, seed.cards).map((c) => ({ id: c.id, headline: cardHeadline(c), who: whoShort(c), status: c.file.status }));
@@ -78,6 +81,7 @@ export default async function PromisePage({ params }: Props) {
           householdsP={macro.provenance.households_m!}
           spendingBn={spendingBn}
           runHref={runHref}
+          payHref={payHref}
           headline={cardHeadline(card)}
           updated={lastChanged(card.file) ?? null}
           areaHref={areaPath(card.file.policy_area)}

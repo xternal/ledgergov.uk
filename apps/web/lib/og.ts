@@ -12,7 +12,7 @@ export const OG = {
   rec: "#2457F5",
   debt: "#F2600C",
   good: "#15803D",
-  bad: "#DC2626",
+  bad: "#D02020",
 } as const;
 
 export async function ogFonts() {

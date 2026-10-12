@@ -10,6 +10,7 @@
  * - no third-party scripts on pages with forms.
  */
 
+import type { ShareMethod } from "@ledger/schema";
 import type { Unit } from "./format";
 
 /**
@@ -30,6 +31,10 @@ export type AnalyticsEvent =
   | { name: "run_in_sandbox_clicked"; props: { promise_id: string } }
   | { name: "follow_panel_opened"; props: { target_kind: "promise" | "actor" | "area" | "deadline_window" } }
   | { name: "scenario_shared"; props: { method: "copy" } }
+  /** Pay for it: which pledge a reader picked (a card id, as promise_card_viewed), which way of paying they changed, and how they shared. */
+  | { name: "pay_for_it_pledge_picked"; props: { promise_id: string } }
+  | { name: "pay_for_it_route_changed"; props: { route: "tax" | "cut" | "borrow" } }
+  | { name: "pay_for_it_shared"; props: { method: ShareMethod } }
   /**
    * T1 (PolicyEngine microsimulation). Counts and buckets only: no scenario
    * code, no lever ids, and never the household or region a reader picks in

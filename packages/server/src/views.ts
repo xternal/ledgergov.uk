@@ -21,8 +21,11 @@ export const VIEWS_CACHE_SECONDS = 600;
 /**
  * The site's reading pages; anything else (the API, admin, forms with tokens, files, scanners' guesses) is not counted.
  * /follow counts as the page that explains following; its confirm and manage pages are steps in a flow, not reads.
+ * /pay-for-it counts; a reader's own plan (/pay-for-it/<pledge>/<plan>) does not, like /s/<code>.
+ * /receipt counts, and only its four fixed example receipts below it: any other address there could carry a number a
+ * reader typed, such as their salary, and must never reach the public totals.
  */
-const PAGES = /^\/(?:(?:promises|promise|actor|people|mp|budget|tax|method)(?:\/[a-z0-9-]+){0,2}|editors|privacy|feeds|follow)?$/;
+const PAGES = /^\/(?:(?:promises|promise|actor|people|mp|budget|tax|method)(?:\/[a-z0-9-]+){0,2}|editors|privacy|feeds|follow|pay-for-it|borrowing|receipt(?:\/(?:25k|35k|50k|100k))?)?$/;
 /** A reader's own link to their predictions: never counted, so its code is never published. */
 const READER_LINK = /^\/budget\/predict\/r(?:\/|$)/;
 const LONGEST_PATH = 120;
