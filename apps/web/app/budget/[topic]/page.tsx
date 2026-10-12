@@ -5,6 +5,7 @@ import { getSeed } from "@/lib/data";
 import { BUDGET, BUDGET_TOPICS, budgetDay, topicCards } from "@/lib/budget";
 import { todayIso } from "@/lib/promises";
 import { SiteHeader } from "@/components/SiteHeader";
+import { BudgetNav } from "@/components/BudgetNav";
 import { PromiseList } from "@/components/PromiseList";
 import { JsonLd } from "@/components/JsonLd";
 import { OPEN_GRAPH, seoContext } from "@/lib/site";
@@ -71,6 +72,7 @@ export default async function BudgetTopicPage({ params }: Props) {
       <SiteHeader current="/promises" />
       <main className="mx-auto grid max-w-[1000px] gap-10 px-4 pb-20 pt-10 sm:px-6">
         <header className="grid max-w-[68ch] gap-4">
+          <BudgetNav current="/budget" />
           <a href="/budget" className="justify-self-start text-label font-medium">
             {BUDGET.name}
           </a>

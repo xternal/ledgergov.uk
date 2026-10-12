@@ -352,6 +352,11 @@ If our deciles are not reviewed by two editors by **07:00 GMT on Thursday 29 Oct
 
 If even the measures cannot be reviewed by 07:00, there is no household page that morning: the scorecard, `/budget` and the cards carry it, and the page follows when two editors have checked it.
 
+## The leak tracker and the headroom
+
+- **[/budget/leaks](https://ledgergov.uk/budget/leaks)** fills from Monday 19 October ([EDITORS.md, "How to add a leak"](EDITORS.md#how-to-add-a-leak)). On the evening of the Budget, in the same pull request as the cards or its own, every entry gets what the Budget did: `announced` or `not_in_budget`, a `budget:` block with the page of the Budget documents that shows it, and the official cost if the Treasury's table gives one. Two editors approve, as always. Until then the page says plainly which entries are only trailed.
+- **[/budget/how-it-works](https://ledgergov.uk/budget/how-it-works)** shows the OBR's headroom against each fiscal rule from the "Performance against the Government's fiscal targets" table of each EFO that assessed them. Nothing to type: the nightly data run finds the new EFO, reads that table from its last chapter workbook and opens the data pull request; once merged, the page and its share image show the new assessment beside the old ones. If the OBR publishes on GOV.UK only, or the table moves, the build warns ("newer than the newest recorded assessment") and the page says the assessment is being added: run `pnpm etl` from a normal connection ([OPERATIONS.md, "11. OBR data by hand"](OPERATIONS.md#11-obr-data-by-hand)). Use the same table for the fiscal rules card above.
+
 ## Rules that matter most on the day
 
 - **Only documents move cards.** The speech, briefings and press coverage are leads; the Budget documents, the OBR and legislation are evidence.

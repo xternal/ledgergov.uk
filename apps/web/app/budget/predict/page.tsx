@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { predictOpen } from "@ledger/schema";
 import { PREDICTION_RETENTION_MONTHS } from "@ledger/server/predict";
 import { SiteHeader } from "@/components/SiteHeader";
+import { BudgetNav } from "@/components/BudgetNav";
 import { JsonLd } from "@/components/JsonLd";
 import { PredictForm } from "@/components/PredictForm";
 import { currentRound } from "@/lib/predict";
@@ -89,6 +90,7 @@ export default function PredictPage() {
       <SiteHeader current="/promises" />
       <main className="mx-auto grid max-w-[760px] grid-cols-[minmax(0,1fr)] gap-10 px-4 pb-20 pt-10 sm:px-6">
         <header className="grid gap-4">
+          <BudgetNav current={PREDICT_PATH} />
           <a href="/budget" className="justify-self-start text-label font-medium">
             {round.budget}
           </a>

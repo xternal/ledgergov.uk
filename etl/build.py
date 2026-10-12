@@ -12,6 +12,7 @@ Outputs (all committed, so every data change is a reviewable diff):
     data/build/levers.json, tax.json                 sandbox coefficients and Your share rates
     data/build/people.json                           population and long-term spending projections (/people)
     data/build/borrowing.json                        borrowing so far this year against the OBR's monthly path (/borrowing)
+    data/build/fiscal_targets.json                   the OBR's headroom against the fiscal rules (/budget/how-it-works)
     data/build/manifest.json                         sources, files, hashes, vintages, freshness, checks
     data/build/history/{runs,artifacts,checks}.csv   append-only pipeline log for the warehouse
 
@@ -46,7 +47,7 @@ OBS_FIELDS = ["series_id", "period", "geography", "value", "unit", "kind", "sour
 # (etl/wayback.py); when that fails too, a person refreshes them from a normal connection.
 _BY_HAND = ("OBR refuses GitHub's servers, so if the Internet Archive cannot supply the new edition either, run "
             "`pnpm etl` on your own machine and open the data pull request from there (docs/OPERATIONS.md, \"11. OBR data by hand\")")
-MANUAL_REFRESH = {"obr_databank": _BY_HAND, "obr_efo": _BY_HAND, "obr_monthly_profiles": _BY_HAND}
+MANUAL_REFRESH = {"obr_databank": _BY_HAND, "obr_efo": _BY_HAND, "obr_fiscal_targets": _BY_HAND, "obr_monthly_profiles": _BY_HAND}
 
 
 @dataclass
@@ -299,6 +300,9 @@ def main(argv: list[str] | None = None) -> int:
 
     # Every edition, not the Store's newest-per-period: the tracker keeps to one ONS release and one OBR profile.
     outputs["borrowing"] = assemble_borrowing(by_source, run, outputs.get("sources", []))
+    from etl.fiscal_targets import assemble_fiscal_targets
+
+    outputs["fiscal_targets"] = assemble_fiscal_targets(by_source, store, run, outputs.get("sources", []))
     from etl.checks import run_checks
 
     run_checks(store, run, outputs)

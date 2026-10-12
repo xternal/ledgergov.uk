@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-12T21:09:00Z",
+  "built_at": "2026-10-12T21:54:26Z",
   "base_year": "2025-26",
   "years": [
     {
@@ -4901,6 +4901,14 @@
       "url": "https://obr.uk/efo/economic-and-fiscal-outlook-march-2026/",
       "licence": "OGL v3",
       "published_on": "2026-03-03"
+    },
+    {
+      "id": "obr_fiscal_targets",
+      "title": "OBR Economic and fiscal outlook – November 2025: performance against the fiscal targets",
+      "publisher": "Office for Budget Responsibility",
+      "url": "https://obr.uk/efo/economic-and-fiscal-outlook-november-2025/",
+      "licence": "OGL v3",
+      "published_on": "2025-11-26"
     },
     {
       "id": "obr_frs",

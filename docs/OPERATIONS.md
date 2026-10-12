@@ -215,7 +215,7 @@ hide a new edition.
 
 The archive is not always available. When it can't supply a fresh copy, the
 run keeps the committed OBR data and says so: a `fetch` warning on
-`obr_databank`, `obr_efo` or `obr_monthly_profiles` ending "run `pnpm etl` on your own machine…", and,
+`obr_databank`, `obr_efo`, `obr_fiscal_targets` or `obr_monthly_profiles` ending "run `pnpm etl` on your own machine…", and,
 once the edition is overdue, a staleness warning and then an error. Then
 refresh OBR from your own connection after each OBR release: the EFO arrives
 with each Budget and Spring Statement (next: the Budget, expected November

@@ -12,7 +12,9 @@
     "./budget": "./src/budget-data.ts",
     "./predict": "./src/predict-data.ts",
     "./household": "./src/household-data.ts",
-    "./borrowing": "./src/borrowing-data.ts"
+    "./borrowing": "./src/borrowing-data.ts",
+    "./fiscal-targets": "./src/fiscal-targets-data.ts",
+    "./leaks": "./src/leaks-data.ts"
   },
   "scripts": {
     "test": "vitest run",

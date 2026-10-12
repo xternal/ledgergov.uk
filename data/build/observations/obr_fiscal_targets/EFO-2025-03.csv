@@ -1,0 +1,11 @@
+series_id,period,geography,value,unit,kind,source_id,vintage,quality,method_note
+fiscal_targets.current_budget.margin,2029-30,UK,9.931623,gbp_bn,forecast,obr_fiscal_targets,EFO-2025-03,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'March 2025 forecast'."
+fiscal_targets.current_budget.margin_pct_gdp,2029-30,UK,0.286709,pct_gdp,forecast,obr_fiscal_targets,EFO-2025-03,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'March 2025 forecast'."
+fiscal_targets.current_budget.margin_pre_measures,2029-30,UK,-4.062012,gbp_bn,forecast,obr_fiscal_targets,EFO-2025-03,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'March 2025 pre-measures forecast'."
+fiscal_targets.current_budget.probability,2029-30,UK,54.0,pct,forecast,obr_fiscal_targets,EFO-2025-03,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'March 2025 forecast'."
+fiscal_targets.psnfl.margin,2029-30,UK,15.103677,gbp_bn,forecast,obr_fiscal_targets,EFO-2025-03,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'March 2025 forecast'."
+fiscal_targets.psnfl.margin_pct_gdp,2029-30,UK,0.428058,pct_gdp,forecast,obr_fiscal_targets,EFO-2025-03,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'March 2025 forecast'."
+fiscal_targets.psnfl.margin_pre_measures,2029-30,UK,4.90857,gbp_bn,forecast,obr_fiscal_targets,EFO-2025-03,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'March 2025 pre-measures forecast'."
+fiscal_targets.psnfl.probability,2029-30,UK,51.0,pct,forecast,obr_fiscal_targets,EFO-2025-03,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'March 2025 forecast'."
+fiscal_targets.welfare_cap.margin,2029-30,UK,13.521744,gbp_bn,forecast,obr_fiscal_targets,EFO-2025-03,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'March 2025 forecast'."
+fiscal_targets.welfare_cap.spending,2029-30,UK,190.695232,gbp_bn,forecast,obr_fiscal_targets,EFO-2025-03,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'March 2025 forecast'."

@@ -236,6 +236,50 @@ interface BudgetScorecard {
 }
 ```
 
+## Fiscal targets: the headroom
+
+```ts
+// data/build/fiscal_targets.json, written by etl/fiscal_targets.py from committed observations and shown at
+// /budget/how-it-works. Source module: etl/sources/obr_fiscal_targets.py (each assessing EFO's own table,
+// one file per edition in data/build/observations/obr_fiscal_targets/). Schema: packages/schema/src/fiscal-targets.ts.
+// Series: fiscal_targets.<rule>.<measure>, rule = current_budget (stability rule) | psnfl (investment rule) | welfare_cap;
+// measure = margin (gbp_bn) | margin_pct_gdp | probability (pct) | margin_pre_measures (gbp_bn) | spending (welfare cap, gbp_bn).
+interface FiscalTargetsBundle {
+  assessments: {                      // oldest first, one per EFO that assessed the rules
+    vintage: string; edition: string; url: string;     // "EFO-2025-11", "November 2025", the OBR's edition page
+    table: string; table_title: string;                // "Table 7.1", "Performance against the Government's fiscal targets"
+    observations: Observation[];                       // as published; method_note names the table and row
+  }[];
+  latest_forecast: {                  // the newest EFO when it is newer than the newest assessment, else null
+    vintage: string; edition: string; url: string;
+    status: "not_assessed" | "pending"; // not_assessed only when listed in obr_fiscal_targets.NOT_ASSESSED by a person
+    observations: Observation[];        // obr_efo fiscal.current_budget_deficit (target year), fiscal.psnfl_pct_gdp (year before and target year)
+  } | null;
+  sources: Source[];
+}
+```
+
+## Pre-Budget leaks
+
+```ts
+// content/leaks/<id>.yaml, one per measure briefed to the press before a Budget, shown at /budget/leaks.
+// Schema and checks: packages/schema/src/leaks.ts; how editors add one: docs/EDITORS.md "How to add a leak".
+interface LeakFile {
+  id: string; headline: string;       // neutral, 3–10 words
+  area: PolicyArea; summary: string;  // what was reported, in our words
+  reported: { outlet: string; date: string; url: string; archived_url?: string; title?: string }[];  // earliest first
+  estimated_cost?: LeakCost;          // only when a source gives one
+  status: "trailed" | "confirmed" | "announced" | "not_in_budget";
+  confirmed?: { date: string; by: string; url: string; text?: string };          // required for confirmed
+  budget?: { date: string; text: string; evidence_url: string /* gov.uk, obr.uk, parliament.uk */; cost?: LeakCost };  // announced, not_in_budget
+}
+interface LeakCost {
+  range: Range;                       // £bn; + costs, − raises; one published figure is [x, x, x]
+  basis: "per_year" | "total"; period: string;
+  by: { kind: "official" | "independent" | "press"; name: string }; source_url: string; note?: string;
+}
+```
+
 ## Follow, contribute, accounts
 
 ```ts

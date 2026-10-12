@@ -1,7 +1,7 @@
 import { backtestSummary, PolicyArea } from "@ledger/schema";
 import { areaPath, cardHeadline } from "@ledger/server/seo";
 import { constituencies, RECENT_VOTES } from "@ledger/server/mp";
-import { getBorrowing, getForecasts, getHouseholdSnapshots, getPeople, getScorecards, getSeed } from "@/lib/data";
+import { getBorrowing, getFiscalTargets, getForecasts, getHouseholdSnapshots, getLeaks, getPeople, getScorecards, getSeed } from "@/lib/data";
 import { borrowingSentence } from "@/lib/borrowing-copy";
 import { endpoints } from "@/lib/api";
 import { backtestLead } from "@/lib/method-copy";
@@ -20,8 +20,27 @@ import { scorecardCopy, scorecardPath } from "@/lib/scorecard";
 import { currentRound } from "@/lib/predict";
 import { PREDICT_PATH, predictDescription, predictTitle } from "@/lib/predict-copy";
 import { householdCopy, householdPath } from "@/lib/household";
+import { HOW_IT_WORKS_PATH, RULES, headroomView, latestPoint } from "@/lib/headroom";
+import { LEAKS_PATH, LEAK_STATUS, leakCounts } from "@/lib/leaks";
 
 export const dynamic = "force-static";
+
+/** /budget/how-it-works in one line: the rules and the OBR's latest headroom, from its own table. */
+function budgetHeadroomLine() {
+  const v = headroomView(getFiscalTargets());
+  const s = latestPoint(v, "current_budget")!;
+  const i = latestPoint(v, "psnfl")!;
+  const since = v.since?.status === "not_assessed" ? ` The OBR's ${v.since.edition} forecast made no assessment (since February 2026 the rules are assessed once a year, at the Budget).` : "";
+  return `- [How a Budget works, and the Chancellor's headroom](${absolute(HOW_IT_WORKS_PATH)}): what a Budget is, the fiscal rules in the government's own words (the ${RULES.current_budget.name.toLowerCase()}, the ${RULES.psnfl.name.toLowerCase()} and the ${RULES.welfare_cap.name.toLowerCase()}, from the Charter for Budget Responsibility), and the OBR's headroom against each at every forecast that assessed them. Latest: ${v.latest.edition}, ${v.latest.table}: ${gbpBn(s.margin.value)} against the ${RULES.current_budget.name.toLowerCase()} and ${gbpBn(i.margin.value)} against the ${RULES.psnfl.name.toLowerCase()} in ${s.margin.period}.${since}`;
+}
+
+/** /budget/leaks in one line. */
+function budgetLeaksLine() {
+  const leaks = getLeaks();
+  const c = leakCounts(leaks);
+  const now = leaks.length ? ` ${leaks.length} so far: ${c.trailed} ${LEAK_STATUS.trailed.label.toLowerCase()}, ${c.confirmed} confirmed, ${c.announced} ${LEAK_STATUS.announced.label.toLowerCase()}.` : " Empty until editors start adding reports.";
+  return `- [Trailed before the Budget](${absolute(LEAKS_PATH)}): every measure briefed to the press before the ${BUDGET.name}, with the outlet, the date, a link to the original report, an estimated cost only where a source gives one, and from Budget day what the Budget did. Each says whether it is only trailed (reported, not confirmed), confirmed on the record, or in the Budget documents.${now}`;
+}
 
 /** A plain-text summary for AI assistants (llmstxt.org), built from the same data as the site. */
 export function GET() {
@@ -71,6 +90,8 @@ export function GET() {
           ? `- [${householdCopy(h).title}](${absolute(householdPath(h))}): ${householdCopy(h).description} Income tenths rank households by income after tax and benefits, not adjusted for household size. Static estimate (nobody changes behaviour), shown with a ±10% range; computed once with PolicyEngine UK ${h.provider.model_version}${h.kind === "rehearsal" ? "; a rehearsal on last year's Budget" : ""}.`
           : `- [${householdCopy(h).title}](${absolute(householdPath(h))}): ${householdCopy(h).description} No model answers yet: the measures, the salary check and the Treasury's chart are complete; the estimate by income tenth and for example households will be computed once with PolicyEngine UK${h.kind === "rehearsal" ? "; a rehearsal on last year's Budget" : ""}.`,
     ),
+    budgetHeadroomLine(),
+    budgetLeaksLine(),
     `- [Coming up](${absolute("/promises#coming-up")}): open promises due in the next 12 months, nearest deadline first. Readers can follow a deadline window (this month, next 3 months, next 12 months) by email, Telegram or feed.`,
     `- [Privacy notice](${absolute("/privacy")}): ${PRIVACY_SUMMARY}`,
     `- [Become an editor](${absolute("/editors")}): volunteer editors check promise cards against their sources; two must approve every card. About two hours a week, remote, no coding; any party or none, declared.`,

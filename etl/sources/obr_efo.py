@@ -20,7 +20,9 @@ Workbooks used (found on the edition page by link pattern):
         Table A.3  Determinants of the fiscal forecast  -> nominal GDP (fiscal year, and centred end-March)
         Table A.5  Current receipts                     -> receipts.total, the 13 Statement lines, receipts.detail.*
         Table A.7  Total managed expenditure            -> spending.tme, spending.debt_interest
-        Table A.9  Fiscal aggregates                    -> fiscal.psnb, fiscal.psnd, fiscal.psnd_pct_gdp
+        Table A.9  Fiscal aggregates                    -> fiscal.psnb, fiscal.psnd, fiscal.psnd_pct_gdp, and the
+                                                           measures of the fiscal rules: fiscal.current_budget_deficit,
+                                                           fiscal.psnfl_pct_gdp (/budget/how-it-works)
   * "Detailed forecast tables: debt interest ready reckoner"
         Table 5.1  Debt interest (net of APF) ready reckoner -> reckoner.debt_interest.*
 
@@ -526,6 +528,12 @@ def _aggregates(t: Table) -> list[Observation]:
                    note="End-March position.")
     out += _series(t, t.find("Public sector net debt", section="per cent of gdp"), "fiscal.psnd_pct_gdp", unit="pct_gdp",
                    note="End-March position over nominal GDP centred on end-March (A.9 footnote).")
+    # The measures the fiscal rules use (A.9 "Fiscal mandate and supplementary target"), so a forecast
+    # that does not assess the rules can still be shown against them, as the OBR's own figures.
+    out += _series(t, t.find("Current budget deficit", section="£ billion"), "fiscal.current_budget_deficit",
+                   note="Current spending plus depreciation minus current receipts; a negative value is a surplus.")
+    out += _series(t, t.find("Public sector net financial liabilities", section="per cent of gdp"), "fiscal.psnfl_pct_gdp",
+                   unit="pct_gdp", note="End-March position over nominal GDP centred on end-March (A.9 footnote).")
     return out
 
 
