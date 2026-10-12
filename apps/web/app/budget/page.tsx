@@ -239,7 +239,7 @@ export default function BudgetPage() {
             the evidence, and the card appears under &ldquo;What the Budget did&rdquo;. A promise moves only on evidence, never on an announcement alone.
           </p>
           <p className="m-0 text-muted">
-            See <a href="/method">how the numbers are made</a> and <a href="/promises">every promise</a>.
+            See <a href="/method">how the numbers are made</a>, <a href="/promises">every promise</a> and <a href="/tax">what a change to each tax raises</a>.
           </p>
         </section>
       </main>
