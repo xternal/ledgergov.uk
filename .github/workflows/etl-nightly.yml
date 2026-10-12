@@ -4,6 +4,9 @@ on:
   schedule:
     # 04:30 UTC every day (05:30 BST, 04:30 GMT in winter)
     - cron: "30 4 * * *"
+    # And 07:30 UTC (08:30 BST, 07:30 GMT): ONS and OBR publish at 07:00 UK time, so a release reaches its data
+    # pull request the same morning. A second run the same day updates that day's branch and pull request.
+    - cron: "30 7 * * *"
   workflow_dispatch:
 
 permissions:
@@ -49,7 +52,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           # The run log and manifest change every night; only a change in the data itself opens a PR.
-          if [ -z "$(git status --porcelain -- data/build/observations data/build/statements data/build/app.json data/build/levers.json data/build/tax.json data/build/people.json data/build/contracts data/build/forecasts data/build/backtest.json content/promises)" ]; then
+          if [ -z "$(git status --porcelain -- data/build/observations data/build/statements data/build/app.json data/build/levers.json data/build/tax.json data/build/people.json data/build/contracts data/build/forecasts data/build/backtest.json data/build/borrowing.json content/promises)" ]; then
             echo "No data changes."
             exit 0
           fi
