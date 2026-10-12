@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-09T13:58:27Z",
+  "built_at": "2026-10-12T21:09:00Z",
   "base_year": "2025-26",
   "years": [
     {
@@ -4909,6 +4909,14 @@
       "url": "https://obr.uk/frs/fiscal-risks-and-sustainability-july-2026/",
       "licence": "OGL v3",
       "published_on": "2026-07-07"
+    },
+    {
+      "id": "obr_monthly_profiles",
+      "title": "OBR March 2026 Economic and fiscal outlook monthly profiles",
+      "publisher": "Office for Budget Responsibility",
+      "url": "https://obr.uk/download/march-2026-economic-and-fiscal-outlook-monthly-profiles/",
+      "licence": "OGL v3",
+      "published_on": "2026-04-23"
     },
     {
       "id": "ons_households",

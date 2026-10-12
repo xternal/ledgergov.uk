@@ -11,6 +11,7 @@ Outputs (all committed, so every data change is a reviewable diff):
     data/build/statements/<year>.json + index.json   what the Statement shows for each year
     data/build/levers.json, tax.json                 sandbox coefficients and Your share rates
     data/build/people.json                           population and long-term spending projections (/people)
+    data/build/borrowing.json                        borrowing so far this year against the OBR's monthly path (/borrowing)
     data/build/manifest.json                         sources, files, hashes, vintages, freshness, checks
     data/build/history/{runs,artifacts,checks}.csv   append-only pipeline log for the warehouse
 
@@ -45,7 +46,7 @@ OBS_FIELDS = ["series_id", "period", "geography", "value", "unit", "kind", "sour
 # (etl/wayback.py); when that fails too, a person refreshes them from a normal connection.
 _BY_HAND = ("OBR refuses GitHub's servers, so if the Internet Archive cannot supply the new edition either, run "
             "`pnpm etl` on your own machine and open the data pull request from there (docs/OPERATIONS.md, \"11. OBR data by hand\")")
-MANUAL_REFRESH = {"obr_databank": _BY_HAND, "obr_efo": _BY_HAND}
+MANUAL_REFRESH = {"obr_databank": _BY_HAND, "obr_efo": _BY_HAND, "obr_monthly_profiles": _BY_HAND}
 
 
 @dataclass
@@ -166,11 +167,11 @@ def manifest_sources() -> dict[str, dict]:
 
 # What a module learns about its edition while fetching. The rest (cadence, grace, licence) stays as the
 # module declares it, so a change there applies to the next offline rebuild too, not after the next online one.
-FETCHED_FIELDS = ("title", "url", "published_on")
+FETCHED_FIELDS = ("title", "url", "published_on", "release")
 
 
 def recorded_source(src: Source, recorded: dict[str, dict]) -> Source:
-    """The source with the edition title, URL and publication date the last online build recorded, else as declared."""
+    """The source with the edition title, URL, publication date and release the last online build recorded, else as declared."""
     if src.id not in recorded:
         return src
     return Source(**{**src.model_dump(), **{k: recorded[src.id][k] for k in FETCHED_FIELDS if k in recorded[src.id]}})
@@ -294,6 +295,10 @@ def main(argv: list[str] | None = None) -> int:
     from etl.people import assemble_people
 
     outputs["people"] = assemble_people(store, run, outputs.get("sources", []))
+    from etl.borrowing import assemble_borrowing
+
+    # Every edition, not the Store's newest-per-period: the tracker keeps to one ONS release and one OBR profile.
+    outputs["borrowing"] = assemble_borrowing(by_source, run, outputs.get("sources", []))
     from etl.checks import run_checks
 
     run_checks(store, run, outputs)

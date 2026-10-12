@@ -1,10 +1,11 @@
 import "server-only";
 import { loadSeed } from "@ledger/schema/seed";
 import { loadPeople } from "@ledger/schema/people";
+import { loadBorrowing } from "@ledger/schema/borrowing";
 import { loadForecasts, readBuildText, type ForecastData } from "@ledger/schema/forecasts";
 import { loadScorecards } from "@ledger/schema/budget";
 import { loadHouseholdSnapshots } from "@ledger/schema/household";
-import type { BudgetScorecard, HouseholdSnapshot, PeopleBundle, Seed } from "@ledger/schema";
+import type { BorrowingBundle, BudgetScorecard, HouseholdSnapshot, PeopleBundle, Seed } from "@ledger/schema";
 import { buildRuns, vintageChangelog, type BuildRun, type Manifest, type VintageEntry } from "@ledger/server/api";
 
 /**
@@ -24,6 +25,14 @@ let people: PeopleBundle | null = null;
 export function getPeople(): PeopleBundle {
   people ??= loadPeople();
   return people;
+}
+
+let borrowing: BorrowingBundle | null = null;
+
+/** /borrowing: borrowing so far this year against the OBR's monthly path (data/build/borrowing.json), validated on first use. */
+export function getBorrowing(): BorrowingBundle {
+  borrowing ??= loadBorrowing();
+  return borrowing;
 }
 
 let forecasts: ForecastData | null = null;

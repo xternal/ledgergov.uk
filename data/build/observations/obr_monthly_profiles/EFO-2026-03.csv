@@ -1,0 +1,14 @@
+series_id,period,geography,value,unit,kind,source_id,vintage,quality,method_note
+fiscal.psnb,2026-27,UK,115.461424,gbp_bn,forecast,obr_monthly_profiles,EFO-2026-03,sourced,The 2026-27 total of the OBR's monthly profiles: its March 2026 forecast for the year.
+psf.psnb_ex,2026-04,UK,20.941063,gbp_bn,forecast,obr_monthly_profiles,EFO-2026-03,sourced,OBR monthly profile consistent with its March 2026 forecast for 2026-27; the OBR calls the profiles broad-brush and illustrative.
+psf.psnb_ex,2026-05,UK,17.665262,gbp_bn,forecast,obr_monthly_profiles,EFO-2026-03,sourced,OBR monthly profile consistent with its March 2026 forecast for 2026-27; the OBR calls the profiles broad-brush and illustrative.
+psf.psnb_ex,2026-06,UK,16.268327,gbp_bn,forecast,obr_monthly_profiles,EFO-2026-03,sourced,OBR monthly profile consistent with its March 2026 forecast for 2026-27; the OBR calls the profiles broad-brush and illustrative.
+psf.psnb_ex,2026-07,UK,-0.495971,gbp_bn,forecast,obr_monthly_profiles,EFO-2026-03,sourced,OBR monthly profile consistent with its March 2026 forecast for 2026-27; the OBR calls the profiles broad-brush and illustrative.
+psf.psnb_ex,2026-08,UK,14.778198,gbp_bn,forecast,obr_monthly_profiles,EFO-2026-03,sourced,OBR monthly profile consistent with its March 2026 forecast for 2026-27; the OBR calls the profiles broad-brush and illustrative.
+psf.psnb_ex,2026-09,UK,22.646513,gbp_bn,forecast,obr_monthly_profiles,EFO-2026-03,sourced,OBR monthly profile consistent with its March 2026 forecast for 2026-27; the OBR calls the profiles broad-brush and illustrative.
+psf.psnb_ex,2026-10,UK,16.244033,gbp_bn,forecast,obr_monthly_profiles,EFO-2026-03,sourced,OBR monthly profile consistent with its March 2026 forecast for 2026-27; the OBR calls the profiles broad-brush and illustrative.
+psf.psnb_ex,2026-11,UK,13.313704,gbp_bn,forecast,obr_monthly_profiles,EFO-2026-03,sourced,OBR monthly profile consistent with its March 2026 forecast for 2026-27; the OBR calls the profiles broad-brush and illustrative.
+psf.psnb_ex,2026-12,UK,9.803596,gbp_bn,forecast,obr_monthly_profiles,EFO-2026-03,sourced,OBR monthly profile consistent with its March 2026 forecast for 2026-27; the OBR calls the profiles broad-brush and illustrative.
+psf.psnb_ex,2027-01,UK,-34.251968,gbp_bn,forecast,obr_monthly_profiles,EFO-2026-03,sourced,OBR monthly profile consistent with its March 2026 forecast for 2026-27; the OBR calls the profiles broad-brush and illustrative.
+psf.psnb_ex,2027-02,UK,4.854852,gbp_bn,forecast,obr_monthly_profiles,EFO-2026-03,sourced,OBR monthly profile consistent with its March 2026 forecast for 2026-27; the OBR calls the profiles broad-brush and illustrative.
+psf.psnb_ex,2027-03,UK,13.693815,gbp_bn,forecast,obr_monthly_profiles,EFO-2026-03,sourced,OBR monthly profile consistent with its March 2026 forecast for 2026-27; the OBR calls the profiles broad-brush and illustrative.

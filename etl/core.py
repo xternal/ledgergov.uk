@@ -98,6 +98,21 @@ SERIES = {
 }
 
 
+class Release(BaseModel):
+    """
+    One statistical release as the publisher's release calendar states it (ONS): its own page,
+    the moment it was published, and when the next one is due. Pages link a number to the
+    release it came from with this; sources without a release calendar leave it unset.
+    """
+
+    title: str  # "Public sector finances, UK: August 2026"
+    url: str  # the release's bulletin
+    calendar_url: str  # its release calendar entry, which states the time
+    released_at: datetime | None = None  # 2026-09-22T06:00:00Z (07:00 UK time); None when the calendar did not answer
+    next_on: date | None = None  # the next release, as announced in this one
+    next_at: datetime | None = None  # and its time, from the next release's calendar entry
+
+
 class Source(BaseModel):
     id: str
     title: str
@@ -108,6 +123,7 @@ class Source(BaseModel):
     # How often a new edition is expected, and how late it may be before CI fails.
     cadence_days: int
     grace_days: int = 14
+    release: Release | None = None
 
 
 class Observation(BaseModel):

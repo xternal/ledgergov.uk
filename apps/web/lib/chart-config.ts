@@ -30,6 +30,18 @@ export const FAN = {
   dotRadius: 3.5,
 } as const;
 
+/** /borrowing: running totals through the year, April to March. */
+export const BORROWING_CHART = {
+  width: 640,
+  height: 300,
+  margin: { left: 88, right: 92, top: 26, bottom: 32 },
+  yTicks: 5,
+  dotRadius: 3,
+  lastDotRadius: 5,
+  /** End labels closer than this (px) are pushed apart. */
+  labelGap: 20,
+} as const;
+
 /** Below this many pixels the Sankey becomes two ranked bar lists (DESIGN_HANDOFF). */
 export const MOBILE_BREAKPOINT_PX = 720;
 

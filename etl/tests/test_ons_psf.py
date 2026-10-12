@@ -1,9 +1,18 @@
-"""ONS Public sector finances: parse the real PUSF CSV (downloaded once, cached 20 h)."""
+"""
+ONS Public sector finances: parse the real PUSF CSV (downloaded once, cached 20 h), and, offline, the
+release of 22 September 2026 end to end from recorded files (fixtures/ons_psf).
+"""
 
+import json
 from collections import defaultdict
+from datetime import date, datetime, timezone
+from pathlib import Path
 
 import pytest
 
+import httpx
+
+from etl import build, core
 from etl.core import Observation
 from etl.sources import ons_psf
 
@@ -117,3 +126,111 @@ def test_title_check_rejects_redefined_cdid(tmp_path):
     ]
     with pytest.raises(ValueError):
         ons_psf.read_series(rows)
+
+
+# ------------------------------------------------------------------ offline: the release of 22 September 2026
+
+FIX = Path(__file__).parent / "fixtures" / "ons_psf"
+CALENDAR_AUG = "https://www.ons.gov.uk/releases/publicsectorfinancesukaugust2026/data"
+CALENDAR_SEP = "https://www.ons.gov.uk/releases/publicsectorfinancesukseptember2026/data"
+# Recorded on 2026-10-12 from ons.gov.uk: the release calendar entries as served, and the PUSF CSV of the
+# 22 September 2026 release (sha256 541a0c2d…) cut to the seven CDIDs ons_psf reads, every row kept.
+ROUTES = {
+    ons_psf.CSV_URL: ("pusf_2026_09.csv", "text/csv;charset=utf-8"),
+    CALENDAR_AUG: ("release_august2026.json", "application/json"),
+    CALENDAR_SEP: ("release_september2026.json", "application/json"),
+}
+
+
+class Ons:
+    """ons.gov.uk answering from the recorded files; `down` lists addresses that answer 503."""
+
+    def __init__(self):
+        self.requests: list[str] = []
+        self.down: set[str] = set()
+
+    def handle(self, request: httpx.Request) -> httpx.Response:
+        url = str(request.url)
+        self.requests.append(url)
+        if url in self.down:
+            return httpx.Response(503, text="Service unavailable")
+        if url not in ROUTES:
+            return httpx.Response(404, text="Not found")
+        name, kind = ROUTES[url]
+        return httpx.Response(200, content=(FIX / name).read_bytes(), headers={"content-type": kind})
+
+
+@pytest.fixture
+def ons(monkeypatch, tmp_path):
+    site = Ons()
+    monkeypatch.setattr(core, "client", lambda: httpx.Client(transport=httpx.MockTransport(site.handle), follow_redirects=True))
+    monkeypatch.setattr(core, "RAW_DIR", tmp_path)
+    # parse() describes the edition it read on SOURCE; put it back afterwards.
+    for attr in ("published_on", "release"):
+        monkeypatch.setattr(ons_psf.SOURCE, attr, getattr(ons_psf.SOURCE, attr))
+    return site
+
+
+def _key(o: Observation) -> tuple:
+    return (o.series_id, o.period, o.geography, round(o.value, 6), o.unit, o.kind, o.vintage, o.quality, o.method_note or None)
+
+
+def test_september_2026_release_end_to_end(ons):
+    raws = ons_psf.fetch()
+    assert [r.path.name for r in raws] == ["pusf.csv", ons_psf.RELEASE_NAME, ons_psf.NEXT_RELEASE_NAME]
+    assert {r.vintage for r in raws} == {"PSF-2026-09"}
+    assert ons.requests == [ons_psf.CSV_URL, CALENDAR_AUG, CALENDAR_SEP]
+    obs = ons_psf.parse(raws)
+    # The same observations as the committed edition, which was parsed from the full file.
+    assert {_key(o) for o in obs} == {_key(o) for o in build.read_committed("ons_psf") if o.vintage == "PSF-2026-09"}
+    assert ons_psf.SOURCE.published_on == date(2026, 9, 22)
+
+    psnb = {o.period: o.value for o in obs if o.series_id == "psf.psnb_ex"}
+    assert [psnb[f"2026-{m:02d}"] for m in range(4, 9)] == pytest.approx([23.401, 19.873, 13.719, 2.040, 18.268])
+    assert max(psnb) == "2026-08"
+    # The bulletin: "Borrowing in the financial year (FY) to August 2026 was £77.3 billion ... £2.2 billion less than in the same period last year".
+    so_far = sum(psnb[f"2026-{m:02d}"] for m in range(4, 9))
+    last_year = sum(psnb[f"2025-{m:02d}"] for m in range(4, 9))
+    assert round(so_far, 1) == 77.3 and round(last_year - so_far, 1) == 2.2
+    [fy] = [o for o in obs if o.series_id == "fiscal.psnb" and o.period == "2025-26"]
+    assert fy.value == pytest.approx(134.286)
+
+
+def test_release_is_read_from_the_calendar(ons):
+    ons_psf.parse(ons_psf.fetch())
+    r = ons_psf.SOURCE.release
+    assert r.title == "Public sector finances, UK: August 2026"
+    assert r.url == "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/august2026"
+    assert r.calendar_url == "https://www.ons.gov.uk/releases/publicsectorfinancesukaugust2026"
+    # 07:00 in London on both days (BST, UTC+1).
+    assert r.released_at == datetime(2026, 9, 22, 6, 0, tzinfo=timezone.utc)
+    assert r.next_on == date(2026, 10, 21)
+    assert r.next_at == datetime(2026, 10, 21, 6, 0, tzinfo=timezone.utc)
+
+
+def test_calendar_down_keeps_the_data(ons):
+    ons.down = {CALENDAR_AUG, CALENDAR_SEP}
+    raws = ons_psf.fetch()
+    assert [r.path.name for r in raws] == ["pusf.csv"]
+    obs = ons_psf.parse(raws)
+    assert any(o.series_id == "psf.psnb_ex" and o.period == "2026-08" for o in obs)
+    r = ons_psf.SOURCE.release
+    # Date and addresses from the file itself; no time without the calendar.
+    assert (r.title, r.released_at, r.next_on, r.next_at) == ("Public sector finances, UK: August 2026", None, date(2026, 10, 21), None)
+    assert r.url.endswith("/bulletins/publicsectorfinances/august2026")
+
+
+def test_calendar_for_another_release_is_not_used(ons, tmp_path):
+    entry = json.loads((FIX / "release_august2026.json").read_text())
+    entry["description"]["release_date"] = "2026-08-21T06:00:00.000Z"  # a different day from the CSV's release date
+    rows = ons_psf._read_rows(ons_psf.fetch()[0])
+    r = ons_psf.read_release(rows, entry, None)
+    assert r.released_at is None and r.next_at is None
+    entry["description"]["title"] = "Public sector finances, UK: July 2026"
+    assert ons_psf.read_release(rows, entry, None).released_at is None
+
+
+def test_month_after_december_is_january():
+    assert ons_psf._next_month("2026-12") == "2027-01"
+    assert ons_psf._next_month("2027-03") == "2027-04"
+    assert ons_psf._slug("2027-01") == "january2027"
