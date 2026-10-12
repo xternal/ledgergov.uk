@@ -24,20 +24,22 @@ jobs:
       - run: pnpm test
       # Promise history is append-only: compare every published card with main.
       - run: pnpm validate -- --base origin/main
-      # The OpenPromises engine's own check, report only while the move onto it is prepared
-      # (docs/OPERATIONS.md §15). Expected until then: editors' approvals on every card, quality labels on costs.
+      # The OpenPromises engine's check (docs/OPERATIONS.md §15), blocking since the switch on 12 October 2026:
+      # every card in format v1, two editors' approvals, a quality label on every cost, history against the base.
       # The editors list is private (OpenPromises decision 10): it comes from a secret, never the repository.
-      # Without the secret (forks, or before it is set) the check runs and reports that there is no list.
-      - name: OpenPromises check (report only)
-        continue-on-error: true
+      # A fork's pull request gets no secrets, so there the check runs as a report and an editor's branch runs it in full.
+      - name: OpenPromises check
         env:
           EDITORS_YAML: ${{ secrets.OPENPROMISES_EDITORS }}
         run: |
           if [ -n "$EDITORS_YAML" ]; then
             printf '%s\n' "$EDITORS_YAML" > "$RUNNER_TEMP/editors.yaml"
             export OPENPROMISES_EDITORS="$RUNNER_TEMP/editors.yaml"
+            pnpm exec openpromises validate
+          else
+            echo "::warning::No editors list here (a fork's pull request gets no secrets): the OpenPromises check runs as a report only."
+            pnpm exec openpromises validate || true
           fi
-          pnpm exec openpromises validate
       - run: pnpm typecheck
       - run: pnpm build
 

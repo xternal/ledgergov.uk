@@ -318,9 +318,9 @@ pnpm parity:check       # on the change: writes .parity/current, compares, exits
 * **Time:** about 10 seconds for each command on a laptop once Next.js has compiled the app here before; the first build in a fresh checkout takes longer.
 * **Things to know:** it runs `next build`, so it replaces `apps/web/.next`. Take the baseline from the commit the change starts from: a newer `data/build` (the nightly data job) shows up as differences. MP pages need Parliament's API to answer; if it doesn't, those three pages differ, so run the check again. `--no-build` reuses the existing build, which only matches when it was built by this script.
 
-## 15. The OpenPromises check (report only)
+## 15. The OpenPromises check
 
-Public Ledger is moving onto the open-source OpenPromises engine ([github.com/xternal/openpromises](https://github.com/xternal/openpromises), its `docs/MIGRATING.md`; plan in `docs/OPENPROMISES_MIGRATION.md`). Steps that change nothing readers see come first: the engine is a pinned dev dependency (`@openpromises/cli` and `@openpromises/core` 0.4.0), `openpromises.config.ts` at the repository root describes the site, and CI runs the engine's check after our own one, as a report that never blocks a merge (`continue-on-error`).
+Public Ledger's cards are in the format of the open-source OpenPromises engine ([github.com/xternal/openpromises](https://github.com/xternal/openpromises), its `docs/MIGRATING.md`) since 12 October 2026; the site reads them into its own shape (`packages/schema/src/v1.ts`), so nothing readers see changed. The engine is a pinned dev dependency (`@openpromises/cli` and `@openpromises/core` 0.4.0), `openpromises.config.ts` at the repository root describes the site, and CI runs the engine's check after our own one. Since the switch on 12 October 2026 it blocks a merge like any other check; on a fork's pull request, which gets no secrets and so no editors list, it runs as a report only.
 
 ```bash
 pnpm exec openpromises validate --no-base   # everything the engine would object to today
