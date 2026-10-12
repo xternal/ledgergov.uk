@@ -4,7 +4,7 @@
     "tax_year": "2027-28",
     "geography": "England, Wales and Northern Ireland",
     "quality": "training",
-    "method_note": "TODO(source): the post-Budget template (docs/BUDGET_DAY.md, 'The Budget for your household'). On Budget night copy it to data/seed/uk_tax_2027-28.json and set each figure the Budget changes for 2027-28 from the Budget document and HMRC's tax information and impact notes, with the page in the source; leave the rest at 2026-27's values, which the freeze to April 2031 carries over. Then set quality to 'sourced' and replace these sources with the pages used. When GOV.UK's rates pages show 2027-28, the nightly ETL takes over (data/build/tax.json).",
+    "method_note": "TODO(source): the post-Budget template (docs/BUDGET_DAY.md, 'The Budget for your household'). The Budget's rates are typed once, in content/budget/household/autumn-budget-2026.yaml (the household page's salary check reads only that file). If this seed is needed, copy it to data/seed/uk_tax_2027-28.json and give each figure the Budget changes for 2027-28 the value that file has for 2027-28 ('post', converted: a rate of 0.22 is 22, National Insurance thresholds a year), with the page in the source; leave the rest at 2026-27's values, which the freeze to April 2031 carries over. `pnpm validate` fails if a figure differs from the measures file or changes one the file does not. Then set quality to 'sourced' and replace these sources with the pages used. When GOV.UK's rates pages show 2027-28, the nightly ETL takes over (data/build/tax.json).",
     "sources": [
       {
         "title": "Budget 2026 document (Red Book), table of tax rates or the measure's paragraph",

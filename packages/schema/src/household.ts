@@ -312,8 +312,75 @@ export const HouseholdCalculator = z
   .strict();
 export type HouseholdCalculator = z.infer<typeof HouseholdCalculator>;
 
+/**
+ * The salary check's rates that a measures file can set: PolicyEngine's parameter, the salary check's field, and
+ * how the value converts (£ a week to £ a year, a fraction to %). The one map both the job (which builds the salary
+ * check from the measures file) and the checks (which compare them) read, so the Budget's rates are typed once.
+ */
+export const CALCULATOR_PARAMETERS: Readonly<Record<string, { field: keyof CalculatorRates; convert: (v: number) => number }>> = {
+  "gov.hmrc.income_tax.allowances.personal_allowance.amount": { field: "personal_allowance_gbp", convert: (v) => v },
+  "gov.hmrc.income_tax.allowances.personal_allowance.maximum_ANI": { field: "allowance_taper_threshold_gbp", convert: (v) => v },
+  "gov.hmrc.income_tax.allowances.personal_allowance.reduction_rate": { field: "allowance_taper_rate", convert: (v) => v },
+  "gov.hmrc.income_tax.rates.uk[1].threshold": { field: "basic_band_gbp", convert: (v) => v },
+  "gov.hmrc.income_tax.rates.uk[2].threshold": { field: "additional_threshold_gbp", convert: (v) => v },
+  "gov.hmrc.income_tax.rates.uk[0].rate": { field: "basic_rate_pct", convert: (v) => Number((v * 100).toFixed(4)) },
+  "gov.hmrc.income_tax.rates.uk[1].rate": { field: "higher_rate_pct", convert: (v) => Number((v * 100).toFixed(4)) },
+  "gov.hmrc.income_tax.rates.uk[2].rate": { field: "additional_rate_pct", convert: (v) => Number((v * 100).toFixed(4)) },
+  "gov.hmrc.national_insurance.class_1.thresholds.primary_threshold": { field: "ni_primary_threshold_gbp", convert: (v) => Math.round(v * 52) },
+  "gov.hmrc.national_insurance.class_1.thresholds.upper_earnings_limit": { field: "ni_upper_earnings_limit_gbp", convert: (v) => Math.round(v * 52) },
+  "gov.hmrc.national_insurance.class_1.rates.employee.main": { field: "ni_main_rate_pct", convert: (v) => Number((v * 100).toFixed(4)) },
+  "gov.hmrc.national_insurance.class_1.rates.employee.additional": { field: "ni_upper_rate_pct", convert: (v) => Number((v * 100).toFixed(4)) },
+};
+
+/** Every salary-check rate the measures file sets, as the salary check holds it: one entry per measure, parameter, year and side. */
+export function calculatorRatesInFile(file: Pick<HouseholdMeasuresFile, "years" | "measures">) {
+  const out: { measure: string; path: string; field: keyof CalculatorRates; year: string; side: "pre" | "post"; value: number }[] = [];
+  for (const m of file.measures)
+    for (const p of m.parameters ?? []) {
+      const target = CALCULATOR_PARAMETERS[p.path];
+      if (!target) continue;
+      for (const year of file.years)
+        for (const side of ["pre", "post"] as const) {
+          const v = p[side][year];
+          if (v !== undefined) out.push({ measure: m.id, path: p.path, field: target.field, year, side, value: target.convert(parameterNumber(v)) });
+        }
+    }
+  return out;
+}
+
+/**
+ * The salary check's rates must be the measures file's, for every rate and threshold both have: the file is the one
+ * place the Budget's rates are typed, so the salary check can never show a rate the estimate did not use.
+ */
+export function calculatorIssues(file: Pick<HouseholdMeasuresFile, "years" | "measures">, calc: Pick<HouseholdCalculator, "years">): string[] {
+  const issues: string[] = [];
+  for (const r of calculatorRatesInFile(file)) {
+    const y = calc.years.find((x) => x.year === r.year);
+    if (!y) continue; // "the salary check needs rates for every year" says it once
+    const got = y[r.side][r.field];
+    if (got !== r.value)
+      issues.push(`the salary check's ${r.field} in ${r.year} (${r.side === "pre" ? "without" : "with"} the event) is ${got}; the measures file (${r.measure} ${r.path}) gives ${r.value}`);
+  }
+  return issues;
+}
+
 export const HouseholdCheck = z.object({ id: z.string().min(1), ok: z.boolean(), message: z.string().min(1) }).strict();
 export type HouseholdCheck = z.infer<typeof HouseholdCheck>;
+
+/**
+ * Which model's answers a snapshot holds:
+ * - "policyengine": PolicyEngine UK's, every one from one version of the model (`provider`);
+ * - "none": none at all. Built without PolicyEngine when its API cannot be reached on the night
+ *   (`pnpm household -- build <event> --no-model`, docs/BUDGET_DAY.md "The fallback rule"): the measures with their
+ *   pages, the Treasury's chart and the salary check, which need no model; the summary, deciles, gains and losses and
+ *   example households follow once PolicyEngine answers and the normal run replaces the snapshot.
+ */
+export const HouseholdModel = z.enum(["policyengine", "none"]);
+export type HouseholdModel = z.infer<typeof HouseholdModel>;
+
+/** The checks every snapshot with PolicyEngine's answers passed, and the one a snapshot without them carries. */
+export const MODEL_CHECKS = ["event", "policies", "years", "one_model", "economy", "households", "calculator"] as const;
+export const NO_MODEL_CHECKS = ["model", "calculator"] as const;
 
 export const HouseholdSnapshot = z
   .object({
@@ -321,12 +388,15 @@ export const HouseholdSnapshot = z
     name: z.string().min(1),
     date: IsoDate,
     kind: HouseholdKind,
-    quality: z.literal("modelled"),
+    /** "modelled" with PolicyEngine's answers; "sourced" without them, when every figure is the documents' own or arithmetic on them (the salary check). */
+    quality: z.enum(["modelled", "sourced"]),
+    model: HouseholdModel,
     /** The measures file it was computed from, and its SHA-256: a snapshot older than its file fails `pnpm validate`. */
     measures_file: z.string().min(1),
     measures_sha256: z.string().regex(/^[0-9a-f]{64}$/),
     /** The whole measures file as it was, so the page needs nothing else. */
     input: HouseholdMeasuresFile,
+    /** Who answered; null when no model did (model "none"). */
     provider: z
       .object({
         name: z.literal("policyengine_api"),
@@ -338,14 +408,15 @@ export const HouseholdSnapshot = z
         data_version: z.string().min(1),
         dataset: z.string().nullable(),
       })
-      .strict(),
-    /** PolicyEngine's ids for the two policies, so anyone can open them in its app. */
-    policies: z.object({ pre: z.number().int().positive(), post: z.number().int().positive() }).strict(),
-    /** When the job asked PolicyEngine (the last answer). */
+      .strict()
+      .nullable(),
+    /** PolicyEngine's ids for the two policies, so anyone can open them in its app; null when no model answered. */
+    policies: z.object({ pre: z.number().int().positive(), post: z.number().int().positive() }).strict().nullable(),
+    /** When the job asked PolicyEngine (the last answer); with no model, when the snapshot was built. */
     computed_at: z.iso.datetime(),
-    /** Every year of the file, unless deciles are held (then none). */
+    /** Every year of the file, unless deciles are held or no model answered (then none). */
     results: z.array(HouseholdYearResult),
-    /** Every year of the file, unless households are held (then none). */
+    /** Every year of the file, unless households are held or no model answered (then none). */
     households: z.array(HouseholdExampleYear),
     calculator: HouseholdCalculator,
     checks: z.array(HouseholdCheck).min(1),
@@ -356,28 +427,66 @@ export const HouseholdSnapshot = z
   });
 export type HouseholdSnapshot = z.infer<typeof HouseholdSnapshot>;
 
+/**
+ * Rules a schema cannot say alone. A snapshot is never half-made: it holds PolicyEngine's answers for everything
+ * not held back, all from one model (its checks say so), or it says plainly that no model answered and holds none.
+ */
 export function snapshotIssues(s: z.input<typeof HouseholdSnapshot>): string[] {
   const issues: string[] = [];
   if (s.id !== s.input.event.id) issues.push(`id ${s.id} is not the measures file's event ${s.input.event.id}`);
   const years = s.input.years;
   const hold = s.input.hold ?? [];
   const got = s.results.map((r) => r.year);
-  if (hold.includes("deciles")) {
-    if (got.length) issues.push("deciles are held, so the snapshot carries none");
-  } else if (got.join() !== years.join()) issues.push(`results for ${got.join(", ")}, expected ${years.join(", ")}`);
-  if (hold.includes("households")) {
-    if (s.households.length) issues.push("households are held, so the snapshot carries none");
-  } else for (const y of [s.input.headline_year, s.input.side_year]) if (!s.households.some((h) => h.year === y)) issues.push(`no example households for ${y}`);
+  const checkIds = new Set(s.checks.map((c) => c.id));
+  if (s.model === "none") {
+    if (s.quality !== "sourced") issues.push(`no model answered, so nothing in it is modelled: quality is "sourced", not "${s.quality}"`);
+    if (s.provider !== null || s.policies !== null) issues.push("no model answered, so it names no model version or policies (provider and policies are null)");
+    if (got.length || s.households.length)
+      issues.push(`half-made: it says no model answered but carries ${got.length} years of results and ${s.households.length} of households`);
+    for (const id of NO_MODEL_CHECKS) if (!checkIds.has(id)) issues.push(`check ${id} is missing`);
+  } else {
+    if (s.quality !== "modelled") issues.push(`it holds PolicyEngine's answers: quality is "modelled", not "${s.quality}"`);
+    if (s.provider === null || s.policies === null) issues.push("half-made: PolicyEngine's answers without the model version or the policies they came from");
+    if (hold.includes("deciles")) {
+      if (got.length) issues.push("deciles are held, so the snapshot carries none");
+    } else if (got.join() !== years.join()) issues.push(`results for ${got.join(", ")}, expected ${years.join(", ")}`);
+    if (hold.includes("households")) {
+      if (s.households.length) issues.push("households are held, so the snapshot carries none");
+    } else for (const y of [s.input.headline_year, s.input.side_year]) if (!s.households.some((h) => h.year === y)) issues.push(`no example households for ${y}`);
+    for (const id of MODEL_CHECKS) if (!checkIds.has(id)) issues.push(`check ${id} is missing: every answer must be shown to come from one model`);
+  }
   if (s.calculator.years.map((y) => y.year).join() !== years.join()) issues.push("the salary check needs rates for every year");
+  issues.push(...calculatorIssues(s.input, s.calculator));
   for (const c of s.checks) if (!c.ok) issues.push(`check ${c.id} failed: ${c.message}`);
   return issues;
 }
 
-/** What the page shows: everything not held back. */
-export const householdShows = (s: Pick<HouseholdSnapshot, "input">) => ({
-  deciles: !(s.input.hold ?? []).includes("deciles"),
-  households: !(s.input.hold ?? []).includes("households"),
-});
+/** Where a part of the page stands: shown, waiting for two editors (the fallback rule), or waiting for PolicyEngine. */
+export type HouseholdPart = "shown" | "awaits_review" | "awaits_model";
+
+/**
+ * What the page shows in each state, and what its share image shows:
+ * - "full": every part;
+ * - "held": PolicyEngine answered, but a part waits for two editors (`hold: [deciles]`, the fallback rule);
+ * - "no_model": PolicyEngine had not answered; the model's parts follow once it does.
+ * Share image: the deciles, else the example households, else the Treasury's chart, else the salary check on example salaries.
+ */
+export function householdView(s: Pick<HouseholdSnapshot, "model" | "input">) {
+  const hold = s.input.hold ?? [];
+  const part = (held: boolean): HouseholdPart => (s.model === "none" ? "awaits_model" : held ? "awaits_review" : "shown");
+  const population = part(hold.includes("deciles"));
+  const households = part(hold.includes("households"));
+  const state = s.model === "none" ? ("no_model" as const) : population === "shown" && households === "shown" ? ("full" as const) : ("held" as const);
+  const share =
+    population === "shown" ? ("deciles" as const) : households === "shown" ? ("households" as const) : s.input.treasury ? ("treasury" as const) : ("salary_check" as const);
+  return { state, population, households, share };
+}
+
+/** What the page shows: everything not held back, and nothing the model has not answered. */
+export const householdShows = (s: Pick<HouseholdSnapshot, "model" | "input">) => {
+  const v = householdView(s);
+  return { deciles: v.population === "shown", households: v.households === "shown" };
+};
 
 /** One year's results, or an error naming the year: the page asks only for years the snapshot was checked to have. */
 export function householdYear(s: HouseholdSnapshot, year: string): HouseholdYearResult {

@@ -60,6 +60,15 @@ const PEOPLE: Record<ArchetypeId, Person[]> = {
 };
 
 /**
+ * The three single adults' salaries, £ a year: the salary check's examples on the share card of "The Budget for your
+ * household" when no other picture can be shown (no model answers and no Treasury chart). The same fixed people.
+ */
+export const EXAMPLE_SALARIES = (["single_25k", "single_45k", "single_120k"] as const).map((id) => ({
+  id,
+  salary_gbp: PEOPLE[id][0]!.employment_income!,
+}));
+
+/**
  * Full new State Pension, £ a week, from PolicyEngine UK's parameter
  * gov.dwp.state_pension.new_state_pension.amount (metadata of model 2.102.3,
  * read 7 Oct 2026). Dated values; the archetype uses the one in force at the

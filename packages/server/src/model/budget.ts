@@ -1,10 +1,13 @@
-import { readdirSync, readFileSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import {
   ARCHETYPES,
+  CALCULATOR_PARAMETERS,
   HouseholdSnapshot,
   TaxSeed,
   PE_UNLIMITED,
+  calculatorIssues,
+  calculatorRatesInFile,
   parameterNumber,
   type CalculatorRates,
   type HouseholdCalculator,
@@ -13,7 +16,7 @@ import {
   type HouseholdMeasuresFile,
   type HouseholdYearResult,
 } from "@ledger/schema";
-import { textSha256 } from "@ledger/schema/household";
+import { SEED_DIR, calculatorBaseName, taxSeedNames, textSha256 } from "@ledger/schema/household";
 import { archetypeSituation, readNetIncomes } from "./households";
 import { POLICYENGINE_API, type PolicyEngineClient, type PolicyEngineMetadata } from "./policyengine";
 import { startYearOf, type Reform } from "./reform";
@@ -301,6 +304,7 @@ export function buildHouseholdSnapshot(
   const households = holdHouseholds
     ? (check("households", true, "example households held until two editors have reviewed them: none published"), [])
     : readHouseholds(file, rec, check);
+  const calculator = calculatorChecked(file, calculatorBase, check);
 
   if (checks.some((c) => !c.ok)) return { snapshot: null, checks };
   const b = versions[0] ?? { model: rec.versions.household_model_version, data: "not used (deciles held)", dataset: null };
@@ -310,6 +314,7 @@ export function buildHouseholdSnapshot(
     date: file.event.date,
     kind: file.kind,
     quality: "modelled",
+    model: "policyengine",
     measures_file: measuresPath,
     measures_sha256: textSha256(measuresText),
     input: file,
@@ -318,29 +323,75 @@ export function buildHouseholdSnapshot(
     computed_at: rec.recorded_at,
     results,
     households,
-    calculator: calculatorFor(file, calculatorBase),
+    calculator,
     checks,
   });
   return { snapshot, checks };
 }
 
-/** Where each rate of the salary check comes from in PolicyEngine, and how its value converts (£ a week to a year, a fraction to %). */
-const CALCULATOR_PATHS: Record<string, [keyof CalculatorRates, (v: number) => number]> = {
-  "gov.hmrc.income_tax.allowances.personal_allowance.amount": ["personal_allowance_gbp", (v) => v],
-  "gov.hmrc.income_tax.allowances.personal_allowance.maximum_ANI": ["allowance_taper_threshold_gbp", (v) => v],
-  "gov.hmrc.income_tax.allowances.personal_allowance.reduction_rate": ["allowance_taper_rate", (v) => v],
-  "gov.hmrc.income_tax.rates.uk[1].threshold": ["basic_band_gbp", (v) => v],
-  "gov.hmrc.income_tax.rates.uk[2].threshold": ["additional_threshold_gbp", (v) => v],
-  "gov.hmrc.income_tax.rates.uk[0].rate": ["basic_rate_pct", (v) => Number((v * 100).toFixed(4))],
-  "gov.hmrc.income_tax.rates.uk[1].rate": ["higher_rate_pct", (v) => Number((v * 100).toFixed(4))],
-  "gov.hmrc.income_tax.rates.uk[2].rate": ["additional_rate_pct", (v) => Number((v * 100).toFixed(4))],
-  "gov.hmrc.national_insurance.class_1.thresholds.primary_threshold": ["ni_primary_threshold_gbp", (v) => Math.round(v * 52)],
-  "gov.hmrc.national_insurance.class_1.thresholds.upper_earnings_limit": ["ni_upper_earnings_limit_gbp", (v) => Math.round(v * 52)],
-  "gov.hmrc.national_insurance.class_1.rates.employee.main": ["ni_main_rate_pct", (v) => Number((v * 100).toFixed(4))],
-  "gov.hmrc.national_insurance.class_1.rates.employee.additional": ["ni_upper_rate_pct", (v) => Number((v * 100).toFixed(4))],
-};
+/**
+ * The fallback when PolicyEngine cannot be reached at all (docs/BUDGET_DAY.md, "The fallback rule"): a snapshot
+ * with no model answers, built from the measures file alone. It holds the measures with their pages, the Treasury's
+ * chart and the salary check (the Budget's own rates, worked out in the reader's browser), and says plainly that the
+ * summary, deciles, gains and losses and example households follow once PolicyEngine answers. The normal run
+ * (`pnpm household -- <event>`) replaces it whole, from the same measures file.
+ */
+export function buildNoModelSnapshot(
+  file: HouseholdMeasuresFile,
+  measuresText: string,
+  measuresPath: string,
+  calculatorBase: CalculatorBase,
+  builtAt: Date,
+): BuildResult {
+  const checks: HouseholdCheck[] = [];
+  const check = (id: string, ok: boolean, message: string) => checks.push({ id, ok, message });
+  const modelled = file.measures.filter((m) => m.modelled).length;
+  check(
+    "model",
+    true,
+    `no model answers: built without PolicyEngine. ${modelled} of ${file.measures.length} measures go into its estimate once it answers; until then the page shows the measures, ${file.treasury ? `the Treasury's chart for ${file.treasury.year}` : "no Treasury chart (none in the file)"} and the salary check`,
+  );
+  const calculator = calculatorChecked(file, calculatorBase, check);
+  if (checks.some((c) => !c.ok)) return { snapshot: null, checks };
+  const snapshot = HouseholdSnapshot.parse({
+    id: file.event.id,
+    name: file.event.name,
+    date: file.event.date,
+    kind: file.kind,
+    quality: "sourced",
+    model: "none",
+    measures_file: measuresPath,
+    measures_sha256: textSha256(measuresText),
+    input: file,
+    provider: null,
+    policies: null,
+    computed_at: builtAt.toISOString(),
+    results: [],
+    households: [],
+    calculator,
+    checks,
+  });
+  return { snapshot, checks };
+}
 
-/** The salary check's starting point: the newest sourced tax seed, and where it is. */
+/** The salary check from the measures file, and the check that its rates are the file's for every rate both have. */
+function calculatorChecked(file: HouseholdMeasuresFile, base: CalculatorBase, check: Check): HouseholdCalculator {
+  const calculator = calculatorFor(file, base);
+  const issues = calculatorIssues(file, calculator);
+  const set = new Set(calculatorRatesInFile(file).map((r) => r.path));
+  check(
+    "calculator",
+    issues.length === 0,
+    issues.length
+      ? issues.join("; ")
+      : set.size
+        ? `the salary check's rates are the measures file's for every rate and threshold both have (${set.size} parameters, ${file.years.length} years); the rest from ${base.base}`
+        : `the measures file sets no income tax or employee National Insurance rate: the salary check shows no change (rates from ${base.base})`,
+  );
+  return calculator;
+}
+
+/** The salary check's starting point: a sourced tax seed, and where it is. */
 export interface CalculatorBase {
   /** Repo-relative path of the seed, e.g. data/seed/uk_tax_2026-27.json. */
   base: string;
@@ -348,17 +399,15 @@ export interface CalculatorBase {
 }
 
 /**
- * The newest sourced tax seed (data/seed/uk_tax_YYYY-YY.json; the post-Budget template is not one) as the salary
- * check's starting rates, with the basic rate and the employee NI main rate from the sandbox levers' bases
- * (data/build/levers.json), as the Your share calculator takes them.
+ * The salary check's starting rates for an event whose years start in `firstYear`: the newest sourced tax seed for a
+ * year no later than that (data/seed/uk_tax_YYYY-YY.json; never the post-Budget template, nor a post-Budget seed made
+ * from it, whose rates would leak into "without"), with the basic rate and the employee NI main rate from the sandbox
+ * levers' bases (data/build/levers.json), as the Your share calculator takes them. Reads no model.
  */
-export function readCalculatorBase(root: string): CalculatorBase {
-  const name = readdirSync(join(root, "data", "seed"))
-    .filter((f) => /^uk_tax_\d{4}-\d{2}\.json$/.test(f))
-    .sort()
-    .at(-1);
-  if (!name) throw new Error("no tax seed in data/seed");
-  const seed = TaxSeed.parse(JSON.parse(readFileSync(join(root, "data", "seed", name), "utf8")));
+export function readCalculatorBase(root: string, firstYear: string): CalculatorBase {
+  const name = calculatorBaseName(taxSeedNames(root), firstYear);
+  if (!name) throw new Error(`no tax seed in ${SEED_DIR} for ${firstYear} or earlier`);
+  const seed = TaxSeed.parse(JSON.parse(readFileSync(join(root, SEED_DIR, name), "utf8")));
   if (seed.meta.quality !== "sourced") throw new Error(`data/seed/${name} is not sourced`);
   const levers = (JSON.parse(readFileSync(join(root, "data", "build", "levers.json"), "utf8")) as { levers: { id: string; base: number }[] }).levers;
   const base = (id: string) => {
@@ -397,11 +446,10 @@ export function calculatorFor(file: HouseholdMeasuresFile, base: CalculatorBase)
     const post = { ...base.rates };
     for (const m of file.measures)
       for (const p of m.parameters ?? []) {
-        const target = CALCULATOR_PATHS[p.path];
+        const target = CALCULATOR_PARAMETERS[p.path];
         if (!target) continue;
-        const [field, convert] = target;
-        pre[field] = convert(parameterNumber(p.pre[year]!));
-        post[field] = convert(parameterNumber(p.post[year]!));
+        pre[target.field] = target.convert(parameterNumber(p.pre[year]!));
+        post[target.field] = target.convert(parameterNumber(p.post[year]!));
       }
     return { year, pre, post };
   });
@@ -462,7 +510,8 @@ function readHouseholds(file: HouseholdMeasuresFile, rec: HouseholdRecording, ch
   }
 }
 
-/** PolicyEngine's app showing the same comparison: the post policy over the pre one. */
-export function policyEngineCompareUrl(s: Pick<HouseholdSnapshot, "policies">, startYear: number): string {
+/** PolicyEngine's app showing the same comparison: the post policy over the pre one (none before PolicyEngine has answered). */
+export function policyEngineCompareUrl(s: Pick<HouseholdSnapshot, "policies">, startYear: number): string | null {
+  if (!s.policies) return null;
   return `https://policyengine.org/uk/policy?reform=${s.policies.post}&baseline=${s.policies.pre}&focus=policyOutput.policyBreakdown&region=uk&timePeriod=${startYear}`;
 }

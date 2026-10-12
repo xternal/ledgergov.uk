@@ -1,50 +1,30 @@
 "use client";
 
 import { useId, useMemo, useState } from "react";
-import type { CalculatorRates, HouseholdCalculator, TaxSeed } from "@ledger/schema";
-import { taxOn } from "@ledger/engine";
+import type { HouseholdCalculator } from "@ledger/schema";
+import { ratesChangedYears, salaryCheckYear, taxPaid } from "@/lib/salary-check";
 
 /**
  * "Your income tax and National Insurance": a salary typed here is worked out in the browser, without and with a
  * Budget, and is never sent or stored (invariant 7). No analytics on this component. The rates come from the
- * snapshot (the measures file overlaid on the newest sourced tax seed), so they match the modelled measures.
+ * snapshot (the measures file overlaid on a sourced tax seed), so they match the measures; it needs no model, so it
+ * works the same whether or not PolicyEngine has answered.
  */
 
-/** taxOn reads a tax seed; the snapshot gives the same figures flat. */
-function asSeed(r: CalculatorRates): TaxSeed {
-  return {
-    meta: { country: "UK", tax_year: "", geography: "", quality: "sourced", method_note: "From the Budget household snapshot." },
-    income_tax: {
-      personal_allowance_gbp: r.personal_allowance_gbp,
-      allowance_taper_threshold_gbp: r.allowance_taper_threshold_gbp,
-      allowance_taper_rate: r.allowance_taper_rate,
-      basic_band_gbp: r.basic_band_gbp,
-      additional_threshold_gbp: r.additional_threshold_gbp,
-      basic_rate_lever: "",
-      higher_rate_pct: r.higher_rate_pct,
-      additional_rate_pct: r.additional_rate_pct,
-    },
-    employee_ni: { primary_threshold_gbp: r.ni_primary_threshold_gbp, upper_earnings_limit_gbp: r.ni_upper_earnings_limit_gbp, main_rate_lever: "", upper_rate_pct: r.ni_upper_rate_pct },
-    your_share_defaults: { salary_gbp: 0 },
-  };
-}
-
-const paid = (r: CalculatorRates, salary: number) => taxOn(asSeed(r), salary, { basicRatePct: r.basic_rate_pct, niMainRatePct: r.ni_main_rate_pct });
-const same = (a: CalculatorRates, b: CalculatorRates) => (Object.keys(a) as (keyof CalculatorRates)[]).every((k) => a[k] === b[k]);
 const pounds = (x: number) => `£${Math.round(x).toLocaleString("en-GB")}`;
 const MAX_SALARY = 10_000_000;
 
 export function BudgetSalaryCheck({ calculator, defaultYear, eventName }: { calculator: HouseholdCalculator; defaultYear: string; eventName: string }) {
   const id = useId();
-  const changed = calculator.years.filter((y) => !same(y.pre, y.post));
+  const changed = ratesChangedYears(calculator);
   const [text, setText] = useState("");
-  const [year, setYear] = useState(changed.some((y) => y.year === defaultYear) ? defaultYear : (changed[0]?.year ?? defaultYear));
+  const [year, setYear] = useState(salaryCheckYear(calculator, defaultYear));
   const salary = Math.min(MAX_SALARY, Number(text.replace(/[^\d.]/g, "")) || 0);
   const rates = calculator.years.find((y) => y.year === year) ?? calculator.years[0]!;
   const result = useMemo(() => {
     if (!salary) return null;
-    const before = paid(rates.pre, salary);
-    const after = paid(rates.post, salary);
+    const before = taxPaid(rates.pre, salary);
+    const after = taxPaid(rates.post, salary);
     return { before, after, diff: after.total - before.total };
   }, [rates, salary]);
 

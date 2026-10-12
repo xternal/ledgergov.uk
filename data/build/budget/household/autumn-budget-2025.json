@@ -4,6 +4,7 @@
  "date": "2025-11-26",
  "kind": "rehearsal",
  "quality": "modelled",
+ "model": "policyengine",
  "measures_file": "content/budget/household/autumn-budget-2025.yaml",
  "measures_sha256": "f5274bcc14fbc4649a600e543ffabc171761ed6ae5074db23602c4abf52aed20",
  "input": {
@@ -2208,6 +2209,11 @@
    "id": "households",
    "ok": true,
    "message": "the six example households, every year, without and with the event"
+  },
+  {
+   "id": "calculator",
+   "ok": true,
+   "message": "the salary check's rates are the measures file's for every rate and threshold both have (4 parameters, 5 years); the rest from data/seed/uk_tax_2026-27.json"
   }
  ]
 }

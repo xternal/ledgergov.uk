@@ -1,4 +1,5 @@
-import { readFileSync } from "node:fs";
+import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { parse } from "yaml";
@@ -12,7 +13,15 @@ import {
   sourceRefUrl,
   unitIssue,
 } from "../src/household";
-import { loadHouseholdSnapshots, parseHouseholdSnapshots, parseMeasuresFile, readHouseholdSnapshotFiles, readMeasuresFiles, textSha256 } from "../src/household-data";
+import {
+  loadHouseholdSnapshots,
+  parseHouseholdSnapshots,
+  parseMeasuresFile,
+  readHouseholdSnapshotFiles,
+  readMeasuresFiles,
+  taxSeedIssues,
+  textSha256,
+} from "../src/household-data";
 import { repoRoot } from "../src/content-files";
 
 const root = repoRoot();
@@ -182,5 +191,48 @@ describe("snapshots", () => {
     const { issues } = parseHouseholdSnapshots([{ ...raw[0]!, data: bad }], measures);
     expect(issues.join("\n")).toMatch(/check .* failed/);
     expect(issues.join("\n")).toMatch(/results for 2026-27, 2027-28, 2028-29, 2029-30, expected/);
+  });
+});
+
+describe("a post-Budget tax seed says what the Budget's measures file says", () => {
+  // A scratch copy of the repo's seeds and the rehearsal's measures, the rehearsal turned into a Budget so that a
+  // seed for 2027-28 is a post-Budget seed for it (dated before 6 April 2027, a year it covers).
+  const scratch = (seed2027: (s: Record<string, Record<string, unknown>>) => void) => {
+    const dir = mkdtempSync(join(tmpdir(), "household-seed-"));
+    mkdirSync(join(dir, "data", "seed"), { recursive: true });
+    mkdirSync(join(dir, "content", "budget", "household"), { recursive: true });
+    for (const name of ["uk_tax_2025-26.json", "uk_tax_2026-27.json"]) copyFileSync(join(root, "data", "seed", name), join(dir, "data", "seed", name));
+    const seed = JSON.parse(readFileSync(join(root, "data", "seed", "uk_tax_2026-27.json"), "utf8")) as Record<string, Record<string, unknown>>;
+    seed.meta!.tax_year = "2027-28";
+    seed2027(seed);
+    writeFileSync(join(dir, "data", "seed", "uk_tax_2027-28.json"), JSON.stringify(seed));
+    writeFileSync(join(dir, "content", "budget", "household", "autumn-budget-2025.yaml"), rehearsal.text.replace("kind: rehearsal", "kind: budget"));
+    return dir;
+  };
+
+  it("passes in the repository, and when the seed has the measures file's rates", () => {
+    expect(taxSeedIssues(root)).toEqual([]);
+    // 2027-28 in the rehearsal: thresholds frozen with and without it, so the seed keeps 2026-27's figures.
+    expect(taxSeedIssues(scratch(() => undefined))).toEqual([]);
+  });
+
+  it("fails when the seed and the measures file differ on a rate both have", () => {
+    const issues = taxSeedIssues(
+      scratch((s) => {
+        s.income_tax!.personal_allowance_gbp = 13_000;
+      }),
+    );
+    expect(issues.join("\n")).toMatch(
+      /uk_tax_2027-28\.json: personal_allowance_gbp is 13000, but content\/budget\/household\/autumn-budget-2025\.yaml \(personal-tax-thresholds .*\) gives 12570 for 2027-28: the measures file is the one place/,
+    );
+  });
+
+  it("fails when the seed changes a rate the measures file leaves alone: the Budget's rates are typed in the measures file first", () => {
+    const issues = taxSeedIssues(
+      scratch((s) => {
+        s.income_tax!.higher_rate_pct = 42;
+      }),
+    );
+    expect(issues.join("\n")).toMatch(/higher_rate_pct is 42, but .*autumn-budget-2025\.yaml does not change it \(data\/seed\/uk_tax_2026-27\.json has 40\): type the Budget's rates in the measures file first/);
   });
 });

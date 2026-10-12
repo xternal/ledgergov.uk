@@ -1,5 +1,5 @@
 import {
-  householdShows,
+  householdView,
   parameterNumber,
   sourceRefUrl,
   t1Range,
@@ -26,14 +26,15 @@ const BAND_PCT = Math.round(T1_EDITORIAL_BAND * 100);
 
 /**
  * The snapshot's two years and their results: the year the page leads with, and the one beside it. A part held
- * back until reviewed (the fallback rule) is null.
+ * back until reviewed, or not yet answered by PolicyEngine (the fallback rule), is null.
  */
 export function householdYears(s: HouseholdSnapshot) {
   const head = s.input.headline_year;
   const side = s.input.side_year;
-  const result = (y: string) => s.results.find((r) => r.year === y) ?? null;
-  const examples = (y: string) => s.households.find((h) => h.year === y) ?? null;
-  return { head, side, headResult: result(head), sideResult: result(side), headHouseholds: examples(head), sideHouseholds: examples(side), shows: householdShows(s) };
+  const view = householdView(s);
+  const result = (y: string) => (view.population === "shown" ? (s.results.find((r) => r.year === y) ?? null) : null);
+  const examples = (y: string) => (view.households === "shown" ? (s.households.find((h) => h.year === y) ?? null) : null);
+  return { head, side, headResult: result(head), sideResult: result(side), headHouseholds: examples(head), sideHouseholds: examples(side), view };
 }
 
 const gaining = (w: WinnerShares) => w.gain_more_5 + w.gain_less_5;
@@ -71,9 +72,12 @@ export function householdCopy(s: HouseholdSnapshot) {
   const better = all ? gaining(all) : null;
   const worse = all ? losing(all) : null;
   const modelled = s.input.measures.filter((m) => m.modelled).length;
-  const description = rehearsal
-    ? `Last year's Budget, worked out the way ${BUDGET.name} will be on the morning after: who gains and who loses from its ${modelled} tax and benefit measures we can model, by income tenth and for six example households, in ${y.head} and ${y.side}. An estimate with PolicyEngine's open model, not official, beside the Treasury's own chart.`
-    : `Who gains and who loses from the ${s.name}'s ${modelled} tax and benefit measures we can model, by income tenth and for six example households, in ${y.head} and ${y.side}. An estimate with PolicyEngine's open model, not official, beside the Treasury's own chart.`;
+  const description =
+    y.view.state === "no_model"
+      ? `${rehearsal ? `Last year's Budget, shown the way ${BUDGET.name} will be if PolicyEngine cannot be reached: its` : `The ${s.name}'s`} ${s.input.measures.length} tax and benefit measures, each linked to its page; what it means for your own income tax and National Insurance, worked out in your browser${s.input.treasury ? "; and the Treasury's own chart" : ""}. Our estimate of who gains and who loses, by income tenth and for six example households, follows once PolicyEngine answers. Not official.`
+      : rehearsal
+        ? `Last year's Budget, worked out the way ${BUDGET.name} will be on the morning after: who gains and who loses from its ${modelled} tax and benefit measures we can model, by income tenth and for six example households, in ${y.head} and ${y.side}. An estimate with PolicyEngine's open model, not official, beside the Treasury's own chart.`
+        : `Who gains and who loses from the ${s.name}'s ${modelled} tax and benefit measures we can model, by income tenth and for six example households, in ${y.head} and ${y.side}. An estimate with PolicyEngine's open model, not official, beside the Treasury's own chart.`;
   const net = y.headResult?.budget.net_bn ?? 0;
   return {
     title,
@@ -91,7 +95,7 @@ export function householdLabels(s: HouseholdSnapshot) {
   return {
     estimate: "Estimate",
     notOfficial: "Not official",
-    model: `PolicyEngine UK ${s.provider.model_version}`,
+    model: s.provider ? `PolicyEngine UK ${s.provider.model_version}` : "Model results to follow",
     band: `Ranges are ±${BAND_PCT}% around PolicyEngine's single estimate.`,
   };
 }
@@ -137,6 +141,33 @@ export const computedOn = (s: HouseholdSnapshot) => longDate(s.computed_at.slice
 export function householdFaq(s: HouseholdSnapshot): { q: string; a: string }[] {
   const t = s.input.treasury;
   const y = householdYears(s);
+  if (y.view.state === "no_model")
+    return [
+      {
+        q: "Is this the government's own figure?",
+        a: `The measures${t ? " and the Treasury's chart" : ""} are the government's own, each linked to its page. Our estimate of who gains and who loses is not: it is made with PolicyEngine UK, an open-source model of the UK's taxes and benefits run by the charity PolicyEngine, and follows once PolicyEngine answers. None of it is advice about your own taxes.`,
+      },
+      {
+        q: "Where is your own estimate?",
+        a: "PolicyEngine, the model we use for it, had not answered when this page was published. The summary, the change by income tenth, who gains and who loses and the six example households follow once it does, worked out from the same measures and checked by two editors. Everything else on this page is complete.",
+      },
+      {
+        q: "What is an income tenth?",
+        a: `Households are ranked by their income and split into ten groups, each holding a tenth of the people. The first tenth has the lowest incomes.${t ? " The Treasury adjusts each household's income for its size before ranking." : ""}`,
+      },
+      {
+        q: "Why are some measures not in the estimate?",
+        a: "The model can change only the rules it already has. A new tax, a tax it does not model (inheritance tax, corporation tax, business rates) or a change that needs more than new rates and thresholds is listed under “Not in the estimate”, with the reason.",
+      },
+      {
+        q: `Why lead with ${y.head}?`,
+        a: `Most measures in a Budget take effect the following April, so ${y.head} is the first full year of most of them.`,
+      },
+      {
+        q: "Is anything about me sent anywhere?",
+        a: "No. The salary check runs in your browser: what you type is never sent or stored. Our estimate, when it follows, is worked out once before it is published, for six fixed example households that are the same for everyone; nothing you do on this page is sent to PolicyEngine.",
+      },
+    ];
   return [
     {
       q: "Is this the government's own figure?",
