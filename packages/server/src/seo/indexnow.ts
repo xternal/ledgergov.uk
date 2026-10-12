@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { parse } from "yaml";
-import { PolicyArea } from "@ledger/schema";
+import { PolicyArea, legacyCard } from "@ledger/schema";
 import { statusLabel } from "../alerts/labels";
 import { absoluteUrl, areaPath } from "./cards";
 
@@ -95,7 +95,8 @@ export interface ChangedCard {
 export function changedCard(yamlText: string): ChangedCard | null {
   let d: Record<string, unknown>;
   try {
-    d = parse(yamlText) as Record<string, unknown>;
+    // Either format: cards in OpenPromises format v1 are read back into our shape.
+    d = legacyCard(parse(yamlText)) as Record<string, unknown>;
   } catch {
     return null;
   }

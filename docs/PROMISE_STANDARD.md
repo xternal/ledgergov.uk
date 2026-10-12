@@ -19,14 +19,14 @@ Intake sources: manifestos, ministerial statements, speeches, debates (Parliamen
 
 Rules:
 - Use the actor's own figure if given, plus an independent range. If they gave none, use the best official costing (OBR, HMRC, department) or a documented T0 estimate.
-- Every cost says who made its central figure, as `costed_by: { kind, name }` on the version:
+- Every cost says who made its central figure, as `cost.by: { kind, name }` on the version (`costed_by` before 12 October 2026):
   - `official`: the OBR, HMRC, HM Treasury or another UK government department (No 10 included), or a devolved government's equivalent.
   - `party`: the promise-maker's own figure: a party's or candidate's costing, including a figure a party commissions or adopts as its own.
   - `independent`: anyone else: the IFS, think tanks, academics, Tax Policy Associates, campaign groups and the like.
   - `name`: the maker as a reader would say it ("OBR", "HM Treasury", "Labour Party", "IFS").
   - The kind follows who made the figure, not who made the promise. A figure a government department publishes is `official` even when the government made the promise; a figure a party made is `party` even when that party is now in government (Labour's 2024 manifesto costings stay `party`). A minister or Prime Minister speaking for the government (in Parliament, on GOV.UK) gives an `official` figure; the same person speaking for their party (a conference speech, a manifesto) gives a `party` one.
-  - If the low, central and high figures come from different makers, `costed_by` follows the central figure; `cost_note` explains the rest.
-  - A new figure from a different maker is a correction to `costed_by`, recorded with the cost (§9).
+  - If the low, central and high figures come from different makers, `cost.by` follows the central figure; `cost.note` explains the rest.
+  - A new figure from a different maker is a correction to `cost.by`, recorded with the cost (§9).
 - "From where" is recorded exactly as stated. If nothing was stated: `funded_by: null` and the card shows **"Funding not stated"**. That is a fact about the promise, not a judgement.
 - A promise missing two or more of who / how much / when, and not inferable from official documents within 7 days, gets status **unscoreable**. Shown as such. It is a slogan.
 
@@ -85,13 +85,13 @@ Editors declare party membership. An editor never approves a card about their ow
 
 History is append-only, but our own mistakes must be fixable. A correction fixes an error *we* made in a version, event or reply: a wrong date, a misread figure, a cost range that was really a time profile, a note that says more than its source. It is not for changes in the world; those are new events or new versions (§3, §4).
 
-1. Change the field, and in the same pull request append an entry to the card's `corrections`: `date`, `path` (e.g. `versions[0].parameters.how_much_bn_per_year`, `events[3].date`), `was`, `now`, `reason`, and a `source_url` when a source shows the right value.
+1. Change the field, and in the same pull request append an entry to the card's `corrections`: `date`, `path` (e.g. `versions[0].parameters.cost.range`, `events[3].date`; `versions[0].parameters.how_much_bn_per_year` in corrections made before 12 October 2026), `was`, `now`, `reason`, and a `source_url` when a source shows the right value.
 2. CI accepts the change only if undoing the recorded corrections gives back exactly the published entry, and the card's field equals the correction's `now`. Existing corrections never change.
 3. The card shows every correction ("Corrected on 7 October 2026: cost range in version 1 …", with the old and new values). Nothing is overwritten silently.
 4. A wrong quote is corrected the same way, and the quote check is redone and `quote_checked_on` updated.
-5. Fields that describe the present (`status_note`, `outcome_by`, top-level `sources`) are kept current by ordinary edits; they are not history.
+5. Fields that describe the present (`status_note`, `responsible`, top-level `sources`) are kept current by ordinary edits; they are not history.
 6. Same two-editor rule as any other change.
-7. A field added to this standard after a version was published (so far only `costed_by`, 9 October 2026) may be filled in once on that version without a correction, because nothing published is changed. Once it has a value it is history like the rest.
+7. A field added to this standard after a version was published (so far `cost.by`, 9 October 2026, and `cost.quality`, 12 October 2026) may be filled in once on that version without a correction, because nothing published is changed. Once it has a value it is history like the rest.
 
 ## 10. Contracts behind delivery
 
@@ -104,16 +104,17 @@ Once a card is `funded`, `delivering` or `delivered`, it can list the public con
 
 ## 11. Who has to deliver it
 
-Every card says which body would have to act to deliver the promise as worded, as of now: `outcome_by`. It is what tells a reader whether a missed deadline belongs to someone in power.
+Every card says which body would have to act to deliver the promise as worded, as of now: `responsible` (`outcome_by` before 12 October 2026). It is what tells a reader whether a missed deadline belongs to someone in power.
 
-1. `outcome_by` names a body by its role, never a party or a person: `hm-government`, the Scottish or Welsh Government, a council, a mayoral authority or a public body (an actor of kind `government`). CI rejects a party or a person.
+1. `responsible` names a body by its role, never a party or a person: `hm-government`, the Scottish or Welsh Government, a council, a mayoral authority or a public body (an actor of kind `government`). CI rejects a party or a person.
 2. It is set when a body in power is committed to delivering the promise as worded: because the person or party who made it now leads or speaks for that body, or because the body has taken it on in its own plan, programme or announcement.
 3. It is `null` when no body in power is committed to it: an opposition party's pledge, a candidate's, or a pledge that the body able to deliver it has not taken on (for example a devolved party's pledge on a tax set at Westminster). A narrower or different commitment by the government does not count; the card's status note can mention it.
 4. The same rule for every party. When power changes hands, the field follows the role, not the party: an opposition pledge the new government adopts gets `hm-government`; a pledge the new holders of power have not taken on becomes `null`, with the change explained in the status note.
-5. Once a card reaches Delivered, Not met or Undone, `outcome_by` stays as the body that was responsible then.
+5. Once a card reaches Delivered, Not met or Undone, `responsible` stays as the body that was responsible then.
 6. Every card has it, a value or an explicit `null`; CI fails a card that leaves it out. It describes the present, so it is kept current by ordinary edits (§9.5), with the same two-editor rule.
 7. It is not credit. When someone other than the card's own actor brought about an outcome (an opposition pledge the government carried out), `brought_about_by` records that, as before (it was called `outcome_by` until 9 October 2026).
 
 ## Changes to this standard
 
+- 12 October 2026: card files moved to OpenPromises format v1. Same rules; new field names: `area` (was `policy_area`), `responsible` (was `outcome_by`), `parameters.cost.range` / `.by` / `.note` / `.sources` (were `how_much_bn_per_year`, `costed_by`, `cost_note`, `cost_sources`), a cost's `quality` label, the deadline on the current version's `parameters`, and text a reader sees as a language map (`en: …`). The mapping is in `content/README.md`.
 - 9 October 2026: who made a cost's central figure (`costed_by`, §2); who has to deliver a promise (`outcome_by`, §11); the credit field renamed `brought_about_by`; filling in a newly added field (§9.7).

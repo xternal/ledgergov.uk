@@ -24,7 +24,7 @@ Every promise on [ledgergov.uk](https://ledgergov.uk) is a card: the exact words
 
 **Cost.** A range a year, low to high, in £ billions. The speaker's own figure if they gave one; otherwise the best official costing (OBR, HMRC, the Treasury, the department, an impact assessment). Think tanks only as support. A multi-year total is never shown as a yearly figure. If there is only a single figure, the range is an editorial ±10% and the note says so. If there is no official costing, the card says why, and nobody guesses. Every cost also says who made its central figure (`costed_by`): `official` (the OBR, HMRC, the Treasury, another department, a devolved government), `party` (the promise-maker's own figure, even if that party is now in government) or `independent` (the IFS, think tanks, academics).
 
-**Who has to deliver it.** Every card names the body that would have to act to deliver the promise now (`outcome_by`): `hm-government`, the Scottish or Welsh Government, a council. It is a body, never a party or a person. It is `null` when no body in power has committed to it, such as an opposition party's pledge. The same rule for every party; it changes when power changes hands only if the new holders take the promise on or drop it.
+**Who has to deliver it.** Every card names the body that would have to act to deliver the promise now (`responsible` in the card file): `hm-government`, the Scottish or Welsh Government, a council. It is a body, never a party or a person. It is `null` when no body in power has committed to it, such as an opposition party's pledge. The same rule for every party; it changes when power changes hands only if the new holders take the promise on or drop it.
 
 **Status moves only on evidence.**
 
@@ -65,8 +65,8 @@ Every status change is a new event with a link to its evidence. An announcement 
 - [ ] Each new event has an evidence link, and the evidence really shows what the event says.
 - [ ] The status matches the evidence (table above).
 - [ ] The cost is a yearly figure from the best official source, and the note says which year it is and how the range was made.
-- [ ] `costed_by` names whoever made the central figure, with the right kind: official, party or independent.
-- [ ] `outcome_by` is the body that would have to deliver it now, or `null` if no body in power is committed to it.
+- [ ] The cost's `by` names whoever made the central figure, with the right kind: official, party or independent, and its `quality` says how it was made (sourced, approx or modelled).
+- [ ] `responsible` is the body that would have to deliver it now, or `null` if no body in power is committed to it.
 - [ ] "Funded by" is exactly what the speaker said, or empty if they said nothing.
 - [ ] The headline and notes are neutral and say no more than the sources.
 - [ ] Any change to something already published has a matching correction.
@@ -90,7 +90,7 @@ export OPENPROMISES_EDITORS=~/.config/openpromises/editors.yaml
 pnpm review uk-abolish-non-dom-2024 --by "Your Handle" --note "Checked the quote, sources, dates, status and cost"
 ```
 
-Check the card against its sources first (step 4 above), exactly as for a pull request. The command adds one review to the card (`kind: editor`, `approves: true`) and changes nothing else in the file. It refuses an approval that would not count: a handle not on the list, a date before you became an editor, a second approval from you, or a card about your own party. When a card has its second approval, it drops `editor_check_required`, so the card stops saying "human editor review to come". Put your approvals on a branch and open a pull request; the owner merges it. `--dry-run` shows what it would do without writing.
+Check the card against its sources first (step 4 above), exactly as for a pull request. The command adds one review to the card (`kind: editor`, `approves: true`) and changes nothing else in the file; for a card in OpenPromises format v1 (every card since 12 October 2026) it hands over to the engine's own `openpromises review`, which applies the same rules. It refuses an approval that would not count: a handle not on the list, a date before you became an editor, a second approval from you, or a card about your own party. When a card has its second approval, it drops `editor_check_required`, so the card stops saying "human editor review to come". Put your approvals on a branch and open a pull request; the owner merges it. `--dry-run` shows what it would do without writing.
 
 **Without the command line.** Approve on GitHub as usual and say in your review which cards you checked. The owner records it on the card for you, with the day you approved and where: `pnpm review <card> --by "Your Handle" --on <YYYY-MM-DD> --note "Approved in pull request xternal/public-ledger#<number>"`. Only approvals you really gave are recorded; nobody approves for you.
 

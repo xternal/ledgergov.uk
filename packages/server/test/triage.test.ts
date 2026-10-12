@@ -341,7 +341,8 @@ describe("accept", () => {
     // The rest of the file keeps its exact formatting: the diff is added lines only.
     const added = addedLines(BUS_YAML, yaml);
     expect(added).not.toBeNull();
-    expect(added!.every((l) => /^\s+(#|- |[a-z_]+: )/.test(l))).toBe(true);
+    // Comments, list items and fields; a v1 text field opens its language map on its own line ("text:" then "en: …").
+    expect(added!.every((l) => /^\s+(#|- |[a-z_]+:( |$))/.test(l))).toBe(true);
     expect(added!.length).toBeLessThan(25);
     expect(gh.calls.find((c) => c.method === "POST" && c.path.endsWith("/pulls"))!.body!.title).toBe("Reader evidence S-2026-10-0415 for uk-bus-cap-2-2026 (draft)");
     const [m] = await outbox();

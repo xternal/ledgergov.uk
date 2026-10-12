@@ -60,13 +60,14 @@ Cite the exact page: add `#page=NN` to a PDF link, or link the HTML section.
 
 ## Ready-made entries
 
-A status change is three edits to the card: append the event, change `status`, and update `status_note` (it describes the present, so it is edited, not corrected).
+Cards are in OpenPromises format v1 (since 12 October 2026): text a reader sees is a language map (`text:` then `en: …`), and a version's cost sits under `parameters.cost` (`range`, `by`, `note`, `sources`, `quality`). A status change is three edits to the card: append the event, change `status`, and update `status_note` (it describes the present, so it is edited, not corrected).
 
 ```yaml
 # 1. Append to events (never edit an existing one)
   - date: "2026-10-28"
     type: funded
-    text: Autumn Budget 2026 allocates £0.4bn in 2027-28 for the £2 fare cap in England
+    text:
+      en: Autumn Budget 2026 allocates £0.4bn in 2027-28 for the £2 fare cap in England
     evidence_url: https://assets.publishing.service.gov.uk/…/Budget_2026.pdf#page=NN
 ```
 
@@ -74,9 +75,10 @@ A status change is three edits to the card: append the event, change `status`, a
 # 2. The current status
 status: funded
 # 3. One or two sentences on where it stands now, with what the Budget did
-status_note: >-
-  The Autumn Budget 2026 confirmed £0.4bn for 2027-28 (Budget document, table N). The cap runs from
-  1 January to 31 December 2027.
+status_note:
+  en: >-
+    The Autumn Budget 2026 confirmed £0.4bn for 2027-28 (Budget document, table N). The cap runs from
+    1 January to 31 December 2027.
 ```
 
 A new official yearly cost is a correction to the version, recorded as in [PROMISE_STANDARD.md §9](PROMISE_STANDARD.md):
@@ -84,23 +86,25 @@ A new official yearly cost is a correction to the version, recorded as in [PROMI
 ```yaml
 corrections:
   - date: "2026-10-28"
-    path: versions[0].parameters.how_much_bn_per_year
+    path: versions[0].parameters.cost.range
     was: null
     now: [0.36, 0.4, 0.44]
-    reason: >-
-      The Autumn Budget 2026 published the official yearly cost: £0.4bn in 2027-28 (table N). Low–high is an
-      editorial ±10% because the source gives a central figure only.
+    reason:
+      en: >-
+        The Autumn Budget 2026 published the official yearly cost: £0.4bn in 2027-28 (table N). Low–high is an
+        editorial ±10% because the source gives a central figure only.
     source_url: https://assets.publishing.service.gov.uk/…/Budget_2026.pdf#page=NN
 ```
 
-Set the version's `costed_by` to the new figure's maker (here `{ kind: official, name: HM Treasury }`). If the card had a cost from another maker, record that change as a correction too, in the same pull request:
+Set the version's `cost.by` to the new figure's maker (here `{ kind: official, name: HM Treasury }`), with `cost.quality: sourced` and the source in `cost.sources`. If the card had a cost from another maker, record that change as a correction too, in the same pull request:
 
 ```yaml
   - date: "2026-10-28"
-    path: versions[0].parameters.costed_by
+    path: versions[0].parameters.cost.by
     was: { kind: party, name: Labour Party }
     now: { kind: official, name: HM Treasury }
-    reason: The central figure is now the Budget's official costing.
+    reason:
+      en: The central figure is now the Budget's official costing.
     source_url: https://assets.publishing.service.gov.uk/…/Budget_2026.pdf#page=NN
 ```
 

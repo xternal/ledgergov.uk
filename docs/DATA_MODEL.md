@@ -97,6 +97,8 @@ interface ScenarioResult {
 
 ## Promises
 
+The shape below is the site's internal one (`packages/schema/src/content.ts`). Since 12 October 2026 the files on disk are in OpenPromises format v1 and `packages/schema/src/v1.ts` reads them into it; `content/README.md` lists what is named differently in the files.
+
 ```ts
 type Status = "promised" | "in_plan" | "legislated" | "funded" | "delivering"
             | "delivered" | "failed" | "quietly_dropped" | "unscoreable";
