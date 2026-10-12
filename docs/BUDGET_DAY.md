@@ -11,6 +11,7 @@ The plan for **Wednesday 28 October 2026**, the day of the Autumn Budget (date: 
 | Before the day | Read this page and every card listed on [/budget](https://ledgergov.uk/budget) (26 on 10 October); check the follow emails work | Editors |
 | About 12:30 | The Chancellor's statement, after Prime Minister's Questions (time from press reports) | Watch, don't edit yet |
 | Straight after | The Budget documents on GOV.UK and the OBR's forecast are published | — |
+| Within 2 hours of publication | The scorecard: read the Treasury's table of policy decisions into [/budget/scorecard](#the-scorecard-the-treasurys-table-of-measures) and open its pull request (runbook below) | Owner |
 | Afternoon | Read the documents against the checklist below; note each card's page and table | Editors, AI Journalist |
 | By 20:00 | One pull request with an entry for every card the Budget touched, each with its evidence link | Drafted by AI Journalist, opened by the owner |
 | Evening or next morning | Two editors review and approve; the owner merges | Editors, owner |
@@ -20,7 +21,7 @@ The plan for **Wednesday 28 October 2026**, the day of the Autumn Budget (date: 
 
 Published on GOV.UK straight after the statement (the Treasury's Budget page links them all) and on obr.uk:
 
-1. **The Budget document** (the "Red Book"). Its table of policy decisions lists every new measure with its cost or yield for each year: this is the official yearly figure a card's cost should use.
+1. **The Budget document** (the "Red Book"). Its table of policy decisions (Table 4.1 in Budget 2025, 5.1 in Autumn Budget 2024) lists every new measure with its cost or yield for each year: this is the official yearly figure a card's cost should use. The scorecard page shows every line of it with a link to its page, so it is the quickest way to find a measure's line and page number.
 2. **Policy costings**: how each of those figures was worked out.
 3. **The OBR's Economic and fiscal outlook** (EFO) and its supplementary tables: borrowing, debt, and the OBR's view of the measures. Use it for defence and anything the OBR comments on.
 4. **Overview of tax legislation and rates** (OOTLAR): the tax rates and thresholds that will apply. Use it for the tax pledges.
@@ -111,6 +112,98 @@ Set the version's `cost.by` to the new figure's maker (here `{ kind: official, n
 A change to a card's current cost appears in `/feeds/all.xml` and `/feeds/updates.xml` once the pull request is merged.
 
 A broken pledge reads **Not met**, never "broken": the label states the fact, the evidence link carries the rest.
+
+## The scorecard: the Treasury's table of measures
+
+`/budget/scorecard/<event>` shows every line of the Budget's table of policy decisions: what each measure raises or costs in the last year the Treasury costs (2030-31 at Budget 2025), every year in a full table, the Treasury's totals, and a link to the PDF page of every line. It is built only from `data/build/budget/<event>.json`, which `etl/budget_costings.py` reads from the PDF as printed. `/budget` links the newest scorecard, the sitemap and `llms.txt` list them all. Figures are the Treasury's, in £ million, with its sign: positive raises money, negative costs money.
+
+It is data, not a card: the two-editor rule for cards does not apply, but one reviewer other than the person who ran it checks the total and three lines against the PDF before merging (step 7).
+
+**Dry run, 12 October 2026, on Budget 2025 (26 November 2025):** 16 minutes from finding the documents to the page served with every check green, of which about 9 minutes were lost to a crash of the machine (several agents building at once) and 7 were work. The parser read the 88-line Table 4.1 first time, a table it had not seen (it was built on Autumn Budget 2024 and Spring Statement 2025); every figure matched the Treasury's spreadsheet. The one manual fix: the Treasury's PDF and spreadsheet word line 56 differently and mark line 78 Spend in one and Tax in the other, so the copy check stopped the build until those two were checked in the PDF and accepted (step 5). Allow two hours on the day for a person doing it for the first time, with review, merge and deploy.
+
+### Before the day
+
+- On the machine that will run it: `pdftotext -v` prints a version (if not: `brew install poppler`), and `etl/.venv` exists (`docs/OPERATIONS.md`). Pull `main`.
+- Read the dry run's table once: `etl/tests/fixtures/budget_costings/autumn-budget-2025/` and the page `/budget/scorecard/autumn-budget-2025`.
+
+### On 28 October (times GMT)
+
+1. **Find the documents** (about 12:45, as soon as GOV.UK has them). The Treasury's Budget page links the **Budget document** (its own page, `…/budget-2026-document` if it follows last year; take the PDF marked "(web)", not "(print)") and **Supporting documents for Budget 2026** (with "Table 4.1 Budget 2026 Policy Decisions" as a spreadsheet, if the Treasury publishes it again). To list a page's files:
+
+   ```bash
+   curl -s https://www.gov.uk/api/content/government/publications/budget-2026-document | python3 -c "import json,sys; [print(a.get('url'), '|', a.get('title')) for a in json.load(sys.stdin)['details']['attachments']]"
+   ```
+
+   No spreadsheet? Use the Budget document's HTML page (`https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html` or as listed) as the copy. Neither? Leave `copy_url` out: the other checks still run.
+
+2. **Type the total from the PDF.** Open the PDF at the policy decisions table (search "policy decisions (£ million)"), go to its foot, and type the six figures of "Total policy decisions" in £ million with their signs, as printed (`-4,125m` is `-4125`). This is the one number a person types: the parser must read the same.
+
+3. **Add the event** to `EVENTS` in `etl/budget_costings.py`, below the last one:
+
+   ```python
+   Event(
+       id="autumn-budget-2026",
+       name="Autumn Budget 2026",
+       date="2026-10-28",
+       page_url="https://www.gov.uk/government/publications/budget-2026-document",
+       document_url="https://assets.publishing.service.gov.uk/media/<…>/<…>_Web_Accessible.pdf",
+       document_title="Budget 2026 (HC <number on the cover>)",
+       printed_total=(…, …, …, …, …, …),
+       copy_url="https://assets.publishing.service.gov.uk/media/<…>/Table_4.1_-_Budget_2026_Policy_Decisions.xlsx",
+   ),
+   ```
+
+4. **Read the table:**
+
+   ```bash
+   git checkout main && git pull && git checkout -b budget-2026-scorecard
+   etl/.venv/bin/python -m etl.budget_costings record autumn-budget-2026
+   ```
+
+   It downloads the PDF and the copy, keeps the table's words in `etl/tests/fixtures/budget_costings/autumn-budget-2026/`, and writes `data/build/budget/autumn-budget-2026.json` only if every check passes. Each check prints `ok` or `FAIL`.
+
+5. **If a check fails**, the message says which line and page. Nothing is written until all pass.
+   - `total` differs: re-read the PDF's total row. If what you typed is right, the parser misread the table: do not publish; see the last bullet.
+   - `reconcile` out of bounds, or `lines` not 1 to N: a line was lost or misread. Compare the line it names with the PDF.
+   - `copy`, a **figure** differs: stop and look at both in the PDF; a figure difference is never accepted. If the PDF is as read and the spreadsheet is wrong, leave `copy_url` out, say so in the pull request, and tell the reviewer.
+   - `copy`, **name** or **head** differs (as at Budget 2025): open the PDF at that line. If the page shows what was read, add it to the event, then build again without downloading:
+
+     ```python
+     accepted=(("56:name", "The spreadsheet words this line differently from the printed table; the figures are the same."),),
+     ```
+
+     ```bash
+     etl/.venv/bin/python -m etl.budget_costings --only autumn-budget-2026
+     ```
+
+   - `cannot read the table` (a `ParseError`): the table's layout changed (a new column, a second table for tax, figures in £ billion). The message names the page. Fixing the parser is a code change that needs a test; if it cannot be done within an hour, publish the cards first and the scorecard the next day. Nothing else depends on it.
+
+6. **Check it**, one command at a time (the machine has 16 GB; never two builds at once):
+
+   ```bash
+   etl/.venv/bin/python -m pytest etl/tests -q --offline
+   pnpm validate -- --base origin/main
+   pnpm typecheck
+   for p in packages/schema packages/engine packages/server; do (cd $p && pnpm exec vitest run --maxWorkers=3); done
+   pnpm build
+   (cd apps/web && ./node_modules/.bin/next start -p 3202) & sleep 5
+   curl -s -A LinkedInBot http://localhost:3202/budget/scorecard/autumn-budget-2026 | grep -oE '<title>[^<]*|og:(title|description|image)" content="[^"]*'
+   pkill -f "next start -p 3202"
+   ```
+
+   The tests pick the new event up by themselves: its total must equal the one you typed, every check must pass, and the committed JSON must be what the recorded table gives. On the page, check the first line, the last line and the largest against the PDF, and that each page number opens the right page.
+
+7. **Publish.** Commit the event, the fixture folder and the JSON (`git add etl/budget_costings.py etl/tests/fixtures/budget_costings/autumn-budget-2026 data/build/budget/autumn-budget-2026.json`), push, open the pull request. The reviewer types the total from the PDF again themselves and checks three lines, then merges. After the deploy, `curl -A LinkedInBot https://ledgergov.uk/budget/scorecard/autumn-budget-2026` must return the title, description and image, and `/budget` must link it ("Line by line: …").
+
+8. **Use it for the cards.** Each card's Budget-day evidence link can be the scorecard's line (`/budget/scorecard/autumn-budget-2026#line-N`) for finding it, but the card cites the PDF page itself (`…pdf#page=NN`), which the scorecard gives for every line.
+
+### Formats that could break it on the day
+
+- **The table's number and title** change between events (5.1, 3.1, 4.1): the parser looks for any "Table N … policy decisions" followed by year headings, so a new number is fine; a title without the words "policy decisions" is not.
+- **A table split in two** (tax and spending as separate tables), **figures in £ billion**, or **no line numbers** would stop the parse with an error, not a wrong page.
+- **The spreadsheet may differ from the PDF** in wording or tax/spend marks (step 5), and the "Head" column may be missing (Spring Statement 2025 had none: then there is no tax/spending mark per line).
+- **Totals do not add up exactly**: the Treasury rounds each line to £5m and adds before rounding, so the lines differ from the printed total by up to a few tens of millions (Budget 2025: up to £30m in a year). The page shows both and the gap.
+- **A corrected PDF** later in the day usually has a new address: update `document_url` and `printed_total` if needed, and run `record` again.
 
 ## Rules that matter most on the day
 

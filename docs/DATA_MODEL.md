@@ -215,6 +215,27 @@ interface BacktestResult {
 }
 ```
 
+## Budget scorecard (P7)
+
+```ts
+// data/build/budget/<event>.json, one per fiscal event, written by etl/budget_costings.py from the Budget
+// document as printed (its table of policy decisions) and shown at /budget/scorecard/<event>.
+// Schema and its checks: packages/schema/src/budget.ts. Budget-day steps: docs/BUDGET_DAY.md "The scorecard".
+interface BudgetScorecard {
+  id: string; name: string; date: string;            // "autumn-budget-2025", "Autumn Budget 2025", "2025-11-26"
+  source: Source & { document_url: string; document_sha256: string; copy_url?: string };
+  vintage: string; quality: "sourced"; unit: "gbp_m"; // the Treasury's figures, £ million, Exchequer sign (+ raises, − costs)
+  table: { number: string; title: string; pages: number[]; has_head: boolean };
+  years: string[]; headline_year: string;              // the page leads with the last year the Treasury costs
+  measures: { line: number; name: string; group: string | null; head?: "tax" | "spend"; page: number;
+              values: number[]; negligible?: string[] /* the Treasury's "*" */; of_which?: true }[];
+  totals: { label: string; kind: "total" | "total_tax" | "total_spending" | "subtotal" | "memo"; page: number; values: number[] }[];
+  sum_of_lines: number[];                              // within rounding of the "total" row, never more
+  checks: { id: string; ok: boolean; message: string }[];   // all must pass
+  copy_differences?: { line: number; field: "name" | "head"; pdf: string; copy: string; reason: string }[];
+}
+```
+
 ## Follow, contribute, accounts
 
 ```ts

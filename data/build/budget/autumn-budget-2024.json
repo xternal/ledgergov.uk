@@ -1,0 +1,1401 @@
+{
+  "id": "autumn-budget-2024",
+  "name": "Autumn Budget 2024",
+  "date": "2024-10-30",
+  "source": {
+    "id": "hmt_policy_decisions",
+    "title": "Autumn Budget 2024 (HC 295)",
+    "publisher": "HM Treasury",
+    "url": "https://www.gov.uk/government/publications/autumn-budget-2024",
+    "document_url": "https://assets.publishing.service.gov.uk/media/672b9695fbd69e1861921c63/Autumn_Budget_2024_Accessible.pdf",
+    "document_sha256": "8a635ccf89c0fabf6d5c1cbd3bbb416e065ba4629db772fcea137b3e13f7b249",
+    "published_on": "2024-10-30",
+    "licence": "OGL v3",
+    "copy_url": "https://assets.publishing.service.gov.uk/media/67222f364da1c0d41942a9b2/Table_5.1_-_Autumn_Budget_2024_Policy_Decisions.xlsx"
+  },
+  "vintage": "autumn-budget-2024",
+  "quality": "sourced",
+  "unit": "gbp_m",
+  "table": {
+    "number": "5.1",
+    "title": "Autumn Budget 2024 policy decisions (£ million)",
+    "pages": [
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127
+    ],
+    "has_head": true
+  },
+  "years": [
+    "2024-25",
+    "2025-26",
+    "2026-27",
+    "2027-28",
+    "2028-29",
+    "2029-30"
+  ],
+  "headline_year": "2029-30",
+  "rounding_m": 5,
+  "groups": [
+    "Fixing the Foundations and Rebuilding Britain",
+    "Delivering on our Promises – New Policy to Close the Tax Gap",
+    "Delivering on our Promises – Collecting Tax That is Due",
+    "Delivering on our Promises – Other Manifesto Tax Commitments",
+    "Repairing the Public Finances – Raising Revenue Fairly",
+    "Repairing the Public Finances – Duties & Levies",
+    "Repairing the Public Finances – Targeting Support and Reducing Fraud and Error in the Welfare System",
+    "Supporting Business, Families, and Local Communities",
+    "Tariffs & Technical Tax Changes"
+  ],
+  "measures": [
+    {
+      "line": 1,
+      "name": "Investing in Public Services: Funding £22bn overspend, fixing the NHS and supporting public services",
+      "group": "Fixing the Foundations and Rebuilding Britain",
+      "head": "spend",
+      "page": 120,
+      "values": [
+        -26450,
+        -44360,
+        -48285,
+        -51770,
+        -55065,
+        -55160
+      ]
+    },
+    {
+      "line": 2,
+      "name": "Rebuilding Britain: Additional capital investment",
+      "group": "Fixing the Foundations and Rebuilding Britain",
+      "head": "spend",
+      "page": 120,
+      "values": [
+        1765,
+        -15360,
+        -19440,
+        -23820,
+        -25695,
+        -23125
+      ]
+    },
+    {
+      "line": 3,
+      "name": "Compensation Payments: Making payments to victims of the infected blood scandal",
+      "group": "Fixing the Foundations and Rebuilding Britain",
+      "head": "spend",
+      "page": 120,
+      "values": [
+        -1080,
+        -2925,
+        -2830,
+        -2000,
+        -1570,
+        -1410
+      ]
+    },
+    {
+      "line": 4,
+      "name": "Compensation Payments: Making payments to victims of the Horizon IT scandal",
+      "group": "Fixing the Foundations and Rebuilding Britain",
+      "head": "spend",
+      "page": 120,
+      "values": [
+        -770,
+        -725,
+        -250,
+        -10,
+        0,
+        0
+      ]
+    },
+    {
+      "line": 5,
+      "name": "National Wealth Fund: Mobilise investment in the UK’s clean energy and growth industries and support the delivery of our new Industrial Strategy (forecast income from investment)",
+      "group": "Fixing the Foundations and Rebuilding Britain",
+      "head": "spend",
+      "page": 120,
+      "values": [
+        0,
+        5,
+        30,
+        50,
+        80,
+        135
+      ]
+    },
+    {
+      "line": 6,
+      "name": "Extraordinary Revenue Acceleration: Contribution to Extraordinary Revenue Acceleration to support military effort in Ukraine",
+      "group": "Fixing the Foundations and Rebuilding Britain",
+      "head": "spend",
+      "page": 120,
+      "values": [
+        -750,
+        -750,
+        -750,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "line": 7,
+      "name": "Extraordinary Revenue Acceleration: Forecast repayment from extraordinary profits on sanctioned Russian sovereign assets",
+      "group": "Fixing the Foundations and Rebuilding Britain",
+      "head": "spend",
+      "page": 121,
+      "values": [
+        0,
+        225,
+        160,
+        195,
+        230,
+        260
+      ]
+    },
+    {
+      "line": 8,
+      "name": "Tackling tax non-compliance in umbrella companies by moving PAYE obligations to recruitment agencies or, where an agency is not present, end client businesses from April 2026",
+      "group": "Delivering on our Promises – New Policy to Close the Tax Gap",
+      "head": "tax",
+      "page": 121,
+      "values": [
+        0,
+        75,
+        895,
+        740,
+        635,
+        500
+      ]
+    },
+    {
+      "line": 9,
+      "name": "Increasing the interest rate on unpaid tax from April 2025",
+      "group": "Delivering on our Promises – New Policy to Close the Tax Gap",
+      "head": "tax",
+      "page": 121,
+      "values": [
+        50,
+        255,
+        260,
+        215,
+        215,
+        215
+      ]
+    },
+    {
+      "line": 10,
+      "name": "Changes to tax rules on liquidations of Limited Liability Partnerships from 30 October 2024",
+      "group": "Delivering on our Promises – New Policy to Close the Tax Gap",
+      "head": "tax",
+      "page": 121,
+      "values": [
+        5,
+        15,
+        15,
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "line": 11,
+      "name": "Strengthen existing charity tax rules from April 2026, to prevent abuse and ensure that only the intended tax relief is given to charities",
+      "group": "Delivering on our Promises – New Policy to Close the Tax Gap",
+      "head": "tax",
+      "page": 121,
+      "values": [
+        0,
+        0,
+        20,
+        35,
+        35,
+        35
+      ],
+      "negligible": [
+        "2025-26"
+      ]
+    },
+    {
+      "line": 12,
+      "name": "Preventing non-compliance from the transfer overseas of UK tax-relieved pension funds",
+      "group": "Delivering on our Promises – New Policy to Close the Tax Gap",
+      "head": "tax",
+      "page": 121,
+      "values": [
+        0,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "negligible": [
+        "2024-25"
+      ]
+    },
+    {
+      "line": 13,
+      "name": "Amending anti-avoidance rules to ensure shareholders cannot extract funds untaxed from close companies from 30 October 2024",
+      "group": "Delivering on our Promises – New Policy to Close the Tax Gap",
+      "head": "tax",
+      "page": 121,
+      "values": [
+        5,
+        10,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "line": 14,
+      "name": "Confirming plans to mandate the reporting of benefits in kind via payroll software from April 2026",
+      "group": "Delivering on our Promises – New Policy to Close the Tax Gap",
+      "head": "tax",
+      "page": 121,
+      "values": [
+        0,
+        0,
+        35,
+        35,
+        35,
+        35
+      ]
+    },
+    {
+      "line": 15,
+      "name": "Ending contrived car ownership schemes: closing loopholes in employee car ownership schemes to prevent them from being used to circumvent Company Car Tax from 6 April 2026",
+      "group": "Delivering on our Promises – New Policy to Close the Tax Gap",
+      "head": "tax",
+      "page": 121,
+      "values": [
+        0,
+        0,
+        275,
+        220,
+        195,
+        175
+      ]
+    },
+    {
+      "line": 16,
+      "name": "Modernising and mandating registration of tax practitioners interacting with HMRC from April 2026",
+      "group": "Delivering on our Promises – New Policy to Close the Tax Gap",
+      "head": "tax",
+      "page": 121,
+      "values": [
+        0,
+        0,
+        5,
+        35,
+        40,
+        40
+      ],
+      "negligible": [
+        "2025-26"
+      ]
+    },
+    {
+      "line": 17,
+      "name": "Increased collection of tax due supported by investment in 5,000 additional HMRC compliance staff",
+      "group": "Delivering on our Promises – Collecting Tax That is Due",
+      "head": "tax",
+      "page": 121,
+      "values": [
+        10,
+        165,
+        540,
+        1150,
+        1940,
+        2725
+      ]
+    },
+    {
+      "line": 18,
+      "name": "Increased collection of overdue tax debt by additional investment in HMRC debt management staff",
+      "group": "Delivering on our Promises – Collecting Tax That is Due",
+      "head": "tax",
+      "page": 121,
+      "values": [
+        275,
+        815,
+        1230,
+        1490,
+        1515,
+        2030
+      ]
+    },
+    {
+      "line": 19,
+      "name": "Increasing tax receipts from modernising HMRC systems and data",
+      "group": "Delivering on our Promises – Collecting Tax That is Due",
+      "head": "tax",
+      "page": 122,
+      "values": [
+        0,
+        35,
+        155,
+        305,
+        485,
+        700
+      ],
+      "negligible": [
+        "2024-25"
+      ]
+    },
+    {
+      "line": 20,
+      "name": "Abolition of non-domicile status and introduction of a residence-based regime: remove the 50% discount on foreign income in 2025-26; apply inheritance tax; set Capital Gains Tax rebasing date at 5 April 2017; and extend the Temporary Repatriation Facility from two to three years",
+      "group": "Delivering on our Promises – Other Manifesto Tax Commitments",
+      "head": "tax",
+      "page": 122,
+      "values": [
+        0,
+        0,
+        4170,
+        5895,
+        2545,
+        95
+      ],
+      "negligible": [
+        "2025-26"
+      ]
+    },
+    {
+      "line": 21,
+      "name": "Carried interest: Increase the rates of Capital Gains Tax on carried interest to 32% from 6 April 2025, then move the carried interest taxation regime to the Income Tax framework from 6 April 2026 onwards",
+      "group": "Delivering on our Promises – Other Manifesto Tax Commitments",
+      "head": "tax",
+      "page": 122,
+      "values": [
+        0,
+        0,
+        -5,
+        140,
+        80,
+        85
+      ]
+    },
+    {
+      "line": 22,
+      "name": "VAT: Applying the standard rate (20%) to education and boarding services provided by private schools from 1 January 2025",
+      "group": "Delivering on our Promises – Other Manifesto Tax Commitments",
+      "head": "tax",
+      "page": 122,
+      "values": [
+        460,
+        1505,
+        1560,
+        1610,
+        1665,
+        1725
+      ],
+      "footnotes": [
+        "3"
+      ]
+    },
+    {
+      "line": 23,
+      "name": "Business Rates: Remove eligibility of private schools for charitable rate relief from 1 April 2025",
+      "group": "Delivering on our Promises – Other Manifesto Tax Commitments",
+      "head": "tax",
+      "page": 122,
+      "values": [
+        0,
+        70,
+        85,
+        85,
+        85,
+        90
+      ]
+    },
+    {
+      "line": 24,
+      "name": "Energy Profits Levy (EPL): Increase the rate to 38%; abolish the EPL investment allowance except for decarbonisation expenditure and cut rate of decarbonisation allowance to 66% from 1 November 2024; sunset date extension from 31 March 2029 to 31 March 2030 as well as the introduction of tax relief for payments made into a Decommissioning Fund in relation to oil and gas assets transferred for use in Carbon Capture Usage and Storage",
+      "group": "Delivering on our Promises – Other Manifesto Tax Commitments",
+      "head": "tax",
+      "page": 122,
+      "values": [
+        195,
+        470,
+        220,
+        50,
+        410,
+        955
+      ]
+    },
+    {
+      "line": 25,
+      "name": "Stamp Duty Land Tax (SDLT): Increase the Higher Rate of Additional Dwelling (HRAD) of SDLT by 2ppts from 3% to 5% from 31 October 2024",
+      "group": "Delivering on our Promises – Other Manifesto Tax Commitments",
+      "head": "tax",
+      "page": 122,
+      "values": [
+        115,
+        90,
+        170,
+        255,
+        280,
+        310
+      ]
+    },
+    {
+      "line": 26,
+      "name": "Employer National Insurance contributions: Increase rate by 1.2ppts to 15%, cut the Secondary Threshold to £5,000 until 5 April 2028 and uprate with CPI thereafter, increase Employment Allowance to £10,500, remove the £100,000 Employment Allowance eligibility threshold",
+      "group": "Repairing the Public Finances – Raising Revenue Fairly",
+      "head": "tax",
+      "page": 123,
+      "values": [
+        0,
+        23770,
+        23690,
+        24170,
+        24930,
+        25710
+      ]
+    },
+    {
+      "line": 27,
+      "name": "Capital Gains Tax: Increase the main rates of CGT to 18% and 24% from 30 October 2024, and the Business Asset Disposal Relief (BADR) and Investors’ Relief (IR) rate to 14% from 6 April 2025 and to 18% from 6 April 2026",
+      "group": "Repairing the Public Finances – Raising Revenue Fairly",
+      "head": "tax",
+      "page": 123,
+      "values": [
+        90,
+        1440,
+        1370,
+        1350,
+        2180,
+        2490
+      ]
+    },
+    {
+      "line": 28,
+      "name": "Inheritance Tax: Include unused pension funds and death benefits payable from a pension in the value of estates from 6 April 2027",
+      "group": "Repairing the Public Finances – Raising Revenue Fairly",
+      "head": "tax",
+      "page": 123,
+      "values": [
+        0,
+        0,
+        0,
+        640,
+        1340,
+        1460
+      ]
+    },
+    {
+      "line": 29,
+      "name": "Inheritance Tax: Reform agricultural property relief and business property relief from 6 April 2026 by maintaining 100% relief for the first £1m of combined assets and 50% relief thereafter, and 50% relief for “not listed” shares on the markets of a recognised stock exchange",
+      "group": "Repairing the Public Finances – Raising Revenue Fairly",
+      "head": "tax",
+      "page": 123,
+      "values": [
+        0,
+        0,
+        230,
+        495,
+        520,
+        520
+      ]
+    },
+    {
+      "line": 30,
+      "name": "Inheritance Tax: Maintain thresholds at current levels for a further two years until 5 April 2030",
+      "group": "Repairing the Public Finances – Raising Revenue Fairly",
+      "head": "tax",
+      "page": 123,
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        110,
+        355
+      ]
+    },
+    {
+      "line": 31,
+      "name": "Savings: Maintain subscription limits at current levels for Adult ISAs, Junior ISAs and Child Trust Funds from 6 April 2025 to 5 April 2030",
+      "group": "Repairing the Public Finances – Raising Revenue Fairly",
+      "head": "tax",
+      "page": 123,
+      "values": [
+        0,
+        0,
+        15,
+        90,
+        265,
+        605
+      ]
+    },
+    {
+      "line": 32,
+      "name": "Company Car Tax: Set appropriate percentages for electric vehicles, hybrids and internal combustion engine vehicles for 2028-29 and 2029-30",
+      "group": "Repairing the Public Finances – Duties & Levies",
+      "head": "tax",
+      "page": 123,
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        135,
+        210
+      ]
+    },
+    {
+      "line": 33,
+      "name": "Vehicle Excise Duty: from 1 April 2025, freeze the lowest First Year Rate (FYR) paid by zero emission cars until 2029-30, increase FYRs for all other emission bands including hybrids and Internal Combustion Engine vehicles in 2025-26",
+      "group": "Repairing the Public Finances – Duties & Levies",
+      "head": "tax",
+      "page": 124,
+      "values": [
+        15,
+        415,
+        410,
+        370,
+        285,
+        200
+      ]
+    },
+    {
+      "line": 34,
+      "name": "Air Passenger Duty: Adjustment to increase all rates from 2026-27 with a further 50% increase for larger private jets, and rates set to nearest penny from 2027-28",
+      "group": "Repairing the Public Finances – Duties & Levies",
+      "head": "tax",
+      "page": 124,
+      "values": [
+        0,
+        0,
+        520,
+        585,
+        650,
+        720
+      ]
+    },
+    {
+      "line": 35,
+      "name": "Vaping Products Duty: Introduce a flat rate duty at £2.20/10ml from 1 October 2026",
+      "group": "Repairing the Public Finances – Duties & Levies",
+      "head": "tax",
+      "page": 124,
+      "values": [
+        0,
+        0,
+        5,
+        10,
+        10,
+        15
+      ]
+    },
+    {
+      "line": 36,
+      "name": "Tobacco Duty: Introduce a tobacco duty escalator of RPI +2% for the Parliament; increase duty on hand rolling tobacco a further 10% (RPI+12%) for 2024-25 from 30 October 2024; and a separate one-off duty increase to maintain financial incentive to choose vaping over smoking from 1 October 2026",
+      "group": "Repairing the Public Finances – Duties & Levies",
+      "head": "tax",
+      "page": 124,
+      "values": [
+        40,
+        85,
+        105,
+        135,
+        160,
+        180
+      ]
+    },
+    {
+      "line": 37,
+      "name": "Soft Drinks Industry Levy: Uprate by CPI since introduction in 2018 evenly across the forecast period and uprate annually by CPI from 1 April 2025",
+      "group": "Repairing the Public Finances – Duties & Levies",
+      "head": "tax",
+      "page": 124,
+      "values": [
+        0,
+        20,
+        40,
+        60,
+        75,
+        95
+      ]
+    },
+    {
+      "line": 38,
+      "name": "Winter Fuel Payments: Target payments at recipients of Pension Credit and certain other means-tested benefits from winter 2024-25",
+      "group": "Repairing the Public Finances – Targeting Support and Reducing Fraud and Error in the Welfare System",
+      "head": "spend",
+      "page": 124,
+      "values": [
+        1450,
+        1510,
+        1555,
+        1580,
+        1605,
+        1655
+      ],
+      "footnotes": [
+        "4"
+      ]
+    },
+    {
+      "line": 39,
+      "name": "Pensions: Enhance Pension Credit take-up for new claims to Housing Benefit from April 2025",
+      "group": "Repairing the Public Finances – Targeting Support and Reducing Fraud and Error in the Welfare System",
+      "head": "spend",
+      "page": 124,
+      "values": [
+        0,
+        0,
+        -5,
+        -10,
+        0,
+        0
+      ],
+      "negligible": [
+        "2025-26"
+      ]
+    },
+    {
+      "line": 40,
+      "name": "Universal Credit: Accelerate migration of Employment and Support Allowance claimants onto Universal Credit from September 2024",
+      "group": "Repairing the Public Finances – Targeting Support and Reducing Fraud and Error in the Welfare System",
+      "head": "spend",
+      "page": 124,
+      "values": [
+        -25,
+        -485,
+        -455,
+        -275,
+        70,
+        455
+      ]
+    },
+    {
+      "line": 41,
+      "name": "Universal Credit: Amending Severe Disability Premium transitional protection regulations",
+      "group": "Repairing the Public Finances – Targeting Support and Reducing Fraud and Error in the Welfare System",
+      "head": "spend",
+      "page": 124,
+      "values": [
+        0,
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "negligible": [
+        "2024-25"
+      ]
+    },
+    {
+      "line": 42,
+      "name": "Investment in additional 3,000 fraud and error staff in DWP from April 2025",
+      "group": "Repairing the Public Finances – Targeting Support and Reducing Fraud and Error in the Welfare System",
+      "head": "spend",
+      "page": 124,
+      "values": [
+        0,
+        80,
+        345,
+        530,
+        625,
+        665
+      ]
+    },
+    {
+      "line": 43,
+      "name": "New investment to verify Universal Credit claimant changes to tackle fraud and error from April 2025",
+      "group": "Repairing the Public Finances – Targeting Support and Reducing Fraud and Error in the Welfare System",
+      "head": "spend",
+      "page": 125,
+      "values": [
+        0,
+        105,
+        225,
+        225,
+        235,
+        250
+      ]
+    },
+    {
+      "line": 44,
+      "name": "Extending Targeted Case Review of Universal Credit claims from April 2028",
+      "group": "Repairing the Public Finances – Targeting Support and Reducing Fraud and Error in the Welfare System",
+      "head": "spend",
+      "page": 125,
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        1345,
+        2540
+      ]
+    },
+    {
+      "line": 45,
+      "name": "Investment in additional 180 welfare counter-fraud staff in HMRC to tackle fraud and error in Child Benefit and Tax-Free Childcare from April 2025",
+      "group": "Repairing the Public Finances – Targeting Support and Reducing Fraud and Error in the Welfare System",
+      "head": "spend",
+      "page": 125,
+      "values": [
+        0,
+        20,
+        60,
+        90,
+        95,
+        90
+      ]
+    },
+    {
+      "line": 46,
+      "name": "Increase DWP fraud and error debt recovery powers – resource cost for measures which yield a PSNCR saving of £260m in 2029-30",
+      "group": "Repairing the Public Finances – Targeting Support and Reducing Fraud and Error in the Welfare System",
+      "head": "spend",
+      "page": 125,
+      "values": [
+        0,
+        0,
+        -30,
+        -30,
+        -30,
+        -30
+      ]
+    },
+    {
+      "line": 47,
+      "name": "Business Rates: 40% relief for Retail, Hospitality and Leisure (RHL) sectors for 2025-26 from 1 April 2025, up to a £110,000 cash cap per business",
+      "group": "Supporting Business, Families, and Local Communities",
+      "head": "tax",
+      "page": 125,
+      "values": [
+        35,
+        -1725,
+        50,
+        -15,
+        0,
+        0
+      ]
+    },
+    {
+      "line": 48,
+      "name": "Business Rates: Freeze the small business multiplier for 2025-26",
+      "group": "Supporting Business, Families, and Local Communities",
+      "head": "tax",
+      "page": 125,
+      "values": [
+        0,
+        -135,
+        -145,
+        -145,
+        -145,
+        -155
+      ],
+      "negligible": [
+        "2024-25"
+      ]
+    },
+    {
+      "line": 49,
+      "name": "Fuel duty: One year extension to the 5p cut in rates and no RPI increase in 2025-26",
+      "group": "Supporting Business, Families, and Local Communities",
+      "head": "tax",
+      "page": 125,
+      "values": [
+        -45,
+        -3015,
+        -880,
+        -890,
+        -900,
+        -890
+      ]
+    },
+    {
+      "line": 50,
+      "name": "Capital allowances: extend 100% first-year allowances for zero-emission cars and electric vehicle charge-points to 31 March 2026 for Corporation Tax and 5 April 2026 for Income Tax",
+      "group": "Supporting Business, Families, and Local Communities",
+      "head": "tax",
+      "page": 125,
+      "values": [
+        -20,
+        -175,
+        -125,
+        45,
+        25,
+        25
+      ]
+    },
+    {
+      "line": 51,
+      "name": "Alternative Finance: Changes to tax rules on alternative finance arrangements from 30 October 2024",
+      "group": "Supporting Business, Families, and Local Communities",
+      "head": "tax",
+      "page": 125,
+      "values": [
+        0,
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "negligible": [
+        "2024-25"
+      ]
+    },
+    {
+      "line": 52,
+      "name": "Alcohol Duty: Increase Draught Relief to reduce duty on an average ABV pint by 1p from 1 February 2025",
+      "group": "Supporting Business, Families, and Local Communities",
+      "head": "tax",
+      "page": 125,
+      "values": [
+        -10,
+        -85,
+        -85,
+        -90,
+        -95,
+        -100
+      ]
+    },
+    {
+      "line": 53,
+      "name": "Carer’s Allowance: Increasing the earnings limit to the equivalent of 16 hours at the National Living Wage from April 2025",
+      "group": "Supporting Business, Families, and Local Communities",
+      "head": "spend",
+      "page": 125,
+      "values": [
+        0,
+        -25,
+        -70,
+        -105,
+        -135,
+        -165
+      ]
+    },
+    {
+      "line": 54,
+      "name": "Help to Save: Extend the current scheme with expanded eligibility to include all working UC claimants earning £1 or more, from 6 April 2025 to 5 April 2027",
+      "group": "Supporting Business, Families, and Local Communities",
+      "head": "spend",
+      "page": 125,
+      "values": [
+        0,
+        0,
+        0,
+        -20,
+        -20,
+        -20
+      ]
+    },
+    {
+      "line": 55,
+      "name": "Mineworkers Pension Scheme: Transfer of the Mineworkers Pension Scheme Investment Reserve to the scheme Trustees",
+      "group": "Supporting Business, Families, and Local Communities",
+      "head": "spend",
+      "page": 126,
+      "values": [
+        0,
+        -70,
+        -70,
+        -65,
+        -60,
+        -60
+      ]
+    },
+    {
+      "line": 56,
+      "name": "Veterans: Extend employer NICs relief for hiring veterans for one year from 6 April 2025",
+      "group": "Supporting Business, Families, and Local Communities",
+      "head": "tax",
+      "page": 126,
+      "values": [
+        0,
+        -5,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "line": 57,
+      "name": "Right to Buy: Reduce discounts and allow local authorities to retain full receipts from 21 November 2024",
+      "group": "Supporting Business, Families, and Local Communities",
+      "head": "spend",
+      "page": 126,
+      "values": [
+        0,
+        -265,
+        -280,
+        -195,
+        -205,
+        -240
+      ]
+    },
+    {
+      "line": 58,
+      "name": "Public Works Loan Board: Extend discounted Public Works Loan Board rate for local authorities borrowing for social housing from 30 June 2025 to 31 March 2026",
+      "group": "Supporting Business, Families, and Local Communities",
+      "head": "spend",
+      "page": 126,
+      "values": [
+        0,
+        -5,
+        -10,
+        -10,
+        -10,
+        -10
+      ]
+    },
+    {
+      "line": 59,
+      "name": "Borrowing powers: Granting borrowing powers to newly established Mayoral Combined Authorities",
+      "group": "Supporting Business, Families, and Local Communities",
+      "head": "spend",
+      "page": 126,
+      "values": [
+        -5,
+        -25,
+        -40,
+        -20,
+        -5,
+        0
+      ]
+    },
+    {
+      "line": 60,
+      "name": "Business Rates retention: Extend Greater London Authority enhanced business rates retention arrangements at 67% for 2025-26 and extend 100% local retention in Cornwall, Liverpool City Region and the West of England Combined Authority area",
+      "group": "Supporting Business, Families, and Local Communities",
+      "head": "spend",
+      "page": 126,
+      "values": [
+        0,
+        -1185,
+        25,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "line": 61,
+      "name": "Tariff Changes since Spring Budget 2024",
+      "group": "Tariffs & Technical Tax Changes",
+      "head": "tax",
+      "page": 126,
+      "values": [
+        -55,
+        -105,
+        -35,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "line": 62,
+      "name": "Special Education Needs and Disabilities: Reduction in Local Authority SEND deficits as a result of additional DEL funding",
+      "group": "Tariffs & Technical Tax Changes",
+      "head": "spend",
+      "page": 126,
+      "values": [
+        0,
+        865,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "line": 63,
+      "name": "Universal Credit: Extend the £2,500 surplus earnings threshold for one year from April 2025",
+      "group": "Tariffs & Technical Tax Changes",
+      "head": "spend",
+      "page": 126,
+      "values": [
+        0,
+        -160,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "line": 64,
+      "name": "Van Benefit Charge: Uprate by CPI from 6 April 2025",
+      "group": "Tariffs & Technical Tax Changes",
+      "head": "tax",
+      "page": 126,
+      "values": [
+        0,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "line": 65,
+      "name": "Climate Change Levy (CCL): Amendments to the Climate Change Agreement scheme from 1 January 2026, meaning new entrants will be able to claim relief on their CCL bill before completing a target period",
+      "group": "Tariffs & Technical Tax Changes",
+      "head": "tax",
+      "page": 126,
+      "values": [
+        0,
+        0,
+        -5,
+        0,
+        0,
+        0
+      ],
+      "negligible": [
+        "2025-26"
+      ]
+    },
+    {
+      "line": 66,
+      "name": "The Starting Rate for Savings (SRS): Maintain the SRS at £5,000 for 2025-26 from 6 April 2025",
+      "group": "Tariffs & Technical Tax Changes",
+      "head": "tax",
+      "page": 126,
+      "values": [
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "negligible": [
+        "2025-26",
+        "2027-28",
+        "2028-29",
+        "2029-30"
+      ]
+    },
+    {
+      "line": 67,
+      "name": "Private Intermittent Securities and Capital Exchange System (PISCES): Exempt transfers of shares made on a PISCES platform from Stamp Taxes on Shares",
+      "group": "Tariffs & Technical Tax Changes",
+      "head": "tax",
+      "page": 127,
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        -5,
+        -5
+      ],
+      "negligible": [
+        "2024-25",
+        "2025-26",
+        "2026-27",
+        "2027-28"
+      ]
+    },
+    {
+      "line": 68,
+      "name": "Carbon Border Adjustment Mechanism (CBAM): Confirming sectoral scope of the UK CBAM from 1 January 2027 to be aluminium, cement, fertiliser, hydrogen, and iron and steel.",
+      "group": "Tariffs & Technical Tax Changes",
+      "head": "tax",
+      "page": 127,
+      "values": [
+        0,
+        0,
+        0,
+        -5,
+        -5,
+        -5
+      ],
+      "negligible": [
+        "2026-27"
+      ]
+    },
+    {
+      "line": 69,
+      "name": "Carbon Price Support (CPS): Maintain the freeze of CPS rates at the equivalent of £18 per tonne of CO2 from 1 April 2026",
+      "group": "Tariffs & Technical Tax Changes",
+      "head": "tax",
+      "page": 127,
+      "values": [
+        0,
+        0,
+        -10,
+        -10,
+        -5,
+        -5
+      ]
+    },
+    {
+      "line": 70,
+      "name": "Lifelong Learning Entitlement: Implementation to amended timetable",
+      "group": "Tariffs & Technical Tax Changes",
+      "head": "spend",
+      "page": 127,
+      "values": [
+        0,
+        0,
+        0,
+        10,
+        10,
+        10
+      ],
+      "negligible": [
+        "2025-26",
+        "2026-27"
+      ]
+    }
+  ],
+  "totals": [
+    {
+      "label": "Total revenue from closing the tax gap (lines 8 – 19)",
+      "kind": "subtotal",
+      "page": 122,
+      "values": [
+        350,
+        1375,
+        3445,
+        4240,
+        5120,
+        6485
+      ],
+      "after_line": 19,
+      "lines": [
+        8,
+        19
+      ]
+    },
+    {
+      "label": "Total revenue from manifesto tax commitments (lines 8 – 25)",
+      "kind": "subtotal",
+      "page": 122,
+      "values": [
+        1115,
+        3510,
+        9635,
+        12275,
+        10185,
+        9745
+      ],
+      "after_line": 25,
+      "lines": [
+        8,
+        25
+      ]
+    },
+    {
+      "label": "Memo – Allowance for impact on public sector organisations",
+      "kind": "memo",
+      "page": 123,
+      "values": [
+        0,
+        -4745,
+        -4730,
+        -4830,
+        -4940,
+        -5110
+      ],
+      "after_line": 26
+    },
+    {
+      "label": "Total policy decisions",
+      "kind": "total",
+      "page": 127,
+      "values": [
+        -24705,
+        -39550,
+        -35330,
+        -36585,
+        -38775,
+        -32990
+      ],
+      "after_line": 70,
+      "footnotes": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "label": "Total spending policy decisions",
+      "kind": "total_spending",
+      "page": 127,
+      "values": [
+        -25865,
+        -63550,
+        -70115,
+        -75645,
+        -78500,
+        -74160
+      ],
+      "after_line": 70,
+      "footnotes": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "label": "Total tax policy decisions",
+      "kind": "total_tax",
+      "page": 127,
+      "values": [
+        1160,
+        24005,
+        34785,
+        39065,
+        39725,
+        41170
+      ],
+      "after_line": 70,
+      "footnotes": [
+        "6",
+        "7"
+      ]
+    }
+  ],
+  "sum_of_lines": [
+    -24700,
+    -39540,
+    -35325,
+    -36575,
+    -38790,
+    -33000
+  ],
+  "footnotes": {
+    "*": "Costing is negligible",
+    "1": "Costings reflect the OBR’s latest economic and fiscal determinants.",
+    "2": "Many measures have both tax and spend impacts. Measures are identified as tax or spend on the basis of their largest impact.",
+    "3": "20% VAT will also apply to pre-payments of fees for terms starting on or after 1 January 2025 made on or after 29 July 2024.",
+    "4": "Costing reflects assumed increase in Pension Credit take-up.",
+    "5": "Totals may not sum due to rounding.",
+    "6": "The totals for tax and spending reflect both the tax and spend impacts of each measure. Totals may not sum by head classification."
+  },
+  "checks": [
+    {
+      "id": "lines",
+      "ok": true,
+      "message": "70 lines numbered 1 to 70"
+    },
+    {
+      "id": "figures",
+      "ok": true,
+      "message": "every line has a figure for each of 6 years"
+    },
+    {
+      "id": "total",
+      "ok": true,
+      "message": "the table's total [-24705, -39550, -35330, -36585, -38775, -32990] equals the total typed from the PDF [-24705, -39550, -35330, -36585, -38775, -32990]"
+    },
+    {
+      "id": "reconcile.2024-25",
+      "ok": true,
+      "message": "2024-25: lines sum to -24700, the Treasury's total is -24705, difference -5 (rounding allows up to 77.5)"
+    },
+    {
+      "id": "reconcile.2025-26",
+      "ok": true,
+      "message": "2025-26: lines sum to -39540, the Treasury's total is -39550, difference -10 (rounding allows up to 140)"
+    },
+    {
+      "id": "reconcile.2026-27",
+      "ok": true,
+      "message": "2026-27: lines sum to -35325, the Treasury's total is -35330, difference -5 (rounding allows up to 157.5)"
+    },
+    {
+      "id": "reconcile.2027-28",
+      "ok": true,
+      "message": "2027-28: lines sum to -36575, the Treasury's total is -36585, difference -10 (rounding allows up to 152.5)"
+    },
+    {
+      "id": "reconcile.2028-29",
+      "ok": true,
+      "message": "2028-29: lines sum to -38790, the Treasury's total is -38775, difference 15 (rounding allows up to 152.5)"
+    },
+    {
+      "id": "reconcile.2029-30",
+      "ok": true,
+      "message": "2029-30: lines sum to -33000, the Treasury's total is -32990, difference 10 (rounding allows up to 150)"
+    },
+    {
+      "id": "subtotal.8-19.2024-25",
+      "ok": true,
+      "message": "lines 8 to 19, 2024-25: sum 345, printed 350, difference 5 (rounding allows up to 20)"
+    },
+    {
+      "id": "subtotal.8-19.2025-26",
+      "ok": true,
+      "message": "lines 8 to 19, 2025-26: sum 1375, printed 1375, difference 0 (rounding allows up to 27.5)"
+    },
+    {
+      "id": "subtotal.8-19.2026-27",
+      "ok": true,
+      "message": "lines 8 to 19, 2026-27: sum 3440, printed 3445, difference 5 (rounding allows up to 32.5)"
+    },
+    {
+      "id": "subtotal.8-19.2027-28",
+      "ok": true,
+      "message": "lines 8 to 19, 2027-28: sum 4250, printed 4240, difference -10 (rounding allows up to 32.5)"
+    },
+    {
+      "id": "subtotal.8-19.2028-29",
+      "ok": true,
+      "message": "lines 8 to 19, 2028-29: sum 5120, printed 5120, difference 0 (rounding allows up to 32.5)"
+    },
+    {
+      "id": "subtotal.8-19.2029-30",
+      "ok": true,
+      "message": "lines 8 to 19, 2029-30: sum 6480, printed 6485, difference 5 (rounding allows up to 32.5)"
+    },
+    {
+      "id": "subtotal.8-25.2024-25",
+      "ok": true,
+      "message": "lines 8 to 25, 2024-25: sum 1115, printed 1115, difference 0 (rounding allows up to 27.5)"
+    },
+    {
+      "id": "subtotal.8-25.2025-26",
+      "ok": true,
+      "message": "lines 8 to 25, 2025-26: sum 3510, printed 3510, difference 0 (rounding allows up to 40)"
+    },
+    {
+      "id": "subtotal.8-25.2026-27",
+      "ok": true,
+      "message": "lines 8 to 25, 2026-27: sum 9640, printed 9635, difference -5 (rounding allows up to 47.5)"
+    },
+    {
+      "id": "subtotal.8-25.2027-28",
+      "ok": true,
+      "message": "lines 8 to 25, 2027-28: sum 12285, printed 12275, difference -10 (rounding allows up to 47.5)"
+    },
+    {
+      "id": "subtotal.8-25.2028-29",
+      "ok": true,
+      "message": "lines 8 to 25, 2028-29: sum 10185, printed 10185, difference 0 (rounding allows up to 47.5)"
+    },
+    {
+      "id": "subtotal.8-25.2029-30",
+      "ok": true,
+      "message": "lines 8 to 25, 2029-30: sum 9740, printed 9745, difference 5 (rounding allows up to 47.5)"
+    },
+    {
+      "id": "copy",
+      "ok": true,
+      "message": "70 lines and 6 totals match the copy figure for figure"
+    }
+  ],
+  "recorded": {
+    "fetched_at": "2026-10-12T19:18:10+00:00",
+    "extractor": "pdftotext 26.10.0 -tsv (poppler), level-5 rows of the table's pages"
+  }
+}

@@ -2,7 +2,8 @@ import "server-only";
 import { loadSeed } from "@ledger/schema/seed";
 import { loadPeople } from "@ledger/schema/people";
 import { loadForecasts, readBuildText, type ForecastData } from "@ledger/schema/forecasts";
-import type { PeopleBundle, Seed } from "@ledger/schema";
+import { loadScorecards } from "@ledger/schema/budget";
+import type { BudgetScorecard, PeopleBundle, Seed } from "@ledger/schema";
 import { buildRuns, vintageChangelog, type BuildRun, type Manifest, type VintageEntry } from "@ledger/server/api";
 
 /**
@@ -30,6 +31,14 @@ let forecasts: ForecastData | null = null;
 export function getForecasts(): ForecastData {
   forecasts ??= loadForecasts();
   return forecasts;
+}
+
+let scorecards: BudgetScorecard[] | null = null;
+
+/** The Treasury's tables of policy decisions, one per fiscal event, newest first (data/build/budget), validated on first use. */
+export function getScorecards(): BudgetScorecard[] {
+  scorecards ??= loadScorecards();
+  return scorecards;
 }
 
 let vintages: { manifest: Manifest; changelog: VintageEntry[]; runs: BuildRun[] } | null = null;

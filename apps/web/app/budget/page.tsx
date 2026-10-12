@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { CardView } from "@ledger/schema";
 import { collectionJsonLd } from "@ledger/server/seo";
-import { getSeed } from "@/lib/data";
+import { getScorecards, getSeed } from "@/lib/data";
 import { EVENT_LABEL } from "@/lib/copy";
 import { AREA_LABEL, todayIso } from "@/lib/promises";
 import { BUDGET, BUDGET_TOPICS, budgetDayEvents, budgetWatch, topicCards } from "@/lib/budget";
@@ -11,6 +11,7 @@ import { FollowButton } from "@/components/FollowPanel";
 import { followOptions, followWindows } from "@/app/follow/targets";
 import { JsonLd } from "@/components/JsonLd";
 import { OPEN_GRAPH, seoContext } from "@/lib/site";
+import { scorecardCopy, scorecardPath } from "@/lib/scorecard";
 
 /** Re-render hourly, so the page turns from "to watch" to "what it did" on Budget day without a deploy. */
 export const revalidate = 3600;
@@ -54,6 +55,8 @@ export default function BudgetPage() {
   const watched = [...w.needMoney, ...w.tax, ...w.other];
   const topics = BUDGET_TOPICS.map((topic) => ({ topic, cards: topicCards(seed.cards, topic) })).filter((t) => t.cards.length > 0);
   const when = dayDate(BUDGET.date);
+  // The Treasury's own table of measures for the newest fiscal event read so far: this Budget's, from the day it is read.
+  const scorecard = getScorecards()[0] ?? null;
   const structuredData = collectionJsonLd(
     {
       path: "/budget",
@@ -95,6 +98,12 @@ export default function BudgetPage() {
             money in a Budget moves a card to Funded, and a tax change can keep or break a pledge. Only the government sets a Budget, so these are the
             government&apos;s promises it can still move.
           </p>
+          {scorecard && (
+            <p className="m-0 border-l-2 border-rec pl-3 text-muted">
+              Line by line: <a href={scorecardPath(scorecard)}>{scorecardCopy(scorecard).title}</a>, from the Treasury&apos;s own table, each line linked to
+              its page.
+            </p>
+          )}
           <div>
             <FollowButton
               label="Get an email when a promise moves"

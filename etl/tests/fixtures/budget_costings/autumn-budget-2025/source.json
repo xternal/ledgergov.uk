@@ -1,0 +1,20 @@
+{
+  "event": "autumn-budget-2025",
+  "document_url": "https://assets.publishing.service.gov.uk/media/6929b353345e31ab14ecf735/E03444720_Budget_2025_Web_Accessible.pdf",
+  "sha256": "fc112784bdcfccfd1dc362202dbcc7c54d4f17c2969dafae244e2edead7c468a",
+  "fetched_at": "2026-10-12T19:34:03+00:00",
+  "pages": [
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101
+  ],
+  "extractor": "pdftotext 26.10.0 -tsv (poppler), level-5 rows of the table's pages",
+  "copy_url": "https://assets.publishing.service.gov.uk/media/69269df29fd433badebc31b3/Table_4.1_-_Budget_2025_Policy_Decisions.xlsx",
+  "copy_sha256": "cf68c672e022a23b4327e8f863380cdd47c286081986a6515ac2ee1e85435921"
+}
