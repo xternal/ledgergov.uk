@@ -8,7 +8,8 @@
     ".": "./src/index.ts",
     "./seed": "./src/seed.ts",
     "./people": "./src/people-data.ts",
-    "./forecasts": "./src/forecasts-data.ts"
+    "./forecasts": "./src/forecasts-data.ts",
+    "./budget": "./src/budget-data.ts"
   },
   "scripts": {
     "test": "vitest run",

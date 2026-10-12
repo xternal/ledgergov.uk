@@ -1,5 +1,5 @@
 /**
- * pnpm validate: schemas (cards, data, forecasts), cross-file references, the balance check, a lint
+ * pnpm validate: schemas (cards, data, forecasts, Budget scorecards), cross-file references, the balance check, a lint
  * that keeps data out of components, and the exact-match check on intake
  * drafts. Exits non-zero on any error; warnings (cards not yet publishable)
  * are printed but do not fail. A draft still in content/drafts/ is an error,
@@ -13,6 +13,7 @@ import { parse as parseYaml } from "yaml";
 import { parseSeed } from "@ledger/schema/seed";
 import { loadPeople } from "@ledger/schema/people";
 import { parseForecasts, readBacktestTable, readForecastFiles } from "@ledger/schema/forecasts";
+import { parseScorecards, readScorecardFiles } from "@ledger/schema/budget";
 import { BALANCE_TOLERANCE_BN, appendOnlyIssues, comparableCard, contractAppendOnlyIssues, forecastAppendOnlyIssues } from "@ledger/schema";
 import { baseSettings, compute, createModel } from "@ledger/engine";
 import { checkDrafts } from "../packages/server/src/harvest/drafts";
@@ -33,6 +34,10 @@ try {
 
 // Forecasts and the backtest table (M7): every record parses and every score names a recorded forecast.
 errors.push(...parseForecasts(readForecastFiles(root), readBacktestTable(root)).issues);
+// Budget scorecards (P7): every table parses, has one total, and its lines add up to it within rounding.
+const scorecards = parseScorecards(readScorecardFiles(root));
+errors.push(...scorecards.issues);
+if (scorecards.data.length) console.log(`budget scorecards: ${scorecards.data.map((s) => `${s.id} (${s.measures.length} lines)`).join(", ")}`);
 
 // 2. Balance: receipts + borrowing == spending, at base and for every preset and card scenario
 if (seed) {

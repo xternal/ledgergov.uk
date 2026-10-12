@@ -1,0 +1,655 @@
+{
+  "id": "spring-statement-2025",
+  "name": "Spring Statement 2025",
+  "date": "2025-03-26",
+  "source": {
+    "id": "hmt_policy_decisions",
+    "title": "Spring Statement 2025 (CP 1298)",
+    "publisher": "HM Treasury",
+    "url": "https://www.gov.uk/government/publications/spring-statement-2025-document",
+    "document_url": "https://assets.publishing.service.gov.uk/media/67e3ec2df356a2dc0e39b488/E03274109_HMT_Spring_Statement_Mar_25_Web_Accessible_.pdf",
+    "document_sha256": "0864d916ba65e647a437730896db938ad3e6492a7666de83fa0cf095366e94de",
+    "published_on": "2025-03-26",
+    "licence": "OGL v3",
+    "copy_url": "https://www.gov.uk/government/publications/spring-statement-2025-document/spring-statement-2025-html"
+  },
+  "vintage": "spring-statement-2025",
+  "quality": "sourced",
+  "unit": "gbp_m",
+  "table": {
+    "number": "3.1",
+    "title": "Spring Statement 2025 policy decisions (£ million)",
+    "pages": [
+      36,
+      37,
+      38,
+      39
+    ],
+    "has_head": false
+  },
+  "years": [
+    "2024-25",
+    "2025-26",
+    "2026-27",
+    "2027-28",
+    "2028-29",
+    "2029-30"
+  ],
+  "headline_year": "2029-30",
+  "rounding_m": 5,
+  "groups": [
+    "Investing in growth",
+    "Transforming public services and supporting people into work",
+    "Reforming welfare to get Britain working",
+    "Closing the tax gap",
+    "Other pre-announced and technical measures"
+  ],
+  "measures": [
+    {
+      "line": 1,
+      "name": "Capital Investment: Increase growth-enhancing investment including on infrastructure, housing, and defence innovation",
+      "group": "Investing in growth",
+      "page": 36,
+      "values": [
+        0,
+        0,
+        -770,
+        -3540,
+        -4065,
+        -4615
+      ]
+    },
+    {
+      "line": 2,
+      "name": "o/w: Net capital spending change excluding defence & security and ODA changes",
+      "group": "Investing in growth",
+      "page": 36,
+      "values": [
+        0,
+        0,
+        0,
+        -1320,
+        -1475,
+        -1855
+      ],
+      "of_which": true
+    },
+    {
+      "line": 3,
+      "name": "Construction Skills: Supply the skilled workers to build 1.5 million homes and deliver infrastructure",
+      "group": "Investing in growth",
+      "page": 36,
+      "values": [
+        0,
+        -95,
+        -200,
+        -225,
+        -225,
+        0
+      ]
+    },
+    {
+      "line": 4,
+      "name": "Current spending: Reshape the state to be more productive and agile",
+      "group": "Transforming public services and supporting people into work",
+      "page": 36,
+      "values": [
+        0,
+        0,
+        1365,
+        1785,
+        2985,
+        6100
+      ],
+      "footnotes": [
+        "2"
+      ]
+    },
+    {
+      "line": 5,
+      "name": "o/w: Net resource spending change excluding defence & security and ODA changes",
+      "group": "Transforming public services and supporting people into work",
+      "page": 36,
+      "values": [
+        0,
+        0,
+        -1030,
+        -495,
+        525,
+        3470
+      ],
+      "of_which": true
+    },
+    {
+      "line": 6,
+      "name": "Transformation Fund: Improve efficiency and productivity of public services",
+      "group": "Transforming public services and supporting people into work",
+      "page": 36,
+      "values": [
+        0,
+        -250,
+        -2000,
+        -1000,
+        0,
+        0
+      ]
+    },
+    {
+      "line": 7,
+      "name": "Employment Support: Invest in employment, health, and skills support from 2026-27",
+      "group": "Transforming public services and supporting people into work",
+      "page": 37,
+      "values": [
+        0,
+        0,
+        -200,
+        -300,
+        -400,
+        -1000
+      ]
+    },
+    {
+      "line": 8,
+      "name": "DWP Spending: Invest to deliver welfare reform",
+      "group": "Transforming public services and supporting people into work",
+      "page": 37,
+      "values": [
+        0,
+        -80,
+        -250,
+        -315,
+        -420,
+        -385
+      ]
+    },
+    {
+      "line": 9,
+      "name": "HMRC Spending: Invest to close the tax gap",
+      "group": "Transforming public services and supporting people into work",
+      "page": 37,
+      "values": [
+        0,
+        -20,
+        -35,
+        -55,
+        -75,
+        -120
+      ]
+    },
+    {
+      "line": 10,
+      "name": "Personal Independence Payment (PIP): Change the PIP assessment so claimants must score four points in any one activity from 2026-27",
+      "group": "Reforming welfare to get Britain working",
+      "page": 37,
+      "values": [
+        0,
+        0,
+        210,
+        1755,
+        3365,
+        4515
+      ]
+    },
+    {
+      "line": 11,
+      "name": "Personal Independence Payment (PIP): Increase capacity for processing award reviews from April 2026",
+      "group": "Reforming welfare to get Britain working",
+      "page": 37,
+      "values": [
+        0,
+        0,
+        10,
+        90,
+        155,
+        200
+      ]
+    },
+    {
+      "line": 12,
+      "name": "Work Capability Assessment: Do not proceed with Autumn Statement 2023 descriptor reforms",
+      "group": "Reforming welfare to get Britain working",
+      "page": 37,
+      "values": [
+        0,
+        0,
+        -200,
+        -730,
+        -1205,
+        -1645
+      ]
+    },
+    {
+      "line": 13,
+      "name": "Work Capability Assessment: Restart reassessments from April 2026",
+      "group": "Reforming welfare to get Britain working",
+      "page": 37,
+      "values": [
+        0,
+        0,
+        20,
+        100,
+        230,
+        355
+      ]
+    },
+    {
+      "line": 14,
+      "name": "Universal Credit Health Element: Maintain at 2025-26 rate until 2029-30, reduce rate by 50% for new claimants from April 2026 and maintain until 2029-30",
+      "group": "Reforming welfare to get Britain working",
+      "page": 37,
+      "values": [
+        0,
+        0,
+        750,
+        1535,
+        2295,
+        3005
+      ]
+    },
+    {
+      "line": 15,
+      "name": "Universal Credit Standard Allowance: Increase above inflation for all claimants from April 2026, reaching CPI +5% from April 2029, with the standard allowance expected to be worth £106 per week in 2029-30",
+      "group": "Reforming welfare to get Britain working",
+      "page": 37,
+      "values": [
+        0,
+        0,
+        -815,
+        -1145,
+        -1490,
+        -1885
+      ]
+    },
+    {
+      "line": 16,
+      "name": "Welfare Fraud and Error: Increase preventative checks in Universal Credit from 2025-26",
+      "group": "Reforming welfare to get Britain working",
+      "page": 37,
+      "values": [
+        0,
+        15,
+        120,
+        210,
+        215,
+        200
+      ]
+    },
+    {
+      "line": 17,
+      "name": "Welfare Fraud and Error: Recruit over 500 new counter fraud and error staff from April 2025",
+      "group": "Reforming welfare to get Britain working",
+      "page": 37,
+      "values": [
+        0,
+        95,
+        45,
+        30,
+        35,
+        40
+      ]
+    },
+    {
+      "line": 18,
+      "name": "Tax Debt Collection: Invest in additional HMRC debt management capacity to increase collection of overdue tax debt",
+      "group": "Closing the tax gap",
+      "page": 37,
+      "values": [
+        45,
+        155,
+        160,
+        175,
+        250,
+        570
+      ]
+    },
+    {
+      "line": 19,
+      "name": "Tax Debt Collection: Invest in 600 additional HMRC debt management staff to increase collection of overdue tax debt",
+      "group": "Closing the tax gap",
+      "page": 37,
+      "values": [
+        25,
+        120,
+        425,
+        410,
+        365,
+        145
+      ]
+    },
+    {
+      "line": 20,
+      "name": "Tax Collection: Invest in 500 additional HMRC compliance staff to increase collection of tax due",
+      "group": "Closing the tax gap",
+      "page": 37,
+      "values": [
+        0,
+        0,
+        15,
+        50,
+        80,
+        95
+      ]
+    },
+    {
+      "line": 21,
+      "name": "Late Payment Penalties: Increase late payment penalties for VAT taxpayers and income tax Self Assessment taxpayers as they join Making Tax Digital from April 2025",
+      "group": "Closing the tax gap",
+      "page": 37,
+      "values": [
+        0,
+        5,
+        50,
+        85,
+        105,
+        125
+      ]
+    },
+    {
+      "line": 22,
+      "name": "Making Tax Digital for income tax Self Assessment: Expand rollout to those with incomes over £20,000 from 6 April 2028, and further detailed changes",
+      "group": "Closing the tax gap",
+      "page": 38,
+      "values": [
+        0,
+        0,
+        0,
+        -10,
+        20,
+        120
+      ]
+    },
+    {
+      "line": 23,
+      "name": "Building Safety Levy: Implement a levy on new residential development in England (with certain exemptions) with revenue to be spent on building safety from 1 October 2026",
+      "group": "Other pre-announced and technical measures",
+      "page": 38,
+      "values": [
+        0,
+        0,
+        0,
+        55,
+        245,
+        345
+      ]
+    },
+    {
+      "line": 24,
+      "name": "Gambling: New statutory levy on operators from April 2025",
+      "group": "Other pre-announced and technical measures",
+      "page": 38,
+      "values": [
+        -10,
+        105,
+        105,
+        110,
+        110,
+        115
+      ]
+    },
+    {
+      "line": 25,
+      "name": "Gambling: Use new levy revenue to fund research, prevention, and treatment of gambling-related harm",
+      "group": "Other pre-announced and technical measures",
+      "page": 38,
+      "values": [
+        0,
+        -115,
+        -115,
+        -120,
+        -125,
+        -125
+      ]
+    },
+    {
+      "line": 26,
+      "name": "UK Export Finance: Fees/income from increasing lending capacity and providing guarantees for defence exports (only fees & interest impact shown as loans & guarantees do not affect public sector net borrowing)",
+      "group": "Other pre-announced and technical measures",
+      "page": 38,
+      "values": [
+        0,
+        15,
+        100,
+        130,
+        95,
+        115
+      ]
+    },
+    {
+      "line": 27,
+      "name": "Support for Local Government: Net impact of pre-announced support for local government via capitalisation directions, and council tax/fire & police precept flexibilities",
+      "group": "Other pre-announced and technical measures",
+      "page": 38,
+      "values": [
+        -1215,
+        -915,
+        420,
+        420,
+        170,
+        55
+      ]
+    },
+    {
+      "line": 28,
+      "name": "Parental leave: Increase the small employer compensation rate to 8.5% from April 2025 following National Insurance changes at Autumn Budget 2024",
+      "group": "Other pre-announced and technical measures",
+      "page": 38,
+      "values": [
+        0,
+        -30,
+        -35,
+        -35,
+        -35,
+        -35
+      ]
+    },
+    {
+      "line": 29,
+      "name": "Reducing Trade Barriers: Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP) tariff liberalisation",
+      "group": "Other pre-announced and technical measures",
+      "page": 38,
+      "values": [
+        -5,
+        -30,
+        -30,
+        -30,
+        -35,
+        -35
+      ]
+    },
+    {
+      "line": 30,
+      "name": "Reducing Trade Barriers: Approve UK business applications for removal of tariff duty on 89 products for 2 years from Spring 2025",
+      "group": "Other pre-announced and technical measures",
+      "page": 38,
+      "values": [
+        0,
+        -25,
+        -25,
+        -10,
+        0,
+        0
+      ]
+    },
+    {
+      "line": 31,
+      "name": "High Income Child Benefit Charge (HICBC): Allow employed individuals to pay their HICBC liability through PAYE without the need to register for Self Assessment from Summer 2025",
+      "group": "Other pre-announced and technical measures",
+      "page": 38,
+      "values": [
+        0,
+        0,
+        -5,
+        -5,
+        -5,
+        -10
+      ]
+    },
+    {
+      "line": 32,
+      "name": "Supplementary Estimates: RDEL Supplementary Estimates Plans for 2024-25",
+      "group": "Other pre-announced and technical measures",
+      "page": 38,
+      "values": [
+        740,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "line": 33,
+      "name": "Supplementary Estimates: CDEL Supplementary Estimates Plans for 2024-25",
+      "group": "Other pre-announced and technical measures",
+      "page": 38,
+      "values": [
+        -390,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "totals": [
+    {
+      "label": "Total impact of policy decisions",
+      "kind": "total",
+      "page": 38,
+      "values": [
+        -810,
+        -1050,
+        -890,
+        -585,
+        2645,
+        6260
+      ],
+      "after_line": 33,
+      "footnotes": [
+        "3"
+      ]
+    },
+    {
+      "label": "Memo: Total impact of policy decisions on current budget balance",
+      "kind": "memo",
+      "page": 38,
+      "values": [
+        -425,
+        -1000,
+        -70,
+        3005,
+        6755,
+        10870
+      ],
+      "after_line": 33
+    },
+    {
+      "label": "Total spending impact of policy decisions",
+      "kind": "total_spending",
+      "page": 38,
+      "values": [
+        -865,
+        -2035,
+        -2300,
+        -2180,
+        760,
+        4030
+      ],
+      "after_line": 33,
+      "footnotes": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "label": "Total tax & fees impact of policy decisions",
+      "kind": "total_tax",
+      "page": 39,
+      "values": [
+        50,
+        985,
+        1410,
+        1595,
+        1885,
+        2230
+      ],
+      "after_line": 33,
+      "footnotes": [
+        "3",
+        "4"
+      ]
+    }
+  ],
+  "sum_of_lines": [
+    -810,
+    -1050,
+    -885,
+    -580,
+    2640,
+    6245
+  ],
+  "footnotes": {
+    "1": "Costings reflect the OBR’s latest economic and fiscal determinants. Figures given as fiscal impacts, postive numbers showing savings and negative numbers costs.",
+    "2": "Includes a pre-announced fiscally neutral change to Home Office spending funded by changes to a number of fees, including for visas and passports from April 2025, which has a £0m borrowing impact in each year.",
+    "3": "Totals may not sum due to rounding.",
+    "4": "The totals for tax/fees and spending reflect both the tax/fee and spend impacts of each measure."
+  },
+  "checks": [
+    {
+      "id": "lines",
+      "ok": true,
+      "message": "33 lines numbered 1 to 33"
+    },
+    {
+      "id": "figures",
+      "ok": true,
+      "message": "every line has a figure for each of 6 years"
+    },
+    {
+      "id": "total",
+      "ok": true,
+      "message": "the table's total [-810, -1050, -890, -585, 2645, 6260] equals the total typed from the PDF [-810, -1050, -890, -585, 2645, 6260]"
+    },
+    {
+      "id": "reconcile.2024-25",
+      "ok": true,
+      "message": "2024-25: lines sum to -810, the Treasury's total is -810, difference 0 (rounding allows up to 20)"
+    },
+    {
+      "id": "reconcile.2025-26",
+      "ok": true,
+      "message": "2025-26: lines sum to -1050, the Treasury's total is -1050, difference 0 (rounding allows up to 42.5)"
+    },
+    {
+      "id": "reconcile.2026-27",
+      "ok": true,
+      "message": "2026-27: lines sum to -885, the Treasury's total is -890, difference -5 (rounding allows up to 70)"
+    },
+    {
+      "id": "reconcile.2027-28",
+      "ok": true,
+      "message": "2027-28: lines sum to -580, the Treasury's total is -585, difference -5 (rounding allows up to 75)"
+    },
+    {
+      "id": "reconcile.2028-29",
+      "ok": true,
+      "message": "2028-29: lines sum to 2640, the Treasury's total is 2645, difference 5 (rounding allows up to 70)"
+    },
+    {
+      "id": "reconcile.2029-30",
+      "ok": true,
+      "message": "2029-30: lines sum to 6245, the Treasury's total is 6260, difference 15 (rounding allows up to 67.5)"
+    },
+    {
+      "id": "copy",
+      "ok": true,
+      "message": "33 lines and 4 totals match the copy figure for figure"
+    }
+  ],
+  "recorded": {
+    "fetched_at": "2026-10-12T19:19:19+00:00",
+    "extractor": "pdftotext 26.10.0 -tsv (poppler), level-5 rows of the table's pages"
+  }
+}

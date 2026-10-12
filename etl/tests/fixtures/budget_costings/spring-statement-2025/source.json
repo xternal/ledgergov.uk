@@ -1,0 +1,15 @@
+{
+  "event": "spring-statement-2025",
+  "document_url": "https://assets.publishing.service.gov.uk/media/67e3ec2df356a2dc0e39b488/E03274109_HMT_Spring_Statement_Mar_25_Web_Accessible_.pdf",
+  "sha256": "0864d916ba65e647a437730896db938ad3e6492a7666de83fa0cf095366e94de",
+  "fetched_at": "2026-10-12T19:19:19+00:00",
+  "pages": [
+    36,
+    37,
+    38,
+    39
+  ],
+  "extractor": "pdftotext 26.10.0 -tsv (poppler), level-5 rows of the table's pages",
+  "copy_url": "https://www.gov.uk/government/publications/spring-statement-2025-document/spring-statement-2025-html",
+  "copy_sha256": "05969c8db96f79c444a756737c4ae93f41055efbda159f937dcb1643183c0958"
+}

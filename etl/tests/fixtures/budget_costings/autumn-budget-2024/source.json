@@ -1,0 +1,19 @@
+{
+  "event": "autumn-budget-2024",
+  "document_url": "https://assets.publishing.service.gov.uk/media/672b9695fbd69e1861921c63/Autumn_Budget_2024_Accessible.pdf",
+  "sha256": "8a635ccf89c0fabf6d5c1cbd3bbb416e065ba4629db772fcea137b3e13f7b249",
+  "fetched_at": "2026-10-12T19:18:10+00:00",
+  "pages": [
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127
+  ],
+  "extractor": "pdftotext 26.10.0 -tsv (poppler), level-5 rows of the table's pages",
+  "copy_url": "https://assets.publishing.service.gov.uk/media/67222f364da1c0d41942a9b2/Table_5.1_-_Autumn_Budget_2024_Policy_Decisions.xlsx",
+  "copy_sha256": "6249ec5be2634b738be2da1b15fa45fc59afd239ad5ec8c221960428d30d6a37"
+}
