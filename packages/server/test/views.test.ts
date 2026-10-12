@@ -25,6 +25,7 @@ describe("which requests count", () => {
       "/editors",
       "/feeds",
       "/follow",
+      "/pay-for-it",
     ])
       expect(isCountedPage(path), path).toBe(true);
   });
@@ -33,6 +34,8 @@ describe("which requests count", () => {
     expect(isCountedPage("/budget/predict/r/abcdefgh23")).toBe(false);
     expect(isCountedPage("/budget/predict/r")).toBe(false);
     expect(isCountedPage("/s/abc123")).toBe(false);
+    expect(isCountedPage("/pay-for-it/uk-bus-cap-2-2026/borrow")).toBe(false);
+    expect(isCountedPage("/pay-for-it/uk-bus-cap-2-2026/tax-income_tax_basic-100")).toBe(false);
   });
 
   it("skips the API, admin, forms, files and scanners' guesses", () => {

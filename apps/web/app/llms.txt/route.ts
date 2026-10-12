@@ -24,6 +24,9 @@ import { HOW_IT_WORKS_PATH, RULES, headroomView, latestPoint } from "@/lib/headr
 import { LEAKS_PATH, LEAK_STATUS, leakCounts } from "@/lib/leaks";
 import { getReceiptContext, receiptExamples } from "@/lib/receipt";
 import { RECEIPT_PATH, RECEIPT_TITLE, illustrationText, receiptDescription, receiptExamplePath } from "@/lib/receipt-copy";
+import { getPayData } from "@/lib/pay-for-it";
+import { FIRST_PLEDGE, PAY_PATH, planPath } from "@/lib/pay-for-it-view";
+import { PAY_TITLE } from "@/lib/pay-for-it-copy";
 
 export const dynamic = "force-static";
 
@@ -42,6 +45,13 @@ function budgetLeaksLine() {
   const c = leakCounts(leaks);
   const now = leaks.length ? ` ${leaks.length} so far: ${c.trailed} ${LEAK_STATUS.trailed.label.toLowerCase()}, ${c.confirmed} confirmed, ${c.announced} ${LEAK_STATUS.announced.label.toLowerCase()}.` : " Empty until editors start adding reports.";
   return `- [Trailed before the Budget](${absolute(LEAKS_PATH)}): every measure briefed to the press before the ${BUDGET.name}, with the outlet, the date, a link to the original report, an estimated cost only where a source gives one, and from Budget day what the Budget did. Each says whether it is only trailed (reported, not confirmed), confirmed on the record, or in the Budget documents.${now}`;
+}
+
+/** /pay-for-it in one line: what it does and what it is built from. */
+function payLine() {
+  const d = getPayData();
+  const parties = new Set(d.pledges.map((p) => p.owner)).size;
+  return `- [${PAY_TITLE}](${absolute(PAY_PATH)}): pick one of ${d.pledges.length} costed promises (from ${parties} parties and bodies, every one with a yearly cost to the public purse, starting with the £2 bus fare cap) and pay for it with a tax rise, a spending cut or borrowing, or a mix. A tax uses HMRC's figure for what 1p or 1 point raises in ${d.taxes[0]?.period ?? d.year} (edition published ${d.hmrcPublished}, as on the tax cards); a cut comes from one area of spending in the ${d.year} Statement or every area by the same share (not debt interest); borrowing pays the rest. It shows the change in borrowing as a range, the Statement before and after (income plus borrowing equals spending), and who decides each choice. Each plan has its own link, /pay-for-it/<promise id>/<plan>, for example ${absolute(planPath({ pledge_id: FIRST_PLEDGE, tax: { lever_id: d.taxes[0]!.lever_id, share: 100 }, cut: null }))}. A what-if, not a forecast.`;
 }
 
 /** A plain-text summary for AI assistants (llmstxt.org), built from the same data as the site. */
@@ -87,6 +97,7 @@ export function GET() {
     `- [${RECEIPT_TITLE}](${absolute(RECEIPT_PATH)}): ${receiptDescription(receipt)} ${illustrationText} Example receipts for fixed salaries: ${receiptExamples()
       .map(({ example, receipt: r }) => `[£${grouped(example.salary)}](${absolute(receiptExamplePath(example.slug))}) pays ${poundsPence(r.tax_pence)} plus ${poundsPence(r.borrowed_pence)} borrowed on top`)
       .join("; ")}.`,
+    payLine(),
     `- [${RECKONER_TITLE}](${absolute(RECKONER_PATH)}): what one change to each main tax would raise a year, HMRC's figures from ${sourceName(reckoner.edition)} (edition published ${reckoner.edition.published}), one page each with the year, a range, HMRC's caveat and a link that makes the change in the sandbox. Listed below under "${RECKONER_TITLE}".`,
     ...getScorecards().map((sc) => `- [${scorecardCopy(sc).title}](${absolute(scorecardPath(sc))}): ${scorecardCopy(sc).description} Figures are the Treasury's, in £ million, positive where a measure raises money and negative where it costs.`),
     `- [${predictTitle(currentRound())}](${absolute(PREDICT_PATH)}): ${predictDescription(currentRound())} Each question is settled by a named Budget document; editors record the answers after the Budget and every set of predictions is scored.`,

@@ -239,6 +239,9 @@ There is never free text, and never a salary, email, Telegram ID or IP.
 | `lever_changed` | A lever is released (once per lever, not per tick) | lever_id | A | Scenario shares (proposed) | [prototype] |
 | `scenario_shared` | Share link copied or share button used | lever_ids, preset_id | A | Scenario shares (proposed) | [M2] |
 | `scenario_link_opened` | `/sandbox?s=` or `/s/[hash]` opened | lever_ids, referrer_kind | A | Scenario shares (proposed) | [M2] |
+| `pay_for_it_pledge_picked` | A pledge is picked on `/pay-for-it` | promise_id | A | Scenario shares (proposed) | [Pay for it] |
+| `pay_for_it_route_changed` | A way of paying is changed (a tax, a cut, borrowing, or a share of one) | route | A | Scenario shares (proposed) | [Pay for it] |
+| `pay_for_it_shared` | Share button or an app link used on `/pay-for-it` | method | A | Scenario shares (proposed) | [Pay for it] |
 | `follow_panel_opened` | Follow button tapped | target_kind | B | Followers per card (context) | [prototype] |
 | `follow_started` | Channel chosen and consent given (server count) | target_kind, channel | B | Followers per card | [M3b] |
 | `follow_confirmed` | Double opt-in done, or bot follow (server count) | target_kind, channel | B | Followers per card | [M3b] |

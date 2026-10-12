@@ -78,6 +78,8 @@ export interface PromiseDetailProps {
   spendingBn: number;
   /** /?s=<code>#scenario for cards with lever settings. */
   runHref: string | null;
+  /** Pay for it with this pledge picked, for every card with a yearly cost to the public purse. */
+  payHref: string | null;
   /** The editors' short summary of what is promised, or the quote cut short until they write one. */
   headline: string;
   /** The last day the card changed (YYYY-MM-DD): its newest event, version, correction or review. */
@@ -132,7 +134,7 @@ function Fold({ title, children }: { title: string; children: ReactNode }) {
  * order (status, timeline, cost, contracts, replies); details folded last.
  * Props only, so it needs no sandbox state.
  */
-export function PromiseDetail({ card, householdsM, householdsP, spendingBn, runHref, headline, updated, areaHref, related }: PromiseDetailProps) {
+export function PromiseDetail({ card, householdsM, householdsP, spendingBn, runHref, payHref, headline, updated, areaHref, related }: PromiseDetailProps) {
   const today = useToday();
   const [followOpen, setFollowOpen] = useState(false);
   const f = card.file;
@@ -235,6 +237,11 @@ export function PromiseDetail({ card, householdsM, householdsP, spendingBn, runH
               {!followOpen && <p className="m-0 text-center text-caption text-muted">Hear when it moves, or when its deadline passes in silence.</p>}
               {followOpen && <FollowPanel id={`follow-${f.id}`} target={{ kind: "promise", id: f.id }} />}
               <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-label">
+                {payHref && (
+                  <a href={payHref} className="font-medium">
+                    Pay for it
+                  </a>
+                )}
                 {runHref && (
                   <a href={runHref} onClick={() => track("run_in_sandbox_clicked", { promise_id: f.id })} className="font-medium">
                     Run in the sandbox

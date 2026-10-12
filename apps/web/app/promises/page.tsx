@@ -12,6 +12,8 @@ import { JsonLd } from "@/components/JsonLd";
 import { budgetLinkText } from "@/lib/budget";
 import { OPEN_GRAPH, seoContext } from "@/lib/site";
 import { creditRows } from "@/components/CreditTable";
+import { PAY_PATH } from "@/lib/pay-for-it-view";
+import { PAY_LINK_TEXT } from "@/lib/pay-for-it-copy";
 
 const TITLE = "Promises";
 /** What a share card shows: a whole claim, not the menu label. */
@@ -80,9 +82,12 @@ export default function PromisesPage() {
           <p className="m-0 text-label text-muted">
             A promise moves along its timeline only on evidence: a plan, a bill, money in a Budget, or delivery.
           </p>
-          <p className="m-0 text-label">
+          <p className="m-0 flex flex-wrap gap-x-4 gap-y-1 text-label">
             <a href="/budget" className="font-medium">
               {budgetLinkText(today)}
+            </a>
+            <a href={PAY_PATH} className="font-medium">
+              {PAY_LINK_TEXT}
             </a>
           </p>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-label">
