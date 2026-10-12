@@ -1,0 +1,101 @@
+format: openpromises/1
+id: uk-nine-reservoirs-2050
+headline:
+  en: Build nine new reservoirs by 2050
+actor_id: hm-government
+made_on: "2025-05-29"
+venue: press_release
+venue_label:
+  en: Department for Environment, Food & Rural Affairs press release (GOV.UK)
+area: housing_env
+status: in_plan
+status_note:
+  en: >-
+    The nine are in the water companies' long-term water resources plans, which the government
+    approved in January 2025, and in the Water White Paper (January 2026); Defra says the companies
+    have committed to bring them online by 2050, in Lincolnshire, Cambridgeshire, Oxfordshire,
+    Somerset, Suffolk, Kent, East Sussex and the West Midlands. Water companies build them and bill
+    payers fund them through Ofwat's price review, so there is no cost to the public purse; the
+    government's part is approval and planning. As of 12 October 2026 none has applied for planning
+    consent; the companies aim for the Fens reservoir in 2036 and Lincolnshire by 2040. Havant Thicket,
+    under construction, is not one of the nine. Ministers restated the commitment without a date on
+    9 October 2026.
+responsible:
+  actor_id: hm-government
+origin: manual
+sources:
+  - title: "Defra press release, 29 May 2025: Government steps in to build first major reservoirs in 30 years"
+    url: https://www.gov.uk/government/news/government-steps-in-to-build-first-major-reservoirs-in-30-years
+  - title: "Environment Secretary at the Economist Water Summit, 11 Feb 2026 (speech as delivered)"
+    url: https://www.gov.uk/government/speeches/environment-secretary-at-economist-water-summit
+  - title: "Defra: A new vision for water (Water White Paper), 20 Jan 2026"
+    url: https://www.gov.uk/government/publications/a-new-vision-for-water-white-paper/a-new-vision-for-water
+  - title: "HM Treasury press release, 28 Jan 2025: water resources management plans approved, including nine new reservoirs"
+    url: https://www.gov.uk/government/news/reeves-i-am-going-further-and-faster-to-kick-start-the-economy
+  - title: "Environment Agency press release, 9 Oct 2026: Environment Agency declares drought status in Yorkshire"
+    url: https://www.gov.uk/government/news/environment-agency-declares-drought-status-in-yorkshire
+versions:
+  - version: 1
+    text: >-
+      This immediate step delivers on this government’s commitment to fast-track the delivery of nine
+      new reservoirs, supporting its plans to get Britain building and deliver 1.5 million new homes by
+      the end of this parliament.
+    recorded_on: "2025-05-29"
+    source_url: https://www.gov.uk/government/news/government-steps-in-to-build-first-major-reservoirs-in-30-years
+    quote_checked_on: "2026-10-12"
+    parameters:
+      who:
+        en: Water supplies in England
+      funded_by: null
+  - version: 2
+    text: And we have kickstarted the building of nine new reservoirs by 2050.
+    recorded_on: "2026-02-11"
+    source_url: https://www.gov.uk/government/speeches/environment-secretary-at-economist-water-summit
+    quote_checked_on: "2026-10-12"
+    parameters:
+      who:
+        en: >-
+          Water supplies in England; the reservoirs are planned in Lincolnshire, Cambridgeshire,
+          Oxfordshire, Somerset, Suffolk, Kent, East Sussex and the West Midlands
+      when:
+        en: By 2050
+      deadline: "2050-12-31"
+      funded_by: null
+events:
+  - date: "2025-05-29"
+    type: promised
+    text:
+      en: >-
+        Defra commits to fast-track the delivery of nine new reservoirs, directing the Fens and
+        Lincolnshire reservoirs into the national planning regime
+  - date: "2026-01-20"
+    type: in_plan
+    text:
+      en: >-
+        The Water White Paper plans nine new reservoirs as part of increased investment in new water
+        resources
+    evidence_url: https://www.gov.uk/government/publications/a-new-vision-for-water-white-paper/a-new-vision-for-water
+  - date: "2026-02-11"
+    type: reworded
+    text:
+      en: >-
+        Environment Secretary Emma Reynolds gives a date: nine new reservoirs by 2050
+    evidence_url: https://www.gov.uk/government/speeches/environment-secretary-at-economist-water-summit
+  - date: "2050-12-31"
+    type: deadline
+    text:
+      en: Nine new reservoirs due to be online by 2050
+replies: []
+reviews:
+  - by: Pavel Guzhikov
+    kind: editor
+    "on": "2026-10-12"
+    approves: true
+    note:
+      en: Reviewed against its sources
+  - by: Goodwill Stranger
+    kind: editor
+    "on": "2026-10-12"
+    approves: true
+    note:
+      en: Checked against its sources; confirmed to the owner, 12 October 2026

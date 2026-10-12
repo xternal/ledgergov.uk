@@ -1,0 +1,110 @@
+format: openpromises/1
+id: uk-prison-places-14000-2031
+headline:
+  en: Build 14,000 more prison places by 2031
+actor_id: hm-government
+made_on: "2024-12-11"
+venue: press_release
+venue_label:
+  en: Ministry of Justice 10-year Prison Capacity Strategy (GOV.UK)
+area: public_order
+status: delivering
+status_note:
+  en: >-
+    The Ministry of Justice says around 3,300 places have been delivered since July 2024 (9 October
+    2026), including HMP Millsike (about 1,500 places, March 2025); its annual statement counted
+    about 5,000 places under construction at the end of 2025. The Spending Review 2025 provides £7bn
+    between 2024-25 and 2029-30; the annual statement says completing the 14,000 needs money from
+    future Spending Reviews. The 14,000 are the places the previous government's programmes did not
+    deliver; they are newly built places, not net capacity. "By 2031" is read as by the end of 2031.
+responsible:
+  actor_id: hm-government
+origin: manual
+sources:
+  - title: "Ministry of Justice: 10-year Prison Capacity Strategy, 11 Dec 2024 (PDF)"
+    url: https://assets.publishing.service.gov.uk/media/67586f828a1ef8f66413b9c2/24.231_MOJ_10-Year_Capacity_Strat_Pub_v10.1_WEB.pdf
+  - title: "Written ministerial statement HCWS294, 11 Dec 2024: 10-year Prison Capacity Strategy and Annual Statement (Shabana Mahmood)"
+    url: https://questions-statements.parliament.uk/written-statements/detail/2024-12-11/hcws294
+  - title: "HM Treasury: Spending Review 2025, paragraph 5.40"
+    url: https://www.gov.uk/government/publications/spending-review-2025-document/spending-review-2025-html
+  - title: "Ministry of Justice: Annual Statement on Prison Capacity 2025, 29 Jan 2026 (PDF)"
+    url: https://assets.publishing.service.gov.uk/media/6978d0421c24881f40a4d6b0/moj_annual_statement_prison_capacity_2025.pdf
+  - title: "Ministry of Justice press release, 9 Oct 2026: Kent prison to gain nearly 250 extra places"
+    url: https://www.gov.uk/government/news/kent-prison-to-gain-nearly-250-extra-places
+versions:
+  - version: 1
+    text: We aim to construct 14,000 places by 2031.
+    recorded_on: "2024-12-11"
+    source_url: https://assets.publishing.service.gov.uk/media/67586f828a1ef8f66413b9c2/24.231_MOJ_10-Year_Capacity_Strat_Pub_v10.1_WEB.pdf#page=14
+    quote_checked_on: "2026-10-12"
+    parameters:
+      who:
+        en: Prisons in England and Wales
+      cost:
+        range: [1.05, 1.17, 1.29]
+        quality: approx
+        by:
+          kind: official
+          name: HM Treasury
+        note:
+          en: >-
+            The Spending Review 2025 provides £7bn between 2024-25 and 2029-30 to build the 14,000
+            places, about £1.17bn a year on average over those six years (central); the Ministry of
+            Justice put it as around £2.3bn in 2024-25 and 2025-26 and £4.7bn of capital in 2026-27 to
+            2029-30. No source gives a figure for each year, so low–high is an editorial ±10% around
+            the average. Money for the places still to be built after 2029-30 is not yet allocated.
+        sources:
+          - title: "HM Treasury: Spending Review 2025, paragraph 5.40"
+            url: https://www.gov.uk/government/publications/spending-review-2025-document/spending-review-2025-html
+          - title: "Ministry of Justice: 10-year Prison Capacity Strategy, paragraph 5 (PDF)"
+            url: https://assets.publishing.service.gov.uk/media/67586f828a1ef8f66413b9c2/24.231_MOJ_10-Year_Capacity_Strat_Pub_v10.1_WEB.pdf
+      when:
+        en: By 2031
+      deadline: "2031-12-31"
+      funded_by: null
+events:
+  - date: "2024-12-11"
+    type: promised
+    text:
+      en: >-
+        The Ministry of Justice's 10-year Prison Capacity Strategy aims to build 14,000 prison places
+        by 2031
+  - date: "2024-12-11"
+    type: in_plan
+    text:
+      en: >-
+        The strategy sets out the build programme, with around £2.3bn for prison builds in 2024-25 and
+        2025-26
+    evidence_url: https://assets.publishing.service.gov.uk/media/67586f828a1ef8f66413b9c2/24.231_MOJ_10-Year_Capacity_Strat_Pub_v10.1_WEB.pdf
+  - date: "2025-06-11"
+    type: funded
+    text:
+      en: >-
+        The Spending Review 2025 provides £7bn between 2024-25 and 2029-30 to build 14,000 new prison
+        places by 2031
+    evidence_url: https://www.gov.uk/government/publications/spending-review-2025-document/spending-review-2025-html
+  - date: "2026-01-29"
+    type: delivering
+    text:
+      en: >-
+        The annual statement reports about 2,900 places delivered since July 2024, including HMP
+        Millsike, and about 5,000 under construction at the end of 2025
+    evidence_url: https://assets.publishing.service.gov.uk/media/6978d0421c24881f40a4d6b0/moj_annual_statement_prison_capacity_2025.pdf
+  - date: "2031-12-31"
+    type: deadline
+    text:
+      en: 14,000 new prison places due by 2031
+replies: []
+reviews:
+  - by: Pavel Guzhikov
+    kind: editor
+    "on": "2026-10-12"
+    approves: true
+    note:
+      en: Reviewed against its sources
+  - by: Goodwill Stranger
+    kind: editor
+    "on": "2026-10-12"
+    approves: true
+    note:
+      en: Checked against its sources; confirmed to the owner, 12 October 2026

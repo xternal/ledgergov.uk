@@ -1,0 +1,112 @@
+format: openpromises/1
+id: uk-mhst-every-school-2029
+headline:
+  en: Put mental health support teams in every school
+actor_id: hm-government
+made_on: "2025-05-08"
+venue: parliament
+venue_label:
+  en: Written answer by Health minister Stephen Kinnock
+area: health
+status: delivering
+status_note:
+  en: >-
+    In 2025-26, 5.8 million pupils and learners (60%) were covered by a mental health support team,
+    and 11,800 schools and colleges (48%); the Department for Education projects 66% of pupils and 53%
+    of schools and colleges by 31 March 2027 (data release, 10 June 2026). The deadline was first
+    2029/30 (to March 2030) and since October 2025 has been "by 2029", which the Department for
+    Education reads as the end of 2029. The Spending Review 2025 names the expansion in the health
+    settlement but gives no separate figure; Labour's 2024 manifesto promised mental health
+    professionals in every school and costed it at £175m in 2028-29 (a party figure). The teams began
+    under the previous government in 2018.
+responsible:
+  actor_id: hm-government
+origin: manual
+sources:
+  - title: "Written answer UIN 48881, 8 May 2025 (Stephen Kinnock): Mental Health Support Teams"
+    url: https://questions-statements.parliament.uk/written-questions/detail/2025-04-29/48881
+  - title: "Department of Health and Social Care press release, 9 Oct 2026: Government pledges earlier support to tackle mental health crises"
+    url: https://www.gov.uk/government/news/government-pledges-earlier-support-to-tackle-mental-health-crises
+  - title: "Department for Education: Mental Health Support Teams, coverage and school and college experience, 10 Jun 2026"
+    url: https://www.gov.uk/government/publications/mental-health-support-teams-coverage-and-school-and-college-experience
+  - title: "HM Treasury: Spending Review 2025, paragraph 5.16"
+    url: https://www.gov.uk/government/publications/spending-review-2025-document/spending-review-2025-html
+  - title: "NHS England: Medium Term Planning Framework, 2026/27 to 2028/29 (October 2025)"
+    url: https://www.england.nhs.uk/long-read/medium-term-planning-framework-delivering-change-together-2026-27-to-2028-29/
+  - title: "Labour Party: Change, 2024 manifesto (PDF), page 84"
+    url: https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=84
+versions:
+  - version: 1
+    text: >-
+      The Government has committed to expanding Mental Health Support Teams (MHSTs) in schools and
+      colleges to reach 100% coverage by 2029/30.
+    recorded_on: "2025-05-08"
+    source_url: https://questions-statements.parliament.uk/written-questions/detail/2025-04-29/48881
+    quote_checked_on: "2026-10-12"
+    parameters:
+      who:
+        en: Pupils and learners in schools and colleges in England
+      when:
+        en: By 2029/30
+      funded_by: null
+  - version: 2
+    text: >-
+      rolling out mental health support teams to every school and college by 2029, reaching nearly
+      800,000 additional children and young people this year, alongside a £7 million investment in
+      early support hubs in 2026 to 2027
+    recorded_on: "2026-10-09"
+    source_url: https://www.gov.uk/government/news/government-pledges-earlier-support-to-tackle-mental-health-crises
+    quote_checked_on: "2026-10-12"
+    parameters:
+      who:
+        en: Pupils and learners in schools and colleges in England
+      when:
+        en: By 2029
+      deadline: "2029-12-31"
+      funded_by: null
+events:
+  - date: "2025-05-08"
+    type: promised
+    text:
+      en: >-
+        The government commits in a written answer to mental health support teams in 100% of schools
+        and colleges by 2029/30
+  - date: "2025-06-11"
+    type: funded
+    text:
+      en: >-
+        The Spending Review 2025 health settlement includes expanding mental health support teams to
+        100% of schools by 2029-30
+    evidence_url: https://www.gov.uk/government/publications/spending-review-2025-document/spending-review-2025-html
+  - date: "2026-06-10"
+    type: delivering
+    text:
+      en: >-
+        Department for Education data: 60% of pupils and learners and 48% of schools and colleges
+        covered in 2025-26
+    evidence_url: https://www.gov.uk/government/publications/mental-health-support-teams-coverage-and-school-and-college-experience
+  - date: "2026-10-09"
+    type: reworded
+    text:
+      en: >-
+        The Department of Health and Social Care now says every school and college by 2029, earlier
+        than the 2029/30 first given
+    evidence_url: https://www.gov.uk/government/news/government-pledges-earlier-support-to-tackle-mental-health-crises
+  - date: "2029-12-31"
+    type: deadline
+    text:
+      en: Mental health support teams in every school and college due by the end of 2029
+replies: []
+reviews:
+  - by: Pavel Guzhikov
+    kind: editor
+    "on": "2026-10-12"
+    approves: true
+    note:
+      en: Reviewed against its sources
+  - by: Goodwill Stranger
+    kind: editor
+    "on": "2026-10-12"
+    approves: true
+    note:
+      en: Checked against its sources; confirmed to the owner, 12 October 2026

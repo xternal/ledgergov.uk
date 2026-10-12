@@ -1,0 +1,117 @@
+format: openpromises/1
+id: uk-talking-therapies-915k-2029
+headline:
+  en: Expand NHS talking therapies to 915,000 a year
+actor_id: hm-government
+made_on: "2024-11-26"
+venue: press_release
+venue_label:
+  en: Get Britain Working white paper (GOV.UK)
+area: health
+status: in_plan
+status_note:
+  en: >-
+    In 2025-26, 674,683 referrals completed a course of NHS Talking Therapies, up 0.6% on the year
+    before, with 50.1% reliably recovering (NHS England Digital, 24 September 2026); reaching 915,000
+    in 2028-29 needs about 36% more, and NHS England's interim target is 805,000 in 2026-27 with 51%
+    recovery. The expansion was funded by the previous government's Autumn Statement 2023 (£220m in 2028-29) and
+    kept by this government as an existing commitment; NHS England's plan sets the 915,000 target with a 53%
+    recovery rate. The Department of Health and Social Care restated it on 9 October 2026. Figures count
+    referrals, and one person can have more than one.
+responsible:
+  actor_id: hm-government
+origin: manual
+sources:
+  - title: "Get Britain Working white paper, 26 Nov 2024, paragraph 55"
+    url: https://www.gov.uk/government/publications/get-britain-working-white-paper/get-britain-working-white-paper
+  - title: "Department of Health and Social Care press release, 4 Dec 2025: Review launched into mental health, autism and ADHD services"
+    url: https://www.gov.uk/government/news/review-launched-into-mental-health-autism-and-adhd-services
+  - title: "NHS England: Medium Term Planning Framework, 2026/27 to 2028/29 (October 2025)"
+    url: https://www.england.nhs.uk/long-read/medium-term-planning-framework-delivering-change-together-2026-27-to-2028-29/
+  - title: "HM Treasury: Autumn Statement 2023, Table 5.1"
+    url: https://www.gov.uk/government/publications/autumn-statement-2023/autumn-statement-2023-html
+  - title: "NHS England Digital: NHS Talking Therapies annual report, 2025-26"
+    url: https://digital.nhs.uk/data-and-information/publications/statistical/nhs-talking-therapies-for-anxiety-and-depression-annual-reports/2025-26
+  - title: "Department of Health and Social Care press release, 9 Oct 2026: Government pledges earlier support to tackle mental health crises"
+    url: https://www.gov.uk/government/news/government-pledges-earlier-support-to-tackle-mental-health-crises
+versions:
+  - version: 1
+    text: >-
+      the government has committed to continuing to expand access to NHS Talking Therapies for adults
+      with common mental health conditions in England. This is expected to increase the number of
+      people completing courses of treatment by 384,000 and increase the number of sessions.
+    recorded_on: "2024-11-26"
+    source_url: https://www.gov.uk/government/publications/get-britain-working-white-paper/get-britain-working-white-paper
+    quote_checked_on: "2026-10-12"
+    parameters:
+      who:
+        en: Adults with common mental health conditions in England
+      funded_by: null
+  - version: 2
+    text: >-
+      expanding NHS Talking Therapies so that 915,000 people complete a course of treatment by March
+      2029 - up from 670,000 last year.
+    recorded_on: "2025-12-04"
+    source_url: https://www.gov.uk/government/news/review-launched-into-mental-health-autism-and-adhd-services
+    quote_checked_on: "2026-10-12"
+    parameters:
+      who:
+        en: Adults with common mental health conditions in England
+      cost:
+        range: [0.198, 0.22, 0.242]
+        quality: sourced
+        by:
+          kind: official
+          name: HM Treasury
+        note:
+          en: >-
+            Year used: 2028-29, the target year. The Autumn Statement 2023 costed "Talking Therapies:
+            expand access and increase provision" at £220m in 2028-29, rising from £25m in 2024-25
+            (Table 5.1); central figure only, so low–high is an editorial ±10%. It was costed by the
+            previous government for the expansion this government kept.
+        sources:
+          - title: "HM Treasury: Autumn Statement 2023, Table 5.1, Talking Therapies: expand access and increase provision"
+            url: https://www.gov.uk/government/publications/autumn-statement-2023/autumn-statement-2023-html
+      when:
+        en: By March 2029
+      deadline: "2029-03-31"
+      funded_by: null
+events:
+  - date: "2024-11-26"
+    type: promised
+    text:
+      en: >-
+        The Get Britain Working white paper commits to keep expanding NHS Talking Therapies, with
+        384,000 more people expected to complete a course
+  - date: "2024-11-26"
+    type: in_plan
+    text:
+      en: >-
+        The white paper sets the expansion out as part of the plan to tackle ill health-related
+        economic inactivity
+    evidence_url: https://www.gov.uk/government/publications/get-britain-working-white-paper/get-britain-working-white-paper
+  - date: "2025-12-04"
+    type: reworded
+    text:
+      en: >-
+        The Department of Health and Social Care sets the target as 915,000 people completing a course
+        by March 2029, up from 670,000, following NHS England's October 2025 plan
+    evidence_url: https://www.gov.uk/government/news/review-launched-into-mental-health-autism-and-adhd-services
+  - date: "2029-03-31"
+    type: deadline
+    text:
+      en: 915,000 courses of NHS Talking Therapies in 2028-29 due by March 2029
+replies: []
+reviews:
+  - by: Pavel Guzhikov
+    kind: editor
+    "on": "2026-10-12"
+    approves: true
+    note:
+      en: Reviewed against its sources
+  - by: Goodwill Stranger
+    kind: editor
+    "on": "2026-10-12"
+    approves: true
+    note:
+      en: Checked against its sources; confirmed to the owner, 12 October 2026
