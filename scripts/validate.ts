@@ -16,7 +16,7 @@ import { loadBorrowing } from "@ledger/schema/borrowing";
 import { parseForecasts, readBacktestTable, readForecastFiles } from "@ledger/schema/forecasts";
 import { parseScorecards, readScorecardFiles } from "@ledger/schema/budget";
 import { predictIssues } from "@ledger/schema/predict";
-import { parseHouseholdSnapshots, parseMeasuresFile, readHouseholdSnapshotFiles, readMeasuresFiles } from "@ledger/schema/household";
+import { parseHouseholdSnapshots, parseMeasuresFile, readHouseholdSnapshotFiles, readMeasuresFiles, taxSeedIssues } from "@ledger/schema/household";
 import { BALANCE_TOLERANCE_BN, appendOnlyIssues, comparableCard, contractAppendOnlyIssues, forecastAppendOnlyIssues } from "@ledger/schema";
 import { baseSettings, compute, createModel } from "@ledger/engine";
 import { checkDrafts } from "../packages/server/src/harvest/drafts";
@@ -53,8 +53,14 @@ const householdMeasures = readMeasuresFiles(root);
 errors.push(...householdMeasures.flatMap((m) => parseMeasuresFile(m).issues));
 const households = parseHouseholdSnapshots(readHouseholdSnapshotFiles(root), householdMeasures);
 errors.push(...households.issues);
+// A post-Budget tax seed (the Your share calculator's) says what the Budget's measures file says: one place for the rates.
+errors.push(...taxSeedIssues(root));
 if (households.data.length)
-  console.log(`household snapshots: ${households.data.map((h) => `${h.id} (${h.kind}, PolicyEngine UK ${h.provider.model_version}, ${h.results.length} years)`).join(", ")}`);
+  console.log(
+    `household snapshots: ${households.data
+      .map((h) => `${h.id} (${h.kind}, ${h.provider ? `PolicyEngine UK ${h.provider.model_version}, ${h.results.length} years` : "no model answers yet: measures, Treasury's chart and salary check only"})`)
+      .join(", ")}`,
+  );
 
 // Predict the Budget (Day 9): every question set in content/predict parses, with unique ids and its answers among its options.
 errors.push(...predictIssues(root));

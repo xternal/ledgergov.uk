@@ -1,12 +1,16 @@
 import { ImageResponse } from "next/og";
 import type { HouseholdSnapshot } from "@ledger/schema";
+import { EXAMPLE_SALARIES } from "@ledger/server/model";
 import { getHouseholdSnapshots } from "@/lib/data";
 import { OG, ogFonts } from "@/lib/og";
 import { MARK_DATA_URI } from "@/lib/brand";
-import { gbpYear, householdCopy, pct2 } from "@/lib/household";
+import { gbpWhole, gbpYear, householdCopy, pct2 } from "@/lib/household";
+import { ratesChangedYears, salaryCheckYear, salaryExamples } from "@/lib/salary-check";
 
+// One alt for every state of the page: the picture is a bar chart of what the Budget does to household incomes, from
+// our estimate by income tenth, the example households, the Treasury's own chart or the salary check (see barsFor).
 export const alt =
-  "LedgerGov.UK: a Budget's effect on household incomes, as a bar chart by income tenth from the lowest incomes to the highest, estimated with PolicyEngine's open model";
+  "LedgerGov.UK: what a Budget does to household incomes, as a bar chart: by income tenth from the lowest incomes to the highest, for example households, or on example salaries";
 export const size = OG.size;
 export const contentType = "image/png";
 
@@ -25,29 +29,44 @@ interface Bars {
 }
 
 /**
- * What the share card shows: the decile chart for the headline year; while the deciles wait for review (the
- * fallback rule), the six example households; while those wait too, the Treasury's own chart.
+ * What the share card shows (householdView): the decile chart for the headline year; while the deciles wait for
+ * review (the fallback rule), the six example households; while those wait too, or before PolicyEngine has answered,
+ * the Treasury's own chart; with no chart either, the salary check on the example single adults' three salaries.
  */
 function barsFor(s: HouseholdSnapshot): Bars {
   const c = householdCopy(s);
-  const model = `An estimate, not official, with PolicyEngine UK ${s.provider.model_version}`;
-  if (c.headResult && c.better !== null && c.worse !== null)
+  const model = s.provider ? `An estimate, not official, with PolicyEngine UK ${s.provider.model_version}` : "";
+  const follows = c.view.state === "no_model" ? "Our own estimate follows once PolicyEngine answers" : "Our own estimate follows once two editors have checked it";
+  if (c.view.share === "deciles" && c.headResult && c.better !== null && c.worse !== null)
     return {
       caption: `Change in income after tax and benefits, ${c.head}, by income tenth (1 = lowest)`,
       bars: c.headResult.deciles.map((d) => ({ label: String(d.decile), value: d.rel_change_pct, text: pct2(d.rel_change_pct) })),
       foot: `${model}: ${Math.round(c.better * 100)}% of households better off, ${Math.round(c.worse * 100)}% worse off`,
     };
-  if (c.headHouseholds)
+  if (c.view.share === "households" && c.headHouseholds)
     return {
       caption: `Six example households: change in income after tax and benefits, ${c.head}, £ a year`,
       bars: c.headHouseholds.rows.map((r, i) => ({ label: String(i + 1), value: r.change_gbp, text: gbpYear(r.change_gbp) })),
       foot: `${model}. 1 to 3: single adults on three salaries; 4: a couple with two children; 5: a lone parent; 6: pensioners`,
     };
-  const t = s.input.treasury!;
+  const t = s.input.treasury;
+  if (c.view.share === "treasury" && t)
+    return {
+      caption: `The Treasury's estimate, ${t.year}: taxes and welfare by income tenth, % of net income`,
+      bars: t.pct.deciles.map((d, i) => ({ label: String(i + 1), value: d.tax + d.welfare, text: pct2(d.tax + d.welfare) })),
+      foot: `HM Treasury, Impact on households (official). ${follows}`,
+    };
+  const year = salaryCheckYear(s.calculator, c.head);
+  const changes = ratesChangedYears(s.calculator).some((y) => y.year === year);
+  const examples = salaryExamples(
+    s.calculator,
+    year,
+    EXAMPLE_SALARIES.map((e) => e.salary_gbp),
+  );
   return {
-    caption: `The Treasury's estimate, ${t.year}: taxes and welfare by income tenth, % of net income`,
-    bars: t.pct.deciles.map((d, i) => ({ label: String(i + 1), value: d.tax + d.welfare, text: pct2(d.tax + d.welfare) })),
-    foot: "HM Treasury, Impact on households. Our own estimate follows once two editors have checked it",
+    caption: `Income tax and National Insurance, ${year}: change in take-home pay a year`,
+    bars: examples.map((e) => ({ label: `${gbpWhole(e.salary_gbp)} a year`, value: e.change_gbp, text: gbpYear(e.change_gbp) })),
+    foot: `${changes ? "The Budget's own rates; not official, not tax advice" : `No change to these rates in ${year}`}. ${follows}`,
   };
 }
 

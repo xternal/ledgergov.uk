@@ -67,7 +67,9 @@ export function GET() {
     `- [${predictTitle(currentRound())}](${absolute(PREDICT_PATH)}): ${predictDescription(currentRound())} Each question is settled by a named Budget document; editors record the answers after the Budget and every set of predictions is scored.`,
     ...getHouseholdSnapshots().map(
       (h) =>
-        `- [${householdCopy(h).title}](${absolute(householdPath(h))}): ${householdCopy(h).description} Income tenths rank households by income after tax and benefits, not adjusted for household size. Static estimate (nobody changes behaviour), shown with a ±10% range; computed once with PolicyEngine UK ${h.provider.model_version}${h.kind === "rehearsal" ? "; a rehearsal on last year's Budget" : ""}.`,
+        h.provider
+          ? `- [${householdCopy(h).title}](${absolute(householdPath(h))}): ${householdCopy(h).description} Income tenths rank households by income after tax and benefits, not adjusted for household size. Static estimate (nobody changes behaviour), shown with a ±10% range; computed once with PolicyEngine UK ${h.provider.model_version}${h.kind === "rehearsal" ? "; a rehearsal on last year's Budget" : ""}.`
+          : `- [${householdCopy(h).title}](${absolute(householdPath(h))}): ${householdCopy(h).description} No model answers yet: the measures, the salary check and the Treasury's chart are complete; the estimate by income tenth and for example households will be computed once with PolicyEngine UK${h.kind === "rehearsal" ? "; a rehearsal on last year's Budget" : ""}.`,
     ),
     `- [Coming up](${absolute("/promises#coming-up")}): open promises due in the next 12 months, nearest deadline first. Readers can follow a deadline window (this month, next 3 months, next 12 months) by email, Telegram or feed.`,
     `- [Privacy notice](${absolute("/privacy")}): ${PRIVACY_SUMMARY}`,

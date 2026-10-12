@@ -24,11 +24,11 @@ Scheduled tasks on Pavel's Mac do the typing and the runs; people do the checkin
 
 | When (GMT) | Scheduled task | What it does | Who checks |
 |---|---|---|---|
-| Tue 27 Oct, 10:00 | `budget-2026-household-prep` | Re-tests PolicyEngine if its API moved, refreshes the household templates, starts the 2026 measures file on its branch | Nothing to check unless it reports a change |
+| Tue 27 Oct, 10:00 | `budget-2026-household-prep` | Re-tests PolicyEngine if its API moved, refreshes the household templates, starts the 2026 measures file on its branch, rehearses the "no model" fallback offline | Nothing to check unless it reports a change |
 | Wed 28 Oct, 14:00 | `budget-day-2026-scorecard` | Reads the Treasury's total from the PDF page as a picture, separately from the parser, then runs the scorecard (runbook below) | Pavel retypes the total from the PDF and checks three lines, then merges |
-| Wed 28 Oct, 14:30 | `budget-2026-household-run` | Types every tax and benefit measure with its page, runs PolicyEngine, opens the pull request; from 19:30 re-checks every rate against HMRC's notes | Pavel and Goodwill Stranger check every value against its page, then merge |
+| Wed 28 Oct, 14:30 | `budget-2026-household-run` | Types every tax and benefit measure with its page, runs PolicyEngine (again every 10 minutes while it is down), opens the pull request; from 19:30 re-checks every rate against HMRC's notes | Pavel and Goodwill Stranger check every value against its page, then merge |
 | Wed 28 Oct, 17:00 | `budget-day-2026-drafts` | Drafts the card changes, with rates from the Budget document or HMRC's notes when OOTLAR is not out | Two editors approve, as for every card |
-| Thu 29 Oct, 05:00 | `budget-2026-household-fallback` | If the household pull request is not merged, turns it into the fallback (households and the Treasury's chart; deciles follow) | Pavel and Goodwill Stranger, a short review before 07:00 |
+| Thu 29 Oct, 05:00 | `budget-2026-household-fallback` | If the household pull request is not merged, turns it into the fallback: the households and the Treasury's chart if PolicyEngine answered (deciles follow); if it cannot be reached at all, the page without the model (the measures, the salary check and the Treasury's chart; the rest follows) | Pavel and Goodwill Stranger, a short review before 07:00 |
 
 Each task checks that nothing else is building before it builds, so the three on Wednesday afternoon take turns.
 
@@ -231,6 +231,7 @@ It is data, like the scorecard, but it is our estimate, so **two editors** revie
 - **Now to 21 October (content freeze):** the code, the templates and the rehearsal are merged.
 - **When PolicyEngine's API moves to a new bundle** (6.3.x is certified; check `curl -s https://api.policyengine.org/v2/tax-benefit-models/by-country/uk`), run the live test again and compare with `docs/MODEL.md` (dates still read on 1 January? deciles still unadjusted for size?): `pnpm pe:probe` (four economy runs; `-- --households` for none). Commit the new fixtures folder.
 - **Tuesday 27 October:** refresh the templates from PolicyEngine's current law (one call): `pnpm household -- templates`. Read the diff: a "without" value that moved is PolicyEngine catching up with the law, or a forecast change.
+- **Tuesday 27 October:** rehearse the "no model" fallback once, offline, on last year's Budget, and put it back: `pnpm household -- build autumn-budget-2025 --no-model`, `pnpm validate`, then `git checkout data/build/budget/household/autumn-budget-2025.json`. Nothing is committed.
 - **Tuesday 27 October:** on a branch `budget-2026-household`, start `content/budget/household/autumn-budget-2026.yaml` from the rehearsal's head (event `autumn-budget-2026`, name, date `2026-10-28`, `kind: budget`, years `2026-27` to `2030-31`, `headline_year: 2027-28`, `side_year: 2026-27`, the sources with `TODO` URLs). It stays on the branch: a `TODO` fails `pnpm validate`.
 - On the machine that will run it: `pdftocairo -v` prints a version (poppler, for the Treasury's chart), `etl/.venv` exists, and `pnpm install --frozen-lockfile` has run.
 - Rota: the owner runs the job; editor A types the measures, editor B the Treasury's chart and the second review; one of them is up at 05:00 GMT on Thursday for the fallback decision. In 2026 the scheduled tasks do the owner's and editor A's work and the chart ("Who does what" above); Pavel and Goodwill Stranger review.
@@ -260,6 +261,7 @@ It is data, like the scorecard, but it is our estimate, so **two editors** revie
    - `post`: the Budget's value for each year it changes, **in PolicyEngine's unit**: a rate of 22% is `0.22`, National Insurance thresholds are £ a week (£12,570 a year is `241.73`), fuel duty is £ a litre averaged over the fiscal year, `unlimited` for no limit;
    - `pre`: leave the template's value unless the Budget document says what would otherwise have happened (then set it and say where in `pre_source`); a value is the one for the whole fiscal year;
    - delete the parameters the measure does not touch.
+   `modelled: true` means "goes into PolicyEngine's estimate": keep it, with the parameters, even while PolicyEngine is down. The salary check takes the Budget's income tax and employee National Insurance rates and thresholds from these parameters and nowhere else (no tax seed to fill for this page), and the "no model" fallback publishes them.
    A measure with no template, no PolicyEngine parameter, or that is a new tax: `modelled: false` with a `not_modelled` reason (`no_parameter`, `new_tax`, `needs_code`, `not_household_income`) and a plain note, often with the Treasury's own costing. Inheritance tax, corporation tax, business rates and 0% VAT on household electricity have ready-made blocks.
 3. **The Treasury's chart.** In "Impact on households", find the decile chart as a percentage of net income (Figure 1.A in 2025) and, if there is one, in £ a year (1.B). If the Treasury publishes a table, type it with `read_from: table`. If not:
    ```bash
@@ -299,23 +301,56 @@ It is data, like the scorecard, but it is our estimate, so **two editors** revie
 | `check`: a TODO is left in the file | A placeholder | Fill it or delete it |
 | `record`: the measures do not fit the model PolicyEngine runs today | PolicyEngine updated its model since the templates | `pnpm household -- templates`, then fix the named paths |
 | `record`: PolicyEngine offers 2024 … 2030; it cannot run 2031-32 | Years beyond 2030-31 | Drop them from `years` |
-| `record`: PolicyEngine http_5xx, timeout or network | The API is down or busy (no uptime promise; its busiest night) | Wait 10 minutes and run again: finished years come back from its cache at once. Keep trying until 05:00, then the fallback |
+| `record`: PolicyEngine http_5xx, timeout or network | The API is down or busy (no uptime promise; its busiest night) | Wait 10 minutes and run again: finished years come back from its cache at once. Keep trying until 05:00, then the fallback: the households only if PolicyEngine answers them, else the page without the model. If nothing has come back by 22:00, also commit `pnpm household -- build autumn-budget-2026 --no-model` to the branch, so two editors can review that page on the preview the same evening; a run that succeeds later replaces it |
 | `record`: still computing … after 20 minutes | Its queue is long | As above |
 | `build`: FAIL policies | The file changed after the recording | Run again (step 5) |
 | `build`: FAIL one_model | PolicyEngine updated during the run: two models in one comparison | Run again; every year is computed again on the new model |
 | `build`: FAIL years, economy or households | An answer missing or not in the expected shape | Run again once; if it repeats, the fallback, and tell the lead |
-| `validate`: … changed after this snapshot was computed | The file was edited after the run | Step 5 again |
+| `validate`: … changed after this snapshot was computed | The file was edited after the run | Step 5 again (or, with no model, `build … --no-model` again) |
+| `build`: FAIL calculator | The salary check's rates differ from the measures file's (a code fault, never a typing slip) | Stop and tell the lead; do not publish |
+| `validate`: data/seed/uk_tax_2027-28.json: … the one place for the Budget's rates | A post-Budget tax seed was filled with figures the measures file does not have | Make the seed match the measures file, or delete it: this page does not need it |
 
 ### The fallback rule
 
-If our deciles are not reviewed by two editors by **07:00 GMT on Thursday 29 October**, publish the salary check, the example households and the Treasury's chart, and add our deciles when they are ready. Being right matters more than being first.
+If our deciles are not reviewed by two editors by **07:00 GMT on Thursday 29 October**, publish what is ready and add the rest when it is. Being right matters more than being first. At 05:00 the owner (in 2026 the scheduled task `budget-2026-household-fallback`) takes one of three paths:
+
+| At 05:00 | What the page shows | Its share image | Then |
+|---|---|---|---|
+| The full run is approved | Everything (step 7) | Our deciles | — |
+| PolicyEngine answered, at least for the example households, but the deciles are not reviewed | `hold: [deciles]`: the households, the salary check, the measures and the Treasury's chart; the summary, deciles and gains and losses "follow once two editors have checked it" | The six households | The deciles, once reviewed |
+| PolicyEngine cannot be reached at all | No model: the salary check, every measure with its page and the Treasury's chart; the summary, deciles, gains and losses and households "follow once PolicyEngine answers" | The Treasury's chart (or, with none, the salary check on three salaries) | Everything else, once PolicyEngine answers |
+
+**PolicyEngine answered: hold the deciles.**
 
 1. At 05:00, if the full run is not approved (or failed): add `hold: [deciles]` to the measures file.
-2. If the recording has the households (`record` got that far), rebuild offline: `pnpm household -- build autumn-budget-2026`. If it has none, ask for the households only (two calls, no population runs): `pnpm household -- record autumn-budget-2026 --households-only`, then `build`.
+2. If the recording has the households (`record` got that far), rebuild offline: `pnpm household -- build autumn-budget-2026`. If it has none, ask for the households only (two calls, no population runs): `pnpm household -- record autumn-budget-2026 --households-only`, then `build`. If that fails with http_5xx, timeout or network twice, 10 minutes apart, take the "no model" path below instead (remove the `hold` line first).
 3. The page then shows the summary, the deciles and gains and losses as "follows once two editors have checked it", and everything else in full; its share image shows the six households. Two editors check the six households and the Treasury's figures (a short review), and it merges.
 4. When the deciles are reviewed: remove `hold`, run `pnpm household -- autumn-budget-2026` (or `build`, if the full recording is the reviewed one), open the pull request, two editors, merge.
 
-If PolicyEngine cannot be reached at all, there is no household page that morning: the scorecard, `/budget` and the cards carry it, and the page follows when the API answers.
+**PolicyEngine cannot be reached at all: publish without the model.** The salary check, the measures and the Treasury's chart need no model, so the page still goes up by 07:00. Nothing in the measures file changes, so the normal run later uses the same file.
+
+1. Check the file offline (the committed copy of PolicyEngine's parameters; no network):
+
+   ```bash
+   pnpm household -- check autumn-budget-2026
+   ```
+
+2. Build without the model. It ignores any recording and writes the snapshot only if both checks pass:
+
+   ```bash
+   pnpm household -- build autumn-budget-2026 --no-model
+   ```
+
+   ```
+   ok    model: no model answers: built without PolicyEngine. N of M measures go into its estimate once it answers; …
+   ok    calculator: the salary check's rates are the measures file's for every rate and threshold both have …
+   ```
+
+3. Check it all (step 6, one command at a time). On the page: the "Not yet in full" box; the salary check on £25,000, £45,000 and £120,000 against HMRC's notes; every measure links its page; the Treasury's chart; "To follow" lists the four parts; no empty chart. `curl -A LinkedInBot` returns the title, description and image (the Treasury's chart).
+4. Publish: `git add content/budget/household/autumn-budget-2026.yaml data/build/budget/household/autumn-budget-2026.json` (no recording), commit, push, open the pull request "The Budget for your household: without the model until PolicyEngine answers". Two editors check every value against its page and the Treasury's figures against the PDF, then merge before 07:00.
+5. Every 30 minutes from 07:00, see whether PolicyEngine answers: `curl -s -o /dev/null -w "%{http_code}\n" https://api.policyengine.org/uk/metadata` (200 is up). When it does, on a new branch from `main`, run the normal job, with no change to the file: `pnpm household -- autumn-budget-2026`. It replaces the snapshot whole (nothing of the no-model one is kept); once merged, the page fills in with no other change. Then step 6, step 7 with the recording, two editors review the results, merge. If they cannot review the deciles straight away, hold them as above.
+
+If even the measures cannot be reviewed by 07:00, there is no household page that morning: the scorecard, `/budget` and the cards carry it, and the page follows when two editors have checked it.
 
 ## Rules that matter most on the day
 

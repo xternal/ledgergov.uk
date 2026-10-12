@@ -11,6 +11,10 @@
  *                                        packages/server/test/fixtures/t1/household/<event>.json
  *                                        (--households-only: the example households, no population runs)
  *   pnpm household -- build <event>      offline: check the recording and write the snapshot; refuses if any check fails
+ *   pnpm household -- build <event> --no-model
+ *                                        offline, no recording: when PolicyEngine cannot be reached at all, a snapshot
+ *                                        with no model answers (the measures, the Treasury's chart, the salary check);
+ *                                        the normal run replaces it once PolicyEngine answers
  *   pnpm household -- templates          live (one /uk/metadata call): rewrite content/budget/household/_templates.yaml
  *                                        and the metadata fixture from PolicyEngine's current law
  */
@@ -18,7 +22,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { stringify } from "yaml";
 import { HOUSEHOLD_DIR, MEASURES_DIR, parseMeasuresFile, readMeasuresFiles } from "@ledger/schema/household";
-import type { HouseholdMeasuresFile } from "@ledger/schema";
+import type { HouseholdCheck, HouseholdMeasuresFile, HouseholdSnapshot } from "@ledger/schema";
 import {
   BUDGET_2025_SOURCE,
   BUDGET_JOB_USER_AGENT,
@@ -26,6 +30,7 @@ import {
   MEASURE_TEMPLATES,
   budgetPolicies,
   buildHouseholdSnapshot,
+  buildNoModelSnapshot,
   currentLawValue,
   differencesFromCurrentLaw,
   metadataIssues,
@@ -119,18 +124,38 @@ function build(id: string) {
   const recPath = join(root, RECORDINGS, `${id}.json`);
   if (!existsSync(recPath)) fail(`no recording at ${recPath}: run \`pnpm household -- record ${id}\` first`);
   const rec = JSON.parse(readFileSync(recPath, "utf8")) as HouseholdRecording;
-  const { snapshot, checks } = buildHouseholdSnapshot(file, text, path, rec, readCalculatorBase(root));
+  const { snapshot, checks } = buildHouseholdSnapshot(file, text, path, rec, readCalculatorBase(root, file.years[0]!));
+  write(id, snapshot, checks);
+  const head = snapshot!.results.find((r) => r.year === file.headline_year);
+  if (head) {
+    console.log(`${file.headline_year}: net effect on the public finances £${head.budget.net_bn.toFixed(2)}bn a year (static)`);
+    console.log(`deciles (%): ${head.deciles.map((d) => d.rel_change_pct.toFixed(2)).join(", ")}`);
+  } else console.log("deciles held: the page shows the calculator, the example households and the Treasury's chart");
+}
+
+/** Print the checks; write the snapshot only if every one passed. */
+function write(id: string, snapshot: HouseholdSnapshot | null, checks: HouseholdCheck[]) {
   for (const c of checks) console.log(`${c.ok ? "ok  " : "FAIL"}  ${c.id}: ${c.message}`);
   if (!snapshot) fail("Not written: a check failed (see above). Nothing is published from a run that fails a check.");
   const out = join(root, HOUSEHOLD_DIR, `${id}.json`);
   mkdirSync(dirname(out), { recursive: true });
   writeFileSync(out, `${JSON.stringify(snapshot, null, 1)}\n`);
   console.log(`\nwritten: ${out}`);
-  const head = snapshot!.results.find((r) => r.year === file.headline_year);
-  if (head) {
-    console.log(`${file.headline_year}: net effect on the public finances £${head.budget.net_bn.toFixed(2)}bn a year (static)`);
-    console.log(`deciles (%): ${head.deciles.map((d) => d.rel_change_pct.toFixed(2)).join(", ")}`);
-  } else console.log("deciles held: the page shows the calculator, the example households and the Treasury's chart");
+}
+
+/**
+ * The fallback when PolicyEngine cannot be reached at all: a snapshot from the measures file alone, with no model
+ * answers. Ignores any recording; `pnpm household -- <event>` replaces it whole once PolicyEngine answers.
+ */
+function buildNoModel(id: string) {
+  const { file, text, path } = loadEvent(id);
+  const { snapshot, checks } = buildNoModelSnapshot(file, text, path, readCalculatorBase(root, file.years[0]!), new Date());
+  write(id, snapshot, checks);
+  console.log("no model answers: the page shows the measures, the Treasury's chart and the salary check; the rest follows once PolicyEngine answers");
+  if (existsSync(join(root, RECORDINGS, `${id}.json`)))
+    console.log(
+      `note: a recording exists (${RECORDINGS}/${id}.json). If it has the example households, the deciles fallback shows more: add \`hold: [deciles]\` and run \`pnpm household -- build ${id}\` instead.`,
+    );
 }
 
 /** Rewrite the templates and the metadata fixture from PolicyEngine's live metadata (one call), or from a saved copy (`--from <file>`). */
@@ -220,15 +245,20 @@ function metadataFromFile(path: string): PolicyEngineMetadata {
 }
 
 async function main() {
-  const args = process.argv.slice(2).filter((a, i, all) => a !== "--" && a !== "--households-only" && a !== "--file" && all[i - 1] !== "--file");
+  const noModel = process.argv.includes("--no-model");
+  const args = process.argv
+    .slice(2)
+    .filter((a, i, all) => a !== "--" && a !== "--households-only" && a !== "--no-model" && a !== "--file" && all[i - 1] !== "--file");
   const [cmd, id] = args;
-  if (!cmd) fail("usage: pnpm household -- <event> | check <event> | record <event> | build <event> | templates [--from <metadata.json>]");
+  if (!cmd) fail("usage: pnpm household -- <event> | check <event> | record <event> | build <event> [--no-model] | templates [--from <metadata.json>]");
   if (cmd === "templates") return templates(args.includes("--from") ? args[args.indexOf("--from") + 1] : undefined);
   if (["check", "record", "build"].includes(cmd!) && !id) fail(`usage: pnpm household -- ${cmd} <event>`);
+  if (noModel && cmd === "record") fail(`--no-model asks PolicyEngine nothing: use \`pnpm household -- build ${id} --no-model\``);
   if (cmd === "check") return void check(id!);
   if (cmd === "record") return record(id!);
-  if (cmd === "build") return build(id!);
+  if (cmd === "build") return noModel ? buildNoModel(id!) : build(id!);
   check(cmd!);
+  if (noModel) return buildNoModel(cmd!);
   await record(cmd!);
   build(cmd!);
 }

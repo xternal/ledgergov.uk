@@ -34,7 +34,7 @@ const within = (a: number, b: number, share: number) => Math.abs(a - b) <= share
 describe("like for like with PolicyEngine's own analysis (parity recording)", () => {
   it("is a valid recording of the parity inputs, from one model", () => {
     const file = HouseholdMeasuresFile.parse(parse(read(`${DIR}autumn-budget-2025-parity.yaml`)));
-    const { checks } = buildHouseholdSnapshot(file, "", `${DIR}autumn-budget-2025-parity.yaml`, parity, readCalculatorBase(fileURLToPath(root)));
+    const { checks } = buildHouseholdSnapshot(file, "", `${DIR}autumn-budget-2025-parity.yaml`, parity, readCalculatorBase(fileURLToPath(root), "2026-27"));
     expect(checks.filter((c) => !c.ok)).toEqual([]);
   });
 

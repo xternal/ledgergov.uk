@@ -57,17 +57,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const h2 = "m-0 text-title font-semibold";
 const section = "grid grid-cols-[minmax(0,1fr)] gap-5 scroll-mt-28";
 const figure = "m-0 text-figure font-semibold tracking-figure tabular-nums";
-const SECTIONS = [
-  { href: "#summary", label: "Summary" },
-  { href: "#deciles", label: "By income" },
-  { href: "#winners", label: "Gains and losses" },
-  { href: "#households", label: "Example households" },
-  { href: "#your-tax", label: "Your tax" },
-  { href: "#measures", label: "Measures" },
-  { href: "#treasury", label: "Treasury's view" },
-  { href: "#how", label: "How it works" },
-  { href: "#faq", label: "Questions" },
-];
+/** The page's sections, in order, for the "On this page" menu: before PolicyEngine answers, the model's parts are one "To follow" section at the end. */
+function sectionsFor(s: HouseholdSnapshot, noModel: boolean) {
+  const treasury = s.input.treasury ? [{ href: "#treasury", label: "Treasury's view" }] : [];
+  const end = [
+    { href: "#how", label: "How it works" },
+    { href: "#faq", label: "Questions" },
+  ];
+  if (noModel)
+    return [
+      { href: "#summary", label: "Summary" },
+      { href: "#your-tax", label: "Your tax" },
+      { href: "#measures", label: "Measures" },
+      ...treasury,
+      { href: "#to-follow", label: "To follow" },
+      ...end,
+    ];
+  return [
+    { href: "#summary", label: "Summary" },
+    { href: "#deciles", label: "By income" },
+    { href: "#winners", label: "Gains and losses" },
+    { href: "#households", label: "Example households" },
+    { href: "#your-tax", label: "Your tax" },
+    { href: "#measures", label: "Measures" },
+    ...treasury,
+    ...end,
+  ];
+}
 const tone = (v: number) => (v > 0.005 ? "text-good" : v < -0.005 ? "text-debt-ink" : "text-muted");
 
 /**
@@ -90,6 +106,10 @@ export default async function HouseholdPage({ params }: Props) {
   const faq = householdFaq(s);
   const others = getHouseholdSnapshots().filter((x) => x.id !== s.id);
   const startYear = Number(c.head.slice(0, 4));
+  // Before PolicyEngine answers (the "no model" fallback): the measures, the salary check and the Treasury's chart in
+  // full; the summary, deciles, gains and losses and households follow once it does.
+  const noModel = c.view.state === "no_model";
+  const compareUrl = policyEngineCompareUrl(s, startYear);
 
   const structuredData = [
     {
@@ -106,8 +126,12 @@ export default async function HouseholdPage({ params }: Props) {
       datePublished: s.computed_at.slice(0, 10),
       temporalCoverage: `${s.input.years[0]!.slice(0, 4)}-04/${Number(s.input.years.at(-1)!.slice(0, 4)) + 1}-03`,
       spatialCoverage: { "@type": "Place", name: "United Kingdom" },
-      variableMeasured: "Change in household income after tax and benefits, by income tenth, % and £ a year",
-      measurementTechnique: `Static microsimulation with PolicyEngine UK ${s.provider.model_version} (data ${s.provider.data_version})`,
+      variableMeasured: s.provider
+        ? "Change in household income after tax and benefits, by income tenth, % and £ a year"
+        : "Income tax and employees' National Insurance on a salary, without and with the Budget; the Budget's tax and benefit measures, each with its source",
+      measurementTechnique: s.provider
+        ? `Static microsimulation with PolicyEngine UK ${s.provider.model_version} (data ${s.provider.data_version})`
+        : "The Budget's published rates and thresholds, applied to a salary in the reader's browser; a static microsimulation with PolicyEngine UK follows once it answers",
       about: { "@type": "Event", name: s.name, startDate: s.date, organizer: { "@type": "GovernmentOrganization", name: "HM Treasury" } },
       isBasedOn: s.input.sources.map((x) => x.url),
       citation: "https://policyengine.org/uk",
@@ -135,7 +159,7 @@ export default async function HouseholdPage({ params }: Props) {
       <SiteHeader current="/promises" />
       <div className="sticky top-14 z-10 border-b border-line bg-bg/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-[1000px] px-2 py-1.5 sm:px-4">
-          <NavLinks links={SECTIONS} spy label="On this page" />
+          <NavLinks links={sectionsFor(s, noModel)} spy label="On this page" />
         </div>
       </div>
       <main className="mx-auto grid max-w-[1000px] grid-cols-[minmax(0,1fr)] gap-14 px-4 pb-20 pt-10 sm:px-6">
@@ -148,18 +172,38 @@ export default async function HouseholdPage({ params }: Props) {
             {rehearsal ? ": last year's Budget" : ""}
           </p>
           <h1 className="m-0 text-[clamp(30px,4.4vw,44px)] font-semibold leading-[1.06] tracking-[-0.035em]">{c.title}</h1>
-          <p className="m-0 text-lead text-muted">
-            Who gains and who loses from the {s.name}&apos;s changes to taxes and benefits, for the whole country by income and for six example
-            households, before and after. We lead with {c.head}, the first full year of most of the measures, with {c.side} beside it.
-          </p>
+          {noModel ? (
+            <p className="m-0 text-lead text-muted">
+              What the {s.name} changes in taxes and benefits, each measure linked to the page that announces it; what it means for your own income tax
+              and National Insurance, worked out in your browser{s.input.treasury ? "; and the Treasury's own chart" : ""}. Who gains and who loses, for
+              the whole country by income and for six example households, follows once PolicyEngine answers.
+            </p>
+          ) : (
+            <p className="m-0 text-lead text-muted">
+              Who gains and who loses from the {s.name}&apos;s changes to taxes and benefits, for the whole country by income and for six example
+              households, before and after. We lead with {c.head}, the first full year of most of the measures, with {c.side} beside it.
+            </p>
+          )}
           <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
             <QualityBadge quality="modelled">{l.estimate}</QualityBadge>
             <span className="text-caption font-medium text-muted">{l.notOfficial}</span>
             <span className="text-caption font-medium text-muted">{l.model}</span>
             <span className="text-caption text-muted">
-              Worked out with <a href="https://policyengine.org/uk">PolicyEngine</a>&apos;s open model
+              {noModel ? "Our estimate: " : "Worked out with "}
+              <a href="https://policyengine.org/uk">PolicyEngine</a>&apos;s open model{noModel ? ", once it answers" : ""}
             </span>
           </div>
+          {noModel && (
+            <div className="grid gap-1.5 rounded-control border border-line bg-sunk/60 px-4 py-3">
+              <p className="m-0 font-semibold">Not yet in full</p>
+              <p className="m-0 text-muted">
+                PolicyEngine, the charity whose open model of UK taxes and benefits we use for our estimate, had not answered when this page was
+                published on {computedOn(s)}. What is here is complete and was checked by two editors: the measures with their pages, your own tax on a
+                salary{s.input.treasury ? " and the Treasury's own chart" : ""}. The summary, the change by income tenth, who gains and who loses and
+                the six example households follow once PolicyEngine answers (<a href="#to-follow">what follows</a>).
+              </p>
+            </div>
+          )}
           {rehearsal && (
             <div className="grid gap-1.5 rounded-control border border-line bg-sunk/60 px-4 py-3">
               <p className="m-0 font-semibold">A rehearsal, on last year&apos;s Budget</p>
@@ -179,12 +223,17 @@ export default async function HouseholdPage({ params }: Props) {
           )}
         </header>
 
-        {c.headResult && c.sideResult ? <PopulationSections s={s} head={c.headResult} side={c.sideResult} /> : <HeldPopulation s={s} />}
-
-        {c.headHouseholds && c.sideHouseholds ? (
-          <HouseholdsSection s={s} head={c.headHouseholds} side={c.sideHouseholds} />
+        {noModel ? (
+          <NoModelSummary s={s} />
         ) : (
-          <ToFollow id="households" title="Six example households, before and after" text="The six example households follow once two editors have checked them." />
+          <>
+            {c.headResult && c.sideResult ? <PopulationSections s={s} head={c.headResult} side={c.sideResult} /> : <HeldPopulation s={s} />}
+            {c.headHouseholds && c.sideHouseholds ? (
+              <HouseholdsSection s={s} head={c.headHouseholds} side={c.sideHouseholds} />
+            ) : (
+              <ToFollow id="households" title="Six example households, before and after" text="The six example households follow once two editors have checked them." />
+            )}
+          </>
         )}
 
         <section id="your-tax" aria-labelledby="your-tax-h" className={section}>
@@ -209,7 +258,9 @@ export default async function HouseholdPage({ params }: Props) {
             </p>
           </div>
           <div className="grid gap-2">
-            <h3 className="m-0 text-[16px] font-semibold">In the estimate ({modelled.length})</h3>
+            <h3 className="m-0 text-[16px] font-semibold">
+              {noModel ? `In our estimate once PolicyEngine answers (${modelled.length})` : `In the estimate (${modelled.length})`}
+            </h3>
             <ul className="m-0 grid list-none border-t border-line p-0">
               {modelled.map((m) => {
                 const links = measureLinks(s, m, scorecardIds);
@@ -284,7 +335,9 @@ export default async function HouseholdPage({ params }: Props) {
               <p className="m-0 text-muted">
                 HM Treasury publishes its own estimate with every Budget. It counts {t.covers}. Its figures are official; it gives no range.
               </p>
-              <p className="m-0 border-l-2 border-rec pl-3 text-ink">Why the two differ: {t.differs}</p>
+              <p className="m-0 border-l-2 border-rec pl-3 text-ink">
+                {noModel ? "Why ours, when it follows, will differ" : "Why the two differ"}: {t.differs}
+              </p>
             </div>
             <DecilePair
               label={`The Treasury's estimate for ${t.year}, as a share of net income by income tenth. Taxes and welfare: from ${pct2(t.pct.deciles[0]!.tax + t.pct.deciles[0]!.welfare)} in tenth 1 to ${pct2(t.pct.deciles[9]!.tax + t.pct.deciles[9]!.welfare)} in tenth 10. With public services: ${pct2(t.pct.deciles[0]!.overall)} to ${pct2(t.pct.deciles[9]!.overall)}.`}
@@ -344,6 +397,32 @@ export default async function HouseholdPage({ params }: Props) {
           </section>
         )}
 
+        {noModel && (
+          <section id="to-follow" aria-labelledby="to-follow-h" className={section}>
+            <div className="grid max-w-[70ch] gap-1">
+              <h2 id="to-follow-h" className={h2}>
+                To follow once PolicyEngine answers
+              </h2>
+              <p className="m-0 text-muted">
+                These parts need PolicyEngine&apos;s answers. They follow as soon as it answers, worked out from the same measures and checked by two
+                editors; nothing else on the page changes.
+              </p>
+            </div>
+            <ul className="m-0 grid max-w-[70ch] list-none border-t border-line p-0">
+              {[
+                "Summary: how many households are better and worse off, and what the measures raise or cost",
+                "Change in income, by income tenth",
+                "Who gains and who loses, within each income tenth",
+                "Six example households, before and after",
+              ].map((what) => (
+                <li key={what} className="border-b border-line py-3 font-medium text-ink">
+                  {what}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
         <section id="how" aria-labelledby="how-h" className="grid max-w-[70ch] scroll-mt-28 gap-3 border-t border-line pt-8">
           <h2 id="how-h" className={h2}>
             How it works
@@ -358,14 +437,24 @@ export default async function HouseholdPage({ params }: Props) {
             It is a static estimate: nobody changes their work, spending or savings because of the Budget. PolicyEngine gives one figure for each
             result; we show it with a ±10% range and label it an estimate. It is not an official figure and not advice about anyone&apos;s own taxes.
           </p>
-          <p className="m-0 text-muted">
-            We asked PolicyEngine once, on {computedOn(s)}, not each time someone opens the page, and nothing about readers is ever sent. Every answer
-            came from one version of the model: PolicyEngine UK {s.provider.model_version}, data {s.provider.data_version}. Two editors checked the
-            measures before this page was published. You can open the same comparison in{" "}
-            <a href={policyEngineCompareUrl(s, startYear)}>PolicyEngine&apos;s own app</a>, or read{" "}
-            <a href={`https://github.com/xternal/public-ledger/blob/main/${s.measures_file}`}>the measures file</a> and{" "}
-            <a href="https://github.com/xternal/public-ledger/blob/main/docs/MODEL.md">our method</a>.
-          </p>
+          {s.provider && compareUrl ? (
+            <p className="m-0 text-muted">
+              We asked PolicyEngine once, on {computedOn(s)}, not each time someone opens the page, and nothing about readers is ever sent. Every answer
+              came from one version of the model: PolicyEngine UK {s.provider.model_version}, data {s.provider.data_version}. Two editors checked the
+              measures before this page was published. You can open the same comparison in <a href={compareUrl}>PolicyEngine&apos;s own app</a>, or
+              read <a href={`https://github.com/xternal/public-ledger/blob/main/${s.measures_file}`}>the measures file</a> and{" "}
+              <a href="https://github.com/xternal/public-ledger/blob/main/docs/MODEL.md">our method</a>.
+            </p>
+          ) : (
+            <p className="m-0 text-muted">
+              PolicyEngine had not answered when this page was published on {computedOn(s)}, so the parts that need it follow. We ask it once, not each
+              time someone opens the page, and nothing about readers is ever sent. The salary check needs no model: it applies the Budget&apos;s own
+              rates and thresholds, typed from its documents, to the salary you type, in your browser. Two editors checked the measures and the
+              Treasury&apos;s figures before this page was published. Read{" "}
+              <a href={`https://github.com/xternal/public-ledger/blob/main/${s.measures_file}`}>the measures file</a> and{" "}
+              <a href="https://github.com/xternal/public-ledger/blob/main/docs/MODEL.md">our method</a>.
+            </p>
+          )}
           <p className="m-0 text-label">
             <a href="/budget">What {BUDGET.name} could do to the government&apos;s promises</a>
             {others.length > 0 && (
@@ -534,6 +623,53 @@ function HeldPopulation({ s }: { s: HouseholdSnapshot }) {
       <ToFollow id="deciles" title="Change in income, by income tenth" text="Follows once two editors have checked it." />
       <ToFollow id="winners" title="Who gains and who loses" text="Follows once two editors have checked it." />
     </>
+  );
+}
+
+/**
+ * Before PolicyEngine answers: what the page has, from the documents themselves (the measures, the Treasury's chart),
+ * and a plain line on what follows. No empty charts.
+ */
+function NoModelSummary({ s }: { s: HouseholdSnapshot }) {
+  const t = s.input.treasury;
+  const modelled = s.input.measures.filter((m) => m.modelled).length;
+  const cash = t ? t.pct.deciles.map((d) => d.tax + d.welfare) : null;
+  return (
+    <section id="summary" aria-labelledby="summary-h" className={section}>
+      <h2 id="summary-h" className="sr-only">
+        Summary
+      </h2>
+      <dl className="m-0 grid grid-cols-2 gap-x-6 gap-y-5 border-y border-line py-5 sm:grid-cols-4">
+        <div className="grid content-start gap-0.5">
+          <dt className="text-label text-muted">Tax and benefit measures</dt>
+          <dd className={figure}>{s.input.measures.length}</dd>
+          <dd className="m-0 text-caption text-muted">each linked to its page</dd>
+        </div>
+        <div className="grid content-start gap-0.5">
+          <dt className="text-label text-muted">For our estimate</dt>
+          <dd className={figure}>{modelled}</dd>
+          <dd className="m-0 text-caption text-muted">{s.input.measures.length - modelled} not in it, each with the reason</dd>
+        </div>
+        {t && cash && (
+          <>
+            <div className="grid content-start gap-0.5">
+              <dt className="text-label text-muted">Treasury, lowest incomes, tenth 1</dt>
+              <dd className={`${figure} ${tone(cash[0]!)}`}>{pct2(cash[0]!)}</dd>
+              <dd className="m-0 text-caption text-muted">taxes and welfare, {t.year}</dd>
+            </div>
+            <div className="grid content-start gap-0.5">
+              <dt className="text-label text-muted">Highest incomes, tenth 10</dt>
+              <dd className={`${figure} ${tone(cash[9]!)}`}>{pct2(cash[9]!)}</dd>
+              <dd className="m-0 text-caption text-muted">share of income, official</dd>
+            </div>
+          </>
+        )}
+      </dl>
+      <p className="m-0 max-w-[70ch] text-muted">
+        Our own estimate for the whole country (how many households are better or worse off, and by how much in each income tenth) and the six
+        example households follow once PolicyEngine answers.{t ? ` The Treasury's figures are its own and count ${t.covers}: its chart is below.` : ""}
+      </p>
+    </section>
   );
 }
 

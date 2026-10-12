@@ -117,7 +117,9 @@ export default function BudgetPage() {
               Household by household: <a href={householdPath(household)}>{householdCopy(household).title}</a>
               {household.kind === "rehearsal"
                 ? `, last year's Budget worked out the way we will work out ${BUDGET.name} on the morning after: who gains and who loses, by income and for six example households.`
-                : ": who gains and who loses, by income and for six example households, estimated with PolicyEngine's open model."}
+                : household.model === "none"
+                  ? ": every measure with its page and your own tax on a salary now; who gains and who loses, by income and for six example households, follows once PolicyEngine answers."
+                  : ": who gains and who loses, by income and for six example households, estimated with PolicyEngine's open model."}
             </p>
           )}
           <div>

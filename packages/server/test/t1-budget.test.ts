@@ -30,7 +30,7 @@ const text = read(MEASURES);
 const file = (): HouseholdMeasuresFile => HouseholdMeasuresFile.parse(parse(text));
 const recording = (): HouseholdRecording => JSON.parse(read("packages/server/test/fixtures/t1/household/autumn-budget-2025.json"));
 const committed: HouseholdSnapshot = JSON.parse(read("data/build/budget/household/autumn-budget-2025.json"));
-const calcBase = readCalculatorBase(fileURLToPath(root));
+const calcBase = readCalculatorBase(fileURLToPath(root), "2026-27");
 const build = (f: HouseholdMeasuresFile, rec: HouseholdRecording) => buildHouseholdSnapshot(f, text, MEASURES, rec, calcBase);
 
 // PolicyEngine's metadata, trimmed (test/fixtures/t1): every parameter name, values for the ones the site sends.
@@ -189,8 +189,9 @@ describe("the snapshot", () => {
     expect(committed.households.map((h) => h.year)).toEqual(committed.input.years);
     for (const h of committed.households) expect(h.rows.map((r) => r.id)).toEqual(ARCHETYPES.map((a) => a.id));
     expect(policyEngineCompareUrl(committed, 2027)).toBe(
-      `https://policyengine.org/uk/policy?reform=${committed.policies.post}&baseline=${committed.policies.pre}&focus=policyOutput.policyBreakdown&region=uk&timePeriod=2027`,
+      `https://policyengine.org/uk/policy?reform=${committed.policies!.post}&baseline=${committed.policies!.pre}&focus=policyOutput.policyBreakdown&region=uk&timePeriod=2027`,
     );
+    expect(policyEngineCompareUrl({ policies: null }, 2027)).toBeNull();
   });
 
   it("refuses answers from two models: PolicyEngine updated during the run", () => {
@@ -231,7 +232,7 @@ describe("the snapshot", () => {
     expect(checks.every((c) => c.ok)).toBe(true);
     expect(snapshot!.results).toEqual([]);
     expect(snapshot!.households.map((h) => h.year)).toEqual(f.years);
-    expect(snapshot!.provider.model_version).toBe("2.102.3");
+    expect(snapshot!.provider!.model_version).toBe("2.102.3");
     // Without the hold, a run without the population answers is refused.
     expect(build(file(), rec).snapshot).toBeNull();
   });
