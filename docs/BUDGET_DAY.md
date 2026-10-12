@@ -13,6 +13,7 @@ The plan for **Wednesday 28 October 2026**, the day of the Autumn Budget (date: 
 | Straight after | The Budget documents on GOV.UK and the OBR's forecast are published | — |
 | Within 2 hours of publication | The scorecard: read the Treasury's table of policy decisions into [/budget/scorecard](#the-scorecard-the-treasurys-table-of-measures) and open its pull request (runbook below) | Owner |
 | Afternoon | Read the documents against the checklist below; note each card's page and table | Editors, AI Journalist |
+| 13:00 to 23:00 | The Budget for your household: the measures typed with their pages, one run through PolicyEngine, two editors' review ([runbook below](#the-budget-for-your-household)); live by 07:00 on Thursday, in full or as the fallback | Editors, owner |
 | By 20:00 | One pull request with an entry for every card the Budget touched, each with its evidence link | Drafted by AI Journalist, opened by the owner |
 | Evening or next morning | Two editors review and approve; the owner merges | Editors, owner |
 | Within an hour of merge | `/budget`, the cards and the feeds update; follow emails go out | Automatic |
@@ -24,7 +25,7 @@ Published on GOV.UK straight after the statement (the Treasury's Budget page lin
 1. **The Budget document** (the "Red Book"). Its table of policy decisions (Table 4.1 in Budget 2025, 5.1 in Autumn Budget 2024) lists every new measure with its cost or yield for each year: this is the official yearly figure a card's cost should use. The scorecard page shows every line of it with a link to its page, so it is the quickest way to find a measure's line and page number.
 2. **Policy costings**: how each of those figures was worked out.
 3. **The OBR's Economic and fiscal outlook** (EFO) and its supplementary tables: borrowing, debt, and the OBR's view of the measures. Use it for defence and anything the OBR comments on.
-4. **Overview of tax legislation and rates** (OOTLAR): the tax rates and thresholds that will apply. Use it for the tax pledges.
+4. **Overview of tax legislation and rates** (OOTLAR): the tax rates and thresholds that will apply. Use it for the tax pledges when it is out; in 2025 it came out on 28 November, two days after the Budget (in 2024 the same day). On the night, take rates and thresholds from the Budget document and HMRC's **tax information and impact notes** (TIINs, on GOV.UK from the evening: 19:34 GMT in 2025).
 5. **Departmental budget tables**: what each department gets, for promises funded from a department's budget.
 
 Cite the exact page: add `#page=NN` to a PDF link, or link the HTML section.
@@ -204,6 +205,103 @@ It is data, not a card: the two-editor rule for cards does not apply, but one re
 - **The spreadsheet may differ from the PDF** in wording or tax/spend marks (step 5), and the "Head" column may be missing (Spring Statement 2025 had none: then there is no tax/spending mark per line).
 - **Totals do not add up exactly**: the Treasury rounds each line to £5m and adds before rounding, so the lines differ from the printed total by up to a few tens of millions (Budget 2025: up to £30m in a year). The page shows both and the gap.
 - **A corrected PDF** later in the day usually has a new address: update `document_url` and `printed_total` if needed, and run `record` again.
+
+## The Budget for your household
+
+`/budget/household/<event>` shows what the Budget's tax and benefit measures do to households: by income tenth, who gains and who loses, six example households before and after, a salary check readers run in their own browser, the measures left out and why, and the Treasury's own chart beside ours. It is built only from `data/build/budget/household/<event>.json`, which one command writes on the night from the measures editors type into `content/budget/household/<event>.yaml`. Readers never call PolicyEngine; the job does, once. How it works and what the live test found: `docs/MODEL.md`, T1, "The Budget for your household". `/budget` links the newest one by itself; until the night it links the rehearsal on Autumn Budget 2025.
+
+It is data, like the scorecard, but it is our estimate, so **two editors** review the measures file in the pull request, as for cards: every value against its page.
+
+### Before the day
+
+- **Now to 21 October (content freeze):** the code, the templates and the rehearsal are merged.
+- **When PolicyEngine's API moves to a new bundle** (6.3.x is certified; check `curl -s https://api.policyengine.org/v2/tax-benefit-models/by-country/uk`), run the live test again and compare with `docs/MODEL.md` (dates still read on 1 January? deciles still unadjusted for size?): `pnpm pe:probe` (four economy runs; `-- --households` for none). Commit the new fixtures folder.
+- **Tuesday 27 October:** refresh the templates from PolicyEngine's current law (one call): `pnpm household -- templates`. Read the diff: a "without" value that moved is PolicyEngine catching up with the law, or a forecast change.
+- **Tuesday 27 October:** on a branch `budget-2026-household`, start `content/budget/household/autumn-budget-2026.yaml` from the rehearsal's head (event `autumn-budget-2026`, name, date `2026-10-28`, `kind: budget`, years `2026-27` to `2030-31`, `headline_year: 2027-28`, `side_year: 2026-27`, the sources with `TODO` URLs). It stays on the branch: a `TODO` fails `pnpm validate`.
+- On the machine that will run it: `pdftocairo -v` prints a version (poppler, for the Treasury's chart), `etl/.venv` exists, and `pnpm install --frozen-lockfile` has run.
+- Rota: the owner runs the job; editor A types the measures, editor B the Treasury's chart and the second review; one of them is up at 05:00 GMT on Thursday for the fallback decision.
+
+### On the night (Wednesday 28 October into Thursday 29 October, GMT)
+
+| When (GMT) | What | Who |
+|---|---|---|
+| 12:30 | The statement | Watch |
+| About 12:45 | The Budget document (its table of policy decisions and the chapters that describe each measure) and "Supporting documents for Budget 2026" (with "Impact on households") on GOV.UK | — |
+| 13:00 to 16:00 | Editor A: every tax and benefit measure into the measures file, from `_templates.yaml`, each figure with its page (step 2). Editor B: the Treasury's chart (step 3) | Editors A and B |
+| 16:00 | `check` clean (step 4); first commit pushed | Owner |
+| 16:30 | The run: about five economy runs, 3 to 5 minutes, up to 20 when PolicyEngine is busy (step 5) | Owner |
+| 17:00 | Checks, pull request (step 6) | Owner |
+| From about 19:30 | HMRC's tax information and impact notes: check every rate and threshold in the file against them; any change means a new run (step 5 again) | Editor A |
+| 20:00 to 23:00 | Two editors review and approve; the owner merges; the deploy follows within minutes | Editors, owner |
+| After the deploy | `curl -A LinkedInBot https://ledgergov.uk/budget/household/autumn-budget-2026` returns the title, description and image; `/budget` links it | Owner |
+| 05:00 Thursday | Not approved yet, or the run failed? Start the fallback (below) | Owner, one editor |
+| **07:00 Thursday** | **The page is live: in full, or as the fallback** | — |
+
+### Steps
+
+1. **Branch and pull.** `git checkout budget-2026-household && git pull origin main`.
+2. **Type the measures.** For each tax or benefit measure in the policy decisions table, copy its block from `content/budget/household/_templates.yaml` into the file under `measures:`. Then:
+   - `source`: the Budget document and the PDF page of the measure (`page: NN`), or HMRC's note; `scorecard_line`: its line in the policy decisions table;
+   - `effective`: the day it starts;
+   - `post`: the Budget's value for each year it changes, **in PolicyEngine's unit**: a rate of 22% is `0.22`, National Insurance thresholds are £ a week (£12,570 a year is `241.73`), fuel duty is £ a litre averaged over the fiscal year, `unlimited` for no limit;
+   - `pre`: leave the template's value unless the Budget document says what would otherwise have happened (then set it and say where in `pre_source`); a value is the one for the whole fiscal year;
+   - delete the parameters the measure does not touch.
+   A measure with no template, no PolicyEngine parameter, or that is a new tax: `modelled: false` with a `not_modelled` reason (`no_parameter`, `new_tax`, `needs_code`, `not_household_income`) and a plain note, often with the Treasury's own costing. Inheritance tax, corporation tax, business rates and 0% VAT on household electricity have ready-made blocks.
+3. **The Treasury's chart.** In "Impact on households", find the decile chart as a percentage of net income (Figure 1.A in 2025) and, if there is one, in £ a year (1.B). If the Treasury publishes a table, type it with `read_from: table`. If not:
+   ```bash
+   curl -sLo /tmp/ioh.pdf "<Impact on households PDF URL>"
+   python3 scripts/treasury_chart.py /tmp/ioh.pdf <page> <lowest axis label> <highest> <number of ticks>
+   python3 scripts/treasury_chart.py /tmp/ioh.pdf <page> <lowest> <highest> <ticks> --order <tax>,<welfare>,<services>
+   ```
+   The first prints each colour's figures; match the colours to the legend, then the second prints the YAML block. Set `read_from: chart`, the title as printed, `year`, `covers` (what decisions it counts) and `differs`, the one line the page shows under both charts.
+4. **Check, offline:** `pnpm household -- check autumn-budget-2026`. It lists every value that departs from PolicyEngine's current law: each needs its reason (PolicyEngine behind the law, or the Budget changing it). Commit and push the file.
+5. **Run:** `pnpm household -- autumn-budget-2026`. It checks again, asks PolicyEngine, keeps every answer in `packages/server/test/fixtures/t1/household/autumn-budget-2026.json`, and writes the snapshot only if every check passes:
+   ```
+   ok    policies: the recorded policies (…) are exactly what the measures file sets
+   ok    years: an answer for every year, 2026-27 to 2030-31
+   ok    one_model: every answer from policyengine-uk …
+   ```
+   A change to the file after a run means running it again: an edit to a value needs `pnpm household -- autumn-budget-2026` (live); an edit to words only, `pnpm household -- build autumn-budget-2026` (offline, from the recording). `pnpm validate` fails while the snapshot is older than its file.
+6. **Check it all,** one command at a time (16 GB machine; never two builds at once):
+   ```bash
+   pnpm validate -- --base origin/main
+   pnpm typecheck
+   for p in packages/schema packages/engine packages/server; do (cd $p && pnpm exec vitest run --maxWorkers=3); done
+   pnpm build
+   (cd apps/web && ./node_modules/.bin/next start -p 3204) & sleep 5
+   curl -s -A LinkedInBot http://localhost:3204/budget/household/autumn-budget-2026 | grep -oE '<title>[^<]*|og:(title|description|image)" content="[^"]*'
+   lsof -ti tcp:3204 | xargs kill   # next start leaves a next-server process: stop it by its port
+   ```
+   On the page: the deciles look like the Budget (who should gain gains), the six households move the way the measures say, every measure links to its page.
+7. **Publish.** `git add content/budget/household/autumn-budget-2026.yaml packages/server/test/fixtures/t1/household/autumn-budget-2026.json data/build/budget/household/autumn-budget-2026.json`, commit, push, open the pull request. Two editors check every value against its page, the Treasury figures against the PDF, and the page on the preview; then merge.
+
+### When something fails
+
+| Message | What it means | What to do |
+|---|---|---|
+| `check`: PolicyEngine has no parameter … | A typing slip in the path, or a lever PolicyEngine lacks | Copy the path from the template; if there is none, mark the measure not modelled |
+| `check`: … is not a rate: PolicyEngine writes 20% as 0.2 | A rate typed as a percentage | Divide by 100 |
+| `check`: no pre (or post) value for 2029-30 | A year left out | Every parameter needs every year |
+| `check`: a TODO is left in the file | A placeholder | Fill it or delete it |
+| `record`: the measures do not fit the model PolicyEngine runs today | PolicyEngine updated its model since the templates | `pnpm household -- templates`, then fix the named paths |
+| `record`: PolicyEngine offers 2024 … 2030; it cannot run 2031-32 | Years beyond 2030-31 | Drop them from `years` |
+| `record`: PolicyEngine http_5xx, timeout or network | The API is down or busy (no uptime promise; its busiest night) | Wait 10 minutes and run again: finished years come back from its cache at once. Keep trying until 05:00, then the fallback |
+| `record`: still computing … after 20 minutes | Its queue is long | As above |
+| `build`: FAIL policies | The file changed after the recording | Run again (step 5) |
+| `build`: FAIL one_model | PolicyEngine updated during the run: two models in one comparison | Run again; every year is computed again on the new model |
+| `build`: FAIL years, economy or households | An answer missing or not in the expected shape | Run again once; if it repeats, the fallback, and tell the lead |
+| `validate`: … changed after this snapshot was computed | The file was edited after the run | Step 5 again |
+
+### The fallback rule
+
+If our deciles are not reviewed by two editors by **07:00 GMT on Thursday 29 October**, publish the salary check, the example households and the Treasury's chart, and add our deciles when they are ready. Being right matters more than being first.
+
+1. At 05:00, if the full run is not approved (or failed): add `hold: [deciles]` to the measures file.
+2. If the recording has the households (`record` got that far), rebuild offline: `pnpm household -- build autumn-budget-2026`. If it has none, ask for the households only (two calls, no population runs): `pnpm household -- record autumn-budget-2026 --households-only`, then `build`.
+3. The page then shows the summary, the deciles and gains and losses as "follows once two editors have checked it", and everything else in full; its share image shows the six households. Two editors check the six households and the Treasury's figures (a short review), and it merges.
+4. When the deciles are reviewed: remove `hold`, run `pnpm household -- autumn-budget-2026` (or `build`, if the full recording is the reviewed one), open the pull request, two editors, merge.
+
+If PolicyEngine cannot be reached at all, there is no household page that morning: the scorecard, `/budget` and the cards carry it, and the page follows when the API answers.
 
 ## Rules that matter most on the day
 
