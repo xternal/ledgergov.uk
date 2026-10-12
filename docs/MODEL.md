@@ -56,6 +56,45 @@ Costs: a dependency on a free public service (be a good citizen: compute only wh
 
 **Example households ("people like me"):** six fixed households (`ARCHETYPES`), computed with `/uk/calculate` under current law and the reform (`packages/server/src/model/households.ts`). Their spending is ONS's average for the closest household type in *Family spending in the UK* (`data/seed/archetype_spending.json`, built by `python -m etl.archetype_spending`, which records the table, row and quality of every value), so VAT and fuel duty reach them. PolicyEngine charges VAT at the standard rate on half of spending and scales it up to national VAT receipts (÷0.38): a 1-point rise costs a household about 1.3% of its spending on the twelve COICOP groups. Its net income takes off all fuel duty paid but only a change in VAT. A change to these inputs or to the reform mapping bumps `T1_CACHE_VERSION` (`service.ts`), so cached results computed with the old inputs are worked out again.
 
+### The Budget for your household (route B, chosen 12 October 2026)
+
+On Budget night an editor types the event's tax and benefit measures into `content/budget/household/<event>.yaml`: for every PolicyEngine parameter a measure touches, its value in each year **without** the event and **with** it, each with its source page. `pnpm household -- <event>` (`scripts/household.ts`, `packages/server/src/model/budget.ts`) turns the file into two complete policies, sends them to PolicyEngine once, asks for each year's comparison (`/uk/economy/{post}/over/{pre}`) and the six example households under both, checks that one model answered everything, and writes `data/build/budget/household/<event>.json`, which `/budget/household/<event>` is built from. Readers never trigger a call. Runbook: `docs/BUDGET_DAY.md`, "The Budget for your household". Ready-made measures for the likely levers: `content/budget/household/_templates.yaml` (`pnpm household -- templates`).
+
+Why two complete policies rather than a change over current law: PolicyEngine's current law may or may not have the event in it by the night, and may update midway; setting every affected value outright, both sides, makes the comparison the same whatever its current law says.
+
+#### Live test of the API, 12 October 2026 (bundle 6.2.1, policyengine-uk 2.102.3, data policyengine-uk-data 1.56.16)
+
+`pnpm pe:probe` (`scripts/pe-probe.ts`); every answer is a fixture in `packages/server/test/fixtures/t1/probe/2026-10-12/`, and `test/t1-probe.test.ts` pins each finding. It cost four economy runs.
+
+1. **Dates: PolicyEngine reads every parameter on 1 January of the simulation year.** A basic-rate rise to 21% dated 2027-04-06 changed nothing in 2027-28, for the households and for the population (£0.00bn), and arrived in 2028-29; dated 2027-01-01 it raised £6.91bn in 2027-28. Dated 2027-05-01 it behaved like 6 April. So the job dates each fiscal year's value from 1 January to 31 December of the year the fiscal year starts in (`yearPeriod`: 2027-28 is `2027-01-01.2027-12-31`), never the real start date; the last year is open-ended. Side effect: PolicyEngine's own April changes (benefit rates from 6 April 2026, for instance) reach the API's 2026-27 only for parameters we set; everything else in 2026-27 runs on the April 2025 values. Levels lag a year, changes from the measures do not. PolicyEngine certified bundle 6.3.1 the same day with a "UK Budget reform contract" for dated reforms: run the probe again when the API moves to it (whole-calendar-year periods hold either way).
+2. **A value set year by year holds each year's own value.** A personal allowance of £13,000 in 2027 only returned to £12,570 in 2028; £14,000 set open-ended from 2029 carried on into 2030. A freeze is stated by giving the frozen value for every year.
+3. **Two custom policies work.** `/uk/economy/{post}/over/{pre}` with thresholds frozen (post) over thresholds uprated from April 2028 (pre), 2028-29: £3.67bn a year, against PolicyEngine's own £3.74bn for the same measure in December 2025.
+4. **`/budget-window` returns budget totals only** (tax, benefits and net, by year, and their sum), no deciles or households. It shares the yearly cache (its 2028-29 figure is the yearly run's to the pound). The job asks year by year instead.
+5. **Versions.** `/v2/tax-benefit-models/by-country/uk` gives the bundle (6.2.1) and the years offered (2024 to 2030, so 2030-31 is the last fiscal year); `/uk/metadata` gives the model the household calculator runs (2.102.3); every economy answer names its model, data and bundle. The job refuses to write a snapshot unless all of them agree, before and after the run, so a PolicyEngine update during the night cannot mix two models into one comparison.
+6. **Speed.** One new year took 23 to 70 seconds; five years asked together about 2½ minutes; a household calculation a second or two.
+7. **Deciles are not adjusted for household size.** Since policyengine.py 5.0.0 (27 July 2026) the API ranks households by household net income, unadjusted, each tenth holding a tenth of people. The Treasury's charts and PolicyEngine's own December 2025 analysis rank by income adjusted for household size. A large family on a modest income therefore sits higher here: the two-child limit's gains land mostly in deciles 4 to 6, not 1 and 2. No query parameter selects the adjusted ranking. The page says so wherever it shows deciles.
+
+#### Rehearsal: Autumn Budget 2025, 12 October 2026
+
+`content/budget/household/autumn-budget-2025.yaml`: nine measures modelled (two-child limit, fuel duty, the income tax and National Insurance threshold freeze, employers' threshold, dividends, savings and property income rates, the salary sacrifice cap, the council tax surcharge) and four listed as not modelled (rail fares, student loan threshold, inheritance tax thresholds, the electric vehicle mileage charge). Five economy runs, plus three for a like-for-like copy with PolicyEngine's own inputs (`test/fixtures/t1/household/autumn-budget-2025-parity.yaml`), tested in `test/t1-household-rehearsal.test.ts`.
+
+Our result, % change in household net income by decile (1 = lowest), static:
+
+| Year | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | Net, £bn |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-27 | +0.69 | +0.30 | +0.27 | +0.57 | +0.41 | +0.32 | +0.18 | +0.11 | −0.01 | −0.05 | −3.66 |
+| 2027-28 | +0.25 | +0.18 | +0.17 | +0.53 | +0.36 | +0.16 | +0.04 | −0.05 | −0.22 | −0.21 | −1.00 |
+| 2028-29 | −0.04 | −0.06 | −0.10 | +0.45 | +0.06 | −0.12 | −0.23 | −0.40 | −0.55 | −0.42 | +3.48 |
+
+Against PolicyEngine's published analysis (`uk-autumn-budget-dashboard`, `public/data/distributional_impact.csv`, December 2025):
+
+- **Revenue agrees where the inputs are the same.** With PolicyEngine's own inputs, the income tax measures raise £6.52bn in 2028-29 against its £6.47bn (within 1%), and the two-child limit costs £2.79bn, £3.14bn and £3.45bn in 2026-27 to 2028-29 against its £2.95bn, £3.14bn and £3.42bn (within 6%).
+- **Fuel duty is smaller:** £2.04bn in 2026-27 against its £3.52bn. PolicyEngine has changed its fuel duty modelling since December (its changelog: yearly averages instead of each year's first rate, and the OBR's November 2025 RPI forecasts); ours is nearer the Treasury's own costing (£2.37bn, Table 4.1 line 3).
+- **Deciles differ, mostly by definition.** PolicyEngine published +1.66% and +2.23% for deciles 1 and 2 in 2026-27; we get +0.69% and +0.30%, with decile 4 gaining most. Same Universal Credit money, ranked differently: see finding 7 above. Smaller causes: newer survey data (FRS 2024-25 against 2023-24) and model (2.102.3 against about 2.65).
+- **Our own run differs from the like-for-like one as intended:** dividends from April 2026 and savings and property income from April 2027, as the Budget dates them (PolicyEngine's baseline started each a year later: +£0.99bn in 2026-27 and +£1.6bn more in 2027-28); the National Insurance thresholds, employers' threshold and council tax surcharge added (from 2028-29); thresholds without the Budget follow the law (CPI, rounded up to £10 and £100) rather than CPIH; rail fares (£0.15bn a year) and the student loan freeze (£0.3bn) left out, as they need code beyond parameters.
+
+Against the Treasury's "Impact on households" (Figure 1.A, 2028-29, read from the chart's drawing as no table is published): tax and welfare together run from +2.09% in decile 1 to −1.60% in decile 10, and +7.24% to −0.87% with public services. Both show the top tenth losing most in 2028-29. They differ below that because the Treasury's chart counts every decision since Autumn Budget 2024 (the Universal Credit rises of April 2026 and more), adds the value of public services, and adjusts deciles for household size; ours counts this Budget's modelled measures only, in cash. The page shows both, with that one-line reason.
+
 ## T2 — Macro (v2)
 
 Options, in order of preference:

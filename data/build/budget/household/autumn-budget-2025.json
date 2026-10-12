@@ -1,0 +1,2052 @@
+{
+ "id": "autumn-budget-2025",
+ "name": "Autumn Budget 2025",
+ "date": "2025-11-26",
+ "kind": "rehearsal",
+ "quality": "modelled",
+ "measures_file": "content/budget/household/autumn-budget-2025.yaml",
+ "measures_sha256": "1c1f69ab89dad135b80b38c3756517f635c705139ae1dc30293f64440b2f1fc5",
+ "input": {
+  "event": {
+   "id": "autumn-budget-2025",
+   "name": "Autumn Budget 2025",
+   "date": "2025-11-26"
+  },
+  "kind": "rehearsal",
+  "years": [
+   "2026-27",
+   "2027-28",
+   "2028-29",
+   "2029-30",
+   "2030-31"
+  ],
+  "headline_year": "2027-28",
+  "side_year": "2026-27",
+  "sources": [
+   {
+    "id": "budget-2025",
+    "title": "Budget 2025 (HC 1492)",
+    "publisher": "HM Treasury",
+    "url": "https://assets.publishing.service.gov.uk/media/6929b353345e31ab14ecf735/E03444720_Budget_2025_Web_Accessible.pdf",
+    "published_on": "2025-11-26",
+    "licence": "Open Government Licence v3.0"
+   },
+   {
+    "id": "impact-on-households-2025",
+    "title": "Impact on households: distributional analysis to accompany Budget 2025",
+    "publisher": "HM Treasury",
+    "url": "https://assets.publishing.service.gov.uk/media/69269c6222424e25e6bc31bb/Impact_on_households.pdf",
+    "published_on": "2025-11-26",
+    "licence": "Open Government Licence v3.0"
+   },
+   {
+    "id": "income-tax-act-2007",
+    "title": "Income Tax Act 2007, section 57 (indexation of allowances and the basic rate limit)",
+    "publisher": "legislation.gov.uk",
+    "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/57"
+   },
+   {
+    "id": "policyengine-uk-2-102-3",
+    "title": "PolicyEngine UK 2.102.3, parameters (current law and OBR forecasts)",
+    "publisher": "PolicyEngine",
+    "url": "https://api.policyengine.org/uk/metadata",
+    "published_on": "2026-09-28"
+   },
+   {
+    "id": "policyengine-dashboard-2025",
+    "title": "PolicyEngine, UK Autumn Budget dashboard, pre-Budget baseline (reforms.py)",
+    "publisher": "PolicyEngine",
+    "url": "https://github.com/PolicyEngine/uk-autumn-budget-dashboard-2026/blob/main/src/uk_budget_data/reforms.py"
+   }
+  ],
+  "measures": [
+   {
+    "id": "two-child-limit",
+    "name": "Remove the two-child limit in Universal Credit from April 2026",
+    "source": {
+     "source": "budget-2025",
+     "page": 94,
+     "where": "Table 4.1, line 6"
+    },
+    "effective": "2026-04-06",
+    "modelled": true,
+    "parameters": [
+     {
+      "path": "gov.dwp.universal_credit.elements.child.limit.child_count",
+      "unit": "child",
+      "label": "Children the Universal Credit child element is paid for",
+      "pre": {
+       "2026-27": 2,
+       "2027-28": 2,
+       "2028-29": 2,
+       "2029-30": 2,
+       "2030-31": 2
+      },
+      "post": {
+       "2026-27": "unlimited",
+       "2027-28": "unlimited",
+       "2028-29": "unlimited",
+       "2029-30": "unlimited",
+       "2030-31": "unlimited"
+      }
+     },
+     {
+      "path": "gov.dwp.tax_credits.child_tax_credit.limit.child_count",
+      "unit": "int",
+      "label": "Children Child Tax Credit is paid for (legacy claims)",
+      "pre": {
+       "2026-27": 2,
+       "2027-28": 2,
+       "2028-29": 2,
+       "2029-30": 2,
+       "2030-31": 2
+      },
+      "post": {
+       "2026-27": "unlimited",
+       "2027-28": "unlimited",
+       "2028-29": "unlimited",
+       "2029-30": "unlimited",
+       "2030-31": "unlimited"
+      },
+      "note": "Tax credits ended in April 2025; set as PolicyEngine's own analysis sets it, for any claim the survey still records."
+     }
+    ],
+    "scorecard_line": 6
+   },
+   {
+    "id": "fuel-duty",
+    "name": "Keep the 5p cut in fuel duty to August 2026, then bring it back in three steps",
+    "source": {
+     "source": "budget-2025",
+     "page": 93,
+     "where": "Table 4.1, line 3"
+    },
+    "effective": "2026-03-23",
+    "modelled": true,
+    "parameters": [
+     {
+      "path": "gov.hmrc.fuel_duty.petrol_and_diesel",
+      "unit": "currency-GBP",
+      "label": "Main rate of fuel duty, £ a litre, averaged over the year",
+      "pre": {
+       "2026-27": 0.58,
+       "2027-28": 0.61,
+       "2028-29": 0.63,
+       "2029-30": 0.64,
+       "2030-31": 0.66
+      },
+      "post": {
+       "2026-27": 0.5345,
+       "2027-28": 0.5925,
+       "2028-29": 0.6151,
+       "2029-30": 0.6332,
+       "2030-31": 0.6516
+      },
+      "pre_source": {
+       "source": "policyengine-dashboard-2025",
+       "where": "_create_fuel_duty_freeze, baseline_rates",
+       "note": "Without the Budget the cut would have ended on 22 March 2026 (57.95p a litre), with RPI rises after. Both paths are PolicyEngine's: its pre-Budget rates, rounded to the penny, and its current law, which averages each calendar year (52.95p to August 2026, then 53.95p, 55.95p and 57.95p)."
+      }
+     }
+    ],
+    "scorecard_line": 3
+   },
+   {
+    "id": "personal-tax-thresholds",
+    "name": "Keep income tax and National Insurance thresholds frozen for three more years, to April 2031",
+    "source": {
+     "source": "budget-2025",
+     "page": 97,
+     "where": "Table 4.1, line 46"
+    },
+    "effective": "2028-04-06",
+    "modelled": true,
+    "parameters": [
+     {
+      "path": "gov.hmrc.income_tax.allowances.personal_allowance.amount",
+      "unit": "currency-GBP",
+      "label": "Personal allowance, £ a year",
+      "pre": {
+       "2026-27": 12570,
+       "2027-28": 12570,
+       "2028-29": 12830,
+       "2029-30": 13090,
+       "2030-31": 13360
+      },
+      "post": {
+       "2026-27": 12570,
+       "2027-28": 12570,
+       "2028-29": 12570,
+       "2029-30": 12570,
+       "2030-31": 12570
+      },
+      "pre_source": {
+       "source": "income-tax-act-2007",
+       "where": "Section 57: CPI indexation, increases rounded up to a multiple of £10",
+       "note": "CPI from PolicyEngine UK 2.102.3's OBR index (gov.economic_assumptions.indices.obr.consumer_price_index), 2.0% a year."
+      }
+     },
+     {
+      "path": "gov.hmrc.income_tax.rates.uk[1].threshold",
+      "unit": "currency-GBP",
+      "label": "Basic rate band (taxable income at which the higher rate starts), £ a year",
+      "pre": {
+       "2026-27": 37700,
+       "2027-28": 37700,
+       "2028-29": 38500,
+       "2029-30": 39300,
+       "2030-31": 40100
+      },
+      "post": {
+       "2026-27": 37700,
+       "2027-28": 37700,
+       "2028-29": 37700,
+       "2029-30": 37700,
+       "2030-31": 37700
+      },
+      "pre_source": {
+       "source": "income-tax-act-2007",
+       "where": "Section 57: CPI indexation, increases rounded up to a multiple of £100",
+       "note": "CPI from PolicyEngine UK 2.102.3's OBR index, 2.0% a year."
+      }
+     },
+     {
+      "path": "gov.hmrc.national_insurance.class_1.thresholds.primary_threshold",
+      "unit": "currency-GBP",
+      "label": "National Insurance primary threshold, £ a week (the personal allowance ÷ 52)",
+      "pre": {
+       "2026-27": 241.73,
+       "2027-28": 241.73,
+       "2028-29": 246.73,
+       "2029-30": 251.73,
+       "2030-31": 256.92
+      },
+      "post": {
+       "2026-27": 241.73,
+       "2027-28": 241.73,
+       "2028-29": 241.73,
+       "2029-30": 241.73,
+       "2030-31": 241.73
+      },
+      "pre_source": {
+       "source": "budget-2025",
+       "page": 97,
+       "where": "Table 4.1, line 46",
+       "note": "The primary threshold follows the personal allowance (£12,570 a year is 241.73 a week)."
+      }
+     },
+     {
+      "path": "gov.hmrc.national_insurance.class_1.thresholds.upper_earnings_limit",
+      "unit": "currency-GBP",
+      "label": "National Insurance upper earnings limit, £ a week (the higher rate threshold ÷ 52)",
+      "pre": {
+       "2026-27": 966.73,
+       "2027-28": 966.73,
+       "2028-29": 987.12,
+       "2029-30": 1007.5,
+       "2030-31": 1028.08
+      },
+      "post": {
+       "2026-27": 966.73,
+       "2027-28": 966.73,
+       "2028-29": 966.73,
+       "2029-30": 966.73,
+       "2030-31": 966.73
+      },
+      "pre_source": {
+       "source": "budget-2025",
+       "page": 97,
+       "where": "Table 4.1, line 46",
+       "note": "The upper earnings limit follows the higher rate threshold, the allowance plus the basic rate band (£50,270 a year is 966.73 a week)."
+      }
+     },
+     {
+      "path": "gov.hmrc.national_insurance.class_4.thresholds.lower_profits_limit",
+      "unit": "currency-GBP",
+      "label": "Self-employed lower profits limit, £ a year (the personal allowance)",
+      "pre": {
+       "2026-27": 12570,
+       "2027-28": 12570,
+       "2028-29": 12830,
+       "2029-30": 13090,
+       "2030-31": 13360
+      },
+      "post": {
+       "2026-27": 12570,
+       "2027-28": 12570,
+       "2028-29": 12570,
+       "2029-30": 12570,
+       "2030-31": 12570
+      },
+      "pre_source": {
+       "source": "budget-2025",
+       "page": 97,
+       "where": "Table 4.1, line 46",
+       "note": "The lower profits limit follows the personal allowance. PolicyEngine UK 2.102.3 uprates it from 2027-28, a year early; both values are set here."
+      }
+     },
+     {
+      "path": "gov.hmrc.national_insurance.class_4.thresholds.upper_profits_limit",
+      "unit": "currency-GBP",
+      "label": "Self-employed upper profits limit, £ a year (the higher rate threshold)",
+      "pre": {
+       "2026-27": 50270,
+       "2027-28": 50270,
+       "2028-29": 51330,
+       "2029-30": 52390,
+       "2030-31": 53460
+      },
+      "post": {
+       "2026-27": 50270,
+       "2027-28": 50270,
+       "2028-29": 50270,
+       "2029-30": 50270,
+       "2030-31": 50270
+      },
+      "pre_source": {
+       "source": "budget-2025",
+       "page": 97,
+       "where": "Table 4.1, line 46",
+       "note": "The upper profits limit follows the higher rate threshold."
+      }
+     }
+    ],
+    "scorecard_line": 46,
+    "note": "Without the Budget the freeze would have ended in April 2028. The allowance and the basic rate band would then have risen with September's CPI, rounded up to the next £10 and £100 as the law requires, using the OBR's forecast of 2% a year; the National Insurance thresholds stay aligned with them."
+   },
+   {
+    "id": "employer-ni-threshold",
+    "name": "Keep employers' National Insurance threshold at £5,000 to April 2031",
+    "source": {
+     "source": "budget-2025",
+     "page": 97,
+     "where": "Table 4.1, line 47"
+    },
+    "effective": "2028-04-06",
+    "modelled": true,
+    "parameters": [
+     {
+      "path": "gov.hmrc.national_insurance.class_1.thresholds.secondary_threshold",
+      "unit": "currency-GBP",
+      "label": "Employers' secondary threshold, £ a week",
+      "pre": {
+       "2026-27": 96,
+       "2027-28": 96,
+       "2028-29": 98.08,
+       "2029-30": 100.04,
+       "2030-31": 102.04
+      },
+      "post": {
+       "2026-27": 96,
+       "2027-28": 96,
+       "2028-29": 96,
+       "2029-30": 96,
+       "2030-31": 96
+      },
+      "pre_source": {
+       "source": "policyengine-uk-2-102-3",
+       "where": "gov.economic_assumptions.indices.obr.consumer_price_index",
+       "note": "Without the Budget the threshold (£5,000 a year, 96 a week) would have risen with CPI from April 2028, 2% a year in the OBR's forecast."
+      }
+     }
+    ],
+    "scorecard_line": 47,
+    "note": "PolicyEngine counts employers' National Insurance as paid by their employees, through lower pay (gov.contrib.policyengine.employer_ni.employee_incidence is 1), so this measure lowers household incomes; the Treasury counts it as a tax on business."
+   },
+   {
+    "id": "dividend-tax",
+    "name": "Raise the tax rates on dividends by 2 points from April 2026",
+    "source": {
+     "source": "budget-2025",
+     "page": 97,
+     "where": "Table 4.1, line 50"
+    },
+    "effective": "2026-04-06",
+    "modelled": true,
+    "parameters": [
+     {
+      "path": "gov.hmrc.income_tax.rates.dividends[0].rate",
+      "unit": "/1",
+      "label": "Dividend ordinary rate",
+      "pre": {
+       "2026-27": 0.0875,
+       "2027-28": 0.0875,
+       "2028-29": 0.0875,
+       "2029-30": 0.0875,
+       "2030-31": 0.0875
+      },
+      "post": {
+       "2026-27": 0.1075,
+       "2027-28": 0.1075,
+       "2028-29": 0.1075,
+       "2029-30": 0.1075,
+       "2030-31": 0.1075
+      }
+     },
+     {
+      "path": "gov.hmrc.income_tax.rates.dividends[1].rate",
+      "unit": "/1",
+      "label": "Dividend upper rate",
+      "pre": {
+       "2026-27": 0.3375,
+       "2027-28": 0.3375,
+       "2028-29": 0.3375,
+       "2029-30": 0.3375,
+       "2030-31": 0.3375
+      },
+      "post": {
+       "2026-27": 0.3575,
+       "2027-28": 0.3575,
+       "2028-29": 0.3575,
+       "2029-30": 0.3575,
+       "2030-31": 0.3575
+      }
+     }
+    ],
+    "scorecard_line": 50
+   },
+   {
+    "id": "savings-tax",
+    "name": "Raise the tax rates on savings income by 2 points from April 2027",
+    "source": {
+     "source": "budget-2025",
+     "page": 98,
+     "where": "Table 4.1, line 51"
+    },
+    "effective": "2027-04-06",
+    "modelled": true,
+    "parameters": [
+     {
+      "path": "gov.hmrc.income_tax.rates.savings.basic",
+      "unit": "/1",
+      "label": "Savings basic rate",
+      "pre": {
+       "2026-27": 0.2,
+       "2027-28": 0.2,
+       "2028-29": 0.2,
+       "2029-30": 0.2,
+       "2030-31": 0.2
+      },
+      "post": {
+       "2026-27": 0.2,
+       "2027-28": 0.22,
+       "2028-29": 0.22,
+       "2029-30": 0.22,
+       "2030-31": 0.22
+      }
+     },
+     {
+      "path": "gov.hmrc.income_tax.rates.savings.higher",
+      "unit": "/1",
+      "label": "Savings higher rate",
+      "pre": {
+       "2026-27": 0.4,
+       "2027-28": 0.4,
+       "2028-29": 0.4,
+       "2029-30": 0.4,
+       "2030-31": 0.4
+      },
+      "post": {
+       "2026-27": 0.4,
+       "2027-28": 0.42,
+       "2028-29": 0.42,
+       "2029-30": 0.42,
+       "2030-31": 0.42
+      }
+     },
+     {
+      "path": "gov.hmrc.income_tax.rates.savings.additional",
+      "unit": "/1",
+      "label": "Savings additional rate",
+      "pre": {
+       "2026-27": 0.45,
+       "2027-28": 0.45,
+       "2028-29": 0.45,
+       "2029-30": 0.45,
+       "2030-31": 0.45
+      },
+      "post": {
+       "2026-27": 0.45,
+       "2027-28": 0.47,
+       "2028-29": 0.47,
+       "2029-30": 0.47,
+       "2030-31": 0.47
+      }
+     }
+    ],
+    "scorecard_line": 51
+   },
+   {
+    "id": "property-income-tax",
+    "name": "Tax property income at its own rates, 2 points higher, from April 2027",
+    "source": {
+     "source": "budget-2025",
+     "page": 97,
+     "where": "Table 4.1, line 49"
+    },
+    "effective": "2027-04-06",
+    "modelled": true,
+    "parameters": [
+     {
+      "path": "gov.hmrc.income_tax.rates.property.basic",
+      "unit": "/1",
+      "label": "Property basic rate",
+      "pre": {
+       "2026-27": 0.2,
+       "2027-28": 0.2,
+       "2028-29": 0.2,
+       "2029-30": 0.2,
+       "2030-31": 0.2
+      },
+      "post": {
+       "2026-27": 0.2,
+       "2027-28": 0.22,
+       "2028-29": 0.22,
+       "2029-30": 0.22,
+       "2030-31": 0.22
+      }
+     },
+     {
+      "path": "gov.hmrc.income_tax.rates.property.higher",
+      "unit": "/1",
+      "label": "Property higher rate",
+      "pre": {
+       "2026-27": 0.4,
+       "2027-28": 0.4,
+       "2028-29": 0.4,
+       "2029-30": 0.4,
+       "2030-31": 0.4
+      },
+      "post": {
+       "2026-27": 0.4,
+       "2027-28": 0.42,
+       "2028-29": 0.42,
+       "2029-30": 0.42,
+       "2030-31": 0.42
+      }
+     },
+     {
+      "path": "gov.hmrc.income_tax.rates.property.additional",
+      "unit": "/1",
+      "label": "Property additional rate",
+      "pre": {
+       "2026-27": 0.45,
+       "2027-28": 0.45,
+       "2028-29": 0.45,
+       "2029-30": 0.45,
+       "2030-31": 0.45
+      },
+      "post": {
+       "2026-27": 0.45,
+       "2027-28": 0.47,
+       "2028-29": 0.47,
+       "2029-30": 0.47,
+       "2030-31": 0.47
+      }
+     }
+    ],
+    "scorecard_line": 49
+   },
+   {
+    "id": "salary-sacrifice-cap",
+    "name": "Charge National Insurance on salary-sacrificed pension contributions above £2,000 a year from April 2029",
+    "source": {
+     "source": "budget-2025",
+     "page": 98,
+     "where": "Table 4.1, line 52"
+    },
+    "effective": "2029-04-06",
+    "modelled": true,
+    "parameters": [
+     {
+      "path": "gov.hmrc.national_insurance.salary_sacrifice_pension_cap",
+      "unit": "currency-GBP",
+      "label": "Salary-sacrificed pension contributions free of National Insurance, £ a year",
+      "pre": {
+       "2026-27": "unlimited",
+       "2027-28": "unlimited",
+       "2028-29": "unlimited",
+       "2029-30": "unlimited",
+       "2030-31": "unlimited"
+      },
+      "post": {
+       "2026-27": "unlimited",
+       "2027-28": "unlimited",
+       "2028-29": "unlimited",
+       "2029-30": 2000,
+       "2030-31": 2000
+      }
+     }
+    ],
+    "scorecard_line": 52
+   },
+   {
+    "id": "council-tax-surcharge",
+    "name": "A council tax surcharge on homes in England worth over £2 million, from April 2028",
+    "source": {
+     "source": "budget-2025",
+     "page": 98,
+     "where": "Table 4.1, line 54"
+    },
+    "effective": "2028-04-01",
+    "modelled": true,
+    "parameters": [
+     {
+      "path": "gov.hmrc.council_tax.high_value_surcharge.amount[1].amount",
+      "unit": "currency-GBP",
+      "label": "Surcharge for homes worth £2 million to £2.5 million, £ a year",
+      "pre": {
+       "2026-27": 0,
+       "2027-28": 0,
+       "2028-29": 0,
+       "2029-30": 0,
+       "2030-31": 0
+      },
+      "post": {
+       "2026-27": 0,
+       "2027-28": 0,
+       "2028-29": 2500,
+       "2029-30": 2550,
+       "2030-31": 2600.99
+      }
+     },
+     {
+      "path": "gov.hmrc.council_tax.high_value_surcharge.amount[2].amount",
+      "unit": "currency-GBP",
+      "label": "Surcharge for homes worth £2.5 million to £3.5 million, £ a year",
+      "pre": {
+       "2026-27": 0,
+       "2027-28": 0,
+       "2028-29": 0,
+       "2029-30": 0,
+       "2030-31": 0
+      },
+      "post": {
+       "2026-27": 0,
+       "2027-28": 0,
+       "2028-29": 3500,
+       "2029-30": 3570,
+       "2030-31": 3641.39
+      }
+     },
+     {
+      "path": "gov.hmrc.council_tax.high_value_surcharge.amount[3].amount",
+      "unit": "currency-GBP",
+      "label": "Surcharge for homes worth £3.5 million to £5 million, £ a year",
+      "pre": {
+       "2026-27": 0,
+       "2027-28": 0,
+       "2028-29": 0,
+       "2029-30": 0,
+       "2030-31": 0
+      },
+      "post": {
+       "2026-27": 0,
+       "2027-28": 0,
+       "2028-29": 5000,
+       "2029-30": 5100,
+       "2030-31": 5201.98
+      }
+     },
+     {
+      "path": "gov.hmrc.council_tax.high_value_surcharge.amount[4].amount",
+      "unit": "currency-GBP",
+      "label": "Surcharge for homes worth over £5 million, £ a year",
+      "pre": {
+       "2026-27": 0,
+       "2027-28": 0,
+       "2028-29": 0,
+       "2029-30": 0,
+       "2030-31": 0
+      },
+      "post": {
+       "2026-27": 0,
+       "2027-28": 0,
+       "2028-29": 7500,
+       "2029-30": 7649.99,
+       "2030-31": 7802.98
+      }
+     }
+    ],
+    "scorecard_line": 54,
+    "note": "PolicyEngine estimates which households own such homes from survey data on property values; the surcharge rises with CPI from April 2029."
+   },
+   {
+    "id": "rail-fares-freeze",
+    "name": "Freeze rail fares in England for a year from March 2026",
+    "source": {
+     "source": "budget-2025",
+     "page": 93,
+     "where": "Table 4.1, line 4"
+    },
+    "effective": "2026-03-01",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "needs_code",
+     "note": "PolicyEngine has no rail fare rules a policy can change; its own analysis adds the Treasury's cost (£145 million in 2026-27) to households in proportion to their spending on rail, in extra code."
+    },
+    "scorecard_line": 4
+   },
+   {
+    "id": "student-loan-threshold-freeze",
+    "name": "Freeze the Plan 2 student loan repayment threshold for three years from April 2027",
+    "source": {
+     "source": "budget-2025",
+     "page": 97,
+     "where": "Table 4.1, line 48"
+    },
+    "effective": "2027-04-06",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "needs_code",
+     "note": "PolicyEngine's public model takes student loan repayments as the survey records them, so a new threshold changes nothing without extra code (its own analysis adds it). The Treasury scores about £0.3 billion a year from 2027-28, paid by graduates earning above the threshold."
+    },
+    "scorecard_line": 48
+   },
+   {
+    "id": "inheritance-tax-thresholds",
+    "name": "Keep inheritance tax thresholds frozen for a further year, to April 2031",
+    "source": {
+     "source": "budget-2025",
+     "page": 98,
+     "where": "Table 4.1, line 55"
+    },
+    "effective": "2030-04-06",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "no_parameter",
+     "note": "PolicyEngine UK does not model inheritance tax, which falls on estates rather than on a household's yearly income."
+    },
+    "scorecard_line": 55
+   },
+   {
+    "id": "electric-vehicle-mileage",
+    "name": "A mileage charge on electric and plug-in hybrid cars from April 2028",
+    "source": {
+     "source": "budget-2025",
+     "page": 99,
+     "where": "Table 4.1, line 71"
+    },
+    "effective": "2028-04-01",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "new_tax",
+     "note": "A new tax, so the model has no rules for it. The Treasury expects it to raise £1.1 billion in 2028-29."
+    },
+    "scorecard_line": 71
+   }
+  ],
+  "treasury": {
+   "source": {
+    "source": "impact-on-households-2025",
+    "page": 10,
+    "where": "Figure 1.A"
+   },
+   "title": "Impact of decisions from Autumn Budget 2024 onwards on households in 2028-29, as a percentage of net income, by income decile",
+   "year": "2028-29",
+   "covers": "every tax, welfare and public spending decision since Autumn Budget 2024, not only this Budget's, in 2028-29, including the value of public services households use",
+   "read_from": "chart",
+   "pct": {
+    "deciles": [
+     {
+      "tax": -0.94,
+      "welfare": 3.03,
+      "services": 5.14,
+      "overall": 7.24
+     },
+     {
+      "tax": -0.73,
+      "welfare": 1.73,
+      "services": 4.41,
+      "overall": 5.41
+     },
+     {
+      "tax": -0.74,
+      "welfare": 0.94,
+      "services": 4.21,
+      "overall": 4.41
+     },
+     {
+      "tax": -0.78,
+      "welfare": 0.46,
+      "services": 3.58,
+      "overall": 3.25
+     },
+     {
+      "tax": -0.8,
+      "welfare": 0.14,
+      "services": 2.97,
+      "overall": 2.31
+     },
+     {
+      "tax": -0.81,
+      "welfare": 0.1,
+      "services": 2.39,
+      "overall": 1.69
+     },
+     {
+      "tax": -0.82,
+      "welfare": 0.04,
+      "services": 2.06,
+      "overall": 1.27
+     },
+     {
+      "tax": -0.98,
+      "welfare": 0.05,
+      "services": 1.57,
+      "overall": 0.65
+     },
+     {
+      "tax": -1.23,
+      "welfare": 0.06,
+      "services": 1.26,
+      "overall": 0.08
+     },
+     {
+      "tax": -1.65,
+      "welfare": 0.05,
+      "services": 0.73,
+      "overall": -0.87
+     }
+    ],
+    "all": {
+     "tax": -1.09,
+     "welfare": 0.32,
+     "services": 2.11,
+     "overall": 1.35
+    }
+   },
+   "gbp": {
+    "deciles": [
+     {
+      "tax": -146,
+      "welfare": 469,
+      "services": 799,
+      "overall": 1121
+     },
+     {
+      "tax": -184,
+      "welfare": 434,
+      "services": 1113,
+      "overall": 1362
+     },
+     {
+      "tax": -222,
+      "welfare": 285,
+      "services": 1281,
+      "overall": 1343
+     },
+     {
+      "tax": -279,
+      "welfare": 165,
+      "services": 1275,
+      "overall": 1156
+     },
+     {
+      "tax": -337,
+      "welfare": 60,
+      "services": 1249,
+      "overall": 972
+     },
+     {
+      "tax": -387,
+      "welfare": 51,
+      "services": 1144,
+      "overall": 804
+     },
+     {
+      "tax": -447,
+      "welfare": 22,
+      "services": 1113,
+      "overall": 686
+     },
+     {
+      "tax": -622,
+      "welfare": 29,
+      "services": 1008,
+      "overall": 411
+     },
+     {
+      "tax": -936,
+      "welfare": 41,
+      "services": 954,
+      "overall": 62
+     },
+     {
+      "tax": -1979,
+      "welfare": 60,
+      "services": 872,
+      "overall": -1051
+     }
+    ],
+    "all": {
+     "tax": -552,
+     "welfare": 162,
+     "services": 1081,
+     "overall": 691
+    },
+    "source": {
+     "source": "impact-on-households-2025",
+     "page": 11,
+     "where": "Figure 1.B"
+    }
+   },
+   "differs": "The Treasury's chart is for 2028-29, counts every decision since Autumn Budget 2024 rather than this Budget's alone, and adds the value of public services; ours counts only this Budget's tax and benefit measures that PolicyEngine can model, in cash, for each year."
+  },
+  "compared_with": {
+   "name": "PolicyEngine's own analysis of Autumn Budget 2025",
+   "url": "https://www.policyengine.org/uk/research/uk-combined-reforms-autumn-budget-2025",
+   "note": "PolicyEngine published its own decile results on 9 December 2025, from an earlier version of its model. docs/MODEL.md (T1, \"Rehearsal\") compares the two and explains each gap."
+  },
+  "note": "Two measures announced before the Budget and only scored in its table are left out, as they were not decisions of this Budget: Winter Fuel Payment for pensioners with taxable income up to £35,000 (line 84) and the Universal Credit standard allowance and health element changes (line 85)."
+ },
+ "provider": {
+  "name": "policyengine_api",
+  "api": "https://api.policyengine.org",
+  "bundle_version": "6.2.1",
+  "model_version": "2.102.3",
+  "data_version": "policyengine-uk-data-1.56.16",
+  "dataset": "gs://policyengine-uk-data-private/enhanced_frs_2024_25.h5@1.56.16"
+ },
+ "policies": {
+  "pre": 98694,
+  "post": 98695
+ },
+ "computed_at": "2026-10-12T20:33:19.651Z",
+ "results": [
+  {
+   "year": "2026-27",
+   "budget": {
+    "net_bn": -3.661748326244335,
+    "tax_bn": -1.0436989764734415,
+    "benefits_bn": 2.618049349770893
+   },
+   "deciles": [
+    {
+     "decile": 1,
+     "avg_change_gbp": 109.09126291677421,
+     "rel_change_pct": 0.6854523373863164
+    },
+    {
+     "decile": 2,
+     "avg_change_gbp": 88.28318743031923,
+     "rel_change_pct": 0.30277982063684855
+    },
+    {
+     "decile": 3,
+     "avg_change_gbp": 103.19561219571915,
+     "rel_change_pct": 0.27311216653190257
+    },
+    {
+     "decile": 4,
+     "avg_change_gbp": 259.2609203651373,
+     "rel_change_pct": 0.5690259630473896
+    },
+    {
+     "decile": 5,
+     "avg_change_gbp": 215.3859697738808,
+     "rel_change_pct": 0.41146621615059786
+    },
+    {
+     "decile": 6,
+     "avg_change_gbp": 192.68466294014797,
+     "rel_change_pct": 0.31919287357976583
+    },
+    {
+     "decile": 7,
+     "avg_change_gbp": 130.07917443849146,
+     "rel_change_pct": 0.18373985373448923
+    },
+    {
+     "decile": 8,
+     "avg_change_gbp": 90.80289088531572,
+     "rel_change_pct": 0.10777021499997522
+    },
+    {
+     "decile": 9,
+     "avg_change_gbp": -14.793056759095634,
+     "rel_change_pct": -0.0142825865797993
+    },
+    {
+     "decile": 10,
+     "avg_change_gbp": -89.68873123632511,
+     "rel_change_pct": -0.04842293798493815
+    }
+   ],
+   "winners": {
+    "all": {
+     "gain_more_5": 0.04347573265431106,
+     "gain_less_5": 0.2803264106758338,
+     "no_change": 0.61766314061265,
+     "lose_less_5": 0.05781380916967578,
+     "lose_more_5": 0.0007209068875292261
+    },
+    "by_decile": [
+     {
+      "gain_more_5": 0.05462586943197618,
+      "gain_less_5": 0.4200177501181403,
+      "no_change": 0.522170304225147,
+      "lose_less_5": 0.003179606322247708,
+      "lose_more_5": 0.00000646990248878184
+     },
+     {
+      "gain_more_5": 0.033259567649334645,
+      "gain_less_5": 0.35679389078940643,
+      "no_change": 0.6058908426417553,
+      "lose_less_5": 0.003870250311959443,
+      "lose_more_5": 0.00018544860754418285
+     },
+     {
+      "gain_more_5": 0.04019298608020853,
+      "gain_less_5": 0.261744003693192,
+      "no_change": 0.6549733500170816,
+      "lose_less_5": 0.03840010723747606,
+      "lose_more_5": 0.004689552972041862
+     },
+     {
+      "gain_more_5": 0.10218792948429851,
+      "gain_less_5": 0.20949739380976737,
+      "no_change": 0.6720025196786438,
+      "lose_less_5": 0.013984559634072866,
+      "lose_more_5": 0.002327597393217434
+     },
+     {
+      "gain_more_5": 0.07671031458871587,
+      "gain_less_5": 0.3259202755735104,
+      "no_change": 0.5667973571334162,
+      "lose_less_5": 0.030572052704357523,
+      "lose_more_5": 0
+     },
+     {
+      "gain_more_5": 0.06299946569765576,
+      "gain_less_5": 0.3026977189317253,
+      "no_change": 0.6041816901634787,
+      "lose_less_5": 0.03012112520714029,
+      "lose_more_5": 0
+     },
+     {
+      "gain_more_5": 0.04189435547312061,
+      "gain_less_5": 0.286168841441756,
+      "no_change": 0.6287829730929967,
+      "lose_less_5": 0.043153829992126705,
+      "lose_more_5": 0
+     },
+     {
+      "gain_more_5": 0.0142933427866575,
+      "gain_less_5": 0.2556611893566558,
+      "no_change": 0.6289464673792504,
+      "lose_less_5": 0.10109900047743624,
+      "lose_more_5": 0
+     },
+     {
+      "gain_more_5": 0.008583830112729993,
+      "gain_less_5": 0.254700212395133,
+      "no_change": 0.5411432672893218,
+      "lose_less_5": 0.19557269020281512,
+      "lose_more_5": 0
+     },
+     {
+      "gain_more_5": 0.000009665238413005687,
+      "gain_less_5": 0.1300628306490515,
+      "no_change": 0.7517426345054097,
+      "lose_less_5": 0.11818486960712583,
+      "lose_more_5": 0
+     }
+    ]
+   },
+   "poverty": {
+    "all": {
+     "baseline": 0.1987273587148469,
+     "reform": 0.18721451241655956
+    },
+    "child": {
+     "baseline": 0.2553474229863341,
+     "reform": 0.21957994369844017
+    },
+    "adult": {
+     "baseline": 0.17260915724970505,
+     "reform": 0.166431603183983
+    },
+    "senior": {
+     "baseline": 0.21429359674075238,
+     "reform": 0.21435564618767985
+    }
+   },
+   "inequality": {
+    "gini": {
+     "baseline": 0.3207909558924653,
+     "reform": 0.3196896235687353
+    },
+    "top_10_pct_share": {
+     "baseline": 0.2396756516423551,
+     "reform": 0.24357316263390738
+    },
+    "top_1_pct_share": {
+     "baseline": 0.04879091933023051,
+     "reform": 0.04780903617086553
+    }
+   }
+  },
+  {
+   "year": "2027-28",
+   "budget": {
+    "net_bn": -1.0029924404224622,
+    "tax_bn": 1.8916519475223186,
+    "benefits_bn": 2.8946443879447807
+   },
+   "deciles": [
+    {
+     "decile": 1,
+     "avg_change_gbp": 40.19996313009324,
+     "rel_change_pct": 0.24909848229966725
+    },
+    {
+     "decile": 2,
+     "avg_change_gbp": 51.845925140663894,
+     "rel_change_pct": 0.17530201467115095
+    },
+    {
+     "decile": 3,
+     "avg_change_gbp": 65.02151174574101,
+     "rel_change_pct": 0.16976121241102635
+    },
+    {
+     "decile": 4,
+     "avg_change_gbp": 244.2428412036752,
+     "rel_change_pct": 0.5284324509040087
+    },
+    {
+     "decile": 5,
+     "avg_change_gbp": 190.88535786081775,
+     "rel_change_pct": 0.3586488514047241
+    },
+    {
+     "decile": 6,
+     "avg_change_gbp": 99.51089782437339,
+     "rel_change_pct": 0.16207476448000618
+    },
+    {
+     "decile": 7,
+     "avg_change_gbp": 28.42129120811296,
+     "rel_change_pct": 0.03947677997190212
+    },
+    {
+     "decile": 8,
+     "avg_change_gbp": -38.82528655935312,
+     "rel_change_pct": -0.045235640197954605
+    },
+    {
+     "decile": 9,
+     "avg_change_gbp": -228.1121886244946,
+     "rel_change_pct": -0.2162341427235723
+    },
+    {
+     "decile": 10,
+     "avg_change_gbp": -387.89296980487416,
+     "rel_change_pct": -0.2050413080106252
+    }
+   ],
+   "winners": {
+    "all": {
+     "gain_more_5": 0.04063349494256062,
+     "gain_less_5": 0.13450549496632042,
+     "no_change": 0.6888357073400262,
+     "lose_less_5": 0.13529951475661545,
+     "lose_more_5": 0.000725787994477336
+    },
+    "by_decile": [
+     {
+      "gain_more_5": 0.01266248311890258,
+      "gain_less_5": 0.3199782002949444,
+      "no_change": 0.6547199227018766,
+      "lose_less_5": 0.012624085332462821,
+      "lose_more_5": 0.000015308551813627727
+     },
+     {
+      "gain_more_5": 0.034143159268815546,
+      "gain_less_5": 0.21027651510421264,
+      "no_change": 0.7159420067176846,
+      "lose_less_5": 0.0394525764578626,
+      "lose_more_5": 0.00018574245142459142
+     },
+     {
+      "gain_more_5": 0.045877213493308866,
+      "gain_less_5": 0.155737704078324,
+      "no_change": 0.712717158816886,
+      "lose_less_5": 0.08087900921207278,
+      "lose_more_5": 0.0047889143994083025
+     },
+     {
+      "gain_more_5": 0.10899286327563294,
+      "gain_less_5": 0.1369995988947923,
+      "no_change": 0.6516017845951936,
+      "lose_less_5": 0.10013783869225437,
+      "lose_more_5": 0.0022679145421268376
+     },
+     {
+      "gain_more_5": 0.07997011001593746,
+      "gain_less_5": 0.14124635226992638,
+      "no_change": 0.7034212503822802,
+      "lose_less_5": 0.0753622873318559,
+      "lose_more_5": 0
+     },
+     {
+      "gain_more_5": 0.06760291581254906,
+      "gain_less_5": 0.12609358411489643,
+      "no_change": 0.7121680134607399,
+      "lose_less_5": 0.09413548661181464,
+      "lose_more_5": 0
+     },
+     {
+      "gain_more_5": 0.034192826515154345,
+      "gain_less_5": 0.1070247228081879,
+      "no_change": 0.758882631185409,
+      "lose_less_5": 0.09989981949124878,
+      "lose_more_5": 0
+     },
+     {
+      "gain_more_5": 0.014293018964704165,
+      "gain_less_5": 0.048615693743787575,
+      "no_change": 0.6864603361535222,
+      "lose_less_5": 0.250630951137986,
+      "lose_more_5": 0
+     },
+     {
+      "gain_more_5": 0.008590699859539221,
+      "gain_less_5": 0.06304312138782908,
+      "no_change": 0.6318300932023311,
+      "lose_less_5": 0.29653608555030064,
+      "lose_more_5": 0
+     },
+     {
+      "gain_more_5": 0.00000965910106206126,
+      "gain_less_5": 0.03603945696630334,
+      "no_change": 0.6606138761843388,
+      "lose_less_5": 0.3033370077482959,
+      "lose_more_5": 0
+     }
+    ]
+   },
+   "poverty": {
+    "all": {
+     "baseline": 0.200175443380911,
+     "reform": 0.18892354962673025
+    },
+    "child": {
+     "baseline": 0.2588678459350333,
+     "reform": 0.2233595640475028
+    },
+    "adult": {
+     "baseline": 0.17369627829229808,
+     "reform": 0.1676434247540615
+    },
+    "senior": {
+     "baseline": 0.21445696014138219,
+     "reform": 0.2152066768118671
+    }
+   },
+   "inequality": {
+    "gini": {
+     "baseline": 0.32102949881695053,
+     "reform": 0.3193947141312199
+    },
+    "top_10_pct_share": {
+     "baseline": 0.23979407585329743,
+     "reform": 0.238950067493562
+    },
+    "top_1_pct_share": {
+     "baseline": 0.048741762095866066,
+     "reform": 0.0485054046203523
+    }
+   }
+  },
+  {
+   "year": "2028-29",
+   "budget": {
+    "net_bn": 3.4750870506282374,
+    "tax_bn": 6.684877731268056,
+    "benefits_bn": 3.2097906806398186
+   },
+   "deciles": [
+    {
+     "decile": 1,
+     "avg_change_gbp": -6.215447028744165,
+     "rel_change_pct": -0.037925101650095605
+    },
+    {
+     "decile": 2,
+     "avg_change_gbp": -17.231280573894765,
+     "rel_change_pct": -0.057399845965835264
+    },
+    {
+     "decile": 3,
+     "avg_change_gbp": -39.25482700052817,
+     "rel_change_pct": -0.10075984687988682
+    },
+    {
+     "decile": 4,
+     "avg_change_gbp": 210.6867176613232,
+     "rel_change_pct": 0.44808271508260306
+    },
+    {
+     "decile": 5,
+     "avg_change_gbp": 30.6099628134034,
+     "rel_change_pct": 0.05652408275570097
+    },
+    {
+     "decile": 6,
+     "avg_change_gbp": -74.82480750705872,
+     "rel_change_pct": -0.11955373045746952
+    },
+    {
+     "decile": 7,
+     "avg_change_gbp": -169.27613548394584,
+     "rel_change_pct": -0.2310383374878373
+    },
+    {
+     "decile": 8,
+     "avg_change_gbp": -346.0303094583942,
+     "rel_change_pct": -0.3958311144315642
+    },
+    {
+     "decile": 9,
+     "avg_change_gbp": -595.748374368326,
+     "rel_change_pct": -0.5538849863531785
+    },
+    {
+     "decile": 10,
+     "avg_change_gbp": -821.084611267579,
+     "rel_change_pct": -0.42495477531813314
+    }
+   ],
+   "winners": {
+    "all": {
+     "gain_more_5": 0.040993095829268245,
+     "gain_less_5": 0.022980734832464052,
+     "no_change": 0.21661215657594254,
+     "lose_less_5": 0.7140841780915199,
+     "lose_more_5": 0.005329834670805289
+    },
+    "by_decile": [
+     {
+      "gain_more_5": 0.010913104445266606,
+      "gain_less_5": 0.17045884732927835,
+      "no_change": 0.4992428051394501,
+      "lose_less_5": 0.31408700041489335,
+      "lose_more_5": 0.00529824267111162
+     },
+     {
+      "gain_more_5": 0.03362393475261415,
+      "gain_less_5": 0.0332058536928861,
+      "no_change": 0.4801732292660124,
+      "lose_less_5": 0.4370167985074094,
+      "lose_more_5": 0.015980183781077996
+     },
+     {
+      "gain_more_5": 0.04162246597803035,
+      "gain_less_5": 0.002973489387403108,
+      "no_change": 0.4441707870275762,
+      "lose_less_5": 0.4922240429254491,
+      "lose_more_5": 0.019009214681541244
+     },
+     {
+      "gain_more_5": 0.13373704588017804,
+      "gain_less_5": 0.0005744509966464446,
+      "no_change": 0.25202676214653696,
+      "lose_less_5": 0.6012817819688597,
+      "lose_more_5": 0.012379959007778779
+     },
+     {
+      "gain_more_5": 0.07229403585739082,
+      "gain_less_5": 0.002930475778999608,
+      "no_change": 0.17080671693942223,
+      "lose_less_5": 0.7536983584673509,
+      "lose_more_5": 0.0002704129568364791
+     },
+     {
+      "gain_more_5": 0.06353215299043351,
+      "gain_less_5": 0.0015948852186026133,
+      "no_change": 0.14144393493581894,
+      "lose_less_5": 0.7930975957361932,
+      "lose_more_5": 0.0003314311189516994
+     },
+     {
+      "gain_more_5": 0.031330490262812156,
+      "gain_less_5": 0.011399934253144138,
+      "no_change": 0.049368850999782644,
+      "lose_less_5": 0.907871821993506,
+      "lose_more_5": 0.00002890249075507334
+     },
+     {
+      "gain_more_5": 0.014241028635018615,
+      "gain_less_5": 0.005823557684503788,
+      "no_change": 0.0188002730093772,
+      "lose_less_5": 0.9611351406711004,
+      "lose_more_5": 0
+     },
+     {
+      "gain_more_5": 0.008590824432132963,
+      "gain_less_5": 0.0001608892101620256,
+      "no_change": 0.03291368495738176,
+      "lose_less_5": 0.9583346014003232,
+      "lose_more_5": 0
+     },
+     {
+      "gain_more_5": 0.0000458750588052127,
+      "gain_less_5": 0.000684964773014359,
+      "no_change": 0.07717452133806697,
+      "lose_less_5": 0.9220946388301134,
+      "lose_more_5": 0
+     }
+    ]
+   },
+   "poverty": {
+    "all": {
+     "baseline": 0.2013835789028614,
+     "reform": 0.18968890451513712
+    },
+    "child": {
+     "baseline": 0.26135807351691653,
+     "reform": 0.22438166312586413
+    },
+    "adult": {
+     "baseline": 0.17464120224533228,
+     "reform": 0.16766022056609167
+    },
+    "senior": {
+     "baseline": 0.2149946222189928,
+     "reform": 0.21800660937505828
+    }
+   },
+   "inequality": {
+    "gini": {
+     "baseline": 0.3215085165038547,
+     "reform": 0.3196606182448444
+    },
+    "top_10_pct_share": {
+     "baseline": 0.2399587339341861,
+     "reform": 0.2390863577599008
+    },
+    "top_1_pct_share": {
+     "baseline": 0.04894991228637532,
+     "reform": 0.048781704510420056
+    }
+   }
+  },
+  {
+   "year": "2029-30",
+   "budget": {
+    "net_bn": 8.463850744079052,
+    "tax_bn": 11.956707159948635,
+    "benefits_bn": 3.4928564158695834
+   },
+   "deciles": [
+    {
+     "decile": 1,
+     "avg_change_gbp": -64.89939712098567,
+     "rel_change_pct": -0.38728766079440274
+    },
+    {
+     "decile": 2,
+     "avg_change_gbp": -80.16100045784333,
+     "rel_change_pct": -0.2628609747166114
+    },
+    {
+     "decile": 3,
+     "avg_change_gbp": -82.52400153831695,
+     "rel_change_pct": -0.2081055035623853
+    },
+    {
+     "decile": 4,
+     "avg_change_gbp": 73.7405778809698,
+     "rel_change_pct": 0.1539830276805105
+    },
+    {
+     "decile": 5,
+     "avg_change_gbp": -122.29588565911399,
+     "rel_change_pct": -0.22186130725710954
+    },
+    {
+     "decile": 6,
+     "avg_change_gbp": -259.6450569392473,
+     "rel_change_pct": -0.4073454307553308
+    },
+    {
+     "decile": 7,
+     "avg_change_gbp": -413.2737602737179,
+     "rel_change_pct": -0.5535746434027664
+    },
+    {
+     "decile": 8,
+     "avg_change_gbp": -616.817062653412,
+     "rel_change_pct": -0.6916998773986855
+    },
+    {
+     "decile": 9,
+     "avg_change_gbp": -1005.3264128861774,
+     "rel_change_pct": -0.9161421991070644
+    },
+    {
+     "decile": 10,
+     "avg_change_gbp": -1360.0422503629525,
+     "rel_change_pct": -0.6878014485457477
+    }
+   ],
+   "winners": {
+    "all": {
+     "gain_more_5": 0.039971474628873765,
+     "gain_less_5": 0.011823487929971035,
+     "no_change": 0.13287019646683135,
+     "lose_less_5": 0.8084594473048909,
+     "lose_more_5": 0.006875393669432958
+    },
+    "by_decile": [
+     {
+      "gain_more_5": 0.0023642575572135195,
+      "gain_less_5": 0.07408850806911658,
+      "no_change": 0.46651243971005474,
+      "lose_less_5": 0.43951828023178646,
+      "lose_more_5": 0.01751651443182867
+     },
+     {
+      "gain_more_5": 0.027915342585672475,
+      "gain_less_5": 0.016953186138336226,
+      "no_change": 0.3839234471893429,
+      "lose_less_5": 0.5549219664578582,
+      "lose_more_5": 0.016286057628790207
+     },
+     {
+      "gain_more_5": 0.04850406105999928,
+      "gain_less_5": 0.00044468396241076184,
+      "no_change": 0.2601750781984213,
+      "lose_less_5": 0.6721744803061266,
+      "lose_more_5": 0.01870169647304211
+     },
+     {
+      "gain_more_5": 0.13079736490542784,
+      "gain_less_5": 0.0007765851470261454,
+      "no_change": 0.10227676423367352,
+      "lose_less_5": 0.7532762447570535,
+      "lose_more_5": 0.012873040956819041
+     },
+     {
+      "gain_more_5": 0.07494840542295933,
+      "gain_less_5": 0.00023044614163050508,
+      "no_change": 0.03907649560022897,
+      "lose_less_5": 0.8853955045512519,
+      "lose_more_5": 0.00034914828392926126
+     },
+     {
+      "gain_more_5": 0.06134054991103418,
+      "gain_less_5": 0.007569090843049372,
+      "no_change": 0.03270137057376773,
+      "lose_less_5": 0.8976810593324742,
+      "lose_more_5": 0.0007079293396745432
+     },
+     {
+      "gain_more_5": 0.031075227391584873,
+      "gain_less_5": 0.011553864900144345,
+      "no_change": 0.009845636797668787,
+      "lose_less_5": 0.947260882882706,
+      "lose_more_5": 0.00026438802789592776
+     },
+     {
+      "gain_more_5": 0.0199994405708103,
+      "gain_less_5": 0.005759488723400716,
+      "no_change": 0.0015657832415158321,
+      "lose_less_5": 0.97245754250364,
+      "lose_more_5": 0.0002177449606330742
+     },
+     {
+      "gain_more_5": 0.0027241492363479663,
+      "gain_less_5": 0.00017399603530792322,
+      "no_change": 0.012306069327502936,
+      "lose_less_5": 0.9840493315484226,
+      "lose_more_5": 0.0007464538524185826
+     },
+     {
+      "gain_more_5": 0.000045947647687915635,
+      "gain_less_5": 0.0006850293392877596,
+      "no_change": 0.02031887979613674,
+      "lose_less_5": 0.9778591804775895,
+      "lose_more_5": 0.0010909627392981693
+     }
+    ]
+   },
+   "poverty": {
+    "all": {
+     "baseline": 0.20435696838747802,
+     "reform": 0.1902578573728982
+    },
+    "child": {
+     "baseline": 0.2667670373990132,
+     "reform": 0.22441791858559088
+    },
+    "adult": {
+     "baseline": 0.17636463675502015,
+     "reform": 0.16831393832928127
+    },
+    "senior": {
+     "baseline": 0.21903173878558946,
+     "reform": 0.2189308026276501
+    }
+   },
+   "inequality": {
+    "gini": {
+     "baseline": 0.32209075814821775,
+     "reform": 0.3200468225872599
+    },
+    "top_10_pct_share": {
+     "baseline": 0.24505104965068197,
+     "reform": 0.2453103887327072
+    },
+    "top_1_pct_share": {
+     "baseline": 0.04956059294390785,
+     "reform": 0.0490456220757707
+    }
+   }
+  },
+  {
+   "year": "2030-31",
+   "budget": {
+    "net_bn": 12.489614713343954,
+    "tax_bn": 16.29173968483889,
+    "benefits_bn": 3.8021249714949357
+   },
+   "deciles": [
+    {
+     "decile": 1,
+     "avg_change_gbp": -91.75547812180594,
+     "rel_change_pct": -0.5421554926524613
+    },
+    {
+     "decile": 2,
+     "avg_change_gbp": -126.54746978188268,
+     "rel_change_pct": -0.41258532898358985
+    },
+    {
+     "decile": 3,
+     "avg_change_gbp": -105.71514536246832,
+     "rel_change_pct": -0.26422556488052923
+    },
+    {
+     "decile": 4,
+     "avg_change_gbp": -40.93834170258924,
+     "rel_change_pct": -0.0842511131057025
+    },
+    {
+     "decile": 5,
+     "avg_change_gbp": -253.27708624199295,
+     "rel_change_pct": -0.4518057841495835
+    },
+    {
+     "decile": 6,
+     "avg_change_gbp": -433.7582365339331,
+     "rel_change_pct": -0.6678747787664121
+    },
+    {
+     "decile": 7,
+     "avg_change_gbp": -593.7691695040412,
+     "rel_change_pct": -0.7792749335856971
+    },
+    {
+     "decile": 8,
+     "avg_change_gbp": -959.7065193357557,
+     "rel_change_pct": -1.0535034303113882
+    },
+    {
+     "decile": 9,
+     "avg_change_gbp": -1312.8807656216377,
+     "rel_change_pct": -1.1713415189271923
+    },
+    {
+     "decile": 10,
+     "avg_change_gbp": -1749.5925528084044,
+     "rel_change_pct": -0.8647959276634151
+    }
+   ],
+   "winners": {
+    "all": {
+     "gain_more_5": 0.040273852016170654,
+     "gain_less_5": 0.012195895749972884,
+     "no_change": 0.12343503839034911,
+     "lose_less_5": 0.8162467594888166,
+     "lose_more_5": 0.007848454354690667
+    },
+    "by_decile": [
+     {
+      "gain_more_5": 0.00242842001991937,
+      "gain_less_5": 0.0753811562957064,
+      "no_change": 0.44758824247010837,
+      "lose_less_5": 0.44903275084393,
+      "lose_more_5": 0.025569430370335846
+     },
+     {
+      "gain_more_5": 0.025941962290504026,
+      "gain_less_5": 0.01628678340121723,
+      "no_change": 0.37862632065044427,
+      "lose_less_5": 0.5626398046298164,
+      "lose_more_5": 0.016505129028018085
+     },
+     {
+      "gain_more_5": 0.06344952412721133,
+      "gain_less_5": 0.006857505533478412,
+      "no_change": 0.2224846611328927,
+      "lose_less_5": 0.6887008971133446,
+      "lose_more_5": 0.01850741209307295
+     },
+     {
+      "gain_more_5": 0.12317866941137876,
+      "gain_less_5": 0.00028088831407404723,
+      "no_change": 0.09270567128063362,
+      "lose_less_5": 0.7710168985788832,
+      "lose_more_5": 0.012817872415030327
+     },
+     {
+      "gain_more_5": 0.07513622862143467,
+      "gain_less_5": 0.00023205108768616545,
+      "no_change": 0.037563491602296814,
+      "lose_less_5": 0.8866002634599858,
+      "lose_more_5": 0.0004679652285965649
+     },
+     {
+      "gain_more_5": 0.06041214290034383,
+      "gain_less_5": 0.007510649269970808,
+      "no_change": 0.022816807863542996,
+      "lose_less_5": 0.9078281905641832,
+      "lose_more_5": 0.0014322094019592125
+     },
+     {
+      "gain_more_5": 0.04044494488775325,
+      "gain_less_5": 0.008821620065115016,
+      "no_change": 0.007391955258285606,
+      "lose_less_5": 0.9429835475210272,
+      "lose_more_5": 0.0003579322678189295
+     },
+     {
+      "gain_more_5": 0.008834698224157857,
+      "gain_less_5": 0.005836712934538352,
+      "no_change": 0.001286258594690987,
+      "lose_less_5": 0.9825736149359559,
+      "lose_more_5": 0.0014687153106569058
+     },
+     {
+      "gain_more_5": 0.0028482798103089983,
+      "gain_less_5": 0.00017918686829268243,
+      "no_change": 0.01070360057249985,
+      "lose_less_5": 0.9858658663684924,
+      "lose_more_5": 0.00040306638040610277
+     },
+     {
+      "gain_more_5": 0.00006364986869443817,
+      "gain_less_5": 0.0005724037296497468,
+      "no_change": 0.013183374478095958,
+      "lose_less_5": 0.9852257608725481,
+      "lose_more_5": 0.0009548110510117502
+     }
+    ]
+   },
+   "poverty": {
+    "all": {
+     "baseline": 0.2090152944823783,
+     "reform": 0.1957739074812149
+    },
+    "child": {
+     "baseline": 0.2750408065636688,
+     "reform": 0.23237406213507159
+    },
+    "adult": {
+     "baseline": 0.1812459660807348,
+     "reform": 0.17478124366135786
+    },
+    "senior": {
+     "baseline": 0.21879084871032337,
+     "reform": 0.2186445366465273
+    }
+   },
+   "inequality": {
+    "gini": {
+     "baseline": 0.3246119719363988,
+     "reform": 0.3223717626808499
+    },
+    "top_10_pct_share": {
+     "baseline": 0.24212262777790872,
+     "reform": 0.24429982189736849
+    },
+    "top_1_pct_share": {
+     "baseline": 0.04985229426710067,
+     "reform": 0.0493757930909397
+    }
+   }
+  }
+ ],
+ "households": [
+  {
+   "year": "2026-27",
+   "rows": [
+    {
+     "id": "single_25k",
+     "label": "Single adult earning £25,000",
+     "pre_net_gbp": 21049.71,
+     "post_net_gbp": 21070.19,
+     "change_gbp": 20.48
+    },
+    {
+     "id": "single_45k",
+     "label": "Single adult earning £45,000",
+     "pre_net_gbp": 35368.7,
+     "post_net_gbp": 35393.72,
+     "change_gbp": 25.03
+    },
+    {
+     "id": "single_120k",
+     "label": "Single adult earning £120,000",
+     "pre_net_gbp": 75647.87,
+     "post_net_gbp": 75667.99,
+     "change_gbp": 20.12
+    },
+    {
+     "id": "couple_two_children",
+     "label": "Couple earning £35,000 and £15,000, two children",
+     "pre_net_gbp": 44494.75,
+     "post_net_gbp": 44545.29,
+     "change_gbp": 50.54
+    },
+    {
+     "id": "lone_parent",
+     "label": "Lone parent earning £18,000, one child",
+     "pre_net_gbp": 21865.32,
+     "post_net_gbp": 21881,
+     "change_gbp": 15.67
+    },
+    {
+     "id": "pensioner_couple",
+     "label": "Pensioner couple on the state pension",
+     "pre_net_gbp": 24871.16,
+     "post_net_gbp": 24890.3,
+     "change_gbp": 19.14
+    }
+   ]
+  },
+  {
+   "year": "2027-28",
+   "rows": [
+    {
+     "id": "single_25k",
+     "label": "Single adult earning £25,000",
+     "pre_net_gbp": 21036.21,
+     "post_net_gbp": 21044.08,
+     "change_gbp": 7.88
+    },
+    {
+     "id": "single_45k",
+     "label": "Single adult earning £45,000",
+     "pre_net_gbp": 35352.2,
+     "post_net_gbp": 35361.82,
+     "change_gbp": 9.63
+    },
+    {
+     "id": "single_120k",
+     "label": "Single adult earning £120,000",
+     "pre_net_gbp": 75634.6,
+     "post_net_gbp": 75642.34,
+     "change_gbp": 7.74
+    },
+    {
+     "id": "couple_two_children",
+     "label": "Couple earning £35,000 and £15,000, two children",
+     "pre_net_gbp": 44515.19,
+     "post_net_gbp": 44534.63,
+     "change_gbp": 19.44
+    },
+    {
+     "id": "lone_parent",
+     "label": "Lone parent earning £18,000, one child",
+     "pre_net_gbp": 22196.25,
+     "post_net_gbp": 22202.28,
+     "change_gbp": 6.03
+    },
+    {
+     "id": "pensioner_couple",
+     "label": "Pensioner couple on the state pension",
+     "pre_net_gbp": 25550.08,
+     "post_net_gbp": 25557.44,
+     "change_gbp": 7.36
+    }
+   ]
+  },
+  {
+   "year": "2028-29",
+   "rows": [
+    {
+     "id": "single_25k",
+     "label": "Single adult earning £25,000",
+     "pre_net_gbp": 21110.16,
+     "post_net_gbp": 21033.91,
+     "change_gbp": -76.25
+    },
+    {
+     "id": "single_45k",
+     "label": "Single adult earning £45,000",
+     "pre_net_gbp": 35424.15,
+     "post_net_gbp": 35349.39,
+     "change_gbp": -74.76
+    },
+    {
+     "id": "single_120k",
+     "label": "Single adult earning £120,000",
+     "pre_net_gbp": 75852.33,
+     "post_net_gbp": 75632.34,
+     "change_gbp": -219.99
+    },
+    {
+     "id": "couple_two_children",
+     "label": "Couple earning £35,000 and £15,000, two children",
+     "pre_net_gbp": 44706.7,
+     "post_net_gbp": 44557.34,
+     "change_gbp": -149.36
+    },
+    {
+     "id": "lone_parent",
+     "label": "Lone parent earning £18,000, one child",
+     "pre_net_gbp": 22530.26,
+     "post_net_gbp": 22498.06,
+     "change_gbp": -32.2
+    },
+    {
+     "id": "pensioner_couple",
+     "label": "Pensioner couple on the state pension",
+     "pre_net_gbp": 26164.64,
+     "post_net_gbp": 26066.91,
+     "change_gbp": -97.73
+    }
+   ]
+  },
+  {
+   "year": "2029-30",
+   "rows": [
+    {
+     "id": "single_25k",
+     "label": "Single adult earning £25,000",
+     "pre_net_gbp": 21188.03,
+     "post_net_gbp": 21025.76,
+     "change_gbp": -162.27
+    },
+    {
+     "id": "single_45k",
+     "label": "Single adult earning £45,000",
+     "pre_net_gbp": 35501.02,
+     "post_net_gbp": 35339.43,
+     "change_gbp": -161.59
+    },
+    {
+     "id": "single_120k",
+     "label": "Single adult earning £120,000",
+     "pre_net_gbp": 76074.42,
+     "post_net_gbp": 75624.34,
+     "change_gbp": -450.08
+    },
+    {
+     "id": "couple_two_children",
+     "label": "Couple earning £35,000 and £15,000, two children",
+     "pre_net_gbp": 44909.12,
+     "post_net_gbp": 44586.02,
+     "change_gbp": -323.1
+    },
+    {
+     "id": "lone_parent",
+     "label": "Lone parent earning £18,000, one child",
+     "pre_net_gbp": 22873.54,
+     "post_net_gbp": 22801.48,
+     "change_gbp": -72.06
+    },
+    {
+     "id": "pensioner_couple",
+     "label": "Pensioner couple on the state pension",
+     "pre_net_gbp": 26796.35,
+     "post_net_gbp": 26591.21,
+     "change_gbp": -205.14
+    }
+   ]
+  },
+  {
+   "year": "2030-31",
+   "rows": [
+    {
+     "id": "single_25k",
+     "label": "Single adult earning £25,000",
+     "pre_net_gbp": 21264.39,
+     "post_net_gbp": 21017.48,
+     "change_gbp": -246.91
+    },
+    {
+     "id": "single_45k",
+     "label": "Single adult earning £45,000",
+     "pre_net_gbp": 35575.38,
+     "post_net_gbp": 35329.31,
+     "change_gbp": -246.06
+    },
+    {
+     "id": "single_120k",
+     "label": "Single adult earning £120,000",
+     "pre_net_gbp": 76296.03,
+     "post_net_gbp": 75616.2,
+     "change_gbp": -679.83
+    },
+    {
+     "id": "couple_two_children",
+     "label": "Couple earning £35,000 and £15,000, two children",
+     "pre_net_gbp": 45107.37,
+     "post_net_gbp": 44615.33,
+     "change_gbp": -492.04
+    },
+    {
+     "id": "lone_parent",
+     "label": "Lone parent earning £18,000, one child",
+     "pre_net_gbp": 23220.89,
+     "post_net_gbp": 23110.97,
+     "change_gbp": -109.92
+    },
+    {
+     "id": "pensioner_couple",
+     "label": "Pensioner couple on the state pension",
+     "pre_net_gbp": 27441.11,
+     "post_net_gbp": 27128.64,
+     "change_gbp": -312.47
+    }
+   ]
+  }
+ ],
+ "checks": [
+  {
+   "id": "event",
+   "ok": true,
+   "message": "recorded for autumn-budget-2025"
+  },
+  {
+   "id": "policies",
+   "ok": true,
+   "message": "the recorded policies (pre 98694, post 98695) are exactly what the measures file sets: 23 parameters, 5 years"
+  },
+  {
+   "id": "years",
+   "ok": true,
+   "message": "an answer for every year, 2026-27 to 2030-31"
+  },
+  {
+   "id": "one_model",
+   "ok": true,
+   "message": "every answer from policyengine-uk 2.102.3, data policyengine-uk-data-1.56.16, bundle 6.2.1; the households from the same model"
+  },
+  {
+   "id": "economy",
+   "ok": true,
+   "message": "5 years read: deciles, gains and losses, poverty and inequality"
+  },
+  {
+   "id": "households",
+   "ok": true,
+   "message": "the six example households, every year, without and with the event"
+  }
+ ]
+}
