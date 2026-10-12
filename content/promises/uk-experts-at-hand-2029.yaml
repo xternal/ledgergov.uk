@@ -1,0 +1,95 @@
+format: openpromises/1
+id: uk-experts-at-hand-2029
+headline:
+  en: Invest £1.8bn in specialist SEND support
+actor_id: bridget-phillipson
+made_on: "2026-02-23"
+venue: parliament
+venue_label:
+  en: "Commons statement: Schools White Paper"
+area: education
+status: funded
+status_note:
+  en: >-
+    The schools white paper (23 February 2026) plans £1.8bn over the three spending review years,
+    2026-27 to 2028-29: £1bn for professionals working directly with mainstream schools and £800m
+    to expand outreach from specialist settings. The Department for Education allocated £429m to
+    councils for 2026-27 and paid it at the end of June 2026, with about £750m and £850m indicated
+    for the next two years (these yearly grants also carry a share of a separate £200m transformation
+    fund). Delivery was due to start in September 2026; the card moves to Delivering when an official
+    source shows teams working in schools. The Department of Health and Social Care restated the
+    commitment on 9 October 2026.
+responsible:
+  actor_id: hm-government
+origin: manual
+sources:
+  - title: "Hansard, House of Commons, 23 Feb 2026: Schools White Paper: Every Child Achieving and Thriving"
+    url: https://hansard.parliament.uk/Commons/2026-02-23/debates/363710CB-0877-495B-BADF-D49781276F81/SchoolsWhitePaperEveryChildAchievingAndThriving
+  - title: "Department for Education: Every child achieving and thriving (schools white paper), 23 Feb 2026"
+    url: https://www.gov.uk/government/publications/every-child-achieving-and-thriving/every-child-achieving-and-thriving-html-version
+  - title: "Department for Education press release, 23 Feb 2026: Specialist SEND support in every school and community"
+    url: https://www.gov.uk/government/news/specialist-send-support-in-every-school-and-community
+  - title: "Department for Education: Experts at Hand and local authority SEND transformation fund, funding for 2026 to 2027"
+    url: https://www.gov.uk/government/publications/experts-at-hand-local-authority-send-transformation-fund/experts-at-hand-local-authority-send-transformation-fund-funding-for-local-authorities-2026-to-2027
+  - title: "Department of Health and Social Care press release, 9 Oct 2026: Government pledges earlier support to tackle mental health crises"
+    url: https://www.gov.uk/government/news/government-pledges-earlier-support-to-tackle-mental-health-crises
+versions:
+  - version: 1
+    text: >-
+      We will fortify mainstream provision with our new national Experts at Hand initiative, backed by
+      £1.8 billion of new investment.
+    recorded_on: "2026-02-23"
+    source_url: https://hansard.parliament.uk/Commons/2026-02-23/debates/363710CB-0877-495B-BADF-D49781276F81/SchoolsWhitePaperEveryChildAchievingAndThriving
+    quote_checked_on: "2026-10-12"
+    parameters:
+      who:
+        en: >-
+          Children and young people in mainstream early years settings, schools and colleges in
+          England
+      cost:
+        range: [0.429, 0.6, 0.85]
+        quality: approx
+        by:
+          kind: official
+          name: Department for Education
+        note:
+          en: >-
+            £1.8bn over the three spending review years, 2026-27 to 2028-29, shown as £0.6bn a year
+            on average (central). Low and high are the yearly grants to councils: £429m in 2026-27
+            and £850m indicated for 2028-29; these also carry a share of a separate £200m
+            transformation fund, so they slightly overstate the Experts at Hand money in each year.
+        sources:
+          - title: "Department for Education: Experts at Hand funding for local authorities 2026 to 2027 (methodology)"
+            url: https://www.gov.uk/government/publications/experts-at-hand-local-authority-send-transformation-fund/experts-at-hand-local-authority-send-transformation-fund-funding-for-local-authorities-2026-to-2027
+          - title: "Department for Education: Every child achieving and thriving (schools white paper), section on Experts at Hand"
+            url: https://www.gov.uk/government/publications/every-child-achieving-and-thriving/every-child-achieving-and-thriving-html-version
+      when:
+        en: Over the next three years (2026-27 to 2028-29); delivery from September 2026
+      deadline: "2029-03-31"
+      funded_by: null
+events:
+  - date: "2026-02-23"
+    type: promised
+    text:
+      en: >-
+        Education Secretary Bridget Phillipson tells the Commons that a national Experts at Hand
+        initiative will be backed by £1.8bn of new investment
+  - date: "2026-02-23"
+    type: in_plan
+    text:
+      en: >-
+        The schools white paper plans £1.8bn over three years: £1bn for professionals working with
+        mainstream schools and £800m for outreach from specialist settings
+    evidence_url: https://www.gov.uk/government/publications/every-child-achieving-and-thriving/every-child-achieving-and-thriving-html-version
+  - date: "2026-06-05"
+    type: funded
+    text:
+      en: >-
+        The Department for Education publishes final allocations of £429m to councils for 2026-27,
+        paid at the end of June 2026
+    evidence_url: https://www.gov.uk/government/publications/experts-at-hand-local-authority-send-transformation-fund/experts-at-hand-local-authority-send-transformation-fund-funding-for-local-authorities-2026-to-2027
+  - date: "2029-03-31"
+    type: deadline
+    text:
+      en: The three years of Experts at Hand funding end with 2028-29
+replies: []
