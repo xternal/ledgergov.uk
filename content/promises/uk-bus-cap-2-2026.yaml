@@ -1,31 +1,33 @@
+format: openpromises/1
 id: uk-bus-cap-2-2026
-headline: "Cap bus fares at £2"
+headline:
+  en: Cap bus fares at £2
 actor_id: andy-burnham
 made_on: "2026-07-22"
 venue: press_release
-venue_label: Government announcement
-policy_area: economic_affairs
+venue_label:
+  en: Government announcement
+area: economic_affairs
 status: in_plan
-status_note: >-
-  Funding was named when it was announced, but it is not yet in an Estimates line. A promise counts as
-  funded only once a Budget, Spending Review or Estimates allocates the money, so this card stays at In plan.
-  Earlier caps for context: a £2 cap ran in England outside London from January 2023 under the previous
-  government; it rose to £3 in January 2025, and Spending Review 2025 (11 June 2025) extended the £3 cap to
-  March 2027 (sources below).
-deadline: "2027-01-01"
-lever_settings:
-  bus_cap_2: 1
-  bus_cap_2.funding: climate_loans
-preset_label: £2 bus cap, as announced
-origin: manual
-outcome_by:
+status_note:
+  en: >-
+    Funding was named when it was announced, but it is not yet in an Estimates line. A promise
+    counts as funded only once a Budget, Spending Review or Estimates allocates the money, so this
+    card stays at In plan. Earlier caps for context: a £2 cap ran in England outside London from
+    January 2023 under the previous government; it rose to £3 in January 2025, and Spending Review
+    2025 (11 June 2025) extended the £3 cap to March 2027 (sources below).
+responsible:
   actor_id: hm-government
+origin: manual
 sources:
-  - title: "No 10, HM Treasury and DfT press release: Cheaper travel for millions with a third off fares, 22 Jul 2026"
+  - title: >-
+      No 10, HM Treasury and DfT press release: Cheaper travel for millions with a third off fares,
+      22 Jul 2026
     url: https://www.gov.uk/government/news/cheaper-travel-for-millions-with-a-third-off-fares
   - title: "Written statement to Parliament: £2 bus fares from January 2027, 22 Jul 2026"
     url: https://www.gov.uk/government/speeches/2-bus-fares-from-january-2027
-  - title: "DfT guidance: £3 national bus fare cap (updated 22 Jul 2026 with the £2 cap for 2027)"
+  - title: >-
+      DfT guidance: £3 national bus fare cap (updated 22 Jul 2026 with the £2 cap for 2027)
     url: https://www.gov.uk/guidance/3-national-bus-fare-cap
   - title: Spending Review 2025 (HM Treasury)
     url: https://www.gov.uk/government/publications/spending-review-2025-document/spending-review-2025-html
@@ -35,56 +37,85 @@ sources:
     url: https://www.gov.uk/government/news/new-year-cheer-2-bus-tickets-for-thousands-of-routes
 versions:
   - version: 1
-    text: "I’ve done it before and I will do it again now: a £2 cap on bus fares for millions across the country."
+    text: >-
+      I’ve done it before and I will do it again now: a £2 cap on bus fares for millions across the
+      country.
     recorded_on: "2026-07-22"
     source_url: https://www.gov.uk/government/news/cheaper-travel-for-millions-with-a-third-off-fares
     quote_checked_on: "2026-10-06"
     parameters:
-      who: Bus passengers on participating services in England outside London
-      how_much_bn_per_year: [0.36, 0.4, 0.44]
-      costed_by:
-        kind: official
-        name: Department for Transport
-      cost_note: >-
-        Year shown: 2027, the only year of the cap (1 January to 31 December 2027); central figure only. The
-        government says the cap is backed by £400m of extra funding. Its press release puts the total at £454m
-        including funding for the devolved governments, paid through the Barnett formula. Neither source says
-        whether the £400m is the full cost of the cap or the extra over the £3 cap it replaces, and no
-        independent costing has been published.
-        Low–high is an editorial ±10% because the source gives a central figure only.
-      cost_sources:
-        - title: "Written statement to Parliament: £2 bus fares from January 2027"
-          url: https://www.gov.uk/government/speeches/2-bus-fares-from-january-2027
-        - title: "Press release: Cheaper travel for millions with a third off fares"
-          url: https://www.gov.uk/government/news/cheaper-travel-for-millions-with-a-third-off-fares
-      when: 1 January to 31 December 2027
-      funded_by: >-
-        An extra £454m (including funding for devolved governments) from a reprioritisation of DESNZ’s budget,
-        switching funding that had been set aside for international climate finance projects into loans
+      who:
+        en: Bus passengers on participating services in England outside London
+      cost:
+        range: [0.36, 0.4, 0.44]
+        quality: sourced
+        by:
+          kind: official
+          name: Department for Transport
+        note:
+          en: >-
+            Year shown: 2027, the only year of the cap (1 January to 31 December 2027); central
+            figure only. The government says the cap is backed by £400m of extra funding. Its press
+            release puts the total at £454m including funding for the devolved governments, paid
+            through the Barnett formula. Neither source says whether the £400m is the full cost of
+            the cap or the extra over the £3 cap it replaces, and no independent costing has been
+            published. Low–high is an editorial ±10% because the source gives a central figure only.
+        sources:
+          - title: "Written statement to Parliament: £2 bus fares from January 2027"
+            url: https://www.gov.uk/government/speeches/2-bus-fares-from-january-2027
+          - title: "Press release: Cheaper travel for millions with a third off fares"
+            url: https://www.gov.uk/government/news/cheaper-travel-for-millions-with-a-third-off-fares
+      when:
+        en: 1 January to 31 December 2027
+      deadline: "2027-01-01"
+      funded_by:
+        en: >-
+          An extra £454m (including funding for devolved governments) from a reprioritisation of
+          DESNZ’s budget, switching funding that had been set aside for international climate
+          finance projects into loans
 events:
   - date: "2026-07-22"
     type: promised
-    text: PM announces a £2 cap on single bus fares from 1 January to 31 December 2027, backed by £400m of extra funding
+    text:
+      en: >-
+        PM announces a £2 cap on single bus fares from 1 January to 31 December 2027, backed by
+        £400m of extra funding
   - date: "2026-07-22"
     type: in_plan
-    text: "Written statement to Parliament confirms the scheme and names the funding: £400m extra, from reprioritising DESNZ's budget"
+    text:
+      en: >-
+        Written statement to Parliament confirms the scheme and names the funding: £400m extra, from
+        reprioritising DESNZ's budget
     evidence_url: https://www.gov.uk/government/speeches/2-bus-fares-from-january-2027
   - date: "2027-01-01"
     type: deadline
-    text: Due to start
+    text:
+      en: Due to start
 replies: []
 reviews:
   - by: Junior Editor
     kind: automated
-    on: "2026-10-06"
-    note: Second check of every quote, date, evidence link, status, cost, wording and legal risk against the live sources; fixes applied as corrections.
+    "on": "2026-10-06"
+    note:
+      en: >-
+        Second check of every quote, date, evidence link, status, cost, wording and legal risk
+        against the live sources; fixes applied as corrections.
   - by: Pavel Guzhikov
     kind: editor
-    on: "2026-10-12"
-    note: Reviewed against its sources
+    "on": "2026-10-12"
     approves: true
+    note:
+      en: Reviewed against its sources
   - by: Goodwill Stranger
     kind: editor
-    on: "2026-10-12"
-    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
+    "on": "2026-10-12"
     approves: true
+    note:
+      en: Checked against its sources; confirmed by email to the owner, 12 October 2026
+links:
+  lever:
+    settings:
+      bus_cap_2: 1
+      bus_cap_2.funding: climate_loans
+    label:
+      en: £2 bus cap, as announced

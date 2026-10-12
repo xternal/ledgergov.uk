@@ -1,19 +1,23 @@
+format: openpromises/1
 id: uk-corp-tax-cap-25-2024
-headline: "Cap corporation tax at 25%"
+headline:
+  en: Cap corporation tax at 25%
 actor_id: labour
 made_on: "2024-06-13"
 venue: manifesto
-venue_label: 2024 manifesto, page 31
-policy_area: taxes
+venue_label:
+  en: 2024 manifesto, page 31
+area: taxes
 status: legislated
-status_note: >-
-  The Corporate Tax Roadmap (October 2024) commits to the 25% cap for the Parliament, and Finance Acts have set the
-  main rate at 25% for the financial years starting April 2026 and April 2027. Later years are not yet set in law, so
-  the card sits at Legislated until the end of the Parliament, taken as 1 July 2029.
-deadline: "2029-07-01"
-origin: manual
-outcome_by:
+status_note:
+  en: >-
+    The Corporate Tax Roadmap (October 2024) commits to the 25% cap for the Parliament, and Finance
+    Acts have set the main rate at 25% for the financial years starting April 2026 and April 2027.
+    Later years are not yet set in law, so the card sits at Legislated until the end of the
+    Parliament, taken as 1 July 2029.
+responsible:
   actor_id: hm-government
+origin: manual
 sources:
   - title: "Labour Party: Change, 2024 manifesto (PDF), page 31"
     url: https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=31
@@ -28,68 +32,89 @@ sources:
 versions:
   - version: 1
     text: >-
-      Labour will cap corporation tax at the current level of 25 per cent, the lowest in the G7, for the entire
-      parliament, and we will act if tax changes in other countries pose a risk to UK competitiveness.
+      Labour will cap corporation tax at the current level of 25 per cent, the lowest in the G7, for
+      the entire parliament, and we will act if tax changes in other countries pose a risk to UK
+      competitiveness.
     recorded_on: "2024-06-13"
     source_url: https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=31
     quote_checked_on: "2026-10-06"
     parameters:
-      who: Companies that pay the main rate of corporation tax
-      how_much_bn_per_year: null
-      cost_note: >-
-        Keeping the main rate at 25% costs nothing against current plans, because 25% is already the rate;
-        Labour's fiscal plan lists no cost for it. For scale, HMRC estimates that 1 percentage point on
-        corporation tax would raise about £3.9bn in 2027-28. That estimate moves the small profits rate too,
-        so the main rate alone would raise somewhat less. These are HMRC's June 2025 estimates, made before
-        Budget 2025; HMRC has postponed its next update.
-      cost_sources:
-        - title: "Labour Party: Change, 2024 manifesto (PDF), fiscal plan, page 126"
-          url: https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=126
-        - title: "HMRC: Direct effects of illustrative tax changes, bulletin (June 2025)"
-          url: https://www.gov.uk/government/statistics/direct-effects-of-illustrative-tax-changes/direct-effects-of-illustrative-tax-changes-bulletin-january-2025
-        - title: "HMRC: Direct effects of illustrative tax changes, tables (June 2025, ODS)"
-          url: https://assets.publishing.service.gov.uk/media/68552862b46781eacfd71d71/June_2025_TRR_ODS__1_.ods
-        - title: "HMRC: 2026 statistics announcements (6 Jul 2026: next edition postponed)"
-          url: https://www.gov.uk/government/statistics/schedule-of-updates-and-announcements-for-hmrcs-statistics/2026-hmrc-statistics-announcements
-      when: For the whole Parliament (taken as to 1 July 2029)
+      who:
+        en: Companies that pay the main rate of corporation tax
+      cost:
+        note:
+          en: >-
+            Keeping the main rate at 25% costs nothing against current plans, because 25% is already
+            the rate; Labour's fiscal plan lists no cost for it. For scale, HMRC estimates that 1
+            percentage point on corporation tax would raise about £3.9bn in 2027-28. That estimate
+            moves the small profits rate too, so the main rate alone would raise somewhat less.
+            These are HMRC's June 2025 estimates, made before Budget 2025; HMRC has postponed its
+            next update.
+        sources:
+          - title: "Labour Party: Change, 2024 manifesto (PDF), fiscal plan, page 126"
+            url: https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=126
+          - title: "HMRC: Direct effects of illustrative tax changes, bulletin (June 2025)"
+            url: https://www.gov.uk/government/statistics/direct-effects-of-illustrative-tax-changes/direct-effects-of-illustrative-tax-changes-bulletin-january-2025
+          - title: "HMRC: Direct effects of illustrative tax changes, tables (June 2025, ODS)"
+            url: https://assets.publishing.service.gov.uk/media/68552862b46781eacfd71d71/June_2025_TRR_ODS__1_.ods
+          - title: "HMRC: 2026 statistics announcements (6 Jul 2026: next edition postponed)"
+            url: https://www.gov.uk/government/statistics/schedule-of-updates-and-announcements-for-hmrcs-statistics/2026-hmrc-statistics-announcements
+      when:
+        en: For the whole Parliament (taken as to 1 July 2029)
+      deadline: "2029-07-01"
       funded_by: null
 events:
   - date: "2024-06-13"
     type: promised
-    text: Labour manifesto pledges to cap corporation tax at 25% for the whole Parliament
+    text:
+      en: Labour manifesto pledges to cap corporation tax at 25% for the whole Parliament
   - date: "2024-10-30"
     type: in_plan
-    text: Corporate Tax Roadmap commits to capping the main rate of corporation tax at 25% for the Parliament
+    text:
+      en: >-
+        Corporate Tax Roadmap commits to capping the main rate of corporation tax at 25% for the
+        Parliament
     evidence_url: https://www.gov.uk/government/publications/corporate-tax-roadmap-2024
   - date: "2025-03-20"
     type: legislated
-    text: Finance Act 2025 sets the main rate at 25% for the financial year 2026
+    text:
+      en: Finance Act 2025 sets the main rate at 25% for the financial year 2026
     evidence_url: https://www.legislation.gov.uk/ukpga/2025/8/section/13/enacted
   - date: "2026-03-18"
     type: legislated
-    text: Finance Act 2026 sets the main rate at 25% for the financial year 2027
+    text:
+      en: Finance Act 2026 sets the main rate at 25% for the financial year 2027
     evidence_url: https://www.legislation.gov.uk/ukpga/2026/11/section/11/enacted
   - date: "2029-07-01"
     type: deadline
-    text: End of the Parliament (editorial date)
+    text:
+      en: End of the Parliament (editorial date)
 replies: []
 corrections:
   - date: "2026-10-08"
-    path: versions[0].parameters.cost_note
-    was: "Keeping the rate at its current level has no direct cost against existing plans, and no official costing of the pledge exists. Labour's fiscal plan says policies not listed in its costings are funded from existing budgets or have no cost."
-    now: >-
-      Keeping the main rate at 25% costs nothing against current plans, because 25% is already the rate;
-      Labour's fiscal plan lists no cost for it. For scale, HMRC estimates that 1 percentage point on
-      corporation tax would raise about £3.9bn in 2027-28. That estimate moves the small profits rate too, so
-      the main rate alone would raise somewhat less. These are HMRC's June 2025 estimates, made before Budget
-      2025; HMRC has postponed its next update.
-    reason: >-
-      The note now gives HMRC's official estimate of what 1 percentage point of corporation tax raises, for
-      scale. The pledge itself still has no cost against current plans.
+    path: versions[0].parameters.cost.note
+    was:
+      en: >-
+        Keeping the rate at its current level has no direct cost against existing plans, and no
+        official costing of the pledge exists. Labour's fiscal plan says policies not listed in its
+        costings are funded from existing budgets or have no cost.
+    now:
+      en: >-
+        Keeping the main rate at 25% costs nothing against current plans, because 25% is already the
+        rate; Labour's fiscal plan lists no cost for it. For scale, HMRC estimates that 1 percentage
+        point on corporation tax would raise about £3.9bn in 2027-28. That estimate moves the small
+        profits rate too, so the main rate alone would raise somewhat less. These are HMRC's June
+        2025 estimates, made before Budget 2025; HMRC has postponed its next update.
+    reason:
+      en: >-
+        The note now gives HMRC's official estimate of what 1 percentage point of corporation tax
+        raises, for scale. The pledge itself still has no cost against current plans.
     source_url: https://www.gov.uk/government/statistics/direct-effects-of-illustrative-tax-changes/direct-effects-of-illustrative-tax-changes-bulletin-january-2025
   - date: "2026-10-08"
-    path: versions[0].parameters.cost_sources
-    was: [{"title": "Labour Party: Change, 2024 manifesto (PDF), fiscal plan, page 126", "url": "https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=126"}]
+    path: versions[0].parameters.cost.sources
+    was:
+      - title: "Labour Party: Change, 2024 manifesto (PDF), fiscal plan, page 126"
+        url: https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=126
     now:
       - title: "Labour Party: Change, 2024 manifesto (PDF), fiscal plan, page 126"
         url: https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=126
@@ -99,22 +124,28 @@ corrections:
         url: https://assets.publishing.service.gov.uk/media/68552862b46781eacfd71d71/June_2025_TRR_ODS__1_.ods
       - title: "HMRC: 2026 statistics announcements (6 Jul 2026: next edition postponed)"
         url: https://www.gov.uk/government/statistics/schedule-of-updates-and-announcements-for-hmrcs-statistics/2026-hmrc-statistics-announcements
-    reason: >-
-      The note now gives HMRC's official estimate of what 1 percentage point of corporation tax raises, for
-      scale. The pledge itself still has no cost against current plans.
+    reason:
+      en: >-
+        The note now gives HMRC's official estimate of what 1 percentage point of corporation tax
+        raises, for scale. The pledge itself still has no cost against current plans.
     source_url: https://www.gov.uk/government/statistics/direct-effects-of-illustrative-tax-changes/direct-effects-of-illustrative-tax-changes-bulletin-january-2025
 reviews:
   - by: Junior Editor
     kind: automated
-    on: "2026-10-06"
-    note: Second check of every quote, date, evidence link, status, cost, wording and legal risk against the live sources; fixes applied as corrections.
+    "on": "2026-10-06"
+    note:
+      en: >-
+        Second check of every quote, date, evidence link, status, cost, wording and legal risk
+        against the live sources; fixes applied as corrections.
   - by: Pavel Guzhikov
     kind: editor
-    on: "2026-10-12"
-    note: Reviewed against its sources
+    "on": "2026-10-12"
     approves: true
+    note:
+      en: Reviewed against its sources
   - by: Goodwill Stranger
     kind: editor
-    on: "2026-10-12"
-    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
+    "on": "2026-10-12"
     approves: true
+    note:
+      en: Checked against its sources; confirmed by email to the owner, 12 October 2026

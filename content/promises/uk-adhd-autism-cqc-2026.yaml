@@ -1,57 +1,73 @@
+format: openpromises/1
 id: uk-adhd-autism-cqc-2026
-headline: "Make ADHD and autism assessments CQC-regulated"
+headline:
+  en: Make ADHD and autism assessments CQC-regulated
 actor_id: yvette-cooper
 made_on: "2026-10-09"
 venue: press_release
-venue_label: Press release (DHSC), quote from the Health Secretary
-policy_area: health
+venue_label:
+  en: Press release (DHSC), quote from the Health Secretary
+area: health
 status: promised
-status_note: >-
-  It follows Professor Peter Fonagy's review of mental health and neurodevelopmental services. The department's own
-  text in the same release is more cautious: it says the government is "working towards" making all diagnostic
-  assessments a regulated activity for the Care Quality Commission, covering NHS-funded and private patients. No
-  date, legislation or cost has been published.
-outcome_by:
+status_note:
+  en: >-
+    It follows Professor Peter Fonagy's review of mental health and neurodevelopmental services. The
+    department's own text in the same release is more cautious: it says the government is "working
+    towards" making all diagnostic assessments a regulated activity for the Care Quality Commission,
+    covering NHS-funded and private patients. No date, legislation or cost has been published.
+responsible:
   actor_id: hm-government
 origin: llm_intake
 sources:
-  - title: "DHSC press release, 9 Oct 2026: Government pledges earlier support to tackle mental health crises"
+  - title: >-
+      DHSC press release, 9 Oct 2026: Government pledges earlier support to tackle mental health
+      crises
     url: https://www.gov.uk/government/news/government-pledges-earlier-support-to-tackle-mental-health-crises
 versions:
   - version: 1
     text: >-
-      Based on the review findings, we will also take action to strengthen the oversight of mental health and
-      neurodevelopmental services, and make all diagnostic assessments for ADHD and autism CQC-regulated, so people
-      can be confident that assessments are high quality and that the NHS is not being overcharged by independent or
-      private providers.
+      Based on the review findings, we will also take action to strengthen the oversight of mental
+      health and neurodevelopmental services, and make all diagnostic assessments for ADHD and
+      autism CQC-regulated, so people can be confident that assessments are high quality and that
+      the NHS is not being overcharged by independent or private providers.
     recorded_on: "2026-10-09"
     source_url: https://www.gov.uk/government/news/government-pledges-earlier-support-to-tackle-mental-health-crises
     quote_checked_on: "2026-10-10"
     parameters:
-      who: >-
-        People in England assessed for ADHD or autism, through the NHS or privately; the providers who carry out the
-        assessments would be regulated by the Care Quality Commission
-      how_much_bn_per_year: null
-      cost_note: No cost has been published.
-      when: Not stated
+      who:
+        en: >-
+          People in England assessed for ADHD or autism, through the NHS or privately; the providers
+          who carry out the assessments would be regulated by the Care Quality Commission
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
       funded_by: null
 events:
   - date: "2026-10-09"
     type: promised
-    text: The Health Secretary says ADHD and autism diagnostic assessments will be made CQC-regulated
+    text:
+      en: >-
+        The Health Secretary says ADHD and autism diagnostic assessments will be made CQC-regulated
 replies: []
 reviews:
   - by: AI Journalist
     kind: automated
-    on: "2026-10-10"
-    note: Quote checked word for word at the source; dates, figures and links checked against the cited sources.
+    "on": "2026-10-10"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
   - by: Pavel Guzhikov
     kind: editor
-    on: "2026-10-12"
-    note: Reviewed against its sources
+    "on": "2026-10-12"
     approves: true
+    note:
+      en: Reviewed against its sources
   - by: Goodwill Stranger
     kind: editor
-    on: "2026-10-12"
-    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
+    "on": "2026-10-12"
     approves: true
+    note:
+      en: Checked against its sources; confirmed by email to the owner, 12 October 2026

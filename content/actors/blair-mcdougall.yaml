@@ -1,18 +1,33 @@
+format: openpromises/1
 id: blair-mcdougall
-name: Blair McDougall
 kind: person
-# UK Parliament Members API: https://members.parliament.uk/member/5076
-parliament_member_id: 5076
+name:
+  en: Blair McDougall
 party_id: labour
-# Official pages (structured data sameAs), checked 8 Oct 2026: GOV.UK.
-same_as:
-  - https://www.gov.uk/government/people/blair-mcdougall
 roles:
-  - title: Parliamentary Under-Secretary of State (Minister for Reindustrialisation), Department for Business, Innovation, Science and Trade and Department for Energy Security and Net Zero
-    # Source: https://www.gov.uk/government/people/blair-mcdougall ("appointed Parliamentary Under-Secretary of State (Minister for Reindustrialisation) jointly in the Department for Business, Innovation, Science and Trade (BIST) and the Department for Energy Security and Net Zero (DESNZ) on 22 July 2026")
+  - title:
+      en: >-
+        Parliamentary Under-Secretary of State (Minister for Reindustrialisation), Department for
+        Business, Innovation, Science and Trade and Department for Energy Security and Net Zero
     from: "2026-07-22"
-  - title: Parliamentary Under-Secretary of State, Department for Business and Trade
-    # Source: https://www.gov.uk/government/people/blair-mcdougall ("Parliamentary Under-Secretary of State in the Department for Business and Trade between 7 September 2025 and 22 July 2026")
+    source:
+      url: https://www.gov.uk/government/people/blair-mcdougall
+      quote: >-
+        appointed Parliamentary Under-Secretary of State (Minister for Reindustrialisation) jointly
+        in the Department for Business, Innovation, Science and Trade (BIST) and the Department for
+        Energy Security and Net Zero (DESNZ) on 22 July 2026
+  - title:
+      en: Parliamentary Under-Secretary of State, Department for Business and Trade
     # Party: Labour, MP for East Renfrewshire since July 2024 (https://members.parliament.uk/member/5076)
     from: "2025-09-07"
     to: "2026-07-22"
+    source:
+      url: https://www.gov.uk/government/people/blair-mcdougall
+      quote: >-
+        Parliamentary Under-Secretary of State in the Department for Business and Trade between 7
+        September 2025 and 22 July 2026
+identifiers:
+  parliament_member_id: 5076
+same_as:
+  - https://www.gov.uk/government/people/blair-mcdougall
+same_as_checked_on: "2026-10-08"

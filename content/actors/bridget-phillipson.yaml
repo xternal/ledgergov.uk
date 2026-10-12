@@ -1,17 +1,27 @@
+format: openpromises/1
 id: bridget-phillipson
-name: Bridget Phillipson
 kind: person
-# UK Parliament Members API: https://members.parliament.uk/member/4046
-parliament_member_id: 4046
+name:
+  en: Bridget Phillipson
 party_id: labour
-# Official pages (structured data sameAs), checked 8 Oct 2026: GOV.UK.
-same_as:
-  - https://www.gov.uk/government/people/bridget-phillipson
 roles:
-  - title: Minister for Women and Equalities
-    # Source: https://www.gov.uk/government/people/bridget-phillipson ("Bridget Phillipson was appointed Minister for Women and Equalities on 8 July 2024.")
+  - title:
+      en: Minister for Women and Equalities
     from: "2024-07-08"
-  - title: Secretary of State for Education
-    # Source: https://www.gov.uk/government/people/bridget-phillipson ("She was previously Secretary of State for Education from 5 July 2024 to 20 July 2026.")
+    source:
+      url: https://www.gov.uk/government/people/bridget-phillipson
+      quote: >-
+        Bridget Phillipson was appointed Minister for Women and Equalities on 8 July 2024.
+  - title:
+      en: Secretary of State for Education
     from: "2024-07-05"
     to: "2026-07-20"
+    source:
+      url: https://www.gov.uk/government/people/bridget-phillipson
+      quote: >-
+        She was previously Secretary of State for Education from 5 July 2024 to 20 July 2026.
+identifiers:
+  parliament_member_id: 4046
+same_as:
+  - https://www.gov.uk/government/people/bridget-phillipson
+same_as_checked_on: "2026-10-08"

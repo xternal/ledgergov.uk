@@ -1,14 +1,19 @@
+format: openpromises/1
 id: lucy-powell
-name: Lucy Powell
 kind: person
-# UK Parliament Members API: https://members.parliament.uk/member/4263
-parliament_member_id: 4263
+name:
+  en: Lucy Powell
 party_id: labour
-# Official pages (structured data sameAs), checked 8 Oct 2026: GOV.UK.
+roles:
+  - title:
+      en: Secretary of State for Education
+    from: "2026-07-20"
+    # Also: https://members.parliament.uk/member/4263/career (government post from 20 July 2026)
+    source:
+      url: https://www.gov.uk/government/people/lucy-powell
+      quote: Lucy Powell was appointed Secretary of State for Education on 20 July 2026.
+identifiers:
+  parliament_member_id: 4263
 same_as:
   - https://www.gov.uk/government/people/lucy-powell
-roles:
-  - title: Secretary of State for Education
-    # Source: https://www.gov.uk/government/people/lucy-powell ("Lucy Powell was appointed Secretary of State for Education on 20 July 2026.")
-    # Also: https://members.parliament.uk/member/4263/career (government post from 20 July 2026)
-    from: "2026-07-20"
+same_as_checked_on: "2026-10-08"

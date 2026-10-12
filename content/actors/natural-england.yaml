@@ -1,11 +1,13 @@
 # Natural England: the government's adviser for the natural environment in England, a non-departmental public
 # body sponsored by the Department for Environment, Food & Rural Affairs.
 # Source: https://www.gov.uk/government/organisations/natural-england
+format: openpromises/1
 id: natural-england
-name: Natural England
 kind: government
+name:
+  en: Natural England
 standing: public_body
-# Official pages (structured data sameAs), checked 8 Oct 2026: GOV.UK.
+roles: []
 same_as:
   - https://www.gov.uk/government/organisations/natural-england
-roles: []
+same_as_checked_on: "2026-10-08"
