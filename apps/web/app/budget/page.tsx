@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { CardView } from "@ledger/schema";
 import { collectionJsonLd } from "@ledger/server/seo";
-import { getScorecards, getSeed } from "@/lib/data";
+import { getHouseholdSnapshots, getScorecards, getSeed } from "@/lib/data";
 import { EVENT_LABEL } from "@/lib/copy";
 import { AREA_LABEL, todayIso } from "@/lib/promises";
 import { BUDGET, BUDGET_TOPICS, budgetDayEvents, budgetWatch, topicCards } from "@/lib/budget";
@@ -15,6 +15,7 @@ import { scorecardCopy, scorecardPath } from "@/lib/scorecard";
 import { predictOpen } from "@ledger/schema";
 import { currentRound } from "@/lib/predict";
 import { closingTime, PREDICT_PATH, predictTitle } from "@/lib/predict-copy";
+import { householdCopy, householdPath } from "@/lib/household";
 
 /** Re-render hourly, so the page turns from "to watch" to "what it did" on Budget day without a deploy. */
 export const revalidate = 3600;
@@ -62,6 +63,8 @@ export default function BudgetPage() {
   const scorecard = getScorecards()[0] ?? null;
   const predict = currentRound();
   const predicting = predictOpen(predict);
+  // What the Budget does to households: this Budget's page once its snapshot exists, until then last year's rehearsal.
+  const household = getHouseholdSnapshots()[0] ?? null;
   const structuredData = collectionJsonLd(
     {
       path: "/budget",
@@ -107,6 +110,14 @@ export default function BudgetPage() {
             <p className="m-0 border-l-2 border-rec pl-3 text-muted">
               Line by line: <a href={scorecardPath(scorecard)}>{scorecardCopy(scorecard).title}</a>, from the Treasury&apos;s own table, each line linked to
               its page.
+            </p>
+          )}
+          {household && (
+            <p className="m-0 border-l-2 border-rec pl-3 text-muted">
+              Household by household: <a href={householdPath(household)}>{householdCopy(household).title}</a>
+              {household.kind === "rehearsal"
+                ? `, last year's Budget worked out the way we will work out ${BUDGET.name} on the morning after: who gains and who loses, by income and for six example households.`
+                : ": who gains and who loses, by income and for six example households, estimated with PolicyEngine's open model."}
             </p>
           )}
           <div>

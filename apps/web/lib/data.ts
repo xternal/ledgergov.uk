@@ -3,7 +3,8 @@ import { loadSeed } from "@ledger/schema/seed";
 import { loadPeople } from "@ledger/schema/people";
 import { loadForecasts, readBuildText, type ForecastData } from "@ledger/schema/forecasts";
 import { loadScorecards } from "@ledger/schema/budget";
-import type { BudgetScorecard, PeopleBundle, Seed } from "@ledger/schema";
+import { loadHouseholdSnapshots } from "@ledger/schema/household";
+import type { BudgetScorecard, HouseholdSnapshot, PeopleBundle, Seed } from "@ledger/schema";
 import { buildRuns, vintageChangelog, type BuildRun, type Manifest, type VintageEntry } from "@ledger/server/api";
 
 /**
@@ -39,6 +40,17 @@ let scorecards: BudgetScorecard[] | null = null;
 export function getScorecards(): BudgetScorecard[] {
   scorecards ??= loadScorecards();
   return scorecards;
+}
+
+let households: HouseholdSnapshot[] | null = null;
+
+/**
+ * "The Budget for your household": one snapshot per fiscal event, newest first (data/build/budget/household), each
+ * checked against the measures file it was computed from (content/budget/household), validated on first use.
+ */
+export function getHouseholdSnapshots(): HouseholdSnapshot[] {
+  households ??= loadHouseholdSnapshots();
+  return households;
 }
 
 let vintages: { manifest: Manifest; changelog: VintageEntry[]; runs: BuildRun[] } | null = null;
