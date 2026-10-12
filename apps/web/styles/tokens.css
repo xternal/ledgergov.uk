@@ -26,7 +26,8 @@
   --good: #15803d;
   /* Darkened from the handoff's #B45309 so amber text on amber tints meets 4.5:1 (M2 accessibility pass). */
   --warn: #a3480a;
-  --bad: #dc2626;
+  /* Darkened from #DC2626 so red text meets 4.5:1 on the grey panel (--sunk) as well as on white (12 October 2026). */
+  --bad: #d02020;
   --idle: #8b8b94;
   --focus: #2457f5;
   --shadow-control: 0 0 0 1px var(--line), 0 1px 2px rgba(0, 0, 0, 0.06);

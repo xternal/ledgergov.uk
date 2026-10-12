@@ -74,10 +74,8 @@ describe("dark mode colours", () => {
   });
 });
 
-// Light mode keeps its own palette (the owner's rule). Checked on the page background; on the grey panel (--sunk) the red
-// --bad is 4.43:1, just under AA, a shortfall that predates the dark brown change.
 describe("light mode colours", () => {
-  it.each(["ink", "muted", "accent", "rec", "debt-ink", "good", "warn", "bad"].map((t) => [t, "bg"] as const))(
+  it.each(["ink", "muted", "accent", "rec", "debt-ink", "good", "warn", "bad"].flatMap((t) => ["bg", "sunk"].map((b) => [t, b] as const)))(
     "text %s on %s passes WCAG AA",
     (text, bg) => {
       expect(contrast(light[text]!, light[bg]!)).toBeGreaterThanOrEqual(AA_TEXT);
