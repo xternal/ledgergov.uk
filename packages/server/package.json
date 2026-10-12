@@ -16,7 +16,8 @@
     "./mp": "./src/mp/index.ts",
     "./api": "./src/api/index.ts",
     "./seo": "./src/seo/index.ts",
-    "./predict": "./src/predict/index.ts"
+    "./predict": "./src/predict/index.ts",
+    "./views": "./src/views.ts"
   },
   "scripts": {
     "test": "vitest run",

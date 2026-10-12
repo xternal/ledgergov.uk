@@ -72,6 +72,12 @@ const MORE_SERVICES: typeof SERVICES = [
   },
   { name: "UK Parliament", role: "provides the data about MPs", where: "UK", sees: "A name you type into Your MP, sent from our server." },
   {
+    name: "Upstash",
+    role: "keeps the count of how often each page is opened (/method/numbers)",
+    where: "US company",
+    sees: "A page's address and the date, sent from our server. Nothing about you.",
+  },
+  {
     name: "Cloudflare",
     role: "runs our domain and forwards email sent to our addresses (such as privacy@ and editors@) to our mailbox",
     where: "US company",
@@ -186,7 +192,10 @@ export default function PrivacyPage() {
             look up your MP, why, for how long, and how to have it deleted.
           </p>
           <ul className="m-0 grid list-disc gap-1.5 rounded-control bg-sunk py-3.5 pl-8 pr-4">
-            <li>Reading the site stores nothing about you: no tracking cookies, no analytics scripts, no ads.</li>
+            <li>
+              Reading the site stores nothing about you: no tracking cookies, no analytics scripts, no ads. We count how often each page is opened, one number
+              per page per day, with nothing about who opened it.
+            </li>
             <li>If you follow something, we keep your email address or Telegram chat, encrypted, and what you follow. Nothing else.</li>
             <li>We never show who follows what, and we never share or sell our lists.</li>
             <li>You can delete it all yourself, at any time, from any alert email or with /stop in Telegram.</li>
@@ -321,7 +330,7 @@ export default function PrivacyPage() {
           <p className="m-0 text-muted">These services run parts of LedgerGov.UK for us. None may use your data for anything else.</p>
           <ServiceList items={SERVICES} />
           <details>
-            <summary className="cursor-pointer font-medium text-accent">Six more, for submissions, Your MP and email to us</summary>
+            <summary className="cursor-pointer font-medium text-accent">Seven more, for submissions, Your MP, page counts and email to us</summary>
             <div className="mt-3">
               <ServiceList items={MORE_SERVICES} />
             </div>

@@ -19,6 +19,7 @@ variables (`apps/web/.env.example` lists them all).
 | Telegram alerts | Telegram Bot API | Telegram's servers | Chat id (encrypted on our side) |
 | App and API (including the public `/api/v1`) | Vercel | Functions in `lhr1` (London) | Nothing; stateless. `/api/v1` is built from committed files at deploy and serves no database rows |
 | Alerts job | GitHub Actions | GitHub | Nothing; reads secrets, talks to Neon, the mail provider and Telegram |
+| Page view counts (`/method/numbers`, `/views.json`) | Upstash Redis | The region chosen when it was connected | One number per page per UTC day (`ledgergov:views:<date>` → path → count); nothing about the reader |
 
 ## 1. Keys you generate yourself
 
@@ -341,3 +342,12 @@ If CI shows `editors.yaml  should be a set of fields  (schema)`, the secret hold
 Editors record approvals on the cards now, before the move, with `pnpm review` (docs/EDITORS.md, "Recording your approval on the card"); the engine counts them, so the approvals errors fall as reviews land. The command writes LedgerGov.UK's own format because the engine's `openpromises review` only writes converted cards.
 
 Since 12 October 2026 every card and actor is in OpenPromises format v1 and the check passes: 0 errors, 0 warnings. It reads every card's editors' approvals against the private editors list (the repository secret `OPENPROMISES_EDITORS`, never committed; automated reviews never count), every cost's quality label, and history against the base branch. Any error means a change the engine would refuse: fix it before merging.
+
+## 16. Page view counts (Upstash Redis)
+
+`/method/numbers` shows which pages readers open most over the last 7 and 30 days, and `/views.json` serves the last 30 days' totals; both are public and ask the counter again at most every ten minutes. The count is made in `apps/web/proxy.ts` (`@ledger/server/views`): a reader's GET of one of the site's reading pages adds one to `ledgergov:views:<UTC date>` → `<path>`, after the page is sent. It stores the path and the date only. It reads the user agent and fetch headers to skip crawlers, link previews, AI fetchers and prefetches, and stores neither. A reader's own links (`/s/<code>`, `/budget/predict/r/<code>`), the API, admin, forms and files are never counted. A slow or failing counter never delays or breaks a page.
+
+**Setting it up (owner, once):** in the Vercel project, Storage → Marketplace → Upstash → Redis, free plan, connected to this project for **Production** only. Vercel then sets `KV_REST_API_URL`, `KV_REST_API_TOKEN` and `KV_REST_API_READ_ONLY_TOKEN`; redeploy. Without them (previews, laptops) nothing is counted and `/method/numbers` says so. The key prefix keeps the counts apart if the database is shared with another site.
+
+**Check after the deploy:** open a page in a browser, wait ten minutes, and `curl -s https://ledgergov.uk/views.json` lists it under today's date.
+
