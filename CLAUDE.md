@@ -47,6 +47,7 @@ prototype/                reference prototype
 ## Working rules
 
 - Work milestone by milestone from `docs/BUILD_PLAN.md`. Finish acceptance criteria and tests before moving on.
+- **Features shared with other sites go into OpenPromises first** (github.com/xternal/openpromises, `CONTRIBUTING.md#how-a-feature-reaches-the-sites`; decisions 22–24 in its `docs/DECISIONS.md`): the card format, checks, publishing rules, verification labels, feed and API shapes, reusable components and intake, and anything a second site would need. Pavel decides, the OpenPromises session builds and releases it with an upgrade note, and this site adopts it in its own pull request (version bump, configuration, wording, `pnpm parity:check`) once the release is a day old. Never edit engine code from here; ask the OpenPromises session. Site-only features (the Statement, the Sandbox, MP and Budget pages) stay in this repository.
 - Engine changes need golden tests: for each lever, a test that 1 unit of change reproduces the source costing within tolerance.
 - When you need a number you don't have, add it to `data/seed` with `quality: "training"` and a `TODO(source)` note, never silently.
 - Copy: plain British English, active voice, no jargon in the UI ("borrowing", not "PSNB"; tooltips may give the technical term).
