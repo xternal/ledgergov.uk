@@ -5,7 +5,7 @@
  "kind": "rehearsal",
  "quality": "modelled",
  "measures_file": "content/budget/household/autumn-budget-2025.yaml",
- "measures_sha256": "1c1f69ab89dad135b80b38c3756517f635c705139ae1dc30293f64440b2f1fc5",
+ "measures_sha256": "f5274bcc14fbc4649a600e543ffabc171761ed6ae5074db23602c4abf52aed20",
  "input": {
   "event": {
    "id": "autumn-budget-2025",
@@ -838,7 +838,7 @@
      },
      {
       "tax": -279,
-      "welfare": 165,
+      "welfare": 164,
       "services": 1275,
       "overall": 1156
      },
@@ -850,7 +850,7 @@
      },
      {
       "tax": -387,
-      "welfare": 51,
+      "welfare": 50,
       "services": 1144,
       "overall": 804
      },
@@ -862,7 +862,7 @@
      },
      {
       "tax": -622,
-      "welfare": 29,
+      "welfare": 28,
       "services": 1008,
       "overall": 411
      },
@@ -881,7 +881,7 @@
     ],
     "all": {
      "tax": -552,
-     "welfare": 162,
+     "welfare": 161,
      "services": 1081,
      "overall": 691
     },
@@ -2017,6 +2017,167 @@
    ]
   }
  ],
+ "calculator": {
+  "geography": "England, Wales and Northern Ireland",
+  "base": "data/seed/uk_tax_2026-27.json",
+  "years": [
+   {
+    "year": "2026-27",
+    "pre": {
+     "personal_allowance_gbp": 12570,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 37700,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12570,
+     "ni_upper_earnings_limit_gbp": 50270,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    },
+    "post": {
+     "personal_allowance_gbp": 12570,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 37700,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12570,
+     "ni_upper_earnings_limit_gbp": 50270,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    }
+   },
+   {
+    "year": "2027-28",
+    "pre": {
+     "personal_allowance_gbp": 12570,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 37700,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12570,
+     "ni_upper_earnings_limit_gbp": 50270,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    },
+    "post": {
+     "personal_allowance_gbp": 12570,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 37700,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12570,
+     "ni_upper_earnings_limit_gbp": 50270,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    }
+   },
+   {
+    "year": "2028-29",
+    "pre": {
+     "personal_allowance_gbp": 12830,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 38500,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12830,
+     "ni_upper_earnings_limit_gbp": 51330,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    },
+    "post": {
+     "personal_allowance_gbp": 12570,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 37700,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12570,
+     "ni_upper_earnings_limit_gbp": 50270,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    }
+   },
+   {
+    "year": "2029-30",
+    "pre": {
+     "personal_allowance_gbp": 13090,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 39300,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 13090,
+     "ni_upper_earnings_limit_gbp": 52390,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    },
+    "post": {
+     "personal_allowance_gbp": 12570,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 37700,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12570,
+     "ni_upper_earnings_limit_gbp": 50270,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    }
+   },
+   {
+    "year": "2030-31",
+    "pre": {
+     "personal_allowance_gbp": 13360,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 40100,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 13360,
+     "ni_upper_earnings_limit_gbp": 53460,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    },
+    "post": {
+     "personal_allowance_gbp": 12570,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 37700,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12570,
+     "ni_upper_earnings_limit_gbp": 50270,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    }
+   }
+  ]
+ },
  "checks": [
   {
    "id": "event",

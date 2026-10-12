@@ -1,8 +1,9 @@
 import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
 import { HouseholdMeasuresFile, type HouseholdSnapshot } from "@ledger/schema";
 import { parse } from "yaml";
-import { buildHouseholdSnapshot, type HouseholdRecording } from "../src/model";
+import { buildHouseholdSnapshot, readCalculatorBase, type HouseholdRecording } from "../src/model";
 
 /**
  * The rehearsal on Autumn Budget 2025 (docs/MODEL.md T1, "Rehearsal"), run 12 October 2026 on PolicyEngine's API
@@ -33,7 +34,7 @@ const within = (a: number, b: number, share: number) => Math.abs(a - b) <= share
 describe("like for like with PolicyEngine's own analysis (parity recording)", () => {
   it("is a valid recording of the parity inputs, from one model", () => {
     const file = HouseholdMeasuresFile.parse(parse(read(`${DIR}autumn-budget-2025-parity.yaml`)));
-    const { checks } = buildHouseholdSnapshot(file, "", `${DIR}autumn-budget-2025-parity.yaml`, parity);
+    const { checks } = buildHouseholdSnapshot(file, "", `${DIR}autumn-budget-2025-parity.yaml`, parity, readCalculatorBase(fileURLToPath(root)));
     expect(checks.filter((c) => !c.ok)).toEqual([]);
   });
 

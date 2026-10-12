@@ -1,8 +1,13 @@
+import { readdirSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 import {
   ARCHETYPES,
   HouseholdSnapshot,
+  TaxSeed,
   PE_UNLIMITED,
   parameterNumber,
+  type CalculatorRates,
+  type HouseholdCalculator,
   type HouseholdCheck,
   type HouseholdExampleYear,
   type HouseholdMeasuresFile,
@@ -135,10 +140,10 @@ export interface HouseholdRecording {
   api: string;
   versions: { bundle_before: string; bundle_after: string; household_model_version: string; years: number[] };
   policies: { pre: { id: number; data: Reform }; post: { id: number; data: Reform } };
-  /** Trimmed economy answer per fiscal year, post over pre. */
+  /** Trimmed economy answer per fiscal year, post over pre (empty when the run skipped them: `--households-only`). */
   economy: Record<string, Record<string, unknown>>;
-  /** /uk/calculate results for the six example households, every year of the file, under each policy. */
-  households: { pre: unknown; post: unknown };
+  /** /uk/calculate results for the six example households, every year of the file, under each policy (null if skipped). */
+  households: { pre: unknown; post: unknown } | null;
 }
 
 export interface RecordOptions {
@@ -150,6 +155,8 @@ export interface RecordOptions {
   maxWaitMs?: number;
   log?: (line: string) => void;
   sleep?: (ms: number) => Promise<void>;
+  /** The fallback when the population runs fail or wait (docs/BUDGET_DAY.md): ask for the example households only. */
+  householdsOnly?: boolean;
 }
 
 /**
@@ -180,7 +187,7 @@ export async function recordHouseholdRun(file: HouseholdMeasuresFile, opts: Reco
 
   const economy: Record<string, Record<string, unknown>> = {};
   const started = now().getTime();
-  let pending = [...file.years];
+  let pending = opts.householdsOnly ? [] : [...file.years];
   while (pending.length) {
     const still: string[] = [];
     for (const y of pending) {
@@ -238,7 +245,13 @@ export interface BuildResult {
  * answers come from different model versions: before and after must be one model, or the change is partly an
  * upgrade.
  */
-export function buildHouseholdSnapshot(file: HouseholdMeasuresFile, measuresText: string, measuresPath: string, rec: HouseholdRecording): BuildResult {
+export function buildHouseholdSnapshot(
+  file: HouseholdMeasuresFile,
+  measuresText: string,
+  measuresPath: string,
+  rec: HouseholdRecording,
+  calculatorBase: CalculatorBase,
+): BuildResult {
   const checks: HouseholdCheck[] = [];
   const check = (id: string, ok: boolean, message: string) => checks.push({ id, ok, message });
 
@@ -254,12 +267,16 @@ export function buildHouseholdSnapshot(file: HouseholdMeasuresFile, measuresText
       : "the recording was made from other values than the measures file now has: record again",
   );
 
+  const hold = file.hold ?? [];
+  const holdDeciles = hold.includes("deciles");
+  const holdHouseholds = hold.includes("households");
   const missingYears = file.years.filter((y) => !rec.economy[y]);
-  check("years", missingYears.length === 0, missingYears.length ? `no answer for ${missingYears.join(", ")}` : `an answer for every year, ${file.years[0]} to ${file.years.at(-1)}`);
+  if (holdDeciles) check("years", true, "deciles held until two editors have reviewed them: none published");
+  else check("years", missingYears.length === 0, missingYears.length ? `no answer for ${missingYears.join(", ")}` : `an answer for every year, ${file.years[0]} to ${file.years.at(-1)}`);
 
   // One model throughout: every year's economy answer, the bundle before and after, and the household engine.
   const versions = file.years
-    .filter((y) => rec.economy[y])
+    .filter((y) => rec.economy[y] && !holdDeciles)
     .map((y) => {
       const e = rec.economy[y] as EconomyVersions;
       const b = e.policyengine_bundle ?? {};
@@ -268,60 +285,25 @@ export function buildHouseholdSnapshot(file: HouseholdMeasuresFile, measuresText
   const models = new Set(versions.map((v) => v.model));
   const datas = new Set(versions.map((v) => v.data));
   const bundles = new Set([...versions.map((v) => v.bundle), rec.versions.bundle_before, rec.versions.bundle_after]);
-  const model = versions[0]?.model;
-  const oneModel = models.size === 1 && datas.size === 1 && bundles.size === 1 && model === rec.versions.household_model_version && !!model;
+  const model = versions[0]?.model ?? (holdDeciles ? rec.versions.household_model_version : undefined);
+  const oneModel = models.size <= 1 && datas.size <= 1 && bundles.size === 1 && model === rec.versions.household_model_version && !!model && (holdDeciles || models.size === 1);
   check(
     "one_model",
     oneModel,
     oneModel
-      ? `every answer from policyengine-uk ${model}, data ${versions[0]!.data}, bundle ${rec.versions.bundle_before}; the households from the same model`
+      ? holdDeciles
+        ? `the households from policyengine-uk ${model}, bundle ${rec.versions.bundle_before} before and after`
+        : `every answer from policyengine-uk ${model}, data ${versions[0]!.data}, bundle ${rec.versions.bundle_before}; the households from the same model`
       : `answers from more than one model: economy ${[...models].join("/")} (data ${[...datas].join("/")}), bundle ${[...bundles].join("/")}, households ${rec.versions.household_model_version}. PolicyEngine updated during the run: record again`,
   );
 
-  let results: HouseholdYearResult[] = [];
-  try {
-    results = file.years
-      .filter((y) => rec.economy[y])
-      .map((y) => {
-        const { population } = toT1Population(rec.economy[y], { policyId: rec.policies.post.id, startYear: startYearOf(y), fetchedAt: new Date(rec.recorded_at) });
-        return {
-          year: y,
-          budget: { net_bn: population.budget.net_bn, tax_bn: population.budget.tax_bn, benefits_bn: population.budget.benefits_bn },
-          deciles: population.deciles,
-          winners: population.winners,
-          poverty: population.poverty,
-          inequality: population.inequality,
-        };
-      });
-    check("economy", true, `${results.length} years read: deciles, gains and losses, poverty and inequality`);
-  } catch (e) {
-    check("economy", false, `an economy answer could not be read (${e instanceof Error ? e.message : String(e)})`);
-  }
-
-  let households: HouseholdExampleYear[] = [];
-  try {
-    households = file.years.map((y) => {
-      const start = startYearOf(y);
-      const before = readNetIncomes(rec.households.pre, start);
-      const after = readNetIncomes(rec.households.post, start);
-      return {
-        year: y,
-        rows: ARCHETYPES.map(({ id, label }) => ({
-          id,
-          label,
-          pre_net_gbp: pennies(before[id]),
-          post_net_gbp: pennies(after[id]),
-          change_gbp: pennies(after[id] - before[id]),
-        })),
-      };
-    });
-    check("households", true, `the six example households, every year, without and with the event`);
-  } catch (e) {
-    check("households", false, `the example households could not be read (${e instanceof Error ? e.message : String(e)})`);
-  }
+  const results = holdDeciles ? (check("economy", true, "deciles held: not read"), []) : readResults(file, rec, check);
+  const households = holdHouseholds
+    ? (check("households", true, "example households held until two editors have reviewed them: none published"), [])
+    : readHouseholds(file, rec, check);
 
   if (checks.some((c) => !c.ok)) return { snapshot: null, checks };
-  const b = versions[0]!;
+  const b = versions[0] ?? { model: rec.versions.household_model_version, data: "not used (deciles held)", dataset: null };
   const snapshot = HouseholdSnapshot.parse({
     id: file.event.id,
     name: file.event.name,
@@ -336,9 +318,148 @@ export function buildHouseholdSnapshot(file: HouseholdMeasuresFile, measuresText
     computed_at: rec.recorded_at,
     results,
     households,
+    calculator: calculatorFor(file, calculatorBase),
     checks,
   });
   return { snapshot, checks };
+}
+
+/** Where each rate of the salary check comes from in PolicyEngine, and how its value converts (£ a week to a year, a fraction to %). */
+const CALCULATOR_PATHS: Record<string, [keyof CalculatorRates, (v: number) => number]> = {
+  "gov.hmrc.income_tax.allowances.personal_allowance.amount": ["personal_allowance_gbp", (v) => v],
+  "gov.hmrc.income_tax.allowances.personal_allowance.maximum_ANI": ["allowance_taper_threshold_gbp", (v) => v],
+  "gov.hmrc.income_tax.allowances.personal_allowance.reduction_rate": ["allowance_taper_rate", (v) => v],
+  "gov.hmrc.income_tax.rates.uk[1].threshold": ["basic_band_gbp", (v) => v],
+  "gov.hmrc.income_tax.rates.uk[2].threshold": ["additional_threshold_gbp", (v) => v],
+  "gov.hmrc.income_tax.rates.uk[0].rate": ["basic_rate_pct", (v) => Number((v * 100).toFixed(4))],
+  "gov.hmrc.income_tax.rates.uk[1].rate": ["higher_rate_pct", (v) => Number((v * 100).toFixed(4))],
+  "gov.hmrc.income_tax.rates.uk[2].rate": ["additional_rate_pct", (v) => Number((v * 100).toFixed(4))],
+  "gov.hmrc.national_insurance.class_1.thresholds.primary_threshold": ["ni_primary_threshold_gbp", (v) => Math.round(v * 52)],
+  "gov.hmrc.national_insurance.class_1.thresholds.upper_earnings_limit": ["ni_upper_earnings_limit_gbp", (v) => Math.round(v * 52)],
+  "gov.hmrc.national_insurance.class_1.rates.employee.main": ["ni_main_rate_pct", (v) => Number((v * 100).toFixed(4))],
+  "gov.hmrc.national_insurance.class_1.rates.employee.additional": ["ni_upper_rate_pct", (v) => Number((v * 100).toFixed(4))],
+};
+
+/** The salary check's starting point: the newest sourced tax seed, and where it is. */
+export interface CalculatorBase {
+  /** Repo-relative path of the seed, e.g. data/seed/uk_tax_2026-27.json. */
+  base: string;
+  rates: CalculatorRates;
+}
+
+/**
+ * The newest sourced tax seed (data/seed/uk_tax_YYYY-YY.json; the post-Budget template is not one) as the salary
+ * check's starting rates, with the basic rate and the employee NI main rate from the sandbox levers' bases
+ * (data/build/levers.json), as the Your share calculator takes them.
+ */
+export function readCalculatorBase(root: string): CalculatorBase {
+  const name = readdirSync(join(root, "data", "seed"))
+    .filter((f) => /^uk_tax_\d{4}-\d{2}\.json$/.test(f))
+    .sort()
+    .at(-1);
+  if (!name) throw new Error("no tax seed in data/seed");
+  const seed = TaxSeed.parse(JSON.parse(readFileSync(join(root, "data", "seed", name), "utf8")));
+  if (seed.meta.quality !== "sourced") throw new Error(`data/seed/${name} is not sourced`);
+  const levers = (JSON.parse(readFileSync(join(root, "data", "build", "levers.json"), "utf8")) as { levers: { id: string; base: number }[] }).levers;
+  const base = (id: string) => {
+    const l = levers.find((x) => x.id === id);
+    if (!l) throw new Error(`no lever ${id}`);
+    return l.base;
+  };
+  const it = seed.income_tax;
+  const ni = seed.employee_ni;
+  return {
+    base: `data/seed/${name}`,
+    rates: {
+      personal_allowance_gbp: it.personal_allowance_gbp,
+      allowance_taper_threshold_gbp: it.allowance_taper_threshold_gbp,
+      allowance_taper_rate: it.allowance_taper_rate,
+      basic_band_gbp: it.basic_band_gbp,
+      additional_threshold_gbp: it.additional_threshold_gbp,
+      basic_rate_pct: base(it.basic_rate_lever),
+      higher_rate_pct: it.higher_rate_pct,
+      additional_rate_pct: it.additional_rate_pct,
+      ni_primary_threshold_gbp: ni.primary_threshold_gbp,
+      ni_upper_earnings_limit_gbp: ni.upper_earnings_limit_gbp,
+      ni_main_rate_pct: base(ni.main_rate_lever),
+      ni_upper_rate_pct: ni.upper_rate_pct,
+    },
+  };
+}
+
+/**
+ * Income tax and employee NI for each year, without and with the event: the seed's values, overlaid with every
+ * rate and threshold the measures file sets (so the salary check and the modelled measures can never disagree).
+ */
+export function calculatorFor(file: HouseholdMeasuresFile, base: CalculatorBase): HouseholdCalculator {
+  const years = file.years.map((year) => {
+    const pre = { ...base.rates };
+    const post = { ...base.rates };
+    for (const m of file.measures)
+      for (const p of m.parameters ?? []) {
+        const target = CALCULATOR_PATHS[p.path];
+        if (!target) continue;
+        const [field, convert] = target;
+        pre[field] = convert(parameterNumber(p.pre[year]!));
+        post[field] = convert(parameterNumber(p.post[year]!));
+      }
+    return { year, pre, post };
+  });
+  return { geography: "England, Wales and Northern Ireland", base: base.base, years };
+}
+
+type Check = (id: string, ok: boolean, message: string) => void;
+
+/** Every year's population results, from the recorded economy answers. */
+function readResults(file: HouseholdMeasuresFile, rec: HouseholdRecording, check: Check): HouseholdYearResult[] {
+  try {
+    const results = file.years
+      .filter((y) => rec.economy[y])
+      .map((y) => {
+        const { population } = toT1Population(rec.economy[y], { policyId: rec.policies.post.id, startYear: startYearOf(y), fetchedAt: new Date(rec.recorded_at) });
+        return {
+          year: y,
+          budget: { net_bn: population.budget.net_bn, tax_bn: population.budget.tax_bn, benefits_bn: population.budget.benefits_bn },
+          deciles: population.deciles,
+          winners: population.winners,
+          poverty: population.poverty,
+          inequality: population.inequality,
+        };
+      });
+    check("economy", true, `${results.length} years read: deciles, gains and losses, poverty and inequality`);
+    return results;
+  } catch (e) {
+    check("economy", false, `an economy answer could not be read (${e instanceof Error ? e.message : String(e)})`);
+    return [];
+  }
+}
+
+/** The six example households in every year, without and with the event. */
+function readHouseholds(file: HouseholdMeasuresFile, rec: HouseholdRecording, check: Check): HouseholdExampleYear[] {
+  try {
+    if (!rec.households) throw new Error("the run did not ask for them");
+    const hh = rec.households;
+    const households = file.years.map((y) => {
+      const start = startYearOf(y);
+      const before = readNetIncomes(hh.pre, start);
+      const after = readNetIncomes(hh.post, start);
+      return {
+        year: y,
+        rows: ARCHETYPES.map(({ id, label }) => ({
+          id,
+          label,
+          pre_net_gbp: pennies(before[id]),
+          post_net_gbp: pennies(after[id]),
+          change_gbp: pennies(after[id] - before[id]),
+        })),
+      };
+    });
+    check("households", true, "the six example households, every year, without and with the event");
+    return households;
+  } catch (e) {
+    check("households", false, `the example households could not be read (${e instanceof Error ? e.message : String(e)})`);
+    return [];
+  }
 }
 
 /** PolicyEngine's app showing the same comparison: the post policy over the pre one. */

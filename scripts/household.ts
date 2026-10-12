@@ -9,6 +9,7 @@
  *                                        differs from PolicyEngine's current law
  *   pnpm household -- record <event>     live: ask PolicyEngine and keep every answer in
  *                                        packages/server/test/fixtures/t1/household/<event>.json
+ *                                        (--households-only: the example households, no population runs)
  *   pnpm household -- build <event>      offline: check the recording and write the snapshot; refuses if any check fails
  *   pnpm household -- templates          live (one /uk/metadata call): rewrite content/budget/household/_templates.yaml
  *                                        and the metadata fixture from PolicyEngine's current law
@@ -29,6 +30,7 @@ import {
   differencesFromCurrentLaw,
   metadataIssues,
   policyEngineClient,
+  readCalculatorBase,
   recordHouseholdRun,
   unchangedMeasures,
   type HouseholdRecording,
@@ -103,8 +105,9 @@ function check(id: string) {
 async function record(id: string) {
   const { file } = loadEvent(id);
   const client = policyEngineClient({ userAgent: BUDGET_JOB_USER_AGENT, timeouts: { economy: 60_000, calculate: 120_000 } });
-  console.log(`Asking PolicyEngine for ${file.event.name}, ${file.years.join(", ")}…`);
-  const rec = await recordHouseholdRun(file, { client, log: (l) => console.log(l) });
+  const householdsOnly = process.argv.includes("--households-only");
+  console.log(`Asking PolicyEngine for ${file.event.name}, ${file.years.join(", ")}${householdsOnly ? ", example households only" : ""}…`);
+  const rec = await recordHouseholdRun(file, { client, log: (l) => console.log(l), householdsOnly });
   const out = join(root, RECORDINGS, `${id}.json`);
   mkdirSync(dirname(out), { recursive: true });
   writeFileSync(out, `${JSON.stringify(rec, null, 1)}\n`);
@@ -116,16 +119,18 @@ function build(id: string) {
   const recPath = join(root, RECORDINGS, `${id}.json`);
   if (!existsSync(recPath)) fail(`no recording at ${recPath}: run \`pnpm household -- record ${id}\` first`);
   const rec = JSON.parse(readFileSync(recPath, "utf8")) as HouseholdRecording;
-  const { snapshot, checks } = buildHouseholdSnapshot(file, text, path, rec);
+  const { snapshot, checks } = buildHouseholdSnapshot(file, text, path, rec, readCalculatorBase(root));
   for (const c of checks) console.log(`${c.ok ? "ok  " : "FAIL"}  ${c.id}: ${c.message}`);
   if (!snapshot) fail("Not written: a check failed (see above). Nothing is published from a run that fails a check.");
   const out = join(root, HOUSEHOLD_DIR, `${id}.json`);
   mkdirSync(dirname(out), { recursive: true });
   writeFileSync(out, `${JSON.stringify(snapshot, null, 1)}\n`);
-  const head = snapshot!.results.find((r) => r.year === file.headline_year)!;
   console.log(`\nwritten: ${out}`);
-  console.log(`${file.headline_year}: net effect on the public finances £${head.budget.net_bn.toFixed(2)}bn a year (static)`);
-  console.log(`deciles (%): ${head.deciles.map((d) => d.rel_change_pct.toFixed(2)).join(", ")}`);
+  const head = snapshot!.results.find((r) => r.year === file.headline_year);
+  if (head) {
+    console.log(`${file.headline_year}: net effect on the public finances £${head.budget.net_bn.toFixed(2)}bn a year (static)`);
+    console.log(`deciles (%): ${head.deciles.map((d) => d.rel_change_pct.toFixed(2)).join(", ")}`);
+  } else console.log("deciles held: the page shows the calculator, the example households and the Treasury's chart");
 }
 
 /** Rewrite the templates and the metadata fixture from PolicyEngine's live metadata (one call), or from a saved copy (`--from <file>`). */
@@ -215,7 +220,7 @@ function metadataFromFile(path: string): PolicyEngineMetadata {
 }
 
 async function main() {
-  const args = process.argv.slice(2).filter((a, i, all) => a !== "--" && a !== "--file" && all[i - 1] !== "--file");
+  const args = process.argv.slice(2).filter((a, i, all) => a !== "--" && a !== "--households-only" && a !== "--file" && all[i - 1] !== "--file");
   const [cmd, id] = args;
   if (!cmd) fail("usage: pnpm household -- <event> | check <event> | record <event> | build <event> | templates [--from <metadata.json>]");
   if (cmd === "templates") return templates(args.includes("--from") ? args[args.indexOf("--from") + 1] : undefined);

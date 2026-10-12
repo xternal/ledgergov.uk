@@ -174,6 +174,11 @@ export const HouseholdMeasuresFile = z
     treasury: TreasuryChart.optional(),
     /** For a rehearsal: whose published figures it is checked against, in plain words with a link. */
     compared_with: z.object({ name: z.string().min(1), url: z.url(), note: z.string().min(1) }).strict().optional(),
+    /**
+     * Parts held back until two editors have reviewed them (the fallback rule, docs/BUDGET_DAY.md): the page shows
+     * the rest and says the held part follows. "deciles" also holds gains and losses and the summary figures.
+     */
+    hold: z.array(z.enum(["deciles", "households"])).optional(),
     note: z.string().min(1).optional(),
   })
   .strict()
@@ -273,6 +278,40 @@ export const HouseholdExampleYear = z
   .strict();
 export type HouseholdExampleYear = z.infer<typeof HouseholdExampleYear>;
 
+/**
+ * Income tax and employee National Insurance for one year, without or with the event, for the salary check on the
+ * page (client-side: a salary typed there is never sent or stored, invariant 7). Built by the job from the measures
+ * file where it sets these rates and thresholds, and from the newest sourced tax seed where it does not.
+ */
+export const CalculatorRates = z
+  .object({
+    personal_allowance_gbp: z.number().nonnegative(),
+    allowance_taper_threshold_gbp: z.number().positive(),
+    allowance_taper_rate: z.number().min(0).max(1),
+    basic_band_gbp: z.number().positive(),
+    additional_threshold_gbp: z.number().positive(),
+    basic_rate_pct: z.number().min(0).max(100),
+    higher_rate_pct: z.number().min(0).max(100),
+    additional_rate_pct: z.number().min(0).max(100),
+    ni_primary_threshold_gbp: z.number().nonnegative(),
+    ni_upper_earnings_limit_gbp: z.number().positive(),
+    ni_main_rate_pct: z.number().min(0).max(100),
+    ni_upper_rate_pct: z.number().min(0).max(100),
+  })
+  .strict();
+export type CalculatorRates = z.infer<typeof CalculatorRates>;
+
+export const HouseholdCalculator = z
+  .object({
+    /** England, Wales and Northern Ireland: Scotland sets its own income tax bands. */
+    geography: z.string().min(1),
+    /** The tax seed the values not set by the measures come from (data/seed/uk_tax_YYYY-YY.json). */
+    base: z.string().min(1),
+    years: z.array(z.object({ year: FiscalYear, pre: CalculatorRates, post: CalculatorRates }).strict()).min(1),
+  })
+  .strict();
+export type HouseholdCalculator = z.infer<typeof HouseholdCalculator>;
+
 export const HouseholdCheck = z.object({ id: z.string().min(1), ok: z.boolean(), message: z.string().min(1) }).strict();
 export type HouseholdCheck = z.infer<typeof HouseholdCheck>;
 
@@ -304,8 +343,11 @@ export const HouseholdSnapshot = z
     policies: z.object({ pre: z.number().int().positive(), post: z.number().int().positive() }).strict(),
     /** When the job asked PolicyEngine (the last answer). */
     computed_at: z.iso.datetime(),
-    results: z.array(HouseholdYearResult).min(1),
-    households: z.array(HouseholdExampleYear).min(1),
+    /** Every year of the file, unless deciles are held (then none). */
+    results: z.array(HouseholdYearResult),
+    /** Every year of the file, unless households are held (then none). */
+    households: z.array(HouseholdExampleYear),
+    calculator: HouseholdCalculator,
     checks: z.array(HouseholdCheck).min(1),
   })
   .strict()
@@ -318,13 +360,24 @@ export function snapshotIssues(s: z.input<typeof HouseholdSnapshot>): string[] {
   const issues: string[] = [];
   if (s.id !== s.input.event.id) issues.push(`id ${s.id} is not the measures file's event ${s.input.event.id}`);
   const years = s.input.years;
+  const hold = s.input.hold ?? [];
   const got = s.results.map((r) => r.year);
-  if (got.join() !== years.join()) issues.push(`results for ${got.join(", ")}, expected ${years.join(", ")}`);
-  for (const y of [s.input.headline_year, s.input.side_year])
-    if (!s.households.some((h) => h.year === y)) issues.push(`no example households for ${y}`);
+  if (hold.includes("deciles")) {
+    if (got.length) issues.push("deciles are held, so the snapshot carries none");
+  } else if (got.join() !== years.join()) issues.push(`results for ${got.join(", ")}, expected ${years.join(", ")}`);
+  if (hold.includes("households")) {
+    if (s.households.length) issues.push("households are held, so the snapshot carries none");
+  } else for (const y of [s.input.headline_year, s.input.side_year]) if (!s.households.some((h) => h.year === y)) issues.push(`no example households for ${y}`);
+  if (s.calculator.years.map((y) => y.year).join() !== years.join()) issues.push("the salary check needs rates for every year");
   for (const c of s.checks) if (!c.ok) issues.push(`check ${c.id} failed: ${c.message}`);
   return issues;
 }
+
+/** What the page shows: everything not held back. */
+export const householdShows = (s: Pick<HouseholdSnapshot, "input">) => ({
+  deciles: !(s.input.hold ?? []).includes("deciles"),
+  households: !(s.input.hold ?? []).includes("households"),
+});
 
 /** One year's results, or an error naming the year: the page asks only for years the snapshot was checked to have. */
 export function householdYear(s: HouseholdSnapshot, year: string): HouseholdYearResult {

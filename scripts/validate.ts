@@ -15,6 +15,7 @@ import { loadPeople } from "@ledger/schema/people";
 import { parseForecasts, readBacktestTable, readForecastFiles } from "@ledger/schema/forecasts";
 import { parseScorecards, readScorecardFiles } from "@ledger/schema/budget";
 import { predictIssues } from "@ledger/schema/predict";
+import { parseHouseholdSnapshots, parseMeasuresFile, readHouseholdSnapshotFiles, readMeasuresFiles } from "@ledger/schema/household";
 import { BALANCE_TOLERANCE_BN, appendOnlyIssues, comparableCard, contractAppendOnlyIssues, forecastAppendOnlyIssues } from "@ledger/schema";
 import { baseSettings, compute, createModel } from "@ledger/engine";
 import { checkDrafts } from "../packages/server/src/harvest/drafts";
@@ -39,6 +40,14 @@ errors.push(...parseForecasts(readForecastFiles(root), readBacktestTable(root)).
 const scorecards = parseScorecards(readScorecardFiles(root));
 errors.push(...scorecards.issues);
 if (scorecards.data.length) console.log(`budget scorecards: ${scorecards.data.map((s) => `${s.id} (${s.measures.length} lines)`).join(", ")}`);
+// The Budget for your household: every measures file parses, and every snapshot parses, passed its checks, and was
+// computed from its measures file as it is now (an edit to the measures without a new run is an error).
+const householdMeasures = readMeasuresFiles(root);
+errors.push(...householdMeasures.flatMap((m) => parseMeasuresFile(m).issues));
+const households = parseHouseholdSnapshots(readHouseholdSnapshotFiles(root), householdMeasures);
+errors.push(...households.issues);
+if (households.data.length)
+  console.log(`household snapshots: ${households.data.map((h) => `${h.id} (${h.kind}, PolicyEngine UK ${h.provider.model_version}, ${h.results.length} years)`).join(", ")}`);
 
 // Predict the Budget (Day 9): every question set in content/predict parses, with unique ids and its answers among its options.
 errors.push(...predictIssues(root));

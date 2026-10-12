@@ -342,6 +342,7 @@ treasury:
     every tax, welfare and public spending decision since Autumn Budget 2024, not only this Budget's, in
     2028-29, including the value of public services households use
   read_from: chart
+  # Read with: python3 scripts/treasury_chart.py Impact_on_households.pdf 10 -2 9 12 --order 3,1,2 (and page 11, -2500 2000 10, --dp 0)
   pct:
     deciles:
       - { tax: -0.94, welfare: 3.03, services: 5.14, overall: 7.24 }
@@ -361,14 +362,14 @@ treasury:
       - { tax: -146, welfare: 469, services: 799, overall: 1121 }
       - { tax: -184, welfare: 434, services: 1113, overall: 1362 }
       - { tax: -222, welfare: 285, services: 1281, overall: 1343 }
-      - { tax: -279, welfare: 165, services: 1275, overall: 1156 }
+      - { tax: -279, welfare: 164, services: 1275, overall: 1156 }
       - { tax: -337, welfare: 60, services: 1249, overall: 972 }
-      - { tax: -387, welfare: 51, services: 1144, overall: 804 }
+      - { tax: -387, welfare: 50, services: 1144, overall: 804 }
       - { tax: -447, welfare: 22, services: 1113, overall: 686 }
-      - { tax: -622, welfare: 29, services: 1008, overall: 411 }
+      - { tax: -622, welfare: 28, services: 1008, overall: 411 }
       - { tax: -936, welfare: 41, services: 954, overall: 62 }
       - { tax: -1979, welfare: 60, services: 872, overall: -1051 }
-    all: { tax: -552, welfare: 162, services: 1081, overall: 691 }
+    all: { tax: -552, welfare: 161, services: 1081, overall: 691 }
   differs: >-
     The Treasury's chart is for 2028-29, counts every decision since Autumn Budget 2024 rather than this
     Budget's alone, and adds the value of public services; ours counts only this Budget's tax and benefit

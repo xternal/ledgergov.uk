@@ -1,4 +1,5 @@
 import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
 import { ARCHETYPES, HouseholdMeasuresFile, PE_UNLIMITED, type HouseholdSnapshot } from "@ledger/schema";
 import { readMeasuresFiles } from "@ledger/schema/household";
@@ -9,7 +10,9 @@ import {
   currentLawValue,
   differencesFromCurrentLaw,
   metadataIssues,
+  calculatorFor,
   policyEngineCompareUrl,
+  readCalculatorBase,
   recordHouseholdRun,
   trimEconomy,
   unchangedMeasures,
@@ -27,6 +30,8 @@ const text = read(MEASURES);
 const file = (): HouseholdMeasuresFile => HouseholdMeasuresFile.parse(parse(text));
 const recording = (): HouseholdRecording => JSON.parse(read("packages/server/test/fixtures/t1/household/autumn-budget-2025.json"));
 const committed: HouseholdSnapshot = JSON.parse(read("data/build/budget/household/autumn-budget-2025.json"));
+const calcBase = readCalculatorBase(fileURLToPath(root));
+const build = (f: HouseholdMeasuresFile, rec: HouseholdRecording) => buildHouseholdSnapshot(f, text, MEASURES, rec, calcBase);
 
 // PolicyEngine's metadata, trimmed (test/fixtures/t1): every parameter name, values for the ones the site sends.
 const fixture = JSON.parse(read("packages/server/test/fixtures/t1/pe-meta-parameters.json")) as {
@@ -112,7 +117,7 @@ function fakeClient(rec: HouseholdRecording, opts: { bundleAfter?: string; years
     async calculateHousehold(_household, policy) {
       const pre = JSON.stringify(policy) === JSON.stringify(rec.policies.pre.data);
       calls.push(`households ${pre ? "pre" : "post"}`);
-      return pre ? rec.households.pre : rec.households.post;
+      return pre ? rec.households!.pre : rec.households!.post;
     },
     async versions() {
       versionCalls += 1;
@@ -174,7 +179,7 @@ describe("the live step, against a fake PolicyEngine", () => {
 
 describe("the snapshot", () => {
   it("the committed snapshot is exactly what the recording gives", () => {
-    const { snapshot, checks } = buildHouseholdSnapshot(file(), text, MEASURES, recording());
+    const { snapshot, checks } = build(file(), recording());
     expect(checks.every((c) => c.ok)).toBe(true);
     expect(snapshot).toEqual(committed);
   });
@@ -191,30 +196,68 @@ describe("the snapshot", () => {
   it("refuses answers from two models: PolicyEngine updated during the run", () => {
     const rec = recording();
     (rec.economy["2029-30"]!.policyengine_bundle as { model_version: string }).model_version = "2.126.12";
-    const { snapshot, checks } = buildHouseholdSnapshot(file(), text, MEASURES, rec);
+    const { snapshot, checks } = build(file(), rec);
     expect(snapshot).toBeNull();
     expect(checks.find((c) => c.id === "one_model")).toMatchObject({ ok: false, message: expect.stringMatching(/2\.102\.3\/2\.126\.12.*record again/) });
 
     const rec2 = recording();
     rec2.versions.bundle_after = "6.3.1";
-    expect(buildHouseholdSnapshot(file(), text, MEASURES, rec2).snapshot).toBeNull();
+    expect(build(file(), rec2).snapshot).toBeNull();
     const rec3 = recording();
     rec3.versions.household_model_version = "2.126.12";
-    expect(buildHouseholdSnapshot(file(), text, MEASURES, rec3).snapshot).toBeNull();
+    expect(build(file(), rec3).snapshot).toBeNull();
   });
 
   it("refuses a recording made from other values, or missing a year", () => {
     const f = file();
     f.measures.find((m) => m.id === "dividend-tax")!.parameters![0]!.post["2026-27"] = 0.1175;
-    const changed = buildHouseholdSnapshot(f, text, MEASURES, recording());
+    const changed = build(f, recording());
     expect(changed.snapshot).toBeNull();
     expect(changed.checks.find((c) => c.id === "policies")!.ok).toBe(false);
 
     const rec = recording();
     delete rec.economy["2030-31"];
-    const missing = buildHouseholdSnapshot(file(), text, MEASURES, rec);
+    const missing = build(file(), rec);
     expect(missing.snapshot).toBeNull();
     expect(missing.checks.find((c) => c.id === "years")!.message).toBe("no answer for 2030-31");
+  });
+
+  it("holds back the deciles until reviewed (the fallback): the page keeps the calculator, the households and the Treasury's chart", () => {
+    const f = file();
+    f.hold = ["deciles"];
+    const rec = recording();
+    rec.economy = {};
+    const { snapshot, checks } = build(f, rec);
+    expect(checks.every((c) => c.ok)).toBe(true);
+    expect(snapshot!.results).toEqual([]);
+    expect(snapshot!.households.map((h) => h.year)).toEqual(f.years);
+    expect(snapshot!.provider.model_version).toBe("2.102.3");
+    // Without the hold, a run without the population answers is refused.
+    expect(build(file(), rec).snapshot).toBeNull();
+  });
+
+  it("asks for the example households only when told to, with no population runs", async () => {
+    const rec = recording();
+    const { client, calls } = fakeClient(rec);
+    const out = await recordHouseholdRun(file(), { client, householdsOnly: true });
+    expect(calls.some((c) => c.startsWith("economy"))).toBe(false);
+    expect(out.economy).toEqual({});
+    expect(out.households).toEqual(rec.households);
+  });
+
+  it("gives the salary check the measures' own rates and thresholds, and the sourced seed's for the rest", () => {
+    expect(calcBase.base).toBe("data/seed/uk_tax_2026-27.json");
+    const calc = calculatorFor(file(), calcBase);
+    const y = (fy: string) => calc.years.find((x) => x.year === fy)!;
+    // Without the Budget the allowance would have risen in April 2028; with it, frozen.
+    expect([y("2028-29").pre.personal_allowance_gbp, y("2028-29").post.personal_allowance_gbp]).toEqual([12_830, 12_570]);
+    expect([y("2028-29").pre.ni_primary_threshold_gbp, y("2028-29").post.ni_primary_threshold_gbp]).toEqual([12_830, 12_570]);
+    expect([y("2028-29").pre.ni_upper_earnings_limit_gbp, y("2028-29").post.ni_upper_earnings_limit_gbp]).toEqual([51_330, 50_270]);
+    // 2027-28: nothing for employees changed.
+    expect(y("2027-28").pre).toEqual(y("2027-28").post);
+    // Rates the file does not set come from the seed and the levers.
+    expect([y("2028-29").post.basic_rate_pct, y("2028-29").post.ni_main_rate_pct, y("2028-29").post.higher_rate_pct]).toEqual([20, 8, 40]);
+    expect(committed.calculator).toEqual(calc);
   });
 
   it("keeps recordings small: economy answers trimmed to what the page reads", () => {
