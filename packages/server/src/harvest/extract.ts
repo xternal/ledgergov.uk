@@ -24,6 +24,12 @@ const FALLBACK_BETA = "server-side-fallback-2026-07-01";
  * chairing a summit or "will perhaps talk to the Treasury").
  */
 export const MIN_CONFIDENCE = 0.5;
+/**
+ * What kind of statement a candidate is. Only a commitment becomes a draft (12 Oct 2026:
+ * intake proposed a taskforce's first meeting and "will remove barriers", which editors
+ * turned down; editors' time goes on promises that can be met or not met).
+ */
+export const CANDIDATE_KINDS = ["commitment", "event", "ongoing", "aspiration"] as const;
 export const MIN_QUOTE_WORDS = 6;
 const MAX_CANDIDATES_PER_CALL = 8;
 /** Longer sources are read in parts split at paragraph breaks (a long debate day). */
@@ -73,7 +79,11 @@ Rules for each candidate:
 - policy_area: one of ${PolicyArea.options.join(", ")}; null if none fits.
 - who, how_much, when, funded_by: only what the source itself says about who is affected, the money (as words, e.g. "£400 million a year"), timing and how it is paid for. Null when the source does not say. Never estimate.
 - deadline: an ISO date only when the source names a specific date or month (use the last day of the month); otherwise null.
+- kind: "commitment" only for a future change the speaker commits to. "event" for announcing something that changes nothing for the public by itself: a meeting, a launch, a visit, a summit, a consultation opening, a report being published. "ongoing" for what is already happening or money already committed or being spent. "aspiration" for aims with no measurable outcome ("remove barriers", "improve", "strengthen", "support").
+- check: how an editor will tell later whether it was met: the number, the named thing that will exist or happen, and the date it is due by, e.g. "14,000 additional prison places open by 2031". Null when nothing could show it met or not met.
 - confidence: 0 to 1, how likely an editor applying the standard above accepts this as a promise.
+
+Prefer commitments with a measurable outcome and a date. A press release often restates a commitment made earlier ("part of our commitment to…", "the review committed us to…"): propose it when it has a measurable outcome, and say in why that it restates an earlier commitment, so editors quote the original. Label every candidate honestly: only commitments become drafts.
 
 Propose each distinct commitment once, at most ${MAX_CANDIDATES_PER_CALL}, most specific and checkable first. Return an empty list when there are none; that is a common and correct answer.`;
 
@@ -89,7 +99,7 @@ const OUTPUT_SCHEMA = {
       items: {
         type: "object",
         additionalProperties: false,
-        required: ["quote", "speaker_name", "why", "policy_area", "who", "how_much", "when", "funded_by", "deadline", "confidence"],
+        required: ["quote", "speaker_name", "why", "policy_area", "who", "how_much", "when", "funded_by", "deadline", "kind", "check", "confidence"],
         properties: {
           quote: { type: "string" },
           speaker_name: { type: "string" },
@@ -100,6 +110,8 @@ const OUTPUT_SCHEMA = {
           when: nullable({ type: "string" }),
           funded_by: nullable({ type: "string" }),
           deadline: nullable({ type: "string" }),
+          kind: { type: "string", enum: [...CANDIDATE_KINDS] },
+          check: nullable({ type: "string" }),
           confidence: { type: "number" },
         },
       },
@@ -130,6 +142,8 @@ const ModelCandidate = z.object({
     .string()
     .nullable()
     .transform((v) => (v && isoDate.test(v) ? v : null)),
+  kind: z.enum(CANDIDATE_KINDS),
+  check: shortText(300),
   confidence: z.number().transform((v) => Math.min(1, Math.max(0, v))),
 });
 const ModelOutput = z.object({ candidates: z.array(ModelCandidate) });
@@ -292,6 +306,8 @@ export function vet(
   ctx: { actors: ActorFile[]; known: string[]; model: string },
 ): { candidate: Candidate } | { reason: string } {
   if (m.confidence < MIN_CONFIDENCE) return { reason: "low confidence" };
+  if (m.kind !== "commitment") return { reason: `not a future commitment (${m.kind})` };
+  if (!m.check) return { reason: "nothing an editor could check later" };
   const spans = locate(m.quote, doc.text);
   if (!spans.length) return { reason: "quote not found verbatim in the source" };
   // Prefer an occurrence inside a contribution by the named speaker, then the first one.

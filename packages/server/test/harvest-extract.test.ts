@@ -2,6 +2,8 @@ import { describe, expect, it } from "vitest";
 import type { ActorFile } from "@ledger/schema";
 import { DEFAULT_INTAKE_MODEL, actorFor, chunks, extractFromSources, locate, type ExtractClient } from "../src/harvest/extract";
 import type { SourceDoc } from "../src/harvest/types";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 
 const actors: ActorFile[] = [
   { id: "andy-burnham", name: "Andy Burnham", kind: "person", party_id: "labour", roles: [{ title: "Prime Minister" }] },
@@ -37,8 +39,8 @@ function pressRelease(): SourceDoc {
   return { id: "govuk-energy-plan", kind: "govuk_press_release", url: "https://www.gov.uk/x", title: "New PM sets out energy plan", date: "2026-07-21", venue: "press_release", venueLabel: "Press release (HM Treasury)", text, segments: [], people: ["Andy Burnham"] };
 }
 
-type Proposal = Partial<{ quote: string; speaker_name: string; why: string; policy_area: string | null; who: string | null; how_much: string | null; when: string | null; funded_by: string | null; deadline: string | null; confidence: number }>;
-const proposal = (p: Proposal) => ({ why: "A future, checkable change.", policy_area: null, who: null, how_much: null, when: null, funded_by: null, deadline: null, confidence: 0.8, speaker_name: "", quote: "", ...p });
+type Proposal = Partial<{ quote: string; speaker_name: string; why: string; policy_area: string | null; who: string | null; how_much: string | null; when: string | null; funded_by: string | null; deadline: string | null; kind: string; check: string | null; confidence: number }>;
+const proposal = (p: Proposal) => ({ why: "A future, checkable change.", policy_area: null, who: null, how_much: null, when: null, funded_by: null, deadline: null, kind: "commitment", check: "The change happens by the date given.", confidence: 0.8, speaker_name: "", quote: "", ...p });
 
 /** A stand-in client that answers each call with the next canned body and records the requests. */
 function fakeClient(answers: (object | { stop_reason: string; text?: string; category?: string })[]) {
@@ -212,5 +214,58 @@ describe("helpers", () => {
     expect(actorFor(actors, "Someone New", "Labour")).toBe("labour");
     expect(actorFor(actors, "Someone New", "Conservative")).toBe("conservatives");
     expect(actorFor(actors, "Someone New", null)).toBeNull();
+  });
+});
+
+describe("only commitments someone can check become drafts (12 Oct 2026)", () => {
+  // The two GOV.UK press releases whose drafts editors turned down on 12 October 2026, as intake stored them.
+  const fixture = (name: string) => readFileSync(join(import.meta.dirname, "fixtures", "harvest", name), "utf8");
+  const release = (id: string, file: string, title: string, date: string, dept: string): SourceDoc => ({
+    id, kind: "govuk_press_release", url: `https://www.gov.uk/government/news/${id}`, title, date, venue: "press_release", venueLabel: `Press release (${dept})`, text: fixture(file), segments: [], people: [],
+  });
+  const safari = release("faster-front-line-delivery", "govuk-project-safari-2026-10-10.txt", "Faster front-line delivery with new Testing and Evaluation programme", "2026-10-10", "Ministry of Defence");
+  const floods = release("new-flood-taskforce", "govuk-flood-taskforce-2026-10-11.txt", "New taskforce to boost Britain’s resilience to flooding and drought", "2026-10-11", "Department for Environment, Food & Rural Affairs");
+
+  it("drops a meeting, money already being spent and an aim with nothing to check, and keeps the measurable commitment", async () => {
+    const { client } = fakeClient([
+      {
+        candidates: [
+          // Turned down on 12 Oct: what a programme will do, with no outcome or date.
+          proposal({ quote: "This programme will remove barriers to UK sites, providing a single front-door for SMEs to access facilities and improving the approval processes for trial activity.", speaker_name: "HM Government", kind: "aspiration", check: null, confidence: 0.6 }),
+          // The release's measurable commitment, restating the Strategic Defence Review's target: kept, so an editor can find the original.
+          proposal({ quote: "Project Safari is a practical demonstration of the ambitions set out in the Strategic Defence Review, which committed defence to increasing its spend with SMEs by £2.5 billion a year by summer 2028.", speaker_name: "HM Government", why: "Restates the Strategic Defence Review commitment to raise defence spending with SMEs by £2.5bn a year by summer 2028.", kind: "commitment", check: "Defence spend with SMEs £2.5bn a year higher by summer 2028", confidence: 0.7 }),
+        ],
+      },
+      {
+        candidates: [
+          // Turned down on 12 Oct: a taskforce's first meeting.
+          proposal({ quote: "Meeting for the first time this Wednesday (14 October 2026), the new Taskforce will bring Floods and Drought Minister Emma Hardy together with representatives from more than 50 organisations, including the Environment Agency, Met Office, Mayoral authorities, the Fire and Rescue Services, and the farming, water and insurance industry.", speaker_name: "HM Government", kind: "event", check: "The taskforce meets on 14 October 2026", deadline: "2026-10-14", confidence: 0.7 }),
+          // Money already committed or being spent.
+          proposal({ quote: "In 2026/27, £1.4 billion is being spent on building and repairing flood defences, with every £1 invested in flood defences preventing around £8 in economic damage.", speaker_name: "HM Government", kind: "ongoing", check: null, confidence: 0.55 }),
+          // Labelled a commitment but with nothing to check: dropped all the same.
+          proposal({ quote: "The group will share expertise, from understanding risks and assessing preparedness to supporting a longer-term resilience strategy for floods and drought, helping to protect communities and the economy.", speaker_name: "HM Government", kind: "commitment", check: null, confidence: 0.55 }),
+        ],
+      },
+    ]);
+    const report = await extractFromSources([safari, floods], { client, actors, known: [] });
+    expect(report.errors).toEqual([]);
+    expect(report.candidates.map((c) => c.quote)).toEqual([
+      "Project Safari is a practical demonstration of the ambitions set out in the Strategic Defence Review, which committed defence to increasing its spend with SMEs by £2.5 billion a year by summer 2028.",
+    ]);
+    expect(report.dropped.map((d) => d.reason).sort()).toEqual([
+      "not a future commitment (aspiration)",
+      "not a future commitment (event)",
+      "not a future commitment (ongoing)",
+      "nothing an editor could check later",
+    ]);
+  });
+
+  it("asks the model for the kind of statement and how it would be checked", async () => {
+    const { client, requests } = fakeClient([{ candidates: [] }]);
+    await extractFromSources([safari], { client, actors, known: [] });
+    const body = requests[0] as { system: { text: string }[]; output_config: { format: { schema: { properties: { candidates: { items: { required: string[] } } } } } } };
+    expect(body.output_config.format.schema.properties.candidates.items.required).toEqual(expect.arrayContaining(["kind", "check"]));
+    expect(body.system[0]!.text).toContain("\"event\" for announcing something that changes nothing for the public by itself");
+    expect(body.system[0]!.text).toContain("restates a commitment made earlier");
   });
 });
