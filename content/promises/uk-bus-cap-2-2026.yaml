@@ -20,7 +20,6 @@ preset_label: £2 bus cap, as announced
 origin: manual
 outcome_by:
   actor_id: hm-government
-editor_check_required: true
 sources:
   - title: "No 10, HM Treasury and DfT press release: Cheaper travel for millions with a third off fares, 22 Jul 2026"
     url: https://www.gov.uk/government/news/cheaper-travel-for-millions-with-a-third-off-fares
@@ -83,4 +82,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true

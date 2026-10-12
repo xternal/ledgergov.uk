@@ -13,7 +13,6 @@ deadline: "2027-04-01"
 origin: manual
 outcome_by:
   actor_id: hm-government
-editor_check_required: true
 sources:
   - title: "Press release, 18 Aug 2026: Free bus travel 24/7 for disabled people"
     url: https://www.gov.uk/government/news/free-bus-travel-247-for-disabled-people-as-prime-minister-takes-further-action-to-ease-cost-of-living
@@ -51,4 +50,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true

@@ -17,7 +17,6 @@ outcome_by:
 brought_about_by:
   actor_id: hm-government
   note: The UK Government removed the limit; the SNP is not in government at Westminster.
-editor_check_required: true
 sources:
   - title: "SNP: A Future Made in Scotland, 2024 manifesto (PDF), page 5"
     url: https://s3-eu-west-2.amazonaws.com/www.snp.org/uploads/2024/06/2024-06-20b-SNP-General-Election-Manifesto-2024_interactive.pdf
@@ -99,4 +98,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true

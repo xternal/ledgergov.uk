@@ -14,7 +14,6 @@ deadline: "2029-03-31"
 origin: manual
 outcome_by:
   actor_id: hm-government
-editor_check_required: true
 sources:
   - title: "Plan for Change: Milestones for mission-led government (PDF), 5 Dec 2024"
     url: https://assets.publishing.service.gov.uk/media/6751af4719e0c816d18d1df3/Plan_for_Change.pdf
@@ -86,6 +85,11 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true
 contracts:
   # Waiting-list validation bought "to improve the percentage of patients waiting no longer than 18 weeks … to 65% nationally by March 2026".

@@ -17,7 +17,6 @@ preset_label: Core defence at 3.5% of GDP, the 2035 NATO pledge
 origin: manual
 outcome_by:
   actor_id: hm-government
-editor_check_required: true
 sources:
   - title: "National Security Strategy 2025: Security for the British People in a Dangerous World (PDF)"
     url: https://assets.publishing.service.gov.uk/media/685ab0da72588f418862075c/E03360428_National_Security_Strategy_Accessible.pdf
@@ -133,4 +132,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true

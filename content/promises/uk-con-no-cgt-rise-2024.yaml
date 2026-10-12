@@ -12,7 +12,6 @@ status_note: >-
   later Conservative pledge on capital gains tax rates was found on 9 October 2026.
 origin: manual
 outcome_by: null
-editor_check_required: true
 sources:
   - title: "Conservative Party: Clear Plan. Bold Action. Secure Future, 2024 manifesto (PDF), page 9"
     url: https://public.conservatives.com/static/documents/GE2024/Conservative-Manifesto-GE2024.pdf#page=9
@@ -53,4 +52,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true

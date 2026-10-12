@@ -15,7 +15,6 @@ deadline: "2027-12-31"
 origin: llm_intake
 outcome_by:
   actor_id: natural-england
-editor_check_required: true
 sources:
   - title: "Natural England press release, 7 Oct 2026: Pine marten caught on camera in Suffolk nature reserve 'first'"
     url: https://www.gov.uk/government/news/pine-marten-caught-on-camera-in-suffolk-nature-reserve-first
@@ -62,4 +61,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true

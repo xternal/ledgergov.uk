@@ -16,7 +16,6 @@ deadline: "2027-11-14"
 origin: llm_intake
 outcome_by:
   actor_id: hm-government
-editor_check_required: true
 sources:
   - title: "MHCLG press release, 9 Sep 2026: Stronger protections and greater confidence for renters"
     url: https://www.gov.uk/government/news/stronger-protections-and-greater-confidence-for-renters
@@ -110,4 +109,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true

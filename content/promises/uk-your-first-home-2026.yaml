@@ -13,7 +13,6 @@ deadline: "2026-10-28"
 origin: manual
 outcome_by:
   actor_id: hm-government
-editor_check_required: true
 sources:
   - title: "MHCLG: New first-time buyer scheme to be confirmed at Budget (26 Sep 2026)"
     url: https://www.gov.uk/government/news/new-first-time-buyer-scheme-to-be-confirmed-at-budget
@@ -55,4 +54,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true

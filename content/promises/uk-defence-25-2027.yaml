@@ -18,7 +18,6 @@ preset_label: Defence at 2.6% of GDP (NATO measure), as planned for 2027
 origin: manual
 outcome_by:
   actor_id: hm-government
-editor_check_required: true
 sources:
   - title: "Hansard, House of Commons, 25 Feb 2025: Defence and Security (PM's statement)"
     url: https://hansard.parliament.uk/commons/2025-02-25/debates/8BF58F19-B32B-4716-A613-8D5738541A30/DefenceAndSecurity
@@ -82,4 +81,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true

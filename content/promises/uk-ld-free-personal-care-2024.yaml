@@ -14,7 +14,6 @@ status_note: >-
   Promised.
 origin: manual
 outcome_by: null
-editor_check_required: true
 sources:
   - title: "Liberal Democrats: For a Fair Deal, 2024 manifesto (PDF), page 37"
     url: https://www.libdems.org.uk/fileadmin/groups/2_Federal_Party/Documents/PolicyPapers/Manifesto_2024/For_a_Fair_Deal_-_Liberal_Democrat_Manifesto_2024.pdf
@@ -107,4 +106,9 @@ reviews:
     kind: editor
     on: "2026-10-12"
     note: Reviewed against its sources
+    approves: true
+  - by: Goodwill Stranger
+    kind: editor
+    on: "2026-10-12"
+    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
     approves: true
