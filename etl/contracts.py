@@ -96,7 +96,9 @@ def refs(promises_dir: Path = PROMISES_DIR) -> list[Ref]:
     out: dict[str, Ref] = {}
     for path in sorted(promises_dir.glob("*.yaml")):
         card = yaml.safe_load(path.read_text()) or {}
-        for item in card.get("contracts") or []:
+        # Cards in OpenPromises format v1 keep their contracts under links (and may add a note, which is not needed here).
+        links = card.get("links") or {}
+        for item in card.get("contracts") or links.get("contracts") or []:
             r = Ref(card["id"], item) if isinstance(item, str) else Ref(card["id"], item["ocid"], item.get("award_id"), item.get("notice_url"))
             out.setdefault(r.key, r)
     return list(out.values())

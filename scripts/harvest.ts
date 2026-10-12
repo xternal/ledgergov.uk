@@ -23,7 +23,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { createRequire } from "node:module";
 import { join } from "node:path";
-import { ActorFile, Venue } from "@ledger/schema";
+import { ActorFile, Venue, legacyActor } from "@ledger/schema";
 import { readYamlDir } from "../packages/schema/src/content-files";
 import {
   DRAFTS_DIR,
@@ -94,7 +94,7 @@ function claudeClient(): ExtractClient | null {
 
 function actors(): ActorFile[] {
   return readYamlDir(join(root, "content", "actors")).flatMap((f) => {
-    const r = ActorFile.safeParse(f.data);
+    const r = ActorFile.safeParse(legacyActor(f.data));
     return r.success ? [r.data] : [];
   });
 }

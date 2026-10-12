@@ -1,4 +1,4 @@
-import { approvedByText, editorShownAs, type PromiseFile, type Review } from "@ledger/schema";
+import { APPROVALS_NEEDED, approvedByText, editorShownAs, type PromiseFile, type Review } from "@ledger/schema";
 
 /** The card's latest review, if any. */
 export const latestReview = (f: PromiseFile): Review | null => f.reviews.at(-1) ?? null;
@@ -23,7 +23,8 @@ export const reviewerLabel = (r: Review) =>
  */
 export function checkedBy(f: PromiseFile): { who: string; on: string; automated: boolean; toCome: string } | null {
   const approved = approvedByText(f.reviews);
-  if (approved) return { who: approved.text, on: approved.on, automated: false, toCome: f.editor_check_required ? "; a second editor's check to come" : "" };
+  // What is still to come follows the approvals themselves (two from different editors), not a flag someone must remember to clear.
+  if (approved) return { who: approved.text, on: approved.on, automated: false, toCome: approved.count < APPROVALS_NEEDED ? "; a second editor's check to come" : "" };
   const r = latestReview(f);
   return r ? { who: reviewerLabel(r), on: r.on, automated: r.kind === "automated", toCome: f.editor_check_required ? "; human editor review to come" : "" } : null;
 }

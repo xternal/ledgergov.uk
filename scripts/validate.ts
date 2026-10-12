@@ -13,7 +13,7 @@ import { parse as parseYaml } from "yaml";
 import { parseSeed } from "@ledger/schema/seed";
 import { loadPeople } from "@ledger/schema/people";
 import { parseForecasts, readBacktestTable, readForecastFiles } from "@ledger/schema/forecasts";
-import { BALANCE_TOLERANCE_BN, appendOnlyIssues, contractAppendOnlyIssues, forecastAppendOnlyIssues } from "@ledger/schema";
+import { BALANCE_TOLERANCE_BN, appendOnlyIssues, comparableCard, contractAppendOnlyIssues, forecastAppendOnlyIssues } from "@ledger/schema";
 import { baseSettings, compute, createModel } from "@ledger/engine";
 import { checkDrafts } from "../packages/server/src/harvest/drafts";
 
@@ -101,12 +101,13 @@ if (baseRef) {
     const path = join(root, "content", "promises", name);
     let now: unknown;
     try {
-      now = parseYaml(readFileSync(path, "utf8"));
+      // Both sides in the one form both formats share (v1.ts), so converting a card to format v1 rewrites no history.
+      now = comparableCard(parseYaml(readFileSync(path, "utf8")));
     } catch {
       errors.push(`content/promises/${name}: removed or unreadable; published cards cannot be deleted`);
       continue;
     }
-    const was = parseYaml(git("show", `${baseRef}:content/promises/${name}`));
+    const was = comparableCard(parseYaml(git("show", `${baseRef}:content/promises/${name}`)));
     for (const issue of appendOnlyIssues(was, now)) errors.push(`content/promises/${name}: ${issue}`);
   }
   console.log(`append-only check against ${baseRef}: ${baseFiles.length} published card(s)`);
