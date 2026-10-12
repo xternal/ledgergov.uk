@@ -88,6 +88,7 @@ export function retention(): RetentionRow[] {
     { what: "Scrambled codes made from your IP address, for rate limits", howLong: "Deleted at the next daily clean-up after the day ends: within about 28 hours" },
     { what: "Your postcode", howLong: "Not kept at all" },
     { what: "Daily usage counts", howLong: "Kept. They hold no personal data" },
+    { what: "How often each page is opened: one number per page per day", howLong: "Kept, and public at /method/numbers. It holds nothing about who opened a page" },
     { what: "The testers' password cookie, if the site asks for one", howLong: `${alphaDays} days, in your browser` },
     {
       what: "Copies in database backups and our providers' logs",
@@ -113,4 +114,4 @@ export const PRIVACY_FAQ = (threshold: number): { q: string; a: string }[] => [
 ];
 
 /** One paragraph for llms.txt. */
-export const PRIVACY_SUMMARY = `LedgerGov.UK is run by ${CONTROLLER.name}, Pavel Guzhikov's company, independently of any party; ${CONTROLLER.name} is the controller and is registered with the ICO${ICO_REGISTRATION_NUMBER ? ` (${ICO_REGISTRATION_NUMBER})` : ""}. Reading stores nothing. Alerts keep only an encrypted email address or Telegram chat and what is followed, on explicit consent; follows are never shown individually. Submitters' emails are deleted once editors decide, or after ${SUBMITTER_EMAIL_RETENTION_DAYS} days. Budget predictions keep only a random code, the answers and the hour, for ${PREDICTION_RETENTION_MONTHS} months. Postcodes are never kept. Applications to be an editor are deleted within ${EDITOR_APPLICATION_RETENTION_MONTHS} months if the applicant does not join. Contact: ${PRIVACY_EMAIL}.`;
+export const PRIVACY_SUMMARY = `LedgerGov.UK is run by ${CONTROLLER.name}, Pavel Guzhikov's company, independently of any party; ${CONTROLLER.name} is the controller and is registered with the ICO${ICO_REGISTRATION_NUMBER ? ` (${ICO_REGISTRATION_NUMBER})` : ""}. Reading stores nothing about the reader; each page's daily count of opens is public at /method/numbers. Alerts keep only an encrypted email address or Telegram chat and what is followed, on explicit consent; follows are never shown individually. Submitters' emails are deleted once editors decide, or after ${SUBMITTER_EMAIL_RETENTION_DAYS} days. Budget predictions keep only a random code, the answers and the hour, for ${PREDICTION_RETENTION_MONTHS} months. Postcodes are never kept. Applications to be an editor are deleted within ${EDITOR_APPLICATION_RETENTION_MONTHS} months if the applicant does not join. Contact: ${PRIVACY_EMAIL}.`;

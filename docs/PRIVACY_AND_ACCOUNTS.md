@@ -25,6 +25,7 @@ Under UK GDPR, data revealing political opinions is special category data (Artic
 
 * Lawful basis: explicit consent at the point of subscribing, in plain words. Get legal confirmation; do a DPIA before launch.
 * Data minimisation: store only email + followed IDs. No names, no profiles, no tracking pixels in alert emails, no third-party analytics on logged-in pages.
+* Page views (since 12 October 2026): one number per page per day, counted on the server (docs/OPERATIONS.md §16); nothing about the reader is stored, a reader's own links are never counted, and the totals are public at `/method/numbers` and `/views.json`.
 * Never show individual follows. Aggregates only, and only above a threshold (e.g. "1,200 people follow this", hidden below 50).
 * Separate storage for subscriber emails, encrypted at rest, with a one-click delete that really deletes.
 * No ads, ever, and no sale or sharing of lists. State it on the page.

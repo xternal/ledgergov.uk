@@ -2,7 +2,7 @@ import type { BacktestSummary, ForecastMaker } from "@ledger/schema";
 import { fixed, gbpBn, grouped, longDate, monthYear } from "./format";
 
 /**
- * Words for /method, /method/backtest and /method/api. Plain British English,
+ * Words for /method, /method/backtest, /method/api and /method/numbers. Plain British English,
  * numbers first; every figure in a sentence comes from the data passed in.
  */
 
@@ -18,11 +18,16 @@ export const API_TITLE = "Open data API";
 export const API_DESCRIPTION =
   "LedgerGov.UK's data as JSON or CSV, free and with no key: the statement for every year, every promise card, actors, forecasts and how they scored, contracts and data editions. Every number carries its source, edition and quality.";
 
-/** The three method pages, for the sub-menu. */
+export const NUMBERS_TITLE = "Most read pages";
+export const NUMBERS_DESCRIPTION =
+  "Which pages of LedgerGov.UK readers open most, over the last 7 and 30 days. One count per page per day and nothing about the reader; the daily totals are public as JSON.";
+
+/** The method pages, for the sub-menu. */
 export const METHOD_PAGES = [
   { href: "/method", label: "How the numbers are made" },
   { href: "/method/backtest", label: "Forecasts against outturn" },
   { href: "/method/api", label: "Open data API" },
+  { href: "/method/numbers", label: "Most read pages" },
 ] as const;
 
 export const MAKER_LABEL: Record<ForecastMaker, string> = {

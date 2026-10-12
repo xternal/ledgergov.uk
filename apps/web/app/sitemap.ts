@@ -37,6 +37,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absolute("/method"), lastModified: newestEdition, changeFrequency: "weekly", priority: 0.6 },
     { url: absolute("/method/backtest"), lastModified: built, changeFrequency: "monthly", priority: 0.6 },
     { url: absolute("/method/api"), lastModified: built, changeFrequency: "monthly", priority: 0.5 },
+    // Its counts change every ten minutes; the page itself changes with the site.
+    { url: absolute("/method/numbers"), lastModified: built, changeFrequency: "daily", priority: 0.3 },
     { url: absolute("/follow"), lastModified: built, changeFrequency: "monthly", priority: 0.4 },
     { url: absolute("/budget"), lastModified: latest, changeFrequency: "daily", priority: 0.8 },
     ...BUDGET_TOPICS.filter((t) => topicCards(seed.cards, t).length > 0).map((t) => ({ url: absolute(`/budget/${t.id}`), lastModified: latest, changeFrequency: "daily" as const, priority: 0.7 })),

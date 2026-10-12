@@ -2,7 +2,7 @@ import { METHOD_PAGES } from "@/lib/method-copy";
 
 /**
  * The method pages' own menu, under the site header (where "Method" is highlighted
- * for all three). The current page is marked with aria-current; the items wrap on
+ * for all of them). The current page is marked with aria-current; the items wrap on
  * phones, so the highlighted one is always in view.
  */
 export function MethodNav({ current }: { current: (typeof METHOD_PAGES)[number]["href"] }) {
