@@ -268,6 +268,10 @@ describe("Markdown for AI assistants", () => {
     expect(md).toContain("Creative Commons Attribution 4.0");
     expect(md).toContain("Open Government Licence v3.0");
     expect(md).toContain("Checked by AI Journalist (automated)");
+    // Editors' approvals in one line; only editors on NAMED_EDITORS are named.
+    expect(md).toContain("- Checked by Pavel Guzhikov and 1 independent editor on 12 October 2026.");
+    expect(md).not.toContain("Goodwill Stranger");
+    expect(md).not.toContain("human editor review to come");
     expect(md).not.toContain("undefined");
   });
 

@@ -1,4 +1,4 @@
-import { contractChange, CORRECTION_PATH, COSTED_BY_LABEL, LADDER, type CardView, type Correction, type PromiseFile } from "@ledger/schema";
+import { approvedByText, contractChange, CORRECTION_PATH, COSTED_BY_LABEL, editorShownAs, LADDER, type CardView, type Correction, type PromiseFile } from "@ledger/schema";
 import { areaLabel, CONTRACT_STATUSES, displayName, eventLabel, gbpBnText, moneyText, statusLabel, ukDate } from "../alerts/labels";
 import { OGL, OPEN_PARLIAMENT_LICENCE, OWN_WORK_LICENCE, quoteLicence } from "../api/envelope";
 import { absoluteUrl, areaPath, cardCostText, cardHeadline, cardLastUpdated, SITE_NAME, statusCounts, type SeoContext } from "./cards";
@@ -19,7 +19,9 @@ const link = (text: string, url: string) => `[${linkText(text)}](${url})`;
 
 /** Our automated reviewer was called "Junior Editor" until 8 Oct 2026; readers see its current name (apps/web/lib/reviews.ts). */
 const REVIEWER_NAME: Record<string, string> = { "Junior Editor": "AI Journalist" };
-const reviewer = (r: PromiseFile["reviews"][number]) => `${REVIEWER_NAME[r.by] ?? r.by} (${r.kind === "automated" ? "automated" : r.kind === "legal" ? "legal review" : "editor"})`;
+/** Editors not on NAMED_EDITORS are counted, never named (packages/schema/src/approvals.ts). */
+const reviewer = (r: PromiseFile["reviews"][number]) =>
+  r.kind === "editor" ? (editorShownAs(r.by) === r.by ? `${r.by} (editor)` : editorShownAs(r.by)) : `${REVIEWER_NAME[r.by] ?? r.by} (${r.kind === "automated" ? "automated" : "legal review"})`;
 
 /** "Costs £1.5bn to £1.9bn a year (central £1.7bn by Labour Party, party's own figure)", or why there is no figure. */
 function costLine(c: CardView): string {
@@ -130,7 +132,15 @@ export function cardMarkdown(c: CardView, ctx: SeoContext, level: 1 | 2 = 1): st
   section("Sources", f.sources.map((s) => `- ${link(s.title, s.url)}`));
   section(
     "Checks",
-    f.reviews.length ? [...f.reviews].reverse().map((r) => `- Checked by ${reviewer(r)} on ${ukDate(r.on)}${f.editor_check_required ? "; human editor review to come" : ""}.`) : [],
+    (() => {
+      // Editors' approvals as one line ("Pavel Guzhikov and 1 independent editor"), then every other check, newest first.
+      const approved = approvedByText(f.reviews);
+      const rest = f.reviews.filter((r) => !(r.kind === "editor" && r.approves === true)).reverse();
+      return [
+        ...(approved ? [`- Checked by ${approved.text} on ${ukDate(approved.on)}${f.editor_check_required ? "; a second editor's check to come" : ""}.`] : []),
+        ...rest.map((r) => `- Checked by ${reviewer(r)} on ${ukDate(r.on)}${f.editor_check_required && !approved ? "; human editor review to come" : ""}.`),
+      ];
+    })(),
   );
   return out.join("\n").trimEnd() + "\n";
 }

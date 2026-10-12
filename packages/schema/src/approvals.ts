@@ -116,3 +116,32 @@ export function appendReviewText(text: string, review: Review, dropEditorCheck =
   const out = dropEditorCheck ? lines.filter((l) => !/^editor_check_required:\s*(true|false)\s*$/.test(l)) : lines;
   return `${out.join("\n")}\n`;
 }
+
+/**
+ * Editors the site names. Every other editor is counted, not named ("Pavel Guzhikov and
+ * 1 independent editor"), until they choose to be named; add their handle here then.
+ * Their handles stay in the card files, which are public: reviews are append-only.
+ */
+export const NAMED_EDITORS: readonly string[] = ["Pavel Guzhikov"];
+
+/** An editor as readers see them: their handle if they are named, otherwise "an independent editor". */
+export const editorShownAs = (handle: string) => (NAMED_EDITORS.includes(handle) ? handle : "an independent editor");
+
+/**
+ * Who approved the card, as the site shows it ("Pavel Guzhikov and 1 independent editor",
+ * "Pavel Guzhikov (editor)", "an independent editor"), with the day of the latest
+ * approval; null before any editor has approved it.
+ */
+export function approvedByText(reviews: readonly Review[]): { text: string; on: string; count: number } | null {
+  const approvals = reviews.filter((r) => r.kind === "editor" && r.approves === true);
+  if (!approvals.length) return null;
+  const handles = [...new Set(approvals.map((r) => r.by))];
+  const named = handles.filter((h) => NAMED_EDITORS.includes(h));
+  const others = handles.length - named.length;
+  const counted = !others ? [] : others > 1 ? [`${others} independent editors`] : [named.length ? "1 independent editor" : "an independent editor"];
+  const parts = [...named, ...counted];
+  const list = parts.length === 1 ? parts[0]! : `${parts.slice(0, -1).join(", ")} and ${parts.at(-1)}`;
+  const text = others ? list : `${list} (editor${named.length > 1 ? "s" : ""})`;
+  const on = approvals.map((r) => r.on).sort().at(-1)!;
+  return { text, on, count: handles.length };
+}
