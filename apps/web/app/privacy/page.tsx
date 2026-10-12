@@ -95,9 +95,9 @@ function ToConfirm() {
   return <span className="whitespace-nowrap text-caption font-medium text-muted">(to confirm)</span>;
 }
 
-function Feature({ title, children }: { title: string; children: React.ReactNode }) {
+function Feature({ title, id, children }: { title: string; id?: string; children: React.ReactNode }) {
   return (
-    <div className="grid gap-1.5">
+    <div id={id} className="grid scroll-mt-10 gap-1.5">
       <h3 className={h3}>{title}</h3>
       {children}
     </div>
@@ -182,8 +182,8 @@ export default function PrivacyPage() {
         <div className="grid gap-4">
           <h1 className="m-0 text-[clamp(30px,4.4vw,44px)] font-semibold leading-[1.06] tracking-[-0.035em]">{PRIVACY_TITLE}</h1>
           <p className="m-0 text-lead text-muted">
-            LedgerGov.UK keeps as little about you as it can. This page says what we keep when you follow something, send something in or look up your MP,
-            why, for how long, and how to have it deleted.
+            LedgerGov.UK keeps as little about you as it can. This page says what we keep when you follow something, send something in, predict the Budget or
+            look up your MP, why, for how long, and how to have it deleted.
           </p>
           <ul className="m-0 grid list-disc gap-1.5 rounded-control bg-sunk py-3.5 pl-8 pr-4">
             <li>Reading the site stores nothing about you: no tracking cookies, no analytics scripts, no ads.</li>
@@ -252,6 +252,14 @@ export default function PrivacyPage() {
               Claude to suggest card details; neither gets your email or name.
             </p>
           </Feature>
+          <Feature title="Predicting the Budget" id="predict">
+            <p className="m-0">A random code for your link, your answers and the hour you sent them. Nothing about you: no name, email, IP address or cookie.</p>
+            <p className="m-0 text-muted">
+              We use them to show your predictions at your link, to add them to the totals of how everyone predicted, and to score them against the Budget.
+              Totals appear only once {threshold} or more people have predicted. Anyone with your link can see your answers, so share it only where you
+              want to.
+            </p>
+          </Feature>
           <Feature title="Your MP">
             <p className="m-0">Nothing. We use your postcode once to find your constituency, then forget it.</p>
             <p className="m-0 text-muted">
@@ -300,7 +308,7 @@ export default function PrivacyPage() {
               membership or political role you declare, your explicit consent (Article 9(2)(a)), which you give by telling us.
             </li>
             <li>
-              <b className="font-semibold">What you send in, Your MP searches, spam checks, usage counts and hosting logs:</b> our legitimate interest in
+              <b className="font-semibold">What you send in, Budget predictions, Your MP searches, spam checks, usage counts and hosting logs:</b> our legitimate interest in
               running a useful, secure site (Article 6(1)(f)). Each uses as little as it can, and none is used to profile you or decide anything about you.
             </li>
           </ul>
@@ -365,6 +373,7 @@ export default function PrivacyPage() {
                 "Press “Stop all alerts and delete my data” on that page, use the unsubscribe link in any email, or send /stop on Telegram.",
               ],
               ["Delete your email from a submission", "Open the link in your receipt and press the button."],
+              ["Delete your Budget predictions", `Write to ${PRIVACY_EMAIL} with your link. Nothing else ties them to you, so the link is all we need.`],
               [
                 "Anything else",
                 `A copy of your data, a correction, or an objection to how we use it: write to ${PRIVACY_EMAIL}. We reply within one month, and may ask you to show the address is yours.`,

@@ -16,3 +16,4 @@ export * from "./forecasts";
 export * from "./budget";
 export * from "./approvals";
 export * from "./v1";
+export * from "./predict";

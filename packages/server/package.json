@@ -15,7 +15,8 @@
     "./alpha": "./src/alpha.ts",
     "./mp": "./src/mp/index.ts",
     "./api": "./src/api/index.ts",
-    "./seo": "./src/seo/index.ts"
+    "./seo": "./src/seo/index.ts",
+    "./predict": "./src/predict/index.ts"
   },
   "scripts": {
     "test": "vitest run",

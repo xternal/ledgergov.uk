@@ -12,6 +12,9 @@ import { followOptions, followWindows } from "@/app/follow/targets";
 import { JsonLd } from "@/components/JsonLd";
 import { OPEN_GRAPH, seoContext } from "@/lib/site";
 import { scorecardCopy, scorecardPath } from "@/lib/scorecard";
+import { predictOpen } from "@ledger/schema";
+import { currentRound } from "@/lib/predict";
+import { closingTime, PREDICT_PATH, predictTitle } from "@/lib/predict-copy";
 
 /** Re-render hourly, so the page turns from "to watch" to "what it did" on Budget day without a deploy. */
 export const revalidate = 3600;
@@ -57,6 +60,8 @@ export default function BudgetPage() {
   const when = dayDate(BUDGET.date);
   // The Treasury's own table of measures for the newest fiscal event read so far: this Budget's, from the day it is read.
   const scorecard = getScorecards()[0] ?? null;
+  const predict = currentRound();
+  const predicting = predictOpen(predict);
   const structuredData = collectionJsonLd(
     {
       path: "/budget",
@@ -113,6 +118,17 @@ export default function BudgetPage() {
               options={followOptions()}
             />
           </div>
+          <a
+            href={PREDICT_PATH}
+            className="grid gap-1 rounded-panel bg-sunk px-4 py-3 text-ink no-underline shadow-[inset_0_0_0_1px_var(--line)] hover:shadow-[inset_0_0_0_1px_var(--ink)]"
+          >
+            <span className="text-body font-semibold">{predicting ? predictTitle(predict) : "How readers predicted the Budget"}</span>
+            <span className="text-label text-muted">
+              {predicting
+                ? `${predict.questions.length} questions on what the Chancellor will announce. See how everyone else predicted, and share yours. Open until ${closingTime(predict.closes_at)} on Budget day.`
+                : "What readers expected before the statement, checked against the Budget documents."}
+            </span>
+          </a>
         </header>
 
         <dl className="m-0 grid grid-cols-2 gap-x-6 gap-y-5 border-y border-line py-5 sm:grid-cols-4">

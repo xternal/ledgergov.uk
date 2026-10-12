@@ -1,0 +1,292 @@
+# Predict the Budget: the questions for the Autumn Budget 2026, asked at /budget/predict.
+#
+# Status: DRAFT, waiting for two editors to approve the wording (delete this line when they have). Not live until then.
+#
+# Rules for every question (docs/PREDICT_THE_BUDGET.md):
+# - It asks what the Budget WILL do, never what it should, in plain words with no judgement.
+# - Its answers cover every outcome, do not overlap, and one Budget document settles which is right.
+# - The same standard for every party: no question is about a party, only about the government's decisions.
+# - `why` says where things stand and what is being discussed, with dated sources; `settled_by` names the document.
+# - Ids (the set's, each question's and each option's) are stored with readers' predictions:
+#   once predictions open, never change an id or what an option means. Fixing a typo in the words is fine.
+#
+# After the Budget, two editors fill in `answer` (an option id) and `evidence_url` (the page that shows it,
+# with #page=NN for a PDF) for each question. Predictions close at `closes_at`, when the statement starts.
+id: autumn-budget-2026
+budget: Autumn Budget 2026
+budget_date: "2026-10-28"
+# 12:30 GMT, after Prime Minister's Questions (clocks go back on 25 October). Change it here if the time moves.
+closes_at: "2026-10-28T12:30:00Z"
+questions:
+  - id: income-tax-rates
+    topic: Income tax rates
+    text: Will the Budget raise any of the three main rates of income tax (20%, 40% and 45%)?
+    options:
+      - id: "yes"
+        label: Yes, at least one goes up
+        short: A rate goes up
+      - id: "no"
+        label: No, none goes up
+        short: No rise
+    why: >-
+      The main rates on earnings and pensions in England, Wales and Northern Ireland are 20%, 40% and 45% in
+      2026-27. Labour's 2024 manifesto promised not to raise income tax, National Insurance or VAT on working
+      people. On 7 September the Chancellor, John Healey, said the government keeps that promise, and would not
+      otherwise speculate on tax. Rises already announced for income from savings, dividends and property do not
+      count here, and nor do Scotland's own rates.
+    sources:
+      - title: "HM Treasury: Budget 2025, overview of tax rates, Annex A (Nov 2025)"
+        url: https://www.gov.uk/government/publications/budget-2025-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances
+      - title: "City AM: Healey bats away tax questions (7 Sep 2026)"
+        url: https://www.cityam.com/healey-bats-away-tax-questions-as-growth-is-pathway-out-of-debt/
+    settled_by: >-
+      The overview of tax legislation and rates published with the Budget (income tax rates), and the Budget
+      report's table of policy decisions. A rise announced for any later year counts.
+
+  - id: personal-allowance
+    topic: Tax-free allowance
+    text: Will the Budget raise the personal allowance (£12,570), the income you can have before paying income tax, for any year before April 2031?
+    options:
+      - id: "yes"
+        label: Yes, it goes up
+        short: Allowance up
+      - id: "no"
+        label: No, the freeze stays
+        short: Freeze stays
+    why: >-
+      The personal allowance has been £12,570 since April 2021. The November 2025 Budget kept it, with the
+      other income tax thresholds, at that level until April 2031. On 20 July, as he became Prime Minister, Andy
+      Burnham said the allowance would be looked at in the Budget, but that a change would be difficult given the
+      public finances.
+    sources:
+      - title: "HM Treasury: Budget 2025, section 3.2 (Nov 2025)"
+        url: https://www.gov.uk/government/publications/budget-2025-document/budget-2025-html
+      - title: "Professional Adviser: Burnham on the personal allowance (22 Jul 2026)"
+        url: https://www.professionaladviser.com/news/4533237/burnham-income-tax-allowance-increase-suggestion-reports
+    settled_by: >-
+      The overview of tax legislation and rates (income tax allowances) and the Budget report's table of policy
+      decisions. A rise for any tax year up to and including 2030-31 counts.
+
+  - id: national-insurance
+    topic: National Insurance
+    text: Will the Budget change the main rate of National Insurance for employees (8%) or for employers (15%)?
+    options:
+      - id: "yes"
+        label: Yes, at least one changes
+        short: A rate changes
+      - id: "no"
+        label: No, both stay the same
+        short: No change
+    why: >-
+      Employees pay 8% on earnings between £242 and £967 a week. Employers pay 15% above £96 a week, a rate
+      raised from 13.8% in April 2025. The government has said it keeps its promise not to raise National
+      Insurance on working people. Tax Policy Associates, a research group, has argued that a 1p cut in the
+      employees' rate would help most workers more than a higher personal allowance.
+    sources:
+      - title: "HM Treasury: Budget 2025, overview of tax rates, Annex A (Nov 2025)"
+        url: https://www.gov.uk/government/publications/budget-2025-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances
+      - title: "Tax Policy Associates: cut National Insurance, not raise the allowance (21 Jul 2026)"
+        url: https://taxpolicy.org.uk/2026/07/21/personal-allowance-or-national-insurance-cut/
+    settled_by: >-
+      The overview of tax legislation and rates (Class 1 National Insurance rates). A change up or down,
+      announced for any later year, counts.
+
+  - id: vat-electricity
+    topic: VAT on electricity
+    text: Will the Budget keep the 0% rate of VAT on household electricity in Great Britain after 31 March 2027?
+    options:
+      - id: "yes"
+        label: Yes, it lasts longer
+        short: 0% kept longer
+      - id: "no"
+        label: No, it ends as planned
+        short: Ends in March
+    why: >-
+      From 1 October 2026 to 31 March 2027, household electricity in England, Scotland and Wales carries no VAT
+      instead of the usual 5%; gas is unchanged. Andy Burnham announced it on 21 July, his second day as Prime
+      Minister, and said that anything further would be decided at the Budget.
+    sources:
+      - title: "HMRC: temporary zero rate of VAT for domestic electricity (8 Sep 2026)"
+        url: https://www.gov.uk/government/publications/revenue-and-customs-brief-10-2026-temporary-zero-rate-of-vat-for-domestic-electricity-in-great-britain/temporary-zero-rate-of-vat-for-domestic-electricity-in-great-britain
+      - title: "MoneySavingExpert: VAT cut on electricity bills (22 Jul 2026)"
+        url: https://www.moneysavingexpert.com/news/2026/07/electricity-bills-vat-cut-martin-lewis-analysis/
+    settled_by: >-
+      The Budget report's table of policy decisions and the overview of tax legislation and rates (VAT). Any
+      extension past 31 March 2027 counts, however short.
+
+  - id: fuel-duty
+    topic: Fuel duty
+    text: What will fuel duty on petrol and diesel be on 1 January 2027? It is 52.95p a litre now, and the law says it rises to 55.95p then.
+    options:
+      - id: no-rise
+        label: "52.95p or less: no rise"
+        short: No rise
+      - id: smaller-rise
+        label: More than 52.95p but less than 55.95p
+        short: A smaller rise
+      - id: full-rise
+        label: 55.95p or more
+        short: The full rise
+    why: >-
+      A 5p cut in fuel duty has applied since March 2022. Extended several times, it now runs to 31 December
+      2026, with the rate due to rise to 55.95p on 1 January and to 57.95p on 1 March 2027. HMRC says the
+      government will confirm the final rates at this Budget. In September the Chancellor said he was conscious
+      of the pressure a rise would put on people.
+    sources:
+      - title: "HMRC: amended fuel duty rates 2026 to 2027 (22 May 2026)"
+        url: https://www.gov.uk/government/publications/amended-fuel-duty-rates-for-2026-to-2027/amended-fuel-duty-rates-2026-to-2027
+      - title: "Reuters: options for Healey's 28 October Budget (7 Oct 2026, republished)"
+        url: https://www.933thedrive.com/2026/10/07/factbox-options-for-uk-finance-minister-healey-in-october-28-budget/
+    settled_by: >-
+      The fuel duty rates in the overview of tax legislation and rates: the main rate for petrol and diesel
+      from 1 January 2027.
+
+  - id: capital-gains-tax
+    topic: Capital gains tax
+    text: What will the top main rate of capital gains tax be once the Budget's changes apply? It is 24% now.
+    options:
+      - id: lower
+        label: Lower than 24%
+        short: Cut
+      - id: same
+        label: 24%, no change
+        short: Stays at 24%
+      - id: up-below-40
+        label: Above 24% but below 40%
+        short: Up, below 40%
+      - id: 40-or-more
+        label: 40% or more
+        short: 40% or more
+    why: >-
+      Gains on assets such as shares and second homes are taxed at 18% within the basic-rate band and 24% above
+      it. Taxing gains at the same rates as income (20%, 40% and 45%) has been widely discussed before this
+      Budget; the Centre for the Analysis of Taxation estimates it could raise about £14bn a year. HMRC's own
+      estimates show that large rises can raise less, or lose money, because people sell fewer assets.
+    sources:
+      - title: "HM Treasury: Budget 2025, overview of tax rates, Annex A (Nov 2025)"
+        url: https://www.gov.uk/government/publications/budget-2025-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances
+      - title: "City AM: which taxes will Burnham and Healey raise? (25 Aug 2026)"
+        url: https://www.cityam.com/budget-2026-which-taxes-will-burnham-and-healey-hike/
+      - title: "HMRC: direct effects of illustrative tax changes (Jan 2025)"
+        url: https://www.gov.uk/government/statistics/direct-effects-of-illustrative-tax-changes/direct-effects-of-illustrative-tax-changes-bulletin-january-2025
+    settled_by: >-
+      The capital gains tax rates in the overview of tax legislation and rates, and the Budget report's table
+      of policy decisions: the highest main rate, from whatever date the Budget sets. Carried interest, taxed
+      under its own rules, does not count.
+
+  - id: tax-measures-total
+    topic: Tax rises in total
+    text: Taken together, how much more tax will the Budget's measures raise in 2029-30?
+    options:
+      - id: none
+        label: "Nothing more: no net rise, or a net cut"
+        short: No net rise
+      - id: under-5bn
+        label: Less than £5bn
+        short: Under £5bn
+      - id: 5-15bn
+        label: £5bn to less than £15bn
+        short: £5bn to £15bn
+      - id: 15-25bn
+        label: £15bn to less than £25bn
+        short: £15bn to £25bn
+      - id: 25bn-or-more
+        label: £25bn or more
+        short: £25bn or more
+    why: >-
+      By the Office for Budget Responsibility's count, the November 2025 Budget's tax measures raise £26bn in
+      2029-30. Since then forecasters say higher borrowing costs have squeezed the public finances, and Reuters
+      expects some tax rises at this Budget. The government has also promised not to raise income tax,
+      National Insurance or VAT on working people.
+    sources:
+      - title: "OBR: Economic and fiscal outlook, paragraph 1.17 (Nov 2025)"
+        url: https://obr.uk/efo/economic-and-fiscal-outlook-november-2025/
+      - title: "Reuters: options for Healey's 28 October Budget (7 Oct 2026, republished)"
+        url: https://www.933thedrive.com/2026/10/07/factbox-options-for-uk-finance-minister-healey-in-october-28-budget/
+    settled_by: >-
+      The OBR's Economic and fiscal outlook published with the Budget: the net effect of the Budget's tax
+      measures on receipts in 2029-30, in its chapter on policy measures (the Budget report shows the same
+      measures).
+
+  - id: current-budget-2029-30
+    topic: Day-to-day budget
+    text: "What will the OBR forecast for the current budget in 2029-30: taxes minus day-to-day spending?"
+    options:
+      - id: deficit
+        label: A deficit
+        short: A deficit
+      - id: under-10bn
+        label: A surplus of less than £10bn
+        short: Surplus under £10bn
+      - id: 10-20bn
+        label: A surplus of £10bn to less than £20bn
+        short: Surplus £10bn–£20bn
+      - id: 20-30bn
+        label: A surplus of £20bn to less than £30bn
+        short: Surplus £20bn–£30bn
+      - id: 30bn-or-more
+        label: A surplus of £30bn or more
+        short: Surplus of £30bn+
+    why: >-
+      The government's main fiscal rule is that taxes cover day-to-day spending, so that it borrows only to
+      invest; at this Budget it is judged on 2029-30. The OBR forecast a surplus that year of £21.7bn in
+      November 2025 and £24bn in March 2026. The Resolution Foundation says higher debt interest could add £10bn
+      to £15bn to borrowing in 2029-30. The Chancellor has said he will keep to the fiscal rules with a buffer.
+    sources:
+      - title: "OBR: Economic and fiscal outlook (3 Mar 2026)"
+        url: https://obr.uk/efo/economic-and-fiscal-outlook-march-2026/
+      - title: "Resolution Foundation: Healey faces Budget balancing act (22 Sep 2026)"
+        url: https://www.resolutionfoundation.org/press-releases/healey-faces-budget-balancing-act-as-rising-inflation-begins-to-hit-home/
+      - title: "HM Treasury: Chancellor's letter on the Budget date (31 Jul 2026)"
+        url: https://www.gov.uk/government/publications/chancellor-letter-to-the-treasury-select-committee-tsc-budget-2026-date/chancellor-letter-to-the-treasury-select-committee-tsc
+    settled_by: >-
+      The OBR's Economic and fiscal outlook published with the Budget: its central forecast of the current
+      budget balance in 2029-30, in £ billion, as the OBR publishes it.
+
+  - id: defence-three-percent
+    topic: Defence spending
+    text: Will the Budget set a year by which defence spending reaches 3% of GDP?
+    options:
+      - id: "yes"
+        label: Yes, it names a year
+        short: Year named
+      - id: "no"
+        label: No year is named
+        short: No year named
+    why: >-
+      John Healey resigned as Defence Secretary in June, saying the government lacked ambition on defence
+      spending, and had called for 3% of GDP by 2030. LBC reported on 29 August that as Chancellor he will not
+      commit to a date in this Budget: the Treasury says the next spending review is the place to set one, and
+      the Budget's priority is to fund the existing defence investment plan.
+    sources:
+      - title: "LBC: Healey will not commit to 3% by 2030 in the Budget (29 Aug 2026)"
+        url: https://www.lbc.co.uk/article/healey-defence-budget-latest-5Hjdgf4_2/
+    settled_by: >-
+      The Budget report. It counts if the documents name a year for spending 3% of GDP on defence; an ambition
+      with no year, or a year for another level, does not.
+
+  - id: bank-surcharge
+    topic: Tax on banks
+    text: Will the Budget raise the bank surcharge, the extra corporation tax on banks' profits, above 3%?
+    options:
+      - id: "yes"
+        label: Yes, it goes up
+        short: Surcharge up
+      - id: "no"
+        label: No, it stays at 3% or less
+        short: Stays at 3%
+    why: >-
+      Banks pay corporation tax at 25% plus a surcharge of 3% on profits above £100m, cut from 8% in April 2023.
+      Several opposition parties and trade unions have called for higher taxes on banks; bank chiefs have warned
+      against it. Reuters reported in October that bank bosses left a meeting with the Chancellor unsure of his
+      plans.
+    sources:
+      - title: "HM Treasury: Budget 2025, overview of tax rates, Annex A (Nov 2025)"
+        url: https://www.gov.uk/government/publications/budget-2025-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances
+      - title: "City AM: which taxes will Burnham and Healey raise? (25 Aug 2026)"
+        url: https://www.cityam.com/budget-2026-which-taxes-will-burnham-and-healey-hike/
+      - title: "Reuters: options for Healey's 28 October Budget (7 Oct 2026, republished)"
+        url: https://www.933thedrive.com/2026/10/07/factbox-options-for-uk-finance-minister-healey-in-october-28-budget/
+    settled_by: >-
+      The overview of tax legislation and rates (bank surcharge) and the Budget report's table of policy
+      decisions. A new or larger levy of another kind on banks does not count.

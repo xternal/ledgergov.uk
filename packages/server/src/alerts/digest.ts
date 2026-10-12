@@ -2,6 +2,7 @@ import type { Db } from "../db";
 import { pruneSpamState } from "../spam";
 import { prunePendingAdditions, pruneUnconfirmed } from "../follow";
 import { pruneSubmitterEmails, pruneTurnedDownSubmissions } from "../intake/submissions";
+import { prunePredictions } from "../predict/service";
 import { countSent, deliver, inList, type AlertContext } from "./fanout";
 import { errorText } from "./log";
 import type { MessageEvent } from "./messages";
@@ -76,14 +77,16 @@ export interface MaintenanceReport {
   submitterEmails: number;
   /** Turned-down submissions (rejected or duplicate) 12 months after the editors decided. */
   turnedDown: number;
+  /** Readers' Budget predictions 13 months after they were made. */
+  predictions: number;
   outbox: number;
 }
 
 /**
  * Daily: delete delivery records older than 35 days, sign-ups and additions
  * never confirmed within 7 days (Follow service), submitters' emails older
- * than 90 days, turned-down submissions 12 months after the decision, yesterday's rate-limit salts and buckets and expired spam
- * challenges, and old development outbox mail.
+ * than 90 days, turned-down submissions 12 months after the decision, Budget predictions 13 months after they were made,
+ * yesterday's rate-limit salts and buckets and expired spam challenges, and old development outbox mail.
  */
 export async function runMaintenance(db: Db, now = new Date()): Promise<MaintenanceReport> {
   const cutoff = new Date(now.getTime() - DELIVERY_RETENTION_DAYS * 24 * 60 * 60 * 1000).toISOString();
@@ -93,6 +96,7 @@ export async function runMaintenance(db: Db, now = new Date()): Promise<Maintena
   const pendingAdditions = await prunePendingAdditions(db, now);
   const submitterEmails = await pruneSubmitterEmails(db, now);
   const turnedDown = await pruneTurnedDownSubmissions(db, now);
+  const predictions = await prunePredictions(db, now);
   await pruneSpamState(db, now);
-  return { deliveries, unconfirmed: Number(unconfirmed) || 0, pendingAdditions, submitterEmails, turnedDown, outbox };
+  return { deliveries, unconfirmed: Number(unconfirmed) || 0, pendingAdditions, submitterEmails, turnedDown, predictions, outbox };
 }
