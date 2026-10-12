@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { constituencies, constituencyList } from "@ledger/server/mp";
-import { getPeople, getScorecards, getSeed, getVintages } from "@/lib/data";
+import { getHouseholdSnapshots, getPeople, getScorecards, getSeed, getVintages } from "@/lib/data";
 import { areaPath } from "@ledger/server/seo";
 import { BUDGET_TOPICS, topicCards } from "@/lib/budget";
 import { getReckoner } from "@/lib/reckoner";
@@ -10,7 +10,7 @@ import { PRIVACY_UPDATED } from "@/lib/privacy-copy";
 import { PREDICT_PATH } from "@/lib/predict-copy";
 
 /**
- * Every public page: home, the promise ledger and its policy-area pages, the Budget pages and scorecards, people and long-term spending,
+ * Every public page: home, the promise ledger and its policy-area pages, the Budget pages, scorecards and household pages, people and long-term spending,
  * Your MP and its 650 constituency pages, the method pages, the privacy notice, each card and each actor, what each
  * tax change raises (/tax and one page per change, dated by the data build that last checked them), and Predict the
  * Budget (but no reader's own predictions). Dates come
@@ -46,6 +46,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...getScorecards().map((sc) => ({ url: absolute(`/budget/scorecard/${sc.id}`), lastModified: sc.date, changeFrequency: "yearly" as const, priority: 0.7 })),
     // Predict the Budget: the form only; each reader's predictions (/budget/predict/r/<code>) is a private-by-link page, never listed.
     { url: absolute(PREDICT_PATH), lastModified: built, changeFrequency: "daily", priority: 0.7 },
+    // What a Budget does to households changes only when the job is run again: date it by that run.
+    ...getHouseholdSnapshots().map((h) => ({ url: absolute(`/budget/household/${h.id}`), lastModified: h.computed_at.slice(0, 10), changeFrequency: "yearly" as const, priority: 0.7 })),
     { url: absolute("/editors"), lastModified: EDITORS_PAGE_UPDATED, changeFrequency: "monthly", priority: 0.4 },
     { url: absolute("/privacy"), lastModified: PRIVACY_UPDATED, changeFrequency: "yearly", priority: 0.3 },
     { url: absolute("/feeds"), lastModified: latest, changeFrequency: "daily", priority: 0.4 },

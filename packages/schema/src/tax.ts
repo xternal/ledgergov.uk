@@ -1,6 +1,17 @@
 import { z } from "zod";
 import { Quality } from "./provenance";
 
+/** A page a tax seed's figures come from: the URL, and the ETL edition the figures were checked against. */
+export const TaxSource = z.object({
+  title: z.string().min(1),
+  url: z.url(),
+  /** What it gives: "personal allowance, bands and rates", "employee National Insurance thresholds and rates". */
+  gives: z.string().min(1),
+  /** The committed ETL edition holding the same figures (data/build/observations/govuk_tax_rates/<vintage>.csv). */
+  vintage: z.string().min(1).optional(),
+});
+export type TaxSource = z.infer<typeof TaxSource>;
+
 /** Income tax and employee NI parameters for the Your share calculator (PRD F3). */
 export const TaxSeed = z.object({
   meta: z
@@ -11,10 +22,15 @@ export const TaxSeed = z.object({
       quality: Quality,
       method_note: z.string().min(1),
       intended_sources: z.array(z.url()).optional(),
+      /** Where each figure comes from; required unless the values are a training placeholder. */
+      sources: z.array(TaxSource).optional(),
     })
     .superRefine((m, ctx) => {
       if (m.quality === "training" && !m.method_note.includes("TODO(source)"))
         ctx.addIssue({ code: "custom", message: "training values need a TODO(source) note" });
+      // The ETL's tax.json lists its pages as intended_sources; hand-written seeds give sources with what each page gives.
+      if (m.quality === "sourced" && !m.sources?.length && !m.intended_sources?.length)
+        ctx.addIssue({ code: "custom", message: "sourced values need their sources (title and URL)" });
     }),
   income_tax: z.object({
     personal_allowance_gbp: z.number().nonnegative(),

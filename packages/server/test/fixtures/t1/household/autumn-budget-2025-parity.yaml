@@ -1,0 +1,285 @@
+# Test fixture, never published: Autumn Budget 2025 with PolicyEngine's own pre-Budget inputs and timing
+# (uk-autumn-budget-dashboard reforms.py): thresholds uprated by CPIH from 2028, dividends from 2027-28 and
+# savings and property from 2028-29 in its baseline, no National Insurance thresholds. Recorded with
+#   pnpm household -- record autumn-budget-2025-parity --file packages/server/test/fixtures/t1/household/autumn-budget-2025-parity.yaml
+# and compared with PolicyEngine's published deciles in test/t1-household-rehearsal.test.ts.
+event:
+  id: autumn-budget-2025-parity
+  name: Autumn Budget 2025, as PolicyEngine modelled it
+  date: '2025-11-26'
+kind: rehearsal
+years:
+- 2026-27
+- 2027-28
+- 2028-29
+headline_year: 2027-28
+side_year: 2026-27
+note: 'Test only, never published: PolicyEngine''s own inputs for its December 2025 analysis (its pre-Budget values and dates, without the National Insurance thresholds), so the recording can be compared
+  like for like with its published deciles (test/t1-household-rehearsal.test.ts).'
+sources:
+- id: budget-2025
+  title: Budget 2025 (HC 1492)
+  publisher: HM Treasury
+  url: https://assets.publishing.service.gov.uk/media/6929b353345e31ab14ecf735/E03444720_Budget_2025_Web_Accessible.pdf
+  published_on: '2025-11-26'
+  licence: Open Government Licence v3.0
+- id: policyengine-dashboard-2025
+  title: PolicyEngine, UK Autumn Budget dashboard, pre-Budget baseline (reforms.py)
+  publisher: PolicyEngine
+  url: https://github.com/PolicyEngine/uk-autumn-budget-dashboard-2026/blob/main/src/uk_budget_data/reforms.py
+measures:
+- id: two-child-limit
+  name: Remove the two-child limit in Universal Credit from April 2026
+  source:
+    source: budget-2025
+    page: 94
+    where: Table 4.1, line 6
+  scorecard_line: 6
+  effective: '2026-04-06'
+  modelled: true
+  parameters:
+  - path: gov.dwp.universal_credit.elements.child.limit.child_count
+    unit: child
+    label: Children the Universal Credit child element is paid for
+    pre:
+      2026-27: 2
+      2027-28: 2
+      2028-29: 2
+    post:
+      2026-27: unlimited
+      2027-28: unlimited
+      2028-29: unlimited
+    pre_source:
+      source: policyengine-dashboard-2025
+      where: pre-Autumn Budget baseline
+      note: PolicyEngine's own pre-Budget value and timing, for a like-for-like check.
+  - path: gov.dwp.tax_credits.child_tax_credit.limit.child_count
+    unit: int
+    label: Children Child Tax Credit is paid for (legacy claims)
+    pre:
+      2026-27: 2
+      2027-28: 2
+      2028-29: 2
+    post:
+      2026-27: unlimited
+      2027-28: unlimited
+      2028-29: unlimited
+    pre_source:
+      source: policyengine-dashboard-2025
+      where: pre-Autumn Budget baseline
+      note: PolicyEngine's own pre-Budget value and timing, for a like-for-like check.
+- id: fuel-duty
+  name: Keep the 5p cut in fuel duty to August 2026, then bring it back in three steps
+  source:
+    source: budget-2025
+    page: 93
+    where: Table 4.1, line 3
+  scorecard_line: 3
+  effective: '2026-03-23'
+  modelled: true
+  parameters:
+  - path: gov.hmrc.fuel_duty.petrol_and_diesel
+    unit: currency-GBP
+    label: Main rate of fuel duty, £ a litre, averaged over the year
+    pre:
+      2026-27: 0.58
+      2027-28: 0.61
+      2028-29: 0.63
+    post:
+      2026-27: 0.5345
+      2027-28: 0.5925
+      2028-29: 0.6151
+    pre_source:
+      source: policyengine-dashboard-2025
+      where: pre-Autumn Budget baseline
+      note: PolicyEngine's own pre-Budget value and timing, for a like-for-like check.
+- id: personal-tax-thresholds
+  name: Keep income tax and National Insurance thresholds frozen for three more years, to April 2031
+  source:
+    source: budget-2025
+    page: 97
+    where: Table 4.1, line 46
+  scorecard_line: 46
+  effective: '2028-04-06'
+  modelled: true
+  parameters:
+  - path: gov.hmrc.income_tax.allowances.personal_allowance.amount
+    unit: currency-GBP
+    label: Personal allowance, £ a year
+    pre:
+      2026-27: 12570
+      2027-28: 12570
+      2028-29: 12826
+    post:
+      2026-27: 12570
+      2027-28: 12570
+      2028-29: 12570
+    pre_source:
+      source: policyengine-dashboard-2025
+      where: pre-Autumn Budget baseline
+      note: PolicyEngine's own pre-Budget value and timing, for a like-for-like check.
+  - path: gov.hmrc.income_tax.rates.uk[1].threshold
+    unit: currency-GBP
+    label: Basic rate band (taxable income at which the higher rate starts), £ a year
+    pre:
+      2026-27: 37700
+      2027-28: 37700
+      2028-29: 38469
+    post:
+      2026-27: 37700
+      2027-28: 37700
+      2028-29: 37700
+    pre_source:
+      source: policyengine-dashboard-2025
+      where: pre-Autumn Budget baseline
+      note: PolicyEngine's own pre-Budget value and timing, for a like-for-like check.
+- id: dividend-tax
+  name: Raise the tax rates on dividends by 2 points from April 2026
+  source:
+    source: budget-2025
+    page: 97
+    where: Table 4.1, line 50
+  scorecard_line: 50
+  effective: '2026-04-06'
+  modelled: true
+  parameters:
+  - path: gov.hmrc.income_tax.rates.dividends[0].rate
+    unit: /1
+    label: Dividend ordinary rate
+    pre:
+      2026-27: 0.1075
+      2027-28: 0.0875
+      2028-29: 0.0875
+    post:
+      2026-27: 0.1075
+      2027-28: 0.1075
+      2028-29: 0.1075
+    pre_source:
+      source: policyengine-dashboard-2025
+      where: pre-Autumn Budget baseline
+      note: PolicyEngine's own pre-Budget value and timing, for a like-for-like check.
+  - path: gov.hmrc.income_tax.rates.dividends[1].rate
+    unit: /1
+    label: Dividend upper rate
+    pre:
+      2026-27: 0.3575
+      2027-28: 0.3375
+      2028-29: 0.3375
+    post:
+      2026-27: 0.3575
+      2027-28: 0.3575
+      2028-29: 0.3575
+    pre_source:
+      source: policyengine-dashboard-2025
+      where: pre-Autumn Budget baseline
+      note: PolicyEngine's own pre-Budget value and timing, for a like-for-like check.
+- id: savings-tax
+  name: Raise the tax rates on savings income by 2 points from April 2027
+  source:
+    source: budget-2025
+    page: 98
+    where: Table 4.1, line 51
+  scorecard_line: 51
+  effective: '2027-04-06'
+  modelled: true
+  parameters:
+  - path: gov.hmrc.income_tax.rates.savings.basic
+    unit: /1
+    label: Savings basic rate
+    pre:
+      2026-27: 0.2
+      2027-28: 0.22
+      2028-29: 0.2
+    post:
+      2026-27: 0.2
+      2027-28: 0.22
+      2028-29: 0.22
+    pre_source:
+      source: policyengine-dashboard-2025
+      where: pre-Autumn Budget baseline
+      note: PolicyEngine's own pre-Budget value and timing, for a like-for-like check.
+  - path: gov.hmrc.income_tax.rates.savings.higher
+    unit: /1
+    label: Savings higher rate
+    pre:
+      2026-27: 0.4
+      2027-28: 0.42
+      2028-29: 0.4
+    post:
+      2026-27: 0.4
+      2027-28: 0.42
+      2028-29: 0.42
+    pre_source:
+      source: policyengine-dashboard-2025
+      where: pre-Autumn Budget baseline
+      note: PolicyEngine's own pre-Budget value and timing, for a like-for-like check.
+  - path: gov.hmrc.income_tax.rates.savings.additional
+    unit: /1
+    label: Savings additional rate
+    pre:
+      2026-27: 0.45
+      2027-28: 0.47
+      2028-29: 0.45
+    post:
+      2026-27: 0.45
+      2027-28: 0.47
+      2028-29: 0.47
+    pre_source:
+      source: policyengine-dashboard-2025
+      where: pre-Autumn Budget baseline
+      note: PolicyEngine's own pre-Budget value and timing, for a like-for-like check.
+- id: property-income-tax
+  name: Tax property income at its own rates, 2 points higher, from April 2027
+  source:
+    source: budget-2025
+    page: 97
+    where: Table 4.1, line 49
+  scorecard_line: 49
+  effective: '2027-04-06'
+  modelled: true
+  parameters:
+  - path: gov.hmrc.income_tax.rates.property.basic
+    unit: /1
+    label: Property basic rate
+    pre:
+      2026-27: 0.2
+      2027-28: 0.22
+      2028-29: 0.2
+    post:
+      2026-27: 0.2
+      2027-28: 0.22
+      2028-29: 0.22
+    pre_source:
+      source: policyengine-dashboard-2025
+      where: pre-Autumn Budget baseline
+      note: PolicyEngine's own pre-Budget value and timing, for a like-for-like check.
+  - path: gov.hmrc.income_tax.rates.property.higher
+    unit: /1
+    label: Property higher rate
+    pre:
+      2026-27: 0.4
+      2027-28: 0.42
+      2028-29: 0.4
+    post:
+      2026-27: 0.4
+      2027-28: 0.42
+      2028-29: 0.42
+    pre_source:
+      source: policyengine-dashboard-2025
+      where: pre-Autumn Budget baseline
+      note: PolicyEngine's own pre-Budget value and timing, for a like-for-like check.
+  - path: gov.hmrc.income_tax.rates.property.additional
+    unit: /1
+    label: Property additional rate
+    pre:
+      2026-27: 0.45
+      2027-28: 0.47
+      2028-29: 0.45
+    post:
+      2026-27: 0.45
+      2027-28: 0.47
+      2028-29: 0.47
+    pre_source:
+      source: policyengine-dashboard-2025
+      where: pre-Autumn Budget baseline
+      note: PolicyEngine's own pre-Budget value and timing, for a like-for-like check.

@@ -14,6 +14,7 @@ export * from "./t1";
 export * from "./people";
 export * from "./forecasts";
 export * from "./budget";
+export * from "./household";
 export * from "./approvals";
 export * from "./v1";
 export * from "./predict";

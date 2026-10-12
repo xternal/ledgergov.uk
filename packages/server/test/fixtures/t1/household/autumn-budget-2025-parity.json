@@ -1,0 +1,2255 @@
+{
+ "event": "autumn-budget-2025-parity",
+ "recorded_at": "2026-10-12T20:34:10.926Z",
+ "api": "https://api.policyengine.org",
+ "versions": {
+  "bundle_before": "6.2.1",
+  "bundle_after": "6.2.1",
+  "household_model_version": "2.102.3",
+  "years": [
+   2024,
+   2025,
+   2026,
+   2027,
+   2028,
+   2029,
+   2030
+  ]
+ },
+ "policies": {
+  "pre": {
+   "id": 98696,
+   "data": {
+    "gov.dwp.universal_credit.elements.child.limit.child_count": {
+     "2026-01-01.2026-12-31": 2,
+     "2027-01-01.2027-12-31": 2,
+     "2028-01-01.2100-12-31": 2
+    },
+    "gov.dwp.tax_credits.child_tax_credit.limit.child_count": {
+     "2026-01-01.2026-12-31": 2,
+     "2027-01-01.2027-12-31": 2,
+     "2028-01-01.2100-12-31": 2
+    },
+    "gov.hmrc.fuel_duty.petrol_and_diesel": {
+     "2026-01-01.2026-12-31": 0.58,
+     "2027-01-01.2027-12-31": 0.61,
+     "2028-01-01.2100-12-31": 0.63
+    },
+    "gov.hmrc.income_tax.allowances.personal_allowance.amount": {
+     "2026-01-01.2026-12-31": 12570,
+     "2027-01-01.2027-12-31": 12570,
+     "2028-01-01.2100-12-31": 12826
+    },
+    "gov.hmrc.income_tax.rates.uk[1].threshold": {
+     "2026-01-01.2026-12-31": 37700,
+     "2027-01-01.2027-12-31": 37700,
+     "2028-01-01.2100-12-31": 38469
+    },
+    "gov.hmrc.income_tax.rates.dividends[0].rate": {
+     "2026-01-01.2026-12-31": 0.1075,
+     "2027-01-01.2027-12-31": 0.0875,
+     "2028-01-01.2100-12-31": 0.0875
+    },
+    "gov.hmrc.income_tax.rates.dividends[1].rate": {
+     "2026-01-01.2026-12-31": 0.3575,
+     "2027-01-01.2027-12-31": 0.3375,
+     "2028-01-01.2100-12-31": 0.3375
+    },
+    "gov.hmrc.income_tax.rates.savings.basic": {
+     "2026-01-01.2026-12-31": 0.2,
+     "2027-01-01.2027-12-31": 0.22,
+     "2028-01-01.2100-12-31": 0.2
+    },
+    "gov.hmrc.income_tax.rates.savings.higher": {
+     "2026-01-01.2026-12-31": 0.4,
+     "2027-01-01.2027-12-31": 0.42,
+     "2028-01-01.2100-12-31": 0.4
+    },
+    "gov.hmrc.income_tax.rates.savings.additional": {
+     "2026-01-01.2026-12-31": 0.45,
+     "2027-01-01.2027-12-31": 0.47,
+     "2028-01-01.2100-12-31": 0.45
+    },
+    "gov.hmrc.income_tax.rates.property.basic": {
+     "2026-01-01.2026-12-31": 0.2,
+     "2027-01-01.2027-12-31": 0.22,
+     "2028-01-01.2100-12-31": 0.2
+    },
+    "gov.hmrc.income_tax.rates.property.higher": {
+     "2026-01-01.2026-12-31": 0.4,
+     "2027-01-01.2027-12-31": 0.42,
+     "2028-01-01.2100-12-31": 0.4
+    },
+    "gov.hmrc.income_tax.rates.property.additional": {
+     "2026-01-01.2026-12-31": 0.45,
+     "2027-01-01.2027-12-31": 0.47,
+     "2028-01-01.2100-12-31": 0.45
+    }
+   }
+  },
+  "post": {
+   "id": 98697,
+   "data": {
+    "gov.dwp.universal_credit.elements.child.limit.child_count": {
+     "2026-01-01.2026-12-31": 1000000000000,
+     "2027-01-01.2027-12-31": 1000000000000,
+     "2028-01-01.2100-12-31": 1000000000000
+    },
+    "gov.dwp.tax_credits.child_tax_credit.limit.child_count": {
+     "2026-01-01.2026-12-31": 1000000000000,
+     "2027-01-01.2027-12-31": 1000000000000,
+     "2028-01-01.2100-12-31": 1000000000000
+    },
+    "gov.hmrc.fuel_duty.petrol_and_diesel": {
+     "2026-01-01.2026-12-31": 0.5345,
+     "2027-01-01.2027-12-31": 0.5925,
+     "2028-01-01.2100-12-31": 0.6151
+    },
+    "gov.hmrc.income_tax.allowances.personal_allowance.amount": {
+     "2026-01-01.2026-12-31": 12570,
+     "2027-01-01.2027-12-31": 12570,
+     "2028-01-01.2100-12-31": 12570
+    },
+    "gov.hmrc.income_tax.rates.uk[1].threshold": {
+     "2026-01-01.2026-12-31": 37700,
+     "2027-01-01.2027-12-31": 37700,
+     "2028-01-01.2100-12-31": 37700
+    },
+    "gov.hmrc.income_tax.rates.dividends[0].rate": {
+     "2026-01-01.2026-12-31": 0.1075,
+     "2027-01-01.2027-12-31": 0.1075,
+     "2028-01-01.2100-12-31": 0.1075
+    },
+    "gov.hmrc.income_tax.rates.dividends[1].rate": {
+     "2026-01-01.2026-12-31": 0.3575,
+     "2027-01-01.2027-12-31": 0.3575,
+     "2028-01-01.2100-12-31": 0.3575
+    },
+    "gov.hmrc.income_tax.rates.savings.basic": {
+     "2026-01-01.2026-12-31": 0.2,
+     "2027-01-01.2027-12-31": 0.22,
+     "2028-01-01.2100-12-31": 0.22
+    },
+    "gov.hmrc.income_tax.rates.savings.higher": {
+     "2026-01-01.2026-12-31": 0.4,
+     "2027-01-01.2027-12-31": 0.42,
+     "2028-01-01.2100-12-31": 0.42
+    },
+    "gov.hmrc.income_tax.rates.savings.additional": {
+     "2026-01-01.2026-12-31": 0.45,
+     "2027-01-01.2027-12-31": 0.47,
+     "2028-01-01.2100-12-31": 0.47
+    },
+    "gov.hmrc.income_tax.rates.property.basic": {
+     "2026-01-01.2026-12-31": 0.2,
+     "2027-01-01.2027-12-31": 0.22,
+     "2028-01-01.2100-12-31": 0.22
+    },
+    "gov.hmrc.income_tax.rates.property.higher": {
+     "2026-01-01.2026-12-31": 0.4,
+     "2027-01-01.2027-12-31": 0.42,
+     "2028-01-01.2100-12-31": 0.42
+    },
+    "gov.hmrc.income_tax.rates.property.additional": {
+     "2026-01-01.2026-12-31": 0.45,
+     "2027-01-01.2027-12-31": 0.47,
+     "2028-01-01.2100-12-31": 0.47
+    }
+   }
+  }
+ },
+ "economy": {
+  "2026-27": {
+   "model_version": "2.102.3",
+   "data_version": "policyengine-uk-data-1.56.16",
+   "budget": {
+    "tax_revenue_impact": -2036193472.9477656,
+    "state_tax_revenue_impact": 0,
+    "benefit_spending_impact": 2559424663.593089,
+    "budgetary_impact": -4595618136.540854,
+    "households": 830150757135.9158,
+    "baseline_net_income": 1755652837828.5312
+   },
+   "detailed_budget": {
+    "income_tax": {
+     "baseline": 312350249801.3981,
+     "reform": 312350249801.3981,
+     "difference": 0
+    },
+    "national_insurance": {
+     "baseline": 53960011437.144684,
+     "reform": 53960011437.144684,
+     "difference": 0
+    },
+    "vat": {
+     "baseline": 312399226889.1178,
+     "reform": 312399226889.1178,
+     "difference": 0
+    },
+    "council_tax": {
+     "baseline": 52460724317.3744,
+     "reform": 52460724317.3744,
+     "difference": 0
+    },
+    "fuel_duty": {
+     "baseline": 25955871979.17267,
+     "reform": 23919678144.983494,
+     "difference": -2036193834.1891747
+    },
+    "ni_employer": {
+     "baseline": 154449978627.4818,
+     "reform": 154449978627.4818,
+     "difference": 0
+    },
+    "universal_credit": {
+     "baseline": 76526098544.84491,
+     "reform": 79316972438.91124,
+     "difference": 2790873894.06633
+    },
+    "child_benefit": {
+     "baseline": 17699471331.90087,
+     "reform": 17699471331.90087,
+     "difference": 0
+    },
+    "pension_credit": {
+     "baseline": 7512485773.083136,
+     "reform": 7512485773.083136,
+     "difference": 0
+    },
+    "income_support": {
+     "baseline": 0,
+     "reform": 0,
+     "difference": 0
+    },
+    "tax_credits": {
+     "baseline": 0,
+     "reform": 0,
+     "difference": 0
+    },
+    "working_tax_credit": {
+     "baseline": 0,
+     "reform": 0,
+     "difference": 0
+    },
+    "child_tax_credit": {
+     "baseline": 0,
+     "reform": 0,
+     "difference": 0
+    },
+    "state_pension": {
+     "baseline": 127501481392.43416,
+     "reform": 127501481392.43416,
+     "difference": 0
+    }
+   },
+   "decile": {
+    "average": {
+     "1": 109.94306679256988,
+     "2": 89.20613720077745,
+     "3": 108.2650988974492,
+     "4": 268.9895025650694,
+     "5": 230.49430972689152,
+     "6": 213.37652798694035,
+     "7": 157.25905561253603,
+     "8": 137.05402478779433,
+     "9": 120.54646937729558,
+     "10": 65.00965225463733
+    },
+    "relative": {
+     "1": 0.690476128533713,
+     "2": 0.30582013934718144,
+     "3": 0.2866477993724953,
+     "4": 0.5905415307451723,
+     "5": 0.4400761788489925,
+     "6": 0.35316084782641277,
+     "7": 0.2220059902885305,
+     "8": 0.16263148973342026,
+     "9": 0.11659812508434647,
+     "10": 0.03522936859637633
+    }
+   },
+   "intra_decile": {
+    "deciles": {
+     "Lose more than 5%": [
+      0,
+      0.0001854547341885272,
+      0.0046923111536017375,
+      0.002328717298516672,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "Lose less than 5%": [
+      0,
+      0,
+      0,
+      0.0017917890256967605,
+      0.00003804848378568841,
+      0,
+      0,
+      0,
+      0,
+      0.0003905062322761527
+     ],
+     "No change": [
+      0.5240595212012786,
+      0.6076976817493408,
+      0.7058409397739702,
+      0.6618202822025138,
+      0.5889619494890909,
+      0.6264310464052784,
+      0.6591620916540817,
+      0.710083979709508,
+      0.6918955503373166,
+      0.8421568030958556
+     ],
+     "Gain less than 5%": [
+      0.4213159611878475,
+      0.35885619707462024,
+      0.24925012330764754,
+      0.23182211506514067,
+      0.3344807479592665,
+      0.3105792312470918,
+      0.2988342351764593,
+      0.27563541801615743,
+      0.29940529468787686,
+      0.15744315148117116
+     ],
+     "Gain more than 5%": [
+      0.05462451761087385,
+      0.03326066644185044,
+      0.04021662576478052,
+      0.1022370964081321,
+      0.07651925406785691,
+      0.06298972234762981,
+      0.04200367316945904,
+      0.014280602274334569,
+      0.008699154974806507,
+      0.000009539190697032438
+     ]
+    },
+    "all": {
+     "Lose more than 5%": 0.0007206483186306936,
+     "Lose less than 5%": 0.00022203437417586016,
+     "No change": 0.6618109845618234,
+     "Gain less than 5%": 0.2937622475203279,
+     "Gain more than 5%": 0.04348408522504208
+    }
+   },
+   "poverty": {
+    "poverty": {
+     "child": {
+      "baseline": 0.25534262889010856,
+      "reform": 0.22036707057578409
+     },
+     "adult": {
+      "baseline": 0.17256695160286348,
+      "reform": 0.16655394092042836
+     },
+     "senior": {
+      "baseline": 0.21456979722217204,
+      "reform": 0.21456979722217204
+     },
+     "all": {
+      "baseline": 0.19875370097301923,
+      "reform": 0.1875006584169465
+     }
+    },
+    "deep_poverty": {
+     "child": {
+      "baseline": 0.18979831042821277,
+      "reform": 0.16315492669717546
+     },
+     "adult": {
+      "baseline": 0.1444974748286446,
+      "reform": 0.1402012765962967
+     },
+     "senior": {
+      "baseline": 0.1522074733376755,
+      "reform": 0.1518158336286416
+     },
+     "all": {
+      "baseline": 0.15593519963132063,
+      "reform": 0.14745663364335812
+     }
+    }
+   },
+   "inequality": {
+    "gini": {
+     "baseline": 0.3207055545843065,
+     "reform": 0.3197779523956171
+    },
+    "top_10_pct_share": {
+     "baseline": 0.24375849402909783,
+     "reform": 0.2434810610416424
+    },
+    "top_1_pct_share": {
+     "baseline": 0.047836632371456723,
+     "reform": 0.04778210469165615
+    }
+   },
+   "policyengine_bundle": {
+    "model_version": "2.102.3",
+    "policyengine_version": "6.2.1",
+    "data_version": "policyengine-uk-data-1.56.16",
+    "dataset": "gs://policyengine-uk-data-private/enhanced_frs_2024_25.h5@1.56.16"
+   },
+   "resolved_app_name": "policyengine-simulation-py6-2-1"
+  },
+  "2027-28": {
+   "model_version": "2.102.3",
+   "data_version": "policyengine-uk-data-1.56.16",
+   "budget": {
+    "tax_revenue_impact": 260947889.79572633,
+    "state_tax_revenue_impact": 0,
+    "benefit_spending_impact": 2893866988.6236005,
+    "budgetary_impact": -2632919098.827874,
+    "households": 836305277699.2561,
+    "baseline_net_income": 1793344205372.6284
+   },
+   "detailed_budget": {
+    "income_tax": {
+     "baseline": 328325388760.1632,
+     "reform": 329350577258.66736,
+     "difference": 1025188498.5041504
+    },
+    "national_insurance": {
+     "baseline": 55706646210.64294,
+     "reform": 55706646210.64294,
+     "difference": 0
+    },
+    "vat": {
+     "baseline": 319826214037.09216,
+     "reform": 319826214037.09216,
+     "difference": 0
+    },
+    "council_tax": {
+     "baseline": 55791705262.696465,
+     "reform": 55791705262.696465,
+     "difference": 0
+    },
+    "fuel_duty": {
+     "baseline": 26638653063.782352,
+     "reform": 25874429049.323986,
+     "difference": -764224014.4583664
+    },
+    "ni_employer": {
+     "baseline": 159266115296.44635,
+     "reform": 159266115296.44635,
+     "difference": 0
+    },
+    "universal_credit": {
+     "baseline": 78021572951.07759,
+     "reform": 81113374039.21835,
+     "difference": 3091801088.1407623
+    },
+    "child_benefit": {
+     "baseline": 18173514172.585484,
+     "reform": 18173514172.585484,
+     "difference": 0
+    },
+    "pension_credit": {
+     "baseline": 7705075621.627389,
+     "reform": 7759188757.389822,
+     "difference": 54113135.76243305
+    },
+    "income_support": {
+     "baseline": 0,
+     "reform": 0,
+     "difference": 0
+    },
+    "tax_credits": {
+     "baseline": 0,
+     "reform": 0,
+     "difference": 0
+    },
+    "working_tax_credit": {
+     "baseline": 0,
+     "reform": 0,
+     "difference": 0
+    },
+    "child_tax_credit": {
+     "baseline": 0,
+     "reform": 0,
+     "difference": 0
+    },
+    "state_pension": {
+     "baseline": 130532703988.04492,
+     "reform": 130532703988.04492,
+     "difference": 0
+    }
+   },
+   "decile": {
+    "average": {
+     "1": 40.842774220132924,
+     "2": 58.79861530596099,
+     "3": 85.97106204716692,
+     "4": 262.26648011396173,
+     "5": 200.0166715322557,
+     "6": 182.4950824919506,
+     "7": 80.15837192343315,
+     "8": 49.98452937905677,
+     "9": -53.28809356900456,
+     "10": -132.08140612274292
+    },
+    "relative": {
+     "1": 0.2529661763334694,
+     "2": 0.1987842290354049,
+     "3": 0.22445888788974502,
+     "4": 0.5672499018690292,
+     "5": 0.37565033341189874,
+     "6": 0.2973809053438771,
+     "7": 0.11130099879599621,
+     "8": 0.05824889963024794,
+     "9": -0.050549338530427874,
+     "10": -0.06985272067201066
+    }
+   },
+   "intra_decile": {
+    "deciles": {
+     "Lose more than 5%": [
+      0.000011522055153706949,
+      0.00018573724034568433,
+      0.004777376559714498,
+      0.0022742709054953472,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "Lose less than 5%": [
+      0.006427940139429587,
+      0.004439658037257084,
+      0.03937084289644644,
+      0.014197638023875336,
+      0.04146209668909021,
+      0.029698066755828933,
+      0.045919822761440875,
+      0.10387443911148898,
+      0.2011409694332658,
+      0.11947233535356445
+     ],
+     "No change": [
+      0.660192678431855,
+      0.7490743004386422,
+      0.751091213849772,
+      0.7236261996650541,
+      0.7364838473720027,
+      0.7417511889240874,
+      0.8002547631756264,
+      0.8292629511354754,
+      0.7224785414920599,
+      0.8441531085234694
+     ],
+     "Gain less than 5%": [
+      0.32078375849745383,
+      0.21215810291495493,
+      0.15890963653585066,
+      0.15068474576420698,
+      0.14189272508516912,
+      0.16129861274257248,
+      0.11952957915249991,
+      0.05258180182843052,
+      0.06778957427504265,
+      0.036364896999231
+     ],
+     "Gain more than 5%": [
+      0.012584100876107843,
+      0.034142201368800106,
+      0.0458509301582164,
+      0.10921714564136817,
+      0.08016133085373801,
+      0.06725213157751113,
+      0.03429583491043285,
+      0.014280807924605007,
+      0.008590914799631649,
+      0.00000965912373515829
+     ]
+    },
+    "all": {
+     "Lose more than 5%": 0.0007248906760709236,
+     "Lose less than 5%": 0.06060038092016877,
+     "No change": 0.7558368793008045,
+     "Gain less than 5%": 0.1421993433795412,
+     "Gain more than 5%": 0.04063850572341463
+    }
+   },
+   "poverty": {
+    "poverty": {
+     "child": {
+      "baseline": 0.2586312908649625,
+      "reform": 0.2233595640475028
+     },
+     "adult": {
+      "baseline": 0.17319779109022151,
+      "reform": 0.16766848582621685
+     },
+     "senior": {
+      "baseline": 0.21488364064995374,
+      "reform": 0.2156134990059849
+     },
+     "all": {
+      "baseline": 0.1999098786299822,
+      "reform": 0.1890153989841238
+     }
+    },
+    "deep_poverty": {
+     "child": {
+      "baseline": 0.19600258688299232,
+      "reform": 0.16280787790108808
+     },
+     "adult": {
+      "baseline": 0.1455653722190403,
+      "reform": 0.14026185970552862
+     },
+     "senior": {
+      "baseline": 0.15271456171739795,
+      "reform": 0.15232292202226927
+     },
+     "all": {
+      "baseline": 0.1580281517947582,
+      "reform": 0.14751200765219677
+     }
+    }
+   },
+   "inequality": {
+    "gini": {
+     "baseline": 0.3206376333280654,
+     "reform": 0.31947710370305615
+    },
+    "top_10_pct_share": {
+     "baseline": 0.23944975542274585,
+     "reform": 0.2389690451488909
+    },
+    "top_1_pct_share": {
+     "baseline": 0.048657129327583766,
+     "reform": 0.04850403314187737
+    }
+   },
+   "policyengine_bundle": {
+    "model_version": "2.102.3",
+    "policyengine_version": "6.2.1",
+    "data_version": "policyengine-uk-data-1.56.16",
+    "dataset": "gs://policyengine-uk-data-private/enhanced_frs_2024_25.h5@1.56.16"
+   },
+   "resolved_app_name": "policyengine-simulation-py6-2-1"
+  },
+  "2028-29": {
+   "model_version": "2.102.3",
+   "data_version": "policyengine-uk-data-1.56.16",
+   "budget": {
+    "tax_revenue_impact": 5893664707.801174,
+    "state_tax_revenue_impact": 0,
+    "benefit_spending_impact": 3166751383.3363366,
+    "budgetary_impact": 2726913324.4648376,
+    "households": 843009022680.1399,
+    "baseline_net_income": 1835169127133.3936
+   },
+   "detailed_budget": {
+    "income_tax": {
+     "baseline": 337677027932.457,
+     "reform": 344198955352.93964,
+     "difference": 6521927420.482666
+    },
+    "national_insurance": {
+     "baseline": 57180065691.77648,
+     "reform": 57180065691.77648,
+     "difference": 0
+    },
+    "vat": {
+     "baseline": 327527608943.96344,
+     "reform": 327527608943.96344,
+     "difference": 0
+    },
+    "council_tax": {
+     "baseline": 59403153901.69707,
+     "reform": 59403153901.69707,
+     "difference": 0
+    },
+    "fuel_duty": {
+     "baseline": 26769161086.337173,
+     "reform": 26136049591.904636,
+     "difference": -633111494.4325371
+    },
+    "ni_employer": {
+     "baseline": 163723899345.23157,
+     "reform": 163723899345.23157,
+     "difference": 0
+    },
+    "universal_credit": {
+     "baseline": 79268687756.65926,
+     "reform": 82632126912.48515,
+     "difference": 3363439155.825897
+    },
+    "child_benefit": {
+     "baseline": 18611103430.38974,
+     "reform": 18611103430.38974,
+     "difference": 0
+    },
+    "pension_credit": {
+     "baseline": 7843731920.718078,
+     "reform": 7931193472.498999,
+     "difference": 87461551.78092098
+    },
+    "income_support": {
+     "baseline": 0,
+     "reform": 0,
+     "difference": 0
+    },
+    "tax_credits": {
+     "baseline": 0,
+     "reform": 0,
+     "difference": 0
+    },
+    "working_tax_credit": {
+     "baseline": 0,
+     "reform": 0,
+     "difference": 0
+    },
+    "child_tax_credit": {
+     "baseline": 0,
+     "reform": 0,
+     "difference": 0
+    },
+    "state_pension": {
+     "baseline": 133675924784.0027,
+     "reform": 133675924784.0027,
+     "difference": 0
+    }
+   },
+   "decile": {
+    "average": {
+     "1": 11.66709300401999,
+     "2": 15.079321400004119,
+     "3": -1.3668500845233211,
+     "4": 265.27420396164234,
+     "5": 61.25351827015402,
+     "6": -39.91103292974731,
+     "7": -124.55286473032902,
+     "8": -303.47071935526037,
+     "9": -519.6256335227954,
+     "10": -774.1610072668409
+    },
+    "relative": {
+     "1": 0.07121772477240985,
+     "2": 0.050258925121548295,
+     "3": -0.0035084871216695783,
+     "4": 0.563947487830505,
+     "5": 0.11306062079529997,
+     "6": -0.06374553852227308,
+     "7": -0.16988728506588832,
+     "8": -0.3469490136344177,
+     "9": -0.4830324380357916,
+     "10": -0.40047042197967125
+    }
+   },
+   "intra_decile": {
+    "deciles": {
+     "Lose more than 5%": [
+      0.0011267747016831021,
+      0.00018511200944661677,
+      0.009632465926118213,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "Lose less than 5%": [
+      0.2506575995677292,
+      0.3212851705745824,
+      0.41400286170654244,
+      0.48324174923711,
+      0.6333559915195747,
+      0.6912878750720174,
+      0.8022881567306686,
+      0.9480290108945324,
+      0.9483538314599537,
+      0.8947864212908323
+     ],
+     "No change": [
+      0.5490398679608458,
+      0.6037388455333215,
+      0.5246663293630265,
+      0.38113663063043823,
+      0.29098556853379565,
+      0.24330089632450555,
+      0.15511933847738876,
+      0.031909282958647575,
+      0.042912686063448835,
+      0.1044822899843273
+     ],
+     "Gain less than 5%": [
+      0.1882606259568345,
+      0.04092504028455614,
+      0.01057672930413764,
+      0.0010868279078239142,
+      0.0033718768359770708,
+      0.0018311094839528685,
+      0.008188496785072736,
+      0.005794739355662793,
+      0.00014422650520137218,
+      0.000685407720890312
+     ],
+     "Gain more than 5%": [
+      0.010915131812907345,
+      0.033865831598093345,
+      0.041121613700175294,
+      0.13453479222462786,
+      0.07228656311065261,
+      0.06358011911952421,
+      0.03440400800686998,
+      0.014266966791157187,
+      0.008589255971396105,
+      0.000045881003950068066
+     ]
+    },
+    "all": {
+     "Lose more than 5%": 0.0010944352637247932,
+     "Lose less than 5%": 0.6387288668053543,
+     "No change": 0.29272917358297457,
+     "Gain less than 5%": 0.026086508014010933,
+     "Gain more than 5%": 0.0413610163339354
+    }
+   },
+   "poverty": {
+    "poverty": {
+     "child": {
+      "baseline": 0.2613548399159186,
+      "reform": 0.22506593365469946
+     },
+     "adult": {
+      "baseline": 0.17462772814605057,
+      "reform": 0.16785157020385266
+     },
+     "senior": {
+      "baseline": 0.2179204933995044,
+      "reform": 0.21854572062445102
+     },
+     "all": {
+      "baseline": 0.2019290905036009,
+      "reform": 0.19005468703669234
+     }
+    },
+    "deep_poverty": {
+     "child": {
+      "baseline": 0.1966431959762605,
+      "reform": 0.1640089585136306
+     },
+     "adult": {
+      "baseline": 0.14604152674395787,
+      "reform": 0.14130412752174473
+     },
+     "senior": {
+      "baseline": 0.15295313859701054,
+      "reform": 0.15291695513931045
+     },
+     "all": {
+      "baseline": 0.1584955283611578,
+      "reform": 0.14850435517550795
+     }
+    }
+   },
+   "inequality": {
+    "gini": {
+     "baseline": 0.32159447128095675,
+     "reform": 0.3196543885488501
+    },
+    "top_10_pct_share": {
+     "baseline": 0.24001823521440777,
+     "reform": 0.23911001427130182
+    },
+    "top_1_pct_share": {
+     "baseline": 0.04896078003648328,
+     "reform": 0.048624357236085346
+    }
+   },
+   "policyengine_bundle": {
+    "model_version": "2.102.3",
+    "policyengine_version": "6.2.1",
+    "data_version": "policyengine-uk-data-1.56.16",
+    "dataset": "gs://policyengine-uk-data-private/enhanced_frs_2024_25.h5@1.56.16"
+   },
+   "resolved_app_name": "policyengine-simulation-py6-2-1"
+  }
+ },
+ "households": {
+  "pre": {
+   "benunits": {
+    "couple_two_children": {
+     "members": [
+      "couple_two_children_1",
+      "couple_two_children_2",
+      "couple_two_children_3",
+      "couple_two_children_4"
+     ]
+    },
+    "lone_parent": {
+     "members": [
+      "lone_parent_1",
+      "lone_parent_2"
+     ]
+    },
+    "pensioner_couple": {
+     "members": [
+      "pensioner_couple_1",
+      "pensioner_couple_2"
+     ]
+    },
+    "single_120k": {
+     "members": [
+      "single_120k_1"
+     ]
+    },
+    "single_25k": {
+     "members": [
+      "single_25k_1"
+     ]
+    },
+    "single_45k": {
+     "members": [
+      "single_45k_1"
+     ]
+    }
+   },
+   "households": {
+    "couple_two_children": {
+     "alcohol_and_tobacco_consumption": {
+      "2026": 509.6,
+      "2027": 509.6,
+      "2028": 509.6
+     },
+     "clothing_and_footwear_consumption": {
+      "2026": 1336.4,
+      "2027": 1336.4,
+      "2028": 1336.4
+     },
+     "communication_consumption": {
+      "2026": 1414.4,
+      "2027": 1414.4,
+      "2028": 1414.4
+     },
+     "diesel_spending": {
+      "2026": 575.64,
+      "2027": 575.64,
+      "2028": 575.64
+     },
+     "education_consumption": {
+      "2026": 1291.16,
+      "2027": 1291.16,
+      "2028": 1291.16
+     },
+     "food_and_non_alcoholic_beverages_consumption": {
+      "2026": 5111.6,
+      "2027": 5111.6,
+      "2028": 5111.6
+     },
+     "health_consumption": {
+      "2026": 736.84,
+      "2027": 736.84,
+      "2028": 736.84
+     },
+     "household_furnishings_consumption": {
+      "2026": 2880.8,
+      "2027": 2880.8,
+      "2028": 2880.8
+     },
+     "household_net_income": {
+      "2026": 44552.35,
+      "2027": 44572.79,
+      "2028": 44741.01
+     },
+     "housing_water_and_electricity_consumption": {
+      "2026": 6229.6,
+      "2027": 6229.6,
+      "2028": 6229.6
+     },
+     "members": [
+      "couple_two_children_1",
+      "couple_two_children_2",
+      "couple_two_children_3",
+      "couple_two_children_4"
+     ],
+     "miscellaneous_consumption": {
+      "2026": 3000.4,
+      "2027": 3000.4,
+      "2028": 3000.4
+     },
+     "petrol_spending": {
+      "2026": 1054.04,
+      "2027": 1054.04,
+      "2028": 1054.04
+     },
+     "recreation_consumption": {
+      "2026": 6073.6,
+      "2027": 6073.6,
+      "2028": 6073.6
+     },
+     "region": {
+      "2026": "EAST_MIDLANDS",
+      "2027": "EAST_MIDLANDS",
+      "2028": "EAST_MIDLANDS"
+     },
+     "restaurants_and_hotels_consumption": {
+      "2026": 2932.8,
+      "2027": 2932.8,
+      "2028": 2932.8
+     },
+     "transport_consumption": {
+      "2026": 6921.2,
+      "2027": 6921.2,
+      "2028": 6921.2
+     }
+    },
+    "lone_parent": {
+     "alcohol_and_tobacco_consumption": {
+      "2026": 213.2,
+      "2027": 213.2,
+      "2028": 213.2
+     },
+     "clothing_and_footwear_consumption": {
+      "2026": 530.4,
+      "2027": 530.4,
+      "2028": 530.4
+     },
+     "communication_consumption": {
+      "2026": 1060.8,
+      "2027": 1060.8,
+      "2028": 1060.8
+     },
+     "diesel_spending": {
+      "2026": 178.36,
+      "2027": 178.36,
+      "2028": 178.36
+     },
+     "education_consumption": {
+      "2026": 758.16,
+      "2027": 758.16,
+      "2028": 758.16
+     },
+     "food_and_non_alcoholic_beverages_consumption": {
+      "2026": 2860,
+      "2027": 2860,
+      "2028": 2860
+     },
+     "health_consumption": {
+      "2026": 432.64,
+      "2027": 432.64,
+      "2028": 432.64
+     },
+     "household_furnishings_consumption": {
+      "2026": 1601.6,
+      "2027": 1601.6,
+      "2028": 1601.6
+     },
+     "household_net_income": {
+      "2026": 21874.656,
+      "2027": 22205.578,
+      "2028": 22534.352
+     },
+     "housing_water_and_electricity_consumption": {
+      "2026": 7508.8,
+      "2027": 7508.8,
+      "2028": 7508.8
+     },
+     "members": [
+      "lone_parent_1",
+      "lone_parent_2"
+     ],
+     "miscellaneous_consumption": {
+      "2026": 1586,
+      "2027": 1586,
+      "2028": 1586
+     },
+     "petrol_spending": {
+      "2026": 327.08,
+      "2027": 327.08,
+      "2028": 327.08
+     },
+     "recreation_consumption": {
+      "2026": 3733.6,
+      "2027": 3733.6,
+      "2028": 3733.6
+     },
+     "region": {
+      "2026": "EAST_MIDLANDS",
+      "2027": "EAST_MIDLANDS",
+      "2028": "EAST_MIDLANDS"
+     },
+     "restaurants_and_hotels_consumption": {
+      "2026": 1128.4,
+      "2027": 1128.4,
+      "2028": 1128.4
+     },
+     "transport_consumption": {
+      "2026": 2230.8,
+      "2027": 2230.8,
+      "2028": 2230.8
+     }
+    },
+    "pensioner_couple": {
+     "alcohol_and_tobacco_consumption": {
+      "2026": 499.2,
+      "2027": 499.2,
+      "2028": 499.2
+     },
+     "clothing_and_footwear_consumption": {
+      "2026": 696.8,
+      "2027": 696.8,
+      "2028": 696.8
+     },
+     "communication_consumption": {
+      "2026": 925.6,
+      "2027": 925.6,
+      "2028": 925.6
+     },
+     "diesel_spending": {
+      "2026": 217.88,
+      "2027": 217.88,
+      "2028": 217.88
+     },
+     "education_consumption": {
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+     },
+     "food_and_non_alcoholic_beverages_consumption": {
+      "2026": 3822,
+      "2027": 3822,
+      "2028": 3822
+     },
+     "health_consumption": {
+      "2026": 707.2,
+      "2027": 707.2,
+      "2028": 707.2
+     },
+     "household_furnishings_consumption": {
+      "2026": 1674.4,
+      "2027": 1674.4,
+      "2028": 1674.4
+     },
+     "household_net_income": {
+      "2026": 24871.162,
+      "2027": 25550.078,
+      "2028": 26163.041
+     },
+     "housing_water_and_electricity_consumption": {
+      "2026": 4472,
+      "2027": 4472,
+      "2028": 4472
+     },
+     "members": [
+      "pensioner_couple_1",
+      "pensioner_couple_2"
+     ],
+     "miscellaneous_consumption": {
+      "2026": 1976,
+      "2027": 1976,
+      "2028": 1976
+     },
+     "petrol_spending": {
+      "2026": 399.36,
+      "2027": 399.36,
+      "2028": 399.36
+     },
+     "recreation_consumption": {
+      "2026": 4071.6,
+      "2027": 4071.6,
+      "2028": 4071.6
+     },
+     "region": {
+      "2026": "EAST_MIDLANDS",
+      "2027": "EAST_MIDLANDS",
+      "2028": "EAST_MIDLANDS"
+     },
+     "restaurants_and_hotels_consumption": {
+      "2026": 1497.6,
+      "2027": 1497.6,
+      "2028": 1497.6
+     },
+     "transport_consumption": {
+      "2026": 2724.8,
+      "2027": 2724.8,
+      "2028": 2724.8
+     }
+    },
+    "single_120k": {
+     "alcohol_and_tobacco_consumption": {
+      "2026": 457.6,
+      "2027": 457.6,
+      "2028": 457.6
+     },
+     "clothing_and_footwear_consumption": {
+      "2026": 832,
+      "2027": 832,
+      "2028": 832
+     },
+     "communication_consumption": {
+      "2026": 1112.8,
+      "2027": 1112.8,
+      "2028": 1112.8
+     },
+     "diesel_spending": {
+      "2026": 229.32,
+      "2027": 229.32,
+      "2028": 229.32
+     },
+     "education_consumption": {
+      "2026": 457.6,
+      "2027": 457.6,
+      "2028": 457.6
+     },
+     "food_and_non_alcoholic_beverages_consumption": {
+      "2026": 2641.6,
+      "2027": 2641.6,
+      "2028": 2641.6
+     },
+     "health_consumption": {
+      "2026": 613.6,
+      "2027": 613.6,
+      "2028": 613.6
+     },
+     "household_furnishings_consumption": {
+      "2026": 2932.8,
+      "2027": 2932.8,
+      "2028": 2932.8
+     },
+     "household_net_income": {
+      "2026": 75720.83,
+      "2027": 75707.56,
+      "2028": 75914.7
+     },
+     "housing_water_and_electricity_consumption": {
+      "2026": 8294,
+      "2027": 8294,
+      "2028": 8294
+     },
+     "members": [
+      "single_120k_1"
+     ],
+     "miscellaneous_consumption": {
+      "2026": 3042,
+      "2027": 3042,
+      "2028": 3042
+     },
+     "petrol_spending": {
+      "2026": 419.64,
+      "2027": 419.64,
+      "2028": 419.64
+     },
+     "recreation_consumption": {
+      "2026": 3369.6,
+      "2027": 3369.6,
+      "2028": 3369.6
+     },
+     "region": {
+      "2026": "EAST_MIDLANDS",
+      "2027": "EAST_MIDLANDS",
+      "2028": "EAST_MIDLANDS"
+     },
+     "restaurants_and_hotels_consumption": {
+      "2026": 3567.2,
+      "2027": 3567.2,
+      "2028": 3567.2
+     },
+     "transport_consumption": {
+      "2026": 5626.4,
+      "2027": 5626.4,
+      "2028": 5626.4
+     }
+    },
+    "single_25k": {
+     "alcohol_and_tobacco_consumption": {
+      "2026": 416,
+      "2027": 416,
+      "2028": 416
+     },
+     "clothing_and_footwear_consumption": {
+      "2026": 499.2,
+      "2027": 499.2,
+      "2028": 499.2
+     },
+     "communication_consumption": {
+      "2026": 842.4,
+      "2027": 842.4,
+      "2028": 842.4
+     },
+     "diesel_spending": {
+      "2026": 233.48,
+      "2027": 233.48,
+      "2028": 233.48
+     },
+     "education_consumption": {
+      "2026": 106.6,
+      "2027": 106.6,
+      "2028": 106.6
+     },
+     "food_and_non_alcoholic_beverages_consumption": {
+      "2026": 1846,
+      "2027": 1846,
+      "2028": 1846
+     },
+     "health_consumption": {
+      "2026": 143,
+      "2027": 143,
+      "2028": 143
+     },
+     "household_furnishings_consumption": {
+      "2026": 1242.8,
+      "2027": 1242.8,
+      "2028": 1242.8
+     },
+     "household_net_income": {
+      "2026": 21078.508,
+      "2027": 21065.004,
+      "2028": 21127.314
+     },
+     "housing_water_and_electricity_consumption": {
+      "2026": 5647.2,
+      "2027": 5647.2,
+      "2028": 5647.2
+     },
+     "members": [
+      "single_25k_1"
+     ],
+     "miscellaneous_consumption": {
+      "2026": 1206.4,
+      "2027": 1206.4,
+      "2028": 1206.4
+     },
+     "petrol_spending": {
+      "2026": 426.92,
+      "2027": 426.92,
+      "2028": 426.92
+     },
+     "recreation_consumption": {
+      "2026": 1690,
+      "2027": 1690,
+      "2028": 1690
+     },
+     "region": {
+      "2026": "EAST_MIDLANDS",
+      "2027": "EAST_MIDLANDS",
+      "2028": "EAST_MIDLANDS"
+     },
+     "restaurants_and_hotels_consumption": {
+      "2026": 1180.4,
+      "2027": 1180.4,
+      "2028": 1180.4
+     },
+     "transport_consumption": {
+      "2026": 2542.8,
+      "2027": 2542.8,
+      "2028": 2542.8
+     }
+    },
+    "single_45k": {
+     "alcohol_and_tobacco_consumption": {
+      "2026": 457.6,
+      "2027": 457.6,
+      "2028": 457.6
+     },
+     "clothing_and_footwear_consumption": {
+      "2026": 556.4,
+      "2027": 556.4,
+      "2028": 556.4
+     },
+     "communication_consumption": {
+      "2026": 774.8,
+      "2027": 774.8,
+      "2028": 774.8
+     },
+     "diesel_spending": {
+      "2026": 284.96,
+      "2027": 284.96,
+      "2028": 284.96
+     },
+     "education_consumption": {
+      "2026": 204.36,
+      "2027": 204.36,
+      "2028": 204.36
+     },
+     "food_and_non_alcoholic_beverages_consumption": {
+      "2026": 2132,
+      "2027": 2132,
+      "2028": 2132
+     },
+     "health_consumption": {
+      "2026": 274.04,
+      "2027": 274.04,
+      "2028": 274.04
+     },
+     "household_furnishings_consumption": {
+      "2026": 1357.2,
+      "2027": 1357.2,
+      "2028": 1357.2
+     },
+     "household_net_income": {
+      "2026": 35420.535,
+      "2027": 35404.035,
+      "2028": 35464.344
+     },
+     "housing_water_and_electricity_consumption": {
+      "2026": 5262.4,
+      "2027": 5262.4,
+      "2028": 5262.4
+     },
+     "members": [
+      "single_45k_1"
+     ],
+     "miscellaneous_consumption": {
+      "2026": 1731.6,
+      "2027": 1731.6,
+      "2028": 1731.6
+     },
+     "petrol_spending": {
+      "2026": 522.08,
+      "2027": 522.08,
+      "2028": 522.08
+     },
+     "recreation_consumption": {
+      "2026": 2407.6,
+      "2027": 2407.6,
+      "2028": 2407.6
+     },
+     "region": {
+      "2026": "EAST_MIDLANDS",
+      "2027": "EAST_MIDLANDS",
+      "2028": "EAST_MIDLANDS"
+     },
+     "restaurants_and_hotels_consumption": {
+      "2026": 1825.2,
+      "2027": 1825.2,
+      "2028": 1825.2
+     },
+     "transport_consumption": {
+      "2026": 3328,
+      "2027": 3328,
+      "2028": 3328
+     }
+    }
+   },
+   "people": {
+    "couple_two_children_1": {
+     "age": {
+      "2026": 40,
+      "2027": 40,
+      "2028": 40
+     },
+     "employment_income": {
+      "2026": 35000,
+      "2027": 35000,
+      "2028": 35000
+     }
+    },
+    "couple_two_children_2": {
+     "age": {
+      "2026": 38,
+      "2027": 38,
+      "2028": 38
+     },
+     "employment_income": {
+      "2026": 15000,
+      "2027": 15000,
+      "2028": 15000
+     }
+    },
+    "couple_two_children_3": {
+     "age": {
+      "2026": 9,
+      "2027": 9,
+      "2028": 9
+     }
+    },
+    "couple_two_children_4": {
+     "age": {
+      "2026": 6,
+      "2027": 6,
+      "2028": 6
+     }
+    },
+    "lone_parent_1": {
+     "age": {
+      "2026": 32,
+      "2027": 32,
+      "2028": 32
+     },
+     "employment_income": {
+      "2026": 18000,
+      "2027": 18000,
+      "2028": 18000
+     }
+    },
+    "lone_parent_2": {
+     "age": {
+      "2026": 5,
+      "2027": 5,
+      "2028": 5
+     }
+    },
+    "pensioner_couple_1": {
+     "age": {
+      "2026": 72,
+      "2027": 72,
+      "2028": 72
+     },
+     "state_pension_reported": {
+      "2026": 12547.6,
+      "2027": 12974.21,
+      "2028": 13298.57
+     },
+     "state_pension_type": {
+      "2026": "NEW",
+      "2027": "NEW",
+      "2028": "NEW"
+     }
+    },
+    "pensioner_couple_2": {
+     "age": {
+      "2026": 70,
+      "2027": 70,
+      "2028": 70
+     },
+     "state_pension_reported": {
+      "2026": 12547.6,
+      "2027": 12974.21,
+      "2028": 13298.57
+     },
+     "state_pension_type": {
+      "2026": "NEW",
+      "2027": "NEW",
+      "2028": "NEW"
+     }
+    },
+    "single_120k_1": {
+     "age": {
+      "2026": 40,
+      "2027": 40,
+      "2028": 40
+     },
+     "employment_income": {
+      "2026": 120000,
+      "2027": 120000,
+      "2028": 120000
+     }
+    },
+    "single_25k_1": {
+     "age": {
+      "2026": 40,
+      "2027": 40,
+      "2028": 40
+     },
+     "employment_income": {
+      "2026": 25000,
+      "2027": 25000,
+      "2028": 25000
+     }
+    },
+    "single_45k_1": {
+     "age": {
+      "2026": 40,
+      "2027": 40,
+      "2028": 40
+     },
+     "employment_income": {
+      "2026": 45000,
+      "2027": 45000,
+      "2028": 45000
+     }
+    }
+   }
+  },
+  "post": {
+   "benunits": {
+    "couple_two_children": {
+     "members": [
+      "couple_two_children_1",
+      "couple_two_children_2",
+      "couple_two_children_3",
+      "couple_two_children_4"
+     ]
+    },
+    "lone_parent": {
+     "members": [
+      "lone_parent_1",
+      "lone_parent_2"
+     ]
+    },
+    "pensioner_couple": {
+     "members": [
+      "pensioner_couple_1",
+      "pensioner_couple_2"
+     ]
+    },
+    "single_120k": {
+     "members": [
+      "single_120k_1"
+     ]
+    },
+    "single_25k": {
+     "members": [
+      "single_25k_1"
+     ]
+    },
+    "single_45k": {
+     "members": [
+      "single_45k_1"
+     ]
+    }
+   },
+   "households": {
+    "couple_two_children": {
+     "alcohol_and_tobacco_consumption": {
+      "2026": 509.6,
+      "2027": 509.6,
+      "2028": 509.6
+     },
+     "clothing_and_footwear_consumption": {
+      "2026": 1336.4,
+      "2027": 1336.4,
+      "2028": 1336.4
+     },
+     "communication_consumption": {
+      "2026": 1414.4,
+      "2027": 1414.4,
+      "2028": 1414.4
+     },
+     "diesel_spending": {
+      "2026": 575.64,
+      "2027": 575.64,
+      "2028": 575.64
+     },
+     "education_consumption": {
+      "2026": 1291.16,
+      "2027": 1291.16,
+      "2028": 1291.16
+     },
+     "food_and_non_alcoholic_beverages_consumption": {
+      "2026": 5111.6,
+      "2027": 5111.6,
+      "2028": 5111.6
+     },
+     "health_consumption": {
+      "2026": 736.84,
+      "2027": 736.84,
+      "2028": 736.84
+     },
+     "household_furnishings_consumption": {
+      "2026": 2880.8,
+      "2027": 2880.8,
+      "2028": 2880.8
+     },
+     "household_net_income": {
+      "2026": 44602.887,
+      "2027": 44592.227,
+      "2028": 44655.164
+     },
+     "housing_water_and_electricity_consumption": {
+      "2026": 6229.6,
+      "2027": 6229.6,
+      "2028": 6229.6
+     },
+     "members": [
+      "couple_two_children_1",
+      "couple_two_children_2",
+      "couple_two_children_3",
+      "couple_two_children_4"
+     ],
+     "miscellaneous_consumption": {
+      "2026": 3000.4,
+      "2027": 3000.4,
+      "2028": 3000.4
+     },
+     "petrol_spending": {
+      "2026": 1054.04,
+      "2027": 1054.04,
+      "2028": 1054.04
+     },
+     "recreation_consumption": {
+      "2026": 6073.6,
+      "2027": 6073.6,
+      "2028": 6073.6
+     },
+     "region": {
+      "2026": "EAST_MIDLANDS",
+      "2027": "EAST_MIDLANDS",
+      "2028": "EAST_MIDLANDS"
+     },
+     "restaurants_and_hotels_consumption": {
+      "2026": 2932.8,
+      "2027": 2932.8,
+      "2028": 2932.8
+     },
+     "transport_consumption": {
+      "2026": 6921.2,
+      "2027": 6921.2,
+      "2028": 6921.2
+     }
+    },
+    "lone_parent": {
+     "alcohol_and_tobacco_consumption": {
+      "2026": 213.2,
+      "2027": 213.2,
+      "2028": 213.2
+     },
+     "clothing_and_footwear_consumption": {
+      "2026": 530.4,
+      "2027": 530.4,
+      "2028": 530.4
+     },
+     "communication_consumption": {
+      "2026": 1060.8,
+      "2027": 1060.8,
+      "2028": 1060.8
+     },
+     "diesel_spending": {
+      "2026": 178.36,
+      "2027": 178.36,
+      "2028": 178.36
+     },
+     "education_consumption": {
+      "2026": 758.16,
+      "2027": 758.16,
+      "2028": 758.16
+     },
+     "food_and_non_alcoholic_beverages_consumption": {
+      "2026": 2860,
+      "2027": 2860,
+      "2028": 2860
+     },
+     "health_consumption": {
+      "2026": 432.64,
+      "2027": 432.64,
+      "2028": 432.64
+     },
+     "household_furnishings_consumption": {
+      "2026": 1601.6,
+      "2027": 1601.6,
+      "2028": 1601.6
+     },
+     "household_net_income": {
+      "2026": 21890.33,
+      "2027": 22211.607,
+      "2028": 22516.445
+     },
+     "housing_water_and_electricity_consumption": {
+      "2026": 7508.8,
+      "2027": 7508.8,
+      "2028": 7508.8
+     },
+     "members": [
+      "lone_parent_1",
+      "lone_parent_2"
+     ],
+     "miscellaneous_consumption": {
+      "2026": 1586,
+      "2027": 1586,
+      "2028": 1586
+     },
+     "petrol_spending": {
+      "2026": 327.08,
+      "2027": 327.08,
+      "2028": 327.08
+     },
+     "recreation_consumption": {
+      "2026": 3733.6,
+      "2027": 3733.6,
+      "2028": 3733.6
+     },
+     "region": {
+      "2026": "EAST_MIDLANDS",
+      "2027": "EAST_MIDLANDS",
+      "2028": "EAST_MIDLANDS"
+     },
+     "restaurants_and_hotels_consumption": {
+      "2026": 1128.4,
+      "2027": 1128.4,
+      "2028": 1128.4
+     },
+     "transport_consumption": {
+      "2026": 2230.8,
+      "2027": 2230.8,
+      "2028": 2230.8
+     }
+    },
+    "pensioner_couple": {
+     "alcohol_and_tobacco_consumption": {
+      "2026": 499.2,
+      "2027": 499.2,
+      "2028": 499.2
+     },
+     "clothing_and_footwear_consumption": {
+      "2026": 696.8,
+      "2027": 696.8,
+      "2028": 696.8
+     },
+     "communication_consumption": {
+      "2026": 925.6,
+      "2027": 925.6,
+      "2028": 925.6
+     },
+     "diesel_spending": {
+      "2026": 217.88,
+      "2027": 217.88,
+      "2028": 217.88
+     },
+     "education_consumption": {
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+     },
+     "food_and_non_alcoholic_beverages_consumption": {
+      "2026": 3822,
+      "2027": 3822,
+      "2028": 3822
+     },
+     "health_consumption": {
+      "2026": 707.2,
+      "2027": 707.2,
+      "2028": 707.2
+     },
+     "household_furnishings_consumption": {
+      "2026": 1674.4,
+      "2027": 1674.4,
+      "2028": 1674.4
+     },
+     "household_net_income": {
+      "2026": 24890.303,
+      "2027": 25557.441,
+      "2028": 26066.91
+     },
+     "housing_water_and_electricity_consumption": {
+      "2026": 4472,
+      "2027": 4472,
+      "2028": 4472
+     },
+     "members": [
+      "pensioner_couple_1",
+      "pensioner_couple_2"
+     ],
+     "miscellaneous_consumption": {
+      "2026": 1976,
+      "2027": 1976,
+      "2028": 1976
+     },
+     "petrol_spending": {
+      "2026": 399.36,
+      "2027": 399.36,
+      "2028": 399.36
+     },
+     "recreation_consumption": {
+      "2026": 4071.6,
+      "2027": 4071.6,
+      "2028": 4071.6
+     },
+     "region": {
+      "2026": "EAST_MIDLANDS",
+      "2027": "EAST_MIDLANDS",
+      "2028": "EAST_MIDLANDS"
+     },
+     "restaurants_and_hotels_consumption": {
+      "2026": 1497.6,
+      "2027": 1497.6,
+      "2028": 1497.6
+     },
+     "transport_consumption": {
+      "2026": 2724.8,
+      "2027": 2724.8,
+      "2028": 2724.8
+     }
+    },
+    "single_120k": {
+     "alcohol_and_tobacco_consumption": {
+      "2026": 457.6,
+      "2027": 457.6,
+      "2028": 457.6
+     },
+     "clothing_and_footwear_consumption": {
+      "2026": 832,
+      "2027": 832,
+      "2028": 832
+     },
+     "communication_consumption": {
+      "2026": 1112.8,
+      "2027": 1112.8,
+      "2028": 1112.8
+     },
+     "diesel_spending": {
+      "2026": 229.32,
+      "2027": 229.32,
+      "2028": 229.32
+     },
+     "education_consumption": {
+      "2026": 457.6,
+      "2027": 457.6,
+      "2028": 457.6
+     },
+     "food_and_non_alcoholic_beverages_consumption": {
+      "2026": 2641.6,
+      "2027": 2641.6,
+      "2028": 2641.6
+     },
+     "health_consumption": {
+      "2026": 613.6,
+      "2027": 613.6,
+      "2028": 613.6
+     },
+     "household_furnishings_consumption": {
+      "2026": 2932.8,
+      "2027": 2932.8,
+      "2028": 2932.8
+     },
+     "household_net_income": {
+      "2026": 75740.95,
+      "2027": 75715.3,
+      "2028": 75665.09
+     },
+     "housing_water_and_electricity_consumption": {
+      "2026": 8294,
+      "2027": 8294,
+      "2028": 8294
+     },
+     "members": [
+      "single_120k_1"
+     ],
+     "miscellaneous_consumption": {
+      "2026": 3042,
+      "2027": 3042,
+      "2028": 3042
+     },
+     "petrol_spending": {
+      "2026": 419.64,
+      "2027": 419.64,
+      "2028": 419.64
+     },
+     "recreation_consumption": {
+      "2026": 3369.6,
+      "2027": 3369.6,
+      "2028": 3369.6
+     },
+     "region": {
+      "2026": "EAST_MIDLANDS",
+      "2027": "EAST_MIDLANDS",
+      "2028": "EAST_MIDLANDS"
+     },
+     "restaurants_and_hotels_consumption": {
+      "2026": 3567.2,
+      "2027": 3567.2,
+      "2028": 3567.2
+     },
+     "transport_consumption": {
+      "2026": 5626.4,
+      "2027": 5626.4,
+      "2028": 5626.4
+     }
+    },
+    "single_25k": {
+     "alcohol_and_tobacco_consumption": {
+      "2026": 416,
+      "2027": 416,
+      "2028": 416
+     },
+     "clothing_and_footwear_consumption": {
+      "2026": 499.2,
+      "2027": 499.2,
+      "2028": 499.2
+     },
+     "communication_consumption": {
+      "2026": 842.4,
+      "2027": 842.4,
+      "2028": 842.4
+     },
+     "diesel_spending": {
+      "2026": 233.48,
+      "2027": 233.48,
+      "2028": 233.48
+     },
+     "education_consumption": {
+      "2026": 106.6,
+      "2027": 106.6,
+      "2028": 106.6
+     },
+     "food_and_non_alcoholic_beverages_consumption": {
+      "2026": 1846,
+      "2027": 1846,
+      "2028": 1846
+     },
+     "health_consumption": {
+      "2026": 143,
+      "2027": 143,
+      "2028": 143
+     },
+     "household_furnishings_consumption": {
+      "2026": 1242.8,
+      "2027": 1242.8,
+      "2028": 1242.8
+     },
+     "household_net_income": {
+      "2026": 21098.986,
+      "2027": 21072.88,
+      "2028": 21082.82
+     },
+     "housing_water_and_electricity_consumption": {
+      "2026": 5647.2,
+      "2027": 5647.2,
+      "2028": 5647.2
+     },
+     "members": [
+      "single_25k_1"
+     ],
+     "miscellaneous_consumption": {
+      "2026": 1206.4,
+      "2027": 1206.4,
+      "2028": 1206.4
+     },
+     "petrol_spending": {
+      "2026": 426.92,
+      "2027": 426.92,
+      "2028": 426.92
+     },
+     "recreation_consumption": {
+      "2026": 1690,
+      "2027": 1690,
+      "2028": 1690
+     },
+     "region": {
+      "2026": "EAST_MIDLANDS",
+      "2027": "EAST_MIDLANDS",
+      "2028": "EAST_MIDLANDS"
+     },
+     "restaurants_and_hotels_consumption": {
+      "2026": 1180.4,
+      "2027": 1180.4,
+      "2028": 1180.4
+     },
+     "transport_consumption": {
+      "2026": 2542.8,
+      "2027": 2542.8,
+      "2028": 2542.8
+     }
+    },
+    "single_45k": {
+     "alcohol_and_tobacco_consumption": {
+      "2026": 457.6,
+      "2027": 457.6,
+      "2028": 457.6
+     },
+     "clothing_and_footwear_consumption": {
+      "2026": 556.4,
+      "2027": 556.4,
+      "2028": 556.4
+     },
+     "communication_consumption": {
+      "2026": 774.8,
+      "2027": 774.8,
+      "2028": 774.8
+     },
+     "diesel_spending": {
+      "2026": 284.96,
+      "2027": 284.96,
+      "2028": 284.96
+     },
+     "education_consumption": {
+      "2026": 204.36,
+      "2027": 204.36,
+      "2028": 204.36
+     },
+     "food_and_non_alcoholic_beverages_consumption": {
+      "2026": 2132,
+      "2027": 2132,
+      "2028": 2132
+     },
+     "health_consumption": {
+      "2026": 274.04,
+      "2027": 274.04,
+      "2028": 274.04
+     },
+     "household_furnishings_consumption": {
+      "2026": 1357.2,
+      "2027": 1357.2,
+      "2028": 1357.2
+     },
+     "household_net_income": {
+      "2026": 35445.562,
+      "2027": 35413.66,
+      "2028": 35421.34
+     },
+     "housing_water_and_electricity_consumption": {
+      "2026": 5262.4,
+      "2027": 5262.4,
+      "2028": 5262.4
+     },
+     "members": [
+      "single_45k_1"
+     ],
+     "miscellaneous_consumption": {
+      "2026": 1731.6,
+      "2027": 1731.6,
+      "2028": 1731.6
+     },
+     "petrol_spending": {
+      "2026": 522.08,
+      "2027": 522.08,
+      "2028": 522.08
+     },
+     "recreation_consumption": {
+      "2026": 2407.6,
+      "2027": 2407.6,
+      "2028": 2407.6
+     },
+     "region": {
+      "2026": "EAST_MIDLANDS",
+      "2027": "EAST_MIDLANDS",
+      "2028": "EAST_MIDLANDS"
+     },
+     "restaurants_and_hotels_consumption": {
+      "2026": 1825.2,
+      "2027": 1825.2,
+      "2028": 1825.2
+     },
+     "transport_consumption": {
+      "2026": 3328,
+      "2027": 3328,
+      "2028": 3328
+     }
+    }
+   },
+   "people": {
+    "couple_two_children_1": {
+     "age": {
+      "2026": 40,
+      "2027": 40,
+      "2028": 40
+     },
+     "employment_income": {
+      "2026": 35000,
+      "2027": 35000,
+      "2028": 35000
+     }
+    },
+    "couple_two_children_2": {
+     "age": {
+      "2026": 38,
+      "2027": 38,
+      "2028": 38
+     },
+     "employment_income": {
+      "2026": 15000,
+      "2027": 15000,
+      "2028": 15000
+     }
+    },
+    "couple_two_children_3": {
+     "age": {
+      "2026": 9,
+      "2027": 9,
+      "2028": 9
+     }
+    },
+    "couple_two_children_4": {
+     "age": {
+      "2026": 6,
+      "2027": 6,
+      "2028": 6
+     }
+    },
+    "lone_parent_1": {
+     "age": {
+      "2026": 32,
+      "2027": 32,
+      "2028": 32
+     },
+     "employment_income": {
+      "2026": 18000,
+      "2027": 18000,
+      "2028": 18000
+     }
+    },
+    "lone_parent_2": {
+     "age": {
+      "2026": 5,
+      "2027": 5,
+      "2028": 5
+     }
+    },
+    "pensioner_couple_1": {
+     "age": {
+      "2026": 72,
+      "2027": 72,
+      "2028": 72
+     },
+     "state_pension_reported": {
+      "2026": 12547.6,
+      "2027": 12974.21,
+      "2028": 13298.57
+     },
+     "state_pension_type": {
+      "2026": "NEW",
+      "2027": "NEW",
+      "2028": "NEW"
+     }
+    },
+    "pensioner_couple_2": {
+     "age": {
+      "2026": 70,
+      "2027": 70,
+      "2028": 70
+     },
+     "state_pension_reported": {
+      "2026": 12547.6,
+      "2027": 12974.21,
+      "2028": 13298.57
+     },
+     "state_pension_type": {
+      "2026": "NEW",
+      "2027": "NEW",
+      "2028": "NEW"
+     }
+    },
+    "single_120k_1": {
+     "age": {
+      "2026": 40,
+      "2027": 40,
+      "2028": 40
+     },
+     "employment_income": {
+      "2026": 120000,
+      "2027": 120000,
+      "2028": 120000
+     }
+    },
+    "single_25k_1": {
+     "age": {
+      "2026": 40,
+      "2027": 40,
+      "2028": 40
+     },
+     "employment_income": {
+      "2026": 25000,
+      "2027": 25000,
+      "2028": 25000
+     }
+    },
+    "single_45k_1": {
+     "age": {
+      "2026": 40,
+      "2027": 40,
+      "2028": 40
+     },
+     "employment_income": {
+      "2026": 45000,
+      "2027": 45000,
+      "2028": 45000
+     }
+    }
+   }
+  }
+ }
+}

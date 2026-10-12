@@ -135,12 +135,15 @@ export function annualSpending(id: ArchetypeId): Record<SpendingVariable, number
   return Object.fromEntries(SPENDING_VARIABLES.map((v) => [v, pennies(weekly[v].gbp * WEEKS_PER_YEAR)])) as Record<SpendingVariable, number>;
 }
 
-/** One PolicyEngine situation holding every archetype as its own household, so one request computes them all. */
-export function archetypeSituation(startYear: number): Situation {
-  const y = String(startYear);
-  const at = <T>(v: T) => ({ [y]: v });
+/**
+ * One PolicyEngine situation holding every archetype as its own household, so one request computes them all.
+ * Given several years (the Budget job), every input and the net income are set for each of them: the people
+ * keep the same age, earnings and spending, and the pensioners get each year's full new State Pension.
+ */
+export function archetypeSituation(startYear: number | readonly number[]): Situation {
+  const years = (typeof startYear === "number" ? [startYear] : [...startYear]).map(String);
+  const at = <T>(v: T | ((y: number) => T)) => Object.fromEntries(years.map((y) => [y, typeof v === "function" ? (v as (y: number) => T)(Number(y)) : v]));
   const situation: Situation = { people: {}, benunits: {}, households: {} };
-  const pension = fullNewStatePension(startYear);
   for (const { id } of ARCHETYPES) {
     const members: string[] = [];
     PEOPLE[id].forEach((p, i) => {
@@ -149,7 +152,7 @@ export function archetypeSituation(startYear: number): Situation {
       situation.people[pid] = {
         age: at(p.age),
         ...(p.employment_income ? { employment_income: at(p.employment_income) } : {}),
-        ...(p.pensioner ? { state_pension_type: at("NEW"), state_pension_reported: at(pension) } : {}),
+        ...(p.pensioner ? { state_pension_type: at("NEW"), state_pension_reported: at((y: number) => fullNewStatePension(y)) } : {}),
       };
     });
     situation.benunits[id] = { members };

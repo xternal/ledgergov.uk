@@ -1,0 +1,376 @@
+# The rehearsal for "The Budget for your household" (docs/BUDGET_DAY.md): Autumn Budget 2025's tax and benefit
+# measures, run through the same pipeline as Budget night, in October 2026, on the model PolicyEngine's API runs
+# today. Every "with" value is the law as the Budget set it; every "without" value is what would have applied
+# had the Budget not happened. Rates are fractions (22% is 0.22), as PolicyEngine writes them; amounts are in
+# PolicyEngine's own period (National Insurance thresholds £ a week).
+#
+# Rebuild: pnpm household -- autumn-budget-2025 (live, about 5 economy runs), or offline from the recording:
+#          pnpm household -- build autumn-budget-2025
+event:
+  id: autumn-budget-2025
+  name: Autumn Budget 2025
+  date: "2025-11-26"
+kind: rehearsal
+years: ["2026-27", "2027-28", "2028-29", "2029-30", "2030-31"]
+headline_year: "2027-28"
+side_year: "2026-27"
+note: >-
+  Two measures announced before the Budget and only scored in its table are left out, as they were not
+  decisions of this Budget: Winter Fuel Payment for pensioners with taxable income up to £35,000 (line 84)
+  and the Universal Credit standard allowance and health element changes (line 85).
+compared_with:
+  name: PolicyEngine's own analysis of Autumn Budget 2025
+  url: https://www.policyengine.org/uk/research/uk-combined-reforms-autumn-budget-2025
+  note: >-
+    PolicyEngine published its own decile results on 9 December 2025, from an earlier version of its model.
+    docs/MODEL.md (T1, "Rehearsal") compares the two and explains each gap.
+
+sources:
+  - id: budget-2025
+    title: Budget 2025 (HC 1492)
+    publisher: HM Treasury
+    url: https://assets.publishing.service.gov.uk/media/6929b353345e31ab14ecf735/E03444720_Budget_2025_Web_Accessible.pdf
+    published_on: "2025-11-26"
+    licence: Open Government Licence v3.0
+  - id: impact-on-households-2025
+    title: "Impact on households: distributional analysis to accompany Budget 2025"
+    publisher: HM Treasury
+    url: https://assets.publishing.service.gov.uk/media/69269c6222424e25e6bc31bb/Impact_on_households.pdf
+    published_on: "2025-11-26"
+    licence: Open Government Licence v3.0
+  - id: income-tax-act-2007
+    title: Income Tax Act 2007, section 57 (indexation of allowances and the basic rate limit)
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/ukpga/2007/3/section/57
+  - id: policyengine-uk-2-102-3
+    title: PolicyEngine UK 2.102.3, parameters (current law and OBR forecasts)
+    publisher: PolicyEngine
+    url: https://api.policyengine.org/uk/metadata
+    published_on: "2026-09-28"
+  - id: policyengine-dashboard-2025
+    title: PolicyEngine, UK Autumn Budget dashboard, pre-Budget baseline (reforms.py)
+    publisher: PolicyEngine
+    url: https://github.com/PolicyEngine/uk-autumn-budget-dashboard-2026/blob/main/src/uk_budget_data/reforms.py
+
+measures:
+  - id: two-child-limit
+    name: Remove the two-child limit in Universal Credit from April 2026
+    source: { source: budget-2025, page: 94, where: "Table 4.1, line 6" }
+    scorecard_line: 6
+    effective: "2026-04-06"
+    modelled: true
+    parameters:
+      - path: gov.dwp.universal_credit.elements.child.limit.child_count
+        unit: child
+        label: Children the Universal Credit child element is paid for
+        pre: { "2026-27": 2, "2027-28": 2, "2028-29": 2, "2029-30": 2, "2030-31": 2 }
+        post: { "2026-27": unlimited, "2027-28": unlimited, "2028-29": unlimited, "2029-30": unlimited, "2030-31": unlimited }
+      - path: gov.dwp.tax_credits.child_tax_credit.limit.child_count
+        unit: int
+        label: Children Child Tax Credit is paid for (legacy claims)
+        pre: { "2026-27": 2, "2027-28": 2, "2028-29": 2, "2029-30": 2, "2030-31": 2 }
+        post: { "2026-27": unlimited, "2027-28": unlimited, "2028-29": unlimited, "2029-30": unlimited, "2030-31": unlimited }
+        note: Tax credits ended in April 2025; set as PolicyEngine's own analysis sets it, for any claim the survey still records.
+
+  - id: fuel-duty
+    name: Keep the 5p cut in fuel duty to August 2026, then bring it back in three steps
+    source: { source: budget-2025, page: 93, where: "Table 4.1, line 3" }
+    scorecard_line: 3
+    effective: "2026-03-23"
+    modelled: true
+    parameters:
+      - path: gov.hmrc.fuel_duty.petrol_and_diesel
+        unit: currency-GBP
+        label: Main rate of fuel duty, £ a litre, averaged over the year
+        pre: { "2026-27": 0.58, "2027-28": 0.61, "2028-29": 0.63, "2029-30": 0.64, "2030-31": 0.66 }
+        post: { "2026-27": 0.5345, "2027-28": 0.5925, "2028-29": 0.6151, "2029-30": 0.6332, "2030-31": 0.6516 }
+        pre_source:
+          source: policyengine-dashboard-2025
+          where: "_create_fuel_duty_freeze, baseline_rates"
+          note: >-
+            Without the Budget the cut would have ended on 22 March 2026 (57.95p a litre), with RPI rises after.
+            Both paths are PolicyEngine's: its pre-Budget rates, rounded to the penny, and its current law, which
+            averages each calendar year (52.95p to August 2026, then 53.95p, 55.95p and 57.95p).
+
+  - id: personal-tax-thresholds
+    name: Keep income tax and National Insurance thresholds frozen for three more years, to April 2031
+    source: { source: budget-2025, page: 97, where: "Table 4.1, line 46" }
+    scorecard_line: 46
+    effective: "2028-04-06"
+    modelled: true
+    note: >-
+      Without the Budget the freeze would have ended in April 2028. The allowance and the basic rate band would
+      then have risen with September's CPI, rounded up to the next £10 and £100 as the law requires, using the
+      OBR's forecast of 2% a year; the National Insurance thresholds stay aligned with them.
+    parameters:
+      - path: gov.hmrc.income_tax.allowances.personal_allowance.amount
+        unit: currency-GBP
+        label: Personal allowance, £ a year
+        pre: { "2026-27": 12570, "2027-28": 12570, "2028-29": 12830, "2029-30": 13090, "2030-31": 13360 }
+        post: { "2026-27": 12570, "2027-28": 12570, "2028-29": 12570, "2029-30": 12570, "2030-31": 12570 }
+        pre_source:
+          source: income-tax-act-2007
+          where: "Section 57: CPI indexation, increases rounded up to a multiple of £10"
+          note: CPI from PolicyEngine UK 2.102.3's OBR index (gov.economic_assumptions.indices.obr.consumer_price_index), 2.0% a year.
+      - path: gov.hmrc.income_tax.rates.uk[1].threshold
+        unit: currency-GBP
+        label: Basic rate band (taxable income at which the higher rate starts), £ a year
+        pre: { "2026-27": 37700, "2027-28": 37700, "2028-29": 38500, "2029-30": 39300, "2030-31": 40100 }
+        post: { "2026-27": 37700, "2027-28": 37700, "2028-29": 37700, "2029-30": 37700, "2030-31": 37700 }
+        pre_source:
+          source: income-tax-act-2007
+          where: "Section 57: CPI indexation, increases rounded up to a multiple of £100"
+          note: CPI from PolicyEngine UK 2.102.3's OBR index, 2.0% a year.
+      - path: gov.hmrc.national_insurance.class_1.thresholds.primary_threshold
+        unit: currency-GBP
+        label: National Insurance primary threshold, £ a week (the personal allowance ÷ 52)
+        pre: { "2026-27": 241.73, "2027-28": 241.73, "2028-29": 246.73, "2029-30": 251.73, "2030-31": 256.92 }
+        post: { "2026-27": 241.73, "2027-28": 241.73, "2028-29": 241.73, "2029-30": 241.73, "2030-31": 241.73 }
+        pre_source:
+          source: budget-2025
+          page: 97
+          where: "Table 4.1, line 46"
+          note: The primary threshold follows the personal allowance (£12,570 a year is 241.73 a week).
+      - path: gov.hmrc.national_insurance.class_1.thresholds.upper_earnings_limit
+        unit: currency-GBP
+        label: National Insurance upper earnings limit, £ a week (the higher rate threshold ÷ 52)
+        pre: { "2026-27": 966.73, "2027-28": 966.73, "2028-29": 987.12, "2029-30": 1007.5, "2030-31": 1028.08 }
+        post: { "2026-27": 966.73, "2027-28": 966.73, "2028-29": 966.73, "2029-30": 966.73, "2030-31": 966.73 }
+        pre_source:
+          source: budget-2025
+          page: 97
+          where: "Table 4.1, line 46"
+          note: The upper earnings limit follows the higher rate threshold, the allowance plus the basic rate band (£50,270 a year is 966.73 a week).
+      - path: gov.hmrc.national_insurance.class_4.thresholds.lower_profits_limit
+        unit: currency-GBP
+        label: Self-employed lower profits limit, £ a year (the personal allowance)
+        pre: { "2026-27": 12570, "2027-28": 12570, "2028-29": 12830, "2029-30": 13090, "2030-31": 13360 }
+        post: { "2026-27": 12570, "2027-28": 12570, "2028-29": 12570, "2029-30": 12570, "2030-31": 12570 }
+        pre_source:
+          source: budget-2025
+          page: 97
+          where: "Table 4.1, line 46"
+          note: The lower profits limit follows the personal allowance. PolicyEngine UK 2.102.3 uprates it from 2027-28, a year early; both values are set here.
+      - path: gov.hmrc.national_insurance.class_4.thresholds.upper_profits_limit
+        unit: currency-GBP
+        label: Self-employed upper profits limit, £ a year (the higher rate threshold)
+        pre: { "2026-27": 50270, "2027-28": 50270, "2028-29": 51330, "2029-30": 52390, "2030-31": 53460 }
+        post: { "2026-27": 50270, "2027-28": 50270, "2028-29": 50270, "2029-30": 50270, "2030-31": 50270 }
+        pre_source:
+          source: budget-2025
+          page: 97
+          where: "Table 4.1, line 46"
+          note: The upper profits limit follows the higher rate threshold.
+
+  - id: employer-ni-threshold
+    name: Keep employers' National Insurance threshold at £5,000 to April 2031
+    source: { source: budget-2025, page: 97, where: "Table 4.1, line 47" }
+    scorecard_line: 47
+    effective: "2028-04-06"
+    modelled: true
+    note: >-
+      PolicyEngine counts employers' National Insurance as paid by their employees, through lower pay
+      (gov.contrib.policyengine.employer_ni.employee_incidence is 1), so this measure lowers household incomes;
+      the Treasury counts it as a tax on business.
+    parameters:
+      - path: gov.hmrc.national_insurance.class_1.thresholds.secondary_threshold
+        unit: currency-GBP
+        label: Employers' secondary threshold, £ a week
+        pre: { "2026-27": 96, "2027-28": 96, "2028-29": 98.08, "2029-30": 100.04, "2030-31": 102.04 }
+        post: { "2026-27": 96, "2027-28": 96, "2028-29": 96, "2029-30": 96, "2030-31": 96 }
+        pre_source:
+          source: policyengine-uk-2-102-3
+          where: gov.economic_assumptions.indices.obr.consumer_price_index
+          note: Without the Budget the threshold (£5,000 a year, 96 a week) would have risen with CPI from April 2028, 2% a year in the OBR's forecast.
+
+  - id: dividend-tax
+    name: Raise the tax rates on dividends by 2 points from April 2026
+    source: { source: budget-2025, page: 97, where: "Table 4.1, line 50" }
+    scorecard_line: 50
+    effective: "2026-04-06"
+    modelled: true
+    parameters:
+      - path: gov.hmrc.income_tax.rates.dividends[0].rate
+        unit: /1
+        label: Dividend ordinary rate
+        pre: { "2026-27": 0.0875, "2027-28": 0.0875, "2028-29": 0.0875, "2029-30": 0.0875, "2030-31": 0.0875 }
+        post: { "2026-27": 0.1075, "2027-28": 0.1075, "2028-29": 0.1075, "2029-30": 0.1075, "2030-31": 0.1075 }
+      - path: gov.hmrc.income_tax.rates.dividends[1].rate
+        unit: /1
+        label: Dividend upper rate
+        pre: { "2026-27": 0.3375, "2027-28": 0.3375, "2028-29": 0.3375, "2029-30": 0.3375, "2030-31": 0.3375 }
+        post: { "2026-27": 0.3575, "2027-28": 0.3575, "2028-29": 0.3575, "2029-30": 0.3575, "2030-31": 0.3575 }
+
+  - id: savings-tax
+    name: Raise the tax rates on savings income by 2 points from April 2027
+    source: { source: budget-2025, page: 98, where: "Table 4.1, line 51" }
+    scorecard_line: 51
+    effective: "2027-04-06"
+    modelled: true
+    parameters:
+      - path: gov.hmrc.income_tax.rates.savings.basic
+        unit: /1
+        label: Savings basic rate
+        pre: { "2026-27": 0.2, "2027-28": 0.2, "2028-29": 0.2, "2029-30": 0.2, "2030-31": 0.2 }
+        post: { "2026-27": 0.2, "2027-28": 0.22, "2028-29": 0.22, "2029-30": 0.22, "2030-31": 0.22 }
+      - path: gov.hmrc.income_tax.rates.savings.higher
+        unit: /1
+        label: Savings higher rate
+        pre: { "2026-27": 0.4, "2027-28": 0.4, "2028-29": 0.4, "2029-30": 0.4, "2030-31": 0.4 }
+        post: { "2026-27": 0.4, "2027-28": 0.42, "2028-29": 0.42, "2029-30": 0.42, "2030-31": 0.42 }
+      - path: gov.hmrc.income_tax.rates.savings.additional
+        unit: /1
+        label: Savings additional rate
+        pre: { "2026-27": 0.45, "2027-28": 0.45, "2028-29": 0.45, "2029-30": 0.45, "2030-31": 0.45 }
+        post: { "2026-27": 0.45, "2027-28": 0.47, "2028-29": 0.47, "2029-30": 0.47, "2030-31": 0.47 }
+
+  - id: property-income-tax
+    name: Tax property income at its own rates, 2 points higher, from April 2027
+    source: { source: budget-2025, page: 97, where: "Table 4.1, line 49" }
+    scorecard_line: 49
+    effective: "2027-04-06"
+    modelled: true
+    parameters:
+      - path: gov.hmrc.income_tax.rates.property.basic
+        unit: /1
+        label: Property basic rate
+        pre: { "2026-27": 0.2, "2027-28": 0.2, "2028-29": 0.2, "2029-30": 0.2, "2030-31": 0.2 }
+        post: { "2026-27": 0.2, "2027-28": 0.22, "2028-29": 0.22, "2029-30": 0.22, "2030-31": 0.22 }
+      - path: gov.hmrc.income_tax.rates.property.higher
+        unit: /1
+        label: Property higher rate
+        pre: { "2026-27": 0.4, "2027-28": 0.4, "2028-29": 0.4, "2029-30": 0.4, "2030-31": 0.4 }
+        post: { "2026-27": 0.4, "2027-28": 0.42, "2028-29": 0.42, "2029-30": 0.42, "2030-31": 0.42 }
+      - path: gov.hmrc.income_tax.rates.property.additional
+        unit: /1
+        label: Property additional rate
+        pre: { "2026-27": 0.45, "2027-28": 0.45, "2028-29": 0.45, "2029-30": 0.45, "2030-31": 0.45 }
+        post: { "2026-27": 0.45, "2027-28": 0.47, "2028-29": 0.47, "2029-30": 0.47, "2030-31": 0.47 }
+
+  - id: salary-sacrifice-cap
+    name: Charge National Insurance on salary-sacrificed pension contributions above £2,000 a year from April 2029
+    source: { source: budget-2025, page: 98, where: "Table 4.1, line 52" }
+    scorecard_line: 52
+    effective: "2029-04-06"
+    modelled: true
+    parameters:
+      - path: gov.hmrc.national_insurance.salary_sacrifice_pension_cap
+        unit: currency-GBP
+        label: Salary-sacrificed pension contributions free of National Insurance, £ a year
+        pre: { "2026-27": unlimited, "2027-28": unlimited, "2028-29": unlimited, "2029-30": unlimited, "2030-31": unlimited }
+        post: { "2026-27": unlimited, "2027-28": unlimited, "2028-29": unlimited, "2029-30": 2000, "2030-31": 2000 }
+
+  - id: council-tax-surcharge
+    name: A council tax surcharge on homes in England worth over £2 million, from April 2028
+    source: { source: budget-2025, page: 98, where: "Table 4.1, line 54" }
+    scorecard_line: 54
+    effective: "2028-04-01"
+    modelled: true
+    note: PolicyEngine estimates which households own such homes from survey data on property values; the surcharge rises with CPI from April 2029.
+    parameters:
+      - path: gov.hmrc.council_tax.high_value_surcharge.amount[1].amount
+        unit: currency-GBP
+        label: Surcharge for homes worth £2 million to £2.5 million, £ a year
+        pre: { "2026-27": 0, "2027-28": 0, "2028-29": 0, "2029-30": 0, "2030-31": 0 }
+        post: { "2026-27": 0, "2027-28": 0, "2028-29": 2500, "2029-30": 2550, "2030-31": 2600.99 }
+      - path: gov.hmrc.council_tax.high_value_surcharge.amount[2].amount
+        unit: currency-GBP
+        label: Surcharge for homes worth £2.5 million to £3.5 million, £ a year
+        pre: { "2026-27": 0, "2027-28": 0, "2028-29": 0, "2029-30": 0, "2030-31": 0 }
+        post: { "2026-27": 0, "2027-28": 0, "2028-29": 3500, "2029-30": 3570, "2030-31": 3641.39 }
+      - path: gov.hmrc.council_tax.high_value_surcharge.amount[3].amount
+        unit: currency-GBP
+        label: Surcharge for homes worth £3.5 million to £5 million, £ a year
+        pre: { "2026-27": 0, "2027-28": 0, "2028-29": 0, "2029-30": 0, "2030-31": 0 }
+        post: { "2026-27": 0, "2027-28": 0, "2028-29": 5000, "2029-30": 5100, "2030-31": 5201.98 }
+      - path: gov.hmrc.council_tax.high_value_surcharge.amount[4].amount
+        unit: currency-GBP
+        label: Surcharge for homes worth over £5 million, £ a year
+        pre: { "2026-27": 0, "2027-28": 0, "2028-29": 0, "2029-30": 0, "2030-31": 0 }
+        post: { "2026-27": 0, "2027-28": 0, "2028-29": 7500, "2029-30": 7649.99, "2030-31": 7802.98 }
+
+  - id: rail-fares-freeze
+    name: Freeze rail fares in England for a year from March 2026
+    source: { source: budget-2025, page: 93, where: "Table 4.1, line 4" }
+    scorecard_line: 4
+    effective: "2026-03-01"
+    modelled: false
+    not_modelled:
+      reason: needs_code
+      note: >-
+        PolicyEngine has no rail fare rules a policy can change; its own analysis adds the Treasury's cost
+        (£145 million in 2026-27) to households in proportion to their spending on rail, in extra code.
+
+  - id: student-loan-threshold-freeze
+    name: Freeze the Plan 2 student loan repayment threshold for three years from April 2027
+    source: { source: budget-2025, page: 97, where: "Table 4.1, line 48" }
+    scorecard_line: 48
+    effective: "2027-04-06"
+    modelled: false
+    not_modelled:
+      reason: needs_code
+      note: >-
+        PolicyEngine's public model takes student loan repayments as the survey records them, so a new
+        threshold changes nothing without extra code (its own analysis adds it). The Treasury scores about
+        £0.3 billion a year from 2027-28, paid by graduates earning above the threshold.
+
+  - id: inheritance-tax-thresholds
+    name: Keep inheritance tax thresholds frozen for a further year, to April 2031
+    source: { source: budget-2025, page: 98, where: "Table 4.1, line 55" }
+    scorecard_line: 55
+    effective: "2030-04-06"
+    modelled: false
+    not_modelled:
+      reason: no_parameter
+      note: PolicyEngine UK does not model inheritance tax, which falls on estates rather than on a household's yearly income.
+
+  - id: electric-vehicle-mileage
+    name: A mileage charge on electric and plug-in hybrid cars from April 2028
+    source: { source: budget-2025, page: 99, where: "Table 4.1, line 71" }
+    scorecard_line: 71
+    effective: "2028-04-01"
+    modelled: false
+    not_modelled:
+      reason: new_tax
+      note: A new tax, so the model has no rules for it. The Treasury expects it to raise £1.1 billion in 2028-29.
+
+treasury:
+  source: { source: impact-on-households-2025, page: 10, where: "Figure 1.A" }
+  title: Impact of decisions from Autumn Budget 2024 onwards on households in 2028-29, as a percentage of net income, by income decile
+  year: "2028-29"
+  covers: >-
+    every tax, welfare and public spending decision since Autumn Budget 2024, not only this Budget's, in
+    2028-29, including the value of public services households use
+  read_from: chart
+  # Read with: python3 scripts/treasury_chart.py Impact_on_households.pdf 10 -2 9 12 --order 3,1,2 (and page 11, -2500 2000 10, --dp 0)
+  pct:
+    deciles:
+      - { tax: -0.94, welfare: 3.03, services: 5.14, overall: 7.24 }
+      - { tax: -0.73, welfare: 1.73, services: 4.41, overall: 5.41 }
+      - { tax: -0.74, welfare: 0.94, services: 4.21, overall: 4.41 }
+      - { tax: -0.78, welfare: 0.46, services: 3.58, overall: 3.25 }
+      - { tax: -0.8, welfare: 0.14, services: 2.97, overall: 2.31 }
+      - { tax: -0.81, welfare: 0.1, services: 2.39, overall: 1.69 }
+      - { tax: -0.82, welfare: 0.04, services: 2.06, overall: 1.27 }
+      - { tax: -0.98, welfare: 0.05, services: 1.57, overall: 0.65 }
+      - { tax: -1.23, welfare: 0.06, services: 1.26, overall: 0.08 }
+      - { tax: -1.65, welfare: 0.05, services: 0.73, overall: -0.87 }
+    all: { tax: -1.09, welfare: 0.32, services: 2.11, overall: 1.35 }
+  gbp:
+    source: { source: impact-on-households-2025, page: 11, where: "Figure 1.B" }
+    deciles:
+      - { tax: -146, welfare: 469, services: 799, overall: 1121 }
+      - { tax: -184, welfare: 434, services: 1113, overall: 1362 }
+      - { tax: -222, welfare: 285, services: 1281, overall: 1343 }
+      - { tax: -279, welfare: 164, services: 1275, overall: 1156 }
+      - { tax: -337, welfare: 60, services: 1249, overall: 972 }
+      - { tax: -387, welfare: 50, services: 1144, overall: 804 }
+      - { tax: -447, welfare: 22, services: 1113, overall: 686 }
+      - { tax: -622, welfare: 28, services: 1008, overall: 411 }
+      - { tax: -936, welfare: 41, services: 954, overall: 62 }
+      - { tax: -1979, welfare: 60, services: 872, overall: -1051 }
+    all: { tax: -552, welfare: 161, services: 1081, overall: 691 }
+  differs: >-
+    The Treasury's chart is for 2028-29, counts every decision since Autumn Budget 2024 rather than this
+    Budget's alone, and adds the value of public services; ours counts only this Budget's tax and benefit
+    measures that PolicyEngine can model, in cash, for each year.

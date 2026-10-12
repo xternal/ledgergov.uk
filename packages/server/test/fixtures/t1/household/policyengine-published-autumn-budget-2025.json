@@ -1,0 +1,244 @@
+{
+ "source": "PolicyEngine, UK Autumn Budget 2025 dashboard data, public/data/{distributional_impact,winners_losers,budgetary_impact}.csv, fetched 12 October 2026 (the same files are in uk-autumn-budget-dashboard-2026)",
+ "urls": [
+  "https://github.com/PolicyEngine/uk-autumn-budget-dashboard/blob/main/public/data/distributional_impact.csv",
+  "https://github.com/PolicyEngine/uk-autumn-budget-dashboard/blob/main/public/data/winners_losers.csv",
+  "https://github.com/PolicyEngine/uk-autumn-budget-dashboard/blob/main/public/data/budgetary_impact.csv"
+ ],
+ "note": "PolicyEngine's years are its simulation years: 2026 is 2026-27. Deciles are household_income_decile in the model of the time (December 2025); relative changes are %, average changes \u00a3 a year per household.",
+ "combined": {
+  "2026": {
+   "rel_change_pct": [
+    1.6613,
+    2.2339,
+    0.7166,
+    0.6238,
+    0.4091,
+    0.3141,
+    0.2678,
+    0.3151,
+    0.3401,
+    0.1547
+   ],
+   "avg_change_gbp": [
+    268.94,
+    539.32,
+    208.46,
+    193.88,
+    143.62,
+    123.14,
+    125.94,
+    165.89,
+    163.75,
+    162.96
+   ],
+   "avg_change_gbp_all": 205.65
+  },
+  "2027": {
+   "rel_change_pct": [
+    1.4647,
+    2.1282,
+    0.6289,
+    0.463,
+    0.2352,
+    0.147,
+    0.0987,
+    0.1283,
+    0.115,
+    0.0548
+   ],
+   "avg_change_gbp": [
+    237.37,
+    514.97,
+    184.4,
+    147.24,
+    82.87,
+    57.35,
+    47.04,
+    67.57,
+    55.5,
+    58.19
+   ],
+   "avg_change_gbp_all": 141.09
+  },
+  "2028": {
+   "rel_change_pct": [
+    1.0017,
+    2.5122,
+    0.3557,
+    0.3243,
+    -0.006,
+    -0.1246,
+    -0.2493,
+    -0.2802,
+    -0.5904,
+    -0.4288
+   ],
+   "avg_change_gbp": [
+    162.29,
+    600.23,
+    105.15,
+    105.8,
+    -2.15,
+    -49.27,
+    -119.6,
+    -148.88,
+    -286.35,
+    -463.11
+   ],
+   "avg_change_gbp_all": -14.28
+  },
+  "2029": {
+   "rel_change_pct": [
+    0.8335,
+    2.3476,
+    -0.0971,
+    0.0847,
+    -0.4393,
+    -0.534,
+    -0.6966,
+    -0.843,
+    -1.8054,
+    -1.219
+   ],
+   "avg_change_gbp": [
+    135.89,
+    566.46,
+    -28.94,
+    28.08,
+    -157.99,
+    -214.68,
+    -337.92,
+    -452.64,
+    -875.01,
+    -1337.04
+   ],
+   "avg_change_gbp_all": -271.24
+  },
+  "2030": {
+   "rel_change_pct": [
+    0.8657,
+    2.0769,
+    -0.1105,
+    -0.2169,
+    -0.5698,
+    -0.7587,
+    -0.955,
+    -1.2288,
+    -2.3881,
+    -1.5551
+   ],
+   "avg_change_gbp": [
+    140.41,
+    498.85,
+    -33.38,
+    -71.77,
+    -208.3,
+    -309.33,
+    -466.21,
+    -665.16,
+    -1157.58,
+    -1731.44
+   ],
+   "avg_change_gbp_all": -402.14
+  }
+ },
+ "budget_bn": {
+  "autumn_budget_2025_combined": {
+   "2026": -6.6171,
+   "2027": -4.5527,
+   "2028": 0.4682,
+   "2029": 8.087,
+   "2030": 12.3534
+  },
+  "two_child_limit": {
+   "2026": -2.9482,
+   "2027": -3.1429,
+   "2028": -3.4208,
+   "2029": -3.5601,
+   "2030": -3.7168
+  },
+  "fuel_duty_freeze": {
+   "2026": -3.5239,
+   "2027": -1.3879,
+   "2028": -1.2106,
+   "2029": -0.5662,
+   "2030": -0.7167
+  },
+  "rail_fares_freeze": {
+   "2026": -0.145,
+   "2027": -0.155,
+   "2028": -0.16,
+   "2029": -0.165,
+   "2030": -0.15
+  },
+  "threshold_freeze_extension": {
+   "2026": 0.0,
+   "2027": 0.0,
+   "2028": 3.7419,
+   "2029": 7.7718,
+   "2030": 12.1232
+  },
+  "dividend_tax_increase_2pp": {
+   "2026": 0.0,
+   "2027": 1.4253,
+   "2028": 1.4716,
+   "2029": 1.5183,
+   "2030": 1.5675
+  },
+  "savings_tax_increase_2pp": {
+   "2026": 0.0,
+   "2027": 0.0,
+   "2028": 0.5018,
+   "2029": 0.5311,
+   "2030": 0.5654
+  },
+  "property_tax_increase_2pp": {
+   "2026": 0.0,
+   "2027": 0.0,
+   "2028": 0.7546,
+   "2029": 0.7815,
+   "2030": 0.8079
+  },
+  "freeze_student_loan_thresholds": {
+   "2026": 0.0,
+   "2027": 0.133,
+   "2028": 0.2624,
+   "2029": 0.3996,
+   "2030": 0.4107
+  },
+  "salary_sacrifice_cap": {
+   "2026": 0.0,
+   "2027": 0.0,
+   "2028": 0.0,
+   "2029": 2.7754,
+   "2030": 2.9094
+  }
+ },
+ "two_child_limit_avg_change_gbp": {
+  "2026": [
+   194.75,
+   448.83,
+   138.84,
+   109.89,
+   40.91,
+   18.68,
+   3.36,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "2028": [
+   159.43,
+   590.76,
+   146.66,
+   141.86,
+   41.95,
+   24.13,
+   3.66,
+   0.0,
+   0.0,
+   0.0
+  ]
+ }
+}

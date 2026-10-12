@@ -1,0 +1,246 @@
+{
+ "policy_id": 98690,
+ "baseline_id": 1,
+ "time_period": 2027,
+ "seconds": 70,
+ "result": {
+  "model_version": "2.102.3",
+  "data_version": "policyengine-uk-data-1.56.16",
+  "budget": {
+   "tax_revenue_impact": 0,
+   "state_tax_revenue_impact": 0,
+   "benefit_spending_impact": 0,
+   "budgetary_impact": 0,
+   "households": 836305277699.2561,
+   "baseline_net_income": 1795977124359.3674
+  },
+  "detailed_budget": {
+   "income_tax": {
+    "baseline": 329350577258.66736,
+    "reform": 329350577258.66736,
+    "difference": 0
+   },
+   "national_insurance": {
+    "baseline": 55706646210.64294,
+    "reform": 55706646210.64294,
+    "difference": 0
+   },
+   "vat": {
+    "baseline": 319826214037.09216,
+    "reform": 319826214037.09216,
+    "difference": 0
+   },
+   "council_tax": {
+    "baseline": 55791705262.696465,
+    "reform": 55791705262.696465,
+    "difference": 0
+   },
+   "fuel_duty": {
+    "baseline": 25874429049.323986,
+    "reform": 25874429049.323986,
+    "difference": 0
+   },
+   "ni_employer": {
+    "baseline": 159266115296.44635,
+    "reform": 159266115296.44635,
+    "difference": 0
+   },
+   "universal_credit": {
+    "baseline": 81113374039.21835,
+    "reform": 81113374039.21835,
+    "difference": 0
+   },
+   "child_benefit": {
+    "baseline": 18173514172.585484,
+    "reform": 18173514172.585484,
+    "difference": 0
+   },
+   "pension_credit": {
+    "baseline": 7759188757.389822,
+    "reform": 7759188757.389822,
+    "difference": 0
+   },
+   "income_support": {
+    "baseline": 0,
+    "reform": 0,
+    "difference": 0
+   },
+   "tax_credits": {
+    "baseline": 0,
+    "reform": 0,
+    "difference": 0
+   },
+   "working_tax_credit": {
+    "baseline": 0,
+    "reform": 0,
+    "difference": 0
+   },
+   "child_tax_credit": {
+    "baseline": 0,
+    "reform": 0,
+    "difference": 0
+   },
+   "state_pension": {
+    "baseline": 130532703988.04492,
+    "reform": 130532703988.04492,
+    "difference": 0
+   }
+  },
+  "decile": {
+   "average": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0
+   },
+   "relative": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0
+   }
+  },
+  "intra_decile": {
+   "deciles": {
+    "Lose more than 5%": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "Lose less than 5%": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "No change": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "Gain less than 5%": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "Gain more than 5%": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "all": {
+    "Lose more than 5%": 0,
+    "Lose less than 5%": 0,
+    "No change": 1,
+    "Gain less than 5%": 0,
+    "Gain more than 5%": 0
+   }
+  },
+  "poverty": {
+   "poverty": {
+    "child": {
+     "baseline": 0.2233595640475028,
+     "reform": 0.2233595640475028
+    },
+    "adult": {
+     "baseline": 0.16766848582621685,
+     "reform": 0.16766848582621685
+    },
+    "senior": {
+     "baseline": 0.2156134990059849,
+     "reform": 0.2156134990059849
+    },
+    "all": {
+     "baseline": 0.1890153989841238,
+     "reform": 0.1890153989841238
+    }
+   },
+   "deep_poverty": {
+    "child": {
+     "baseline": 0.16280787790108808,
+     "reform": 0.16280787790108808
+    },
+    "adult": {
+     "baseline": 0.14026185970552862,
+     "reform": 0.14026185970552862
+    },
+    "senior": {
+     "baseline": 0.15232292202226927,
+     "reform": 0.15232292202226927
+    },
+    "all": {
+     "baseline": 0.14751200765219677,
+     "reform": 0.14751200765219677
+    }
+   }
+  },
+  "inequality": {
+   "gini": {
+    "baseline": 0.31947710370305615,
+    "reform": 0.31947710370305615
+   },
+   "top_10_pct_share": {
+    "baseline": 0.2389690451488909,
+    "reform": 0.2389690451488909
+   },
+   "top_1_pct_share": {
+    "baseline": 0.04850403314187737,
+    "reform": 0.04850403314187737
+   }
+  },
+  "policyengine_bundle": {
+   "model_version": "2.102.3",
+   "policyengine_version": "6.2.1",
+   "data_version": "policyengine-uk-data-1.56.16",
+   "dataset": "gs://policyengine-uk-data-private/enhanced_frs_2024_25.h5@1.56.16"
+  },
+  "resolved_app_name": "policyengine-simulation-py6-2-1"
+ }
+}

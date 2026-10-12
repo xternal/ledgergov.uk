@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "country": "UK",
+    "tax_year": "2026-27",
+    "geography": "England, Wales and Northern Ireland",
+    "quality": "sourced",
+    "method_note": "Income tax for 2026-27 from GOV.UK 'Income Tax rates and Personal Allowances'; employee National Insurance from HMRC 'Rates and thresholds for employers 2026 to 2027' (annual figures). The allowance falls by £1 for every £2 of income above the taper threshold, as GOV.UK states. Each figure equals the committed ETL edition named in its source (etl/sources/govuk_tax_rates.py), which checks the two documents against each other. National Insurance applies across the UK; Scotland sets its own income tax bands. The thresholds are frozen until April 2031 (Budget 2025).",
+    "sources": [
+      {
+        "title": "GOV.UK, Income Tax rates and Personal Allowances",
+        "url": "https://www.gov.uk/income-tax-rates",
+        "gives": "personal allowance, its taper, the basic, higher and additional rate bands and rates",
+        "vintage": "income-tax-rates@2026-10-01"
+      },
+      {
+        "title": "HMRC, Rates and thresholds for employers 2026 to 2027",
+        "url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+        "gives": "employee National Insurance primary threshold, upper earnings limit, main and upper rates",
+        "vintage": "rates-and-thresholds-for-employers-2026-to-2027@2026-09-30"
+      }
+    ]
+  },
+  "income_tax": {
+    "personal_allowance_gbp": 12570,
+    "allowance_taper_threshold_gbp": 100000,
+    "allowance_taper_rate": 0.5,
+    "basic_band_gbp": 37700,
+    "additional_threshold_gbp": 125140,
+    "basic_rate_lever": "income_tax_basic",
+    "higher_rate_pct": 40,
+    "additional_rate_pct": 45
+  },
+  "employee_ni": {
+    "primary_threshold_gbp": 12570,
+    "upper_earnings_limit_gbp": 50270,
+    "main_rate_lever": "nics_main",
+    "upper_rate_pct": 2
+  },
+  "your_share_defaults": {
+    "salary_gbp": 38000
+  }
+}
