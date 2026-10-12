@@ -1,6 +1,6 @@
 /**
  * pnpm indexnow: tell search engines that use IndexNow (Bing, Yandex, Seznam,
- * Naver, Yep) which Public Ledger pages changed, so they re-read them now.
+ * Naver, Yep) which LedgerGov.UK pages changed, so they re-read them now.
  *
  *   pnpm indexnow -- --before <sha> --after <sha>   the pages of cards that changed between two commits,
  *                                                   once the live site serves them (waits up to 6 minutes)

@@ -357,7 +357,7 @@ describe("weekly digest", () => {
     const [m, ...more] = await outbox();
     expect(more).toEqual([]);
     expect(m!.to).toBe("weekly@example.org");
-    expect(m!.subject).toBe("Your weekly Public Ledger digest: 3 changes");
+    expect(m!.subject).toBe("Your weekly LedgerGov.UK digest: 3 changes");
     expect(m!.text).toContain("Changes to promises you follow, in the week to 12 October 2026.");
     expect(m!.text).toContain("Andy Burnham: “A £2 cap on bus fares”\n  - Status changed: In plan → Funded\n  - Funded, 5 October 2026");
     expect(m!.text).toContain("  - Reply from Andy Burnham: Funding is confirmed.");
@@ -434,7 +434,7 @@ describe("submitter updates", () => {
     expect(report.submitterUpdates).toBe(1);
     const [m] = await outbox();
     expect(m!.to).toBe("reader@example.org");
-    expect(m!.subject).toBe("Your submission S-2026-10-0001 is on Public Ledger");
+    expect(m!.subject).toBe("Your submission S-2026-10-0001 is on LedgerGov.UK");
     expect(m!.text).toContain("Your submission S-2026-10-0001 became this card:\nhttps://ledger.test/promise/uk-free-buses-2026");
     const [row] = await db.query<Record<string, unknown>>("SELECT status, resulting_promise_id, contact_email_enc FROM submission");
     expect(row).toEqual({ status: "merged_into", resulting_promise_id: "uk-free-buses-2026", contact_email_enc: null });
@@ -486,7 +486,7 @@ describe("acceptance (BUILD_PLAN M3b): a merged status change reaches RSS, email
     // 4. The Atom feed built from the merged content has the new entry first.
     const parsedActors = Object.values(ACTORS).map((a) => ActorFile.parse(a));
     const cards = cardViews([...after.values()].map((t) => PromiseFile.parse(parseYaml(t))), parsedActors);
-    const xml = buildFeed(cards, "promise", "uk-bus-cap-2-2026", { siteUrl: SITE, today: "2026-10-06", title: "Public Ledger: £2 bus cap", alternatePath: "/promise/uk-bus-cap-2-2026" });
+    const xml = buildFeed(cards, "promise", "uk-bus-cap-2-2026", { siteUrl: SITE, today: "2026-10-06", title: "LedgerGov.UK: £2 bus cap", alternatePath: "/promise/uk-bus-cap-2-2026" });
     const first = xml.split("<entry>")[1]!;
     expect(first).toContain("<title type=\"text\">Funded: Autumn Budget allocates £400m in the Estimates (Andy Burnham)</title>");
     expect(first).toContain("<updated>2026-10-05T00:00:00Z</updated>");

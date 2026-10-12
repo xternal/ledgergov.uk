@@ -13,7 +13,7 @@ const prod = {
 
 describe("Resend mail", () => {
   it("is chosen by MAIL_PROVIDER=resend and needs a key and a sender in production", () => {
-    const c = loadConfig({ ...prod, MAIL_PROVIDER: "resend", RESEND_API_KEY: "re_test", MAIL_FROM: "Public Ledger <alerts@ledger.example>" });
+    const c = loadConfig({ ...prod, MAIL_PROVIDER: "resend", RESEND_API_KEY: "re_test", MAIL_FROM: "LedgerGov.UK <alerts@ledger.example>" });
     expect(c.mail.provider).toBe("resend");
     expect(c.mail.resendApiKey).toBe("re_test");
     expect(() => loadConfig({ ...prod, MAIL_PROVIDER: "resend", MAIL_FROM: "a@b.example" })).toThrow(/RESEND_API_KEY/);
@@ -22,7 +22,7 @@ describe("Resend mail", () => {
   });
 
   it("sends one plain-text message with the unsubscribe headers, and nothing else", async () => {
-    const c = loadConfig({ MAIL_PROVIDER: "resend", RESEND_API_KEY: "re_test", MAIL_FROM: "Public Ledger <alerts@ledger.example>", MAIL_REPLY_TO: "editors@ledger.example" });
+    const c = loadConfig({ MAIL_PROVIDER: "resend", RESEND_API_KEY: "re_test", MAIL_FROM: "LedgerGov.UK <alerts@ledger.example>", MAIL_REPLY_TO: "editors@ledger.example" });
     const calls: { url: string; init: RequestInit }[] = [];
     const fake = (async (url: string, init: RequestInit) => {
       calls.push({ url, init });
@@ -34,7 +34,7 @@ describe("Resend mail", () => {
     expect((calls[0]!.init.headers as Record<string, string>).Authorization).toBe("Bearer re_test");
     const body = JSON.parse(String(calls[0]!.init.body));
     expect(body).toEqual({
-      from: "Public Ledger <alerts@ledger.example>",
+      from: "LedgerGov.UK <alerts@ledger.example>",
       to: ["reader@example.org"],
       subject: "Status changed",
       text: "Hello",

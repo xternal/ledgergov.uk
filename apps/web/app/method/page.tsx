@@ -14,7 +14,7 @@ import { METHOD_DESCRIPTION, METHOD_TITLE } from "@/lib/method-copy";
 import { absolute, OPEN_GRAPH, MAKER, SITE_NAME, SOURCE_CODE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: `${METHOD_TITLE} | Public Ledger`,
+  title: `${METHOD_TITLE} | LedgerGov.UK`,
   description: METHOD_DESCRIPTION,
   alternates: { canonical: "/method" },
   openGraph: { ...OPEN_GRAPH, title: METHOD_TITLE, description: METHOD_DESCRIPTION, type: "article", url: "/method" },
@@ -220,11 +220,11 @@ export default function MethodPage() {
             Reusing our work
           </h2>
           <p className="m-0 text-muted">
-            What Public Ledger writes, such as status notes, cost notes, summaries and these method pages, is licensed under{" "}
+            What LedgerGov.UK writes, such as status notes, cost notes, summaries and these method pages, is licensed under{" "}
             <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">
               Creative Commons Attribution 4.0
             </a>
-            : reuse it freely, crediting Public Ledger with a link to the page it comes from. Official figures keep their own licences, mostly the{" "}
+            : reuse it freely, crediting LedgerGov.UK with a link to the page it comes from. Official figures keep their own licences, mostly the{" "}
             <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>; quotes from Parliament are under the{" "}
             <a href="https://www.parliament.uk/site-information/copyright-parliament/open-parliament-licence/">Open Parliament Licence</a>; other quotes are short
             extracts whose rights stay with the speaker. Every source is named next to its number and in the <a href="/method/api">open data API</a>.

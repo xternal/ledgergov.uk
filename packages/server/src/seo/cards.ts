@@ -10,7 +10,7 @@ import { memberUrl } from "../mp/parliament";
  * structured data, its Markdown and llms-full.txt always agree.
  */
 
-export const SITE_NAME = "Public Ledger";
+export const SITE_NAME = "LedgerGov.UK";
 
 /** Where pages and files are served from, and today's date (YYYY-MM-DD, UK time). */
 export interface SeoContext {
@@ -66,7 +66,7 @@ export const TITLE_MAX = 75;
 export const DESCRIPTION_MAX = 160;
 
 /**
- * "Create Great British Energy – Labour promise, Delivering | Public Ledger".
+ * "Create Great British Energy – Labour promise, Delivering | LedgerGov.UK".
  * The site name is dropped when it would push the title past TITLE_MAX; who
  * made the promise and where it stands never are. `social` is the title for
  * link previews, without the site name (they show it separately).

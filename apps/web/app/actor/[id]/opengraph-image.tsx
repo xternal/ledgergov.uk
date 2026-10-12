@@ -5,7 +5,7 @@ import { figuresImage } from "@/lib/method-og";
 import { STATUS_LABEL } from "@/lib/copy";
 import { shortName } from "@/lib/promises";
 
-export const alt = "Public Ledger: a party's or politician's tracked promises and how they stand";
+export const alt = "LedgerGov.UK: a party's or politician's tracked promises and how they stand";
 export const size = OG.size;
 export const contentType = "image/png";
 

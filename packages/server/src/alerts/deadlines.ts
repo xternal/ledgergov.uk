@@ -74,7 +74,7 @@ export function comingDueEmail(
   return {
     subject: `Coming due: ${plural(items.length)} ${when}`,
     text: [
-      `${plural(items.length)} on Public Ledger ${items.length === 1 ? "is" : "are"} due ${when}, nearest deadline first.`,
+      `${plural(items.length)} on LedgerGov.UK ${items.length === 1 ? "is" : "are"} due ${when}, nearest deadline first.`,
       "",
       items.map((c) => [dueLine(c, today), `  ${site}/promise/${c.id}`].join("\n")).join("\n\n"),
       "",

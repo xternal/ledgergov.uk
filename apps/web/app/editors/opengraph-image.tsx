@@ -3,7 +3,7 @@ import { OG } from "@/lib/og";
 import { figuresImage } from "@/lib/method-og";
 import { ownerOf } from "@/lib/promises";
 
-export const alt = "Public Ledger: volunteer editors wanted to check UK political promise cards";
+export const alt = "LedgerGov.UK: volunteer editors wanted to check UK political promise cards";
 export const size = OG.size;
 export const contentType = "image/png";
 

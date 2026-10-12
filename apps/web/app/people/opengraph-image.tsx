@@ -3,7 +3,7 @@ import { getPeople } from "@/lib/data";
 import { OG, ogFonts } from "@/lib/og";
 import { pctGdp, per100, span, spendingSpan } from "@/lib/people-view";
 
-export const alt = "Public Ledger: people over pension age per 100 of working age, and spending that rises with age, from ONS and OBR projections";
+export const alt = "LedgerGov.UK: people over pension age per 100 of working age, and spending that rises with age, from ONS and OBR projections";
 export const size = OG.size;
 export const contentType = "image/png";
 
@@ -30,7 +30,7 @@ export default async function Image() {
           <div style={{ width: "55%", height: "100%", background: OG.rec }} />
           <div style={{ width: "45%", height: "100%", background: OG.debt }} />
         </div>
-        Public Ledger
+        LedgerGov.UK
       </div>
       <div style={{ display: "flex", fontSize: 60, fontWeight: 600, letterSpacing: -2.2, lineHeight: 1.05, marginTop: 44, maxWidth: 1000 }}>
         An ageing country, and what it costs

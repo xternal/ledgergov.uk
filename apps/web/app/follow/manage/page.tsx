@@ -6,7 +6,7 @@ import { describeTarget, targetHref } from "../targets";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
-  title: "Your alerts | Public Ledger",
+  title: "Your alerts | LedgerGov.UK",
   robots: { index: false, follow: false },
   referrer: "no-referrer",
 };

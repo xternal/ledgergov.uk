@@ -12,11 +12,11 @@ type Props = { params: Promise<{ code: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { code } = await params;
   const s = summarise(getSeed(), code);
-  if (!s) return { title: "Scenario not found | Public Ledger" };
+  if (!s) return { title: "Scenario not found | LedgerGov.UK" };
   const d = s.result.y1.d_borrowing_bn;
-  const description = `${s.changes.map((c) => c.label).join("; ")}. Range ${rangeText(d, signedBn)} a year. Built in the Public Ledger sandbox; not a forecast.`;
+  const description = `${s.changes.map((c) => c.label).join("; ")}. Range ${rangeText(d, signedBn)} a year. Built in the LedgerGov.UK sandbox; not a forecast.`;
   return {
-    title: `${s.headline} | Public Ledger scenario`,
+    title: `${s.headline} | LedgerGov.UK scenario`,
     description,
     // A shared scenario is a reader's own sum, not a page for search: previews yes, indexing no.
     openGraph: { ...OPEN_GRAPH, title: s.headline, description, type: "article", url: `/s/${code}` },
@@ -54,7 +54,7 @@ export default async function SharePage({ params }: Props) {
         <div className="mx-auto flex h-14 max-w-[880px] items-center justify-between gap-4 px-4 sm:px-6">
           <a href="/" className="flex items-center gap-2 text-[15px] font-semibold tracking-[-0.01em] text-ink no-underline">
             <LogoMark />
-            Public Ledger
+            LedgerGov.UK
           </a>
           <a href={`/?s=${code}#scenario`} className="rounded-full bg-ink px-3 py-1 text-label font-semibold text-bg no-underline hover:opacity-90">
             Open in the sandbox
@@ -64,7 +64,7 @@ export default async function SharePage({ params }: Props) {
       <main className="mx-auto grid max-w-[880px] gap-10 px-4 pb-20 pt-12 sm:px-6">
         <div className="grid gap-3">
           <p className="m-0 text-label text-muted">
-            A scenario built in the Public Ledger sandbox, on {s.decoded.baseYear} figures
+            A scenario built in the LedgerGov.UK sandbox, on {s.decoded.baseYear} figures
           </p>
           <h1 className={`m-0 text-[clamp(30px,5vw,44px)] font-semibold leading-[1.08] tracking-[-0.03em] ${s.tone === "up" ? "text-bad" : s.tone === "down" ? "text-good" : ""}`}>
             {s.headline}
@@ -109,7 +109,7 @@ export default async function SharePage({ params }: Props) {
         </p>
 
         <div className="grid gap-2 rounded-panel bg-sunk p-5 text-label text-muted">
-          <p className="m-0 font-semibold text-ink">Built by someone using the sandbox. This is not a Public Ledger forecast or finding.</p>
+          <p className="m-0 font-semibold text-ink">Built by someone using the sandbox. This is not a LedgerGov.UK forecast or finding.</p>
           <p className="m-0">
             Tax costings are HMRC&apos;s and debt-interest costings the OBR&apos;s, per unit of change (capital gains tax only at the steps HMRC costs).
             They include how taxpayers respond but no wider economic

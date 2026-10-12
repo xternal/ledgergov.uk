@@ -42,7 +42,7 @@ const notFound = () => new Response("Not found", { status: 404, headers: TEXT })
 const signIn = () =>
   new Response("Editors only. Sign in with the editors' user name and password.", {
     status: 401,
-    headers: { ...TEXT, "WWW-Authenticate": 'Basic realm="Public Ledger editors", charset="UTF-8"' },
+    headers: { ...TEXT, "WWW-Authenticate": 'Basic realm="LedgerGov.UK editors", charset="UTF-8"' },
   });
 
 /**

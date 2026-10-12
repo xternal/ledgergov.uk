@@ -9,7 +9,7 @@ Two prompts below. Unzip the pack into an empty git repo first.
 ## 1. Claude Code — kick-off (paste as the first message)
 
 ```
-You are starting work on Public Ledger, an open P&L of the UK state: a Sankey of public income and spending, a policy sandbox that turns any proposal into ranged consequences, and a ledger of political promises with cost, funding and a status timeline.
+You are starting work on LedgerGov.UK, an open P&L of the UK state: a Sankey of public income and spending, a policy sandbox that turns any proposal into ranged consequences, and a ledger of political promises with cost, funding and a status timeline.
 
 Before writing any code, read in this order:
 1. CLAUDE.md (invariants, stack, repo layout) — these rules override your defaults.
@@ -38,7 +38,7 @@ For later milestones, open a new session and paste the matching prompt from `doc
 ## 2. Designer — brief (send with the repo or the prototype link)
 
 ```
-We are building Public Ledger: the annual report of the country for its 69 million shareholders, with a calculator next to every page and a credit history for every promise. UK pilot first.
+We are building LedgerGov.UK: the annual report of the country for its 69 million shareholders, with a calculator next to every page and a credit history for every promise. UK pilot first.
 
 Start with the clickable prototype (prototype/index.html or the shared link). The interaction model and information hierarchy are agreed. Your job is the polished system and the screens we have not drawn yet.
 

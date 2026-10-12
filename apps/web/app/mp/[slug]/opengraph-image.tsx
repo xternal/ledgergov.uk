@@ -2,7 +2,7 @@ import { constituencyBySlug } from "@ledger/server/mp";
 import { OG } from "@/lib/og";
 import { mpShareImage } from "@/lib/mp-og";
 
-export const alt = "Public Ledger: the MP for a constituency, with their promises and votes";
+export const alt = "LedgerGov.UK: the MP for a constituency, with their promises and votes";
 export const size = OG.size;
 export const contentType = "image/png";
 

@@ -3,7 +3,7 @@ import { OG } from "@/lib/og";
 import { figuresImage } from "@/lib/method-og";
 import { ownerOf } from "@/lib/promises";
 
-export const alt = "Public Ledger: UK political promises quoted word for word, with where each stands";
+export const alt = "LedgerGov.UK: UK political promises quoted word for word, with where each stands";
 export const size = OG.size;
 export const contentType = "image/png";
 

@@ -3,7 +3,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { absolute, OPEN_GRAPH } from "@/lib/site";
 import { feedTargets } from "./feed-response";
 
-const TITLE = "Feeds: follow promise changes in a feed reader | Public Ledger";
+const TITLE = "Feeds: follow promise changes in a feed reader | LedgerGov.UK";
 const DESCRIPTION =
   "Atom feeds for every tracked UK political promise, party, politician, policy area and deadline: each new timeline event, rewording, reply and contract change, plus new official figures, with no sign-up.";
 
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     canonical: absolute("/feeds"),
     types: {
       "application/atom+xml": [
-        { url: absolute("/feeds/all.xml"), title: "Public Ledger: every change" },
-        { url: absolute("/feeds/updates.xml"), title: "Public Ledger: updates to the figures" },
+        { url: absolute("/feeds/all.xml"), title: "LedgerGov.UK: every change" },
+        { url: absolute("/feeds/updates.xml"), title: "LedgerGov.UK: updates to the figures" },
       ],
     },
   },
@@ -62,7 +62,7 @@ export default function FeedsPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Public Ledger feeds",
+    name: "LedgerGov.UK feeds",
     description: DESCRIPTION,
     url: absolute("/feeds"),
     inLanguage: "en-GB",

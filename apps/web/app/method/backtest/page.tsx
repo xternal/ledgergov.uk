@@ -24,7 +24,7 @@ import {
 import { absolute, OPEN_GRAPH, MAKER, SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: `${BACKTEST_TITLE} | Public Ledger`,
+  title: `${BACKTEST_TITLE} | LedgerGov.UK`,
   description: BACKTEST_DESCRIPTION,
   alternates: { canonical: "/method/backtest" },
   openGraph: { ...OPEN_GRAPH, title: BACKTEST_TITLE, description: BACKTEST_DESCRIPTION, type: "article", url: "/method/backtest" },
@@ -101,7 +101,7 @@ export default function BacktestPage() {
     {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Public Ledger forecasts against outturn",
+      name: "LedgerGov.UK forecasts against outturn",
       description: BACKTEST_DESCRIPTION,
       url: absolute("/method/backtest"),
       inLanguage: "en-GB",

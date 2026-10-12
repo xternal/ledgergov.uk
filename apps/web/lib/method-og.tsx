@@ -3,7 +3,7 @@ import { OG, ogFonts } from "./og";
 import { MARK_DATA_URI } from "@/lib/brand";
 
 export interface FiguresImage {
-  /** The section after "Public Ledger ·", e.g. "Method" or "Autumn Budget 2026". */
+  /** The section after "LedgerGov.UK ·", e.g. "Method" or "Autumn Budget 2026". */
   kicker: string;
   title: string;
   figures: { value: string; label: string }[];
@@ -22,7 +22,7 @@ export async function figuresImage({ kicker, title, figures, foot }: FiguresImag
     <div style={{ display: "flex", flexDirection: "column", width: "100%", height: "100%", background: OG.bg, color: OG.ink, padding: "56px 64px", fontFamily: "Geist" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 28, fontWeight: 600 }}>
         <img src={MARK_DATA_URI} width={28} height={28} alt="" />
-        {`Public Ledger · ${kicker}`}
+        {`LedgerGov.UK · ${kicker}`}
       </div>
       <div style={{ display: "flex", fontSize: 64, fontWeight: 600, letterSpacing: -2.4, lineHeight: 1.05, marginTop: 44, maxWidth: 1000 }}>{title}</div>
       <div style={{ display: "flex", gap: 56, marginTop: "auto" }}>

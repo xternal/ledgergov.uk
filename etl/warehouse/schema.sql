@@ -1,4 +1,4 @@
--- Public Ledger analytics warehouse (DuckDB).
+-- LedgerGov.UK analytics warehouse (DuckDB).
 --
 -- Purpose: understand what is happening with the product, in quantity and in
 -- quality, from the first build onwards. Four areas:

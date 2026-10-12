@@ -1,6 +1,6 @@
 # Editors' guide
 
-Welcome. This is everything a Public Ledger editor needs: what the job is, the rules in plain words, and how to review a card on GitHub step by step. It takes about 20 minutes to read. The full rules are in [PROMISE_STANDARD.md](PROMISE_STANDARD.md); where this guide and the standard differ, the standard wins.
+Welcome. This is everything a LedgerGov.UK editor needs: what the job is, the rules in plain words, and how to review a card on GitHub step by step. It takes about 20 minutes to read. The full rules are in [PROMISE_STANDARD.md](PROMISE_STANDARD.md); where this guide and the standard differ, the standard wins.
 
 ## The job in one paragraph
 

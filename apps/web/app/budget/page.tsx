@@ -30,7 +30,7 @@ const DESCRIPTION = `The Budget on ${dayDate(BUDGET.date)} can fund, change or b
 }, and, from Budget day, what the Budget did to each.`;
 
 export const metadata: Metadata = {
-  title: `${TITLE} | Public Ledger`,
+  title: `${TITLE} | LedgerGov.UK`,
   description: DESCRIPTION,
   alternates: { canonical: "/budget" },
   openGraph: { ...OPEN_GRAPH, title: TITLE, description: DESCRIPTION, type: "website", url: "/budget" },

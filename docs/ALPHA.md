@@ -1,4 +1,4 @@
-# Alpha: deploy Public Ledger and try it
+# Alpha: deploy LedgerGov.UK and try it
 
 The alpha is the site as built so far, live on the web: public and crawlable (search engines and AI assistants may read it, `llms.txt` included), with an "Alpha" banner on every page saying the promise cards have not yet had their editor review.
 

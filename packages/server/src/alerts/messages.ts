@@ -44,7 +44,7 @@ export function groupByCard(events: MessageEvent[]): Group[] {
   const groups = new Map<string, Group>();
   for (const e of events) {
     const key = e.promise_id ?? `~${e.change_type ?? ""}:${e.url}`;
-    const fallback = e.promise_id ?? GROUP_TITLE[e.change_type ?? ""] ?? "Public Ledger";
+    const fallback = e.promise_id ?? GROUP_TITLE[e.change_type ?? ""] ?? "LedgerGov.UK";
     const g = groups.get(key) ?? { title: e.title || fallback, url: e.url, lines: [] };
     if (!g.lines.includes(e.summary)) g.lines.push(e.summary);
     groups.set(key, g);
@@ -69,7 +69,7 @@ export function footer(links: ManageLinks): string {
     links.unsubscribeUrl,
     "",
     "Keep these links to yourself: anyone who has them can change your alerts.",
-    "Public Ledger sends plain-text email with no tracking, never shows who follows what, and never shares or sells its lists.",
+    "LedgerGov.UK sends plain-text email with no tracking, never shows who follows what, and never shares or sells its lists.",
   ].join("\n");
 }
 
@@ -83,16 +83,16 @@ export function alertEmail(events: MessageEvent[], links: ManageLinks): { subjec
         : `${events.length} changes to ${events.every((e) => e.promise_id) ? "promises" : "what"} you follow`;
   const onCards = events.every((e) => e.promise_id);
   const intro = !onCards
-    ? "Something you follow on Public Ledger has changed."
+    ? "Something you follow on LedgerGov.UK has changed."
     : cards.length === 1
-      ? "A promise you follow on Public Ledger has changed."
-      : "Promises you follow on Public Ledger have changed.";
+      ? "A promise you follow on LedgerGov.UK has changed."
+      : "Promises you follow on LedgerGov.UK have changed.";
   return { subject, text: [intro, "", blocks(events), "", footer(links)].join("\n") };
 }
 
 export function digestEmail(events: MessageEvent[], links: ManageLinks, now = new Date()): { subject: string; text: string } {
   const n = events.length;
-  const subject = `Your weekly Public Ledger digest: ${n} ${n === 1 ? "change" : "changes"}`;
+  const subject = `Your weekly LedgerGov.UK digest: ${n} ${n === 1 ? "change" : "changes"}`;
   const intro = `Changes to ${events.every((e) => e.promise_id) ? "promises" : "what"} you follow, in the week to ${ukDate(now)}.`;
   return { subject, text: [intro, "", blocks(events), "", footer(links)].join("\n") };
 }
@@ -110,7 +110,7 @@ export function telegramText(events: MessageEvent[], opts: { digest?: boolean; n
 export function submitterEmail(ref: string, url: string, kind: "card" | "evidence"): { subject: string; text: string } {
   const what = kind === "card" ? `Your submission ${ref} became this card:` : `The evidence you sent (${ref}) is now on this card:`;
   return {
-    subject: `Your submission ${ref} is on Public Ledger`,
+    subject: `Your submission ${ref} is on LedgerGov.UK`,
     text: [
       "Thank you.",
       "",
@@ -121,7 +121,7 @@ export function submitterEmail(ref: string, url: string, kind: "card" | "evidenc
       "",
       "This is the last email about this submission. We delete your email address from it once this is sent.",
       "",
-      "Public Ledger",
+      "LedgerGov.UK",
     ].join("\n"),
   };
 }

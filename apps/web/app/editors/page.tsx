@@ -4,7 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { CONTROLLER, EDITOR_APPLICATION_RETENTION_MONTHS } from "@/lib/privacy-copy";
 import { absolute, EDITORS_EMAIL, EDITORS_PAGE_UPDATED, MAKER, OPEN_GRAPH, SITE_NAME, SOURCE_CODE } from "@/lib/site";
 
-const TITLE = "Become a Public Ledger editor";
+const TITLE = "Become a LedgerGov.UK editor";
 const DESCRIPTION =
   "Volunteer editors check UK political promise cards against their sources before they count: about two hours a week, remote, no coding. Any party or none, declared.";
 
@@ -99,7 +99,7 @@ export default function EditorsPage() {
             What you would do
           </h2>
           <p className="m-0 text-muted">
-            Public Ledger tracks what UK parties and the government promise, quoted word for word, with what each promise would cost a year, who pays, and a
+            LedgerGov.UK tracks what UK parties and the government promise, quoted word for word, with what each promise would cost a year, who pays, and a
             timeline that moves only on evidence. Editors keep the cards honest.
           </p>
           <ul className="m-0 grid list-disc gap-2 pl-5">
@@ -158,7 +158,7 @@ export default function EditorsPage() {
             ))}
           </ul>
           <p className="m-0 text-muted">
-            The role is unpaid. Public Ledger is independent: no party, campaign or government funds or directs it.
+            The role is unpaid. LedgerGov.UK is independent: no party, campaign or government funds or directs it.
           </p>
         </section>
 
@@ -175,7 +175,7 @@ export default function EditorsPage() {
           </a>
           <p className="m-0 text-label text-muted">
             We use what you send only to consider your application, and delete it within {EDITOR_APPLICATION_RETENTION_MONTHS} months if you do not join.{" "}
-            {CONTROLLER.name} runs Public Ledger; see the <a href="/privacy#what">privacy notice</a>. Questions first? Write to the same address.
+            {CONTROLLER.name} runs LedgerGov.UK; see the <a href="/privacy#what">privacy notice</a>. Questions first? Write to the same address.
           </p>
           <p className="m-0 text-label text-muted">
             {MAKER.name}, founder

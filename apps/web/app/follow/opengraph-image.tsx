@@ -2,7 +2,7 @@ import { getSeed } from "@/lib/data";
 import { OG } from "@/lib/og";
 import { figuresImage } from "@/lib/method-og";
 
-export const alt = "Public Ledger: get an email, Telegram message or RSS item when a UK political promise moves";
+export const alt = "LedgerGov.UK: get an email, Telegram message or RSS item when a UK political promise moves";
 export const size = OG.size;
 export const contentType = "image/png";
 

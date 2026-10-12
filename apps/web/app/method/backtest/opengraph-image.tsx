@@ -5,7 +5,7 @@ import { methodImage } from "@/lib/method-og";
 import { BACKTEST_TITLE, dueMonth } from "@/lib/method-copy";
 import { grouped } from "@/lib/format";
 
-export const alt = "Public Ledger: forecasts recorded and checked against the official outturn";
+export const alt = "LedgerGov.UK: forecasts recorded and checked against the official outturn";
 export const size = OG.size;
 export const contentType = "image/png";
 

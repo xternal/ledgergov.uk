@@ -15,7 +15,7 @@ export const MEMBERS_API = "https://members-api.parliament.uk/api";
 export const VOTES_API = "https://commonsvotes-api.parliament.uk/data";
 export const BILLS_API = "https://bills-api.parliament.uk/api/v1";
 
-export const USER_AGENT = "PublicLedger/1.0 (Your MP; server-side, cached daily)";
+export const USER_AGENT = "LedgerGovUK/1.0 (Your MP; server-side, cached daily)";
 
 /** A reader is waiting: give up well before a serverless function would. */
 const TIMEOUT_MS = 8_000;

@@ -91,7 +91,7 @@ export function feedPath(t: Target): string {
 export const plainDescribe: DescribeTarget = (t) => {
   switch (t.kind) {
     case "all":
-      return "Every promise on Public Ledger";
+      return "Every promise on LedgerGov.UK";
     case "area":
       return `Policy area: ${t.id}`;
     case "deadline_window":

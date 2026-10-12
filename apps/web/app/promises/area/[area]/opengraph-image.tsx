@@ -5,7 +5,7 @@ import { figuresImage } from "@/lib/method-og";
 import { STATUS_LABEL } from "@/lib/copy";
 import { AREA_LABEL } from "@/lib/promises";
 
-export const alt = "Public Ledger: UK political promises in one policy area, with how many are on track";
+export const alt = "LedgerGov.UK: UK political promises in one policy area, with how many are on track";
 export const size = OG.size;
 export const contentType = "image/png";
 

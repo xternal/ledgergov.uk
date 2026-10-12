@@ -11,7 +11,7 @@ const DESCRIPTION =
   "Get an email, a Telegram message or an RSS item when a tracked UK political promise changes status, misses a deadline, is reworded or re-costed, or comes due. No account needed.";
 
 export const metadata: Metadata = {
-  title: `${TITLE} | Public Ledger`,
+  title: `${TITLE} | LedgerGov.UK`,
   description: DESCRIPTION,
   alternates: { canonical: "/follow" },
   openGraph: { ...OPEN_GRAPH, title: TITLE, description: DESCRIPTION, type: "website", url: "/follow" },
@@ -75,7 +75,7 @@ export default function FollowPage() {
             ))}
           </ul>
           <p className="m-0 text-muted">
-            RSS feeds store nothing at all. The <a href="/privacy">privacy notice</a> says who runs Public Ledger, how long we keep things and how to have
+            RSS feeds store nothing at all. The <a href="/privacy">privacy notice</a> says who runs LedgerGov.UK, how long we keep things and how to have
             them deleted.
           </p>
         </section>

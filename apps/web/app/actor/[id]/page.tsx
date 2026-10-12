@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     DESCRIPTION_MAX,
   );
   return {
-    title: `${title} | Public Ledger`,
+    title: `${title} | LedgerGov.UK`,
     description,
     alternates: { canonical: `/actor/${id}`, types: { "application/atom+xml": [{ url: `/feeds/actor/${id}.xml`, title: `Changes to ${r.actor.name}'s promises` }] } },
     openGraph: { ...OPEN_GRAPH, title, description, type: "profile", url: `/actor/${id}` },

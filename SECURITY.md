@@ -1,6 +1,6 @@
 # Security
 
-Public Ledger holds a little personal data: the email addresses of people who follow promises, what they follow (which can reveal political opinions), and what readers send in. Please report anything that could expose it, or let someone change the site or its data, privately.
+LedgerGov.UK holds a little personal data: the email addresses of people who follow promises, what they follow (which can reveal political opinions), and what readers send in. Please report anything that could expose it, or let someone change the site or its data, privately.
 
 ## How to report
 

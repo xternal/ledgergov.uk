@@ -332,7 +332,7 @@ export function atomFeed(meta: FeedMeta, entries: AtomEntry[]): string {
     `  <link rel="self" type="application/atom+xml" href="${x(meta.selfUrl)}"/>`,
     `  <link rel="alternate" type="text/html" href="${x(meta.alternateUrl)}"/>`,
     `  <updated>${x(updated)}</updated>`,
-    `  <author><name>Public Ledger</name><uri>${x(meta.siteUrl)}</uri></author>`,
+    `  <author><name>LedgerGov.UK</name><uri>${x(meta.siteUrl)}</uri></author>`,
     ...entries.map((e) =>
       [
         `  <entry>`,
@@ -416,5 +416,5 @@ export function buildFeed(
   );
 }
 
-/** Feed titles for deadline windows: "Public Ledger: promises due in the next 3 months". */
-export const windowFeedTitle = (w: DeadlineWindow) => `Public Ledger: promises ${WINDOW_LABEL[w].charAt(0).toLowerCase()}${WINDOW_LABEL[w].slice(1)}`;
+/** Feed titles for deadline windows: "LedgerGov.UK: promises due in the next 3 months". */
+export const windowFeedTitle = (w: DeadlineWindow) => `LedgerGov.UK: promises ${WINDOW_LABEL[w].charAt(0).toLowerCase()}${WINDOW_LABEL[w].slice(1)}`;

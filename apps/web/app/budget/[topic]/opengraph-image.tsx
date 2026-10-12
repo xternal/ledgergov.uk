@@ -7,7 +7,7 @@ import { gbpBn, rangeText } from "@/lib/format";
 import { costSense, ownerOf, shortName } from "@/lib/promises";
 import { BUDGET, BUDGET_TOPICS, topicCards } from "@/lib/budget";
 
-export const alt = "Public Ledger: what each party has promised on a Budget question, with what each would cost or raise";
+export const alt = "LedgerGov.UK: what each party has promised on a Budget question, with what each would cost or raise";
 export const size = OG.size;
 export const contentType = "image/png";
 export const revalidate = 3600;
@@ -37,7 +37,7 @@ export default async function Image({ params }: { params: Promise<{ topic: strin
     <div style={{ display: "flex", flexDirection: "column", width: "100%", height: "100%", background: OG.bg, color: OG.ink, padding: "44px 60px", fontFamily: "Geist" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 24, fontWeight: 600 }}>
         <img src={MARK_DATA_URI} width={24} height={24} alt="" />
-        {`Public Ledger · ${BUDGET.name}`}
+        {`LedgerGov.UK · ${BUDGET.name}`}
       </div>
       <div style={{ display: "flex", fontSize: 48, fontWeight: 600, letterSpacing: -1.6, lineHeight: 1.05, marginTop: 18, maxWidth: 1060 }}>{topic.heading}</div>
       <div style={{ display: "flex", flexDirection: "column", marginTop: 22, borderTop: `2px solid ${OG.line}` }}>

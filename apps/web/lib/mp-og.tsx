@@ -15,7 +15,7 @@ export async function mpShareImage(eyebrow: string, heading: string): Promise<Im
     <div style={{ display: "flex", flexDirection: "column", width: "100%", height: "100%", background: OG.bg, color: OG.ink, padding: "56px 64px", fontFamily: "Geist" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 28, fontWeight: 600 }}>
         <img src={MARK_DATA_URI} width={28} height={28} alt="" />
-        Public Ledger
+        LedgerGov.UK
       </div>
       <div style={{ display: "flex", fontSize: 30, color: OG.muted, marginTop: 52 }}>{eyebrow}</div>
       <div style={{ display: "flex", fontSize: heading.length > 32 ? 60 : 76, fontWeight: 600, letterSpacing: -2.4, lineHeight: 1.05, marginTop: 10, maxWidth: 1060 }}>

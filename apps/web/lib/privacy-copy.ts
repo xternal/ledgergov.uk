@@ -15,12 +15,12 @@ import { ALPHA_COOKIE_MAX_AGE } from "@ledger/server/alpha";
 
 export const PRIVACY_TITLE = "Privacy notice";
 export const PRIVACY_DESCRIPTION =
-  "What Public Ledger keeps about you and why: alerts by email or Telegram, submissions and the Your MP postcode search. Who runs it, which services handle your data, how long we keep it, and how to have it deleted.";
+  "What LedgerGov.UK keeps about you and why: alerts by email or Telegram, submissions and the Your MP postcode search. Who runs it, which services handle your data, how long we keep it, and how to have it deleted.";
 /** The date this notice last changed in substance. */
-export const PRIVACY_UPDATED = "2026-10-09";
+export const PRIVACY_UPDATED = "2026-10-12";
 /** Where readers write about their data (set up and forwarding, 8 October 2026). */
 export const PRIVACY_EMAIL = "privacy@ledgergov.uk";
-/** The controller: the company that runs Public Ledger and holds readers' data. */
+/** The controller: the company that runs LedgerGov.UK and holds readers' data. */
 export const CONTROLLER = {
   name: "Empatiq Limited",
   companyNumber: "13746700",
@@ -99,7 +99,7 @@ export const PRIVACY_FAQ = (threshold: number): { q: string; a: string }[] => [
   },
   {
     q: "Do you sell or share your lists?",
-    a: "No, never. There are no ads. The services named on this page handle data only to run Public Ledger for us.",
+    a: "No, never. There are no ads. The services named on this page handle data only to run LedgerGov.UK for us.",
   },
   {
     q: "Do you use cookies or tracking?",
@@ -108,4 +108,4 @@ export const PRIVACY_FAQ = (threshold: number): { q: string; a: string }[] => [
 ];
 
 /** One paragraph for llms.txt. */
-export const PRIVACY_SUMMARY = `Public Ledger is run by ${CONTROLLER.name}, Pavel Guzhikov's company, independently of any party; ${CONTROLLER.name} is the controller and is registered with the ICO${ICO_REGISTRATION_NUMBER ? ` (${ICO_REGISTRATION_NUMBER})` : ""}. Reading stores nothing. Alerts keep only an encrypted email address or Telegram chat and what is followed, on explicit consent; follows are never shown individually. Submitters' emails are deleted once editors decide, or after ${SUBMITTER_EMAIL_RETENTION_DAYS} days. Postcodes are never kept. Applications to be an editor are deleted within ${EDITOR_APPLICATION_RETENTION_MONTHS} months if the applicant does not join. Contact: ${PRIVACY_EMAIL}.`;
+export const PRIVACY_SUMMARY = `LedgerGov.UK is run by ${CONTROLLER.name}, Pavel Guzhikov's company, independently of any party; ${CONTROLLER.name} is the controller and is registered with the ICO${ICO_REGISTRATION_NUMBER ? ` (${ICO_REGISTRATION_NUMBER})` : ""}. Reading stores nothing. Alerts keep only an encrypted email address or Telegram chat and what is followed, on explicit consent; follows are never shown individually. Submitters' emails are deleted once editors decide, or after ${SUBMITTER_EMAIL_RETENTION_DAYS} days. Postcodes are never kept. Applications to be an editor are deleted within ${EDITOR_APPLICATION_RETENTION_MONTHS} months if the applicant does not join. Contact: ${PRIVACY_EMAIL}.`;

@@ -41,12 +41,12 @@ export function feedResponse(kind: FeedKind, key: string): Response {
   let subtitle: string;
   let alternatePath: string;
   if (kind === "all") {
-    title = "Public Ledger: every change";
+    title = "LedgerGov.UK: every change";
     subtitle =
       "New timeline events, rewordings, replies and cost changes on every tracked UK political promise, changes to the contracts behind them, and new editions of the headline figures, newest first.";
     alternatePath = "/promises";
   } else if (kind === "updates") {
-    title = "Public Ledger: updates to the figures";
+    title = "LedgerGov.UK: updates to the figures";
     subtitle =
       "Data changes only: a promise's yearly cost changes, a contract behind a promise moves or is linked, or a new OBR forecast or ONS release changes the Statement's borrowing, income or spending.";
     alternatePath = "/#statement";
@@ -56,17 +56,17 @@ export function feedResponse(kind: FeedKind, key: string): Response {
     alternatePath = "/promises#coming-up";
   } else if (kind === "promise") {
     const card = seed.cards.find((c) => c.id === key);
-    if (card) title = `Public Ledger: ${card.actor.name}, “${short(card.current.text)}”`;
+    if (card) title = `LedgerGov.UK: ${card.actor.name}, “${short(card.current.text)}”`;
     subtitle = "Every change to this promise: timeline events, rewordings, replies and cost changes.";
     alternatePath = `/promise/${key}`;
   } else if (kind === "actor") {
     const actor = seed.actors.find((a) => a.id === key);
-    if (actor) title = `Public Ledger: ${actor.name}`;
+    if (actor) title = `LedgerGov.UK: ${actor.name}`;
     subtitle = actor?.kind === "party" ? `Changes to promises by ${actor.name} and its people.` : `Changes to promises by ${actor?.name ?? key}.`;
     alternatePath = `/actor/${key}`;
   } else {
     const area = PolicyArea.safeParse(key);
-    if (area.success) title = `Public Ledger: ${AREA_LABEL[area.data]}`;
+    if (area.success) title = `LedgerGov.UK: ${AREA_LABEL[area.data]}`;
     subtitle = `Changes to promises about ${area.success ? AREA_LABEL[area.data].toLowerCase() : key}.`;
     // The area's own page, once it has cards (an empty area has no page).
     alternatePath = area.success && seed.cards.some((c) => c.file.policy_area === area.data) ? areaPath(area.data) : "/promises";

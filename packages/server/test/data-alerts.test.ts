@@ -303,7 +303,7 @@ describe("data alerts fan-out", () => {
     expect(report).toMatchObject({ newChanges: 1, emails: 4, failed: 0 });
     const mail = await outbox();
     expect(mail.map((m) => m.to).sort()).toEqual(["actor@example.org", "area@example.org", "party@example.org", "promise@example.org"]);
-    expect(mail[0]!.text).toContain("A promise you follow on Public Ledger has changed.");
+    expect(mail[0]!.text).toContain("A promise you follow on LedgerGov.UK has changed.");
     expect(mail[0]!.text).toContain("  - Contract changed: value £125,000, was £117,502");
   });
 
@@ -317,7 +317,7 @@ describe("data alerts fan-out", () => {
     expect(more).toEqual([]);
     expect(m!.to).toBe("all@example.org");
     expect(m!.subject).toBe("2026-27 borrowing: £120bn, was £115bn. Spending £1,420bn, was £1,415bn. OBR forecast, November 2026. | The Statement: new official figures");
-    expect(m!.text).toContain("Something you follow on Public Ledger has changed.\n\nThe Statement: new official figures\n  - 2026-27 borrowing: £120bn, was £115bn.");
+    expect(m!.text).toContain("Something you follow on LedgerGov.UK has changed.\n\nThe Statement: new official figures\n  - 2026-27 borrowing: £120bn, was £115bn.");
     expect(m!.text).toContain("  https://ledger.test/#statement");
     expect(telegrams[0]!.text).toContain("The Statement: new official figures\n• 2026-27 borrowing");
     const [row] = await db.query<Record<string, unknown>>("SELECT promise_id, actor_id, policy_area, change_type FROM change_event");

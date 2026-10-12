@@ -18,7 +18,7 @@ export function generateStaticParams() {
 export const dynamicParams = false;
 
 /**
- * Title "<headline> – <speaker> promise, <status> | Public Ledger"; the
+ * Title "<headline> – <speaker> promise, <status> | LedgerGov.UK"; the
  * description leads with the facts (status, cost, who pays, who and when).
  * Both come from @ledger/server/seo, like the structured data, the card's
  * Markdown (/promise/<id>.md) and /llms-full.txt.

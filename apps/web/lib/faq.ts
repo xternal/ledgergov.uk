@@ -4,7 +4,7 @@
  */
 export const FAQ: { q: string; a: string }[] = [
   {
-    q: "What is Public Ledger?",
+    q: "What is LedgerGov.UK?",
     a: "An open profit-and-loss account of the UK state. It shows where public money comes from (taxes, other income and borrowing), where it goes, and what political promises would cost and who would pay.",
   },
   {
