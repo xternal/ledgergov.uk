@@ -58,3 +58,8 @@ reviews:
     kind: automated
     on: "2026-10-08"
     note: Quote checked word for word at the live GOV.UK page; status, dates and the 2027/2028 difference checked against Natural England's own notices.
+  - by: Pavel Guzhikov
+    kind: editor
+    on: "2026-10-12"
+    note: Reviewed against its sources
+    approves: true

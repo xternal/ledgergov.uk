@@ -76,3 +76,8 @@ reviews:
     kind: automated
     on: "2026-10-07"
     note: Second check of the quote at its live source, date and venue, evidence, status, cost and funding, wording and legal risk; fixes made before publication.
+  - by: Pavel Guzhikov
+    kind: editor
+    on: "2026-10-12"
+    note: Reviewed against its sources
+    approves: true

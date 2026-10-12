@@ -55,3 +55,8 @@ reviews:
     kind: automated
     on: "2026-10-08"
     note: Quote checked word for word at the source; dates, figures and links checked against the cited official pages.
+  - by: Pavel Guzhikov
+    kind: editor
+    on: "2026-10-12"
+    note: Reviewed against its sources
+    approves: true
