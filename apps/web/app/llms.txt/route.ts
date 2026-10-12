@@ -7,7 +7,7 @@ import { endpoints } from "@/lib/api";
 import { backtestLead } from "@/lib/method-copy";
 import { STATUS_LABEL } from "@/lib/copy";
 import { FAQ } from "@/lib/faq";
-import { gbpBn } from "@/lib/format";
+import { gbpBn, grouped, poundsPence } from "@/lib/format";
 import { pctGdp, per100, ratio, span, spendingSpan } from "@/lib/people-view";
 import { AREA_LABEL, costText } from "@/lib/promises";
 import { absolute, SITE_DESCRIPTION, SITE_NAME, SOURCE_CODE } from "@/lib/site";
@@ -22,6 +22,8 @@ import { PREDICT_PATH, predictDescription, predictTitle } from "@/lib/predict-co
 import { householdCopy, householdPath } from "@/lib/household";
 import { HOW_IT_WORKS_PATH, RULES, headroomView, latestPoint } from "@/lib/headroom";
 import { LEAKS_PATH, LEAK_STATUS, leakCounts } from "@/lib/leaks";
+import { getReceiptContext, receiptExamples } from "@/lib/receipt";
+import { RECEIPT_PATH, RECEIPT_TITLE, illustrationText, receiptDescription, receiptExamplePath } from "@/lib/receipt-copy";
 
 export const dynamic = "force-static";
 
@@ -59,6 +61,7 @@ export function GET() {
   const reckoner = getReckoner();
   const areas = PolicyArea.options.filter((a) => seed.cards.some((c) => c.file.policy_area === a));
   const borrowing = getBorrowing();
+  const receipt = getReceiptContext();
   const lines = [
     `# ${SITE_NAME}`,
     "",
@@ -81,6 +84,9 @@ export function GET() {
     `- [Most read pages](${absolute("/method/numbers")}): which pages readers open most over the last 7 and 30 days, counted on the server as one number per page per day with nothing about the reader; the daily totals are public at ${absolute("/views.json")}.`,
     `- [${BUDGET.name}](${absolute("/budget")}): the Budget on ${BUDGET.date} can fund, change or break the government's promises. The page lists the government's promises it could still move (those needing money, largest first, and tax pledges), the opposition's costed pledges for comparison, and, from Budget day, what the Budget did to each card with links to the evidence.`,
     ...BUDGET_TOPICS.filter((t) => topicCards(seed.cards, t).length > 0).map((t) => `- [${t.heading}](${absolute(`/budget/${t.id}`)}): ${t.description}`),
+    `- [${RECEIPT_TITLE}](${absolute(RECEIPT_PATH)}): ${receiptDescription(receipt)} ${illustrationText} Example receipts for fixed salaries: ${receiptExamples()
+      .map(({ example, receipt: r }) => `[£${grouped(example.salary)}](${absolute(receiptExamplePath(example.slug))}) pays ${poundsPence(r.tax_pence)} plus ${poundsPence(r.borrowed_pence)} borrowed on top`)
+      .join("; ")}.`,
     `- [${RECKONER_TITLE}](${absolute(RECKONER_PATH)}): what one change to each main tax would raise a year, HMRC's figures from ${sourceName(reckoner.edition)} (edition published ${reckoner.edition.published}), one page each with the year, a range, HMRC's caveat and a link that makes the change in the sandbox. Listed below under "${RECKONER_TITLE}".`,
     ...getScorecards().map((sc) => `- [${scorecardCopy(sc).title}](${absolute(scorecardPath(sc))}): ${scorecardCopy(sc).description} Figures are the Treasury's, in £ million, positive where a measure raises money and negative where it costs.`),
     `- [${predictTitle(currentRound())}](${absolute(PREDICT_PATH)}): ${predictDescription(currentRound())} Each question is settled by a named Budget document; editors record the answers after the Budget and every set of predictions is scored.`,

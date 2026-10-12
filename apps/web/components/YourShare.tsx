@@ -7,6 +7,7 @@ import { gbp, grouped, rangeText, signed } from "@/lib/format";
 import { useScenario } from "@/lib/scenario";
 import { useT1 } from "@/lib/t1";
 import { LIKE_ME_COPY, gbpChange, provenanceText } from "@/lib/t1-copy";
+import { RECEIPT_PATH, RECEIPT_TITLE } from "@/lib/receipt-copy";
 import { QualityBadge, SectionHeading, WithProvenance } from "./ui";
 
 /**
@@ -75,6 +76,12 @@ export function YourShare() {
             <WithProvenance p={taxP}>
               <QualityBadge quality={taxP.quality} />
             </WithProvenance>
+          </p>
+          <p className="m-0 border-t border-line pt-3 text-label">
+            <a href={RECEIPT_PATH} className="font-medium">
+              {RECEIPT_TITLE}
+            </a>
+            <span className="text-muted">: the same split as a till receipt, in pounds and pence, to share as a picture.</span>
           </p>
         </div>
 

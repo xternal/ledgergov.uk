@@ -92,6 +92,25 @@ def test_new_m2_levers_from_hmrc_and_govuk(outputs):
     assert outputs["tax"]["income_tax"]["personal_allowance_lever"] == "personal_allowance"
 
 
+def test_tax_rates_name_their_pages_and_editions(outputs):
+    """Your share and Your tax receipt cite each tax figure's page and the committed edition it comes from."""
+    meta = outputs["tax"]["meta"]
+    year = meta["tax_year"]
+    start = int(year[:4])
+    sources = meta["sources"]
+    assert [s["url"] for s in sources] == [
+        "https://www.gov.uk/income-tax-rates",
+        f"https://www.gov.uk/guidance/rates-and-thresholds-for-employers-{start}-to-{start + 1}",
+    ]
+    committed = {p.stem for p in (BUILD_DIR / "observations" / "govuk_tax_rates").glob("*.csv")}
+    for s in sources:
+        assert s["title"] and s["gives"]
+        assert set(s["vintage"].split(", ")) <= committed, s["vintage"]
+    assert sources[1]["vintage"].startswith(f"rates-and-thresholds-for-employers-{start}-to-{start + 1}@")
+    bundle = json.loads((BUILD_DIR / "app.json").read_text())
+    assert bundle["tax"] == outputs["tax"], "data/build/app.json's tax block is not what the ETL assembles: run the ETL"
+
+
 # HMRC, Direct effects of illustrative tax changes (June 2025), £ million, change made in April 2026:
 # {step: (2026-27, 2028-29)}. Minus = the Treasury collects less.
 HMRC_CGT = {

@@ -18,6 +18,7 @@ import {
   scorecardPath,
 } from "@/lib/scorecard";
 import { SiteHeader } from "@/components/SiteHeader";
+import { BudgetNav } from "@/components/BudgetNav";
 import { NavLinks } from "@/components/NavLinks";
 import { JsonLd } from "@/components/JsonLd";
 import { absolute, MAKER, OPEN_GRAPH, SITE_NAME } from "@/lib/site";
@@ -125,6 +126,7 @@ export default async function ScorecardPage({ params }: Props) {
       </div>
       <main className="mx-auto grid max-w-[1000px] grid-cols-[minmax(0,1fr)] gap-12 px-4 pb-20 pt-10 sm:px-6">
         <header className="grid max-w-[70ch] gap-4">
+          <BudgetNav current={path} />
           <a href="/budget" className="justify-self-start text-label font-medium">
             {BUDGET.name}
           </a>

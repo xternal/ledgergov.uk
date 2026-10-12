@@ -598,6 +598,27 @@ def latest_tax_seed() -> dict:
     return json.loads(files[-1].read_text())
 
 
+# The two GOV.UK pages the Your share rates come from (etl/sources/govuk_tax_rates.py reads and cross-checks them).
+INCOME_TAX_PAGE = ("GOV.UK, Income Tax rates and Personal Allowances", "https://www.gov.uk/income-tax-rates",
+                   "personal allowance, its taper, the basic, higher and additional rate bands and rates")
+NI_PAGE = ("HMRC, Rates and thresholds for employers {start} to {end}", "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-{start}-to-{end}",
+           "employee National Insurance primary threshold, upper earnings limit, main and upper rates")
+
+
+def tax_sources(year: str, income_tax: list[Observation], ni: list[Observation]) -> list[dict]:
+    """Each page the tax year's rates come from, with the committed edition(s) that hold its figures, so every figure can name its source."""
+    start = fy_start(year)
+    out = []
+    for (title, url, gives), obs in [(INCOME_TAX_PAGE, income_tax), (NI_PAGE, ni)]:
+        out.append({
+            "title": title.format(start=start, end=start + 1),
+            "url": url.format(start=start, end=start + 1),
+            "gives": gives,
+            "vintage": ", ".join(sorted({o.vintage for o in obs})),
+        })
+    return out
+
+
 def build_tax(store: Store, run: Run) -> dict:
     seed = latest_tax_seed()
     year = latest_tax_year(store)
@@ -605,24 +626,26 @@ def build_tax(store: Store, run: Run) -> dict:
         run.add("coverage", "warning", "tax", f"GOV.UK tax rates missing; using the seed for {seed['meta']['tax_year']}")
         return seed
     g = lambda s: store.get(s, year, ["govuk_tax_rates"])
+    it_obs = {k: g(f"tax.income_tax.{k}") for k in ["personal_allowance", "allowance_taper_threshold", "basic_band", "additional_threshold", "basic_rate", "higher_rate", "additional_rate"]}
+    ni_obs = {k: g(f"tax.ni.{k}") for k in ["primary_threshold", "upper_earnings_limit", "main_rate", "upper_rate"]}
     it = {
-        "personal_allowance_gbp": g("tax.income_tax.personal_allowance").value,
-        "allowance_taper_threshold_gbp": g("tax.income_tax.allowance_taper_threshold").value,
+        "personal_allowance_gbp": it_obs["personal_allowance"].value,
+        "allowance_taper_threshold_gbp": it_obs["allowance_taper_threshold"].value,
         "allowance_taper_rate": 0.5,
-        "basic_band_gbp": g("tax.income_tax.basic_band").value,
-        "additional_threshold_gbp": g("tax.income_tax.additional_threshold").value,
+        "basic_band_gbp": it_obs["basic_band"].value,
+        "additional_threshold_gbp": it_obs["additional_threshold"].value,
         "basic_rate_lever": "income_tax_basic",
-        "higher_rate_pct": g("tax.income_tax.higher_rate").value,
-        "additional_rate_pct": g("tax.income_tax.additional_rate").value,
+        "higher_rate_pct": it_obs["higher_rate"].value,
+        "additional_rate_pct": it_obs["additional_rate"].value,
         "higher_rate_lever": "income_tax_higher",
         "additional_rate_lever": "income_tax_additional",
         "personal_allowance_lever": "personal_allowance",
     }
     ni = {
-        "primary_threshold_gbp": g("tax.ni.primary_threshold").value,
-        "upper_earnings_limit_gbp": g("tax.ni.upper_earnings_limit").value,
+        "primary_threshold_gbp": ni_obs["primary_threshold"].value,
+        "upper_earnings_limit_gbp": ni_obs["upper_earnings_limit"].value,
         "main_rate_lever": "nics_main",
-        "upper_rate_pct": g("tax.ni.upper_rate").value,
+        "upper_rate_pct": ni_obs["upper_rate"].value,
     }
     return {
         "meta": {
@@ -631,7 +654,8 @@ def build_tax(store: Store, run: Run) -> dict:
             "geography": "England, Wales and Northern Ireland",
             "quality": "sourced",
             "method_note": f"GOV.UK 'Income Tax rates and Personal Allowances' and HMRC 'Rates and thresholds for employers' for {year}. The allowance falls by £1 for every £2 above the taper threshold, as GOV.UK states. National Insurance rates apply across the UK; Scotland sets its own income tax bands.",
-            "intended_sources": ["https://www.gov.uk/income-tax-rates", "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027"],
+            # The basic rate and the NI main rate reach the calculator through their levers' bases (rebased from the same editions).
+            "sources": tax_sources(year, list(it_obs.values()), list(ni_obs.values())),
         },
         "income_tax": it,
         "employee_ni": ni,

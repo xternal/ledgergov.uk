@@ -220,7 +220,7 @@ export function Sankey({
 }
 
 /** Mobile: two ranked bar lists with the total between them (DESIGN_HANDOFF). */
-export function FlowList() {
+export function FlowList({ active = null }: { active?: string | null }) {
   const { unit, view } = useScenario();
   const { income, spending, total } = useFlowLines();
   const ctx: UnitContext = { households_m: view.statement.macro.households_m, total_bn: total };
@@ -228,7 +228,13 @@ export function FlowList() {
   const row = (f: FlowLine) => {
     const delta = f.v - f.base;
     return (
-      <li key={f.id} className="grid grid-cols-[minmax(0,1fr)_auto] gap-x-3 gap-y-1 text-sm">
+      // Each row is the target of a link to its line (/#line-<id>, e.g. from Your tax receipt); the linked row is highlighted.
+      <li
+        key={f.id}
+        id={`line-${f.id}`}
+        aria-current={active === f.id ? "true" : undefined}
+        className="-mx-2 grid scroll-mt-20 grid-cols-[minmax(0,1fr)_auto] gap-x-3 gap-y-1 rounded-control px-2 py-1 text-sm aria-[current=true]:bg-sunk"
+      >
         <span className="flex items-center gap-2">
           {f.label}
           {f.line && <QualityDot quality={qualityKey(f.line)} />}
@@ -252,7 +258,7 @@ export function FlowList() {
     <div className="grid gap-6">
       <div className="grid gap-2">
         <h3 className="text-label font-medium text-muted">Where it came from</h3>
-        <ul className="m-0 grid list-none gap-3 p-0">{income.map(row)}</ul>
+        <ul className="m-0 grid list-none gap-1 p-0">{income.map(row)}</ul>
       </div>
       <div className="flex justify-between border-y border-line py-2.5 font-semibold">
         <span>Total spending</span>
@@ -260,7 +266,7 @@ export function FlowList() {
       </div>
       <div className="grid gap-2">
         <h3 className="text-label font-medium text-muted">Where it went</h3>
-        <ul className="m-0 grid list-none gap-3 p-0">{spending.map(row)}</ul>
+        <ul className="m-0 grid list-none gap-1 p-0">{spending.map(row)}</ul>
       </div>
     </div>
   );

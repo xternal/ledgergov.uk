@@ -276,6 +276,25 @@
     .fan text { font-size: 16px; }
   }
 
+  /*
+   * Your tax receipt: a paper slip with zigzag top and bottom edges. The edges are cut from a layer behind the content,
+   * so the source tips can still open past the paper.
+   */
+  .receipt-paper::before {
+    --tooth: 7px;
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--surface);
+    -webkit-mask:
+      conic-gradient(from -45deg at bottom, transparent, black 1deg 89deg, transparent 90deg) bottom / calc(2 * var(--tooth)) 51% repeat-x,
+      conic-gradient(from 135deg at top, transparent, black 1deg 89deg, transparent 90deg) top / calc(2 * var(--tooth)) 51% repeat-x;
+    mask:
+      conic-gradient(from -45deg at bottom, transparent, black 1deg 89deg, transparent 90deg) bottom / calc(2 * var(--tooth)) 51% repeat-x,
+      conic-gradient(from 135deg at top, transparent, black 1deg 89deg, transparent 90deg) top / calc(2 * var(--tooth)) 51% repeat-x;
+  }
+
   /* Hide scrollbars on the section nav */
   .no-scrollbar { scrollbar-width: none; }
   .no-scrollbar::-webkit-scrollbar { display: none; }

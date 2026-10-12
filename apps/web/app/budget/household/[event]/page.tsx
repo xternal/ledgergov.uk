@@ -23,6 +23,7 @@ import {
   rangeOfSize,
 } from "@/lib/household";
 import { SiteHeader } from "@/components/SiteHeader";
+import { BudgetNav } from "@/components/BudgetNav";
 import { NavLinks } from "@/components/NavLinks";
 import { JsonLd } from "@/components/JsonLd";
 import { WinnersBar } from "@/components/WinnersBar";
@@ -164,6 +165,7 @@ export default async function HouseholdPage({ params }: Props) {
       </div>
       <main className="mx-auto grid max-w-[1000px] grid-cols-[minmax(0,1fr)] gap-14 px-4 pb-20 pt-10 sm:px-6">
         <header className="grid max-w-[70ch] gap-4">
+          <BudgetNav current={path} />
           <a href="/budget" className="justify-self-start text-label font-medium">
             {BUDGET.name}
           </a>
