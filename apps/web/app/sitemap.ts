@@ -8,12 +8,14 @@ import { RECKONER_PATH } from "@/lib/reckoner-copy";
 import { absolute, EDITORS_PAGE_UPDATED, lastChanged } from "@/lib/site";
 import { PRIVACY_UPDATED } from "@/lib/privacy-copy";
 import { PREDICT_PATH } from "@/lib/predict-copy";
+import { RECEIPT_EXAMPLES } from "@ledger/engine";
+import { RECEIPT_PATH, receiptExamplePath } from "@/lib/receipt-copy";
 
 /**
  * Every public page: home, the promise ledger and its policy-area pages, the Budget pages, scorecards and household pages, people and long-term spending,
  * borrowing so far this year, Your MP and its 650 constituency pages, the method pages, the privacy notice, each card and each actor, what each
- * tax change raises (/tax and one page per change, dated by the data build that last checked them), and Predict the
- * Budget (but no reader's own predictions). Dates come
+ * tax change raises (/tax and one page per change, dated by the data build that last checked them), Your tax receipt and its
+ * example receipts, and Predict the Budget (but no reader's own predictions). Dates come
  * from the content itself. Constituency pages are rendered on first visit and
  * refreshed daily; they carry no date here because an MP's votes change them
  * on any sitting day, and a made-up date would mislead crawlers.
@@ -49,6 +51,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absolute("/budget"), lastModified: latest, changeFrequency: "daily", priority: 0.8 },
     ...BUDGET_TOPICS.filter((t) => topicCards(seed.cards, t).length > 0).map((t) => ({ url: absolute(`/budget/${t.id}`), lastModified: latest, changeFrequency: "daily" as const, priority: 0.7 })),
     { url: absolute(RECKONER_PATH), lastModified: built, changeFrequency: "monthly", priority: 0.7 },
+    // Your tax receipt and the site's example receipts (never a reader's own: that one exists only in their browser).
+    { url: absolute(RECEIPT_PATH), lastModified: built, changeFrequency: "monthly", priority: 0.8 },
+    ...RECEIPT_EXAMPLES.map((e) => ({ url: absolute(receiptExamplePath(e.slug)), lastModified: built, changeFrequency: "monthly" as const, priority: 0.6 })),
     ...getReckoner().cards.map((c) => ({ url: absolute(c.path), lastModified: built, changeFrequency: "monthly" as const, priority: 0.6 })),
     // A Budget scorecard changes only if the Treasury's table is read again: date it by the event.
     ...getScorecards().map((sc) => ({ url: absolute(`/budget/scorecard/${sc.id}`), lastModified: sc.date, changeFrequency: "yearly" as const, priority: 0.7 })),

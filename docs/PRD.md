@@ -36,6 +36,7 @@ People hear "£2 bus fares", "3.5% on defence", "cut income tax by 2p" and have 
 - Salary → income tax + NI (UK rates for selected year; Scotland toggle in v1) → split by spending function + "borrowed on top in your name".
 - Recomputes under the current scenario.
 - Client-side only.
+- **Your tax receipt** (`/receipt`, October 2026): the same split at today's rates as a till receipt in pounds and pence (the lines add up to the tax paid to the penny), with the borrowing on top at the Statement's share and a total; each line links to its line of the Statement (`/#line-<id>`) and names its source and edition. The reader's receipt is worked out and drawn as a picture (1080×1350, shared as a file or downloaded) in the browser only; the salary is never sent, put in a link, stored or counted. Shared links go to the page with no salary, or to the site's fixed example receipts (`/receipt/25k`, `35k`, `50k`, `100k`), each pre-rendered with its own share card. `packages/engine/test/receipt*.test.ts` checks the sums and the privacy rules.
 
 ### F4. Promise ledger
 - Card: text (verbatim), actor, date, venue, source links, parameters (who/how much/when/funded by), status on ladder, deadline, linked levers, timeline, versions (diff), right of reply.

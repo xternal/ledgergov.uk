@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { QUALITY_LABEL } from "@/lib/copy";
 import { deltaInUnit, inUnit, millions, type Unit, type UnitContext } from "@/lib/format";
 import { LABEL_DELTA_MIN_BN } from "@/lib/chart-config";
@@ -55,6 +55,31 @@ function YearSelect() {
   );
 }
 
+/** "/#line-health": a link to one line of the Statement, from Your tax receipt and elsewhere. */
+const LINE_HASH = /^#line-([a-z_]+)$/;
+
+/**
+ * Open the line a link points at: keep its source on screen under the Sankey (wider screens), or highlight its row in
+ * the ranked lists (phones, where the row itself is the link's target and the browser scrolls to it).
+ */
+function useLineFromAddress(pin: (id: string) => void) {
+  const { seed } = useScenario();
+  useEffect(() => {
+    const ids = new Set([...seed.statement.receipts, ...seed.statement.spending].map((l) => l.id).concat(BORROWING_ID));
+    const open = () => {
+      const id = LINE_HASH.exec(window.location.hash)?.[1];
+      if (!id || !ids.has(id)) return;
+      pin(id);
+      const row = document.getElementById(`line-${id}`);
+      // The ranked lists are hidden on wider screens, so the browser had nowhere to scroll: bring the Statement into view.
+      if (!row || row.offsetParent === null) document.getElementById("statement")?.scrollIntoView();
+    };
+    open();
+    window.addEventListener("hashchange", open);
+    return () => window.removeEventListener("hashchange", open);
+  }, [seed, pin]);
+}
+
 export function StatementSection() {
   const { seed, unit, setUnit, view, year, isBaseYear } = useScenario();
   const [hovered, setHovered] = useState<string | null>(null);
@@ -62,6 +87,7 @@ export function StatementSection() {
   const active = hovered ?? pinned;
   const [tableOpen, setTableOpen] = useState(false);
   const { macro, receipts, spending, borrowing_provenance } = view.statement;
+  useLineFromAddress(setPinned);
   const plugs = [...receipts, ...spending].filter((l) => l.plug).map((l) => `“${l.label}”`);
   const scaled = spending.find((l) => l.quality === "approx" && l.method_note?.startsWith("No function split"));
   const totalsSource = seed.sources.find((s) => s.id === borrowing_provenance.source_id);
@@ -110,7 +136,7 @@ export function StatementSection() {
             <Sankey active={active} pinned={pinned} onActive={setHovered} onPin={setPinned} />
           </div>
           <div className="min-[720px]:hidden">
-            <FlowList />
+            <FlowList active={pinned} />
           </div>
           <div className="mt-3 hidden min-[720px]:block">
             <LineInspector active={active} />

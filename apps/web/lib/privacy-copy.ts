@@ -18,7 +18,7 @@ export const PRIVACY_TITLE = "Privacy notice";
 export const PRIVACY_DESCRIPTION =
   "What LedgerGov.UK keeps about you and why: alerts by email or Telegram, submissions, Budget predictions and the Your MP postcode search. Who runs it, which services handle your data, how long we keep it, and how to have it deleted.";
 /** The date this notice last changed in substance. */
-export const PRIVACY_UPDATED = "2026-10-12";
+export const PRIVACY_UPDATED = "2026-10-13";
 /** Where readers write about their data (set up and forwarding, 8 October 2026). */
 export const PRIVACY_EMAIL = "privacy@ledgergov.uk";
 /** The controller: the company that runs LedgerGov.UK and holds readers' data. */
@@ -109,7 +109,7 @@ export const PRIVACY_FAQ = (threshold: number): { q: string; a: string }[] => [
   },
   {
     q: "Do you use cookies or tracking?",
-    a: "No tracking cookies, no analytics scripts and no tracking in emails. The spam check runs in your browser and sets no cookies. Your share keeps your choices in your own browser, and the salary you type never leaves it.",
+    a: "No tracking cookies, no analytics scripts and no tracking in emails. The spam check runs in your browser and sets no cookies. Your share keeps your choices in your own browser, and the salary you type, there or in Your tax receipt, never leaves it: the receipt and its picture are made on your device, and no link carries a salary.",
   },
 ];
 

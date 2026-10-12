@@ -29,7 +29,7 @@ export const FAQ: { q: string; a: string }[] = [
   },
   {
     q: "Is my salary sent anywhere?",
-    a: "No. The \"your share\" calculator runs in your browser. What you type is never sent or stored.",
+    a: "No. The \"your share\" calculator and Your tax receipt run in your browser. What you type is never sent, stored or put in a link, and the receipt's picture is made on your device.",
   },
   {
     q: "Can I send in a promise or evidence?",

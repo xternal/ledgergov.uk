@@ -55,23 +55,28 @@ export interface YourShare {
   borrowed_on_top_gbp: number;
 }
 
-export function yourShare(model: Model, tax: TaxSeed, r: ScenarioResult, settings: Settings, salary: number): YourShare {
-  const ratesFor = (s: Settings | null): TaxRates => {
-    const pick = (leverId: string | undefined): number | undefined => {
-      const lever = leverId ? model.leverById.get(leverId) : undefined;
-      if (!lever) return undefined;
-      return s ? numberSetting(s, lever.id, lever.base) : lever.base;
-    };
-    return {
-      basicRatePct: pick(tax.income_tax.basic_rate_lever)!,
-      niMainRatePct: pick(tax.employee_ni.main_rate_lever)!,
-      higherRatePct: pick(tax.income_tax.higher_rate_lever),
-      additionalRatePct: pick(tax.income_tax.additional_rate_lever),
-      personalAllowanceGbp: pick(tax.income_tax.personal_allowance_lever),
-    };
+/**
+ * The rates the calculator uses: the tax seed's levers at the scenario's settings, or at their bases (today's rates, from
+ * GOV.UK through the ETL) when `settings` is null.
+ */
+export function taxRates(model: Model, tax: TaxSeed, settings: Settings | null): TaxRates {
+  const pick = (leverId: string | undefined): number | undefined => {
+    const lever = leverId ? model.leverById.get(leverId) : undefined;
+    if (!lever) return undefined;
+    return settings ? numberSetting(settings, lever.id, lever.base) : lever.base;
   };
-  const today = taxOn(tax, salary, ratesFor(null));
-  const scenario = taxOn(tax, salary, ratesFor(settings));
+  return {
+    basicRatePct: pick(tax.income_tax.basic_rate_lever)!,
+    niMainRatePct: pick(tax.employee_ni.main_rate_lever)!,
+    higherRatePct: pick(tax.income_tax.higher_rate_lever),
+    additionalRatePct: pick(tax.income_tax.additional_rate_lever),
+    personalAllowanceGbp: pick(tax.income_tax.personal_allowance_lever),
+  };
+}
+
+export function yourShare(model: Model, tax: TaxSeed, r: ScenarioResult, settings: Settings, salary: number): YourShare {
+  const today = taxOn(tax, salary, taxRates(model, tax, null));
+  const scenario = taxOn(tax, salary, taxRates(model, tax, settings));
   const { spending_bn, receipts_bn, borrowing_bn } = r.totals;
   const by_line = Object.entries(r.spending)
     .map(([id, bn]) => ({ id, gbp: (scenario.total * bn) / spending_bn }))

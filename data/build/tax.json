@@ -5,9 +5,19 @@
     "geography": "England, Wales and Northern Ireland",
     "quality": "sourced",
     "method_note": "GOV.UK 'Income Tax rates and Personal Allowances' and HMRC 'Rates and thresholds for employers' for 2026-27. The allowance falls by £1 for every £2 above the taper threshold, as GOV.UK states. National Insurance rates apply across the UK; Scotland sets its own income tax bands.",
-    "intended_sources": [
-      "https://www.gov.uk/income-tax-rates",
-      "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027"
+    "sources": [
+      {
+        "title": "GOV.UK, Income Tax rates and Personal Allowances",
+        "url": "https://www.gov.uk/income-tax-rates",
+        "gives": "personal allowance, its taper, the basic, higher and additional rate bands and rates",
+        "vintage": "income-tax-rates@2026-10-01"
+      },
+      {
+        "title": "HMRC, Rates and thresholds for employers 2026 to 2027",
+        "url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+        "gives": "employee National Insurance primary threshold, upper earnings limit, main and upper rates",
+        "vintage": "rates-and-thresholds-for-employers-2026-to-2027@2026-09-30"
+      }
     ]
   },
   "income_tax": {

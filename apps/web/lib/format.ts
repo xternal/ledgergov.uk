@@ -30,6 +30,10 @@ export const gbpBn = (x: number) => {
 };
 export const gbpTn = (bn: number) => `£${oneDp.format(bn / 1000)}tn`;
 export const gbp = (x: number) => (x < -0.5 ? MINUS : "") + `£${whole.format(Math.abs(Math.round(x)))}`;
+const PENCE_PER_POUND = 100;
+const withPence = new Intl.NumberFormat("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+/** Pounds and pence from a whole number of pence: 628040 → "£6,280.40". */
+export const poundsPence = (pence: number) => (pence < 0 ? MINUS : "") + `£${withPence.format(Math.abs(pence) / PENCE_PER_POUND)}`;
 export const fixed = (x: number, dp: number) => withMinus(x.toFixed(dp));
 export const millions = (m: number) => `${oneDp.format(m)}m`;
 export const grouped = (x: number) => whole.format(x);

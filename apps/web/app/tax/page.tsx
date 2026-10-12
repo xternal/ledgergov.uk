@@ -6,6 +6,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { JsonLd } from "@/components/JsonLd";
 import { SourcesProvider, WithProvenance } from "@/components/ui";
 import { OPEN_GRAPH } from "@/lib/site";
+import { RECEIPT_PATH, RECEIPT_TITLE } from "@/lib/receipt-copy";
 
 const description = () => reckonerDescription(getReckoner().edition.published);
 const faq = () => {
@@ -118,7 +119,8 @@ export default function TaxIndexPage() {
             ))}
           </div>
           <p className="m-0 text-muted">
-            Try any change, or several together, in <a href="/#scenario">the sandbox</a>; see <a href="/method">how the numbers are made</a>.
+            Try any change, or several together, in <a href="/#scenario">the sandbox</a>; see <a href="/method">how the numbers are made</a>. To see what
+            your own income tax and National Insurance pay for, line by line, open <a href={RECEIPT_PATH}>{RECEIPT_TITLE.toLowerCase()}</a>.
           </p>
         </section>
       </main>
