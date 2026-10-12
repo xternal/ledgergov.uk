@@ -31,4 +31,4 @@ export function checkedBy(f: PromiseFile): { who: string; on: string; automated:
 
 /** What AI Journalist is, in one line, wherever its name appears. */
 export const AI_JOURNALIST_NOTE =
-  "AI Journalist is our automated reviewer: it re-reads every card against its live sources (the quote word for word, dates, evidence, status, cost, neutral wording, legal risk). Human editors review next.";
+  "AI Journalist is our automated reviewer: it re-reads every card against its live sources (the quote word for word, dates, evidence, status, cost, neutral wording, legal risk). Two editors also check every card against its sources and approve it.";
