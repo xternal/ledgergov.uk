@@ -60,4 +60,4 @@ jobs:
       # Forecast records and the backtest table (M7): a new edition merged without running the job shows up here.
       - run: python -m etl.backtest
       - name: Committed build output is up to date
-        run: git diff --exit-code -- data/build/app.json data/build/statements data/build/levers.json data/build/tax.json data/build/people.json data/build/forecasts data/build/backtest.json data/build/borrowing.json
+        run: git diff --exit-code -- data/build/app.json data/build/statements data/build/levers.json data/build/tax.json data/build/people.json data/build/forecasts data/build/backtest.json data/build/borrowing.json data/build/fiscal_targets.json
