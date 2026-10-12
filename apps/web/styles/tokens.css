@@ -5,7 +5,7 @@
  * Red and green appear only on deltas and statuses.
  */
 :root {
-  --mark-tile: #101820;
+  --mark-tile: #241f1a;
   --bg: #ffffff;
   --surface: #ffffff;
   --sunk: #f5f5f6;
@@ -33,59 +33,64 @@
   color-scheme: light;
 }
 
-/* Dark mode: deep navy slate (#101820, the owner's choice), not black; every text colour passes WCAG AA on bg, surface and sunk. */
+/*
+ * Dark mode: dark brown (#241f1a, the owner's rule since 12 October 2026), lifted off black and warm, never navy. Body text
+ * about 13:1 and never above 14:1, so it doesn't glare; blue only where it means income in the data, amber for links and
+ * focus. Every text colour passes WCAG AA on bg, surface and sunk, and every data colour 3:1
+ * (packages/schema/test/design-tokens.test.ts).
+ */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --mark-tile: #1a2531;
-    --bg: #101820;
-    --surface: #131d27;
-    --sunk: #1a2531;
-    --line: #26323f;
-    --line-strong: #364657;
-    --ink: #e7edf3;
-    --muted: #a3b0bd;
-    --faint: #7d8b99;
-    --accent: #7b9dff;
-    --rec: #7b9dff;
-    --rec-soft: rgba(123, 157, 255, 0.22);
-    --spend: #a3b0bd;
-    --spend-soft: rgba(163, 176, 189, 0.16);
-    --debt: #ff7a2e;
-    --debt-soft: rgba(255, 122, 46, 0.2);
-    --debt-ink: #ff8a45;
-    --good: #4ade80;
-    --warn: #fbbf24;
-    --bad: #f87171;
-    --idle: #8291a0;
-    --focus: #7b9dff;
+    --mark-tile: #39322b;
+    --bg: #241f1a;
+    --surface: #2e2822;
+    --sunk: #39322b;
+    --line: #38332d;
+    --line-strong: #443f39;
+    --ink: #efe7da;
+    --muted: #c0b5a4;
+    --faint: #a59a88;
+    --accent: #e2b26f;
+    --rec: #8aa3ec;
+    --rec-soft: rgba(138, 163, 236, 0.22);
+    --spend: #c0b5a4;
+    --spend-soft: rgba(192, 181, 164, 0.16);
+    --debt: #e07a45;
+    --debt-soft: rgba(224, 122, 69, 0.2);
+    --debt-ink: #ee9a68;
+    --good: #7fcf8f;
+    --warn: #e9c46a;
+    --bad: #ec9286;
+    --idle: #a59a88;
+    --focus: #e2b26f;
     --shadow-control: 0 0 0 1px var(--line);
     color-scheme: dark;
   }
 }
 
 :root[data-theme="dark"] {
-  --mark-tile: #1a2531;
-  --bg: #101820;
-  --surface: #131d27;
-  --sunk: #1a2531;
-  --line: #26323f;
-  --line-strong: #364657;
-  --ink: #e7edf3;
-  --muted: #a3b0bd;
-  --faint: #7d8b99;
-  --accent: #7b9dff;
-  --rec: #7b9dff;
-  --rec-soft: rgba(123, 157, 255, 0.22);
-  --spend: #a3b0bd;
-  --spend-soft: rgba(163, 176, 189, 0.16);
-  --debt: #ff7a2e;
-  --debt-soft: rgba(255, 122, 46, 0.2);
-  --debt-ink: #ff8a45;
-  --good: #4ade80;
-  --warn: #fbbf24;
-  --bad: #f87171;
-  --idle: #8291a0;
-  --focus: #7b9dff;
+  --mark-tile: #39322b;
+  --bg: #241f1a;
+  --surface: #2e2822;
+  --sunk: #39322b;
+  --line: #38332d;
+  --line-strong: #443f39;
+  --ink: #efe7da;
+  --muted: #c0b5a4;
+  --faint: #a59a88;
+  --accent: #e2b26f;
+  --rec: #8aa3ec;
+  --rec-soft: rgba(138, 163, 236, 0.22);
+  --spend: #c0b5a4;
+  --spend-soft: rgba(192, 181, 164, 0.16);
+  --debt: #e07a45;
+  --debt-soft: rgba(224, 122, 69, 0.2);
+  --debt-ink: #ee9a68;
+  --good: #7fcf8f;
+  --warn: #e9c46a;
+  --bad: #ec9286;
+  --idle: #a59a88;
+  --focus: #e2b26f;
   --shadow-control: 0 0 0 1px var(--line);
   color-scheme: dark;
 }
