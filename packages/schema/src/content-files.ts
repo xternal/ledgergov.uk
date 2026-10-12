@@ -1,6 +1,7 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { parse } from "yaml";
+import { legacyActor, legacyCard } from "./v1";
 
 /**
  * Read content/*.yaml from disk. Node only (server components, tests, scripts);
@@ -53,8 +54,9 @@ export interface RawContent {
 
 export function readContent(root = repoRoot()): RawContent {
   return {
-    promises: readYamlDir(join(root, "content", "promises")),
-    actors: readYamlDir(join(root, "content", "actors")),
+    // Cards and actors in OpenPromises format v1 are read back into our own shape (v1.ts); old-format files pass through.
+    promises: readYamlDir(join(root, "content", "promises")).map((f) => ({ ...f, data: legacyCard(f.data) })),
+    actors: readYamlDir(join(root, "content", "actors")).map((f) => ({ ...f, data: legacyActor(f.data) })),
     contracts: readJsonDir(join(root, "data", "build", "contracts")),
   };
 }

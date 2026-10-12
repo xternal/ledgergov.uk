@@ -1,84 +1,115 @@
+format: openpromises/1
 id: uk-child-nude-images-law-2026
-headline: "Stop children taking, sharing or viewing naked pictures"
+headline:
+  en: Stop children taking, sharing or viewing naked pictures
 actor_id: hm-government
 made_on: "2026-09-09"
 venue: press_release
-venue_label: Press release (DCMS)
-policy_area: public_order
+venue_label:
+  en: Press release (DCMS)
+area: public_order
 status: promised
-status_note: >-
-  No date was given: the government says it will introduce the legislation as soon as possible, and will
-  reassess whether it is needed if companies put solutions in place themselves. The same press release says
-  features that keep users scrolling for longer, such as videos that play one after another and personalised
-  feeds, will also be switched off by default for 16 and 17-year-olds; no date is given for this either.
-origin: llm_intake
-outcome_by:
+status_note:
+  en: >-
+    No date was given: the government says it will introduce the legislation as soon as possible,
+    and will reassess whether it is needed if companies put solutions in place themselves. The same
+    press release says features that keep users scrolling for longer, such as videos that play one
+    after another and personalised feeds, will also be switched off by default for 16 and
+    17-year-olds; no date is given for this either.
+responsible:
   actor_id: hm-government
+origin: llm_intake
 sources:
-  - title: "DCMS press release, 9 Sep 2026: UK to have world's strongest online child safety laws as government prepares legislation on nude images"
+  - title: >-
+      DCMS press release, 9 Sep 2026: UK to have world's strongest online child safety laws as
+      government prepares legislation on nude images
     url: https://www.gov.uk/government/news/uk-to-have-worlds-strongest-online-child-safety-laws-as-government-prepares-legislation-on-nude-images
 versions:
   - version: 1
-    text: "New legislation will be prepared by the government to force tech companies to make it impossible for children to take, share or view naked pictures."
+    text: >-
+      New legislation will be prepared by the government to force tech companies to make it
+      impossible for children to take, share or view naked pictures.
     recorded_on: "2026-09-09"
     source_url: https://www.gov.uk/government/news/uk-to-have-worlds-strongest-online-child-safety-laws-as-government-prepares-legislation-on-nude-images
     quote_checked_on: "2026-10-07"
     parameters:
-      who: >-
-        Children under 18 in the UK; technology companies, which would be legally required to build protections
-        into their devices
-      cost_note: >-
-        No cost to the public purse stated. The law would require technology companies to build protections
-        into their devices, so the main cost falls on the companies. The government has not yet published the
-        bill or an impact assessment, and its announcement gives no figure.
-      cost_sources:
-        - title: "DCMS: UK to have world's strongest online child safety laws as government prepares legislation on nude images (9 Sep 2026)"
-          url: https://www.gov.uk/government/news/uk-to-have-worlds-strongest-online-child-safety-laws-as-government-prepares-legislation-on-nude-images
-        - title: "DCMS: Lisa Nandy's statement on protecting children online (8 Sep 2026)"
-          url: https://www.gov.uk/government/speeches/lisa-nandys-statement-on-protecting-children-online
-      when: Not stated; the government says it will introduce the legislation "as soon as possible"
+      who:
+        en: >-
+          Children under 18 in the UK; technology companies, which would be legally required to
+          build protections into their devices
+      cost:
+        note:
+          en: >-
+            No cost to the public purse stated. The law would require technology companies to build
+            protections into their devices, so the main cost falls on the companies. The government
+            has not yet published the bill or an impact assessment, and its announcement gives no
+            figure.
+        sources:
+          - title: >-
+              DCMS: UK to have world's strongest online child safety laws as government prepares
+              legislation on nude images (9 Sep 2026)
+            url: https://www.gov.uk/government/news/uk-to-have-worlds-strongest-online-child-safety-laws-as-government-prepares-legislation-on-nude-images
+          - title: "DCMS: Lisa Nandy's statement on protecting children online (8 Sep 2026)"
+            url: https://www.gov.uk/government/speeches/lisa-nandys-statement-on-protecting-children-online
+      when:
+        en: >-
+          Not stated; the government says it will introduce the legislation "as soon as possible"
       funded_by: null
 events:
   - date: "2026-09-09"
     type: promised
-    text: >-
-      Government announces it will bring forward legislation requiring technology companies to stop under-18s
-      taking, sharing or viewing nude images on their devices
+    text:
+      en: >-
+        Government announces it will bring forward legislation requiring technology companies to
+        stop under-18s taking, sharing or viewing nude images on their devices
 replies: []
 corrections:
   - date: "2026-10-08"
-    path: versions[0].parameters.cost_note
-    was: "No costing published."
-    now: >-
-      No cost to the public purse stated. The law would require technology companies to build protections into
-      their devices, so the main cost falls on the companies. The government has not yet published the bill or
-      an impact assessment, and its announcement gives no figure.
-    reason: >-
-      The note said only that no costing was published. It now says who bears the cost under the announced plan.
+    path: versions[0].parameters.cost.note
+    was:
+      en: No costing published.
+    now:
+      en: >-
+        No cost to the public purse stated. The law would require technology companies to build
+        protections into their devices, so the main cost falls on the companies. The government has
+        not yet published the bill or an impact assessment, and its announcement gives no figure.
+    reason:
+      en: >-
+        The note said only that no costing was published. It now says who bears the cost under the
+        announced plan.
     source_url: https://www.gov.uk/government/news/uk-to-have-worlds-strongest-online-child-safety-laws-as-government-prepares-legislation-on-nude-images
   - date: "2026-10-08"
-    path: versions[0].parameters.cost_sources
+    path: versions[0].parameters.cost.sources
     was: null
     now:
-      - title: "DCMS: UK to have world's strongest online child safety laws as government prepares legislation on nude images (9 Sep 2026)"
+      - title: >-
+          DCMS: UK to have world's strongest online child safety laws as government prepares
+          legislation on nude images (9 Sep 2026)
         url: https://www.gov.uk/government/news/uk-to-have-worlds-strongest-online-child-safety-laws-as-government-prepares-legislation-on-nude-images
       - title: "DCMS: Lisa Nandy's statement on protecting children online (8 Sep 2026)"
         url: https://www.gov.uk/government/speeches/lisa-nandys-statement-on-protecting-children-online
-    reason: >-
-      The note said only that no costing was published. It now says who bears the cost under the announced plan.
+    reason:
+      en: >-
+        The note said only that no costing was published. It now says who bears the cost under the
+        announced plan.
     source_url: https://www.gov.uk/government/news/uk-to-have-worlds-strongest-online-child-safety-laws-as-government-prepares-legislation-on-nude-images
 reviews:
   - by: Junior Editor
     kind: automated
-    on: "2026-10-07"
-    note: Second check of the quote at its live source, date and venue, evidence, status, cost and funding, wording and legal risk; fixes made before publication.
+    "on": "2026-10-07"
+    note:
+      en: >-
+        Second check of the quote at its live source, date and venue, evidence, status, cost and
+        funding, wording and legal risk; fixes made before publication.
   - by: Pavel Guzhikov
     kind: editor
-    on: "2026-10-12"
-    note: Reviewed against its sources
+    "on": "2026-10-12"
     approves: true
+    note:
+      en: Reviewed against its sources
   - by: Goodwill Stranger
     kind: editor
-    on: "2026-10-12"
-    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
+    "on": "2026-10-12"
     approves: true
+    note:
+      en: Checked against its sources; confirmed by email to the owner, 12 October 2026

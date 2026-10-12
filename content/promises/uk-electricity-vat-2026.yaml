@@ -1,19 +1,23 @@
+format: openpromises/1
 id: uk-electricity-vat-2026
-headline: "Cut taxes on energy bills"
+headline:
+  en: Cut taxes on energy bills
 actor_id: andy-burnham
 made_on: "2026-07-21"
 venue: press_release
-venue_label: No 10 press release
-policy_area: taxes
+venue_label:
+  en: No 10 press release
+area: taxes
 status: delivered
-status_note: >-
-  A Treasury order made on 7 September 2026 zero-rates domestic electricity in Great Britain from 1 October 2026,
-  and the government confirmed the cut took effect that day. The zero rate is temporary and ends on 31 March 2027;
-  Northern Ireland gets comparable funding instead because EU VAT rules apply there.
-deadline: "2026-10-01"
-origin: manual
-outcome_by:
+status_note:
+  en: >-
+    A Treasury order made on 7 September 2026 zero-rates domestic electricity in Great Britain from
+    1 October 2026, and the government confirmed the cut took effect that day. The zero rate is
+    temporary and ends on 31 March 2027; Northern Ireland gets comparable funding instead because EU
+    VAT rules apply there.
+responsible:
   actor_id: hm-government
+origin: manual
 sources:
   - title: "No 10 press release, 21 Jul 2026: New PM cuts tax on household electricity bills"
     url: https://www.gov.uk/government/news/new-pm-cuts-tax-on-household-electricity-bills-to-give-breathing-space-on-cost-of-living
@@ -23,73 +27,97 @@ sources:
     url: https://www.gov.uk/government/news/energy-bill-tax-cut-starts-today-to-give-families-breathing-space
 versions:
   - version: 1
-    text: We’re taking immediate action to cut taxes on energy bills, put more money in people’s pockets and bring back hope.
+    text: >-
+      We’re taking immediate action to cut taxes on energy bills, put more money in people’s pockets
+      and bring back hope.
     recorded_on: "2026-07-21"
     source_url: https://www.gov.uk/government/news/new-pm-cuts-tax-on-household-electricity-bills-to-give-breathing-space-on-cost-of-living
     quote_checked_on: "2026-10-06"
     parameters:
-      who: >-
-        Households in Great Britain paying for domestic electricity (VAT cut from 5% to 0%), plus eligible
-        charities, care homes and non-VAT-registered small businesses that qualify for domestic energy VAT relief;
-        Northern Ireland gets comparable funding instead
-      how_much_bn_per_year: [0.765, 0.85, 0.935]
-      costed_by:
-        kind: official
-        name: No 10
-      cost_note: >-
-        Year shown: 2026-27, the only year of the measure, which covers six months (1 October 2026 to
-        31 March 2027); central figure only. Government estimate: around £850m, based on estimated electricity
-        prices. There is no independent costing yet; the government says updated costs will be set out at the
-        Budget.
-        Low–high is an editorial ±10% because the source gives a central figure only.
-      cost_sources:
-        - title: "No 10 press release, 21 Jul 2026: New PM cuts tax on household electricity bills"
-          url: https://www.gov.uk/government/news/new-pm-cuts-tax-on-household-electricity-bills-to-give-breathing-space-on-cost-of-living
-      when: 1 October 2026 to 31 March 2027
-      funded_by: Cancellation of the Digital ID programme (£1.8bn over the next three years)
+      who:
+        en: >-
+          Households in Great Britain paying for domestic electricity (VAT cut from 5% to 0%), plus
+          eligible charities, care homes and non-VAT-registered small businesses that qualify for
+          domestic energy VAT relief; Northern Ireland gets comparable funding instead
+      cost:
+        range: [0.765, 0.85, 0.935]
+        quality: sourced
+        by:
+          kind: official
+          name: No 10
+        note:
+          en: >-
+            Year shown: 2026-27, the only year of the measure, which covers six months (1 October
+            2026 to 31 March 2027); central figure only. Government estimate: around £850m, based on
+            estimated electricity prices. There is no independent costing yet; the government says
+            updated costs will be set out at the Budget. Low–high is an editorial ±10% because the
+            source gives a central figure only.
+        sources:
+          - title: "No 10 press release, 21 Jul 2026: New PM cuts tax on household electricity bills"
+            url: https://www.gov.uk/government/news/new-pm-cuts-tax-on-household-electricity-bills-to-give-breathing-space-on-cost-of-living
+      when:
+        en: 1 October 2026 to 31 March 2027
+      deadline: "2026-10-01"
+      funded_by:
+        en: Cancellation of the Digital ID programme (£1.8bn over the next three years)
 events:
   - date: "2026-07-21"
     type: promised
-    text: PM announces VAT will be removed from household electricity bills from 1 October 2026
+    text:
+      en: >-
+        PM announces VAT will be removed from household electricity bills from 1 October 2026
   - date: "2026-09-07"
     type: legislated
-    text: Treasury makes the order zero-rating domestic electricity from 1 October 2026 to 31 March 2027
+    text:
+      en: >-
+        Treasury makes the order zero-rating domestic electricity from 1 October 2026 to 31 March
+        2027
     evidence_url: https://www.legislation.gov.uk/uksi/2026/987/contents/made
   - date: "2026-10-01"
     type: deadline
-    text: Due to start
+    text:
+      en: Due to start
   - date: "2026-10-01"
     type: delivered
-    text: Zero rate of VAT on domestic electricity in force
+    text:
+      en: Zero rate of VAT on domestic electricity in force
     evidence_url: https://www.gov.uk/government/news/energy-bill-tax-cut-starts-today-to-give-families-breathing-space
 replies: []
 corrections:
   - date: "2026-10-06"
     path: versions[0].parameters.who
-    was: >-
-      Households in Great Britain paying for domestic electricity (VAT cut from 5% to 0%), plus eligible
-      charities and care homes; Northern Ireland gets equivalent funding instead
-    now: >-
-      Households in Great Britain paying for domestic electricity (VAT cut from 5% to 0%), plus eligible
-      charities, care homes and non-VAT-registered small businesses that qualify for domestic energy VAT relief;
-      Northern Ireland gets comparable funding instead
-    reason: >-
-      The press release says Northern Ireland gets "comparable" funding, not "equivalent" funding. It also names
-      small businesses that are not registered for VAT and qualify for domestic energy VAT relief, which the entry
-      left out.
+    was:
+      en: >-
+        Households in Great Britain paying for domestic electricity (VAT cut from 5% to 0%), plus
+        eligible charities and care homes; Northern Ireland gets equivalent funding instead
+    now:
+      en: >-
+        Households in Great Britain paying for domestic electricity (VAT cut from 5% to 0%), plus
+        eligible charities, care homes and non-VAT-registered small businesses that qualify for
+        domestic energy VAT relief; Northern Ireland gets comparable funding instead
+    reason:
+      en: >-
+        The press release says Northern Ireland gets "comparable" funding, not "equivalent" funding.
+        It also names small businesses that are not registered for VAT and qualify for domestic
+        energy VAT relief, which the entry left out.
     source_url: https://www.gov.uk/government/news/new-pm-cuts-tax-on-household-electricity-bills-to-give-breathing-space-on-cost-of-living
 reviews:
   - by: Junior Editor
     kind: automated
-    on: "2026-10-06"
-    note: Second check of every quote, date, evidence link, status, cost, wording and legal risk against the live sources; fixes applied as corrections.
+    "on": "2026-10-06"
+    note:
+      en: >-
+        Second check of every quote, date, evidence link, status, cost, wording and legal risk
+        against the live sources; fixes applied as corrections.
   - by: Pavel Guzhikov
     kind: editor
-    on: "2026-10-12"
-    note: Reviewed against its sources
+    "on": "2026-10-12"
     approves: true
+    note:
+      en: Reviewed against its sources
   - by: Goodwill Stranger
     kind: editor
-    on: "2026-10-12"
-    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
+    "on": "2026-10-12"
     approves: true
+    note:
+      en: Checked against its sources; confirmed by email to the owner, 12 October 2026

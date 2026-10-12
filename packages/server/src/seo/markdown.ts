@@ -1,4 +1,4 @@
-import { approvedByText, contractChange, CORRECTION_PATH, COSTED_BY_LABEL, editorShownAs, LADDER, type CardView, type Correction, type PromiseFile } from "@ledger/schema";
+import { APPROVALS_NEEDED, approvedByText, contractChange, CORRECTION_PATH, COSTED_BY_LABEL, editorShownAs, LADDER, type CardView, type Correction, type PromiseFile } from "@ledger/schema";
 import { areaLabel, CONTRACT_STATUSES, displayName, eventLabel, gbpBnText, moneyText, statusLabel, ukDate } from "../alerts/labels";
 import { OGL, OPEN_PARLIAMENT_LICENCE, OWN_WORK_LICENCE, quoteLicence } from "../api/envelope";
 import { absoluteUrl, areaPath, cardCostText, cardHeadline, cardLastUpdated, SITE_NAME, statusCounts, type SeoContext } from "./cards";
@@ -137,7 +137,7 @@ export function cardMarkdown(c: CardView, ctx: SeoContext, level: 1 | 2 = 1): st
       const approved = approvedByText(f.reviews);
       const rest = f.reviews.filter((r) => !(r.kind === "editor" && r.approves === true)).reverse();
       return [
-        ...(approved ? [`- Checked by ${approved.text} on ${ukDate(approved.on)}${f.editor_check_required ? "; a second editor's check to come" : ""}.`] : []),
+        ...(approved ? [`- Checked by ${approved.text} on ${ukDate(approved.on)}${approved.count < APPROVALS_NEEDED ? "; a second editor's check to come" : ""}.`] : []),
         ...rest.map((r) => `- Checked by ${reviewer(r)} on ${ukDate(r.on)}${f.editor_check_required && !approved ? "; human editor review to come" : ""}.`),
       ];
     })(),

@@ -1,57 +1,75 @@
+format: openpromises/1
 id: uk-ukri-innovation-clusters-2026
-headline: "£1bn for innovation clusters over four years"
+headline:
+  en: £1bn for innovation clusters over four years
 actor_id: hm-government
 made_on: "2026-10-09"
 venue: press_release
-venue_label: Press release (No 10)
-policy_area: economic_affairs
+venue_label:
+  en: Press release (No 10)
+area: economic_affairs
 status: promised
-status_note: >-
-  Announced with the Prime Minister's speech on regional innovation on 9 October 2026. The release does not say
-  which four years, or how the money is split by year or by sector. UK Research and Innovation is to run it.
-outcome_by:
+status_note:
+  en: >-
+    Announced with the Prime Minister's speech on regional innovation on 9 October 2026. The release
+    does not say which four years, or how the money is split by year or by sector. UK Research and
+    Innovation is to run it.
+responsible:
   actor_id: hm-government
 origin: llm_intake
 sources:
-  - title: "No 10 press release, 9 Oct 2026: Prime Minister to hand regions innovation funding to build world-leading industries"
+  - title: >-
+      No 10 press release, 9 Oct 2026: Prime Minister to hand regions innovation funding to build
+      world-leading industries
     url: https://www.gov.uk/government/news/prime-minister-to-hand-regions-innovation-funding-to-build-world-leading-industries
 versions:
   - version: 1
     text: >-
-      The Government will also commit £1 billion through UK Research and Innovation (UKRI) over the next four years to
-      support high-growth innovation clusters in the Industrial Strategy’s priority sectors across the UK, backing the
-      places with the research excellence, businesses and skilled workers needed to turn new ideas into successful
-      companies.
+      The Government will also commit £1 billion through UK Research and Innovation (UKRI) over the
+      next four years to support high-growth innovation clusters in the Industrial Strategy’s
+      priority sectors across the UK, backing the places with the research excellence, businesses
+      and skilled workers needed to turn new ideas into successful companies.
     recorded_on: "2026-10-09"
     source_url: https://www.gov.uk/government/news/prime-minister-to-hand-regions-innovation-funding-to-build-world-leading-industries
     quote_checked_on: "2026-10-10"
     parameters:
-      who: >-
-        High-growth innovation clusters in the Industrial Strategy's priority sectors across the UK: research
-        institutions, businesses and their workers
-      how_much_bn_per_year: null
-      cost_note: >-
-        £1bn in total over four years. The release gives no start year and no split by year, so no yearly figure is
-        shown.
-      when: Over the next four years (start not stated)
-      funded_by: Through UK Research and Innovation (UKRI)
+      who:
+        en: >-
+          High-growth innovation clusters in the Industrial Strategy's priority sectors across the
+          UK: research institutions, businesses and their workers
+      cost:
+        note:
+          en: >-
+            £1bn in total over four years. The release gives no start year and no split by year, so
+            no yearly figure is shown.
+      when:
+        en: Over the next four years (start not stated)
+      funded_by:
+        en: Through UK Research and Innovation (UKRI)
 events:
   - date: "2026-10-09"
     type: promised
-    text: The government commits £1bn through UKRI over four years to high-growth innovation clusters
+    text:
+      en: >-
+        The government commits £1bn through UKRI over four years to high-growth innovation clusters
 replies: []
 reviews:
   - by: AI Journalist
     kind: automated
-    on: "2026-10-10"
-    note: Quote checked word for word at the source; dates, figures and links checked against the cited sources.
+    "on": "2026-10-10"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
   - by: Pavel Guzhikov
     kind: editor
-    on: "2026-10-12"
-    note: Reviewed against its sources
+    "on": "2026-10-12"
     approves: true
+    note:
+      en: Reviewed against its sources
   - by: Goodwill Stranger
     kind: editor
-    on: "2026-10-12"
-    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
+    "on": "2026-10-12"
     approves: true
+    note:
+      en: Checked against its sources; confirmed by email to the owner, 12 October 2026

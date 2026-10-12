@@ -9,6 +9,10 @@ import type { SubmissionView } from "./submissions";
  * fail validation until editors have filled them in, so CI tells them what is
  * left. Evidence becomes one appended event (append-only, like scripts/deadlines.ts).
  *
+ * New cards are written in OpenPromises format v1 (`format: openpromises/1`), like
+ * every published card since 12 October 2026; evidence is appended in the format
+ * the card is already in.
+ *
  * Reader text and language-model suggestions are untrusted: the reader's words
  * go in as values only where the schema needs them (the URL, the quote), and
  * every model suggestion is a YAML comment, never a value.
@@ -92,16 +96,14 @@ export function draftNewPromise(s: SubmissionView, opts: { today: string; existi
   const source: Record<string, string> = { title: TODO, url: s.url };
   if (s.archived_url) source.archived_url = s.archived_url;
   const card: Record<string, unknown> = {
+    format: "openpromises/1",
     id,
     actor_id: TODO,
     made_on: TODO,
-    policy_area: TODO,
+    area: TODO,
     status: "promised",
+    responsible: TODO,
     origin: "reader_submission",
-    submission_ref: s.id,
-    ...(s.credit_handle ? { credit: oneLine(s.credit_handle, 40) } : {}),
-    editor_check_required: true,
-    outcome_by: TODO,
     sources: [source],
     versions: [
       {
@@ -110,11 +112,12 @@ export function draftNewPromise(s: SubmissionView, opts: { today: string; existi
         recorded_on: opts.today,
         source_url: s.url,
         quote_checked_on: null,
-        parameters: { who: TODO, how_much_bn_per_year: null, when: TODO, funded_by: null },
+        parameters: { who: { en: TODO }, when: { en: TODO }, funded_by: null },
       },
     ],
-    events: [{ date: TODO, type: "promised", text: TODO }],
+    events: [{ date: TODO, type: "promised", text: { en: TODO } }],
     replies: [],
+    x: { submission_ref: s.id, ...(s.credit_handle ? { credit: oneLine(s.credit_handle, 40) } : {}), editor_check_required: true },
   };
   const doc = new Document(card);
   doc.commentBefore = [
@@ -128,10 +131,10 @@ export function draftNewPromise(s: SubmissionView, opts: { today: string; existi
   setComment(doc, ["actor_id"], `TODO: an id from content/actors${s.claimed_actor ? ` (the reader said: ${oneLine(s.claimed_actor, 80)})` : ""}`);
   const readerDate = typeof s.checks.claimed_date === "string" ? ` (the reader said: ${oneLine(s.checks.claimed_date, 40)})` : "";
   setComment(doc, ["made_on"], `TODO: the date the promise was made, YYYY-MM-DD${readerDate}; add venue and venue_label if known (${VENUES})`);
-  setComment(doc, ["policy_area"], `TODO: one of ${POLICY_AREAS}`);
+  setComment(doc, ["area"], `TODO: one of ${POLICY_AREAS}`);
   setComment(
     doc,
-    ["outcome_by"],
+    ["responsible"],
     "TODO: the body that must act to deliver it now, as { actor_id: hm-government } (a government or public body from content/actors), or null when no body in power is committed to it (PROMISE_STANDARD §11)",
   );
   setComment(doc, ["sources", 0, "title"], "TODO: a short title naming the publisher and date");
@@ -141,12 +144,15 @@ export function draftNewPromise(s: SubmissionView, opts: { today: string; existi
     s.matched_quote ? "Matched word for word in the transcript; still check it at the source" : words ? "TODO: the reader's words, not matched to a transcript; check them word for word" : "TODO: the exact words, copied from the source",
   );
   setComment(doc, ["versions", 0, "quote_checked_on"], "TODO: the date an editor checked the words at source_url");
-  setComment(doc, ["versions", 0, "parameters", "who"], "TODO: who it applies to, exactly as stated");
-  setComment(doc, ["versions", 0, "parameters", "how_much_bn_per_year"], "TODO: [low, central, high] in £bn a year with costed_by (who made the central figure), a cost_note and cost_sources, or leave null if not stated");
-  setComment(doc, ["versions", 0, "parameters", "when"], "TODO: when, exactly as stated");
-  setComment(doc, ["versions", 0, "parameters", "funded_by"], "TODO: exactly as stated; null means Funding not stated");
+  setComment(doc, ["versions", 0, "parameters", "who", "en"], "TODO: who it applies to, exactly as stated");
+  setComment(doc, ["versions", 0, "parameters", "when", "en"], "TODO: when, exactly as stated; add deadline: YYYY-MM-DD here if the words give one");
+  setComment(
+    doc,
+    ["versions", 0, "parameters", "funded_by"],
+    "TODO: exactly as stated, as { en: … }; null means Funding not stated. If a cost was stated, add cost: { range: [low, central, high] in £bn a year, by: { kind: official | party | independent, name }, note: { en: … }, sources: [...] }",
+  );
   setComment(doc, ["events", 0, "date"], "TODO: same as made_on");
-  setComment(doc, ["events", 0, "text"], "TODO: one line on what was promised, and where");
+  setComment(doc, ["events", 0, "text", "en"], "TODO: one line on what was promised, and where");
   return { path: `content/promises/${id}.yaml`, promiseId: id, yaml: doc.toString({ lineWidth: 0 }), mode: "new", changed: true };
 }
 
@@ -156,7 +162,7 @@ export function draftNewPromise(s: SubmissionView, opts: { today: string; existi
  * (re-serialising the whole document would re-flow every folded paragraph).
  * Comment lines (untrusted text included) are each prefixed with "#".
  */
-function appendToBlockSeq(text: string, key: string, item: Record<string, unknown>, comments: string[]): string {
+export function appendToBlockSeq(text: string, key: string, item: Record<string, unknown>, comments: string[]): string {
   const doc = parseDocument(text);
   const seq = doc.get(key, true);
   if (!isSeq(seq) || seq.flow || !seq.items.length || !seq.range) {
@@ -193,7 +199,9 @@ export function draftEvidence(s: SubmissionView, cardYaml: string, opts: { today
     if (s.archived_url) src.archived_url = s.archived_url;
     yaml = appendToBlockSeq(yaml, "sources", src, [`From reader evidence ${s.id}. TODO: a short title naming the publisher and date`]);
   }
-  yaml = appendToBlockSeq(yaml, "events", { date: TODO, type: s.evidence_type || TODO, text: TODO, evidence_url: s.url }, [
+  // A card in format v1 keeps its text in a language map.
+  const v1 = /^format: openpromises\/1\s*$/m.test(cardYaml);
+  yaml = appendToBlockSeq(yaml, "events", { date: TODO, type: s.evidence_type || TODO, text: v1 ? { en: TODO } : TODO, evidence_url: s.url }, [
     `Reader evidence ${s.id}, received ${ukDay(s.received_at)}. Added for triage on ${opts.today}.`,
     "TODO: the date the change happened (YYYY-MM-DD) and one line on what changed. Decide whether the status changes too.",
     ...(s.evidence_type === "reworded" ? ["Rewording also needs a new entry in versions (append, never edit an old one)."] : []),

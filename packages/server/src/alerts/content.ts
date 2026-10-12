@@ -1,5 +1,5 @@
 import { parse } from "yaml";
-import { contractKey } from "@ledger/schema";
+import { contractKey, legacyActor, legacyCard } from "@ledger/schema";
 import { truncate } from "./labels";
 
 /**
@@ -55,7 +55,8 @@ const str = (x: unknown): string => (typeof x === "string" ? x : x == null ? "" 
 export function parseCard(yamlText: string): LooseCard | null {
   let data: Record<string, unknown>;
   try {
-    data = parse(yamlText) as Record<string, unknown>;
+    // Either format: v1 cards are read back into our shape, so alerts compare like with like across the conversion.
+    data = legacyCard(parse(yamlText)) as Record<string, unknown>;
   } catch {
     return null;
   }
@@ -81,7 +82,7 @@ export function parseCard(yamlText: string): LooseCard | null {
 
 export function parseActor(yamlText: string): LooseActor | null {
   try {
-    const data = parse(yamlText) as Record<string, unknown>;
+    const data = legacyActor(parse(yamlText)) as Record<string, unknown>;
     if (!data || typeof data.id !== "string") return null;
     return { id: data.id, name: str(data.name) || data.id, kind: data.kind ? str(data.kind) : undefined, party_id: data.party_id ? str(data.party_id) : undefined };
   } catch {

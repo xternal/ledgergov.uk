@@ -1,20 +1,24 @@
+format: openpromises/1
 id: uk-great-british-energy-2024
-headline: "Create Great British Energy"
+headline:
+  en: Create Great British Energy
 actor_id: labour
 made_on: "2024-06-13"
 venue: manifesto
-venue_label: 2024 manifesto, page 53
-policy_area: economic_affairs
+venue_label:
+  en: 2024 manifesto, page 53
+area: economic_affairs
 status: delivering
-status_note: >-
-  Great British Energy exists in law (Great British Energy Act 2025), is wholly owned by the Secretary of State for
-  Energy Security and Net Zero and has started investing, including £255m in solar for schools, NHS and military sites
-  in its first period to 31 March 2026. The manifesto's £8.3bn runs over the Parliament, and the government now counts
-  that sum across both Great British Energy and Great British Energy–Nuclear, so the card sits at Delivering.
-deadline: "2029-07-01"
-origin: manual
-outcome_by:
+status_note:
+  en: >-
+    Great British Energy exists in law (Great British Energy Act 2025), is wholly owned by the
+    Secretary of State for Energy Security and Net Zero and has started investing, including £255m
+    in solar for schools, NHS and military sites in its first period to 31 March 2026. The
+    manifesto's £8.3bn runs over the Parliament, and the government now counts that sum across both
+    Great British Energy and Great British Energy–Nuclear, so the card sits at Delivering.
+responsible:
   actor_id: hm-government
+origin: manual
 sources:
   - title: "Labour Party: Change, 2024 manifesto (PDF), page 53"
     url: https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=53
@@ -29,114 +33,161 @@ sources:
 versions:
   - version: 1
     text: >-
-      To drive forward investment in clean, home-grown energy production, Labour will create a new publicly-owned
-      company, Great British Energy. It will be owned by the British people and deliver power back to the British
-      people.
+      To drive forward investment in clean, home-grown energy production, Labour will create a new
+      publicly-owned company, Great British Energy. It will be owned by the British people and
+      deliver power back to the British people.
     recorded_on: "2024-06-13"
     source_url: https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=53
     quote_checked_on: "2026-10-06"
     parameters:
-      who: Energy billpayers and communities across the UK; taxpayers provide the company's capital
-      how_much_bn_per_year: [1.53, 1.7, 1.87]
-      costed_by:
-        kind: party
-        name: Labour Party
-      cost_note: >-
-        Year used: an average year of the Parliament, as Labour's costings give an annual average (£1.7bn, manifesto
-        page 128) of the £8.3bn capitalisation promised on page 53; central figure only. Later official figures:
-        Spending Review 2025 says Great British Energy and Great British Energy–Nuclear together will invest more than
-        £8.3bn over the Parliament, and the company's 2025-26 annual report says up to £5.3bn is expected to be made
-        available to it from 2025/26 to 2029/30. Autumn Budget 2024 gave £125m for 2025-26.
-        Low–high is an editorial ±10% because the source gives a central figure only.
-      cost_sources:
-        - title: "Labour Party: Change, 2024 manifesto (PDF), Green Prosperity Plan costings, page 128"
-          url: https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=128
-        - title: "HM Treasury: Spending Review 2025"
-          url: https://assets.publishing.service.gov.uk/media/68627094354985706f111adc/E03349913_HMT_Spending_Review_June_2025_TEXT_CS_Accessible__002_.pdf
-        - title: "Great British Energy: Annual report and accounts 2025 to 2026"
-          url: https://www.gov.uk/government/publications/great-british-energy-annual-report-and-accounts-2025-to-2026/gbe-annual-report-and-accounts-2025-to-2026-html
-      when: Company set up in this Parliament; £8.3bn capitalisation over the Parliament (taken as to 1 July 2029)
-      funded_by: >-
-        A windfall tax on oil and gas giants (manifesto page 10); the wider Green Prosperity Plan is funded in part by a
-        time-limited windfall tax on oil and gas giants and the rest by borrowing to invest within the fiscal rules
-        (page 128)
+      who:
+        en: >-
+          Energy billpayers and communities across the UK; taxpayers provide the company's capital
+      cost:
+        range: [1.53, 1.7, 1.87]
+        quality: sourced
+        by:
+          kind: party
+          name: Labour Party
+        note:
+          en: >-
+            Year used: an average year of the Parliament, as Labour's costings give an annual
+            average (£1.7bn, manifesto page 128) of the £8.3bn capitalisation promised on page 53;
+            central figure only. Later official figures: Spending Review 2025 says Great British
+            Energy and Great British Energy–Nuclear together will invest more than £8.3bn over the
+            Parliament, and the company's 2025-26 annual report says up to £5.3bn is expected to be
+            made available to it from 2025/26 to 2029/30. Autumn Budget 2024 gave £125m for 2025-26.
+            Low–high is an editorial ±10% because the source gives a central figure only.
+        sources:
+          - title: >-
+              Labour Party: Change, 2024 manifesto (PDF), Green Prosperity Plan costings, page 128
+            url: https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=128
+          - title: "HM Treasury: Spending Review 2025"
+            url: https://assets.publishing.service.gov.uk/media/68627094354985706f111adc/E03349913_HMT_Spending_Review_June_2025_TEXT_CS_Accessible__002_.pdf
+          - title: "Great British Energy: Annual report and accounts 2025 to 2026"
+            url: https://www.gov.uk/government/publications/great-british-energy-annual-report-and-accounts-2025-to-2026/gbe-annual-report-and-accounts-2025-to-2026-html
+      when:
+        en: >-
+          Company set up in this Parliament; £8.3bn capitalisation over the Parliament (taken as to
+          1 July 2029)
+      deadline: "2029-07-01"
+      funded_by:
+        en: >-
+          A windfall tax on oil and gas giants (manifesto page 10); the wider Green Prosperity Plan
+          is funded in part by a time-limited windfall tax on oil and gas giants and the rest by
+          borrowing to invest within the fiscal rules (page 128)
 events:
   - date: "2024-06-13"
     type: promised
-    text: Labour manifesto pledges a new publicly owned company, Great British Energy
+    text:
+      en: Labour manifesto pledges a new publicly owned company, Great British Energy
   - date: "2024-10-30"
     type: funded
-    text: Autumn Budget 2024 confirms £125m for Great British Energy in 2025-26, with its headquarters in Aberdeen
+    text:
+      en: >-
+        Autumn Budget 2024 confirms £125m for Great British Energy in 2025-26, with its headquarters
+        in Aberdeen
     evidence_url: https://assets.publishing.service.gov.uk/media/672b9695fbd69e1861921c63/Autumn_Budget_2024_Accessible.pdf
   - date: "2025-05-15"
     type: legislated
-    text: Great British Energy Act 2025 receives Royal Assent
+    text:
+      en: Great British Energy Act 2025 receives Royal Assent
     evidence_url: https://www.legislation.gov.uk/ukpga/2025/16
   - date: "2025-05-21"
     type: delivering
-    text: Great British Energy Group Limited is designated as Great British Energy under the Act, with effect from 21 May 2025
+    text:
+      en: >-
+        Great British Energy Group Limited is designated as Great British Energy under the Act, with
+        effect from 21 May 2025
     evidence_url: https://assets.publishing.service.gov.uk/media/682b504a8999f671f3c2443a/GBE-designation-letter.pdf
   - date: "2025-06-11"
     type: funded
-    text: >-
-      Spending Review 2025 says Great British Energy and Great British Energy–Nuclear will together invest more than
-      £8.3bn over the Parliament
+    text:
+      en: >-
+        Spending Review 2025 says Great British Energy and Great British Energy–Nuclear will
+        together invest more than £8.3bn over the Parliament
     evidence_url: https://assets.publishing.service.gov.uk/media/68627094354985706f111adc/E03349913_HMT_Spending_Review_June_2025_TEXT_CS_Accessible__002_.pdf
   - date: "2026-09-14"
     type: delivering
-    text: >-
-      First annual report: £255m invested (via DESNZ) in solar for 250 schools, 260 NHS sites and military sites in the
-      period to 31 March 2026
+    text:
+      en: >-
+        First annual report: £255m invested (via DESNZ) in solar for 250 schools, 260 NHS sites and
+        military sites in the period to 31 March 2026
     evidence_url: https://www.gov.uk/government/publications/great-british-energy-annual-report-and-accounts-2025-to-2026/gbe-annual-report-and-accounts-2025-to-2026-html
   - date: "2029-07-01"
     type: deadline
-    text: End of the Parliament, when the £8.3bn capitalisation period ends (editorial date)
+    text:
+      en: >-
+        End of the Parliament, when the £8.3bn capitalisation period ends (editorial date)
 replies: []
 corrections:
   - date: "2026-10-06"
     path: events[5].date
     was: "2026-09-30"
     now: "2026-09-14"
-    reason: >-
-      The annual report was published on 14 September 2026. 30 September 2026 is a later update to the web version,
-      not the publication date.
+    reason:
+      en: >-
+        The annual report was published on 14 September 2026. 30 September 2026 is a later update to
+        the web version, not the publication date.
     source_url: https://www.gov.uk/government/publications/great-british-energy-annual-report-and-accounts-2025-to-2026/gbe-annual-report-and-accounts-2025-to-2026-html
 reviews:
   - by: Junior Editor
     kind: automated
-    on: "2026-10-06"
-    note: Second check of every quote, date, evidence link, status, cost, wording and legal risk against the live sources; fixes applied as corrections.
+    "on": "2026-10-06"
+    note:
+      en: >-
+        Second check of every quote, date, evidence link, status, cost, wording and legal risk
+        against the live sources; fixes applied as corrections.
   - by: Pavel Guzhikov
     kind: editor
-    on: "2026-10-12"
-    note: Reviewed against its sources
+    "on": "2026-10-12"
     approves: true
+    note:
+      en: Reviewed against its sources
   - by: Goodwill Stranger
     kind: editor
-    on: "2026-10-12"
-    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
+    "on": "2026-10-12"
     approves: true
-contracts:
-  # Solar PV at five ambulance sites, paid for by the GB Energy Solar Partnerships programme (NHS).
-  - ocds-h6vhtk-058e4b
-  # Solar PV and batteries at Moseley Primary School, Coventry: GB Energy Solar Partnership (schools).
-  - ocds-h6vhtk-065530
-  # Wolverhampton primary school, GB Energy Solar Partnership: solar PV, LED lighting and EV charge points (four contracts).
-  - ocid: ocds-b5fd17-3516e68f-d185-496b-af5d-9934219ba07f
-    notice_url: https://www.contractsfinder.service.gov.uk/Notice/94b3db54-d5f2-4525-9213-ca0ee1b542de
-  - ocid: ocds-b5fd17-d480ec34-23e5-4b09-9730-134fc569fd86
-    notice_url: https://www.contractsfinder.service.gov.uk/Notice/05184aa1-3a05-416a-94c9-c1a01ff59d88
-  - ocid: ocds-b5fd17-906f1ac1-654e-4a71-ab0f-72dc43cfb945
-    notice_url: https://www.contractsfinder.service.gov.uk/Notice/11442c93-7f3f-45ed-85b2-69ab5e0a13e2
-  - ocid: ocds-b5fd17-6b3c68e6-762c-4315-868d-bbd08d8a4a74
-    notice_url: https://www.contractsfinder.service.gov.uk/Notice/87e83499-1a94-4488-883b-2401a32c9e28
-  # Wigan fire and ambulance station solar PV, paid for by GB Energy through the Mayoral Renewables Fund (Greater Manchester).
-  - ocid: ocds-b5fd17-61d799b3-d072-4a16-a62b-f639ba3ba4cb
-    notice_url: https://www.contractsfinder.service.gov.uk/Notice/7bbed016-d322-40be-b6d6-c9a585c4c9c8
-  # Sunderland primary schools solar PV, Mayoral Renewables Fund (GB Energy): lots 1 and 2 of one procurement.
-  - ocid: ocds-h6vhtk-060bd4
-    award_id: "1"
-  - ocid: ocds-h6vhtk-060bd4
-    award_id: "2"
-  # EV charging at two Cadw depots, notice titled as a Great British Energy award.
-  - ocds-h6vhtk-06d82a
+    note:
+      en: Checked against its sources; confirmed by email to the owner, 12 October 2026
+links:
+  contracts:
+    - ocid: ocds-h6vhtk-058e4b
+      note:
+        en: >-
+          Solar PV at five ambulance sites, paid for by the GB Energy Solar Partnerships programme
+          (NHS).
+    - ocid: ocds-h6vhtk-065530
+      note:
+        en: >-
+          Solar PV and batteries at Moseley Primary School, Coventry: GB Energy Solar Partnership
+          (schools).
+    - ocid: ocds-b5fd17-3516e68f-d185-496b-af5d-9934219ba07f
+      notice_url: https://www.contractsfinder.service.gov.uk/Notice/94b3db54-d5f2-4525-9213-ca0ee1b542de
+      note:
+        en: >-
+          Wolverhampton primary school, GB Energy Solar Partnership: solar PV, LED lighting and EV
+          charge points (four contracts).
+    - ocid: ocds-b5fd17-d480ec34-23e5-4b09-9730-134fc569fd86
+      notice_url: https://www.contractsfinder.service.gov.uk/Notice/05184aa1-3a05-416a-94c9-c1a01ff59d88
+    - ocid: ocds-b5fd17-906f1ac1-654e-4a71-ab0f-72dc43cfb945
+      notice_url: https://www.contractsfinder.service.gov.uk/Notice/11442c93-7f3f-45ed-85b2-69ab5e0a13e2
+    - ocid: ocds-b5fd17-6b3c68e6-762c-4315-868d-bbd08d8a4a74
+      notice_url: https://www.contractsfinder.service.gov.uk/Notice/87e83499-1a94-4488-883b-2401a32c9e28
+    - ocid: ocds-b5fd17-61d799b3-d072-4a16-a62b-f639ba3ba4cb
+      notice_url: https://www.contractsfinder.service.gov.uk/Notice/7bbed016-d322-40be-b6d6-c9a585c4c9c8
+      note:
+        en: >-
+          Wigan fire and ambulance station solar PV, paid for by GB Energy through the Mayoral
+          Renewables Fund (Greater Manchester).
+    - ocid: ocds-h6vhtk-060bd4
+      award_id: "1"
+      note:
+        en: >-
+          Sunderland primary schools solar PV, Mayoral Renewables Fund (GB Energy): lots 1 and 2 of
+          one procurement.
+    - ocid: ocds-h6vhtk-060bd4
+      award_id: "2"
+    - ocid: ocds-h6vhtk-06d82a
+      note:
+        en: EV charging at two Cadw depots, notice titled as a Great British Energy award.

@@ -1,7 +1,21 @@
 # Content
 
-One YAML file per promise card (`promises/<id>.yaml`) and per actor (`actors/<id>.yaml`).
-Rules: `docs/PROMISE_STANDARD.md`. Schema: `packages/schema/src/content.ts`. Checked by `pnpm validate`.
+One YAML file per promise card (`promises/<id>.yaml`) and per actor (`actors/<id>.yaml`), in **OpenPromises format v1** (`format: openpromises/1`) since 12 October 2026: the open format of the [OpenPromises](https://github.com/xternal/openpromises) engine, described in its `docs/FORMAT.md`. Rules: `docs/PROMISE_STANDARD.md`. Checked by `pnpm validate` and by the engine (`pnpm exec openpromises validate`, docs/OPERATIONS.md §15).
+
+The site reads each file back into its own shape (`packages/schema/src/v1.ts` → `packages/schema/src/content.ts`), so pages, feeds and the API use the old names. What changed in the files:
+
+| In the file (v1) | Was | Note |
+|---|---|---|
+| `area` | `policy_area` | |
+| `responsible` | `outcome_by` | who must deliver it now |
+| `versions[].parameters.cost.range` / `.by` / `.note` / `.sources` | `how_much_bn_per_year`, `costed_by`, `cost_note`, `cost_sources` | plus `cost.quality`: sourced, approx or modelled |
+| `versions[last].parameters.deadline` | `deadline` | on `x.deadline` when the version has no parameters |
+| `links.contracts`, `links.lever.settings`, `links.lever.label` | `contracts`, `lever_settings`, `preset_label` | a contract may carry a `note` saying why it is linked |
+| `x.submission_ref`, `x.credit`, `x.editor_check_required` | the same names at the top | |
+| `headline`, `status_note`, `venue_label`, events' `text`, `who`, `when`, `funded_by`, `cost.note`, notes, reasons | the same names | text a reader sees is a language map: `en: …` |
+| actors: `identifiers.parliament_member_id`, `identifiers.parliament_party_id`, `standing: in_power` | top-level ids, `standing: government` | |
+
+Write new cards in v1. The easiest start is a published card of the same kind, or the skeleton triage writes for a reader's submission.
 
 - **Append-only.** Never edit or remove an existing entry in `versions` or `events`. Rewording adds a version and a `reworded` event; a status change adds an event. CI compares every card with `main` and fails on any edit, unless the edit fixes our own mistake and a `corrections` entry records it (`docs/PROMISE_STANDARD.md` §9). The card shows every correction.
 - **Verbatim quotes.** `versions[].text` is copied exactly from `source_url`, and `quote_checked_on` records when someone confirmed it there.
@@ -9,7 +23,7 @@ Rules: `docs/PROMISE_STANDARD.md`. Schema: `packages/schema/src/content.ts`. Che
 - **Headline.** Every card has a `headline`: a neutral 3–8 word summary of what is promised, written from the quote alone, with no judgement ("Create Great British Energy", "Cap bus fares at £2", not "Labour's broken energy pledge"). It names the card in page titles, search results, lists and the Markdown for AI assistants; the quote stays the record. Start with a verb where you can, keep numbers the quote gives, and stay under about 50 characters so the page title (`<headline> – <speaker> promise, <status> | Public Ledger`) fits in search results. A headline is not history: improve it in any pull request.
 - **Official pages.** An actor's `same_as` lists official pages an editor has checked are about them (a party's own website, a GOV.UK profile or organisation page). Search engines use them to tell who is who. Never guess a URL; the UK Parliament page comes from `parliament_member_id` automatically.
 - **Parliament ids.** An actor who is or was an MP has `parliament_member_id`, and a party `parliament_party_id`, both from the UK Parliament Members API. The "Your MP" pages (`/mp/<constituency>`) use them to show an MP's own promises and their party's. One id, one actor.
-- **Contracts.** `contracts` lists the public contracts behind delivery by OCID, linked by hand (`docs/PROMISE_STANDARD.md` §10). The nightly job fetches them into `data/build/contracts/`; to fetch now, run `pnpm contracts`.
+- **Contracts.** `links.contracts` lists the public contracts behind delivery by OCID, linked by hand (`docs/PROMISE_STANDARD.md` §10). The nightly job fetches them into `data/build/contracts/`; to fetch now, run `pnpm contracts`.
 - **Two editors** approve every pull request that touches this folder.
 
 ## Drafts (`drafts/<date>/`)
@@ -18,6 +32,6 @@ Automatic intake (`pnpm harvest`, run daily by `.github/workflows/harvest.yml`) 
 
 - **Not published.** The site never reads drafts. A draft is a suggestion: who said it is only as sure as `speaker.check` says, and every `suggested` field is unverified.
 - **The quote is exact.** `quote` is exactly the characters at `source_span` in the stored source text. `pnpm validate` re-checks every draft and fails on any difference, so no invented quote can reach a card.
-- **Resolve every draft before merge.** For each one: check the quote at `source.url`, then write a full card in `promises/` (the quote goes in `versions[0].text`, `origin: llm_intake`, `quote_checked_on` set when you checked it; fill the four parameters from the source, using `suggested` only as a pointer), or delete the draft. Delete `drafts/<date>/` with its `sources/` folder when it is empty. Nothing in `drafts/` is ever merged: CI fails while any draft is left, so the pull request turns green only when every draft is resolved.
+- **Resolve every draft before merge.** For each one: check the quote at `source.url`, then write a full card in `promises/`, in format v1 (the quote goes in `versions[0].text`, `origin: llm_intake`, `quote_checked_on` set when you checked it; fill the four parameters from the source, using `suggested` only as a pointer), or delete the draft. Delete `drafts/<date>/` with its `sources/` folder when it is empty. Nothing in `drafts/` is ever merged: CI fails while any draft is left, so the pull request turns green only when every draft is resolved.
 - **Two editors**, as for every card. The pull request merges only when editors are done: two different people have approved it and CI is green on its latest commit, which means no draft is left (`.github/workflows/intake-merge.yml`; the repository variable `INTAKE_APPROVALS` changes the number). A model never merges anything.
 - **Your own transcript:** `pnpm harvest -- upload --url <page> --title "…" --date YYYY-MM-DD --venue speech --file transcript.txt [--speaker "Name"]` (or `--youtube <url>` for captions) writes drafts the same way.

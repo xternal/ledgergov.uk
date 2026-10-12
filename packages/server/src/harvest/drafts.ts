@@ -1,7 +1,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join, relative, sep } from "node:path";
 import { Document, parse, Scalar, visit, type Node, type Pair, type ToStringOptions } from "yaml";
-import { DRAFT_SOURCE_ID, DraftFile, draftViolations } from "@ledger/schema";
+import { DRAFT_SOURCE_ID, DraftFile, draftViolations, legacyCard } from "@ledger/schema";
 import type { Candidate, HarvestReport, SourceDoc } from "./types";
 
 /**
@@ -249,7 +249,7 @@ function readYaml(path: string): unknown {
 export function knownQuotes(root: string): string[] {
   const out = new Set<string>();
   for (const path of yamlFiles(join(root, "content", "promises"), false)) {
-    const card = readYaml(path) as { versions?: { text?: unknown }[] } | null;
+    const card = legacyCard(readYaml(path)) as { versions?: { text?: unknown }[] } | null;
     for (const v of Array.isArray(card?.versions) ? card.versions : []) if (typeof v?.text === "string" && v.text) out.add(v.text);
   }
   for (const path of yamlFiles(join(root, DRAFTS_DIR), true)) {

@@ -1,13 +1,18 @@
+format: openpromises/1
 id: yvette-cooper
-name: Yvette Cooper
 kind: person
-# UK Parliament Members API: https://members.parliament.uk/member/420
-parliament_member_id: 420
+name:
+  en: Yvette Cooper
 party_id: labour
-# Official pages (structured data sameAs), checked 10 Oct 2026: GOV.UK.
+roles:
+  - title:
+      en: Secretary of State for Health and Social Care
+    from: "2026-07-20"
+    source:
+      url: https://www.gov.uk/government/people/yvette-cooper
+      quote: Secretary of State for Health and Social Care
+identifiers:
+  parliament_member_id: 420
 same_as:
   - https://www.gov.uk/government/people/yvette-cooper
-roles:
-  - title: Secretary of State for Health and Social Care
-    # Source: https://www.gov.uk/government/people/yvette-cooper ("Secretary of State for Health and Social Care", current, from 20 July 2026)
-    from: "2026-07-20"
+same_as_checked_on: "2026-10-10"

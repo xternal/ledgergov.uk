@@ -4,6 +4,7 @@ import { describe, expect, it } from "vitest";
 import { parse } from "yaml";
 import { ContractFile, ContractRef, contractAppendOnlyIssues, contractChange, contractKey, contractTotals, monthsBetween } from "../src/contracts";
 import { PromiseFile as PromiseSchema, cardViews, type ActorFile, type PromiseFile } from "../src/content";
+import { legacyCard } from "../src/v1";
 
 const contract = (over: Partial<ContractFile> = {}) => ({
   key: "ocds-h6vhtk-0525b3",
@@ -107,7 +108,7 @@ describe("snapshots are append-only", () => {
 describe("cards with contracts", () => {
   // A real card, with links added: one fetched, one not yet.
   const file = readFileSync(join(import.meta.dirname, "../../../content/promises/uk-great-british-energy-2024.yaml"), "utf8");
-  const card: PromiseFile = { ...PromiseSchema.parse(parse(file)), contracts: ["ocds-h6vhtk-0525b3", "ocds-h6vhtk-999999"] };
+  const card: PromiseFile = { ...PromiseSchema.parse(legacyCard(parse(file))), contracts: ["ocds-h6vhtk-0525b3", "ocds-h6vhtk-999999"] };
   const actors: ActorFile[] = [{ id: card.actor_id, name: "Speaker", kind: "party", roles: [] }];
 
   it("joins fetched contracts and skips ones not fetched yet", () => {

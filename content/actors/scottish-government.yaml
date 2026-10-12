@@ -1,10 +1,12 @@
 # The Scottish Government: the devolved government of Scotland. Each year it proposes Scottish income tax rates
 # and bands, which the Scottish Parliament sets by a Scottish rate resolution.
 # Source: https://www.gov.scot/about/
+format: openpromises/1
 id: scottish-government
-name: Scottish Government
 kind: government
-# Official pages (structured data sameAs), checked 9 Oct 2026: gov.scot.
+name:
+  en: Scottish Government
+roles: []
 same_as:
   - https://www.gov.scot/
-roles: []
+same_as_checked_on: "2026-10-09"

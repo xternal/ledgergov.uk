@@ -1,22 +1,28 @@
+format: openpromises/1
 id: uk-two-child-limit-2025
-headline: "Remove the two-child limit in full"
+headline:
+  en: Remove the two-child limit in full
 actor_id: rachel-reeves
 made_on: "2025-11-26"
 venue: parliament
-venue_label: Budget statement, House of Commons
-policy_area: social_protection
+venue_label:
+  en: Budget statement, House of Commons
+area: social_protection
 status: delivered
-status_note: >-
-  The Universal Credit (Removal of Two Child Limit) Act 2026 became law on 18 March 2026 and the limit stopped
-  applying from assessment periods starting on or after 6 April 2026, as DWP's official statistics confirm.
-deadline: "2026-04-06"
-origin: manual
-outcome_by:
+status_note:
+  en: >-
+    The Universal Credit (Removal of Two Child Limit) Act 2026 became law on 18 March 2026 and the
+    limit stopped applying from assessment periods starting on or after 6 April 2026, as DWP's
+    official statistics confirm.
+responsible:
   actor_id: hm-government
+origin: manual
 sources:
   - title: "Hansard, House of Commons, 26 Nov 2025: Financial Statement and Budget Report"
     url: https://hansard.parliament.uk/commons/2025-11-26/debates/0FD15A2E-84B6-49F0-939A-24B7AABFB798/FinancialStatementAndBudgetReport
-  - title: "Hansard, House of Commons, 26 Nov 2025: Financial Statement and Budget Report (official report, Hansard API)"
+  - title: >-
+      Hansard, House of Commons, 26 Nov 2025: Financial Statement and Budget Report (official
+      report, Hansard API)
     url: https://hansard-api.parliament.uk/debates/debate/0FD15A2E-84B6-49F0-939A-24B7AABFB798.json
   - title: Budget 2025 (HM Treasury)
     url: https://www.gov.uk/government/publications/budget-2025-document/budget-2025-html
@@ -26,74 +32,110 @@ sources:
     url: https://www.legislation.gov.uk/ukpga/2026/13/enacted
   - title: "DWP press release, 19 Mar 2026: Two-child limit scrapped as Bill becomes law"
     url: https://www.gov.uk/government/news/two-child-limit-scrapped-as-historic-bill-to-lift-450000-children-out-of-poverty-becomes-law
-  - title: "DWP official statistics: Universal Credit claimants statistics on the two child limit policy, April 2026"
+  - title: >-
+      DWP official statistics: Universal Credit claimants statistics on the two child limit policy,
+      April 2026
     url: https://www.gov.uk/government/statistics/universal-credit-claimants-statistics-on-the-two-child-limit-policy-april-2026/universal-credit-claimants-statistics-on-the-two-child-limit-policy-april-2026
 versions:
   - version: 1
-    text: I can announce today, fully costed and fully funded, the removal of the two-child limit in full from April.
+    text: >-
+      I can announce today, fully costed and fully funded, the removal of the two-child limit in
+      full from April.
     recorded_on: "2025-11-26"
     source_url: https://hansard-api.parliament.uk/debates/debate/0FD15A2E-84B6-49F0-939A-24B7AABFB798.json
     quote_checked_on: "2026-10-06"
     parameters:
-      who: Families on Universal Credit with three or more children
-      how_much_bn_per_year: [2.1285, 2.365, 2.6015]
-      costed_by:
-        kind: official
-        name: HM Treasury
-      cost_note: >-
-        Year shown: 2026-27, the first full year (Budget 2025 policy table, certified by the OBR); central
-        figure only. Other years in the same table: £2.590bn in 2027-28, £2.815bn in 2028-29, £3.095bn in
-        2029-30 and £3.235bn in 2030-31. The OBR puts the cost at £3bn by 2029-30, with 560,000 families
-        gaining £5,310 a year on average.
-        Low–high is an editorial ±10% because the source gives a central figure only.
-      cost_sources:
-        - title: Budget 2025 (HM Treasury), Table 5.1
-          url: https://www.gov.uk/government/publications/budget-2025-document/budget-2025-html
-        - title: OBR Economic and fiscal outlook, November 2025
-          url: https://obr.uk/efo/economic-and-fiscal-outlook-november-2025/
-      when: "2026-04-06"
-      funded_by: Tackling fraud and error in our welfare system, cracking down on tax avoidance and reforming gambling taxation
+      who:
+        en: Families on Universal Credit with three or more children
+      cost:
+        range: [2.1285, 2.365, 2.6015]
+        quality: sourced
+        by:
+          kind: official
+          name: HM Treasury
+        note:
+          en: >-
+            Year shown: 2026-27, the first full year (Budget 2025 policy table, certified by the
+            OBR); central figure only. Other years in the same table: £2.590bn in 2027-28, £2.815bn
+            in 2028-29, £3.095bn in 2029-30 and £3.235bn in 2030-31. The OBR puts the cost at £3bn
+            by 2029-30, with 560,000 families gaining £5,310 a year on average. Low–high is an
+            editorial ±10% because the source gives a central figure only.
+        sources:
+          - title: Budget 2025 (HM Treasury), Table 5.1
+            url: https://www.gov.uk/government/publications/budget-2025-document/budget-2025-html
+          - title: OBR Economic and fiscal outlook, November 2025
+            url: https://obr.uk/efo/economic-and-fiscal-outlook-november-2025/
+      when:
+        en: "2026-04-06"
+      deadline: "2026-04-06"
+      funded_by:
+        en: >-
+          Tackling fraud and error in our welfare system, cracking down on tax avoidance and
+          reforming gambling taxation
 events:
   - date: "2025-11-26"
     type: promised
-    text: Chancellor announces the removal of the two-child limit in full from April 2026 in the Budget
+    text:
+      en: >-
+        Chancellor announces the removal of the two-child limit in full from April 2026 in the Budget
   - date: "2025-11-26"
     type: funded
-    text: Budget 2025 scores the removal at £2.365bn in 2026-27, rising to £3.235bn in 2030-31
+    text:
+      en: >-
+        Budget 2025 scores the removal at £2.365bn in 2026-27, rising to £3.235bn in 2030-31
     evidence_url: https://www.gov.uk/government/publications/budget-2025-document/budget-2025-html
   - date: "2026-03-18"
     type: legislated
-    text: Universal Credit (Removal of Two Child Limit) Act 2026 receives Royal Assent; in force from 6 April 2026
+    text:
+      en: >-
+        Universal Credit (Removal of Two Child Limit) Act 2026 receives Royal Assent; in force from
+        6 April 2026
     evidence_url: https://www.legislation.gov.uk/ukpga/2026/13/enacted
   - date: "2026-04-06"
     type: deadline
-    text: Due to take effect from April 2026
+    text:
+      en: Due to take effect from April 2026
   - date: "2026-04-06"
     type: delivered
-    text: Two-child limit removed for Universal Credit assessment periods starting on or after 6 April 2026
+    text:
+      en: >-
+        Two-child limit removed for Universal Credit assessment periods starting on or after 6 April
+        2026
     evidence_url: https://www.gov.uk/government/statistics/universal-credit-claimants-statistics-on-the-two-child-limit-policy-april-2026/universal-credit-claimants-statistics-on-the-two-child-limit-policy-april-2026
 replies: []
 corrections:
   - date: "2026-10-06"
     path: versions[0].parameters.funded_by
-    was: Tackling fraud and error in the welfare system, cracking down on tax avoidance and reforming gambling taxation
-    now: Tackling fraud and error in our welfare system, cracking down on tax avoidance and reforming gambling taxation
-    reason: >-
-      Funding is recorded exactly as stated (Promise standard, section 2). The Chancellor said "our welfare
-      system", not "the welfare system".
+    was:
+      en: >-
+        Tackling fraud and error in the welfare system, cracking down on tax avoidance and reforming
+        gambling taxation
+    now:
+      en: >-
+        Tackling fraud and error in our welfare system, cracking down on tax avoidance and reforming
+        gambling taxation
+    reason:
+      en: >-
+        Funding is recorded exactly as stated (Promise standard, section 2). The Chancellor said
+        "our welfare system", not "the welfare system".
     source_url: https://hansard-api.parliament.uk/debates/debate/0FD15A2E-84B6-49F0-939A-24B7AABFB798.json
 reviews:
   - by: Junior Editor
     kind: automated
-    on: "2026-10-06"
-    note: Second check of every quote, date, evidence link, status, cost, wording and legal risk against the live sources; fixes applied as corrections.
+    "on": "2026-10-06"
+    note:
+      en: >-
+        Second check of every quote, date, evidence link, status, cost, wording and legal risk
+        against the live sources; fixes applied as corrections.
   - by: Pavel Guzhikov
     kind: editor
-    on: "2026-10-12"
-    note: Reviewed against its sources
+    "on": "2026-10-12"
     approves: true
+    note:
+      en: Reviewed against its sources
   - by: Goodwill Stranger
     kind: editor
-    on: "2026-10-12"
-    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
+    "on": "2026-10-12"
     approves: true
+    note:
+      en: Checked against its sources; confirmed by email to the owner, 12 October 2026

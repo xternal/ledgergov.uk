@@ -33,6 +33,16 @@ def test_refs_reads_card_links(tmp_path):
     assert [r.source for r in got] == ["find_a_tender", "contracts_finder", "find_a_tender"]
 
 
+def test_refs_reads_links_in_format_v1(tmp_path):
+    # Cards in OpenPromises format v1 keep contracts under links, some with a note.
+    (tmp_path / "a.yaml").write_text(
+        f"format: openpromises/1\nid: a\nlinks:\n  contracts:\n    - ocid: {FTS_OCID}\n      note:\n        en: Why it is linked\n    - ocid: {CF_OCID}\n      notice_url: {CF_NOTICE}\n"
+    )
+    got = refs(tmp_path)
+    assert [r.key for r in got] == [FTS_OCID, CF_OCID]
+    assert [r.source for r in got] == ["find_a_tender", "contracts_finder"]
+
+
 def test_record_urls():
     assert record_url(Ref("a", FTS_OCID)) == f"https://www.find-tender.service.gov.uk/api/1.0/ocdsRecordPackages/{FTS_OCID}"
     assert record_url(Ref("a", CF_OCID, notice_url=CF_NOTICE)).endswith("/get_published_notice/json/69eb20f9-3534-4eba-a223-4cedc2330e41")

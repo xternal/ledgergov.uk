@@ -9,13 +9,15 @@
  * reaches two approvals it drops `editor_check_required`, so the card stops saying
  * "human editor review to come". Appends only, so the append-only check still passes.
  *
- * Until the cards move to OpenPromises (not before 1 December 2026), this does what
- * `openpromises review` will do then; the engine counts approvals written here.
+ * Cards in OpenPromises format v1 (all published cards since 12 October 2026) are
+ * handed to the engine's own `openpromises review`, which applies the same rules and
+ * writes the review in v1. Cards still in the old format are written here, by text.
  */
+import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { parseDocument } from "yaml";
-import { APPROVALS_NEEDED, ActorFile, PromiseFile, appendReviewText, approvalRefusal, approvers, parseEditors, stable, ukDay } from "@ledger/schema";
+import { APPROVALS_NEEDED, ActorFile, PromiseFile, appendReviewText, approvalRefusal, approvers, isV1, legacyActor, legacyCard, parseEditors, stable, ukDay } from "@ledger/schema";
 
 const root = join(import.meta.dirname, "..");
 const args = process.argv.slice(2);
@@ -49,17 +51,17 @@ try {
 
 const path = join(root, "content", "promises", `${id}.yaml`);
 if (!existsSync(path)) fail(`there is no published card "${id}" in content/promises`);
-const doc = parseDocument(readFileSync(path, "utf8"));
-const card = PromiseFile.parse(doc.toJS());
+const raw = parseDocument(readFileSync(path, "utf8")).toJS();
+const card = PromiseFile.parse(legacyCard(raw));
 
 const actors = new Map<string, ActorFile>();
 const actorPath = join(root, "content", "actors", `${card.actor_id}.yaml`);
 if (existsSync(actorPath)) {
-  const actor = ActorFile.parse(parseDocument(readFileSync(actorPath, "utf8")).toJS());
+  const actor = ActorFile.parse(legacyActor(parseDocument(readFileSync(actorPath, "utf8")).toJS()));
   actors.set(actor.id, actor);
   const partyPath = actor.party_id && join(root, "content", "actors", `${actor.party_id}.yaml`);
   if (partyPath && existsSync(partyPath)) {
-    const party = ActorFile.parse(parseDocument(readFileSync(partyPath, "utf8")).toJS());
+    const party = ActorFile.parse(legacyActor(parseDocument(readFileSync(partyPath, "utf8")).toJS()));
     actors.set(party.id, party);
   }
 }
@@ -68,6 +70,22 @@ const refusal = approvalRefusal(card, by!, on, today, editors!, actors);
 if (refusal) fail(refusal);
 
 const review = { by: by!, kind: "editor" as const, on, note, approves: true as const };
+
+if (isV1(raw)) {
+  const count = approvers({ ...card, reviews: [...card.reviews, review] }, editors!, actors).size;
+  console.log(`${id}: ${by} approves (${count} of ${APPROVALS_NEEDED})`);
+  if (dryRun) {
+    console.log("dry run: nothing written");
+    process.exit(0);
+  }
+  // The engine writes the review in format v1 and applies the same rules again.
+  execFileSync(join(root, "node_modules", ".bin", "openpromises"), ["review", id!, "--by", by!, "--note", note, ...(flag("on") ? ["--on", on] : [])], {
+    cwd: root,
+    stdio: "inherit",
+    env: { ...process.env, OPENPROMISES_EDITORS: resolve(listFile!) },
+  });
+  process.exit(0);
+}
 const after = approvers({ ...card, reviews: [...card.reviews, review] }, editors!, actors).size;
 const complete = after >= APPROVALS_NEEDED;
 

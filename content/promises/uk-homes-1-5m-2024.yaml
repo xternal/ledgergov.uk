@@ -1,27 +1,34 @@
+format: openpromises/1
 id: uk-homes-1-5m-2024
-headline: "Build 1.5 million new homes"
+headline:
+  en: Build 1.5 million new homes
 actor_id: labour
 made_on: "2024-06-13"
 venue: manifesto
-venue_label: 2024 manifesto, page 36
-policy_area: housing_env
+venue_label:
+  en: 2024 manifesto, page 36
+area: housing_env
 status: delivering
-status_note: >-
-  Homes are being built and the government publishes official estimates against the target. The latest, published on
-  24 September 2026, puts net additional homes in England since 9 July 2024 at 437,900, about 29% of 1.5 million, so
-  the card sits at Delivering. The manifesto says "over the next parliament", taken here as by 1 July 2029.
-deadline: "2029-07-01"
-origin: manual
-outcome_by:
+status_note:
+  en: >-
+    Homes are being built and the government publishes official estimates against the target. The
+    latest, published on 24 September 2026, puts net additional homes in England since 9 July 2024
+    at 437,900, about 29% of 1.5 million, so the card sits at Delivering. The manifesto says "over
+    the next parliament", taken here as by 1 July 2029.
+responsible:
   actor_id: hm-government
+origin: manual
 sources:
   - title: "Labour Party: Change, 2024 manifesto (PDF), page 36"
     url: https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=36
-  - title: "MHCLG: Housing supply: indicators of new supply, England: April to June 2026 (24 Sep 2026)"
+  - title: >-
+      MHCLG: Housing supply: indicators of new supply, England: April to June 2026 (24 Sep 2026)
     url: https://www.gov.uk/government/statistics/housing-supply-indicators-of-new-supply-england-april-to-june-2026/housing-supply-indicators-of-new-supply-england-april-to-june-2026
-  - title: "MHCLG: Housing supply: net additional dwellings, England: 2024 to 2025 (20 Nov 2025)"
+  - title: >-
+      MHCLG: Housing supply: net additional dwellings, England: 2024 to 2025 (20 Nov 2025)
     url: https://www.gov.uk/government/statistics/housing-supply-net-additional-dwellings-england-2024-to-2025/housing-supply-net-additional-dwellings-england-2024-to-2025
-  - title: "HM Government: Plan for Change, milestones for mission-led government (5 Dec 2024)"
+  - title: >-
+      HM Government: Plan for Change, milestones for mission-led government (5 Dec 2024)
     url: https://assets.publishing.service.gov.uk/media/6751af4719e0c816d18d1df3/Plan_for_Change.pdf
   - title: "HM Treasury: Spending Review 2025 (11 Jun 2025)"
     url: https://assets.publishing.service.gov.uk/media/68627094354985706f111adc/E03349913_HMT_Spending_Review_June_2025_TEXT_CS_Accessible__002_.pdf
@@ -30,79 +37,110 @@ sources:
 versions:
   - version: 1
     text: >-
-      Labour will get Britain building again, creating jobs across England, with 1.5 million new homes over the next
-      parliament.
+      Labour will get Britain building again, creating jobs across England, with 1.5 million new
+      homes over the next parliament.
     recorded_on: "2024-06-13"
     source_url: https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=36
     quote_checked_on: "2026-10-06"
     parameters:
-      who: People in England who need a home; housebuilders and local planning authorities build and approve them
-      how_much_bn_per_year: null
-      cost_note: >-
-        No official costing of the target as a whole exists, and most of the homes are expected to be built privately.
-        Labour's costings list £20m a year for 300 new planning officers (page 127) and say policies not listed are
-        funded from existing budgets or have no cost (page 126). Spending Review 2025 later confirmed £39bn over ten
-        years for a new Affordable Homes Programme, which counts towards the target.
-      cost_sources:
-        - title: "Labour Party: Change, 2024 manifesto (PDF), fiscal plan, pages 126-127"
-          url: https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=126
-        - title: "HM Treasury: Spending Review 2025"
-          url: https://assets.publishing.service.gov.uk/media/68627094354985706f111adc/E03349913_HMT_Spending_Review_June_2025_TEXT_CS_Accessible__002_.pdf
-      when: Over the Parliament that first met on 9 July 2024 (taken as by 1 July 2029)
+      who:
+        en: >-
+          People in England who need a home; housebuilders and local planning authorities build and
+          approve them
+      cost:
+        note:
+          en: >-
+            No official costing of the target as a whole exists, and most of the homes are expected
+            to be built privately. Labour's costings list £20m a year for 300 new planning officers
+            (page 127) and say policies not listed are funded from existing budgets or have no cost
+            (page 126). Spending Review 2025 later confirmed £39bn over ten years for a new
+            Affordable Homes Programme, which counts towards the target.
+        sources:
+          - title: "Labour Party: Change, 2024 manifesto (PDF), fiscal plan, pages 126-127"
+            url: https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=126
+          - title: "HM Treasury: Spending Review 2025"
+            url: https://assets.publishing.service.gov.uk/media/68627094354985706f111adc/E03349913_HMT_Spending_Review_June_2025_TEXT_CS_Accessible__002_.pdf
+      when:
+        en: Over the Parliament that first met on 9 July 2024 (taken as by 1 July 2029)
+      deadline: "2029-07-01"
       funded_by: null
 events:
   - date: "2024-06-13"
     type: promised
-    text: Labour manifesto pledges 1.5 million new homes over the Parliament
+    text:
+      en: Labour manifesto pledges 1.5 million new homes over the Parliament
   - date: "2024-12-05"
     type: in_plan
-    text: The government's Plan for Change sets building 1.5 million homes in England as a milestone
+    text:
+      en: >-
+        The government's Plan for Change sets building 1.5 million homes in England as a milestone
     evidence_url: https://assets.publishing.service.gov.uk/media/6751af4719e0c816d18d1df3/Plan_for_Change.pdf
   - date: "2025-06-11"
     type: funded
-    text: Spending Review 2025 confirms £39bn for a new 10-year Affordable Homes Programme
+    text:
+      en: Spending Review 2025 confirms £39bn for a new 10-year Affordable Homes Programme
     evidence_url: https://assets.publishing.service.gov.uk/media/68627094354985706f111adc/E03349913_HMT_Spending_Review_June_2025_TEXT_CS_Accessible__002_.pdf
   - date: "2025-11-20"
     type: delivering
-    text: "Official estimate: 275,600 net additional homes in England from 9 July 2024 to 9 November 2025"
+    text:
+      en: >-
+        Official estimate: 275,600 net additional homes in England from 9 July 2024 to 9 November
+        2025
     evidence_url: https://www.gov.uk/government/statistics/housing-supply-net-additional-dwellings-england-2024-to-2025/housing-supply-net-additional-dwellings-england-2024-to-2025
   - date: "2025-12-18"
     type: legislated
-    text: Planning and Infrastructure Act 2025 receives Royal Assent (the manifesto ties planning reform to the target)
+    text:
+      en: >-
+        Planning and Infrastructure Act 2025 receives Royal Assent (the manifesto ties planning
+        reform to the target)
     evidence_url: https://www.legislation.gov.uk/ukpga/2025/34
   - date: "2026-09-24"
     type: delivering
-    text: "Official estimate: 437,900 net additional homes in England from 9 July 2024 to 20 September 2026"
+    text:
+      en: >-
+        Official estimate: 437,900 net additional homes in England from 9 July 2024 to 20 September
+        2026
     evidence_url: https://www.gov.uk/government/statistics/housing-supply-indicators-of-new-supply-england-april-to-june-2026/housing-supply-indicators-of-new-supply-england-april-to-june-2026
   - date: "2029-07-01"
     type: deadline
-    text: End of the Parliament (editorial date)
+    text:
+      en: End of the Parliament (editorial date)
 replies: []
 reviews:
   - by: Junior Editor
     kind: automated
-    on: "2026-10-06"
-    note: Second check of every quote, date, evidence link, status, cost, wording and legal risk against the live sources; fixes applied as corrections.
+    "on": "2026-10-06"
+    note:
+      en: >-
+        Second check of every quote, date, evidence link, status, cost, wording and legal risk
+        against the live sources; fixes applied as corrections.
   - by: Pavel Guzhikov
     kind: editor
-    on: "2026-10-12"
-    note: Reviewed against its sources
+    "on": "2026-10-12"
     approves: true
+    note:
+      en: Reviewed against its sources
   - by: Goodwill Stranger
     kind: editor
-    on: "2026-10-12"
-    note: "Checked against its sources; confirmed by email to the owner, 12 October 2026"
+    "on": "2026-10-12"
     approves: true
-contracts:
-  # Homes England: stakeholder engagement and social value advice for potential new towns locations.
-  - ocid: ocds-b5fd17-199d7c84-a3d7-4db7-97c5-adc77fbd0202
-    notice_url: https://www.contractsfinder.service.gov.uk/Notice/8ea88ce0-edee-4abc-97be-d32c65734a18
-  # Homes England: new towns gap analysis, four single-supplier commissions.
-  - ocid: ocds-b5fd17-90d99861-b50c-41c7-b887-099339c4ea81
-    notice_url: https://www.contractsfinder.service.gov.uk/Notice/c0f07cb9-b334-4486-b310-039c0325f90f
-  - ocid: ocds-b5fd17-037c328b-982f-4112-867a-20211aef5235
-    notice_url: https://www.contractsfinder.service.gov.uk/Notice/df7fc15c-e456-4180-9bed-020e7fad7d41
-  - ocid: ocds-b5fd17-51d43372-dcbe-4ed4-a14f-39b76b57f06a
-    notice_url: https://www.contractsfinder.service.gov.uk/Notice/5a811c56-200f-4209-9b1f-571a8dfd7b59
-  - ocid: ocds-b5fd17-8ef59a0b-6fe9-41e6-a3f0-e39c329dfa04
-    notice_url: https://www.contractsfinder.service.gov.uk/Notice/3bf3bb6b-6d87-4621-a456-764489d8fa3d
+    note:
+      en: Checked against its sources; confirmed by email to the owner, 12 October 2026
+links:
+  contracts:
+    - ocid: ocds-b5fd17-199d7c84-a3d7-4db7-97c5-adc77fbd0202
+      notice_url: https://www.contractsfinder.service.gov.uk/Notice/8ea88ce0-edee-4abc-97be-d32c65734a18
+      note:
+        en: >-
+          Homes England: stakeholder engagement and social value advice for potential new towns
+          locations.
+    - ocid: ocds-b5fd17-90d99861-b50c-41c7-b887-099339c4ea81
+      notice_url: https://www.contractsfinder.service.gov.uk/Notice/c0f07cb9-b334-4486-b310-039c0325f90f
+      note:
+        en: "Homes England: new towns gap analysis, four single-supplier commissions."
+    - ocid: ocds-b5fd17-037c328b-982f-4112-867a-20211aef5235
+      notice_url: https://www.contractsfinder.service.gov.uk/Notice/df7fc15c-e456-4180-9bed-020e7fad7d41
+    - ocid: ocds-b5fd17-51d43372-dcbe-4ed4-a14f-39b76b57f06a
+      notice_url: https://www.contractsfinder.service.gov.uk/Notice/5a811c56-200f-4209-9b1f-571a8dfd7b59
+    - ocid: ocds-b5fd17-8ef59a0b-6fe9-41e6-a3f0-e39c329dfa04
+      notice_url: https://www.contractsfinder.service.gov.uk/Notice/3bf3bb6b-6d87-4621-a456-764489d8fa3d
