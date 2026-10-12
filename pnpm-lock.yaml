@@ -173,11 +173,11 @@ importers:
         specifier: workspace:*
         version: link:packages/schema
       '@openpromises/cli':
-        specifier: 0.3.0
-        version: 0.3.0
+        specifier: 0.4.0
+        version: 0.4.0
       '@openpromises/core':
-        specifier: 0.3.0
-        version: 0.3.0
+        specifier: 0.4.0
+        version: 0.4.0
       tsx:
         specifier: ^4.23.15
         version: 4.23.15
@@ -811,25 +811,25 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@openpromises/cli@0.3.0':
-    resolution: {integrity: sha512-urenTasrP14zgOQPzhbD0A3r8qrdIDYgzxOrsZtMhroID6KddVTEBRnA5viempQTqpahqQBp7Nww76wEyfxBEA==}
+  '@openpromises/cli@0.4.0':
+    resolution: {integrity: sha512-5MLLCMY/Mqnlave6zIBc3gEfUAMjb7lbpfDiLU4E2H5gi0HxcrCenQ7TYuZ4oBH33iK4ccSPuYAc+iiOaW6B+Q==}
     engines: {node: '>=22.18.0'}
     hasBin: true
 
-  '@openpromises/core@0.3.0':
-    resolution: {integrity: sha512-Xs+5F3BZROIIdNWE4efkKdSE2c20YjyZFrZs4AFasudE5BZrLWqwZJ4eXItrPxNaKJSbwHc8wxuKtzJ5IiGlqQ==}
+  '@openpromises/core@0.4.0':
+    resolution: {integrity: sha512-c5ms+W1Dl2e7ZXcRdoulQsxHLw4QJDKoIZXFwz8/bYgfXQue/G59rOnx5ohI2KOBAUXuYKC3mCj7os93HHrn3g==}
     engines: {node: '>=22.18.0'}
 
-  '@openpromises/files@0.3.0':
-    resolution: {integrity: sha512-XL/EL/DEGRHpgL4t7NNg6BnV4HSbTZQCh7FMnBND0Yo+8L2bzZCorOtsS4eD/2nXbI0zbRSBTvXvjAt5shEDMg==}
+  '@openpromises/files@0.4.0':
+    resolution: {integrity: sha512-u2HW+Zpsi5bTJ2pjMYQQN5tey8sBNQEUDQSMr4ItEuCFOBTr7p7bR2uZNxq+/IUydsOHJKfx6ELRPHhkuDKiuQ==}
     engines: {node: '>=22.18.0'}
 
-  '@openpromises/publish@0.3.0':
-    resolution: {integrity: sha512-Vt57U8GITAEz3WbseHu8dvG19DH007zMgED3uPu1ElgcjKqTMJqtlE4K6kS8vZytye6BH1hsdqWzo33YWcVXFg==}
+  '@openpromises/publish@0.4.0':
+    resolution: {integrity: sha512-bo+AnTW95XvsdCeuPZrh4pWBZhn3TBOpYe1pK79MUmB4gwU4OAGuXu6z1YDSDeJwHn80nbfQXk7i4eqiscH8XA==}
     engines: {node: '>=22.18.0'}
 
-  '@openpromises/quotes@0.3.0':
-    resolution: {integrity: sha512-kGD0HpxKvJaJokQsou7Zt5qxzxihyHOxqxEPUqYE2DVA8+XmxNXjdUNV8Rb/1WYJxR6fJBJGdH3vG5kJLNCvPA==}
+  '@openpromises/quotes@0.4.0':
+    resolution: {integrity: sha512-LjGhAWEsZxsbpXQEYsKaYaxs5WkDwTEpJJMHGgpsn/u59adGIBJfldTu5Y2RymwwukNp/zP33nLQCtnjF8BUCA==}
     engines: {node: '>=22.18.0'}
 
   '@oxc-project/types@0.152.0':
@@ -2149,29 +2149,29 @@ snapshots:
   '@next/swc-win32-x64-msvc@16.3.8':
     optional: true
 
-  '@openpromises/cli@0.3.0':
+  '@openpromises/cli@0.4.0':
     dependencies:
-      '@openpromises/core': 0.3.0
-      '@openpromises/files': 0.3.0
-      '@openpromises/publish': 0.3.0
-      '@openpromises/quotes': 0.3.0
+      '@openpromises/core': 0.4.0
+      '@openpromises/files': 0.4.0
+      '@openpromises/publish': 0.4.0
+      '@openpromises/quotes': 0.4.0
 
-  '@openpromises/core@0.3.0':
+  '@openpromises/core@0.4.0':
     dependencies:
-      '@openpromises/quotes': 0.3.0
+      '@openpromises/quotes': 0.4.0
       zod: 4.6.5
 
-  '@openpromises/files@0.3.0':
+  '@openpromises/files@0.4.0':
     dependencies:
-      '@openpromises/core': 0.3.0
-      '@openpromises/quotes': 0.3.0
+      '@openpromises/core': 0.4.0
+      '@openpromises/quotes': 0.4.0
       yaml: 2.9.1
 
-  '@openpromises/publish@0.3.0':
+  '@openpromises/publish@0.4.0':
     dependencies:
-      '@openpromises/core': 0.3.0
+      '@openpromises/core': 0.4.0
 
-  '@openpromises/quotes@0.3.0': {}
+  '@openpromises/quotes@0.4.0': {}
 
   '@oxc-project/types@0.152.0': {}
 
