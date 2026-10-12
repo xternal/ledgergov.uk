@@ -13,6 +13,8 @@ import { absolute, SITE_DESCRIPTION, SITE_NAME, SOURCE_CODE } from "@/lib/site";
 import { MP_DESCRIPTION } from "@/lib/mp-copy";
 import { PRIVACY_SUMMARY } from "@/lib/privacy-copy";
 import { BUDGET, BUDGET_TOPICS, topicCards } from "@/lib/budget";
+import { capitalise, fromTo, getReckoner, pointsText, rangeLike, sourceName, twoYears } from "@/lib/reckoner";
+import { RECKONER_PATH, RECKONER_TITLE } from "@/lib/reckoner-copy";
 
 export const dynamic = "force-static";
 
@@ -30,6 +32,7 @@ export function GET() {
   const shown = forecasts.filter((f) => f.recorded_as === "shown");
   const context = backtestSummary(forecasts.filter((f) => f.recorded_as === "context"));
   const firstRecorded = shown.map((f) => f.recorded_on).sort()[0] ?? null;
+  const reckoner = getReckoner();
   const areas = PolicyArea.options.filter((a) => seed.cards.some((c) => c.file.policy_area === a));
   const lines = [
     `# ${SITE_NAME}`,
@@ -51,6 +54,7 @@ export function GET() {
     `- [Open data API](${absolute("/method/api")}): the same data as JSON or CSV, free, no key.`,
     `- [${BUDGET.name}](${absolute("/budget")}): the Budget on ${BUDGET.date} can fund, change or break the government's promises. The page lists the government's promises it could still move (those needing money, largest first, and tax pledges), the opposition's costed pledges for comparison, and, from Budget day, what the Budget did to each card with links to the evidence.`,
     ...BUDGET_TOPICS.filter((t) => topicCards(seed.cards, t).length > 0).map((t) => `- [${t.heading}](${absolute(`/budget/${t.id}`)}): ${t.description}`),
+    `- [${RECKONER_TITLE}](${absolute(RECKONER_PATH)}): what one change to each main tax would raise a year, HMRC's figures from ${sourceName(reckoner.edition)} (edition published ${reckoner.edition.published}), one page each with the year, a range, HMRC's caveat and a link that makes the change in the sandbox. Listed below under "${RECKONER_TITLE}".`,
     `- [Coming up](${absolute("/promises#coming-up")}): open promises due in the next 12 months, nearest deadline first. Readers can follow a deadline window (this month, next 3 months, next 12 months) by email, Telegram or feed.`,
     `- [Privacy notice](${absolute("/privacy")}): ${PRIVACY_SUMMARY}`,
     `- [Become an editor](${absolute("/editors")}): volunteer editors check promise cards against their sources; two must approve every card. About two hours a week, remote, no coding; any party or none, declared.`,
@@ -64,6 +68,17 @@ export function GET() {
     "Read-only, JSON by default; add .csv for a spreadsheet. Every number carries unit, quality, source_id and vintage (edition); every response carries its licence (Open Government Licence v3.0; Open Parliament Licence for quotes from Parliament). Open CORS for GET. No reader data.",
     "",
     ...endpoints().map((e) => `- [${e.path}](${absolute(e.example)})${e.csv ? ` ([CSV](${absolute(`${e.example}.csv`)}))` : ""}: ${e.about}`),
+    "",
+    `## ${RECKONER_TITLE}`,
+    "",
+    `HMRC's estimates, for a change made at the start of ${reckoner.edition.firstYear}, on its own. Each includes taxpayers' own response where HMRC models it, but no wider economic effects. The range is the site's editorial band around HMRC's single figure.`,
+    "",
+    ...reckoner.cards.flatMap((card) =>
+      card.changes.map(
+        (c) =>
+          `- [${capitalise(card.spec.change)}${card.spec.stepped ? `: ${c.label.toLowerCase()} ${pointsText(c.by)}` : ""}](${absolute(card.path)}), ${fromTo(c)}: would ${twoYears(c, true)} (ranges ${rangeLike(c.first.range)} and ${rangeLike(c.last.range)}). ${card.spec.caveat}`,
+      ),
+    ),
     "",
     "## Promises",
     "",

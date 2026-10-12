@@ -3,12 +3,15 @@ import { constituencies, constituencyList } from "@ledger/server/mp";
 import { getPeople, getSeed, getVintages } from "@/lib/data";
 import { areaPath } from "@ledger/server/seo";
 import { BUDGET_TOPICS, topicCards } from "@/lib/budget";
+import { getReckoner } from "@/lib/reckoner";
+import { RECKONER_PATH } from "@/lib/reckoner-copy";
 import { absolute, EDITORS_PAGE_UPDATED, lastChanged } from "@/lib/site";
 import { PRIVACY_UPDATED } from "@/lib/privacy-copy";
 
 /**
  * Every public page: home, the promise ledger and its policy-area pages, people and long-term spending,
- * Your MP and its 650 constituency pages, the method pages, the privacy notice, each card and each actor. Dates come
+ * Your MP and its 650 constituency pages, the method pages, the privacy notice, each card and each actor, and what each
+ * tax change raises (/tax and one page per change, dated by the data build that last checked them). Dates come
  * from the content itself. Constituency pages are rendered on first visit and
  * refreshed daily; they carry no date here because an MP's votes change them
  * on any sitting day, and a made-up date would mislead crawlers.
@@ -35,6 +38,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absolute("/follow"), lastModified: built, changeFrequency: "monthly", priority: 0.4 },
     { url: absolute("/budget"), lastModified: latest, changeFrequency: "daily", priority: 0.8 },
     ...BUDGET_TOPICS.filter((t) => topicCards(seed.cards, t).length > 0).map((t) => ({ url: absolute(`/budget/${t.id}`), lastModified: latest, changeFrequency: "daily" as const, priority: 0.7 })),
+    { url: absolute(RECKONER_PATH), lastModified: built, changeFrequency: "monthly", priority: 0.7 },
+    ...getReckoner().cards.map((c) => ({ url: absolute(c.path), lastModified: built, changeFrequency: "monthly" as const, priority: 0.6 })),
     { url: absolute("/editors"), lastModified: EDITORS_PAGE_UPDATED, changeFrequency: "monthly", priority: 0.4 },
     { url: absolute("/privacy"), lastModified: PRIVACY_UPDATED, changeFrequency: "yearly", priority: 0.3 },
     { url: absolute("/feeds"), lastModified: latest, changeFrequency: "daily", priority: 0.4 },
