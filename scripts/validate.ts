@@ -12,6 +12,7 @@ import { dirname, join, relative } from "node:path";
 import { parse as parseYaml } from "yaml";
 import { parseSeed } from "@ledger/schema/seed";
 import { loadPeople } from "@ledger/schema/people";
+import { loadBorrowing } from "@ledger/schema/borrowing";
 import { parseForecasts, readBacktestTable, readForecastFiles } from "@ledger/schema/forecasts";
 import { parseScorecards, readScorecardFiles } from "@ledger/schema/budget";
 import { predictIssues } from "@ledger/schema/predict";
@@ -30,6 +31,12 @@ for (const i of issues) (i.level === "error" ? errors : warnings).push(`${i.wher
 // /people (M6): population and long-term spending projections.
 try {
   loadPeople();
+} catch (e) {
+  errors.push((e as Error).message);
+}
+// /borrowing: borrowing so far this year against the OBR's monthly path.
+try {
+  loadBorrowing();
 } catch (e) {
   errors.push((e as Error).message);
 }

@@ -121,6 +121,9 @@ export function StatementSection() {
               <QualityBadge quality="sourced" />
               Totals, borrowing and debt interest{totalsSource ? `: ${totalsSource.title}.` : "."}
             </span>
+            <a href="/borrowing" className="font-medium">
+              Borrowing so far this year, month by month, against the forecast
+            </a>
             <span className="inline-flex flex-wrap items-baseline gap-x-2">
               <QualityBadge quality="approx" />
               {scaled ? scaled.method_note : "Accounting adjustments reconcile spending by function with total spending."}

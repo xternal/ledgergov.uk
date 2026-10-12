@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { constituencies, constituencyList } from "@ledger/server/mp";
-import { getHouseholdSnapshots, getPeople, getScorecards, getSeed, getVintages } from "@/lib/data";
+import { getBorrowing, getHouseholdSnapshots, getPeople, getScorecards, getSeed, getVintages } from "@/lib/data";
 import { areaPath } from "@ledger/server/seo";
 import { BUDGET_TOPICS, topicCards } from "@/lib/budget";
 import { getReckoner } from "@/lib/reckoner";
@@ -11,7 +11,7 @@ import { PREDICT_PATH } from "@/lib/predict-copy";
 
 /**
  * Every public page: home, the promise ledger and its policy-area pages, the Budget pages, scorecards and household pages, people and long-term spending,
- * Your MP and its 650 constituency pages, the method pages, the privacy notice, each card and each actor, what each
+ * borrowing so far this year, Your MP and its 650 constituency pages, the method pages, the privacy notice, each card and each actor, what each
  * tax change raises (/tax and one page per change, dated by the data build that last checked them), and Predict the
  * Budget (but no reader's own predictions). Dates come
  * from the content itself. Constituency pages are rendered on first visit and
@@ -25,6 +25,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const latest = seed.cards.map((c) => lastEvent(c.id)).sort().at(-1) ?? built;
   // /people changes when one of its sources publishes a new edition.
   const peopleChanged = getPeople().sources.map((s) => s.published_on ?? built).sort().at(-1) ?? built;
+  // /borrowing changes with each monthly ONS release (and each new OBR path).
+  const borrowingChanged = getBorrowing().sources.map((s) => s.published_on ?? built).sort().at(-1) ?? built;
   // The method pages change when a new data edition arrives (and with it, possibly new forecasts or scores).
   const newestEdition = getVintages().changelog.map((e) => e.first_loaded ?? e.published_on ?? "").sort().at(-1) || built;
   const areas = [...new Set(seed.cards.map((c) => c.file.policy_area))];
@@ -33,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absolute("/"), lastModified: built, changeFrequency: "daily", priority: 1 },
     { url: absolute("/promises"), lastModified: latest, changeFrequency: "daily", priority: 0.9 },
     { url: absolute("/people"), lastModified: peopleChanged, changeFrequency: "monthly", priority: 0.8 },
+    { url: absolute("/borrowing"), lastModified: borrowingChanged, changeFrequency: "monthly", priority: 0.8 },
     { url: absolute("/mp"), lastModified: constituencyList().fetched_on, changeFrequency: "monthly", priority: 0.8 },
     { url: absolute("/method"), lastModified: newestEdition, changeFrequency: "weekly", priority: 0.6 },
     { url: absolute("/method/backtest"), lastModified: built, changeFrequency: "monthly", priority: 0.6 },

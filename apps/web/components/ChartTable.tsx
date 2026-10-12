@@ -5,7 +5,7 @@ import { track, type PeopleChartId } from "@/lib/analytics";
 import { T1_COPY } from "@/lib/t1-copy";
 import { TextButton } from "./ui";
 
-type TableChartId = "t1_deciles" | "t1_winners" | "t1_regions" | PeopleChartId;
+type TableChartId = "t1_deciles" | "t1_winners" | "t1_regions" | "borrowing_so_far" | PeopleChartId;
 
 /** "Show as table" under a chart: every chart has a table version (CLAUDE.md, accessibility). */
 export function ChartTable({ id, chartId, label, children }: { id: string; chartId: TableChartId; label: string; children: ReactNode }) {

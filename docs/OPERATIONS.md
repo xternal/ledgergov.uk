@@ -215,12 +215,13 @@ hide a new edition.
 
 The archive is not always available. When it can't supply a fresh copy, the
 run keeps the committed OBR data and says so: a `fetch` warning on
-`obr_databank` or `obr_efo` ending "run `pnpm etl` on your own machine…", and,
+`obr_databank`, `obr_efo` or `obr_monthly_profiles` ending "run `pnpm etl` on your own machine…", and,
 once the edition is overdue, a staleness warning and then an error. Then
 refresh OBR from your own connection after each OBR release: the EFO arrives
 with each Budget and Spring Statement (next: the Budget, expected November
 2026); the databank about two working days after each monthly public sector
-finances release.
+finances release; the monthly profiles (the path /borrowing compares with) a
+few weeks after each EFO, on https://obr.uk/monthly-public-finances-briefing/.
 
 1. Once per machine, set up the ETL environment (Python 3.14):
 
@@ -350,4 +351,13 @@ Since 12 October 2026 every card and actor is in OpenPromises format v1 and the 
 **Setting it up (owner, once):** in the Vercel project, Storage → Marketplace → Upstash → Redis, free plan, connected to this project for **Production** only. Vercel then sets `KV_REST_API_URL`, `KV_REST_API_TOKEN` and `KV_REST_API_READ_ONLY_TOKEN`; redeploy. Without them (previews, laptops) nothing is counted and `/method/numbers` says so. The key prefix keeps the counts apart if the database is shared with another site.
 
 **Check after the deploy:** open a page in a browser, wait ten minutes, and `curl -s https://ledgergov.uk/views.json` lists it under today's date.
+
+## 17. Borrowing so far this year (/borrowing)
+
+/borrowing compares borrowing so far this financial year (ONS public sector finances, published monthly at 07:00 UK time) with the OBR's month-by-month path for its latest forecast. It needs no secrets and no workflow of its own: the nightly data job (§8, 04:30 UTC) reads the ONS file and the release calendar entry (`etl/sources/ons_psf.py`) and the OBR's monthly profiles (`etl/sources/obr_monthly_profiles.py`), and writes `data/build/borrowing.json` (`etl/borrowing.py`).
+
+* **A new ONS release** (next: Wednesday 21 October 2026, 07:00 BST) is read by the next nightly run, early the following morning, which opens the usual data pull request (`data/build/observations/ons_psf/PSF-<yyyy-mm>.csv` and `borrowing.json` change). The page changes when that pull request is merged and Vercel deploys. The page itself re-renders hourly, so its "next release" line turns into "was due" on the day without a deploy.
+* **A late release** changes nothing: the page keeps the last release and says when the next one was due. The staleness check warns 31 days after the last release and fails CI 10 days later.
+* **A changed ONS file** (a renamed series, a moved file) makes `ons_psf` fail to parse; the run keeps the committed release and logs a `fetch` warning, so no data pull request opens. If no data pull request appears the morning after a release, run `etl/.venv/bin/python -m etl.build --only ons_psf` locally and read the warning.
+* **A new OBR forecast** (the Budget) moves the whole-year figure at once (`obr_efo`); the page says the comparison still uses the older monthly path until the OBR publishes the new one, which `obr_monthly_profiles` then picks up.
 

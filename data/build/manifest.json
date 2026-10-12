@@ -1,9 +1,9 @@
 {
-  "build_id": "2026-10-09T13:58:27Z",
-  "git_sha": "228f8ec",
+  "build_id": "2026-10-12T21:09:06Z",
+  "git_sha": "a2467fb",
   "status": "ok",
   "base_year": "2025-26",
-  "observations": 11623,
+  "observations": 11636,
   "sources": [
     {
       "id": "boe_bank_rate",
@@ -14,10 +14,11 @@
       "published_on": null,
       "cadence_days": 49,
       "grace_days": 14,
+      "release": null,
       "freshness": {
         "vintage": "IADB IUDBEDR as of 2026-09-17",
         "published_on": "2026-09-17",
-        "age_days": 22,
+        "age_days": 25,
         "cadence_days": 49,
         "grace_days": 14,
         "overdue_days": 0
@@ -37,10 +38,11 @@
       "published_on": "2026-04-14",
       "cadence_days": 200,
       "grace_days": 60,
+      "release": null,
       "freshness": {
         "vintage": "DWP-SF-2026",
         "published_on": "2026-04-14",
-        "age_days": 178,
+        "age_days": 181,
         "cadence_days": 200,
         "grace_days": 60,
         "overdue_days": 0
@@ -60,10 +62,11 @@
       "published_on": null,
       "cadence_days": 365,
       "grace_days": 60,
+      "release": null,
       "freshness": {
         "vintage": "capital-gains-tax@2026-10-02",
         "published_on": "2026-10-02",
-        "age_days": 7,
+        "age_days": 10,
         "cadence_days": 365,
         "grace_days": 60,
         "overdue_days": 0
@@ -88,13 +91,14 @@
       "published_on": "2025-06-24",
       "cadence_days": 365,
       "grace_days": 60,
+      "release": null,
       "freshness": {
         "vintage": "HMRC-DE-2025-06",
         "published_on": "2025-06-24",
-        "age_days": 472,
+        "age_days": 475,
         "cadence_days": 365,
         "grace_days": 60,
-        "overdue_days": 107
+        "overdue_days": 110
       },
       "observations": 228,
       "vintages": [
@@ -111,10 +115,11 @@
       "published_on": "2026-07-15",
       "cadence_days": 365,
       "grace_days": 60,
+      "release": null,
       "freshness": {
         "vintage": "HMRC-ITLS-2026-07",
         "published_on": "2026-07-15",
-        "age_days": 86,
+        "age_days": 89,
         "cadence_days": 365,
         "grace_days": 60,
         "overdue_days": 0
@@ -134,10 +139,11 @@
       "published_on": "2026-07-16",
       "cadence_days": 120,
       "grace_days": 45,
+      "release": null,
       "freshness": {
         "vintage": "PESA-2026",
         "published_on": "2026-07-16",
-        "age_days": 85,
+        "age_days": 88,
         "cadence_days": 120,
         "grace_days": 45,
         "overdue_days": 0
@@ -157,10 +163,11 @@
       "published_on": "2026-07-09",
       "cadence_days": 365,
       "grace_days": 60,
+      "release": null,
       "freshness": {
         "vintage": "NATO-DE-2026-07",
         "published_on": "2026-07-09",
-        "age_days": 92,
+        "age_days": 95,
         "cadence_days": 365,
         "grace_days": 60,
         "overdue_days": 0
@@ -180,10 +187,11 @@
       "published_on": "2026-09-24",
       "cadence_days": 31,
       "grace_days": 21,
+      "release": null,
       "freshness": {
         "vintage": "OBR-PFD-2026-09",
         "published_on": "2026-09-24",
-        "age_days": 15,
+        "age_days": 18,
         "cadence_days": 31,
         "grace_days": 21,
         "overdue_days": 0
@@ -203,10 +211,11 @@
       "published_on": "2026-03-03",
       "cadence_days": 245,
       "grace_days": 30,
+      "release": null,
       "freshness": {
         "vintage": "EFO-2026-03",
         "published_on": "2026-03-03",
-        "age_days": 220,
+        "age_days": 223,
         "cadence_days": 245,
         "grace_days": 30,
         "overdue_days": 0
@@ -226,10 +235,11 @@
       "published_on": "2026-07-07",
       "cadence_days": 365,
       "grace_days": 90,
+      "release": null,
       "freshness": {
         "vintage": "FRS-2026-07",
         "published_on": "2026-07-07",
-        "age_days": 94,
+        "age_days": 97,
         "cadence_days": 365,
         "grace_days": 90,
         "overdue_days": 0
@@ -237,6 +247,30 @@
       "observations": 457,
       "vintages": [
         "FRS-2026-07"
+      ],
+      "files": []
+    },
+    {
+      "id": "obr_monthly_profiles",
+      "title": "OBR March 2026 Economic and fiscal outlook monthly profiles",
+      "publisher": "Office for Budget Responsibility",
+      "url": "https://obr.uk/download/march-2026-economic-and-fiscal-outlook-monthly-profiles/",
+      "licence": "OGL v3",
+      "published_on": "2026-04-23",
+      "cadence_days": 275,
+      "grace_days": 30,
+      "release": null,
+      "freshness": {
+        "vintage": "EFO-2026-03",
+        "published_on": "2026-04-23",
+        "age_days": 172,
+        "cadence_days": 275,
+        "grace_days": 30,
+        "overdue_days": 0
+      },
+      "observations": 13,
+      "vintages": [
+        "EFO-2026-03"
       ],
       "files": []
     },
@@ -249,10 +283,11 @@
       "published_on": "2026-04-17",
       "cadence_days": 365,
       "grace_days": 90,
+      "release": null,
       "freshness": {
         "vintage": "FH-2026-04",
         "published_on": "2026-04-17",
-        "age_days": 175,
+        "age_days": 178,
         "cadence_days": 365,
         "grace_days": 90,
         "overdue_days": 0
@@ -272,10 +307,11 @@
       "published_on": "2026-10-01",
       "cadence_days": 365,
       "grace_days": 90,
+      "release": null,
       "freshness": {
         "vintage": "MYEB-2026-10-01",
         "published_on": "2026-10-01",
-        "age_days": 8,
+        "age_days": 11,
         "cadence_days": 365,
         "grace_days": 90,
         "overdue_days": 0
@@ -295,10 +331,11 @@
       "published_on": "2026-04-28",
       "cadence_days": 900,
       "grace_days": 180,
+      "release": null,
       "freshness": {
         "vintage": "NPP-2024based-2026-04-28",
         "published_on": "2026-04-28",
-        "age_days": 164,
+        "age_days": 167,
         "cadence_days": 900,
         "grace_days": 180,
         "overdue_days": 0
@@ -318,10 +355,11 @@
       "published_on": "2026-10-01",
       "cadence_days": 365,
       "grace_days": 90,
+      "release": null,
       "freshness": {
         "vintage": "MYE-2026-10",
         "published_on": "2026-10-01",
-        "age_days": 8,
+        "age_days": 11,
         "cadence_days": 365,
         "grace_days": 90,
         "overdue_days": 0
@@ -341,10 +379,18 @@
       "published_on": "2026-09-22",
       "cadence_days": 31,
       "grace_days": 10,
+      "release": {
+        "title": "Public sector finances, UK: August 2026",
+        "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/august2026",
+        "calendar_url": "https://www.ons.gov.uk/releases/publicsectorfinancesukaugust2026",
+        "released_at": "2026-09-22T06:00:00Z",
+        "next_on": "2026-10-21",
+        "next_at": "2026-10-21T06:00:00Z"
+      },
       "freshness": {
         "vintage": "PSF-2026-09",
         "published_on": "2026-09-22",
-        "age_days": 17,
+        "age_days": 20,
         "cadence_days": 31,
         "grace_days": 10,
         "overdue_days": 0
@@ -364,10 +410,11 @@
       "published_on": "2026-09-22",
       "cadence_days": 31,
       "grace_days": 14,
+      "release": null,
       "freshness": {
         "vintage": "PSF-2026-09",
         "published_on": "2026-09-22",
-        "age_days": 17,
+        "age_days": 20,
         "cadence_days": 31,
         "grace_days": 14,
         "overdue_days": 0
@@ -384,8 +431,8 @@
       "check_id": "staleness",
       "level": "warning",
       "subject": "hmrc_reckoner",
-      "message": "HMRC-DE-2025-06 is 472 days old; a new edition was due 107 days ago (grace 60). Acknowledged until 2027-01-31: HMRC postponed the January 2026 edition of 'Direct effects of illustrative tax changes' (notice of 6 Jul 2026, no new date).",
-      "value": 107
+      "message": "HMRC-DE-2025-06 is 475 days old; a new edition was due 110 days ago (grace 60). Acknowledged until 2027-01-31: HMRC postponed the January 2026 edition of 'Direct effects of illustrative tax changes' (notice of 6 Jul 2026, no new date).",
+      "value": 110
     }
   ],
   "identity": [

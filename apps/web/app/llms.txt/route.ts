@@ -1,7 +1,8 @@
 import { backtestSummary, PolicyArea } from "@ledger/schema";
 import { areaPath, cardHeadline } from "@ledger/server/seo";
 import { constituencies, RECENT_VOTES } from "@ledger/server/mp";
-import { getForecasts, getHouseholdSnapshots, getPeople, getScorecards, getSeed } from "@/lib/data";
+import { getBorrowing, getForecasts, getHouseholdSnapshots, getPeople, getScorecards, getSeed } from "@/lib/data";
+import { borrowingSentence } from "@/lib/borrowing-copy";
 import { endpoints } from "@/lib/api";
 import { backtestLead } from "@/lib/method-copy";
 import { STATUS_LABEL } from "@/lib/copy";
@@ -38,6 +39,7 @@ export function GET() {
   const firstRecorded = shown.map((f) => f.recorded_on).sort()[0] ?? null;
   const reckoner = getReckoner();
   const areas = PolicyArea.options.filter((a) => seed.cards.some((c) => c.file.policy_area === a));
+  const borrowing = getBorrowing();
   const lines = [
     `# ${SITE_NAME}`,
     "",
@@ -52,6 +54,7 @@ export function GET() {
     `- [Every promise in full](${absolute("/llms-full.txt")}): all ${seed.cards.length} promise cards as Markdown in one file (quote, speaker, party, date, status and status note, cost range, who pays, timeline with evidence links, contracts, corrections, sources), with the method in short and the licences. Each card alone is at ${absolute("/promise/<id>.md")}.`,
     `- Promises by policy area: ${areas.map((a) => `[${AREA_LABEL[a]}](${absolute(areaPath(a))})`).join(", ")}. Each lists the cards in that area and how they stand.`,
     `- [People and long-term spending](${absolute("/people")}): ONS population projections (principal and variants) and OBR long-term spending projections. In the ONS principal projection there are ${per100(oadr.last)} people over pension age for every 100 of working age in ${oadr.lastYear} (${per100(oadr.first)} in ${oadr.firstYear}; variants ${per100(oadr.range[0])} to ${per100(oadr.range[2])}), and ${ratio(workers.last)} people of working age per person over pension age. In the OBR baseline, age-related spending goes from ${pctGdp(age.first)} of GDP in ${age.firstYear} to ${pctGdp(age.last)} in ${age.lastYear} (OBR scenarios ${pctGdp(age.range[0])} to ${pctGdp(age.range[2])}). Assumption switches pick published variants only.`,
+    `- [Borrowing so far this year](${absolute("/borrowing")}): ${borrowingSentence(borrowing)} Month by month from the ONS public sector finances${borrowing.profile ? `, against the OBR's monthly path for its ${borrowing.profile.edition} forecast (one line; the OBR publishes no range for it)` : ""}${borrowing.release ? `. Latest release: ${borrowing.release.title}${borrowing.release.next_on ? `; next due ${borrowing.release.next_on}` : ""}` : ""}.`,
     `- [Your MP](${absolute("/mp")}): ${MP_DESCRIPTION} Each of the ${constituencies().length} constituencies has a page at ${absolute("/mp/<constituency>")}, for example ${absolute("/mp/manchester-central")}: the sitting MP (from the UK Parliament Members API), any promises we track in their name, a summary of their party's, and their last ${RECENT_VOTES} recorded Commons votes (Commons Votes API), with votes on bills our cards cite highlighted. Data checked daily.`,
     `- [How the numbers are made](${absolute("/method")}): sources, quality labels, why results are ranges, who checks the cards, and a changelog of every data edition.`,
     `- [Forecasts against what happened](${absolute("/method/backtest")}): every forecast the site shows is recorded and scored against the official outturn. ${backtestLead(backtestSummary(shown), firstRecorded)} Earlier official forecasts checked for context: ${context.scored}.`,
