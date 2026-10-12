@@ -18,6 +18,20 @@ The plan for **Wednesday 28 October 2026**, the day of the Autumn Budget (date: 
 | Evening or next morning | Two editors review and approve; the owner merges | Editors, owner |
 | Within an hour of merge | `/budget`, the cards and the feeds update; follow emails go out | Automatic |
 
+### Who does what (decided 12 October 2026)
+
+Scheduled tasks on Pavel's Mac do the typing and the runs; people do the checking. Each task opens a pull request that does not merge by itself, and reports with the exact merge command. The Mac must be awake with the Claude app open.
+
+| When (GMT) | Scheduled task | What it does | Who checks |
+|---|---|---|---|
+| Tue 27 Oct, 10:00 | `budget-2026-household-prep` | Re-tests PolicyEngine if its API moved, refreshes the household templates, starts the 2026 measures file on its branch | Nothing to check unless it reports a change |
+| Wed 28 Oct, 14:00 | `budget-day-2026-scorecard` | Reads the Treasury's total from the PDF page as a picture, separately from the parser, then runs the scorecard (runbook below) | Pavel retypes the total from the PDF and checks three lines, then merges |
+| Wed 28 Oct, 14:30 | `budget-2026-household-run` | Types every tax and benefit measure with its page, runs PolicyEngine, opens the pull request; from 19:30 re-checks every rate against HMRC's notes | Pavel and Goodwill Stranger check every value against its page, then merge |
+| Wed 28 Oct, 17:00 | `budget-day-2026-drafts` | Drafts the card changes, with rates from the Budget document or HMRC's notes when OOTLAR is not out | Two editors approve, as for every card |
+| Thu 29 Oct, 05:00 | `budget-2026-household-fallback` | If the household pull request is not merged, turns it into the fallback (households and the Treasury's chart; deciles follow) | Pavel and Goodwill Stranger, a short review before 07:00 |
+
+Each task checks that nothing else is building before it builds, so the three on Wednesday afternoon take turns.
+
 ## The documents to read
 
 Published on GOV.UK straight after the statement (the Treasury's Budget page links them all) and on obr.uk:
@@ -37,8 +51,8 @@ Cite the exact page: add `#page=NN` to a PDF link, or link the HTML section.
 | [5% of GDP on national security by 2035](https://ledgergov.uk/promise/uk-nato-5pc-2035-2025) | In plan | Defence spending path in the Budget and the EFO; any new money towards 3.5% core defence | Money allocated on the path: a `funded` event. A new official figure: a cost correction |
 | [Cap bus fares at £2](https://ledgergov.uk/promise/uk-bus-cap-2-2026) | In plan | The £400m (England) in DfT's budget for 2026-27 and 2027-28 | Confirmed in Budget documents: `funded` |
 | [Cut manufacturers' electricity bills](https://ledgergov.uk/promise/uk-bics-electricity-2026) | In plan | The Exchequer's share of the scheme (due to be scored at this Budget) | Scored: `funded`, and the yearly cost if it changes |
-| [No tax rises for working people](https://ledgergov.uk/promise/uk-no-tax-rise-working-people-2024) | In plan | Main rates of income tax, employee National Insurance and VAT in OOTLAR | A rise in one of those rates: `failed` (reads **Not met**) with evidence. Frozen thresholds don't change a rate: say so in the status note and let two editors decide |
-| [Cap corporation tax at 25%](https://ledgergov.uk/promise/uk-corp-tax-cap-25-2024) | Legislated | The main rate in OOTLAR | Main rate above 25%: `failed` |
+| [No tax rises for working people](https://ledgergov.uk/promise/uk-no-tax-rise-working-people-2024) | In plan | Main rates of income tax, employee National Insurance and VAT in the Budget document or HMRC's notes (OOTLAR once it is out) | A rise in one of those rates: `failed` (reads **Not met**) with evidence. Frozen thresholds don't change a rate: say so in the status note and let two editors decide |
+| [Cap corporation tax at 25%](https://ledgergov.uk/promise/uk-corp-tax-cap-25-2024) | Legislated | The main rate in the Budget document or HMRC's notes (OOTLAR once it is out) | Main rate above 25%: `failed` |
 | [Fund 10 major hospital projects and maintenance](https://ledgergov.uk/promise/uk-nhs-capital-1-5bn-2026) | In plan | Estates Safety Fund or NHS capital lines | Money confirmed by year: `funded`, and a yearly cost if one is now published |
 | [Free unlimited bus travel for disabled people](https://ledgergov.uk/promise/uk-disabled-bus-pass-2026) | Promised | The £60m in DWP or DfT budgets, and whether it is yearly | Confirmed: `funded`; a yearly figure: cost correction |
 | [Mental health strategy before Christmas](https://ledgergov.uk/promise/uk-mental-health-strategy-2026) | Promised | Money for mental health tied to the strategy | Money alone doesn't move it; note it. The strategy presented to Parliament: `in_plan` |
@@ -118,7 +132,7 @@ A broken pledge reads **Not met**, never "broken": the label states the fact, th
 
 `/budget/scorecard/<event>` shows every line of the Budget's table of policy decisions: what each measure raises or costs in the last year the Treasury costs (2030-31 at Budget 2025), every year in a full table, the Treasury's totals, and a link to the PDF page of every line. It is built only from `data/build/budget/<event>.json`, which `etl/budget_costings.py` reads from the PDF as printed. `/budget` links the newest scorecard, the sitemap and `llms.txt` list them all. Figures are the Treasury's, in £ million, with its sign: positive raises money, negative costs money.
 
-It is data, not a card: the two-editor rule for cards does not apply, but one reviewer other than the person who ran it checks the total and three lines against the PDF before merging (step 7).
+It is data, not a card: the two-editor rule for cards does not apply, but one reviewer other than the person who ran it checks the total and three lines against the PDF before merging (step 7). On 28 October 2026 the scheduled task `budget-day-2026-scorecard` runs it and Pavel is the reviewer.
 
 **Dry run, 12 October 2026, on Budget 2025 (26 November 2025):** 16 minutes from finding the documents to the page served with every check green, of which about 9 minutes were lost to a crash of the machine (several agents building at once) and 7 were work. The parser read the 88-line Table 4.1 first time, a table it had not seen (it was built on Autumn Budget 2024 and Spring Statement 2025); every figure matched the Treasury's spreadsheet. The one manual fix: the Treasury's PDF and spreadsheet word line 56 differently and mark line 78 Spend in one and Tax in the other, so the copy check stopped the build until those two were checked in the PDF and accepted (step 5). Allow two hours on the day for a person doing it for the first time, with review, merge and deploy.
 
@@ -219,7 +233,7 @@ It is data, like the scorecard, but it is our estimate, so **two editors** revie
 - **Tuesday 27 October:** refresh the templates from PolicyEngine's current law (one call): `pnpm household -- templates`. Read the diff: a "without" value that moved is PolicyEngine catching up with the law, or a forecast change.
 - **Tuesday 27 October:** on a branch `budget-2026-household`, start `content/budget/household/autumn-budget-2026.yaml` from the rehearsal's head (event `autumn-budget-2026`, name, date `2026-10-28`, `kind: budget`, years `2026-27` to `2030-31`, `headline_year: 2027-28`, `side_year: 2026-27`, the sources with `TODO` URLs). It stays on the branch: a `TODO` fails `pnpm validate`.
 - On the machine that will run it: `pdftocairo -v` prints a version (poppler, for the Treasury's chart), `etl/.venv` exists, and `pnpm install --frozen-lockfile` has run.
-- Rota: the owner runs the job; editor A types the measures, editor B the Treasury's chart and the second review; one of them is up at 05:00 GMT on Thursday for the fallback decision.
+- Rota: the owner runs the job; editor A types the measures, editor B the Treasury's chart and the second review; one of them is up at 05:00 GMT on Thursday for the fallback decision. In 2026 the scheduled tasks do the owner's and editor A's work and the chart ("Who does what" above); Pavel and Goodwill Stranger review.
 
 ### On the night (Wednesday 28 October into Thursday 29 October, GMT)
 
