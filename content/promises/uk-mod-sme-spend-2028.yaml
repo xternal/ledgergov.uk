@@ -1,0 +1,74 @@
+format: openpromises/1
+id: uk-mod-sme-spend-2028
+headline:
+  en: Raise defence spending with small firms by 50%
+actor_id: hm-government
+made_on: "2026-07-21"
+venue: press_release
+venue_label:
+  en: Ministry of Defence SME action plan (GOV.UK)
+area: defence
+status: in_plan
+status_note:
+  en: >-
+    The Ministry of Defence's SME action plan (21 July 2026) sets the target in yearly steps against
+    a baseline of about £5bn a year: direct spend with SMEs of £1.48bn in 2026-27 and £2bn in
+    2027-28 (£1.24bn in 2024-25), and spend through the supply chain of £4.5bn and £5.5bn. The plan
+    says the commitment was made with the Defence Industrial Strategy (September 2025). "Summer
+    2028" is read as by 31 August 2028. The card moves when the Ministry publishes its SME spend for
+    2026-27 and 2027-28.
+responsible:
+  actor_id: hm-government
+origin: manual
+sources:
+  - title: "Ministry of Defence: SME action plan, 21 Jul 2026"
+    url: https://www.gov.uk/government/publications/mod-small-and-medium-sized-enterprise-sme-action-plan/ministry-of-defences-small-and-medium-sized-enterprise-sme-action-plan
+  - title: "Ministry of Defence press release, 10 Oct 2026: Faster front-line delivery with new Testing and Evaluation programme"
+    url: https://www.gov.uk/government/news/faster-front-line-delivery-with-new-testing-and-evaluation-programme
+versions:
+  - version: 1
+    text: >-
+      We also committed to spend an additional £2.5bn with SMEs by summer 2028, a significant and
+      ambitious increase of 50% in spend.
+    recorded_on: "2026-07-21"
+    source_url: https://www.gov.uk/government/publications/mod-small-and-medium-sized-enterprise-sme-action-plan/ministry-of-defences-small-and-medium-sized-enterprise-sme-action-plan
+    quote_checked_on: "2026-10-12"
+    parameters:
+      who:
+        en: SMEs (small and medium-sized enterprises), through direct contracts and the supply chain
+      when:
+        en: By summer 2028
+      deadline: "2028-08-31"
+      funded_by: null
+events:
+  - date: "2026-07-21"
+    type: promised
+    text:
+      en: >-
+        The Ministry of Defence's SME action plan commits to spend an additional £2.5bn with SMEs by
+        summer 2028, a 50% increase
+  - date: "2026-07-21"
+    type: in_plan
+    text:
+      en: >-
+        The same plan sets yearly targets: direct spend with SMEs of £1.48bn in 2026-27 and £2bn in
+        2027-28, and £4.5bn and £5.5bn through the supply chain
+    evidence_url: https://www.gov.uk/government/publications/mod-small-and-medium-sized-enterprise-sme-action-plan/ministry-of-defences-small-and-medium-sized-enterprise-sme-action-plan
+  - date: "2028-08-31"
+    type: deadline
+    text:
+      en: An extra £2.5bn a year with SMEs due by summer 2028
+replies: []
+reviews:
+  - by: Pavel Guzhikov
+    kind: editor
+    "on": "2026-10-12"
+    approves: true
+    note:
+      en: Reviewed against its sources
+  - by: Goodwill Stranger
+    kind: editor
+    "on": "2026-10-12"
+    approves: true
+    note:
+      en: Checked against its sources; confirmed to the owner, 12 October 2026
