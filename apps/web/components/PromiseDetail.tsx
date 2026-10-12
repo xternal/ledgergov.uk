@@ -8,7 +8,7 @@ import { fixed, gbp, gbpBn, longDate, monthYear, perHousehold, rangeText, shareO
 import { AREA_LABEL, costSense, todayIso } from "@/lib/promises";
 import { track } from "@/lib/analytics";
 import { correctionTarget, correctionValue } from "@/lib/corrections";
-import { AI_JOURNALIST_NOTE, latestReview, reviewerLabel } from "@/lib/reviews";
+import { AI_JOURNALIST_NOTE, checkedBy } from "@/lib/reviews";
 import { ContractsStrip } from "./ContractsStrip";
 import { FollowPanel } from "./FollowPanel";
 import { StatusPill } from "./PromiseList";
@@ -140,7 +140,7 @@ export function PromiseDetail({ card, householdsM, householdsP, spendingBn, runH
   const raw = p?.how_much_bn_per_year ?? null;
   const sense = raw ? costSense(raw) : null;
   const cost = sense?.abs ?? null;
-  const review = latestReview(f);
+  const checked = checkedBy(f);
   const events = [
     ...f.events.map((e) => ({ ...e, today: false })),
     ...(today ? [{ date: today, text: "We are here", type: "deadline" as const, today: true, evidence_url: undefined }] : []),
@@ -246,11 +246,11 @@ export function PromiseDetail({ card, householdsM, householdsP, spendingBn, runH
               </div>
             </div>
           </div>
-          {review && (
-            <p className="m-0 px-1 text-caption text-muted" title={review.kind === "automated" ? AI_JOURNALIST_NOTE : undefined}>
+          {checked && (
+            <p className="m-0 px-1 text-caption text-muted" title={checked.automated ? AI_JOURNALIST_NOTE : undefined}>
               <span aria-hidden className="text-good">✓ </span>
-              Checked by {reviewerLabel(review)} on {longDate(review.on)}
-              {f.editor_check_required ? "; human editor review to come" : ""}. <a href="/method#reviews">What that means</a>
+              Checked by {checked.who} on {longDate(checked.on)}
+              {checked.toCome}. <a href="/method#reviews">What that means</a>
             </p>
           )}
           {updated && (

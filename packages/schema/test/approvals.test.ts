@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { APPROVALS_NEEDED, Review, appendReviewText, approvalRefusal, approvers, parseEditors } from "../src";
+import { APPROVALS_NEEDED, Review, appendReviewText, approvalRefusal, approvedByText, approvers, editorShownAs, parseEditors } from "../src";
 
 const editors = parseEditors(`editors:
   - handle: Sam
@@ -109,5 +109,28 @@ describe("appending a review to the card's text", () => {
   it("starts the list when it is empty or missing", () => {
     expect(appendReviewText("id: a\nreviews: []\n", review)).toBe('id: a\nreviews:\n  - by: Sam\n    kind: editor\n    on: "2026-10-12"\n    approves: true\n');
     expect(appendReviewText("id: a\n", review)).toBe('id: a\nreviews:\n  - by: Sam\n    kind: editor\n    on: "2026-10-12"\n    approves: true\n');
+  });
+});
+
+describe("who approved a card, as readers see it", () => {
+  const auto: Review = { by: "AI Journalist", kind: "automated", on: "2026-10-06" };
+  it("names named editors and counts the others", () => {
+    expect(approvedByText([auto, approval("Pavel Guzhikov", "2026-10-12"), approval("Goodwill Stranger", "2026-10-12")])).toEqual({ text: "Pavel Guzhikov and 1 independent editor", on: "2026-10-12", count: 2 });
+    expect(approvedByText([approval("Pavel Guzhikov", "2026-10-12"), approval("Sam", "2026-10-13"), approval("Alex", "2026-10-14")])?.text).toBe("Pavel Guzhikov and 2 independent editors");
+  });
+  it("reads naturally with one approval", () => {
+    expect(approvedByText([approval("Pavel Guzhikov", "2026-10-12")])?.text).toBe("Pavel Guzhikov (editor)");
+    expect(approvedByText([approval("Goodwill Stranger", "2026-10-12")])?.text).toBe("an independent editor");
+  });
+  it("never names an editor who is not on the named list", () => {
+    expect(approvedByText([approval("Goodwill Stranger", "2026-10-12"), approval("Pavel Guzhikov", "2026-10-12")])?.text).not.toContain("Goodwill");
+    expect(editorShownAs("Goodwill Stranger")).toBe("an independent editor");
+    expect(editorShownAs("Pavel Guzhikov")).toBe("Pavel Guzhikov");
+  });
+  it("counts each editor once and dates the line by the latest approval", () => {
+    expect(approvedByText([approval("Sam", "2026-10-12"), approval("Sam", "2026-10-20"), approval("Pavel Guzhikov", "2026-10-15")])).toEqual({ text: "Pavel Guzhikov and 1 independent editor", on: "2026-10-20", count: 2 });
+  });
+  it("is null before any editor approves", () => {
+    expect(approvedByText([auto, { by: "Sam", kind: "editor", on: "2026-10-12" }])).toBeNull();
   });
 });

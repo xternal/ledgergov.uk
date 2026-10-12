@@ -1,4 +1,4 @@
-import type { PromiseFile, Review } from "@ledger/schema";
+import { approvedByText, editorShownAs, type PromiseFile, type Review } from "@ledger/schema";
 
 /** The card's latest review, if any. */
 export const latestReview = (f: PromiseFile): Review | null => f.reviews.at(-1) ?? null;
@@ -13,8 +13,20 @@ export const AI_JOURNALIST = "AI Journalist";
 const RENAMED: Record<string, string> = { "Junior Editor": AI_JOURNALIST };
 export const reviewerName = (by: string) => RENAMED[by] ?? by;
 
-/** "AI Journalist (automated)", "Jane Smith (editor)", for the card. */
-export const reviewerLabel = (r: Review) => `${reviewerName(r.by)} (${r.kind === "automated" ? "automated" : r.kind === "legal" ? "legal review" : "editor"})`;
+/** "AI Journalist (automated)", "Pavel Guzhikov (editor)", "an independent editor", for the card. Editors not on NAMED_EDITORS are not named. */
+export const reviewerLabel = (r: Review) =>
+  r.kind === "editor" ? (editorShownAs(r.by) === r.by ? `${r.by} (editor)` : editorShownAs(r.by)) : `${reviewerName(r.by)} (${r.kind === "automated" ? "automated" : "legal review"})`;
+
+/**
+ * The card's "Checked by …" line: the editors who approved it ("Pavel Guzhikov and
+ * 1 independent editor"), or else its latest review, and what is still to come.
+ */
+export function checkedBy(f: PromiseFile): { who: string; on: string; automated: boolean; toCome: string } | null {
+  const approved = approvedByText(f.reviews);
+  if (approved) return { who: approved.text, on: approved.on, automated: false, toCome: f.editor_check_required ? "; a second editor's check to come" : "" };
+  const r = latestReview(f);
+  return r ? { who: reviewerLabel(r), on: r.on, automated: r.kind === "automated", toCome: f.editor_check_required ? "; human editor review to come" : "" } : null;
+}
 
 /** What AI Journalist is, in one line, wherever its name appears. */
 export const AI_JOURNALIST_NOTE =
