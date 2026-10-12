@@ -335,7 +335,9 @@ export default async function HouseholdPage({ params }: Props) {
               <p className="m-0 text-muted">
                 HM Treasury publishes its own estimate with every Budget. It counts {t.covers}. Its figures are official; it gives no range.
               </p>
-              <p className="m-0 border-l-2 border-rec pl-3 text-ink">Why the two differ: {t.differs}</p>
+              <p className="m-0 border-l-2 border-rec pl-3 text-ink">
+                {noModel ? "Why ours, when it follows, will differ" : "Why the two differ"}: {t.differs}
+              </p>
             </div>
             <DecilePair
               label={`The Treasury's estimate for ${t.year}, as a share of net income by income tenth. Taxes and welfare: from ${pct2(t.pct.deciles[0]!.tax + t.pct.deciles[0]!.welfare)} in tenth 1 to ${pct2(t.pct.deciles[9]!.tax + t.pct.deciles[9]!.welfare)} in tenth 10. With public services: ${pct2(t.pct.deciles[0]!.overall)} to ${pct2(t.pct.deciles[9]!.overall)}.`}
@@ -664,7 +666,7 @@ function NoModelSummary({ s }: { s: HouseholdSnapshot }) {
         )}
       </dl>
       <p className="m-0 max-w-[70ch] text-muted">
-        Our own estimate for the whole country, how many households are better or worse off and by how much in each income tenth, and the six
+        Our own estimate for the whole country (how many households are better or worse off, and by how much in each income tenth) and the six
         example households follow once PolicyEngine answers.{t ? ` The Treasury's figures are its own and count ${t.covers}: its chart is below.` : ""}
       </p>
     </section>

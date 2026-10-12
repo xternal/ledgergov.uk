@@ -301,7 +301,7 @@ It is data, like the scorecard, but it is our estimate, so **two editors** revie
 | `check`: a TODO is left in the file | A placeholder | Fill it or delete it |
 | `record`: the measures do not fit the model PolicyEngine runs today | PolicyEngine updated its model since the templates | `pnpm household -- templates`, then fix the named paths |
 | `record`: PolicyEngine offers 2024 … 2030; it cannot run 2031-32 | Years beyond 2030-31 | Drop them from `years` |
-| `record`: PolicyEngine http_5xx, timeout or network | The API is down or busy (no uptime promise; its busiest night) | Wait 10 minutes and run again: finished years come back from its cache at once. Keep trying until 05:00, then the fallback: the households only if PolicyEngine answers them, else the page without the model |
+| `record`: PolicyEngine http_5xx, timeout or network | The API is down or busy (no uptime promise; its busiest night) | Wait 10 minutes and run again: finished years come back from its cache at once. Keep trying until 05:00, then the fallback: the households only if PolicyEngine answers them, else the page without the model. If nothing has come back by 22:00, also commit `pnpm household -- build autumn-budget-2026 --no-model` to the branch, so two editors can review that page on the preview the same evening; a run that succeeds later replaces it |
 | `record`: still computing … after 20 minutes | Its queue is long | As above |
 | `build`: FAIL policies | The file changed after the recording | Run again (step 5) |
 | `build`: FAIL one_model | PolicyEngine updated during the run: two models in one comparison | Run again; every year is computed again on the new model |

@@ -64,9 +64,9 @@ function barsFor(s: HouseholdSnapshot): Bars {
     EXAMPLE_SALARIES.map((e) => e.salary_gbp),
   );
   return {
-    caption: `Take-home pay after income tax and National Insurance, ${year}: change a year with the Budget, on three salaries`,
+    caption: `Income tax and National Insurance, ${year}: change in take-home pay a year`,
     bars: examples.map((e) => ({ label: `${gbpWhole(e.salary_gbp)} a year`, value: e.change_gbp, text: gbpYear(e.change_gbp) })),
-    foot: `${changes ? "The Budget's own rates, worked out by us; not official, not tax advice" : `No change to these rates in ${year}`}. ${follows}`,
+    foot: `${changes ? "The Budget's own rates; not official, not tax advice" : `No change to these rates in ${year}`}. ${follows}`,
   };
 }
 

@@ -72,12 +72,21 @@ export function householdCopy(s: HouseholdSnapshot) {
   const better = all ? gaining(all) : null;
   const worse = all ? losing(all) : null;
   const modelled = s.input.measures.filter((m) => m.modelled).length;
+  // While a part waits for two editors (hold), the words promise it as following, not as here.
+  const who =
+    y.view.population === "shown" && y.view.households === "shown"
+      ? "by income tenth and for six example households"
+      : y.view.households === "shown"
+        ? "for six example households now, by income tenth once two editors have checked it"
+        : y.view.population === "shown"
+          ? "by income tenth now, for six example households once two editors have checked them"
+          : "by income tenth and for six example households once two editors have checked them";
   const description =
     y.view.state === "no_model"
       ? `${rehearsal ? `Last year's Budget, shown the way ${BUDGET.name} will be if PolicyEngine cannot be reached: its` : `The ${s.name}'s`} ${s.input.measures.length} tax and benefit measures, each linked to its page; what it means for your own income tax and National Insurance, worked out in your browser${s.input.treasury ? "; and the Treasury's own chart" : ""}. Our estimate of who gains and who loses, by income tenth and for six example households, follows once PolicyEngine answers. Not official.`
       : rehearsal
-        ? `Last year's Budget, worked out the way ${BUDGET.name} will be on the morning after: who gains and who loses from its ${modelled} tax and benefit measures we can model, by income tenth and for six example households, in ${y.head} and ${y.side}. An estimate with PolicyEngine's open model, not official, beside the Treasury's own chart.`
-        : `Who gains and who loses from the ${s.name}'s ${modelled} tax and benefit measures we can model, by income tenth and for six example households, in ${y.head} and ${y.side}. An estimate with PolicyEngine's open model, not official, beside the Treasury's own chart.`;
+        ? `Last year's Budget, worked out the way ${BUDGET.name} will be on the morning after: who gains and who loses from its ${modelled} tax and benefit measures we can model, ${who}, in ${y.head} and ${y.side}. An estimate with PolicyEngine's open model, not official, beside the Treasury's own chart.`
+        : `Who gains and who loses from the ${s.name}'s ${modelled} tax and benefit measures we can model, ${who}, in ${y.head} and ${y.side}. An estimate with PolicyEngine's open model, not official, beside the Treasury's own chart.`;
   const net = y.headResult?.budget.net_bn ?? 0;
   return {
     title,
