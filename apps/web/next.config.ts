@@ -8,9 +8,18 @@ const config: NextConfig = {
   transpilePackages: ["@ledger/engine", "@ledger/schema", "@ledger/server"],
   // Node-only server dependencies (database, mail, Claude API) load at runtime, not bundled.
   serverExternalPackages: ["@electric-sql/pglite", "pg", "@aws-sdk/client-sesv2", "@anthropic-ai/sdk"],
-  // Server routes (follow, submissions, triage) read content/*.yaml at runtime; ship it with them. /budget re-renders
-  // hourly and links the latest Budget scorecard, so the scorecards (data/build/budget) ship too.
-  outputFileTracingIncludes: { "/**": ["../../content/**/*", "../../pnpm-workspace.yaml", "../../data/build/budget/*.json"] },
+  // Server routes (follow, submissions, triage) read content/*.yaml at runtime; ship it with them. Pages made on first
+  // visit or re-rendered later read the data build and seeds too (scorecards, contracts, forecasts, the data editions,
+  // HMRC's tax figures, the tax seeds): a shared Pay for it plan returned a 500 on 13 October 2026 because
+  // data/build/manifest.json had not shipped. All of data/build and data/seed is about 3 MB, so all of it ships.
+  outputFileTracingIncludes: {
+    "/**": [
+      "../../content/**/*",
+      "../../pnpm-workspace.yaml",
+      "../../data/build/**/*",
+      "../../data/seed/*.json",
+    ],
+  },
   turbopack: { root },
   outputFileTracingRoot: root,
   poweredByHeader: false,
