@@ -1,0 +1,58 @@
+format: openpromises/1
+id: uk-empty-homes-orders-2026
+headline:
+  en: Shorter wait before councils take over empty homes
+actor_id: matthew-pennycook
+made_on: "2026-10-12"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    Announced on 27 September 2026. An Empty Dwelling Management Order lets a council manage a
+    long-term empty home and bring it back into use for up to seven years, while the owner keeps it.
+    The change would shorten how long a home must be empty before a council can apply. The statement
+    does not say how or when it will be made.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS363, 12 Oct 2026: Improving housing availability and
+      affordability
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363
+versions:
+  - version: 1
+    text: >-
+      We will reduce the qualifying period from two years to six months and remove evidential
+      requirements relating to matters such as anti-social behaviour or community support.
+    recorded_on: "2026-10-12"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: Councils in England, owners of long-term empty homes, and people looking for a home
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The Housing Minister says the qualifying period for Empty Dwelling Management Orders will be
+        cut from two years to six months
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

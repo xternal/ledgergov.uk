@@ -1,0 +1,58 @@
+format: openpromises/1
+id: uk-heaton-park-inquiry-2026
+headline:
+  en: Public inquiry into the Heaton Park synagogue attack
+actor_id: shabana-mahmood
+made_on: "2026-10-12"
+venue: parliament
+venue_label:
+  en: Commons statement
+area: public_order
+status: promised
+status_note:
+  en: >-
+    Two men were killed and three others seriously injured in the terror attack at Heaton Park
+    synagogue on Yom Kippur in October 2025. The Home Secretary said the inquiry,
+    requested by the coroner, will let all evidence be heard, including sensitive national security
+    material that the coroner's court could not fully hear. No chair, terms of reference or timetable
+    has been announced.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Hansard, House of Commons, 12 Oct 2026: National Security (Home Secretary's statement)"
+    url: https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity
+versions:
+  - version: 1
+    text: >-
+      What happened that day must be fully understood so, as requested by the coroner, I can today
+      announce a public inquiry into the deaths of Mr Cravitz and Mr Daulby.
+    recorded_on: "2026-10-12"
+    source_url: https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: >-
+          The families of the two men killed, the people injured, and the Jewish community
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The Home Secretary announces a public inquiry into the deaths in the Heaton Park synagogue
+        attack, as the coroner requested
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

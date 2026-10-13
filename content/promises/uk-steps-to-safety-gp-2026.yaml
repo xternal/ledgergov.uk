@@ -1,0 +1,72 @@
+format: openpromises/1
+id: uk-steps-to-safety-gp-2026
+headline:
+  en: GP referral route for women facing abuse
+actor_id: karin-smyth
+made_on: "2026-10-12"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: health
+status: promised
+status_note:
+  en: >-
+    Steps to Safety is to let women and girls experiencing violence and abuse reach specialist
+    support through their GP. The £34.4m pays for the first phase in 12 of England's Integrated Care
+    Boards, the NHS bodies that plan local health services. The statement does not name the 12 or
+    give a start date.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS364, 12 Oct 2026: Health and care reviews, improvement and
+      regulation
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364
+versions:
+  - version: 1
+    text: >-
+      This will start with an investment of up to £34.4 million over three years to support 12
+      Integrated Care Boards across England to deliver the first phase of a primary care referral
+      pathway, called Steps to Safety, making sure women and girls experiencing violence and abuse
+      can access specialist support through their GP.
+    recorded_on: "2026-10-12"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: Women and girls experiencing violence and abuse, in 12 Integrated Care Board areas of England
+      cost:
+        range: [0.0103, 0.0115, 0.0126]
+        quality: sourced
+        by:
+          kind: official
+          name: Department of Health and Social Care
+        note:
+          en: >-
+            The government's own figure: up to £34.4m over three years, shown as about £11.5m a
+            year. Low–high is an editorial ±10% because the source gives a central figure only.
+        sources:
+          - title: >-
+              Written ministerial statement HCWS364, 12 Oct 2026: Health and care reviews,
+              improvement and regulation
+            url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364
+      when:
+        en: Over three years (start not stated)
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The health minister commits up to £34.4m over three years for 12 Integrated Care Boards to
+        run the first phase of Steps to Safety
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

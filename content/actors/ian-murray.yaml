@@ -1,0 +1,20 @@
+format: openpromises/1
+id: ian-murray
+kind: person
+name:
+  en: Ian Murray
+party_id: labour
+roles:
+  - title:
+      en: Minister for Creative Industries, Media and Online Safety
+    from: "2026-07-21"
+    source:
+      url: https://www.gov.uk/government/people/ian-murray
+      quote: >-
+        Ian Murray was appointed Minister of State in the Department for Digital, Culture, Media and
+        Sport on 21 July 2026.
+identifiers:
+  parliament_member_id: 3966
+same_as:
+  - https://www.gov.uk/government/people/ian-murray
+same_as_checked_on: "2026-10-13"

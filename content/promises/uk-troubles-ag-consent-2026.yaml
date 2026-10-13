@@ -1,0 +1,60 @@
+format: openpromises/1
+id: uk-troubles-ag-consent-2026
+headline:
+  en: Attorney General to approve Troubles prosecutions
+actor_id: hm-government
+made_on: "2026-10-12"
+venue: press_release
+venue_label:
+  en: Press release (Northern Ireland Office)
+area: public_order
+status: promised
+status_note:
+  en: >-
+    The government tabled amendments to the Northern Ireland Troubles Bill on 12 October 2026. One
+    requires the consent of the Attorney General, acting quasi-judicially, before any serious
+    Troubles-related prosecution can go ahead. The card moves to legislated when the Bill becomes law
+    with it.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Northern Ireland Office press release, 12 Oct 2026: Troubles Bill reinforced with permanent
+      legal protections and safeguards for veterans
+    url: https://www.gov.uk/government/news/troubles-bill-reinforced-with-permanent-legal-protections-and-safeguards-for-veterans
+versions:
+  - version: 1
+    text: >-
+      Under the updated bill, the Attorney General must provide consent for any serious
+      Troubles-related prosecution.
+    recorded_on: "2026-10-12"
+    source_url: https://www.gov.uk/government/news/troubles-bill-reinforced-with-permanent-legal-protections-and-safeguards-for-veterans
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: >-
+          Armed Forces veterans and police officers who served during the Troubles, and the victims
+          and families seeking prosecutions
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: When the Northern Ireland Troubles Bill becomes law (no date given)
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The government tables an amendment to the Troubles Bill requiring the Attorney General's
+        consent for any serious Troubles-related prosecution
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

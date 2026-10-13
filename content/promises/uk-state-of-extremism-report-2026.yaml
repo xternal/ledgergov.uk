@@ -1,0 +1,58 @@
+format: openpromises/1
+id: uk-state-of-extremism-report-2026
+headline:
+  en: Publish a yearly State of Extremism report
+actor_id: shabana-mahmood
+made_on: "2026-10-12"
+venue: parliament
+venue_label:
+  en: Commons statement
+area: public_order
+status: promised
+status_note:
+  en: >-
+    The commitment comes from Protecting What Matters, the government's social cohesion plan; the
+    Home Secretary repeated it to the Commons on 12 October 2026. The report is to identify the
+    threats the country faces and help frontline professionals counter them. No date for the first
+    report has been given.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Hansard, House of Commons, 12 Oct 2026: National Security (Home Secretary's statement)"
+    url: https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity
+versions:
+  - version: 1
+    text: >-
+      In “Protecting What Matters”, our social cohesion plan, we set out a range of measures to
+      tackle this threat, including banning those who seek to come to this country to spread hatred,
+      and committing to publishing an annual “State of Extremism” report, which will identify the
+      threats we face and, crucially, equip frontline professionals to counter them.
+    recorded_on: "2026-10-12"
+    source_url: https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: Frontline professionals such as teachers, doctors and police, and the public
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Every year (first report not dated)
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The Home Secretary repeats the commitment in the social cohesion plan to publish a State of
+        Extremism report every year
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

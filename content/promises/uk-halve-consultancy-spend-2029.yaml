@@ -1,0 +1,64 @@
+format: openpromises/1
+id: uk-halve-consultancy-spend-2029
+headline:
+  en: Halve consultancy spending, saving £700m a year
+actor_id: louise-haigh
+made_on: "2026-10-12"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: general_services
+status: promised
+status_note:
+  en: >-
+    "It" in the quote is a new central Insourcing Unit, which the statement says the Office for the
+    Prime Minister and Cabinet is setting up to coordinate departments' insourcing. The statement
+    does not give the baseline year that the halving and the saving are measured from. The card
+    moves on the government's reported consultancy spending for 2028-29.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS356, 12 Oct 2026: Procurement Reform: Measures to create good
+      jobs and opportunities in the UK
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS356
+versions:
+  - version: 1
+    text: >-
+      It will work with departments to halve consultancy spending and save over £700m annually by
+      2028/29.
+    recorded_on: "2026-10-12"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS356
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: Government departments, and the consultancies they hire
+      cost:
+        note:
+          en: >-
+            A saving, not a cost: over £700m a year by 2028-29, by the government's figure.
+      when:
+        en: By 2028-29
+      deadline: "2029-03-31"
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The Cabinet Office says a new Insourcing Unit will work with departments to halve
+        consultancy spending and save over £700m a year by 2028-29
+  - date: "2029-03-31"
+    type: deadline
+    text:
+      en: Consultancy spending halved, saving over £700m a year, due by 2028-29
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,60 @@
+format: openpromises/1
+id: uk-crown-court-case-coordinators-2026
+headline:
+  en: A case coordinator in every Crown Court
+actor_id: hm-government
+made_on: "2026-10-12"
+venue: press_release
+venue_label:
+  en: Press release (Ministry of Justice)
+area: public_order
+status: promised
+status_note:
+  en: >-
+    Case coordinators are to work with judges, prosecutors and defence teams to spot and resolve
+    problems in cases earlier and keep them on track. Part of the government's response, published
+    12 October 2026, to Lord Leveson's review of the criminal courts. No start date is given.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Justice press release, 12 Oct 2026: Technology to bolster justice for victims as
+      government responds to Leveson
+    url: https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson
+versions:
+  - version: 1
+    text: >-
+      To help maximise court resources further, the Government is also investing up to £5 million to
+      roll out specialist Case Coordinators in every Crown Court in England and Wales, helping
+      ensure cases progress more efficiently and effectively, reducing delays.
+    recorded_on: "2026-10-12"
+    source_url: https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: Crown Courts in England and Wales, and the victims and defendants whose cases they hear
+      cost:
+        note:
+          en: >-
+            Up to £5m, by the government's figure. The release gives no period, so no yearly figure
+            is shown.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The government says it will spend up to £5m on specialist case coordinators in every Crown
+        Court in England and Wales
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

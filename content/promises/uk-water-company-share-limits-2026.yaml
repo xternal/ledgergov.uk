@@ -1,0 +1,62 @@
+format: openpromises/1
+id: uk-water-company-share-limits-2026
+headline:
+  en: Lift limits on government shares in water companies
+actor_id: angela-eagle
+made_on: "2026-10-12"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The Prime Minister announced the change on 29 September 2026; the Environment Secretary repeated
+    it to Parliament on 12 October. She says it lets the government act where water companies let
+    customers and the environment down, and that the government still relies on private investment.
+    A ten-year plan due later this year is to set out stronger public control of the water sector.
+    The card moves to legislated when the Water Bill becomes law with the change.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS354, 12 Oct 2026: Department for Environment, Food and Rural
+      Affairs activity during the conference recess
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354
+versions:
+  - version: 1
+    text: >-
+      The Prime Minister announced on 29 September that the strengthened Water Bill will remove the
+      current limits on Government ownership of shares in the major water and sewerage companies in
+      England.
+    recorded_on: "2026-10-12"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: The major water and sewerage companies in England, and their customers
+      cost:
+        note:
+          en: >-
+            Lifting the limits costs nothing by itself; buying shares would, and no figure has been
+            published.
+      when:
+        en: When the Water Bill becomes law (no date given)
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The Environment Secretary says the Water Bill will remove the limits on government ownership
+        of shares in the major water and sewerage companies in England
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

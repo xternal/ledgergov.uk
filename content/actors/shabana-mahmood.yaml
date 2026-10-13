@@ -1,0 +1,18 @@
+format: openpromises/1
+id: shabana-mahmood
+kind: person
+name:
+  en: Shabana Mahmood
+party_id: labour
+roles:
+  - title:
+      en: Home Secretary
+    from: "2025-09-05"
+    source:
+      url: https://www.gov.uk/government/people/shabana-mahmood
+      quote: Shabana Mahmood was appointed Secretary of State for the Home Department on 5 September 2025.
+identifiers:
+  parliament_member_id: 3914
+same_as:
+  - https://www.gov.uk/government/people/shabana-mahmood
+same_as_checked_on: "2026-10-13"
