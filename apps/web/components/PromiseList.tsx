@@ -2,7 +2,7 @@ import type { CardView, Status } from "@ledger/schema";
 import { AREA_LABEL, STANDING_LABEL, costText, isOverdue, ownerOf, shortName, standingOf } from "@/lib/promises";
 import { STATUS_LABEL } from "@/lib/copy";
 import { longDate, monthYear } from "@/lib/format";
-import { checkedBy } from "@/lib/reviews";
+import { reviewLine } from "@/lib/reviews";
 
 const PILL: Record<Status, string> = {
   promised: "bg-sunk text-muted shadow-[inset_0_0_0_1px_var(--line)]",
@@ -47,7 +47,7 @@ export function PromiseList({ cards, today, empty }: { cards: CardView[]; today:
  * status, topic, cost a year and any deadline underneath.
  */
 function PromiseRow({ c, today }: { c: CardView; today: string | null }) {
-  const checked = checkedBy(c.file);
+  const checked = reviewLine(c);
   const overdue = isOverdue(c, today);
   const owner = ownerOf(c);
   const standing = standingOf(c);
@@ -67,10 +67,10 @@ function PromiseRow({ c, today }: { c: CardView; today: string | null }) {
         <span className="line-clamp-3 text-[16px] font-[550] leading-snug tracking-[-0.01em]">“{c.current.text}”</span>
         <span className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-[12.5px] text-muted">
           <StatusPill status={c.file.status} />
-          {checked && (
-            <span className="-ml-1.5 text-caption text-good" title={`Checked by ${checked.who}`}>
+          {checked?.verified && (
+            <span className="-ml-1.5 text-caption text-good" title={checked.short}>
               <span aria-hidden>✓</span>
-              <span className="sr-only">Checked by {checked.who}</span>
+              <span className="sr-only">{checked.short}</span>
             </span>
           )}
           {c.broughtAboutBy && <span className="font-medium text-ink">by {c.broughtAboutBy.name}</span>}

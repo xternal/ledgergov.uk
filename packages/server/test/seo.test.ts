@@ -3,6 +3,7 @@ import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { Headline, PolicyArea, type CardView, type PromiseFile } from "@ledger/schema";
 import { loadSeed } from "@ledger/schema/seed";
+import { withVerification } from "@ledger/schema/verification";
 import {
   AREA_SLUG,
   DESCRIPTION_MAX,
@@ -37,8 +38,14 @@ import { statusLabel } from "../src/alerts/labels";
 
 const ctx: SeoContext = { siteUrl: "https://ledger.test", today: "2026-10-08" };
 const root = join(import.meta.dirname, "../../..");
+// Without the private editors list (withVerification adds it), so the earlier wording is what these tests see.
 const seed = loadSeed();
 const cards = seed.cards;
+/** A test editors list: Pavel named, Goodwill Stranger counted. Real lists are private and never in the repository. */
+const EDITORS = [
+  { handle: "Pavel Guzhikov", since: "2026-10-01", party: null, named: true },
+  { handle: "Goodwill Stranger", since: "2026-10-01", party: null },
+];
 
 // ---------------------------------------------------------------- a small schema.org shape checker
 
@@ -273,6 +280,18 @@ describe("Markdown for AI assistants", () => {
     expect(md).not.toContain("Goodwill Stranger");
     expect(md).not.toContain("human editor review to come");
     expect(md).not.toContain("undefined");
+  });
+
+  it("with the editors list, a card's Markdown carries the verification label", () => {
+    const labelled = withVerification(loadSeed(), EDITORS).cards.find((x) => x.id === "uk-great-british-energy-2024")!;
+    const md = cardMarkdownFile(labelled, ctx);
+    expect(md).toContain("- Verified by Pavel Guzhikov and 1 independent editor on 12 October 2026.");
+    expect(md).toContain("- Checked by AI Journalist (automated) on 6 October 2026.");
+    expect(md).not.toContain("Checked by Pavel Guzhikov");
+    expect(md).not.toContain("Goodwill Stranger");
+    const unnamed = withVerification(loadSeed(), EDITORS.map(({ named: _named, ...e }) => e)).cards.find((x) => x.id === labelled.id)!;
+    expect(cardMarkdownFile(unnamed, ctx)).toContain("- Verified by 2 independent editors on 12 October 2026.");
+    expect(llmsFull([labelled], ctx, { description: "An open P&L of the UK state." })).toContain("- Verified by Pavel Guzhikov and 1 independent editor on 12 October 2026.");
   });
 
   it("llms-full.txt has every card once, the method and the licences", () => {

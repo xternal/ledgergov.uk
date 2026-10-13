@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { loadSeed } from "@ledger/schema/seed";
+import { withVerification } from "@ledger/schema/verification";
 import { loadForecasts } from "@ledger/schema/forecasts";
 import type { Status } from "@ledger/schema";
 import {
@@ -34,6 +35,7 @@ import {
   type Manifest,
 } from "../src/api";
 
+// Without the private editors list; the verification test below gives one.
 const seed = loadSeed();
 const fc = loadForecasts();
 const SITE = "https://ledger.test";
@@ -91,7 +93,7 @@ describe("API v1 shapes", () => {
       [
         "actor_id", "actor_name", "brought_about_by", "contracts", "corrections", "cost", "deadline", "events", "funded_by", "headline", "id", "made_on", "origin", "outcome_by", "party_id",
         "policy_area", "quote_checked_on", "quote_licence", "quote_source_url", "replies", "sources", "status", "status_label", "status_note", "text",
-        "url", "venue", "venue_label", "version", "versions", "when", "who",
+        "url", "venue", "venue_label", "verification", "version", "versions", "when", "who",
       ].sort(),
     );
     expect(keys(p.cost!)).toEqual(["central", "costed_by", "high", "low", "method_note", "quality", "sources", "unit"]);
@@ -108,6 +110,27 @@ describe("API v1 shapes", () => {
     expect(p.status_label).toBe(`label:${p.status}`);
     const text = JSON.stringify(promises);
     for (const k of ["credit", "submission_ref", "email", "address", "subscription", "consent"]) expect(text).not.toContain(`"${k}"`);
+  });
+
+  it("gives each card its verification with the editors list, and null without it, leaving every other field as it was", () => {
+    expect(promisesData(seed, ctx).promises.every((x) => x.verification === null)).toBe(true);
+    const editors = [
+      { handle: "Pavel Guzhikov", since: "2026-10-01", party: null, named: true },
+      { handle: "Goodwill Stranger", since: "2026-10-01", party: null },
+    ];
+    const labelled = promisesData(withVerification(loadSeed(), editors), ctx).promises;
+    const gbe = labelled.find((x) => x.id === "uk-great-british-energy-2024")!;
+    expect(gbe.verification).toEqual({
+      level: "editors",
+      text: "Verified by Pavel Guzhikov and 1 independent editor",
+      named: ["Pavel Guzhikov"],
+      counted: 1,
+      automated: ["AI Journalist"],
+      on: "2026-10-12",
+    });
+    const before = promisesData(seed, ctx).promises;
+    expect(labelled.map(({ verification: _v, ...rest }) => rest)).toEqual(before.map(({ verification: _v, ...rest }) => rest));
+    expect(JSON.stringify(labelled)).not.toContain('"party":');
   });
 
   it("counts each actor's cards by status", () => {

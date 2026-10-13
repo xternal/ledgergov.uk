@@ -40,6 +40,11 @@ const PROMISE_FIELDS: { name: string; means: string }[] = [
     means: "Who brought about the current status when it was not the card's own actor, such as an opposition pledge the government carried out; null otherwise.",
   },
   {
+    name: "verification",
+    means:
+      "How far the card has been verified, counted from the editors' approvals recorded on it: level is none, automated (checked only by our automated reviewer), editor or editors; text is the line the card shows (\"Verified by Pavel Guzhikov and 1 independent editor\"); named lists the editors who chose to be named, counted how many other editors approved, on the day of the latest approval. null if the site was built without its editors list.",
+  },
+  {
     name: "cost",
     means:
       "The yearly cost to the public purse in £ billion, as low, central and high; a negative figure raises money. null when there is no costing. versions[].cost is the cost as each version of the promise stood.",

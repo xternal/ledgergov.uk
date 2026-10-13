@@ -26,6 +26,8 @@ export const Editor = z.object({
   until: Day.optional(),
   /** Declared party membership: a party's actor id, or null for none. */
   party: z.string().nullable(),
+  /** The editor chose to be named on the cards they approve; counted, not named, otherwise (OpenPromises decision 23). */
+  named: z.boolean().optional(),
 });
 export type Editor = z.infer<typeof Editor>;
 
@@ -118,17 +120,24 @@ export function appendReviewText(text: string, review: Review, dropEditorCheck =
 }
 
 /**
- * Editors the site names. Every other editor is counted, not named ("Pavel Guzhikov and
- * 1 independent editor"), until they choose to be named; add their handle here then.
- * Their handles stay in the card files, which are public: reviews are append-only.
+ * The fallback for a build without the editors list (a fork, a laptop without it, Vercel
+ * before OPENPROMISES_EDITORS_YAML is set). With the list, the cards show the engine's
+ * verification label (verification.ts), and who is named comes from `named: true` in
+ * the list, not from here. Every other editor is counted, not named ("Pavel Guzhikov and
+ * 1 independent editor"). Their handles stay in the card files, which are public:
+ * reviews are append-only. Remove this, approvedByText and editorShownAs once every
+ * build has the list.
  */
 export const NAMED_EDITORS: readonly string[] = ["Pavel Guzhikov"];
 
-/** An editor as readers see them: their handle if they are named, otherwise "an independent editor". */
-export const editorShownAs = (handle: string) => (NAMED_EDITORS.includes(handle) ? handle : "an independent editor");
+/**
+ * An editor as readers see them: their handle if they are named, otherwise "an independent editor". `named` is the
+ * card's verification's named editors when the build has the editors list; NAMED_EDITORS otherwise.
+ */
+export const editorShownAs = (handle: string, named: readonly string[] = NAMED_EDITORS) => (named.includes(handle) ? handle : "an independent editor");
 
 /**
- * Who approved the card, as the site shows it ("Pavel Guzhikov and 1 independent editor",
+ * Without the editors list (see NAMED_EDITORS): who approved the card, as the site shows it ("Pavel Guzhikov and 1 independent editor",
  * "Pavel Guzhikov (editor)", "an independent editor"), with the day of the latest
  * approval; null before any editor has approved it.
  */
