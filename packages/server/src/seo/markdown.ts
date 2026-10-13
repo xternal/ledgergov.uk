@@ -19,9 +19,16 @@ const link = (text: string, url: string) => `[${linkText(text)}](${url})`;
 
 /** Our automated reviewer was called "Junior Editor" until 8 Oct 2026; readers see its current name (apps/web/lib/reviews.ts). */
 const REVIEWER_NAME: Record<string, string> = { "Junior Editor": "AI Journalist" };
-/** Editors not on NAMED_EDITORS are counted, never named (packages/schema/src/approvals.ts). */
-const reviewer = (r: PromiseFile["reviews"][number]) =>
-  r.kind === "editor" ? (editorShownAs(r.by) === r.by ? `${r.by} (editor)` : editorShownAs(r.by)) : `${REVIEWER_NAME[r.by] ?? r.by} (${r.kind === "automated" ? "automated" : "legal review"})`;
+/**
+ * Editors who did not choose to be named are counted, never named: with the editors list, those named in the card's
+ * verification; without it, those on NAMED_EDITORS (packages/schema/src/approvals.ts).
+ */
+const reviewer = (r: PromiseFile["reviews"][number], named?: readonly string[]) =>
+  r.kind === "editor"
+    ? editorShownAs(r.by, named) === r.by
+      ? `${r.by} (editor)`
+      : editorShownAs(r.by, named)
+    : `${REVIEWER_NAME[r.by] ?? r.by} (${r.kind === "automated" ? "automated" : "legal review"})`;
 
 /** "Costs £1.5bn to £1.9bn a year (central £1.7bn by Labour Party, party's own figure)", or why there is no figure. */
 function costLine(c: CardView): string {
@@ -133,9 +140,16 @@ export function cardMarkdown(c: CardView, ctx: SeoContext, level: 1 | 2 = 1): st
   section(
     "Checks",
     (() => {
-      // Editors' approvals as one line ("Pavel Guzhikov and 1 independent editor"), then every other check, newest first.
-      const approved = approvedByText(f.reviews);
+      // The verification label first ("Verified by Pavel Guzhikov and 1 independent editor on …", OpenPromises
+      // decision 23), then every other check, newest first. Without the editors list, the editors' approvals as one
+      // line in the earlier wording ("Checked by Pavel Guzhikov and 1 independent editor on …").
       const rest = f.reviews.filter((r) => !(r.kind === "editor" && r.approves === true)).reverse();
+      const v = c.verification;
+      if (v) {
+        const on = v.on && (v.level === "editor" || v.level === "editors") ? ` on ${ukDate(v.on)}` : "";
+        return [`- ${v.text}${on}${v.secondToCome ? "; a second editor's check to come" : ""}.`, ...rest.map((r) => `- Checked by ${reviewer(r, v.named)} on ${ukDate(r.on)}.`)];
+      }
+      const approved = approvedByText(f.reviews);
       return [
         ...(approved ? [`- Checked by ${approved.text} on ${ukDate(approved.on)}${approved.count < APPROVALS_NEEDED ? "; a second editor's check to come" : ""}.`] : []),
         ...rest.map((r) => `- Checked by ${reviewer(r)} on ${ukDate(r.on)}${f.editor_check_required && !approved ? "; human editor review to come" : ""}.`),

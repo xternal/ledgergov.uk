@@ -18,6 +18,7 @@ export * from "./budget";
 export * from "./household";
 export * from "./approvals";
 export * from "./v1";
+export type { CardVerification } from "./verification";
 export * from "./predict";
 export * from "./fiscal-targets";
 export * from "./leaks";

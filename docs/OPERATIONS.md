@@ -322,7 +322,7 @@ pnpm parity:check       # on the change: writes .parity/current, compares, exits
 
 ## 15. The OpenPromises check
 
-LedgerGov.UK's cards are in the format of the open-source OpenPromises engine ([github.com/xternal/openpromises](https://github.com/xternal/openpromises), its `docs/MIGRATING.md`) since 12 October 2026; the site reads them into its own shape (`packages/schema/src/v1.ts`), so nothing readers see changed. The engine is a pinned dev dependency (`@openpromises/cli` and `@openpromises/core` 0.4.0), `openpromises.config.ts` at the repository root describes the site, and CI runs the engine's check after our own one. Since the switch on 12 October 2026 it blocks a merge like any other check; on a fork's pull request, which gets no secrets and so no editors list, it runs as a report only.
+LedgerGov.UK's cards are in the format of the open-source OpenPromises engine ([github.com/xternal/openpromises](https://github.com/xternal/openpromises), its `docs/MIGRATING.md`) since 12 October 2026; the site reads them into its own shape (`packages/schema/src/v1.ts`), so nothing readers see changed. The engine is pinned at 0.6.0 (since 13 October 2026): `@openpromises/cli` and `@openpromises/core` as dev dependencies for the check, and `@openpromises/core` and `@openpromises/publish` as dependencies of `packages/schema` for the verification label below. `openpromises.config.ts` at the repository root describes the site, and CI runs the engine's check after our own one. Since the switch on 12 October 2026 it blocks a merge like any other check; on a fork's pull request, which gets no secrets and so no editors list, it runs as a report only.
 
 ```bash
 pnpm exec openpromises validate --no-base   # everything the engine would object to today
@@ -343,6 +343,33 @@ If CI shows `editors.yaml  should be a set of fields  (schema)`, the secret hold
 Editors record approvals on the cards now, before the move, with `pnpm review` (docs/EDITORS.md, "Recording your approval on the card"); the engine counts them, so the approvals errors fall as reviews land. The command writes LedgerGov.UK's own format because the engine's `openpromises review` only writes converted cards.
 
 Since 12 October 2026 every card and actor is in OpenPromises format v1 and the check passes: 0 errors, 0 warnings. It reads every card's editors' approvals against the private editors list (the repository secret `OPENPROMISES_EDITORS`, never committed; automated reviews never count), every cost's quality label, and history against the base branch. Any error means a change the engine would refuse: fix it before merging.
+
+### Publishing by checks (since 0.6.0)
+
+`openpromises.config.ts` sets `editorial.publish: "checked"` (OpenPromises decision 22). A card whose `origin` is `manual` or `llm_intake` is published once every automatic check passes; editors' approvals no longer hold it back, they become its verification label. A reader's submission (`origin: reader_submission`), or a card that does not say its origin, still needs two editors' approvals, as before (invariant 8).
+
+A card no editor has approved yet must have its words matched by a machine: a stored-source span, or an archive check that found them exactly. An editor's `quote_checked_on` counts only once editors have approved the card. To check a new card's quote against a saved copy of its source, save the page (its HTML, or its text) and run:
+
+```bash
+curl -sL "<the card's source_url>" -o /tmp/source.html
+pnpm exec openpromises check-quote <card id> --html /tmp/source.html            # exact, close or none
+pnpm exec openpromises check-quote <card id> --html /tmp/source.html --record   # writes the result to content/quotes.json
+```
+
+Commit `content/quotes.json` with the card. Only `exact` lets a card without approvals through; `close` or `none` means the quote is not the source's words: fix the quote, or wait for editors.
+
+### The verification label and the editors list on Vercel
+
+Every card shows how far it has been verified (decision 23): "Verified by Pavel Guzhikov and 1 independent editor", "Checked automatically by AI Journalist, not yet verified by an editor", or "Not yet verified by an editor". It appears on the card page, as the tick in the promise list, in the card's Markdown and llms-full.txt, and as `verification` on each card in `/api/v1/promises`. The engine counts it from the approvals on the card and the private editors list: an editor is named if their entry says `named: true`, and counted otherwise.
+
+The build reads the list from `OPENPROMISES_EDITORS_YAML` (the file's text: Vercel, and CI's build step) or else `OPENPROMISES_EDITORS` (a path: a laptop). Set it on Vercel for production and preview, from the file, never by pasting:
+
+```bash
+vercel env add OPENPROMISES_EDITORS_YAML production < ~/.config/openpromises/editors.yaml
+vercel env add OPENPROMISES_EDITORS_YAML preview < ~/.config/openpromises/editors.yaml
+```
+
+Without the list the site keeps the wording it had before 0.6.0 ("Checked by Pavel Guzhikov and 1 independent editor", from `NAMED_EDITORS` in `packages/schema/src/approvals.ts`) and the API's `verification` is `null`, so a deploy without the variable is safe. A list that is not in the engine's shape stops the build, saying where but never what it holds. When the list changes (a new editor, someone choosing to be named), update the GitHub secret and both Vercel variables from the same file, then redeploy.
 
 ## 16. Page view counts (Upstash Redis)
 

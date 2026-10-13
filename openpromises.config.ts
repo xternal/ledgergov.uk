@@ -5,8 +5,8 @@ import { defineConfig } from "@openpromises/core";
  * LedgerGov.UK on the OpenPromises engine (step 1 of the move, docs/MIGRATING.md
  * in github.com/xternal/openpromises). Started from OpenPromises 0.3.0's
  * tools/dry-run/ledgergov.config.ts with fixtures/public-ledger/openpromises.config.ts
- * inlined. Nothing reads it yet except the report-only check in CI: the site still
- * reads its cards through packages/schema. `legacy: "public-ledger"` stays for good
+ * inlined. CI's check reads it; the site reads its cards through packages/schema,
+ * with the engine's verification label (packages/schema/src/verification.ts). `legacy: "public-ledger"` stays for good
  * (decision 15): it reads cards without a `format:` line as this site's format, and
  * lets editors fill in the cost quality labels once after the conversion.
  */
@@ -60,7 +60,10 @@ export default defineConfig({
   },
   ladder: "national",
   // The automated reviewer was called "Junior Editor" until 8 October 2026.
-  editorial: { approvals: 2, partyConflict: true, renamed: { "Junior Editor": "AI Journalist" } },
+  // Publish by checks (OpenPromises decision 22, since 0.6.0): a card is published once its checks pass; editors'
+  // approvals become its verification label (decision 23), except on a reader's submission or a card that does not say
+  // its origin, which still waits for two. packages/schema/src/verification.ts SITE_EDITORIAL mirrors these settings.
+  editorial: { approvals: 2, partyConflict: true, publish: "checked", renamed: { "Junior Editor": "AI Journalist" } },
   quotes: {
     archive: "optional",
     require: "editor",

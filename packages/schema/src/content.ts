@@ -3,6 +3,7 @@ import { IsoDate, Range } from "./provenance";
 import { ContractRef, contractKey, type ContractFile, type ContractLink } from "./contracts";
 import { Settings } from "./levers";
 import { EventType, Status, Venue } from "./promises";
+import type { CardVerification } from "./verification";
 
 /**
  * Promise cards and actors as content files (content/promises/*.yaml,
@@ -342,6 +343,8 @@ export interface CardView {
   role: string | null;
   /** Linked contracts that have been fetched, in the order the card lists them. */
   contracts: ContractLink[];
+  /** How far the card has been verified (OpenPromises decision 23), set by withVerification (verification.ts); absent when built without the editors list. */
+  verification?: CardVerification;
 }
 
 export function cardViews(promises: PromiseFile[], actors: ActorFile[], contracts: ContractFile[] = []): CardView[] {
