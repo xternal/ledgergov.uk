@@ -199,6 +199,13 @@ on a branch `intake/<date>`, with one YAML per candidate in
   `content/drafts/<date>/PR.md` (the pull request text, not committed).
   `pnpm harvest -- upload …` does the same for a transcript or a YouTube
   video's captions.
+* **The weekly editor's desk** (since 13 October 2026): every Monday at 10:00
+  UK time a Claude cloud routine sorts the week's open intake pull requests
+  into at most 30 cards, then reads the week's GOV.UK policy papers for
+  commitments the daily intake cannot see. It follows `docs/desk/ROUTINE.md`
+  on `main`, never approves or merges, and records each run's numbers in
+  `docs/desk/runs/`. An editor approves each pull request; the intake merge
+  job then merges it. Change what it does by changing that file.
 
 ## 11. OBR data by hand
 
