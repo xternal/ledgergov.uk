@@ -24,11 +24,13 @@ Scheduled tasks on Pavel's Mac do the typing and the runs; people do the checkin
 
 | When (GMT) | Scheduled task | What it does | Who checks |
 |---|---|---|---|
+| Wed 21 Oct, 09:15 BST | `ledgergov-ons-borrowing-2026-10-21` | Checks the morning's data pull request brought ONS's September public finances, and that /borrowing's figures match the ONS bulletin | Pavel merges the data pull request if they match |
 | Tue 27 Oct, 10:00 | `budget-2026-household-prep` | Re-tests PolicyEngine if its API moved, refreshes the household templates, starts the 2026 measures file on its branch, rehearses the "no model" fallback offline | Nothing to check unless it reports a change |
 | Wed 28 Oct, 14:00 | `budget-day-2026-scorecard` | Reads the Treasury's total from the PDF page as a picture, separately from the parser, then runs the scorecard (runbook below) | Pavel retypes the total from the PDF and checks three lines, then merges |
 | Wed 28 Oct, 14:30 | `budget-2026-household-run` | Types every tax and benefit measure with its page, runs PolicyEngine (again every 10 minutes while it is down), opens the pull request; from 19:30 re-checks every rate against HMRC's notes | Pavel and Goodwill Stranger check every value against its page, then merge |
 | Wed 28 Oct, 17:00 | `budget-day-2026-drafts` | Drafts the card changes, with rates from the Budget document or HMRC's notes when OOTLAR is not out | Two editors approve, as for every card |
 | Thu 29 Oct, 05:00 | `budget-2026-household-fallback` | If the household pull request is not merged, turns it into the fallback: the households and the Treasury's chart if PolicyEngine answered (deciles follow); if it cannot be reached at all, the page without the model (the measures, the salary check and the Treasury's chart; the rest follows) | Pavel and Goodwill Stranger, a short review before 07:00 |
+| Thu 29 Oct, 09:00 | `budget-2026-household-refill` | If the household page went out without the model or with its deciles held, runs PolicyEngine again and opens the full page's pull request | Pavel and Goodwill Stranger check the results, then merge |
 
 Each task checks that nothing else is building before it builds, so the three on Wednesday afternoon take turns.
 
