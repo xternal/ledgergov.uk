@@ -1,0 +1,18 @@
+format: openpromises/1
+id: karin-smyth
+kind: person
+name:
+  en: Karin Smyth
+party_id: labour
+roles:
+  - title:
+      en: Minister of State for Health (Secondary Care)
+    from: "2026-07-21"
+    source:
+      url: https://www.gov.uk/government/people/karin-smyth
+      quote: Karin Smyth was appointed Minister of State in the Department of Health and Social Care on 21 July 2026.
+identifiers:
+  parliament_member_id: 4444
+same_as:
+  - https://www.gov.uk/government/people/karin-smyth
+same_as_checked_on: "2026-10-13"

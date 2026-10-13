@@ -1,0 +1,55 @@
+format: openpromises/1
+id: uk-national-museums-free-2026
+headline:
+  en: Keep national museums free for every visitor
+actor_id: ian-murray
+made_on: "2026-10-12"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: culture
+status: promised
+status_note:
+  en: >-
+    The government looked at charging overseas visitors to national museums and decided against it.
+    The statement lists the national museum sites with free admission. It has no end date, so the
+    card stays open: it would be broken if any of those sites began charging for general admission.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Written ministerial statement HCWS359, 12 Oct 2026: National Museums to remain free for everyone"
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS359
+versions:
+  - version: 1
+    text: >-
+      We will not be pursuing a change in policy to universal free entry, but our findings more
+      broadly will help inform the upcoming Museums Plan.
+    recorded_on: "2026-10-12"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS359
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: Everyone who visits a national museum, including visitors from overseas
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Ongoing; no end date
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The government says it will not change the policy of universal free entry to national
+        museums
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

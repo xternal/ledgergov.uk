@@ -1,0 +1,70 @@
+format: openpromises/1
+id: uk-youth-hub-every-area-2029
+headline:
+  en: A Youth Hub in every local area
+actor_id: hm-government
+made_on: "2026-10-12"
+venue: press_release
+venue_label:
+  en: Press release (DWP)
+area: economic_affairs
+status: delivering
+status_note:
+  en: >-
+    Youth Hubs put Jobcentre Plus, council services, employers and training providers under one roof
+    for young people aged 16 to 24. The Department for Work and Pensions repeated the commitment on
+    12 October 2026 as a hub opened in Exeter, and says every hub will meet a set of minimum
+    standards. The release does not say when the three years started, what counts as a local area,
+    or how many hubs that means, so the card has no deadline yet.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      DWP press release, 12 Oct 2026: Major boost for young people in Exeter as Youth Hub opens to
+      support them towards work
+    url: https://www.gov.uk/government/news/major-boost-for-young-people-in-exeter-as-youth-hub-opens-to-support-them-towards-work
+versions:
+  - version: 1
+    text: >-
+      Open on Monday, Wednesday and Friday, the Hub is part of the Government’s commitment to
+      deliver a Youth Hub in every local area of Great Britain over the next three years, building a
+      national network of support for the nearly one million young people not in education,
+      employment or training.
+    recorded_on: "2026-10-12"
+    source_url: https://www.gov.uk/government/news/major-boost-for-young-people-in-exeter-as-youth-hub-opens-to-support-them-towards-work
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: >-
+          Young people aged 16 to 24 in Great Britain, including the nearly one million not in
+          education, employment or training
+      cost:
+        note:
+          en: >-
+            The release says the government is investing £2.5bn so that all young people can earn or
+            learn, but not how much of that pays for Youth Hubs, so no yearly figure is shown.
+      when:
+        en: Over the next three years (start not stated)
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The government repeats its commitment to a Youth Hub in every local area of Great Britain
+        within three years
+  - date: "2026-10-12"
+    type: delivering
+    text:
+      en: A Youth Hub opens in Exeter, open three days a week at St James Park
+    evidence_url: https://www.gov.uk/government/news/major-boost-for-young-people-in-exeter-as-youth-hub-opens-to-support-them-towards-work
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,58 @@
+format: openpromises/1
+id: uk-information-defence-centre-2026
+headline:
+  en: A national centre for information defence
+actor_id: andy-burnham
+made_on: "2026-10-12"
+venue: parliament
+venue_label:
+  en: Commons statement
+area: defence
+status: promised
+status_note:
+  en: >-
+    The Prime Minister told the Commons he had confirmed the commitment in his speech to the UN
+    General Assembly, following a recommendation of the Foreign Affairs Select Committee. The Home
+    Secretary repeated it the same day, describing a national centre to tackle disinformation from
+    states. No date, cost or lead department has been published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Hansard, House of Commons, 12 Oct 2026: International Update (PM's statement)"
+    url: https://hansard.parliament.uk/Commons/2026-10-12/debates/54FB2EDB-83AF-40FE-8A98-A914AD221CD7/InternationalUpdate
+  - title: "Hansard, House of Commons, 12 Oct 2026: National Security (Home Secretary's statement)"
+    url: https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity
+versions:
+  - version: 1
+    text: >-
+      It is why, in my speech to the UN General Assembly, I confirmed our commitment to establish a
+      new centre for information defence, as recommended by the Foreign Affairs Select Committee.
+    recorded_on: "2026-10-12"
+    source_url: https://hansard.parliament.uk/Commons/2026-10-12/debates/54FB2EDB-83AF-40FE-8A98-A914AD221CD7/InternationalUpdate
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: The UK public and its institutions, against disinformation campaigns run by foreign states
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister confirms to the Commons the commitment to set up a new centre for
+        information defence
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

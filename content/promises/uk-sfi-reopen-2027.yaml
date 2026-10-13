@@ -1,0 +1,61 @@
+format: openpromises/1
+id: uk-sfi-reopen-2027
+headline:
+  en: Open the Sustainable Farming Incentive again in 2027
+actor_id: angela-eagle
+made_on: "2026-10-12"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The Sustainable Farming Incentive (SFI) pays farmers for environmentally sustainable farming. Its
+    second 2026 window, for farmers with at least three hectares, closed the day it opened because
+    its budget had been allocated; across both 2026 windows £310m went to new agreements. The
+    Environment Secretary says the government will learn from this year's windows, including
+    alternatives to first come, first served. The card moves when the 2027 window opens.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS354, 12 Oct 2026: Department for Environment, Food and Rural
+      Affairs activity during the conference recess
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354
+versions:
+  - version: 1
+    text: >-
+      We plan to offer the scheme again in 2027 and will look to open it as early as possible.
+    recorded_on: "2026-10-12"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: Farmers and land managers in England
+      cost:
+        note:
+          en: No budget for the 2027 window has been published.
+      when:
+        en: In 2027, "as early as possible"
+      deadline: "2027-12-31"
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: The Environment Secretary says the government plans to offer the SFI again in 2027
+  - date: "2027-12-31"
+    type: deadline
+    text:
+      en: An SFI application window due to open in 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

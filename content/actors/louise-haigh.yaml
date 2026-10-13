@@ -1,0 +1,20 @@
+format: openpromises/1
+id: louise-haigh
+kind: person
+name:
+  en: Louise Haigh
+party_id: labour
+roles:
+  - title:
+      en: First Secretary of State, Chancellor of the Duchy of Lancaster and Minister for the Cabinet Office
+    from: "2026-07-20"
+    source:
+      url: https://www.gov.uk/government/people/louise-haigh
+      quote: >-
+        Louise Haigh was appointed First Secretary of State, Chancellor of the Duchy of Lancaster, and
+        Minister for the Cabinet Office on 20 July 2026.
+identifiers:
+  parliament_member_id: 4473
+same_as:
+  - https://www.gov.uk/government/people/louise-haigh
+same_as_checked_on: "2026-10-13"

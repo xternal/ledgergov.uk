@@ -1,0 +1,67 @@
+format: openpromises/1
+id: uk-flood-defences-condition-2029
+headline:
+  en: Flood defences 93.5% in good condition by 2029
+actor_id: hm-government
+made_on: "2026-10-12"
+venue: press_release
+venue_label:
+  en: Press release (Defra and the Environment Agency)
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The share of flood defences at or above their required condition was 93% at the end of March
+    2026, by the release's figure, after years of decline. The target is to raise it to 93.5% by
+    March 2029. The Environment Agency reports asset condition each year; the card moves on its
+    figure for the year to March 2029.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Defra and Environment Agency press release, 12 Oct 2026: New 'one stop shop' for flood
+      preparedness launched as we approach more weather whiplash
+    url: https://www.gov.uk/government/news/new-one-stop-shop-for-flood-preparedness-launched-as-we-approach-more-weather-whiplash
+versions:
+  - version: 1
+    text: >-
+      Today, as Environment Agency teams across the country continue their work to ensure vital
+      protections remain strong, the government has set a target for asset condition to rise further
+      to 93.5% by March 2029.
+    recorded_on: "2026-10-12"
+    source_url: https://www.gov.uk/government/news/new-one-stop-shop-for-flood-preparedness-launched-as-we-approach-more-weather-whiplash
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: People and property protected by the Environment Agency's flood defences in England
+      cost:
+        note:
+          en: >-
+            No separate figure: it is paid for from the £4.2bn flood defence programme for April
+            2026 to March 2029.
+      when:
+        en: By March 2029
+      deadline: "2029-03-31"
+      funded_by:
+        en: The government's £4.2bn flood defence programme
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The government sets a target for 93.5% of flood defences to be at or above their required
+        condition by March 2029, up from 93%
+  - date: "2029-03-31"
+    type: deadline
+    text:
+      en: 93.5% of flood defences in required condition due by March 2029
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,20 @@
+format: openpromises/1
+id: angela-eagle
+kind: person
+name:
+  en: Angela Eagle
+party_id: labour
+roles:
+  - title:
+      en: Secretary of State for Environment, Food and Rural Affairs
+    from: "2026-07-20"
+    source:
+      url: https://www.gov.uk/government/people/angela-eagle
+      quote: >-
+        Dame Angela Eagle DBE was appointed Secretary of State for Environment, Food and Rural Affairs
+        on 20 July 2026.
+identifiers:
+  parliament_member_id: 491
+same_as:
+  - https://www.gov.uk/government/people/angela-eagle
+same_as_checked_on: "2026-10-13"

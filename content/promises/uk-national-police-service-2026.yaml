@@ -1,0 +1,55 @@
+format: openpromises/1
+id: uk-national-police-service-2026
+headline:
+  en: Merge the National Crime Agency and counter-terror policing
+actor_id: shabana-mahmood
+made_on: "2026-10-12"
+venue: parliament
+venue_label:
+  en: Commons statement, in reply to a question
+area: public_order
+status: promised
+status_note:
+  en: >-
+    Said in answer to a question after the Home Secretary's statement on national security. The new
+    service is to bring together the National Crime Agency and Counter Terrorism Policing. No date,
+    cost or legislation was given. The card moves when the service is set up in law or starts work.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Hansard, House of Commons, 12 Oct 2026: National Security (Home Secretary's statement)"
+    url: https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity
+versions:
+  - version: 1
+    text: >-
+      That is one of the reasons why I am setting up the national police service, which will bring
+      together the National Crime Agency and Counter Terrorism Policing into one service.
+    recorded_on: "2026-10-12"
+    source_url: https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: The National Crime Agency, Counter Terrorism Policing and their staff
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The Home Secretary says she is setting up a national police service bringing together the
+        National Crime Agency and Counter Terrorism Policing
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,55 @@
+format: openpromises/1
+id: uk-national-security-bill-cyber-2026
+headline:
+  en: A national security Bill to fight cyber-criminals
+actor_id: shabana-mahmood
+made_on: "2026-10-12"
+venue: parliament
+venue_label:
+  en: Commons statement
+area: public_order
+status: promised
+status_note:
+  en: >-
+    Announced alongside the Cyber Security and Resilience (Network and Information Systems) Bill,
+    which is already before Parliament. The Home Secretary did not say when the new Bill will be
+    introduced or what the stronger powers will be. The card moves when the Bill is published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Hansard, House of Commons, 12 Oct 2026: National Security (Home Secretary's statement)"
+    url: https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity
+versions:
+  - version: 1
+    text: >-
+      We will go further with our upcoming national security Bill and give intelligence agencies and
+      the police stronger powers to bear down on cyber-criminals.
+    recorded_on: "2026-10-12"
+    source_url: https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: The intelligence agencies and the police, and the people and businesses cyber-criminals target
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated ("upcoming")
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The Home Secretary says an upcoming national security Bill will give intelligence agencies
+        and the police stronger powers against cyber-criminals
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

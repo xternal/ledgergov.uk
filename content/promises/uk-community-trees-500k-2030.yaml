@@ -1,0 +1,76 @@
+format: openpromises/1
+id: uk-community-trees-500k-2030
+headline:
+  en: 500,000 new trees outside woodlands by 2030
+actor_id: angela-eagle
+made_on: "2026-10-12"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The Community Trees Fund, announced on 30 September 2026, pays for tree planting in streets,
+    parks and places near where people live and work. Councils, Strategic Authorities, environmental
+    groups, farm clusters and National Park Authorities can bid. "Up to" means no number of trees is
+    guaranteed; the card reads the 500,000 as the target.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS354, 12 Oct 2026: Department for Environment, Food and Rural
+      Affairs activity during the conference recess
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354
+versions:
+  - version: 1
+    text: >-
+      Through this fund, up to 500,000 new trees outside woodlands will be planted between April
+      2027 and March 2030.
+    recorded_on: "2026-10-12"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: People in towns, cities and the countryside of England, near the new trees
+      cost:
+        range: [0.0159, 0.0177, 0.0194]
+        quality: sourced
+        by:
+          kind: official
+          name: Defra
+        note:
+          en: >-
+            The government's own figure: £53m over three years, shown as about £17.7m a year. Low–high
+            is an editorial ±10% because the source gives a central figure only.
+        sources:
+          - title: >-
+              Written ministerial statement HCWS354, 12 Oct 2026: Department for Environment, Food
+              and Rural Affairs activity during the conference recess
+            url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354
+      when:
+        en: Between April 2027 and March 2030
+      deadline: "2030-03-31"
+      funded_by:
+        en: The £53m Community Trees Fund
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The Environment Secretary says the Community Trees Fund will plant up to 500,000 new trees
+        outside woodlands between April 2027 and March 2030
+  - date: "2030-03-31"
+    type: deadline
+    text:
+      en: Up to 500,000 trees outside woodlands due by March 2030
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

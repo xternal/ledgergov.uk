@@ -23,6 +23,10 @@ sources:
       DHSC press release, 9 Oct 2026: Government pledges earlier support to tackle mental health
       crises
     url: https://www.gov.uk/government/news/government-pledges-earlier-support-to-tackle-mental-health-crises
+  - title: >-
+      Written ministerial statement HCWS364, 12 Oct 2026: Health and care reviews, improvement and
+      regulation
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364
 versions:
   - version: 1
     text: >-
@@ -44,12 +48,40 @@ versions:
       when:
         en: Not stated
       funded_by: null
+  - version: 2
+    text: >-
+      We will work to bring all diagnostic assessments under CQC regulation, helping to ensure
+      people receive high-quality, clinically robust assessments regardless of how they access care,
+      and we are also acting on concerns about the advertising of ADHD and autism assessment
+      services.
+    recorded_on: "2026-10-12"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: >-
+          People in England assessed for ADHD or autism, through the NHS or privately; the providers
+          who carry out the assessments would be regulated by the Care Quality Commission
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
 events:
   - date: "2026-10-09"
     type: promised
     text:
       en: >-
         The Health Secretary says ADHD and autism diagnostic assessments will be made CQC-regulated
+  - date: "2026-10-12"
+    type: reworded
+    text:
+      en: >-
+        In a written statement to Parliament, the health minister Karin Smyth says the government
+        will "work to bring" all diagnostic assessments under CQC regulation, and that NHS money
+        will in future pay only for assessments by CQC-registered providers
+    evidence_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364
 replies: []
 reviews:
   - by: AI Journalist
@@ -71,3 +103,10 @@ reviews:
     approves: true
     note:
       en: Checked against its sources; confirmed by email to the owner, 12 October 2026
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Version 2: quote checked word for word at the source (written ministerial statement
+        HCWS364).

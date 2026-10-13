@@ -1,0 +1,83 @@
+format: openpromises/1
+id: uk-flood-200k-properties-2029
+headline:
+  en: Better flood protection for 200,000 properties by 2029
+actor_id: hm-government
+made_on: "2026-10-12"
+venue: press_release
+venue_label:
+  en: Press release (Defra and the Environment Agency)
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    A new target set at the start of Flood Action Week. The release is dated 12 October 2026, so
+    "last April" is read as April 2026. It says the government spent £2.65bn on flood defences in its
+    first two years and better protected almost 62,000 properties, beating a target of 52,000. The
+    card moves when the Environment Agency reports properties better protected under the new
+    programme.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Defra and Environment Agency press release, 12 Oct 2026: New 'one stop shop' for flood
+      preparedness launched as we approach more weather whiplash
+    url: https://www.gov.uk/government/news/new-one-stop-shop-for-flood-preparedness-launched-as-we-approach-more-weather-whiplash
+versions:
+  - version: 1
+    text: >-
+      To ensure the nation is more resilient to flooding, the government is investing £4.2 billion
+      between last April and March 2029 to repair and replace existing defences and construct new
+      ones, with hundreds of projects set to be completed.
+
+      The new target for 200,000 properties to benefit from this investment will deliver a total
+      economic benefit of £27.9 billion in avoided damage as communities gain better protection and
+      growth is delivered in every postcode.
+    recorded_on: "2026-10-12"
+    source_url: https://www.gov.uk/government/news/new-one-stop-shop-for-flood-preparedness-launched-as-we-approach-more-weather-whiplash
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: Homes and businesses at risk of flooding in England
+      cost:
+        range: [1.26, 1.4, 1.54]
+        quality: sourced
+        by:
+          kind: official
+          name: Defra
+        note:
+          en: >-
+            The government's own figure: £4.2bn between April 2026 and March 2029, shown as £1.4bn a
+            year on average. The release gives no split by year. Low–high is an editorial ±10%
+            because the source gives a central figure only.
+        sources:
+          - title: >-
+              Defra and Environment Agency press release, 12 Oct 2026: New 'one stop shop' for flood
+              preparedness launched as we approach more weather whiplash
+            url: https://www.gov.uk/government/news/new-one-stop-shop-for-flood-preparedness-launched-as-we-approach-more-weather-whiplash
+      when:
+        en: Between April 2026 and March 2029
+      deadline: "2029-03-31"
+      funded_by:
+        en: The government's £4.2bn flood defence programme
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The government sets a target for 200,000 properties to benefit from £4.2bn of flood defence
+        spending by March 2029
+  - date: "2029-03-31"
+    type: deadline
+    text:
+      en: 200,000 properties better protected from flooding due by March 2029
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,62 @@
+format: openpromises/1
+id: uk-virtual-remand-hearings-pilot-2026
+headline:
+  en: Pilot first hearings by video from police cells
+actor_id: hm-government
+made_on: "2026-10-12"
+venue: press_release
+venue_label:
+  en: Press release (Ministry of Justice)
+area: public_order
+status: promised
+status_note:
+  en: >-
+    Under Virtual Remand Hearings, defendants attend their first court hearing by secure video link
+    from a police custody suite instead of being taken to court. It is part of the government's
+    response, published 12 October 2026, to Lord Leveson's review of the criminal courts. The
+    release names neither the police force areas nor a start date.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Justice press release, 12 Oct 2026: Technology to bolster justice for victims as
+      government responds to Leveson
+    url: https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson
+versions:
+  - version: 1
+    text: >-
+      Recommended in Lord Leveson’s Review and backed by £17.4 million, the Government’s latest
+      technology drive will be piloted in at least four police force areas across the country.
+    recorded_on: "2026-10-12"
+    source_url: https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: >-
+          Defendants at their first court hearing, and the courts and police in at least four police
+          force areas
+      cost:
+        note:
+          en: >-
+            £17.4m in total, by the government's figure. The release gives no period, so no yearly
+            figure is shown.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The government says Virtual Remand Hearings, backed by £17.4m, will be piloted in at least
+        four police force areas
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,66 @@
+format: openpromises/1
+id: uk-jury-trials-kept-2026
+headline:
+  en: Keep juries for almost all Crown Court trials
+actor_id: hm-government
+made_on: "2026-10-12"
+venue: press_release
+venue_label:
+  en: Press release (Ministry of Justice)
+area: public_order
+status: promised
+status_note:
+  en: >-
+    Three Ministry of Justice releases on 12 October 2026 say the government will amend its own
+    Courts and Tribunals Bill, returning to Parliament on 13 October, to remove the proposals in it
+    to limit jury trials. The card moves to legislated when the Bill becomes law without them.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Justice press release, 12 Oct 2026: Technology to bolster justice for victims as
+      government responds to Leveson
+    url: https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson
+  - title: >-
+      Ministry of Justice press release, 12 Oct 2026: Trials across the country accelerated for fast
+      and fair justice
+    url: https://www.gov.uk/government/news/trials-across-the-country-accelerated-for-fast-and-fair-justice
+  - title: >-
+      Ministry of Justice press release, 12 Oct 2026: Remote hearings to unlock capacity and speed up
+      justice for victims
+    url: https://www.gov.uk/government/news/remote-hearings-to-unlock-capacity-and-speed-up-justice-for-victims
+versions:
+  - version: 1
+    text: >-
+      These announcements come as the Courts and Tribunals Bill returns to Parliament tomorrow,
+      where the Government will amend the Bill to remove proposals to limit jury trials, ensuring
+      almost all Crown Court cases continue to be heard by a jury.
+    recorded_on: "2026-10-12"
+    source_url: https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: Defendants, victims and jurors in Crown Court cases in England and Wales
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: When the Courts and Tribunals Bill returns to Parliament (13 October 2026)
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The government says it will amend the Courts and Tribunals Bill to remove its proposals to
+        limit jury trials
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

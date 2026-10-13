@@ -1,0 +1,59 @@
+format: openpromises/1
+id: uk-cap-leasehold-permission-fees-2026
+headline:
+  en: Cap permission fees and admin charges for leaseholders
+actor_id: matthew-pennycook
+made_on: "2026-10-12"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    Announced on 29 September 2026 as part of wider protections for leaseholders and homeowners on
+    privately managed estates. The law would give the Secretary of State powers to set caps; a
+    public consultation is to follow on what they cover and how high they are. No Bill or date has
+    been named.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS363, 12 Oct 2026: Improving housing availability and
+      affordability
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363
+versions:
+  - version: 1
+    text: >-
+      We will legislate to give the Secretary of State powers to cap exorbitant permission fees and
+      administration charges, with a public consultation to follow to help determine the scope and
+      level of those caps.
+    recorded_on: "2026-10-12"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: Leaseholders and homeowners on privately managed estates
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The Housing Minister says the government will legislate for powers to cap permission fees
+        and administration charges
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

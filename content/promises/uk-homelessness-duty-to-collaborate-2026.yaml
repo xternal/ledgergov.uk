@@ -1,0 +1,63 @@
+format: openpromises/1
+id: uk-homelessness-duty-to-collaborate-2026
+headline:
+  en: Public services must work together against homelessness
+actor_id: matthew-pennycook
+made_on: "2026-10-12"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The government confirmed on 28 September 2026 that it would amend the Social Housing Bill to
+    add the duty. It would require public services to identify people at risk of homelessness and
+    consider together what they could do to prevent it, within their existing responsibilities.
+    Councils would also get a power to refer homeless households to housing associations and other
+    private registered providers of social housing. The card moves to legislated when the Bill
+    becomes law with the duty.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS363, 12 Oct 2026: Improving housing availability and
+      affordability
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363
+versions:
+  - version: 1
+    text: >-
+      A new Duty to Collaborate will be incorporated into the Bill that will require public services
+      to work together to identify people at risk of homelessness and jointly consider what action
+      they could take, within their existing responsibilities, to help prevent it. Councils will
+      also be given a new power to refer homeless households to private registered providers of
+      social housing.
+    recorded_on: "2026-10-12"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: People at risk of homelessness in England, councils and other public services
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: When the Social Housing Bill becomes law (no date given)
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The Housing Minister says a Duty to Collaborate on homelessness prevention will be added to
+        the Social Housing Bill
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

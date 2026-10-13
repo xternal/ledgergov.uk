@@ -1,0 +1,58 @@
+format: openpromises/1
+id: uk-healthy-babies-every-hub-2026
+headline:
+  en: Healthy Babies support in every English family hub
+actor_id: karin-smyth
+made_on: "2026-10-12"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: health
+status: promised
+status_note:
+  en: >-
+    Healthy Babies runs in 75 local authorities today. It helps parents and carers with infant
+    feeding, parental mental health and bonding with their baby, during pregnancy and the first two
+    years. The statement gives no date or cost for taking it to every Best Start family hub.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS364, 12 Oct 2026: Health and care reviews, improvement and
+      regulation
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364
+versions:
+  - version: 1
+    text: >-
+      The Healthy Babies programme will be rolled out nationally to every Best Start family hub,
+      extending support based on Sure Start principles during pregnancy and the first two years of
+      life to families in every part of England.
+    recorded_on: "2026-10-12"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364
+    quote_checked_on: "2026-10-13"
+    parameters:
+      who:
+        en: Families in England during pregnancy and a baby's first two years
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The health minister says the Healthy Babies programme will be rolled out to every Best Start
+        family hub in England
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-13"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
