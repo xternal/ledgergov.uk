@@ -1,0 +1,68 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Counts are of drafts; every draft has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-10-12"
+triaged_on: "2026-10-13"
+by: Claude Opus 5.5, by hand (the trial run before the routine)
+pull_request: 107
+sources_read: 16
+candidates: 43
+outcomes:
+  card: 23
+  reworded: 1
+  duplicate: 6
+  existing: 1
+  grant: 3
+  done: 1
+  process: 6
+  broad: 1
+  event: 0
+  cap: 0
+  other: 1 # the second ADHD/CQC line from HCWS364, quoted in the reworded event
+quotes_exact: 23
+new_actors: [shabana-mahmood, angela-eagle, louise-haigh, ian-murray, karin-smyth]
+cards:
+  - uk-youth-hub-every-area-2029
+  - uk-flood-200k-properties-2029
+  - uk-flood-defences-condition-2029
+  - uk-jury-trials-kept-2026
+  - uk-virtual-remand-hearings-pilot-2026
+  - uk-crown-court-case-coordinators-2026
+  - uk-troubles-ag-consent-2026
+  - uk-information-defence-centre-2026
+  - uk-heaton-park-inquiry-2026
+  - uk-state-of-extremism-report-2026
+  - uk-national-security-bill-cyber-2026
+  - uk-national-police-service-2026
+  - uk-sfi-reopen-2027
+  - uk-water-company-share-limits-2026
+  - uk-community-trees-500k-2030
+  - uk-halve-consultancy-spend-2029
+  - uk-national-museums-free-2026
+  - uk-empty-homes-orders-2026
+  - uk-homelessness-duty-to-collaborate-2026
+  - uk-cap-leasehold-permission-fees-2026
+  - uk-regulate-property-agents-2026
+  - uk-healthy-babies-every-hub-2026
+  - uk-steps-to-safety-gp-2026
+reworded:
+  - uk-adhd-autism-cqc-2026
+dropped:
+  - { draft: 2026-10-12-govuk-new-missy-and-stanleys-tale-film-helps-the-public-prepare-fo-1, code: duplicate, into: uk-flood-200k-properties-2029 }
+  - { draft: 2026-10-12-govuk-remote-hearings-to-unlock-capacity-and-speed-up-justice-for--1, code: duplicate, into: uk-jury-trials-kept-2026 }
+  - { draft: 2026-10-12-govuk-trials-across-the-country-accelerated-for-fast-and-fair-just-1, code: duplicate, into: uk-jury-trials-kept-2026 }
+  - { draft: 2026-10-12-hansard-bad9e091-4, code: duplicate, into: uk-information-defence-centre-2026 }
+  - { draft: 2026-10-12-wms-hcws354-6, code: duplicate, note: waste tracking in Scotland and Northern Ireland, a date already set in regulations; the same line as wms-hcws361-1 }
+  - { draft: 2026-10-12-wms-hcws361-1, code: duplicate, note: the same line as wms-hcws354-6 }
+  - { draft: 2026-10-12-wms-hcws363-1, code: existing, into: uk-your-first-home-2026 }
+  - { draft: 2026-10-12-wms-hcws354-3, code: grant, note: Good Food Neighbourhoods, £10m to 45 councils }
+  - { draft: 2026-10-12-wms-hcws354-5, code: grant, note: £26m for Local Nature Recovery Strategies }
+  - { draft: 2026-10-12-wms-hcws364-3, code: grant, note: £15m for victim support through ICBs }
+  - { draft: 2026-10-12-hansard-bad9e091-1, code: done, note: police support for political figures who are not MPs, with immediate effect }
+  - { draft: 2026-10-12-wms-hcws356-2, code: process, note: departments to publish Insourcing Strategies, no date }
+  - { draft: 2026-10-12-wms-hcws356-3, code: process, note: ship procurement moves to the National Shipbuilding Office }
+  - { draft: 2026-10-12-wms-hcws358-1, code: process, note: lay an Order on telecoms supply as a public interest consideration }
+  - { draft: 2026-10-12-govuk-troubles-bill-reinforced-with-permanent-legal-protections-an-2, code: process, note: move the immunity repeal from the Remedial Order into the Bill }
+  - { draft: 2026-10-12-govuk-troubles-bill-reinforced-with-permanent-legal-protections-an-3, code: process, note: a veteran on the Victims and Survivors Advisory Group }
+  - { draft: 2026-10-12-wms-hcws363-4, code: process, note: social housing disposal notice from four to eight weeks }
+  - { draft: 2026-10-12-wms-hcws364-6, code: broad, note: implement all 44 recommendations on AI in healthcare }
+  - { draft: 2026-10-12-wms-hcws364-5, code: other, into: uk-adhd-autism-cqc-2026 }
