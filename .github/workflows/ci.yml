@@ -41,7 +41,11 @@ jobs:
             pnpm exec openpromises validate || true
           fi
       - run: pnpm typecheck
+      # The verification labels need the editors list at build time (docs/OPERATIONS.md §15); a fork's pull request
+      # gets an empty secret, and the build falls back to the wording without labels.
       - run: pnpm build
+        env:
+          OPENPROMISES_EDITORS_YAML: ${{ secrets.OPENPROMISES_EDITORS }}
 
   data:
     runs-on: ubuntu-latest

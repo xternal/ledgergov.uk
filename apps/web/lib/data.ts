@@ -1,5 +1,6 @@
 import "server-only";
 import { loadSeed } from "@ledger/schema/seed";
+import { readEditors, withVerification } from "@ledger/schema/verification";
 import { loadPeople } from "@ledger/schema/people";
 import { loadBorrowing } from "@ledger/schema/borrowing";
 import { loadForecasts, readBuildText, type ForecastData } from "@ledger/schema/forecasts";
@@ -12,12 +13,14 @@ import { buildRuns, vintageChangelog, type BuildRun, type Manifest, type Vintage
 
 /**
  * Seed data, parsed and cross-checked through the Zod schemas at build time.
- * A bad seed file fails the build rather than rendering wrong numbers.
+ * A bad seed file fails the build rather than rendering wrong numbers. Each card
+ * carries its verification label when the build has the private editors list
+ * (docs/OPERATIONS.md §15), and the earlier wording when it has not.
  */
 let cached: Seed | null = null;
 
 export function getSeed(): Seed {
-  cached ??= loadSeed();
+  cached ??= withVerification(loadSeed(), readEditors());
   return cached;
 }
 

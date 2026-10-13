@@ -25,6 +25,8 @@ Write new cards in v1. The easiest start is a published card of the same kind, o
 - **Parliament ids.** An actor who is or was an MP has `parliament_member_id`, and a party `parliament_party_id`, both from the UK Parliament Members API. The "Your MP" pages (`/mp/<constituency>`) use them to show an MP's own promises and their party's. One id, one actor.
 - **Contracts.** `links.contracts` lists the public contracts behind delivery by OCID, linked by hand (`docs/PROMISE_STANDARD.md` §10). The nightly job fetches them into `data/build/contracts/`; to fetch now, run `pnpm contracts`.
 - **Two editors** approve every pull request that touches this folder.
+- **Publishing by checks** (since 13 October 2026, OpenPromises 0.6.0). A card with `origin: manual` or `llm_intake` is published once every check passes, even before an editor has approved it on the card. It then needs its quote matched by a machine: a stored-source span, or `pnpm exec openpromises check-quote <id> --html <saved page> --record`, which must find the words exactly (docs/OPERATIONS.md §15). A reader's submission (`origin: reader_submission`) still needs two editors' approvals on the card before it is published.
+- **The label.** Each card says how far it has been verified: "Not yet verified by an editor", "Checked automatically by AI Journalist, not yet verified by an editor", "Verified by Pavel Guzhikov" or "Verified by Pavel Guzhikov and 1 independent editor". It is counted from the approvals in `reviews`; editors are named only if the private editors list says `named: true`.
 
 ## Drafts (`drafts/<date>/`)
 

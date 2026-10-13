@@ -245,6 +245,13 @@ export interface PromiseOut {
   replies: { from_actor_id: string; date: string; text: string; editor_response: string | null }[];
   corrections: { date: string; path: string; was: unknown; now: unknown; reason: string; source_url: string | null }[];
   contracts: string[];
+  /**
+   * How far the card has been verified (OpenPromises decision 23), counted from the editors' approvals on the card:
+   * level none, automated (only machines have checked it), editor or editors; text, the label as the card shows it;
+   * named, the editors who chose to be named; counted, how many others approved; automated, the automated reviewers;
+   * on, the day of the latest approval that counts. null when the site was built without its private editors list.
+   */
+  verification: { level: string; text: string; named: string[]; counted: number; automated: string[]; on: string | null } | null;
 }
 
 type Card = Seed["cards"][number];
@@ -301,6 +308,9 @@ export function promiseOut(c: Card, ctx: Ctx): PromiseOut {
     replies: f.replies.map((r) => ({ from_actor_id: r.from_actor_id, date: r.date, text: r.text, editor_response: r.editor_response ?? null })),
     corrections: f.corrections.map((x) => ({ date: x.date, path: x.path, was: x.was ?? null, now: x.now ?? null, reason: x.reason, source_url: x.source_url ?? null })),
     contracts: c.contracts.map((k) => k.key),
+    verification: c.verification
+      ? { level: c.verification.level, text: c.verification.text, named: c.verification.named, counted: c.verification.counted, automated: c.verification.automated, on: c.verification.on }
+      : null,
   };
 }
 
