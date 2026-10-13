@@ -1,0 +1,41 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/hansard-54fb2edb.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-12"
+source:
+  id: hansard-54fb2edb
+  kind: hansard_statement
+  url: https://hansard.parliament.uk/Commons/2026-10-12/debates/54FB2EDB-83AF-40FE-8A98-A914AD221CD7/InternationalUpdate
+  title: International Update
+  date: "2026-10-12"
+  venue_label: Commons statement
+quote: >-
+  It is why, in my speech to the UN General Assembly, I confirmed our commitment to establish a new
+  centre for information defence, as recommended by the Foreign Affairs Select Committee.
+source_span: [2601, 2786]
+speaker:
+  name: Andy Burnham
+  role: Prime Minister
+  party: null
+  member_id: 1427
+  actor_id: andy-burnham
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: defence
+  who: null
+  how_much: null
+  when: null
+  funded_by: null
+  deadline: null
+why: >-
+  Restates an earlier commitment, made in the PM's UN General Assembly speech, to set up a new
+  national centre for information defence; editors should quote the original.
+confidence: 0.6
+model: claude-opus-5-5
+status: to_review

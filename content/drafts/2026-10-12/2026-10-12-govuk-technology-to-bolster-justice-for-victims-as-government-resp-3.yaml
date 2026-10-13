@@ -1,0 +1,42 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-technology-to-bolster-justice-for-victims-as-government-resp.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-12"
+source:
+  id: govuk-technology-to-bolster-justice-for-victims-as-government-resp
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson
+  title: Technology to bolster justice for victims as government responds to Leveson
+  date: "2026-10-12"
+  venue_label: Press release (Ministry of Justice)
+quote: >-
+  These announcements come as the Courts and Tribunals Bill returns to Parliament tomorrow, where
+  the Government will amend the Bill to remove proposals to limit jury trials, ensuring almost all
+  Crown Court cases continue to be heard by a jury.
+source_span: [3786, 4028]
+speaker:
+  name: HM Government
+  role: Ministry of Justice
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: public_order
+  who: defendants in Crown Court cases
+  how_much: null
+  when: as the Bill returns to Parliament tomorrow (13 October 2026)
+  funded_by: null
+  deadline: null
+why: >-
+  The Government will amend the Courts and Tribunals Bill to remove its proposals to limit jury
+  trials.
+confidence: 0.75
+model: claude-opus-5-5
+status: to_review

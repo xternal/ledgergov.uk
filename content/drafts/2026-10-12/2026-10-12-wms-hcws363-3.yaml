@@ -1,0 +1,43 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws363.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-12"
+source:
+  id: wms-hcws363
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363
+  title: Improving housing availability and affordability
+  date: "2026-10-12"
+  venue_label: Written ministerial statement
+quote: >-
+  A new Duty to Collaborate will be incorporated into the Bill that will require public services to
+  work together to identify people at risk of homelessness and jointly consider what action they
+  could take, within their existing responsibilities, to help prevent it. Councils will also be
+  given a new power to refer homeless households to private registered providers of social housing.
+source_span: [3191, 3575]
+speaker:
+  name: Matthew Pennycook
+  role: Minister of State for Housing and Planning
+  party: Labour
+  member_id: 4520
+  actor_id: matthew-pennycook
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: housing_env
+  who: public services, councils, people at risk of homelessness
+  how_much: null
+  when: null
+  funded_by: null
+  deadline: null
+why: >-
+  Restates the 28 September commitment to add a Duty to Collaborate on homelessness prevention and a
+  council referral power to the Social Housing Bill.
+confidence: 0.75
+model: claude-opus-5-5
+status: to_review
