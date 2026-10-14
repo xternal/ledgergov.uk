@@ -1,0 +1,39 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws372.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-13"
+source:
+  id: wms-hcws372
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372
+  title: Make Work Pay Implementation
+  date: "2026-10-13"
+  venue_label: Written ministerial statement
+quote: It is our intention that these changes will take effect in autumn 2027.
+source_span: [7851, 7922]
+speaker:
+  name: Kate Dearden
+  role: Minister for the Future of Work
+  party: Labour
+  member_id: 5224
+  actor_id: labour
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: economic_affairs
+  who: employers and employees making flexible working requests
+  how_much: null
+  when: autumn 2027
+  funded_by: null
+  deadline: null
+why: >-
+  Secondary legislation setting a process employers must follow before rejecting a statutory
+  flexible working request, and the reasonableness test, will take effect in autumn 2027.
+confidence: 0.65
+model: claude-opus-5-5
+status: to_review

@@ -1,0 +1,42 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws370.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-13"
+source:
+  id: wms-hcws370
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS370
+  title: Flood Action Week 2026
+  date: "2026-10-13"
+  venue_label: Written ministerial statement
+quote: >-
+  Between April 2026 and March 2029, the Government will invest £4.2 billion in flood resilience,
+  maintaining existing assets while delivering new flood schemes across every region of England.
+source_span: [4753, 4943]
+speaker:
+  name: Emma Hardy
+  role: Minister for Water and Flooding
+  party: Labour
+  member_id: 4645
+  actor_id: labour
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: housing_env
+  who: communities across every region of England
+  how_much: £4.2 billion
+  when: Between April 2026 and March 2029
+  funded_by: null
+  deadline: "2029-03-31"
+why: >-
+  The Government commits to investing £4.2 billion in flood resilience between April 2026 and March
+  2029, setting three-year targets within its previously announced ten-year flood and coastal
+  erosion investment programme.
+confidence: 0.75
+model: claude-opus-5-5
+status: to_review

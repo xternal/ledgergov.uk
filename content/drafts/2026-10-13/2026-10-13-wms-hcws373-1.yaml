@@ -1,0 +1,51 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws373.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-13"
+source:
+  id: wms-hcws373
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS373
+  title: >-
+    Notification of a Contingent Liability: African Development Bank General Callable Capital
+    Increase 2024
+  date: "2026-10-13"
+  venue_label: Written ministerial statement
+quote: >-
+  The Foreign, Commonwealth and Development Office (FCDO) proposes to increase the United Kingdom’s
+  callable capital commitment to the African Development Bank (AfDB) as part of the General Callable
+  Capital Increase agreed by shareholders in 2024 (GCCI 2024). This will result in an additional
+  contingent liability of approximately £1.6 billion, reflecting the UK’s 1.87% share of the total
+  increase.
+source_span: [479, 877]
+speaker:
+  name: Kirsty McNeill
+  role: Minister of State for International Development
+  party: Labour
+  member_id: 5114
+  actor_id: labour
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: general_services
+  who: African Development Bank
+  how_much: >-
+    approximately £1.6 billion additional contingent liability, bringing the UK's total callable
+    capital commitment to approximately £3.3 billion
+  when: >-
+    after fourteen Parliamentary sitting days from the laying of the Minute, subject to any objection
+  funded_by: >-
+    No immediate expenditure; if called, provision sought through the normal Supply procedure
+  deadline: null
+why: >-
+  The UK will raise its callable capital commitment to the African Development Bank by about £1.6
+  billion, to a total of about £3.3 billion, implementing the shareholder agreement made in 2024
+  (restates an earlier commitment).
+confidence: 0.5
+model: claude-opus-5-5
+status: to_review
