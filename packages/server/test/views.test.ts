@@ -167,4 +167,15 @@ describe("the most read pages", () => {
     expect(topPages(file, 30)[0]).toEqual({ path: "/tax", views: 100 });
     expect(totalViews(file, 2)).toBe(13);
   });
+
+  it("counts calendar days back from the file's date, not the newest days that had views", () => {
+    // 1 October is 12 days before 13 October: outside the last 7 or 12 days, inside the last 13.
+    expect(topPages(file, 7)).toEqual([
+      { path: "/promises", views: 6 },
+      { path: "/", views: 5 },
+      { path: "/budget", views: 2 },
+    ]);
+    expect(totalViews(file, 12)).toBe(13);
+    expect(totalViews(file, 13)).toBe(113);
+  });
 });

@@ -63,16 +63,23 @@ export interface ViewsFile {
   days: ViewsDay[];
 }
 
-/** Pages by views over the newest `days` days, most read first. */
+const DAY_MS = 86_400_000;
+
+/**
+ * Pages by views over the last `days` UTC days up to the file's own date, today included, most read first. Counted by
+ * calendar date, not by the newest days in the file: days with no views are left out of it, so on a quiet week the
+ * newest seven entries can reach back weeks.
+ */
 export function topPages(file: ViewsFile, days: number): { path: string; views: number }[] {
+  const from = new Date(new Date(file.generated_at).getTime() - (days - 1) * DAY_MS).toISOString().slice(0, 10);
   const totals = new Map<string, number>();
-  for (const d of [...file.days].sort((a, b) => b.date.localeCompare(a.date)).slice(0, days)) {
+  for (const d of file.days.filter((x) => x.date >= from)) {
     for (const [path, n] of Object.entries(d.pages)) totals.set(path, (totals.get(path) ?? 0) + n);
   }
   return [...totals.entries()].map(([path, views]) => ({ path, views })).sort((a, b) => b.views - a.views || a.path.localeCompare(b.path));
 }
 
-/** All views over the newest `days` days. */
+/** All views over the last `days` UTC days up to the file's own date. */
 export const totalViews = (file: ViewsFile, days: number) => topPages(file, days).reduce((s, p) => s + p.views, 0);
 
 /** The Upstash REST address and tokens, as the Vercel integration names them; null when the counter is not connected. */
@@ -100,8 +107,6 @@ async function pipeline(counter: Counter, commands: string[][], token: string, f
 export async function countView(counter: Counter, path: string, now = new Date(), f: Fetch = fetch): Promise<void> {
   await pipeline(counter, [["HINCRBY", dayKey(now), path, "1"]], counter.writeToken, f);
 }
-
-const DAY_MS = 86_400_000;
 
 /** The last VIEWS_DAYS days' totals, newest first; days with no views are left out. */
 export async function readViews(counter: Counter, now = new Date(), f: Fetch = fetch): Promise<ViewsFile> {
