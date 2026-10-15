@@ -18,21 +18,26 @@ The plan for **Wednesday 28 October 2026**, the day of the Autumn Budget (date: 
 | Evening or next morning | Two editors review and approve; the owner merges | Editors, owner |
 | Within an hour of merge | `/budget`, the cards and the feeds update; follow emails go out | Automatic |
 
-### Who does what (decided 12 October 2026)
+### Who does what (decided 12 October 2026; moved to cloud routines on 15 October 2026)
 
-Scheduled tasks on Pavel's Mac do the typing and the runs; people do the checking. Each task opens a pull request that does not merge by itself, and reports with the exact merge command. The Mac must be awake with the Claude app open.
+Claude cloud routines (claude.ai/code/routines, on Pavel's account) do the typing and the runs; people do the checking. Each routine opens a pull request that does not merge by itself, and reports with the exact merge command. They run in Anthropic's cloud, so Pavel's Mac no longer needs to be awake. Each was tested on 15 October: a run started before its date only checks its tools and changes nothing.
 
-| When (GMT) | Scheduled task | What it does | Who checks |
+| When (GMT) | Routine | What it does | Who checks |
 |---|---|---|---|
-| Wed 21 Oct, 09:15 BST | `ledgergov-ons-borrowing-2026-10-21` | Checks the morning's data pull request brought ONS's September public finances, and that /borrowing's figures match the ONS bulletin | Pavel merges the data pull request if they match |
-| Tue 27 Oct, 10:00 | `budget-2026-household-prep` | Re-tests PolicyEngine if its API moved, refreshes the household templates, starts the 2026 measures file on its branch, rehearses the "no model" fallback offline | Nothing to check unless it reports a change |
-| Wed 28 Oct, 14:00 | `budget-day-2026-scorecard` | Reads the Treasury's total from the PDF page as a picture, separately from the parser, then runs the scorecard (runbook below) | Pavel retypes the total from the PDF and checks three lines, then merges |
-| Wed 28 Oct, 14:30 | `budget-2026-household-run` | Types every tax and benefit measure with its page, runs PolicyEngine (again every 10 minutes while it is down), opens the pull request; from 19:30 re-checks every rate against HMRC's notes | Pavel and Goodwill Stranger check every value against its page, then merge |
-| Wed 28 Oct, 17:00 | `budget-day-2026-drafts` | Drafts the card changes, with rates from the Budget document or HMRC's notes when OOTLAR is not out | Two editors approve, as for every card |
-| Thu 29 Oct, 05:00 | `budget-2026-household-fallback` | If the household pull request is not merged, turns it into the fallback: the households and the Treasury's chart if PolicyEngine answered (deciles follow); if it cannot be reached at all, the page without the model (the measures, the salary check and the Treasury's chart; the rest follows) | Pavel and Goodwill Stranger, a short review before 07:00 |
-| Thu 29 Oct, 09:00 | `budget-2026-household-refill` | If the household page went out without the model or with its deciles held, runs PolicyEngine again and opens the full page's pull request | Pavel and Goodwill Stranger check the results, then merge |
+| Mon 19 to Tue 27 Oct, 09:51 UK time | Leak tracker: draft today's Budget leaks | Drafts the day's new leak entries, with sources and archived copies, as one pull request | Two editors approve |
+| Wed 21 Oct, 14:13 BST | ONS day: check the new borrowing figures | Checks the morning's data pull request brought ONS's September public finances, and that /borrowing's figures match the ONS bulletin | Pavel merges the data pull request if they match |
+| Tue 27 Oct, 10:00 | Budget eve: prepare the household page | Re-tests PolicyEngine if its API moved, refreshes the household templates, starts the 2026 measures file on its branch and pushes it, rehearses the "no model" fallback offline | Nothing to check unless it reports a change |
+| Wed 28 Oct, 14:00 | Budget day: the Treasury's scorecard | Reads the Treasury's total from the PDF page as a picture, separately from the parser, then runs the scorecard (runbook below) | Pavel retypes the total from the PDF and checks three lines, then merges |
+| Wed 28 Oct, 14:30 | Budget day: the household run, part 1 of 3 | Types every tax and benefit measure with its page, runs PolicyEngine (again every 10 minutes while it is down, until 17:00), opens the pull request | Pavel and Goodwill Stranger check every value against its page, then merge |
+| Wed 28 Oct, 17:00 | Budget day: draft the card updates | Drafts the card changes, with rates from the Budget document or HMRC's notes when OOTLAR is not out | Two editors approve, as for every card |
+| Wed 28 Oct, 19:45 | Budget day: the household run, part 2 of 3 | Re-checks every rate against HMRC's notes until 21:30, fixes and re-runs if one differs, and comments on the pull request | As part 1 |
+| Wed 28 Oct, 22:00 | Budget day: the household run, part 3 of 3 | If PolicyEngine has still not answered, builds the page without the model so the editors can review tonight, then retries until 23:30 | As part 1 |
+| Thu 29 Oct, 05:00 | Morning after: household page fallback check | If the household pull request is not merged, turns it into the fallback: the households and the Treasury's chart if PolicyEngine answered (deciles follow); if it cannot be reached at all, the page without the model (the measures, the salary check and the Treasury's chart; the rest follows) | Pavel and Goodwill Stranger, a short review before 07:00 |
+| Thu 29 Oct, 09:00 | Morning after: refill the household page | If the household page went out without the model or with its deciles held, runs PolicyEngine again and opens the full page's pull request | Pavel and Goodwill Stranger check the results, then merge |
+| Thu 29 Oct, 10:30 | Morning after: score the predictions and the leaks | Answers the 10 prediction questions and gives each leak its outcome, from the documents, as one pull request | Two editors approve |
+| Fri 30 Oct, 09:00 | After the Budget: draft cards for its new promises | Drafts a card for each new commitment, with its deadline or "no date given" and its cost | Two editors approve and merge |
 
-Each task checks that nothing else is building before it builds, so the three on Wednesday afternoon take turns.
+Each routine runs on its own cloud machine, so the three on Wednesday afternoon no longer wait for each other. The household run is split into three routines because one cloud run may not last nine hours; parts 2 and 3 carry on from the `budget-2026-household` branch on GitHub. The routines cannot read the private editors list, so they skip `openpromises validate` and read CI's checks after pushing (CI has the list as a secret).
 
 ## The documents to read
 
