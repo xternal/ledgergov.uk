@@ -1,0 +1,43 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-major-milestone-reached-in-ending-building-safety-crisis.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-14"
+source:
+  id: govuk-major-milestone-reached-in-ending-building-safety-crisis
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/major-milestone-reached-in-ending-building-safety-crisis
+  title: Major milestone reached in ending building safety crisis
+  date: "2026-10-14"
+  venue_label: Press release (Ministry of Housing, Communities and Local Government)
+quote: >-
+  Fire risk appraisals of external walls (FRAEWs) – which help determine whether remediation is
+  needed – will be required to follow a consistent approach to assessment, where buildings are
+  judged on the same basis, and risks identified through independently audited, evidence-based
+  assessments.
+source_span: [3443, 3735]
+speaker:
+  name: HM Government
+  role: Ministry of Housing, Communities and Local Government
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: housing_env
+  who: null
+  how_much: null
+  when: null
+  funded_by: null
+  deadline: null
+why: >-
+  The Bill will require fire risk appraisals of external walls (FRAEWs) to follow a consistent,
+  independently audited assessment approach.
+confidence: 0.5
+model: claude-opus-5-5
+status: to_review

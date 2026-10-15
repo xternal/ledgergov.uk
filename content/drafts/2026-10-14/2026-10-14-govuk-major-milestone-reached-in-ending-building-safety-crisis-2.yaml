@@ -1,0 +1,42 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-major-milestone-reached-in-ending-building-safety-crisis.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-14"
+source:
+  id: govuk-major-milestone-reached-in-ending-building-safety-crisis
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/major-milestone-reached-in-ending-building-safety-crisis
+  title: Major milestone reached in ending building safety crisis
+  date: "2026-10-14"
+  venue_label: Press release (Ministry of Housing, Communities and Local Government)
+quote: >-
+  In addition, there will be a stronger enforcement framework to sanction responsible entity that
+  fail to comply with a Remediation Order, enabling the First-tier Tribunal to hand down financial
+  penalties of up to £500,000.
+source_span: [1802, 2023]
+speaker:
+  name: HM Government
+  role: Ministry of Housing, Communities and Local Government
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: housing_env
+  who: Responsible entities failing to comply with Remediation Orders
+  how_much: penalties of up to £500,000
+  when: null
+  funded_by: null
+  deadline: null
+why: >-
+  Through the Remediation of Unsafe Cladding Bill, the First-tier Tribunal will gain the power to
+  fine those who fail to comply with a Remediation Order up to £500,000.
+confidence: 0.65
+model: claude-opus-5-5
+status: to_review

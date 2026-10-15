@@ -1,0 +1,42 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/hansard-0bfda327.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-14"
+source:
+  id: hansard-0bfda327
+  kind: hansard_pmqs
+  url: https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements
+  title: Engagements
+  date: "2026-10-14"
+  venue_label: Prime Minister's Questions
+quote: >-
+  This might sound disappointing, as we will not be taking forward her specific suggestion, but we
+  will be bringing forward four new community mental health centres across Hertfordshire, as part of
+  159 across the country.
+source_span: [23084, 23303]
+speaker:
+  name: Andy Burnham
+  role: Prime Minister
+  party: null
+  member_id: 1427
+  actor_id: andy-burnham
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: health
+  who: People needing mental health support in Hertfordshire and across the country
+  how_much: null
+  when: null
+  funded_by: null
+  deadline: null
+why: >-
+  Commits to opening four new community mental health centres in Hertfordshire, part of 159
+  nationally.
+confidence: 0.75
+model: claude-opus-5-5
+status: to_review
