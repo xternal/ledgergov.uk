@@ -1,0 +1,65 @@
+format: openpromises/1
+id: uk-bereavement-leave-2027
+headline:
+  en: Day-one right to bereavement leave from April 2027
+actor_id: kate-dearden
+made_on: "2026-10-13"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The Employment Rights Act 2025 gives the power to create a day-one right to bereavement leave
+    for the loss of loved ones, including pregnancy loss before 24 weeks; currently only parents who
+    lose a child aged under 18, or stillborn from 24 weeks, have a statutory right. The government's
+    consultation response, published on 22 September 2026, sets the final details, to be laid in
+    secondary legislation; the statement does not give the length of leave. "In April 2027" is read
+    as 30 April 2027. The card moves when the regulations are made.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS372, 13 Oct 2026: Make Work Pay Implementation
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372
+versions:
+  - version: 1
+    text: >-
+      It sets out the final details of the bereavement leave entitlement, and the next steps for its
+      implementation. These details will be laid out in secondary legislation and are planned to
+      come into force in April 2027.
+    recorded_on: "2026-10-13"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: Employees who lose a loved one, including through pregnancy loss before 24 weeks
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Planned to come into force in April 2027
+      deadline: "2027-04-30"
+      funded_by: null
+events:
+  - date: "2026-10-13"
+    type: promised
+    text:
+      en: >-
+        The minister for the future of work says the bereavement leave entitlement is planned to
+        come into force in April 2027
+  - date: "2027-04-30"
+    type: deadline
+    text:
+      en: Day-one bereavement leave due in force in April 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

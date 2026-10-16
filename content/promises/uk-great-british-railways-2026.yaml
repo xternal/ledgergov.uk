@@ -1,0 +1,58 @@
+format: openpromises/1
+id: uk-great-british-railways-2026
+headline:
+  en: Create Great British Railways and a passenger watchdog
+actor_id: heidi-alexander
+made_on: "2026-10-13"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The Railways Bill is "currently making its way through Parliament". The Transport Secretary says
+    it will lead to Great British Railways, a new publicly owned body that unifies track and train
+    and is accountable to passengers, freight customers and taxpayers, and to a new passenger
+    watchdog. The statement gives no date. The card moves to legislated when the Bill becomes law.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS369, 13 Oct 2026: Transfer of Chiltern Railways’ Services
+      into Public Ownership
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS369
+versions:
+  - version: 1
+    text: >-
+      The Railways Bill, currently making its way through Parliament, will lead to the establishment
+      of Great British Railways (GBR), a new publicly-owned body and a new passenger watchdog.
+    recorded_on: "2026-10-13"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS369
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: Rail passengers, freight customers and taxpayers
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Through the Railways Bill, now before Parliament (no date given)
+      funded_by: null
+events:
+  - date: "2026-10-13"
+    type: promised
+    text:
+      en: >-
+        The Transport Secretary says the Railways Bill will establish Great British Railways and a
+        new passenger watchdog
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

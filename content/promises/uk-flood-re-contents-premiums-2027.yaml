@@ -1,0 +1,66 @@
+format: openpromises/1
+id: uk-flood-re-contents-premiums-2027
+headline:
+  en: Cut Bands A–B flood contents premiums to £25
+actor_id: hm-government
+made_on: "2026-10-13"
+venue: press_release
+venue_label:
+  en: Press release (Department for Environment, Food & Rural Affairs)
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    A restatement: the release says the government and Flood Re unveiled these plans earlier this
+    year, to keep flood insurance fair, affordable and sustainable. Premiums for contents cover in
+    Council Tax Bands A and B are to be more than halved, to £25, to support lower-income households
+    and renters, with insurers expected to pass the savings on to customers. "From April 2027" is
+    read as 1 April 2027. The card moves when the new premiums apply.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Defra press release, 13 Oct 2026: New pioneering certificates to help homeowners cut flood
+      risk
+    url: https://www.gov.uk/government/news/new-pioneering-certificates-to-help-homeowners-cut-flood-risk
+versions:
+  - version: 1
+    text: >-
+      This includes more than halving premiums for contents cover policies in Council Tax Bands A
+      and B, to £25, from April 2027.
+    recorded_on: "2026-10-13"
+    source_url: https://www.gov.uk/government/news/new-pioneering-certificates-to-help-homeowners-cut-flood-risk
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: >-
+          Contents insurance policies in Council Tax Bands A and B; meant to support lower-income
+          households and renters
+      cost:
+        note:
+          en: No cost has been published. £25 is the new premium, not a cost to the government.
+      when:
+        en: From April 2027
+      deadline: "2027-04-01"
+      funded_by: null
+events:
+  - date: "2026-10-13"
+    type: promised
+    text:
+      en: >-
+        The government and Flood Re restate the plan to more than halve premiums for contents cover
+        in Council Tax Bands A and B, to £25, from April 2027
+  - date: "2027-04-01"
+    type: deadline
+    text:
+      en: Contents cover premiums in Council Tax Bands A and B due to fall to £25 from April 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,15 @@
+format: openpromises/1
+id: kate-dearden
+kind: person
+name:
+  en: Kate Dearden
+party_id: labour
+# The role is the speaker's role in the draft, from Parliament's own record of this statement;
+# the stored statement text does not print it, so there is no quote. An editor can add one.
+roles:
+  - title:
+      en: Minister for the Future of Work
+    source:
+      url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372
+identifiers:
+  parliament_member_id: 5224

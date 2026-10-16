@@ -1,0 +1,62 @@
+format: openpromises/1
+id: uk-state-pension-no-income-tax-2026
+headline:
+  en: Basic state pension-only pensioners pay no income tax
+actor_id: pat-mcfadden
+made_on: "2026-10-13"
+venue: parliament
+venue_label:
+  en: Commons statement
+area: taxes
+status: promised
+status_note:
+  en: >-
+    Answering a question after his statement on the triple lock, the Work and Pensions Secretary
+    said the Prime Minister and Chancellor have made clear that people purely reliant on the basic
+    state pension for their income will not have to pay income tax for the duration of this
+    Parliament. The MP who asked said the government had said this more than once. He said the
+    Chancellor will announce further details at the Budget; the source gives no Budget date and no
+    date for the end of the Parliament, so the card has no deadline. The card moves when the Budget
+    sets out the details.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Hansard, House of Commons, 13 Oct 2026: Pensions Triple Lock (Work and Pensions Secretary's
+      statement)
+    url: https://hansard.parliament.uk/Commons/2026-10-13/debates/72F06588-BF33-4C21-8542-EE9E1293D7C9/PensionsTripleLock
+versions:
+  - version: 1
+    text: >-
+      For those who are purely reliant on the basic state pension for their income, the Prime
+      Minister and Chancellor have made clear that they will not have to pay income tax for the
+      duration of this Parliament. The Chancellor will announce further details at the Budget.
+    recorded_on: "2026-10-13"
+    source_url: https://hansard.parliament.uk/Commons/2026-10-13/debates/72F06588-BF33-4C21-8542-EE9E1293D7C9/PensionsTripleLock
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: Pensioners whose only income is the basic state pension
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: For the duration of this Parliament (end date not stated)
+      funded_by: null
+events:
+  - date: "2026-10-13"
+    type: promised
+    text:
+      en: >-
+        The Work and Pensions Secretary says people purely reliant on the basic state pension will
+        not pay income tax for the duration of this Parliament
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

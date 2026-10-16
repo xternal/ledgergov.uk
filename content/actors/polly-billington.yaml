@@ -1,0 +1,15 @@
+format: openpromises/1
+id: polly-billington
+kind: person
+name:
+  en: Polly Billington
+party_id: labour
+# The role is the speaker's role in the draft, from Parliament's own record of this statement;
+# the stored statement text does not print it, so there is no quote. An editor can add one.
+roles:
+  - title:
+      en: Minister for Energy Consumers
+    source:
+      url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS366
+identifiers:
+  parliament_member_id: 5123

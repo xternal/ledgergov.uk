@@ -1,0 +1,65 @@
+format: openpromises/1
+id: uk-union-rights-statement-2027
+headline:
+  en: Tell workers in writing of their union rights
+actor_id: kate-dearden
+made_on: "2026-10-13"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The Employment Rights Act 2025 puts a new duty on employers to give workers a written statement
+    about their right to join a trade union. The government's consultation response, published on 25
+    September, provides for a standard statement drafted by the government, covering what trade
+    unions do, recognised unions, the Certification Officer's list and statutory rights on
+    membership. The duty is planned to come into force on 1 January 2027 for new workers, with
+    existing workers to receive the statement by 6 April 2027. The card moves when the duty comes
+    into force.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS372, 13 Oct 2026: Make Work Pay Implementation
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372
+versions:
+  - version: 1
+    text: >-
+      The duty is planned to come into force on 1 January 2027 with employers required to give the
+      statement to new workers from its introduction and to existing workers by 6 April 2027.
+    recorded_on: "2026-10-13"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: Workers, new and existing, and their employers
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: In force on 1 January 2027 for new workers; existing workers by 6 April 2027
+      deadline: "2027-04-06"
+      funded_by: null
+events:
+  - date: "2026-10-13"
+    type: promised
+    text:
+      en: >-
+        The minister for the future of work says the duty to tell workers of their right to join a
+        trade union is planned to come into force on 1 January 2027
+  - date: "2027-04-06"
+    type: deadline
+    text:
+      en: Existing workers due to receive the trade union statement by 6 April 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

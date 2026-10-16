@@ -1,0 +1,62 @@
+format: openpromises/1
+id: uk-flexible-working-rules-2027
+headline:
+  en: Rules for refusing flexible working from autumn 2027
+actor_id: kate-dearden
+made_on: "2026-10-13"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    Under the Employment Rights Act 2025, employers may reject a flexible working request only where
+    it is reasonable to do so. The government will introduce secondary legislation setting out a
+    process employers must follow before rejecting a statutory request, and bring the Act's
+    reasonableness test into force; its consultation response was published on 15 September. "Autumn
+    2027" is read as 30 November 2027. The card moves when the regulations are made.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS372, 13 Oct 2026: Make Work Pay Implementation
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372
+versions:
+  - version: 1
+    text: >-
+      It is our intention that these changes will take effect in autumn 2027.
+    recorded_on: "2026-10-13"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: Employees who make statutory flexible working requests, and their employers
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Intended to take effect in autumn 2027
+      deadline: "2027-11-30"
+      funded_by: null
+events:
+  - date: "2026-10-13"
+    type: promised
+    text:
+      en: >-
+        The minister for the future of work says the process for rejecting flexible working requests
+        and the reasonableness test are intended to take effect in autumn 2027
+  - date: "2027-11-30"
+    type: deadline
+    text:
+      en: Flexible working process and reasonableness test due to take effect in autumn 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

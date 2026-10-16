@@ -1,0 +1,75 @@
+format: openpromises/1
+id: uk-quantum-apprentices-150-2030
+headline:
+  en: Train 150 quantum engineering apprentices by 2030
+actor_id: hm-government
+made_on: "2026-10-13"
+venue: press_release
+venue_label:
+  en: Press release (Department for Business, Innovation, Science and Trade)
+area: education
+status: promised
+status_note:
+  en: >-
+    UK Research and Innovation (UKRI) is expanding its QuEST Apprentices Programme by £8m, to help
+    employers train the engineering technicians and specialist quantum technicians the industry
+    needs. The release says the scheme "aims to" equip 150 apprentices studying engineering subjects
+    by 2030; "by 2030" is read as 31 December 2030. It does not say how many apprentices the
+    programme has now or when the expansion starts. The card moves when UKRI reports apprentice
+    numbers.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Business, Innovation, Science and Trade press release, 13 Oct 2026: Quantum
+      firms backed to keep railways running and cut waiting lists as UK harnesses potential of
+      future tech
+    url: https://www.gov.uk/government/news/quantum-firms-backed-to-keep-railways-running-and-cut-waiting-lists-as-uk-harnesses-potential-of-future-tech
+versions:
+  - version: 1
+    text: >-
+      Meanwhile an £8 million expansion of UKRI’s QuEST Apprentices Programme will create new routes
+      into skilled quantum jobs, helping employers train the engineering technicians and specialist
+      quantum technicians needed to build, maintain and commercialise these technologies.
+
+      By 2030 the scheme aims to equip 150 apprentices studying engineering subjects with the
+      ability to support the growing UK quantum workforce, helping to maintain Britain as a global
+      leader in the technology.
+    recorded_on: "2026-10-13"
+    source_url: https://www.gov.uk/government/news/quantum-firms-backed-to-keep-railways-running-and-cut-waiting-lists-as-uk-harnesses-potential-of-future-tech
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: Apprentices studying engineering subjects, and employers training quantum technicians
+      cost:
+        note:
+          en: >-
+            The government's own figure: an £8m expansion of UKRI's QuEST Apprentices Programme. The
+            release gives no period, so no yearly figure is shown.
+      when:
+        en: By 2030
+      deadline: "2030-12-31"
+      funded_by:
+        en: >-
+          An £8m expansion of UKRI's QuEST Apprentices Programme
+events:
+  - date: "2026-10-13"
+    type: promised
+    text:
+      en: >-
+        The government announces an £8m expansion of UKRI's QuEST Apprentices Programme, aiming to
+        equip 150 engineering apprentices for the quantum workforce by 2030
+  - date: "2030-12-31"
+    type: deadline
+    text:
+      en: 150 apprentices due to be equipped through the QuEST Apprentices Programme by 2030
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
