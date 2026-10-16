@@ -1,0 +1,63 @@
+format: openpromises/1
+id: uk-foster-places-10k-2026
+headline:
+  en: Create 10,000 new foster places this Parliament
+actor_id: hm-government
+made_on: "2026-10-14"
+venue: press_release
+venue_label:
+  en: Press release (Department for Education)
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    The release calls this the government's ambition, so the target is not new; it does not say when
+    it was first set. It came with a national campaign to recruit foster carers, launched at 10
+    Downing Street on 13 October 2026, and says the number of approved foster carers has fallen by
+    12% since 2019. The release gives no date for the end of this Parliament and no count of places
+    so far, so the card has no deadline. The card moves when the government reports how many new
+    foster places have been created.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Education press release, 14 Oct 2026: National call to recruit more foster
+      carers launched at Number 10
+    url: https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10
+versions:
+  - version: 1
+    text: >-
+      This is why the government aims to create 10,000 new foster places by the end of this
+      parliament.
+    recorded_on: "2026-10-14"
+    source_url: https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: Children in the care system in England, and people who could become foster carers
+      cost:
+        note:
+          en: >-
+            No cost is given for the 10,000 places. The release says the Department for Education is
+            providing £88 million of funding to reform fostering, including £12.4 million for the
+            Fostering Innovation Fund, without saying over what period.
+      when:
+        en: By the end of this Parliament
+      funded_by: null
+events:
+  - date: "2026-10-14"
+    type: promised
+    text:
+      en: >-
+        The government says it aims to create 10,000 new foster places by the end of this
+        Parliament, as it launches a national campaign to recruit foster carers
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

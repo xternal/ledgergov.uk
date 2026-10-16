@@ -1,0 +1,72 @@
+format: openpromises/1
+id: uk-cladding-remediation-2029
+headline:
+  en: Unsafe cladding fixed or scheduled by 2029
+actor_id: hm-government
+made_on: "2026-10-14"
+venue: press_release
+venue_label:
+  en: Press release (Ministry of Housing, Communities and Local Government)
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The release says this expectation "remains", so the target is not new; it does not say when it
+    was first set. It came as the Remediation of Unsafe Cladding Bill was introduced to Parliament
+    on 14 October 2026; the release says the key change is that tougher powers will become available
+    before the end of 2029. It also says over 470 more buildings are reported to have completed
+    cladding remediation since the Remediation Acceleration Plan was published. The card moves when
+    the government reports how many buildings over 11 metres are remediated or have a completion
+    date.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government press release, 14 Oct 2026: Major
+      milestone reached in ending building safety crisis
+    url: https://www.gov.uk/government/news/major-milestone-reached-in-ending-building-safety-crisis
+versions:
+  - version: 1
+    text: >-
+      The expectation remains that by the end of 2029, every building over 11 metres with unsafe
+      cladding should either have been remediated or have a clear date for completion – the key
+      change being that tougher powers will become available before this.
+    recorded_on: "2026-10-14"
+    source_url: https://www.gov.uk/government/news/major-milestone-reached-in-ending-building-safety-crisis
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: Residents of buildings over 11 metres with unsafe cladding
+      cost:
+        note:
+          en: >-
+            No cost is given for this target. The release says the government has committed over £5
+            billion to remediation, plus an extra £1bn for social housing providers, without saying
+            over what period.
+      when:
+        en: By the end of 2029
+      deadline: "2029-12-31"
+      funded_by: null
+events:
+  - date: "2026-10-14"
+    type: promised
+    text:
+      en: >-
+        The government says it still expects every building over 11 metres with unsafe cladding to
+        be remediated, or to have a clear completion date, by the end of 2029
+  - date: "2029-12-31"
+    type: deadline
+    text:
+      en: >-
+        Every building over 11 metres with unsafe cladding due to be remediated or to have a clear
+        completion date
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

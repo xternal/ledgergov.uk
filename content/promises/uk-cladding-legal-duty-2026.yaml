@@ -1,0 +1,65 @@
+format: openpromises/1
+id: uk-cladding-legal-duty-2026
+headline:
+  en: Create a legal duty to fix unsafe cladding
+actor_id: hm-government
+made_on: "2026-10-14"
+venue: press_release
+venue_label:
+  en: Press release (Ministry of Housing, Communities and Local Government)
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The Remediation of Unsafe Cladding Bill was introduced to Parliament on 14 October 2026, so the
+    duty is not yet law. The same Bill would let the First-tier Tribunal fine a responsible entity
+    up to £500,000 for not complying with a Remediation Order, let third parties such as Homes
+    England or local authorities carry out remediation if those responsible continuously fail to
+    act, create a register of all medium rise residential buildings in England, set a consistent
+    approach for fire risk appraisals of external walls, and require responsible entities to share
+    remediation plans with residents. The release does not say when the duty would start. The card
+    moves to legislated when the Bill becomes law with it.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government press release, 14 Oct 2026: Major
+      milestone reached in ending building safety crisis
+    url: https://www.gov.uk/government/news/major-milestone-reached-in-ending-building-safety-crisis
+versions:
+  - version: 1
+    text: >-
+      The Bill brings forward a new legal duty on those responsible for the safety of their
+      buildings, such as freeholders, to identify, assess, and fix issues without delay – anyone who
+      obstructs this work could face criminal penalties.
+    recorded_on: "2026-10-14"
+    source_url: https://www.gov.uk/government/news/major-milestone-reached-in-ending-building-safety-crisis
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: >-
+          Those responsible for the safety of their buildings, such as freeholders, and the
+          residents of buildings with unsafe cladding
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-14"
+    type: promised
+    text:
+      en: >-
+        The Remediation of Unsafe Cladding Bill, with a new legal duty to identify, assess and fix
+        issues without delay, is introduced to Parliament
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

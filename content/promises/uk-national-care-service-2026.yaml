@@ -1,0 +1,63 @@
+format: openpromises/1
+id: uk-national-care-service-2026
+headline:
+  en: Create a national care service
+actor_id: andy-burnham
+made_on: "2026-10-14"
+venue: parliament
+venue_label:
+  en: Prime Minister's Questions
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    Answering a question on social care, the Prime Minister said co-operative principles will be at
+    the heart of the new national care service. The day before, the Work and Pensions Secretary, Pat
+    McFadden, told the Commons that savings from adjusting the triple lock will make a significant
+    contribution to "a rising, more sustainable state pension alongside free personal care through a
+    new national care service", and that Baroness Louise Casey will set out the pace and scale of
+    its roll-out in a final report next summer. Neither gave a date or a cost for the service. The
+    card moves when that report or a plan for the service is published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Hansard, House of Commons, 14 Oct 2026: Engagements (Prime Minister's Questions)
+    url: https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements
+  - title: >-
+      Hansard, House of Commons, 13 Oct 2026: Pensions Triple Lock (Work and Pensions Secretary's
+      statement)
+    url: https://hansard.parliament.uk/Commons/2026-10-13/debates/72F06588-BF33-4C21-8542-EE9E1293D7C9/PensionsTripleLock
+versions:
+  - version: 1
+    text: >-
+      We will fix it. We will create a national care service.
+    recorded_on: "2026-10-14"
+    source_url: https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: People who need social care, and their families
+      cost:
+        note:
+          en: >-
+            Neither the Prime Minister nor the Work and Pensions Secretary gave a cost in the cited
+            debates.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-14"
+    type: promised
+    text:
+      en: The Prime Minister tells the Commons the government will create a national care service
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

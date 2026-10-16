@@ -1,0 +1,58 @@
+format: openpromises/1
+id: uk-mhra-advice-45-days-2026
+headline:
+  en: Fast-track medicines regulator advice to 45 days
+actor_id: hm-government
+made_on: "2026-10-14"
+venue: press_release
+venue_label:
+  en: Press release (Medicines and Healthcare products Regulatory Agency)
+area: health
+status: promised
+status_note:
+  en: >-
+    One of the commitments in the 2030 Strategy of the Medicines and Healthcare products Regulatory
+    Agency (MHRA), an executive agency of the Department of Health and Social Care, set out on 14
+    October 2026. The release gives no date for the new service option and does not tie this target
+    to 2030. The card moves when the MHRA opens the service.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Medicines and Healthcare products Regulatory Agency press release, 14 Oct 2026: MHRA 2030
+      Strategy to modernise patient-centred regulation for the era of AI and personalised medicines
+    url: https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines
+versions:
+  - version: 1
+    text: >-
+      Introduce a new higher value service option for medicine and medical product developers to
+      fast-track the scientific advice service from 90 days to 45 days.
+    recorded_on: "2026-10-14"
+    source_url: https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: Developers of medicines and medical products
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-14"
+    type: promised
+    text:
+      en: >-
+        The MHRA's 2030 Strategy commits to a new service option that fast-tracks scientific advice
+        from 90 days to 45 days
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

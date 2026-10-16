@@ -1,0 +1,44 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Counts are of drafts; every draft has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-10-14"
+triaged_on: "2026-10-16"
+by: Claude as AI Journalist, by hand at Pavel's request
+pull_request: 115
+sources_read: 7
+candidates: 19
+outcomes:
+  card: 7
+  reworded: 0
+  duplicate: 5
+  existing: 0
+  grant: 0
+  done: 0
+  process: 6
+  broad: 1
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 7
+new_actors: []
+cards:
+  - uk-cladding-remediation-2029
+  - uk-cladding-legal-duty-2026
+  - uk-foster-places-10k-2026
+  - uk-national-care-service-2026 # also cites the 13 Oct 2026 Pensions Triple Lock statement (draft 2026-10-13-hansard-72f06588-3 of intake 2026-10-13)
+  - uk-mental-health-centres-2026
+  - uk-mhra-advice-45-days-2026
+  - uk-phase-1-trials-14-days-2026
+reworded: []
+dropped:
+  - { draft: 2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-2, code: duplicate, into: uk-cladding-legal-duty-2026, note: the same Bill's fines of up to £500,000 for not complying with a Remediation Order }
+  - { draft: 2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-4, code: duplicate, into: uk-cladding-legal-duty-2026, note: the same Bill lets third parties such as Homes England or councils carry out remediation }
+  - { draft: 2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-5, code: duplicate, into: uk-cladding-legal-duty-2026, note: the same Bill's register of medium rise residential buildings }
+  - { draft: 2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-6, code: duplicate, into: uk-cladding-legal-duty-2026, note: the same Bill's consistent approach to fire risk appraisals of external walls }
+  - { draft: 2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-7, code: duplicate, into: uk-cladding-legal-duty-2026, note: the same Bill's remediation plans shared with residents }
+  - { draft: 2026-10-14-govuk-brain-cancer-patients-to-see-faster-development-of-new-treat-1, code: process, note: "MHRA review of orphan drug rules in two years rather than three; the release does not say from when the two years run, so no deadline can be stated" }
+  - { draft: 2026-10-14-govuk-brain-cancer-patients-to-see-faster-development-of-new-treat-2, code: process, note: "appoint a national brain cancer clinical lead; speaker check only nearby" }
+  - { draft: 2026-10-14-govuk-mhra-2030-strategy-to-modernise-patient-centred-regulation-f-3, code: process, note: an AI-enabled Clinical Trial Protocol Checker, no date }
+  - { draft: 2026-10-14-govuk-mhra-2030-strategy-to-modernise-patient-centred-regulation-f-4, code: process, note: an MHRA Centre for AI and Digital Health, no date }
+  - { draft: 2026-10-14-hansard-0bfda327-2, code: broad, note: "bring down the welfare bill; the Milburn report soon" }
+  - { draft: 2026-10-14-wms-hcws375-1, code: process, note: "consultation on Charity Commission disqualification powers, closing 23 December 2026; final decisions follow it" }
+  - { draft: 2026-10-14-wms-hcws379-1, code: process, note: three ICB boundary changes on 1 April 2027, an internal reorganisation }
