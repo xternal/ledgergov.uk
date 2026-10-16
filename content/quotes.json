@@ -47,6 +47,12 @@
     "checked_on": "2026-10-13",
     "sha256": "524c3b9ea355c8047e01f63575643c78199a3cbb108737371f4143af61278d46"
   },
+  "419297ce4dbcf57e9212297e283ab9ce4e10f91cb603d877bea5270ed608606d|https://www.gov.uk/government/news/major-milestone-reached-in-ending-building-safety-crisis": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/major-milestone-reached-in-ending-building-safety-crisis",
+    "checked_on": "2026-10-16",
+    "sha256": "452c7aa37fb8c0d26e51b5c7aa3ad17827a6efc3cb23fbdfa979aacd723dcb69"
+  },
   "425f63aaa5b2b0ee9dd95154ff2cb687b1ab08de9eef180ca32f531d30ccd8b7|https://www.gov.uk/government/news/major-boost-for-young-people-in-exeter-as-youth-hub-opens-to-support-them-towards-work": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/major-boost-for-young-people-in-exeter-as-youth-hub-opens-to-support-them-towards-work",
@@ -58,6 +64,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364",
     "checked_on": "2026-10-13",
     "sha256": "87f1b462d759dab2c7aeac0aeab23c2af51589e9784c62f51a7bdc4b7989e8bb"
+  },
+  "55082fbe46b196b85f13f0c7619bdbf6475bc219da6b521a04c216081cc4fb87|https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements",
+    "checked_on": "2026-10-16",
+    "sha256": "243a24edb444bc4574e0eb7675121d61788653b8ed1a38e069430213799795af"
   },
   "5983b05000b8cbf938d9b2b25d79ad905c966ebbbbf7773b5cf1784a646778db|https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity": {
     "match": "exact",
@@ -82,6 +94,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363",
     "checked_on": "2026-10-13",
     "sha256": "2be9cdd3c28ee95ac9dfdbcd904cc4eb373252e6f33d22d3f72fadb7e53da8a0"
+  },
+  "805b32b24d522b3da432d7f02b1b4a01d50872ac6204ebbc0d51c7199aa1917e|https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements",
+    "checked_on": "2026-10-16",
+    "sha256": "243a24edb444bc4574e0eb7675121d61788653b8ed1a38e069430213799795af"
   },
   "8748dc3a6b5cb7800ccbc5cd9081e58394951b1150ffea41f4ba9a0137f5dff1|https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity": {
     "match": "exact",
@@ -125,11 +143,35 @@
     "checked_on": "2026-10-13",
     "sha256": "524c3b9ea355c8047e01f63575643c78199a3cbb108737371f4143af61278d46"
   },
+  "cf9c2fd495470a4ac00cc92fa0c4b7c11ebbe7a0e98e68caaa13d5711efaded7|https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines",
+    "checked_on": "2026-10-16",
+    "sha256": "bb4b49a5e27ea86f4caaaa3aa018a3e0dd3acf89bf5134c7efd19297c96b32ad"
+  },
+  "e5c1896ed5bcb7470a741b845d6d854d0b34f8929a2951a3efe1be67a27fe9f7|https://www.gov.uk/government/news/major-milestone-reached-in-ending-building-safety-crisis": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/major-milestone-reached-in-ending-building-safety-crisis",
+    "checked_on": "2026-10-16",
+    "sha256": "452c7aa37fb8c0d26e51b5c7aa3ad17827a6efc3cb23fbdfa979aacd723dcb69"
+  },
   "ee9e33d6bc513e914fa715f26982f3fa130ed58e60ed95dbd25d902de32d85c1|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363",
     "checked_on": "2026-10-13",
     "sha256": "2be9cdd3c28ee95ac9dfdbcd904cc4eb373252e6f33d22d3f72fadb7e53da8a0"
+  },
+  "ef2bb357085bff3b2aa419becb5b765358dcc4fa2d2e392da566e3f0dc5ff7c3|https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines",
+    "checked_on": "2026-10-16",
+    "sha256": "bb4b49a5e27ea86f4caaaa3aa018a3e0dd3acf89bf5134c7efd19297c96b32ad"
+  },
+  "f6f591374abf43519e6a5867d3b18e97f5497560681e88085a929c577a5312d3|https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10",
+    "checked_on": "2026-10-16",
+    "sha256": "8d87575efd354320b42e39ae31e7be6e47edda347bc6dfdcadf6a527e96df1ef"
   },
   "fc219ae43e8cc6c96ac865be4ba085f26df0056a8cfb6eecc5c573a0a68981cd|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354": {
     "match": "exact",

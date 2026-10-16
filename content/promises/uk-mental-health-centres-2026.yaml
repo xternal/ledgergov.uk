@@ -1,0 +1,60 @@
+format: openpromises/1
+id: uk-mental-health-centres-2026
+headline:
+  en: 159 new community mental health centres
+actor_id: andy-burnham
+made_on: "2026-10-14"
+venue: parliament
+venue_label:
+  en: Prime Minister's Questions
+area: health
+status: promised
+status_note:
+  en: >-
+    Asked to fund a mental health in-patient hub in Hertfordshire, the Prime Minister said the
+    government will not take that proposal forward, but will bring forward four new community mental
+    health centres in Hertfordshire, as part of 159 across the country. He said the Health and
+    Social Care Secretary will involve the MP in the design of the new hubs. He gave no date, cost
+    or list of places. The card moves when the government publishes where and when the centres will
+    open.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Hansard, House of Commons, 14 Oct 2026: Engagements (Prime Minister's Questions)
+    url: https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements
+versions:
+  - version: 1
+    text: >-
+      This might sound disappointing, as we will not be taking forward her specific suggestion, but
+      we will be bringing forward four new community mental health centres across Hertfordshire, as
+      part of 159 across the country.
+    recorded_on: "2026-10-14"
+    source_url: https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: People who need mental health support; four of the centres are to be in Hertfordshire
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-14"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister tells the Commons there will be 159 new community mental health centres
+        across the country, four of them in Hertfordshire
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
