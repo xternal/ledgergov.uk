@@ -1,0 +1,13 @@
+format: openpromises/1
+id: pat-mcfadden
+kind: person
+name:
+  en: Pat McFadden
+roles:
+  - title:
+      en: Secretary of State for Work and Pensions
+    source:
+      url: https://hansard.parliament.uk/Commons/2026-10-13/debates/72F06588-BF33-4C21-8542-EE9E1293D7C9/PensionsTripleLock
+      quote: The Secretary of State for Work and Pensions (Pat McFadden)
+identifiers:
+  parliament_member_id: 1587

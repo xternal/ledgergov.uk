@@ -1,0 +1,64 @@
+format: openpromises/1
+id: uk-regulate-heating-oil-2026
+headline:
+  en: Regulate the heating oil sector
+actor_id: polly-billington
+made_on: "2026-10-13"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The statement is the government's response to the Competition and Markets Authority's market
+    study of the heating oil sector, published in July. The CMA found gaps in consumer protection
+    compared with gas and electricity users: weaker rights when things go wrong, limited redress,
+    less price transparency and less support for vulnerable households. The minister says the
+    government will develop options for regulation with Ofgem, the devolved governments, industry
+    and consumer representatives, that this "will take time", and gives no date. The card moves when
+    proposals for regulation or legislation are published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS366, 13 Oct 2026: Competition and Market Authority's Heating
+      Oil Market Study: Government Response
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS366
+versions:
+  - version: 1
+    text: >-
+      Today I can confirm that this government is taking forward proposals to regulate the heating
+      oil sector for the first time. We will strengthen consumer rights and ensure a fairer deal for
+      off-grid households.
+    recorded_on: "2026-10-13"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS366
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: >-
+          The 1.5 million households across the UK who rely on heating oil, many in rural and
+          off-grid communities
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-13"
+    type: promised
+    text:
+      en: >-
+        The energy consumers minister says the government is taking forward proposals to regulate
+        the heating oil sector for the first time
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

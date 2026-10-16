@@ -1,0 +1,47 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Counts are of drafts; every draft has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-10-13"
+triaged_on: "2026-10-16"
+by: Claude as AI Journalist, by hand at Pavel's request
+pull_request: 113
+sources_read: 12
+candidates: 22
+outcomes:
+  card: 12
+  reworded: 0
+  duplicate: 1
+  existing: 4
+  grant: 0
+  done: 0
+  process: 4
+  broad: 1
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 12
+new_actors: [pat-mcfadden, polly-billington, heidi-alexander, kate-dearden]
+cards:
+  - uk-falklands-business-protection-2026
+  - uk-flood-re-contents-premiums-2027
+  - uk-russian-lng-shipping-ban-2026
+  - uk-quantum-apprentices-150-2030
+  - uk-state-pension-no-income-tax-2026
+  - uk-regulate-heating-oil-2026
+  - uk-rail-public-ownership-2027
+  - uk-great-british-railways-2026
+  - uk-bereavement-leave-2027
+  - uk-flexible-working-rules-2027
+  - uk-union-rights-statement-2027
+  - uk-stillbirth-burials-contact-2026
+reworded: []
+dropped:
+  - { draft: 2026-10-13-hansard-72f06588-3, code: duplicate, into: uk-national-care-service-2026, note: "free personal care through a new national care service; folded into the card made on intake/2026-10-14 from 2026-10-14-hansard-0bfda327-1, which cites this statement too" }
+  - { draft: 2026-10-13-hansard-72f06588-1, code: existing, into: uk-triple-lock-2030-2026, note: keep the triple lock for the duration of this Parliament }
+  - { draft: 2026-10-13-hansard-72f06588-2, code: existing, into: uk-triple-lock-2030-2026, note: "the same terms in more detail (from April 2030, the highest of inflation, 2.5% or what keeps the state pension's level against average earnings); for an editor: does it deserve a reworded version?" }
+  - { draft: 2026-10-13-hansard-72f06588-5, code: existing, into: uk-electricity-vat-2026, note: remove VAT from electricity bills }
+  - { draft: 2026-10-13-wms-hcws370-1, code: existing, into: uk-flood-200k-properties-2029, note: "£4.2bn for flood resilience between April 2026 and March 2029, already quoted on the card" }
+  - { draft: 2026-10-13-govuk-government-sets-out-next-steps-on-standard-essential-patents-1, code: process, note: a voluntary route at the IPO for standard-related patent information, no date }
+  - { draft: 2026-10-13-govuk-government-sets-out-next-steps-on-standard-essential-patents-2, code: process, note: practical guidance with industry on good-faith SEP licensing negotiations, no date }
+  - { draft: 2026-10-13-wms-hcws372-1, code: process, note: lay a final tipping Code of Practice before Parliament later this year }
+  - { draft: 2026-10-13-wms-hcws373-1, code: process, note: "contingent liability notification: about £1.6bn more callable capital for the African Development Bank" }
+  - { draft: 2026-10-13-govuk-president-zelenskyy-to-visit-downing-street-as-the-uk-double-2, code: broad, note: "accelerate £10m of the £45m missile package for Ukraine's winter needs; no public way to check" }

@@ -1,0 +1,77 @@
+format: openpromises/1
+id: uk-rail-public-ownership-2027
+headline:
+  en: Complete rail public ownership by end of 2027
+actor_id: heidi-alexander
+made_on: "2026-10-13"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: economic_affairs
+status: delivering
+status_note:
+  en: >-
+    Chiltern Railways' services moved into public ownership on 20 September 2026, so 10 of the 14
+    train operators running passenger services under contract with the Department for Transport are
+    now publicly owned. The Transport Secretary says Great Western Railway's services transfer next,
+    on 13 December 2026, followed by Avanti West Coast's on 7 March 2027, and that the programme
+    "remains on track" to be completed by the end of 2027. The statement gives no dates for the
+    other operators. The card moves as each operator transfers.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS369, 13 Oct 2026: Transfer of Chiltern Railways’ Services
+      into Public Ownership
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS369
+versions:
+  - version: 1
+    text: >-
+      Great Western Railway’s services will be the next to transfer into public ownership on 13
+      December 2026, followed by Avanti West Coast’s services on 7 March 2027, and the rail public
+      ownership programme remains on track to be completed by the end of 2027.
+    recorded_on: "2026-10-13"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS369
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: >-
+          Passengers of the train operators that run services under contract with the Department for
+          Transport
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: >-
+          Great Western Railway on 13 December 2026, Avanti West Coast on 7 March 2027, and the
+          whole programme by the end of 2027
+      deadline: "2027-12-31"
+      funded_by: null
+events:
+  - date: "2026-10-13"
+    type: promised
+    text:
+      en: >-
+        The Transport Secretary says the rail public ownership programme remains on track to be
+        completed by the end of 2027
+  - date: "2026-10-13"
+    type: delivering
+    text:
+      en: >-
+        The Transport Secretary confirms Chiltern Railways' services moved into public ownership on
+        20 September 2026, taking the operators in public ownership to 10 of 14
+    evidence_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS369
+  - date: "2027-12-31"
+    type: deadline
+    text:
+      en: Rail public ownership programme due to be completed by the end of 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
