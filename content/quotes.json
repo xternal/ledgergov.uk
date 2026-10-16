@@ -11,6 +11,12 @@
     "checked_on": "2026-10-13",
     "sha256": "8f7e57b95431ba6fb4e8c63ee5ba7d21818edf72fe628943c5cc3e5203cc76d9"
   },
+  "15a76df312d196d2030b3912acfcc64ff591f7764b94837c1f1f7ddb6430f44c|https://www.gov.uk/government/news/quantum-firms-backed-to-keep-railways-running-and-cut-waiting-lists-as-uk-harnesses-potential-of-future-tech": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/quantum-firms-backed-to-keep-railways-running-and-cut-waiting-lists-as-uk-harnesses-potential-of-future-tech",
+    "checked_on": "2026-10-16",
+    "sha256": "f3d5894157f6faeaf0726f9d5246265177223168a1bbdfc6db52109a01de741d"
+  },
   "1cf5fe849c032f02f92caa45d284871a08e41b10f8516b3f373f756b23683fd8|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364",
@@ -22,6 +28,12 @@
     "url": "https://www.gov.uk/government/news/new-one-stop-shop-for-flood-preparedness-launched-as-we-approach-more-weather-whiplash",
     "checked_on": "2026-10-13",
     "sha256": "12f66a4458e80cb6ce35efcb12e2c5848c6f87481294083558663b53e21e54c6"
+  },
+  "2521be28333968466fbb33cd51a363d8046a60bbe5b006b66983a8d906adad65|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS366": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS366",
+    "checked_on": "2026-10-16",
+    "sha256": "8e45e2e008e17d83e4203a4ac39e76dc7e5fac0fdbbb926349d5204a4c39a413"
   },
   "2789f2fcbc0a3021e94c8c28a4325fbf2d4af902856cbb7eec903042b8de5e01|https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity": {
     "match": "exact",
@@ -71,6 +83,12 @@
     "checked_on": "2026-10-13",
     "sha256": "718ac477ce36a4b7bb4b05331b77725ce2dd0a4126559323ebada137f720c572"
   },
+  "5f17870a143ef742442e2a6fd593dfa2f6cfde541b850b4339179736cd96e9d2|https://www.gov.uk/government/news/businesses-set-to-be-protected-from-argentinian-economic-coercion": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/businesses-set-to-be-protected-from-argentinian-economic-coercion",
+    "checked_on": "2026-10-16",
+    "sha256": "8adda0fbddf985e4cf85665c7736819d0448af18d975d90ff7d3ea278de46c5a"
+  },
   "73aba857956488a26f5403ddcaf69e4f51043a4c861cda25aee064d90b7598ba|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354",
@@ -82,6 +100,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363",
     "checked_on": "2026-10-13",
     "sha256": "2be9cdd3c28ee95ac9dfdbcd904cc4eb373252e6f33d22d3f72fadb7e53da8a0"
+  },
+  "80b36e31e703e099c36ba2886736475060d540609b27e7e6bc88ae2bc1a36430|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS369": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS369",
+    "checked_on": "2026-10-16",
+    "sha256": "da1fb234192c32090d4570d357dad6a2d263fe554f196d77f2eaf6e8c5628c00"
   },
   "8748dc3a6b5cb7800ccbc5cd9081e58394951b1150ffea41f4ba9a0137f5dff1|https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity": {
     "match": "exact",
@@ -101,6 +125,18 @@
     "checked_on": "2026-10-13",
     "sha256": "f44b4bb943cde778e955dff9f90e2b46cb4e0925dbde9e6e2513633a250649b6"
   },
+  "9b66dc97a6abd032e0928d90f2c108588bcb941dff7c0fc695f1a58c27fd4551|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372",
+    "checked_on": "2026-10-16",
+    "sha256": "ad43865dd9295d4ab74c26e2dfb01d42bb9ada1b8de1a5a82be852bca730eb51"
+  },
+  "a2864f4ecb99211186b5836fc9931689eb2643119fc306ce41e000298373760d|https://hansard.parliament.uk/Commons/2026-10-13/debates/72F06588-BF33-4C21-8542-EE9E1293D7C9/PensionsTripleLock": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-10-13/debates/72F06588-BF33-4C21-8542-EE9E1293D7C9/PensionsTripleLock",
+    "checked_on": "2026-10-16",
+    "sha256": "49ace2c518ce7cb121ef0b4eb84ee84e80bbe6c3fd09ce6ed484c11c2060ea8a"
+  },
   "a76e942022b580621c315fde49a3fc060937b639cc4837c5bf909c2c748539f9|https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity": {
     "match": "exact",
     "url": "https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity",
@@ -113,17 +149,53 @@
     "checked_on": "2026-10-13",
     "sha256": "524c3b9ea355c8047e01f63575643c78199a3cbb108737371f4143af61278d46"
   },
+  "b2fea3b2b96aea655e510f9b1ac1111f25cf786e05196adc1699da813dc12358|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS369": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS369",
+    "checked_on": "2026-10-16",
+    "sha256": "da1fb234192c32090d4570d357dad6a2d263fe554f196d77f2eaf6e8c5628c00"
+  },
   "b5933b4c4457ac4c6f512d1da5ae5e4b64bc15827aae3108e106590f7572787f|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363",
     "checked_on": "2026-10-13",
     "sha256": "2be9cdd3c28ee95ac9dfdbcd904cc4eb373252e6f33d22d3f72fadb7e53da8a0"
   },
+  "b8f7b3574d7346c6f3b5db9dbf0dec4d6f537767e0944421eaa1559c507d37be|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372",
+    "checked_on": "2026-10-16",
+    "sha256": "ad43865dd9295d4ab74c26e2dfb01d42bb9ada1b8de1a5a82be852bca730eb51"
+  },
+  "bf09bcfa6c3ea5108d2d81b3dd4e081242201999df09cb05d2e99b22e8896924|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372",
+    "checked_on": "2026-10-16",
+    "sha256": "ad43865dd9295d4ab74c26e2dfb01d42bb9ada1b8de1a5a82be852bca730eb51"
+  },
+  "bf689f249a5c076eaab510448f41df7b89ed58bdf94bc131c4f39a8df1cce809|https://www.gov.uk/government/news/president-zelenskyy-to-visit-downing-street-as-the-uk-doubles-down-on-support-for-ukraine-and-calls-on-partners-to-follow-suit": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/president-zelenskyy-to-visit-downing-street-as-the-uk-doubles-down-on-support-for-ukraine-and-calls-on-partners-to-follow-suit",
+    "checked_on": "2026-10-16",
+    "sha256": "bd305e6f06c6e7c6ef4d02f2ea0ede472c7339a447b80ee440a73a2188df1e6d"
+  },
+  "c319122e7022b295ccac709f5b007101108017c15d98dfb244af587848997a09|https://www.gov.uk/government/news/new-pioneering-certificates-to-help-homeowners-cut-flood-risk": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/new-pioneering-certificates-to-help-homeowners-cut-flood-risk",
+    "checked_on": "2026-10-16",
+    "sha256": "910fdca8d34dc6b7b3011c7da57ded84a7c821ac3663cd24096ee6eec8cfbcf4"
+  },
   "ccdc7e2f68ac8acf5149ff7ca25558e14552e8e012570a3176ac0c0e106fc70c|https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson",
     "checked_on": "2026-10-13",
     "sha256": "524c3b9ea355c8047e01f63575643c78199a3cbb108737371f4143af61278d46"
+  },
+  "d397783b5e5e0a5be64d20b8f5ab7ce2829e6effdfac6affe8926aba55dc0ae3|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS374": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS374",
+    "checked_on": "2026-10-16",
+    "sha256": "90916311816a040a9ea9c33ba04bbb172a506c1e6819c72f6b141949677ca6b3"
   },
   "ee9e33d6bc513e914fa715f26982f3fa130ed58e60ed95dbd25d902de32d85c1|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363": {
     "match": "exact",

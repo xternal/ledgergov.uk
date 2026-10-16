@@ -1,0 +1,15 @@
+format: openpromises/1
+id: heidi-alexander
+kind: person
+name:
+  en: Heidi Alexander
+party_id: labour
+# The role is the speaker's role in the draft, from Parliament's own record of this statement;
+# the stored statement text does not print it, so there is no quote. An editor can add one.
+roles:
+  - title:
+      en: Secretary of State for Transport
+    source:
+      url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS369
+identifiers:
+  parliament_member_id: 4038

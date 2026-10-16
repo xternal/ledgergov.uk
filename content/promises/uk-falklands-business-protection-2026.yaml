@@ -1,0 +1,67 @@
+format: openpromises/1
+id: uk-falklands-business-protection-2026
+headline:
+  en: Protect UK firms from Argentine Falklands measures
+actor_id: hm-government
+made_on: "2026-10-13"
+venue: press_release
+venue_label:
+  en: Press release (Department for Business, Innovation, Science and Trade)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The government is preparing measures under the Protection of Trading Interests legislation,
+    which prevents UK persons from complying with specific extraterritorial measures. The release
+    says they will target only Argentine extraterritorial measures affecting the Falkland Islands,
+    so that UK persons and companies in lawful activity there keep making decisions under UK law. It
+    is dated 13 October 2026, so "the end of the year" is read as 31 December 2026. The card moves
+    when the secondary legislation is laid or comes into force.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Business, Innovation, Science and Trade press release, 13 Oct 2026: Businesses
+      set to be protected from Argentinian economic coercion
+    url: https://www.gov.uk/government/news/businesses-set-to-be-protected-from-argentinian-economic-coercion
+versions:
+  - version: 1
+    text: >-
+      The government will bring forward secondary legislation as quickly as possible, with the aim
+      to bring it into force before the end of the year.
+    recorded_on: "2026-10-13"
+    source_url: https://www.gov.uk/government/news/businesses-set-to-be-protected-from-argentinian-economic-coercion
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: UK businesses and individuals engaged in lawful activity around the Falkland Islands
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: >-
+          Secondary legislation "as quickly as possible", aiming to be in force before the end of
+          the year
+      deadline: "2026-12-31"
+      funded_by: null
+events:
+  - date: "2026-10-13"
+    type: promised
+    text:
+      en: >-
+        The government says it will bring forward secondary legislation under the Protection of
+        Trading Interests legislation, aiming for it to be in force before the end of the year
+  - date: "2026-12-31"
+    type: deadline
+    text:
+      en: Protection of Trading Interests measures on Argentina due in force by 31 December 2026
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

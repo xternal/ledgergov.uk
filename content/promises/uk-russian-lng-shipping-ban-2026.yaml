@@ -1,0 +1,67 @@
+format: openpromises/1
+id: uk-russian-lng-shipping-ban-2026
+headline:
+  en: Fully ban UK shipping services for Russian LNG
+actor_id: hm-government
+made_on: "2026-10-13"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Prime Minister's Office, 10 Downing Street)
+area: defence
+status: promised
+status_note:
+  en: >-
+    The release says the UK is "standing by plans" to fully implement a maritime services ban on
+    Russian liquefied natural gas (LNG) exports, restricting Russia's access to UK shipping and
+    insurance services. The same sentence mentions £45m of surface-to-air missile deliveries for
+    Ukraine; this card follows the LNG ban only. The release says the Chancellor will urge partners
+    at the IMF to fully implement an equivalent ban, and gives no date for the UK ban. The card
+    moves when the ban is fully in force.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Prime Minister's Office press release, 13 Oct 2026: President Zelenskyy to visit Downing
+      Street as the UK doubles down on support for Ukraine and calls on partners to follow suit
+    url: https://www.gov.uk/government/news/president-zelenskyy-to-visit-downing-street-as-the-uk-doubles-down-on-support-for-ukraine-and-calls-on-partners-to-follow-suit
+versions:
+  - version: 1
+    text: >-
+      It comes as the UK doubles down on support for Ukraine, including delivering £45 million of
+      surface-to-air missiles deliveries and standing by plans to fully implement a maritime
+      services ban on Russian liquefied natural gas (LNG) exports – restricting Russia’s access to
+      the UK’s world leading shipping and insurance services.
+    recorded_on: "2026-10-13"
+    source_url: https://www.gov.uk/government/news/president-zelenskyy-to-visit-downing-street-as-the-uk-doubles-down-on-support-for-ukraine-and-calls-on-partners-to-follow-suit
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: >-
+          Russian liquefied natural gas exports, which lose access to UK shipping and insurance
+          services
+      cost:
+        note:
+          en: >-
+            No cost has been published. The £45m in the same sentence is for surface-to-air
+            missiles, not this ban.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-13"
+    type: promised
+    text:
+      en: >-
+        The government says it stands by plans to fully implement a maritime services ban on Russian
+        LNG exports
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

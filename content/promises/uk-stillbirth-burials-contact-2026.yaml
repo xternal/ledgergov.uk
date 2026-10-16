@@ -1,0 +1,67 @@
+format: openpromises/1
+id: uk-stillbirth-burials-contact-2026
+headline:
+  en: Stillbirth burials contact in every NHS trust
+actor_id: yvette-cooper
+made_on: "2026-10-13"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: health
+status: promised
+status_note:
+  en: >-
+    Until the mid-1980s, some stillborn babies across the United Kingdom were buried or cremated
+    without their parents' involvement; the Health Secretary apologised on behalf of the government.
+    The statement says all Trusts must have a dedicated point of contact in their PALS service, or
+    an equivalent named service, for families seeking answers, and that guidance produced by Sands
+    is going to all Trusts. "Within 4 weeks" of the 13 October 2026 statement is read as 10 November
+    2026. The card moves when Trusts confirm their contacts.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS374, 13 Oct 2026: Historical Stillbirth Burials and
+      Cremations
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS374
+versions:
+  - version: 1
+    text: >-
+      Within 4 weeks, all Trusts must ensure a dedicated point of contact within their PALS service,
+      or an equivalent named service, to support families seeking answers.
+    recorded_on: "2026-10-13"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS374
+    quote_checked_on: "2026-10-16"
+    parameters:
+      who:
+        en: >-
+          Families seeking answers about stillborn babies buried or cremated without their parents'
+          involvement until the mid-1980s
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Within 4 weeks of the statement of 13 October 2026
+      deadline: "2026-11-10"
+      funded_by: null
+events:
+  - date: "2026-10-13"
+    type: promised
+    text:
+      en: >-
+        The Health Secretary says all Trusts must have a dedicated point of contact for families
+        seeking answers within 4 weeks
+  - date: "2026-11-10"
+    type: deadline
+    text:
+      en: A dedicated point of contact due in every Trust by 10 November 2026
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-16"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
