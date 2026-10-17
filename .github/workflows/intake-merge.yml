@@ -4,7 +4,7 @@ name: Merge intake when editors are done
 # merges by itself once its editors are done, and not before:
 # - enough different editors (people with write access) have approved it: one by default (invariant 8: since
 #   17 October 2026 Pavel's approval is the only one needed, after AI Journalist's check; it was two before);
-#   a repository variable INTAKE_APPROVALS overrides the default, so it must be unset or 1;
+#   the repository variable INTAKE_APPROVALS is no longer read (Pavel, 17 October 2026: one approval, fixed here);
 # - CI is green on its latest commit. `pnpm validate` fails while any draft is
 #   left in content/drafts/, so green means every draft became a card or was
 #   deleted, and every new card passed the schema and the append-only check.
@@ -49,7 +49,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
-          NEEDED: ${{ vars.INTAKE_APPROVALS || '1' }}
+          NEEDED: '1'
           EVENT_PR: ${{ github.event.pull_request.number || inputs.pr || '' }}
           RUN_PRS: ${{ toJSON(github.event.workflow_run.pull_requests) }}
         run: |

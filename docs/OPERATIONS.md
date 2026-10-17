@@ -191,8 +191,8 @@ on a branch `intake/<date>`, with one YAML per candidate in
 * **Never merged automatically.** Editors turn each draft into a card or
   delete it; the drafts folder must be gone before merge, and one editor's
   approval is enough (since 17 October 2026; it was two before).
-  `.github/workflows/intake-merge.yml` needs one by default; the repository
-  variable `INTAKE_APPROVALS`, if set, overrides it, so keep it unset or `1`.
+  `.github/workflows/intake-merge.yml` needs one, fixed in the file; it no
+  longer reads the repository variable `INTAKE_APPROVALS`, which can be deleted.
 * **Running a day again:** the job never overwrites an existing `intake/<date>`
   branch (it may hold editors' work). Close the pull request and delete the
   branch first, then run the workflow with that date.
