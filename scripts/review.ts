@@ -6,8 +6,9 @@
  * Reads the private editors list from OPENPROMISES_EDITORS (or --editors <file>),
  * refuses an approval the rules would not count (packages/schema/src/approvals.ts),
  * and appends one review to the card: kind editor, approves: true. When the card
- * reaches two approvals it drops `editor_check_required`, so the card stops saying
- * "human editor review to come". Appends only, so the append-only check still passes.
+ * reaches the approvals it needs (APPROVALS_NEEDED: one since 17 October 2026, two
+ * before) it drops `editor_check_required`, so the card stops saying "human editor
+ * review to come". Appends only, so the append-only check still passes.
  *
  * Cards in OpenPromises format v1 (all published cards since 12 October 2026) are
  * handed to the engine's own `openpromises review`, which applies the same rules and

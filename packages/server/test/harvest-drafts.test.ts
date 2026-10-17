@@ -266,7 +266,8 @@ describe("prBody", () => {
     expect(md).toContain("| 0.82 | [open](https://hansard.parliament.uk/Commons/2026-10-06/debates/19E8C247-AAAA-BBBB-CCCC-DDDDEEEEFFFF/Buses#:~:text=We%20will%20cap%20bus%20fares,route%20in%20England%20outside%20London.) |");
     expect(md).toContain("| quote not found verbatim in the source | 2 |\n| low confidence | 1 |");
     expect(md).toContain("- `wms-hcws353`: HTTP 503 from the written statements API");
-    expect(md).toContain("1. **Two editors** review this pull request");
+    expect(md).toContain("1. **An editor** reviews and approves this pull request, after AI Journalist's check; one approval is enough");
+    expect(md).not.toMatch(/two editors/i);
     expect(md).toContain("Nothing is published from drafts.");
     expect(md).toContain("never merged automatically");
     expect(prBody(r, { now: new Date("2026-11-07T06:16:00Z") })).toContain("at 06:16 GMT");

@@ -12,7 +12,7 @@ Readers predict what a Budget will contain, see how everyone else predicted, and
 
 ## The questions
 
-Editors change them in a pull request, like a card, and two editors approve the wording before launch. `pnpm validate` and the build check every file: 8 to 10 questions, unique ids, 2 to 5 options each, sources, the document that settles it, and the closing time in UTC on Budget day.
+Editors change them in a pull request, like a card, and an editor approves the wording before launch (one approval since 17 October 2026; the launch set was approved by two). `pnpm validate` and the build check every file: 8 to 10 questions, unique ids, 2 to 5 options each, sources, the document that settles it, and the closing time in UTC on Budget day.
 
 Each question:
 
@@ -40,7 +40,7 @@ After sending, the reader sees their link with a Share button: on phones (any br
 
 ## After the Budget: scoring (Day 13)
 
-1. Editors read the documents named in each question's `settled_by` (docs/BUDGET_DAY.md lists them) and fill in `answer` (an option id) and `evidence_url` (the exact page, `#page=NN` for a PDF) for every question, in one pull request. Two editors approve it, as for a card. The schema refuses an answer that is not one of the options, or an answer without its evidence.
+1. Editors read the documents named in each question's `settled_by` (docs/BUDGET_DAY.md lists them) and fill in `answer` (an option id) and `evidence_url` (the exact page, `#page=NN` for a PDF) for every question, in one pull request. An editor approves it, as for a card. The schema refuses an answer that is not one of the options, or an answer without its evidence.
 2. `scorePrediction(round, answers)` in `packages/schema/src/predict.ts` already gives `{ right, settled }`: one point per question whose answer matches, counting only settled questions, so a partly settled set gives a partial score.
 3. To build on Day 13: show the answer and evidence under each question on `/budget/predict`; show "7 out of 10" on each `/budget/predict/r/<code>` page and in its share image; and how the crowd did per question (`crowd()` counts already exist). The share pages re-render hourly, so scores appear without a deploy once the answers are merged.
 4. Before the rows are deleted (13 months), copy the totals per option into the YAML or a data file if they should be kept for good; totals are not personal data.

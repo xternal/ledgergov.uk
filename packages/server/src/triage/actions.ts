@@ -89,7 +89,7 @@ export function prBody(s: SubmissionView, draft: DraftFile): string {
       : ["- [ ] The evidence supports the event; its date and text are filled in", "- [ ] Status changes, if any, follow docs/PROMISE_STANDARD.md", "- [ ] History is only appended to, never edited"]),
     "- [ ] Every TODO is gone and `pnpm validate` passes",
     "",
-    "Two editors must approve before merge (invariant 8).",
+    "An editor must approve before merge, after AI Journalist's check (invariant 8).",
   ].join("\n");
 }
 
@@ -169,7 +169,7 @@ export async function acceptSubmission(
     text: [
       `An editor accepted your submission ${s.id} and started a draft for the ledger.`,
       "",
-      "Two editors check every change against the original source before it is published, so it can still change or be turned down.",
+      "AI Journalist, our automated reviewer, checks every change against the original source, and an editor, Pavel Guzhikov, approves it before it is published, so it can still change or be turned down.",
       `Once it is published, you will find it ${where}`,
       "",
       LAST_EMAIL,

@@ -5,7 +5,8 @@ name: Promise intake
 # GOV.UK press releases; Claude proposes candidate promises; only quotes found
 # verbatim in the source are kept; one draft per candidate in
 # content/drafts/<date>/; one draft pull request per day, labelled `intake`.
-# Never merged automatically: two editors turn each draft into a card or delete it.
+# Never merged by a model: an editor turns each draft into a card or deletes it, and one editor's approval
+# (Pavel's, after AI Journalist's check; two before 17 October 2026) lets intake-merge.yml merge it.
 # Without the ANTHROPIC_API_KEY secret the run logs "Intake not configured" and succeeds.
 
 on:

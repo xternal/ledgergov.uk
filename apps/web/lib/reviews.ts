@@ -24,8 +24,8 @@ export const reviewerLabel = (r: Review) =>
  */
 export function checkedBy(f: PromiseFile): { who: string; on: string; automated: boolean; toCome: string } | null {
   const approved = approvedByText(f.reviews);
-  // What is still to come follows the approvals themselves (two from different editors), not a flag someone must remember to clear.
-  if (approved) return { who: approved.text, on: approved.on, automated: false, toCome: approved.count < APPROVALS_NEEDED ? "; a second editor's check to come" : "" };
+  // What is still to come follows the approvals themselves (APPROVALS_NEEDED: one since 17 October 2026), not a flag someone must remember to clear.
+  if (approved) return { who: approved.text, on: approved.on, automated: false, toCome: approved.count < APPROVALS_NEEDED ? "; another editor's check to come" : "" };
   const r = latestReview(f);
   return r ? { who: reviewerLabel(r), on: r.on, automated: r.kind === "automated", toCome: f.editor_check_required ? "; human editor review to come" : "" } : null;
 }
@@ -43,7 +43,7 @@ export function reviewLine(c: CardView): { text: string; short: string; automate
   if (v) {
     const editors = v.level === "editor" || v.level === "editors";
     const on = editors && v.on ? ` on ${longDate(v.on)}` : "";
-    return { text: `${v.text}${on}${v.secondToCome ? "; a second editor's check to come" : ""}`, short: v.text, automated: v.level === "automated", verified: editors };
+    return { text: `${v.text}${on}${v.secondToCome ? "; another editor's check to come" : ""}`, short: v.text, automated: v.level === "automated", verified: editors };
   }
   const checked = checkedBy(c.file);
   return checked
@@ -53,4 +53,4 @@ export function reviewLine(c: CardView): { text: string; short: string; automate
 
 /** What AI Journalist is, in one line, wherever its name appears. */
 export const AI_JOURNALIST_NOTE =
-  "AI Journalist is our automated reviewer: it re-reads every card against its live sources (the quote word for word, dates, evidence, status, cost, neutral wording, legal risk). Two editors also check every card against its sources and approve it.";
+  "AI Journalist is our automated reviewer: it re-reads every card against its live sources (the quote word for word, dates, evidence, status, cost, neutral wording, legal risk). An editor, Pavel Guzhikov, then checks each card against its sources and approves it.";

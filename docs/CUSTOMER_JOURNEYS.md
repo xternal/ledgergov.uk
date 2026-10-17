@@ -29,7 +29,7 @@ References: F1–F9 are features in `docs/PRD.md`. "Inv 1–9" are the invariant
 | Politician or staffer | "That card mis-parameterises our pledge." | Alert on their actor, or a journalist's question | The standard is public, applies to every party, and a reply sits next to the card | File a right of reply with evidence | Share of cards where the actor used the right of reply |
 | Reader who contributes | "I saw a promise on TV last night." / "That bill just passed." | "Send us a promise" (`/submit`) or "Add evidence" on a card | No account needed. They get a reference number, and the source is archived | Send a primary-source link with the time in the video | Accepted community submissions (share of new cards that started as one) |
 | Follower | "Tell me when this changes." | Follow button on a card or actor page | An alert saying "Deadline passed: no scheme open" | Confirm the follow, then open the card from alerts | Followers per card and alert click-through |
-| Editor (internal) | "Turn this speech into cards fast and consistently." | Triage view, intake pull request, nightly deadline pull request | A draft arrives already archived, with the quote matched and parameters pre-filled | A second editor approves and merges within 72 h | Time from headline to card under 72 h. Costed cards: 100 at launch, 300 after six months |
+| Editor (internal) | "Turn this speech into cards fast and consistently." | Triage view, intake pull request, nightly deadline pull request | A draft arrives already archived, with the quote matched and parameters pre-filled | An editor approves and merges within 72 h | Time from headline to card under 72 h. Costed cards: 100 at launch, 300 after six months |
 
 ## 1. Curious voter
 
@@ -128,7 +128,7 @@ Disagrees with a card and uses the right of reply. Hypothetical example: a staff
 - A `failed` or `quietly_dropped` status without the evidence the standard requires (B6).
 - One party's reply handled faster, slower or differently from another's (inv 6).
 - A past version or timeline event rewritten because of a reply (inv 5).
-- A change from a reply merged by fewer than two editors (§6).
+- A change from a reply merged without an editor's approval (§6).
 
 ## 5. Reader who contributes
 
@@ -141,7 +141,7 @@ Sends a new promise or evidence for a card, with no account.
 | **Should do** | Note the time in the video | Search for an existing card first | Give a primary source, not a post about it | Keep the reference number | Read the reason code if rejected | Send evidence on cards they care about |
 | **Thinking / feeling** | "Someone should keep a record of this." | "Do I have to sign up?" | "Will this put me on a list?" | "Did anyone actually read it?" | "My link became a card." | "I'm helping keep them honest." |
 | **Pain points and risks** | The clip is deleted before they send it | Google Fonts and CDN scripts on the prototype's form page (review M6, fixed in [M0]) | Submissions reveal political opinions (B7). Invalid URL or rate limit | No email means no news. Queue backlog | A rejection feels personal. Brigading | No way to see past submissions in v0 |
-| **Product response** | Archive snapshot on arrival (PRIVACY_AND_ACCOUNTS) | Self-hosted fonts and no third-party scripts on form pages (inv 7, [M3b]) | Email optional and no IP stored (inv 7). Form error states (DESIGN_HANDOFF) | Triage within 3 working days (§8) | Reason codes. Volume never changes a status (§8). Two editors (inv 8) | Credit is opt-in (F8). Accounts optional (inv 9, [M5b]) |
+| **Product response** | Archive snapshot on arrival (PRIVACY_AND_ACCOUNTS) | Self-hosted fonts and no third-party scripts on form pages (inv 7, [M3b]) | Email optional and no IP stored (inv 7). Form error states (DESIGN_HANDOFF) | Triage within 3 working days (§8) | Reason codes. Volume never changes a status (§8). One editor's approval, after AI Journalist's check (inv 8) | Credit is opt-in (F8). Accounts optional (inv 9, [M5b]) |
 | **Analytics events** | None (happens off-site) | `submit_form_opened` | `submission_sent`, `submission_blocked` | `submission_auto_checked` | `submission_triaged` | `card_published` (origin: reader_submission) |
 
 **Moments that matter**
@@ -150,7 +150,7 @@ Sends a new promise or evidence for a card, with no account.
 - Seeing "Started from a reader submission" on a live card.
 
 **Must never happen**
-- A submission that reaches a public page without the two-editor merge (inv 8).
+- A submission that reaches a public page without an editor's approval (inv 8).
 - An IP address stored, or a submission linked to a person anywhere, including analytics (inv 7, B7).
 - Credit shown for someone who did not ask for it (F8).
 - The number of submissions changing a status. Only evidence does (§8).
@@ -182,21 +182,21 @@ Follows a promise, actor, policy area or deadline window, and comes back on aler
 
 ## 7. Editor (internal)
 
-Takes a promise from intake, through the two-editor merge, to a live card, then keeps its timeline up to date.
+Takes a promise from intake, through AI Journalist's check and an editor's approval, to a live card, then keeps its timeline up to date.
 
 | | Intake | Triage | Draft | Review | Publish | Maintain |
 |---|---|---|---|---|---|---|
-| **Doing** | Watches the news, the submissions queue and LLM draft pull requests | In the triage view, checks whether the source is archived, the quote matched or it is a duplicate. Accepts or rejects with a reason | Checks the quote against the primary source. Fills who, how much, when and from where. Sets the status from evidence | A second editor reviews the pull request. CI checks sources, parameters and append-only history | Merges. The card goes live, the share image builds and alerts go out | Reviews the nightly deadline-missed pull request, confirms `quietly_dropped` after 30 days and answers replies |
-| **Can do today / later** | Manual card in a pull request [M3]<br>Submissions [M3b]<br>LLM drafts [M4] | Triage view, accept makes a draft pull request [M3b] | Schema and CI validator [M3]<br>LLM pre-fill [M3b] | Two-editor merge via pull request [M3] | Share image [M3]<br>Alerts [M3b] | Deadline missed [M3]<br>Reply and 30-day tools [gap]<br>Backtest [M7] |
+| **Doing** | Watches the news, the submissions queue and LLM draft pull requests | In the triage view, checks whether the source is archived, the quote matched or it is a duplicate. Accepts or rejects with a reason | Checks the quote against the primary source. Fills who, how much, when and from where. Sets the status from evidence | AI Journalist checks the draft and an editor approves the pull request. CI checks sources, parameters and append-only history | Merges. The card goes live, the share image builds and alerts go out | Reviews the nightly deadline-missed pull request, confirms `quietly_dropped` after 30 days and answers replies |
+| **Can do today / later** | Manual card in a pull request [M3]<br>Submissions [M3b]<br>LLM drafts [M4] | Triage view, accept makes a draft pull request [M3b] | Schema and CI validator [M3]<br>LLM pre-fill [M3b] | An editor's approval and merge via pull request [M3] | Share image [M3]<br>Alerts [M3b] | Deadline missed [M3]<br>Reply and 30-day tools [gap]<br>Backtest [M7] |
 | **Should do** | Aim for under 72 h from headline to card | Reject with a reason code, never in silence | Use the actor's figure plus an independent range. Write "Funding not stated" if nothing was named | Recheck the quote and evidence, not only the format | Check the share image numbers and funding line | Confirm or clear every missed deadline |
 | **Thinking / feeling** | "Three speeches today and two of us." | "Is this a promise or an opinion?" | "Is it 'in plan' or 'funded'?" | "Am I harder on one side?" | "This will be quoted. Is it right?" | "Silence is a finding, but only with evidence." |
-| **Pain points and risks** | LLM invents quotes or follows injected text (H10) | Brigading. A backlog breaks the 3-day promise | Disputed status calls (H2). Cost unknown (B4) | Too few second editors. Pull requests are hard for non-technical editors | Defamation from status wording (B6). Election periods (B5) | Workload of 30-day checks, replies and audits |
-| **Product response** | Exact-match quotes with offsets. Never auto-merge (H10, [M4]) | Reason codes, dedupe and rate limits (§8) | Four parameters and evidence for every status (§2–3) | Two-person rule. CI blocks a missing source (§6, F4) | Legal review of status templates. Every source archived (B6) | Append-only history (inv 5). 5% external audit (§6) |
+| **Pain points and risks** | LLM invents quotes or follows injected text (H10) | Brigading. A backlog breaks the 3-day promise | Disputed status calls (H2). Cost unknown (B4) | One editor for every approval. Pull requests are hard for non-technical editors | Defamation from status wording (B6). Election periods (B5) | Workload of 30-day checks, replies and audits |
+| **Product response** | Exact-match quotes with offsets. Never auto-merge (H10, [M4]) | Reason codes, dedupe and rate limits (§8) | Four parameters and evidence for every status (§2–3) | AI Journalist's check and an editor's approval. CI blocks a missing source (§6, F4) | Legal review of status templates. Every source archived (B6) | Append-only history (inv 5). 5% external audit (§6) |
 | **Analytics events** | `draft_created`, `intake_candidate_dropped` | `submission_triaged` | `ci_check_failed` | `draft_approved` | `card_published`, `alert_sent` | `deadline_missed_appended`, `status_changed`, `reply_published` |
 
 **Moments that matter**
 - A draft arrives already archived, with the quote matched, so the editor checks rather than types.
-- The second editor's approval is the only way to publish.
+- An editor's approval, after AI Journalist's check, is the only way to publish (one editor since 17 October 2026; two before).
 - "Deadline missed" makes silence visible, and an editor confirms it with evidence.
 
 **Must never happen**
@@ -257,7 +257,7 @@ There is never free text, and never a salary, email, Telegram ID or IP.
 | `draft_created` | A draft card pull request opens | origin (submission, llm_intake, manual) | C, D | Headline to card under 72 h | [M3], [M4] |
 | `intake_candidate_dropped` | LLM candidate dropped for lack of an exact quote match | reason | D | Headline to card under 72 h | [M4] |
 | `ci_check_failed` | Validator blocks a pull request | rule | D | Costed cards | [M3] |
-| `draft_approved` | Second editor approves | hours_in_review | D | Headline to card under 72 h | [M3] |
+| `draft_approved` | An editor approves | hours_in_review | D | Headline to card under 72 h | [M3] |
 | `card_published` | A merge adds a new card | promise_id, origin, status, costed, hours_to_card | C, D | Headline to card. Costed cards. Accepted submissions | [M3] |
 | `status_changed` | A merge changes a status | promise_id, from_status, to_status | B | Followers per card (alert source) | [M3] |
 | `deadline_missed_appended` | Nightly job adds the event | promise_id | B | Alert click-through (alert source) | [M3] |

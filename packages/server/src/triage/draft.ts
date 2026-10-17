@@ -123,7 +123,7 @@ export function draftNewPromise(s: SubmissionView, opts: { today: string; existi
   doc.commentBefore = [
     ` Draft from reader submission ${s.id}, received ${ukDay(s.received_at)}.`,
     " Editors: fill in every TODO, check the quote word for word at the source, then run pnpm validate.",
-    " This file fails validation until the TODOs are gone. Two editors approve before merge (invariant 8).",
+    " This file fails validation until the TODOs are gone. An editor approves before merge (invariant 8).",
     ...(s.video_time ? [` Time in the video, from the reader: ${oneLine(String(s.video_time), 40)} seconds`] : []),
     ...suggestionLines(s.llm_prefill).map((l) => ` ${l}`),
   ].join("\n");

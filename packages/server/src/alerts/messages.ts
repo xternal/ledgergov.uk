@@ -117,7 +117,7 @@ export function submitterEmail(ref: string, url: string, kind: "card" | "evidenc
       what,
       url,
       "",
-      "Two editors checked it against the original source before it was published.",
+      "AI Journalist, our automated reviewer, checked it against the original source, and an editor, Pavel Guzhikov, approved it before it was published.",
       "",
       "This is the last email about this submission. We delete your email address from it once this is sent.",
       "",

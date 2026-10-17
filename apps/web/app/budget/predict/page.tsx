@@ -121,8 +121,8 @@ export default function PredictPage() {
             is asked, with sources, and which document settles it. Predictions close at {closes}, when the Chancellor stands up.
           </p>
           <p className="m-0 text-muted">
-            The same evening editors start reading the documents, as they do for <a href="/budget">every promise the Budget can move</a>. Two editors
-            record each answer with a link to the page that shows it, and every set of predictions gets its score.
+            The same evening editors start reading the documents, as they do for <a href="/budget">every promise the Budget can move</a>. An editor
+            records each answer with a link to the page that shows it, and every set of predictions gets its score.
           </p>
         </section>
 

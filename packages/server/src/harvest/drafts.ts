@@ -7,10 +7,10 @@ import type { Candidate, HarvestReport, SourceDoc } from "./types";
 /**
  * Drafts (M4): one YAML per candidate promise in content/drafts/<date>/, the
  * source text each quote comes from stored byte for byte beside them, and the
- * body of the day's pull request. Nothing here publishes anything: two editors
- * turn each draft into a card or delete it (PROMISE_STANDARD §6), and the PR is
- * never merged automatically. Schema and the exact-match check: @ledger/schema
- * (packages/schema/src/drafts.ts).
+ * body of the day's pull request. Nothing here publishes anything: editors
+ * turn each draft into a card or delete it, one editor's approval is needed
+ * (PROMISE_STANDARD §6), and the PR is never merged by a model. Schema and the
+ * exact-match check: @ledger/schema (packages/schema/src/drafts.ts).
  */
 
 export const DRAFTS_DIR = "content/drafts";
@@ -407,7 +407,7 @@ export function prBody(report: HarvestReport, opts: { now?: Date } = {}): string
   tail.push(
     "### How to review",
     "",
-    "1. **Two editors** review this pull request (docs/PROMISE_STANDARD.md §6).",
+    "1. **An editor** reviews and approves this pull request, after AI Journalist's check; one approval is enough (docs/PROMISE_STANDARD.md §6).",
     `2. For each draft in \`${DRAFTS_DIR}/${date}/\`: check the quote word for word at the source, then either turn it into a full card in \`content/promises/\` (see \`content/README.md\`), or delete the draft.`,
     `3. Before merge, every draft has become a card or been deleted, and \`${DRAFTS_DIR}/${date}/\` (with its \`sources/\` folder) is gone. Nothing is published from drafts.`,
     "4. This pull request is never merged automatically.",

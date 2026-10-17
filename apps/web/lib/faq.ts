@@ -21,7 +21,7 @@ export const FAQ: { q: string; a: string }[] = [
   },
   {
     q: "Who checks the cards?",
-    a: "Every card is re-read against its live sources by AI Journalist, our automated reviewer: the quote word for word, the dates, the evidence, the status, the cost, neutral wording and legal risk. Anything it finds is fixed in public as a dated correction on the card. Two editors also check every card against its sources and approve it, and nothing a reader sends in is published until two editors agree.",
+    a: "Every card is re-read against its live sources by AI Journalist, our automated reviewer: the quote word for word, the dates, the evidence, the status, the cost, neutral wording and legal risk. Anything it finds is fixed in public as a dated correction on the card. An editor, Pavel Guzhikov, then checks each card against its sources and approves it, and each card's label says whether he has yet. Nothing a reader sends in is published until he has approved it.",
   },
   {
     q: "Do I need an account?",
@@ -33,6 +33,6 @@ export const FAQ: { q: string; a: string }[] = [
   },
   {
     q: "Can I send in a promise or evidence?",
-    a: "Yes, with the form on this page. Editors check every submission against the original source, and nothing is published until two editors agree.",
+    a: "Yes, with the form on this page. AI Journalist and an editor check every submission against the original source, and nothing is published until the editor, Pavel Guzhikov, has approved it.",
   },
 ];

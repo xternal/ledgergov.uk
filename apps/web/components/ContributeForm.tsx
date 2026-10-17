@@ -219,7 +219,7 @@ export function ContributeForm({
           {[
             "You send a link and, for video, the moment it was said.",
             "We archive the source and match the exact words in the transcript.",
-            "Two editors fill in who, how much, when and from where.",
+            "AI Journalist checks it, and an editor fills in who, how much, when and from where.",
             "The card goes live. You are credited if you ask to be.",
           ].map((s) => (
             <li key={s} className="grid grid-cols-[24px_minmax(0,1fr)] gap-3 [counter-increment:step] before:grid before:size-6 before:place-items-center before:rounded-full before:bg-sunk before:text-caption before:font-semibold before:text-ink before:content-[counter(step)]">

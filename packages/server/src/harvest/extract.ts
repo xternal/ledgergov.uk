@@ -10,7 +10,7 @@ import type { Candidate, CandidateSpeaker, HarvestReport, SourceDoc, SpeakerSegm
  * only if it is there word for word (we store the source's own characters and
  * their offsets). Who said it comes from Hansard's own speaker data where the
  * source has it, not from the model. Nothing here publishes anything: the
- * result becomes drafts in a pull request that two editors review (invariant 8).
+ * result becomes drafts in a pull request that an editor reviews and approves (invariant 8).
  */
 
 export const DEFAULT_INTAKE_MODEL = "claude-opus-5-5";

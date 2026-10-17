@@ -36,7 +36,7 @@ interface Bars {
 function barsFor(s: HouseholdSnapshot): Bars {
   const c = householdCopy(s);
   const model = s.provider ? `An estimate, not official, with PolicyEngine UK ${s.provider.model_version}` : "";
-  const follows = c.view.state === "no_model" ? "Our own estimate follows once PolicyEngine answers" : "Our own estimate follows once two editors have checked it";
+  const follows = c.view.state === "no_model" ? "Our own estimate follows once PolicyEngine answers" : "Our own estimate follows once an editor has checked it";
   if (c.view.share === "deciles" && c.headResult && c.better !== null && c.worse !== null)
     return {
       caption: `Change in income after tax and benefits, ${c.head}, by income tenth (1 = lowest)`,
