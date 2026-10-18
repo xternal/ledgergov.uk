@@ -1,0 +1,17 @@
+format: openpromises/1
+id: douglas-alexander
+kind: person
+name:
+  en: Douglas Alexander
+party_id: labour
+# The draft gives no party or Parliament member id for him; both come from the UK Parliament
+# Members API (members-api.parliament.uk, searched 18 October 2026): member 632, Labour (Co-op),
+# party id 15, the same id as the labour actor.
+roles:
+  - title:
+      en: Scottish Secretary
+    source:
+      url: https://www.gov.uk/government/news/douglas-alexander-welcomes-defence-skills-investment-boost
+      quote: Scottish Secretary Douglas Alexander said
+identifiers:
+  parliament_member_id: 632

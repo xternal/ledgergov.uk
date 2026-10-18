@@ -1,0 +1,68 @@
+format: openpromises/1
+id: uk-defence-colleges-scotland-2026
+headline:
+  en: Create two defence technical colleges in Scotland
+actor_id: douglas-alexander
+made_on: "2026-10-16"
+venue: press_release
+venue_label:
+  en: Press release (Scotland Office), quote from the Scottish Secretary
+area: education
+status: promised
+status_note:
+  en: >-
+    The UK government first committed £10 million to two Defence Technical Excellence Colleges, one
+    in the east and one in the west of Scotland, when the Scottish Secretary launched the £50
+    million Scottish Defence Growth Deal on 12 March. The offer depended on the Scottish Government
+    matching it, which it has now agreed to do. The release gives no opening date. The card moves
+    when the colleges' sites or opening dates are announced.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Scotland Office press release, 16 Oct 2026: Douglas Alexander welcomes defence skills
+      investment boost
+    url: https://www.gov.uk/government/news/douglas-alexander-welcomes-defence-skills-investment-boost
+versions:
+  - version: 1
+    text: >-
+      In March we announced a £10 million commitment to develop two Defence Technical Excellence
+      Colleges in Scotland. I’m pleased that the Scottish Government has now agreed to match fund
+      these colleges to give our young people the skills they need to secure high-skilled, well-paid
+      careers in Scotland’s defence sector in the years to come.
+    recorded_on: "2026-10-16"
+    source_url: https://www.gov.uk/government/news/douglas-alexander-welcomes-defence-skills-investment-boost
+    quote_checked_on: "2026-10-18"
+    parameters:
+      who:
+        en: >-
+          Young people in Scotland seeking careers in defence engineering, advanced manufacturing
+          and maritime technology
+      cost:
+        note:
+          en: >-
+            £10 million from the UK government, matched by the Scottish Government. No period is
+            given, so no yearly figure is shown.
+      when:
+        en: Not stated
+      funded_by:
+        en: >-
+          £10 million from the UK government, matched by the Scottish Government, within the £50
+          million Scottish Defence Growth Deal
+events:
+  - date: "2026-10-16"
+    type: promised
+    text:
+      en: >-
+        The Scottish Secretary says the Scottish Government will match the UK government's £10
+        million for two Defence Technical Excellence Colleges in Scotland
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-18"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

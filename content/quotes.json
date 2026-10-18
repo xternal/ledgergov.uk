@@ -143,6 +143,12 @@
     "checked_on": "2026-10-16",
     "sha256": "8adda0fbddf985e4cf85665c7736819d0448af18d975d90ff7d3ea278de46c5a"
   },
+  "619a652c7479bc577972a37a5695f39c55779081ef7693005c3c8cf6f5796c9c|https://www.gov.uk/government/news/douglas-alexander-welcomes-defence-skills-investment-boost": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/douglas-alexander-welcomes-defence-skills-investment-boost",
+    "checked_on": "2026-10-18",
+    "sha256": "025ed47498a414bd2fec8a62d34adfd80edfeb59cdb909fd178bfe569cf1954d"
+  },
   "73aba857956488a26f5403ddcaf69e4f51043a4c861cda25aee064d90b7598ba|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354",
@@ -322,6 +328,12 @@
     "url": "https://www.gov.uk/government/news/exeter-self-driving-boat-manufacturer-goes-overseas-with-government-backed-finance",
     "checked_on": "2026-10-18",
     "sha256": "cb2d6256bd9d4b0892889aed25414eef77a0aca206ffc1bd1c92fda6dd7cc6ff"
+  },
+  "dd9b0baf477ea257f035317b29afe4ee46c64a1d662e3de398d54a3adf127d7a|https://questions-statements.parliament.uk/written-statements/detail/2026-10-16/HCWS387": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-16/HCWS387",
+    "checked_on": "2026-10-18",
+    "sha256": "1c87a61e8ba9d89355cb72cb183698c58479d11a33d214616536ce2d011fd9cc"
   },
   "e5c1896ed5bcb7470a741b845d6d854d0b34f8929a2951a3efe1be67a27fe9f7|https://www.gov.uk/government/news/major-milestone-reached-in-ending-building-safety-crisis": {
     "match": "exact",

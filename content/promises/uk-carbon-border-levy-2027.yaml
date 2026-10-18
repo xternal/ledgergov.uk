@@ -1,0 +1,74 @@
+format: openpromises/1
+id: uk-carbon-border-levy-2027
+headline:
+  en: Carbon price on carbon-intensive imports from 2027
+actor_id: james-murray
+made_on: "2026-10-16"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: taxes
+status: legislated
+status_note:
+  en: >-
+    The Carbon Border Adjustment Mechanism (CBAM) puts a carbon price on highly traded,
+    carbon-intensive goods imported into the UK; the Finance Act 2026 provides its legal framework
+    and two sets of regulations have been laid. The statement publishes illustrative rates for the
+    first quarter of 2027 and the default emissions values for 2027 and 2028, commits to
+    country-specific default values from 2029, and says the official first-quarter rates will be
+    published before the end of the calendar year. The card moves to delivering when the mechanism
+    starts on 1 January 2027.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS387, 16 Oct 2026: Carbon Border Adjustment Mechanism (CBAM)
+      – October 2026 CBAM Rate and Default Emissions Values update
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-16/HCWS387
+versions:
+  - version: 1
+    text: >-
+      The government is introducing a Carbon Border Adjustment Mechanism (CBAM) from 1 January 2027.
+      It will ensure that highly traded, carbon-intensive goods imported into the UK face a carbon
+      price comparable to the price that would be paid were the goods produced in the UK.
+    recorded_on: "2026-10-16"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-16/HCWS387
+    quote_checked_on: "2026-10-18"
+    parameters:
+      who:
+        en: UK importers of highly traded, carbon-intensive goods
+      cost:
+        note:
+          en: The statement gives no figure for what the mechanism will raise or cost.
+      when:
+        en: From 1 January 2027
+      deadline: "2027-01-01"
+      funded_by: null
+events:
+  - date: "2026-10-16"
+    type: promised
+    text:
+      en: >-
+        The Financial Secretary to the Treasury says the government is introducing a Carbon Border
+        Adjustment Mechanism from 1 January 2027
+  - date: "2026-10-16"
+    type: legislated
+    text:
+      en: >-
+        The statement records that the Finance Act 2026, which provides the mechanism's legal
+        framework, has Royal Assent, and that two sets of CBAM regulations have been laid
+    evidence_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-16/HCWS387
+  - date: "2027-01-01"
+    type: deadline
+    text:
+      en: The Carbon Border Adjustment Mechanism due to start on 1 January 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-18"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
