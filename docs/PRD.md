@@ -65,7 +65,7 @@ People hear "£2 bus fares", "3.5% on defence", "cut income tax by 2p" and have 
 - On arrival: URL check, archive snapshot, transcript fetch and exact-match of the quote where possible, LLM pre-fill for the editor, dedupe.
 - Submitter gets a reference number; optional email update when the submission becomes or changes a card.
 - Card shows "Started from a reader submission" and the handle if credit was requested.
-- **Acceptance:** spam controls on; nothing reaches a public page without the two-editor merge; submitter can delete their email at any time.
+- **Acceptance:** spam controls on; nothing reaches a public page without an editor's approval of the merge (one editor since 17 October 2026, after AI Journalist's check); submitter can delete their email at any time.
 
 ### F9. Accounts (v1, optional)
 - Passkey or magic link. Sync follows across devices, see own submission history, public handle for credit.

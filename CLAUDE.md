@@ -13,7 +13,7 @@ The clickable reference for look and behaviour is `prototype/index.html` (built 
 5. **Promise history is append-only.** Rewording a promise creates a new `PromiseVersion`; the diff is shown publicly. Never mutate past versions or timeline events.
 6. **One standard for everyone.** No code path, flag or field that treats one party/actor differently.
 7. **Minimal personal data, never about citizens' finances.** The "Your share" calculator runs client-side only; salary input is never sent or stored. Follow and Contribute store only what `docs/PRIVACY_AND_ACCOUNTS.md` allows (email + followed IDs; submissions). Follows reveal political opinions: never expose individual follows, show aggregates only above a threshold, no third-party trackers on pages with forms.
-8. **Nothing a reader submits is published without two editors.** Submissions create drafts in the editors' queue, never cards.
+8. **Nothing a reader submits is published without an editor's approval.** Submissions create drafts in the editors' queue, never cards. Since 17 October 2026 one editor's approval is enough (Pavel Guzhikov's; he is the only editor today), after AI Journalist, the automated reviewer, has checked the card (Pavel's decision; it was two editors before). Approvals already recorded stay valid. The engine's check still counts two on a reader's submission until OpenPromises accepts `editorial.approvals: 1`.
 9. **Reading never requires an account.** Accounts (v1) add sync and credit only.
 
 ## Stack

@@ -47,7 +47,7 @@ export const PREDICT_FAQ = (o: { budget: string; threshold: number; retentionMon
   },
   {
     q: "Who decides the right answers?",
-    a: "The Budget documents themselves: the Budget report, the overview of tax rates and the Office for Budget Responsibility's forecast, published straight after the statement. Two editors record each answer with a link to the page that shows it, and every set of predictions is then scored against them.",
+    a: "The Budget documents themselves: the Budget report, the overview of tax rates and the Office for Budget Responsibility's forecast, published straight after the statement. An editor records each answer with a link to the page that shows it, and every set of predictions is then scored against them.",
   },
   {
     q: "What do you keep about me?",

@@ -13,7 +13,7 @@ import { WinnerShares } from "./t1";
  *
  * Two files:
  * - the **measures file**, content/budget/household/<event>.yaml (HouseholdMeasuresFile): what editors type on
- *   the night from the Budget document and HMRC's notes, each figure with its page; two editors review it;
+ *   the night from the Budget document and HMRC's notes, each figure with its page; an editor reviews it (two before 17 October 2026);
  * - the **snapshot**, data/build/budget/household/<event>.json (HouseholdSnapshot): what the offline job
  *   (`pnpm household -- <event>`) got back from PolicyEngine. The page is built only from the snapshot.
  */
@@ -175,7 +175,7 @@ export const HouseholdMeasuresFile = z
     /** For a rehearsal: whose published figures it is checked against, in plain words with a link. */
     compared_with: z.object({ name: z.string().min(1), url: z.url(), note: z.string().min(1) }).strict().optional(),
     /**
-     * Parts held back until two editors have reviewed them (the fallback rule, docs/BUDGET_DAY.md): the page shows
+     * Parts held back until an editor has reviewed them (the fallback rule, docs/BUDGET_DAY.md): the page shows
      * the rest and says the held part follows. "deciles" also holds gains and losses and the summary figures.
      */
     hold: z.array(z.enum(["deciles", "households"])).optional(),
@@ -461,13 +461,13 @@ export function snapshotIssues(s: z.input<typeof HouseholdSnapshot>): string[] {
   return issues;
 }
 
-/** Where a part of the page stands: shown, waiting for two editors (the fallback rule), or waiting for PolicyEngine. */
+/** Where a part of the page stands: shown, waiting for an editor's review (the fallback rule), or waiting for PolicyEngine. */
 export type HouseholdPart = "shown" | "awaits_review" | "awaits_model";
 
 /**
  * What the page shows in each state, and what its share image shows:
  * - "full": every part;
- * - "held": PolicyEngine answered, but a part waits for two editors (`hold: [deciles]`, the fallback rule);
+ * - "held": PolicyEngine answered, but a part waits for an editor's review (`hold: [deciles]`, the fallback rule);
  * - "no_model": PolicyEngine had not answered; the model's parts follow once it does.
  * Share image: the deciles, else the example households, else the Treasury's chart, else the salary check on example salaries.
  */

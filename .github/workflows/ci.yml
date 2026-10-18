@@ -25,7 +25,8 @@ jobs:
       # Promise history is append-only: compare every published card with main.
       - run: pnpm validate -- --base origin/main
       # The OpenPromises engine's check (docs/OPERATIONS.md §15), blocking since the switch on 12 October 2026:
-      # every card in format v1, two editors' approvals, a quality label on every cost, history against the base.
+      # every card in format v1, editors' approvals where publication waits for them (`editorial.approvals`: 2 until
+      # the engine accepts Pavel's one of 17 October 2026), a quality label on every cost, history against the base.
       # The editors list is private (OpenPromises decision 10): it comes from a secret, never the repository.
       # A fork's pull request gets no secrets, so there the check runs as a report and an editor's branch runs it in full.
       - name: OpenPromises check

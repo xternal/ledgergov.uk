@@ -123,7 +123,7 @@ function receiptText(config: Config, reference: string, s: ValidSubmission, dele
     `Your reference: ${reference}`,
     `Link you sent: ${s.url}${s.video_time !== null ? ` (at ${formatVideoTime(s.video_time)})` : ""}`,
     "",
-    "What happens next: we archive the source and check the words against it. An editor looks at it within three working days. Nothing is published unless two editors agree.",
+    "What happens next: we archive the source and check the words against it. An editor looks at it within three working days. Nothing is published until AI Journalist, our automated reviewer, has checked it and an editor, Pavel Guzhikov, has approved it.",
     "",
     s.credit_handle
       ? `We keep your email only to tell you what happens to this submission. If it becomes a card, we credit you as "${s.credit_handle}".`

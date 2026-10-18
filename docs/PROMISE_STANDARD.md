@@ -64,7 +64,7 @@ Any actor (or their office) may dispute a card's parameters. The reply is publis
 
 1. Intake (manual or LLM draft from transcript) → draft card in a pull request. LLM drafts (`content/drafts/`) quote only words found exactly in the stored source, are never published, and each one becomes a card or is deleted before the pull request merges.
 2. Editor checks quote against primary source, fills parameters, cites costings.
-3. Second editor approves. Two-person rule for every merge.
+3. AI Journalist, our automated reviewer, checks the card against its sources, and an editor approves it. One editor's approval is enough for every merge (since 17 October 2026; it was two editors before).
 4. Publish. Nightly job appends `deadline_missed` where due.
 5. Quarterly audit: random 5% sample re-checked by an external reviewer.
 
@@ -77,7 +77,7 @@ Editors declare party membership. An editor never approves a card about their ow
 1. Anyone can send a new promise or evidence for an existing card (`PRIVACY_AND_ACCOUNTS.md`).
 2. Automatic checks: URL reachable, archived snapshot, transcript exact-match where available, duplicate detection, LLM pre-fill.
 3. An editor triages within 3 working days: accept → draft card or new timeline event in a pull request; reject with a reason code (no primary source, not a promise, duplicate, out of scope).
-4. Same two-editor rule as any other card. Submission volume never changes a status; only evidence does.
+4. Same rule as any other card (§6): AI Journalist's check and one editor's approval. Submission volume never changes a status; only evidence does.
 5. Submissions about an editor's own party are reviewed by another editor or an external reviewer, as in §7.
 6. Contributor credit only when requested.
 
@@ -90,7 +90,7 @@ History is append-only, but our own mistakes must be fixable. A correction fixes
 3. The card shows every correction ("Corrected on 7 October 2026: cost range in version 1 …", with the old and new values). Nothing is overwritten silently.
 4. A wrong quote is corrected the same way, and the quote check is redone and `quote_checked_on` updated.
 5. Fields that describe the present (`status_note`, `responsible`, top-level `sources`) are kept current by ordinary edits; they are not history.
-6. Same two-editor rule as any other change.
+6. Same approval rule as any other change (§6).
 7. A field added to this standard after a version was published (so far `cost.by`, 9 October 2026, and `cost.quality`, 12 October 2026) may be filled in once on that version without a correction, because nothing published is changed. Once it has a value it is history like the rest.
 
 ## 10. Contracts behind delivery
@@ -100,7 +100,7 @@ Once a card is `funded`, `delivering` or `delivered`, it can list the public con
 1. An editor links contracts by hand, in the card's `contracts`: the contract's OCID from Find a Tender (`ocds-h6vhtk-…`), or `{ ocid, notice_url }` for Contracts Finder, with `award_id` when a procurement awarded several contracts. Nothing is matched automatically.
 2. A contract is linked only when its notice, or an official page about the award, ties it to the promised programme by name or by its funding. Being on the same subject is not enough.
 3. The nightly job reads every linked contract's open data and appends a snapshot when the value or an end date changes. Snapshots are append-only: CI rejects an edited one, and a contract file is never deleted.
-4. The same two-editor rule applies to adding or removing a link.
+4. The same approval rule (§6) applies to adding or removing a link.
 
 ## 11. Who has to deliver it
 
@@ -111,10 +111,11 @@ Every card says which body would have to act to deliver the promise as worded, a
 3. It is `null` when no body in power is committed to it: an opposition party's pledge, a candidate's, or a pledge that the body able to deliver it has not taken on (for example a devolved party's pledge on a tax set at Westminster). A narrower or different commitment by the government does not count; the card's status note can mention it.
 4. The same rule for every party. When power changes hands, the field follows the role, not the party: an opposition pledge the new government adopts gets `hm-government`; a pledge the new holders of power have not taken on becomes `null`, with the change explained in the status note.
 5. Once a card reaches Delivered, Not met or Undone, `responsible` stays as the body that was responsible then.
-6. Every card has it, a value or an explicit `null`; CI fails a card that leaves it out. It describes the present, so it is kept current by ordinary edits (§9.5), with the same two-editor rule.
+6. Every card has it, a value or an explicit `null`; CI fails a card that leaves it out. It describes the present, so it is kept current by ordinary edits (§9.5), with the same approval rule (§6).
 7. It is not credit. When someone other than the card's own actor brought about an outcome (an opposition pledge the government carried out), `brought_about_by` records that, as before (it was called `outcome_by` until 9 October 2026).
 
 ## Changes to this standard
 
+- 17 October 2026: one editor's approval is enough to publish anything that needed two (§6, §8, §9, §10, §11), after AI Journalist has checked it. Pavel Guzhikov decided it: he is the only editor, so his approval is the only one needed. Approvals already recorded stay valid, and nobody is removed from the editors list. The OpenPromises engine's check in CI still asks for two approvals on a reader's submission until it accepts one (`editorial.approvals` in `openpromises.config.ts`).
 - 12 October 2026: card files moved to OpenPromises format v1. Same rules; new field names: `area` (was `policy_area`), `responsible` (was `outcome_by`), `parameters.cost.range` / `.by` / `.note` / `.sources` (were `how_much_bn_per_year`, `costed_by`, `cost_note`, `cost_sources`), a cost's `quality` label, the deadline on the current version's `parameters`, and text a reader sees as a language map (`en: …`). The mapping is in `content/README.md`.
 - 9 October 2026: who made a cost's central figure (`costed_by`, §2); who has to deliver a promise (`outcome_by`, §11); the credit field renamed `brought_about_by`; filling in a newly added field (§9.7).

@@ -6,7 +6,7 @@ import { IsoDate } from "./provenance";
  * one per candidate promise the language model proposed and we found word for
  * word in a source. A draft is not a card: the site and `loadSeed` never read
  * drafts. Editors turn each one into a card in content/promises/ or delete it,
- * in the intake pull request (PROMISE_STANDARD §6, two editors).
+ * in the intake pull request (PROMISE_STANDARD §6: one editor's approval since 17 October 2026).
  *
  * The source text the quote comes from is stored beside the drafts as
  * `content/drafts/<date>/sources/<source.id>.txt`, and `source_span` indexes

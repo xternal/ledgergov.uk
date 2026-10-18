@@ -6,7 +6,10 @@
  * - an approval is a review with `kind: editor` and `approves: true`;
  * - it counts only if its author is on the editors list and was an editor on that day;
  * - an editor never approves a card about their own party (the card's actor, or the actor's party);
- * - a card needs two, from different editors.
+ * - a card needs one (Pavel's decision of 17 October 2026: his approval is the only one needed, after AI
+ *   Journalist's check; it was two, from different editors, before), and each editor approves a card once.
+ *   Approvals recorded before then stay valid. The engine's own check still counts two on a reader's
+ *   submission until it accepts `editorial.approvals: 1` (openpromises.config.ts).
  *
  * The editors list is private (it holds each editor's declared party): it
  * lives outside the repository and reaches CI as the OPENPROMISES_EDITORS
@@ -16,7 +19,7 @@ import { parse } from "yaml";
 import { z } from "zod";
 import type { ActorFile, PromiseFile, Review } from "./content";
 
-export const APPROVALS_NEEDED = 2;
+export const APPROVALS_NEEDED = 1;
 
 const Day = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "a date written YYYY-MM-DD");
 
@@ -82,7 +85,7 @@ export function approvalRefusal(
   if (!e) return `"${by}" is not on the editors list`;
   if (!isEditorOn(e, on)) return `${by} is not an editor on ${on}`;
   if (ownParty(e, card, actors)) return `${by} may not approve a card about their own party; another editor does`;
-  if (approvers(card, editors, actors).has(by)) return `${by} has already approved ${card.id}; the second approval comes from a different editor`;
+  if (approvers(card, editors, actors).has(by)) return `${by} has already approved ${card.id}; an editor approves a card once`;
   return null;
 }
 

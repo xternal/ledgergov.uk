@@ -81,13 +81,14 @@ describe("the verification label", () => {
     expect(cardVerification(card([approval("Stranger", "2026-10-12"), approval("Alex", "2026-09-01")]), actors, editors).level).toBe("none");
   });
 
-  it("says a second check is to come only where publication waits for it: a reader's submission", () => {
+  it("says another check is to come only where publication waits for it: a reader's submission, while the engine counts two", () => {
     const one = [approval("Alex", "2026-10-12")];
     expect(cardVerification(card(one), actors, editors).secondToCome).toBe(false);
-    expect(cardVerification(card(one, { origin: "reader_submission" }), actors, editors).secondToCome).toBe(true);
+    expect(cardVerification(card(one, { origin: "reader_submission" }), actors, editors).secondToCome).toBe(SITE_EDITORIAL.approvals > 1);
+    expect(cardVerification(card([auto], { origin: "reader_submission" }), actors, editors).secondToCome).toBe(false);
   });
 
-  it("follows openpromises.config.ts: publish by checks, two approvals, the reviewer's new name, the engine's words", () => {
+  it("follows openpromises.config.ts: publish by checks, the approvals the engine allows, the reviewer's new name, the engine's words", () => {
     const config = resolveConfig(siteConfig);
     expect(config.editorial.publish).toBe("checked");
     expect(config.editorial.approvals).toBe(SITE_EDITORIAL.approvals);

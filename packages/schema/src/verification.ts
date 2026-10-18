@@ -33,6 +33,7 @@ import type { Seed } from "./seed";
  * the config's messages). verification.test.ts checks this against the config.
  */
 export const SITE_EDITORIAL = {
+  // TODO(openpromises-0.7.0): 1, with openpromises.config.ts, once the engine accepts it (Pavel, 17 October 2026; decision 27).
   approvals: 2,
   publish: "checked",
   renamed: { "Junior Editor": "AI Journalist" } as Record<string, string>,
@@ -52,7 +53,10 @@ export interface CardVerification {
   automated: string[];
   /** The day of the latest approval that counts; null when no editor has approved the card. */
   on: string | null;
-  /** True when the card has one editor's approval and needs a second before publication (a reader's submission). */
+  /**
+   * True when the card has an editor's approval but publication waits for more: a reader's submission, while the
+   * engine still counts two (SITE_EDITORIAL.approvals). With one approval needed, a card is never waiting for another.
+   */
   secondToCome: boolean;
 }
 
@@ -74,7 +78,8 @@ export function cardVerification(f: PromiseFile, actors: ReadonlyMap<string, Act
     counted: v.counted,
     automated: v.automated.map((by) => SITE_EDITORIAL.renamed[by] ?? by),
     on,
-    secondToCome: v.level === "editor" && needsApprovals(card, { editorial: SITE_EDITORIAL } as unknown as Parameters<typeof needsApprovals>[1]),
+    secondToCome:
+      valid.size > 0 && valid.size < SITE_EDITORIAL.approvals && needsApprovals(card, { editorial: SITE_EDITORIAL } as unknown as Parameters<typeof needsApprovals>[1]),
   };
 }
 

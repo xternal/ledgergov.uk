@@ -84,7 +84,7 @@ const figure = "m-0 text-[26px] font-semibold tracking-[var(--tracking-figure)]"
 /**
  * /budget/leaks: every measure briefed to the press before the Budget, as a card with its source,
  * date and any estimated cost; from Budget day, what the Budget did. Entries are YAML files in
- * content/leaks, added by editors and approved by two (docs/EDITORS.md, "How to add a leak").
+ * content/leaks, added by editors and approved by one (docs/EDITORS.md, "How to add a leak").
  */
 export default function LeaksPage() {
   const leaks = getLeaks();
@@ -95,7 +95,7 @@ export default function LeaksPage() {
   const empty =
     today < LEAK_TRACKER_OPENS
       ? `Nothing here yet. The tracker fills from ${opens}: editors add each measure the press reports before the Budget, with the outlet, the date and a link to the original report.`
-      : "No measures added yet. Editors add each measure the press reports before the Budget, with the outlet, the date and a link to the original report, after two of them have checked it.";
+      : "No measures added yet. Editors add each measure the press reports before the Budget, with the outlet, the date and a link to the original report, after an editor has checked it.";
   const shown = LEAK_STATUS_ORDER.filter((s) => s === "trailed" || s === "announced" || counts[s] > 0 || (after && s === "not_in_budget"));
 
   return (
@@ -156,8 +156,8 @@ export default function LeaksPage() {
           </h2>
           <p className="m-0 text-muted">
             Editors add a measure when a national outlet reports it as planned for the Budget. Each entry links the earliest report found and an
-            archived copy, says in plain words what was reported, and gives a cost only when a source gives one, naming who made the figure. Two editors
-            check every entry, by the same rules whoever is in government.
+            archived copy, says in plain words what was reported, and gives a cost only when a source gives one, naming who made the figure. An editor
+            checks every entry, by the same rules whoever is in government.
           </p>
           <p className="m-0 text-muted">
             The status moves only on evidence: to confirmed when a minister or the Treasury says it on the record, and on Budget day to in the Budget or

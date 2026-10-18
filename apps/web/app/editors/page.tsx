@@ -27,7 +27,7 @@ const FACTS = [
 
 const TASKS = [
   "Check new promise cards against their primary source: the quote word for word, who said it and when, the cost and who pays it.",
-  "Approve a card, or send it back with a note. A card needs two editors' approval to publish.",
+  "Approve a card, or send it back with a note. One editor's approval, after AI Journalist's check, verifies a card.",
   "Look at what readers send in (new promises, evidence, corrections) and accept or turn it down with a reason, within three working days.",
   "Now and then, confirm that a promise whose deadline passed with no evidence is “Undone”, and read replies from the people we cover.",
 ];
@@ -73,8 +73,8 @@ export default function EditorsPage() {
           <p className="m-0 text-label font-medium text-muted">Volunteer role</p>
           <h1 className="m-0 text-[clamp(30px,4.4vw,44px)] font-semibold leading-[1.06] tracking-[-0.035em]">{TITLE}</h1>
           <p className="m-0 text-lead text-muted">
-            Our standard says two editors check every promise card before it counts. Today that is one person and an automated reviewer. We are looking for
-            two careful readers to make it true.
+            AI Journalist, our automated reviewer, checks every promise card, then an editor approves it. Today that editor is Pavel Guzhikov. We are looking for
+            careful readers to share the work.
           </p>
           <dl className="m-0 grid grid-cols-2 gap-x-6 gap-y-4 rounded-control bg-sunk p-4 sm:grid-cols-4">
             {FACTS.map((f) => (

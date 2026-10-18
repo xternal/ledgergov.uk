@@ -279,7 +279,7 @@ describe("accept", () => {
 
     const pr = gh.calls[5]!.body!;
     expect(pr).toMatchObject({ head: "submission/S-2026-10-0412", base: "main", draft: true, title: "Reader submission S-2026-10-0412: new promise (draft)" });
-    expect(pr.body).toContain("Two editors must approve before merge (invariant 8).");
+    expect(pr.body).toContain("An editor must approve before merge, after AI Journalist's check (invariant 8).");
     expect(pr.body).toContain("Quote matched in a transcript: yes");
     expect(pr.body).toContain("Possible duplicate of: S-2026-09-0007");
     expect(JSON.stringify(gh.calls)).not.toContain(EMAIL);

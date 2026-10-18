@@ -59,7 +59,7 @@ export default async function SubmissionPage({ params, searchParams }: Props) {
           </h2>
           <p className="m-0 text-body text-muted">
             {accepted
-              ? `There is no GitHub token on this server (GITHUB_TOKEN), so no pull request was opened. Create the branch submission/${s.id}, put this in ${draft.path}, and open a draft pull request. Two editors must approve before merge.`
+              ? `There is no GitHub token on this server (GITHUB_TOKEN), so no pull request was opened. Create the branch submission/${s.id}, put this in ${draft.path}, and open a draft pull request. An editor must approve before merge.`
               : config.github.token
                 ? `Accepting opens a draft pull request in ${config.github.repo} on the branch submission/${s.id}.`
                 : "There is no GitHub token on this server, so accepting will show this YAML to copy into a pull request."}

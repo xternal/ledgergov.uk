@@ -147,11 +147,11 @@ export function cardMarkdown(c: CardView, ctx: SeoContext, level: 1 | 2 = 1): st
       const v = c.verification;
       if (v) {
         const on = v.on && (v.level === "editor" || v.level === "editors") ? ` on ${ukDate(v.on)}` : "";
-        return [`- ${v.text}${on}${v.secondToCome ? "; a second editor's check to come" : ""}.`, ...rest.map((r) => `- Checked by ${reviewer(r, v.named)} on ${ukDate(r.on)}.`)];
+        return [`- ${v.text}${on}${v.secondToCome ? "; another editor's check to come" : ""}.`, ...rest.map((r) => `- Checked by ${reviewer(r, v.named)} on ${ukDate(r.on)}.`)];
       }
       const approved = approvedByText(f.reviews);
       return [
-        ...(approved ? [`- Checked by ${approved.text} on ${ukDate(approved.on)}${approved.count < APPROVALS_NEEDED ? "; a second editor's check to come" : ""}.`] : []),
+        ...(approved ? [`- Checked by ${approved.text} on ${ukDate(approved.on)}${approved.count < APPROVALS_NEEDED ? "; another editor's check to come" : ""}.`] : []),
         ...rest.map((r) => `- Checked by ${reviewer(r)} on ${ukDate(r.on)}${f.editor_check_required && !approved ? "; human editor review to come" : ""}.`),
       ];
     })(),
@@ -183,7 +183,7 @@ export function methodMarkdown(ctx: SeoContext): string[] {
     "- Cost is a year, to the public purse, as a low–high range with a central figure; \"raises\" means it brings money in. When a source gives one figure, the range is an editorial ±10% and the cost note says so.",
     "- \"Paid for by\" is exactly what was said when the promise was made; \"not stated\" means nothing was.",
     "- History is append-only: a rewording adds a new version, and a fix to our own mistake is a dated, public correction showing the old and new value.",
-    "- Every card is re-read against its live sources by AI Journalist, our automated reviewer (quote, dates, evidence, status, cost, neutral wording, legal risk). Two editors also check every card against its sources and approve it; nothing a reader sends in is published until two editors agree.",
+    "- Every card is re-read against its live sources by AI Journalist, our automated reviewer (quote, dates, evidence, status, cost, neutral wording, legal risk). An editor, Pavel Guzhikov, then checks each card against its sources and approves it, and the card's label says whether he has yet; nothing a reader sends in is published until he has approved it.",
     `- Full method: ${absoluteUrl(ctx, "/method")}. Open data API (JSON and CSV): ${absoluteUrl(ctx, "/method/api")}.`,
   ];
 }

@@ -1,6 +1,7 @@
 # Predict the Budget: the questions for the Autumn Budget 2026, asked at /budget/predict.
 #
-# Approved by two editors on 12 October 2026. Changes to the questions or answers need two editors again.
+# Approved by two editors on 12 October 2026. Changes to the questions or answers need an editor's approval again
+# (one since 17 October 2026).
 #
 # Rules for every question (docs/PREDICT_THE_BUDGET.md):
 # - It asks what the Budget WILL do, never what it should, in plain words with no judgement.
@@ -10,7 +11,7 @@
 # - Ids (the set's, each question's and each option's) are stored with readers' predictions:
 #   once predictions open, never change an id or what an option means. Fixing a typo in the words is fine.
 #
-# After the Budget, two editors fill in `answer` (an option id) and `evidence_url` (the page that shows it,
+# After the Budget, an editor fills in `answer` (an option id) and `evidence_url` (the page that shows it,
 # with #page=NN for a PDF) for each question. Predictions close at `closes_at`, when the statement starts.
 id: autumn-budget-2026
 budget: Autumn Budget 2026
