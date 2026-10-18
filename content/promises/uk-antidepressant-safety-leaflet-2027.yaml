@@ -1,0 +1,68 @@
+format: openpromises/1
+id: uk-antidepressant-safety-leaflet-2027
+headline:
+  en: Give antidepressant patients a safety leaflet in 2027
+actor_id: hm-government
+made_on: "2026-10-15"
+venue: press_release
+venue_label:
+  en: Press release (Medicines and Healthcare products Regulatory Agency)
+area: health
+status: promised
+status_note:
+  en: >-
+    The leaflet follows a review, started by the Commission on Human Medicines, of how leaflets
+    explain the risks of suicidal thoughts and behaviours and of sexual dysfunction that continues
+    after treatment stops. The same release says patient information leaflets will carry a new boxed
+    warning and, for certain antidepressants, the term Post SSRI Sexual Dysfunction. 2027 is read as
+    the end of 2027. The card moves when the leaflet is published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Medicines and Healthcare products Regulatory Agency press release, 15 Oct 2026: MHRA
+      introduces new safeguards to strengthen antidepressant safety information following major
+      review
+    url: https://www.gov.uk/government/news/mhra-introduces-new-safeguards-to-strengthen-antidepressant-safety-information-following-major-review
+versions:
+  - version: 1
+    text: >-
+      Finally, a supporting safety (ancillary) leaflet is being developed by the MHRA with the wider
+      healthcare system, which will be given to patients at their first appointment discussing
+      antidepressants. It will describe the key risks and benefits to support informed decision
+      making about their treatment. This safety leaflet will also be given to patients who are
+      already receiving antidepressants. This will be available in 2027.
+    recorded_on: "2026-10-15"
+    source_url: https://www.gov.uk/government/news/mhra-introduces-new-safeguards-to-strengthen-antidepressant-safety-information-following-major-review
+    quote_checked_on: "2026-10-18"
+    parameters:
+      who:
+        en: Patients starting antidepressants, and patients already taking them
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: In 2027
+      deadline: "2027-12-31"
+      funded_by: null
+events:
+  - date: "2026-10-15"
+    type: promised
+    text:
+      en: >-
+        The medicines regulator says a safety leaflet for antidepressant patients will be available
+        in 2027
+  - date: "2027-12-31"
+    type: deadline
+    text:
+      en: Antidepressant safety leaflet due to be available in 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-18"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

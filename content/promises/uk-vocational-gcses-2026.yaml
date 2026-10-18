@@ -1,0 +1,63 @@
+format: openpromises/1
+id: uk-vocational-gcses-2026
+headline:
+  en: Create Vocational GCSEs to replace Technical Awards
+actor_id: hm-government
+made_on: "2026-10-15"
+venue: press_release
+venue_label:
+  en: Press release (Department for Work and Pensions)
+area: education
+status: promised
+status_note:
+  en: >-
+    The release says this is part of the Prime Minister's commitment, made in his first week in the
+    role, to put technical education on an equal footing with the traditional academic path. It
+    gives no date for the first Vocational GCSEs, no subjects and no cost. The card moves when the
+    government publishes the qualifications or the date schools start teaching them.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Work and Pensions press release, 15 Oct 2026: Britain's biggest hospitality
+      brands partner with Government to deliver 100,000 jobs for NEET young people
+    url: https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people
+versions:
+  - version: 1
+    text: >-
+      Every young person across the country will also be able to pursue prestigious new Vocational
+      GCSEs and access work experience, as part of the Prime Minister’s commitment in his first week
+      in the role to put technical education on an equal footing with the traditional academic path.
+      The new national qualifications will be created to sit alongside traditional GCSEs and will
+      replace the current Technical Awards.
+    recorded_on: "2026-10-15"
+    source_url: https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people
+    quote_checked_on: "2026-10-18"
+    parameters:
+      who:
+        en: >-
+          Young people choosing vocational subjects; the new qualifications replace the current
+          Technical Awards
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-15"
+    type: promised
+    text:
+      en: >-
+        The government says new Vocational GCSEs will be created and will replace the current
+        Technical Awards
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-18"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

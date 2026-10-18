@@ -1,0 +1,72 @@
+format: openpromises/1
+id: uk-rape-courtroom-every-crown-court-2028
+headline:
+  en: A rape case courtroom in every Crown Court
+actor_id: hm-government
+made_on: "2026-10-15"
+venue: press_release
+venue_label:
+  en: Press release (Ministry of Justice)
+area: public_order
+status: promised
+status_note:
+  en: >-
+    The commitment is in the further information of a release launching the Respond strand of the
+    government's ENOUGH campaign on violence against women and girls; the release says it is backed
+    by a multi-million cash injection. The two years are read from the release's date, 15 October
+    2026. The government's response to the Independent Review of the Criminal Courts (12 October
+    2026) says £23 million has been announced for specialist courts for rape and sexual offences in
+    the Crown Court. The card moves when the government reports courtrooms set up.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Justice press release, 15 Oct 2026: Victims of abuse to be better supported by
+      their community
+    url: https://www.gov.uk/government/news/victims-of-abuse-to-be-better-supported-by-their-community
+  - title: >-
+      Ministry of Justice, 12 Oct 2026: Government response to the Independent Review of the
+      Criminal Courts
+    url: https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts
+versions:
+  - version: 1
+    text: >-
+      Backed by a multi-million cash injection, every Crown Court in England and Wales will get at
+      least one courtroom especially set up to hear rape and serious sexual offence cases over the
+      next two years, helping to hold more perpetrators to account.
+    recorded_on: "2026-10-15"
+    source_url: https://www.gov.uk/government/news/victims-of-abuse-to-be-better-supported-by-their-community
+    quote_checked_on: "2026-10-18"
+    parameters:
+      who:
+        en: Victims of rape and serious sexual offences, and every Crown Court in England and Wales
+      cost:
+        note:
+          en: The release says a multi-million cash injection; it gives no figure.
+      when:
+        en: Over the two years from 15 October 2026
+      deadline: "2028-10-15"
+      funded_by: null
+events:
+  - date: "2026-10-15"
+    type: promised
+    text:
+      en: >-
+        The government says every Crown Court in England and Wales will get at least one courtroom
+        set up to hear rape and serious sexual offence cases within two years
+  - date: "2028-10-15"
+    type: deadline
+    text:
+      en: >-
+        A courtroom for rape and serious sexual offence cases due in every Crown Court by October
+        2028
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-18"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

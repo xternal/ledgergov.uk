@@ -1,0 +1,70 @@
+format: openpromises/1
+id: uk-heritage-repair-funds-2026
+headline:
+  en: £92m for places of worship, £75m for heritage
+actor_id: hm-government
+made_on: "2026-10-15"
+venue: press_release
+venue_label:
+  en: Press release (Department for Digital, Culture, Media and Sport)
+area: culture
+status: delivering
+status_note:
+  en: >-
+    Both funds are part of the £1.5 billion Arts Everywhere Fund, are run by Historic England and
+    give priority to the areas of England in greatest need. This round gives over £18 million to 51
+    places of worship, the first awards from that fund, and nearly £13 million to 20 heritage at
+    risk projects; the heritage fund made 37 awards for 2025/26 in August 2025. A second round of
+    each for 2026/27 is to be announced later, and the release does not say when this parliament
+    ends, so the card has no deadline.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Digital, Culture, Media and Sport press release, 15 Oct 2026: Major drive to
+      restore churches and revitalise heritage buildings in communities across England announced
+    url: https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced
+versions:
+  - version: 1
+    text: >-
+      The Places of Worship Renewal Fund is worth £92 million across this parliament, and the
+      Heritage at Risk Capital Fund is worth £75 million across the parliament.
+    recorded_on: "2026-10-15"
+    source_url: https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced
+    quote_checked_on: "2026-10-18"
+    parameters:
+      who:
+        en: Historic places of worship and heritage buildings at risk in England
+      cost:
+        note:
+          en: >-
+            £92 million and £75 million across this parliament. The release gives no number of
+            years, so no yearly figure is shown.
+      when:
+        en: Across this parliament
+      funded_by:
+        en: The £1.5 billion Arts Everywhere Fund
+events:
+  - date: "2026-10-15"
+    type: promised
+    text:
+      en: >-
+        The government says the Places of Worship Renewal Fund is worth £92 million and the Heritage
+        at Risk Capital Fund £75 million across this parliament
+  - date: "2026-10-15"
+    type: delivering
+    text:
+      en: >-
+        The Heritage Minister announces that 51 places of worship will share over £18 million and 20
+        heritage at risk projects nearly £13 million
+    evidence_url: https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-18"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

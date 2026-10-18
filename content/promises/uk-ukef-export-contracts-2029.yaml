@@ -1,0 +1,66 @@
+format: openpromises/1
+id: uk-ukef-export-contracts-2029
+headline:
+  en: Support £12.5bn of new export contracts by 2029
+actor_id: hm-government
+made_on: "2026-10-15"
+venue: press_release
+venue_label:
+  en: Press release (UK Export Finance)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    UK Export Finance (UKEF) is the government's export credit agency. The release, about a £150,000
+    trade loan to an Exeter boat maker, says UKEF provided over £11 billion in loans, guarantees and
+    insurance in the last financial year; it does not say from when contracts count towards the
+    £12.5 billion. 2029 is read as the end of 2029. The card moves when UKEF reports the value of
+    contracts it has supported.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      UK Export Finance press release, 15 Oct 2026: Exeter self-driving boat manufacturer goes
+      overseas with government-backed finance
+    url: https://www.gov.uk/government/news/exeter-self-driving-boat-manufacturer-goes-overseas-with-government-backed-finance
+versions:
+  - version: 1
+    text: >-
+      By 2029, UKEF aims to support UK firms to win over £12.5 billion of new export contracts
+      through its export finance offer.
+    recorded_on: "2026-10-15"
+    source_url: https://www.gov.uk/government/news/exeter-self-driving-boat-manufacturer-goes-overseas-with-government-backed-finance
+    quote_checked_on: "2026-10-18"
+    parameters:
+      who:
+        en: UK firms that export, through UK Export Finance's loans, guarantees and insurance
+      cost:
+        note:
+          en: >-
+            The £12.5 billion is the value of export contracts UK firms win, not public spending. No
+            cost has been published.
+      when:
+        en: By 2029
+      deadline: "2029-12-31"
+      funded_by: null
+events:
+  - date: "2026-10-15"
+    type: promised
+    text:
+      en: >-
+        UK Export Finance says it aims to support UK firms to win over £12.5 billion of new export
+        contracts by 2029
+  - date: "2029-12-31"
+    type: deadline
+    text:
+      en: Over £12.5 billion of new export contracts supported by UK Export Finance due by 2029
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-18"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
