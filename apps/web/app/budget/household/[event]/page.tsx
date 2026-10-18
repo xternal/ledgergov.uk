@@ -200,7 +200,7 @@ export default async function HouseholdPage({ params }: Props) {
               <p className="m-0 font-semibold">Not yet in full</p>
               <p className="m-0 text-muted">
                 PolicyEngine, the charity whose open model of UK taxes and benefits we use for our estimate, had not answered when this page was
-                published on {computedOn(s)}. What is here is complete and was checked by two editors: the measures with their pages, your own tax on a
+                published on {computedOn(s)}. What is here is complete and was checked by an editor: the measures with their pages, your own tax on a
                 salary{s.input.treasury ? " and the Treasury's own chart" : ""}. The summary, the change by income tenth, who gains and who loses and
                 the six example households follow once PolicyEngine answers (<a href="#to-follow">what follows</a>).
               </p>
@@ -233,7 +233,7 @@ export default async function HouseholdPage({ params }: Props) {
             {c.headHouseholds && c.sideHouseholds ? (
               <HouseholdsSection s={s} head={c.headHouseholds} side={c.sideHouseholds} />
             ) : (
-              <ToFollow id="households" title="Six example households, before and after" text="The six example households follow once two editors have checked them." />
+              <ToFollow id="households" title="Six example households, before and after" text="The six example households follow once an editor has checked them." />
             )}
           </>
         )}
@@ -442,7 +442,7 @@ export default async function HouseholdPage({ params }: Props) {
           {s.provider && compareUrl ? (
             <p className="m-0 text-muted">
               We asked PolicyEngine once, on {computedOn(s)}, not each time someone opens the page, and nothing about readers is ever sent. Every answer
-              came from one version of the model: PolicyEngine UK {s.provider.model_version}, data {s.provider.data_version}. Two editors checked the
+              came from one version of the model: PolicyEngine UK {s.provider.model_version}, data {s.provider.data_version}. An editor checked the
               measures before this page was published. You can open the same comparison in <a href={compareUrl}>PolicyEngine&apos;s own app</a>, or
               read <a href={`https://github.com/xternal/public-ledger/blob/main/${s.measures_file}`}>the measures file</a> and{" "}
               <a href="https://github.com/xternal/public-ledger/blob/main/docs/MODEL.md">our method</a>.
@@ -451,7 +451,7 @@ export default async function HouseholdPage({ params }: Props) {
             <p className="m-0 text-muted">
               PolicyEngine had not answered when this page was published on {computedOn(s)}, so the parts that need it follow. We ask it once, not each
               time someone opens the page, and nothing about readers is ever sent. The salary check needs no model: it applies the Budget&apos;s own
-              rates and thresholds, typed from its documents, to the salary you type, in your browser. Two editors checked the measures and the
+              rates and thresholds, typed from its documents, to the salary you type, in your browser. An editor checked the measures and the
               Treasury&apos;s figures before this page was published. Read{" "}
               <a href={`https://github.com/xternal/public-ledger/blob/main/${s.measures_file}`}>the measures file</a> and{" "}
               <a href="https://github.com/xternal/public-ledger/blob/main/docs/MODEL.md">our method</a>.
@@ -492,7 +492,7 @@ export default async function HouseholdPage({ params }: Props) {
   );
 }
 
-/** Summary, deciles and gains and losses: the population results, shown once two editors have reviewed them. */
+/** Summary, deciles and gains and losses: the population results, shown once an editor has reviewed them. */
 function PopulationSections({ s, head, side }: { s: HouseholdSnapshot; head: HouseholdYearResult; side: HouseholdYearResult }) {
   const c = householdCopy(s);
   const l = householdLabels(s);
@@ -620,10 +620,10 @@ function HeldPopulation({ s }: { s: HouseholdSnapshot }) {
       <ToFollow
         id="summary"
         title="Summary"
-        text={`Our estimate for the whole country, by income, follows once two editors have checked it. Until then: the example households, your own tax on a salary, the measures and the Treasury's own chart for the ${s.name}, below.`}
+        text={`Our estimate for the whole country, by income, follows once an editor has checked it. Until then: the example households, your own tax on a salary, the measures and the Treasury's own chart for the ${s.name}, below.`}
       />
-      <ToFollow id="deciles" title="Change in income, by income tenth" text="Follows once two editors have checked it." />
-      <ToFollow id="winners" title="Who gains and who loses" text="Follows once two editors have checked it." />
+      <ToFollow id="deciles" title="Change in income, by income tenth" text="Follows once an editor has checked it." />
+      <ToFollow id="winners" title="Who gains and who loses" text="Follows once an editor has checked it." />
     </>
   );
 }

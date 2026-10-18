@@ -1,0 +1,29 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Counts are of drafts; every draft has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-10-16"
+triaged_on: "2026-10-18"
+by: Claude as AI Journalist, at Pavel's request
+pull_request: 118
+sources_read: 3
+candidates: 4
+outcomes:
+  card: 2
+  reworded: 0
+  duplicate: 1
+  existing: 0
+  grant: 0
+  done: 0
+  process: 1
+  broad: 0
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 2
+new_actors: [douglas-alexander, james-murray]
+cards:
+  - uk-defence-colleges-scotland-2026
+  - uk-carbon-border-levy-2027 # status legislated: the statement records the Finance Act 2026 and two sets of regulations laid
+reworded: []
+dropped:
+  - { draft: 2026-10-16-wms-hcws387-2, code: duplicate, into: uk-carbon-border-levy-2027, note: "single product-level default values for 2027 and 2028, country-specific default values from 2029; in the card's status note" }
+  - { draft: 2026-10-16-govuk-ofsted-to-pilot-new-independent-complaint-review-service-1, code: process, note: "Ofsted's pilot of an independent review of its own complaint handling, through the 2026/27 academic year; a change to the inspectorate's internal complaints process" }

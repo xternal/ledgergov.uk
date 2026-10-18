@@ -1,6 +1,6 @@
 # Budget day: Autumn Budget 2026
 
-The plan for **Wednesday 28 October 2026**, the day of the Autumn Budget (date: [House of Commons Library](https://commonslibrary.parliament.uk/research-briefings/cbp-12226/)). Clocks go back on 25 October, so every time here is GMT. The aim: by the next morning, every card the Budget touched shows what it did, with a link to the page that says so, approved by two editors.
+The plan for **Wednesday 28 October 2026**, the day of the Autumn Budget (date: [House of Commons Library](https://commonslibrary.parliament.uk/research-briefings/cbp-12226/)). Clocks go back on 25 October, so every time here is GMT. The aim: by the next morning, every card the Budget touched shows what it did, with a link to the page that says so, approved by an editor (one approval is enough since 17 October 2026, after AI Journalist's check).
 
 [ledgergov.uk/budget](https://ledgergov.uk/budget) does the rest by itself: it lists the government's promises the Budget can still move, and from the day it leads with "What the Budget did", built from every event dated 28 October. It re-renders hourly, so a merged change appears within the hour.
 
@@ -13,9 +13,9 @@ The plan for **Wednesday 28 October 2026**, the day of the Autumn Budget (date: 
 | Straight after | The Budget documents on GOV.UK and the OBR's forecast are published | — |
 | Within 2 hours of publication | The scorecard: read the Treasury's table of policy decisions into [/budget/scorecard](#the-scorecard-the-treasurys-table-of-measures) and open its pull request (runbook below) | Owner |
 | Afternoon | Read the documents against the checklist below; note each card's page and table | Editors, AI Journalist |
-| 13:00 to 23:00 | The Budget for your household: the measures typed with their pages, one run through PolicyEngine, two editors' review ([runbook below](#the-budget-for-your-household)); live by 07:00 on Thursday, in full or as the fallback | Editors, owner |
+| 13:00 to 23:00 | The Budget for your household: the measures typed with their pages, one run through PolicyEngine, an editor's review ([runbook below](#the-budget-for-your-household)); live by 07:00 on Thursday, in full or as the fallback | Editors, owner |
 | By 20:00 | One pull request with an entry for every card the Budget touched, each with its evidence link | Drafted by AI Journalist, opened by the owner |
-| Evening or next morning | Two editors review and approve; the owner merges | Editors, owner |
+| Evening or next morning | An editor reviews and approves; the owner merges | Editors, owner |
 | Within an hour of merge | `/budget`, the cards and the feeds update; follow emails go out | Automatic |
 
 ### Who does what (decided 12 October 2026; moved to cloud routines on 15 October 2026)
@@ -24,18 +24,18 @@ Claude cloud routines (claude.ai/code/routines, on Pavel's account) do the typin
 
 | When (GMT) | Routine | What it does | Who checks |
 |---|---|---|---|
-| Mon 19 to Tue 27 Oct, 09:51 UK time | Leak tracker: draft today's Budget leaks | Drafts the day's new leak entries, with sources and archived copies, as one pull request | Two editors approve |
+| Mon 19 to Tue 27 Oct, 09:51 UK time | Leak tracker: draft today's Budget leaks | Drafts the day's new leak entries, with sources and archived copies, as one pull request | An editor approves |
 | Wed 21 Oct, 14:13 BST | ONS day: check the new borrowing figures | Checks the morning's data pull request brought ONS's September public finances, and that /borrowing's figures match the ONS bulletin | Pavel merges the data pull request if they match |
 | Tue 27 Oct, 10:00 | Budget eve: prepare the household page | Re-tests PolicyEngine if its API moved, refreshes the household templates, starts the 2026 measures file on its branch and pushes it, rehearses the "no model" fallback offline | Nothing to check unless it reports a change |
 | Wed 28 Oct, 14:00 | Budget day: the Treasury's scorecard | Reads the Treasury's total from the PDF page as a picture, separately from the parser, then runs the scorecard (runbook below) | Pavel retypes the total from the PDF and checks three lines, then merges |
 | Wed 28 Oct, 14:30 | Budget day: the household run, part 1 of 3 | Types every tax and benefit measure with its page, runs PolicyEngine (again every 10 minutes while it is down, until 17:00), opens the pull request | Pavel and Goodwill Stranger check every value against its page, then merge |
-| Wed 28 Oct, 17:00 | Budget day: draft the card updates | Drafts the card changes, with rates from the Budget document or HMRC's notes when OOTLAR is not out | Two editors approve, as for every card |
+| Wed 28 Oct, 17:00 | Budget day: draft the card updates | Drafts the card changes, with rates from the Budget document or HMRC's notes when OOTLAR is not out | An editor approves, as for every card |
 | Wed 28 Oct, 19:45 | Budget day: the household run, part 2 of 3 | Re-checks every rate against HMRC's notes until 21:30, fixes and re-runs if one differs, and comments on the pull request | As part 1 |
 | Wed 28 Oct, 22:00 | Budget day: the household run, part 3 of 3 | If PolicyEngine has still not answered, builds the page without the model so the editors can review tonight, then retries until 23:30 | As part 1 |
 | Thu 29 Oct, 05:00 | Morning after: household page fallback check | If the household pull request is not merged, turns it into the fallback: the households and the Treasury's chart if PolicyEngine answered (deciles follow); if it cannot be reached at all, the page without the model (the measures, the salary check and the Treasury's chart; the rest follows) | Pavel and Goodwill Stranger, a short review before 07:00 |
 | Thu 29 Oct, 09:00 | Morning after: refill the household page | If the household page went out without the model or with its deciles held, runs PolicyEngine again and opens the full page's pull request | Pavel and Goodwill Stranger check the results, then merge |
-| Thu 29 Oct, 10:30 | Morning after: score the predictions and the leaks | Answers the 10 prediction questions and gives each leak its outcome, from the documents, as one pull request | Two editors approve |
-| Fri 30 Oct, 09:00 | After the Budget: draft cards for its new promises | Drafts a card for each new commitment, with its deadline or "no date given" and its cost | Two editors approve and merge |
+| Thu 29 Oct, 10:30 | Morning after: score the predictions and the leaks | Answers the 10 prediction questions and gives each leak its outcome, from the documents, as one pull request | An editor approves |
+| Fri 30 Oct, 09:00 | After the Budget: draft cards for its new promises | Drafts a card for each new commitment, with its deadline or "no date given" and its cost | An editor approves and merges |
 
 Each routine runs on its own cloud machine, so the three on Wednesday afternoon no longer wait for each other. The household run is split into three routines because one cloud run may not last nine hours; parts 2 and 3 carry on from the `budget-2026-household` branch on GitHub. The routines cannot read the private editors list, so they skip `openpromises validate` and read CI's checks after pushing (CI has the list as a secret).
 
@@ -58,14 +58,14 @@ Cite the exact page: add `#page=NN` to a PDF link, or link the HTML section.
 | [5% of GDP on national security by 2035](https://ledgergov.uk/promise/uk-nato-5pc-2035-2025) | In plan | Defence spending path in the Budget and the EFO; any new money towards 3.5% core defence | Money allocated on the path: a `funded` event. A new official figure: a cost correction |
 | [Cap bus fares at £2](https://ledgergov.uk/promise/uk-bus-cap-2-2026) | In plan | The £400m (England) in DfT's budget for 2026-27 and 2027-28 | Confirmed in Budget documents: `funded` |
 | [Cut manufacturers' electricity bills](https://ledgergov.uk/promise/uk-bics-electricity-2026) | In plan | The Exchequer's share of the scheme (due to be scored at this Budget) | Scored: `funded`, and the yearly cost if it changes |
-| [No tax rises for working people](https://ledgergov.uk/promise/uk-no-tax-rise-working-people-2024) | In plan | Main rates of income tax, employee National Insurance and VAT in the Budget document or HMRC's notes (OOTLAR once it is out) | A rise in one of those rates: `failed` (reads **Not met**) with evidence. Frozen thresholds don't change a rate: say so in the status note and let two editors decide |
+| [No tax rises for working people](https://ledgergov.uk/promise/uk-no-tax-rise-working-people-2024) | In plan | Main rates of income tax, employee National Insurance and VAT in the Budget document or HMRC's notes (OOTLAR once it is out) | A rise in one of those rates: `failed` (reads **Not met**) with evidence. Frozen thresholds don't change a rate: say so in the status note and let an editor decide |
 | [Cap corporation tax at 25%](https://ledgergov.uk/promise/uk-corp-tax-cap-25-2024) | Legislated | The main rate in the Budget document or HMRC's notes (OOTLAR once it is out) | Main rate above 25%: `failed` |
 | [Fund 10 major hospital projects and maintenance](https://ledgergov.uk/promise/uk-nhs-capital-1-5bn-2026) | In plan | Estates Safety Fund or NHS capital lines | Money confirmed by year: `funded`, and a yearly cost if one is now published |
 | [Free unlimited bus travel for disabled people](https://ledgergov.uk/promise/uk-disabled-bus-pass-2026) | Promised | The £60m in DWP or DfT budgets, and whether it is yearly | Confirmed: `funded`; a yearly figure: cost correction |
 | [Mental health strategy before Christmas](https://ledgergov.uk/promise/uk-mental-health-strategy-2026) | Promised | Money for mental health tied to the strategy | Money alone doesn't move it; note it. The strategy presented to Parliament: `in_plan` |
 | [Mayors control the 16-19 budget](https://ledgergov.uk/promise/uk-mayors-16-19-budget-2026) | Promised | The devolution white paper, expected alongside the Budget | Published and naming it: `in_plan` |
 | [SEND inclusion standards](https://ledgergov.uk/promise/uk-send-inclusion-standards-2026) | Promised | SEND funding or the standards themselves | Funding: note it. Standards published: `delivered` |
-| [Meet the fiscal rules, with a buffer](https://ledgergov.uk/promise/uk-fiscal-rules-2026) | Promised, due today | The OBR's assessment of each fiscal rule in the EFO, and the headroom against them | The OBR judges the rules met: `delivered`, with the headroom in £bn in the status note (the pledge also promised "a buffer": if the headroom is very small, say so and let two editors decide). A rule judged missed: `failed` (reads **Not met**) |
+| [Meet the fiscal rules, with a buffer](https://ledgergov.uk/promise/uk-fiscal-rules-2026) | Promised, due today | The OBR's assessment of each fiscal rule in the EFO, and the headroom against them | The OBR judges the rules met: `delivered`, with the headroom in £bn in the status note (the pledge also promised "a buffer": if the headroom is very small, say so and let an editor decide). A rule judged missed: `failed` (reads **Not met**) |
 | [Launch the Your First Home equity loan scheme](https://ledgergov.uk/promise/uk-your-first-home-2026) | Promised, due today | The scheme in the Budget document and policy costings: cost, price caps, start date | Confirmed with money and a start date: `funded`, and its official yearly cost as a correction. Confirmed without money: `in_plan`. Not in the Budget: leave it; the deadline job records the missed date |
 | [Cut business rates 20% for pubs and venues](https://ledgergov.uk/promise/uk-pubs-business-rates-cut-2026) | Promised | The pubs and live music relief in the policy decisions table, its cost, and the exclusion for the largest venues | In the table with a cost: `funded`, and a cost correction if the official figure differs from £0.1bn |
 | [Restore the Union Learning Fund, £15m a year](https://ledgergov.uk/promise/uk-union-learning-fund-2026) | Promised | The £15m a year in the policy decisions table or departmental lines, and the DWP savings said to pay for it | Confirmed with money: `funded`; a different yearly figure: cost correction. Record how it is paid for in the status note |
@@ -139,7 +139,7 @@ A broken pledge reads **Not met**, never "broken": the label states the fact, th
 
 `/budget/scorecard/<event>` shows every line of the Budget's table of policy decisions: what each measure raises or costs in the last year the Treasury costs (2030-31 at Budget 2025), every year in a full table, the Treasury's totals, and a link to the PDF page of every line. It is built only from `data/build/budget/<event>.json`, which `etl/budget_costings.py` reads from the PDF as printed. `/budget` links the newest scorecard, the sitemap and `llms.txt` list them all. Figures are the Treasury's, in £ million, with its sign: positive raises money, negative costs money.
 
-It is data, not a card: the two-editor rule for cards does not apply, but one reviewer other than the person who ran it checks the total and three lines against the PDF before merging (step 7). On 28 October 2026 the scheduled task `budget-day-2026-scorecard` runs it and Pavel is the reviewer.
+It is data, not a card: the editors' approval rule for cards does not apply, but one reviewer other than the person who ran it checks the total and three lines against the PDF before merging (step 7). On 28 October 2026 the scheduled task `budget-day-2026-scorecard` runs it and Pavel is the reviewer.
 
 **Dry run, 12 October 2026, on Budget 2025 (26 November 2025):** 16 minutes from finding the documents to the page served with every check green, of which about 9 minutes were lost to a crash of the machine (several agents building at once) and 7 were work. The parser read the 88-line Table 4.1 first time, a table it had not seen (it was built on Autumn Budget 2024 and Spring Statement 2025); every figure matched the Treasury's spreadsheet. The one manual fix: the Treasury's PDF and spreadsheet word line 56 differently and mark line 78 Spend in one and Tax in the other, so the copy check stopped the build until those two were checked in the PDF and accepted (step 5). Allow two hours on the day for a person doing it for the first time, with review, merge and deploy.
 
@@ -231,7 +231,7 @@ It is data, not a card: the two-editor rule for cards does not apply, but one re
 
 `/budget/household/<event>` shows what the Budget's tax and benefit measures do to households: by income tenth, who gains and who loses, six example households before and after, a salary check readers run in their own browser, the measures left out and why, and the Treasury's own chart beside ours. It is built only from `data/build/budget/household/<event>.json`, which one command writes on the night from the measures editors type into `content/budget/household/<event>.yaml`. Readers never call PolicyEngine; the job does, once. How it works and what the live test found: `docs/MODEL.md`, T1, "The Budget for your household". `/budget` links the newest one by itself; until the night it links the rehearsal on Autumn Budget 2025.
 
-It is data, like the scorecard, but it is our estimate, so **two editors** review the measures file in the pull request, as for cards: every value against its page.
+It is data, like the scorecard, but it is our estimate, so **an editor** reviews the measures file in the pull request, as for cards: every value against its page.
 
 ### Before the day
 
@@ -254,7 +254,7 @@ It is data, like the scorecard, but it is our estimate, so **two editors** revie
 | 16:30 | The run: about five economy runs, 3 to 5 minutes, up to 20 when PolicyEngine is busy (step 5) | Owner |
 | 17:00 | Checks, pull request (step 6) | Owner |
 | From about 19:30 | HMRC's tax information and impact notes: check every rate and threshold in the file against them; any change means a new run (step 5 again) | Editor A |
-| 20:00 to 23:00 | Two editors review and approve; the owner merges; the deploy follows within minutes | Editors, owner |
+| 20:00 to 23:00 | An editor reviews and approves; the owner merges; the deploy follows within minutes | Editors, owner |
 | After the deploy | `curl -A LinkedInBot https://ledgergov.uk/budget/household/autumn-budget-2026` returns the title, description and image; `/budget` links it | Owner |
 | 05:00 Thursday | Not approved yet, or the run failed? Start the fallback (below) | Owner, one editor |
 | **07:00 Thursday** | **The page is live: in full, or as the fallback** | — |
@@ -296,7 +296,7 @@ It is data, like the scorecard, but it is our estimate, so **two editors** revie
    lsof -ti tcp:3204 | xargs kill   # next start leaves a next-server process: stop it by its port
    ```
    On the page: the deciles look like the Budget (who should gain gains), the six households move the way the measures say, every measure links to its page.
-7. **Publish.** `git add content/budget/household/autumn-budget-2026.yaml packages/server/test/fixtures/t1/household/autumn-budget-2026.json data/build/budget/household/autumn-budget-2026.json`, commit, push, open the pull request. Two editors check every value against its page, the Treasury figures against the PDF, and the page on the preview; then merge.
+7. **Publish.** `git add content/budget/household/autumn-budget-2026.yaml packages/server/test/fixtures/t1/household/autumn-budget-2026.json data/build/budget/household/autumn-budget-2026.json`, commit, push, open the pull request. An editor checks every value against its page, the Treasury figures against the PDF, and the page on the preview; then merge.
 
 ### When something fails
 
@@ -308,7 +308,7 @@ It is data, like the scorecard, but it is our estimate, so **two editors** revie
 | `check`: a TODO is left in the file | A placeholder | Fill it or delete it |
 | `record`: the measures do not fit the model PolicyEngine runs today | PolicyEngine updated its model since the templates | `pnpm household -- templates`, then fix the named paths |
 | `record`: PolicyEngine offers 2024 … 2030; it cannot run 2031-32 | Years beyond 2030-31 | Drop them from `years` |
-| `record`: PolicyEngine http_5xx, timeout or network | The API is down or busy (no uptime promise; its busiest night) | Wait 10 minutes and run again: finished years come back from its cache at once. Keep trying until 05:00, then the fallback: the households only if PolicyEngine answers them, else the page without the model. If nothing has come back by 22:00, also commit `pnpm household -- build autumn-budget-2026 --no-model` to the branch, so two editors can review that page on the preview the same evening; a run that succeeds later replaces it |
+| `record`: PolicyEngine http_5xx, timeout or network | The API is down or busy (no uptime promise; its busiest night) | Wait 10 minutes and run again: finished years come back from its cache at once. Keep trying until 05:00, then the fallback: the households only if PolicyEngine answers them, else the page without the model. If nothing has come back by 22:00, also commit `pnpm household -- build autumn-budget-2026 --no-model` to the branch, so an editor can review that page on the preview the same evening; a run that succeeds later replaces it |
 | `record`: still computing … after 20 minutes | Its queue is long | As above |
 | `build`: FAIL policies | The file changed after the recording | Run again (step 5) |
 | `build`: FAIL one_model | PolicyEngine updated during the run: two models in one comparison | Run again; every year is computed again on the new model |
@@ -319,20 +319,20 @@ It is data, like the scorecard, but it is our estimate, so **two editors** revie
 
 ### The fallback rule
 
-If our deciles are not reviewed by two editors by **07:00 GMT on Thursday 29 October**, publish what is ready and add the rest when it is. Being right matters more than being first. At 05:00 the owner (in 2026 the scheduled task `budget-2026-household-fallback`) takes one of three paths:
+If our deciles are not reviewed by an editor by **07:00 GMT on Thursday 29 October**, publish what is ready and add the rest when it is. Being right matters more than being first. At 05:00 the owner (in 2026 the scheduled task `budget-2026-household-fallback`) takes one of three paths:
 
 | At 05:00 | What the page shows | Its share image | Then |
 |---|---|---|---|
 | The full run is approved | Everything (step 7) | Our deciles | — |
-| PolicyEngine answered, at least for the example households, but the deciles are not reviewed | `hold: [deciles]`: the households, the salary check, the measures and the Treasury's chart; the summary, deciles and gains and losses "follow once two editors have checked it" | The six households | The deciles, once reviewed |
+| PolicyEngine answered, at least for the example households, but the deciles are not reviewed | `hold: [deciles]`: the households, the salary check, the measures and the Treasury's chart; the summary, deciles and gains and losses "follow once an editor has checked it" | The six households | The deciles, once reviewed |
 | PolicyEngine cannot be reached at all | No model: the salary check, every measure with its page and the Treasury's chart; the summary, deciles, gains and losses and households "follow once PolicyEngine answers" | The Treasury's chart (or, with none, the salary check on three salaries) | Everything else, once PolicyEngine answers |
 
 **PolicyEngine answered: hold the deciles.**
 
 1. At 05:00, if the full run is not approved (or failed): add `hold: [deciles]` to the measures file.
 2. If the recording has the households (`record` got that far), rebuild offline: `pnpm household -- build autumn-budget-2026`. If it has none, ask for the households only (two calls, no population runs): `pnpm household -- record autumn-budget-2026 --households-only`, then `build`. If that fails with http_5xx, timeout or network twice, 10 minutes apart, take the "no model" path below instead (remove the `hold` line first).
-3. The page then shows the summary, the deciles and gains and losses as "follows once two editors have checked it", and everything else in full; its share image shows the six households. Two editors check the six households and the Treasury's figures (a short review), and it merges.
-4. When the deciles are reviewed: remove `hold`, run `pnpm household -- autumn-budget-2026` (or `build`, if the full recording is the reviewed one), open the pull request, two editors, merge.
+3. The page then shows the summary, the deciles and gains and losses as "follows once an editor has checked it", and everything else in full; its share image shows the six households. An editor checks the six households and the Treasury's figures (a short review), and it merges.
+4. When the deciles are reviewed: remove `hold`, run `pnpm household -- autumn-budget-2026` (or `build`, if the full recording is the reviewed one), open the pull request, an editor approves, merge.
 
 **PolicyEngine cannot be reached at all: publish without the model.** The salary check, the measures and the Treasury's chart need no model, so the page still goes up by 07:00. Nothing in the measures file changes, so the normal run later uses the same file.
 
@@ -354,19 +354,19 @@ If our deciles are not reviewed by two editors by **07:00 GMT on Thursday 29 Oct
    ```
 
 3. Check it all (step 6, one command at a time). On the page: the "Not yet in full" box; the salary check on £25,000, £45,000 and £120,000 against HMRC's notes; every measure links its page; the Treasury's chart; "To follow" lists the four parts; no empty chart. `curl -A LinkedInBot` returns the title, description and image (the Treasury's chart).
-4. Publish: `git add content/budget/household/autumn-budget-2026.yaml data/build/budget/household/autumn-budget-2026.json` (no recording), commit, push, open the pull request "The Budget for your household: without the model until PolicyEngine answers". Two editors check every value against its page and the Treasury's figures against the PDF, then merge before 07:00.
-5. Every 30 minutes from 07:00, see whether PolicyEngine answers: `curl -s -o /dev/null -w "%{http_code}\n" https://api.policyengine.org/uk/metadata` (200 is up). When it does, on a new branch from `main`, run the normal job, with no change to the file: `pnpm household -- autumn-budget-2026`. It replaces the snapshot whole (nothing of the no-model one is kept); once merged, the page fills in with no other change. Then step 6, step 7 with the recording, two editors review the results, merge. If they cannot review the deciles straight away, hold them as above.
+4. Publish: `git add content/budget/household/autumn-budget-2026.yaml data/build/budget/household/autumn-budget-2026.json` (no recording), commit, push, open the pull request "The Budget for your household: without the model until PolicyEngine answers". An editor checks every value against its page and the Treasury's figures against the PDF, then merge before 07:00.
+5. Every 30 minutes from 07:00, see whether PolicyEngine answers: `curl -s -o /dev/null -w "%{http_code}\n" https://api.policyengine.org/uk/metadata` (200 is up). When it does, on a new branch from `main`, run the normal job, with no change to the file: `pnpm household -- autumn-budget-2026`. It replaces the snapshot whole (nothing of the no-model one is kept); once merged, the page fills in with no other change. Then step 6, step 7 with the recording, an editor reviews the results, merge. If they cannot review the deciles straight away, hold them as above.
 
-If even the measures cannot be reviewed by 07:00, there is no household page that morning: the scorecard, `/budget` and the cards carry it, and the page follows when two editors have checked it.
+If even the measures cannot be reviewed by 07:00, there is no household page that morning: the scorecard, `/budget` and the cards carry it, and the page follows when an editor has checked it.
 
 ## The leak tracker and the headroom
 
-- **[/budget/leaks](https://ledgergov.uk/budget/leaks)** fills from Monday 19 October ([EDITORS.md, "How to add a leak"](EDITORS.md#how-to-add-a-leak)). On the evening of the Budget, in the same pull request as the cards or its own, every entry gets what the Budget did: `announced` or `not_in_budget`, a `budget:` block with the page of the Budget documents that shows it, and the official cost if the Treasury's table gives one. Two editors approve, as always. Until then the page says plainly which entries are only trailed.
+- **[/budget/leaks](https://ledgergov.uk/budget/leaks)** fills from Monday 19 October ([EDITORS.md, "How to add a leak"](EDITORS.md#how-to-add-a-leak)). On the evening of the Budget, in the same pull request as the cards or its own, every entry gets what the Budget did: `announced` or `not_in_budget`, a `budget:` block with the page of the Budget documents that shows it, and the official cost if the Treasury's table gives one. An editor approves, as always. Until then the page says plainly which entries are only trailed.
 - **[/budget/how-it-works](https://ledgergov.uk/budget/how-it-works)** shows the OBR's headroom against each fiscal rule from the "Performance against the Government's fiscal targets" table of each EFO that assessed them. Nothing to type: the nightly data run finds the new EFO, reads that table from its last chapter workbook and opens the data pull request; once merged, the page and its share image show the new assessment beside the old ones. If the OBR publishes on GOV.UK only, or the table moves, the build warns ("newer than the newest recorded assessment") and the page says the assessment is being added: run `pnpm etl` from a normal connection ([OPERATIONS.md, "11. OBR data by hand"](OPERATIONS.md#11-obr-data-by-hand)). Use the same table for the fiscal rules card above.
 
 ## Rules that matter most on the day
 
 - **Only documents move cards.** The speech, briefings and press coverage are leads; the Budget documents, the OBR and legislation are evidence.
 - **One standard.** Every card the Budget touches is updated the same evening, whatever the party.
-- **Two editors** approve the pull request before it merges, as always. If only one editor is free, it waits until the morning: being right matters more than being first.
+- **An editor** approves the pull request before it merges, as always (one approval is enough since 17 October 2026; it was two before). If no editor is free, it waits until the morning: being right matters more than being first.
 - **No guesses.** If a document gives a total for several years and no yearly split, the card says so, as now.

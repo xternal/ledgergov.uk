@@ -1,0 +1,64 @@
+format: openpromises/1
+id: uk-youth-workers-1000-2027
+headline:
+  en: Recruit 1,000 new youth workers from spring 2027
+actor_id: hm-government
+made_on: "2026-10-15"
+venue: press_release
+venue_label:
+  en: Press release (Department for Work and Pensions)
+area: culture
+status: promised
+status_note:
+  en: >-
+    The youth workers are part of the government's new £450 million Youth Matters programme, which
+    the release says will create and improve youth spaces and deliver more face-to-face activities
+    for young people. It gives a start, spring 2027, but no date by which all 1,000 will be in post,
+    so the card has no deadline. The card moves when recruitment starts.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Work and Pensions press release, 15 Oct 2026: Britain's biggest hospitality
+      brands partner with Government to deliver 100,000 jobs for NEET young people
+    url: https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people
+versions:
+  - version: 1
+    text: >-
+      This comes as the Government’s new £450 million Youth Matters programme will help prevent
+      young people disengaging from work and education, by creating and improving youth spaces,
+      increasing access to youth workers and delivering more face-to-face activities for young
+      people from sport and music to volunteering and the arts, backed by a commitment to recruit
+      1,000 new youth workers from spring 2027.
+    recorded_on: "2026-10-15"
+    source_url: https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people
+    quote_checked_on: "2026-10-18"
+    parameters:
+      who:
+        en: Young people, through 1,000 new youth workers
+      cost:
+        note:
+          en: >-
+            The release gives £450 million for the Youth Matters programme as a whole, with no
+            period and no figure for the youth workers, so no yearly figure is shown.
+      when:
+        en: Recruitment from spring 2027
+      funded_by:
+        en: The government's £450 million Youth Matters programme
+events:
+  - date: "2026-10-15"
+    type: promised
+    text:
+      en: >-
+        The government commits to recruit 1,000 new youth workers from spring 2027 under its £450
+        million Youth Matters programme
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-18"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -51,7 +51,7 @@ Under UK GDPR, data revealing political opinions is special category data (Artic
 ## Accounts (v1)
 
 * Passkeys first, email magic link as fallback. No passwords, no social login (social login leaks the follow graph to the provider).
-* Reputation: accepted submissions increase a contributor's trust level. Trusted contributors get their submissions reviewed first. Nobody gets publish rights; the two-editor rule stays.
+* Reputation: accepted submissions increase a contributor's trust level. Trusted contributors get their submissions reviewed first. Nobody gets publish rights; the editor's approval rule stays (one editor's approval, after AI Journalist's check, since 17 October 2026).
 * Voting on "cost this next" (which promises to assess first) needs accounts to resist brigading. Tie-in with Project 1: verified members can vote on priorities; votes change queue order, never findings.
 
 ## What we will not build in v0–v1

@@ -8,7 +8,7 @@ import { IsoDate } from "./provenance";
  * wording in a pull request, not in code. Readers' predictions are stored by
  * the set's id and the question and option ids (packages/server/src/predict),
  * so after launch an id never changes; wording may be fixed, meaning may not.
- * After the Budget, two editors fill in each question's `answer` and
+ * After the Budget, an editor fills in each question's `answer` and
  * `evidence_url`, and the site scores every prediction against them
  * (docs/PREDICT_THE_BUDGET.md).
  */
@@ -43,7 +43,7 @@ export const PredictQuestion = z.strictObject({
   sources: z.array(PredictSource).min(1).max(4),
   /** Which Budget document, and which table or line in it, settles the answer. */
   settled_by: z.string().min(10).max(300),
-  /** After the Budget: the option the documents show. Two editors approve it. */
+  /** After the Budget: the option the documents show. An editor approves it. */
   answer: Id.nullable().default(null),
   /** The page that shows it, with #page=NN for a PDF. */
   evidence_url: z.url().nullable().default(null),

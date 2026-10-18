@@ -23,7 +23,7 @@ export default async function TriagePage({ searchParams }: Props) {
       <div className="grid gap-2">
         <h1 className="m-0 text-[clamp(26px,3.6vw,36px)] font-semibold leading-[1.1] tracking-[-0.03em]">Reader submissions</h1>
         <p className="m-0 text-body text-muted">
-          Newest first. Accepting opens a draft pull request; two editors approve it before anything is published (invariant 8). Contact addresses are never
+          Newest first. Accepting opens a draft pull request; an editor approves it, after AI Journalist's check, before anything is published (invariant 8). Contact addresses are never
           shown here.
         </p>
       </div>

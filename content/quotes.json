@@ -5,6 +5,12 @@
     "checked_on": "2026-10-13",
     "sha256": "12f66a4458e80cb6ce35efcb12e2c5848c6f87481294083558663b53e21e54c6"
   },
+  "064fec3f3b3921eec1f735431922f532ffa87bf20b8a4bc85fbce1e727d13083|https://hansard.parliament.uk/Commons/2026-10-15/debates/971754D8-183E-459F-8404-390D4E0A0C0E/NationalCareService": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-10-15/debates/971754D8-183E-459F-8404-390D4E0A0C0E/NationalCareService",
+    "checked_on": "2026-10-18",
+    "sha256": "0f182fb17490fbdb9370ff221656f4b934461ab4fab053a15dfc40a35609a3ba"
+  },
   "13a001ae01ebcbad5ee4de03d6716e5dcf4f577502df9764a3c0e99ddfa7abe9|https://hansard.parliament.uk/Commons/2026-10-12/debates/54FB2EDB-83AF-40FE-8A98-A914AD221CD7/InternationalUpdate": {
     "match": "exact",
     "url": "https://hansard.parliament.uk/Commons/2026-10-12/debates/54FB2EDB-83AF-40FE-8A98-A914AD221CD7/InternationalUpdate",
@@ -28,6 +34,12 @@
     "url": "https://www.gov.uk/government/news/new-one-stop-shop-for-flood-preparedness-launched-as-we-approach-more-weather-whiplash",
     "checked_on": "2026-10-13",
     "sha256": "12f66a4458e80cb6ce35efcb12e2c5848c6f87481294083558663b53e21e54c6"
+  },
+  "22e4dfb31e634a0963daa739d9332e96a98b53b8ee9dcdf619c39a5147ce4d48|https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts",
+    "checked_on": "2026-10-18",
+    "sha256": "4ab1450e223678aabc953c4eec9960dc45fbb09b2450f3feac3cb172e8995a56"
   },
   "2521be28333968466fbb33cd51a363d8046a60bbe5b006b66983a8d906adad65|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS366": {
     "match": "exact",
@@ -53,6 +65,18 @@
     "checked_on": "2026-10-13",
     "sha256": "81dc7bcac6911add8e0a8d49b84bc87b14fe4fd70c012e20f1d39911d44bb1d0"
   },
+  "3972470cae0400c655bbddfd6f054ebb681819ddf0e913d427e93815cca820bc|https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people",
+    "checked_on": "2026-10-18",
+    "sha256": "e6f59989d21ce10712c6ae4f7a856c5e96d81fd4eb1b5a28601225a907486412"
+  },
+  "3b765ee816538508e948a7720ae4db9f88273c43c6dd2b213d5ee25a30ca8009|https://www.gov.uk/government/news/victims-of-abuse-to-be-better-supported-by-their-community": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/victims-of-abuse-to-be-better-supported-by-their-community",
+    "checked_on": "2026-10-18",
+    "sha256": "f7969dca22801a78931a28106c84fcf9ace97d05d0e9416567d825a2ffa2fdee"
+  },
   "40430d87416af16b679d25d5a3a29083946fb7239392ac50b511475ee0e6b18e|https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson",
@@ -70,6 +94,24 @@
     "url": "https://www.gov.uk/government/news/major-boost-for-young-people-in-exeter-as-youth-hub-opens-to-support-them-towards-work",
     "checked_on": "2026-10-13",
     "sha256": "89d36b372c705af7b475fe1f5bee03c9bd215e231c001e128491b16f207b96c2"
+  },
+  "433a11fb8182d892d1aea37a8e986b51e7b5e177d711a9af2819177247a523dc|https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts",
+    "checked_on": "2026-10-18",
+    "sha256": "4ab1450e223678aabc953c4eec9960dc45fbb09b2450f3feac3cb172e8995a56"
+  },
+  "45229b0d6b55d1549684b626020c685ca45738bc04fa9b51e810d4d3d179d702|https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people",
+    "checked_on": "2026-10-18",
+    "sha256": "e6f59989d21ce10712c6ae4f7a856c5e96d81fd4eb1b5a28601225a907486412"
+  },
+  "513e6749f3b0e2e14635a013727ee99d8daae11cf6da3561e79e71a3368fe116|https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people",
+    "checked_on": "2026-10-18",
+    "sha256": "e6f59989d21ce10712c6ae4f7a856c5e96d81fd4eb1b5a28601225a907486412"
   },
   "5169ff464154120b1acab0e0bec410651061cb09dc0218cf177162f6f63350ca|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364": {
     "match": "exact",
@@ -101,11 +143,23 @@
     "checked_on": "2026-10-16",
     "sha256": "8adda0fbddf985e4cf85665c7736819d0448af18d975d90ff7d3ea278de46c5a"
   },
+  "619a652c7479bc577972a37a5695f39c55779081ef7693005c3c8cf6f5796c9c|https://www.gov.uk/government/news/douglas-alexander-welcomes-defence-skills-investment-boost": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/douglas-alexander-welcomes-defence-skills-investment-boost",
+    "checked_on": "2026-10-18",
+    "sha256": "025ed47498a414bd2fec8a62d34adfd80edfeb59cdb909fd178bfe569cf1954d"
+  },
   "73aba857956488a26f5403ddcaf69e4f51043a4c861cda25aee064d90b7598ba|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354",
     "checked_on": "2026-10-13",
     "sha256": "f44b4bb943cde778e955dff9f90e2b46cb4e0925dbde9e6e2513633a250649b6"
+  },
+  "77fe412253460543d525f3597806fc1753dc9a9da9ef077629de1e05f075eded|https://www.gov.uk/government/news/world-first-mission-puts-uk-expertise-to-work-to-help-clean-up-space": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/world-first-mission-puts-uk-expertise-to-work-to-help-clean-up-space",
+    "checked_on": "2026-10-18",
+    "sha256": "4d66157418ca165e120e15ad175c1347312026c83487f8f4d3bc8cd955ddc5c2"
   },
   "78e86431fb0385254216661d7789aef7854c5402d2a4172125b59de03afa5dd8|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363": {
     "match": "exact",
@@ -125,11 +179,29 @@
     "checked_on": "2026-10-16",
     "sha256": "da1fb234192c32090d4570d357dad6a2d263fe554f196d77f2eaf6e8c5628c00"
   },
+  "8447ab75c8351d073ef22e5116727be698c9fdab90b47fad34435b5535d647dc|https://www.gov.uk/government/news/great-british-railways-takes-shape-as-hq-and-apprenticeship-scheme-confirmed": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/great-british-railways-takes-shape-as-hq-and-apprenticeship-scheme-confirmed",
+    "checked_on": "2026-10-18",
+    "sha256": "2105280408a3ad6799f324e22d04cb984045805d8c16e0793fd466adb842314c"
+  },
   "8748dc3a6b5cb7800ccbc5cd9081e58394951b1150ffea41f4ba9a0137f5dff1|https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity": {
     "match": "exact",
     "url": "https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity",
     "checked_on": "2026-10-13",
     "sha256": "1a6105f8d1f3f504689cf82b0ba404154f9632e3b15dc4c19a7440ed38941786"
+  },
+  "88c2e67ab5c0d3dda4ef4fdd3c4b141f80dd9e0b81f2c62d85c999e68801ce80|https://www.gov.uk/government/consultations/improving-enforcement-of-council-tax/outcome/improving-enforcement-of-council-tax-government-response": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/consultations/improving-enforcement-of-council-tax/outcome/improving-enforcement-of-council-tax-government-response",
+    "checked_on": "2026-10-18",
+    "sha256": "5b769a71cbc5f0942b9cfb1963aa31631caa602bcb12f898a8947600c0045c45"
+  },
+  "9258e20d58afe05e95754a06bb5d29d5b24ecb83d9bbad0e86d7c0ff346a39e8|https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced",
+    "checked_on": "2026-10-18",
+    "sha256": "0031fe57b80f0ce6c64a16342e24d535ed1ff6952e8baf2696c792dd421cb9eb"
   },
   "97251af046e9ced0a0ee371c477881400a256ef389261a69ad598d3cf76740c1|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS356": {
     "match": "exact",
@@ -161,11 +233,29 @@
     "checked_on": "2026-10-13",
     "sha256": "1a6105f8d1f3f504689cf82b0ba404154f9632e3b15dc4c19a7440ed38941786"
   },
+  "a87700c21bb76e2e5707cbf8f7d15b5aead77c8bc39b02beb60c6739ec0f5839|https://www.gov.uk/government/news/mhra-introduces-new-safeguards-to-strengthen-antidepressant-safety-information-following-major-review": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/mhra-introduces-new-safeguards-to-strengthen-antidepressant-safety-information-following-major-review",
+    "checked_on": "2026-10-18",
+    "sha256": "715a2b92d28f2fb28e5b59f485838fcf63370bd4e4dbdab1f9bc8138ee713d15"
+  },
   "ac9d2252abd66e76a168e3f5524a83a3047f69385d764a2909158baa9061b006|https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson",
     "checked_on": "2026-10-13",
     "sha256": "524c3b9ea355c8047e01f63575643c78199a3cbb108737371f4143af61278d46"
+  },
+  "b0570603b00422ba986cc938f3b3897c2e6a717cea142dd17bbe212fa65e35ca|https://www.gov.uk/government/news/great-british-railways-takes-shape-as-hq-and-apprenticeship-scheme-confirmed": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/great-british-railways-takes-shape-as-hq-and-apprenticeship-scheme-confirmed",
+    "checked_on": "2026-10-18",
+    "sha256": "2105280408a3ad6799f324e22d04cb984045805d8c16e0793fd466adb842314c"
+  },
+  "b2847887dd874f22d6efe4a9ce960d0248c668e302a0e6ce8c4840cbe961e297|https://www.gov.uk/government/publications/organic-action-plan-for-england/organic-action-plan-for-england": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/organic-action-plan-for-england/organic-action-plan-for-england",
+    "checked_on": "2026-10-18",
+    "sha256": "32eed2cda284256ace33f9fd1ff077423bbfe31d2a40fd9cfaeab75d134c9249"
   },
   "b2fea3b2b96aea655e510f9b1ac1111f25cf786e05196adc1699da813dc12358|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS369": {
     "match": "exact",
@@ -220,6 +310,30 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS374",
     "checked_on": "2026-10-16",
     "sha256": "90916311816a040a9ea9c33ba04bbb172a506c1e6819c72f6b141949677ca6b3"
+  },
+  "d5b691608d7727f663697b41da701c6838319a987dcc13f390df11ed89fd0917|https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts",
+    "checked_on": "2026-10-18",
+    "sha256": "4ab1450e223678aabc953c4eec9960dc45fbb09b2450f3feac3cb172e8995a56"
+  },
+  "d867da066dde79f22e0209c037d28f38ec868a6116c6d61ddee9786f2c2adc41|https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people",
+    "checked_on": "2026-10-18",
+    "sha256": "e6f59989d21ce10712c6ae4f7a856c5e96d81fd4eb1b5a28601225a907486412"
+  },
+  "d90b9caff6ff987a96c2febb30b9054ac15f50e8c0432f17d7fc5b7b81f28020|https://www.gov.uk/government/news/exeter-self-driving-boat-manufacturer-goes-overseas-with-government-backed-finance": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/exeter-self-driving-boat-manufacturer-goes-overseas-with-government-backed-finance",
+    "checked_on": "2026-10-18",
+    "sha256": "cb2d6256bd9d4b0892889aed25414eef77a0aca206ffc1bd1c92fda6dd7cc6ff"
+  },
+  "dd9b0baf477ea257f035317b29afe4ee46c64a1d662e3de398d54a3adf127d7a|https://questions-statements.parliament.uk/written-statements/detail/2026-10-16/HCWS387": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-16/HCWS387",
+    "checked_on": "2026-10-18",
+    "sha256": "1c87a61e8ba9d89355cb72cb183698c58479d11a33d214616536ce2d011fd9cc"
   },
   "e5c1896ed5bcb7470a741b845d6d854d0b34f8929a2951a3efe1be67a27fe9f7|https://www.gov.uk/government/news/major-milestone-reached-in-ending-building-safety-crisis": {
     "match": "exact",

@@ -1,0 +1,49 @@
+# One weekly editor's desk run over the week's big GOV.UK documents (docs/desk/ROUTINE.md, steps 6 and 7).
+# Counts are of the commitments weighed in the documents read; each has exactly one outcome.
+intake_date: "2026-10-18" # documents published 11 to 17 October 2026 (GOV.UK search, policy and engagement)
+triaged_on: "2026-10-18"
+by: Claude as AI Journalist, at Pavel's request
+pull_request: null # the coordinator opens it; same branch as the intake triage of 15 and 16 October
+sources_read: 7
+candidates: 12
+outcomes:
+  card: 5
+  reworded: 0
+  duplicate: 0
+  existing: 1
+  grant: 0
+  done: 0
+  process: 3
+  broad: 1
+  event: 0
+  cap: 0
+  other: 2
+quotes_exact: 5
+new_actors: []
+cards:
+  - uk-probation-officers-1300-2027 # also cites the MoJ release of 15 Oct (draft 2026-10-15-govuk-new-courts-in-the-north-to-help-women-break-the-cycle-of-reo-1, folded in)
+  - uk-magistrates-21000-2029
+  - uk-cps-funding-10pc-2029
+  - uk-organic-farmland-10pc-2026
+  - uk-council-tax-two-notices-2026
+reworded: []
+documents:
+  - { title: Government response to the Independent Review of the Criminal Courts (MoJ, 12 Oct), url: "https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts", cards: [uk-probation-officers-1300-2027, uk-magistrates-21000-2029, uk-cps-funding-10pc-2029] }
+  - { title: Organic Action Plan for England (Defra, 14 Oct), url: "https://www.gov.uk/government/publications/organic-action-plan-for-england/organic-action-plan-for-england", cards: [uk-organic-farmland-10pc-2026] }
+  - { title: "Improving enforcement of council tax: government response (MHCLG, 12 Oct)", url: "https://www.gov.uk/government/consultations/improving-enforcement-of-council-tax/outcome/improving-enforcement-of-council-tax-government-response", cards: [uk-council-tax-two-notices-2026] }
+  - { title: UK government response to the Covid-19 Inquiry Module 4 report (DHSC and Cabinet Office, 16 Oct), url: "https://www.gov.uk/government/publications/uk-government-response-to-the-covid-19-inquiry-module-4-report/uk-government-response-to-the-covid-19-inquiry-module-4-report", cards: [] }
+  - { title: "Heating oil: government response to CMA market study (DESNZ, 13 Oct)", url: "https://www.gov.uk/government/publications/heating-oil-government-response-to-cma-market-study/government-response-to-the-cma-heating-oil-market-study", cards: [] }
+  - { title: "Building charges reform: government response to the consultation (MHCLG, 16 Oct)", url: "https://www.gov.uk/government/consultations/building-control-charges-notices-and-certificates/outcome/building-charges-reform-government-response-to-the-consultation", cards: [] }
+  - { title: "Open Government that Delivers: Trust, Prosperity and Democratic Resilience (Cabinet Office and FCDO, 12 Oct)", url: "https://www.gov.uk/government/publications/open-government-that-delivers-trust-prosperity-and-democratic-resilience/open-government-that-delivers-trust-prosperity-and-democratic-resilience-html", cards: [] }
+skipped: # listed by the search but not read in full
+  - "PDF only, no HTML page to check a quote against: The UK and the Arctic (FCDO); the revised national policy statement for ports (DfT); the advocacy standards consultation response (DfE)"
+  - "Not new this week (minor corrections or an older document re-uploaded): Steel strategy; Implementing the Plan to Make Work Pay; Supported Housing regulation response (April 2026)"
+  - Open consultations and calls for evidence (proposals, not commitments), impact assessments, and technical or operational papers
+dropped:
+  - { document: criminal courts response, code: other, into: uk-crown-court-case-coordinators-2026, note: "says 'From this autumn, every Crown Court centre will be supported by dedicated case progression staff' (up to £5 million); the card says no start date is given. Left for an editor: a new date on an existing card from a document, not a draft" }
+  - { document: criminal courts response, code: other, note: "removing defendants' right to elect Crown Court trial for either-way offences is listed as a Courts and Tribunals Bill measure, while the MoJ releases of the same day say the government will amend the Bill to remove proposals to limit jury trials (uk-jury-trials-kept-2026). No card until an editor confirms what stays in the Bill" }
+  - { document: heating oil response, code: existing, into: uk-regulate-heating-oil-2026, note: accepts the CMA's call for a proportionate regulatory regime; no date or figure }
+  - { document: covid inquiry module 4 response, code: process, note: committed to reviewing the Vaccine Damage Payment Scheme, no date }
+  - { document: covid inquiry module 4 response, code: process, note: the Pandemic Preparedness Strategy to be reviewed in 2028 }
+  - { document: building charges response, code: process, note: new charging powers for local authority building control through amended regulations, no date }
+  - { document: open government priorities, code: broad, note: the UK's priorities as co-chair of the Open Government Partnership, October 2026 to September 2027; no checkable outcome }

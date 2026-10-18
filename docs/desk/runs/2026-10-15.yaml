@@ -1,0 +1,50 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Counts are of drafts; every draft has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-10-15"
+triaged_on: "2026-10-18"
+by: Claude as AI Journalist, at Pavel's request
+pull_request: 117
+sources_read: 14
+candidates: 25
+outcomes:
+  card: 11
+  reworded: 1
+  duplicate: 2
+  existing: 2
+  grant: 2
+  done: 0
+  process: 6
+  broad: 1
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 12 # the 11 cards and version 2 of uk-youth-hub-every-area-2029
+new_actors: [alison-mcgovern]
+cards:
+  - uk-youth-workers-1000-2027
+  - uk-vocational-gcses-2026
+  - uk-work-experience-200k-2026
+  - uk-ukef-export-contracts-2029
+  - uk-gbr-hq-derby-2029
+  - uk-rail-apprentices-600-2030
+  - uk-heritage-repair-funds-2026
+  - uk-antidepressant-safety-leaflet-2027
+  - uk-rape-courtroom-every-crown-court-2028 # also cites the criminal courts response of 12 Oct (£23m for specialist rape courts)
+  - uk-space-debris-removal-2032
+  - uk-care-fair-pay-agreement-2026
+reworded:
+  - uk-youth-hub-every-area-2029 # draft 2026-10-15-govuk-britains-biggest-hospitality-brands-partner-with-government--2: Youth Hubs in more than 360 communities, no time frame
+dropped:
+  - { draft: 2026-10-15-govuk-world-first-mission-puts-uk-expertise-to-work-to-help-clean--2, code: duplicate, into: uk-space-debris-removal-2032, note: the spacecraft launches in 2029 from Saxavord Spaceport }
+  - { draft: 2026-10-15-govuk-new-courts-in-the-north-to-help-women-break-the-cycle-of-reo-1, code: duplicate, into: uk-probation-officers-1300-2027, note: "the same 1,300 probation officers and £700m; the card quotes the government's response to the Criminal Courts Review of 12 Oct, which gives March 2027 (documents run)" }
+  - { draft: 2026-10-15-govuk-government-activates-plan-to-protect-consumers-as-severe-dro-1, code: existing, into: uk-nine-reservoirs-2050, note: "the Environment Secretary on nine new major reservoirs, a decade-long journey; no new date or figure" }
+  - { draft: 2026-10-15-hansard-971754d8-1, code: existing, into: uk-national-care-service-2026, note: "Alison McGovern says the Prime Minister has decided to build a national care service with free personal care, adjusting the triple lock; the card is the Prime Minister's, so another person's words cannot be its new version. For an editor" }
+  - { draft: 2026-10-15-govuk-britain-funds-critical-repairs-to-chornobyl-nuclear-power-pl-1, code: grant, note: £17m to the EBRD-coordinated programme to repair the Chornobyl shelter }
+  - { draft: 2026-10-15-govuk-major-drive-to-restore-churches-and-revitalise-heritage-buil-1, code: grant, note: "an additional £10m for Dover Castle, Brodsworth Hall and Osborne" }
+  - { draft: 2026-10-15-govuk-mhra-introduces-new-safeguards-to-strengthen-antidepressant--1, code: process, note: a boxed warning in antidepressant patient leaflets, no date }
+  - { draft: 2026-10-15-govuk-mhra-introduces-new-safeguards-to-strengthen-antidepressant--2, code: process, note: the term Post SSRI Sexual Dysfunction in certain leaflets, no date }
+  - { draft: 2026-10-15-hansard-971754d8-4, code: process, note: "appoint the first unpaid carers' champion, 'soon'" }
+  - { draft: 2026-10-15-wms-hcws383-1, code: process, note: "Slough Borough Council: minded to appoint Commissioners until 30 November 2029, subject to representations" }
+  - { draft: 2026-10-15-wms-hcws384-1, code: process, note: three Assistant Inspectors for a Best Value inspection of Tees Valley Combined Authority }
+  - { draft: 2026-10-15-wms-hcws385-1, code: process, note: "legislation to extend a media public interest consideration to on-demand programmes, only if the Secretary of State intervenes in Sky/ITV" }
+  - { draft: 2026-10-15-hansard-971754d8-2, code: broad, note: "'thousands more' care academy places and a collective pension scheme for care workers, no figures or dates" }

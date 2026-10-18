@@ -1,0 +1,59 @@
+format: openpromises/1
+id: uk-care-fair-pay-agreement-2026
+headline:
+  en: Introduce a fair pay agreement for care workers
+actor_id: alison-mcgovern
+made_on: "2026-10-15"
+venue: parliament
+venue_label:
+  en: Commons statement
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    Made in the Minister for Social Care and Mental Health's statement on the national care service.
+    She said the agreement will put care workers "under the protective umbrella of collective
+    bargaining", and later in the debate that the government is "cracking on" with it. She gave no
+    date and did not say over what period the half a billion pounds is spent. The card moves when
+    the agreement is made or a date is set.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Hansard, House of Commons, 15 Oct 2026: National Care Service (Minister for Social Care and
+      Mental Health's statement)
+    url: https://hansard.parliament.uk/Commons/2026-10-15/debates/971754D8-183E-459F-8404-390D4E0A0C0E/NationalCareService
+versions:
+  - version: 1
+    text: >-
+      We will introduce the first fair pay agreement in adult social care, backed by half a billion
+      pounds.
+    recorded_on: "2026-10-15"
+    source_url: https://hansard.parliament.uk/Commons/2026-10-15/debates/971754D8-183E-459F-8404-390D4E0A0C0E/NationalCareService
+    quote_checked_on: "2026-10-18"
+    parameters:
+      who:
+        en: Care workers in adult social care
+      cost:
+        note:
+          en: Half a billion pounds, with no period given, so no yearly figure is shown.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-15"
+    type: promised
+    text:
+      en: >-
+        The Minister for Social Care and Mental Health tells the Commons the government will
+        introduce the first fair pay agreement in adult social care, backed by half a billion pounds
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-18"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

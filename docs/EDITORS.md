@@ -4,7 +4,7 @@ Welcome. This is everything a LedgerGov.UK editor needs: what the job is, the ru
 
 ## The job in one paragraph
 
-Every promise on [ledgergov.uk](https://ledgergov.uk) is a card: the exact words, who said them and when, what it would cost a year, who pays, and a timeline that moves only on evidence. Cards and every change to them arrive as pull requests on GitHub. Two editors must approve each one before it counts. Your job is to check each change against its sources and approve it, or send it back with a note. AI Journalist, our automated reviewer, checks every draft first and flags problems, but it never decides: you do. Expect about two hours a week; one card takes 10 to 20 minutes.
+Every promise on [ledgergov.uk](https://ledgergov.uk) is a card: the exact words, who said them and when, what it would cost a year, who pays, and a timeline that moves only on evidence. Cards and every change to them arrive as pull requests on GitHub. One editor must approve each one before it counts (since 17 October 2026, Pavel Guzhikov's decision: his approval is the only one needed; it was two editors before). Your job is to check each change against its sources and approve it, or send it back with a note. AI Journalist, our automated reviewer, checks every draft first and flags problems, but it never decides: you do. Expect about two hours a week; one card takes 10 to 20 minutes.
 
 ## Before your first review
 
@@ -75,13 +75,13 @@ Every status change is a new event with a link to its evidence. An announcement 
 
 **5. Comment or ask for changes.** Hover over a line in "Files changed" and press the blue **+** to comment on it. Be specific: "The source says 'by 2028', not 'in 2028'."
 
-**6. Approve.** Press **Review changes** (top right of "Files changed"), choose **Approve**, add a line saying what you checked, and press **Submit review**. A daily intake pull request merges by itself once two editors have approved it and the checks are green. Other pull requests are merged by the owner after two approvals.
+**6. Approve.** Press **Review changes** (top right of "Files changed"), choose **Approve**, add a line saying what you checked, and press **Submit review**. A daily intake pull request merges by itself once an editor has approved it and the checks are green. Other pull requests are merged by the owner after one approval.
 
 **7. If it is about your own party,** don't approve it. Comment "Declaring an interest; leaving this one to another editor" and move on.
 
 ## Recording your approval on the card
 
-Your approval on GitHub says a change is right. From October 2026 each card also records, on the card itself, which editors approved it. The site shows it as the card's label ("Verified by …"), and the OpenPromises engine counts approvals from the card, not from GitHub. Two, from different editors, make a card "Verified by" both of them; a reader's submission needs both before it is published.
+Your approval on GitHub says a change is right. From October 2026 each card also records, on the card itself, which editors approved it. The site shows it as the card's label ("Verified by …"), and the OpenPromises engine counts approvals from the card, not from GitHub. One approval makes a card "Verified by" that editor, and a reader's submission needs it before it is published (one since 17 October 2026; it was two, from different editors, before). Approvals from more editors are still recorded and shown on the label. Until the OpenPromises engine accepts one approval, its check still asks for two on a reader's submission.
 
 **With the command line.** Keep your copy of the editors list (the owner sends it; it holds everyone's declared party, so never commit or share it) and point the command at it:
 
@@ -90,9 +90,9 @@ export OPENPROMISES_EDITORS=~/.config/openpromises/editors.yaml
 pnpm review uk-abolish-non-dom-2024 --by "Your Handle" --note "Checked the quote, sources, dates, status and cost"
 ```
 
-Check the card against its sources first (step 4 above), exactly as for a pull request. The command adds one review to the card (`kind: editor`, `approves: true`) and changes nothing else in the file; for a card in OpenPromises format v1 (every card since 12 October 2026) it hands over to the engine's own `openpromises review`, which applies the same rules. It refuses an approval that would not count: a handle not on the list, a date before you became an editor, a second approval from you, or a card about your own party. When a card has its second approval, it drops `editor_check_required`, so the card stops saying "human editor review to come". Put your approvals on a branch and open a pull request; the owner merges it. `--dry-run` shows what it would do without writing.
+Check the card against its sources first (step 4 above), exactly as for a pull request. The command adds one review to the card (`kind: editor`, `approves: true`) and changes nothing else in the file; for a card in OpenPromises format v1 (every card since 12 October 2026) it hands over to the engine's own `openpromises review`, which applies the same rules. It refuses an approval that would not count: a handle not on the list, a date before you became an editor, an approval you have already given, or a card about your own party. When a card has the approval it needs, it drops `editor_check_required`, so the card stops saying "human editor review to come". Put your approvals on a branch and open a pull request; the owner merges it. `--dry-run` shows what it would do without writing.
 
-**What your approval does now.** Since 13 October 2026 (OpenPromises 0.6.0) a card the team writes (`origin: manual` or `llm_intake`) is published once its automatic checks pass, including a machine match of its quote at the source; your approvals no longer hold it back, they are what the card's label reports. A reader's submission still waits for two editors' approvals before it is published. The label reads "Not yet verified by an editor", "Checked automatically by AI Journalist, not yet verified by an editor", "Verified by <name>" or, for example, "Verified by Pavel Guzhikov and 1 independent editor". You are counted ("1 independent editor") unless you choose to be named: tell the owner, who sets `named: true` on your entry in the editors list.
+**What your approval does now.** Since 13 October 2026 (OpenPromises 0.6.0) a card the team writes (`origin: manual` or `llm_intake`) is published once its automatic checks pass, including a machine match of its quote at the source; your approvals no longer hold it back, they are what the card's label reports. A reader's submission still waits for an editor's approval before it is published. The label reads "Not yet verified by an editor", "Checked automatically by AI Journalist, not yet verified by an editor", "Verified by <name>" or, for example, "Verified by Pavel Guzhikov and 1 independent editor". You are counted ("1 independent editor") unless you choose to be named: tell the owner, who sets `named: true` on your entry in the editors list.
 
 **Without the command line.** Approve on GitHub as usual and say in your review which cards you checked. The owner records it on the card for you, with the day you approved and where: `pnpm review <card> --by "Your Handle" --on <YYYY-MM-DD> --note "Approved in pull request xternal/public-ledger#<number>"`. Only approvals you really gave are recorded; nobody approves for you.
 
@@ -104,11 +104,11 @@ Every card shows its cost, sources and timeline, and under **Corrections** every
 
 ## Reader submissions
 
-Readers send promises and evidence through the site. Editors triage them in the editors' area (`/admin`; the owner gives you the sign-in) within three working days: accept and turn into a draft card or a new event, or turn down with a reason (no primary source, not a promise, a duplicate, out of scope). Editors never see readers' email addresses. A submission is never published without the same two-editor review.
+Readers send promises and evidence through the site. Editors triage them in the editors' area (`/admin`; the owner gives you the sign-in) within three working days: accept and turn into a draft card or a new event, or turn down with a reason (no primary source, not a promise, a duplicate, out of scope). Editors never see readers' email addresses. A submission is never published without the same review: AI Journalist's check and an editor's approval.
 
 ## How to add a leak
 
-From **Monday 19 October** until the Budget on 28 October, [ledgergov.uk/budget/leaks](https://ledgergov.uk/budget/leaks) lists every tax or spending measure the press reports as planned for the Budget. Each measure is one file in `content/leaks/`, added by pull request and approved by two editors, like a card. A report is not a decision: the page keeps what was only trailed visibly apart from what the Budget documents contain.
+From **Monday 19 October** until the Budget on 28 October, [ledgergov.uk/budget/leaks](https://ledgergov.uk/budget/leaks) lists every tax or spending measure the press reports as planned for the Budget. Each measure is one file in `content/leaks/`, added by pull request and approved by an editor, like a card. A report is not a decision: the page keeps what was only trailed visibly apart from what the Budget documents contain.
 
 **What goes in.** A specific measure (a tax, a rate, a threshold, a spending line) that a national outlet reports as planned for this Budget, from its own reporting or named or unnamed briefing. Not columns, not speculation ("could", "is considering" with no source), not wish lists from lobby groups. One file per measure: when a second outlet reports the same thing, add it to that file's `reported` list.
 
@@ -157,7 +157,7 @@ budget:
   cost: { range: [-8.0, -8.0, -8.0], basis: per_year, period: "2030-31", by: { kind: official, name: HM Treasury }, source_url: https://... }
 ```
 
-**Checks.** `pnpm validate` fails a file with a missing field, a status without its evidence, a Budget outcome that does not link an official page, a cost without its source or maker, or reports out of date order; it warns when a report has no archived copy (save one at [web.archive.org/save](https://web.archive.org/save)). In review, open the original report and check that the summary says no more than it does, that the headline is neutral, that the cost and who made it are as the source states, and that the same rules apply whichever party is in government. An entry quotes the press, so it is published only once two editors have approved it.
+**Checks.** `pnpm validate` fails a file with a missing field, a status without its evidence, a Budget outcome that does not link an official page, a cost without its source or maker, or reports out of date order; it warns when a report has no archived copy (save one at [web.archive.org/save](https://web.archive.org/save)). In review, open the original report and check that the summary says no more than it does, that the headline is neutral, that the cost and who made it are as the source states, and that the same rules apply whichever party is in government. An entry quotes the press, so it is published only once an editor has approved it.
 
 ## Budget day
 

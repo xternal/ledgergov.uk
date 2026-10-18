@@ -1,0 +1,14 @@
+format: openpromises/1
+id: alison-mcgovern
+kind: person
+name:
+  en: Alison McGovern
+# The draft gives no party for her, so party_id is left out; an editor can add it.
+roles:
+  - title:
+      en: Minister for Social Care and Mental Health
+    source:
+      url: https://hansard.parliament.uk/Commons/2026-10-15/debates/971754D8-183E-459F-8404-390D4E0A0C0E/NationalCareService
+      quote: The Minister for Social Care and Mental Health (Alison McGovern)
+identifiers:
+  parliament_member_id: 4083

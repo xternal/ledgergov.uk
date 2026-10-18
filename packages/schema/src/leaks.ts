@@ -5,7 +5,7 @@ import { IsoDate, Range } from "./provenance";
 /**
  * The pre-Budget leak tracker (/budget/leaks): one YAML file per measure briefed to the press
  * before a Budget, in content/leaks/<id>.yaml. Site-only (a Budget page), so it lives here, not in
- * OpenPromises. Editors add entries by pull request; two editors approve, as for cards
+ * OpenPromises. Editors add entries by pull request; an editor approves, as for cards (one since 17 October 2026)
  * (docs/EDITORS.md, "How to add a leak").
  *
  * A status says how far a measure is confirmed, and pages keep the levels visibly apart:

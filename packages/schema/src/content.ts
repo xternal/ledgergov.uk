@@ -199,7 +199,7 @@ export function stable(v: unknown): string {
  * evidence, status, cost, neutral wording, legal risk); "editor" and "legal" are
  * people. Reviews are append-only: a later review is added, never edited in.
  * `approves: true` is an editor's approval to publish (docs/EDITORS.md, `pnpm review`); a card
- * needs two, from different editors (approvals.ts). OpenPromises reads the same field.
+ * needs one since 17 October 2026 (two, from different editors, before; approvals.ts). OpenPromises reads the same field.
  */
 export const Review = z
   .object({

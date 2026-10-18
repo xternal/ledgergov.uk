@@ -1,0 +1,59 @@
+format: openpromises/1
+id: uk-work-experience-200k-2026
+headline:
+  en: Create 200,000 more work experience placements
+actor_id: hm-government
+made_on: "2026-10-15"
+venue: press_release
+venue_label:
+  en: Press release (Department for Work and Pensions)
+area: education
+status: promised
+status_note:
+  en: >-
+    A new National Mission on Work Experience is to create the placements with employers, mayors and
+    local leaders. The same release also lists 300,000 additional work experience and training
+    placements alongside the Jobs Guarantee, without saying how the two figures relate. It gives no
+    date and no cost for the 200,000. The card moves when the government reports placements created.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Work and Pensions press release, 15 Oct 2026: Britain's biggest hospitality
+      brands partner with Government to deliver 100,000 jobs for NEET young people
+    url: https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people
+versions:
+  - version: 1
+    text: >-
+      A new National Mission on Work Experience will work with employers, mayors and local leaders
+      to create 200,000 additional work experience placements, while expanding technical and
+      vocational pathways.
+    recorded_on: "2026-10-15"
+    source_url: https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people
+    quote_checked_on: "2026-10-18"
+    parameters:
+      who:
+        en: Young people leaving education
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-15"
+    type: promised
+    text:
+      en: >-
+        The government says a new National Mission on Work Experience will create 200,000 additional
+        work experience placements
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-18"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

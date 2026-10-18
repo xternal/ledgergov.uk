@@ -188,8 +188,11 @@ on a branch `intake/<date>`, with one YAML per candidate in
 * **CI on the pull request:** GitHub does not start workflows for pull requests
   opened by a workflow's own token, so CI first runs when an editor pushes to
   the branch.
-* **Never merged automatically.** Two editors turn each draft into a card or
-  delete it; the drafts folder must be gone before merge.
+* **Never merged automatically.** Editors turn each draft into a card or
+  delete it; the drafts folder must be gone before merge, and one editor's
+  approval is enough (since 17 October 2026; it was two before).
+  `.github/workflows/intake-merge.yml` needs one, fixed in the file; it no
+  longer reads the repository variable `INTAKE_APPROVALS`, which can be deleted.
 * **Running a day again:** the job never overwrites an existing `intake/<date>`
   branch (it may hold editors' work). Close the pull request and delete the
   branch first, then run the workflow with that date.
@@ -353,9 +356,9 @@ Since 12 October 2026 every card and actor is in OpenPromises format v1 and the 
 
 ### Publishing by checks (since 0.6.0)
 
-`openpromises.config.ts` sets `editorial.publish: "checked"` (OpenPromises decision 22). A card whose `origin` is `manual` or `llm_intake` is published once every automatic check passes; editors' approvals no longer hold it back, they become its verification label. A reader's submission (`origin: reader_submission`), or a card that does not say its origin, still needs two editors' approvals, as before (invariant 8).
+`openpromises.config.ts` sets `editorial.publish: "checked"` (OpenPromises decision 22). A card whose `origin` is `manual` or `llm_intake` is published once every automatic check passes; editors' approvals no longer hold it back, they become its verification label. A reader's submission (`origin: reader_submission`), or a card that does not say its origin, still needs editors' approvals (invariant 8). Pavel decided on 17 October 2026 that one is enough, but the engine refuses `editorial.approvals` below 2 (0.6.0, "principle 4"), so the setting stays 2, and the engine's check asks for two on these cards, until a release accepts 1 (OpenPromises 0.7.0, decision 27; a TODO beside the setting).
 
-A card no editor has approved yet must have its words matched by a machine: a stored-source span, or an archive check that found them exactly. An editor's `quote_checked_on` counts only once editors have approved the card. To check a new card's quote against a saved copy of its source, save the page (its HTML, or its text) and run:
+A card no editor has approved yet must have its words matched by a machine: a stored-source span, or an archive check that found them exactly. An editor's `quote_checked_on` counts only once an editor has approved the card. To check a new card's quote against a saved copy of its source, save the page (its HTML, or its text) and run:
 
 ```bash
 curl -sL "<the card's source_url>" -o /tmp/source.html

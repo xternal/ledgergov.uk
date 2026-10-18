@@ -14,8 +14,9 @@ status_note:
     Youth Hubs put Jobcentre Plus, council services, employers and training providers under one roof
     for young people aged 16 to 24. The Department for Work and Pensions repeated the commitment on
     12 October 2026 as a hub opened in Exeter, and says every hub will meet a set of minimum
-    standards. The release does not say when the three years started, what counts as a local area,
-    or how many hubs that means, so the card has no deadline yet.
+    standards. A DWP release on 15 October 2026 puts the expansion at more than 360 communities
+    across Great Britain, with no time frame. Neither release says when the three years started, so
+    the card has no deadline yet.
 responsible:
   actor_id: hm-government
 origin: llm_intake
@@ -24,6 +25,10 @@ sources:
       DWP press release, 12 Oct 2026: Major boost for young people in Exeter as Youth Hub opens to
       support them towards work
     url: https://www.gov.uk/government/news/major-boost-for-young-people-in-exeter-as-youth-hub-opens-to-support-them-towards-work
+  - title: >-
+      DWP press release, 15 Oct 2026: Britain's biggest hospitality brands partner with Government
+      to deliver 100,000 jobs for NEET young people
+    url: https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people
 versions:
   - version: 1
     text: >-
@@ -47,6 +52,27 @@ versions:
       when:
         en: Over the next three years (start not stated)
       funded_by: null
+  - version: 2
+    text: >-
+      The Government is introducing a Jobs Guarantee expected to support more than 90,000 young
+      people, alongside 300,000 additional work experience and training placements, the ambition to
+      see 50,000 additional young apprentices and an expansion of Youth Hubs to more than 360
+      communities across Great Britain.
+    recorded_on: "2026-10-15"
+    source_url: https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people
+    quote_checked_on: "2026-10-18"
+    parameters:
+      who:
+        en: Young people in Great Britain, through Youth Hubs in more than 360 communities
+      cost:
+        note:
+          en: >-
+            The release says an additional £2.5 billion is going into the Youth Guarantee and Growth
+            and Skills Levy, but not how much of that pays for Youth Hubs, so no yearly figure is
+            shown.
+      when:
+        en: Not stated
+      funded_by: null
 events:
   - date: "2026-10-12"
     type: promised
@@ -59,6 +85,13 @@ events:
     text:
       en: A Youth Hub opens in Exeter, open three days a week at St James Park
     evidence_url: https://www.gov.uk/government/news/major-boost-for-young-people-in-exeter-as-youth-hub-opens-to-support-them-towards-work
+  - date: "2026-10-15"
+    type: reworded
+    text:
+      en: >-
+        A Department for Work and Pensions release describes the commitment as an expansion of Youth
+        Hubs to more than 360 communities across Great Britain, with no time frame
+    evidence_url: https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people
 replies: []
 reviews:
   - by: AI Journalist
@@ -74,3 +107,9 @@ reviews:
     approves: true
     note:
       en: Checked the quote, sources, dates, status and cost
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-18"
+    note:
+      en: >-
+        Version 2: quote checked word for word at the source (DWP press release of 15 October 2026).

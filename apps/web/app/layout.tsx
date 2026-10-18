@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {isAlpha() && (
           <p className="m-0 bg-warn/10 px-4 py-1.5 text-center text-caption font-medium text-warn">
-            Alpha: an early version. Promise cards are checked by two editors and by AI Journalist, our automated reviewer.{" "}
+            Alpha: an early version. Promise cards are checked by AI Journalist, our automated reviewer, then approved by an editor, Pavel Guzhikov.{" "}
             <a href="/editors" className="text-warn underline underline-offset-2">
               Become an editor
             </a>

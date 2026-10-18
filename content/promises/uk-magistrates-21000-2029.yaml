@@ -1,0 +1,64 @@
+format: openpromises/1
+id: uk-magistrates-21000-2029
+headline:
+  en: Increase magistrates to 21,000 by 2028/29
+actor_id: hm-government
+made_on: "2026-10-12"
+venue: press_release
+venue_label:
+  en: Government response to the Independent Review of the Criminal Courts
+area: public_order
+status: promised
+status_note:
+  en: >-
+    The government says the number of magistrates fell from around 25,000 in 2012 to 12,500 by 2021.
+    Alongside regional recruitment and a national taskforce, it is spending around £4 million a year
+    on marketing to attract candidates. 2028/29 is read as the financial year ending 31 March 2029.
+    The card moves when the government publishes the number of magistrates.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Justice, 12 Oct 2026: Government response to the Independent Review of the
+      Criminal Courts
+    url: https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts
+versions:
+  - version: 1
+    text: >-
+      We are rebuilding the magistracy by increasing the total number of magistrates to 21,000 in
+      2028/29, with more regular regional recruitment and a new national taskforce to support local
+      Advisory Committees.
+    recorded_on: "2026-10-12"
+    source_url: https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts
+    quote_checked_on: "2026-10-18"
+    parameters:
+      who:
+        en: Magistrates' courts and the people whose cases they hear
+      cost:
+        note:
+          en: >-
+            The response gives around £4 million a year for marketing to attract candidates, not a
+            total cost of the increase, so no yearly figure is shown.
+      when:
+        en: In 2028/29
+      deadline: "2029-03-31"
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: The government says it will increase the number of magistrates to 21,000 in 2028/29
+  - date: "2029-03-31"
+    type: deadline
+    text:
+      en: 21,000 magistrates due in 2028/29
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-18"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

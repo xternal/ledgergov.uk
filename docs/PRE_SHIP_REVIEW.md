@@ -66,7 +66,7 @@ Legend: ✅ fixed in this pass · 🔲 open. Owner: ENG, DATA, ED (editor), ECON
 | D8 | Fuel duty's temporary 5p cut ends 31 Dec 2026 (55.95p from 1 Jan 2027, 57.95p from 1 Mar 2027) | ✅ shown in the lever note; 🔲 update after Budget 2026 confirms rates |
 | D9 | Brand colours as text failed AA in light mode (borrowing orange 3.3:1, amber pills 4.5:1) | ✅ text shade `--debt-ink`, amber darkened; Lighthouse accessibility 100 in both themes |
 | D10 | The bus-cap example used a press figure ("over £500m") and press sources; officially the cap has £400m for England, funded by switching climate finance to loans, so it nets to about zero | ✅ M3: card, lever, tests and README use GOV.UK figures |
-| D11 | Promise cards: 21 researched cards, every quote checked verbatim, every status with official evidence; all marked editor_check_required | 🔲 two-editor review and legal read of statuses (B6) before anything is public |
+| D11 | Promise cards: 21 researched cards, every quote checked verbatim, every status with official evidence; all marked editor_check_required | 🔲 editor review (one editor's approval after AI Journalist's check, since 17 October 2026) and legal read of statuses (B6) before anything is public |
 
 ## Found in M3b (follow and contribute)
 

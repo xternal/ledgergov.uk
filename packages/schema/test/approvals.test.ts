@@ -51,11 +51,18 @@ describe("approvals", () => {
     const c = card("reform-uk", [approval("Someone", "2026-10-12"), approval("Alex", "2026-10-10"), approval("Alex", "2027-01-05")]);
     expect(approvers(c, editors, actors).size).toBe(0);
   });
-  it("needs two different editors", () => {
-    expect(APPROVALS_NEEDED).toBe(2);
+  it("needs one editor's approval since 17 October 2026, and counts each editor once", () => {
+    expect(APPROVALS_NEEDED).toBe(1);
     const c = card("reform-uk", [approval("Sam", "2026-10-12")]);
+    expect(approvers(c, editors, actors).size).toBeGreaterThanOrEqual(APPROVALS_NEEDED);
     expect(approvalRefusal(c, "Sam", today, today, editors, actors)).toMatch(/already approved/);
+    expect(approvalRefusal(c, "Sam", today, today, editors, actors)).not.toMatch(/second/);
+    // Another editor may still add their approval; it is recorded and counted, never needed.
     expect(approvalRefusal(c, "Alex", today, today, editors, actors)).toBeNull();
+  });
+  it("keeps approvals recorded under the two-editor rule valid", () => {
+    const both = card("reform-uk", [approval("Sam", "2026-10-12"), approval("Alex", "2026-10-12")]);
+    expect([...approvers(both, editors, actors)]).toEqual(["Sam", "Alex"]);
   });
   it("never lets an editor approve a card about their own party, directly or through a person", () => {
     expect(approvalRefusal(card("labour"), "Alex", today, today, editors, actors)).toMatch(/own party/);

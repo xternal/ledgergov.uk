@@ -72,15 +72,15 @@ export function householdCopy(s: HouseholdSnapshot) {
   const better = all ? gaining(all) : null;
   const worse = all ? losing(all) : null;
   const modelled = s.input.measures.filter((m) => m.modelled).length;
-  // While a part waits for two editors (hold), the words promise it as following, not as here.
+  // While a part waits for an editor's check (hold), the words promise it as following, not as here.
   const who =
     y.view.population === "shown" && y.view.households === "shown"
       ? "by income tenth and for six example households"
       : y.view.households === "shown"
-        ? "for six example households now, by income tenth once two editors have checked it"
+        ? "for six example households now, by income tenth once an editor has checked it"
         : y.view.population === "shown"
-          ? "by income tenth now, for six example households once two editors have checked them"
-          : "by income tenth and for six example households once two editors have checked them";
+          ? "by income tenth now, for six example households once an editor has checked them"
+          : "by income tenth and for six example households once an editor has checked them";
   const description =
     y.view.state === "no_model"
       ? `${rehearsal ? `Last year's Budget, shown the way ${BUDGET.name} will be if PolicyEngine cannot be reached: its` : `The ${s.name}'s`} ${s.input.measures.length} tax and benefit measures, each linked to its page; what it means for your own income tax and National Insurance, worked out in your browser${s.input.treasury ? "; and the Treasury's own chart" : ""}. Our estimate of who gains and who loses, by income tenth and for six example households, follows once PolicyEngine answers. Not official.`
@@ -158,7 +158,7 @@ export function householdFaq(s: HouseholdSnapshot): { q: string; a: string }[] {
       },
       {
         q: "Where is your own estimate?",
-        a: "PolicyEngine, the model we use for it, had not answered when this page was published. The summary, the change by income tenth, who gains and who loses and the six example households follow once it does, worked out from the same measures and checked by two editors. Everything else on this page is complete.",
+        a: "PolicyEngine, the model we use for it, had not answered when this page was published. The summary, the change by income tenth, who gains and who loses and the six example households follow once it does, worked out from the same measures and checked by an editor. Everything else on this page is complete.",
       },
       {
         q: "What is an income tenth?",

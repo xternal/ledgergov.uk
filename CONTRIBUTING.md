@@ -4,7 +4,7 @@ Thank you. There are three ways to help, from the easiest. And we are looking fo
 
 ## 1. Send a promise, evidence or a correction
 
-Use the forms on the site: [Contribute](https://ledgergov.uk/#contribute), or "Add evidence" on any promise card. No account and no GitHub needed. What you send goes to the editors as a draft; nothing is published until two editors have checked it against the [promise standard](docs/PROMISE_STANDARD.md).
+Use the forms on the site: [Contribute](https://ledgergov.uk/#contribute), or "Add evidence" on any promise card. No account and no GitHub needed. What you send goes to the editors as a draft; nothing is published until AI Journalist, our automated reviewer, has checked it and an editor, Pavel Guzhikov, has approved it against the [promise standard](docs/PROMISE_STANDARD.md).
 
 ## 2. Edit a promise card
 

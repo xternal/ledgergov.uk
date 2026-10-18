@@ -1,0 +1,58 @@
+format: openpromises/1
+id: uk-council-tax-two-notices-2026
+headline:
+  en: Require two notices before council tax instalments end
+actor_id: hm-government
+made_on: "2026-10-12"
+venue: press_release
+venue_label:
+  en: "Improving enforcement of council tax: government response"
+area: taxes
+status: promised
+status_note:
+  en: >-
+    A household in England that misses a council tax payment can lose the right to pay by
+    instalments. The government will also set a timetable: a final notice no sooner than 14 days
+    after the last reminder and 41 days after the first missed payment, then 21 days to pay before
+    that right is lost. It will change regulations to do this and assess the cost to councils, but
+    gives no date. The card moves when the regulations are laid.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "MHCLG, 12 Oct 2026: Improving enforcement of council tax: government response"
+    url: https://www.gov.uk/government/consultations/improving-enforcement-of-council-tax/outcome/improving-enforcement-of-council-tax-government-response
+versions:
+  - version: 1
+    text: >-
+      The government will require councils to issue at least one reminder notice and one final
+      notice before a taxpayer loses the right to pay by instalments.
+    recorded_on: "2026-10-12"
+    source_url: https://www.gov.uk/government/consultations/improving-enforcement-of-council-tax/outcome/improving-enforcement-of-council-tax-government-response
+    quote_checked_on: "2026-10-18"
+    parameters:
+      who:
+        en: >-
+          Council taxpayers in England who miss a payment, and the councils that collect council tax
+      cost:
+        note:
+          en: No cost has been published; the government will assess the cost to councils.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The government says it will require councils to send a reminder notice and a final notice
+        before a taxpayer loses the right to pay council tax by instalments
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-18"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

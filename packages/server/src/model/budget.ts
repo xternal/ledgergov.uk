@@ -274,7 +274,7 @@ export function buildHouseholdSnapshot(
   const holdDeciles = hold.includes("deciles");
   const holdHouseholds = hold.includes("households");
   const missingYears = file.years.filter((y) => !rec.economy[y]);
-  if (holdDeciles) check("years", true, "deciles held until two editors have reviewed them: none published");
+  if (holdDeciles) check("years", true, "deciles held until an editor has reviewed them: none published");
   else check("years", missingYears.length === 0, missingYears.length ? `no answer for ${missingYears.join(", ")}` : `an answer for every year, ${file.years[0]} to ${file.years.at(-1)}`);
 
   // One model throughout: every year's economy answer, the bundle before and after, and the household engine.
@@ -302,7 +302,7 @@ export function buildHouseholdSnapshot(
 
   const results = holdDeciles ? (check("economy", true, "deciles held: not read"), []) : readResults(file, rec, check);
   const households = holdHouseholds
-    ? (check("households", true, "example households held until two editors have reviewed them: none published"), [])
+    ? (check("households", true, "example households held until an editor has reviewed them: none published"), [])
     : readHouseholds(file, rec, check);
   const calculator = calculatorChecked(file, calculatorBase, check);
 
