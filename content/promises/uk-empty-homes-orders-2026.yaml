@@ -8,13 +8,16 @@ venue: parliament
 venue_label:
   en: Written ministerial statement
 area: housing_env
-status: promised
+status: legislated
 status_note:
   en: >-
     Announced on 27 September 2026. An Empty Dwelling Management Order lets a council manage a
     long-term empty home and bring it back into use for up to seven years, while the owner keeps it.
-    The change would shorten how long a home must be empty before a council can apply. The statement
-    does not say how or when it will be made.
+    An order made on 14 October 2026 (SI 2026/1085) cuts how long a home must be empty before a
+    tribunal can authorise one from two years to six months. It also removes the requirements for the
+    council to give the tribunal any information suggesting the home causes a nuisance for the
+    community, or that the community supports the order. It comes into force on 5 November 2026 and
+    applies to applications made from that day. The card moves to Delivered once it is in force.
 responsible:
   actor_id: hm-government
 origin: llm_intake
@@ -23,6 +26,10 @@ sources:
       Written ministerial statement HCWS363, 12 Oct 2026: Improving housing availability and
       affordability
     url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363
+  - title: >-
+      The Housing (Empty Dwelling Management Orders) (Prescribed Period of Time and Prescribed
+      Requirements) (England) (Amendment) Order 2026 (SI 2026/1085)
+    url: https://www.legislation.gov.uk/uksi/2026/1085/made
 versions:
   - version: 1
     text: >-
@@ -47,6 +54,14 @@ events:
       en: >-
         The Housing Minister says the qualifying period for Empty Dwelling Management Orders will be
         cut from two years to six months
+  - date: "2026-10-14"
+    type: legislated
+    text:
+      en: >-
+        The government makes the order that cuts the qualifying period from two years to six months
+        and removes the requirements on evidence of nuisance and community support, in force from 5
+        November 2026
+    evidence_url: https://www.legislation.gov.uk/uksi/2026/1085/made
 replies: []
 reviews:
   - by: AI Journalist
