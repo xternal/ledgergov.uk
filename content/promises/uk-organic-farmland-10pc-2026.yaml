@@ -1,0 +1,59 @@
+format: openpromises/1
+id: uk-organic-farmland-10pc-2026
+headline:
+  en: Grow organic farmland in England to 10%
+actor_id: hm-government
+made_on: "2026-10-14"
+venue: press_release
+venue_label:
+  en: Organic Action Plan for England
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    Organic farming covers around 3.4% of England's utilised agricultural area, the plan says. It is
+    a plan for 2026 to 2036, written by Defra with the English Organic Forum, and it calls 10% an
+    ambition without giving a year, so the card has no deadline. The card moves when Defra reports
+    the organically managed land area.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Defra, 14 Oct 2026: Organic Action Plan for England"
+    url: https://www.gov.uk/government/publications/organic-action-plan-for-england/organic-action-plan-for-england
+versions:
+  - version: 1
+    text: >-
+      Ambition to grow the organically managed land area in England to 10% to support growth across
+      the range of organic sectors (horticulture, arable crops, poultry, red meat and dairy).
+    recorded_on: "2026-10-14"
+    source_url: https://www.gov.uk/government/publications/organic-action-plan-for-england/organic-action-plan-for-england
+    quote_checked_on: "2026-10-18"
+    parameters:
+      who:
+        en: Farmers and growers in England, and people who buy organic food
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated; the plan covers 2026 to 2036
+      funded_by:
+        en: >-
+          Payment options for organic conversion and maintenance in the Sustainable Farming
+          Incentive and Countryside Stewardship, the plan says
+events:
+  - date: "2026-10-14"
+    type: promised
+    text:
+      en: >-
+        Defra's Organic Action Plan sets an ambition to grow organically managed land in England to
+        10%
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-18"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

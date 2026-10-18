@@ -1,0 +1,65 @@
+format: openpromises/1
+id: uk-cps-funding-10pc-2029
+headline:
+  en: Raise Crown Prosecution Service funding by over 10%
+actor_id: hm-government
+made_on: "2026-10-12"
+venue: press_release
+venue_label:
+  en: Government response to the Independent Review of the Criminal Courts
+area: public_order
+status: promised
+status_note:
+  en: >-
+    The government says the extra money means more prosecutors able to make charging decisions,
+    prepare cases for court and bring offenders to justice. It gives no split by year and no number
+    of prosecutors; 2029 is read as the end of 2029. The card moves when the Crown Prosecution
+    Service's budget or accounts show the increase.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Justice, 12 Oct 2026: Government response to the Independent Review of the
+      Criminal Courts
+    url: https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts
+versions:
+  - version: 1
+    text: >-
+      We are investing an additional £96 million in the Crown Prosecution Service, increasing its
+      funding by more than 10 percent between 2026 and 2029.
+    recorded_on: "2026-10-12"
+    source_url: https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts
+    quote_checked_on: "2026-10-18"
+    parameters:
+      who:
+        en: The Crown Prosecution Service and the cases it prosecutes
+      cost:
+        note:
+          en: >-
+            An additional £96 million between 2026 and 2029. The response does not split it by year,
+            so no yearly figure is shown.
+      when:
+        en: Between 2026 and 2029
+      deadline: "2029-12-31"
+      funded_by: null
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The government says it is investing an additional £96 million in the Crown Prosecution
+        Service, raising its funding by more than 10% between 2026 and 2029
+  - date: "2029-12-31"
+    type: deadline
+    text:
+      en: Crown Prosecution Service funding due to be more than 10% higher by 2029
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-18"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,73 @@
+format: openpromises/1
+id: uk-probation-officers-1300-2027
+headline:
+  en: Recruit 1,300 trainee probation officers by March 2027
+actor_id: hm-government
+made_on: "2026-10-12"
+venue: press_release
+venue_label:
+  en: Government response to the Independent Review of the Criminal Courts
+area: public_order
+status: promised
+status_note:
+  en: >-
+    The government's response to Lord Leveson's Independent Review of the Criminal Courts accepts
+    his recommendation on probation funding, and says the 1,300 come on top of the 1,389 taken on in
+    2025/26. A Ministry of Justice release on 15 October 2026 repeats the 1,300 and the £700
+    million, and says the recruitment happens over the next year. March 2027 is read as 31 March
+    2027. The card moves when the Ministry of Justice reports how many trainee probation officers it
+    has recruited.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Justice, 12 Oct 2026: Government response to the Independent Review of the
+      Criminal Courts
+    url: https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts
+  - title: >-
+      Ministry of Justice press release, 15 Oct 2026: New courts in the north to help women break
+      the cycle of reoffending
+    url: https://www.gov.uk/government/news/new-courts-in-the-north-to-help-women-break-the-cycle-of-reoffending
+versions:
+  - version: 1
+    text: >-
+      The Government is increasing investment into probation and community services by up to £700
+      million by 2028/29. To further manage the increased pressure, we will recruit at least 1,300
+      trainee probation officers by March 2027, on top of the 1,389 onboarded in 2025/26, alongside
+      introducing new digital technology.
+    recorded_on: "2026-10-12"
+    source_url: https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts
+    quote_checked_on: "2026-10-18"
+    parameters:
+      who:
+        en: The Probation Service and the people it supervises
+      cost:
+        note:
+          en: >-
+            Up to £700 million more for probation and community services by 2028/29. Neither source
+            says whether that is a yearly figure or a total, so no yearly figure is shown.
+      when:
+        en: By March 2027
+      deadline: "2027-03-31"
+      funded_by:
+        en: Up to £700 million more for probation and community services by 2028/29
+events:
+  - date: "2026-10-12"
+    type: promised
+    text:
+      en: >-
+        The government says it will recruit at least 1,300 trainee probation officers by March 2027
+  - date: "2027-03-31"
+    type: deadline
+    text:
+      en: At least 1,300 trainee probation officers due to be recruited by March 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-18"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
