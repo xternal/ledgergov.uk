@@ -1,6 +1,7 @@
 import "server-only";
 import { loadSeed } from "@ledger/schema/seed";
 import { readEditors, withVerification } from "@ledger/schema/verification";
+import { spotlightInput, type SpotlightInput } from "@ledger/schema/spotlight";
 import { loadPeople } from "@ledger/schema/people";
 import { loadBorrowing } from "@ledger/schema/borrowing";
 import { loadForecasts, readBuildText, type ForecastData } from "@ledger/schema/forecasts";
@@ -22,6 +23,14 @@ let cached: Seed | null = null;
 export function getSeed(): Seed {
   cached ??= withVerification(loadSeed(), readEditors());
   return cached;
+}
+
+/**
+ * The home page's promises (OpenPromises decision 30): the cards the site publishes, as the engine's PromiseSpotlight
+ * reads them, chosen by its rule for `today`.
+ */
+export function getSpotlight(today: string): SpotlightInput {
+  return spotlightInput(new Set(getSeed().cards.map((c) => c.id)), today);
 }
 
 let people: PeopleBundle | null = null;

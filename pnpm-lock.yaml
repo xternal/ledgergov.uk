@@ -173,11 +173,11 @@ importers:
         specifier: workspace:*
         version: link:packages/schema
       '@openpromises/cli':
-        specifier: 0.6.0
-        version: 0.6.0
+        specifier: 0.10.0
+        version: 0.10.0
       '@openpromises/core':
-        specifier: 0.6.0
-        version: 0.6.0
+        specifier: 0.10.0
+        version: 0.10.0
       tsx:
         specifier: ^4.23.15
         version: 4.23.15
@@ -202,6 +202,9 @@ importers:
       '@ledger/server':
         specifier: workspace:*
         version: link:../../packages/server
+      '@openpromises/react':
+        specifier: 0.10.0
+        version: 0.10.0(react@19.3.0)
       altcha:
         specifier: ^3.3.0
         version: 3.3.0
@@ -277,11 +280,11 @@ importers:
   packages/schema:
     dependencies:
       '@openpromises/core':
-        specifier: 0.6.0
-        version: 0.6.0
+        specifier: 0.10.0
+        version: 0.10.0
       '@openpromises/publish':
-        specifier: 0.6.0
-        version: 0.6.0
+        specifier: 0.10.0
+        version: 0.10.0
       yaml:
         specifier: ^2.9.1
         version: 2.9.1
@@ -817,26 +820,32 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@openpromises/cli@0.6.0':
-    resolution: {integrity: sha512-INO1YxeiX/boXpDe6MlMHtGB3KrArGtqe4UGUxzF0NuaZI9xeaKLXSUwUCgatqiXNfmp5EpEcbXHNHB3KYhexw==}
+  '@openpromises/cli@0.10.0':
+    resolution: {integrity: sha512-v9rIJLBCGy01EqJNkFPeKMJLaSflrS/P36lkVbx+Li1gloK17pyhWMTYnua+q4tDV+BRoxE9VGKPBjpQR4TmAA==}
     engines: {node: '>=22.18.0'}
     hasBin: true
 
-  '@openpromises/core@0.6.0':
-    resolution: {integrity: sha512-xAitHrt5e4jmNxjyHCD2ymbj6mgpzas9im23cb3NcIdG6GFJi72SDOMmgU7jMUok8pj4YMBPRGvZ1NOD6xfCYA==}
+  '@openpromises/core@0.10.0':
+    resolution: {integrity: sha512-BMPkKmervVx7/09sShL4pbWoou7iBIzz7MEBGrrWduNklAz/CxSAQvqTPUCu+6WrRzWXEWzFMeYT4Pa75Nduaw==}
     engines: {node: '>=22.18.0'}
 
-  '@openpromises/files@0.6.0':
-    resolution: {integrity: sha512-dAISCKkT6xahCMJh2s7HhBdjDRbRKRN0QJlWtJ3Y5AKN5/Hvbax/OX9bRoNNqUrqU6NGy3hwYF5hWLzz95Ru/A==}
+  '@openpromises/files@0.10.0':
+    resolution: {integrity: sha512-YehFFv6FooRdbrwYZ/e6UoGSiJyRx5z/WALvU6fBsbvdz3pHzp+OOixg/86eoKxcvsOcKcEJghARgTsjeUY6gg==}
     engines: {node: '>=22.18.0'}
 
-  '@openpromises/publish@0.6.0':
-    resolution: {integrity: sha512-+Yw0A67DIMZnfoJAiJMVklRDMGJKfyDCRjYr3JsnVcmot+abtVCZ0DddKNR37xMZoEOeAStrkkCAo2JZqklf8g==}
+  '@openpromises/publish@0.10.0':
+    resolution: {integrity: sha512-HU9xDLLEXFToVU9Z9aSXb2/tcO3SdCzAycpgkrao78k9nsLx+8SrIU6DNVq1jSjhlDjPhwcDcCB+MlZYBUZ/lw==}
     engines: {node: '>=22.18.0'}
 
-  '@openpromises/quotes@0.6.0':
-    resolution: {integrity: sha512-hpI/T57kqsc9NuH73VQu365JShHNBJgHfBOz9vtAYfr+0MLjBIUYBqfGSknBkgXSb8tbhq5MWbfceyueEAdXFQ==}
+  '@openpromises/quotes@0.10.0':
+    resolution: {integrity: sha512-DyYRVVU+XaXg/lWavnp4XF+SrQpitJ4cZ36c6WaoTcYXf2UOnBrfbN2ULP9OIod+/lyJDotdlSYaLzidg+hXmw==}
     engines: {node: '>=22.18.0'}
+
+  '@openpromises/react@0.10.0':
+    resolution: {integrity: sha512-KfPsYVCq//X0YdhY4YKd2jiu10DWHrC82iwac/ygPdbEpr1M1kvxTmJh5M/BWI/BVVqMq5hVLAnsHFRu4VWjEA==}
+    engines: {node: '>=22.18.0'}
+    peerDependencies:
+      react: '>=19'
 
   '@oxc-project/types@0.152.0':
     resolution: {integrity: sha512-oM/5rLBm2tPkg0iBgkH/FOeR3PCDpY19GTgAZjMFM8h9WI9VW7cLgzp6nwtarYKmovavIQZ+Fe/RKX/8C8O/Rw==}
@@ -2155,29 +2164,35 @@ snapshots:
   '@next/swc-win32-x64-msvc@16.3.8':
     optional: true
 
-  '@openpromises/cli@0.6.0':
+  '@openpromises/cli@0.10.0':
     dependencies:
-      '@openpromises/core': 0.6.0
-      '@openpromises/files': 0.6.0
-      '@openpromises/publish': 0.6.0
-      '@openpromises/quotes': 0.6.0
+      '@openpromises/core': 0.10.0
+      '@openpromises/files': 0.10.0
+      '@openpromises/publish': 0.10.0
+      '@openpromises/quotes': 0.10.0
 
-  '@openpromises/core@0.6.0':
+  '@openpromises/core@0.10.0':
     dependencies:
-      '@openpromises/quotes': 0.6.0
+      '@openpromises/quotes': 0.10.0
       zod: 4.6.5
 
-  '@openpromises/files@0.6.0':
+  '@openpromises/files@0.10.0':
     dependencies:
-      '@openpromises/core': 0.6.0
-      '@openpromises/quotes': 0.6.0
+      '@openpromises/core': 0.10.0
+      '@openpromises/quotes': 0.10.0
       yaml: 2.9.1
 
-  '@openpromises/publish@0.6.0':
+  '@openpromises/publish@0.10.0':
     dependencies:
-      '@openpromises/core': 0.6.0
+      '@openpromises/core': 0.10.0
 
-  '@openpromises/quotes@0.6.0': {}
+  '@openpromises/quotes@0.10.0': {}
+
+  '@openpromises/react@0.10.0(react@19.3.0)':
+    dependencies:
+      '@openpromises/core': 0.10.0
+      '@openpromises/publish': 0.10.0
+      react: 19.3.0
 
   '@oxc-project/types@0.152.0': {}
 

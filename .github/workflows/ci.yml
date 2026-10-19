@@ -21,12 +21,21 @@ jobs:
       # Node 22's bundled Corepack cannot run pnpm 12; use the version that works locally.
       - run: npm install -g corepack@0.34.5 && corepack enable pnpm
       - run: pnpm install --frozen-lockfile
+      # OpenPromises' packages skip pnpm's one-day wait (OpenPromises decision 32, docs/DECISIONS.md), so check where
+      # they came from before any of their code runs. npm verifies the registry's signatures and attestations: at the
+      # root (the CLI, core, files, quotes, and publish through packages/schema) and in apps/web (react). Then every
+      # @openpromises/* package in pnpm-lock.yaml must have been built by the engine's Release workflow, from the tag of
+      # its own version, with provenance covering the tarball the registry serves (scripts/openpromises-provenance.ts).
+      - run: npm audit signatures
+      - run: npm audit signatures
+        working-directory: apps/web
+      - run: pnpm openpromises:provenance
       - run: pnpm test
       # Promise history is append-only: compare every published card with main.
       - run: pnpm validate -- --base origin/main
       # The OpenPromises engine's check (docs/OPERATIONS.md §15), blocking since the switch on 12 October 2026:
-      # every card in format v1, editors' approvals where publication waits for them (`editorial.approvals`: 2 until
-      # the engine accepts Pavel's one of 17 October 2026), a quality label on every cost, history against the base.
+      # every card in format v1, an editor's approval where publication waits for one (`editorial.approvals: 1`, Pavel's
+      # decision of 17 October 2026, since OpenPromises 0.10.0 here), a quality label on every cost, history against the base.
       # The editors list is private (OpenPromises decision 10): it comes from a secret, never the repository.
       # A fork's pull request gets no secrets, so there the check runs as a report and an editor's branch runs it in full.
       - name: OpenPromises check

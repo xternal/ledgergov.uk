@@ -25,7 +25,8 @@ export function TopBar() {
   );
 }
 
-export function Hero() {
+/** The opening. `tracked` is the link to every promise, "125 promises tracked →" (OpenPromises decision 30). */
+export function Hero({ tracked }: { tracked?: { text: string; href: string } }) {
   const { seed, baseResult } = useScenario();
   const { meta } = seed.statement;
   const { receipts_bn, spending_bn, borrowing_bn } = baseResult.totals;
@@ -45,6 +46,13 @@ export function Hero() {
         <b className="font-semibold text-ink shadow-[inset_0_-3px_0_var(--debt-soft)]">{gbpBn(borrowing_bn)} was borrowed</b>, so every
         new promise either takes money from somewhere else or adds to that line.
       </p>
+      {tracked && (
+        <p className="mt-5 text-lead">
+          <a href={tracked.href} className="font-semibold">
+            {tracked.text} →
+          </a>
+        </p>
+      )}
     </div>
   );
 }

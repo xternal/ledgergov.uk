@@ -295,6 +295,160 @@
       conic-gradient(from 135deg at top, transparent, black 1deg 89deg, transparent 90deg) top / calc(2 * var(--tooth)) 51% repeat-x;
   }
 
+  /*
+   * Promises on the home page (OpenPromises decision 30): the engine's PromiseSpotlight (op-* classes), styled here in
+   * the site's own look rather than by the engine's stylesheet, whose dark mode is navy. White, hairlines, one
+   * typeface; each row reads like a PromiseList row (components/PromiseList.tsx), status pills included. On wide
+   * screens the latest changes and the promises due next sit side by side, so the statement stays near the top.
+   */
+  .op-spotlight {
+    display: grid;
+    column-gap: 40px;
+    border-top: 1px solid var(--line);
+    padding-top: 24px;
+  }
+  .op-spotlight > h2 {
+    margin: 0;
+    font-size: var(--text-title);
+    line-height: 1.25;
+    font-weight: 600;
+  }
+  .op-spotlight__count {
+    margin: 6px 0 0;
+    font-size: var(--text-lead);
+    line-height: 1.5;
+    color: var(--muted);
+  }
+  .op-spotlight__count a {
+    font-weight: 600;
+  }
+  .op-spotlight > h3 {
+    margin: 28px 0 8px;
+    font-size: var(--text-label);
+    line-height: 1.45;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: var(--muted);
+  }
+  .op-spotlight__all {
+    margin: 16px 0 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  @media (min-width: 1024px) {
+    .op-spotlight {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .op-spotlight > h2 { grid-area: 1 / 1 / auto / -1; }
+    .op-spotlight__count { grid-area: 2 / 1 / auto / -1; }
+    .op-spotlight > h3:nth-of-type(1) { grid-area: 3 / 1; }
+    .op-spotlight > ul:nth-of-type(1) { grid-area: 4 / 1; }
+    .op-spotlight > h3:nth-of-type(2) { grid-area: 3 / 2; }
+    .op-spotlight > ul:nth-of-type(2) { grid-area: 4 / 2; }
+    .op-spotlight__all { grid-area: 5 / 1 / auto / -1; }
+  }
+  .op-spotlight .op-list {
+    display: grid;
+    align-content: start;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--line);
+  }
+  .op-spotlight .op-list > li { border-bottom: 1px solid var(--line); }
+  .op-spotlight a.op-row {
+    display: grid;
+    gap: 8px;
+    padding: 20px 12px;
+    color: var(--ink);
+    text-decoration: none;
+    transition: background-color 0.15s ease;
+  }
+  .op-spotlight a.op-row:hover { background: var(--sunk); }
+  .op-spotlight .op-row__who {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0 8px;
+  }
+  .op-spotlight .op-row__owner {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .op-spotlight .op-row__who .op-muted {
+    font-size: var(--text-caption);
+    color: var(--muted);
+  }
+  .op-spotlight .op-row__body {
+    display: grid;
+    gap: 8px;
+    min-width: 0;
+  }
+  .op-spotlight .op-row__headline {
+    margin-bottom: -4px;
+    font-size: var(--text-label);
+    font-weight: 500;
+    color: var(--muted);
+  }
+  .op-spotlight .op-row__quote {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 1.375;
+    letter-spacing: -0.01em;
+  }
+  .op-spotlight .op-row__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 12px;
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+  .op-spotlight .op-row__late {
+    font-weight: 500;
+    color: var(--debt-ink);
+  }
+  .op-spotlight .op-row__open {
+    font-size: var(--text-label);
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .op-spotlight .op-pill {
+    white-space: nowrap;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-size: var(--text-caption);
+    line-height: 1.4;
+    font-weight: 600;
+    background: var(--sunk);
+    color: var(--muted);
+    box-shadow: inset 0 0 0 1px var(--line);
+  }
+  .op-spotlight li:is([data-status="in_plan"], [data-status="legislated"]) .op-pill {
+    background: color-mix(in oklab, var(--rec) 8%, transparent);
+    color: var(--rec);
+    box-shadow: none;
+  }
+  .op-spotlight li:is([data-status="funded"], [data-status="delivering"]) .op-pill {
+    background: color-mix(in oklab, var(--warn) 8%, transparent);
+    color: var(--warn);
+    box-shadow: none;
+  }
+  .op-spotlight li[data-status="delivered"] .op-pill {
+    background: color-mix(in oklab, var(--good) 8%, transparent);
+    color: var(--good);
+    box-shadow: none;
+  }
+  .op-spotlight li:is([data-status="failed"], [data-status="quietly_dropped"]) .op-pill {
+    background: color-mix(in oklab, var(--bad) 8%, transparent);
+    color: var(--bad);
+    box-shadow: none;
+  }
+
   /* Hide scrollbars on the section nav */
   .no-scrollbar { scrollbar-width: none; }
   .no-scrollbar::-webkit-scrollbar { display: none; }

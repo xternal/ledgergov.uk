@@ -44,7 +44,8 @@ export function PromiseList({ cards, today, empty }: { cards: CardView[]; today:
 /**
  * One row, read left to right: who made it and where they stand (in
  * government, in opposition), then the promise in their words with its
- * status, topic, cost a year and any deadline underneath.
+ * status, topic, cost a year and any deadline underneath, and "Open the
+ * promise →".
  */
 function PromiseRow({ c, today }: { c: CardView; today: string | null }) {
   const checked = reviewLine(c);
@@ -85,6 +86,10 @@ function PromiseRow({ c, today }: { c: CardView; today: string | null }) {
             {speaker ? `${speaker}, ` : ""}
             {longDate(c.file.made_on)}
           </span>
+        </span>
+        {/* As every OpenPromises list row says it (decision 30); hidden from screen readers, since the whole row is the link. */}
+        <span aria-hidden className="text-label font-semibold text-accent">
+          Open the promise →
         </span>
       </span>
     </a>

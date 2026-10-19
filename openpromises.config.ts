@@ -62,15 +62,12 @@ export default defineConfig({
   // The automated reviewer was called "Junior Editor" until 8 October 2026.
   // Publish by checks (OpenPromises decision 22, since 0.6.0): a card is published once its checks pass; editors'
   // approvals become its verification label (decision 23), except on a reader's submission or a card that does not say
-  // its origin, which still waits for editors' approvals. Pavel decided on 17 October 2026 that one approval, his, is
-  // enough, after AI Journalist's check (OpenPromises decision 27), but the engine (0.6.0, and 0.7.0 as prepared)
-  // still refuses fewer than 2 ("publishing needs two editors (principle 4)"). Until then the engine's check asks
-  // for two approvals only on a reader's submission or a card without an origin; everything else (the site's own
-  // APPROVALS_NEEDED, the intake merge) already needs one. Approvals already recorded stay valid.
+  // its origin, which still waits for an editor's approval. Pavel decided on 17 October 2026 that one approval, his, is
+  // enough, after AI Journalist's check (OpenPromises decision 27); the engine accepts 1 since 0.7.0, and the site
+  // sets it since moving to 0.10.0 on 19 October 2026, so the engine's check and the site's own APPROVALS_NEEDED
+  // agree. Approvals already recorded stay valid.
   // packages/schema/src/verification.ts SITE_EDITORIAL mirrors these settings.
-  // TODO(openpromises-0.7.0): set `approvals: 1` here and in SITE_EDITORIAL when adopting OpenPromises 0.7.0
-  // (decision 27), which accepts one approval.
-  editorial: { approvals: 2, partyConflict: true, publish: "checked", renamed: { "Junior Editor": "AI Journalist" } },
+  editorial: { approvals: 1, partyConflict: true, publish: "checked", renamed: { "Junior Editor": "AI Journalist" } },
   quotes: {
     archive: "optional",
     require: "editor",
@@ -95,6 +92,11 @@ export default defineConfig({
       "card.corrections": "Corrections",
       "card.corrected_on": "{date}, {target}",
       "nav.promises": "Promise ledger",
+      // Where a party stands, in the words of the site's own lists (apps/web/lib/promises.ts STANDING_LABEL), so the
+      // home page's spotlight (decision 30) and /promises say it the same way.
+      "standing.in_power": "in government",
+      "standing.opposition": "in opposition",
+      "standing.public_body": "public body",
       "feed.actor": "{site}: {who}",
       "feed.all": "{site}: every change",
       "feed.area": "{site}: {area}",
