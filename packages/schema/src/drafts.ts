@@ -12,9 +12,22 @@ import { IsoDate } from "./provenance";
  * `content/drafts/<date>/sources/<source.id>.txt`, and `source_span` indexes
  * into it (JavaScript string offsets, i.e. UTF-16 code units), so CI can
  * re-check every quote offline with `draftViolations`.
+ *
+ * Since 19 October 2026 a draft holds every commitment one speaker made in one
+ * source: the most checkable one in `quote`, the others in `also`, each with
+ * its own exact span (the 14 October building-safety release had made seven
+ * drafts for one Bill). Drafts written before then have no `also`.
  */
 
-export const DraftSourceKind = z.enum(["hansard_statement", "hansard_pmqs", "hansard_wms", "govuk_press_release", "upload"]);
+export const DraftSourceKind = z.enum([
+  "hansard_statement",
+  "hansard_pmqs",
+  "hansard_wms",
+  "govuk_press_release",
+  "govuk_policy_paper",
+  "govuk_consultation_outcome",
+  "upload",
+]);
 export type DraftSourceKind = z.infer<typeof DraftSourceKind>;
 
 /** Filesystem-safe source id ("hansard-19e8c247", "wms-hcws353", "govuk-…", "upload-…"): it names the stored source file. */
@@ -22,6 +35,28 @@ export const DRAFT_SOURCE_ID = /^[a-z0-9][a-z0-9_-]{0,99}$/;
 export const DRAFT_MIN_QUOTE_WORDS = 6;
 
 const nullableText = z.string().min(1).nullable();
+const Span = z.tuple([z.number().int().nonnegative(), z.number().int().nonnegative()]);
+
+/** The model's suggestions from the source. All unverified: editors confirm each one. */
+const DraftSuggestion = z.strictObject({
+  policy_area: nullableText,
+  who: nullableText,
+  how_much: nullableText,
+  when: nullableText,
+  funded_by: nullableText,
+  deadline: nullableText,
+});
+
+/** Another commitment by the same speaker in the same source, folded into the draft. */
+export const DraftAlsoQuote = z.strictObject({
+  /** Exactly sourceText.slice(source_span[0], source_span[1]), like the draft's own quote. */
+  quote: z.string().min(1),
+  source_span: Span,
+  suggested: DraftSuggestion,
+  why: z.string().min(1),
+  confidence: z.number().min(0).max(1),
+});
+export type DraftAlsoQuote = z.infer<typeof DraftAlsoQuote>;
 
 export const DraftFile = z.strictObject({
   draft: z.literal("llm_intake"),
@@ -37,7 +72,7 @@ export const DraftFile = z.strictObject({
   }),
   /** The speaker's words, exactly sourceText.slice(source_span[0], source_span[1]). */
   quote: z.string().min(1),
-  source_span: z.tuple([z.number().int().nonnegative(), z.number().int().nonnegative()]),
+  source_span: Span,
   speaker: z.strictObject({
     name: z.string().min(1),
     role: nullableText,
@@ -47,17 +82,11 @@ export const DraftFile = z.strictObject({
     /** segment = the source's own data says this person spoke these words; nearby = the name is printed just before; unverified = only the model says so. */
     check: z.enum(["segment", "nearby", "unverified"]),
   }),
-  /** The model's suggestions from the source. All unverified: editors confirm each one. */
-  suggested: z.strictObject({
-    policy_area: nullableText,
-    who: nullableText,
-    how_much: nullableText,
-    when: nullableText,
-    funded_by: nullableText,
-    deadline: nullableText,
-  }),
+  suggested: DraftSuggestion,
   /** One sentence: why this is a future, checkable commitment. */
   why: z.string().min(1),
+  /** The speaker's other commitments in this source, each exact at its own span (since 19 October 2026). */
+  also: z.array(DraftAlsoQuote).min(1).optional(),
   confidence: z.number().min(0).max(1),
   model: z.string().min(1),
   status: z.literal("to_review"),
@@ -76,12 +105,20 @@ export function quoteWords(s: string): number {
 const show = (s: string) => JSON.stringify(s);
 
 /**
- * Why a draft's quote cannot be trusted, or [] when it can: the span must lie
- * inside the source text, the text there must equal the quote character for
- * character, and the quote must be at least six words. This is the CI
- * guarantee of zero invented quotes (pnpm validate runs it on every draft).
+ * Why a draft's quotes cannot be trusted, or [] when they can: for the quote
+ * and every `also` quote, the span must lie inside the source text, the text
+ * there must equal the quote character for character, and the quote must be
+ * at least six words. This is the CI guarantee of zero invented quotes (pnpm
+ * validate runs it on every draft).
  */
-export function draftViolations(draft: Pick<DraftFile, "quote" | "source_span">, sourceText: string): string[] {
+export function draftViolations(draft: Pick<DraftFile, "quote" | "source_span"> & { also?: Pick<DraftAlsoQuote, "quote" | "source_span">[] }, sourceText: string): string[] {
+  return [
+    ...quoteViolations(draft, sourceText),
+    ...(draft.also ?? []).flatMap((a, i) => quoteViolations(a, sourceText).map((v) => `also[${i}]: ${v}`)),
+  ];
+}
+
+function quoteViolations(draft: Pick<DraftFile, "quote" | "source_span">, sourceText: string): string[] {
   const out: string[] = [];
   const [start, end] = draft.source_span;
   if (!Number.isInteger(start) || !Number.isInteger(end) || start < 0 || end > sourceText.length || start >= end) {

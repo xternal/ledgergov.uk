@@ -165,6 +165,53 @@ describe("writeDrafts", () => {
   });
 });
 
+describe("a draft with folded quotes (one per source and speaker, since 19 Oct 2026)", () => {
+  const folded = (): Candidate => {
+    const homes = cand("hansard-19e8c247", Q_HOMES);
+    return { ...cand("hansard-19e8c247", Q_BUS), also: [{ quote: homes.quote, span: homes.span, suggested: { ...homes.suggested, deadline: null, when: "by the end of this Parliament" }, why: "Homes by the end of the Parliament.", confidence: 0.6 }] };
+  };
+
+  it("writes the speaker's other quotes under also, each exact at its span", () => {
+    const root = tempRoot();
+    const r = report([folded()]);
+    const paths = writeDrafts(r, DOCS, { root, date: DATE });
+    expect(paths).toEqual([`${DAY}/sources/hansard-19e8c247.txt`, `${DAY}/${DATE}-hansard-19e8c247-1.yaml`]);
+    const yaml = readFileSync(join(root, DAY, `${DATE}-hansard-19e8c247-1.yaml`), "utf8");
+    const back = DraftFile.parse(parse(yaml));
+    expect(back).toEqual(draftFromCandidate(folded(), DOCS[0]!, DATE));
+    expect(back.also).toHaveLength(1);
+    expect(HANSARD_TEXT.slice(back.also![0]!.source_span[0], back.also![0]!.source_span[1])).toBe(Q_HOMES);
+    expect(Object.keys(parse(yaml) as object)).toEqual(["draft", "intake_date", "source", "quote", "source_span", "speaker", "suggested", "why", "also", "confidence", "model", "status"]);
+    expect(yaml).toMatch(/^# The same speaker's other commitments in this source/m);
+    expect(yaml).toMatch(/^ {4}source_span: \[\d+, \d+\]$/m);
+    expect(checkDrafts(root).errors).toEqual([]);
+    expect(knownQuotes(root)).toEqual([Q_BUS, Q_HOMES]);
+  });
+
+  it("drops a folded quote that is not exactly its span, and keeps the rest of the draft", () => {
+    const root = tempRoot();
+    const bad = folded();
+    bad.also![0]!.quote = Q_HOMES.replace("1.5 million", "2 million");
+    const r = report([bad]);
+    writeDrafts(r, DOCS, { root, date: DATE });
+    const back = DraftFile.parse(parse(readFileSync(join(root, DAY, `${DATE}-hansard-19e8c247-1.yaml`), "utf8")));
+    expect(back.quote).toBe(Q_BUS);
+    expect(back.also).toBeUndefined();
+    expect(r.dropped).toHaveLength(1);
+    expect(r.dropped[0]!.reason).toMatch(/failed the draft check: quote does not match the source text/);
+  });
+
+  it("checkDrafts finds a doctored folded quote", () => {
+    const root = tempRoot();
+    writeDrafts(report([folded()]), DOCS, { root, date: DATE });
+    const path = join(root, DAY, `${DATE}-hansard-19e8c247-1.yaml`);
+    writeFileSync(path, readFileSync(path, "utf8").replace("1.5 million homes", "2.5 million homes"));
+    const { errors } = checkDrafts(root);
+    expect(errors).toHaveLength(1);
+    expect(errors[0]).toMatch(/hansard-19e8c247-1\.yaml: also\[0\]: quote does not match the source text/);
+  });
+});
+
 describe("knownQuotes", () => {
   it("reads every version of every card and every draft's quote", () => {
     const root = tempRoot();

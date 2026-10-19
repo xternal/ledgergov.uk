@@ -1,0 +1,173 @@
+{
+ "_note": "Every draft the weekly desk dropped as `process` or `grant` in its run files of 12 to 16 October 2026 (docs/desk/runs/), with the quote as intake stored it (the intake commits on intake/2026-10-12 to intake/2026-10-16).",
+ "dropped": [
+  {
+   "draft": "2026-10-12-wms-hcws354-3",
+   "code": "grant",
+   "note": "Good Food Neighbourhoods",
+   "quote": "This will provide almost £10 million to 45 local authorities identified as having the greatest levels of deprivation and childhood obesity, to improve access to healthy and affordable food. Each authority will receive £222,000 to develop solutions that meet local needs, putting decision-making and resources directly in the hands of local leaders who know their communities best."
+  },
+  {
+   "draft": "2026-10-12-wms-hcws354-5",
+   "code": "grant",
+   "note": "£26m for Local Nature Recovery Strategies",
+   "quote": "A further £26 million will support the delivery of Local Nature Recovery Strategies over the next three years across the 48 responsible authorities in England."
+  },
+  {
+   "draft": "2026-10-12-wms-hcws364-3",
+   "code": "grant",
+   "note": "£15m for victim support through ICBs",
+   "quote": "A further £15 million over three years will be invested into local victim support services through all Integrated Care Boards in England."
+  },
+  {
+   "draft": "2026-10-12-wms-hcws356-2",
+   "code": "process",
+   "note": "departments to publish Insourcing Strategies",
+   "quote": "To support this whole of government approach, departments will also publish Insourcing Strategies, exploring how to deliver in-house capability and rebuild state capacity."
+  },
+  {
+   "draft": "2026-10-12-wms-hcws356-3",
+   "code": "process",
+   "note": "ship procurement moves to the National Shipbuilding Office",
+   "quote": "To streamline vessel procurement and support sovereign UK shipbuilding capabilities, responsibility for cross-government ship procurement and maintenance will be centralised under the National Shipbuilding Office (NSO) based in the Ministry of Defence."
+  },
+  {
+   "draft": "2026-10-12-wms-hcws358-1",
+   "code": "process",
+   "note": "lay an Order on telecoms supply as a public interest consideration",
+   "quote": "At the earliest possible opportunity, I will lay an Order which specifies this new public interest consideration. The Order will need to be approved by both Houses of Parliament."
+  },
+  {
+   "draft": "2026-10-12-govuk-troubles-bill-reinforced-with-permanent-legal-protections-an-2",
+   "code": "process",
+   "note": "move the immunity repeal from the Remedial Order into the Bill",
+   "quote": "As part of its package of amendments, the Government will also transfer provisions to repeal the conditional immunity scheme from the Remedial Order into the Troubles Bill. This will guarantee that the Bill’s protections for veterans are anchored in law at the exact moment immunity is formally and rightly removed."
+  },
+  {
+   "draft": "2026-10-12-govuk-troubles-bill-reinforced-with-permanent-legal-protections-an-3",
+   "code": "process",
+   "note": "a veteran on the Victims and Survivors Advisory Group",
+   "quote": "Securing statutory representation for at least one veteran or veterans’ representative on the Victims and Survivors Advisory Group (VSAG), while legally barring former paramilitaries from appointment."
+  },
+  {
+   "draft": "2026-10-12-wms-hcws363-4",
+   "code": "process",
+   "note": "social housing disposal notice from four to eight weeks",
+   "quote": "The government also announced that it would amend the existing disposals notification requirement in the Bill to extend the period which must elapse between the notification being made and any sale being completed from four to eight weeks."
+  },
+  {
+   "draft": "2026-10-13-govuk-government-sets-out-next-steps-on-standard-essential-patents-1",
+   "code": "process",
+   "note": "a voluntary route at the IPO for standard-related patent information",
+   "quote": "the government will develop a voluntary route for rightsholders to provide standard-related patent information at the IPO"
+  },
+  {
+   "draft": "2026-10-13-govuk-government-sets-out-next-steps-on-standard-essential-patents-2",
+   "code": "process",
+   "note": "practical guidance with industry on good-faith SEP licensing negotiations",
+   "quote": "the government will develop practical guidance in collaboration with industry for good-faith SEP licensing negotiations, particularly to support businesses with limited SEP licensing experience"
+  },
+  {
+   "draft": "2026-10-13-wms-hcws372-1",
+   "code": "process",
+   "note": "lay a final tipping Code of Practice before Parliament later this year",
+   "quote": "We will carefully consider all representations before bringing into effect a final version before Parliament later this year, thereby enabling workers and employers to effectively exercise these new rights."
+  },
+  {
+   "draft": "2026-10-13-wms-hcws373-1",
+   "code": "process",
+   "note": "contingent liability notification: about £1.6bn more callable capital for the African Development Bank",
+   "quote": "The Foreign, Commonwealth and Development Office (FCDO) proposes to increase the United Kingdom’s callable capital commitment to the African Development Bank (AfDB) as part of the General Callable Capital Increase agreed by shareholders in 2024 (GCCI 2024). This will result in an additional contingent liability of approximately £1.6 billion, reflecting the UK’s 1.87% share of the total increase."
+  },
+  {
+   "draft": "2026-10-14-govuk-brain-cancer-patients-to-see-faster-development-of-new-treat-1",
+   "code": "process",
+   "note": "MHRA review of orphan drug rules in two years rather than three; the release does not say from when the two years run, so no deadline can be stated",
+   "quote": "The Prime Minister has asked the MHRA to complete its review of the rules for medicines that treat rare conditions - known as orphan drugs - in two years rather than three."
+  },
+  {
+   "draft": "2026-10-14-govuk-brain-cancer-patients-to-see-faster-development-of-new-treat-2",
+   "code": "process",
+   "note": "appoint a national brain cancer clinical lead; speaker check only nearby",
+   "quote": "That is why today we’re committing to appoint a dedicated national lead and setting out how we’ll get new treatments to patients faster."
+  },
+  {
+   "draft": "2026-10-14-govuk-mhra-2030-strategy-to-modernise-patient-centred-regulation-f-3",
+   "code": "process",
+   "note": "an AI-enabled Clinical Trial Protocol Checker",
+   "quote": "Develop an AI-enabled Clinical Trial Protocol Checker to give sponsors regulatory certainty and support faster, higher-quality clinical trial applications."
+  },
+  {
+   "draft": "2026-10-14-govuk-mhra-2030-strategy-to-modernise-patient-centred-regulation-f-4",
+   "code": "process",
+   "note": "an MHRA Centre for AI and Digital Health",
+   "quote": "Establish an MHRA Centre for AI and Digital Health to make clearer regulatory expectations for developers of digital and AI-driven medical devices and medicines."
+  },
+  {
+   "draft": "2026-10-14-wms-hcws375-1",
+   "code": "process",
+   "note": "consultation on Charity Commission disqualification powers, closing 23 December 2026; final decisions follow it",
+   "quote": "As part of the government’s efforts to tackle extremism, the government intends to enhance the powers available to the Charity Commission to disqualify individuals from acting as a trustee and senior manager of a charity and extend the situations in which an individual is automatically disqualified from acting in those roles."
+  },
+  {
+   "draft": "2026-10-14-wms-hcws379-1",
+   "code": "process",
+   "note": "three ICB boundary changes on 1 April 2027",
+   "quote": "On 22 September, the NHS England Executive formally decided three changes to integrated care board (ICB) boundaries. These have been approved by ministers and will take place on 1 April 2027"
+  },
+  {
+   "draft": "2026-10-15-govuk-britain-funds-critical-repairs-to-chornobyl-nuclear-power-pl-1",
+   "code": "grant",
+   "note": "£17m to the EBRD-coordinated programme to repair the Chornobyl shelter",
+   "quote": "Britain is funding £17m in new support for repairs to the Chornobyl nuclear power plant, the Chancellor and Foreign Secretary have announced today."
+  },
+  {
+   "draft": "2026-10-15-govuk-major-drive-to-restore-churches-and-revitalise-heritage-buil-1",
+   "code": "grant",
+   "note": "an additional £10m for Dover Castle, Brodsworth Hall and Osborne",
+   "quote": "The Heritage at Risk Capital Fund will also support three major national heritage sites with projects designed to keep them preserved for future generations, thanks to an additional £10 million across the remainder of this parliament. Dover Castle will benefit from restoration to its defensive fortifications. Brodsworth Hall in Doncaster will receive repairs to its roof to conserve the fabric of the building."
+  },
+  {
+   "draft": "2026-10-15-govuk-mhra-introduces-new-safeguards-to-strengthen-antidepressant--1",
+   "code": "process",
+   "note": "a boxed warning in antidepressant patient leaflets",
+   "quote": "As a result of this review, patient information leaflets for antidepressants will be updated, including a new boxed warning signposting to information on suicidal thoughts and behaviours, making information easier to find."
+  },
+  {
+   "draft": "2026-10-15-govuk-mhra-introduces-new-safeguards-to-strengthen-antidepressant--2",
+   "code": "process",
+   "note": "the term Post SSRI Sexual Dysfunction in certain leaflets",
+   "quote": "Patient information leaflets for certain antidepressants will be updated to include the term ‘Post SSRI Sexual Dysfunction’ (PSSD), to explain the risk of symptoms continuing after stopping treatment."
+  },
+  {
+   "draft": "2026-10-15-hansard-971754d8-4",
+   "code": "process",
+   "note": "appoint the first unpaid carers' champion, 'soon'",
+   "quote": "We will soon appoint the first unpaid carers’ champion to be a voice for people who provide unpaid care."
+  },
+  {
+   "draft": "2026-10-15-wms-hcws383-1",
+   "code": "process",
+   "note": "Slough Borough Council: minded to appoint Commissioners until 30 November 2029, subject to representations",
+   "quote": "I envisage the appointment of Commissioners until 30 November 2029, with a review of the progress of the intervention after 12 months."
+  },
+  {
+   "draft": "2026-10-15-wms-hcws384-1",
+   "code": "process",
+   "note": "three Assistant Inspectors for a Best Value inspection of Tees Valley Combined Authority",
+   "quote": "I am therefore informing the House that the Secretary of State has today exercised powers under section 10 of the Local Government Act 1999 to appoint Laura Shoaf CBE as Lead Inspector and, on Laura’s recommendation, will shortly appoint three Assistant Inspectors to carry out an inspection of the Authority’s compliance with its Best Value Duty."
+  },
+  {
+   "draft": "2026-10-15-wms-hcws385-1",
+   "code": "process",
+   "note": "legislation to extend a media public interest consideration to on-demand programmes, only if the Secretary of State intervenes in Sky/ITV",
+   "quote": "Consequently, if I decide to intervene on the basis of this new public interest consideration, I will bring forward legislation which amends section 58 of the Act to extend the application of the public interest consideration relating to the availability of a wide range of broadcasting to on-demand programmes."
+  },
+  {
+   "draft": "2026-10-16-govuk-ofsted-to-pilot-new-independent-complaint-review-service-1",
+   "code": "process",
+   "note": "Ofsted's pilot of an independent review of its own complaint handling, through the 2026/27 academic year; a change to the inspectorate's internal complaints process",
+   "quote": "The pilot will begin shortly and will run through the 2026/27 academic year. It will apply to complaints about school inspections, including any ongoing complaints raised by schools about an inspection this term."
+  }
+ ]
+}

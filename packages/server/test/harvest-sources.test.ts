@@ -1,8 +1,10 @@
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { describe, expect, it, vi } from "vitest";
+import type { ActorFile } from "@ledger/schema";
+import { DEFAULT_INTAKE_MODEL, extractFromSources, type ExtractClient } from "../src/harvest/extract";
 import { fetchDay, sourceFromUpload } from "../src/harvest/sources";
-import { govukId, govukSearchUrl, peopleNames, quotesSomeone } from "../src/harvest/sources/govuk";
+import { fetchGovukPapersDay, govukId, govukPaperId, govukPapersSearchUrl, govukSearchUrl, paperParts, peopleNames, quotesSomeone } from "../src/harvest/sources/govuk";
 import {
   debateText,
   flatten,
@@ -75,6 +77,8 @@ function dayRoutes(date: string, overrides: Record<string, Route | Response | st
     [`${WMS_API}/1942984?expandMember=true`]: recorded("wms-statement-1942984.json"),
     // The recorded search covers 14–15 September, so the UK-day filter has something to drop.
     [govukSearchUrl(date)]: date === "2026-09-15" ? recorded("govuk-search-2026-09-14-to-15.json") : json({ results: [], total: 0 }),
+    // Policy papers and consultation outcomes (since 19 Oct 2026) have their own tests below.
+    [govukPapersSearchUrl(date)]: json({ results: [], total: 0 }),
     ["https://www.gov.uk/api/content/government/news/government-to-act-on-thirlwall-patient-safety-recommendations"]: recorded("govuk-content-thirlwall.json"),
     ["https://www.gov.uk/api/content/*"]: otherRelease,
   };
@@ -338,6 +342,8 @@ describe("fetchDay with recorded responses", () => {
     expect(release.text).toContain("Health and Social Care Secretary Yvette Cooper said:\nThe suffering endured by these babies");
     expect(govuk[2]!.people).toEqual(["Jim McMahon"]);
     expect(govuk[3]!.people).toEqual([]); // kept because the body quotes someone
+    // Policy papers and consultation outcomes are asked for too.
+    expect(f.calls).toContain(govukPapersSearchUrl("2026-09-15"));
   });
 
   it("keeps only press releases on the UK day, newest first, up to the limit", async () => {
@@ -398,6 +404,117 @@ describe("fetchDay with recorded responses", () => {
     expect(errors).toEqual([{ sourceId: "hansard", message: "HTTP 503 from hansard-api.parliament.uk/overview/sectionsforday.json" }]);
     expect(docs.filter((d) => d.kind === "hansard_wms")).toHaveLength(2);
     await expect(fetchDay("15/09/2026", { fetch: stub({}).fetch })).rejects.toThrow(/YYYY-MM-DD/);
+  });
+});
+
+// ---------------------------------------------------------------- policy papers and consultation outcomes
+
+describe("GOV.UK policy papers and consultation outcomes (since 19 Oct 2026)", () => {
+  // Real search and content API answers for 16 October 2026, bodies cut short (see the fixture's _note).
+  const recorded = fx<{ routes: Record<string, unknown> }>("govuk-papers-2026-10-16.json").routes;
+  // Every key is a whole URL, so an override simply replaces the recorded answer.
+  const routes = (overrides: Record<string, Route | Response | string> = {}) => ({ ...Object.fromEntries(Object.entries(recorded).map(([u, body]) => [u, json(body)])), ...overrides });
+  const DAY = "2026-10-16";
+  const CONTENT = "https://www.gov.uk/api/content";
+
+  it("asks GOV.UK search for both document types on one day", () => {
+    const url = new URL(govukPapersSearchUrl(DAY));
+    expect(url.origin + url.pathname).toBe("https://www.gov.uk/api/search.json");
+    expect(url.searchParams.getAll("filter_content_store_document_type")).toEqual(["policy_paper", "consultation_outcome"]);
+    expect(url.searchParams.get("filter_public_timestamp")).toBe(`from:${DAY},to:${DAY}`);
+    expect(url.searchParams.get("fields")).toContain("content_store_document_type");
+    expect(govukPapersSearchUrl(DAY) in recorded).toBe(true);
+  });
+
+  it("reads each new HTML document as a source, newest first, and nothing first published on another day", async () => {
+    const { f, fetch } = stub(routes());
+    const { docs, errors } = await fetchGovukPapersDay(DAY, fetch);
+    expect(errors).toEqual([]);
+    expect(docs.map((d) => [d.id, d.kind])).toEqual([
+      ["govuk-paper-united-kingdom-nigeria-migration-justice-and-home-affairs-di", "govuk_policy_paper"],
+      ["govuk-paper-responses-received-and-government-response", "govuk_policy_paper"],
+      ["govuk-paper-uk-government-response-to-the-covid-19-inquiry-module-4-repo", "govuk_policy_paper"],
+      ["govuk-outcome-building-charges-reform-government-response-to-the-consultat", "govuk_consultation_outcome"],
+      ["govuk-paper-fcdo-annual-statement-of-compliance-with-the-concordat-to-su", "govuk_policy_paper"],
+    ]);
+    const outcome = docs[3]!;
+    expect(outcome).toMatchObject({
+      url: "https://www.gov.uk/government/consultations/building-control-charges-notices-and-certificates/outcome/building-charges-reform-government-response-to-the-consultation",
+      title: "Building charges reform: government response to the consultation",
+      date: DAY,
+      venue: "press_release",
+      venueLabel: "Consultation outcome (Ministry of Housing, Communities and Local Government)",
+      segments: [],
+      people: [],
+    });
+    expect(outcome.text.startsWith("Building charges reform: government response to the consultation\nExecutive summary\nThe Grenfell Tower tragedy exposed")).toBe(true);
+    expect(docs[2]!.venueLabel).toBe("Policy paper (Department of Health and Social Care)");
+
+    const read = f.calls.filter((u) => u.startsWith(CONTENT)).map((u) => u.slice(CONTENT.length));
+    // Updated older documents are opened only to see they are old: the CBAM summary (February) and the stalking standards (July).
+    expect(read).toContain("/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary");
+    // A consultation outcome is read only from the outcome's own documents, never the consultation's.
+    expect(read.some((u) => u.startsWith("/government/consultations/building-control-charges-notices-and-certificates/") && !u.includes("/outcome/"))).toBe(false);
+    expect(read.some((u) => u.startsWith("/government/consultations/supported-housing-regulation-consultation/supported-housing"))).toBe(false);
+    // Other versions of the same words are never fetched: British Sign Language, Welsh.
+    expect(read.some((u) => u.includes("british-sign-language"))).toBe(false);
+    expect(read.some((u) => /welsh/.test(u))).toBe(false);
+  });
+
+  it("stops at the day's limit", async () => {
+    const { docs } = await fetchGovukPapersDay(DAY, stub(routes()).fetch, 2);
+    expect(docs.map((d) => d.id)).toEqual(["govuk-paper-united-kingdom-nigeria-migration-justice-and-home-affairs-di", "govuk-paper-responses-received-and-government-response"]);
+  });
+
+  it("reports a document that fails and reads the rest", async () => {
+    const covid = `${CONTENT}/government/publications/uk-government-response-to-the-covid-19-inquiry-module-4-report/uk-government-response-to-the-covid-19-inquiry-module-4-report`;
+    const { docs, errors } = await fetchGovukPapersDay(DAY, stub(routes({ [covid]: new Response("", { status: 503 }) })).fetch);
+    expect(errors).toEqual([
+      { sourceId: "govuk-paper-uk-government-response-to-the-covid-19-inquiry-module-4-repo", message: "HTTP 503 from www.gov.uk/api/content/government/publications/uk-government-response-to-the-covid-19-inquiry-module-4-report/uk-government-response-to-the-covid-19-inquiry-module-4-report" },
+    ]);
+    expect(docs).toHaveLength(4);
+  });
+
+  it("picks a publication's own HTML documents", () => {
+    const pub = {
+      details: {
+        attachments: [
+          { attachment_type: "html", id: 1, title: "The plan", url: "/government/publications/p/the-plan" },
+          { attachment_type: "file", id: 2, title: "The plan (PDF)", url: "https://assets.publishing.service.gov.uk/the-plan.pdf" },
+          { attachment_type: "html", id: 3, title: "The plan (Easy Read version)", url: "/government/publications/p/easy" },
+          { attachment_type: "html", id: 4, title: "Annex A: data tables", url: "/government/publications/p/annex-a" },
+          { attachment_type: "html", id: 5, title: "Y cynllun (Cymraeg)", url: "/government/publications/p/cymraeg" },
+          { attachment_type: "html", id: 6, title: "Response", url: "/government/consultations/c/outcome/response" },
+        ],
+        final_outcome_attachments: ["6"],
+      },
+    };
+    expect(paperParts("policy_paper", pub).map((p) => p.title)).toEqual(["The plan", "Response"]);
+    expect(paperParts("consultation_outcome", pub).map((p) => p.title)).toEqual(["Response"]);
+    expect(govukPaperId("policy_paper", "/government/publications/p/The-Plan")).toBe("govuk-paper-the-plan");
+  });
+
+  it("keeps the same verbatim-quote filter, and lets the department speak for itself", async () => {
+    const { docs } = await fetchGovukPapersDay(DAY, stub(routes()).fetch);
+    const outcome = docs.find((d) => d.kind === "govuk_consultation_outcome")!;
+    const exact = "The aim is to update the building charges regulations by ensuring that LABCBs can recover as fully as possible the reasonable costs of the functions they are required to perform.";
+    const paraphrase = "The government will update building charges regulations so that councils recover their full costs.";
+    const answer = (quote: string) => ({ quote, speaker_name: "HM Government", why: "Why.", policy_area: "housing_env", who: null, how_much: null, when: null, funded_by: null, deadline: null, kind: "commitment", check: "New charging regulations in force.", confidence: 0.7 });
+    const client: ExtractClient = {
+      beta: {
+        messages: {
+          async create() {
+            return { content: [{ type: "text", text: JSON.stringify({ candidates: [answer(exact), answer(paraphrase)] }) }], stop_reason: "end_turn", stop_details: null, model: DEFAULT_INTAKE_MODEL } as never;
+          },
+        },
+      },
+    };
+    const actors: ActorFile[] = [{ id: "hm-government", name: "HM Government", kind: "government", roles: [] }];
+    const report = await extractFromSources([outcome], { client, actors, known: [] });
+    expect(report.candidates.map((c) => c.quote)).toEqual([exact]);
+    expect(outcome.text.slice(report.candidates[0]!.span[0], report.candidates[0]!.span[1])).toBe(exact);
+    expect(report.candidates[0]!.speaker).toEqual({ name: "HM Government", role: "Ministry of Housing, Communities and Local Government", party: null, memberId: null, actorId: "hm-government", check: "segment" });
+    expect(report.dropped.map((d) => d.reason)).toEqual(["quote not found verbatim in the source"]);
   });
 });
 

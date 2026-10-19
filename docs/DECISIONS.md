@@ -18,6 +18,27 @@ Pavel's reply, about 16:09 BST: «решение 32 как предложено�
 - No other package skips the wait, and the wait is not shortened.
 - No version range: the packages stay pinned to one exact version and move together, in a pull request of their own.
 
+## AI Journalist backtest fixes (19 Oct 2026)
+
+Pavel's words, on 19 October 2026 at 15:59 BST: «чини бэктест как рекомендовано» ("fix the backtest as recommended"). It acts on the OpenPromises session's backtest of AI Journalist over the three sites' git history, run the same day.
+
+**What the backtest found for this site.** Of the drafts the daily intake opened, 39% became published cards (198 drafts, 76 published). It was 23% before the intake was tightened on 12 October 2026 (only commitments someone can check become drafts), and 50% once the weekly desk sorted the drafts. Recall cannot be measured: nobody knows how many promises the intake never proposed. The desk's run files give the main reasons for dropping a draft: a process step inside government (23 drafts) and a one-off grant (5). Three more findings: one GOV.UK release on 14 October gave seven drafts for one Bill (two cards, five duplicates); intake/2026-10-10 and intake/2026-10-11 were never merged and are in no desk run file; and intake/2026-10-18 landed four hours after Monday's desk run.
+
+**Changed:**
+
+- **One draft per source and speaker.** Before any draft is written, the harvester folds the candidates of one source by one speaker, or with overlapping quotes, into one draft (`packages/server/src/harvest/fold.ts`). Its `quote` is the most checkable (a deadline first, then a figure); the others follow under a new optional `also` list in the draft format (`packages/schema/src/drafts.ts`), each checked word for word at its own span by `pnpm validate`. Nothing is dropped: the desk can still make several cards from one draft. This was simpler than matching quotes across drafts, since the 14 October quotes did not overlap. The prompt also says that the measures of one Bill or scheme are one commitment. Test: `packages/server/test/harvest-fold.test.ts` replays the model's seven 14 October proposals against the stored release and gets one draft holding all seven.
+- **Process steps and grants dropped at extraction.** The prompt gives the model two more labels, `process` and `grant`, with the desk's own definitions from `docs/desk/ROUTINE.md`, and fixed rules (`packages/server/src/harvest/rules.ts`) drop the common cases the model still calls commitments. The rules read the quote only, so every speaker and party is treated the same. Test: `packages/server/test/harvest-rules.test.ts` runs them on the desk's 28 real dropped quotes (they catch 24, all five grants among them; four are left to the model, because a fixed rule for them would also catch real commitments) and on all 130 quotes of the 125 cards on `main` today (they drop none). Run over all 151 drafts of the intake days from 8 to 18 October, they drop only those 24.
+- **No orphan intake branches.** The desk now sweeps every open intake branch, whatever its date: a branch is open while it still holds drafts and `main` has no run file for its day. A branch whose pull request an editor closed by hand gets its run file from the desk, recording the editor's reasons. `pnpm harvest -- stale` names every open branch more than seven days old; the intake workflow runs it daily as a warning that never fails the run (`old-branches` job in `.github/workflows/harvest.yml`), and the desk puts its output in its report. Test: `packages/server/test/harvest-stale.test.ts`, on the branches as they stood today.
+- **Policy papers and consultation outcomes in the daily intake.** The daily harvest reads GOV.UK documents of both kinds the morning after they appear (`fetchGovukPapersDay` in `packages/server/src/harvest/sources/govuk.ts`): each HTML document first published that day, up to ten a day and three per publication, without Easy Read, sign language, Welsh or annex versions, and never PDFs. A department speaks for itself in its own paper, as in its press releases, and the same word-for-word check keeps or drops every quote. The desk's step 6 becomes a check for what the intake missed. Test: `packages/server/test/harvest-sources.test.ts`, on GOV.UK's recorded answers for 16 October 2026.
+- `docs/desk/ROUTINE.md`, `docs/OPERATIONS.md` §10 and `content/README.md` say all of this. Run files now count quotes as `candidates` and draft files as `drafts`.
+
+**Deliberately not done:**
+
+- The two old branches are not triaged here. Their pull requests (#75 and #86) were closed on 12 October with comments turning each draft down; the next desk run records those reasons in run files.
+- No reminder issue: a warning on the daily run and a line in the desk's report, so nothing new needs a token or permission.
+- No change to the OpenPromises engine, its version or `openpromises.config.ts`. The intake is this site's own code.
+- Recall is still unmeasured.
+
 ## Promises close to the way in (19 Oct 2026)
 
 Pavel's reply, about 14:54 BST: «UX как рекомендовано» ("UX as recommended"), OpenPromises decision 30. He asked for promises to stand out nearer the entrance of each of his sites, with one approach for all, so readers see they are worth opening. LedgerGov.UK's home page showed them fifth.

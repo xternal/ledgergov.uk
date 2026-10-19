@@ -94,3 +94,47 @@ describe("draftViolations", () => {
     expect(quoteWords("  ")).toBe(0);
   });
 });
+
+describe("a draft with folded quotes (also, since 19 October 2026)", () => {
+  const OTHER = "I commend this statement to the House.";
+  const more = SOURCE.replace(OTHER, "We will also double bus routes in every county by 2030. I commend this statement to the House.");
+  const SECOND = "We will also double bus routes in every county by 2030.";
+  const folded = (): DraftFile => ({
+    ...draft(),
+    also: [
+      {
+        quote: SECOND,
+        source_span: [more.indexOf(SECOND), more.indexOf(SECOND) + SECOND.length],
+        suggested: { policy_area: "economic_affairs", who: null, how_much: null, when: "by 2030", funded_by: null, deadline: "2030-12-31" },
+        why: "A second, dated commitment in the same statement.",
+        confidence: 0.7,
+      },
+    ],
+  });
+
+  it("accepts the speaker's other quotes, each checked at its own span", () => {
+    expect(DraftFile.safeParse(folded()).success).toBe(true);
+    expect(draftViolations(folded(), more)).toEqual([]);
+  });
+
+  it("names the folded quote that does not match", () => {
+    const d = folded();
+    d.also![0]!.quote = SECOND.replace("double", "triple");
+    const v = draftViolations(d, more);
+    expect(v).toHaveLength(1);
+    expect(v[0]).toMatch(/^also\[0\]: quote does not match the source text/);
+  });
+
+  it("refuses an empty list and unknown fields in a folded quote", () => {
+    expect(DraftFile.safeParse({ ...draft(), also: [] }).success).toBe(false);
+    expect(DraftFile.safeParse({ ...folded(), also: [{ ...folded().also![0]!, speaker: "someone else" }] }).success).toBe(false);
+  });
+
+  it("reads the new GOV.UK source kinds", () => {
+    for (const kind of ["govuk_policy_paper", "govuk_consultation_outcome"] as const) {
+      const d = draft();
+      d.source.kind = kind;
+      expect(DraftFile.safeParse(d).success).toBe(true);
+    }
+  });
+});

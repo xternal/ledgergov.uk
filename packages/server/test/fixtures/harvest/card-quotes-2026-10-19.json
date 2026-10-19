@@ -1,0 +1,655 @@
+{
+ "_note": "Every version's words on every card in content/promises/ on main, 19 October 2026 (after #125). The intake's fixed rules must keep all of them.",
+ "quotes": [
+  {
+   "card": "uk-abolish-non-dom-2024",
+   "version": 1,
+   "text": "We will abolish non-dom status once and for all, replacing it with a modern scheme for people genuinely in the country for a short period."
+  },
+  {
+   "card": "uk-adhd-autism-cqc-2026",
+   "version": 1,
+   "text": "Based on the review findings, we will also take action to strengthen the oversight of mental health and neurodevelopmental services, and make all diagnostic assessments for ADHD and autism CQC-regulated, so people can be confident that assessments are high quality and that the NHS is not being overcharged by independent or private providers."
+  },
+  {
+   "card": "uk-adhd-autism-cqc-2026",
+   "version": 2,
+   "text": "We will work to bring all diagnostic assessments under CQC regulation, helping to ensure people receive high-quality, clinically robust assessments regardless of how they access care, and we are also acting on concerns about the advertising of ADHD and autism assessment services."
+  },
+  {
+   "card": "uk-antidepressant-safety-leaflet-2027",
+   "version": 1,
+   "text": "Finally, a supporting safety (ancillary) leaflet is being developed by the MHRA with the wider healthcare system, which will be given to patients at their first appointment discussing antidepressants. It will describe the key risks and benefits to support informed decision making about their treatment. This safety leaflet will also be given to patients who are already receiving antidepressants. This will be available in 2027."
+  },
+  {
+   "card": "uk-awaabs-law-all-hazards-2027",
+   "version": 1,
+   "text": "The third and final phase will be introduced in 2027, covering all remaining hazards in the Housing Health and Safety Rating System where they present a significant risk of harm, except overcrowding which is addressed differently."
+  },
+  {
+   "card": "uk-awaabs-law-hazards-2026",
+   "version": 1,
+   "text": "Subject to parliamentary approval, phase 2 comes into force on 30 November 2026, extending the protections to further serious hazards like electrical hazards, excess cold and falls."
+  },
+  {
+   "card": "uk-awaabs-law-private-renters-2026",
+   "version": 1,
+   "text": "Awaab’s Law is already helping to drive up standards in the social housing sector. We’re now moving to extend it to private landlords so that England’s 11 million private renters can enjoy the same protections."
+  },
+  {
+   "card": "uk-bereavement-leave-2027",
+   "version": 1,
+   "text": "It sets out the final details of the bereavement leave entitlement, and the next steps for its implementation. These details will be laid out in secondary legislation and are planned to come into force in April 2027."
+  },
+  {
+   "card": "uk-bics-electricity-2026",
+   "version": 1,
+   "text": "When it comes to energy costs, our British industrial competitiveness scheme will save more than 10,000 manufacturers up to 25% of their electricity bills."
+  },
+  {
+   "card": "uk-bus-cap-2-2026",
+   "version": 1,
+   "text": "I’ve done it before and I will do it again now: a £2 cap on bus fares for millions across the country."
+  },
+  {
+   "card": "uk-cap-leasehold-permission-fees-2026",
+   "version": 1,
+   "text": "We will legislate to give the Secretary of State powers to cap exorbitant permission fees and administration charges, with a public consultation to follow to help determine the scope and level of those caps."
+  },
+  {
+   "card": "uk-carbon-border-levy-2027",
+   "version": 1,
+   "text": "The government is introducing a Carbon Border Adjustment Mechanism (CBAM) from 1 January 2027. It will ensure that highly traded, carbon-intensive goods imported into the UK face a carbon price comparable to the price that would be paid were the goods produced in the UK."
+  },
+  {
+   "card": "uk-care-fair-pay-agreement-2026",
+   "version": 1,
+   "text": "We will introduce the first fair pay agreement in adult social care, backed by half a billion pounds."
+  },
+  {
+   "card": "uk-carried-interest-2024",
+   "version": 1,
+   "text": "Private equity is the only industry where performance-related pay is treated as capital gains. Labour will close this loophole."
+  },
+  {
+   "card": "uk-child-nude-images-law-2026",
+   "version": 1,
+   "text": "New legislation will be prepared by the government to force tech companies to make it impossible for children to take, share or view naked pictures."
+  },
+  {
+   "card": "uk-cladding-legal-duty-2026",
+   "version": 1,
+   "text": "The Bill brings forward a new legal duty on those responsible for the safety of their buildings, such as freeholders, to identify, assess, and fix issues without delay – anyone who obstructs this work could face criminal penalties."
+  },
+  {
+   "card": "uk-cladding-remediation-2029",
+   "version": 1,
+   "text": "The expectation remains that by the end of 2029, every building over 11 metres with unsafe cladding should either have been remediated or have a clear date for completion – the key change being that tougher powers will become available before this."
+  },
+  {
+   "card": "uk-community-trees-500k-2030",
+   "version": 1,
+   "text": "Through this fund, up to 500,000 new trees outside woodlands will be planted between April 2027 and March 2030."
+  },
+  {
+   "card": "uk-con-cheap-power-plan-2026",
+   "version": 1,
+   "text": "The Conservatives have a cheap power plan to slash energy costs for the entire economy. It involves hard-nosed choices: repealing the Climate Change Act 2008, axing the emissions trading scheme, scrapping wind and solar subsidies, investing in nuclear and getting the North sea drilling again."
+  },
+  {
+   "card": "uk-con-iht-family-home-2026",
+   "version": 1,
+   "text": "Today, the Conservative Party has announced that we will abolish Inheritance Tax on the family home and raise the individual threshold to £500,000."
+  },
+  {
+   "card": "uk-con-landlord-cgt-relief-2024",
+   "version": 1,
+   "text": "To further support homeowners, we will introduce a two-year temporary Capital Gains Tax relief for landlords who sell to their existing tenants."
+  },
+  {
+   "card": "uk-con-no-cgt-rise-2024",
+   "version": 1,
+   "text": "We will not increase Capital Gains Tax."
+  },
+  {
+   "card": "uk-con-stamp-duty-abolition-2025",
+   "version": 1,
+   "text": "Conference, the next Conservative Government will abolish stamp duty on your home. It will be gone."
+  },
+  {
+   "card": "uk-con-zev-mandate-abolition-2026",
+   "version": 1,
+   "text": "The Conservatives would abolish the ZEV mandate."
+  },
+  {
+   "card": "uk-corp-tax-cap-25-2024",
+   "version": 1,
+   "text": "Labour will cap corporation tax at the current level of 25 per cent, the lowest in the G7, for the entire parliament, and we will act if tax changes in other countries pose a risk to UK competitiveness."
+  },
+  {
+   "card": "uk-council-tax-two-notices-2026",
+   "version": 1,
+   "text": "The government will require councils to issue at least one reminder notice and one final notice before a taxpayer loses the right to pay by instalments."
+  },
+  {
+   "card": "uk-cps-funding-10pc-2029",
+   "version": 1,
+   "text": "We are investing an additional £96 million in the Crown Prosecution Service, increasing its funding by more than 10 percent between 2026 and 2029."
+  },
+  {
+   "card": "uk-crown-court-case-coordinators-2026",
+   "version": 1,
+   "text": "To help maximise court resources further, the Government is also investing up to £5 million to roll out specialist Case Coordinators in every Crown Court in England and Wales, helping ensure cases progress more efficiently and effectively, reducing delays."
+  },
+  {
+   "card": "uk-curriculum-proposals-2026",
+   "version": 1,
+   "text": "Our curriculum and assessment reform will go hand in hand with that ambition, and we will soon publish proposals building on the Becky Francis review."
+  },
+  {
+   "card": "uk-defence-25-2027",
+   "version": 1,
+   "text": "We will deliver our commitment to spend 2.5% of GDP on defence, but we will bring it forward so that we reach that level in 2027 and we will maintain that for the rest of this Parliament."
+  },
+  {
+   "card": "uk-defence-colleges-scotland-2026",
+   "version": 1,
+   "text": "In March we announced a £10 million commitment to develop two Defence Technical Excellence Colleges in Scotland. I’m pleased that the Scottish Government has now agreed to match fund these colleges to give our young people the skills they need to secure high-skilled, well-paid careers in Scotland’s defence sector in the years to come."
+  },
+  {
+   "card": "uk-disabled-bus-pass-2026",
+   "version": 1,
+   "text": "Disabled people will now have unlimited free bus travel 24/7."
+  },
+  {
+   "card": "uk-electricity-vat-2026",
+   "version": 1,
+   "text": "We’re taking immediate action to cut taxes on energy bills, put more money in people’s pockets and bring back hope."
+  },
+  {
+   "card": "uk-empty-homes-orders-2026",
+   "version": 1,
+   "text": "We will reduce the qualifying period from two years to six months and remove evidential requirements relating to matters such as anti-social behaviour or community support."
+  },
+  {
+   "card": "uk-experts-at-hand-2029",
+   "version": 1,
+   "text": "We will fortify mainstream provision with our new national Experts at Hand initiative, backed by £1.8 billion of new investment."
+  },
+  {
+   "card": "uk-falklands-business-protection-2026",
+   "version": 1,
+   "text": "The government will bring forward secondary legislation as quickly as possible, with the aim to bring it into force before the end of the year."
+  },
+  {
+   "card": "uk-fiscal-rules-2026",
+   "version": 1,
+   "text": "We will meet the fiscal rules. And Andy Burnham and I have talked about how we will do that in lockstep, ensuring there’s a buffer also for uncertainty."
+  },
+  {
+   "card": "uk-flexible-working-rules-2027",
+   "version": 1,
+   "text": "It is our intention that these changes will take effect in autumn 2027."
+  },
+  {
+   "card": "uk-flood-200k-properties-2029",
+   "version": 1,
+   "text": "To ensure the nation is more resilient to flooding, the government is investing £4.2 billion between last April and March 2029 to repair and replace existing defences and construct new ones, with hundreds of projects set to be completed.\nThe new target for 200,000 properties to benefit from this investment will deliver a total economic benefit of £27.9 billion in avoided damage as communities gain better protection and growth is delivered in every postcode."
+  },
+  {
+   "card": "uk-flood-defences-condition-2029",
+   "version": 1,
+   "text": "Today, as Environment Agency teams across the country continue their work to ensure vital protections remain strong, the government has set a target for asset condition to rise further to 93.5% by March 2029."
+  },
+  {
+   "card": "uk-flood-re-contents-premiums-2027",
+   "version": 1,
+   "text": "This includes more than halving premiums for contents cover policies in Council Tax Bands A and B, to £25, from April 2027."
+  },
+  {
+   "card": "uk-foster-places-10k-2026",
+   "version": 1,
+   "text": "This is why the government aims to create 10,000 new foster places by the end of this parliament."
+  },
+  {
+   "card": "uk-gbr-hq-derby-2029",
+   "version": 1,
+   "text": "Construction of the brand-new development in at Becketwell, a brownfield site in the heart of Derby city centre, is expected to begin in early 2027 and be completed by spring 2029."
+  },
+  {
+   "card": "uk-great-british-energy-2024",
+   "version": 1,
+   "text": "To drive forward investment in clean, home-grown energy production, Labour will create a new publicly-owned company, Great British Energy. It will be owned by the British people and deliver power back to the British people."
+  },
+  {
+   "card": "uk-great-british-railways-2026",
+   "version": 1,
+   "text": "The Railways Bill, currently making its way through Parliament, will lead to the establishment of Great British Railways (GBR), a new publicly-owned body and a new passenger watchdog."
+  },
+  {
+   "card": "uk-green-bank-windfall-tax-2026",
+   "version": 1,
+   "text": "We will apply a windfall tax to obscene bank profits, and we will make sure the support of the welfare state is always there for those who need it."
+  },
+  {
+   "card": "uk-green-cgt-align-2024",
+   "version": 1,
+   "text": "Elected Greens will push too for the reform Capital Gains Tax (CGT) by aligning the rates paid by taxpayers on income and taxable gains. This would affect less than 2% of all income-tax payers."
+  },
+  {
+   "card": "uk-green-wealth-tax-2024",
+   "version": 1,
+   "text": "Elected Greens will push for a wealth tax. This will tax the wealth of individual taxpayers with assets above £10 million at 1% and assets above £1bn at 2% annually."
+  },
+  {
+   "card": "uk-halve-consultancy-spend-2029",
+   "version": 1,
+   "text": "It will work with departments to halve consultancy spending and save over £700m annually by 2028/29."
+  },
+  {
+   "card": "uk-healthy-babies-every-hub-2026",
+   "version": 1,
+   "text": "The Healthy Babies programme will be rolled out nationally to every Best Start family hub, extending support based on Sure Start principles during pregnancy and the first two years of life to families in every part of England."
+  },
+  {
+   "card": "uk-heaton-park-inquiry-2026",
+   "version": 1,
+   "text": "What happened that day must be fully understood so, as requested by the coroner, I can today announce a public inquiry into the deaths of Mr Cravitz and Mr Daulby."
+  },
+  {
+   "card": "uk-heritage-repair-funds-2026",
+   "version": 1,
+   "text": "The Places of Worship Renewal Fund is worth £92 million across this parliament, and the Heritage at Risk Capital Fund is worth £75 million across the parliament."
+  },
+  {
+   "card": "uk-homelessness-duty-to-collaborate-2026",
+   "version": 1,
+   "text": "A new Duty to Collaborate will be incorporated into the Bill that will require public services to work together to identify people at risk of homelessness and jointly consider what action they could take, within their existing responsibilities, to help prevent it. Councils will also be given a new power to refer homeless households to private registered providers of social housing."
+  },
+  {
+   "card": "uk-homes-1-5m-2024",
+   "version": 1,
+   "text": "Labour will get Britain building again, creating jobs across England, with 1.5 million new homes over the next parliament."
+  },
+  {
+   "card": "uk-information-defence-centre-2026",
+   "version": 1,
+   "text": "It is why, in my speech to the UN General Assembly, I confirmed our commitment to establish a new centre for information defence, as recommended by the Foreign Affairs Select Committee."
+  },
+  {
+   "card": "uk-jury-trials-kept-2026",
+   "version": 1,
+   "text": "These announcements come as the Courts and Tribunals Bill returns to Parliament tomorrow, where the Government will amend the Bill to remove proposals to limit jury trials, ensuring almost all Crown Court cases continue to be heard by a jury."
+  },
+  {
+   "card": "uk-kings-series-nnr-2026",
+   "version": 1,
+   "text": "That’s why Natural England is delivering the King’s Series of National Nature Reserves, which will create or extend 25 NNRs by 2027, leaving a legacy for people and nature."
+  },
+  {
+   "card": "uk-landlord-register-2026",
+   "version": 1,
+   "text": "All landlords actively letting property will need to have registered by 14 November 2027."
+  },
+  {
+   "card": "uk-ld-cgt-reform-2024",
+   "version": 1,
+   "text": "Fairly reforming capital gains tax to close loopholes exploited by the super wealthy."
+  },
+  {
+   "card": "uk-ld-free-personal-care-2024",
+   "version": 1,
+   "text": "Introduce free personal care based on the model introduced by the Liberal Democrats in government in Scotland in 2002, so that provision is based on need, not ability to pay."
+  },
+  {
+   "card": "uk-ld-personal-allowance-15k-2026",
+   "version": 1,
+   "text": "The Liberal Democrats will take 2.5 million people out of paying income tax altogether by raising the tax-free personal allowance to £15,000."
+  },
+  {
+   "card": "uk-lipf-mayors-2028",
+   "version": 1,
+   "text": "The existing Local Innovation Partnerships Fund (LIPF) will be devolved to established Mayors from 2028."
+  },
+  {
+   "card": "uk-magistrates-21000-2029",
+   "version": 1,
+   "text": "We are rebuilding the magistracy by increasing the total number of magistrates to 21,000 in 2028/29, with more regular regional recruitment and a new national taskforce to support local Advisory Committees."
+  },
+  {
+   "card": "uk-mayors-16-19-budget-2026",
+   "version": 1,
+   "text": "For the first time, mayors will have control of the 16-19 education budget, and I know that, in respect of early years and early intervention, we can transform outcomes through the power of place."
+  },
+  {
+   "card": "uk-mayors-income-tax-2026",
+   "version": 1,
+   "text": "We have therefore agreed to overhaul the way regional government is funded, starting by replacing grants from central government with a share of local income tax for every mayor beginning in 2028, such that where a region grows its tax base, it benefits from the increased receipts."
+  },
+  {
+   "card": "uk-mental-health-centres-2026",
+   "version": 1,
+   "text": "This might sound disappointing, as we will not be taking forward her specific suggestion, but we will be bringing forward four new community mental health centres across Hertfordshire, as part of 159 across the country."
+  },
+  {
+   "card": "uk-mental-health-strategy-2026",
+   "version": 1,
+   "text": "This will all be considered as part of a mental health strategy that will come before this House before Christmas."
+  },
+  {
+   "card": "uk-mhra-advice-45-days-2026",
+   "version": 1,
+   "text": "Introduce a new higher value service option for medicine and medical product developers to fast-track the scientific advice service from 90 days to 45 days."
+  },
+  {
+   "card": "uk-mhst-every-school-2029",
+   "version": 1,
+   "text": "The Government has committed to expanding Mental Health Support Teams (MHSTs) in schools and colleges to reach 100% coverage by 2029/30."
+  },
+  {
+   "card": "uk-mhst-every-school-2029",
+   "version": 2,
+   "text": "rolling out mental health support teams to every school and college by 2029, reaching nearly 800,000 additional children and young people this year, alongside a £7 million investment in early support hubs in 2026 to 2027"
+  },
+  {
+   "card": "uk-mod-sme-spend-2028",
+   "version": 1,
+   "text": "We also committed to spend an additional £2.5bn with SMEs by summer 2028, a significant and ambitious increase of 50% in spend."
+  },
+  {
+   "card": "uk-national-care-service-2026",
+   "version": 1,
+   "text": "We will fix it. We will create a national care service."
+  },
+  {
+   "card": "uk-national-museums-free-2026",
+   "version": 1,
+   "text": "We will not be pursuing a change in policy to universal free entry, but our findings more broadly will help inform the upcoming Museums Plan."
+  },
+  {
+   "card": "uk-national-police-service-2026",
+   "version": 1,
+   "text": "That is one of the reasons why I am setting up the national police service, which will bring together the National Crime Agency and Counter Terrorism Policing into one service."
+  },
+  {
+   "card": "uk-national-security-bill-cyber-2026",
+   "version": 1,
+   "text": "We will go further with our upcoming national security Bill and give intelligence agencies and the police stronger powers to bear down on cyber-criminals."
+  },
+  {
+   "card": "uk-nato-5pc-2035-2025",
+   "version": 1,
+   "text": "That is why, as part of this strategy, we make a historic commitment to spend 5% of our GDP on national security by 2035."
+  },
+  {
+   "card": "uk-neighbourhood-police-2024",
+   "version": 1,
+   "text": "Labour will introduce a new Neighbourhood Policing Guarantee, restoring patrols to our town centres by recruiting thousands of new police officers, police and community support officers, and special constables."
+  },
+  {
+   "card": "uk-nhs-18-weeks-2024",
+   "version": 1,
+   "text": "ending hospital backlogs to meet the NHS standard of 92% of patients in England waiting no longer than 18 weeks for elective treatment"
+  },
+  {
+   "card": "uk-nhs-40000-appointments-2024",
+   "version": 1,
+   "text": "As a first step, in England we will deliver an extra two million NHS operations, scans, and appointments every year; that is 40,000 more appointments every week."
+  },
+  {
+   "card": "uk-nhs-capital-1-5bn-2026",
+   "version": 1,
+   "text": "Over £200 million will fund 10 major hospital projects, while over £1.3 billion will go towards maintenance, safety and resilience improvements."
+  },
+  {
+   "card": "uk-nine-reservoirs-2050",
+   "version": 1,
+   "text": "This immediate step delivers on this government’s commitment to fast-track the delivery of nine new reservoirs, supporting its plans to get Britain building and deliver 1.5 million new homes by the end of this parliament."
+  },
+  {
+   "card": "uk-nine-reservoirs-2050",
+   "version": 2,
+   "text": "And we have kickstarted the building of nine new reservoirs by 2050."
+  },
+  {
+   "card": "uk-no-tax-rise-working-people-2024",
+   "version": 1,
+   "text": "Labour will not increase taxes on working people, which is why we will not increase National Insurance, the basic, higher, or additional rates of Income Tax, or VAT."
+  },
+  {
+   "card": "uk-organic-farmland-10pc-2026",
+   "version": 1,
+   "text": "Ambition to grow the organically managed land area in England to 10% to support growth across the range of organic sectors (horticulture, arable crops, poultry, red meat and dairy)."
+  },
+  {
+   "card": "uk-phase-1-trials-14-days-2026",
+   "version": 1,
+   "text": "Cut by half the initial assessment target for qualifying Phase 1 clinical trials to 14 days."
+  },
+  {
+   "card": "uk-plaid-cgt-equalise-2024",
+   "version": 1,
+   "text": "Plaid Cymru would equalise capital gains tax with income tax, raising between £12bn - £15bn."
+  },
+  {
+   "card": "uk-plaid-childcare-20-hours-2026",
+   "version": 1,
+   "text": "By the time our new offer is fully rolled out, every child aged 9 months to 4 years will be entitled to 20 hours of free childcare every week, for 48 weeks a year."
+  },
+  {
+   "card": "uk-plaid-cost-of-living-2024",
+   "version": 1,
+   "text": "By supporting families and by devolving powers to ensure that more of the decisions that affect Wales are made in Wales, we will address the cost of living crisis and provide Welsh solutions to Welsh problems."
+  },
+  {
+   "card": "uk-prison-places-14000-2031",
+   "version": 1,
+   "text": "We aim to construct 14,000 places by 2031."
+  },
+  {
+   "card": "uk-probation-officers-1300-2027",
+   "version": 1,
+   "text": "The Government is increasing investment into probation and community services by up to £700 million by 2028/29. To further manage the increased pressure, we will recruit at least 1,300 trainee probation officers by March 2027, on top of the 1,389 onboarded in 2025/26, alongside introducing new digital technology."
+  },
+  {
+   "card": "uk-pubs-business-rates-cut-2026",
+   "version": 1,
+   "text": "Pubs, clubs and live music venues set to receive a 20% cut to their business rates bills saving the typical pub an estimated £1,100 next year"
+  },
+  {
+   "card": "uk-quantum-apprentices-150-2030",
+   "version": 1,
+   "text": "Meanwhile an £8 million expansion of UKRI’s QuEST Apprentices Programme will create new routes into skilled quantum jobs, helping employers train the engineering technicians and specialist quantum technicians needed to build, maintain and commercialise these technologies.\nBy 2030 the scheme aims to equip 150 apprentices studying engineering subjects with the ability to support the growing UK quantum workforce, helping to maintain Britain as a global leader in the technology."
+  },
+  {
+   "card": "uk-rail-apprentices-600-2030",
+   "version": 1,
+   "text": "Up to 600 apprentices between 16 and 21 years old will enrol over the next 4 years on the rail foundation apprenticeship, with the first starters based in Derby helping to cement the city’s role as Europe’s largest rail hub and fostering the next generation of Britian’s railway workforce."
+  },
+  {
+   "card": "uk-rail-public-ownership-2027",
+   "version": 1,
+   "text": "Great Western Railway’s services will be the next to transfer into public ownership on 13 December 2026, followed by Avanti West Coast’s services on 7 March 2027, and the rail public ownership programme remains on track to be completed by the end of 2027."
+  },
+  {
+   "card": "uk-rape-courtroom-every-crown-court-2028",
+   "version": 1,
+   "text": "Backed by a multi-million cash injection, every Crown Court in England and Wales will get at least one courtroom especially set up to hear rape and serious sexual offence cases over the next two years, helping to hold more perpetrators to account."
+  },
+  {
+   "card": "uk-reform-energy-bills-250-2026",
+   "version": 1,
+   "text": "In total, our plan will remove over £250 per year from energy bills, through removing government policy costs from electricity and gas bills, scrapping carbon taxes on generators and permanently taking VAT off of consumer energy bills."
+  },
+  {
+   "card": "uk-reform-personal-allowance-15k-2026",
+   "version": 1,
+   "text": "The first Budget of a Reform government will increase the tax-free personal allowance for income tax to £15,000, beginning at the next tax year."
+  },
+  {
+   "card": "uk-regulate-heating-oil-2026",
+   "version": 1,
+   "text": "Today I can confirm that this government is taking forward proposals to regulate the heating oil sector for the first time. We will strengthen consumer rights and ensure a fairer deal for off-grid households."
+  },
+  {
+   "card": "uk-regulate-property-agents-2026",
+   "version": 1,
+   "text": "We also announced our intention to legislate for the independent regulation of property agents."
+  },
+  {
+   "card": "uk-russian-lng-shipping-ban-2026",
+   "version": 1,
+   "text": "It comes as the UK doubles down on support for Ukraine, including delivering £45 million of surface-to-air missiles deliveries and standing by plans to fully implement a maritime services ban on Russian liquefied natural gas (LNG) exports – restricting Russia’s access to the UK’s world leading shipping and insurance services."
+  },
+  {
+   "card": "uk-send-inclusion-standards-2026",
+   "version": 1,
+   "text": "We are developing national inclusion standards, which we will publish alongside any legislation or further steps we take on SEND."
+  },
+  {
+   "card": "uk-sfi-reopen-2027",
+   "version": 1,
+   "text": "We plan to offer the scheme again in 2027 and will look to open it as early as possible."
+  },
+  {
+   "card": "uk-snp-income-tax-bands-rates-2026",
+   "version": 1,
+   "text": "We will not increase the number of bands or their rates over the lifetime of the next parliament."
+  },
+  {
+   "card": "uk-snp-two-child-cap-2024",
+   "version": 1,
+   "text": "Scrap the two child benefit cap, ending the unnecessary suffering caused by both the benefit cap on children and associated rape clause."
+  },
+  {
+   "card": "uk-socio-economic-duty-2026",
+   "version": 1,
+   "text": "Crucially, the unit will lead the enactment of the Socio-Economic Duty, a new power in the Equality Act that will legally require public bodies to consider how to improve the lives of lower-income families as part of decisions around issues like transport, services and budgets."
+  },
+  {
+   "card": "uk-space-debris-removal-2032",
+   "version": 1,
+   "text": "Government backs new spacecraft with more than £60m to remove two defunct satellites from orbit by 2032."
+  },
+  {
+   "card": "uk-state-of-extremism-report-2026",
+   "version": 1,
+   "text": "In “Protecting What Matters”, our social cohesion plan, we set out a range of measures to tackle this threat, including banning those who seek to come to this country to spread hatred, and committing to publishing an annual “State of Extremism” report, which will identify the threats we face and, crucially, equip frontline professionals to counter them."
+  },
+  {
+   "card": "uk-state-pension-no-income-tax-2026",
+   "version": 1,
+   "text": "For those who are purely reliant on the basic state pension for their income, the Prime Minister and Chancellor have made clear that they will not have to pay income tax for the duration of this Parliament. The Chancellor will announce further details at the Budget."
+  },
+  {
+   "card": "uk-steps-to-safety-gp-2026",
+   "version": 1,
+   "text": "This will start with an investment of up to £34.4 million over three years to support 12 Integrated Care Boards across England to deliver the first phase of a primary care referral pathway, called Steps to Safety, making sure women and girls experiencing violence and abuse can access specialist support through their GP."
+  },
+  {
+   "card": "uk-stillbirth-burials-contact-2026",
+   "version": 1,
+   "text": "Within 4 weeks, all Trusts must ensure a dedicated point of contact within their PALS service, or an equivalent named service, to support families seeking answers."
+  },
+  {
+   "card": "uk-talking-therapies-915k-2029",
+   "version": 1,
+   "text": "the government has committed to continuing to expand access to NHS Talking Therapies for adults with common mental health conditions in England. This is expected to increase the number of people completing courses of treatment by 384,000 and increase the number of sessions."
+  },
+  {
+   "card": "uk-talking-therapies-915k-2029",
+   "version": 2,
+   "text": "expanding NHS Talking Therapies so that 915,000 people complete a course of treatment by March 2029 - up from 670,000 last year."
+  },
+  {
+   "card": "uk-triple-lock-2030-2026",
+   "version": 1,
+   "text": "The current State Pension Triple Lock will be maintained until April 2030. From then, it will be adjusted so the State Pension rises by at least inflation or 2.5% each year with a new link built in to keep pace with earnings over time."
+  },
+  {
+   "card": "uk-troubles-ag-consent-2026",
+   "version": 1,
+   "text": "Under the updated bill, the Attorney General must provide consent for any serious Troubles-related prosecution."
+  },
+  {
+   "card": "uk-two-child-limit-2025",
+   "version": 1,
+   "text": "I can announce today, fully costed and fully funded, the removal of the two-child limit in full from April."
+  },
+  {
+   "card": "uk-ukef-export-contracts-2029",
+   "version": 1,
+   "text": "By 2029, UKEF aims to support UK firms to win over £12.5 billion of new export contracts through its export finance offer."
+  },
+  {
+   "card": "uk-ukri-innovation-clusters-2026",
+   "version": 1,
+   "text": "The Government will also commit £1 billion through UK Research and Innovation (UKRI) over the next four years to support high-growth innovation clusters in the Industrial Strategy’s priority sectors across the UK, backing the places with the research excellence, businesses and skilled workers needed to turn new ideas into successful companies."
+  },
+  {
+   "card": "uk-union-learning-fund-2026",
+   "version": 1,
+   "text": "The Chancellor also confirmed £15 million a year of additional funding to restore the Union Learning Fund in England, helping working people gain new skills, progress at work and adapt as technology, including AI, changes the workplace."
+  },
+  {
+   "card": "uk-union-rights-statement-2027",
+   "version": 1,
+   "text": "The duty is planned to come into force on 1 January 2027 with employers required to give the statement to new workers from its introduction and to existing workers by 6 April 2027."
+  },
+  {
+   "card": "uk-urgent-care-14-schemes-2026",
+   "version": 1,
+   "text": "Today (18 October), the government is announcing that almost £140 million will be invested in 14 new urgent care schemes across England, including new urgent treatment centres (UTCs) and same day emergency care services (SDECs), new ambulance fleets, and emergency department upgrades, providing a significant increase in frontline and urgent care capacity."
+  },
+  {
+   "card": "uk-urgent-care-25-sites-winter-2027",
+   "version": 1,
+   "text": "A further 25 new or expanded urgent care sites announced in April will be open for winter, providing additional frontline capacity as the NHS prepares for the heavy demands of the colder months."
+  },
+  {
+   "card": "uk-vat-private-schools-2024",
+   "version": 1,
+   "text": "Labour will end the VAT exemption and business rates relief for private schools to invest in our state schools."
+  },
+  {
+   "card": "uk-virtual-remand-hearings-pilot-2026",
+   "version": 1,
+   "text": "Recommended in Lord Leveson’s Review and backed by £17.4 million, the Government’s latest technology drive will be piloted in at least four police force areas across the country."
+  },
+  {
+   "card": "uk-vocational-gcses-2026",
+   "version": 1,
+   "text": "Every young person across the country will also be able to pursue prestigious new Vocational GCSEs and access work experience, as part of the Prime Minister’s commitment in his first week in the role to put technical education on an equal footing with the traditional academic path. The new national qualifications will be created to sit alongside traditional GCSEs and will replace the current Technical Awards."
+  },
+  {
+   "card": "uk-water-company-share-limits-2026",
+   "version": 1,
+   "text": "The Prime Minister announced on 29 September that the strengthened Water Bill will remove the current limits on Government ownership of shares in the major water and sewerage companies in England."
+  },
+  {
+   "card": "uk-work-experience-200k-2026",
+   "version": 1,
+   "text": "A new National Mission on Work Experience will work with employers, mayors and local leaders to create 200,000 additional work experience placements, while expanding technical and vocational pathways."
+  },
+  {
+   "card": "uk-your-first-home-2026",
+   "version": 1,
+   "text": "The government has today (Saturday 26 September 2026) announced a new equity loan scheme - Your First Home - in England will be confirmed at next month’s Budget, to support more people into homeownership."
+  },
+  {
+   "card": "uk-youth-hub-every-area-2029",
+   "version": 1,
+   "text": "Open on Monday, Wednesday and Friday, the Hub is part of the Government’s commitment to deliver a Youth Hub in every local area of Great Britain over the next three years, building a national network of support for the nearly one million young people not in education, employment or training."
+  },
+  {
+   "card": "uk-youth-hub-every-area-2029",
+   "version": 2,
+   "text": "The Government is introducing a Jobs Guarantee expected to support more than 90,000 young people, alongside 300,000 additional work experience and training placements, the ambition to see 50,000 additional young apprentices and an expansion of Youth Hubs to more than 360 communities across Great Britain."
+  },
+  {
+   "card": "uk-youth-workers-1000-2027",
+   "version": 1,
+   "text": "This comes as the Government’s new £450 million Youth Matters programme will help prevent young people disengaging from work and education, by creating and improving youth spaces, increasing access to youth workers and delivering more face-to-face activities for young people from sport and music to volunteering and the arts, backed by a commitment to recruit 1,000 new youth workers from spring 2027."
+  }
+ ]
+}

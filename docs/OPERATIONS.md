@@ -169,12 +169,16 @@ key, and Telegram if set. It also sets the `MAIL_PROVIDER` repository variable
 `.github/workflows/harvest.yml` runs every day at 06:15 UTC (07:15 BST; 06:15
 GMT after the clocks go back on 2026-10-25), and by hand from the Actions tab
 with an optional date. It reads the previous day's Commons statements, PMQs,
-written ministerial statements and GOV.UK press releases; Claude proposes
-candidate promises; only quotes found word for word in the source are kept.
-Each day with candidates becomes one **draft** pull request labelled `intake`,
-on a branch `intake/<date>`, with one YAML per candidate in
-`content/drafts/<date>/` and the source texts beside them
-(`content/README.md`, "Drafts").
+written ministerial statements, GOV.UK press releases, and (since 19 October
+2026) GOV.UK policy papers and consultation outcomes: each HTML document first
+published that day, up to ten a day; Claude proposes candidate promises; only
+quotes found word for word in the source are kept, and process steps and
+grants are dropped (the model labels them, and fixed rules in
+`packages/server/src/harvest/rules.ts` catch the common cases). Each day with
+candidates becomes one **draft** pull request labelled `intake`, on a branch
+`intake/<date>`, with one YAML per source and speaker in
+`content/drafts/<date>/` (the speaker's other commitments in that source under
+`also`) and the source texts beside them (`content/README.md`, "Drafts").
 
 * **Set up:** add the `ANTHROPIC_API_KEY` secret in GitHub (repo → Settings →
   Secrets and variables → Actions); the same key as §5 works, but a separate
@@ -196,16 +200,23 @@ on a branch `intake/<date>`, with one YAML per candidate in
 * **Running a day again:** the job never overwrites an existing `intake/<date>`
   branch (it may hold editors' work). Close the pull request and delete the
   branch first, then run the workflow with that date.
+* **Old branches:** the same workflow's `old-branches` job runs
+  `pnpm harvest -- stale` every day, with or without the key. It names, as a
+  warning on the run, every intake branch more than seven days old that still
+  holds drafts while `main` has no desk run file for its day
+  (`docs/desk/runs/<date>.yaml`). It never fails the run; the weekly desk
+  sweeps every such branch and lists the same lines in its report.
 * **Locally** (needs `ANTHROPIC_API_KEY` in your shell to extract):
   `pnpm harvest -- day --date 2026-10-06 --dry-run` prints the day's report and
   writes nothing; without `--dry-run` it writes the drafts and
   `content/drafts/<date>/PR.md` (the pull request text, not committed).
   `pnpm harvest -- upload …` does the same for a transcript or a YouTube
-  video's captions.
+  video's captions. `pnpm harvest -- stale` (after `git fetch origin`) names
+  the old intake branches.
 * **The weekly editor's desk** (since 13 October 2026): every Monday at 10:00
-  UK time a Claude cloud routine sorts the week's open intake pull requests
-  into at most 30 cards, then reads the week's GOV.UK policy papers for
-  commitments the daily intake cannot see. It follows `docs/desk/ROUTINE.md`
+  UK time a Claude cloud routine sorts every open intake branch, whatever its
+  date (since 19 October 2026), into at most 30 cards, then checks the week's
+  GOV.UK documents for commitments the daily intake missed. It follows `docs/desk/ROUTINE.md`
   on `main`, never approves or merges, and records each run's numbers in
   `docs/desk/runs/`. An editor approves each pull request; the intake merge
   job then merges it. Change what it does by changing that file.

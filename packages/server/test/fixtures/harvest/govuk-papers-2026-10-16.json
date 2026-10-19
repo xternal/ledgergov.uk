@@ -1,0 +1,1145 @@
+{
+ "_note": "GOV.UK search and content API answers recorded on 19 October 2026 for 2026-10-16. Bodies are cut short at a paragraph end to keep the file small; nothing else is changed except fields the harvester does not read, which are left out.",
+ "routes": {
+  "https://www.gov.uk/api/search.json?filter_content_store_document_type=policy_paper&filter_content_store_document_type=consultation_outcome&filter_public_timestamp=from:2026-10-16,to:2026-10-16&order=-public_timestamp&count=100&fields=title,link,public_timestamp,organisations,content_store_document_type": {
+   "results": [
+    {
+     "title": "Supported Housing regulation: consultation",
+     "link": "/government/consultations/supported-housing-regulation-consultation",
+     "public_timestamp": "2026-10-16T15:19:58Z",
+     "organisations": [
+      {
+       "organisation_type": "ministerial_department",
+       "organisation_state": "live",
+       "superseding_organisations": [],
+       "acronym": "MHCLG",
+       "content_id": "1390d07f-12b3-4f55-9dd5-fec5fd9e3649",
+       "link": "/government/organisations/ministry-of-housing-communities-local-government",
+       "parent_organisations": [],
+       "superseded_organisations": [
+        "department-for-levelling-up-housing-and-communities",
+        "office-for-place"
+       ],
+       "analytics_identifier": "D1419",
+       "title": "Ministry of Housing, Communities and Local Government",
+       "organisation_crest": "single-identity",
+       "organisation_brand": "ministry-of-housing-communities-local-government",
+       "child_organisations": [
+        "land-registry",
+        "planning-inspectorate",
+        "queen-elizabeth-ii-conference-centre",
+        "ebbsfleet-development-corporation",
+        "homes-england",
+        "housing-ombudsman",
+        "leasehold-advisory-service",
+        "regulator-of-social-housing",
+        "valuation-tribunal-service-for-england-valuation-tribunal-service",
+        "boundary-commission-for-england",
+        "boundary-commission-for-wales",
+        "valuation-tribunal-for-england",
+        "architects-registration-board",
+        "local-government-ombudsman",
+        "uk-holocaust-memorial-foundation",
+        "office-for-place",
+        "office-for-local-government",
+        "windrush-commemoration-committee",
+        "land-registration-rule-committee",
+        "building-control-independent-panel",
+        "cambridge-growth-company",
+        "building-safety-regulator",
+        "local-audit-office",
+        "office-for-equality-and-opportunity",
+        "women-and-equalities-unit",
+        "race-equality-unit",
+        "disability-unit",
+        "social-mobility-commission",
+        "greater-cambridge-development-corporation"
+       ],
+       "logo_formatted_title": "Ministry of Housing,<br/>Communities &amp; <br/>Local Government",
+       "slug": "ministry-of-housing-communities-local-government",
+       "public_timestamp": "2026-05-21T14:34:38Z"
+      },
+      {
+       "organisation_type": "ministerial_department",
+       "organisation_state": "live",
+       "superseding_organisations": [],
+       "acronym": "DWP",
+       "content_id": "b548a09f-8b35-4104-89f4-f1a40bf3136d",
+       "link": "/government/organisations/department-for-work-pensions",
+       "parent_organisations": [],
+       "superseded_organisations": [
+        "department-of-social-security",
+        "pension-service",
+        "pension-disability-and-carers-service",
+        "disability-and-carers-service",
+        "bpdts-ltd"
+       ],
+       "analytics_identifier": "D10",
+       "title": "Department for Work and Pensions",
+       "organisation_crest": "single-identity",
+       "organisation_brand": "department-for-work-pensions",
+       "child_organisations": [
+        "equality-2025",
+        "industrial-injuries-advisory-council",
+        "social-security-advisory-committee",
+        "health-and-safety-executive",
+        "the-pensions-advisory-service",
+        "the-pensions-regulator",
+        "pension-protection-fund-ombudsman",
+        "pensions-ombudsman",
+        "national-employment-savings-trust",
+        "remploy-ltd",
+        "pension-protection-fund",
+        "independent-living-fund",
+        "independent-case-examiner",
+        "office-for-disability-issues",
+        "social-mobility-and-child-poverty-commission",
+        "disabled-peoples-employment-corporation",
+        "bpdts-ltd",
+        "remploy-pension-scheme-trustees-ltd",
+        "single-financial-guidance-body",
+        "skills-england",
+        "construction-industry-training-board",
+        "engineering-construction-industry-training-board"
+       ],
+       "logo_formatted_title": "Department<br/>for Work &amp; <br/>Pensions",
+       "slug": "department-for-work-pensions",
+       "public_timestamp": "2026-05-20T09:02:43Z"
+      }
+     ],
+     "content_store_document_type": "consultation_outcome",
+     "index": "govuk",
+     "es_score": null,
+     "_id": "/government/consultations/supported-housing-regulation-consultation",
+     "elasticsearch_type": "edition",
+     "document_type": "edition"
+    },
+    {
+     "title": "UK-Nigeria Migration, Justice and Home Affairs dialogue 2026",
+     "link": "/government/publications/uk-nigeria-migration-justice-and-home-affairs-dialogue-2026",
+     "public_timestamp": "2026-10-16T15:00:13Z",
+     "organisations": [
+      {
+       "organisation_type": "ministerial_department",
+       "organisation_state": "live",
+       "superseding_organisations": [],
+       "acronym": "Home Office",
+       "content_id": "06056197-bc69-4147-aa28-070bca132178",
+       "link": "/government/organisations/home-office",
+       "parent_organisations": [],
+       "superseded_organisations": [
+        "police-arbitration-tribunal",
+        "police-discipline-appeals-tribunal"
+       ],
+       "analytics_identifier": "D16",
+       "title": "Home Office",
+       "organisation_crest": "ho",
+       "organisation_brand": "home-office",
+       "child_organisations": [
+        "hm-passport-office",
+        "uk-border-agency",
+        "office-of-the-immigration-services-commissioner",
+        "security-industry-authority",
+        "serious-organised-crime-agency",
+        "national-fraud-authority",
+        "advisory-council-on-the-misuse-of-drugs",
+        "police-advisory-board-for-england-and-wales",
+        "technical-advisory-board",
+        "migration-advisory-committee",
+        "national-dna-database-ethics-group",
+        "police-arbitration-tribunal",
+        "police-discipline-appeals-tribunal",
+        "hm-inspectorate-of-constabulary",
+        "the-security-service-mi5",
+        "independent-police-complaint-commission",
+        "office-of-surveillance-commissioners",
+        "police-negotiating-board",
+        "disclosure-and-barring-service",
+        "independent-reviewer-of-terrorism-legislation",
+        "intelligence-services-commissioner",
+        "interception-of-communications-commissioner",
+        "border-force",
+        "animals-in-science-committee",
+        "surveillance-camera-commissioner",
+        "forensic-science-regulator",
+        "uk-visas-and-immigration",
+        "national-crime-agency-remuneration-review-body",
+        "biometrics-commissioner",
+        "gangmasters-licensing-authority",
+        "immigration-enforcement",
+        "national-counter-terrorism-security-office",
+        "investigatory-powers-tribunal",
+        "police-remuneration-review-body",
+        "independent-family-returns-panel",
+        "independent-anti-slavery-commissioner",
+        "chief-fire-and-rescue-adviser-unit",
+        "biometrics-and-forensics-ethics-group",
+        "independent-chief-inspector-of-borders-and-immigration",
+        "gangmasters-and-labour-abuse-authority",
+        "college-of-policing",
+        "hm-inspectorate-of-constabulary-and-fire-rescue-services",
+        "independent-office-for-police-conduct",
+        "commission-for-countering-extremism",
+        "investigatory-powers-commissioners-office",
+        "uk-council-for-internet-safety",
+        "office-for-communications-data-authorisations",
+        "the-adjudicator-s-office",
+        "biometrics-and-surveillance-camera-commissioner",
+        "accelerated-capability-environment",
+        "office-for-the-independent-examiner-of-complaints",
+        "immigration-advice-authority",
+        "border-security-command",
+        "science-and-technology-ethics-advisory-committee",
+        "office-of-the-independent-prevent-commissioner",
+        "labour-market-evidence-group",
+        "office-of-the-windrush-commissioner"
+       ],
+       "logo_formatted_title": "Home Office",
+       "slug": "home-office",
+       "public_timestamp": "2024-07-23T12:54:13Z"
+      }
+     ],
+     "content_store_document_type": "policy_paper",
+     "index": "govuk",
+     "es_score": null,
+     "_id": "/government/publications/uk-nigeria-migration-justice-and-home-affairs-dialogue-2026",
+     "elasticsearch_type": "edition",
+     "document_type": "edition"
+    },
+    {
+     "title": "Call for comments on a revised draft risk profile of a substance proposed as a persistent organic pollutant (POP) 2026",
+     "link": "/government/publications/call-for-comments-on-a-revised-draft-risk-profile-of-a-substance-proposed-as-a-persistent-organic-pollutant-pop-2026",
+     "public_timestamp": "2026-10-16T14:57:14Z",
+     "organisations": [
+      {
+       "organisation_type": "ministerial_department",
+       "organisation_state": "live",
+       "superseding_organisations": [],
+       "acronym": "Defra",
+       "content_id": "de4e9dc6-cca4-43af-a594-682023b84d6c",
+       "link": "/government/organisations/department-for-environment-food-rural-affairs",
+       "parent_organisations": [],
+       "superseded_organisations": [
+        "department-of-the-environment-transport-and-the-regions"
+       ],
+       "analytics_identifier": "D7",
+       "title": "Department for Environment, Food & Rural Affairs",
+       "organisation_crest": "single-identity",
+       "organisation_brand": "department-for-environment-food-rural-affairs",
+       "child_organisations": [
+        "animal-health-and-veterinary-laboratories-agency",
+        "centre-for-environment-fisheries-and-aquaculture-science",
+        "the-food-and-environment-research-agency",
+        "rural-payments-agency",
+        "veterinary-medicines-directorate",
+        "marine-management-organisation",
+        "consumer-council-for-water",
+        "environment-agency",
+        "joint-nature-conservation-committee",
+        "natural-england",
+        "agriculture-and-horticulture-development-board",
+        "seafish",
+        "advisory-committee-on-releases-to-the-environment",
+        "science-advisory-council",
+        "covent-garden-market-authority",
+        "broads-authority",
+        "dartmoor-national-park-authority",
+        "exmoor-national-park-authority",
+        "lake-district-national-park-authority",
+        "new-forest-national-park-authority",
+        "north-york-moors-national-park",
+        "agricultural-wages-committee-x13",
+        "plant-varieties-and-seeds-tribunal",
+        "the-water-services-regulation-authority",
+        "national-forest-company",
+        "advisory-committee-on-pesticides",
+        "agricultural-dwelling-house-advisory-committees-x16",
+        "veterinary-products-committee",
+        "board-of-trustees-of-the-royal-botanic-gardens-kew",
+        "northumberland-national-park-authority",
+        "forestry-commission",
+        "peak-district-national-park",
+        "south-downs-national-park-authority",
+        "yorkshire-dales-national-park-authority",
+        "uk-co-ordinating-body",
+        "rural-development-programme-for-england-network",
+        "animal-and-plant-health-agency",
+        "veterinary-residues-committee",
+        "flood-and-coastal-erosion-risk-management-research-and-development-programme",
+        "office-for-environmental-protection",
+        "british-wool",
+        "flood-re",
+        "independent-agricultural-appeals-panel",
+        "groceries-code-adjudicator",
+        "the-drinking-water-inspectorate"
+       ],
+       "logo_formatted_title": "Department<br/>for Environment,<br/>Food &amp; Rural Affairs",
+       "slug": "department-for-environment-food-rural-affairs",
+       "public_timestamp": "2026-08-03T16:02:01Z"
+      }
+     ],
+     "content_store_document_type": "policy_paper",
+     "index": "govuk",
+     "es_score": null,
+     "_id": "/government/publications/call-for-comments-on-a-revised-draft-risk-profile-of-a-substance-proposed-as-a-persistent-organic-pollutant-pop-2026",
+     "elasticsearch_type": "edition",
+     "document_type": "edition"
+    },
+    {
+     "title": "UK government response to the Covid-19 Inquiry Module 4 report",
+     "link": "/government/publications/uk-government-response-to-the-covid-19-inquiry-module-4-report",
+     "public_timestamp": "2026-10-16T13:21:40Z",
+     "organisations": [
+      {
+       "organisation_type": "ministerial_department",
+       "organisation_state": "live",
+       "superseding_organisations": [],
+       "acronym": "DHSC",
+       "content_id": "7cd6bf12-bbe9-4118-8523-f927b0442156",
+       "link": "/government/organisations/department-of-health-and-social-care",
+       "parent_organisations": [],
+       "superseded_organisations": [],
+       "analytics_identifier": "D12",
+       "title": "Department of Health and Social Care",
+       "organisation_crest": "single-identity",
+       "organisation_brand": "department-of-health-social-care",
+       "child_organisations": [
+        "medicines-and-healthcare-products-regulatory-agency",
+        "care-quality-commission",
+        "human-fertilisation-and-embryology-authority",
+        "human-tissue-authority",
+        "monitor",
+        "national-institute-for-clinical-excellence",
+        "public-health-england",
+        "health-research-authority",
+        "nhs-trust-development-authority",
+        "nhs-blood-and-transplant",
+        "nhs-england",
+        "nhs-litigation-authority",
+        "advisory-committee-on-clinical-excellence-awards",
+        "administration-of-radioactive-substances-advisory-committee",
+        "british-pharmacopoeia",
+        "commission-on-human-medicines",
+        "committee-on-mutagenicity-of-chemicals-in-food-consumer-products-and-the-environment",
+        "independent-reconfiguration-panel",
+        "review-body-on-doctors-and-dentists-remuneration",
+        "nhs-pay-review-body",
+        "investigation-into-the-role-of-jimmy-savile-at-broadmoor-hospital",
+        "health-and-social-care-information-centre",
+        "health-education-england",
+        "office-for-life-sciences",
+        "morecambe-bay-investigation",
+        "national-information-board",
+        "accelerated-access-review",
+        "national-data-guardian",
+        "porton-biopharma-limited",
+        "nhs-improvement",
+        "nhs-digital",
+        "nhs-counter-fraud-authority",
+        "nhs-resolution",
+        "uk-national-screening-committee",
+        "uk-health-security-agency",
+        "office-for-health-improvement-and-disparities",
+        "advisory-committee-on-clinical-impact-awards",
+        "nhs-business-services-authority",
+        "health-services-safety-investigations-body"
+       ],
+       "logo_formatted_title": "Department<br/>of Health &amp;<br/>Social Care",
+       "slug": "department-of-health-and-social-care",
+       "public_timestamp": "2023-08-03T07:33:01Z"
+      },
+      {
+       "organisation_type": "ministerial_department",
+       "organisation_state": "live",
+       "superseding_organisations": [],
+       "acronym": "",
+       "content_id": "96ae61d6-c2a1-48cb-8e67-da9d105ae381",
+       "link": "/government/organisations/cabinet-office",
+       "parent_organisations": [],
+       "superseded_organisations": [
+        "national-school-of-government"
+       ],
+       "analytics_identifier": "D2",
+       "title": "Cabinet Office",
+       "organisation_crest": "single-identity",
+       "organisation_brand": "cabinet-office",
+       "child_organisations": [
+        "the-committee-on-standards-in-public-life",
+        "the-office-of-the-leader-of-the-house-of-commons",
+        "advisory-committee-on-business-appointments",
+        "house-of-lords-appointments-commission",
+        "privy-council-office",
+        "civil-service-commission",
+        "security-vetting-appeals-panel",
+        "review-body-on-senior-salaries",
+        "office-of-the-leader-of-the-house-of-lords",
+        "national-security",
+        "efficiency-and-reform-group",
+        "office-of-the-parliamentary-counsel",
+        "commissioner-for-public-appointments",
+        "mckay-commission",
+        "prime-ministers-office-10-downing-street",
+        "deputy-prime-ministers-office",
+        "government-estates-management",
+        "open-public-services",
+        "crown-commercial-service",
+        "civil-service",
+        "social-mobility-and-child-poverty-commission",
+        "office-of-the-registrar-of-consultant-lobbyists",
+        "third-party-campaigning-review",
+        "government-commercial-function",
+        "cabinet-office-board",
+        "infrastructure-and-projects-authority",
+        "race-disparity-unit",
+        "government-property-agency",
+        "civil-service-fast-track-apprenticeship",
+        "equality-and-human-rights-commission",
+        "civil-service-group",
+        "conflict-stability-and-security-fund",
+        "government-equalities-office",
+        "uk-statistics-authority",
+        "national-leadership-centre",
+        "civil-service-hr",
+        "united-kingdom-security-vetting",
+        "government-property-function",
+        "commission-on-race-and-ethnic-disparities",
+        "government-skills-and-curriculum-unit",
+        "the-equality-hub",
+        "modernisation-and-reform",
+        "leadership-college-for-government",
+        "independent-adviser-on-ministers-interests",
+        "corporate-officers-of-the-house-of-commons",
+        "corporate-officers-of-the-house-of-lords",
+        "uk-commission-on-covid-commemoration",
+        "public-sector-fraud-authority",
+        "government-people-group",
+        "incubator-for-automation-and-innovation",
+        "civil-service-government-operational-research-service",
+        "uk-integrated-security-fund",
+        "evaluation-task-force",
+        "government-skills",
+        "uk-resilience-academy",
+        "national-infrastructure-and-service-transformation-authority",
+        "ethics-and-integrity-commission",
+        "government-people-function",
+        "the-infected-blood-memorial-committee",
+        "government-commercial-agency",
+        "ai-security-institute"
+       ],
+       "logo_formatted_title": "Cabinet Office",
+       "slug": "cabinet-office",
+       "public_timestamp": "2026-07-20T19:56:05Z"
+      }
+     ],
+     "content_store_document_type": "policy_paper",
+     "index": "govuk",
+     "es_score": null,
+     "_id": "/government/publications/uk-government-response-to-the-covid-19-inquiry-module-4-report",
+     "elasticsearch_type": "edition",
+     "document_type": "edition"
+    },
+    {
+     "title": "Building control: charges, notices and certificates",
+     "link": "/government/consultations/building-control-charges-notices-and-certificates",
+     "public_timestamp": "2026-10-16T10:51:45Z",
+     "organisations": [
+      {
+       "organisation_type": "ministerial_department",
+       "organisation_state": "live",
+       "superseding_organisations": [],
+       "acronym": "MHCLG",
+       "content_id": "1390d07f-12b3-4f55-9dd5-fec5fd9e3649",
+       "link": "/government/organisations/ministry-of-housing-communities-local-government",
+       "parent_organisations": [],
+       "superseded_organisations": [
+        "department-for-levelling-up-housing-and-communities",
+        "office-for-place"
+       ],
+       "analytics_identifier": "D1419",
+       "title": "Ministry of Housing, Communities and Local Government",
+       "organisation_crest": "single-identity",
+       "organisation_brand": "ministry-of-housing-communities-local-government",
+       "child_organisations": [
+        "land-registry",
+        "planning-inspectorate",
+        "queen-elizabeth-ii-conference-centre",
+        "ebbsfleet-development-corporation",
+        "homes-england",
+        "housing-ombudsman",
+        "leasehold-advisory-service",
+        "regulator-of-social-housing",
+        "valuation-tribunal-service-for-england-valuation-tribunal-service",
+        "boundary-commission-for-england",
+        "boundary-commission-for-wales",
+        "valuation-tribunal-for-england",
+        "architects-registration-board",
+        "local-government-ombudsman",
+        "uk-holocaust-memorial-foundation",
+        "office-for-place",
+        "office-for-local-government",
+        "windrush-commemoration-committee",
+        "land-registration-rule-committee",
+        "building-control-independent-panel",
+        "cambridge-growth-company",
+        "building-safety-regulator",
+        "local-audit-office",
+        "office-for-equality-and-opportunity",
+        "women-and-equalities-unit",
+        "race-equality-unit",
+        "disability-unit",
+        "social-mobility-commission",
+        "greater-cambridge-development-corporation"
+       ],
+       "logo_formatted_title": "Ministry of Housing,<br/>Communities &amp; <br/>Local Government",
+       "slug": "ministry-of-housing-communities-local-government",
+       "public_timestamp": "2026-05-21T14:34:38Z"
+      }
+     ],
+     "content_store_document_type": "consultation_outcome",
+     "index": "govuk",
+     "es_score": null,
+     "_id": "/government/consultations/building-control-charges-notices-and-certificates",
+     "elasticsearch_type": "edition",
+     "document_type": "edition"
+    },
+    {
+     "title": "Carbon border adjustment mechanism (CBAM): Policy summary",
+     "link": "/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary",
+     "public_timestamp": "2026-10-16T10:15:05Z",
+     "organisations": [
+      {
+       "organisation_type": "non_ministerial_department",
+       "organisation_state": "live",
+       "superseding_organisations": [],
+       "acronym": "HMRC",
+       "content_id": "6667cce2-e809-4e21-ae09-cb0bdc1ddda3",
+       "link": "/government/organisations/hm-revenue-customs",
+       "parent_organisations": [],
+       "superseded_organisations": [
+        "department-of-inland-revenue",
+        "valuation-office-agency"
+       ],
+       "analytics_identifier": "D25",
+       "title": "HM Revenue & Customs",
+       "organisation_crest": "hmrc",
+       "organisation_brand": "hm-revenue-customs",
+       "child_organisations": [
+        "valuation-office-agency",
+        "the-adjudicator-s-office",
+        "district-valuer-services-dvs"
+       ],
+       "logo_formatted_title": "HM Revenue<br/>&amp; Customs",
+       "slug": "hm-revenue-customs",
+       "public_timestamp": "2025-10-06T08:10:25Z"
+      }
+     ],
+     "content_store_document_type": "policy_paper",
+     "index": "govuk",
+     "es_score": null,
+     "_id": "/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary",
+     "elasticsearch_type": "edition",
+     "document_type": "edition"
+    },
+    {
+     "title": "FCDO annual statement of compliance with the Concordat to Support Research Integrity 2025 to 2026",
+     "link": "/government/publications/fcdo-annual-statement-of-compliance-with-the-concordat-to-support-research-integrity-2025-to-2026",
+     "public_timestamp": "2026-10-16T09:36:16Z",
+     "organisations": [
+      {
+       "organisation_type": "ministerial_department",
+       "organisation_state": "live",
+       "superseding_organisations": [],
+       "acronym": "FCDO",
+       "content_id": "f9fcf3fe-2751-4dca-97ca-becaeceb4b26",
+       "link": "/government/organisations/foreign-commonwealth-development-office",
+       "parent_organisations": [],
+       "superseded_organisations": [
+        "foreign-commonwealth-office",
+        "department-for-international-development",
+        "stabilisation-unit"
+       ],
+       "analytics_identifier": "D1315",
+       "title": "Foreign, Commonwealth & Development Office",
+       "organisation_crest": "single-identity",
+       "organisation_brand": "foreign-commonwealth-development-office",
+       "child_organisations": [
+        "wilton-park",
+        "british-council",
+        "great-britain-china-centre",
+        "marshall-aid-commemoration-commission",
+        "westminster-foundation-for-democracy",
+        "government-communications-headquarters",
+        "secret-intelligence-service",
+        "commonwealth-scholarship-commission-in-the-uk",
+        "independent-commission-for-aid-impact",
+        "fcdo-services",
+        "preventing-sexual-violence-in-conflict-initiative",
+        "hm-government-communications-centre"
+       ],
+       "logo_formatted_title": "Foreign, Commonwealth<br/>&amp; Development Office",
+       "slug": "foreign-commonwealth-development-office",
+       "public_timestamp": "2026-06-18T12:25:20Z"
+      }
+     ],
+     "content_store_document_type": "policy_paper",
+     "index": "govuk",
+     "es_score": null,
+     "_id": "/government/publications/fcdo-annual-statement-of-compliance-with-the-concordat-to-support-research-integrity-2025-to-2026",
+     "elasticsearch_type": "edition",
+     "document_type": "edition"
+    },
+    {
+     "title": "Standards for stalking and domestic abuse perpetrator interventions",
+     "link": "/government/publications/standards-for-stalking-and-domestic-abuse-perpetrator-interventions",
+     "public_timestamp": "2026-10-16T08:57:05Z",
+     "organisations": [
+      {
+       "organisation_type": "ministerial_department",
+       "organisation_state": "live",
+       "superseding_organisations": [],
+       "acronym": "Home Office",
+       "content_id": "06056197-bc69-4147-aa28-070bca132178",
+       "link": "/government/organisations/home-office",
+       "parent_organisations": [],
+       "superseded_organisations": [
+        "police-arbitration-tribunal",
+        "police-discipline-appeals-tribunal"
+       ],
+       "analytics_identifier": "D16",
+       "title": "Home Office",
+       "organisation_crest": "ho",
+       "organisation_brand": "home-office",
+       "child_organisations": [
+        "hm-passport-office",
+        "uk-border-agency",
+        "office-of-the-immigration-services-commissioner",
+        "security-industry-authority",
+        "serious-organised-crime-agency",
+        "national-fraud-authority",
+        "advisory-council-on-the-misuse-of-drugs",
+        "police-advisory-board-for-england-and-wales",
+        "technical-advisory-board",
+        "migration-advisory-committee",
+        "national-dna-database-ethics-group",
+        "police-arbitration-tribunal",
+        "police-discipline-appeals-tribunal",
+        "hm-inspectorate-of-constabulary",
+        "the-security-service-mi5",
+        "independent-police-complaint-commission",
+        "office-of-surveillance-commissioners",
+        "police-negotiating-board",
+        "disclosure-and-barring-service",
+        "independent-reviewer-of-terrorism-legislation",
+        "intelligence-services-commissioner",
+        "interception-of-communications-commissioner",
+        "border-force",
+        "animals-in-science-committee",
+        "surveillance-camera-commissioner",
+        "forensic-science-regulator",
+        "uk-visas-and-immigration",
+        "national-crime-agency-remuneration-review-body",
+        "biometrics-commissioner",
+        "gangmasters-licensing-authority",
+        "immigration-enforcement",
+        "national-counter-terrorism-security-office",
+        "investigatory-powers-tribunal",
+        "police-remuneration-review-body",
+        "independent-family-returns-panel",
+        "independent-anti-slavery-commissioner",
+        "chief-fire-and-rescue-adviser-unit",
+        "biometrics-and-forensics-ethics-group",
+        "independent-chief-inspector-of-borders-and-immigration",
+        "gangmasters-and-labour-abuse-authority",
+        "college-of-policing",
+        "hm-inspectorate-of-constabulary-and-fire-rescue-services",
+        "independent-office-for-police-conduct",
+        "commission-for-countering-extremism",
+        "investigatory-powers-commissioners-office",
+        "uk-council-for-internet-safety",
+        "office-for-communications-data-authorisations",
+        "the-adjudicator-s-office",
+        "biometrics-and-surveillance-camera-commissioner",
+        "accelerated-capability-environment",
+        "office-for-the-independent-examiner-of-complaints",
+        "immigration-advice-authority",
+        "border-security-command",
+        "science-and-technology-ethics-advisory-committee",
+        "office-of-the-independent-prevent-commissioner",
+        "labour-market-evidence-group",
+        "office-of-the-windrush-commissioner"
+       ],
+       "logo_formatted_title": "Home Office",
+       "slug": "home-office",
+       "public_timestamp": "2024-07-23T12:54:13Z"
+      }
+     ],
+     "content_store_document_type": "policy_paper",
+     "index": "govuk",
+     "es_score": null,
+     "_id": "/government/publications/standards-for-stalking-and-domestic-abuse-perpetrator-interventions",
+     "elasticsearch_type": "edition",
+     "document_type": "edition"
+    }
+   ],
+   "total": 8,
+   "start": 0,
+   "aggregates": {},
+   "suggested_queries": [],
+   "suggested_autocomplete": [],
+   "es_cluster": "A"
+  },
+  "https://www.gov.uk/api/content/government/consultations/supported-housing-regulation-consultation": {
+   "base_path": "/government/consultations/supported-housing-regulation-consultation",
+   "title": "Supported Housing regulation: consultation",
+   "document_type": "consultation_outcome",
+   "first_published_at": "2025-02-20T10:00:07+00:00",
+   "public_updated_at": "2026-10-16T16:19:58+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><p>This consultation seeks views on plans to implement measures set out in the Supported Housing (Regulatory Oversight) Act 2023. The government is proposing to introduce a locally led licensing regime for supported housing across England, and new National Supported Housing Standards for the support provided.</p>\n\n<p>The government is also consulting on changes to Housing Benefit Regulations. The intention of the reforms is to ensure that supported housing is good quality and delivers value for money for the taxpayer.</p>\n\n<p>The consultation will inform the drafting of licensing regulations which will also be consulted on later this year, together with the changes to Housing Benefit Regulations.</p>\n</div>",
+    "attachments": [
+     {
+      "attachment_type": "html",
+      "id": "9562285",
+      "title": "Supported Housing regulation: consultation",
+      "url": "/government/consultations/supported-housing-regulation-consultation/supported-housing-regulation-consultation"
+     },
+     {
+      "attachment_type": "file",
+      "content_type": "application/pdf",
+      "id": "9562286",
+      "title": "Supported Housing regulation: consultation (Easy Read version)",
+      "url": "https://assets.publishing.service.gov.uk/media/6814e1ad359707ba3d44679a/GOV_Supported_Housing_Consultation_-_Easy_Read.pdf"
+     },
+     {
+      "attachment_type": "html",
+      "id": "9562287",
+      "title": "Supported Housing regulation: consultation - government response",
+      "url": "/government/consultations/supported-housing-regulation-consultation/outcome/supported-housing-regulation-consultation-government-response"
+     },
+     {
+      "attachment_type": "file",
+      "content_type": "application/pdf",
+      "id": "9562288",
+      "title": "Easy Read version: New rules for supported housing",
+      "url": "https://assets.publishing.service.gov.uk/media/6a352cf300ff27f06e3efb0b/Supported_Housing_Consultation_-_government_response_-_easy_read_version.pdf"
+     },
+     {
+      "attachment_type": "html",
+      "id": "9562289",
+      "title": "British Sign Language version: Supported Housing regulation: consultation - government response",
+      "url": "/government/consultations/supported-housing-regulation-consultation/outcome/british-sign-language-version-supported-housing-regulation-consultation-government-response"
+     }
+    ],
+    "featured_attachments": [
+     "9562285",
+     "9562286"
+    ],
+    "final_outcome_attachments": [
+     "9562287",
+     "9562288",
+     "9562289"
+    ],
+    "final_outcome_detail": "<div class=\"govspeak\"><p>The government consulted on measures in the Supported Housing (Regulatory Oversight) Act 2023 between February and May 2025. This included:</p>\n\n<ul>\n  <li>locally led licensing proposals</li>\n  <li>the draft National Supported Housing Standards</li>\n  <li>Housing Benefit proposals</li>\n</ul>\n\n<p>The response includes the feedback that was received, as well as more detailed annexes for each question.</p>\n\n<p>The <a href=\"https://www.gov.uk/government/consultations/supported-housing-licensing-regime-consultation-on-draft-regulations\">Supported housing licensing regime: consultation on draft regulations</a> was published on 15 October 2026.</p>\n</div>"
+   }
+  },
+  "https://www.gov.uk/api/content/government/consultations/supported-housing-regulation-consultation/supported-housing-regulation-consultation": {
+   "base_path": "/government/consultations/supported-housing-regulation-consultation/supported-housing-regulation-consultation",
+   "title": "Supported Housing regulation: consultation",
+   "document_type": "html_publication",
+   "first_published_at": "2025-02-20T10:00:08+00:00",
+   "public_updated_at": "2026-10-16T16:19:58+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><h2 id=\"scope-of-the-consultation\">Scope of the consultation </h2>\n\n<h3 id=\"topic-of-this-consultation\">Topic of this consultation: </h3>\n\n<p>This consultation seeks views on the implementation of measures in the <a rel=\"external\" href=\"https://www.legislation.gov.uk/ukpga/2023/26/contents\">Supported Housing (Regulatory Oversight) Act 2023</a>. It focuses on the detail of a licensing regime and National Supported Housing Standards and includes content on Housing Benefit.</p>\n\n<h3 id=\"scope-of-this-consultation\">Scope of this consultation: </h3>\n\n<p>The Supported Housing (Regulatory Oversight) Act, which secured Royal Assent on 29 June 2023, gives the Secretary of State powers to introduce a licensing regime for supported housing, and the power to set National Supported Housing Standards for England. It places a duty on local housing authorities to produce supported housing strategies to understand current availability and future need for supported housing.</p>\n\n<p>This consultation seeks views on how government will implement the measures and inform the drafting of regulations and accompanying guidance. It will also inform work by the Department for Work and Pensions on linking licensing to entitlement to claim Housing Benefit in England and any opportunities to link to existing frameworks in Scotland and Wales. It also includes work to define care, support and supervision in Housing Benefit regulations for Great Britain. </p>\n\n<h3 id=\"geographical-scope\">Geographical scope: </h3>\n\n<p>Part One of this consultation applies to England only. Part Two applies to Great Britain.  </p>\n\n<p>The proposed licensing regime and National Supported Housing Standards would apply to England only.   </p>\n\n<h3 id=\"impact-assessment\">Impact assessment: </h3>\n\n<p>An Impact Assessment has not been prepared for this consultation. An Impact Assessment will be prepared for the regulations and be informed by responses to this consultation.</p>\n\n<p>We would welcome supporting evidence of any impacts of the planned reforms we are consulting on as part of your response via email at <a href=\"mailto:SupportedHousingConsultations@communities.gov.uk\">SupportedHousingConsultations@communities.gov.uk</a>.  </p>\n\n<h2 id=\"basic-information\">Basic information </h2>\n\n<h3 id=\"bodybodies-responsible-for-the-consultation\">Body/bodies responsible for the consultation: </h3>\n\n<p>The Ministry of Housing, Communities and Local Government (MHCLG) and the Department for Work and Pensions (DWP). </p>\n\n<h3 id=\"duration\">Duration: </h3>\n\n<p>This consultation will last for 12 weeks from 20 February to 15 May 2025. </p>\n\n<h3 id=\"enquiries\">Enquiries: </h3>\n\n<p>For any enquiries about the consultation please contact: <a href=\"mailto:SupportedHousingConsultations@communities.gov.uk\">SupportedHousingConsultations@communities.gov.uk</a>.  </p>"
+   }
+  },
+  "https://www.gov.uk/api/content/government/consultations/supported-housing-regulation-consultation/outcome/supported-housing-regulation-consultation-government-response": {
+   "base_path": "/government/consultations/supported-housing-regulation-consultation/outcome/supported-housing-regulation-consultation-government-response",
+   "title": "Supported Housing regulation: consultation - government response",
+   "document_type": "html_publication",
+   "first_published_at": "2026-04-16T09:00:10+01:00",
+   "public_updated_at": "2026-10-16T16:19:58+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><p><a href=\"https://www.gov.uk/government/consultations/supported-housing-regulation-consultation\">Accessible versions of this response</a> are available. Braille versions can be made available on request.</p>\n\n<h2 id=\"ministerial-foreword\">Ministerial Foreword</h2>\n\n<p>Supported housing helps to give people the independence they deserve while living in a safe, supportive, and secure environment. The Supported Housing (Regulatory Oversight) Act 2023 aims to tackle a number of rogue providers in the sector who are taking advantage of a lack of regulation, and to ensure that all residents receive good quality support in good quality accommodation. The Act also includes local supported housing strategies, to help local authorities to understand their local supported housing market better and ensure that it delivers what is needed, and where, for residents. </p>\n\n<p>It is important that local authorities are given the powers that they need to be able to stop rogue provision and to protect residents.</p>\n\n<p>But it is also important that we protect the supply of good supported housing, and the many excellent providers who work incredibly hard for their residents. We want to reassure those who responded to the consultation – we have listened to you.</p>\n\n<p>We are grateful to the many respondents who gave their views. The government is clear that these reforms must be both proportionate and sufficiently robust to deter and remove from the sector those who do not have residents’ best interests at heart.</p>\n\n<p><strong>Alison McGovern MP, Minister for Local Government and Homelessness</strong></p>\n\n<p><strong>Sir Stephen Timms MP, Minister for Social Security and Disability</strong></p>\n\n<h2 id=\"the-consultation-content-and-approach\">The Consultation: content and approach</h2>\n\n<p>The consultation sought views from local authorities, supported housing providers, residents, and other interested organisations, on the implementation of measures in the Supported Housing (Regulatory Oversight) Act 2023 (the Act) and proposed changes to Housing Benefit regulations. The consultation can be viewed in full here - <a href=\"https://www.gov.uk/government/consultations/supported-housing-regulation-consultation/supported-housing-regulation-consultation#part-two-housing-benefit-changes-applies-to-great-britain\">Supported Housing regulation: consultation - GOV.UK</a>.</p>\n\n<p>In particular, the consultation sought views on the following:</p>"
+   }
+  },
+  "https://www.gov.uk/api/content/government/consultations/supported-housing-regulation-consultation/outcome/british-sign-language-version-supported-housing-regulation-consultation-government-response": {
+   "base_path": "/government/consultations/supported-housing-regulation-consultation/outcome/british-sign-language-version-supported-housing-regulation-consultation-government-response",
+   "title": "British Sign Language version: Supported Housing regulation: consultation - government response",
+   "document_type": "html_publication",
+   "first_published_at": "2026-06-19T16:09:52+01:00",
+   "public_updated_at": "2026-10-16T16:19:58+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><p>A British Sign Language (<abbr title=\"British Sign Language\">BSL</abbr>) version of the Supported Housing regulation consultation government response.</p>\n\n<h2 id=\"part-1\">Part 1</h2>\n\n<p><a rel=\"external\" href=\"https://www.youtube.com/watch?v=oZHdYIVzeYM\">Supported Housing Consultation <abbr title=\"British Sign Language\">BSL</abbr> Video Government Response Part 1</a></p>\n\n<h2 id=\"part-2\">Part 2</h2>\n\n<p><a rel=\"external\" href=\"https://www.youtube.com/watch?v=edgEWwQGR18\">Supported Housing Consultation <abbr title=\"British Sign Language\">BSL</abbr> Video Government Response Part 2</a></p>\n\n<h2 id=\"part-3\">Part 3</h2>\n\n<p><a rel=\"external\" href=\"https://www.youtube.com/watch?v=_bTnravI72I\">Supported Housing Consultation <abbr title=\"British Sign Language\">BSL</abbr> Video Government Response Part 3</a></p>\n\n<h2 id=\"part-4\">Part 4</h2>\n\n<p><a rel=\"external\" href=\"https://www.youtube.com/watch?v=2wxBxDdtcOY\">Supported Housing Consultation <abbr title=\"British Sign Language\">BSL</abbr> Video Government Response Part 4</a></p>\n\n</div>"
+   }
+  },
+  "https://www.gov.uk/api/content/government/publications/uk-nigeria-migration-justice-and-home-affairs-dialogue-2026": {
+   "base_path": "/government/publications/uk-nigeria-migration-justice-and-home-affairs-dialogue-2026",
+   "title": "UK-Nigeria Migration, Justice and Home Affairs dialogue 2026",
+   "document_type": "policy_paper",
+   "first_published_at": "2026-10-16T16:00:13+01:00",
+   "public_updated_at": "2026-10-16T16:00:13+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><p>Building on the <a href=\"https://www.gov.uk/government/publications/nigeria-uk-migration-justice-and-home-affairs-dialogue-2025\">previous dialogue</a> hosted in Abuja in October 2025, agreement was reached on a number of key priority issues, including:</p>\n\n<ul>\n  <li>migration</li>\n  <li>justice</li>\n  <li>combatting serious and organised crime</li>\n</ul>\n</div>",
+    "attachments": [
+     {
+      "attachment_type": "html",
+      "id": "9561684",
+      "title": "United Kingdom-Nigeria Migration, Justice, and Home Affairs dialogue 2026: joint communiqué",
+      "url": "/government/publications/uk-nigeria-migration-justice-and-home-affairs-dialogue-2026/united-kingdom-nigeria-migration-justice-and-home-affairs-dialogue-2026-joint-communique"
+     }
+    ],
+    "featured_attachments": [
+     "9561684"
+    ]
+   }
+  },
+  "https://www.gov.uk/api/content/government/publications/uk-nigeria-migration-justice-and-home-affairs-dialogue-2026/united-kingdom-nigeria-migration-justice-and-home-affairs-dialogue-2026-joint-communique": {
+   "base_path": "/government/publications/uk-nigeria-migration-justice-and-home-affairs-dialogue-2026/united-kingdom-nigeria-migration-justice-and-home-affairs-dialogue-2026-joint-communique",
+   "title": "United Kingdom-Nigeria Migration, Justice, and Home Affairs dialogue 2026: joint communiqué",
+   "document_type": "html_publication",
+   "first_published_at": "2026-10-16T16:00:13+01:00",
+   "public_updated_at": "2026-10-16T16:00:13+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><h2 id=\"introduction\">Introduction</h2>\n\n<p>Nigeria and the United Kingdom reaffirmed their shared commitment to promote security and prosperity across both nations. Our collaboration is driven by common goals to manage migration effectively, promote justice, and counter criminality in all its forms. As part of our longstanding partnership, senior officials from the Nigerian Ministry of Foreign Affairs and the United Kingdom Home Office jointly chaired the annual Migration, Justice, and Home Affairs dialogue on 6 October 2026 in London, United Kingdom.</p>\n\n<p>Building on the previous dialogue hosted in Abuja in October 2025, agreement was reached on a number of key priority issues, including migration, justice, and combatting serious and organised crime.</p>\n\n<p>Nigeria and the United Kingdom agreed to continue collaboration based on mutual accountability and delivery of commitments while working in a spirit of partnership.</p>\n\n<p>The Honourable Permanent Secretaries of the Nigerian Ministry of Interior and Ministry of Foreign Affairs joined the UK’s 2nd Permanent Secretary for the Home Office in opening the Dialogue.</p>\n\n<p>The UK 2nd Permanent Secretary for the Home Office said:</p>\n\n<blockquote>\n  <p class=\"last-child\">We must build on these strong commitments, to make both of our countries safer. These discussions will provide an ever stronger basis for the strength of the partnership between our two nations. We should leave this room with renewed determination: to tackle visa fraud, strengthen the security of our shared visa arrangements, and deepen cooperation against drugs and organised crime.</p>\n</blockquote>\n\n<p>The Nigerian Permanent Secretary for the Ministry of Interior said:</p>\n\n<blockquote>\n  <p class=\"last-child\">Our partnership is deeply rooted and integral. We are here to forge a partnership based on mutual respect. Nigeria remains fully committed to the operationalisation of our existing agreements and to use this opportunity to build new partnerships.</p>\n</blockquote>\n\n<p>The Nigerian Permanent Secretary for the Ministry of Foreign Affairs reaffirmed the longstanding relationship between the UK and Nigeria, which spans extensive engagement across a broad range of sectors. He said:</p>\n\n<blockquote>\n  <p class=\"last-child\">Migration remains one of the most important and visible aspects of the UK-Nigeria relationship.  This dialogue must both cover enforcement activities as well as ensuring meaningful opportunities for legal migration; and credible opportunities for pathways for legitimate migrants. The MJHA Dialogue is ultimately about strengthening the security, prosperity, and safety of our nations and citizens.</p>"
+   }
+  },
+  "https://www.gov.uk/api/content/government/publications/call-for-comments-on-a-revised-draft-risk-profile-of-a-substance-proposed-as-a-persistent-organic-pollutant-pop-2026": {
+   "base_path": "/government/publications/call-for-comments-on-a-revised-draft-risk-profile-of-a-substance-proposed-as-a-persistent-organic-pollutant-pop-2026",
+   "title": "Call for comments on a revised draft risk profile of a substance proposed as a persistent organic pollutant (POP) 2026",
+   "document_type": "policy_paper",
+   "first_published_at": "2026-03-09T17:03:00+00:00",
+   "public_updated_at": "2026-10-16T15:57:14+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><p>At the 20th meeting of The Stockholm Convention’s <abbr title=\"persistent organic pollutants\">POPs</abbr> Review Committee (<abbr title=\"POPs Review Committee\">POPRC</abbr>), the Committee evaluated the proposal by Switzerland to list polyhalogenated dibenzo-p-dioxins and dibenzofurans in Annex C to the Stockholm Convention. The Committee concluded that these compounds meet the screening criteria specified in Annex D to the Convention (decision <abbr title=\"POPs Review Committee\">POPRC</abbr>-20/4).</p>\n\n<p>At its 21st meeting in 2025, the committee decided to defer its decision on a related draft risk profile.</p>\n\n<p>The Stockholm Convention’s <abbr title=\"persistent organic pollutants\">POPs</abbr> Review Committee (<abbr title=\"POPs Review Committee\">POPRC</abbr>) has now requested comments on a revised draft risk profile for the following group of substances:  </p>",
+    "attachments": [
+     {
+      "attachment_type": "html",
+      "id": "9547252",
+      "title": "Responses received and government response",
+      "url": "/government/publications/call-for-comments-on-a-revised-draft-risk-profile-of-a-substance-proposed-as-a-persistent-organic-pollutant-pop-2026/responses-received-and-government-response"
+     },
+     {
+      "attachment_type": "html",
+      "id": "9547094",
+      "title": "Further background information: revised draft risk profile",
+      "url": "/government/publications/call-for-comments-on-a-revised-draft-risk-profile-of-a-substance-proposed-as-a-persistent-organic-pollutant-pop-2026/further-background-information-revised-draft-risk-profile"
+     },
+     {
+      "attachment_type": "file",
+      "content_type": "application/pdf",
+      "id": "9547095",
+      "title": "Draft revised risk profile PBDD/Fs and PBCDD/Fs",
+      "url": "https://assets.publishing.service.gov.uk/media/69aeae81d620c14fa183ee95/Second_draft_RP_PBDD-Fs_and_PBCDD-Fs.pdf"
+     },
+     {
+      "attachment_type": "file",
+      "content_type": "application/pdf",
+      "id": "9547096",
+      "title": "Additional information relating to the draft risk profile for PBDDFs and PBCDD/Fs",
+      "url": "https://assets.publishing.service.gov.uk/media/69ab025b6827004e30b8a4df/2nd_draft_INF_PBDDFs_and_PBCDD-Fs.pdf"
+     }
+    ],
+    "featured_attachments": [
+     "9547252",
+     "9547094",
+     "9547095",
+     "9547096"
+    ]
+   }
+  },
+  "https://www.gov.uk/api/content/government/publications/call-for-comments-on-a-revised-draft-risk-profile-of-a-substance-proposed-as-a-persistent-organic-pollutant-pop-2026/responses-received-and-government-response": {
+   "base_path": "/government/publications/call-for-comments-on-a-revised-draft-risk-profile-of-a-substance-proposed-as-a-persistent-organic-pollutant-pop-2026/responses-received-and-government-response",
+   "title": "Responses received and government response",
+   "document_type": "html_publication",
+   "first_published_at": "2026-10-16T15:57:14+01:00",
+   "public_updated_at": "2026-10-16T15:57:14+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><h2 id=\"executive-summary\">Executive summary</h2>\n\n<p>Defra held a call for comments for a group of substances - polybrominated dibenzo-p-dioxins and dibenzofurans (<abbr title=\"polybrominated dibenzo-p-dioxins and dibenzofurans\">PBDD/Fs</abbr>) including mixed polybrominated/chlorinated dibenzo-p-dioxins and dibenzofurans (<abbr title=\"polybrominated/chlorinated dibenzo-p-dioxins and dibenzofurans\">PBCDD/Fs</abbr>), which have been proposed for listing as Persistent Organic Pollutants (<abbr title=\"Persistent Organic Pollutants\">POPs</abbr>) by the UN Stockholm Convention. <abbr title=\"Persistent Organic Pollutants\">POPs</abbr> proposals are reviewed by the Convention’s <abbr title=\"Persistent Organic Pollutants\">POPs</abbr> Review Committee (<abbr title=\"POPs Review Committee\">POPRC</abbr>), and <abbr title=\"POPs Review Committee\">POPRC</abbr> had requested information about <abbr title=\"polybrominated dibenzo-p-dioxins and dibenzofurans\">PBDD/Fs</abbr> and <abbr title=\"polybrominated/chlorinated dibenzo-p-dioxins and dibenzofurans\">PBCDD/Fs</abbr> to feed into a revised draft Risk Profile (<abbr title=\"Risk Profile\">RP</abbr>) document for these substances.</p>\n\n<p>The call for comments was held to gather additional information and insights to support the ongoing work of the Stockholm Convention’s intersessional working group responsible for developing and refining draft risk profiles as part of their broader consultation process.</p>\n\n<h2 id=\"number-of-responses\">Number of responses</h2>\n\n<p>We received 3 responses relating to the revised draft <abbr title=\"Risk Profile\">RP</abbr> for <abbr title=\"polybrominated dibenzo-p-dioxins and dibenzofurans\">PBDD/Fs</abbr> and <abbr title=\"polybrominated/chlorinated dibenzo-p-dioxins and dibenzofurans\">PBCDD/Fs</abbr> from:</p>\n\n<ul>\n  <li>a private citizen</li>\n  <li>Association of Healthcare Technology Providers, Imaging, Radiotherapy &amp; Care (<abbr title=\"Association of Healthcare Technology Providers, Imaging, Radiotherapy &amp; Care\">AXREM</abbr>)</li>\n  <li>National Association of Waste Disposal Officers (<abbr title=\"National Association of Waste Disposal Officers\">NAWDO</abbr>)</li>\n</ul>\n\n<h2 id=\"full-responses\">Full responses</h2>\n\n<p>These unedited responses from UK stakeholders represent their perspectives and do not necessarily reflect the views of Defra or the government.</p>"
+   }
+  },
+  "https://www.gov.uk/api/content/government/publications/call-for-comments-on-a-revised-draft-risk-profile-of-a-substance-proposed-as-a-persistent-organic-pollutant-pop-2026/further-background-information-revised-draft-risk-profile": {
+   "base_path": "/government/publications/call-for-comments-on-a-revised-draft-risk-profile-of-a-substance-proposed-as-a-persistent-organic-pollutant-pop-2026/further-background-information-revised-draft-risk-profile",
+   "title": "Further background information: revised draft risk profile",
+   "document_type": "html_publication",
+   "first_published_at": "2026-03-09T17:03:32+00:00",
+   "public_updated_at": "2026-10-16T15:57:14+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><p>The UK is a party to the UN Stockholm Convention on persistent organic pollutants (<abbr title=\"persistent organic pollutants\">POPs</abbr>), which are substances that persist in the environment, accumulate in living organisms and pose a risk to our health and the environment. They can be transported by air, water or migratory species across international borders, reaching regions where they have never been produced or used. </p>\n\n<p>Substances listed in the convention are generally prohibited from production, marketing or use, unless specific exemptions apply or acceptable purposes for continued use have been agreed. </p>\n\n<p>There is a process for parties to propose a substance for listing if they have gathered evidence that suggests it may be a <abbr title=\"persistent organic pollutant\">POP</abbr>. The <abbr title=\"persistent organic pollutants\">POPs</abbr> Review Committee (<abbr title=\"POPs Review Committee\">POPRC</abbr>), the technical scientific committee of the Stockholm Convention, then considers and further develops the evidence that the substance demonstrates <abbr title=\"persistent organic pollutant\">POP</abbr> characteristics. </p>\n\n<p>If there is evidence that a substance demonstrates <abbr title=\"persistent organic pollutant\">POP</abbr> characteristics, the <abbr title=\"POPs Review Committee\">POPRC</abbr> then considers the social and economic impacts of a ban or restriction of this substance and makes recommendations to the Stockholm Convention Conference of Parties, which is held every 2 years. </p>\n\n<h2 id=\"revised-risk-profile-covering-annex-e-of-the-stockholm-convention\">1. Revised risk profile (covering Annex E of the Stockholm Convention) </h2>\n\n<p>At the 20th meeting of The Stockholm Convention’s <abbr title=\"persistent organic pollutants\">POPs</abbr> Review Committee, the committee evaluated the proposal by Switzerland to list polyhalogenated dibenzo-p-dioxins and dibenzofurans in Annex C to the Stockholm Convention. The committee concluded that these compounds meet the screening criteria specified in Annex D to the Convention (decision <abbr title=\"POPs Review Committee\">POPRC</abbr>-20/4).</p>\n\n<p>At its 21st meeting in 2025, the committee decided to defer its decision on the draft risk profile to its 22nd meeting (21 to 25 September 2026).</p>\n\n<p>A <a rel=\"external\" href=\"https://draft-assets.publishing.service.gov.uk/media/69aeae81d620c14fa183ee95/Second_draft_RP_PBDD-Fs_and_PBCDD-Fs.pdf\">draft revised risk profile</a> further elaborates on, and evaluates, the information submitted in the original proposal. It covers the following substances:</p>"
+   }
+  },
+  "https://www.gov.uk/api/content/government/publications/uk-government-response-to-the-covid-19-inquiry-module-4-report": {
+   "base_path": "/government/publications/uk-government-response-to-the-covid-19-inquiry-module-4-report",
+   "title": "UK government response to the Covid-19 Inquiry Module 4 report",
+   "document_type": "policy_paper",
+   "first_published_at": "2026-10-16T14:21:40+01:00",
+   "public_updated_at": "2026-10-16T14:21:40+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><p>The UK government response to the recommendations set out in the UK Covid-19 Inquiry’s <a rel=\"external\" href=\"https://covid19.public-inquiry.uk/documents/module-4-full-report/\">Module 4: vaccines and therapeutics</a> report.</p>\n\n<p>The report examined the role of vaccines and therapeutics throughout the COVID-19 pandemic.</p>\n\n<p>The UK government response sets out:</p>\n\n<ul>\n  <li>how the government has considered and acted on the report’s 5 recommendations</li>\n  <li>where further action will be taken</li>\n</ul>\n</div>",
+    "attachments": [
+     {
+      "attachment_type": "html",
+      "id": "9553802",
+      "title": "UK government response to the Covid-19 Inquiry Module 4 report",
+      "url": "/government/publications/uk-government-response-to-the-covid-19-inquiry-module-4-report/uk-government-response-to-the-covid-19-inquiry-module-4-report"
+     },
+     {
+      "attachment_type": "file",
+      "content_type": "application/pdf",
+      "id": "9560854",
+      "title": "UK government response to the Covid-19 Inquiry Module 4 report",
+      "url": "https://assets.publishing.service.gov.uk/media/6ad1e36649ba86d6c953caa1/uk-government-response-covid-19-inquiry-module-4-report-print-ready.pdf"
+     }
+    ],
+    "featured_attachments": [
+     "9553802",
+     "9560854"
+    ]
+   }
+  },
+  "https://www.gov.uk/api/content/government/publications/uk-government-response-to-the-covid-19-inquiry-module-4-report/uk-government-response-to-the-covid-19-inquiry-module-4-report": {
+   "base_path": "/government/publications/uk-government-response-to-the-covid-19-inquiry-module-4-report/uk-government-response-to-the-covid-19-inquiry-module-4-report",
+   "title": "UK government response to the Covid-19 Inquiry Module 4 report",
+   "document_type": "html_publication",
+   "first_published_at": "2026-10-16T14:21:40+01:00",
+   "public_updated_at": "2026-10-16T14:21:40+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><div class=\"call-to-action\">\n  <p>Presented to Parliament by the Secretary of State for Health and Social Care by Command of His Majesty.</p>\n\n  <p>© Crown copyright October 2026</p>\n\n  <p>ISBN: 978-1-5286-6794-4</p>\n\n  <p>CP 1684</p>\n</div>\n\n<h2 id=\"ministerial-foreword-from-the-secretary-of-state-for-health-and-social-care\">Ministerial foreword from the Secretary of State for Health and Social Care</h2>\n\n<p>Our thoughts remain with all those affected by the pandemic. We recognise the impact that these experiences have had on individuals and families, and the importance of ensuring that their experiences are heard and reflected in the lessons we learn from the Inquiry. I also want to recognise all those who served the public with dedication, compassion and courage in the most challenging of conditions.</p>\n\n<p>Baroness Hallett’s Module 4 report recognises the remarkable success of the vaccines and therapeutics programmes. Effective vaccines were developed, authorised and deployed at exceptional speed, while still going through the robust clinical trial and safety process necessary for such interventions. Therapeutics were identified quickly to treat those who became seriously ill. The report sets out how vaccines:</p>\n\n<ul>\n  <li>protected many people against the most serious effects of COVID-19</li>\n  <li>saved lives</li>\n  <li>reduced pressure on healthcare systems</li>\n  <li>helped to ease the wider social and economic effects of the pandemic</li>\n</ul>\n\n<p>The report also highlights the factors that made this possible. This includes:</p>\n\n<ul>\n  <li>the UK’s world-leading position in biomedical sciences</li>\n  <li>the dedication of doctors, scientists and researchers, supported by the UK’s academic institutions and research funders</li>\n  <li>the skills of those managing the programmes, and the staff and volunteers keeping the vaccination centres running</li>\n</ul>\n\n<p>I also want to thank the public in coming forward to be vaccinated to protect those around them.</p>\n\n<p>The government is also grateful to Baroness Hallett and the UK Covid-19 Inquiry team for identifying important lessons for the future in relation to planning and responding to future pandemics. This publication sets out our response to the Module 4 report and recommendations.</p>\n\n<p>We recognise there is more to do, and we are continuing to learn from the Inquiry’s findings and address the issues identified. We must ensure that future vaccination and therapeutics programmes earn people’s trust, are accessible to everyone who needs them and are guided by the best available evidence, as these programmes were. We must continue to build on our work with communities to understand and address the barriers that influence vaccine uptake.</p>"
+   }
+  },
+  "https://www.gov.uk/api/content/government/consultations/building-control-charges-notices-and-certificates": {
+   "base_path": "/government/consultations/building-control-charges-notices-and-certificates",
+   "title": "Building control: charges, notices and certificates",
+   "document_type": "consultation_outcome",
+   "first_published_at": "2025-11-14T09:38:00+00:00",
+   "public_updated_at": "2026-10-16T11:51:45+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><p>This consultation seeks views on reforming local authority building control services. The reforms would allow local authorities to charge users for more activities on a fuller cost-recovery basis.</p>\n\n<p>The expected outcomes of these reforms include:</p>\n\n<ul>\n  <li>making services more financially sustainable</li>\n  <li>more recruitment and development of Registered Building Inspectors</li>\n  <li>better compliance with the building regulations</li>\n</ul>\n\n<p>There is limited data available about local authority charges and building control services. We are seeking to understand the current costs and charges better.</p>\n\n<p>The consultation also covers:</p>\n\n<ul>\n  <li>ways of improving the use of data standards</li>\n  <li>amending the notices and certificates framework supplied to local authorities</li>\n  <li>amending the Building Safety Regulator’s charging regulations</li>\n  <li>suggestions for reforms that could be implemented over a longer time frame in future</li>\n</ul>\n</div>",
+    "attachments": [
+     {
+      "attachment_type": "html",
+      "id": "9549593",
+      "title": "Building control: charges, notices and certificates",
+      "url": "/government/consultations/building-control-charges-notices-and-certificates/building-control-charges-notices-and-certificates"
+     },
+     {
+      "attachment_type": "html",
+      "id": "9549594",
+      "title": "Equality analysis for local authority building control changes",
+      "url": "/government/consultations/building-control-charges-notices-and-certificates/equality-analysis-for-local-authority-building-control-changes"
+     },
+     {
+      "attachment_type": "html",
+      "id": "9549595",
+      "title": "Assessment of impacts",
+      "url": "/government/consultations/building-control-charges-notices-and-certificates/assessment-of-impacts"
+     },
+     {
+      "attachment_type": "html",
+      "id": "9554158",
+      "title": "Building charges reform: government response to the consultation",
+      "url": "/government/consultations/building-control-charges-notices-and-certificates/outcome/building-charges-reform-government-response-to-the-consultation"
+     },
+     {
+      "attachment_type": "file",
+      "content_type": "application/pdf",
+      "id": "9555013",
+      "title": "Impact Assessment",
+      "url": "https://assets.publishing.service.gov.uk/media/6ad2012149ba86d6c953cad7/Impact_Assessment.pdf"
+     },
+     {
+      "attachment_type": "file",
+      "content_type": "application/pdf",
+      "id": "9555014",
+      "title": "Environmental Principles Policy Statement",
+      "url": "https://assets.publishing.service.gov.uk/media/6ad0d3b867af5c09d0479651/Environmental_Principles_Policy_Statement.pdf"
+     },
+     {
+      "attachment_type": "file",
+      "content_type": "application/pdf",
+      "id": "9555015",
+      "title": "Public Sector Equality Duty Statement",
+      "url": "https://assets.publishing.service.gov.uk/media/6ad0d3c20f7b53973e026746/Public_Sector_Equality_Duty_Statement.pdf"
+     }
+    ],
+    "featured_attachments": [
+     "9549593",
+     "9549594",
+     "9549595"
+    ],
+    "final_outcome_attachments": [
+     "9554158",
+     "9555013",
+     "9555014",
+     "9555015"
+    ],
+    "final_outcome_detail": "<div class=\"govspeak\"><p>This is the government response to the consultation on building charges reform.</p>\n</div>"
+   }
+  },
+  "https://www.gov.uk/api/content/government/consultations/building-control-charges-notices-and-certificates/building-control-charges-notices-and-certificates": {
+   "base_path": "/government/consultations/building-control-charges-notices-and-certificates/building-control-charges-notices-and-certificates",
+   "title": "Building control: charges, notices and certificates",
+   "document_type": "html_publication",
+   "first_published_at": "2025-11-14T09:38:00+00:00",
+   "public_updated_at": "2026-10-16T11:51:45+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><h2 id=\"scope-of-this-consultation\">Scope of this consultation</h2>\n\n<p>This consultation is being carried out in accordance with the requirements set out in 120B(3) Building Act 1984 and section 7(4) of the Building Safety Act 2022.</p>\n\n<h3 id=\"geographical-scope\">Geographical scope</h3>\n\n<p>The consultation covers proposals which would have effect only in England.</p>\n\n<h3 id=\"body-responsible-for-the-consultation\">Body responsible for the consultation</h3>\n\n<p>The Ministry of Housing, Communities and Local Government (<abbr title=\"Ministry of Housing, Communities and Local Government\">MHCLG</abbr>).</p>\n\n<h3 id=\"duration\">Duration</h3>\n\n<p>This consultation will last for 10 weeks from 14 November 2025 to 25 January 2026.</p>\n\n<h2 id=\"how-to-respond\">How to respond</h2>\n\n<p>Respond to the consultation by <a rel=\"external\" href=\"https://consult.communities.gov.uk/building-design-and-construction/consultation-to-reform-building-control-charges\">completing the online survey</a>. There are 126 questions as part of this consultation.</p>\n\n<p>Alternatively, you can email your response to the questions in this consultation to <a href=\"mailto:buildingcontrolcharges@communities.gov.uk\">buildingcontrolcharges@communities.gov.uk</a>.</p>\n\n<p>Anyone with an interest may respond. We are particularly interested to hear from:</p>\n\n<ul>\n  <li>\n    <p>building safety regulator</p>\n  </li>\n  <li>\n    <p>local authority and private sector building control teams and registered building inspectors</p>\n  </li>\n  <li>\n    <p>local authority finance officers and treasurers</p>\n  </li>\n  <li>\n    <p>local government representative organisations</p>\n  </li>\n  <li>\n    <p>Local Authority Building Control (<abbr title=\"Local Authority Building Control\">LABC</abbr>) – which represents all local authority building control teams in England and Wales</p>\n  </li>\n  <li>\n    <p>Association of Building Control Approvers (<abbr title=\"Association of Building Control Approvers\">ABCA</abbr>)</p>\n  </li>\n  <li>\n    <p>registered building control approvers</p>\n  </li>\n  <li>\n    <p>members of self-certification (competent persons) schemes and third-party certification schemes</p>\n  </li>\n  <li>\n    <p>companies involved in the design and construction of buildings, such as developers, housebuilders, architects, trade bodies and ‘clients’ and ‘duty holders’</p>\n  </li>\n  <li>\n    <p>fire and rescue authorities</p>\n  </li>\n  <li>\n    <p>local authority departments carrying out regulatory and enforcement functions in relation to homes and buildings, such as trading standards and housing departments</p>\n  </li>\n  <li>\n    <p>registered housing providers</p>\n  </li>\n  <li>\n    <p>leaseholder representative organisations</p>\n  </li>\n  <li>\n    <p>private sector landlord associations</p>\n  </li>\n  <li>\n    <p>Citizens Advice </p>\n  </li>\n  <li>\n    <p>disability charities</p>\n  </li>\n  <li>\n    <p>disabled people’s organisations</p>"
+   }
+  },
+  "https://www.gov.uk/api/content/government/consultations/building-control-charges-notices-and-certificates/equality-analysis-for-local-authority-building-control-changes": {
+   "base_path": "/government/consultations/building-control-charges-notices-and-certificates/equality-analysis-for-local-authority-building-control-changes",
+   "title": "Equality analysis for local authority building control changes",
+   "document_type": "html_publication",
+   "first_published_at": "2025-11-14T09:38:00+00:00",
+   "public_updated_at": "2026-10-16T11:51:45+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><h2 id=\"policy\">Policy</h2>\n\n<p>The policy intention of reforming the regulations for charges that local authorities can set and collect for their building control services is to help put such services onto a more financially sustainable footing. It is part of a wider programme of works to improve building control services, to reverse the decline in capacity and to make it an attractive career choice. This was highlighted in a section about building control in the government’s response to the <a href=\"https://www.gov.uk/government/publications/grenfell-tower-inquiry-phase-2-report-government-response\">Grenfell Tower Inquiry’s final report</a>.</p>\n\n<p>The <a rel=\"external\" href=\"https://www.legislation.gov.uk/uksi/2010/404/contents\">Building (Local Authority Charges) Regulations 2010</a> have not been updated significantly since that time, despite a commitment in 2010 to review them in 2013, which did not happen. The Building Safety Act 2022 and other secondary legislation following the Grenfell Tower fire have yet to be reflected in the charges that local authorities can set. The Building Safety Act 2022 amended the Building Act 1984 by increasing the scope for the regulations that set the framework for charges and fees by adding a <a rel=\"external\" href=\"https://www.legislation.gov.uk/ukpga/1984/55/section/105B\">new section 105B</a>. This scope now permits regulations to include charging for functions and activities that local authorities carry out under the Building Act itself, such as sending notices requiring compliance with regulations or concerning the need to put right problems with dangerous buildings. </p>\n\n<p>The foreword to HMT’s guidance, <a href=\"https://www.gov.uk/government/publications/managing-public-money\">Managing Public Money</a> states that it sets out the main principles, specific requirements and good practice for dealing with public resources. For public services such as local authority building control, this guidance states that their costs should be funded as fully as possible through charges and fees paid by users of those services. This means that charges, rather than local authority taxes, should be the majority source of income. Such charges should factor in direct and indirect costs and overheads, such as recruitment, training and development of Registered Building Inspectors. The proposed changes to the regulations will permit local authorities to receive charges for many more functions and activities. Due to the public and democratic nature of local authorities, it is acknowledged that there will be some activities where full cost recovery is not possible (such as servicing councillors in their democratic activities), and there are current exceptions set out in the consultation document where, due to either the need for more data, or where other interventions are taking place and introducing charges would interfere with these other interventions. </p>"
+   }
+  },
+  "https://www.gov.uk/api/content/government/consultations/building-control-charges-notices-and-certificates/assessment-of-impacts": {
+   "base_path": "/government/consultations/building-control-charges-notices-and-certificates/assessment-of-impacts",
+   "title": "Assessment of impacts",
+   "document_type": "html_publication",
+   "first_published_at": "2025-11-14T09:38:01+00:00",
+   "public_updated_at": "2026-10-16T11:51:45+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><h2 id=\"strategic-case-for-proposed-regulation-and-summary-of-proposal\">1. Strategic case for proposed regulation and summary of proposal</h2>\n\n<h3 id=\"problem-under-consideration\">Problem under consideration </h3>\n\n<p>Building Control as a local authority service has been in decline for many years, resulting in services that have often become ill-equipped to support sustained major housing, public sector and commercial development ambitions and requirements. Symptoms of this include a workforce that is skewed to people fast approaching retirement, under-resourced services, and a workforce lacking in necessary skills or sufficient numbers to help the Building Safety Regulator (BSR) in its work through Multi-Disciplinary Teams in assessing proposed works regarding <a href=\"https://www.gov.uk/government/collections/guidance-on-the-criteria-for-being-a-higher-risk-building\">higher-risk buildings</a> (HRBs). </p>\n\n<h3 id=\"what-evidence-is-there-to-support-the-problem-statement\">What evidence is there to support the problem statement?</h3>\n\n<p>A search of Local Authority Building Control service websites has revealed that most services that publish relevant information operate at a significant and growing deficit. This has been confirmed through engagement with local authorities across England. </p>\n\n<p>There are a considerable number of non-chargeable activities that Local Authority Building Control Bodies (LABCBs) have to provide. This limitation means that their capacity is split between non-chargeable and chargeable work. This limits the revenue that LABCBs can generate and therefore, they are frequently not able to fund the recruitment and development of staff sufficiently; in a few cases LABCBs’ websites are saying that they do not have the capacity to handle any new building control applications. <a rel=\"external\" href=\"https://www.local.gov.uk/sites/default/files/documents/workforce_capacity_survey_-_building_control.pdf\">Local Government Association/LABC workforce survey</a> in 2023 showed that there were significant levels of vacancies that local authorities were carrying. </p>\n\n<p>A key example of non-chargeable set of functions is the fact that local authorities are providing their private sector competitors, Registered Building Control Approvers (RBCAs), with a free service in checking and logging documents at the beginning and final stages in the building control processes. RBCAs provide several building control services for individuals or developers, often spanning several local authority areas, or even across the whole of England. Their compliance and enforcement activities are more limited than LABCBs, but they have to submit their documentation for various checks to the LABCB in which any given building project is located.</p>"
+   }
+  },
+  "https://www.gov.uk/api/content/government/consultations/building-control-charges-notices-and-certificates/outcome/building-charges-reform-government-response-to-the-consultation": {
+   "base_path": "/government/consultations/building-control-charges-notices-and-certificates/outcome/building-charges-reform-government-response-to-the-consultation",
+   "title": "Building charges reform: government response to the consultation",
+   "document_type": "html_publication",
+   "first_published_at": "2026-10-16T11:51:47+01:00",
+   "public_updated_at": "2026-10-16T11:51:45+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><h2 id=\"executive-summary\">Executive summary</h2>\n\n<p>The Grenfell Tower tragedy exposed serious and long standing weaknesses in the building control system. The Inquiry showed that building control functions were not always carried out with the scrutiny, competence or resources needed to keep people safe. Since then, the government has taken major steps to strengthen regulation through the Building Safety Act 2022, the creation of the Building Safety Regulator, and the introduction of a formal competence and registration regime for building inspectors.</p>\n\n<p>Despite this progress, many Local Authority Building Control Bodies (LABCBs) continue to face significant pressures. Their responsibilities have increased, but the framework for funding these services has not kept pace. As a result, local building control teams often struggle to recruit and retain qualified inspectors, invest in training, or carry out the level of oversight expected of them. In many areas, local taxpayers end up covering the cost of work that should be funded by those commissioning or carrying out building work. This is neither fair nor sustainable. This was underlined by the recent report of the Building Control Independent Panel (BCIP), which found that “The public sector system of building control has been progressively neglected, with LABCAs unable to sustain the level of advice, oversight and enforcement expected of them for all building work on a consistent basis.”</p>\n\n<p>To address these challenges, the government consulted on a package of reforms to the local authority building control charging framework. The aim is to update the building charges regulations by ensuring that LABCBs can recover as fully as possible the reasonable costs of the functions they are required to perform. These changes are intended to help strengthen capacity across the profession, support high quality inspection and enforcement, and ensure that the system is better equipped to identify and address safety risks early.</p>\n\n<p>These reforms are an important step towards a fairer and more resilient building control system, one that applies the lessons of Grenfell, supports a competent and well-resourced workforce, and ensures that the costs of regulation fall appropriately on those undertaking building work, rather than on the wider public.</p>\n\n<p>This government response outlines the reforms we intend to make to improve local authority charging arrangements in the light of the responses to the consultation.</p>\n\n<p>The responses to the consultation are summarised below and have been taken into account by ministers when making decisions on policy changes to make. Overall, responses showed:</p>"
+   }
+  },
+  "https://www.gov.uk/api/content/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary": {
+   "base_path": "/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary",
+   "title": "Carbon border adjustment mechanism (CBAM): Policy summary",
+   "document_type": "policy_paper",
+   "first_published_at": "2026-02-10T13:30:00+00:00",
+   "public_updated_at": "2026-10-16T11:15:05+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><p>This document provides a summary of CBAM policy. It includes the core policy framework which is set out via primary legislation in the Finance Act 2026 and details set out in the draft secondary legislation and notices. Further details will be included in secondary legislation, notices and GOV.UK guidance.</p>\n\n<p>The details in this document may be updated; any changes will be reflected here.</p>\n</div>",
+    "attachments": [
+     {
+      "attachment_type": "html",
+      "id": "9542806",
+      "title": "Carbon Border Adjustment Mechanism (CBAM): Policy summary",
+      "url": "/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary"
+     }
+    ],
+    "featured_attachments": [
+     "9542806"
+    ]
+   }
+  },
+  "https://www.gov.uk/api/content/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary": {
+   "base_path": "/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary",
+   "title": "Carbon Border Adjustment Mechanism (CBAM): Policy summary",
+   "document_type": "html_publication",
+   "first_published_at": "2026-02-10T13:30:01+00:00",
+   "public_updated_at": "2026-10-16T11:15:05+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><h2 id=\"introduction\">1. Introduction</h2>\n\n<p>The Carbon Border Adjustment Mechanism (<abbr title=\"Carbon Border Adjustment Mechanism\">CBAM</abbr>) legislation and guidance is being developed in the following stages:</p>\n\n<p>1) Primary legislation</p>\n\n<p>Primary legislation for <abbr title=\"Carbon Border Adjustment Mechanism\">CBAM</abbr> was introduced in the Finance Act 2026. You can find the Act on the <a rel=\"external\" href=\"https://www.legislation.gov.uk/ukpga/2026/11/enacted\">UK Parliament website</a>, which also contains the latest versions and associated documents.</p>\n\n<p>2) Secondary legislation</p>\n\n<p>You can find secondary legislation for <abbr title=\"Carbon Border Adjustment Mechanism\">CBAM</abbr>, alongside force of law notices on the <a href=\"https://www.gov.uk/government/collections/carbon-border-adjustment-mechanism\"><abbr title=\"Carbon Border Adjustment Mechanism\">CBAM</abbr> collection page</a>.</p>\n\n<h3 id=\"summary-of-this-document\">Summary of this document</h3>\n\n<p>This document provides a summary of <abbr title=\"Carbon Border Adjustment Mechanism\">CBAM</abbr> policy. Further details can be found in the primary and secondary legislation, force of law notices and GOV.UK guidance on the <a href=\"https://www.gov.uk/government/collections/carbon-border-adjustment-mechanism\"><abbr title=\"Carbon Border Adjustment Mechanism\">CBAM</abbr> collection page</a>. The details below may be subject to change; updates will be reflected in this document.</p>\n\n<h3 id=\"who-should-read-this-document\">Who should read this document</h3>\n\n<p>The following stakeholders should read this document:</p>\n\n<ul>\n  <li>importers of goods from the aluminium, cement, fertiliser, hydrogen, and iron and steel sectors and downstream producers that use these goods in their supply chains</li>\n  <li>overseas operators of installations involved in processing or manufacturing of goods from the aluminium, cement, fertiliser, hydrogen, and iron and steel sectors</li>\n  <li>independent emissions verifiers and accreditation bodies</li>\n</ul>\n\n<h3 id=\"further-questions\">Further questions</h3>\n\n<p>For <abbr title=\"Carbon Border Adjustment Mechanism\">CBAM</abbr> policy, legislation or policy development enquiries, or to join the <abbr title=\"Carbon Border Adjustment Mechanism\">CBAM</abbr> mailing list, email <a href=\"mailto:cbampolicyteam@hmrc.gov.uk\">cbampolicyteam@hmrc.gov.uk</a>. For operational <abbr title=\"Carbon Border Adjustment Mechanism\">CBAM</abbr> enquiries email <a href=\"mailto:cbamenquiries@hmrc.gov.uk\">cbamenquiries@hmrc.gov.uk</a>.</p>\n\n<h2 id=\"background\">2. Background</h2>\n\n<p><abbr title=\"Carbon Border Adjustment Mechanism\">CBAM</abbr> will commence on 1 January 2027.</p>"
+   }
+  },
+  "https://www.gov.uk/api/content/government/publications/fcdo-annual-statement-of-compliance-with-the-concordat-to-support-research-integrity-2025-to-2026": {
+   "base_path": "/government/publications/fcdo-annual-statement-of-compliance-with-the-concordat-to-support-research-integrity-2025-to-2026",
+   "title": "FCDO annual statement of compliance with the Concordat to Support Research Integrity 2025 to 2026",
+   "document_type": "policy_paper",
+   "first_published_at": "2026-10-16T10:36:16+01:00",
+   "public_updated_at": "2026-10-16T10:36:16+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><p>This statement of compliance outlines the FCDO’s annual account of research integrity standards. It covers governance mechanisms, quality assurance processes, and specific actions taken in 2025 to 2026 to ensure all FCDO-funded research meets the standards set out in the Concordat to Support Research Integrity.</p>\n</div>",
+    "attachments": [
+     {
+      "attachment_type": "html",
+      "id": "9528694",
+      "title": "FCDO annual statement of compliance with the Concordat to Support Research Integrity 2025 to 2026",
+      "url": "/government/publications/fcdo-annual-statement-of-compliance-with-the-concordat-to-support-research-integrity-2025-to-2026/fcdo-annual-statement-of-compliance-with-the-concordat-to-support-research-integrity-2025-to-2026"
+     }
+    ],
+    "featured_attachments": [
+     "9528694"
+    ]
+   }
+  },
+  "https://www.gov.uk/api/content/government/publications/fcdo-annual-statement-of-compliance-with-the-concordat-to-support-research-integrity-2025-to-2026/fcdo-annual-statement-of-compliance-with-the-concordat-to-support-research-integrity-2025-to-2026": {
+   "base_path": "/government/publications/fcdo-annual-statement-of-compliance-with-the-concordat-to-support-research-integrity-2025-to-2026/fcdo-annual-statement-of-compliance-with-the-concordat-to-support-research-integrity-2025-to-2026",
+   "title": "FCDO annual statement of compliance with the Concordat to Support Research Integrity 2025 to 2026",
+   "document_type": "html_publication",
+   "first_published_at": "2026-10-16T10:36:16+01:00",
+   "public_updated_at": "2026-10-16T10:36:16+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><h2 id=\"introductory-statement\">Introductory statement</h2>\n\n<p>The Foreign, Commonwealth and Development Office (FCDO) leads the UK’s diplomatic, development, and consular efforts worldwide.</p>\n\n<p>FCDO invests in high‑potential research and development research through our Global Research and Technology Development portfolio (GRTD) that tackles critical global challenges, focusing where UK scientific capability, expertise and partnerships allow us to have the greatest impact.</p>\n\n<p>FCDO is committed to upholding the highest standards of research integrity across all research, evidence, and technology innovation activities that support development, national security, and foreign policy objectives.</p>\n\n<p>This statement summarises FCDO’s established approach to supporting research integrity, highlights key developments during 2025 to 2026, and outlines priorities for further strengthening research integrity in 2026 to 2027.</p>\n\n<p>The information below provides a high-level overview of recent actions and areas for continued improvement, with further detail provided throughout the statement.</p>\n\n<h3 id=\"established-approach\">Established approach</h3>\n\n<p>Research integrity is embedded throughout the research lifecycle through:</p>\n\n<ul>\n  <li>\n    <p>strong governance</p>\n  </li>\n  <li>\n    <p>robust commissioning and assurance</p>\n  </li>\n  <li>\n    <p>ethical and safeguarding standards</p>\n  </li>\n  <li>\n    <p>independent oversight</p>\n  </li>\n  <li>\n    <p>openness and accountability</p>\n  </li>\n</ul>\n\n<h3 id=\"actions-during-2025-to-2026\">Actions during 2025 to 2026</h3>\n\n<ul>\n  <li>\n    <p>published the <a href=\"https://www.gov.uk/government/publications/global-research-and-technology-development-approach-paper-2026/global-research-and-technology-development-approach-paper-2026\">GRTD Approach Paper</a></p>\n  </li>\n  <li>\n    <p>updated <a href=\"https://www.gov.uk/government/publications/fcdo-open-access-policy\">Open Access Policy</a></p>\n  </li>\n  <li>\n    <p>published its first <a href=\"https://www.gov.uk/government/publications/fcdo-areas-of-research-interest/fcdo-areas-of-research-interest-ari\">Areas of Research Interest</a></p>\n  </li>\n  <li>\n    <p>strengthened engagement with delivery partners through safeguarding and fraud forums</p>\n  </li>\n  <li>\n    <p>reduced research bureaucracy</p>\n  </li>\n  <li>\n    <p>expanded professional learning through communities of expertise</p>\n  </li>\n</ul>\n\n<h3 id=\"priorities-for-2026-to-2027\">Priorities for 2026 to 2027</h3>\n\n<ul>\n  <li>\n    <p>embed the GRTD Approach Paper and Open Access Policy</p>\n  </li>\n  <li>\n    <p>strengthen commissioning and assurance through the Research Commissioning Centre (RCC)</p>\n  </li>\n  <li>\n    <p>expand safeguarding and fraud forums to cover wider integrity, ethics and research culture issues</p>\n  </li>\n  <li>\n    <p>use learning from assurance activities to support continuous improvement</p>"
+   }
+  },
+  "https://www.gov.uk/api/content/government/publications/standards-for-stalking-and-domestic-abuse-perpetrator-interventions": {
+   "base_path": "/government/publications/standards-for-stalking-and-domestic-abuse-perpetrator-interventions",
+   "title": "Standards for stalking and domestic abuse perpetrator interventions",
+   "document_type": "policy_paper",
+   "first_published_at": "2026-07-17T00:01:00+01:00",
+   "public_updated_at": "2026-10-16T09:57:05+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><p>This work was commissioned by the Home Office to establish overarching principles and a national standards framework for the safe and effective delivery of interventions for perpetrators of stalking and domestic abuse in England and Wales.</p>\n</div>",
+    "attachments": [
+     {
+      "attachment_type": "html",
+      "id": "9556386",
+      "title": "Standards for stalking and domestic abuse perpetrator interventions (accessible)",
+      "url": "/government/publications/standards-for-stalking-and-domestic-abuse-perpetrator-interventions/standards-for-stalking-and-domestic-abuse-perpetrator-interventions-accessible"
+     },
+     {
+      "attachment_type": "file",
+      "content_type": "application/pdf",
+      "id": "9556387",
+      "title": "Standards for stalking and domestic abuse perpetrator interventions",
+      "url": "https://assets.publishing.service.gov.uk/media/6acf654f2de3184ccf8b80e7/Final_Report_V3_-_DBS_Update_-__DA_and_Stalking_Standards.pdf"
+     },
+     {
+      "attachment_type": "html",
+      "id": "9556388",
+      "title": "Standards for stalking and domestic abuse perpetrator interventions (Welsh) (accessible)",
+      "url": "/government/publications/standards-for-stalking-and-domestic-abuse-perpetrator-interventions/standards-for-stalking-and-domestic-abuse-perpetrator-interventions-welsh-accessible"
+     },
+     {
+      "attachment_type": "file",
+      "content_type": "application/pdf",
+      "id": "9556389",
+      "title": "Standards for stalking and domestic abuse perpetrator interventions (Welsh)",
+      "url": "https://assets.publishing.service.gov.uk/media/6acf655ba57ddfe32196aca7/Final_Report_V3_-_DBS_Update_-_Welsh_Translation.pdf"
+     }
+    ],
+    "featured_attachments": [
+     "9556386",
+     "9556387",
+     "9556388",
+     "9556389"
+    ]
+   }
+  },
+  "https://www.gov.uk/api/content/government/publications/standards-for-stalking-and-domestic-abuse-perpetrator-interventions/standards-for-stalking-and-domestic-abuse-perpetrator-interventions-accessible": {
+   "base_path": "/government/publications/standards-for-stalking-and-domestic-abuse-perpetrator-interventions/standards-for-stalking-and-domestic-abuse-perpetrator-interventions-accessible",
+   "title": "Standards for stalking and domestic abuse perpetrator interventions (accessible)",
+   "document_type": "html_publication",
+   "first_published_at": "2026-07-17T00:01:01+01:00",
+   "public_updated_at": "2026-10-16T09:57:05+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><div class=\"call-to-action\">\n  <p>Standards for Stalking and Domestic Abuse Perpetrator Interventions</p>\n\n  <p>(2nd edition)</p>\n\n  <p>Principles and guidelines for commissioning and delivering interventions for perpetrators of stalking and domestic abuse in England and Wales</p>\n\n  <p>April 2026</p>\n</div>\n\n<p>This report was commissioned by the Home Office and written by: Fiona Vera-Gray, Liz Kelly, and Jo Lovett (London Metropolitan University CWASU) and Nicole Westmarland (Durham University CRiVA).</p>\n\n<p>The research was supported by: Debs Alderson and Kelly Henderson (Addressing Domestic Abuse), Geetanjali Gangoli (Durham University CRiVA) Maria Garner and Emma Short (London Metropolitan University CWASU). Administrative support was provided by Aruna Dudhia.</p>\n\n<p>We would like to extend our thanks to all participants in the action learning sets, respondents to the survey, and members of the victim-survivor panels, for engaging thoughtfully in the process and sharing their expertise.</p>\n\n<p>Suggested citation: Vera-Gray, L., Kelly, L., Lovett, J. and Westmarland, N. (2026) Standards for Stalking and Domestic Abuse Perpetrator Interventions (2nd edition), London: Home Office.</p>\n\n<h2 id=\"executive-summary\">Executive Summary</h2>\n\n<p>This work was commissioned by the Home Office to establish overarching principles and a national standards framework for the safe and effective delivery of interventions for perpetrators of stalking and domestic abuse in England and Wales. It extends and updates - and therefore replaces - the previous Standards for domestic abuse perpetrator interventions (Westmarland and Kelly, 2023) (hereafter: the first edition) and has been developed through extensive consultation with both sectors.</p>\n\n<h3 id=\"scope\">Scope</h3>\n\n<p>These standards cover interventions for all types of stalking perpetrators and for domestic abuse perpetrators, including those whose behaviour does not involve stalking. They apply to organisations funded to deliver specialist perpetrator interventions aimed at reducing harm and increasing the safety and freedom of victim-survivors. The following types of intervention are covered:</p>"
+   }
+  },
+  "https://www.gov.uk/api/content/government/publications/standards-for-stalking-and-domestic-abuse-perpetrator-interventions/standards-for-stalking-and-domestic-abuse-perpetrator-interventions-welsh-accessible": {
+   "base_path": "/government/publications/standards-for-stalking-and-domestic-abuse-perpetrator-interventions/standards-for-stalking-and-domestic-abuse-perpetrator-interventions-welsh-accessible",
+   "title": "Standards for stalking and domestic abuse perpetrator interventions (Welsh) (accessible)",
+   "document_type": "html_publication",
+   "first_published_at": "2026-08-07T13:53:19+01:00",
+   "public_updated_at": "2026-10-16T09:57:05+01:00",
+   "details": {
+    "body": "<div class=\"govspeak\"><div class=\"call-to-action\">\n  <p>Safonau ar gyfer Ymyriadau i Gyflawnwyr Stelcio a Cham-drin Domestig</p>\n\n  <p>(2il argraffiad)</p>\n\n  <p>Egwyddorion a chanllawiau ar gyfer comisiynu a darparu ymyriadau i gyflawnwyr stelcio a cham-drin domestig yng Nghymru a Lloegr</p>\n\n  <p>Ebrill 2026</p>\n</div>\n\n<p>Comisiynwyd yr adroddiad hwn gan y Swyddfa Gartref a chafodd ei ysgrifennu gan: Fiona Vera-Gray, Liz Kelly, a Jo Lovett (Uned Camdriniaeth Plant a Menywod (CWASU) Prifysgol Metropolitan Llundain) a Nicole Westmarland (Canolfan Ymchwil i Drais a Chamdriniaeth (CRiVA) Prifysgol Durham).</p>\n\n<p>Cafodd yr ymchwil ei gefnogi gan: Debs Alderson a Kelly Henderson (Addressing Domestic Abuse), Geetanjali Gangoli (CRiVA Prifysgol Durham) Maria Garner ac Emma Short (CWASU Prifysgol Metropolitan Llundain). Darparwyd cefnogaeth weinyddol gan Aruna Dudhia.</p>\n\n<p>Hoffem ddiolch i bob cyfranogwr yn y setiau dysgu gweithredol, ymatebwyr i’r arolwg, ac aelodau’r paneli dioddefwyr-oroeswyr, am gymryd rhan yn feddylgar yn y broses a rhannu eu harbenigedd.</p>\n\n<p>Cyfeiriad a argymhellir: Vera-Gray, L., Kelly, L., Lovett, J. a Westmarland, N. (2026) Standards for Stalking a Domestic Abuse Perpetrator Interventions (2il argraffiad), Llundain: Y Swyddfa Gartref.</p>\n\n<h2 id=\"crynodeb-gweithredol\">Crynodeb Gweithredol</h2>\n\n<p>Comisiynwyd y gwaith hwn gan y Swyddfa Gartref i sefydlu egwyddorion cyffredinol a fframwaith safonau cenedlaethol ar gyfer cyflwyno ymyriadau diogel ac effeithiol i gyflawnwyr stelcio a cham-drin domestig yng Nghymru a Lloegr. Mae’n ymestyn ac yn diweddaru – ac felly’n disodli – y Safonau blaenorol ar gyfer ymyriadau i gyflawnwyr cam-drin domestig (Westmarland a Kelly, 2023) (o hyn ymlaen: yr argraffiad cyntaf) a chafodd ei ddatblygu drwy ymgynghoriad estynedig â’r ddau sector.</p>\n\n<h3 id=\"y-cwmpas\">Y Cwmpas</h3>\n\n<p>Mae’r safonau hyn yn cwmpasu ymyriadau ar gyfer pob math o gyflawnwr stelcio ac ar gyfer cyflawnwyr cam-drin domestig, yn cynnwys y rhai nad yw eu hymddygiad yn cynnwys stelcio. Maen nhw’n berthnasol i sefydliadau sy’n cael eu hariannu i ddarparu ymyriadau arbenigol i gyflawnwyr sydd â’r nod o leihau niwed a chynyddu diogelwch a rhyddid dioddefwyr-oroeswyr. Mae’n cynnwys y mathau canlynol o ymyriadau:</p>"
+   }
+  }
+ }
+}

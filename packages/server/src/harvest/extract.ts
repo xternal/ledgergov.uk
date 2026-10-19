@@ -2,7 +2,9 @@ import type Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
 import { PolicyArea, type ActorFile } from "@ledger/schema";
 import { normaliseForMatch, wordCount } from "../intake/text";
-import type { Candidate, CandidateSpeaker, HarvestReport, SourceDoc, SpeakerSegment } from "./types";
+import { foldCandidates } from "./fold";
+import { ruledOut } from "./rules";
+import type { Candidate, CandidateSpeaker, HarvestReport, SourceDoc, SourceKind, SpeakerSegment } from "./types";
 
 /**
  * Claude reads one source at a time and proposes candidate promises. The model
@@ -11,6 +13,11 @@ import type { Candidate, CandidateSpeaker, HarvestReport, SourceDoc, SpeakerSegm
  * their offsets). Who said it comes from Hansard's own speaker data where the
  * source has it, not from the model. Nothing here publishes anything: the
  * result becomes drafts in a pull request that an editor reviews and approves (invariant 8).
+ *
+ * Since 19 October 2026 (the AI Journalist backtest, docs/DECISIONS.md) the
+ * model also labels process steps and grants, fixed rules drop the ones it
+ * misses (rules.ts), and one speaker's commitments in one source are folded
+ * into one draft (fold.ts).
  */
 
 export const DEFAULT_INTAKE_MODEL = "claude-opus-5-5";
@@ -27,9 +34,11 @@ export const MIN_CONFIDENCE = 0.5;
 /**
  * What kind of statement a candidate is. Only a commitment becomes a draft (12 Oct 2026:
  * intake proposed a taskforce's first meeting and "will remove barriers", which editors
- * turned down; editors' time goes on promises that can be met or not met).
+ * turned down; editors' time goes on promises that can be met or not met). "process" and
+ * "grant" are the desk's two main reasons for dropping a draft (19 Oct 2026 backtest:
+ * 23 and 5), with the desk's own definitions (docs/desk/ROUTINE.md, step 2).
  */
-export const CANDIDATE_KINDS = ["commitment", "event", "ongoing", "aspiration"] as const;
+export const CANDIDATE_KINDS = ["commitment", "event", "ongoing", "aspiration", "process", "grant"] as const;
 export const MIN_QUOTE_WORDS = 6;
 const MAX_CANDIDATES_PER_CALL = 8;
 /** Longer sources are read in parts split at paragraph breaks (a long debate day). */
@@ -70,7 +79,7 @@ const SYSTEM = `You find political promises in UK public sources for LedgerGov.U
 
 A promise (LedgerGov.UK standard §1) is a statement by a person or organisation with power or seeking it that commits to a future, checkable change. In: "We will cap bus fares at £2 from January." Out: descriptions of the past or of what is already happening, opinions, values and aspirations with nothing checkable ("we want a fairer country"), predictions about other people's behaviour, questions, and promises the speaker attributes to someone else.
 
-Who can make one here: ministers and the government (including a department speaking in its own press release), shadow ministers, party leaders and party spokespeople. A backbench MP counts only when committing their party or government. The Speaker and Deputy Speakers never make promises.
+Who can make one here: ministers and the government (including a department speaking in its own press release, policy paper or consultation response), shadow ministers, party leaders and party spokespeople. A backbench MP counts only when committing their party or government. The Speaker and Deputy Speakers never make promises.
 
 Rules for each candidate:
 - quote: copy the speaker's words exactly as they appear in the source, character for character: one to three complete sentences that contain the commitment. No ellipses, no paraphrase, no added or changed words, no speaker names or headings. If you cannot copy it exactly, leave it out.
@@ -79,11 +88,11 @@ Rules for each candidate:
 - policy_area: one of ${PolicyArea.options.join(", ")}; null if none fits.
 - who, how_much, when, funded_by: only what the source itself says about who is affected, the money (as words, e.g. "£400 million a year"), timing and how it is paid for. Null when the source does not say. Never estimate.
 - deadline: an ISO date only when the source names a specific date or month (use the last day of the month); otherwise null.
-- kind: "commitment" only for a future change the speaker commits to. "event" for announcing something that changes nothing for the public by itself: a meeting, a launch, a visit, a summit, a consultation opening, a report being published. "ongoing" for what is already happening or money already committed or being spent. "aspiration" for aims with no measurable outcome ("remove barriers", "improve", "strengthen", "support").
+- kind: "commitment" only for a future change the speaker commits to. "event" for announcing something that changes nothing for the public by itself: a meeting, a launch, a visit, a summit, a consultation opening, a report being published. "ongoing" for what is already happening or money already committed or being spent. "aspiration" for aims with no measurable outcome ("remove barriers", "improve", "strengthen", "support"). "process" for a step inside government: laying an order or regulations before Parliament, publishing a strategy, plan or guidance with no date, an internal reorganisation, appointing an official, a review or consultation, or a minor amendment to a Bill. "grant" for money already handed, or being handed, to named recipients (these councils, that body, those buildings) with nothing left to check.
 - check: how an editor will tell later whether it was met: the number, the named thing that will exist or happen, and the date it is due by, e.g. "14,000 additional prison places open by 2031". Null when nothing could show it met or not met.
 - confidence: 0 to 1, how likely an editor applying the standard above accepts this as a promise.
 
-Prefer commitments with a measurable outcome and a date. A press release often restates a commitment made earlier ("part of our commitment to…", "the review committed us to…"): propose it when it has a measurable outcome, and say in why that it restates an earlier commitment, so editors quote the original. Label every candidate honestly: only commitments become drafts.
+Prefer commitments with a measurable outcome and a date. The measures of one Bill, scheme, plan or strategy are one commitment: propose its single most checkable sentence (a target, a date or a figure), not one candidate per measure. A press release often restates a commitment made earlier ("part of our commitment to…", "the review committed us to…"): propose it when it has a measurable outcome, and say in why that it restates an earlier commitment, so editors quote the original. Label every candidate honestly: only commitments become drafts.
 
 Propose each distinct commitment once, at most ${MAX_CANDIDATES_PER_CALL}, most specific and checkable first. Return an empty list when there are none; that is a common and correct answer.`;
 
@@ -250,6 +259,9 @@ export function actorFor(actors: ActorFile[], name: string, party: string | null
 
 type Report = Pick<HarvestReport, "candidates" | "dropped" | "errors">;
 
+/** GOV.UK documents a department publishes in its own name. */
+const GOVERNMENT_DOCS = new Set<SourceKind>(["govuk_press_release", "govuk_policy_paper", "govuk_consultation_outcome"]);
+
 function speakerFor(doc: SourceDoc, span: [number, number], m: ModelCandidate, actors: ActorFile[]): CandidateSpeaker | { drop: string } {
   if (doc.segments.length) {
     const seg = segmentAt(doc.segments, span);
@@ -258,9 +270,9 @@ function speakerFor(doc: SourceDoc, span: [number, number], m: ModelCandidate, a
     return { name: seg.name, role: seg.role, party: seg.party, memberId: seg.memberId, actorId: actorFor(actors, seg.name, seg.party), check: "segment" };
   }
   const name = m.speaker_name || "unknown";
-  // A department's own words in its own GOV.UK press release: the publisher is the speaker.
-  if (doc.kind === "govuk_press_release" && /^(hm government|the government|government)$/i.test(name.trim())) {
-    return { name: "HM Government", role: doc.venueLabel.replace(/^Press release \((.*)\)$/, "$1"), party: null, memberId: null, actorId: actorFor(actors, "HM Government", null), check: "segment" };
+  // A department's own words in its own GOV.UK press release, policy paper or consultation response: the publisher is the speaker.
+  if (GOVERNMENT_DOCS.has(doc.kind) && /^(hm government|the government|government)$/i.test(name.trim())) {
+    return { name: "HM Government", role: doc.venueLabel.replace(/^[^()]*\((.*)\)$/, "$1"), party: null, memberId: null, actorId: actorFor(actors, "HM Government", null), check: "segment" };
   }
   const check = nameNearby(doc.text, span, name) ? "nearby" : "unverified";
   return { name, role: null, party: null, memberId: null, actorId: actorFor(actors, name, null), check };
@@ -315,6 +327,9 @@ export function vet(
   const span = own ?? spans[0]!;
   const quote = doc.text.slice(span[0], span[1]);
   if (wordCount(quote) < MIN_QUOTE_WORDS) return { reason: "quote too short" };
+  // The desk's process steps and grants, caught by fixed rules when the model calls them commitments.
+  const rule = ruledOut(quote);
+  if (rule) return { reason: `${rule.code}: ${rule.label}` };
   const q = plain(quote);
   if (ctx.known.some((k) => k.length >= 30 && (k.includes(q) || q.includes(k)))) return { reason: "already on a card or in a draft" };
   const speaker = speakerFor(doc, span, m, ctx.actors);
@@ -335,7 +350,11 @@ export function vet(
 
 // ---------------------------------------------------------------- all sources
 
-/** Claude proposes candidate promises per source; only verbatim quotes with exact spans survive. */
+/**
+ * Claude proposes candidate promises per source; only verbatim quotes with
+ * exact spans survive, and one speaker's commitments in one source are folded
+ * into one candidate (one draft) before anything is written.
+ */
 export async function extractFromSources(docs: SourceDoc[], opts: ExtractOptions): Promise<Report> {
   const report: Report = { candidates: [], dropped: [], errors: [] };
   if (!opts.client) {
@@ -363,5 +382,6 @@ export async function extractFromSources(docs: SourceDoc[], opts: ExtractOptions
       }
     }
   }
+  report.candidates = foldCandidates(report.candidates);
   return report;
 }
