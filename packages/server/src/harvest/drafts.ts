@@ -2,10 +2,13 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import { join, relative, sep } from "node:path";
 import { Document, parse, Scalar, visit, type Node, type Pair, type ToStringOptions } from "yaml";
 import { DRAFT_SOURCE_ID, DraftFile, draftViolations, legacyCard } from "@ledger/schema";
-import type { Candidate, HarvestReport, SourceDoc } from "./types";
+import { quoteCount } from "./fold";
+import type { Candidate, CandidateSuggestion, HarvestReport, SourceDoc } from "./types";
 
 /**
- * Drafts (M4): one YAML per candidate promise in content/drafts/<date>/, the
+ * Drafts (M4): one YAML per candidate promise in content/drafts/<date>/ (since
+ * 19 October 2026 one per source and speaker, the speaker's other commitments
+ * in that source in `also`; see fold.ts), the
  * source text each quote comes from stored byte for byte beside them, and the
  * body of the day's pull request. Nothing here publishes anything: editors
  * turn each draft into a card or delete it, one editor's approval is needed
@@ -41,6 +44,17 @@ const idsWritten = new WeakMap<Candidate, string>();
 
 const textOrNull = (s: string | null | undefined) => (typeof s === "string" && s.trim() ? s : null);
 
+const suggestion = (s: CandidateSuggestion): DraftFile["suggested"] => ({
+  policy_area: textOrNull(s.policy_area),
+  who: textOrNull(s.who),
+  how_much: textOrNull(s.how_much),
+  when: textOrNull(s.when),
+  funded_by: textOrNull(s.funded_by),
+  deadline: textOrNull(s.deadline),
+});
+
+const reason = (why: string) => (why.trim() ? why : "No reason given.");
+
 /** The draft file for one candidate (not yet checked; writeDrafts checks it). */
 export function draftFromCandidate(c: Candidate, doc: SourceDoc, date: string): DraftFile {
   return {
@@ -57,15 +71,11 @@ export function draftFromCandidate(c: Candidate, doc: SourceDoc, date: string): 
       actor_id: c.speaker.actorId ?? null,
       check: c.speaker.check,
     },
-    suggested: {
-      policy_area: textOrNull(c.suggested.policy_area),
-      who: textOrNull(c.suggested.who),
-      how_much: textOrNull(c.suggested.how_much),
-      when: textOrNull(c.suggested.when),
-      funded_by: textOrNull(c.suggested.funded_by),
-      deadline: textOrNull(c.suggested.deadline),
-    },
-    why: c.why.trim() ? c.why : "No reason given.",
+    suggested: suggestion(c.suggested),
+    why: reason(c.why),
+    ...(c.also?.length
+      ? { also: c.also.map((a) => ({ quote: a.quote, source_span: [a.span[0], a.span[1]] as [number, number], suggested: suggestion(a.suggested), why: reason(a.why), confidence: a.confidence })) }
+      : {}),
     confidence: c.confidence,
     model: c.model,
     status: "to_review",
@@ -89,6 +99,7 @@ function render(draft: DraftFile, style: "folded" | "plain" | "quoted"): string 
     .map((l) => (l ? ` ${l}` : ""))
     .join("\n");
   (doc.getIn(["source_span"], true) as { flow?: boolean }).flow = true;
+  for (let i = 0; i < (draft.also?.length ?? 0); i++) (doc.getIn(["also", i, "source_span"], true) as { flow?: boolean }).flow = true;
   if (style !== "quoted") {
     visit(doc, {
       Scalar(key, node) {
@@ -101,6 +112,12 @@ function render(draft: DraftFile, style: "folded" | "plain" | "quoted"): string 
   (doc.getIn(["speaker", "check"], true) as Node).comment = ` ${CHECK_NOTE[draft.speaker.check]}`;
   const pair = (key: string) => (doc.contents as { items: Pair<Scalar, unknown>[] }).items.find((p) => p.key.value === key);
   pair("suggested")!.key.commentBefore = " Unverified suggestions from the language model. Editors confirm each one at the source.";
+  if (draft.also)
+    pair("also")!.key.commentBefore = [
+      " The same speaker's other commitments in this source, folded into this draft so one source",
+      " gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,",
+      " part of another card, or dropped.",
+    ].join("\n");
   const opts: ToStringOptions =
     style === "quoted"
       ? { lineWidth: 0, defaultStringType: "QUOTE_DOUBLE", defaultKeyType: "PLAIN", flowCollectionPadding: false }
@@ -190,7 +207,15 @@ export function writeDrafts(report: HarvestReport, docs: SourceDoc[], opts: { ro
     }
 
     const ready: { c: Candidate; draft: DraftFile }[] = [];
-    for (const c of list) {
+    for (const whole of list) {
+      // A folded quote that fails the exact-match check is dropped on its own; the rest of the draft stays.
+      const also = (whole.also ?? []).filter((a) => {
+        const problems = draftViolations({ quote: a.quote, source_span: a.span }, doc.text);
+        if (problems.length) report.dropped.push({ sourceId, reason: `failed the draft check: ${problems[0]}`, quote: a.quote.slice(0, 300) });
+        return !problems.length;
+      });
+      const c: Candidate = also.length === (whole.also?.length ?? 0) ? whole : { ...whole, also };
+      if (!also.length) delete c.also;
       const draft = draftFromCandidate(c, doc, date);
       const schema = DraftFile.safeParse(draft);
       const problems = schema.success ? draftViolations(draft, doc.text) : schema.error.issues.map((i) => `${i.path.join(".")}: ${i.message}`);
@@ -253,8 +278,9 @@ export function knownQuotes(root: string): string[] {
     for (const v of Array.isArray(card?.versions) ? card.versions : []) if (typeof v?.text === "string" && v.text) out.add(v.text);
   }
   for (const path of yamlFiles(join(root, DRAFTS_DIR), true)) {
-    const draft = readYaml(path) as { quote?: unknown } | null;
+    const draft = readYaml(path) as { quote?: unknown; also?: unknown } | null;
     if (typeof draft?.quote === "string" && draft.quote) out.add(draft.quote);
+    for (const a of Array.isArray(draft?.also) ? (draft.also as { quote?: unknown }[]) : []) if (typeof a?.quote === "string" && a.quote) out.add(a.quote);
   }
   return [...out];
 }
@@ -359,7 +385,7 @@ export function prBody(report: HarvestReport, opts: { now?: Date } = {}): string
   const head = [
     `## Intake for ${ukLongDate(date)}`,
     "",
-    `**${plural(candidates.length, "candidate promise")}** from ${sourcesWith.size} of ${plural(report.sources.length, "source")}; ${dropped.length} dropped by the checks; ${plural(errors.length, "error")}.`,
+    `**${plural(quoteCount(candidates), "candidate promise")}**${quoteCount(candidates) !== candidates.length ? ` in ${plural(candidates.length, "draft")} (one per source and speaker)` : ""} from ${sourcesWith.size} of ${plural(report.sources.length, "source")}; ${dropped.length} dropped by the checks; ${plural(errors.length, "error")}.`,
     "",
     `Run finished ${ukTime(now)}${models.length ? ` · model ${models.map((m) => `\`${mdCell(m)}\``).join(", ")}` : ""}. Dates are UK dates; times are UK time.`,
     "",
@@ -408,7 +434,7 @@ export function prBody(report: HarvestReport, opts: { now?: Date } = {}): string
     "### How to review",
     "",
     "1. **An editor** reviews and approves this pull request, after AI Journalist's check; one approval is enough (docs/PROMISE_STANDARD.md §6).",
-    `2. For each draft in \`${DRAFTS_DIR}/${date}/\`: check the quote word for word at the source, then either turn it into a full card in \`content/promises/\` (see \`content/README.md\`), or delete the draft.`,
+    `2. For each draft in \`${DRAFTS_DIR}/${date}/\`: check each quote (its \`quote\`, and any under \`also\`: one draft holds one speaker's commitments in one source) word for word at the source, then either turn it into a full card in \`content/promises/\` (see \`content/README.md\`) or leave it out. Delete the draft once every quote in it is decided.`,
     `3. Before merge, every draft has become a card or been deleted, and \`${DRAFTS_DIR}/${date}/\` (with its \`sources/\` folder) is gone. Nothing is published from drafts.`,
     "4. This pull request is never merged automatically.",
     "",
@@ -441,7 +467,8 @@ export function prBody(report: HarvestReport, opts: { now?: Date } = {}): string
     rows.forEach((c, i) => {
       const s = c.speaker;
       const who = `${MARK[s.check]} ${s.name}${s.role ? `, ${s.role}` : ""}${s.party ? ` (${s.party})` : ""}`;
-      const row = `| \`${mdCell(idsWritten.get(c) ?? String(i + 1))}\` | ${mdCell(who)} | “${mdCell(shorten(c.quote, QUOTE_CELL))}” | ${c.confidence.toFixed(2)} | ${src ? sourceLink(src.url, c.quote) : "–"} |`;
+      const more = c.also?.length ? ` and ${plural(c.also.length, "more quote")} in the draft` : "";
+      const row = `| \`${mdCell(idsWritten.get(c) ?? String(i + 1))}\` | ${mdCell(who)} | “${mdCell(shorten(c.quote, QUOTE_CELL))}”${more} | ${c.confidence.toFixed(2)} | ${src ? sourceLink(src.url, c.quote) : "–"} |`;
       if (row.length + 1 > budget) {
         omitted++;
         return;

@@ -2,10 +2,12 @@
  * Promise intake (M4), run daily by .github/workflows/harvest.yml.
  *
  *   pnpm harvest -- day [--date YYYY-MM-DD] [--dry-run]
- *       Fetch a day's Commons statements, PMQs, written ministerial statements
- *       and GOV.UK press releases (default: yesterday, UK time); Claude proposes
- *       candidate promises; only quotes found verbatim in the source are kept;
- *       one draft per candidate in content/drafts/<date>/, the source texts in
+ *       Fetch a day's Commons statements, PMQs, written ministerial statements,
+ *       GOV.UK press releases, policy papers and consultation outcomes
+ *       (default: yesterday, UK time); Claude proposes candidate promises; only
+ *       quotes found verbatim in the source are kept, and process steps and
+ *       grants are dropped; one draft per source and speaker in
+ *       content/drafts/<date>/, the source texts in
  *       content/drafts/<date>/sources/, and the PR description in
  *       content/drafts/<date>/PR.md (git-ignored).
  *
@@ -14,12 +16,20 @@
  *                          [--speaker "Name"] [--role "…"] [--party "…"] [--dry-run]
  *       The same for one transcript (a text file, or a YouTube video's captions).
  *
+ *   pnpm harvest -- stale [--today YYYY-MM-DD] [--days 7]
+ *       Name every intake branch (origin/intake/<date>, from the last
+ *       `git fetch`) more than seven days old that still holds drafts while
+ *       origin/main has no desk run file for its day, so the weekly desk
+ *       decides them (docs/desk/ROUTINE.md, step 1). Only prints; in GitHub
+ *       Actions each line is a warning on the run.
+ *
  *   --dry-run writes nothing and prints the report.
  *
  * Needs ANTHROPIC_API_KEY for extraction; without it, it fetches, says so and
  * exits 0. INTAKE_MODEL overrides the model. Nothing here publishes anything:
  * drafts go to editors in a pull request (docs/OPERATIONS.md §10).
  */
+import { execFileSync } from "node:child_process";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { createRequire } from "node:module";
 import { join } from "node:path";
@@ -29,9 +39,14 @@ import {
   DRAFTS_DIR,
   extractFromSources,
   fetchDay,
+  intakeDate,
   knownQuotes,
   prBody,
+  quoteCount,
   sourceFromUpload,
+  STALE_INTAKE_DAYS,
+  staleIntakeBranches,
+  staleLine,
   writeDrafts,
   type ExtractClient,
   type HarvestReport,
@@ -51,6 +66,7 @@ function usage(message?: string): never {
       "  pnpm harvest -- day [--date YYYY-MM-DD] [--dry-run]",
       "  pnpm harvest -- upload --url <u> --title <t> --date <YYYY-MM-DD> --venue <venue>",
       "                         [--file <path> | --youtube <url>] [--speaker \"Name\"] [--role \"…\"] [--party \"…\"] [--dry-run]",
+      "  pnpm harvest -- stale [--today YYYY-MM-DD] [--days 7]",
       `  venues: ${Venue.options.join(", ")}`,
     ].join("\n"),
   );
@@ -71,9 +87,12 @@ function isoDate(v: string, name: string): string {
   return v;
 }
 
+/** Today's date in the UK (Europe/London), whatever the machine's time zone. */
+const ukToday = (now = new Date()) => now.toLocaleDateString("en-CA", { timeZone: "Europe/London" });
+
 /** Yesterday's date in the UK (Europe/London), whatever the machine's time zone. */
 function ukYesterday(now = new Date()): string {
-  const today = now.toLocaleDateString("en-CA", { timeZone: "Europe/London" });
+  const today = ukToday(now);
   const d = new Date(`${today}T12:00:00Z`);
   d.setUTCDate(d.getUTCDate() - 1);
   return d.toISOString().slice(0, 10);
@@ -123,7 +142,7 @@ async function run(date: string, fetched: { docs: SourceDoc[]; errors: HarvestRe
     errors: [...fetched.errors, ...extracted.errors],
   };
   const summary = () =>
-    `Intake ${date}: ${plural(docs.length, "source")}, ${plural(report.candidates.length, "candidate promise")}, ${report.dropped.length} dropped, ${plural(report.errors.length, "error")}`;
+    `Intake ${date}: ${plural(docs.length, "source")}, ${plural(quoteCount(report.candidates), "candidate promise")} in ${plural(report.candidates.length, "draft")}, ${report.dropped.length} dropped, ${plural(report.errors.length, "error")}`;
 
   if (dryRun) {
     console.log(JSON.stringify(report, null, 2));
@@ -152,8 +171,40 @@ function failIfNothingWorked(docs: SourceDoc[], report: HarvestReport): void {
   }
 }
 
+/** Intake branches from the last fetch (origin/intake/*): how many drafts each still holds, and whether main has the day's desk run file. */
+function intakeBranches(): { name: string; drafts: number; logged: boolean }[] {
+  const git = (...a: string[]) => execFileSync("git", a, { cwd: root, encoding: "utf8" });
+  const refs = git("for-each-ref", "--format=%(refname:short)", "refs/remotes/origin/intake/").split("\n").filter(Boolean);
+  const runs = new Set(git("ls-tree", "--name-only", "origin/main", "docs/desk/runs/").split("\n").map((f) => f.split("/").pop()));
+  return refs.flatMap((ref) => {
+    const date = intakeDate(ref);
+    if (!date) return [];
+    const files = git("ls-tree", "--name-only", ref, `${DRAFTS_DIR}/${date}/`).split("\n");
+    return [{ name: ref, drafts: files.filter((f) => f.endsWith(".yaml")).length, logged: runs.has(`${date}.yaml`) }];
+  });
+}
+
+function stale(): void {
+  const today = isoDate(flag("--today") ?? ukToday(), "--today");
+  const daysFlag = flag("--days");
+  const days = daysFlag === undefined ? STALE_INTAKE_DAYS : Number(daysFlag);
+  if (!Number.isInteger(days) || days < 0) usage("--days must be a whole number of days");
+  const old = staleIntakeBranches(intakeBranches(), today, days);
+  if (!old.length) {
+    console.log(`No open intake branch is more than ${plural(days, "day")} old.`);
+    return;
+  }
+  for (const s of old) {
+    const line = staleLine(s);
+    // In GitHub Actions, a warning on the workflow run, so it shows without opening the log. Never fails the run.
+    console.log(process.env.GITHUB_ACTIONS === "true" ? `::warning title=Old intake branch::${line}` : line);
+  }
+}
+
 async function main(): Promise<void> {
-  if (command === "day") {
+  if (command === "stale") {
+    stale();
+  } else if (command === "day") {
     const date = isoDate(flag("--date") ?? ukYesterday(), "--date");
     await run(date, await fetchDay(date));
   } else if (command === "upload") {

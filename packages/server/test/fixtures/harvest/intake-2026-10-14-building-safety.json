@@ -1,0 +1,207 @@
+{
+ "_note": "The seven drafts intake/2026-10-14 wrote for one GOV.UK release (commit 4262706), as stored, and what the desk made of them on 16 October 2026 (docs/desk/runs/2026-10-14.yaml): two cards and five duplicates.",
+ "source": {
+  "id": "govuk-major-milestone-reached-in-ending-building-safety-crisis",
+  "url": "https://www.gov.uk/government/news/major-milestone-reached-in-ending-building-safety-crisis",
+  "title": "Major milestone reached in ending building safety crisis",
+  "date": "2026-10-14",
+  "venue_label": "Press release (Ministry of Housing, Communities and Local Government)"
+ },
+ "desk": {
+  "card": {
+   "2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-1": "uk-cladding-legal-duty-2026",
+   "2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-3": "uk-cladding-remediation-2029"
+  },
+  "duplicate": [
+   "2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-2",
+   "2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-4",
+   "2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-5",
+   "2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-6",
+   "2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-7"
+  ]
+ },
+ "drafts": [
+  {
+   "id": "2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-1",
+   "quote": "The Bill brings forward a new legal duty on those responsible for the safety of their buildings, such as freeholders, to identify, assess, and fix issues without delay – anyone who obstructs this work could face criminal penalties.",
+   "source_span": [
+    1570,
+    1801
+   ],
+   "speaker": {
+    "name": "HM Government",
+    "role": "Ministry of Housing, Communities and Local Government",
+    "party": null,
+    "member_id": null,
+    "actor_id": "hm-government",
+    "check": "segment"
+   },
+   "suggested": {
+    "policy_area": "housing_env",
+    "who": "Those responsible for building safety, such as freeholders",
+    "how_much": null,
+    "when": null,
+    "funded_by": null,
+    "deadline": null
+   },
+   "why": "The Bill will create a legal duty on those responsible for building safety, such as freeholders, to identify, assess and fix cladding issues, with criminal penalties for anyone who obstructs the work.",
+   "confidence": 0.6
+  },
+  {
+   "id": "2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-2",
+   "quote": "In addition, there will be a stronger enforcement framework to sanction responsible entity that fail to comply with a Remediation Order, enabling the First-tier Tribunal to hand down financial penalties of up to £500,000.",
+   "source_span": [
+    1802,
+    2023
+   ],
+   "speaker": {
+    "name": "HM Government",
+    "role": "Ministry of Housing, Communities and Local Government",
+    "party": null,
+    "member_id": null,
+    "actor_id": "hm-government",
+    "check": "segment"
+   },
+   "suggested": {
+    "policy_area": "housing_env",
+    "who": "Responsible entities failing to comply with Remediation Orders",
+    "how_much": "penalties of up to £500,000",
+    "when": null,
+    "funded_by": null,
+    "deadline": null
+   },
+   "why": "Through the Remediation of Unsafe Cladding Bill, the First-tier Tribunal will gain the power to fine those who fail to comply with a Remediation Order up to £500,000.",
+   "confidence": 0.65
+  },
+  {
+   "id": "2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-3",
+   "quote": "The expectation remains that by the end of 2029, every building over 11 metres with unsafe cladding should either have been remediated or have a clear date for completion – the key change being that tougher powers will become available before this.",
+   "source_span": [
+    2024,
+    2272
+   ],
+   "speaker": {
+    "name": "HM Government",
+    "role": "Ministry of Housing, Communities and Local Government",
+    "party": null,
+    "member_id": null,
+    "actor_id": "hm-government",
+    "check": "segment"
+   },
+   "suggested": {
+    "policy_area": "housing_env",
+    "who": "Residents of buildings over 11 metres with unsafe cladding",
+    "how_much": null,
+    "when": "by the end of 2029",
+    "funded_by": null,
+    "deadline": "2029-12-31"
+   },
+   "why": "Restates the earlier Remediation Acceleration Plan target that, by the end of 2029, every building over 11 metres with unsafe cladding will be remediated or have a clear completion date. Editors should quote the original commitment.",
+   "confidence": 0.6
+  },
+  {
+   "id": "2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-4",
+   "quote": "As a safety net, third parties, such as Homes England or local authorities, will be able to step in and carry out remediation if those responsible continuously fail to act – reassuring residents that works will go ahead.",
+   "source_span": [
+    2302,
+    2522
+   ],
+   "speaker": {
+    "name": "HM Government",
+    "role": "Ministry of Housing, Communities and Local Government",
+    "party": null,
+    "member_id": null,
+    "actor_id": "hm-government",
+    "check": "segment"
+   },
+   "suggested": {
+    "policy_area": "housing_env",
+    "who": "Residents of buildings where responsible parties fail to act; Homes England; local authorities",
+    "how_much": null,
+    "when": null,
+    "funded_by": null,
+    "deadline": null
+   },
+   "why": "The Bill will give third parties such as Homes England or local authorities the power to carry out remediation where those responsible repeatedly fail to act.",
+   "confidence": 0.55
+  },
+  {
+   "id": "2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-5",
+   "quote": "A new register of all medium rise residential buildings in England will help ensure no building falls through the net. Failure to register could result in civil penalties of up to £7,000 with higher financial penalties of up to £40,000 or prosecution available.",
+   "source_span": [
+    3181,
+    3442
+   ],
+   "speaker": {
+    "name": "HM Government",
+    "role": "Ministry of Housing, Communities and Local Government",
+    "party": null,
+    "member_id": null,
+    "actor_id": "hm-government",
+    "check": "segment"
+   },
+   "suggested": {
+    "policy_area": "housing_env",
+    "who": "Owners of medium rise residential buildings in England",
+    "how_much": "civil penalties of up to £7,000; higher penalties of up to £40,000",
+    "when": null,
+    "funded_by": null,
+    "deadline": null
+   },
+   "why": "The Bill will create a register of all medium-rise residential buildings in England, with civil penalties of up to £7,000 and higher penalties of up to £40,000 or prosecution for failing to register.",
+   "confidence": 0.65
+  },
+  {
+   "id": "2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-6",
+   "quote": "Fire risk appraisals of external walls (FRAEWs) – which help determine whether remediation is needed – will be required to follow a consistent approach to assessment, where buildings are judged on the same basis, and risks identified through independently audited, evidence-based assessments.",
+   "source_span": [
+    3443,
+    3735
+   ],
+   "speaker": {
+    "name": "HM Government",
+    "role": "Ministry of Housing, Communities and Local Government",
+    "party": null,
+    "member_id": null,
+    "actor_id": "hm-government",
+    "check": "segment"
+   },
+   "suggested": {
+    "policy_area": "housing_env",
+    "who": null,
+    "how_much": null,
+    "when": null,
+    "funded_by": null,
+    "deadline": null
+   },
+   "why": "The Bill will require fire risk appraisals of external walls (FRAEWs) to follow a consistent, independently audited assessment approach.",
+   "confidence": 0.5
+  },
+  {
+   "id": "2026-10-14-govuk-major-milestone-reached-in-ending-building-safety-crisis-7",
+   "quote": "And where an assessment recommends remedial work, responsible entities will be required to share a plan with residents, setting out the steps and proposed timescales for remediating each building they are responsible for.",
+   "source_span": [
+    3736,
+    3957
+   ],
+   "speaker": {
+    "name": "HM Government",
+    "role": "Ministry of Housing, Communities and Local Government",
+    "party": null,
+    "member_id": null,
+    "actor_id": "hm-government",
+    "check": "segment"
+   },
+   "suggested": {
+    "policy_area": "housing_env",
+    "who": "Residents of buildings where remediation is recommended; responsible entities",
+    "how_much": null,
+    "when": null,
+    "funded_by": null,
+    "deadline": null
+   },
+   "why": "The Bill will require responsible entities to share a remediation plan, with steps and timescales, with residents wherever an assessment recommends remedial work.",
+   "confidence": 0.55
+  }
+ ]
+}

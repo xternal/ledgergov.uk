@@ -1,13 +1,22 @@
 /**
  * Promise intake from published sources (M4). Shared shapes for the three
- * parts: sources (fetch a day's Hansard, written statements and GOV.UK press
- * releases, or an uploaded transcript), extraction (Claude proposes candidate
- * promises; we keep only quotes found verbatim in the source) and drafts
- * (one YAML per candidate in content/drafts/<date>/, opened as a PR labelled
+ * parts: sources (fetch a day's Hansard, written statements, GOV.UK press
+ * releases, policy papers and consultation outcomes, or an uploaded
+ * transcript), extraction (Claude proposes candidate promises; we keep only
+ * quotes found verbatim in the source, drop process steps and grants, and fold
+ * one speaker's commitments in one source together) and drafts (one YAML per
+ * source and speaker in content/drafts/<date>/, opened as a PR labelled
  * `intake`, never merged automatically).
  */
 
-export type SourceKind = "hansard_statement" | "hansard_pmqs" | "hansard_wms" | "govuk_press_release" | "upload";
+export type SourceKind =
+  | "hansard_statement"
+  | "hansard_pmqs"
+  | "hansard_wms"
+  | "govuk_press_release"
+  | "govuk_policy_paper"
+  | "govuk_consultation_outcome"
+  | "upload";
 
 /** Matches the Venue enum in @ledger/schema. */
 export type Venue = "manifesto" | "speech" | "debate" | "tv" | "interview" | "press_release" | "parliament" | "social";
@@ -36,7 +45,7 @@ export interface SourceDoc {
   /** The day the words were said or published (UK date, ISO). */
   date: string;
   venue: Venue;
-  /** "Commons statement", "Prime Minister's Questions", "Written ministerial statement", "Press release (HM Treasury)" */
+  /** "Commons statement", "Prime Minister's Questions", "Written ministerial statement", "Press release (HM Treasury)", "Policy paper (Department for Education)" */
   venueLabel: string;
   /** Plain text. Quotes and spans refer to exactly this string. */
   text: string;
@@ -82,6 +91,20 @@ export interface Candidate {
   /** 0–1, the model's own estimate that editors will accept it. */
   confidence: number;
   model: string;
+  /**
+   * The same speaker's other commitments in the same source, folded into this
+   * candidate's draft (foldCandidates): one draft per source and speaker.
+   */
+  also?: FoldedQuote[];
+}
+
+/** A candidate folded into another one's draft: its own exact quote and span, and what the model said of it. */
+export interface FoldedQuote {
+  quote: string;
+  span: [number, number];
+  suggested: CandidateSuggestion;
+  why: string;
+  confidence: number;
 }
 
 /** What one day's run produced, for the PR body and the run log. */
