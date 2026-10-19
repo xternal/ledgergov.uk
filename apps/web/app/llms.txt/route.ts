@@ -10,7 +10,7 @@ import { FAQ } from "@/lib/faq";
 import { gbpBn, grouped, poundsPence } from "@/lib/format";
 import { pctGdp, per100, ratio, span, spendingSpan } from "@/lib/people-view";
 import { AREA_LABEL, costText } from "@/lib/promises";
-import { absolute, SITE_DESCRIPTION, SITE_NAME, SOURCE_CODE } from "@/lib/site";
+import { absolute, alsoByLlms, SITE_DESCRIPTION, SITE_NAME, SOURCE_CODE } from "@/lib/site";
 import { MP_DESCRIPTION } from "@/lib/mp-copy";
 import { PRIVACY_SUMMARY } from "@/lib/privacy-copy";
 import { BUDGET, BUDGET_TOPICS, topicCards } from "@/lib/budget";
@@ -148,6 +148,8 @@ export function GET() {
     "## Questions",
     "",
     ...FAQ.flatMap(({ q, a }) => [`### ${q}`, "", a, ""]),
+    ...alsoByLlms(),
+    "",
   ];
   return new Response(lines.join("\n"), { headers: { "content-type": "text/plain; charset=utf-8" } });
 }

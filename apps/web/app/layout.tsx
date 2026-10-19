@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
 import { isAlpha, MAKER, OPEN_GRAPH, SITE_DESCRIPTION, SITE_NAME, siteUrl, SOURCE_CODE } from "@/lib/site";
+import { AlsoBy } from "@/components/AlsoBy";
 import { FooterLink } from "@/components/FooterLink";
 import "./globals.css";
 
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         )}
         {children}
         <footer className="mx-auto max-w-[1200px] px-4 pb-8 pt-6 text-caption text-muted sm:px-6">
+          <AlsoBy />
           <p className="m-0 flex flex-wrap gap-x-3 gap-y-1">
             <span>
               Made by{" "}
