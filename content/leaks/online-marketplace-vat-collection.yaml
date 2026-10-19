@@ -1,0 +1,12 @@
+id: online-marketplace-vat-collection
+headline: Make online marketplaces collect VAT for their sellers
+area: taxes
+summary: >-
+  The Times reports that the Chancellor is expected to make online marketplaces such as Amazon, eBay
+  and Temu collect VAT at source for business sellers with turnover above £90,000, with the money
+  going towards business rates cuts for high street shops. The Treasury declined to comment.
+reported:
+  - outlet: The Times
+    date: "2026-10-13"
+    url: https://www.thetimes.com/uk/politics/article/amazon-ebay-temu-vat-tax-high-street-d5btx6qbt
+status: trailed

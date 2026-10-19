@@ -1,0 +1,21 @@
+id: bank-surcharge-rise
+headline: Raise the surcharge on bank profits
+area: taxes
+summary: >-
+  The Guardian reports that the Chancellor has decided to raise more tax from banks in the Budget,
+  and is believed to be minded to raise the bank surcharge on profits, which industry figures expect
+  to go back to 8% from 3%. Reversing the 2023 cut to the surcharge is described as one option under
+  discussion; the report does not say a final form has been chosen.
+reported:
+  - outlet: The Guardian
+    date: "2026-10-15"
+    url: https://www.theguardian.com/uk-news/2026/oct/15/john-healey-raise-taxes-banks-budget
+    title: John Healey poised to raise taxes on banks in budget
+estimated_cost:
+  range: [-2.25, -2.25, -2.25]
+  basis: per_year
+  period: not stated by the source
+  by: { kind: independent, name: TUC }
+  source_url: https://www.theguardian.com/uk-news/2026/oct/15/john-healey-raise-taxes-banks-budget
+  note: For a return of the surcharge to 8%, as quoted in the Guardian report; the report itself says reversing the cut would raise upwards of £2bn a year.
+status: trailed
