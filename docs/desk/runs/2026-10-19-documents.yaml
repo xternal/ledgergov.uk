@@ -1,0 +1,33 @@
+# One weekly editor's desk run over the week's big GOV.UK documents (docs/desk/ROUTINE.md, steps 6 and 7).
+# Counts are of the commitments weighed in the documents read; each has exactly one outcome.
+intake_date: "2026-10-19" # documents published 12 to 19 October 2026 (GOV.UK search, policy and engagement); 11 to 17 October was read on 18 October
+triaged_on: "2026-10-19"
+by: Claude as AI Journalist (weekly editor's desk routine)
+pull_request: null # no cards, so no pull request is needed for cards; this file records the week's numbers
+sources_read: 1
+candidates: 1
+outcomes:
+  card: 0
+  reworded: 0
+  duplicate: 0
+  existing: 0
+  grant: 0
+  done: 0
+  process: 0
+  broad: 0
+  event: 1
+  cap: 0
+  other: 0
+quotes_exact: 0
+new_actors: []
+cards: []
+reworded: []
+documents:
+  - { title: "UK-Nigeria Migration, Justice and Home Affairs dialogue 2026: joint communiqué (Home Office, 16 Oct)", url: "https://www.gov.uk/government/publications/uk-nigeria-migration-justice-and-home-affairs-dialogue-2026/united-kingdom-nigeria-migration-justice-and-home-affairs-dialogue-2026-joint-communique", cards: [] }
+skipped: # listed by the search but not read in full
+  - "Read on 18 October (docs/desk/runs/2026-10-18-documents.yaml): criminal courts response, Organic Action Plan, council tax enforcement response, Covid-19 Inquiry Module 4 response, heating oil response, building charges response, Open Government priorities"
+  - "Not new this week (older documents updated, by first publication date): Fixed Telecoms Modernisation Charter and Telecoms CNI Charter (March 2026), CBAM policy summary (February 2026; already a card, uk-carbon-border-levy-2027), stalking and domestic abuse perpetrator standards (July 2026), Leicester Prison and HMP Bure action plans, approved premises action plans"
+  - Open consultations and calls for evidence (proposals, not commitments), impact assessments, and technical outcomes (offshore decommissioning, standard essential patents, common charger, T Level content)
+dropped:
+  - { document: UK-Nigeria joint communiqué, code: event, note: "the only dated item is a jointly led reintegration conference 'early next year'; the rest is continued cooperation with no checkable outcome" }
+# No intake pull requests were open this week: the intakes of 13 to 16 October were triaged on 18 October (#119), and the daily intake of 17 and 18 October found no candidates.
