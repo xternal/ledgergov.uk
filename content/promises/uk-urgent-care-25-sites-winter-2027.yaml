@@ -1,0 +1,64 @@
+format: openpromises/1
+id: uk-urgent-care-25-sites-winter-2027
+headline:
+  en: 25 urgent care sites open for winter
+actor_id: hm-government
+made_on: "2026-10-18"
+venue: press_release
+venue_label:
+  en: Press release (Department of Health and Social Care)
+area: health
+status: promised
+status_note:
+  en: >-
+    A restatement: the release says these 25 new or expanded urgent care sites were announced in
+    April, read as April 2026 since the release is dated 18 October 2026. "For winter" is read as by
+    the last day of winter, 28 February 2027. The release does not list the sites or give their cost.
+    The card moves when the department or NHS England reports the 25 sites open.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department of Health and Social Care press release, 18 Oct 2026: £140 million boost to
+      urgent care to ease winter pressures on NHS
+    url: https://www.gov.uk/government/news/140-million-boost-to-urgent-care-to-ease-winter-pressures-on-nhs
+versions:
+  - version: 1
+    text: >-
+      A further 25 new or expanded urgent care sites announced in April will be open for
+      winter, providing additional frontline capacity as the NHS prepares for the heavy
+      demands of the colder months.
+    recorded_on: "2026-10-18"
+    source_url: https://www.gov.uk/government/news/140-million-boost-to-urgent-care-to-ease-winter-pressures-on-nhs
+    quote_checked_on: "2026-10-19"
+    parameters:
+      who:
+        en: NHS patients in England using urgent care this winter
+      cost:
+        note:
+          en: No cost has been published for these 25 sites.
+      when:
+        en: For winter 2026 to 2027
+      deadline: "2027-02-28"
+      funded_by: null
+events:
+  - date: "2026-10-18"
+    type: promised
+    text:
+      en: >-
+        The government says 25 new or expanded urgent care sites announced in April will be open for
+        winter
+  - date: "2027-02-28"
+    type: deadline
+    text:
+      en: 25 new or expanded urgent care sites due open for winter
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-19"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,24 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Counts are of drafts; every draft has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-10-18"
+triaged_on: "2026-10-19"
+by: Claude Opus 5.5, by hand, on Pavel Guzhikov's "publish the intake" (19 Oct 2026)
+pull_request: 122
+sources_read: 1
+candidates: 2
+outcomes:
+  card: 2
+  reworded: 0
+  duplicate: 0
+  existing: 0
+  grant: 0
+  done: 0
+  process: 0
+  broad: 0
+  event: 0
+  cap: 0
+quotes_exact: 2
+new_actors: []
+cards:
+  - uk-urgent-care-14-schemes-2026
+  - uk-urgent-care-25-sites-winter-2027
