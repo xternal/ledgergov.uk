@@ -215,6 +215,12 @@
     "checked_on": "2026-10-13",
     "sha256": "f44b4bb943cde778e955dff9f90e2b46cb4e0925dbde9e6e2513633a250649b6"
   },
+  "99165c15db6566fb788de9b151b1d42f8f51764ea11bf53aacc542ba0fb20597|https://www.gov.uk/government/news/140-million-boost-to-urgent-care-to-ease-winter-pressures-on-nhs": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/140-million-boost-to-urgent-care-to-ease-winter-pressures-on-nhs",
+    "checked_on": "2026-10-19",
+    "sha256": "fe587e89a8b25967e4fea8b820b5b9272278caf7365a0881c20e6cb17e9606d3"
+  },
   "9b66dc97a6abd032e0928d90f2c108588bcb941dff7c0fc695f1a58c27fd4551|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372",
@@ -328,6 +334,12 @@
     "url": "https://www.gov.uk/government/news/exeter-self-driving-boat-manufacturer-goes-overseas-with-government-backed-finance",
     "checked_on": "2026-10-18",
     "sha256": "cb2d6256bd9d4b0892889aed25414eef77a0aca206ffc1bd1c92fda6dd7cc6ff"
+  },
+  "dc2e8de04ee53eeed3f798eb888a72ee2804b6c34b45d71851a27348329c388a|https://www.gov.uk/government/news/140-million-boost-to-urgent-care-to-ease-winter-pressures-on-nhs": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/140-million-boost-to-urgent-care-to-ease-winter-pressures-on-nhs",
+    "checked_on": "2026-10-19",
+    "sha256": "fe587e89a8b25967e4fea8b820b5b9272278caf7365a0881c20e6cb17e9606d3"
   },
   "dd9b0baf477ea257f035317b29afe4ee46c64a1d662e3de398d54a3adf127d7a|https://questions-statements.parliament.uk/written-statements/detail/2026-10-16/HCWS387": {
     "match": "exact",

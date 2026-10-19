@@ -1,0 +1,63 @@
+format: openpromises/1
+id: uk-urgent-care-14-schemes-2026
+headline:
+  en: £140m for 14 new urgent care schemes
+actor_id: hm-government
+made_on: "2026-10-18"
+venue: press_release
+venue_label:
+  en: Press release (Department of Health and Social Care)
+area: health
+status: promised
+status_note:
+  en: >-
+    The release lists the 14 schemes in its notes to editors, with the hospital and the money for
+    each: new urgent treatment centres, same day emergency care services, ambulance fleets and
+    emergency department upgrades. Some amounts are spread over two or four years, and the release
+    gives no date for the schemes to open. The card moves when the department or NHS England reports
+    the schemes funded or open.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department of Health and Social Care press release, 18 Oct 2026: £140 million boost to
+      urgent care to ease winter pressures on NHS
+    url: https://www.gov.uk/government/news/140-million-boost-to-urgent-care-to-ease-winter-pressures-on-nhs
+versions:
+  - version: 1
+    text: >-
+      Today (18 October), the government is announcing that almost £140 million will be
+      invested in 14 new urgent care schemes across England, including new urgent treatment
+      centres (UTCs) and same day emergency care services (SDECs), new ambulance fleets, and
+      emergency department upgrades, providing a significant increase in frontline and urgent
+      care capacity.
+    recorded_on: "2026-10-18"
+    source_url: https://www.gov.uk/government/news/140-million-boost-to-urgent-care-to-ease-winter-pressures-on-nhs
+    quote_checked_on: "2026-10-19"
+    parameters:
+      who:
+        en: NHS patients in England using urgent and emergency care at the 14 hospitals named
+      cost:
+        note:
+          en: >-
+            The release says almost £140 million across the 14 schemes, with no single period: its
+            notes spread some amounts over two or four years.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-18"
+    type: promised
+    text:
+      en: >-
+        The government announces almost £140 million for 14 new urgent care schemes across England
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-19"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
