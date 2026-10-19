@@ -76,7 +76,8 @@ async function main() {
   if (!packages.length) throw new Error("pnpm-lock.yaml pins no @openpromises/* package: nothing to check, which is itself wrong");
   const problems: string[] = [];
   for (const { name, version, integrity } of packages) {
-    const id = name.replace("/", "%2f");
+    // A scoped name keeps its "@" and encodes every "/" (npm registry URL form).
+    const id = name.split("/").join("%2f");
     const meta = await json<{ dist: { integrity: string } }>(`${REGISTRY}/${id}/${version}`);
     if (integrity !== meta.dist.integrity) problems.push(`${name}@${version}: pnpm-lock.yaml pins a different tarball from the one the registry serves`);
     // A package published without provenance has no attestations: the registry answers 404, which is a problem to report.
