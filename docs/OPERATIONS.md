@@ -332,7 +332,7 @@ pnpm parity:check       # on the change: writes .parity/current, compares, exits
 
 ## 15. The OpenPromises check
 
-LedgerGov.UK's cards are in the format of the open-source OpenPromises engine ([github.com/xternal/openpromises](https://github.com/xternal/openpromises), its `docs/MIGRATING.md`) since 12 October 2026; the site reads them into its own shape (`packages/schema/src/v1.ts`), so nothing readers see changed. The engine is pinned at 0.6.0 (since 13 October 2026): `@openpromises/cli` and `@openpromises/core` as dev dependencies for the check, and `@openpromises/core` and `@openpromises/publish` as dependencies of `packages/schema` for the verification label below. `openpromises.config.ts` at the repository root describes the site, and CI runs the engine's check after our own one. Since the switch on 12 October 2026 it blocks a merge like any other check; on a fork's pull request, which gets no secrets and so no editors list, it runs as a report only.
+LedgerGov.UK's cards are in the format of the open-source OpenPromises engine ([github.com/xternal/openpromises](https://github.com/xternal/openpromises), its `docs/MIGRATING.md`) since 12 October 2026; the site reads them into its own shape (`packages/schema/src/v1.ts`), so nothing readers see changed. The engine is pinned at 0.10.0 (since 19 October 2026): `@openpromises/cli` and `@openpromises/core` as dev dependencies for the check, `@openpromises/core` and `@openpromises/publish` as dependencies of `packages/schema` for the verification label and the home page's promises below, and `@openpromises/react` in `apps/web` for the home page's promises. `openpromises.config.ts` at the repository root describes the site, and CI runs the engine's check after our own one. Since the switch on 12 October 2026 it blocks a merge like any other check; on a fork's pull request, which gets no secrets and so no editors list, it runs as a report only.
 
 ```bash
 pnpm exec openpromises validate --no-base   # everything the engine would object to today
@@ -340,6 +340,25 @@ pnpm exec openpromises validate             # the same, plus its own append-only
 ```
 
 Locally, point it at your own copy of the editors list: `OPENPROMISES_EDITORS=~/path/editors.yaml pnpm exec openpromises validate`.
+
+### New releases install at once, with a provenance check (since 19 October 2026)
+
+OpenPromises' packages install as soon as a release is published (OpenPromises decision 32; docs/DECISIONS.md). `pnpm-workspace.yaml` has one line for it, `minimumReleaseAgeExclude: ["@openpromises/*"]`; every other package still waits pnpm's 1,440 minutes. If `pnpm install` adds anything else to that file, take it out. In exchange, CI checks where the packages came from, right after installing and before any of their code runs:
+
+```bash
+npm audit signatures                        # at the root, and again in apps/web (the only place @openpromises/react is reached)
+pnpm openpromises:provenance                # every @openpromises/* package in pnpm-lock.yaml
+```
+
+`npm audit signatures` verifies the registry's signatures and attestations. `pnpm openpromises:provenance` (`scripts/openpromises-provenance.ts`, from RussiaLedger.com's) checks that each package was built by `.github/workflows/release.yml` in github.com/xternal/openpromises from `refs/tags/v<version>`, that its provenance covers the tarball the registry serves (the attestation's sha512 is the registry's `dist.integrity`), and that `pnpm-lock.yaml` pins that same tarball. A failure names the package and what was wrong: do not merge, and tell Pavel.
+
+To adopt a release, take a parity baseline on main (§14), move every package together, read the changelog's "Upgrading" notes for each version passed, then run the checks:
+
+```bash
+pnpm parity:snapshot                        # on main, before the change
+pnpm up -r "@openpromises/*@<version>"
+pnpm openpromises:provenance && pnpm test && pnpm typecheck && pnpm parity:check
+```
 
 The list is a YAML file in the engine's format (OpenPromises `docs/FORMAT.md` §12): a top-level `editors:` with one entry per editor (`handle`, `since`, `party`). Check it locally first, then set the secret from the file, never by pasting at the prompt, which keeps only one line:
 
@@ -356,7 +375,7 @@ Since 12 October 2026 every card and actor is in OpenPromises format v1 and the 
 
 ### Publishing by checks (since 0.6.0)
 
-`openpromises.config.ts` sets `editorial.publish: "checked"` (OpenPromises decision 22). A card whose `origin` is `manual` or `llm_intake` is published once every automatic check passes; editors' approvals no longer hold it back, they become its verification label. A reader's submission (`origin: reader_submission`), or a card that does not say its origin, still needs editors' approvals (invariant 8). Pavel decided on 17 October 2026 that one is enough, but the engine refuses `editorial.approvals` below 2 (0.6.0, "principle 4"), so the setting stays 2, and the engine's check asks for two on these cards, until a release accepts 1 (OpenPromises 0.7.0, decision 27; a TODO beside the setting).
+`openpromises.config.ts` sets `editorial.publish: "checked"` (OpenPromises decision 22). A card whose `origin` is `manual` or `llm_intake` is published once every automatic check passes; editors' approvals no longer hold it back, they become its verification label. A reader's submission (`origin: reader_submission`), or a card that does not say its origin, still needs an editor's approval (invariant 8). Pavel decided on 17 October 2026 that one is enough: `editorial.approvals` is 1 since the site moved to OpenPromises 0.10.0 on 19 October 2026 (0.7.0 was the first release to accept it, decision 27), so the engine's check asks for one on these cards, as the site's own `APPROVALS_NEEDED` does.
 
 A card no editor has approved yet must have its words matched by a machine: a stored-source span, or an archive check that found them exactly. An editor's `quote_checked_on` counts only once an editor has approved the card. To check a new card's quote against a saved copy of its source, save the page (its HTML, or its text) and run:
 
@@ -370,7 +389,7 @@ Commit `content/quotes.json` with the card. Only `exact` lets a card without app
 
 ### The verification label and the editors list on Vercel
 
-Every card shows how far it has been verified (decision 23): "Verified by Pavel Guzhikov and 1 independent editor", "Checked automatically by AI Journalist, not yet verified by an editor", or "Not yet verified by an editor". It appears on the card page, as the tick in the promise list, in the card's Markdown and llms-full.txt, and as `verification` on each card in `/api/v1/promises`. The engine counts it from the approvals on the card and the private editors list: an editor is named if their entry says `named: true`, and counted otherwise.
+Every card shows how far it has been verified (decision 23): "Verified by Pavel Guzhikov and 1 independent editor", "Checked automatically by AI Journalist, not yet verified by an editor", or "Not yet verified by an editor". Since 0.7.0 (decision 27) the label names the automated checker too when a card has both an editor's approval and AI Journalist's review: "Verified by Pavel Guzhikov, checked by AI Journalist". Where the site adds the day of the approval, it gets a clause of its own, so it is not read as the checker's: "Verified by Pavel Guzhikov, checked by AI Journalist; approved on 12 October 2026". It appears on the card page, as the tick in the promise list, in the card's Markdown and llms-full.txt, and as `verification` on each card in `/api/v1/promises`. The engine counts it from the approvals on the card and the private editors list: an editor is named if their entry says `named: true`, and counted otherwise.
 
 The build reads the list from `OPENPROMISES_EDITORS_YAML` (the file's text: Vercel, and CI's build step) or else `OPENPROMISES_EDITORS` (a path: a laptop). Set it on Vercel for production and preview, from the file, never by pasting:
 
@@ -380,6 +399,10 @@ vercel env add OPENPROMISES_EDITORS_YAML preview < ~/.config/openpromises/editor
 ```
 
 Without the list the site keeps the wording it had before 0.6.0 ("Checked by Pavel Guzhikov and 1 independent editor", from `NAMED_EDITORS` in `packages/schema/src/approvals.ts`) and the API's `verification` is `null`, so a deploy without the variable is safe. A list that is not in the engine's shape stops the build, saying where but never what it holds. When the list changes (a new editor, someone choosing to be named), update the GitHub secret and both Vercel variables from the same file, then redeploy.
+
+### Promises on the home page (since 0.10.0)
+
+The home page shows the engine's `PromiseSpotlight` second, after the site's own opening and before the budget statement (OpenPromises decision 30; docs/DECISIONS.md): how many promises are tracked and where they stand, the three latest changes and the three open promises due next, each a link to its card ending "Open the promise →", then "All promises →". The opening ends with "N promises tracked →". The engine picks the cards by its rule (`spotlight()`), never by hand, from the cards /promises lists (`packages/schema/src/spotlight.ts` reads them in format v1 with `openpromises.config.ts`). The page is built for its build day, like /promises, so a new deploy refreshes the choice. Its look is the site's (`.op-spotlight` in `apps/web/app/globals.css`), not the engine's stylesheet, whose dark mode is navy; where a party stands reads as on the site's own lists ("in government"), from `standing.*` in the configuration's `messages`. Every row of the site's own promise list ends "Open the promise →" too.
 
 ## 16. Page view counts (Upstash Redis)
 

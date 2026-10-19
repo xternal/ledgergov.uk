@@ -2,8 +2,10 @@
  * How far each card has been verified (OpenPromises 0.6.0, decision 23): the
  * engine's `verification` counts the editors' approvals as its approvals rule
  * does, and `verificationText` puts the level in words ("Verified by Pavel
- * Guzhikov and 1 independent editor", "Checked automatically by AI Journalist,
- * not yet verified by an editor", "Not yet verified by an editor").
+ * Guzhikov, checked by AI Journalist", "Checked automatically by AI Journalist,
+ * not yet verified by an editor", "Not yet verified by an editor"). Since 0.7.0
+ * (decision 27) the label names the automated checker beside the editors when
+ * a card has both.
  *
  * It needs the private editors list, which says which editors chose to be
  * named (`named: true`) and who was an editor when. The list reaches the build
@@ -33,8 +35,8 @@ import type { Seed } from "./seed";
  * the config's messages). verification.test.ts checks this against the config.
  */
 export const SITE_EDITORIAL = {
-  // TODO(openpromises-0.7.0): 1, with openpromises.config.ts, once the engine accepts it (Pavel, 17 October 2026; decision 27).
-  approvals: 2,
+  // One editor's approval (Pavel, 17 October 2026; OpenPromises decision 27, accepted by the engine since 0.7.0).
+  approvals: 1,
   publish: "checked",
   renamed: { "Junior Editor": "AI Journalist" } as Record<string, string>,
 } as const;
@@ -43,7 +45,7 @@ let english: ReturnType<typeof words> | undefined;
 
 export interface CardVerification {
   level: VerificationLevel;
-  /** The label as readers see it: "Verified by Pavel Guzhikov and 1 independent editor". */
+  /** The label as readers see it: "Verified by Pavel Guzhikov, checked by AI Journalist". */
   text: string;
   /** Editors who approved and chose to be named, in the order they approved. */
   named: string[];
@@ -54,8 +56,8 @@ export interface CardVerification {
   /** The day of the latest approval that counts; null when no editor has approved the card. */
   on: string | null;
   /**
-   * True when the card has an editor's approval but publication waits for more: a reader's submission, while the
-   * engine still counts two (SITE_EDITORIAL.approvals). With one approval needed, a card is never waiting for another.
+   * True when the card has an editor's approval but publication waits for more (a reader's submission, when
+   * SITE_EDITORIAL.approvals is above 1). With one approval needed, as since 19 October 2026, it is always false.
    */
   secondToCome: boolean;
 }

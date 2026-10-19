@@ -122,7 +122,7 @@ describe("API v1 shapes", () => {
     const gbe = labelled.find((x) => x.id === "uk-great-british-energy-2024")!;
     expect(gbe.verification).toEqual({
       level: "editors",
-      text: "Verified by Pavel Guzhikov and 1 independent editor",
+      text: "Verified by Pavel Guzhikov and 1 independent editor, checked by AI Journalist",
       named: ["Pavel Guzhikov"],
       counted: 1,
       automated: ["AI Journalist"],

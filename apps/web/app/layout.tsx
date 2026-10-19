@@ -41,22 +41,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <footer className="mx-auto max-w-[1200px] px-4 pb-8 pt-6 text-caption text-muted sm:px-6">
           <AlsoBy />
-          <p className="m-0 flex flex-wrap gap-x-3 gap-y-1">
+          {/* Items are set apart by space alone: no middle-dot separators (docs/DESIGN_HANDOFF.md, Visual direction). */}
+          <p className="m-0 flex flex-wrap gap-x-6 gap-y-1">
             <span>
               Made by{" "}
               <a href={MAKER.url} rel="author">
                 {MAKER.name}
               </a>
             </span>
-            <span aria-hidden>·</span>
             <a href={MAKER.coffee} rel="noopener noreferrer" target="_blank">
               Buy me a coffee
             </a>
-            <span aria-hidden>·</span>
             <FooterLink href="/privacy">Privacy</FooterLink>
-            <span aria-hidden>·</span>
-            <a href="/method#licence">Our text: CC BY 4.0 · Data: Open Government Licence</a>
-            <span aria-hidden>·</span>
+            <a href="/method#licence">Our text: CC BY 4.0, data: Open Government Licence</a>
             <a href={SOURCE_CODE.url}>Source code</a>
           </p>
         </footer>

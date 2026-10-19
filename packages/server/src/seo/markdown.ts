@@ -140,13 +140,14 @@ export function cardMarkdown(c: CardView, ctx: SeoContext, level: 1 | 2 = 1): st
   section(
     "Checks",
     (() => {
-      // The verification label first ("Verified by Pavel Guzhikov and 1 independent editor on …", OpenPromises
-      // decision 23), then every other check, newest first. Without the editors list, the editors' approvals as one
-      // line in the earlier wording ("Checked by Pavel Guzhikov and 1 independent editor on …").
+      // The verification label first ("Verified by Pavel Guzhikov on …", OpenPromises decision 23; "Verified by Pavel
+      // Guzhikov, checked by AI Journalist; approved on …" when it names the automated checker, since 0.7.0, so the day
+      // reads as the editor's), then every other check, newest first. Without the editors list, the editors' approvals
+      // as one line in the earlier wording ("Checked by Pavel Guzhikov and 1 independent editor on …").
       const rest = f.reviews.filter((r) => !(r.kind === "editor" && r.approves === true)).reverse();
       const v = c.verification;
       if (v) {
-        const on = v.on && (v.level === "editor" || v.level === "editors") ? ` on ${ukDate(v.on)}` : "";
+        const on = v.on && (v.level === "editor" || v.level === "editors") ? `${v.automated.length ? "; approved" : ""} on ${ukDate(v.on)}` : "";
         return [`- ${v.text}${on}${v.secondToCome ? "; another editor's check to come" : ""}.`, ...rest.map((r) => `- Checked by ${reviewer(r, v.named)} on ${ukDate(r.on)}.`)];
       }
       const approved = approvedByText(f.reviews);

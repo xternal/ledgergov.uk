@@ -32,9 +32,11 @@ export function checkedBy(f: PromiseFile): { who: string; on: string; automated:
 
 /**
  * The card's review line and the list's tick. With the editors list the build gives each card the engine's
- * verification (OpenPromises decision 23): "Verified by Pavel Guzhikov and 1 independent editor on 12 October 2026",
- * "Checked automatically by AI Journalist, not yet verified by an editor", "Not yet verified by an editor". Without
- * it, the wording before the label, so a build without the list still says who checked each card.
+ * verification (OpenPromises decision 23): "Verified by Pavel Guzhikov on 12 October 2026", "Verified by Pavel
+ * Guzhikov, checked by AI Journalist; approved on 12 October 2026" (since 0.7.0 the label names the automated checker,
+ * so the day, which is the editor's, gets a clause of its own), "Checked automatically by AI Journalist, not yet
+ * verified by an editor", "Not yet verified by an editor". Without it, the wording before the label, so a build
+ * without the list still says who checked each card.
  * `short` leaves out the day and what is to come, for the list's tick; `verified`: an editor has approved it, which
  * earns the tick.
  */
@@ -42,7 +44,7 @@ export function reviewLine(c: CardView): { text: string; short: string; automate
   const v = c.verification;
   if (v) {
     const editors = v.level === "editor" || v.level === "editors";
-    const on = editors && v.on ? ` on ${longDate(v.on)}` : "";
+    const on = editors && v.on ? `${v.automated.length ? "; approved" : ""} on ${longDate(v.on)}` : "";
     return { text: `${v.text}${on}${v.secondToCome ? "; another editor's check to come" : ""}`, short: v.text, automated: v.level === "automated", verified: editors };
   }
   const checked = checkedBy(c.file);

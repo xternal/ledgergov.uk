@@ -24,14 +24,15 @@
     "harvest": "tsx scripts/harvest.ts",
     "parity:snapshot": "tsx scripts/parity.ts snapshot",
     "parity:check": "tsx scripts/parity.ts check",
+    "openpromises:provenance": "tsx scripts/openpromises-provenance.ts",
     "pe:probe": "tsx scripts/pe-probe.ts",
     "household": "tsx scripts/household.ts"
   },
   "devDependencies": {
     "@ledger/engine": "workspace:*",
     "@ledger/schema": "workspace:*",
-    "@openpromises/cli": "0.6.0",
-    "@openpromises/core": "0.6.0",
+    "@openpromises/cli": "0.10.0",
+    "@openpromises/core": "0.10.0",
     "tsx": "^4.23.15",
     "typescript": "^5.9.3",
     "yaml": "^2.9.1",

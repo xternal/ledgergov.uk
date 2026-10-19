@@ -58,9 +58,17 @@ describe("the editors list at build time", () => {
 });
 
 describe("the verification label", () => {
-  it("names the editors who chose to be named and counts the rest", () => {
+  it("names the editors who chose to be named, counts the rest, and names the automated checker (OpenPromises 0.7.0)", () => {
     const v = cardVerification(card([auto, approval("Pavel Guzhikov", "2026-10-12"), approval("Alex", "2026-10-13")]), actors, editors);
-    expect(v).toMatchObject({ level: "editors", text: "Verified by Pavel Guzhikov and 1 independent editor", named: ["Pavel Guzhikov"], counted: 1, on: "2026-10-13" });
+    expect(v).toMatchObject({
+      level: "editors",
+      text: "Verified by Pavel Guzhikov and 1 independent editor, checked by AI Journalist",
+      named: ["Pavel Guzhikov"],
+      counted: 1,
+      on: "2026-10-13",
+    });
+    expect(cardVerification(card([auto, approval("Pavel Guzhikov", "2026-10-12")]), actors, editors).text).toBe("Verified by Pavel Guzhikov, checked by AI Journalist");
+    // A card no machine has checked keeps the shorter words.
     expect(cardVerification(card([approval("Pavel Guzhikov", "2026-10-12")]), actors, editors).text).toBe("Verified by Pavel Guzhikov");
   });
 
@@ -81,16 +89,18 @@ describe("the verification label", () => {
     expect(cardVerification(card([approval("Stranger", "2026-10-12"), approval("Alex", "2026-09-01")]), actors, editors).level).toBe("none");
   });
 
-  it("says another check is to come only where publication waits for it: a reader's submission, while the engine counts two", () => {
+  it("never says another check is to come: one editor's approval publishes even a reader's submission", () => {
     const one = [approval("Alex", "2026-10-12")];
+    expect(SITE_EDITORIAL.approvals).toBe(1);
     expect(cardVerification(card(one), actors, editors).secondToCome).toBe(false);
-    expect(cardVerification(card(one, { origin: "reader_submission" }), actors, editors).secondToCome).toBe(SITE_EDITORIAL.approvals > 1);
+    expect(cardVerification(card(one, { origin: "reader_submission" }), actors, editors).secondToCome).toBe(false);
     expect(cardVerification(card([auto], { origin: "reader_submission" }), actors, editors).secondToCome).toBe(false);
   });
 
   it("follows openpromises.config.ts: publish by checks, the approvals the engine allows, the reviewer's new name, the engine's words", () => {
     const config = resolveConfig(siteConfig);
     expect(config.editorial.publish).toBe("checked");
+    expect(config.editorial.approvals).toBe(1);
     expect(config.editorial.approvals).toBe(SITE_EDITORIAL.approvals);
     expect(config.editorial.renamed).toEqual(SITE_EDITORIAL.renamed);
     expect(Object.keys(config.messages.en ?? {}).filter((k) => k.startsWith("verify."))).toEqual([]);
@@ -103,7 +113,7 @@ describe("cards at build time", () => {
     expect(seed.cards.every((c) => c.verification)).toBe(true);
     const gbe = seed.cards.find((c) => c.id === "uk-great-british-energy-2024")!;
     // Goodwill Stranger is not on this test list: only listed editors count.
-    expect(gbe.verification).toMatchObject({ level: "editor", text: "Verified by Pavel Guzhikov", on: "2026-10-12" });
+    expect(gbe.verification).toMatchObject({ level: "editor", text: "Verified by Pavel Guzhikov, checked by AI Journalist", on: "2026-10-12" });
   });
 
   it("carry none without it, so pages keep the earlier wording", () => {
