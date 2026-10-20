@@ -1,0 +1,53 @@
+format: openpromises/1
+id: uk-green-shop-rent-controls-2026
+headline:
+  en: Extend rent controls to small shops
+actor_id: zack-polanski
+made_on: "2026-04-23"
+venue: press_release
+venue_label:
+  en: "Press release (Green Party), quote from Zack Polanski"
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The Green Party is not in government, so the card stays at Promised. He said it when he and
+    Hannah Spencer MP announced the party's three-step plan for high streets on a visit to a high
+    street in Manchester. The release does not say how the controls would work or by when.
+responsible: null
+origin: llm_intake
+sources:
+  - title: "Green Party: Greens announce three-step plan to boost High Streets across the country (23 Apr 2026)"
+    url: https://greenparty.org.uk/2026/04/23/greens-announce-three-step-plan-to-boost-high-streets-across-the-country/
+versions:
+  - version: 1
+    text: >-
+      We will also extend rent controls to small shop premises, giving councils the power to prevent
+      landlords from hiking up the price and driving out independent retailers.
+    recorded_on: "2026-04-23"
+    source_url: https://greenparty.org.uk/2026/04/23/greens-announce-three-step-plan-to-boost-high-streets-across-the-country/
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: "Small independent shops that rent their premises, and their landlords; councils would get the power"
+      cost:
+        note:
+          en: No cost was given in the cited source.
+      when:
+        en: "Not stated"
+      funded_by: null
+events:
+  - date: "2026-04-23"
+    type: promised
+    text:
+      en: >-
+        Zack Polanski pledges to extend rent controls to small shop premises
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

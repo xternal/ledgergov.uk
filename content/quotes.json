@@ -23,6 +23,18 @@
     "checked_on": "2026-10-18",
     "sha256": "0f182fb17490fbdb9370ff221656f4b934461ab4fab053a15dfc40a35609a3ba"
   },
+  "0695f7a41a521e4e3f7ea4431f07e38f3b0033574b09abd214eca32799d892ed|https://greenparty.org.uk/2026/03/18/zack-polanski-lays-out-plans-to-back-the-caring-majority-in-major-speech/": {
+    "match": "exact",
+    "url": "https://greenparty.org.uk/2026/03/18/zack-polanski-lays-out-plans-to-back-the-caring-majority-in-major-speech/",
+    "checked_on": "2026-10-20",
+    "sha256": "7c88446305bed1115f7de9fc8b77b92d5815ded360830f2953fe7149a5b7db8d"
+  },
+  "0a91305927a05728045134ac99bc546ae1b6976ca700286424333b2bd2a66079|https://greenparty.org.uk/2026/04/23/greens-announce-three-step-plan-to-boost-high-streets-across-the-country/": {
+    "match": "exact",
+    "url": "https://greenparty.org.uk/2026/04/23/greens-announce-three-step-plan-to-boost-high-streets-across-the-country/",
+    "checked_on": "2026-10-20",
+    "sha256": "ac6e3662457df1000995a5c6834b63e3732ce78e252960e8c17838b818a4d99a"
+  },
   "13a001ae01ebcbad5ee4de03d6716e5dcf4f577502df9764a3c0e99ddfa7abe9|https://hansard.parliament.uk/Commons/2026-10-12/debates/54FB2EDB-83AF-40FE-8A98-A914AD221CD7/InternationalUpdate": {
     "match": "exact",
     "url": "https://hansard.parliament.uk/Commons/2026-10-12/debates/54FB2EDB-83AF-40FE-8A98-A914AD221CD7/InternationalUpdate",
@@ -220,6 +232,12 @@
     "url": "https://www.gov.uk/government/speeches/prime-ministers-defence-speech-in-warsaw-23-april-2024",
     "checked_on": "2026-10-20",
     "sha256": "e340c96c9e7adc61d010a779f58718bf7eb8ed59338a7ffbc2fe1d7e4f65976f"
+  },
+  "7a510a9525cfc992b055f82e8025ab4452a98b20aff2f9e845a80cd921249895|https://greenparty.org.uk/2026/03/18/zack-polanski-lays-out-plans-to-back-the-caring-majority-in-major-speech/": {
+    "match": "exact",
+    "url": "https://greenparty.org.uk/2026/03/18/zack-polanski-lays-out-plans-to-back-the-caring-majority-in-major-speech/",
+    "checked_on": "2026-10-20",
+    "sha256": "7c88446305bed1115f7de9fc8b77b92d5815ded360830f2953fe7149a5b7db8d"
   },
   "805b32b24d522b3da432d7f02b1b4a01d50872ac6204ebbc0d51c7199aa1917e|https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements": {
     "match": "exact",
@@ -472,6 +490,12 @@
     "url": "https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10",
     "checked_on": "2026-10-16",
     "sha256": "8d87575efd354320b42e39ae31e7be6e47edda347bc6dfdcadf6a527e96df1ef"
+  },
+  "fa5265caee6759cb448c541387fe54505feb28253594a8e68e486d07c6e3195e|https://greenparty.org.uk/2026/10/02/zack-polanskis-speech-to-conference-in-full/": {
+    "match": "exact",
+    "url": "https://greenparty.org.uk/2026/10/02/zack-polanskis-speech-to-conference-in-full/",
+    "checked_on": "2026-10-20",
+    "sha256": "a0f793049181c1618fd1f19be8c8cb310a694b93225f0de4d3bd27ea47c28295"
   },
   "fb70f28c7c79b8025e002e73ddda10eba67e01c9db488a67f18a63fc3231731d|https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023": {
     "match": "exact",
