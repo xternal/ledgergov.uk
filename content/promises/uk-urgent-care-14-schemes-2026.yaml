@@ -61,3 +61,9 @@ reviews:
       en: >-
         Quote checked word for word at the source; dates, figures and links checked against the
         cited sources.
+  - by: Pavel Guzhikov
+    kind: editor
+    "on": "2026-10-20"
+    approves: true
+    note:
+      en: Approved
