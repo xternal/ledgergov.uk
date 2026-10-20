@@ -2,7 +2,7 @@ format: openpromises/1
 id: uk-con-cheap-power-plan-2026
 headline:
   en: Cheap power plan to cut energy costs
-actor_id: conservatives
+actor_id: julia-lopez
 made_on: "2026-09-09"
 venue: parliament
 venue_label:
@@ -15,7 +15,8 @@ status_note:
     Shadow Energy Secretary, announced the repeal of the Climate Change Act and the first Cheap
     Power Plan policies (to "axe the Carbon Tax on electricity generation" and to scrap old wind
     farm subsidies) at the party's 2025 conference, and the party's policy page lists repealing the
-    Act and axing the "Carbon Tax".
+    Act and axing the "Carbon Tax". Filed under Julia Lopez, who made the pledge in the Commons for the
+    Conservatives, since 20 October 2026; until then it was filed under the Conservative Party.
 responsible: null
 origin: llm_intake
 sources:

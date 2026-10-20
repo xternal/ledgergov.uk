@@ -1,0 +1,24 @@
+format: openpromises/1
+id: julia-lopez
+kind: person
+name:
+  en: Julia Lopez
+party_id: conservatives
+roles:
+  - title:
+      en: Shadow Minister (Business, Innovation, Science and Trade)
+    from: "2026-08-31"
+    source:
+      url: https://members-api.parliament.uk/api/Members/4647/Biography
+      quote: Shadow Minister (Business, Innovation, Science and Trade)
+identifiers:
+  parliament_member_id: 4647
+# Official social accounts in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/4647/Contact, checked 20 October 2026: her website
+# (https://www.julialopez.co.uk/, "Promoted by Dominic Swan on behalf of Julia Lopez MP") and X. Her website links
+# no other account.
+same_as:
+  - https://www.gov.uk/government/people/julia-lopez
+  - https://www.julialopez.co.uk/
+  - https://x.com/JuliaLopezMP
+same_as_checked_on: "2026-10-20"
