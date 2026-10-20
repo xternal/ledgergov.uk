@@ -22,6 +22,9 @@ roles:
       quote: Leader of HM Official Opposition
 identifiers:
   parliament_member_id: 4483
+# Official social accounts in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/4483/Contact, checked 20 October 2026.
 same_as:
   - https://www.gov.uk/government/people/rishi-sunak
+  - https://www.facebook.com/rishisunak
 same_as_checked_on: "2026-10-20"
