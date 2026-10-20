@@ -1,0 +1,77 @@
+format: openpromises/1
+id: uk-small-boats-laws-2023
+headline:
+  en: Pass new laws to stop small boats
+actor_id: rishi-sunak
+made_on: "2023-01-04"
+venue: speech
+venue_label:
+  en: Speech setting out his five priorities
+area: public_order
+status: failed
+status_note:
+  en: >-
+    The Illegal Migration Act 2023 became law on 20 July 2023, but its central duty to make
+    arrangements to remove people who arrive illegally (section 2) was never brought into force. On
+    22 July 2024 the new Home Secretary told the Commons that the central duty "has not even been
+    enacted". The Border Security, Asylum and Immigration Act 2025 repealed that duty on 2 December
+    2025. The laws passed, but the detention and swift removal they promised never applied, so the
+    card reads Not met. The Rwanda flights are a separate card (uk-rwanda-first-flight-2024).
+responsible: null
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: PM speech on building a better future, 4 January 2023"
+    url: https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023
+  - title: "Illegal Migration Act 2023 (legislation.gov.uk)"
+    url: https://www.legislation.gov.uk/ukpga/2023/37/contents
+  - title: "Illegal Migration Act 2023, section 2: duty to make arrangements for removal"
+    url: https://www.legislation.gov.uk/ukpga/2023/37/section/2
+  - title: "Hansard, House of Commons, 22 Jul 2024: Border Security and Asylum (Home Secretary's statement)"
+    url: https://hansard.parliament.uk/commons/2024-07-22/debates/FBB2B906-592F-4047-A6E1-59D6DB97573A/BorderSecurityAndAsylum
+  - title: "Border Security, Asylum and Immigration Act 2025, section 41: repeal of the 2023 Act's provisions"
+    url: https://www.legislation.gov.uk/ukpga/2025/31/section/41
+versions:
+  - version: 1
+    text: >-
+      Fifth, we will pass new laws to stop small boats, making sure that if you come to this country
+      illegally, you are detained and swiftly removed.
+    recorded_on: "2023-01-04"
+    source_url: https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: People who cross the Channel in small boats or otherwise arrive in the UK illegally
+      cost:
+        note:
+          en: No figure in the speech, and no costing of the pledge was published with it.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2023-01-04"
+    type: promised
+    text:
+      en: The Prime Minister makes new laws to stop small boats the fifth of five promises
+  - date: "2023-07-20"
+    type: legislated
+    text:
+      en: >-
+        The Illegal Migration Act 2023 becomes law, with a duty to make arrangements to remove people
+        who arrive illegally
+    evidence_url: https://www.legislation.gov.uk/ukpga/2023/37/contents
+  - date: "2025-12-02"
+    type: failed
+    text:
+      en: >-
+        The Border Security, Asylum and Immigration Act 2025 repeals the removal duty, which had
+        never been brought into force
+    evidence_url: https://www.legislation.gov.uk/ukpga/2025/31/section/41
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
