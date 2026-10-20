@@ -9,6 +9,14 @@ standing: opposition
 roles: []
 identifiers:
   parliament_party_id: 44
+# Official social accounts in the footer of the party's website, https://greenparty.org.uk/, checked
+# 20 October 2026.
 same_as:
   - https://greenparty.org.uk/
-same_as_checked_on: "2026-10-08"
+  - https://x.com/TheGreenParty
+  - https://www.instagram.com/thegreenparty/
+  - https://www.facebook.com/thegreenparty
+  - https://www.threads.com/@thegreenparty
+  - https://bsky.app/profile/greenparty.org.uk
+  - https://www.youtube.com/user/greenpartyew
+same_as_checked_on: "2026-10-20"

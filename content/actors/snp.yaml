@@ -9,6 +9,13 @@ standing: opposition
 roles: []
 identifiers:
   parliament_party_id: 29
+# Official social accounts in the footer of the party's website, https://www.snp.org/, checked
+# 20 October 2026.
 same_as:
   - https://www.snp.org/
-same_as_checked_on: "2026-10-08"
+  - https://x.com/theSNP
+  - https://www.instagram.com/thesnp/
+  - https://www.facebook.com/theSNP
+  - https://www.youtube.com/user/TheSnp
+  - https://www.linkedin.com/company/thesnp/
+same_as_checked_on: "2026-10-20"

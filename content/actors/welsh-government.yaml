@@ -6,6 +6,13 @@ kind: government
 name:
   en: Welsh Government
 roles: []
+# Official social accounts on its website's About us page, https://www.gov.wales/about-us (its GOV.UK
+# organisation page lists none and points there), checked 20 October 2026.
 same_as:
   - https://www.gov.wales/
-same_as_checked_on: "2026-10-09"
+  - https://x.com/welshgovernment
+  - https://www.instagram.com/welshgovernment/
+  - https://www.facebook.com/welshgovernment
+  - https://www.youtube.com/user/welshgovernment
+  - https://www.linkedin.com/company/welsh-government/
+same_as_checked_on: "2026-10-20"

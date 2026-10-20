@@ -13,6 +13,11 @@ roles:
       quote: Minister of State (Minister for Housing and Planning)
 identifiers:
   parliament_member_id: 4520
+# Official social accounts in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/4520/Contact, checked 20 October 2026.
 same_as:
   - https://www.gov.uk/government/people/matthew-pennycook
-same_as_checked_on: "2026-10-09"
+  - https://x.com/mtpennycook
+  - https://www.facebook.com/MPennycook
+  - https://bsky.app/profile/matthewpennycookmp.bsky.social
+same_as_checked_on: "2026-10-20"

@@ -5,6 +5,9 @@ name:
   en: HM Government
 standing: in_power
 roles: []
+# Official social accounts: none on GOV.UK, https://www.gov.uk/ (it has no organisation page for HM Government
+# and its home page links no accounts; 10 Downing Street and the Cabinet Office have their own, as separate
+# organisations), checked 20 October 2026.
 same_as:
   - https://www.gov.uk/
-same_as_checked_on: "2026-10-08"
+same_as_checked_on: "2026-10-20"

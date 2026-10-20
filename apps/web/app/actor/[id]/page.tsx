@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import type { PolicyArea, Status } from "@ledger/schema";
-import { actorJsonLd, actorSameAs, areaPath, clip, DESCRIPTION_MAX, statusCounts } from "@ledger/server/seo";
+import { actorJsonLd, areaPath, clip, DESCRIPTION_MAX, officialPages, statusCounts } from "@ledger/server/seo";
 import { STATUS_LABEL } from "@/lib/copy";
 import { getAreaCoverage, getSeed } from "@/lib/data";
 import { AREA_LABEL } from "@/lib/promises";
@@ -18,14 +18,6 @@ import { OPEN_GRAPH, seoContext } from "@/lib/site";
 import { cardsOfActor, roleText, todayIso } from "@/lib/promises";
 
 type Props = { params: Promise<{ id: string }> };
-
-/** "UK Parliament", "GOV.UK", or the site's own name ("labour.org.uk"). */
-function officialLabel(url: string): string {
-  const host = new URL(url).hostname.replace(/^www\./, "");
-  if (host === "members.parliament.uk") return "UK Parliament";
-  if (host === "gov.uk") return "GOV.UK";
-  return host;
-}
 
 export function generateStaticParams() {
   return getSeed().actors.map((a) => ({ id: a.id }));
@@ -84,8 +76,8 @@ export default async function ActorPage({ params }: Props) {
   // Contracts behind delivery (M6b): only for cards that show them, so the total matches what the cards list.
   const contracts = contractTotals(cards.filter((c) => showsContracts(c.file.status)).flatMap((c) => c.contracts));
   const structuredData = actorJsonLd(actor, party ?? null, cards, seoContext());
-  // The official pages the structured data names (sameAs), shown to readers too.
-  const official = actorSameAs(actor).map((url) => ({ url, label: officialLabel(url) }));
+  // The official pages the structured data names (sameAs), shown to readers too: websites first, then social accounts.
+  const official = officialPages(actor);
   // Every area the site lists, empty ones too (OpenPromises decision 33): the same rows on every actor's page.
   const areas = getAreaCoverage(new Set(cards.map((c) => c.id)));
   return (

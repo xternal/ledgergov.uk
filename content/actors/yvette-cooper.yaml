@@ -13,6 +13,10 @@ roles:
       quote: Secretary of State for Health and Social Care
 identifiers:
   parliament_member_id: 420
+# Official social accounts in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/420/Contact, checked 20 October 2026.
 same_as:
   - https://www.gov.uk/government/people/yvette-cooper
-same_as_checked_on: "2026-10-10"
+  - https://x.com/YvetteCooperMP
+  - https://www.facebook.com/YvetteCooperMP
+same_as_checked_on: "2026-10-20"

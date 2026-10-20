@@ -13,3 +13,10 @@ roles:
       url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS369
 identifiers:
   parliament_member_id: 4038
+# Official social accounts in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/4038/Contact, checked 20 October 2026.
+same_as:
+  - https://x.com/heidi_labour
+  - https://www.instagram.com/heidi_labour/
+  - https://www.facebook.com/heidialexanderswindon
+same_as_checked_on: "2026-10-20"

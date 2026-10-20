@@ -7,6 +7,13 @@ standing: opposition
 roles: []
 identifiers:
   parliament_party_id: 22
+# Official social accounts in the footer of the party's website, https://www.partyof.wales/, checked
+# 20 October 2026.
 same_as:
   - https://www.partyof.wales/
-same_as_checked_on: "2026-10-08"
+  - https://x.com/plaid_cymru
+  - https://www.instagram.com/plaidcymruwales/
+  - https://www.facebook.com/PlaidCymruWales
+  - https://www.tiktok.com/@plaidcymru
+  - https://www.youtube.com/user/plaidtv
+same_as_checked_on: "2026-10-20"
