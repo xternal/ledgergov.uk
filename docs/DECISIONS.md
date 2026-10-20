@@ -12,7 +12,9 @@ Pavel: "why https://ledgergov.uk/actor/andy-burnham doesn't have https://www.ins
 - Names: a person's name is the one UK Parliament displays, without its "Mr" or "Ms" for namesakes, so "Sir Keir Starmer" and "Dame Angela Eagle".
 - Who said it (content/README.md): a promise goes under the person who said it, a party's own document under the party. Two cards moved, each saying so in its status note: Kemi Badenoch's 2025 conference pledge to abolish stamp duty (from the Conservative Party) and Zack Polanski's 2026 conference pledge of a windfall tax on bank profits (from the Green Party).
 
-**Deliberately not changed:** the two Conservative cards from Julia Lopez's Commons statement of 9 September 2026 "for the Conservatives" stay under the party until Pavel decides; the Liberal Democrat £15,000 allowance card stays under the party, because its quote is the party's news release, not the leader's speech.
+**Then, Pavel: "3 - yes":** the two Conservative cards from Julia Lopez's Commons statement of 9 September 2026 "for the Conservatives" moved to her (`uk-con-cheap-power-plan-2026`, `uk-con-zev-mandate-abolition-2026`), with her actor file (Shadow Minister (Business, Innovation, Science and Trade) since 31 August 2026, her website and X from Parliament's contact record).
+
+**Deliberately not changed:** the Liberal Democrat £15,000 allowance card stays under the party, because its quote is the party's news release, not the leader's speech.
 
 ## Every area on every actor's page, and the actor page as a special project (20 Oct 2026)
 
