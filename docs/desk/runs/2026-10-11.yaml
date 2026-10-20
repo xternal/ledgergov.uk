@@ -1,0 +1,28 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Counts are of drafts; every draft has exactly one outcome, so the outcomes add up to `candidates`.
+# Recorded on 20 October 2026 from the editor's closing comment on #86 (ROUTINE.md step 1, a pull request closed by hand).
+intake_date: "2026-10-11"
+triaged_on: "2026-10-12"
+by: Pavel Guzhikov, by hand (closed #86 on 12 Oct 2026); recorded by Claude on 20 Oct 2026
+pull_request: 86
+sources_read: 1
+candidates: 1
+drafts: 1
+outcomes:
+  card: 0
+  reworded: 0
+  duplicate: 0
+  existing: 0
+  grant: 0
+  done: 0
+  process: 0
+  broad: 0
+  event: 1
+  cap: 0
+  other: 0
+quotes_exact: 0
+new_actors: []
+cards: []
+reworded: []
+dropped:
+  - { draft: 2026-10-11-govuk-new-taskforce-to-boost-britains-resilience-to-flooding-and-d-1, code: event, note: "the first meeting of the Flood and Drought Resilience Taskforce on 14 October 2026; the rest of the release is money already committed, with no outcome or date to check" }
