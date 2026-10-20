@@ -1,0 +1,94 @@
+format: openpromises/1
+id: uk-clean-power-95pc-2030
+headline:
+  en: "At least 95% clean power by 2030"
+actor_id: keir-starmer
+made_on: "2024-12-05"
+venue: press_release
+venue_label:
+  en: "Press release on the Plan for Change milestones (Prime Minister's Office)"
+area: economic_affairs
+status: delivering
+status_note:
+  en: >-
+    The Department for Energy Security and Net Zero set out the path in its Clean Power 2030 Action
+    Plan on 13 December 2024. On 14 January 2026 the seventh Contracts for Difference auction
+    offered contracts to new offshore wind farms due to start generating between 2028/29 and
+    2030/31. The Energy Secretary said on 14 October 2026 that almost two-thirds of Britain's
+    electricity came from clean power over 2025, and planning policy published on 29 September 2026
+    still names clean power by 2030. The deadline is taken as the end of 2030; the official figures
+    for 2030 will settle it.
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The Clean Power 2030 Action Plan is the government's plan, and its planning policy of 29
+      September 2026 still names clean power by 2030.
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: PM sets out blueprint for decade of national renewal (5 Dec 2024)"
+    url: https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal
+  - title: "HM Government: Plan for Change, milestones for mission-led government (PDF, 5 Dec 2024)"
+    url: https://assets.publishing.service.gov.uk/media/6751af4719e0c816d18d1df3/Plan_for_Change.pdf
+  - title: "Department for Energy Security and Net Zero: Clean Power 2030 Action Plan (13 Dec 2024)"
+    url: https://www.gov.uk/government/publications/clean-power-2030-action-plan
+  - title: >-
+      Department for Energy Security and Net Zero: Contracts for Difference Allocation Round 7
+      results (14 Jan 2026)
+    url: https://www.gov.uk/government/publications/contracts-for-difference-cfd-allocation-round-7-results
+  - title: >-
+      Ministry of Housing, Communities and Local Government: National Planning Policy Framework,
+      chapter 10, securing clean energy and water (29 Sep 2026)
+    url: https://www.gov.uk/guidance/national-planning-policy-framework-chapter-10-securing-clean-energy-and-water-w1-4
+  - title: >-
+      Department for Energy Security and Net Zero: Building an energy system that delivers for all,
+      speech by the Energy Secretary (14 Oct 2026)
+    url: https://www.gov.uk/government/speeches/building-an-energy-system-that-delivers-for-all
+versions:
+  - version: 1
+    text: >-
+      Securing home-grown energy, protecting billpayers, and putting us on track to at least 95%
+      Clean Power by 2030, while accelerating the UK to net zero.
+    recorded_on: "2024-12-05"
+    source_url: https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: Electricity billpayers in Great Britain and the power system
+      cost:
+        note:
+          en: No cost was given with the milestone.
+      when:
+        en: On track by 2030
+      deadline: "2030-12-31"
+      funded_by: null
+events:
+  - date: "2024-12-05"
+    type: promised
+    text:
+      en: The Prime Minister sets clean power by 2030 as a Plan for Change milestone
+  - date: "2024-12-13"
+    type: in_plan
+    text:
+      en: The government publishes the Clean Power 2030 Action Plan
+    evidence_url: https://www.gov.uk/government/publications/clean-power-2030-action-plan
+  - date: "2026-01-14"
+    type: delivering
+    text:
+      en: >-
+        The seventh Contracts for Difference auction offers contracts to new offshore wind farms due
+        to generate by 2030/31
+    evidence_url: https://www.gov.uk/government/publications/contracts-for-difference-cfd-allocation-round-7-results
+  - date: "2030-12-31"
+    type: deadline
+    text:
+      en: "At least 95% clean power due by 2030 (editorial date, end of 2030)"
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

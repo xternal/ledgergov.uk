@@ -1,0 +1,71 @@
+format: openpromises/1
+id: uk-hillsborough-law-2025
+headline:
+  en: Bring in a Hillsborough law
+actor_id: keir-starmer
+made_on: "2025-07-02"
+venue: parliament
+venue_label:
+  en: "Prime Minister's Questions"
+area: public_order
+status: in_plan
+status_note:
+  en: >-
+    The government's Hillsborough law, the Public Office (Accountability) Bill, was introduced in
+    the Commons on 16 September 2025. Its long title puts a duty of candour on public authorities
+    and public officials and creates offences for those who mislead the public. It passed the
+    Commons on 14 July 2026, was carried over into the new session, and was in committee in the
+    House of Lords in October 2026. The promise gives no date. The card moves to Legislated when the
+    Bill becomes law.
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The Bill is the government's own, and it was still going through the House of Lords in October
+      2026.
+origin: llm_intake
+sources:
+  - title: "Hansard, House of Commons, 2 Jul 2025: Engagements (Prime Minister's Questions)"
+    url: https://hansard.parliament.uk/Commons/2025-07-02/debates/6692B67C-F2D5-4AD2-BB24-627BE5D72AAD/Engagements
+  - title: "UK Parliament: Public Office (Accountability) Bill, stages and long title"
+    url: https://bills.parliament.uk/bills/4019
+versions:
+  - version: 1
+    text: >-
+      I am fully committed to introducing a Hillsborough law, including a legal duty of candour for
+      public servants and criminal sanctions for those who refuse to comply.
+    recorded_on: "2025-07-02"
+    source_url: https://hansard.parliament.uk/Commons/2025-07-02/debates/6692B67C-F2D5-4AD2-BB24-627BE5D72AAD/Engagements
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: >-
+          Families bereaved or harmed in disasters and scandals, and anyone dealing with public
+          bodies
+      cost:
+        note:
+          en: No cost was given with the promise.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2025-07-02"
+    type: promised
+    text:
+      en: >-
+        At Prime Minister's Questions, the Prime Minister says he is fully committed to introducing
+        a Hillsborough law
+  - date: "2025-09-16"
+    type: in_plan
+    text:
+      en: The government introduces the Public Office (Accountability) Bill in the House of Commons
+    evidence_url: https://bills.parliament.uk/bills/4019
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

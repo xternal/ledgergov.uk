@@ -5,6 +5,12 @@
     "checked_on": "2026-10-13",
     "sha256": "12f66a4458e80cb6ce35efcb12e2c5848c6f87481294083558663b53e21e54c6"
   },
+  "02ef7a9fcddbaf2c38dbc7e5169c7b76d582061e42acadac2598d258b56bcb5f|https://www.gov.uk/government/speeches/pm-remarks-on-the-fundamental-reform-of-the-british-state-13-march-2025": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/pm-remarks-on-the-fundamental-reform-of-the-british-state-13-march-2025",
+    "checked_on": "2026-10-20",
+    "sha256": "feb1289601d84f281cf617496ae0f21468fb65d16b794c07563bb62fe3df7062"
+  },
   "0557c9d5a817a5ff03627fc98e10370f2987af5e1328d67371c35163c33e7158|https://www.gov.uk/government/speeches/pm-statement-on-illegal-migration-13-december-2022": {
     "match": "exact",
     "url": "https://www.gov.uk/government/speeches/pm-statement-on-illegal-migration-13-december-2022",
@@ -101,6 +107,12 @@
     "checked_on": "2026-10-18",
     "sha256": "f7969dca22801a78931a28106c84fcf9ace97d05d0e9416567d825a2ffa2fdee"
   },
+  "3ec3e9e6cf22a013fe9950908137a188a92644b5eb0152bc8417f8453cf7c1f9|https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal",
+    "checked_on": "2026-10-20",
+    "sha256": "16e61777c2b4818c64ba63320948e27f08111ad8bac41ce5d3ab6ea75ad23152"
+  },
   "40430d87416af16b679d25d5a3a29083946fb7239392ac50b511475ee0e6b18e|https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson",
@@ -137,6 +149,18 @@
     "checked_on": "2026-10-20",
     "sha256": "bfd72905eb5de7945125ec6ab889eb1ae2502aa5b2bdb4cfe08771d62391338c"
   },
+  "45c0f59c22c2b482ddf69b58647bc1748864cca70057f5285179c468f7caad6f|https://www.gov.uk/government/news/i-am-determined-this-generation-will-be-the-one-that-ends-new-cases-of-hiv-within-england-by-2030-prime-minister-said-ahead-of-world-aids-day": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/i-am-determined-this-generation-will-be-the-one-that-ends-new-cases-of-hiv-within-england-by-2030-prime-minister-said-ahead-of-world-aids-day",
+    "checked_on": "2026-10-20",
+    "sha256": "3af839d9aeb8d596705eb8385283d3e84a88e26c7a0e02b5afe8d0d455ac5472"
+  },
+  "463efa4081401808b8f5b3c1883f235bceae999b7479ff776d1a960b070b891c|https://www.gov.uk/government/news/new-digital-id-scheme-to-be-rolled-out-across-uk": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/new-digital-id-scheme-to-be-rolled-out-across-uk",
+    "checked_on": "2026-10-20",
+    "sha256": "6140328778e3404b792e58c6884e3142291aabc663c037b65abb93326efa916b"
+  },
   "513e6749f3b0e2e14635a013727ee99d8daae11cf6da3561e79e71a3368fe116|https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people",
@@ -161,6 +185,12 @@
     "checked_on": "2026-10-16",
     "sha256": "243a24edb444bc4574e0eb7675121d61788653b8ed1a38e069430213799795af"
   },
+  "563e063dfe645a66e230cf78073656f6952f4212de35a3cd75d83be6aa8eae98|https://www.gov.uk/government/news/cost-of-living-boost-with-free-bus-travel-for-children-and-targeted-food-tariff-cuts": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/cost-of-living-boost-with-free-bus-travel-for-children-and-targeted-food-tariff-cuts",
+    "checked_on": "2026-10-20",
+    "sha256": "5fa1aa9b46be7cb8f0e63a3c0516d583830bd13651491799eb75d30fa2df8aae"
+  },
   "5983b05000b8cbf938d9b2b25d79ad905c966ebbbbf7773b5cf1784a646778db|https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity": {
     "match": "exact",
     "url": "https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity",
@@ -172,6 +202,12 @@
     "url": "https://www.gov.uk/government/news/troubles-bill-reinforced-with-permanent-legal-protections-and-safeguards-for-veterans",
     "checked_on": "2026-10-13",
     "sha256": "718ac477ce36a4b7bb4b05331b77725ce2dd0a4126559323ebada137f720c572"
+  },
+  "5b104c35b2c539d507971036970b5c035b99722c6784018e1054094fe07dc661|https://www.gov.uk/government/news/tech-firms-will-have-to-take-down-abusive-images-within-48-hours-under-new-law-to-protect-women-and-girls": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/tech-firms-will-have-to-take-down-abusive-images-within-48-hours-under-new-law-to-protect-women-and-girls",
+    "checked_on": "2026-10-20",
+    "sha256": "563814179433743db41250ea77fb990dd7f04a079a2c836ae3b317c9ce9f74c5"
   },
   "5f17870a143ef742442e2a6fd593dfa2f6cfde541b850b4339179736cd96e9d2|https://www.gov.uk/government/news/businesses-set-to-be-protected-from-argentinian-economic-coercion": {
     "match": "exact",
@@ -305,11 +341,23 @@
     "checked_on": "2026-10-13",
     "sha256": "1a6105f8d1f3f504689cf82b0ba404154f9632e3b15dc4c19a7440ed38941786"
   },
+  "a8237390a073400a104863087094cb68a4ef92e8d59efaf476b561e432a95803|https://hansard.parliament.uk/Commons/2025-07-02/debates/6692B67C-F2D5-4AD2-BB24-627BE5D72AAD/Engagements": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2025-07-02/debates/6692B67C-F2D5-4AD2-BB24-627BE5D72AAD/Engagements",
+    "checked_on": "2026-10-20",
+    "sha256": "5f1b28a5fcf6530dd0a7d3f0e7925cab1f7b8afed25def71237be404623d23fc"
+  },
   "a87700c21bb76e2e5707cbf8f7d15b5aead77c8bc39b02beb60c6739ec0f5839|https://www.gov.uk/government/news/mhra-introduces-new-safeguards-to-strengthen-antidepressant-safety-information-following-major-review": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/mhra-introduces-new-safeguards-to-strengthen-antidepressant-safety-information-following-major-review",
     "checked_on": "2026-10-18",
     "sha256": "715a2b92d28f2fb28e5b59f485838fcf63370bd4e4dbdab1f9bc8138ee713d15"
+  },
+  "abe133042fcc8a07cd54b80904171a5a5a04777902c8bef2ba82b741205bdbe4|https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal",
+    "checked_on": "2026-10-20",
+    "sha256": "16e61777c2b4818c64ba63320948e27f08111ad8bac41ce5d3ab6ea75ad23152"
   },
   "ac9d2252abd66e76a168e3f5524a83a3047f69385d764a2909158baa9061b006|https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson": {
     "match": "exact",
@@ -328,6 +376,12 @@
     "url": "https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/",
     "checked_on": "2026-10-20",
     "sha256": "c79d855fc8c2769495952531f555367d6e71dca115ce0f8d0041e640d16c1527"
+  },
+  "b16e4aaa1c03d5ae982dc72679d39be228f80873d33abfd294525cf948c76aba|https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal",
+    "checked_on": "2026-10-20",
+    "sha256": "16e61777c2b4818c64ba63320948e27f08111ad8bac41ce5d3ab6ea75ad23152"
   },
   "b2847887dd874f22d6efe4a9ce960d0248c668e302a0e6ce8c4840cbe961e297|https://www.gov.uk/government/publications/organic-action-plan-for-england/organic-action-plan-for-england": {
     "match": "exact",
@@ -353,6 +407,12 @@
     "checked_on": "2026-10-13",
     "sha256": "2be9cdd3c28ee95ac9dfdbcd904cc4eb373252e6f33d22d3f72fadb7e53da8a0"
   },
+  "b72e54301785043324bab618c687cfad3845813536f6d571eaf12fbeff3eeeac|https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal",
+    "checked_on": "2026-10-20",
+    "sha256": "16e61777c2b4818c64ba63320948e27f08111ad8bac41ce5d3ab6ea75ad23152"
+  },
   "b828601cc7508303653db3ab3d86b534ca3c8c123800f392ac82842305ccdc0c|https://www.gov.uk/government/speeches/pm-speech-at-unga-22-september-2026": {
     "match": "exact",
     "url": "https://www.gov.uk/government/speeches/pm-speech-at-unga-22-september-2026",
@@ -364,6 +424,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372",
     "checked_on": "2026-10-16",
     "sha256": "ad43865dd9295d4ab74c26e2dfb01d42bb9ada1b8de1a5a82be852bca730eb51"
+  },
+  "bcbd7e09f8412be32f4e2f0d9fdca060c2f8a4872419eb353e968df317cdbd95|https://www.gov.uk/government/news/pm-were-capping-ground-rents-at-250": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/pm-were-capping-ground-rents-at-250",
+    "checked_on": "2026-10-20",
+    "sha256": "725ee6b1edae93ed3178406647559eb10df9fe900036e6f02be8d0886298136c"
   },
   "bce70c483e8a618569458ecccb29397c8a256098e166ee1b2a1ff175e23adbf9|https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/": {
     "match": "exact",
@@ -388,6 +454,24 @@
     "url": "https://www.gov.uk/government/news/new-pioneering-certificates-to-help-homeowners-cut-flood-risk",
     "checked_on": "2026-10-16",
     "sha256": "910fdca8d34dc6b7b3011c7da57ded84a7c821ac3663cd24096ee6eec8cfbcf4"
+  },
+  "c431306540af1368afd884c0cd4861cdcd0e424a12b4464eab236aaed78300b9|https://www.gov.uk/government/speeches/prime-ministers-speech-on-britain-built-for-all-1-december-2025": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/prime-ministers-speech-on-britain-built-for-all-1-december-2025",
+    "checked_on": "2026-10-20",
+    "sha256": "37a6c05142fab14e815f90a538c6cb7e482726891466366c4fb1fe669d312a8b"
+  },
+  "c758150182e9261b938f8aba9764df755c11aad31b9f87c116748209dfe3db46|https://www.gov.uk/government/news/social-media-to-be-banned-for-under-16s-in-landmark-government-move-to-givekids-their-childhood-back": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/social-media-to-be-banned-for-under-16s-in-landmark-government-move-to-givekids-their-childhood-back",
+    "checked_on": "2026-10-20",
+    "sha256": "7db77227800a600c8a7af44f083f5550e1f32740cb7eee7b50020a718b7d654b"
+  },
+  "ca549c83f23ffc43d5e2f02677332d77892cb5cbd9ca5f241531be2b22593f2b|https://www.gov.uk/government/speeches/pm-words-on-gaza-29-july-2025": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/pm-words-on-gaza-29-july-2025",
+    "checked_on": "2026-10-20",
+    "sha256": "26887eed8b2c5694ad049a69a80402e2457524f7cd58874c7eee3b1c2019c5de"
   },
   "ccdc7e2f68ac8acf5149ff7ca25558e14552e8e012570a3176ac0c0e106fc70c|https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson": {
     "match": "exact",
