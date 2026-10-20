@@ -1,0 +1,25 @@
+format: openpromises/1
+id: zack-polanski
+kind: person
+name:
+  en: Zack Polanski
+party_id: green-party
+roles:
+  - title:
+      en: Leader of the Green Party of England and Wales
+    source:
+      url: https://greenparty.org.uk/2025/10/12/green-party-membership-surges-past-100000-as-polls-show-record-support/
+      quote: This marks over a 45% increase since Zack Polanski was elected Leader of the party last month.
+  - title:
+      en: Member of the London Assembly
+    source:
+      url: https://www.london.gov.uk/who-we-are/what-london-assembly-does/london-assembly-members/zack-polanski
+      quote: Green Party London Assembly Member Zack Polanski
+# Not an MP, so no UK Parliament record. Official social accounts: London City Hall's page for him,
+# https://www.london.gov.uk/who-we-are/what-london-assembly-does/london-assembly-members/zack-polanski, links his X
+# account, checked 20 October 2026. The Green Party's pages link only the party's own accounts, and his website
+# (zackpolanski.com) returned an error, so no other account is added.
+same_as:
+  - https://www.london.gov.uk/who-we-are/what-london-assembly-does/london-assembly-members/zack-polanski
+  - https://x.com/ZackPolanski
+same_as_checked_on: "2026-10-20"
