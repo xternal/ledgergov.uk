@@ -137,6 +137,18 @@
     "checked_on": "2026-10-20",
     "sha256": "bfd72905eb5de7945125ec6ab889eb1ae2502aa5b2bdb4cfe08771d62391338c"
   },
+  "4be3ff0eee93e28f679297bc8fef13f076aa496d3490128d960ce2f7bd91733c|https://www.gov.uk/government/news/prime-minister-blocks-hundreds-more-criminals-from-sentencing-changes": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/prime-minister-blocks-hundreds-more-criminals-from-sentencing-changes",
+    "checked_on": "2026-10-20",
+    "sha256": "457492381f7ff3ed6a8ab410000421be41c5b349a249eee58e2ed8c841d9851e"
+  },
+  "4f1b20477f6a3070abed0727478ea962216362fc7e846021e7d38e485d76c47f|https://www.gov.uk/government/news/pm-from-today-britain-will-value-the-hard-hat-as-much-as-the-graduation-cap": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/pm-from-today-britain-will-value-the-hard-hat-as-much-as-the-graduation-cap",
+    "checked_on": "2026-10-20",
+    "sha256": "7a58c90c634e2ec796419f2bb9762dcec7fccd3e148895533491fe6ab900af71"
+  },
   "513e6749f3b0e2e14635a013727ee99d8daae11cf6da3561e79e71a3368fe116|https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people",
@@ -178,6 +190,12 @@
     "url": "https://www.gov.uk/government/news/businesses-set-to-be-protected-from-argentinian-economic-coercion",
     "checked_on": "2026-10-16",
     "sha256": "8adda0fbddf985e4cf85665c7736819d0448af18d975d90ff7d3ea278de46c5a"
+  },
+  "5f77609eadd30ca471eb17e3bf8067364901b431053fa1eed52ce774f9426dea|https://www.gov.uk/government/news/rape-serious-child-sex-and-grooming-offences-barred-from-sentencing-changes": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/rape-serious-child-sex-and-grooming-offences-barred-from-sentencing-changes",
+    "checked_on": "2026-10-20",
+    "sha256": "3c6819a547cc4590a8b16f9add22b5599ed12ff02c24c02a84f90e43dd9c5209"
   },
   "619a652c7479bc577972a37a5695f39c55779081ef7693005c3c8cf6f5796c9c|https://www.gov.uk/government/news/douglas-alexander-welcomes-defence-skills-investment-boost": {
     "match": "exact",

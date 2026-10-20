@@ -1,0 +1,73 @@
+format: openpromises/1
+id: uk-technical-pathways-from-14-2028
+headline:
+  en: Create technical education pathways from age 14
+actor_id: andy-burnham
+made_on: "2026-07-28"
+venue: press_release
+venue_label:
+  en: No 10 press release
+area: education
+status: promised
+status_note:
+  en: >-
+    No 10 published the release on the evening of 27 July for the announcement on 28 July. It gives
+    "an ambition to begin rolling them out from September 2028", recorded as a deadline of 30
+    September 2028, and says mayors, local leaders, schools, colleges and employers will design the
+    routes first. On 15 October the government said new Vocational GCSEs would replace Technical
+    Awards, as part of the Prime Minister's commitment to put technical education on an equal
+    footing with the academic path; that is a separate card. The card moves when the government
+    publishes how the pathways will work or schools start offering them.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      No 10 press release, 28 Jul 2026: PM: 'From today Britain will value the hard hat as much as
+      the graduation cap'
+    url: https://www.gov.uk/government/news/pm-from-today-britain-will-value-the-hard-hat-as-much-as-the-graduation-cap
+versions:
+  - version: 1
+    text: >-
+      In a fundamental change to the education system, we will introduce new technical education
+      pathways from 14 – prestigious routes that will give students the chance to combine the core
+      academic subjects with the skills, technical knowledge and experience they need to get
+      quality, well-paid jobs where they live.
+    recorded_on: "2026-07-28"
+    source_url: https://www.gov.uk/government/news/pm-from-today-britain-will-value-the-hard-hat-as-much-as-the-graduation-cap
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: >-
+          Pupils from age 14 (Year 10) in England, who would combine English, maths and science
+          with technical education linked to local jobs
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Rollout to begin from September 2028 (the release calls this an ambition)
+      deadline: "2028-09-30"
+      funded_by:
+        en: >-
+          The Department for Education's existing budgets: the release says the department "will use
+          its existing budgets to best support delivery"
+events:
+  - date: "2026-07-28"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister says the government will introduce technical education pathways from age
+        14, with rollout to begin from September 2028
+  - date: "2028-09-30"
+    type: deadline
+    text:
+      en: Rollout due to begin from September 2028 (editorial date)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
