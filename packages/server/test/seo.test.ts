@@ -8,6 +8,7 @@ import {
   AREA_SLUG,
   DESCRIPTION_MAX,
   TITLE_MAX,
+  actorIndexJsonLd,
   actorJsonLd,
   actorSameAs,
   areaBySlug,
@@ -246,6 +247,15 @@ describe("JSON-LD", () => {
     expect(shapeIssues(data)).toEqual([]);
     const list = (data[0] as { mainEntity: { itemListElement: { name: string }[] } }).mainEntity.itemListElement;
     expect(list[0]!.name).toBe(`${cards[0]!.file.headline} (${cards[0]!.actor.short_name ?? cards[0]!.actor.name})`);
+  });
+
+  it("the people, parties and public bodies page lists every actor's page", () => {
+    const data = actorIndexJsonLd({ path: "/actor", name: "People, parties and public bodies", description: "…", actors: seed.actors, cards }, ctx);
+    expect(shapeIssues(data)).toEqual([]);
+    const list = (data[0] as { mainEntity: { numberOfItems: number; itemListElement: { url: string; name: string }[] } }).mainEntity;
+    expect(list.numberOfItems).toBe(seed.actors.length);
+    expect(list.itemListElement[0]).toMatchObject({ url: `https://ledger.test/actor/${seed.actors[0]!.id}`, name: seed.actors[0]!.name });
+    expect((data[1] as { "@type": string })["@type"]).toBe("BreadcrumbList");
   });
 
   it("the checker catches a bad shape", () => {

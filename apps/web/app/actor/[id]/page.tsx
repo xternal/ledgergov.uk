@@ -15,6 +15,7 @@ import { FollowButton } from "@/components/FollowPanel";
 import { followOptions } from "@/app/follow/targets";
 import { JsonLd } from "@/components/JsonLd";
 import { OPEN_GRAPH, seoContext } from "@/lib/site";
+import { cardsOfActor, roleText, todayIso } from "@/lib/promises";
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -36,7 +37,7 @@ function cardsFor(id: string) {
   const actor = seed.actors.find((a) => a.id === id);
   if (!actor) return null;
   // A party's page includes its members' cards; a person's page only their own.
-  const cards = seed.cards.filter((c) => c.actor.id === id || (actor.kind === "party" && c.party?.id === id));
+  const cards = cardsOfActor(seed.cards, actor);
   return { actor, cards, seed };
 }
 
@@ -93,12 +94,13 @@ export default async function ActorPage({ params }: Props) {
       <SiteHeader current="/promises" />
       <main className="mx-auto grid max-w-[1000px] gap-10 px-4 pb-20 pt-10 sm:px-6">
         <div className="grid gap-2">
-          <a href="/promises" className="justify-self-start text-label font-medium">
-            All promises
-          </a>
+          <p className="m-0 flex flex-wrap gap-x-4 gap-y-1 text-label font-medium">
+            <a href="/promises">All promises</a>
+            <a href="/actor">Everyone on the ledger</a>
+          </p>
           <h1 className="m-0 text-[clamp(30px,4.4vw,44px)] font-semibold leading-[1.06] tracking-[-0.035em]">{actor.name}</h1>
           <p className="m-0 text-lead text-muted">
-            {actor.kind === "party" ? "Party" : actor.roles.map((ro) => ro.title).join(", ") || "Person"}
+            {actor.kind === "party" ? "Party" : roleText(actor, todayIso()) || "Person"}
             {party ? `, ${party.name}` : ""}
           </p>
           {official.length > 0 && (
