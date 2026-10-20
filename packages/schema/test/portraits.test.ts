@@ -39,7 +39,17 @@ describe("official portraits", () => {
       licence: { name: "CC BY 3.0", url: "https://creativecommons.org/licenses/by/3.0/" },
       source: "https://members.parliament.uk/member/1427/portrait",
     });
-    expect(portraitOf(4483)).toBeNull();
     expect(portraitOf(undefined)).toBeNull();
+    expect(portraitOf(999_999)).toBeNull();
+  });
+
+  it("show an older official portrait Parliament no longer serves with its year and the page of its copy", () => {
+    expect(portraitOf(4483)).toEqual({
+      src: "/portraits/4483.jpg",
+      credit: "©House of Commons",
+      licence: { name: "CC BY 3.0", url: "https://creativecommons.org/licenses/by/3.0/" },
+      source: "https://commons.wikimedia.org/wiki/File:Rishi_Sunak_official_portrait,_2017.jpg",
+      taken: "2017",
+    });
   });
 });
