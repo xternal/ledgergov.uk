@@ -1,0 +1,85 @@
+format: openpromises/1
+id: uk-smokefree-generation-2023
+headline:
+  en: Stop children ever buying cigarettes
+actor_id: rishi-sunak
+made_on: "2023-10-04"
+venue: press_release
+venue_label:
+  en: Press release (Prime Minister's Office)
+area: health
+status: legislated
+status_note:
+  en: >-
+    The plan was a law making it an offence to sell tobacco to anyone born on or after 1 January
+    2009, first announced for England. The government that followed brought in its own Tobacco and
+    Vapes Bill, which became law on 29 April 2026 as the Tobacco and Vapes Act 2026. Section 1 makes
+    it an offence in England and Wales to sell tobacco to anyone born on or after 1 January 2009,
+    and section 175 brings that into force on 1 January 2027, with matching sections for Scotland
+    and Northern Ireland. The card moves when the ban is in force.
+responsible:
+  actor_id: hm-government
+  note:
+    en: The government since July 2024 took the ban on and passed it into law.
+origin: llm_intake
+sources:
+  - title: >-
+      Prime Minister's Office: Prime Minister to create 'smokefree generation' by ending cigarette
+      sales to those born on or after 1 January 2009 (4 Oct 2023)
+    url: https://www.gov.uk/government/news/prime-minister-to-create-smokefree-generation-by-ending-cigarette-sales-to-those-born-on-or-after-1-january-2009
+  - title: "Tobacco and Vapes Act 2026 (legislation.gov.uk)"
+    url: https://www.legislation.gov.uk/ukpga/2026/18/contents
+  - title: "Tobacco and Vapes Act 2026, section 1: sale of tobacco etc"
+    url: https://www.legislation.gov.uk/ukpga/2026/18/section/1
+  - title: "Tobacco and Vapes Act 2026, section 175: commencement"
+    url: https://www.legislation.gov.uk/ukpga/2026/18/section/175
+  - title: "Department of Health and Social Care and others: Disposable vapes banned to protect children's health (29 Jan 2024)"
+    url: https://www.gov.uk/government/news/disposable-vapes-banned-to-protect-childrens-health
+versions:
+  - version: 1
+    text: >-
+      These changes will mean our kids will never be able to buy a cigarette, preventing them
+      getting hooked and protecting their health both now and in the future.
+    recorded_on: "2023-10-04"
+    source_url: https://www.gov.uk/government/news/prime-minister-to-create-smokefree-generation-by-ending-cigarette-sales-to-those-born-on-or-after-1-january-2009
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: >-
+          People born on or after 1 January 2009, who could never legally be sold tobacco, and the
+          shops that sell it
+      cost:
+        note:
+          en: >-
+            No cost was given for the ban. On 29 January 2024 the government announced £30 million
+            a year of new funding for enforcement agencies (Border Force, HMRC and Trading
+            Standards) to carry out the smokefree generation plan and its vaping measures.
+        sources:
+          - title: "Department of Health and Social Care and others: Disposable vapes banned to protect children's health (29 Jan 2024)"
+            url: https://www.gov.uk/government/news/disposable-vapes-banned-to-protect-childrens-health
+      when:
+        en: Not stated; the Tobacco and Vapes Act 2026 brings the ban in on 1 January 2027
+      funded_by: null
+events:
+  - date: "2023-10-04"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister announces a law to end cigarette sales to anyone born on or after 1
+        January 2009
+  - date: "2026-04-29"
+    type: legislated
+    text:
+      en: >-
+        The Tobacco and Vapes Act 2026 becomes law: selling tobacco to anyone born on or after 1
+        January 2009 is an offence from 1 January 2027
+    evidence_url: https://www.legislation.gov.uk/ukpga/2026/18/contents
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

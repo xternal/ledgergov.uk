@@ -1,0 +1,100 @@
+format: openpromises/1
+id: uk-disposable-vapes-ban-2024
+headline:
+  en: Ban disposable vapes
+actor_id: rishi-sunak
+made_on: "2024-01-29"
+venue: press_release
+venue_label:
+  en: Press release (Department of Health and Social Care and Prime Minister's Office)
+area: health
+status: delivered
+status_note:
+  en: >-
+    Both parts are now law. Supplying single-use vapes has been an offence in England since 1 June
+    2025, under regulations made on 25 November 2024; Scotland, Wales and Northern Ireland made
+    regulations of their own. The Tobacco and Vapes Act 2026, law since 29 April 2026, gives
+    ministers powers over the flavour of vapes (section 96), their retail packaging (section 94) and
+    how they are displayed in shops in England (section 13). Both came into law under the government
+    that followed his.
+brought_about_by:
+  actor_id: hm-government
+  note:
+    en: >-
+      The regulations and the Act were made after the change of government on 5 July 2024.
+responsible:
+  actor_id: hm-government
+  note:
+    en: The government since July 2024 took the measures on and made them law.
+origin: llm_intake
+sources:
+  - title: "Department of Health and Social Care and others: Disposable vapes banned to protect children's health (29 Jan 2024)"
+    url: https://www.gov.uk/government/news/disposable-vapes-banned-to-protect-childrens-health
+  - title: "The Environmental Protection (Single-use Vapes) (England) Regulations 2024 (SI 2024/1216)"
+    url: https://www.legislation.gov.uk/uksi/2024/1216/made
+  - title: "The Environmental Protection (Single-use Vapes) (Scotland) Regulations 2024"
+    url: https://www.legislation.gov.uk/ssi/2024/269/contents
+  - title: "The Environmental Protection (Single-use Vapes) (Wales) Regulations 2024"
+    url: https://www.legislation.gov.uk/wsi/2024/1324/contents
+  - title: "The Environmental Protection (Single-use Vapes) (Amendment) Regulations (Northern Ireland) 2025"
+    url: https://www.legislation.gov.uk/nisr/2025/126/contents
+  - title: "Tobacco and Vapes Act 2026 (legislation.gov.uk)"
+    url: https://www.legislation.gov.uk/ukpga/2026/18/contents
+versions:
+  - version: 1
+    text: >-
+      That is why I am taking bold action to ban disposable vapes - which have driven the rise in
+      youth vaping - and bring forward new powers to restrict vape flavours, introduce plain
+      packaging and change how vapes are displayed in shops.
+    recorded_on: "2024-01-29"
+    source_url: https://www.gov.uk/government/news/disposable-vapes-banned-to-protect-childrens-health
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: >-
+          Children and young people who vape, and the shops and makers that sell or supply vapes
+      cost:
+        note:
+          en: >-
+            No cost was given for the ban. The same announcement added £30 million a year of new
+            funding for enforcement agencies to carry out the smokefree generation plan and these
+            vaping measures.
+        sources:
+          - title: "Department of Health and Social Care and others: Disposable vapes banned to protect children's health (29 Jan 2024)"
+            url: https://www.gov.uk/government/news/disposable-vapes-banned-to-protect-childrens-health
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2024-01-29"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister announces a ban on disposable vapes and new powers over vape flavours,
+        packaging and displays
+  - date: "2024-11-25"
+    type: legislated
+    text:
+      en: Regulations banning the supply of single-use vapes in England are made
+    evidence_url: https://www.legislation.gov.uk/uksi/2024/1216/made
+  - date: "2025-06-01"
+    type: delivering
+    text:
+      en: The ban on supplying single-use vapes comes into force in England
+    evidence_url: https://www.legislation.gov.uk/uksi/2024/1216/made
+  - date: "2026-04-29"
+    type: delivered
+    text:
+      en: >-
+        The Tobacco and Vapes Act 2026 becomes law, with powers over vape flavours, packaging and
+        displays
+    evidence_url: https://www.legislation.gov.uk/ukpga/2026/18/contents
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

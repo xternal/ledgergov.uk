@@ -5,6 +5,12 @@
     "checked_on": "2026-10-13",
     "sha256": "12f66a4458e80cb6ce35efcb12e2c5848c6f87481294083558663b53e21e54c6"
   },
+  "0557c9d5a817a5ff03627fc98e10370f2987af5e1328d67371c35163c33e7158|https://www.gov.uk/government/speeches/pm-statement-on-illegal-migration-13-december-2022": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/pm-statement-on-illegal-migration-13-december-2022",
+    "checked_on": "2026-10-20",
+    "sha256": "036fa23932dcc361e055d13da8df4f367e97478aca2533bc5e865093fe2feb9d"
+  },
   "06062302f8320bb5b92fc61097c3770e8214d492ce54039b0ef420a890b158c1|https://www.gov.uk/government/speeches/pm-speech-at-the-innovation-nation-summit-9-october-2026": {
     "match": "exact",
     "url": "https://www.gov.uk/government/speeches/pm-speech-at-the-innovation-nation-summit-9-october-2026",
@@ -35,6 +41,12 @@
     "checked_on": "2026-10-13",
     "sha256": "87f1b462d759dab2c7aeac0aeab23c2af51589e9784c62f51a7bdc4b7989e8bb"
   },
+  "1e5f79494ca7daf0a78aade26e7b5660f1587e70d9e560d03cfe137cff3cfdae|https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023",
+    "checked_on": "2026-10-20",
+    "sha256": "bfd72905eb5de7945125ec6ab889eb1ae2502aa5b2bdb4cfe08771d62391338c"
+  },
   "2233934dac3589b330766775dea13314bd4cf7b0b6062444081a781a0fc58389|https://www.gov.uk/government/news/new-one-stop-shop-for-flood-preparedness-launched-as-we-approach-more-weather-whiplash": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/new-one-stop-shop-for-flood-preparedness-launched-as-we-approach-more-weather-whiplash",
@@ -46,6 +58,12 @@
     "url": "https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts",
     "checked_on": "2026-10-18",
     "sha256": "4ab1450e223678aabc953c4eec9960dc45fbb09b2450f3feac3cb172e8995a56"
+  },
+  "22e84fe4376f63d246e8f14ce48c5a89b35a9e5a12cd6f010ff0442dbef23c98|https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023",
+    "checked_on": "2026-10-20",
+    "sha256": "bfd72905eb5de7945125ec6ab889eb1ae2502aa5b2bdb4cfe08771d62391338c"
   },
   "2521be28333968466fbb33cd51a363d8046a60bbe5b006b66983a8d906adad65|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS366": {
     "match": "exact",
@@ -113,6 +131,12 @@
     "checked_on": "2026-10-18",
     "sha256": "e6f59989d21ce10712c6ae4f7a856c5e96d81fd4eb1b5a28601225a907486412"
   },
+  "45a11bbc94ba035adca6cfcf3a545e5864978f9b9ecc403f291720a7e96aef29|https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023",
+    "checked_on": "2026-10-20",
+    "sha256": "bfd72905eb5de7945125ec6ab889eb1ae2502aa5b2bdb4cfe08771d62391338c"
+  },
   "513e6749f3b0e2e14635a013727ee99d8daae11cf6da3561e79e71a3368fe116|https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people",
@@ -124,6 +148,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364",
     "checked_on": "2026-10-13",
     "sha256": "87f1b462d759dab2c7aeac0aeab23c2af51589e9784c62f51a7bdc4b7989e8bb"
+  },
+  "52c10771314ff623f324c7fb675e3855e57acc04d8c8e6a0c143e5276ff33d54|https://www.gov.uk/government/speeches/prime-minister-rishi-sunaks-statement-on-the-plan-to-stop-the-boats-22-april-2024": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/prime-minister-rishi-sunaks-statement-on-the-plan-to-stop-the-boats-22-april-2024",
+    "checked_on": "2026-10-20",
+    "sha256": "d76177424bcbd44528c50c832baf7563948e6efb79807c36221bf2ff889b73e5"
   },
   "55082fbe46b196b85f13f0c7619bdbf6475bc219da6b521a04c216081cc4fb87|https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements": {
     "match": "exact",
@@ -167,6 +197,12 @@
     "checked_on": "2026-10-20",
     "sha256": "7a373287050aaca072f87433a5e6d89e749603faba528a779fc0d855513aa584"
   },
+  "7606505dd47be1fa26866ccefa468f587037284a894b6be3b45d7e14e6a6416e|https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023",
+    "checked_on": "2026-10-20",
+    "sha256": "bfd72905eb5de7945125ec6ab889eb1ae2502aa5b2bdb4cfe08771d62391338c"
+  },
   "77fe412253460543d525f3597806fc1753dc9a9da9ef077629de1e05f075eded|https://www.gov.uk/government/news/world-first-mission-puts-uk-expertise-to-work-to-help-clean-up-space": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/world-first-mission-puts-uk-expertise-to-work-to-help-clean-up-space",
@@ -178,6 +214,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363",
     "checked_on": "2026-10-13",
     "sha256": "2be9cdd3c28ee95ac9dfdbcd904cc4eb373252e6f33d22d3f72fadb7e53da8a0"
+  },
+  "792ee3b16563ae0bd0081ae4f4b8a6a923a9a1ff45dd3a71e185340630b0704b|https://www.gov.uk/government/speeches/prime-ministers-defence-speech-in-warsaw-23-april-2024": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/prime-ministers-defence-speech-in-warsaw-23-april-2024",
+    "checked_on": "2026-10-20",
+    "sha256": "e340c96c9e7adc61d010a779f58718bf7eb8ed59338a7ffbc2fe1d7e4f65976f"
   },
   "805b32b24d522b3da432d7f02b1b4a01d50872ac6204ebbc0d51c7199aa1917e|https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements": {
     "match": "exact",
@@ -209,6 +251,12 @@
     "checked_on": "2026-10-18",
     "sha256": "5b769a71cbc5f0942b9cfb1963aa31631caa602bcb12f898a8947600c0045c45"
   },
+  "8cf70b862d2ec0e743044eba1d823255d8d62a71b2ac5b5273f9f7bbaaed00a6|https://www.gov.uk/government/news/prime-minister-to-create-smokefree-generation-by-ending-cigarette-sales-to-those-born-on-or-after-1-january-2009": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/prime-minister-to-create-smokefree-generation-by-ending-cigarette-sales-to-those-born-on-or-after-1-january-2009",
+    "checked_on": "2026-10-20",
+    "sha256": "12ce778db5289a4d1689197aea05d42d4f0a1bab4858cea36d71cd2115a9b551"
+  },
   "9258e20d58afe05e95754a06bb5d29d5b24ecb83d9bbad0e86d7c0ff346a39e8|https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced",
@@ -220,6 +268,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS356",
     "checked_on": "2026-10-13",
     "sha256": "7055f896a04c090c804217af18a1d763a8cacef08a1ddad07f370db7b5dde286"
+  },
+  "97bf8cee0c491c715798881845f5e5a7ad9833dca89b197a833691c1f2625dd7|https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023",
+    "checked_on": "2026-10-20",
+    "sha256": "bfd72905eb5de7945125ec6ab889eb1ae2502aa5b2bdb4cfe08771d62391338c"
   },
   "984023e6bc54ef27f53f0b4f56f120c10f399c5161318da70261b13b888235a1|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354": {
     "match": "exact",
@@ -341,6 +395,12 @@
     "checked_on": "2026-10-13",
     "sha256": "524c3b9ea355c8047e01f63575643c78199a3cbb108737371f4143af61278d46"
   },
+  "cee332538330892cadbbfaf19d334801ab17047ff47b78c9165673a077334020|https://www.gov.uk/government/news/disposable-vapes-banned-to-protect-childrens-health": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/disposable-vapes-banned-to-protect-childrens-health",
+    "checked_on": "2026-10-20",
+    "sha256": "375a892e1e9651b54dd6462f59b8c11ad34e92a2f14ae247fd10bd1f05cad623"
+  },
   "cf9c2fd495470a4ac00cc92fa0c4b7c11ebbe7a0e98e68caaa13d5711efaded7|https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines",
@@ -412,6 +472,12 @@
     "url": "https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10",
     "checked_on": "2026-10-16",
     "sha256": "8d87575efd354320b42e39ae31e7be6e47edda347bc6dfdcadf6a527e96df1ef"
+  },
+  "fb70f28c7c79b8025e002e73ddda10eba67e01c9db488a67f18a63fc3231731d|https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023",
+    "checked_on": "2026-10-20",
+    "sha256": "bfd72905eb5de7945125ec6ab889eb1ae2502aa5b2bdb4cfe08771d62391338c"
   },
   "fc219ae43e8cc6c96ac865be4ba085f26df0056a8cfb6eecc5c573a0a68981cd|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354": {
     "match": "exact",

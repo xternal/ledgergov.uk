@@ -1,0 +1,45 @@
+format: openpromises/1
+id: uk-grow-economy-2023
+headline:
+  en: Grow the economy
+actor_id: rishi-sunak
+made_on: "2023-01-04"
+venue: speech
+venue_label:
+  en: Speech setting out his five priorities
+area: economic_affairs
+status: unscoreable
+status_note:
+  en: >-
+    The sentence commits to growing the economy but names no measure, amount or date: it does not
+    say how much growth, measured how, or by when, so it cannot be scored (Promise standard, section
+    2). It was the second of five promises in the speech. No body in power is committed to it as
+    worded: the government he led left office on 5 July 2024.
+responsible: null
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: PM speech on building a better future, 4 January 2023"
+    url: https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023
+versions:
+  - version: 1
+    text: >-
+      Second, we will grow the economy, creating better-paid jobs and opportunity right across the
+      country.
+    recorded_on: "2023-01-04"
+    source_url: https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023
+    quote_checked_on: "2026-10-20"
+    parameters: null
+events:
+  - date: "2023-01-04"
+    type: promised
+    text:
+      en: The Prime Minister makes growing the economy the second of five promises
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

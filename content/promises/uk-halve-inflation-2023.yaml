@@ -1,0 +1,78 @@
+format: openpromises/1
+id: uk-halve-inflation-2023
+headline:
+  en: Halve inflation in 2023
+actor_id: rishi-sunak
+made_on: "2023-01-04"
+venue: speech
+venue_label:
+  en: Speech setting out his five priorities
+area: economic_affairs
+status: delivered
+status_note:
+  en: >-
+    The Office for National Statistics measured consumer price inflation (CPI) at 10.5% in the 12
+    months to December 2022 and 4.0% in the 12 months to December 2023, less than half the earlier
+    rate. The speech did not say which month or measure the pledge would be judged on; CPI had
+    peaked at 11.1% in October 2022. "This year" is read as the end of 2023. It was the first of
+    five promises in the speech.
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The UK Government was responsible when the pledge fell due at the end of 2023, with Rishi
+      Sunak as Prime Minister.
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: PM speech on building a better future, 4 January 2023"
+    url: https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023
+  - title: "Office for National Statistics: Consumer price inflation, UK: December 2022 (18 Jan 2023)"
+    url: https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2022
+  - title: "Office for National Statistics: Consumer price inflation, UK: December 2023 (17 Jan 2024)"
+    url: https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2023
+versions:
+  - version: 1
+    text: >-
+      First, we will halve inflation this year to ease the cost of living and give people financial
+      security.
+    recorded_on: "2023-01-04"
+    source_url: https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: Households and businesses across the UK facing rising prices
+      cost:
+        note:
+          en: >-
+            No cost of its own: the pledge names an outcome, not a measure, and no costing was
+            published.
+      when:
+        en: In 2023 ("this year")
+      deadline: "2023-12-31"
+      funded_by:
+        en: Not a spending pledge
+events:
+  - date: "2023-01-04"
+    type: promised
+    text:
+      en: The Prime Minister makes halving inflation in 2023 the first of five promises
+  - date: "2023-12-31"
+    type: deadline
+    text:
+      en: Inflation due to be halved "this year" (editorial date, end of 2023)
+  - date: "2024-01-17"
+    type: delivered
+    text:
+      en: >-
+        ONS figures for December 2023: CPI inflation 4.0% over 12 months, down from 10.5% in
+        December 2022
+    evidence_url: https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2023
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
