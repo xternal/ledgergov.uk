@@ -1,0 +1,76 @@
+format: openpromises/1
+id: uk-g20-ai-centre-stage-2027
+headline:
+  en: Put AI centre stage in the G20 presidency
+actor_id: andy-burnham
+made_on: "2026-09-29"
+venue: speech
+venue_label:
+  en: Leader's speech, Labour Party Conference 2026
+area: general_services
+status: promised
+status_note:
+  en: >-
+    The Prime Minister first said it at the UN General Assembly on 22 September 2026, where he also
+    said the UK will work towards agreeing a single set of global principles and standards for AI.
+    No 10 said the same day that the UK takes over the G20 Presidency from the US in December 2026
+    and that the Leaders' Summit will be held in Manchester the following November, so the deadline
+    is recorded as 30 November 2027. Neither speech says what the global code would contain or who
+    would sign it. The card moves when the UK's presidency publishes its priorities, and again when
+    a code is agreed.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Labour Party: Andy Burnham's speech to Labour Party Conference 2026 (29 Sep 2026)"
+    url: https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/
+  - title: "Prime Minister's Office: PM speech at UNGA, 22 September 2026"
+    url: https://www.gov.uk/government/speeches/pm-speech-at-unga-22-september-2026
+  - title: >-
+      Prime Minister's Office, 22 Sep 2026: Prime Minister drives global work on artificial
+      intelligence at UNGA
+    url: https://www.gov.uk/government/news/prime-minister-drives-global-work-on-artificial-intelligence-at-unga-as-uk-and-us-make-history-with-firing-from-undersea-drone
+versions:
+  - version: 1
+    text: >-
+      When Britain takes the Presidency of the G20 next year, I will show our new-found confidence
+      as a country, and I will show it to the world by putting AI centre stage and Britain will then
+      work to develop a new global code to capture its benefits whilst being clear-eyed about its
+      risks.
+    recorded_on: "2026-09-29"
+    source_url: https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: >-
+          G20 governments, through a shared global code on the benefits and risks of AI, and the
+          people those rules would protect
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: >-
+          During the UK's G20 Presidency, from December 2026, up to the Leaders' Summit in
+          Manchester in November 2027
+      deadline: "2027-11-30"
+      funded_by: null
+events:
+  - date: "2026-09-29"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister tells Labour's conference he will put AI centre stage during the UK's
+        G20 Presidency and that Britain will work to develop a new global code on AI
+  - date: "2027-11-30"
+    type: deadline
+    text:
+      en: G20 Leaders' Summit in Manchester (editorial date, end of November 2027)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -5,6 +5,12 @@
     "checked_on": "2026-10-13",
     "sha256": "12f66a4458e80cb6ce35efcb12e2c5848c6f87481294083558663b53e21e54c6"
   },
+  "06062302f8320bb5b92fc61097c3770e8214d492ce54039b0ef420a890b158c1|https://www.gov.uk/government/speeches/pm-speech-at-the-innovation-nation-summit-9-october-2026": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/pm-speech-at-the-innovation-nation-summit-9-october-2026",
+    "checked_on": "2026-10-20",
+    "sha256": "76aaa2380e0d4443fb1c228497d76cb54a390de05ddd4f0ccdf3603ec0759334"
+  },
   "064fec3f3b3921eec1f735431922f532ffa87bf20b8a4bc85fbce1e727d13083|https://hansard.parliament.uk/Commons/2026-10-15/debates/971754D8-183E-459F-8404-390D4E0A0C0E/NationalCareService": {
     "match": "exact",
     "url": "https://hansard.parliament.uk/Commons/2026-10-15/debates/971754D8-183E-459F-8404-390D4E0A0C0E/NationalCareService",
@@ -155,6 +161,12 @@
     "checked_on": "2026-10-13",
     "sha256": "f44b4bb943cde778e955dff9f90e2b46cb4e0925dbde9e6e2513633a250649b6"
   },
+  "76054a54543a72562fea59cb49b0ac0887bdb8b8a91fe8be6b1cbdef1c55044a|https://www.gov.uk/government/speeches/andy-burnhams-first-speech-as-prime-minister-20-july-2026": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/andy-burnhams-first-speech-as-prime-minister-20-july-2026",
+    "checked_on": "2026-10-20",
+    "sha256": "7a373287050aaca072f87433a5e6d89e749603faba528a779fc0d855513aa584"
+  },
   "77fe412253460543d525f3597806fc1753dc9a9da9ef077629de1e05f075eded|https://www.gov.uk/government/news/world-first-mission-puts-uk-expertise-to-work-to-help-clean-up-space": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/world-first-mission-puts-uk-expertise-to-work-to-help-clean-up-space",
@@ -257,6 +269,12 @@
     "checked_on": "2026-10-18",
     "sha256": "2105280408a3ad6799f324e22d04cb984045805d8c16e0793fd466adb842314c"
   },
+  "b08954638236a255cf705b95a36281a82684bba49c204308bc6dbc981a244454|https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/": {
+    "match": "exact",
+    "url": "https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/",
+    "checked_on": "2026-10-20",
+    "sha256": "c79d855fc8c2769495952531f555367d6e71dca115ce0f8d0041e640d16c1527"
+  },
   "b2847887dd874f22d6efe4a9ce960d0248c668e302a0e6ce8c4840cbe961e297|https://www.gov.uk/government/publications/organic-action-plan-for-england/organic-action-plan-for-england": {
     "match": "exact",
     "url": "https://www.gov.uk/government/publications/organic-action-plan-for-england/organic-action-plan-for-england",
@@ -269,17 +287,35 @@
     "checked_on": "2026-10-16",
     "sha256": "da1fb234192c32090d4570d357dad6a2d263fe554f196d77f2eaf6e8c5628c00"
   },
+  "b52ae36c68cbedaced3d116adf597a6749879f732f0b6f6df391e116b684b3a8|https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/": {
+    "match": "exact",
+    "url": "https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/",
+    "checked_on": "2026-10-20",
+    "sha256": "c79d855fc8c2769495952531f555367d6e71dca115ce0f8d0041e640d16c1527"
+  },
   "b5933b4c4457ac4c6f512d1da5ae5e4b64bc15827aae3108e106590f7572787f|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363",
     "checked_on": "2026-10-13",
     "sha256": "2be9cdd3c28ee95ac9dfdbcd904cc4eb373252e6f33d22d3f72fadb7e53da8a0"
   },
+  "b828601cc7508303653db3ab3d86b534ca3c8c123800f392ac82842305ccdc0c|https://www.gov.uk/government/speeches/pm-speech-at-unga-22-september-2026": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/pm-speech-at-unga-22-september-2026",
+    "checked_on": "2026-10-20",
+    "sha256": "a8a65b98161296c5fcb008b750280cf1cf56451ea634c20f16019df42b742b15"
+  },
   "b8f7b3574d7346c6f3b5db9dbf0dec4d6f537767e0944421eaa1559c507d37be|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372",
     "checked_on": "2026-10-16",
     "sha256": "ad43865dd9295d4ab74c26e2dfb01d42bb9ada1b8de1a5a82be852bca730eb51"
+  },
+  "bce70c483e8a618569458ecccb29397c8a256098e166ee1b2a1ff175e23adbf9|https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/": {
+    "match": "exact",
+    "url": "https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/",
+    "checked_on": "2026-10-20",
+    "sha256": "c79d855fc8c2769495952531f555367d6e71dca115ce0f8d0041e640d16c1527"
   },
   "bf09bcfa6c3ea5108d2d81b3dd4e081242201999df09cb05d2e99b22e8896924|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372": {
     "match": "exact",
@@ -310,6 +346,12 @@
     "url": "https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines",
     "checked_on": "2026-10-16",
     "sha256": "bb4b49a5e27ea86f4caaaa3aa018a3e0dd3acf89bf5134c7efd19297c96b32ad"
+  },
+  "d01ea4e29462cce6598d3f3dd778adae140e6bac132a77d6929a46c46fd30aa5|https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/": {
+    "match": "exact",
+    "url": "https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/",
+    "checked_on": "2026-10-20",
+    "sha256": "c79d855fc8c2769495952531f555367d6e71dca115ce0f8d0041e640d16c1527"
   },
   "d397783b5e5e0a5be64d20b8f5ab7ce2829e6effdfac6affe8926aba55dc0ae3|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS374": {
     "match": "exact",
