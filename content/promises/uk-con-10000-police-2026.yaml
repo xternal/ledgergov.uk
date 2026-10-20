@@ -1,0 +1,54 @@
+format: openpromises/1
+id: uk-con-10000-police-2026
+headline:
+  en: Deploy 10,000 more police officers
+actor_id: kemi-badenoch
+made_on: "2026-08-25"
+venue: press_release
+venue_label:
+  en: News release on her website
+area: public_order
+status: promised
+status_note:
+  en: >-
+    The Conservatives are not in government, so the card stays at Promised. The release says this
+    is part of the party's Take Back Our Streets plan and that Essex Police would get 303 of the
+    officers. It does not say how the officers would be paid for or by when.
+responsible: null
+origin: llm_intake
+sources:
+  - title: "Kemi Badenoch: Conservatives pledge 10,000 more police officers (25 Aug 2026)"
+    url: https://www.kemibadenoch.org.uk/news/conservatives-pledge-10000-more-police-officers
+versions:
+  - version: 1
+    text: >-
+      Local MP for North West Essex and Leader of the Conservative Party, Kemi Badenoch, has pledged
+      that the next Conservative Government will deploy 10,000 more police officers.
+    recorded_on: "2026-08-25"
+    source_url: https://www.kemibadenoch.org.uk/news/conservatives-pledge-10000-more-police-officers
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: Police forces; the release says Essex Police would get 303 more officers
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated ("the next Conservative Government")
+      funded_by: null
+events:
+  - date: "2026-08-25"
+    type: promised
+    text:
+      en: >-
+        Kemi Badenoch pledges that the next Conservative Government will deploy 10,000 more
+        police officers
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
