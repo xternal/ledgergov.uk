@@ -1,0 +1,28 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Counts are of drafts; every draft has exactly one outcome, so the outcomes add up to `candidates`.
+# Recorded on 20 October 2026 from the editor's closing comment on #75 (ROUTINE.md step 1, a pull request closed by hand).
+intake_date: "2026-10-10"
+triaged_on: "2026-10-12"
+by: Pavel Guzhikov, by hand (closed #75 on 12 Oct 2026); recorded by Claude on 20 Oct 2026
+pull_request: 75
+sources_read: 2
+candidates: 1
+drafts: 1
+outcomes:
+  card: 0
+  reworded: 0
+  duplicate: 0
+  existing: 0
+  grant: 0
+  done: 0
+  process: 0
+  broad: 1
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 0
+new_actors: []
+cards: []
+reworded: []
+dropped:
+  - { draft: 2026-10-10-govuk-faster-front-line-delivery-with-new-testing-and-evaluation-p-1, code: broad, note: "the Ministry of Defence's press-release narrative, not a minister's words, with no target, date or cost; the checkable commitment in the same release (SME spending up £2.5bn a year by summer 2028) was carded by hand as uk-mod-sme-spend-2028" }
