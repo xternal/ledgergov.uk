@@ -23,8 +23,14 @@ roles:
 identifiers:
   parliament_member_id: 4483
 # Official social accounts in the UK Parliament Members API contact record,
-# https://members-api.parliament.uk/api/Members/4483/Contact, checked 20 October 2026.
+# https://members-api.parliament.uk/api/Members/4483/Contact, checked 20 October 2026: his website
+# (http://www.rishisunak.com/) and Facebook. His website ("Rishi Sunak MP | MP for Richmond and Northallerton";
+# "Promoted by Sam Gibbs on behalf of Rishi Sunak MP") links his X account, checked 20 October 2026. Pavel Guzhikov
+# named the Instagram account on 20 October 2026; it was opened and says it is his ("Rishi Sunak (@rishisunakmp)").
 same_as:
   - https://www.gov.uk/government/people/rishi-sunak
+  - https://www.rishisunak.com/
+  - https://x.com/RishiSunak
+  - https://www.instagram.com/rishisunakmp/
   - https://www.facebook.com/rishisunak
 same_as_checked_on: "2026-10-20"
