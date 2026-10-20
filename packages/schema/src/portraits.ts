@@ -20,6 +20,18 @@ export const PortraitsFile = z.strictObject({
       credit: z.string().startsWith("©"),
       /** Why there is no image, when Parliament publishes none. */
       missing: z.string().optional(),
+      /**
+       * An official portrait Parliament published under the same licence that the Members API no longer serves (Rishi
+       * Sunak's of 2017): the copy `pnpm portraits` fetches, the page the credit links to, the year it was taken and why.
+       */
+      from: z
+        .strictObject({
+          image: z.string().url(),
+          page: z.string().url(),
+          taken: z.string().regex(/^\d{4}$/),
+          why: z.string().min(1),
+        })
+        .optional(),
     }),
   ),
 });
@@ -31,8 +43,10 @@ export interface Portrait {
   /** "©House of Commons/Roger Harris", as Parliament asks. */
   credit: string;
   licence: { name: string; url: string };
-  /** Parliament's page for the portrait. */
+  /** Parliament's page for the portrait, or the page of the copy when Parliament no longer serves it. */
   source: string;
+  /** The year an older portrait was taken, shown beside it; absent for the one Parliament serves now. */
+  taken?: string;
 }
 
 export const PORTRAITS_FILE = join("data", "portraits.json");
@@ -50,6 +64,7 @@ export function loadPortraits(root = repoRoot()): (memberId: number | undefined 
     if (memberId == null) return null;
     const p = file.portraits[String(memberId)];
     if (!p || p.missing || !existsSync(join(root, PORTRAITS_DIR, `${memberId}.jpg`))) return null;
+    if (p.from) return { src: `/portraits/${memberId}.jpg`, credit: p.credit, licence: file.licence, source: p.from.page, taken: p.from.taken };
     return { src: `/portraits/${memberId}.jpg`, credit: p.credit, licence: file.licence, source: `https://members.parliament.uk/member/${memberId}/portrait` };
   };
 }

@@ -107,13 +107,13 @@ export default async function ActorPage({ params }: Props) {
             <figure className="m-0 grid w-[160px] flex-none gap-2 sm:w-[240px]">
               <img
                 src={portrait.src}
-                alt={`Official portrait of ${actor.name}`}
+                alt={`Official portrait of ${actor.name}${portrait.taken ? `, ${portrait.taken}` : ""}`}
                 width={560}
                 height={747}
                 className="aspect-[3/4] h-auto w-full rounded-[12px] border border-line bg-sunk object-cover"
               />
               <figcaption className="text-caption text-muted">
-                Official portrait: <a href={portrait.source}>{portrait.credit}</a>, <a href={portrait.licence.url}>{portrait.licence.name}</a>, cropped
+                Official portrait{portrait.taken ? `, ${portrait.taken}` : ""}: <a href={portrait.source}>{portrait.credit}</a>, <a href={portrait.licence.url}>{portrait.licence.name}</a>, cropped
               </figcaption>
             </figure>
           )}
