@@ -2,7 +2,7 @@ import { categoryOf } from "@openpromises/core";
 import { lastChanged, paths, spotlight, words } from "@openpromises/publish";
 import { describe, expect, it } from "vitest";
 import { loadSeed } from "../src/seed";
-import { engineConfig, spotlightInput } from "../src/spotlight";
+import { areaCoverageFor, engineConfig, spotlightInput } from "../src/spotlight";
 
 /**
  * Promises close to the way in (OpenPromises decision 30): the home page's spotlight reads the site's published cards
@@ -55,5 +55,42 @@ describe("the home page's promises", () => {
   it("say where each party stands in the words of the site's own lists", () => {
     const w = words(input.config, "en");
     expect(["in_power", "opposition", "public_body"].map((s) => w.t(`standing.${s}`))).toEqual(["in government", "in opposition", "public body"]);
+  });
+});
+
+/**
+ * Every area on an actor's page (OpenPromises decision 33): the areas come from the configuration, so every actor's
+ * page shows the same list, empty areas included, and the counts are that actor's published cards.
+ */
+describe("an actor's promises by area", () => {
+  const areas = engineConfig().areas;
+  const listed = areas.kind === "enum" ? areas.values : [];
+  const cardsOf = (id: string, kind: string) => seed.cards.filter((c) => c.actor.id === id || (kind === "party" && c.party?.id === id));
+
+  it("lists every area the site configures, in its order, for every actor, empty ones too", () => {
+    expect(listed.length).toBe(10);
+    for (const a of seed.actors) {
+      const rows = areaCoverageFor(input.views, new Set(cardsOf(a.id, a.kind).map((c) => c.id)));
+      expect(rows.map((r) => r.area), a.id).toEqual(listed);
+    }
+  });
+
+  it("counts the cards the actor's page lists, by area and by where they stand", () => {
+    for (const a of seed.actors) {
+      const cards = cardsOf(a.id, a.kind);
+      const rows = areaCoverageFor(input.views, new Set(cards.map((c) => c.id)));
+      expect(rows.reduce((n, r) => n + r.count, 0), a.id).toBe(cards.length);
+      for (const r of rows) {
+        expect(r.count, `${a.id} ${r.area}`).toBe(cards.filter((c) => c.file.policy_area === r.area).length);
+        expect(r.counts.reduce((n, x) => n + x.count, 0)).toBe(r.count);
+        if (!r.count) expect(r.counts).toEqual([]);
+      }
+    }
+  });
+
+  it("shows an empty area as empty rather than leaving it out", () => {
+    const rows = areaCoverageFor(input.views, new Set());
+    expect(rows.map((r) => r.area)).toEqual(listed);
+    expect(rows.every((r) => r.count === 0 && r.counts.length === 0)).toBe(true);
   });
 });

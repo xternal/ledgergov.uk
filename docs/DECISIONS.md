@@ -2,6 +2,22 @@
 
 The owner's decisions for LedgerGov.UK, newest first, in his words where he gave them, with what was done and what was deliberately not.
 
+## Every area on every actor's page, and the actor page as a special project (20 Oct 2026)
+
+Pavel's complaint about the Prime Minister's page: it showed what he promised on pints, VAT and bus fares, but nothing on energy, AI or the long-term future, and a reader could not tell "promised nothing" from "not recorded". OpenPromises decision 33 (0.12.0) answers it with `areaCoverage()`. The same day, seven cards from his speeches since 20 July 2026 were added (#135).
+
+**Done:**
+
+- Every actor's page has a "Promises by area" table after its track record: every area the site lists, with the actor's published promises in it and where they stand, and "None recorded" for an empty area, with a line saying that means not on the ledger yet (docs/OPERATIONS.md §15). The same list for every actor (invariant 6).
+- The site moved to OpenPromises 0.12.0; nothing else in what it serves changes (`pnpm parity:check`).
+
+**Decided, to be built after sketches** (Pavel, about 20:30 BST: "1 ye to parliament portarait or any other official photo available ; 2 yes ; 3 yes ; 4 yes to sketches"):
+
+1. An official photo for every person who has one: UK Parliament's official portrait, or another official photo, with its credit, once its licence is confirmed. The same rule for everyone; parties and public bodies have none.
+2. "Key promises" on an actor's page are chosen by the home page's rule (the engine's `spotlight()`: the latest changes and the open promises due next), never by hand.
+3. The timeline of an actor's promises and the key-promises rule are built in OpenPromises first, so BoroughBook.UK and RussiaLedger.com get them too.
+4. Two or three layouts are sketched for Pavel to choose from before anything is built.
+
 ## The repository is named after the site (20 Oct 2026)
 
 Pavel, about 17:55 BST: "can we rename the repo public-ledger to ledgergov.uk please?" The GitHub repository `xternal/public-ledger` became `xternal/ledgergov.uk` at about 18:00 BST, in line with naming products by their domain (OpenPromises decision 25). GitHub redirects the old address for web links, the API, `git clone`, `fetch` and `push`, as long as no new repository takes the old name.
