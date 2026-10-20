@@ -9,7 +9,7 @@ Pavel's complaint about the Prime Minister's page: it showed what he promised on
 **Done:**
 
 - Every actor's page has a "Promises by area" table after its track record: every area the site lists, with the actor's published promises in it and where they stand, and "None recorded" for an empty area, with a line saying that means not on the ledger yet (docs/OPERATIONS.md §15). The same list for every actor (invariant 6).
-- The site moved to OpenPromises 0.12.0; nothing else in what it serves changes (`pnpm parity:check`).
+- The site moved to OpenPromises 0.12.0, and the same evening to 0.13.0 (its stylesheet's dark mode is dark brown; the site uses its own styles, so nothing it serves changes; `pnpm parity:check`).
 
 **Decided, to be built after sketches** (Pavel, about 20:30 BST: "1 ye to parliament portarait or any other official photo available ; 2 yes ; 3 yes ; 4 yes to sketches"):
 

@@ -23,8 +23,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@openpromises/core": "0.12.0",
-    "@openpromises/publish": "0.12.0",
+    "@openpromises/core": "0.13.0",
+    "@openpromises/publish": "0.13.0",
     "yaml": "^2.9.1",
     "zod": "^4.6.5"
   },
