@@ -1,7 +1,7 @@
 import "server-only";
 import { loadSeed } from "@ledger/schema/seed";
 import { readEditors, withVerification } from "@ledger/schema/verification";
-import { spotlightInput, type SpotlightInput } from "@ledger/schema/spotlight";
+import { areaCoverageFor, engineViews, spotlightInput, type AreaCoverage, type SpotlightInput } from "@ledger/schema/spotlight";
 import { loadPeople } from "@ledger/schema/people";
 import { loadBorrowing } from "@ledger/schema/borrowing";
 import { loadForecasts, readBuildText, type ForecastData } from "@ledger/schema/forecasts";
@@ -31,6 +31,17 @@ export function getSeed(): Seed {
  */
 export function getSpotlight(today: string): SpotlightInput {
   return spotlightInput(new Set(getSeed().cards.map((c) => c.id)), today);
+}
+
+let views: SpotlightInput["views"] | null = null;
+
+/**
+ * An actor's promises by area (OpenPromises decision 33): every area the site lists, empty ones too, for the cards the
+ * actor's page lists, read as the engine reads them. The areas are the same for every actor.
+ */
+export function getAreaCoverage(ids: ReadonlySet<string>): AreaCoverage[] {
+  views ??= engineViews(new Set(getSeed().cards.map((c) => c.id))).views;
+  return areaCoverageFor(views, ids);
 }
 
 let people: PeopleBundle | null = null;

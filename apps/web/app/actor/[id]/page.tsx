@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { actorJsonLd, actorSameAs, clip, DESCRIPTION_MAX, statusCounts } from "@ledger/server/seo";
+import type { PolicyArea, Status } from "@ledger/schema";
+import { actorJsonLd, actorSameAs, areaPath, clip, DESCRIPTION_MAX, statusCounts } from "@ledger/server/seo";
 import { STATUS_LABEL } from "@/lib/copy";
-import { getSeed } from "@/lib/data";
+import { getAreaCoverage, getSeed } from "@/lib/data";
+import { AREA_LABEL } from "@/lib/promises";
 import { contractTotals } from "@ledger/schema";
 import { signedBn, signedMoney } from "@/lib/format";
 import { delayText, showsContracts } from "@/lib/contracts";
@@ -83,6 +85,8 @@ export default async function ActorPage({ params }: Props) {
   const structuredData = actorJsonLd(actor, party ?? null, cards, seoContext());
   // The official pages the structured data names (sameAs), shown to readers too.
   const official = actorSameAs(actor).map((url) => ({ url, label: officialLabel(url) }));
+  // Every area the site lists, empty ones too (OpenPromises decision 33): the same rows on every actor's page.
+  const areas = getAreaCoverage(new Set(cards.map((c) => c.id)));
   return (
     <>
       <JsonLd data={structuredData} />
@@ -151,6 +155,44 @@ export default async function ActorPage({ params }: Props) {
             ))}
           </ul>
           <p className="m-0 text-[12.5px] text-muted">No score: the mix speaks for itself. Every actor is held to the same promise standard.</p>
+        </section>
+
+        <section aria-labelledby="areas-h" className="grid gap-4">
+          <h2 id="areas-h" className="text-title font-semibold">
+            Promises by area
+          </h2>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse text-sm">
+              <caption className="sr-only">{`${actor.name}'s promises in each policy area, and where they stand`}</caption>
+              <thead>
+                <tr className="border-b border-line text-[12.5px] text-muted">
+                  <th scope="col" className="py-2.5 pr-4 text-left font-medium">
+                    Area
+                  </th>
+                  <th scope="col" className="py-2.5 pr-4 text-right font-medium">
+                    Promises
+                  </th>
+                  <th scope="col" className="py-2.5 text-left font-medium">
+                    Where they stand
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {areas.map((r) => (
+                  <tr key={r.area} className="border-b border-line">
+                    <th scope="row" className="py-2.5 pr-4 text-left font-normal">
+                      {r.count ? <a href={areaPath(r.area as PolicyArea)}>{AREA_LABEL[r.area as PolicyArea]}</a> : <span className="text-muted">{AREA_LABEL[r.area as PolicyArea]}</span>}
+                    </th>
+                    <td className="py-2.5 pr-4 text-right font-semibold tracking-[var(--tracking-figure)]">{r.count || <span className="font-normal text-muted">None recorded</span>}</td>
+                    <td className="py-2.5 text-muted">{r.counts.map((x) => `${x.count} ${STATUS_LABEL[x.status as Status].toLowerCase()}`).join(", ")}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="m-0 text-[12.5px] text-muted">
+            Every area the ledger tracks, the same list for everyone. &ldquo;None recorded&rdquo; means no promise in that area is on the ledger yet, not that none was made.
+          </p>
         </section>
 
         {contracts.count > 0 && (
