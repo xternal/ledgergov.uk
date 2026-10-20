@@ -14,6 +14,9 @@ roles:
       quote: Chancellor of the Exchequer between 5 July 2024 and 20 July 2026.
 identifiers:
   parliament_member_id: 4031
+# Official social accounts in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/4031/Contact, checked 20 October 2026.
 same_as:
   - https://www.gov.uk/government/people/rachel-reeves
-same_as_checked_on: "2026-10-08"
+  - https://x.com/RachelReevesMP
+same_as_checked_on: "2026-10-20"

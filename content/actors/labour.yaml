@@ -9,6 +9,13 @@ standing: in_power
 roles: []
 identifiers:
   parliament_party_id: 15
+# Official social accounts in the footer of the party's website, https://labour.org.uk/, checked
+# 20 October 2026.
 same_as:
   - https://labour.org.uk/
-same_as_checked_on: "2026-10-08"
+  - https://x.com/UKLabour
+  - https://www.instagram.com/uklabour/
+  - https://www.facebook.com/labourparty
+  - https://www.tiktok.com/@uklabour
+  - https://www.youtube.com/labourparty
+same_as_checked_on: "2026-10-20"

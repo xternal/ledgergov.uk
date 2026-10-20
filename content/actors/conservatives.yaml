@@ -9,6 +9,13 @@ standing: opposition
 roles: []
 identifiers:
   parliament_party_id: 4
+# Official social accounts in the footer of the party's website, https://www.conservatives.com/, checked
+# 20 October 2026.
 same_as:
   - https://www.conservatives.com/
-same_as_checked_on: "2026-10-08"
+  - https://x.com/Conservatives
+  - https://www.instagram.com/conservatives/
+  - https://www.facebook.com/conservatives
+  - https://www.youtube.com/@Conservatives
+  - https://www.linkedin.com/company/18726/
+same_as_checked_on: "2026-10-20"

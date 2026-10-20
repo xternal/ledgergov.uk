@@ -7,6 +7,14 @@ kind: government
 name:
   en: Scottish Government
 roles: []
+# Official social accounts in the footer of its website, https://www.gov.scot/ (its GOV.UK organisation page
+# lists none and points there), checked 20 October 2026.
 same_as:
   - https://www.gov.scot/
-same_as_checked_on: "2026-10-09"
+  - https://x.com/scotgov
+  - https://www.instagram.com/scotgov/
+  - https://www.facebook.com/TheScottishGovernment
+  - https://www.tiktok.com/@scotgov
+  - https://www.youtube.com/user/scottishgovernment
+  - https://www.linkedin.com/company/thescottishgovernment/
+same_as_checked_on: "2026-10-20"

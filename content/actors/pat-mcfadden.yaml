@@ -11,3 +11,8 @@ roles:
       quote: The Secretary of State for Work and Pensions (Pat McFadden)
 identifiers:
   parliament_member_id: 1587
+# Official social accounts in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/1587/Contact, checked 20 October 2026.
+same_as:
+  - https://x.com/patmcfaddenmp
+same_as_checked_on: "2026-10-20"

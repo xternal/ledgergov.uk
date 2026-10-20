@@ -28,6 +28,10 @@ roles:
         September 2025 and 22 July 2026
 identifiers:
   parliament_member_id: 5076
+# Official social accounts in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/5076/Contact, checked 20 October 2026.
 same_as:
   - https://www.gov.uk/government/people/blair-mcdougall
-same_as_checked_on: "2026-10-08"
+  - https://www.instagram.com/blairforeastren/
+  - https://www.facebook.com/blairforeastren
+same_as_checked_on: "2026-10-20"
