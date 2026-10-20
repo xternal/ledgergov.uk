@@ -1,0 +1,30 @@
+format: openpromises/1
+id: rishi-sunak
+kind: person
+name:
+  en: Rishi Sunak
+party_id: conservatives
+roles:
+  - title:
+      en: Prime Minister
+    from: "2022-10-25"
+    to: "2024-07-05"
+    source:
+      url: https://www.gov.uk/government/people/rishi-sunak
+      quote: Rishi Sunak was Prime Minister between 25 October 2022 and 5 July 2024.
+  - title:
+      en: Leader of the Opposition
+    from: "2024-07-05"
+    to: "2024-11-02"
+    # The page lists the post with its dates: "5 July 2024 - 2 November 2024".
+    source:
+      url: https://members.parliament.uk/member/4483/career
+      quote: Leader of HM Official Opposition
+identifiers:
+  parliament_member_id: 4483
+# Official social accounts in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/4483/Contact, checked 20 October 2026.
+same_as:
+  - https://www.gov.uk/government/people/rishi-sunak
+  - https://www.facebook.com/rishisunak
+same_as_checked_on: "2026-10-20"

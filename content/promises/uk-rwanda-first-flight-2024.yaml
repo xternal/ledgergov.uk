@@ -1,0 +1,73 @@
+format: openpromises/1
+id: uk-rwanda-first-flight-2024
+headline:
+  en: First Rwanda flight in 10 to 12 weeks
+actor_id: rishi-sunak
+made_on: "2024-04-22"
+venue: speech
+venue_label:
+  en: Statement on the plan to stop the boats
+area: public_order
+status: failed
+status_note:
+  en: >-
+    The flight was to take people who had arrived in the UK illegally to Rwanda. Twelve weeks from
+    22 April 2024 is 15 July 2024. No such flight had left by then: on 22 July 2024 the new Home
+    Secretary told the Commons that the partnership had cost £700 million to send four volunteers,
+    including the cost of chartering flights that never took off, and that the government would end
+    it. The government had changed on 5 July 2024.
+responsible: null
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: Rishi Sunak's statement on the plan to stop the boats, 22 April 2024"
+    url: https://www.gov.uk/government/speeches/prime-minister-rishi-sunaks-statement-on-the-plan-to-stop-the-boats-22-april-2024
+  - title: "Hansard, House of Commons, 22 Jul 2024: Border Security and Asylum (Home Secretary's statement)"
+    url: https://hansard.parliament.uk/commons/2024-07-22/debates/FBB2B906-592F-4047-A6E1-59D6DB97573A/BorderSecurityAndAsylum
+versions:
+  - version: 1
+    text: >-
+      The first flight will leave in 10 to 12 weeks.
+    recorded_on: "2024-04-22"
+    source_url: https://www.gov.uk/government/speeches/prime-minister-rishi-sunaks-statement-on-the-plan-to-stop-the-boats-22-april-2024
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: People who arrived in the UK illegally and were to be relocated to Rwanda
+      cost:
+        note:
+          en: >-
+            No figure in the statement. The Home Secretary told the Commons on 22 July 2024 that the
+            partnership with Rwanda had cost £700 million, including £290 million in payments to
+            Rwanda.
+        sources:
+          - title: "Hansard, House of Commons, 22 Jul 2024: Border Security and Asylum"
+            url: https://hansard.parliament.uk/commons/2024-07-22/debates/FBB2B906-592F-4047-A6E1-59D6DB97573A/BorderSecurityAndAsylum
+      when:
+        en: Within 10 to 12 weeks of 22 April 2024
+      deadline: "2024-07-15"
+      funded_by: null
+events:
+  - date: "2024-04-22"
+    type: promised
+    text:
+      en: The Prime Minister says the first flight to Rwanda will leave in 10 to 12 weeks
+  - date: "2024-07-15"
+    type: deadline
+    text:
+      en: First flight due, 12 weeks after the statement
+  - date: "2024-07-22"
+    type: failed
+    text:
+      en: >-
+        The Home Secretary tells the Commons that flights to Rwanda never took off and that the
+        partnership will end
+    evidence_url: https://hansard.parliament.uk/commons/2024-07-22/debates/FBB2B906-592F-4047-A6E1-59D6DB97573A/BorderSecurityAndAsylum
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
