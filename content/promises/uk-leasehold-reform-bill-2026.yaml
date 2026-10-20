@@ -1,0 +1,59 @@
+format: openpromises/1
+id: uk-leasehold-reform-bill-2026
+headline:
+  en: Introduce a leasehold reform Bill before Christmas
+actor_id: andy-burnham
+made_on: "2026-09-29"
+venue: speech
+venue_label:
+  en: Leader's speech, Labour Party Conference 2026
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    "Before Christmas" is recorded as a deadline of 24 December 2026. The speech does not say what
+    the Bill would contain; it tells leaseholders: "The days of you being squeezed for every penny
+    are coming to an end." The card moves when a leasehold reform Bill is introduced in Parliament.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Labour Party: Andy Burnham's speech to Labour Party Conference 2026 (29 Sep 2026)"
+    url: https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/
+versions:
+  - version: 1
+    text: >-
+      We will introduce a Bill before Christmas for long overdue Leasehold Reform.
+    recorded_on: "2026-09-29"
+    source_url: https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: Leaseholders (the speech speaks of millions across the country)
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Before Christmas 2026
+      deadline: "2026-12-24"
+      funded_by: null
+events:
+  - date: "2026-09-29"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister tells Labour's conference the government will introduce a Bill for
+        leasehold reform before Christmas
+  - date: "2026-12-24"
+    type: deadline
+    text:
+      en: Bill due to be introduced before Christmas (editorial date)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

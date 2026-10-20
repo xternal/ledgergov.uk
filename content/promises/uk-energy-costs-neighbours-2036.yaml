@@ -1,0 +1,63 @@
+format: openpromises/1
+id: uk-energy-costs-neighbours-2036
+headline:
+  en: Bring energy costs in line with neighbours
+actor_id: andy-burnham
+made_on: "2026-09-29"
+venue: speech
+venue_label:
+  en: Leader's speech, Labour Party Conference 2026
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    Stated as an aim ("I want"). The Prime Minister said British businesses and billpayers pay some
+    of the highest energy costs in Europe, and that meeting the aim means reforming the energy
+    market. "Within 10 years" is recorded as a deadline of 29 September 2036, ten years after the
+    speech. The speech names no measure of costs and no list of neighbours; the card moves when the
+    government sets one, or a plan to reach the aim.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Labour Party: Andy Burnham's speech to Labour Party Conference 2026 (29 Sep 2026)"
+    url: https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/
+versions:
+  - version: 1
+    text: >-
+      Within 10 years, I want those costs to be in line with our neighbours.
+    recorded_on: "2026-09-29"
+    source_url: https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: >-
+          British businesses and billpayers, whose energy costs the speech says are some of the
+          highest in Europe
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Within 10 years of the speech (29 September 2026)
+      deadline: "2036-09-29"
+      funded_by: null
+events:
+  - date: "2026-09-29"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister tells Labour's conference he wants British energy costs in line with
+        neighbouring countries' within 10 years
+  - date: "2036-09-29"
+    type: deadline
+    text:
+      en: Energy costs due to be in line with neighbours (editorial date, 10 years from the speech)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

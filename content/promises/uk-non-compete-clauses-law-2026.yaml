@@ -1,0 +1,59 @@
+format: openpromises/1
+id: uk-non-compete-clauses-law-2026
+headline:
+  en: Legislate on non-compete clauses for start-ups
+actor_id: andy-burnham
+made_on: "2026-10-09"
+venue: speech
+venue_label:
+  en: Speech at the Innovation Nation Summit, Manchester
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The Prime Minister said non-compete clauses stop workers joining a rival or setting up their
+    own firm after leaving a job. In the same speech he said workers in the everyday economy would
+    not be prevented from moving jobs either, and that the government would bring forward options
+    on the wider use of restrictive practices. No Bill or date is named. The card moves when a Bill
+    with the change is introduced.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: PM speech at the Innovation Nation Summit, 9 October 2026"
+    url: https://www.gov.uk/government/speeches/pm-speech-at-the-innovation-nation-summit-9-october-2026
+versions:
+  - version: 1
+    text: >-
+      So, I can confirm today we will legislate to make sure that non-compete clauses will no longer
+      be a barrier to hiring for our most promising startups and scaling firms.
+    recorded_on: "2026-10-09"
+    source_url: https://www.gov.uk/government/speeches/pm-speech-at-the-innovation-nation-summit-9-october-2026
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: >-
+          Workers bound by non-compete clauses, and the start-ups and scaling firms that want to
+          hire them
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-09"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister says the government will legislate so that non-compete clauses no longer
+        stop start-ups and scaling firms from hiring
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

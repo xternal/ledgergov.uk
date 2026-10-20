@@ -1,0 +1,62 @@
+format: openpromises/1
+id: uk-us-ai-defence-partnership-2026
+headline:
+  en: Develop an AI defence partnership with the US
+actor_id: andy-burnham
+made_on: "2026-09-22"
+venue: speech
+venue_label:
+  en: Speech to the UN General Assembly
+area: defence
+status: promised
+status_note:
+  en: >-
+    No 10 said the same day that the Ministry of Defence's Rapid AI Delivery Taskforce and the US
+    Department of War's Chief Digital and Artificial Intelligence Office will work together on AI
+    and autonomy, to help protect critical national infrastructure from sea lanes to air space. No
+    date, cost or agreement has been published. The card moves when the two governments publish
+    the partnership's terms or its first joint work.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: PM speech at UNGA, 22 September 2026"
+    url: https://www.gov.uk/government/speeches/pm-speech-at-unga-22-september-2026
+  - title: >-
+      Prime Minister's Office, 22 Sep 2026: Prime Minister drives global work on artificial
+      intelligence at UNGA
+    url: https://www.gov.uk/government/news/prime-minister-drives-global-work-on-artificial-intelligence-at-unga-as-uk-and-us-make-history-with-firing-from-undersea-drone
+versions:
+  - version: 1
+    text: >-
+      I am announcing today that we are developing a new AI defence partnership with the US to
+      protect our critical national infrastructure.
+    recorded_on: "2026-09-22"
+    source_url: https://www.gov.uk/government/speeches/pm-speech-at-unga-22-september-2026
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: >-
+          The UK's critical national infrastructure, and the people and services that depend on it
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-09-22"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister tells the UN General Assembly the UK is developing a new AI defence
+        partnership with the US to protect critical national infrastructure
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
