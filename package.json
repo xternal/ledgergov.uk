@@ -14,6 +14,7 @@
     "validate": "tsx scripts/validate.ts",
     "etl": "etl/.venv/bin/python -m etl.build",
     "contracts": "etl/.venv/bin/python -m etl.contracts",
+    "portraits": "tsx scripts/portraits.ts",
     "backtest": "etl/.venv/bin/python -m etl.backtest",
     "constituencies": "tsx scripts/constituencies.ts",
     "journeys": "python3 scripts/journeys/build.py docs/CUSTOMER_JOURNEYS.md out/journey-maps.html",
@@ -31,8 +32,8 @@
   "devDependencies": {
     "@ledger/engine": "workspace:*",
     "@ledger/schema": "workspace:*",
-    "@openpromises/cli": "0.13.0",
-    "@openpromises/core": "0.13.0",
+    "@openpromises/cli": "0.14.0",
+    "@openpromises/core": "0.14.0",
     "tsx": "^4.23.15",
     "typescript": "^5.9.3",
     "yaml": "^2.9.1",
