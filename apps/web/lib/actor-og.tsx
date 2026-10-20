@@ -45,10 +45,11 @@ export async function actorImage(a: ActorImage) {
       {photo && a.portrait && (
         <div style={{ display: "flex", flexDirection: "column", width: 375, flexShrink: 0 }}>
           <img src={photo} width={375} height={500} alt="" style={{ borderRadius: 16, objectFit: "cover", border: `1px solid ${OG.line}` }} />
-          <div style={{ display: "flex", marginTop: 10, fontSize: 16, color: OG.muted }}>{`Official portrait: ${a.portrait.credit}, ${a.portrait.licence.name}, cropped`}</div>
+          <div style={{ display: "flex", marginTop: 10, fontSize: 16, color: OG.muted }}>{`Official portrait${a.portrait.taken ? `, ${a.portrait.taken}` : ""}: ${a.portrait.credit}, ${a.portrait.licence.name}, cropped`}</div>
         </div>
       )}
-      <div style={{ display: "flex", flexDirection: "column", flexGrow: 1, minWidth: 0 }}>
+      {/* flexBasis 0: the column takes the room beside the portrait and long lines wrap, rather than growing past the edge. */}
+      <div style={{ display: "flex", flexDirection: "column", flexGrow: 1, flexBasis: 0, minWidth: 0 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 26, fontWeight: 600 }}>
           <img src={MARK_DATA_URI} width={26} height={26} alt="" />
           LedgerGov.UK · Promises
