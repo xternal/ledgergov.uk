@@ -1,0 +1,71 @@
+format: openpromises/1
+id: uk-ai-safety-institute-2023
+headline:
+  en: Establish an AI Safety Institute in the UK
+actor_id: rishi-sunak
+made_on: "2023-10-26"
+venue: speech
+venue_label:
+  en: Speech on AI
+area: general_services
+status: delivered
+status_note:
+  en: >-
+    The AI Safety Institute was launched on 2 November 2023, at the AI Safety Summit at Bletchley
+    Park, a week after the speech. It grew out of the Frontier AI Taskforce, with Ian Hogarth as its
+    chair. On 14 February 2025 the next government renamed it the UK AI Security Institute and gave
+    it a team on the criminal misuse of AI.
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The UK Government was responsible when the institute was set up in November 2023, with Rishi
+      Sunak as Prime Minister.
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: Prime Minister's speech on AI, 26 October 2023"
+    url: https://www.gov.uk/government/speeches/prime-ministers-speech-on-ai-26-october-2023
+  - title: "Prime Minister's Office and DSIT: Prime Minister launches new AI Safety Institute (2 Nov 2023)"
+    url: https://www.gov.uk/government/news/prime-minister-launches-new-ai-safety-institute
+  - title: "DSIT: Tackling AI security risks to unleash growth and deliver Plan for Change (14 Feb 2025)"
+    url: https://www.gov.uk/government/news/tackling-ai-security-risks-to-unleash-growth-and-deliver-plan-for-change
+versions:
+  - version: 1
+    text: >-
+      I can announce that we will establish the world’s first AI Safety Institute – right here in the
+      UK.
+    recorded_on: "2023-10-26"
+    source_url: https://www.gov.uk/government/speeches/prime-ministers-speech-on-ai-26-october-2023
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: >-
+          The public, and the companies and governments building advanced AI, whose models the
+          institute would test for safety
+      cost:
+        note:
+          en: No figure in the speech.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2023-10-26"
+    type: promised
+    text:
+      en: The Prime Minister says the UK will set up an AI Safety Institute
+  - date: "2023-11-02"
+    type: delivered
+    text:
+      en: >-
+        The AI Safety Institute launches at the AI Safety Summit, with companies and countries
+        including the US and Singapore agreeing to work with it
+    evidence_url: https://www.gov.uk/government/news/prime-minister-launches-new-ai-safety-institute
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
