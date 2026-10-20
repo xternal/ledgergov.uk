@@ -1,6 +1,6 @@
 import type { ActorFile, CardView, PolicyArea, Range, Status } from "@ledger/schema";
 import { STATUS_LABEL } from "./copy";
-import { gbpBn, rangeText } from "./format";
+import { gbpBn, longDate, rangeText } from "./format";
 
 /** Shared, server-safe helpers for promise cards. */
 
@@ -55,6 +55,21 @@ export function whoLine(c: CardView): string {
 
 /** Who a card counts towards: the speaker's party, or the speaker when it is a party or has none (HM Government). */
 export const ownerOf = (c: CardView): ActorFile => c.party ?? c.actor;
+
+/** The cards an actor's page lists: a party's include its people's; a person's or a public body's are only their own. */
+export const cardsOfActor = (cards: CardView[], a: ActorFile): CardView[] =>
+  cards.filter((c) => c.actor.id === a.id || (a.kind === "party" && c.party?.id === a.id));
+
+/**
+ * An actor's role on `today`: the roles they hold now, or, when none, the latest one with the day it ended ("Prime
+ * Minister until 20 Jul 2026"), so a former office-holder never reads as the current one. Empty when there are none.
+ */
+export function roleText(a: ActorFile, today: string): string {
+  const current = a.roles.filter((r) => !r.to || r.to >= today).map((r) => r.title);
+  if (current.length) return current.join(", ");
+  const last = a.roles.filter((r) => r.to).sort((x, y) => y.to!.localeCompare(x.to!))[0];
+  return last ? `${last.title} until ${longDate(last.to!)}` : "";
+}
 
 /** "Labour" rather than "Labour Party", where space is tight. */
 export const shortName = (a: ActorFile) => a.short_name ?? a.name;

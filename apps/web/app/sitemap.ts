@@ -40,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: absolute("/"), lastModified: built, changeFrequency: "daily", priority: 1 },
     { url: absolute("/promises"), lastModified: latest, changeFrequency: "daily", priority: 0.9 },
+    { url: absolute("/actor"), lastModified: latest, changeFrequency: "daily", priority: 0.7 },
     { url: absolute("/people"), lastModified: peopleChanged, changeFrequency: "monthly", priority: 0.8 },
     { url: absolute("/borrowing"), lastModified: borrowingChanged, changeFrequency: "monthly", priority: 0.8 },
     { url: absolute("/mp"), lastModified: constituencyList().fetched_on, changeFrequency: "monthly", priority: 0.8 },
