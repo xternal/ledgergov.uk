@@ -10,6 +10,7 @@ reported:
   - outlet: The Guardian
     date: "2026-10-15"
     url: https://www.theguardian.com/uk-news/2026/oct/15/john-healey-raise-taxes-banks-budget
+    archived_url: https://web.archive.org/web/20261020082659/https://www.theguardian.com/uk-news/2026/oct/15/john-healey-raise-taxes-banks-budget
     title: John Healey poised to raise taxes on banks in budget
 estimated_cost:
   range: [-2.25, -2.25, -2.25]
