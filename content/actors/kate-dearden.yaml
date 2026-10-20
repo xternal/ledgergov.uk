@@ -13,3 +13,9 @@ roles:
       url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372
 identifiers:
   parliament_member_id: 5224
+# Official social accounts in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/5224/Contact, checked 20 October 2026.
+same_as:
+  - https://x.com/Kate_Dearden
+  - https://www.facebook.com/KateDeardenMP
+same_as_checked_on: "2026-10-20"

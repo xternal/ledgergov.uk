@@ -13,6 +13,9 @@ roles:
       quote: Karin Smyth was appointed Minister of State in the Department of Health and Social Care on 21 July 2026.
 identifiers:
   parliament_member_id: 4444
+# Official social accounts in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/4444/Contact, checked 20 October 2026.
 same_as:
   - https://www.gov.uk/government/people/karin-smyth
-same_as_checked_on: "2026-10-13"
+  - https://x.com/karinsmyth
+same_as_checked_on: "2026-10-20"

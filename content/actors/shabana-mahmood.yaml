@@ -13,6 +13,9 @@ roles:
       quote: Shabana Mahmood was appointed Secretary of State for the Home Department on 5 September 2025.
 identifiers:
   parliament_member_id: 3914
+# Official social accounts in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/3914/Contact, checked 20 October 2026.
 same_as:
   - https://www.gov.uk/government/people/shabana-mahmood
-same_as_checked_on: "2026-10-13"
+  - https://x.com/ShabanaMahmood
+same_as_checked_on: "2026-10-20"

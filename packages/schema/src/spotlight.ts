@@ -13,7 +13,7 @@
  */
 import { join } from "node:path";
 import { Actor, Card, migrateActor, migrateCard, resolveConfig, type Config } from "@openpromises/core";
-import { cardViews, paths, words, type CardView as EngineCardView } from "@openpromises/publish";
+import { areaCoverage, cardViews, paths, words, type AreaCoverage, type CardView as EngineCardView } from "@openpromises/publish";
 import siteConfig from "../../../openpromises.config";
 import { readYamlDir, repoRoot } from "./content-files";
 import { isV1 } from "./v1";
@@ -39,11 +39,11 @@ export interface SpotlightInput {
 }
 
 /**
- * The spotlight's input for the cards in `ids` (the site's own published cards). A file in the site's older format is
- * converted on the way in, as the engine's check does (config `legacy`). A card or actor the engine cannot read stops
- * the build, as a bad seed file does; CI's OpenPromises check names it first.
+ * The cards in `ids` (the site's own published cards) as the engine's views, and every actor. A file in the site's
+ * older format is converted on the way in, as the engine's check does (config `legacy`). A card or actor the engine
+ * cannot read stops the build, as a bad seed file does; CI's OpenPromises check names it first.
  */
-export function spotlightInput(ids: ReadonlySet<string>, today: string, root = repoRoot()): SpotlightInput {
+export function engineViews(ids: ReadonlySet<string>, root = repoRoot()): { views: EngineCardView[]; actors: Map<string, Actor> } {
   const config = engineConfig();
   const legacy = config.legacy;
   function read<T>(dir: string, parse: (data: unknown) => T, migrate: (raw: unknown) => unknown): T[] {
@@ -57,7 +57,13 @@ export function spotlightInput(ids: ReadonlySet<string>, today: string, root = r
   }
   const cards = read("promises", (d) => Card.parse(d), (raw) => migrateCard(legacy!, raw)).filter((c) => ids.has(c.id));
   const actors = new Map(read("actors", (d) => Actor.parse(d), (raw) => migrateActor(legacy!, raw)).map((a) => [a.id, a]));
-  const views = cardViews(cards, actors);
+  return { views: cardViews(cards, actors), actors };
+}
+
+/** The spotlight's input for the cards in `ids` (the site's own published cards), chosen for `today`. */
+export function spotlightInput(ids: ReadonlySet<string>, today: string, root = repoRoot()): SpotlightInput {
+  const config = engineConfig();
+  const { views, actors } = engineViews(ids, root);
   const L = config.locales.default;
   return {
     config,
@@ -66,4 +72,16 @@ export function spotlightInput(ids: ReadonlySet<string>, today: string, root = r
     today,
     tracked: { text: words(config, L).n("spotlight.count", views.length), href: paths(config).promises(L) },
   };
+}
+
+export type { AreaCoverage };
+
+/**
+ * Every area the site lists, for the cards in `ids`, empty areas included (OpenPromises decision 33, 0.12.0): how
+ * many published promises each holds and where they stand, in ladder order. The areas come from the configuration, in
+ * its order, never from the cards, so the same list frames every actor's page (invariant 6). Pass the cards an actor's
+ * page lists: a party's with its people's.
+ */
+export function areaCoverageFor(views: readonly EngineCardView[], ids: ReadonlySet<string>): AreaCoverage[] {
+  return areaCoverage(views.filter((v) => ids.has(v.id)), engineConfig());
 }

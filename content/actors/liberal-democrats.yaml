@@ -9,6 +9,8 @@ standing: opposition
 roles: []
 identifiers:
   parliament_party_id: 17
+# Official social accounts: none on the party's website, https://www.libdems.org.uk/ (home, about and contact
+# pages), checked 20 October 2026.
 same_as:
   - https://www.libdems.org.uk/
-same_as_checked_on: "2026-10-08"
+same_as_checked_on: "2026-10-20"

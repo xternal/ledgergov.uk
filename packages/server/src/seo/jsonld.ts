@@ -151,6 +151,38 @@ export function collectionJsonLd(input: CollectionInput, ctx: SeoContext): JsonL
   ];
 }
 
+/** /actor: everyone whose promises the ledger tracks, as a CollectionPage listing each actor's page, and its breadcrumb. */
+export function actorIndexJsonLd(input: { path: string; name: string; description: string; actors: ActorFile[]; cards: CardView[] }, ctx: SeoContext): JsonLdObject[] {
+  const url = absoluteUrl(ctx, input.path);
+  const updated = latestUpdate(input.cards, ctx);
+  return [
+    {
+      "@context": CONTEXT,
+      "@type": "CollectionPage",
+      "@id": url,
+      url,
+      name: input.name,
+      description: input.description,
+      inLanguage: "en-GB",
+      isPartOf: website(ctx),
+      ...(updated ? { dateModified: updated } : {}),
+      mainEntity: {
+        "@type": "ItemList",
+        numberOfItems: input.actors.length,
+        itemListElement: input.actors.map((a, i) => ({ "@type": "ListItem", position: i + 1, url: absoluteUrl(ctx, `/actor/${a.id}`), name: a.name })),
+      },
+    },
+    crumbs(
+      [
+        { name: SITE_NAME, path: "/" },
+        { name: "Promises", path: "/promises" },
+        { name: input.name, path: input.path },
+      ],
+      ctx,
+    ),
+  ];
+}
+
 /** An actor's page: a ProfilePage about the person or organisation, with sameAs links, and its breadcrumb. */
 export function actorJsonLd(a: ActorFile, party: ActorFile | null, cards: CardView[], ctx: SeoContext): JsonLdObject[] {
   const path = `/actor/${a.id}`;

@@ -8,6 +8,14 @@ name:
   en: Natural England
 standing: public_body
 roles: []
+# Official social accounts on its GOV.UK organisation page,
+# https://www.gov.uk/government/organisations/natural-england (its Facebook account is the page for England's
+# National Nature Reserves), checked 20 October 2026.
 same_as:
   - https://www.gov.uk/government/organisations/natural-england
-same_as_checked_on: "2026-10-08"
+  - https://x.com/naturalengland
+  - https://www.instagram.com/naturalengland/
+  - https://www.facebook.com/englandsnnrs
+  - https://www.youtube.com/user/naturalenglandvideo
+  - https://www.linkedin.com/company/natural-england/
+same_as_checked_on: "2026-10-20"

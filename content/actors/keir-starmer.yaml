@@ -14,6 +14,9 @@ roles:
       quote: Prime Minister from 5 July 2024 to 20 July 2026.
 identifiers:
   parliament_member_id: 4514
+# Official social accounts: none in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/4514/Contact (empty since Keir Starmer left the Commons on
+# 1 September 2026), checked 20 October 2026.
 same_as:
   - https://www.gov.uk/government/people/keir-starmer
-same_as_checked_on: "2026-10-08"
+same_as_checked_on: "2026-10-20"

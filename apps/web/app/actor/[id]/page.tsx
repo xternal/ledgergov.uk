@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { actorJsonLd, actorSameAs, clip, DESCRIPTION_MAX, statusCounts } from "@ledger/server/seo";
+import type { PolicyArea, Status } from "@ledger/schema";
+import { actorJsonLd, areaPath, clip, DESCRIPTION_MAX, officialPages, statusCounts } from "@ledger/server/seo";
 import { STATUS_LABEL } from "@/lib/copy";
-import { getSeed } from "@/lib/data";
+import { getAreaCoverage, getSeed } from "@/lib/data";
+import { AREA_LABEL } from "@/lib/promises";
 import { contractTotals } from "@ledger/schema";
 import { signedBn, signedMoney } from "@/lib/format";
 import { delayText, showsContracts } from "@/lib/contracts";
@@ -13,16 +15,9 @@ import { FollowButton } from "@/components/FollowPanel";
 import { followOptions } from "@/app/follow/targets";
 import { JsonLd } from "@/components/JsonLd";
 import { OPEN_GRAPH, seoContext } from "@/lib/site";
+import { cardsOfActor, roleText, todayIso } from "@/lib/promises";
 
 type Props = { params: Promise<{ id: string }> };
-
-/** "UK Parliament", "GOV.UK", or the site's own name ("labour.org.uk"). */
-function officialLabel(url: string): string {
-  const host = new URL(url).hostname.replace(/^www\./, "");
-  if (host === "members.parliament.uk") return "UK Parliament";
-  if (host === "gov.uk") return "GOV.UK";
-  return host;
-}
 
 export function generateStaticParams() {
   return getSeed().actors.map((a) => ({ id: a.id }));
@@ -34,7 +29,7 @@ function cardsFor(id: string) {
   const actor = seed.actors.find((a) => a.id === id);
   if (!actor) return null;
   // A party's page includes its members' cards; a person's page only their own.
-  const cards = seed.cards.filter((c) => c.actor.id === id || (actor.kind === "party" && c.party?.id === id));
+  const cards = cardsOfActor(seed.cards, actor);
   return { actor, cards, seed };
 }
 
@@ -81,20 +76,23 @@ export default async function ActorPage({ params }: Props) {
   // Contracts behind delivery (M6b): only for cards that show them, so the total matches what the cards list.
   const contracts = contractTotals(cards.filter((c) => showsContracts(c.file.status)).flatMap((c) => c.contracts));
   const structuredData = actorJsonLd(actor, party ?? null, cards, seoContext());
-  // The official pages the structured data names (sameAs), shown to readers too.
-  const official = actorSameAs(actor).map((url) => ({ url, label: officialLabel(url) }));
+  // The official pages the structured data names (sameAs), shown to readers too: websites first, then social accounts.
+  const official = officialPages(actor);
+  // Every area the site lists, empty ones too (OpenPromises decision 33): the same rows on every actor's page.
+  const areas = getAreaCoverage(new Set(cards.map((c) => c.id)));
   return (
     <>
       <JsonLd data={structuredData} />
       <SiteHeader current="/promises" />
       <main className="mx-auto grid max-w-[1000px] gap-10 px-4 pb-20 pt-10 sm:px-6">
         <div className="grid gap-2">
-          <a href="/promises" className="justify-self-start text-label font-medium">
-            All promises
-          </a>
+          <p className="m-0 flex flex-wrap gap-x-4 gap-y-1 text-label font-medium">
+            <a href="/promises">All promises</a>
+            <a href="/actor">Everyone on the ledger</a>
+          </p>
           <h1 className="m-0 text-[clamp(30px,4.4vw,44px)] font-semibold leading-[1.06] tracking-[-0.035em]">{actor.name}</h1>
           <p className="m-0 text-lead text-muted">
-            {actor.kind === "party" ? "Party" : actor.roles.map((ro) => ro.title).join(", ") || "Person"}
+            {actor.kind === "party" ? "Party" : roleText(actor, todayIso()) || "Person"}
             {party ? `, ${party.name}` : ""}
           </p>
           {official.length > 0 && (
@@ -151,6 +149,44 @@ export default async function ActorPage({ params }: Props) {
             ))}
           </ul>
           <p className="m-0 text-[12.5px] text-muted">No score: the mix speaks for itself. Every actor is held to the same promise standard.</p>
+        </section>
+
+        <section aria-labelledby="areas-h" className="grid gap-4">
+          <h2 id="areas-h" className="text-title font-semibold">
+            Promises by area
+          </h2>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse text-sm">
+              <caption className="sr-only">{`${actor.name}'s promises in each policy area, and where they stand`}</caption>
+              <thead>
+                <tr className="border-b border-line text-[12.5px] text-muted">
+                  <th scope="col" className="py-2.5 pr-4 text-left font-medium">
+                    Area
+                  </th>
+                  <th scope="col" className="py-2.5 pr-4 text-right font-medium">
+                    Promises
+                  </th>
+                  <th scope="col" className="py-2.5 text-left font-medium">
+                    Where they stand
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {areas.map((r) => (
+                  <tr key={r.area} className="border-b border-line">
+                    <th scope="row" className="py-2.5 pr-4 text-left font-normal">
+                      {r.count ? <a href={areaPath(r.area as PolicyArea)}>{AREA_LABEL[r.area as PolicyArea]}</a> : <span className="text-muted">{AREA_LABEL[r.area as PolicyArea]}</span>}
+                    </th>
+                    <td className="py-2.5 pr-4 text-right font-semibold tracking-[var(--tracking-figure)]">{r.count || <span className="font-normal text-muted">None recorded</span>}</td>
+                    <td className="py-2.5 text-muted">{r.counts.map((x) => `${x.count} ${STATUS_LABEL[x.status as Status].toLowerCase()}`).join(", ")}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="m-0 text-[12.5px] text-muted">
+            Every area the ledger tracks, the same list for everyone. &ldquo;None recorded&rdquo; means no promise in that area is on the ledger yet, not that none was made.
+          </p>
         </section>
 
         {contracts.count > 0 && (
