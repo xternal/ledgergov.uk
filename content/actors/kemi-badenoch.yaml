@@ -1,0 +1,27 @@
+format: openpromises/1
+id: kemi-badenoch
+kind: person
+name:
+  en: Kemi Badenoch
+party_id: conservatives
+roles:
+  - title:
+      en: Leader of the Opposition
+    from: "2024-11-02"
+    source:
+      url: https://members-api.parliament.uk/api/Members/4597/Biography
+      quote: Leader of HM Official Opposition
+identifiers:
+  parliament_member_id: 4597
+# Official social accounts in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/4597/Contact, checked 20 October 2026: X. Her own website,
+# https://www.kemibadenoch.org.uk/ ("Kemi Badenoch - MP for North West Essex"; "Promoted by Jon Botten on behalf of
+# Kemi Badenoch"), links X, Instagram and Facebook, checked 20 October 2026; the Instagram and Facebook ("Leader of the
+# Conservative Party. MP for North West Essex.") accounts were opened and say they are hers.
+same_as:
+  - https://www.gov.uk/government/people/kemi-badenoch
+  - https://www.kemibadenoch.org.uk/
+  - https://x.com/KemiBadenoch
+  - https://www.instagram.com/kemibadenoch/
+  - https://www.facebook.com/kemibadenoch
+same_as_checked_on: "2026-10-20"

@@ -15,7 +15,7 @@ import { readYamlDir, repoRoot } from "../packages/schema/src/content-files";
 
 const root = repoRoot();
 const refresh = process.argv.includes("--refresh");
-const data = JSON.parse(readFileSync(join(root, "data/portraits.json"), "utf8")) as { portraits: Record<string, { listed_as: string; credit: string }> };
+const data = JSON.parse(readFileSync(join(root, "data/portraits.json"), "utf8")) as { portraits: Record<string, { listed_as: string; credit: string; missing?: string }> };
 const out = join(root, "apps/web/public/portraits");
 mkdirSync(out, { recursive: true });
 
@@ -27,7 +27,8 @@ for (const a of mps) {
 }
 
 async function main() {
-  for (const id of Object.keys(data.portraits)) {
+  for (const [id, p] of Object.entries(data.portraits)) {
+    if (p.missing) continue;
     const file = join(out, `${id}.jpg`);
     if (existsSync(file) && !refresh) continue;
     const res = await fetch(`https://members-api.parliament.uk/api/Members/${id}/Portrait?cropType=ThreeFour&webVersion=false`);

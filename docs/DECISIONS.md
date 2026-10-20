@@ -9,6 +9,17 @@ Pavel chose the layout: "i like everything in C and the timeline of B! mix it" (
 **Done:** every actor's page in that layout (docs/OPERATIONS.md §15), the site on OpenPromises 0.14.0, and UK Parliament's official portraits with their credits for every MP on the ledger (§18).
 
 **Deliberately not done:** no photo for anyone without an official portrait under an open licence. Rishi Sunak has none in Parliament's records; Zack Polanski is not an MP, and the licence of London City Hall's photo is not stated. No portrait in the share images yet.
+## Key figures: their accounts, their names and their speeches (20 Oct 2026)
+
+Pavel: "why https://ledgergov.uk/actor/andy-burnham doesn't have https://www.instagram.com/andy.burnham/ or https://www.facebook.com/BurnhamGM ? I want key figures to have social links (Sir Kier Starmer (add Sir), Rishi Sunak, Andy Burnham, Badenoch)", then "yes" to filing a leader's speech promises under the leader.
+
+**Done:**
+
+- Official accounts (content/README.md "Official pages"): when Parliament's contact record lists none, a person's own official website counts, and so does an account an editor names once it has been opened and says it is theirs. Andy Burnham, Sir Keir Starmer, Rishi Sunak and Kemi Badenoch now have their websites and accounts; Kemi Badenoch and Zack Polanski are new on the ledger.
+- Names: a person's name is the one UK Parliament displays, without its "Mr" or "Ms" for namesakes, so "Sir Keir Starmer" and "Dame Angela Eagle".
+- Who said it (content/README.md): a promise goes under the person who said it, a party's own document under the party. Two cards moved, each saying so in its status note: Kemi Badenoch's 2025 conference pledge to abolish stamp duty (from the Conservative Party) and Zack Polanski's 2026 conference pledge of a windfall tax on bank profits (from the Green Party).
+
+**Deliberately not changed:** the two Conservative cards from Julia Lopez's Commons statement of 9 September 2026 "for the Conservatives" stay under the party until Pavel decides; the Liberal Democrat £15,000 allowance card stays under the party, because its quote is the party's news release, not the leader's speech.
 
 ## Every area on every actor's page, and the actor page as a special project (20 Oct 2026)
 
