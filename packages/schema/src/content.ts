@@ -42,9 +42,11 @@ export const ActorFile = z
     /**
      * Official pages about this actor, for search engines' structured data
      * (schema.org sameAs): a party's own website, a GOV.UK profile or
-     * organisation page. Only pages an editor has checked are about this actor;
-     * the UK Parliament page is derived from parliament_member_id, so it is not
-     * listed here.
+     * organisation page, then the social accounts an official source links (a
+     * UK Parliament contact record, a party's website, a GOV.UK organisation
+     * page). Only pages an editor has checked are about this actor; the UK
+     * Parliament page is derived from parliament_member_id, so it is not listed
+     * here.
      */
     same_as: z.array(z.url()).optional(),
   })

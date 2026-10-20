@@ -148,10 +148,58 @@ export function relatedCards<C extends Pick<CardView, "id" | "file" | "actor" | 
 /**
  * Official pages that identify an actor (schema.org sameAs): their UK
  * Parliament page, derived from their Members API id, then the pages an
- * editor checked (a party's website, a GOV.UK profile). Nothing is guessed.
+ * editor checked (a party's website, a GOV.UK profile, the social accounts an
+ * official source links). Nothing is guessed.
  */
 export function actorSameAs(a: Pick<ActorFile, "parliament_member_id" | "same_as">): string[] {
   return [...(a.parliament_member_id ? [memberUrl(a.parliament_member_id)] : []), ...(a.same_as ?? [])];
+}
+
+/**
+ * The social networks an actor's official accounts can be on, in the order an
+ * actor page lists them: each one's host as content/actors writes it, and the
+ * older addresses that still lead there.
+ */
+export const SOCIAL_NETWORKS: { name: string; host: string; also?: string[] }[] = [
+  { name: "X", host: "x.com", also: ["twitter.com"] },
+  { name: "Instagram", host: "www.instagram.com" },
+  { name: "Facebook", host: "www.facebook.com" },
+  { name: "Threads", host: "www.threads.com", also: ["threads.net"] },
+  { name: "Bluesky", host: "bsky.app" },
+  { name: "TikTok", host: "www.tiktok.com" },
+  { name: "YouTube", host: "www.youtube.com" },
+  { name: "LinkedIn", host: "www.linkedin.com" },
+];
+
+/** The social network an address is on, if it is on one. */
+export function socialNetwork(url: string): (typeof SOCIAL_NETWORKS)[number] | undefined {
+  const bare = (h: string) => h.replace(/^www\./, "");
+  const host = bare(new URL(url).hostname);
+  return SOCIAL_NETWORKS.find((n) => [n.host, ...(n.also ?? [])].some((h) => host === bare(h) || host.endsWith(`.${bare(h)}`)));
+}
+
+/** "UK Parliament", "GOV.UK", a social network ("X", "Instagram"), or the site's own name ("labour.org.uk"). */
+export function officialPageLabel(url: string): string {
+  const host = new URL(url).hostname.replace(/^www\./, "");
+  if (host === "members.parliament.uk") return "UK Parliament";
+  if (host === "gov.uk") return "GOV.UK";
+  return socialNetwork(url)?.name ?? host;
+}
+
+/**
+ * An actor's official pages as their page lists them: the websites first, in
+ * their own order (UK Parliament, GOV.UK, a party's site), then the social
+ * accounts in the order of SOCIAL_NETWORKS, the same for everyone.
+ */
+export function officialPages(a: Pick<ActorFile, "parliament_member_id" | "same_as">): { url: string; label: string }[] {
+  const rank = (url: string) => {
+    const n = socialNetwork(url);
+    return n ? SOCIAL_NETWORKS.indexOf(n) + 1 : 0;
+  };
+  return actorSameAs(a)
+    .map((url) => ({ url, label: officialPageLabel(url), rank: rank(url) }))
+    .sort((x, y) => x.rank - y.rank)
+    .map(({ url, label }) => ({ url, label }));
 }
 
 /** Where the area's label does not read well before "promises". */
