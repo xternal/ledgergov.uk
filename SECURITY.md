@@ -4,7 +4,7 @@ LedgerGov.UK holds a little personal data: the email addresses of people who fol
 
 ## How to report
 
-* **Preferred:** [report a vulnerability on GitHub](https://github.com/xternal/public-ledger/security/advisories/new) (private to the maintainers).
+* **Preferred:** [report a vulnerability on GitHub](https://github.com/xternal/ledgergov.uk/security/advisories/new) (private to the maintainers).
 * **Or email** privacy@ledgergov.uk.
 
 Please include what you found, how to reproduce it, and what it could expose. We aim to reply within 5 working days and to fix confirmed problems before anything is disclosed. Please don't access other people's data, run load tests, or test against real readers' accounts; a local copy (see the README, "Run it locally") has everything needed.

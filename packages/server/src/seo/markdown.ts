@@ -177,7 +177,7 @@ export function cardMarkdownFile(c: CardView, ctx: SeoContext): string {
 /** How a card works, in short, for readers who have only the text. */
 export function methodMarkdown(ctx: SeoContext): string[] {
   return [
-    `- One published standard for every party: ${link("the promise standard", "https://github.com/xternal/public-ledger/blob/main/docs/PROMISE_STANDARD.md")}. No code path treats one party differently.`,
+    `- One published standard for every party: ${link("the promise standard", "https://github.com/xternal/ledgergov.uk/blob/main/docs/PROMISE_STANDARD.md")}. No code path treats one party differently.`,
     "- The quote is the speaker's exact words, copied from the source and checked word for word. The headline is our neutral summary of it.",
     `- Status ladder: ${LADDER.map(statusLabel).join(" → ")}. Off the ladder: ${statusLabel("failed")} (the deadline passed and evidence shows it was not met, or it was officially abandoned) and ${statusLabel("quietly_dropped")} (the deadline passed with no official statement and no evidence of delivery). ${statusLabel("unscoreable")}: two or more of who, how much and when are missing, so it cannot be tracked.`,
     "- A status changes only on evidence: every timeline entry after the promise itself links to a plan, a bill, a Budget line or a delivery record.",

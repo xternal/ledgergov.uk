@@ -215,7 +215,7 @@ export default function ApiPage() {
             </h2>
             <p className="m-0 max-w-[62ch] text-muted">
               Every card in <code>/api/{API_VERSION}/promises</code> says which body would have to deliver it and, when it has a cost, who made the
-              central figure. The rules are in the <a href="https://github.com/xternal/public-ledger/blob/main/docs/PROMISE_STANDARD.md">promise standard</a>, the same for every party.
+              central figure. The rules are in the <a href="https://github.com/xternal/ledgergov.uk/blob/main/docs/PROMISE_STANDARD.md">promise standard</a>, the same for every party.
             </p>
             {promiseJson && samplePromise && <CodeBlock caption={`From /api/${API_VERSION}/promises/${samplePromise.id} (some fields left out)`} code={promiseJson} />}
           </div>

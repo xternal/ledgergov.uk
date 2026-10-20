@@ -49,7 +49,7 @@ Every status change is a new event with a link to its evidence. An announcement 
 
 ## How to review a pull request
 
-**1. Open it.** Pull requests waiting for editors are listed at [github.com/xternal/public-ledger/pulls](https://github.com/xternal/public-ledger/pulls). Daily drafts from Parliament are labelled `intake`.
+**1. Open it.** Pull requests waiting for editors are listed at [github.com/xternal/ledgergov.uk/pulls](https://github.com/xternal/ledgergov.uk/pulls). Daily drafts from Parliament are labelled `intake`.
 
 **2. Read the description.** It says why the change is made and lists each card with its source.
 
@@ -94,7 +94,7 @@ Check the card against its sources first (step 4 above), exactly as for a pull r
 
 **What your approval does now.** Since 13 October 2026 (OpenPromises 0.6.0) a card the team writes (`origin: manual` or `llm_intake`) is published once its automatic checks pass, including a machine match of its quote at the source; your approvals no longer hold it back, they are what the card's label reports. A reader's submission still waits for an editor's approval before it is published. The label reads "Not yet verified by an editor", "Checked automatically by AI Journalist, not yet verified by an editor", "Verified by <name>", or, when AI Journalist has checked the card too (since OpenPromises 0.7.0), for example "Verified by Pavel Guzhikov, checked by AI Journalist" or "Verified by Pavel Guzhikov and 1 independent editor, checked by AI Journalist". You are counted ("1 independent editor") unless you choose to be named: tell the owner, who sets `named: true` on your entry in the editors list.
 
-**Without the command line.** Approve on GitHub as usual and say in your review which cards you checked. The owner records it on the card for you, with the day you approved and where: `pnpm review <card> --by "Your Handle" --on <YYYY-MM-DD> --note "Approved in pull request xternal/public-ledger#<number>"`. Only approvals you really gave are recorded; nobody approves for you.
+**Without the command line.** Approve on GitHub as usual and say in your review which cards you checked. The owner records it on the card for you, with the day you approved and where: `pnpm review <card> --by "Your Handle" --on <YYYY-MM-DD> --note "Approved in pull request xternal/ledgergov.uk#<number>"`. Only approvals you really gave are recorded; nobody approves for you.
 
 ## What readers see
 

@@ -165,7 +165,7 @@ export default async function AreaPage({ params }: Props) {
           <p className="m-0">
             Each card quotes the promise in the speaker&apos;s own words and links to where it was said. Its status moves only on evidence: a plan, a bill, money in a
             Budget, or delivery. Costs are a year, as a range, with their source. Every party is held to{" "}
-            <a href="https://github.com/xternal/public-ledger/blob/main/docs/PROMISE_STANDARD.md">the same published standard</a>; <a href="/method">the method</a>{" "}
+            <a href="https://github.com/xternal/ledgergov.uk/blob/main/docs/PROMISE_STANDARD.md">the same published standard</a>; <a href="/method">the method</a>{" "}
             explains how cards are checked.
           </p>
           <p className="m-0">
