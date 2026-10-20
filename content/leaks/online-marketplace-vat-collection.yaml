@@ -9,4 +9,5 @@ reported:
   - outlet: The Times
     date: "2026-10-13"
     url: https://www.thetimes.com/uk/politics/article/amazon-ebay-temu-vat-tax-high-street-d5btx6qbt
+    archived_url: https://web.archive.org/web/20261020082737/https://www.thetimes.com/uk/politics/article/amazon-ebay-temu-vat-tax-high-street-d5btx6qbt
 status: trailed

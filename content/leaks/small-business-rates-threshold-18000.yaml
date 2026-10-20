@@ -9,6 +9,7 @@ reported:
   - outlet: The Sunday Times
     date: "2026-10-18"
     url: https://www.thetimes.com/uk/politics/article/nh18-x85f8btbw
+    archived_url: https://web.archive.org/web/20261020082801/https://www.thetimes.com/uk/politics/article/nh18-x85f8btbw
 estimated_cost:
   range: [0.46, 0.46, 0.46]
   basis: per_year
