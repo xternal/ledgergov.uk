@@ -2,6 +2,19 @@
 
 The owner's decisions for LedgerGov.UK, newest first, in his words where he gave them, with what was done and what was deliberately not.
 
+## The repository is named after the site (20 Oct 2026)
+
+Pavel, about 17:55 BST: "can we rename the repo public-ledger to ledgergov.uk please?" The GitHub repository `xternal/public-ledger` became `xternal/ledgergov.uk` at about 18:00 BST, in line with naming products by their domain (OpenPromises decision 25). GitHub redirects the old address for web links, the API, `git clone`, `fetch` and `push`, as long as no new repository takes the old name.
+
+**Done:**
+
+- Links and defaults that name the repository now use the new name: the source-code link (`SOURCE_CODE` in `apps/web/lib/site.ts`), the links to the promise standard and the method on the card, area, API and household pages and in the Markdown for AI assistants, `SECURITY.md`, the ETL's user agent, the `GITHUB_REPOSITORY` default in `packages/server/src/config.ts`, the setup scripts and the commands in `docs/`.
+
+**Deliberately not changed:**
+
+- Code names: the workspace package `public-ledger`, the Vercel project `public-ledger` and its `*.vercel.app` addresses, the bot's git name `public-ledger-bot`, the engine setting `legacy: "public-ledger"` (the name of this site's old card format in OpenPromises), and the salt of the alpha password cookie (changing it would sign everyone out).
+- History: card reviews, notes, run files and earlier entries here that cite `xternal/public-ledger#<number>` keep those words; the links redirect.
+
 ## OpenPromises releases install at once, with a provenance check (19 Oct 2026)
 
 Pavel's reply, about 16:09 BST: «решение 32 как предложено» ("decision 32 as proposed"), OpenPromises decision 32. The sites install the engine's packages as soon as a release is published, instead of a day later; in exchange CI checks where each package came from.

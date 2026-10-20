@@ -383,7 +383,7 @@ export function PromiseDetail({ card, householdsM, householdsP, spendingBn, runH
               <Fold title="How cards are checked">
                 <p className="m-0 text-muted">
                   Status follows the{" "}
-                  <a href="https://github.com/xternal/public-ledger/blob/main/docs/PROMISE_STANDARD.md">promise standard</a>, the same for every party. A status
+                  <a href="https://github.com/xternal/ledgergov.uk/blob/main/docs/PROMISE_STANDARD.md">promise standard</a>, the same for every party. A status
                   changes only on evidence. Anyone named on a card can reply, and replies are published next to it. {AI_JOURNALIST_NOTE}
                 </p>
               </Fold>

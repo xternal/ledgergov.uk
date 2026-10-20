@@ -65,7 +65,7 @@ setenv LEDGER_ENV production
 setenv SITE_STAGE alpha
 setenv SITE_URL "$SITE_URL"
 setenv MAIL_PROVIDER off
-setenv GITHUB_REPOSITORY xternal/public-ledger
+setenv GITHUB_REPOSITORY xternal/ledgergov.uk
 if [ -n "$DATABASE_URL" ]; then setenv DATABASE_URL "$DATABASE_URL"; else echo "     DATABASE_URL: kept (set by Vercel's Neon integration)"; fi
 setenv LEDGER_ENCRYPTION_KEY "$LEDGER_ENCRYPTION_KEY"
 setenv LEDGER_LOOKUP_PEPPER "$LEDGER_LOOKUP_PEPPER"

@@ -13,7 +13,7 @@
 # by hand (for example DATABASE_URL, from Neon: Open in Neon > Connect).
 set -uo pipefail
 
-REPO="${REPO:-xternal/public-ledger}"
+REPO="${REPO:-xternal/ledgergov.uk}"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 LOCAL="$ROOT/.env.alpha.local"
 NAMES="DATABASE_URL LEDGER_ENCRYPTION_KEY LEDGER_LOOKUP_PEPPER ALTCHA_HMAC_KEY SITE_URL MAIL_FROM MAIL_REPLY_TO RESEND_API_KEY TELEGRAM_BOT_TOKEN TELEGRAM_BOT_USERNAME"
