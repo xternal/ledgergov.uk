@@ -2,6 +2,14 @@
 
 The owner's decisions for LedgerGov.UK, newest first, in his words where he gave them, with what was done and what was deliberately not.
 
+## The actor page as one story, with official portraits (20 Oct 2026)
+
+Pavel chose the layout: "i like everything in C and the timeline of B! mix it" (the "Chosen" artboard on https://claude.ai/artifact/2rAuASPyGcT6ZYs1cLSys7), after his four answers recorded below ("1 ye to parliament portarait or any other official photo available ; 2 yes ; 3 yes ; 4 yes to sketches"). OpenPromises decision 34 built the timeline, the key promises and the promises by month for every site (0.14.0, released 20 October 2026, approved by Pavel).
+
+**Done:** every actor's page in that layout (docs/OPERATIONS.md §15), the site on OpenPromises 0.14.0, and UK Parliament's official portraits with their credits for every MP on the ledger (§18).
+
+**Deliberately not done:** no photo for anyone without an official portrait under an open licence. Rishi Sunak has none in Parliament's records; Zack Polanski is not an MP, and the licence of London City Hall's photo is not stated. No portrait in the share images yet.
+
 ## Every area on every actor's page, and the actor page as a special project (20 Oct 2026)
 
 Pavel's complaint about the Prime Minister's page: it showed what he promised on pints, VAT and bus fares, but nothing on energy, AI or the long-term future, and a reader could not tell "promised nothing" from "not recorded". OpenPromises decision 33 (0.12.0) answers it with `areaCoverage()`. The same day, seven cards from his speeches since 20 July 2026 were added (#135).

@@ -1,7 +1,8 @@
 import "server-only";
 import { loadSeed } from "@ledger/schema/seed";
 import { readEditors, withVerification } from "@ledger/schema/verification";
-import { areaCoverageFor, engineViews, spotlightInput, type AreaCoverage, type SpotlightInput } from "@ledger/schema/spotlight";
+import { areaCoverageFor, engineConfig, engineViews, spotlightInput, type AreaCoverage, type SpotlightInput } from "@ledger/schema/spotlight";
+import { loadPortraits, type Portrait } from "@ledger/schema/portraits";
 import { loadPeople } from "@ledger/schema/people";
 import { loadBorrowing } from "@ledger/schema/borrowing";
 import { loadForecasts, readBuildText, type ForecastData } from "@ledger/schema/forecasts";
@@ -42,6 +43,23 @@ let views: SpotlightInput["views"] | null = null;
 export function getAreaCoverage(ids: ReadonlySet<string>): AreaCoverage[] {
   views ??= engineViews(new Set(getSeed().cards.map((c) => c.id))).views;
   return areaCoverageFor(views, ids);
+}
+
+/**
+ * An actor's promises as the engine reads them, with the site's configuration, for the actor's story (OpenPromises
+ * decision 34): key promises, the timeline and promises made each month. The same cards the page lists.
+ */
+export function getActorStory(ids: ReadonlySet<string>): Pick<SpotlightInput, "views" | "config"> {
+  views ??= engineViews(new Set(getSeed().cards.map((c) => c.id))).views;
+  return { views: views.filter((v) => ids.has(v.id)), config: engineConfig() };
+}
+
+let portraitOf: ReturnType<typeof loadPortraits> | null = null;
+
+/** UK Parliament's official portrait of an MP, with its credit (data/portraits.json), or null when there is none. */
+export function getPortrait(memberId: number | undefined | null): Portrait | null {
+  portraitOf ??= loadPortraits();
+  return portraitOf(memberId);
 }
 
 let people: PeopleBundle | null = null;

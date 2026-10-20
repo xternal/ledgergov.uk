@@ -1,0 +1,103 @@
+{
+  "about": "UK Parliament official portraits shown on actor pages (/actor/<id>), one per parliament_member_id. Released under CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/), credited as UK Parliament asks on https://www.parliament.uk/site-information/copyright-parliament/use-of-parliamentary-photographic-images/official-portraits-copyright-information/ (each credit copied from that list, as named there). The image is Parliament's 3:4 crop, resized to 560x747 by `pnpm portraits` (apps/web/public/portraits/<member id>.jpg). docs/OPERATIONS.md §18.",
+  "licence": {
+    "name": "CC BY 3.0",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "checked_on": "2026-10-20",
+  "portraits": {
+    "400": {
+      "listed_as": "John Healey",
+      "credit": "©House of Commons"
+    },
+    "420": {
+      "listed_as": "Yvette Cooper",
+      "credit": "©House of Commons"
+    },
+    "491": {
+      "listed_as": "Angela Eagle",
+      "credit": "©House of Commons"
+    },
+    "632": {
+      "listed_as": "Douglas Alexander",
+      "credit": "©House of Commons/Laurie Noble"
+    },
+    "1427": {
+      "listed_as": "Andy Burnham",
+      "credit": "©House of Commons"
+    },
+    "1587": {
+      "listed_as": "Patrick McFadden",
+      "credit": "©House of Commons"
+    },
+    "3914": {
+      "listed_as": "Shabana Mahmood",
+      "credit": "©House of Commons"
+    },
+    "3966": {
+      "listed_as": "Ian Murray",
+      "credit": "©House of Commons"
+    },
+    "4031": {
+      "listed_as": "Rachel Reeves",
+      "credit": "©House of Commons"
+    },
+    "4038": {
+      "listed_as": "Heidi Alexander",
+      "credit": "©House of Commons/Laurie Noble"
+    },
+    "4046": {
+      "listed_as": "Bridget Phillipson",
+      "credit": "©House of Commons"
+    },
+    "4083": {
+      "listed_as": "Alison McGovern",
+      "credit": "©House of Commons"
+    },
+    "4263": {
+      "listed_as": "Lucy Powell",
+      "credit": "©House of Commons/Laurie Noble"
+    },
+    "4444": {
+      "listed_as": "Karin Smyth",
+      "credit": "©House of Commons"
+    },
+    "4473": {
+      "listed_as": "Louise Haigh",
+      "credit": "©House of Commons/Laurie Noble"
+    },
+    "4483": {
+      "listed_as": "Rishi Sunak",
+      "credit": "©House of Commons",
+      "missing": "UK Parliament's Members API has no official portrait for this member (404 for every crop), checked 20 October 2026."
+    },
+    "4514": {
+      "listed_as": "Keir Starmer",
+      "credit": "©House of Commons"
+    },
+    "4520": {
+      "listed_as": "Matthew Pennycook",
+      "credit": "©House of Commons"
+    },
+    "4597": {
+      "listed_as": "Olukemi Badenoch",
+      "credit": "©House of Commons/Roger Harris"
+    },
+    "4797": {
+      "listed_as": "James Murray",
+      "credit": "©House of Commons"
+    },
+    "5076": {
+      "listed_as": "Blair McDougall",
+      "credit": "©House of Commons/Roger Harris"
+    },
+    "5123": {
+      "listed_as": "Polly Billington",
+      "credit": "©House of Commons/Laurie Noble"
+    },
+    "5224": {
+      "listed_as": "Kate Dearden",
+      "credit": "©House of Commons/Roger Harris"
+    }
+  }
+}
