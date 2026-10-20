@@ -179,6 +179,12 @@
     "checked_on": "2026-10-20",
     "sha256": "d76177424bcbd44528c50c832baf7563948e6efb79807c36221bf2ff889b73e5"
   },
+  "52e69da3ac6750280e21ce7fe57aab282bc96784aa588e1653f247b4e9a024f3|https://www.gov.uk/government/news/new-lung-cancer-screening-roll-out-to-detect-cancer-sooner": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/new-lung-cancer-screening-roll-out-to-detect-cancer-sooner",
+    "checked_on": "2026-10-20",
+    "sha256": "af61c7577f9129f572bfd5415fa5acf52d4e508b6b8071fde461b486cfbe267b"
+  },
   "55082fbe46b196b85f13f0c7619bdbf6475bc219da6b521a04c216081cc4fb87|https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements": {
     "match": "exact",
     "url": "https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements",
@@ -190,6 +196,12 @@
     "url": "https://www.gov.uk/government/news/cost-of-living-boost-with-free-bus-travel-for-children-and-targeted-food-tariff-cuts",
     "checked_on": "2026-10-20",
     "sha256": "5fa1aa9b46be7cb8f0e63a3c0516d583830bd13651491799eb75d30fa2df8aae"
+  },
+  "58565777b30bf34280903b976962c582d0c9e28f7db6ded4247d8d3d83579c68|https://www.gov.uk/government/speeches/prime-ministers-speech-on-ai-26-october-2023": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/prime-ministers-speech-on-ai-26-october-2023",
+    "checked_on": "2026-10-20",
+    "sha256": "7237a376149621388e14655f2db73f6d775221c478578c50f2f2e54a7381d200"
   },
   "5983b05000b8cbf938d9b2b25d79ad905c966ebbbbf7773b5cf1784a646778db|https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity": {
     "match": "exact",
@@ -220,6 +232,12 @@
     "url": "https://www.gov.uk/government/news/douglas-alexander-welcomes-defence-skills-investment-boost",
     "checked_on": "2026-10-18",
     "sha256": "025ed47498a414bd2fec8a62d34adfd80edfeb59cdb909fd178bfe569cf1954d"
+  },
+  "6208c675aad6ada55a39c06a588e66feb4a85bce6454706a8f102a8cafe326b1|https://www.gov.uk/government/speeches/what-the-plan-to-launch-network-north-means-for-you": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/what-the-plan-to-launch-network-north-means-for-you",
+    "checked_on": "2026-10-20",
+    "sha256": "cc784d923f8c0aaa8e00551fb025117753ee5d466689a826f182f0b8d208e8a9"
   },
   "73aba857956488a26f5403ddcaf69e4f51043a4c861cda25aee064d90b7598ba|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354": {
     "match": "exact",
@@ -496,6 +514,12 @@
     "url": "https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/",
     "checked_on": "2026-10-20",
     "sha256": "c79d855fc8c2769495952531f555367d6e71dca115ce0f8d0041e640d16c1527"
+  },
+  "d1481b3ec9bcdf4fa85a8ba6696dde07c0cdc8880c0548d911e223e82cf09d0e|https://www.gov.uk/government/speeches/pm-statement-on-the-infected-blood-inquiry-20-may-2024": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/pm-statement-on-the-infected-blood-inquiry-20-may-2024",
+    "checked_on": "2026-10-20",
+    "sha256": "490b1465138e71eebba6562a87798e7c0e5bee7e5f6e9b5e1ac4659cec0d2ac4"
   },
   "d397783b5e5e0a5be64d20b8f5ab7ce2829e6effdfac6affe8926aba55dc0ae3|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS374": {
     "match": "exact",
