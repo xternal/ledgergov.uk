@@ -14,7 +14,16 @@ roles:
 identifiers:
   parliament_member_id: 1427
 # Official social accounts: none in the UK Parliament Members API contact record,
-# https://members-api.parliament.uk/api/Members/1427/Contact, checked 20 October 2026.
+# https://members-api.parliament.uk/api/Members/1427/Contact, checked 20 October 2026. Taken from his own website,
+# https://andyburnham.org.uk/ ("I'm Andy Burnham and, alongside being the Member of Parliament for Makerfield, I serve
+# as Leader of the Labour Party and Prime Minister"; "Promoted by Anthony Lavelle on behalf of Andy Burnham"), which
+# links X, Instagram, Facebook and TikTok, checked 20 October 2026. Pavel Guzhikov named the Instagram and Facebook
+# accounts on 20 October 2026; each was opened and says it is his.
 same_as:
   - https://www.gov.uk/government/people/andy-burnham
+  - https://andyburnham.org.uk/
+  - https://x.com/andyburnham
+  - https://www.instagram.com/andy.burnham/
+  - https://www.facebook.com/BurnhamGM
+  - https://www.tiktok.com/@andy.burnham
 same_as_checked_on: "2026-10-20"

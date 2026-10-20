@@ -214,7 +214,15 @@ describe("JSON-LD", () => {
 
   it("speakers link to official pages they can be verified by, and nothing invented", () => {
     const starmer = seed.actors.find((a) => a.id === "keir-starmer")!;
-    expect(actorSameAs(starmer)).toEqual(["https://members.parliament.uk/member/4514", "https://www.gov.uk/government/people/keir-starmer"]);
+    expect(actorSameAs(starmer)).toEqual([
+      "https://members.parliament.uk/member/4514",
+      "https://www.gov.uk/government/people/keir-starmer",
+      "https://www.keirstarmer.com/",
+      "https://x.com/Keir_Starmer",
+      "https://www.instagram.com/keirstarmer/",
+      "https://www.facebook.com/KeirStarmerLabour",
+      "https://www.youtube.com/@KeirStarmer",
+    ]);
     for (const a of seed.actors) {
       const urls = actorSameAs(a);
       expect(urls.length, `${a.id} needs at least one official page`).toBeGreaterThan(0);
@@ -225,7 +233,15 @@ describe("JSON-LD", () => {
     expect(speaker).toMatchObject({
       "@type": "Person",
       name: "Andy Burnham",
-      sameAs: ["https://members.parliament.uk/member/1427", "https://www.gov.uk/government/people/andy-burnham"],
+      sameAs: [
+        "https://members.parliament.uk/member/1427",
+        "https://www.gov.uk/government/people/andy-burnham",
+        "https://andyburnham.org.uk/",
+        "https://x.com/andyburnham",
+        "https://www.instagram.com/andy.burnham/",
+        "https://www.facebook.com/BurnhamGM",
+        "https://www.tiktok.com/@andy.burnham",
+      ],
       affiliation: {
         "@type": "Organization",
         name: "Labour Party",
