@@ -191,6 +191,12 @@
     "checked_on": "2026-10-20",
     "sha256": "457492381f7ff3ed6a8ab410000421be41c5b349a249eee58e2ed8c841d9851e"
   },
+  "4eb10f46fc96b2b094322ca0ffa85587533ed1d4f808ce8c8fad879227b584c2|https://www.gov.uk/government/speeches/pm-speech-launching-the-nhs-long-term-workforce-plan-30-june-2023": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/speeches/pm-speech-launching-the-nhs-long-term-workforce-plan-30-june-2023",
+    "checked_on": "2026-10-21",
+    "sha256": "281b3f434a59c668a11f15e39eb37b9627b1291b6e8123ca4364808bbd7b2992"
+  },
   "4f1b20477f6a3070abed0727478ea962216362fc7e846021e7d38e485d76c47f|https://www.gov.uk/government/news/pm-from-today-britain-will-value-the-hard-hat-as-much-as-the-graduation-cap": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/pm-from-today-britain-will-value-the-hard-hat-as-much-as-the-graduation-cap",
