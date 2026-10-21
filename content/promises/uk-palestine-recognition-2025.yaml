@@ -1,0 +1,78 @@
+format: openpromises/1
+id: uk-palestine-recognition-2025
+headline:
+  en: Recognise Palestine by September 2025
+actor_id: keir-starmer
+made_on: "2025-07-29"
+venue: speech
+venue_label:
+  en: Statement on Gaza
+area: general_services
+status: delivered
+status_note:
+  en: >-
+    On 29 July 2025 the Prime Minister said the UK would recognise the state of Palestine by the
+    United Nations General Assembly in September unless the Israeli government took the steps he
+    listed, and that an assessment would be made in September. On 21 September 2025 he said that the
+    United Kingdom formally recognises the State of Palestine. The deadline is taken as 30 September
+    2025, the end of the month he named.
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The UK Government was responsible when the promise fell due in September 2025, with Keir
+      Starmer as Prime Minister.
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: PM words on Gaza, 29 July 2025"
+    url: https://www.gov.uk/government/speeches/pm-words-on-gaza-29-july-2025
+  - title: "Prime Minister's Office: PM statement on the recognition of Palestine, 21 September 2025"
+    url: https://www.gov.uk/government/speeches/pm-statement-on-the-recognition-of-palestine-21-september-2025
+versions:
+  - version: 1
+    text: >-
+      So today – as part of this process towards peace I can confirm the UK will recognise the state
+      of Palestine by the United Nations General Assembly in September unless the Israeli government
+      takes substantive steps to end the appalling situation in Gaza, agree to a ceasefire and
+      commit to a long-term, sustainable peace, reviving the prospect of a Two State Solution.
+    recorded_on: "2025-07-29"
+    source_url: https://www.gov.uk/government/speeches/pm-words-on-gaza-29-july-2025
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: "Palestinians and Israelis, through the UK's recognition of a Palestinian state"
+      cost:
+        note:
+          en: "No cost: a diplomatic decision, and no costing was published."
+      when:
+        en: By the United Nations General Assembly in September 2025
+      deadline: "2025-09-30"
+      funded_by:
+        en: Not a spending pledge
+events:
+  - date: "2025-07-29"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister says the UK will recognise the state of Palestine in September unless
+        conditions are met
+  - date: "2025-09-21"
+    type: delivered
+    text:
+      en: The Prime Minister states that the United Kingdom formally recognises the State of Palestine
+    evidence_url: https://www.gov.uk/government/speeches/pm-statement-on-the-recognition-of-palestine-21-september-2025
+  - date: "2025-09-30"
+    type: deadline
+    text:
+      en: >-
+        Recognition due by the UN General Assembly in September (editorial date, end of September
+        2025)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

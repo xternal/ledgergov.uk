@@ -1,0 +1,98 @@
+format: openpromises/1
+id: uk-digital-id-right-to-work-2029
+headline:
+  en: Digital ID mandatory for right to work checks
+actor_id: keir-starmer
+made_on: "2025-09-26"
+venue: press_release
+venue_label:
+  en: "Press release (Prime Minister's Office)"
+area: general_services
+status: failed
+status_note:
+  en: >-
+    On 15 January 2026 a Cabinet Office minister told the Commons that nobody would have to have a
+    digital ID and that the government would require right to work checks to be done digitally. The
+    King's Speech of 13 May 2026 promised a Bill for digital ID, but none was introduced. On 21 July
+    2026 the new Prime Minister's government cancelled the £1.8 billion digital ID programme to pay
+    for a tax cut on household electricity bills, and a Home Office minister said on 7 September
+    2026 that the proposals are no longer being taken forward. The promise was officially abandoned,
+    so it reads Not met before its deadline.
+responsible:
+  actor_id: hm-government
+  note:
+    en: The UK Government cancelled the digital ID programme on 21 July 2026.
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: New digital ID scheme to be rolled out across UK (26 Sep 2025)"
+    url: https://www.gov.uk/government/news/new-digital-id-scheme-to-be-rolled-out-across-uk
+  - title: "Hansard, House of Commons, 15 Jan 2026: Digital ID (urgent question)"
+    url: https://hansard.parliament.uk/Commons/2026-01-15/debates/04B89325-7FA2-4541-946D-6E5571AEAAE4/DigitalID
+  - title: "Prime Minister's Office: The King's Speech 2026 (13 May 2026)"
+    url: https://www.gov.uk/government/speeches/the-kings-speech-2026
+  - title: >-
+      Prime Minister's Office, HM Treasury and Department for Energy Security and Net Zero: New PM
+      cuts tax on household electricity bills to give breathing space on cost of living (21 Jul
+      2026)
+    url: https://www.gov.uk/government/news/new-pm-cuts-tax-on-household-electricity-bills-to-give-breathing-space-on-cost-of-living
+  - title: >-
+      Hansard, House of Commons, 7 Sep 2026: Draft Licensing Act 2003 (Mandatory Licensing
+      Conditions) (Amendment) Order 2026
+    url: https://hansard.parliament.uk/Commons/2026-09-07/debates/752937F2-4C9C-4291-9CBA-8A658B99BB50/DraftLicensingAct2003(MandatoryLicensingConditions)(Amendment)Order2026
+versions:
+  - version: 1
+    text: Digital ID will be mandatory for Right to Work checks by the end of the Parliament.
+    recorded_on: "2025-09-26"
+    source_url: https://www.gov.uk/government/news/new-digital-id-scheme-to-be-rolled-out-across-uk
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: Everyone working in the UK and their employers
+      cost:
+        note:
+          en: >-
+            No cost was given with the promise. When it cancelled the programme, the government put
+            its cost at £1.8 billion over the next three years (21 July 2026).
+        sources:
+          - title: >-
+              New PM cuts tax on household electricity bills to give breathing space on cost of
+              living (21 Jul 2026)
+            url: https://www.gov.uk/government/news/new-pm-cuts-tax-on-household-electricity-bills-to-give-breathing-space-on-cost-of-living
+      when:
+        en: By the end of the Parliament that first met on 9 July 2024 (taken as by 1 July 2029)
+      deadline: "2029-07-01"
+      funded_by: null
+events:
+  - date: "2025-09-26"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister announces a free digital ID, mandatory for right to work checks by the
+        end of the Parliament
+  - date: "2026-05-13"
+    type: in_plan
+    text:
+      en: "The King's Speech says ministers will proceed with the introduction of digital ID"
+    evidence_url: https://www.gov.uk/government/speeches/the-kings-speech-2026
+  - date: "2026-07-21"
+    type: failed
+    text:
+      en: >-
+        The government cancels the £1.8 billion digital ID programme to fund a cut in tax on
+        electricity bills
+    evidence_url: https://www.gov.uk/government/news/new-pm-cuts-tax-on-household-electricity-bills-to-give-breathing-space-on-cost-of-living
+  - date: "2029-07-01"
+    type: deadline
+    text:
+      en: >-
+        Digital ID was due to be mandatory for right to work checks by the end of the Parliament
+        (editorial date)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

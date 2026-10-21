@@ -1,0 +1,85 @@
+format: openpromises/1
+id: uk-ground-rent-cap-250-2026
+headline:
+  en: Cap ground rents at £250 a year
+actor_id: keir-starmer
+made_on: "2026-01-27"
+venue: press_release
+venue_label:
+  en: "Press release (Ministry of Housing, Communities and Local Government and Prime Minister's Office)"
+area: housing_env
+status: in_plan
+status_note:
+  en: >-
+    The cap is in the draft Commonhold and Leasehold Reform Bill, published on 27 January 2026: £250
+    a year, falling to a peppercorn after 40 years, for leaseholders in England and Wales. The
+    King's Speech of 13 May 2026 named the Bill, including the capping of ground rents, and the
+    Leader of the House said on 10 September 2026 that it will be introduced; by 20 October 2026 it
+    had not been. The government said the cap could come into force in late 2028, subject to
+    parliamentary timings. The card moves to Legislated when the Bill becomes law.
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The King's Speech of 13 May 2026 names the Bill, and the Leader of the House said on 10
+      September 2026 that it will be introduced.
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government and Prime Minister's Office: PM: “We're
+      capping ground rents at £250” (27 Jan 2026)
+    url: https://www.gov.uk/government/news/pm-were-capping-ground-rents-at-250
+  - title: >-
+      Ministry of Housing, Communities and Local Government: Draft Commonhold and Leasehold Reform
+      Bill (27 Jan 2026)
+    url: https://www.gov.uk/government/publications/draft-commonhold-and-leasehold-reform-bill
+  - title: "Prime Minister's Office: The King's Speech 2026 (13 May 2026)"
+    url: https://www.gov.uk/government/speeches/the-kings-speech-2026
+  - title: >-
+      Ministry of Housing, Communities and Local Government: Quid pro quo leases and the ground rent
+      cap (consultation, 2 Jul 2026)
+    url: https://www.gov.uk/government/consultations/quid-pro-quo-leases-and-the-ground-rent-cap
+  - title: "Hansard, House of Commons, 10 Sep 2026: Business of the House"
+    url: https://hansard.parliament.uk/Commons/2026-09-10/debates/F6E9AB72-395B-4C77-9643-084029ACC336/BusinessOfTheHouse
+versions:
+  - version: 1
+    text: >-
+      Good news for homeowners, we’re capping ground rent at £250. That means if you are a
+      leaseholder, and your ground rent is more than £250, you’ll be paying less.
+    recorded_on: "2026-01-27"
+    source_url: https://www.gov.uk/government/news/pm-were-capping-ground-rents-at-250
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: Leaseholders in England and Wales paying ground rent above £250 a year
+      cost:
+        note:
+          en: >-
+            No cost to the taxpayer: the cap moves money from freeholders to leaseholders. The
+            announcement says many leaseholders will save over £4,000 over the course of their
+            lease.
+      when:
+        en: >-
+          Not stated by the Prime Minister; the government said the cap could come into force in
+          late 2028
+      funded_by:
+        en: Not a spending pledge
+events:
+  - date: "2026-01-27"
+    type: promised
+    text:
+      en: The Prime Minister announces a £250 cap on ground rents in a video on TikTok
+  - date: "2026-01-27"
+    type: in_plan
+    text:
+      en: The government publishes the draft Commonhold and Leasehold Reform Bill with the cap
+    evidence_url: https://www.gov.uk/government/publications/draft-commonhold-and-leasehold-reform-bill
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

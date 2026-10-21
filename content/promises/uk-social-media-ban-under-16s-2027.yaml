@@ -1,0 +1,86 @@
+format: openpromises/1
+id: uk-social-media-ban-under-16s-2027
+headline:
+  en: Ban social media for under-16s
+actor_id: keir-starmer
+made_on: "2026-06-15"
+venue: press_release
+venue_label:
+  en: Press release (Department for Science, Innovation and Technology)
+area: culture
+status: in_plan
+status_note:
+  en: >-
+    The ban is to be made by regulations under a power that the Children's Wellbeing and Schools Act
+    2026 added to the Online Safety Act 2023. The government said on 15 July 2026 that the first
+    regulations would be laid before Parliament by the end of 2026 and come into force in spring
+    2027, and the Digital, Culture, Media and Sport Secretary told the Commons on 8 September 2026
+    that the government is on track for that timetable. No regulations had been laid by 20 October
+    2026. Spring 2027 is read as 31 May 2027.
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The Digital, Culture, Media and Sport Secretary told the Commons on 8 September 2026 that the
+      government is on track to bring the ban into force in spring 2027.
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Science, Innovation and Technology: Social media to be banned for under-16s (15
+      Jun 2026)
+    url: https://www.gov.uk/government/news/social-media-to-be-banned-for-under-16s-in-landmark-government-move-to-givekids-their-childhood-back
+  - title: >-
+      Department for Science, Innovation and Technology: New social media curfews and crackdown on
+      addictive features (15 Jul 2026)
+    url: https://www.gov.uk/government/news/new-social-media-curfews-and-crackdown-on-addictive-features-to-better-protect-16-and-17-year-olds-online
+  - title: >-
+      Department for Science, Innovation and Technology: Growing up in the online world, government
+      response (July 2026)
+    url: https://www.gov.uk/government/consultations/growing-up-in-the-online-world-a-national-consultation/outcome/growing-up-in-the-online-world-government-response-july-2026
+  - title: "Children's Wellbeing and Schools Act 2026, section 70 (legislation.gov.uk)"
+    url: https://www.legislation.gov.uk/ukpga/2026/21/section/70
+  - title: "Hansard, House of Commons, 8 Sep 2026: Online Safety"
+    url: https://hansard.parliament.uk/Commons/2026-09-08/debates/30B4AD07-8ACF-462B-A262-B98157506439/OnlineSafety
+versions:
+  - version: 1
+    text: >-
+      That’s why we’re going further than any country in the world by banning social media for
+      under-16s and putting wider protections in place to give kids their childhood back.
+    recorded_on: "2026-06-15"
+    source_url: https://www.gov.uk/government/news/social-media-to-be-banned-for-under-16s-in-landmark-government-move-to-givekids-their-childhood-back
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: Children under 16 in the UK and their parents
+      cost:
+        note:
+          en: No cost was given with the promise.
+      when:
+        en: Regulations before Christmas 2026; in force in spring 2027
+      deadline: "2027-05-31"
+      funded_by: null
+events:
+  - date: "2026-06-15"
+    type: promised
+    text:
+      en: The Prime Minister announces a ban on social media for under-16s
+  - date: "2026-07-15"
+    type: in_plan
+    text:
+      en: >-
+        The government says the first regulations will be laid by the end of 2026 and come into
+        force in spring 2027
+    evidence_url: https://www.gov.uk/government/news/new-social-media-curfews-and-crackdown-on-addictive-features-to-better-protect-16-and-17-year-olds-online
+  - date: "2027-05-31"
+    type: deadline
+    text:
+      en: The ban is due in force in spring 2027 (editorial date, end of May 2027)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,79 @@
+format: openpromises/1
+id: uk-abolish-nhs-england-2025
+headline:
+  en: Abolish NHS England
+actor_id: keir-starmer
+made_on: "2025-03-13"
+venue: speech
+venue_label:
+  en: Speech on reforming the British state
+area: health
+status: in_plan
+status_note:
+  en: >-
+    The Health Bill, introduced in the Commons on 14 May 2026, abolishes NHS England as a statutory
+    body. It passed the Commons on 8 September 2026, under the current government, had its second
+    reading in the House of Lords on 13 October 2026, and is due in committee there from 28 October
+    2026. NHS England still exists: it laid its 2025-26 annual report before Parliament on 3
+    September 2026. The Prime Minister gave no date; the Health Secretary told the Commons the same
+    day that it would take two years. The card moves to Legislated when the Bill becomes law.
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The Health Bill is the government's own and was going through the House of Lords in October
+      2026.
+origin: llm_intake
+sources:
+  - title: >-
+      Prime Minister's Office: PM remarks on the fundamental reform of the British state, 13 March
+      2025
+    url: https://www.gov.uk/government/speeches/pm-remarks-on-the-fundamental-reform-of-the-british-state-13-march-2025
+  - title: >-
+      Department of Health and Social Care: NHS England, Health and Social Care Secretary's
+      statement (13 Mar 2025)
+    url: https://www.gov.uk/government/speeches/nhs-england-health-and-social-care-secretarys-statement
+  - title: "UK Parliament: Health Bill, stages"
+    url: https://bills.parliament.uk/bills/4124
+  - title: "Department of Health and Social Care: Health Bill (collection)"
+    url: https://www.gov.uk/government/collections/health-bill
+  - title: "NHS England: annual report and accounts 2025 to 2026 (3 Sep 2026)"
+    url: https://www.gov.uk/government/publications/nhs-england-annual-report-and-accounts-2025-to-2026
+versions:
+  - version: 1
+    text: >-
+      So I am bringing management of the NHS back into democratic control… By abolishing the
+      arms-length body - NHS England.
+    recorded_on: "2025-03-13"
+    source_url: https://www.gov.uk/government/speeches/pm-remarks-on-the-fundamental-reform-of-the-british-state-13-march-2025
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: NHS patients and staff in England
+      cost:
+        note:
+          en: No cost was given with the promise.
+      when:
+        en: Not stated by the Prime Minister; the Health Secretary said over the next two years
+      funded_by: null
+events:
+  - date: "2025-03-13"
+    type: promised
+    text:
+      en: The Prime Minister announces that NHS England will be abolished
+  - date: "2026-05-14"
+    type: in_plan
+    text:
+      en: >-
+        The government introduces the Health Bill, which abolishes NHS England, in the House of
+        Commons
+    evidence_url: https://bills.parliament.uk/bills/4124
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

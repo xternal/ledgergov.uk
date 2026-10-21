@@ -1,0 +1,74 @@
+format: openpromises/1
+id: uk-neighbourhood-police-3000-2026
+headline:
+  en: 3,000 more neighbourhood police by March
+actor_id: keir-starmer
+made_on: "2025-12-01"
+venue: speech
+venue_label:
+  en: Speech on a Britain built for all
+area: public_order
+status: delivered
+status_note:
+  en: >-
+    Home Office statistics show 3,814 more full-time-equivalent police officers and police community
+    support officers (PCSOs) in neighbourhood roles in England and Wales at 31 March 2026 than a
+    year earlier; 3,494 of the increase were police officers. The count includes officers in
+    training who are destined for neighbourhood roles (350 at that date). The government's target
+    for the year was 3,011. It is a first step towards the 13,000 more neighbourhood personnel in
+    Labour's 2024 manifesto, which has its own card. "By March" is read as 31 March 2026.
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The UK Government was responsible when the promise fell due in March 2026, with Keir Starmer
+      as Prime Minister.
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: Prime Minister's speech on Britain built for all, 1 December 2025"
+    url: https://www.gov.uk/government/speeches/prime-ministers-speech-on-britain-built-for-all-1-december-2025
+  - title: "Home Office: Police workforce, England and Wales: 31 March 2026 (22 Jul 2026)"
+    url: https://www.gov.uk/government/statistics/police-workforce-england-and-wales-31-march-2026/police-workforce-england-and-wales-31-march-2026
+versions:
+  - version: 1
+    text: You will see 3000 neighbourhood police officers on your streets - by March…
+    recorded_on: "2025-12-01"
+    source_url: https://www.gov.uk/government/speeches/prime-ministers-speech-on-britain-built-for-all-1-december-2025
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: People in England and Wales, through more police in their neighbourhoods
+      cost:
+        note:
+          en: No cost was given in the speech.
+      when:
+        en: By March 2026
+      deadline: "2026-03-31"
+      funded_by: null
+events:
+  - date: "2025-12-01"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister says 3,000 more neighbourhood police officers will be on the streets by
+        March
+  - date: "2026-03-31"
+    type: deadline
+    text:
+      en: 3,000 more neighbourhood police officers due (editorial date, end of March 2026)
+  - date: "2026-07-22"
+    type: delivered
+    text:
+      en: >-
+        Home Office statistics: 3,814 more officers and PCSOs in neighbourhood roles at 31 March
+        2026, 3,494 of them police officers
+    evidence_url: https://www.gov.uk/government/statistics/police-workforce-england-and-wales-31-march-2026/police-workforce-england-and-wales-31-march-2026
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
