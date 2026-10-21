@@ -10,7 +10,7 @@
 
 export interface Config {
   production: boolean;
-  /** "alpha": an early version, labelled on every page. "live": launched. */
+  /** "alpha": an early version, which a password can close to testers. "live": launched. */
   stage: "alpha" | "live";
   /** Optional shared password that closes an alpha to testers only (null: public). */
   alphaPassword: string | null;

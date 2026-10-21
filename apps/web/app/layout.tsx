@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
-import { isAlpha, MAKER, OPEN_GRAPH, SITE_DESCRIPTION, SITE_NAME, siteUrl, SOURCE_CODE } from "@/lib/site";
+import { MAKER, OPEN_GRAPH, SITE_DESCRIPTION, SITE_NAME, siteUrl, SOURCE_CODE } from "@/lib/site";
 import { AlsoBy } from "@/components/AlsoBy";
 import { FooterLink } from "@/components/FooterLink";
 import "./globals.css";
@@ -30,14 +30,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-GB" className={GeistSans.variable}>
       <body>
-        {isAlpha() && (
-          <p className="m-0 bg-warn/10 px-4 py-1.5 text-center text-caption font-medium text-warn">
-            Alpha: an early version. Promise cards are checked by AI Journalist, our automated reviewer, then approved by an editor, Pavel Guzhikov.{" "}
-            <a href="/editors" className="text-warn underline underline-offset-2">
-              Become an editor
-            </a>
-          </p>
-        )}
         {children}
         <footer className="mx-auto max-w-[1200px] px-4 pb-8 pt-6 text-caption text-muted sm:px-6">
           <AlsoBy />
@@ -52,6 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <a href={MAKER.coffee} rel="noopener noreferrer" target="_blank">
               Buy me a coffee
             </a>
+            <FooterLink href="/editors">Become an editor</FooterLink>
             <FooterLink href="/privacy">Privacy</FooterLink>
             <a href="/method#licence">Our text: CC BY 4.0, data: Open Government Licence</a>
             <a href={SOURCE_CODE.url}>Source code</a>

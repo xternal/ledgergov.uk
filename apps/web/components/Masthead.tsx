@@ -32,11 +32,8 @@ export function Hero({ tracked }: { tracked?: { text: string; href: string } }) 
   const { receipts_bn, spending_bn, borrowing_bn } = baseResult.totals;
   return (
     <div className="pb-8 pt-12 sm:pt-16">
-      <p className="mb-4 flex flex-wrap items-center gap-x-3 gap-y-2 text-label text-muted">
-        <span>
-          Annual statement for {meta.fiscal_year}, based on the {meta.vintage_label}
-        </span>
-        <span className="rounded-full bg-warn/8 px-2 py-0.5 text-caption font-medium text-warn">Early version: cards checked by AI Journalist, then approved by an editor</span>
+      <p className="mb-4 text-label text-muted">
+        Annual statement for {meta.fiscal_year}, based on the {meta.vintage_label}
       </p>
       <h1 className="max-w-[20ch] text-[clamp(32px,4.4vw,var(--text-display))] font-semibold leading-[1.06] tracking-[-0.035em]">
         Where {gbpBn(spending_bn)} of public money went, and where it came from
