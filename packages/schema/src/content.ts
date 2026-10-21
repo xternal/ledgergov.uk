@@ -347,6 +347,23 @@ export interface CardView {
   contracts: ContractLink[];
   /** How far the card has been verified (OpenPromises decision 23), set by withVerification (verification.ts); absent when built without the editors list. */
   verification?: CardVerification;
+  /** What was checked of the current version's quote (OpenPromises decision 35), set by withQuoteChecks (quotes.ts). */
+  quote?: CardQuote;
+}
+
+/**
+ * What was checked of a quote, the strongest that holds (OpenPromises decision 35): an editor's check at its source
+ * (quote_checked_on), else a machine's word-for-word match in a stored copy of the source (an exact archive check in
+ * content/quotes.json), else nothing yet. In the engine's words.
+ */
+export interface CardQuote {
+  kind: "checked" | "matched" | "none";
+  /** The day an editor checked it at its source, when `kind` is "checked". */
+  on: string | null;
+  /** As the card page says it: "Quote checked word for word at its source on 20 October 2026". */
+  text: string;
+  /** As the Markdown's quote-source line says it: "checked word for word at its source on 20 October 2026". */
+  md: string;
 }
 
 export function cardViews(promises: PromiseFile[], actors: ActorFile[], contracts: ContractFile[] = []): CardView[] {
@@ -375,16 +392,25 @@ export function cardViews(promises: PromiseFile[], actors: ActorFile[], contract
  * no correction; once it has a value, changing it is a correction like any other.
  */
 export const LATE_FIELDS: Record<"versions" | "events" | "replies", string[]> = {
-  // Who made the cost's central figure (PROMISE_STANDARD §2), added 9 Oct 2026.
-  versions: [".parameters.costed_by"],
+  // Who made the cost's central figure (PROMISE_STANDARD §2), added 9 Oct 2026. An editor's quote check, which may be
+  // recorded once on a published card (OpenPromises decision 35, a late field in the engine's check since 0.15.0).
+  versions: [".parameters.costed_by", ".quote_checked_on"],
   events: [],
   replies: [],
 };
 
-/** The entry as it stands, minus any late field the published entry did not have. */
+/** The entry as it stands, with any late field the published entry did not have put back as it was there: absent, or null (quote_checked_on: null). */
 function withoutLateFields(key: keyof typeof LATE_FIELDS, published: unknown, now: unknown): unknown {
   let out = now;
-  for (const tail of LATE_FIELDS[key]) if (now !== undefined && fieldAt(published, tail) === null && fieldAt(out, tail) !== null) out = withField(out, tail, null);
+  for (const tail of LATE_FIELDS[key])
+    if (now !== undefined && fieldAt(published, tail) === null && fieldAt(out, tail) !== null) {
+      const at = tail.lastIndexOf(".");
+      const [parent, last] = [tail.slice(0, at), tail.slice(at + 1)];
+      const was = fieldAt(published, parent);
+      out = structuredClone(out);
+      // stable() leaves out a key whose value is undefined, so an absent field compares equal to undefined.
+      (fieldAt(out, parent) as Record<string, unknown>)[last] = was && typeof was === "object" ? (was as Record<string, unknown>)[last] : undefined;
+    }
   return out;
 }
 

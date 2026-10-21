@@ -92,6 +92,19 @@ describe("append-only promise history (invariant 5)", () => {
     expect(appendOnlyIssues(filled, corrected)).toEqual([]);
   });
 
+  it("lets an editor's quote check be recorded once on a published card (OpenPromises decision 35), then treats it as history", () => {
+    const published = () => ({ ...card(), versions: [{ version: 1, text: "We will do X.", quote_checked_on: null as string | null }] });
+    const checked = published();
+    checked.versions[0]!.quote_checked_on = "2026-10-21";
+    expect(appendOnlyIssues(published(), checked)).toEqual([]);
+    const { quote_checked_on: _absent, ...bare } = published().versions[0]!;
+    expect(appendOnlyIssues({ ...card(), versions: [bare] }, checked)).toEqual([]);
+    // Once recorded, changing the day is a correction like any other.
+    const moved = structuredClone(checked);
+    moved.versions[0]!.quote_checked_on = "2026-10-22";
+    expect(appendOnlyIssues(checked, moved)).toEqual(["versions[0] was changed or removed; history is append-only (add a new entry, or record a correction)"]);
+  });
+
   it("keeps reviews append-only: a new review is added, an old one never edited", () => {
     const review = { by: "Junior Editor", kind: "automated", on: "2026-10-06" };
     const before = { ...card(), reviews: [review] };

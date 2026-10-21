@@ -343,7 +343,7 @@ pnpm parity:check       # on the change: writes .parity/current, compares, exits
 
 ## 15. The OpenPromises check
 
-LedgerGov.UK's cards are in the format of the open-source OpenPromises engine ([github.com/xternal/openpromises](https://github.com/xternal/openpromises), its `docs/MIGRATING.md`) since 12 October 2026; the site reads them into its own shape (`packages/schema/src/v1.ts`), so nothing readers see changed. The engine is pinned at 0.14.0 (since 20 October 2026): `@openpromises/cli` and `@openpromises/core` as dev dependencies for the check, `@openpromises/core` and `@openpromises/publish` as dependencies of `packages/schema` for the verification label, the home page's promises and the actor pages' promises by area below, and `@openpromises/react` in `apps/web` for the home page's promises. `openpromises.config.ts` at the repository root describes the site, and CI runs the engine's check after our own one. Since the switch on 12 October 2026 it blocks a merge like any other check; on a fork's pull request, which gets no secrets and so no editors list, it runs as a report only.
+LedgerGov.UK's cards are in the format of the open-source OpenPromises engine ([github.com/xternal/openpromises](https://github.com/xternal/openpromises), its `docs/MIGRATING.md`) since 12 October 2026; the site reads them into its own shape (`packages/schema/src/v1.ts`), so nothing readers see changed. The engine is pinned at 0.15.0 (since 21 October 2026): `@openpromises/cli` and `@openpromises/core` as dev dependencies for the check, `@openpromises/core`, `@openpromises/files` and `@openpromises/publish` as dependencies of `packages/schema` for the verification label, what each card says of its quote, the home page's promises and the actor pages' promises by area below, and `@openpromises/react` in `apps/web` for the home page's promises. `openpromises.config.ts` at the repository root describes the site, and CI runs the engine's check after our own one. Since the switch on 12 October 2026 it blocks a merge like any other check; on a fork's pull request, which gets no secrets and so no editors list, it runs as a report only.
 
 ```bash
 pnpm exec openpromises validate --no-base   # everything the engine would object to today
@@ -397,6 +397,16 @@ pnpm exec openpromises check-quote <card id> --html /tmp/source.html --record   
 ```
 
 Commit `content/quotes.json` with the card. Only `exact` lets a card without approvals through; `close` or `none` means the quote is not the source's words: fix the quote, or wait for editors.
+
+### What each card says of its quote (since 0.15.0)
+
+Beside the date the promise was made, every card page says what was checked of its quote, and so does the "Quote source" line of its Markdown (OpenPromises decision 35), in the engine's words, the strongest check that holds:
+
+* "Quote checked word for word at its source on 20 October 2026": an editor checked it there (`quote_checked_on`);
+* else "Quote matches a stored copy of its source word for word": an `exact` archive check in `content/quotes.json`, or a stored-source span;
+* else "Quote not yet checked against its source".
+
+`packages/schema/src/quotes.ts` (`withQuoteChecks`) asks the engine, with its own key into `content/quotes.json`, so the page agrees with the check above. On 21 October 2026 all 175 cards had an editor's check. An editor's check made after a card was published can be recorded once, with no correction, by `pnpm exec openpromises review <card id> --by "<editor>" --quote-checked --on YYYY-MM-DD`, in a pull request of its own; both the engine's check and `pnpm validate` accept it (`quote_checked_on` is a late field, `LATE_FIELDS` in `packages/schema/src/content.ts`). Changing a day once recorded is a correction.
 
 ### The verification label and the editors list on Vercel
 

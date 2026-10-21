@@ -30,6 +30,14 @@ const reviewer = (r: PromiseFile["reviews"][number], named?: readonly string[]) 
       : editorShownAs(r.by, named)
     : `${REVIEWER_NAME[r.by] ?? r.by} (${r.kind === "automated" ? "automated" : "legal review"})`;
 
+/**
+ * What was checked of the quote, in the engine's words (OpenPromises decision 35): withQuoteChecks
+ * (@ledger/schema/quotes) sets it on every card the site serves. Without it, the editor's check alone, as the engine
+ * says it for a card read without its stored copies.
+ */
+const quoteChecked = (c: CardView) =>
+  c.quote?.md ?? (c.current.quote_checked_on ? `checked word for word at its source on ${ukDate(c.current.quote_checked_on)}` : "not yet checked against its source");
+
 /** "Costs £1.5bn to £1.9bn a year (central £1.7bn by Labour Party, party's own figure)", or why there is no figure. */
 function costLine(c: CardView): string {
   const p = c.current.parameters;
@@ -93,7 +101,7 @@ export function cardMarkdown(c: CardView, ctx: SeoContext, level: 1 | 2 = 1): st
     ["Paid for by", p ? (p.funded_by ? flat(p.funded_by) : "Not stated when it was announced") : null],
     [
       "Quote source",
-      `${c.current.source_url} (${c.current.quote_checked_on ? `checked word for word on ${ukDate(c.current.quote_checked_on)}` : "not yet checked against the source"}; ${quoteLicence(c.current.source_url)})`,
+      `${c.current.source_url} (${quoteChecked(c)}; ${quoteLicence(c.current.source_url)})`,
     ],
     ["Last updated", updated ? ukDate(updated) : null],
     ["Card", url],
