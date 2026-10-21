@@ -1,0 +1,60 @@
+format: openpromises/1
+id: uk-con-100000-apprenticeships-2026
+headline:
+  en: Create 100,000 more apprenticeships
+actor_id: kemi-badenoch
+made_on: "2026-08-13"
+venue: press_release
+venue_label:
+  en: News release on her website
+area: education
+status: promised
+status_note:
+  en: >-
+    The Conservatives are not in government, so the card stays at Promised. The release says the
+    apprenticeships are for 18 to 21-year-olds, created by lifting funding caps and giving employers
+    up to £5,000 for every British apprentice they hire, under the party's New Deal for Young
+    People. It calls the plan fully funded but does not say where the money would come from.
+responsible: null
+origin: llm_intake
+sources:
+  - title: >-
+      Kemi Badenoch: Local MP pledges more apprenticeships as students receive results (13 Aug
+      2026)
+    url: https://www.kemibadenoch.org.uk/news/local-mp-pledges-more-apprenticeships-students-receive-results
+versions:
+  - version: 1
+    text: >-
+      North West Essex MP and Leader of the Conservative Party, Kemi Badenoch, has pledged that the
+      next Conservative Government will create 100,000 more apprenticeships as A-Level, T-Level and
+      vocational students across North West Essex receive their results.
+    recorded_on: "2026-08-13"
+    source_url: https://www.kemibadenoch.org.uk/news/local-mp-pledges-more-apprenticeships-students-receive-results
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: >-
+          18 to 21-year-olds; employers would get up to £5,000 for every British apprentice they
+          hire
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated ("the next Conservative Government")
+      funded_by: null
+events:
+  - date: "2026-08-13"
+    type: promised
+    text:
+      en: >-
+        Kemi Badenoch pledges that the next Conservative Government will create 100,000 more
+        apprenticeships
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

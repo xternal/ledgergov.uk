@@ -23,6 +23,12 @@
     "checked_on": "2026-10-18",
     "sha256": "0f182fb17490fbdb9370ff221656f4b934461ab4fab053a15dfc40a35609a3ba"
   },
+  "08716a1b877f172551f1c2db2d40b6f30d28eee44014db390b9b1041e047ee38|https://www.kemibadenoch.org.uk/news/kemi-badenoch-mp-net-zero-has-failed-and-made-your-electricity-more-expensive-heres-my-plan": {
+    "match": "exact",
+    "url": "https://www.kemibadenoch.org.uk/news/kemi-badenoch-mp-net-zero-has-failed-and-made-your-electricity-more-expensive-heres-my-plan",
+    "checked_on": "2026-10-20",
+    "sha256": "72e8f4468a5218999e207b9193115e1fb02a92b96cd6ae5379df9b4f8b4a86b5"
+  },
   "13a001ae01ebcbad5ee4de03d6716e5dcf4f577502df9764a3c0e99ddfa7abe9|https://hansard.parliament.uk/Commons/2026-10-12/debates/54FB2EDB-83AF-40FE-8A98-A914AD221CD7/InternationalUpdate": {
     "match": "exact",
     "url": "https://hansard.parliament.uk/Commons/2026-10-12/debates/54FB2EDB-83AF-40FE-8A98-A914AD221CD7/InternationalUpdate",
@@ -52,6 +58,12 @@
     "url": "https://www.gov.uk/government/news/new-one-stop-shop-for-flood-preparedness-launched-as-we-approach-more-weather-whiplash",
     "checked_on": "2026-10-13",
     "sha256": "12f66a4458e80cb6ce35efcb12e2c5848c6f87481294083558663b53e21e54c6"
+  },
+  "22b8af330fc1634e0ac43d51b317d1a21ab73bc3d8a4ba7a4f8d1ffe2f24475e|https://www.kemibadenoch.org.uk/news/kemi-badenoch-mp-we-will-deport-every-illegal-immigrant-our-country-our-home-not-hotel": {
+    "match": "exact",
+    "url": "https://www.kemibadenoch.org.uk/news/kemi-badenoch-mp-we-will-deport-every-illegal-immigrant-our-country-our-home-not-hotel",
+    "checked_on": "2026-10-20",
+    "sha256": "0322f9c301b2ff2b7d64ac3b5204e068e712ce0f7ed819887919e63a24116121"
   },
   "22e4dfb31e634a0963daa739d9332e96a98b53b8ee9dcdf619c39a5147ce4d48|https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts": {
     "match": "exact",
@@ -197,6 +209,12 @@
     "checked_on": "2026-10-13",
     "sha256": "718ac477ce36a4b7bb4b05331b77725ce2dd0a4126559323ebada137f720c572"
   },
+  "5ecb31ad9f15c40e3745bced483bb1973eb988ecf91eb9ba2e23dad648f11e97|https://www.kemibadenoch.org.uk/news/kemi-sets-out-major-plan-defend-our-country": {
+    "match": "exact",
+    "url": "https://www.kemibadenoch.org.uk/news/kemi-sets-out-major-plan-defend-our-country",
+    "checked_on": "2026-10-20",
+    "sha256": "4a4e2d24cb1424258eaa8111f61d3b3752b6f1182376561651821f322e046460"
+  },
   "5f17870a143ef742442e2a6fd593dfa2f6cfde541b850b4339179736cd96e9d2|https://www.gov.uk/government/news/businesses-set-to-be-protected-from-argentinian-economic-coercion": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/businesses-set-to-be-protected-from-argentinian-economic-coercion",
@@ -269,6 +287,12 @@
     "checked_on": "2026-10-16",
     "sha256": "da1fb234192c32090d4570d357dad6a2d263fe554f196d77f2eaf6e8c5628c00"
   },
+  "82588c4dbaebe67e2d4b67bb13b1e90141b9a5ad13b791f19d38170edc34a9a6|https://www.kemibadenoch.org.uk/news/conservatives-pledge-10000-more-police-officers": {
+    "match": "exact",
+    "url": "https://www.kemibadenoch.org.uk/news/conservatives-pledge-10000-more-police-officers",
+    "checked_on": "2026-10-20",
+    "sha256": "56a269962899052da2df5f6b8040cb033e95cabd11bdbc8d2fff12ed3fcc764d"
+  },
   "8447ab75c8351d073ef22e5116727be698c9fdab90b47fad34435b5535d647dc|https://www.gov.uk/government/news/great-british-railways-takes-shape-as-hq-and-apprenticeship-scheme-confirmed": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/great-british-railways-takes-shape-as-hq-and-apprenticeship-scheme-confirmed",
@@ -298,6 +322,12 @@
     "url": "https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced",
     "checked_on": "2026-10-18",
     "sha256": "0031fe57b80f0ce6c64a16342e24d535ed1ff6952e8baf2696c792dd421cb9eb"
+  },
+  "95bea5747bb6f021c6691f1f1ae7b0a9911585d53a7a54a68fdf704162c73c97|https://www.kemibadenoch.org.uk/news/kemi-sets-out-major-plan-defend-our-country": {
+    "match": "exact",
+    "url": "https://www.kemibadenoch.org.uk/news/kemi-sets-out-major-plan-defend-our-country",
+    "checked_on": "2026-10-20",
+    "sha256": "4a4e2d24cb1424258eaa8111f61d3b3752b6f1182376561651821f322e046460"
   },
   "97251af046e9ced0a0ee371c477881400a256ef389261a69ad598d3cf76740c1|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS356": {
     "match": "exact",
@@ -376,6 +406,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS369",
     "checked_on": "2026-10-16",
     "sha256": "da1fb234192c32090d4570d357dad6a2d263fe554f196d77f2eaf6e8c5628c00"
+  },
+  "b37733236673e9bde702667d2b47856d8b442b41bf2bb36d56f671ff65819ddd|https://www.kemibadenoch.org.uk/news/local-mp-pledges-more-apprenticeships-students-receive-results": {
+    "match": "exact",
+    "url": "https://www.kemibadenoch.org.uk/news/local-mp-pledges-more-apprenticeships-students-receive-results",
+    "checked_on": "2026-10-20",
+    "sha256": "a784c99339cb7d9714ff2ac43cc9ddc63e4ee859cf65d3c0c37af2b7bd363117"
   },
   "b52ae36c68cbedaced3d116adf597a6749879f732f0b6f6df391e116b684b3a8|https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/": {
     "match": "exact",
