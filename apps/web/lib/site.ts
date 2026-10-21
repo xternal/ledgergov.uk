@@ -15,9 +15,6 @@ export const SITE_DESCRIPTION =
  */
 export const OPEN_GRAPH = { siteName: SITE_NAME, locale: "en_GB" } as const;
 
-/** An alpha (SITE_STAGE=alpha): a public early version, labelled on every page. */
-export const isAlpha = () => process.env.SITE_STAGE === "alpha";
-
 /** The maker, credited at the foot of every page. */
 export const SOURCE_CODE = { url: "https://github.com/xternal/ledgergov.uk", licence: "AGPL-3.0" } as const;
 /** Applications and questions from would-be editors (Cloudflare Email Routing forwards it). */
