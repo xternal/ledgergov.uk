@@ -1,0 +1,102 @@
+format: openpromises/1
+id: uk-medical-training-places-2031
+headline:
+  en: Double medical training places by 2031
+actor_id: rishi-sunak
+made_on: "2023-06-30"
+venue: speech
+venue_label:
+  en: Speech launching the NHS Long Term Workforce Plan
+area: health
+status: funded
+status_note:
+  en: >-
+    The NHS Long Term Workforce Plan, published the same day, set the target: medical school places
+    in England doubled to 15,000 a year by 2031, from the 7,500 reached in 2020. His government then
+    funded the first extra places: 205 for students starting in 2024 and 350 for 2025 to 2026. The
+    government since July 2024 has not restated the target. Its 10 Year Health Plan (3 July 2025)
+    says the NHS will have fewer staff by 2035 than the 2023 plan projected, aims any expansion of
+    medical school places at schools that widen access, and promises a new 10 Year Workforce Plan;
+    its call for evidence closed on 7 November 2025, and no such plan was on GOV.UK by 21 October
+    2026.
+responsible: null
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: PM speech launching the NHS Long Term Workforce Plan, 30 June 2023"
+    url: https://www.gov.uk/government/speeches/pm-speech-launching-the-nhs-long-term-workforce-plan-30-june-2023
+  - title: "NHS England: NHS Long Term Workforce Plan (30 Jun 2023)"
+    url: https://www.england.nhs.uk/publication/nhs-long-term-workforce-plan/
+  - title: "Department of Health and Social Care: Expansion of medical school places to be accelerated to next year (3 Oct 2023)"
+    url: https://www.gov.uk/government/news/expansion-of-medical-school-places-to-be-accelerated-to-next-year
+  - title: "Department of Health and Social Care and NHS England: 350 extra medical school places allocated in NHS training boost (13 May 2024)"
+    url: https://www.gov.uk/government/news/350-extra-medical-school-places-allocated-in-nhs-training-boost
+  - title: "Department of Health and Social Care: 10 Year Health Plan for England: fit for the future (3 Jul 2025)"
+    url: https://www.gov.uk/government/publications/10-year-health-plan-for-england-fit-for-the-future/fit-for-the-future-10-year-health-plan-for-england-accessible-version
+  - title: "Department of Health and Social Care: 10 Year Workforce Plan, call for evidence (26 Sep to 7 Nov 2025)"
+    url: https://www.gov.uk/government/calls-for-evidence/10-year-workforce-plan
+versions:
+  - version: 1
+    text: >-
+      We’ll double the number of medical training places by 2031
+    recorded_on: "2023-06-30"
+    source_url: https://www.gov.uk/government/speeches/pm-speech-launching-the-nhs-long-term-workforce-plan-30-june-2023
+    quote_checked_on: "2026-10-21"
+    parameters:
+      who:
+        en: >-
+          People training to be doctors in England, and the NHS patients they would go on to treat
+      cost:
+        note:
+          en: >-
+            No separate figure for medical places. He said the plan's expansion of education and
+            training for all NHS staff would be funded in full for its first five years, "with over
+            £2.4 billion of additional investment".
+        sources:
+          - title: "Prime Minister's Office: PM speech launching the NHS Long Term Workforce Plan, 30 June 2023"
+            url: https://www.gov.uk/government/speeches/pm-speech-launching-the-nhs-long-term-workforce-plan-30-june-2023
+      when:
+        en: By 2031
+      deadline: "2031-12-31"
+      funded_by: null
+events:
+  - date: "2023-06-30"
+    type: promised
+    text:
+      en: >-
+        Launching the NHS Long Term Workforce Plan, the Prime Minister says medical training places
+        will double by 2031
+  - date: "2023-06-30"
+    type: in_plan
+    text:
+      en: >-
+        NHS England publishes the Long Term Workforce Plan, with medical school places in England to
+        double to 15,000 a year
+    evidence_url: https://www.england.nhs.uk/publication/nhs-long-term-workforce-plan/
+  - date: "2023-10-03"
+    type: funded
+    text:
+      en: >-
+        The government funds 205 extra medical school places for students starting in 2024, a year
+        earlier than the plan; 350 more for 2025 to 2026 follow on 13 May 2024
+    evidence_url: https://www.gov.uk/government/news/expansion-of-medical-school-places-to-be-accelerated-to-next-year
+  - date: "2031-12-31"
+    type: deadline
+    text:
+      en: Medical training places due to have doubled by 2031 (editorial date, end of 2031)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-21"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
+  - by: Pavel Guzhikov
+    kind: editor
+    "on": "2026-10-21"
+    approves: true
+    note:
+      en: >-
+        Checked against the editors' checklist (docs/EDITORS.md): quote, sources, dates, status, cost
+        and wording
