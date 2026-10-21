@@ -56,7 +56,7 @@ describe("the card above the footer", () => {
     const links = [...out.matchAll(/<a\b[^>]*>/g)].map((m) => m[0]);
     expect(links).toHaveLength(2);
     for (const a of links) expect(a).toContain('rel="noopener noreferrer"');
-    // The site opens outside links in a new tab (the footer's "Buy me a coffee"); the card does the same.
+    // The site opens outside links in a new tab (the footer's "Buy me a matcha"); the card does the same.
     expect(read("app/layout.tsx")).toContain(`<a href={MAKER.coffee} rel="noopener noreferrer" target="_blank">`);
     expect(MAKER.coffee).toMatch(/^https:/);
   });
