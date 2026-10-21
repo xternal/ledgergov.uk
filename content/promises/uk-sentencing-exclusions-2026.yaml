@@ -1,0 +1,87 @@
+format: openpromises/1
+id: uk-sentencing-exclusions-2026
+headline:
+  en: Exclude rape and grooming offences from earlier release
+actor_id: andy-burnham
+made_on: "2026-08-04"
+venue: press_release
+venue_label:
+  en: No 10 and Ministry of Justice press release
+area: public_order
+status: delivered
+status_note:
+  en: >-
+    The Sentencing Act 2026 (Commencement No. 6 and Revocation) Regulations 2026, made on 1
+    September, brought the earlier release points into force on 1 October 2026, but not for
+    sentences for the offences in their Schedule. The Schedule lists rape, child sex offences and
+    meeting a child following sexual grooming. On 30 August the Prime Minister widened the
+    exclusions to manslaughter, death by dangerous driving and indecent assault, and the Schedule
+    lists those too. The Ministry of Justice publishes the full list of excluded offences.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      No 10 and Ministry of Justice press release, 4 Aug 2026: Rape, serious child sex and grooming
+      offences barred from sentencing changes
+    url: https://www.gov.uk/government/news/rape-serious-child-sex-and-grooming-offences-barred-from-sentencing-changes
+  - title: >-
+      No 10 press release, 30 Aug 2026: Prime Minister blocks hundreds more criminals from
+      sentencing changes
+    url: https://www.gov.uk/government/news/prime-minister-blocks-hundreds-more-criminals-from-sentencing-changes
+  - title: >-
+      The Sentencing Act 2026 (Commencement No. 6 and Revocation) Regulations 2026 (S.I. 2026/953),
+      Schedule: excluded offences
+    url: https://www.legislation.gov.uk/uksi/2026/953/schedule/made
+  - title: "Ministry of Justice: Sentencing Act 2026 offence exclusions"
+    url: https://www.gov.uk/government/publications/sentencing-act-offence-exclusions
+versions:
+  - version: 1
+    text: >-
+      That’s why we’re making significant changes: offenders who have been sentenced for rape,
+      serious child sex offences and other grooming offences will be excluded from the changes.
+    recorded_on: "2026-08-04"
+    source_url: https://www.gov.uk/government/news/rape-serious-child-sex-and-grooming-offences-barred-from-sentencing-changes
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: >-
+          Offenders in England and Wales serving standard determinate sentences for rape, serious
+          child sex offences or grooming offences
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: When the earlier release points start, 1 October 2026 according to the release
+      deadline: "2026-10-01"
+      funded_by: null
+events:
+  - date: "2026-08-04"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister says offenders sentenced for rape, serious child sex offences and other
+        grooming offences will be excluded from the changes to prison release
+  - date: "2026-09-01"
+    type: legislated
+    text:
+      en: >-
+        The commencement regulations are made; their Schedule excludes these offences from the
+        earlier release points
+    evidence_url: https://www.legislation.gov.uk/uksi/2026/953/made
+  - date: "2026-10-01"
+    type: delivered
+    text:
+      en: >-
+        The earlier release points come into force, except for sentences for the offences in the
+        Schedule
+    evidence_url: https://www.legislation.gov.uk/uksi/2026/953/made
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
