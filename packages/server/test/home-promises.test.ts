@@ -80,7 +80,7 @@ describe("the footer", () => {
   it("separates its items by layout, with no middle dots (docs/DESIGN_HANDOFF.md)", () => {
     const layout = read("app/layout.tsx");
     const footer = layout.slice(layout.indexOf("<footer"), layout.indexOf("</footer>"));
-    expect(footer).toContain("Buy me a coffee");
+    expect(footer).toContain("Buy me a matcha");
     expect(footer).not.toContain("·");
   });
 });
