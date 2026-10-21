@@ -1,0 +1,59 @@
+format: openpromises/1
+id: uk-con-two-child-cap-return-2026
+headline:
+  en: Bring back the two-child benefit cap
+actor_id: kemi-badenoch
+made_on: "2026-09-03"
+venue: speech
+venue_label:
+  en: Speech on defence and welfare
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    The Conservatives are not in government, so the card stays at Promised. The limit stopped
+    applying from 6 April 2026 under the Universal Credit (Removal of Two Child Limit) Act 2026. The
+    speech says she had announced this before; the card records it from this speech. Her news
+    release of 24 September puts the saving at £3.1 billion a year and counts it towards paying for
+    defence.
+responsible: null
+origin: llm_intake
+sources:
+  - title: "Kemi Badenoch: Kemi sets out major plan to defend our country (speech, 3 Sep 2026)"
+    url: https://www.kemibadenoch.org.uk/news/kemi-sets-out-major-plan-defend-our-country
+  - title: "Kemi Badenoch: Local MP: We must cut welfare to fund our defence (24 Sep 2026)"
+    url: https://www.kemibadenoch.org.uk/news/local-mp-we-must-cut-welfare-fund-our-defence
+  - title: Universal Credit (Removal of Two Child Limit) Act 2026
+    url: https://www.legislation.gov.uk/ukpga/2026/13/enacted
+versions:
+  - version: 1
+    text: >-
+      And I have already announced that we would reinstate the two-child benefit cap.
+    recorded_on: "2026-09-03"
+    source_url: https://www.kemibadenoch.org.uk/news/kemi-sets-out-major-plan-defend-our-country
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: Families on Universal Credit with three or more children
+      cost:
+        note:
+          en: >-
+            The party says reinstating the cap would save £3.1 billion a year. No official or
+            independent costing has been published.
+      when:
+        en: Not stated ("we would"; the next Conservative Government)
+      funded_by: null
+events:
+  - date: "2026-09-03"
+    type: promised
+    text:
+      en: Kemi Badenoch says the Conservatives would reinstate the two-child benefit cap
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
