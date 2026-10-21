@@ -180,7 +180,7 @@ export function PromiseDetail({ card, householdsM, householdsP, spendingBn, runH
             {f.venue_label ? `${f.venue_label}, ` : ""}
             {longDate(f.made_on)}
           </span>
-          {!card.current.quote_checked_on && <span>Quote not yet checked against the source</span>}
+          {card.quote && <span>{card.quote.text}</span>}
         </span>
         <Ladder card={card} />
       </header>

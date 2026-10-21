@@ -4,6 +4,7 @@ import { describe, expect, it } from "vitest";
 import { Headline, PolicyArea, type CardView, type PromiseFile } from "@ledger/schema";
 import { loadSeed } from "@ledger/schema/seed";
 import { withVerification } from "@ledger/schema/verification";
+import { withQuoteChecks } from "@ledger/schema/quotes";
 import {
   AREA_SLUG,
   DESCRIPTION_MAX,
@@ -359,6 +360,19 @@ describe("Markdown for AI assistants", () => {
     expect(md).not.toContain("Goodwill Stranger");
     expect(md).not.toContain("human editor review to come");
     expect(md).not.toContain("undefined");
+  });
+
+  it("says what was checked of the quote beside its source, in the engine's words (OpenPromises decision 35)", () => {
+    const quoted = withQuoteChecks(loadSeed()).cards.find((x) => x.id === "uk-great-british-energy-2024")!;
+    const line = "- **Quote source:** https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=53 (checked word for word at its source on 6 October 2026;";
+    expect(quoted.quote?.md).toBe("checked word for word at its source on 6 October 2026");
+    expect(cardMarkdownFile(quoted, ctx)).toContain(line);
+    // Read without the engine (scripts, these tests' seed): the editor's check alone, in the same words.
+    expect(cardMarkdownFile(cards.find((x) => x.id === quoted.id)!, ctx)).toContain(line);
+    const unchecked = { ...quoted, quote: undefined, current: { ...quoted.current, quote_checked_on: null } };
+    expect(cardMarkdownFile(unchecked, ctx)).toContain("(not yet checked against its source;");
+    const matched = { ...quoted, quote: { kind: "matched" as const, on: null, text: "Quote matches a stored copy of its source word for word", md: "matches a stored copy of its source word for word" } };
+    expect(cardMarkdownFile(matched, ctx)).toContain("(matches a stored copy of its source word for word;");
   });
 
   it("with the editors list, a card's Markdown carries the verification label", () => {
