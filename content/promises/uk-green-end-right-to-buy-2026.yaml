@@ -1,0 +1,54 @@
+format: openpromises/1
+id: uk-green-end-right-to-buy-2026
+headline:
+  en: End right to buy completely
+actor_id: zack-polanski
+made_on: "2026-03-18"
+venue: speech
+venue_label:
+  en: "Speech to the New Economics Foundation"
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The Green Party is not in government, so the card stays at Promised. He set it out as part of
+    his plan to end "rip-off Britain", alongside building more council homes and controlling rents,
+    and said over two million houses have been sold under right to buy since it was introduced. He
+    gave no date.
+responsible: null
+origin: llm_intake
+sources:
+  - title: "Green Party: Zack Polanski lays out plans to back the \"caring majority\" in major speech (18 Mar 2026)"
+    url: https://greenparty.org.uk/2026/03/18/zack-polanski-lays-out-plans-to-back-the-caring-majority-in-major-speech/
+versions:
+  - version: 1
+    text: >-
+      So we need to end right to buy completely.
+    recorded_on: "2026-03-18"
+    source_url: https://greenparty.org.uk/2026/03/18/zack-polanski-lays-out-plans-to-back-the-caring-majority-in-major-speech/
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: "Council tenants, and the councils whose homes are sold under right to buy"
+      cost:
+        note:
+          en: No cost was given in the cited source.
+      when:
+        en: "Not stated"
+      funded_by: null
+events:
+  - date: "2026-03-18"
+    type: promised
+    text:
+      en: >-
+        Zack Polanski says right to buy should end completely, in a speech to the New Economics
+        Foundation
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
