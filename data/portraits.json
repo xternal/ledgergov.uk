@@ -69,7 +69,12 @@
     "4483": {
       "listed_as": "Rishi Sunak",
       "credit": "©House of Commons",
-      "missing": "UK Parliament's Members API has no official portrait for this member (404 for every crop), checked 20 October 2026."
+      "from": {
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/Rishi_Sunak_official_portrait%2C_2017.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Rishi_Sunak_official_portrait,_2017.jpg",
+        "taken": "2017",
+        "why": "Parliament's official portrait of 2017 (photographer Chris McAndrew), released under CC BY 3.0 and still the picture Parliament's Members API gives as his thumbnail (240x240). The Members API has no full-size portrait for him (404 for every crop) and his portrait page says he \"does not currently have an official portrait\", both checked 20 October 2026; Parliament's credit list still names him \"©House of Commons\". The full-size file is the copy of Parliament's original kept on Wikimedia Commons."
+      }
     },
     "4514": {
       "listed_as": "Keir Starmer",

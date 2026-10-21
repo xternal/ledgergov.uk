@@ -71,6 +71,12 @@ export function roleText(a: ActorFile, today: string): string {
   return last ? `${last.title} until ${longDate(last.to!)}` : "";
 }
 
+/** The line under an actor's name: "Prime Minister, Labour Party", "Party", "Government or public body". */
+export function actorLine(a: ActorFile, party: ActorFile | null | undefined, today: string): string {
+  const what = a.kind === "party" ? "Party" : roleText(a, today) || (a.kind === "government" ? "Government or public body" : "Person");
+  return `${what}${party ? `, ${party.name}` : ""}`;
+}
+
 /** "Labour" rather than "Labour Party", where space is tight. */
 export const shortName = (a: ActorFile) => a.short_name ?? a.name;
 

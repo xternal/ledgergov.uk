@@ -1,0 +1,61 @@
+format: openpromises/1
+id: uk-con-net-zero-target-scrap-2026
+headline:
+  en: Scrap the legally binding net zero target
+actor_id: kemi-badenoch
+made_on: "2026-08-18"
+venue: press_release
+venue_label:
+  en: Article for The Sun, republished on her website
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The Conservatives are not in government, so the card stays at Promised. The target of net zero
+    by 2050 is set in law by the Climate Change Act 2008, as amended in 2019. Scrapping the carbon
+    tax, the other half of the sentence, is part of the party's cheap power plan, which has its own
+    card.
+responsible: null
+origin: llm_intake
+sources:
+  - title: >-
+      Kemi Badenoch: Net Zero has failed and made your electricity more expensive. Here's my plan
+      (18 Aug 2026, first published in The Sun)
+    url: https://www.kemibadenoch.org.uk/news/kemi-badenoch-mp-net-zero-has-failed-and-made-your-electricity-more-expensive-heres-my-plan
+  - title: Climate Change Act 2008, section 1 (the net zero target)
+    url: https://www.legislation.gov.uk/ukpga/2008/27/section/1
+versions:
+  - version: 1
+    text: >-
+      All of this is why my Conservative Party has pledged to scrap the carbon tax — the biggest
+      green levy — and scrap the legally binding target for Net Zero by 2050.
+    recorded_on: "2026-08-18"
+    source_url: https://www.kemibadenoch.org.uk/news/kemi-badenoch-mp-net-zero-has-failed-and-made-your-electricity-more-expensive-heres-my-plan
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: >-
+          Everyone in the UK; the target binds the government to cut net greenhouse gas emissions
+          to zero by 2050
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-08-18"
+    type: promised
+    text:
+      en: >-
+        Kemi Badenoch writes that the Conservatives have pledged to scrap the carbon tax and the
+        legally binding target for net zero by 2050
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

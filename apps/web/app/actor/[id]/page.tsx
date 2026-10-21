@@ -15,7 +15,7 @@ import { FollowButton } from "@/components/FollowPanel";
 import { followOptions } from "@/app/follow/targets";
 import { JsonLd } from "@/components/JsonLd";
 import { OPEN_GRAPH, seoContext } from "@/lib/site";
-import { AREA_LABEL, TERMINAL, cardsOfActor, costText, roleText, todayIso } from "@/lib/promises";
+import { AREA_LABEL, TERMINAL, actorLine, cardsOfActor, costText, todayIso } from "@/lib/promises";
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -107,13 +107,13 @@ export default async function ActorPage({ params }: Props) {
             <figure className="m-0 grid w-[160px] flex-none gap-2 sm:w-[240px]">
               <img
                 src={portrait.src}
-                alt={`Official portrait of ${actor.name}`}
+                alt={`Official portrait of ${actor.name}${portrait.taken ? `, ${portrait.taken}` : ""}`}
                 width={560}
                 height={747}
                 className="aspect-[3/4] h-auto w-full rounded-[12px] border border-line bg-sunk object-cover"
               />
               <figcaption className="text-caption text-muted">
-                Official portrait: <a href={portrait.source}>{portrait.credit}</a>, <a href={portrait.licence.url}>{portrait.licence.name}</a>, cropped
+                Official portrait{portrait.taken ? `, ${portrait.taken}` : ""}: <a href={portrait.source}>{portrait.credit}</a>, <a href={portrait.licence.url}>{portrait.licence.name}</a>, cropped
               </figcaption>
             </figure>
           )}
@@ -126,10 +126,7 @@ export default async function ActorPage({ params }: Props) {
               <h1 id="actor-h" className="m-0 text-[clamp(30px,4.4vw,46px)] font-semibold leading-[1.06] tracking-[-0.035em]">
                 {actor.name}
               </h1>
-              <p className="m-0 text-lead text-muted">
-                {actor.kind === "party" ? "Party" : roleText(actor, today) || "Person"}
-                {party ? `, ${party.name}` : ""}
-              </p>
+              <p className="m-0 text-lead text-muted">{actorLine(actor, party, today)}</p>
             </div>
             <div className="grid gap-1">
               <p className="m-0 text-title font-semibold">

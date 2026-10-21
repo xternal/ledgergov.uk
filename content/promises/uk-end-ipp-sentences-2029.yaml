@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-end-ipp-sentences-2029
+headline:
+  en: End indefinite IPP sentences this Parliament
+actor_id: andy-burnham
+made_on: "2026-08-30"
+venue: press_release
+venue_label:
+  en: No 10 press release
+area: public_order
+status: promised
+status_note:
+  en: >-
+    In his Commons statement on 1 September the Prime Minister spoke of "finally grasping the
+    nettle" on indefinite IPP sentences. The release says work will begin at once and on a
+    cross-party basis, and that it will take time; it does not say how the sentences will end or
+    whether that needs a new law. The end of the Parliament is taken as 1 July 2029, as on other
+    cards. The card moves when the government publishes its plan or brings legislation.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      No 10 press release, 30 Aug 2026: Prime Minister blocks hundreds more criminals from
+      sentencing changes
+    url: https://www.gov.uk/government/news/prime-minister-blocks-hundreds-more-criminals-from-sentencing-changes
+  - title: "PM statement to the House of Commons, 1 Sep 2026"
+    url: https://www.gov.uk/government/speeches/pm-statement-to-the-house-of-commons-1-september-2026
+versions:
+  - version: 1
+    text: >-
+      The Prime Minister has also announced that he will end the injustice of Imprisonment for
+      Public Protection sentences this Parliament, meaning people will no longer be trapped
+      indefinitely under a sentence abolished more than a decade ago.
+    recorded_on: "2026-08-30"
+    source_url: https://www.gov.uk/government/news/prime-minister-blocks-hundreds-more-criminals-from-sentencing-changes
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: >-
+          People still held in prison or supervised on licence under Imprisonment for Public
+          Protection (IPP) sentences, which courts stopped handing down in 2012
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: This Parliament
+      deadline: "2029-07-01"
+      funded_by: null
+events:
+  - date: "2026-08-30"
+    type: promised
+    text:
+      en: >-
+        No 10 says the Prime Minister will end Imprisonment for Public Protection sentences this
+        Parliament
+  - date: "2029-07-01"
+    type: deadline
+    text:
+      en: End of this Parliament (editorial date)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -8,7 +8,9 @@ Pavel chose the layout: "i like everything in C and the timeline of B! mix it" (
 
 **Done:** every actor's page in that layout (docs/OPERATIONS.md §15), the site on OpenPromises 0.14.0, and UK Parliament's official portraits with their credits for every MP on the ledger (§18).
 
-**Deliberately not done:** no photo for anyone without an official portrait under an open licence. Rishi Sunak has none in Parliament's records; Zack Polanski is not an MP, and the licence of London City Hall's photo is not stated. No portrait in the share images yet.
+**Deliberately not done:** no photo for anyone without an official portrait under an open licence. Zack Polanski is not an MP, and the licence of London City Hall's photo is not stated. No portrait in the share images yet.
+
+**Then, Pavel: "no photo https://ledgergov.uk/actor/rishi-sunak":** Rishi Sunak's page shows Parliament's official portrait of 2017 (CC BY 3.0, "©House of Commons" as Parliament's list still credits him), marked "Official portrait, 2017". Parliament no longer serves a full-size portrait of him and has no newer one, but the 2017 picture is still the thumbnail its Members API gives for him; the file is the copy of Parliament's original on Wikimedia Commons (docs/OPERATIONS.md §18). Decided: an older official portrait counts when Parliament itself published it under an open licence and has none newer.
 ## Key figures: their accounts, their names and their speeches (20 Oct 2026)
 
 Pavel: "why https://ledgergov.uk/actor/andy-burnham doesn't have https://www.instagram.com/andy.burnham/ or https://www.facebook.com/BurnhamGM ? I want key figures to have social links (Sir Kier Starmer (add Sir), Rishi Sunak, Andy Burnham, Badenoch)", then "yes" to filing a leader's speech promises under the leader.

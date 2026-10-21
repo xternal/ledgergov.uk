@@ -1,0 +1,68 @@
+format: openpromises/1
+id: uk-con-defence-3pc-2030
+headline:
+  en: Spend 3% of GDP on defence by 2030
+actor_id: kemi-badenoch
+made_on: "2026-09-03"
+venue: speech
+venue_label:
+  en: Speech on defence and welfare
+area: defence
+status: promised
+status_note:
+  en: >-
+    The Conservatives are not in government, so the card stays at Promised. In the same speech she
+    says the party has found an extra £10 billion a year for the armed forces from welfare cuts,
+    savings from the Chagos deal and money moved from the British Business Bank; her news release
+    of 24 September lists the welfare savings. "By 2030" is recorded as a deadline of 31 December
+    2030.
+responsible: null
+origin: llm_intake
+sources:
+  - title: "Kemi Badenoch: Kemi sets out major plan to defend our country (speech, 3 Sep 2026)"
+    url: https://www.kemibadenoch.org.uk/news/kemi-sets-out-major-plan-defend-our-country
+  - title: "Kemi Badenoch: Local MP: We must cut welfare to fund our defence (24 Sep 2026)"
+    url: https://www.kemibadenoch.org.uk/news/local-mp-we-must-cut-welfare-fund-our-defence
+versions:
+  - version: 1
+    text: >-
+      We need to increase our defence spending every year so we can get to 3% of GDP by 2030.
+    recorded_on: "2026-09-03"
+    source_url: https://www.kemibadenoch.org.uk/news/kemi-sets-out-major-plan-defend-our-country
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: The armed forces; defence spending would rise every year until it reaches 3% of GDP
+      cost:
+        note:
+          en: >-
+            The party's own figure is an extra £10 billion a year for the armed forces. No official
+            or independent costing has been published.
+      when:
+        en: By 2030
+      deadline: "2030-12-31"
+      funded_by:
+        en: >-
+          Welfare cuts the party names (housing benefit reform, £4 billion a year; reinstating the
+          two-child benefit cap, £3.1 billion; ending the VAT exemption for Motability vehicles, £1
+          billion), savings from the Chagos deal and money moved from the British Business Bank
+events:
+  - date: "2026-09-03"
+    type: promised
+    text:
+      en: >-
+        Kemi Badenoch says defence spending must rise every year to reach 3% of GDP by 2030, and
+        sets out how the party would pay for it
+  - date: "2030-12-31"
+    type: deadline
+    text:
+      en: 3% of GDP on defence due by 2030 (editorial date)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
