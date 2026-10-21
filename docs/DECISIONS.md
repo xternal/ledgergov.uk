@@ -2,6 +2,16 @@
 
 The owner's decisions for LedgerGov.UK, newest first, in his words where he gave them, with what was done and what was deliberately not.
 
+## One weekly desk for every ledger (20 Oct 2026)
+
+Pavel asked whether one routine every Sunday should do the background work for all his ledgers: new promises, a check on the promises already published, new emergencies, and any other data to check, add or confirm. He took the recommendation: "go, follow your recos".
+
+**Done:** one scheduled task on Pavel's Mac, the weekly ledger desk, every Sunday at 20:00 UK time from 25 October 2026. It works through LedgerGov.UK, RussiaLedger.com, BoroughBook.UK, UkraineLedger.com and USLedger.org one at a time, each by its own `docs/desk/WEEKLY.md`, and sends one report, or nothing when there is nothing new. For this site that is the editor's desk (`docs/desk/ROUTINE.md`, moved from the Monday cloud routine, now paused), plus four new checks: evidence on open cards, the cards whose deadline was missed a month ago (an editor confirms them, PROMISE_STANDARD §3), broken links, and the health of the site's jobs and pull requests.
+
+**Why on the Mac, not in the cloud:** one task for every ledger has to run where every ledger's sources can be read. RussiaLedger.com needs archive copies (every connection from the cloud to web.archive.org was reset on 19 October 2026), and BoroughBook.UK reads the council's site and the parties' pages in the app's browser. If the Mac is off at 20:00, the task runs when the app next opens.
+
+**Deliberately not done:** no search for promises beyond the desk (Pavel's decision of 13 October 2026 stands: finding is not the bottleneck). The AI Journalist backtest stays monthly, because a week gives too few drafts to measure. The nightly `deadline_missed` events and the forecast backtest stay nightly.
+
 ## The actor page as one story, with official portraits (20 Oct 2026)
 
 Pavel chose the layout: "i like everything in C and the timeline of B! mix it" (the "Chosen" artboard on https://claude.ai/artifact/2rAuASPyGcT6ZYs1cLSys7), after his four answers recorded below ("1 ye to parliament portarait or any other official photo available ; 2 yes ; 3 yes ; 4 yes to sketches"). OpenPromises decision 34 built the timeline, the key promises and the promises by month for every site (0.14.0, released 20 October 2026, approved by Pavel).
