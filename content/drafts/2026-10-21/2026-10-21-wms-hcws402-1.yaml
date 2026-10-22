@@ -1,0 +1,42 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws402.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-21"
+source:
+  id: wms-hcws402
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS402
+  title: Cosmetic regulations consultation
+  date: "2026-10-21"
+  venue_label: Written ministerial statement
+quote: >-
+  We are also committed to introducing a local authority licensing scheme for lower-risk cosmetic
+  procedures in the current Parliament, ensuring that practitioners are appropriately trained,
+  insured, and working to safe standards.
+source_span: [2063, 2291]
+speaker:
+  name: Karin Smyth
+  role: Minister of State for Health (Secondary Care)
+  party: Labour
+  member_id: 4444
+  actor_id: karin-smyth
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: health
+  who: Practitioners of lower-risk cosmetic procedures and local authorities
+  how_much: null
+  when: In the current Parliament
+  funded_by: null
+  deadline: null
+why: >-
+  The government commits to introduce a local authority licensing scheme for lower-risk cosmetic
+  procedures before the end of the current Parliament.
+confidence: 0.72
+model: claude-opus-5-5
+status: to_review
