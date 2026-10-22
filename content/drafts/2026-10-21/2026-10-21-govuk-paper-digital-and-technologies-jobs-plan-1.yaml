@@ -1,0 +1,96 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-paper-digital-and-technologies-jobs-plan.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-21"
+source:
+  id: govuk-paper-digital-and-technologies-jobs-plan
+  kind: govuk_policy_paper
+  url: https://www.gov.uk/government/publications/digital-and-technologies-jobs-plan/digital-and-technologies-jobs-plan
+  title: Digital and Technologies Jobs Plan
+  date: "2026-10-21"
+  venue_label: Policy paper (Department for Digital, Culture, Media and Sport)
+quote: >-
+  Digital Systems and Data is among the first V Level subjects, with teaching due to begin from
+  September 2027, giving the technology sector an early opportunity to shape practical,
+  employer-relevant content.[footnote 51
+source_span: [32458, 32676]
+speaker:
+  name: HM Government
+  role: Department for Digital, Culture, Media and Sport
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: education
+  who: Students aged 16 and over in England
+  how_much: null
+  when: from September 2027
+  funded_by: null
+  deadline: "2027-09-30"
+why: >-
+  A Digital Systems and Data V Level is to be taught from September 2027, likely restating an
+  earlier DfE post-16 commitment.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      Through TechFirst we aim to reach one million young people across the UK with meaningful AI
+      and technology learning by 2028, a year earlier than planned, weighted towards the schools
+      furthest from opportunity.
+    source_span: [24224, 24433]
+    suggested:
+      policy_area: education
+      who: >-
+        Young people across the UK, weighted towards the schools furthest from opportunity
+      how_much: >-
+        TechFirst backed by up to £250 million; youth strand £24 million over three years
+      when: by 2028
+      funded_by: null
+      deadline: null
+    why: >-
+      Commits to TechFirst reaching one million young people with AI and technology learning by
+      2028, a year earlier than previously planned.
+    confidence: 0.65
+  - quote: >-
+      A Foundation Certificate in Digital Systems and Data will be available for first teaching from
+      September 2027, and an Occupational Certificate in Digital Administration from September 2028,
+      subject to final content development, for students who know the kind of work they want to move
+      into.[footnote 52
+    source_span: [32845, 33147]
+    suggested:
+      policy_area: education
+      who: 16 to 19-year-olds in England
+      how_much: null
+      when: September 2027 and September 2028
+      funded_by: null
+      deadline: "2027-09-30"
+    why: >-
+      Two new Level 2 digital qualifications are to be available for first teaching in September
+      2027 and September 2028, likely restating the DfE post-16 implementation plan.
+    confidence: 0.5
+  - quote: >-
+      Through this programme at least 300 women across the UK will be supported into paid roles in
+      frontier technologies such as AI, cyber security and quantum.[footnote 83
+    source_span: [54672, 54838]
+    suggested:
+      policy_area: economic_affairs
+      who: Women across the UK, especially mid-career women and returners
+      how_much: null
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      The TechFirst Women's Programme will support at least 300 women into paid frontier technology
+      roles, restating a March 2026 announcement.
+    confidence: 0.5
+confidence: 0.55
+model: claude-opus-5-5
+status: to_review

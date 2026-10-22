@@ -1,0 +1,42 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-government-confirms-indefinite-recognition-of-ce-marked-medi.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-21"
+source:
+  id: govuk-government-confirms-indefinite-recognition-of-ce-marked-medi
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/government-confirms-indefinite-recognition-of-ce-marked-medical-devices
+  title: Government confirms indefinite recognition of CE marked medical devices
+  date: "2026-10-21"
+  venue_label: Press release (Medicines and Healthcare products Regulatory Agency)
+quote: >-
+  The decision means the UK will not require an additional approval route for devices already
+  approved for the EU market, avoiding duplication for manufacturers and helping to maintain stable
+  supply and patient access to medical technologies.
+source_span: [623, 863]
+speaker:
+  name: HM Government
+  role: Medicines and Healthcare products Regulatory Agency
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: health
+  who: Patients, the NHS and medical device manufacturers in Great Britain
+  how_much: null
+  when: on a long-term basis
+  funded_by: null
+  deadline: null
+why: >-
+  The government commits to recognising CE marked medical devices in Great Britain indefinitely,
+  with no additional UK approval route required for devices already approved for the EU market.
+confidence: 0.6
+model: claude-opus-5-5
+status: to_review

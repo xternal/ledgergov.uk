@@ -1,0 +1,44 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-major-boost-for-young-people-in-telford-as-youth-hub-opens-t.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-21"
+source:
+  id: govuk-major-boost-for-young-people-in-telford-as-youth-hub-opens-t
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/major-boost-for-young-people-in-telford-as-youth-hub-opens-to-support-them-towards-work
+  title: >-
+    Major boost for young people in Telford as Youth Hub opens to support them towards work
+  date: "2026-10-21"
+  venue_label: Press release (Department for Work and Pensions)
+quote: >-
+  Over the next three years, the Government is expanding its network of Youth Hubs to over 360 local
+  areas across Great Britain, with the aim that a young person is no more than one hour away from a
+  Youth Hub by public transport.
+source_span: [1372, 1599]
+speaker:
+  name: HM Government
+  role: Department for Work and Pensions
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: social_protection
+  who: Young people aged 16 to 24 across Great Britain
+  how_much: £2.5 billion youth employment support package
+  when: Over the next three years
+  funded_by: null
+  deadline: null
+why: >-
+  The government says it will expand Youth Hubs to more than 360 local areas across Great Britain
+  within three years, restating an earlier commitment under its £2.5 billion youth employment
+  package and Youth Guarantee.
+confidence: 0.7
+model: claude-opus-5-5
+status: to_review

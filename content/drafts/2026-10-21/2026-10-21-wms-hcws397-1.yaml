@@ -1,0 +1,94 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws397.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-21"
+source:
+  id: wms-hcws397
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS397
+  title: Post Office Redress progress
+  date: "2026-10-21"
+  venue_label: Written ministerial statement
+quote: >-
+  In response, the Shortfall Independent Review will commence in late October. Eligible cases will
+  be referred to an assessor independent of both Post Office and Government. This means no claimant
+  will be refused HSS redress based on Post Office’s decision alone.
+source_span: [2527, 2788]
+speaker:
+  name: Kate Dearden
+  role: Minister of State (Minister for the Future of Work)
+  party: Labour
+  member_id: 5224
+  actor_id: kate-dearden
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: social_protection
+  who: >-
+    Horizon Shortfall Scheme claimants where Post Office considers there is insufficient evidence
+    for a Fixed Sum Offer
+  how_much: null
+  when: late October 2026
+  funded_by: null
+  deadline: "2026-10-31"
+why: >-
+  An independent review will start in late October 2026 so that no Horizon Shortfall Scheme claim is
+  rejected on Post Office's decision alone.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      In May, the department announced that it would establish an independent process through which
+      eligible postmasters who accepted the £75,000 Horizon Shortfall Scheme Fixed Sum Offer could
+      seek permission to have their claim fully assessed through the Horizon Shortfall Scheme
+      Appeals process. I can now confirm that we expect to launch that process in November.
+    source_span: [746, 1106]
+    suggested:
+      policy_area: social_protection
+      who: >-
+        eligible postmasters who accepted the £75,000 Horizon Shortfall Scheme Fixed Sum Offer
+      how_much: null
+      when: November 2026
+      funded_by: null
+      deadline: "2026-11-30"
+    why: >-
+      An independent appeals permission process for postmasters who accepted the £75,000 Fixed Sum
+      Offer will launch in November 2026, restating a May announcement with a new date.
+    confidence: 0.65
+  - quote: >-
+      The HCRS will close to new submissions from 31 July 2027. This will be three years since the
+      launch of the scheme.
+    source_span: [3731, 3845]
+    suggested:
+      policy_area: social_protection
+      who: people eligible for the Horizon Convictions Redress Scheme
+      how_much: null
+      when: from 31 July 2027
+      funded_by: null
+      deadline: "2027-07-31"
+    why: >-
+      The Horizon Convictions Redress Scheme will stop accepting new submissions from 31 July 2027.
+    confidence: 0.55
+  - quote: >-
+      The Capture Redress Scheme will close to new applications from 31 March 2027, approximately 18
+      months after the scheme opened.
+    source_span: [3846, 3972]
+    suggested:
+      policy_area: social_protection
+      who: people eligible for the Capture Redress Scheme
+      how_much: null
+      when: from 31 March 2027
+      funded_by: null
+      deadline: "2027-03-31"
+    why: >-
+      The Capture Redress Scheme will stop accepting new applications from 31 March 2027.
+    confidence: 0.5
+confidence: 0.7
+model: claude-opus-5-5
+status: to_review
