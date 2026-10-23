@@ -57,7 +57,7 @@ export default function ActorIndexPage() {
   return (
     <>
       <JsonLd data={structuredData} />
-      <SiteHeader current="/promises" />
+      <SiteHeader current="/actor" />
       <main className="mx-auto grid max-w-[1000px] gap-10 px-4 pb-20 pt-10 sm:px-6">
         <div className="grid gap-2">
           <a href="/promises" className="justify-self-start text-label font-medium">

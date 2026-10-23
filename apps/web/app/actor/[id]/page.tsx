@@ -100,7 +100,7 @@ export default async function ActorPage({ params }: Props) {
   return (
     <>
       <JsonLd data={structuredData} />
-      <SiteHeader current="/promises" />
+      <SiteHeader current="/actor" />
       <main className="mx-auto grid max-w-[1120px] gap-16 px-4 pb-20 pt-10 sm:px-6">
         <section aria-labelledby="actor-h" className="flex flex-wrap items-start gap-x-12 gap-y-6">
           {portrait && (

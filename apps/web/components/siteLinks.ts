@@ -3,12 +3,14 @@ import type { NavLink } from "./NavLinks";
 /**
  * The site menu, the same on every page, so a word always goes to the same place. Only pages of their own: the
  * statement, the sandbox and "your share" are the Money page; contributing is the button beside the menu. The same
- * pattern runs on every site of the family: five pages at most, Method last.
+ * pattern runs on every site of the family: five pages at most, Method last. People are the people, parties and
+ * bodies whose promises the ledger tracks (/actor); the population and long-term spending page (/people) sits under
+ * Money, with a card of its own on the home page (Pavel, 23 Oct 2026).
  */
 export const SITE_LINKS: NavLink[] = [
   { href: "/money", label: "Money" },
   { href: "/promises", label: "Promises" },
-  { href: "/people", label: "People" },
+  { href: "/actor", label: "People" },
   { href: "/mp", label: "Your MP" },
   { href: "/method", label: "Method" },
 ];
@@ -18,12 +20,13 @@ export const CONTRIBUTE_HREF = "/#contribute";
 
 /**
  * Which menu item a page belongs to, from the `current` it passes. Pages written before the Money page passed the home
- * page's old sections ("/#statement", "/#scenario", "/#you") or "/budget": they are all under Money now. "/#contribute"
+ * page's old sections ("/#statement", "/#scenario", "/#you") or "/budget": they are all under Money now, and so is
+ * the population page. "/#contribute"
  * belongs to the Contribute button, not to a menu item.
  */
 export function menuItemFor(current: string | undefined): string | undefined {
   if (!current || current === CONTRIBUTE_HREF) return undefined;
-  if (["/#statement", "/#scenario", "/#you", "/budget", "/borrowing", "/tax", "/receipt"].some((p) => current === p || current.startsWith(`${p}/`))) return "/money";
+  if (["/#statement", "/#scenario", "/#you", "/budget", "/borrowing", "/tax", "/receipt", "/people"].some((p) => current === p || current.startsWith(`${p}/`))) return "/money";
   return SITE_LINKS.find((l) => current === l.href || current.startsWith(`${l.href}/`))?.href ?? current;
 }
 

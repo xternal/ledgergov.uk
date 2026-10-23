@@ -1,5 +1,7 @@
 import { forecastGap, homeTiles, logbook, LADDER, type CardView, type LogEntry, type Seed, type Status } from "@ledger/schema";
-import type { HomeData, LogLine, Tile } from "@/components/HomeFirstScreen";
+import type { PeopleBundle } from "@ledger/schema";
+import type { HomeData, LogLine, PopulationCard, Tile } from "@/components/HomeFirstScreen";
+import { pctGdp, per100, span, spendingSpan } from "./people-view";
 import { EVENT_LABEL } from "./copy";
 import { longDate } from "./format";
 
@@ -19,8 +21,31 @@ function logLine(e: LogEntry): LogLine {
   return { ...base, label: EVENT_LABEL[step], tone: step === "delivered" ? "good" : step === "failed" || step === "deadline_missed" ? "bad" : "moved" };
 }
 
+/** The Population card's figures, from the same series and words as the population page (/people). */
+function populationCard(people: PeopleBundle): PopulationCard {
+  const o = span(people.charts.oadr);
+  const s = spendingSpan(people);
+  // One scale for both bars: 0 to 60 people per 100, which holds every published variant.
+  const pct = (x: number) => Math.min(100, Math.max(0, (x / 60) * 100));
+  return {
+    oadr: {
+      firstYear: o.firstYear,
+      first: per100(o.first),
+      lastYear: o.lastYear,
+      last: per100(o.last),
+      low: per100(o.range[0]),
+      high: per100(o.range[2]),
+      firstPct: pct(o.first),
+      lastPct: pct(o.last),
+      lowPct: pct(o.range[0]),
+      highPct: pct(o.range[2]),
+    },
+    spending: { firstYear: s.firstYear, first: pctGdp(s.first), lastYear: s.lastYear, last: pctGdp(s.last) },
+  };
+}
+
 /** Everything the home page's first screen shows besides the statement's figures, from the cards, for `today`. */
-export function homeData(seed: Seed, today: string): HomeData {
+export function homeData(seed: Seed, today: string, people?: PeopleBundle): HomeData {
   const cards = seed.cards;
   const t = homeTiles(cards, today);
   const tiles: Tile[] = [];
@@ -40,6 +65,7 @@ export function homeData(seed: Seed, today: string): HomeData {
   }
   const named = [...new Set(cards.flatMap((c) => c.verification?.named ?? []))];
   return {
+    population: people ? populationCard(people) : undefined,
     total: cards.length,
     people: seed.actors.length,
     counts: ORDER.map((status) => ({ status, count: cards.filter((c) => c.file.status === status).length })).filter((c) => c.count > 0),
