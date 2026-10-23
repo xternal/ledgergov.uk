@@ -3,7 +3,6 @@ import { createRequire } from "node:module";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
 import { describe, expect, it } from "vitest";
-import { FAMILY, THIS_SITE } from "../../../apps/web/components/siteLinks";
 
 /**
  * The family 404 (Pavel, 23 October 2026): a calm "this page isn't here", links home and to the promises, and every
@@ -14,6 +13,11 @@ const WEB = join(import.meta.dirname, "../../../apps/web");
 const web = createRequire(join(WEB, "package.json"));
 const { createElement } = web("react") as { createElement: (type: unknown, props?: unknown) => unknown };
 const { renderToStaticMarkup } = web("react-dom/server") as { renderToStaticMarkup: (element: unknown) => string };
+// Loaded like the page itself: a static import would make this package's typecheck compile the app's JSX.
+const { FAMILY, THIS_SITE } = (await import(pathToFileURL(join(WEB, "components/siteLinks.ts")).href)) as {
+  FAMILY: { name: string; href: string; about: string }[];
+  THIS_SITE: string;
+};
 const page = (await import(pathToFileURL(join(WEB, "app/not-found.tsx")).href)) as {
   default: () => unknown;
   metadata: { title?: string; description?: string; robots?: { index?: boolean } };
