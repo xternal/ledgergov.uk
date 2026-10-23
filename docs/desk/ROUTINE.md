@@ -20,7 +20,7 @@ To change what the routine does, change this file by pull request. The routine's
 
 ## On Pavel's Mac (every Sunday since 25 October 2026)
 
-- Work in the worktree that `docs/desk/WEEKLY.md` sets up, never in the main checkout. Put Node 22 first on `PATH` (`export PATH="$HOME/.nvm/versions/node/v22.22.0/bin:$PATH"`); its `pnpm` is already set up, so skip the `npm install -g corepack` line in step 0.
+- Work in the worktree that `docs/desk/WEEKLY.md` sets up, never in the main checkout. Put Node 22 first on `PATH` (`export PATH="$HOME/.nvm/versions/node/v22.23.4/bin:$PATH"`); its `pnpm` is already set up, so skip the `npm install -g corepack` line in step 0.
 - **`gh` works.** Use it wherever this file names the GitHub tools: `gh pr list`, `gh pr view`, `gh pr create`, `gh pr edit` (title and labels), `gh pr comment`, `gh pr close`, `gh pr checks <n> --watch`. Never `gh pr merge` or `gh pr review`.
 - The web is open, so step 6 runs whenever its check prints 200. Parliament's web pages still refuse curl; use the two Parliament APIs below.
 - Leave the engine check to CI, as in the cloud: it needs the editors list, which this run does not read.

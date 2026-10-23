@@ -20,7 +20,7 @@ The rules in `docs/desk/ROUTINE.md` apply to every step here, and also:
 The coordinator gives you the main checkout's path. Never work in it: other sessions may have work there.
 
 ```bash
-export PATH="$HOME/.nvm/versions/node/v22.22.0/bin:$PATH"
+export PATH="$HOME/.nvm/versions/node/v22.23.4/bin:$PATH"
 git -C <main checkout> fetch origin --prune
 git -C <main checkout> worktree remove --force ../wt-desk-run   # only if a leftover one exists
 git -C <main checkout> worktree add --detach ../wt-desk-run origin/main
