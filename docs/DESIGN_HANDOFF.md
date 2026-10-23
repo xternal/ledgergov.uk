@@ -76,7 +76,7 @@ Modern, clean, informational. Think public data product (Our World in Data, Line
 - Numbers carry the weight: large, semibold, tight tracking. Labels are small, grey, sentence case.
 - Three data colours only: income blue, spending neutral grey, borrowing & debt interest orange (hatched for borrowing). Red/green only for deltas and statuses.
 - Quality shown as a small coloured dot + word, not as an outlined badge.
-- No middle-dot (·) separators anywhere in the UI. Separate items with layout (gap, alignment, line breaks) or plain punctuation (comma).
+- No middle-dot (·) separators anywhere in the UI. Separate items with layout (gap, alignment, line breaks) or plain punctuation (comma). Share images too. `packages/server/test/middle-dots.test.ts` checks the app's text in `pnpm test`, and `pnpm check:dots` checks every page the build rendered, in CI after `pnpm build`.
 - Sticky translucent top bar with section links; the sandbox and the promise detail panel are sticky on desktop.
 - Mobile: the Sankey becomes two ranked bar lists ("Where it came from" / "Where it went") with a total row between them. The prototype implements this below 720px.
 

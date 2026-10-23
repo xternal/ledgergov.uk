@@ -15,6 +15,6 @@ export default async function Image() {
       { value: String(cards.length), label: "promises, each with its own feed" },
       { value: String(new Set(cards.map((c) => c.file.policy_area)).size), label: "policy areas" },
     ],
-    foot: "Atom feeds · no account, no tracking",
+    foot: "Atom feeds, no account, no tracking",
   });
 }

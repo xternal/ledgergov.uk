@@ -49,9 +49,9 @@ export function homeData(seed: Seed, today: string, people?: PeopleBundle): Home
   const cards = seed.cards;
   const t = homeTiles(cards, today);
   const tiles: Tile[] = [];
-  if (t.delivered) tiles.push({ kind: "delivered", headline: headline(t.delivered.card), href: `/promise/${t.delivered.card.id}`, line: `${who(t.delivered.card)} · ${longDate(t.delivered.date)}` });
-  if (t.notMet) tiles.push({ kind: "notMet", headline: headline(t.notMet.card), href: `/promise/${t.notMet.card.id}`, line: `${who(t.notMet.card)} · ${longDate(t.notMet.date)}` });
-  if (t.dueNext) tiles.push({ kind: "dueNext", headline: headline(t.dueNext.card), href: `/promise/${t.dueNext.card.id}`, line: `${who(t.dueNext.card)} · due ${longDate(t.dueNext.date)}` });
+  if (t.delivered) tiles.push({ kind: "delivered", headline: headline(t.delivered.card), href: `/promise/${t.delivered.card.id}`, line: `${who(t.delivered.card)}, ${longDate(t.delivered.date)}` });
+  if (t.notMet) tiles.push({ kind: "notMet", headline: headline(t.notMet.card), href: `/promise/${t.notMet.card.id}`, line: `${who(t.notMet.card)}, ${longDate(t.notMet.date)}` });
+  if (t.dueNext) tiles.push({ kind: "dueNext", headline: headline(t.dueNext.card), href: `/promise/${t.dueNext.card.id}`, line: `${who(t.dueNext.card)}, due ${longDate(t.dueNext.date)}` });
   if (t.forecast) {
     const g = forecastGap(t.forecast.card.current.parameters ?? undefined)!;
     const at = (x: number) => Math.min(100, Math.max(0, (x / g.max) * 100));
@@ -60,7 +60,7 @@ export function homeData(seed: Seed, today: string, people?: PeopleBundle): Home
       headline: headline(t.forecast.card),
       href: `/promise/${t.forecast.card.id}`,
       line: who(t.forecast.card),
-      scale: { target: at(g.metric.target), forecast: at(g.baseline.value), ceiling: g.ceiling, text: `Target ${g.short(g.metric.target)} · ${g.baseline.by.name} forecast ${g.short(g.baseline.value)}, before the promise` },
+      scale: { target: at(g.metric.target), forecast: at(g.baseline.value), ceiling: g.ceiling, text: `Target ${g.short(g.metric.target)}, ${g.baseline.by.name} forecast ${g.short(g.baseline.value)} before the promise` },
     });
   }
   const named = [...new Set(cards.flatMap((c) => c.verification?.named ?? []))];

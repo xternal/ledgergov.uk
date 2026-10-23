@@ -41,7 +41,8 @@ export default async function Image() {
     <div style={{ display: "flex", flexDirection: "column", width: "100%", height: "100%", background: OG.bg, color: OG.ink, padding: "52px 64px", fontFamily: "Geist" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 28, fontWeight: 600 }}>
         <img src={MARK_DATA_URI} width={28} height={28} alt="" />
-        LedgerGov.UK · Borrowing
+        LedgerGov.UK
+        <span style={{ marginLeft: 10, color: OG.muted }}>Borrowing</span>
       </div>
       <div style={{ display: "flex", fontSize: 56, fontWeight: 600, letterSpacing: -2, lineHeight: 1.05, marginTop: 30 }}>Borrowing so far this year</div>
       <div style={{ display: "flex", flex: 1, marginTop: 24, gap: 56 }}>
@@ -87,7 +88,7 @@ export default async function Image() {
         </div>
       </div>
       <div style={{ display: "flex", marginTop: 22, fontSize: 20, color: OG.muted }}>
-        {`ONS figures${b.release?.released_at ? ` published ${ukDay(b.release.released_at)}` : ""}${b.profile ? ` · OBR ${b.profile.edition} forecast path` : ""}`}
+        {`ONS figures${b.release?.released_at ? ` published ${ukDay(b.release.released_at)}` : ""}${b.profile ? `, against the OBR's ${b.profile.edition} forecast path` : ""}`}
       </div>
     </div>,
     { ...size, fonts },
