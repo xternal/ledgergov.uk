@@ -61,6 +61,16 @@ export function MoneyLedger({ seed }: { seed: Seed }) {
           <KpiStrip />
           <StatementSection />
           <YourShare />
+          <section aria-labelledby="money-population" className="pt-16">
+            <a href="/people" className="grid gap-1 rounded-panel bg-surface p-5 text-ink no-underline shadow-[inset_0_0_0_1px_var(--line)] hover:shadow-[inset_0_0_0_1px_var(--line-strong)]">
+              <span id="money-population" className="text-body font-semibold">
+                Population and long-term spending →
+              </span>
+              <span className="text-sm text-muted">
+                How many people of working age there will be for each person over pension age, in the ONS projections, and what that does to age-related spending in the OBR&apos;s.
+              </span>
+            </a>
+          </section>
           <Footer />
         </main>
       </T1Provider>

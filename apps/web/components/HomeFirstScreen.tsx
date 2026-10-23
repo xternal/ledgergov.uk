@@ -26,7 +26,16 @@ export interface LogLine {
   href: string;
 }
 
+/** The population page's two headline series (ONS principal projection, OBR baseline), for the Population card. */
+export interface PopulationCard {
+  /** People over pension age for every 100 of working age: now and at the end of the projection, with the variants' range then. */
+  oadr: { firstYear: number; first: string; lastYear: number; last: string; low: string; high: string; firstPct: number; lastPct: number; lowPct: number; highPct: number };
+  /** Age-related spending, % of GDP, in the OBR baseline. */
+  spending: { firstYear: string; first: string; lastYear: string; last: string };
+}
+
 export interface HomeData {
+  population?: PopulationCard;
   total: number;
   people: number;
   counts: { status: Status; count: number }[];
@@ -180,13 +189,14 @@ export function HomeFirstScreen({ data }: { data: HomeData }) {
         ))}
       </section>
 
-      <div className="grid gap-3 lg:grid-cols-4">
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        {data.population && <Population p={data.population} />}
         <a href="/mp" className={`${card} grid content-start gap-2 text-ink no-underline hover:shadow-[inset_0_0_0_1px_var(--line-strong)]`}>
           <span className="text-body font-semibold">Your MP and your share</span>
           <span className="text-sm text-muted">Type your postcode to see your MP&apos;s promises and your household&apos;s share of the money.</span>
           <span className="text-label font-semibold text-rec">Find yours →</span>
         </a>
-        <section aria-labelledby="home-log" className={`${card} grid content-start gap-2 lg:col-span-3`}>
+        <section aria-labelledby="home-log" className={`${card} grid content-start gap-2 sm:col-span-2`}>
           <div className="flex flex-wrap items-baseline justify-between gap-2">
             <h2 id="home-log" className="m-0 text-body font-semibold">
               Logbook <span className="text-caption font-normal text-muted">added, moved, corrected or checked, newest first</span>
@@ -211,5 +221,41 @@ export function HomeFirstScreen({ data }: { data: HomeData }) {
         </section>
       </div>
     </div>
+  );
+}
+
+/**
+ * The population card: how many people over pension age there are for every 100 of working age now and at the end of
+ * the ONS principal projection (with the range of its published variants), and what age-related spending does in the
+ * OBR baseline. Two bars on one 0–60 scale; the words carry the numbers for screen readers.
+ */
+function Population({ p }: { p: PopulationCard }) {
+  const { oadr: o, spending: s } = p;
+  return (
+    <a href="/people" className={`${card} grid content-start gap-2 text-ink no-underline hover:shadow-[inset_0_0_0_1px_var(--line-strong)]`}>
+      <span className="justify-self-start rounded-full bg-sunk px-2 py-0.5 text-caption font-semibold text-muted">Population</span>
+      <span className="text-sm font-semibold leading-snug">
+        {o.first} people over pension age for every 100 of working age in {o.firstYear}; {o.last} by {o.lastYear}
+      </span>
+      <span aria-hidden className="grid gap-1 text-caption text-muted">
+        <span className="grid grid-cols-[36px_minmax(0,1fr)] items-center gap-2">
+          {o.firstYear}
+          <span className="relative h-2.5 rounded-full bg-sunk">
+            <span className="absolute inset-y-0 left-0 rounded-full bg-ink/60" style={{ width: `${o.firstPct}%` }} />
+          </span>
+        </span>
+        <span className="grid grid-cols-[36px_minmax(0,1fr)] items-center gap-2">
+          {o.lastYear}
+          <span className="relative h-2.5 rounded-full bg-sunk">
+            <span className="absolute inset-y-0 rounded-full bg-warn/25" style={{ left: `${o.lowPct}%`, width: `${o.highPct - o.lowPct}%` }} />
+            <span className="absolute inset-y-0 left-0 rounded-full bg-warn" style={{ width: `${o.lastPct}%` }} />
+          </span>
+        </span>
+      </span>
+      <span className="text-caption text-muted">
+        ONS principal projection; variants {o.low} to {o.high}. Age-related spending {s.first} of GDP in {s.firstYear}, {s.last} in {s.lastYear} (OBR).
+      </span>
+      <span className="text-label font-semibold text-rec">Population and long-term spending →</span>
+    </a>
   );
 }

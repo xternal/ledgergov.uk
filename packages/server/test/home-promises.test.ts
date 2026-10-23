@@ -68,6 +68,8 @@ describe("the home page's promises", () => {
 
   it("keep Promises in the menu", () => {
     expect(SITE_LINKS).toContainEqual(expect.objectContaining({ href: "/promises", label: "Promises" }));
+    // Five pages, Method last; People are the people whose promises are tracked (docs/DECISIONS.md, 23 Oct 2026).
+    expect(SITE_LINKS.map((l) => `${l.label} ${l.href}`)).toEqual(["Money /money", "Promises /promises", "People /actor", "Your MP /mp", "Method /method"]);
   });
 });
 

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { PromiseSpotlight } from "@openpromises/react";
-import { getSeed, getSpotlight } from "@/lib/data";
+import { getPeople, getSeed, getSpotlight } from "@/lib/data";
 import { FAQ } from "@/lib/faq";
 import { todayIso } from "@/lib/promises";
 import { absolute, MAKER, OPEN_GRAPH, SITE_DESCRIPTION, SITE_NAME } from "@/lib/site";
@@ -57,7 +57,7 @@ export default function Home() {
   return (
     <>
       <JsonLd data={structuredData()} />
-      <Ledger seed={getSeed()} home={homeData(getSeed(), today)} spotlight={<PromiseSpotlight views={s.views} config={s.config} today={s.today} actors={s.actors} />} />
+      <Ledger seed={getSeed()} home={homeData(getSeed(), today, getPeople())} spotlight={<PromiseSpotlight views={s.views} config={s.config} today={s.today} actors={s.actors} />} />
     </>
   );
 }
