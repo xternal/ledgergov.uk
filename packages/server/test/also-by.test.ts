@@ -92,7 +92,8 @@ describe("the card above the footer", () => {
     expect(layout.indexOf("<AlsoBy />")).toBeLessThan(layout.indexOf("</footer>"));
     // No other file places it, varies it, or mentions the project: no promise, party or topic page, no line above the header.
     const mentions = [...sources()].filter((f) => /\bAlsoBy\b|\bALSO_BY\b|alsoByLlms|ruminator/i.test(readFileSync(join(WEB, f), "utf8")));
-    expect(mentions.sort()).toEqual(["app/layout.tsx", "app/llms.txt/route.ts", "components/AlsoBy.tsx", "lib/site.ts"]);
+    // The family switcher beside the logo names it too, as one site of the family (docs/DECISIONS.md, 23 Oct 2026).
+    expect(mentions.sort()).toEqual(["app/layout.tsx", "app/llms.txt/route.ts", "components/AlsoBy.tsx", "components/siteLinks.ts", "lib/site.ts"]);
   });
 });
 
