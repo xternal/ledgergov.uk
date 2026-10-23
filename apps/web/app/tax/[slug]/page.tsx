@@ -185,7 +185,7 @@ export default async function TaxCardPage({ params }: Props) {
           <a href={RECKONER_PATH} className="justify-self-start text-label font-medium no-underline">
             ← {C.allCards}
           </a>
-          <p className="m-0 text-label font-medium text-muted">HMRC&apos;s estimate · edition published {edition.published}</p>
+          <p className="m-0 text-label font-medium text-muted">HMRC&apos;s estimate, edition published {edition.published}</p>
           <h1 className="m-0 text-[clamp(30px,4.4vw,44px)] font-semibold leading-[1.06] tracking-[-0.035em]">{cardTitle(card)}</h1>
           <p className="m-0 max-w-[68ch] text-lead text-muted">{card.spec.about(rateText(card))}</p>
         </header>

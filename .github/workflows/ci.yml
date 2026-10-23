@@ -59,6 +59,8 @@ jobs:
       - run: pnpm build
         env:
           OPENPROMISES_EDITORS_YAML: ${{ secrets.OPENPROMISES_EDITORS }}
+      # No middle dots on any page the build rendered, including text that comes with the data (scripts/middle-dots.ts).
+      - run: pnpm check:dots
 
   data:
     runs-on: ubuntu-latest

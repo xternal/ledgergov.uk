@@ -70,7 +70,7 @@ export default function TaxIndexPage() {
       <main className="mx-auto grid max-w-[1000px] gap-12 px-4 pb-20 pt-10 sm:px-6">
         <header className="grid max-w-[68ch] gap-4">
           <p className="m-0 text-label font-medium text-muted">
-            HMRC estimates · <a href={edition.source.url}>{sourceName(edition)}</a>, published {edition.published}
+            HMRC&apos;s estimates from <a href={edition.source.url}>{sourceName(edition)}</a>, published {edition.published}
           </p>
           <h1 className="m-0 text-[clamp(30px,4.4vw,44px)] font-semibold leading-[1.06] tracking-[-0.035em]">{RECKONER_TITLE}</h1>
           <p className="m-0 text-lead text-muted">{C.lead}</p>

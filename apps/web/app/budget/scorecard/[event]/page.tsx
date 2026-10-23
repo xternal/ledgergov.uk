@@ -130,8 +130,11 @@ export default async function ScorecardPage({ params }: Props) {
           <a href="/budget" className="justify-self-start text-label font-medium">
             {BUDGET.name}
           </a>
-          <p className="m-0 text-label font-medium text-muted">
-            {longDate(s.date)} · HM Treasury, {s.source.title}, Table {s.table.number}
+          <p className="m-0 flex flex-wrap gap-x-4 gap-y-1 text-label font-medium text-muted">
+            <span>{longDate(s.date)}</span>
+            <span>
+              HM Treasury, {s.source.title}, Table {s.table.number}
+            </span>
           </p>
           <h1 className="m-0 text-[clamp(30px,4.4vw,44px)] font-semibold leading-[1.06] tracking-[-0.035em]">{title}</h1>
           <p className="m-0 text-lead text-muted">
@@ -442,13 +445,12 @@ export default async function ScorecardPage({ params }: Props) {
             Source: HM Treasury, <a href={s.source.url}>{s.source.title}</a>, published {longDate(s.source.published_on)}, {s.source.licence}.
           </p>
           {others.length > 0 && (
-            <p className="m-0 text-label">
-              Other fiscal events:{" "}
-              {others.map((o, oi) => (
-                <span key={o.id}>
-                  {oi > 0 && " · "}
-                  <a href={scorecardPath(o)}>{o.name}</a>
-                </span>
+            <p className="m-0 flex flex-wrap gap-x-4 gap-y-1 text-label">
+              <span>Other fiscal events:</span>
+              {others.map((o) => (
+                <a key={o.id} href={scorecardPath(o)}>
+                  {o.name}
+                </a>
               ))}
             </p>
           )}

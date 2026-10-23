@@ -86,7 +86,8 @@ export default async function Image({ params }: { params: Promise<{ event: strin
     <div style={{ display: "flex", flexDirection: "column", width: "100%", height: "100%", background: OG.bg, color: OG.ink, padding: "44px 60px", fontFamily: "Geist" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 24, fontWeight: 600 }}>
         <img src={MARK_DATA_URI} width={24} height={24} alt="" />
-        {`LedgerGov.UK · ${s.name}${s.kind === "rehearsal" ? " (last year's Budget)" : ""}`}
+        LedgerGov.UK
+        <span style={{ marginLeft: 10, color: OG.muted }}>{`${s.name}${s.kind === "rehearsal" ? " (last year's Budget)" : ""}`}</span>
       </div>
       <div style={{ display: "flex", fontSize: 50, fontWeight: 600, letterSpacing: -1.8, lineHeight: 1.05, marginTop: 16 }}>
         {s.kind === "rehearsal" ? "What it did to households" : "What it does to households"}

@@ -65,7 +65,7 @@ function Contract({ c }: { c: ContractLink }) {
           {c.title}
         </a>
         <span className="text-label text-muted">
-          {displayName(c.buyer)} · awarded {longDate(c.awarded_on)}
+          {displayName(c.buyer)}, awarded {longDate(c.awarded_on)}
         </span>
       </div>
       <dl className="m-0 grid grid-cols-2 gap-x-6 gap-y-3 text-sm md:grid-cols-4">

@@ -11,7 +11,7 @@ export interface Tile {
   kind: "delivered" | "notMet" | "dueNext" | "forecast";
   headline: string;
   href: string;
-  /** "Keir Starmer · 25 Sep 2026", "John Healey · due 28 Oct 2026" */
+  /** "Keir Starmer, 25 September 2026", "John Healey, due 28 October 2026" */
   line: string;
   /** For "forecast": where the target and the forecast sit on one scale, 0–100. */
   scale?: { target: number; forecast: number; ceiling: boolean; text: string };
@@ -160,7 +160,7 @@ export function HomeFirstScreen({ data }: { data: HomeData }) {
             ) : (
               <b>{gbpBn(baseResult.totals.borrowing_bn)}</b>
             )}
-            <span className="opacity-70"> · official costing per point, no knock-on effects</span>
+            <span className="block opacity-70">Official costing per point, no knock-on effects</span>
           </p>
           <a href={`/money${code ? `?s=${encodeURIComponent(code)}` : ""}#scenario`} className="text-label font-semibold text-bg underline decoration-bg/50 underline-offset-2 hover:decoration-bg">
             Open the full sandbox →

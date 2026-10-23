@@ -12,6 +12,7 @@
     "test": "pnpm --filter \"./packages/*\" --workspace-concurrency=1 test",
     "typecheck": "pnpm -r typecheck",
     "validate": "tsx scripts/validate.ts",
+    "check:dots": "tsx scripts/middle-dots.ts",
     "etl": "etl/.venv/bin/python -m etl.build",
     "contracts": "etl/.venv/bin/python -m etl.contracts",
     "portraits": "tsx scripts/portraits.ts",

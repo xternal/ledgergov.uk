@@ -26,6 +26,6 @@ export default async function Image({ params }: { params: Promise<{ area: string
       { value: String(cards.length), label: cards.length === 1 ? "promise tracked" : "promises tracked" },
       ...top.map((x) => ({ value: String(x.count), label: STATUS_LABEL[x.status].toLowerCase() })),
     ],
-    foot: "Every promise word for word · one standard for every party",
+    foot: "Every promise word for word, one standard for every party",
   });
 }

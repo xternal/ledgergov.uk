@@ -38,7 +38,7 @@ export function FamilySwitcher() {
           })}
         </ul>
         <a href={MAKER.url} className="rounded-md px-2.5 py-2 text-caption text-muted no-underline hover:bg-sunk hover:text-ink">
-          Made by {MAKER.name} · guzh.uk
+          Made by {MAKER.name}, guzh.uk
         </a>
       </div>
     </details>

@@ -20,6 +20,6 @@ export default async function Image() {
     kicker: RECKONER_KICKER,
     title: "What one point on each tax raises",
     figures: top.map((c) => ({ value: hmrcFigure(c.headline.first.range[1]), label: `${c.spec.short}, ${c.headline.first.period}` })),
-    foot: `HMRC's estimates, edition published ${edition.published} · each with its range and caveat on the site`,
+    foot: `HMRC's estimates, edition published ${edition.published}, each with its range and caveat on the site`,
   });
 }
