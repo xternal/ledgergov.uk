@@ -2,28 +2,6 @@
 
 import { useScenario } from "@/lib/scenario";
 import { gbpBn } from "@/lib/format";
-import { NavLinks } from "./NavLinks";
-import { SITE_LINKS } from "./siteLinks";
-import { LogoMark } from "@/lib/brand";
-
-export function TopBar() {
-  const { view } = useScenario();
-  const { meta } = view.statement;
-  return (
-    <header className="sticky top-0 z-20 border-b border-line bg-bg/85 backdrop-blur-md backdrop-saturate-150">
-      <div className="mx-auto flex h-14 max-w-[1200px] items-center gap-6 px-4 sm:px-6">
-        <a href="#top" className="flex items-center gap-2 whitespace-nowrap text-[15px] font-semibold tracking-[-0.01em] text-ink no-underline">
-          <LogoMark />
-          LedgerGov.UK
-        </a>
-        <NavLinks links={SITE_LINKS} spy />
-        <span className="hidden whitespace-nowrap text-label text-muted md:inline">
-          {meta.country}, {meta.fiscal_year}
-        </span>
-      </div>
-    </header>
-  );
-}
 
 /** The opening. `tracked` is the link to every promise, "125 promises tracked →" (OpenPromises decision 30). */
 export function Hero({ tracked }: { tracked?: { text: string; href: string } }) {
@@ -31,7 +9,7 @@ export function Hero({ tracked }: { tracked?: { text: string; href: string } }) 
   const { meta } = seed.statement;
   const { receipts_bn, spending_bn, borrowing_bn } = baseResult.totals;
   return (
-    <div className="pb-8 pt-12 sm:pt-16">
+    <div className="pb-6 pt-6 sm:pt-8">
       <p className="mb-4 text-label text-muted">
         Annual statement for {meta.fiscal_year}, based on the {meta.vintage_label}
       </p>

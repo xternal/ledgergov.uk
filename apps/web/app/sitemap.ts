@@ -39,6 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const actorIds = [...new Set(seed.cards.flatMap((c) => [c.actor.id, c.party?.id].filter((x): x is string => !!x)))];
   return [
     { url: absolute("/"), lastModified: built, changeFrequency: "daily", priority: 1 },
+    { url: absolute("/money"), lastModified: built, changeFrequency: "monthly", priority: 0.9 },
     { url: absolute("/promises"), lastModified: latest, changeFrequency: "daily", priority: 0.9 },
     { url: absolute("/actor"), lastModified: latest, changeFrequency: "daily", priority: 0.7 },
     { url: absolute("/people"), lastModified: peopleChanged, changeFrequency: "monthly", priority: 0.8 },
