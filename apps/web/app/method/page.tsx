@@ -57,8 +57,8 @@ export default function MethodPage() {
         </a>
         <span className="text-caption text-muted">
           {e.publisher}
-          {e.licence ? ` · ${e.licence}` : ""}
-          {e.first_loaded ? ` · first used here ${longDate(e.first_loaded)}` : ""}
+          {e.licence ? `, ${e.licence}` : ""}
+          {e.first_loaded ? `, first used here ${longDate(e.first_loaded)}` : ""}
         </span>
       </span>
       <span className="text-caption text-muted">
@@ -174,11 +174,10 @@ export default function MethodPage() {
               Every forecast the site shows is recorded on the day it is shown and never changed. When the official outturn arrives, it is scored: inside
               the range, or a miss above or below.
             </p>
-            <p className="m-0">
+            <p className="m-0 flex flex-wrap gap-x-6 gap-y-1">
               <a href="/method/backtest" className="font-medium">
                 See forecasts against outturn
               </a>
-              <span className="text-muted"> · </span>
               <a href="/method/api" className="font-medium">
                 Get the data (JSON or CSV)
               </a>
@@ -251,7 +250,7 @@ export default function MethodPage() {
                   <a href={s.url} target="_blank" rel="noopener noreferrer">
                     {s.title}
                   </a>
-                  <span className="text-muted"> · {s.publisher}</span>
+                  <span className="text-muted">, {s.publisher}</span>
                 </li>
               ))}
             </ul>

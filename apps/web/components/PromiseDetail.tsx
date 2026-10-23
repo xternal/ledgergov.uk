@@ -200,15 +200,9 @@ export function PromiseDetail({ card, householdsM, householdsP, spendingBn, runH
   return (
     <article className="grid gap-8" aria-labelledby={`card-${f.id}`}>
       <header className="grid gap-4">
-        <span className="flex flex-wrap items-center gap-x-2 gap-y-1 text-label text-muted">
+        <span className="flex flex-wrap items-center gap-x-4 gap-y-1 text-label text-muted">
           <a href={`/actor/${card.actor.id}`}>{card.actor.name}</a>
-          {card.party && card.party.id !== card.actor.id && (
-            <>
-              <span aria-hidden>·</span>
-              <a href={`/actor/${card.party.id}`}>{card.party.name}</a>
-            </>
-          )}
-          <span aria-hidden>·</span>
+          {card.party && card.party.id !== card.actor.id && <a href={`/actor/${card.party.id}`}>{card.party.name}</a>}
           <a href={areaHref}>{AREA_LABEL[f.policy_area]}</a>
         </span>
         <div className="grid gap-2">
@@ -253,7 +247,7 @@ export function PromiseDetail({ card, householdsM, householdsP, spendingBn, runH
                       </dd>
                     )}
                     <dd className="m-0 mt-1 flex flex-wrap items-center gap-x-2 text-caption text-muted">
-                      about {gbp(perHousehold(cost[1], householdsM))} per household · {fixed(shareOf(cost[1], spendingBn), 2)}% of spending
+                      about {gbp(perHousehold(cost[1], householdsM))} per household, {fixed(shareOf(cost[1], spendingBn), 2)}% of spending
                       <WithProvenance p={householdsP} align="end">
                         <QualityBadge quality={householdsP.quality} />
                       </WithProvenance>

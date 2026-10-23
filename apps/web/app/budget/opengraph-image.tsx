@@ -23,6 +23,6 @@ export default async function Image() {
       { value: String(w.needMoney.length), label: "with a stated cost" },
       ...(after ? [] : [{ value: String(w.opposition.length), label: "opposition pledges, costed" }]),
     ],
-    foot: `Budget day ${budgetDay()} · every promise word for word, every cost with its source`,
+    foot: `Budget day ${budgetDay()}: every promise word for word, every cost with its source`,
   });
 }
