@@ -3,12 +3,15 @@ import type { NavLink } from "./NavLinks";
 /**
  * The site menu, the same on every page, so a word always goes to the same place. Only pages of their own: the
  * statement, the sandbox and "your share" are the Money page; contributing is the button beside the menu. The same
- * pattern runs on every site of the family: five pages at most, Method last.
+ * pattern runs on every site of the family: five pages at most, Method last. LedgerGov.UK has six: People are the
+ * people whose promises the ledger tracks (/actor), and Population is the population and long-term spending page
+ * (/people), beside Money (Pavel, 23 Oct 2026).
  */
 export const SITE_LINKS: NavLink[] = [
   { href: "/money", label: "Money" },
+  { href: "/people", label: "Population" },
   { href: "/promises", label: "Promises" },
-  { href: "/people", label: "People" },
+  { href: "/actor", label: "People" },
   { href: "/mp", label: "Your MP" },
   { href: "/method", label: "Method" },
 ];
