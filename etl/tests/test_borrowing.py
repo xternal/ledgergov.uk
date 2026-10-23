@@ -1,7 +1,8 @@
 """
 /borrowing (etl/borrowing.py): borrowing so far this year against the OBR's monthly path, from committed
-observations. No network: the committed editions are the release of 22 September 2026 (PSF-2026-09) and
-the OBR's March 2026 profiles (EFO-2026-03).
+observations. No network: the newest committed editions are the release of 21 October 2026 (PSF-2026-10) and
+the OBR's March 2026 profiles (EFO-2026-03). The figures below are the bulletin's own, so each monthly data refresh
+updates them from its bulletin.
 """
 
 from __future__ import annotations
@@ -46,27 +47,28 @@ def test_committed_file_is_up_to_date(bundle):
 
 
 def test_so_far_matches_the_ons_bulletin(bundle):
-    # ONS, 22 September 2026: "£77.3 billion ... £2.2 billion (2.7%) less than in the same period last year
-    # and £8.1 billion above the Office for Budget Responsibility (OBR) forecast".
+    # ONS, 21 October 2026: "£97.8 billion. This was £4.4 billion (4.3%) less than in the same period last year but
+    # £6.0 billion above the Office for Budget Responsibility (OBR) forecast"; Table 8 gives the OBR's as £91.8 billion.
     s = bundle["so_far"]
-    assert (bundle["fiscal_year"], bundle["through"]) == ("2026-27", "2026-08")
-    assert round(s["outturn"]["bn"], 1) == 77.3
-    assert round(s["last_year"]["bn"] - s["outturn"]["bn"], 1) == 2.2
-    assert round(s["difference"]["bn"], 1) == 8.1
+    assert (bundle["fiscal_year"], bundle["through"]) == ("2026-27", "2026-09")
+    assert round(s["outturn"]["bn"], 1) == 97.8
+    assert round(s["last_year"]["bn"] - s["outturn"]["bn"], 1) == 4.4
+    assert round(s["difference"]["bn"], 1) == 6.0
     assert s["difference"]["bn"] == pytest.approx(s["outturn"]["bn"] - s["profile"]["bn"], abs=1e-3)
-    assert round(s["profile"]["bn"], 1) == 69.2
+    assert round(s["profile"]["bn"], 1) == 91.8
 
 
 def test_paths(bundle):
     assert len(bundle["months"]) == 12 and bundle["months"][0] == "2026-04" and bundle["months"][-1] == "2027-03"
     out, prof, last = bundle["outturn"], bundle["profile"], bundle["last_year"]
-    assert len(out["values"]) == len(out["cumulative"]) == 5
+    assert len(out["values"]) == len(out["cumulative"]) == 6
     assert len(prof["values"]) == len(prof["cumulative"]) == len(last["values"]) == 12
     assert out["cumulative"][-1] == bundle["so_far"]["outturn"]["bn"]
-    assert prof["cumulative"][4] == bundle["so_far"]["profile"]["bn"]
+    assert prof["cumulative"][5] == bundle["so_far"]["profile"]["bn"]
     assert prof["cumulative"][-1] == pytest.approx(prof["year_bn"], abs=1e-3) == pytest.approx(bundle["year_forecast"]["bn"], abs=1e-3)
     assert (prof["edition"], prof["published_on"], prof["range"]) == ("March 2026", "2026-04-23", "point")
-    assert last["fiscal_year"] == "2025-26" and last["cumulative"][-1] == pytest.approx(134.286, abs=1e-3)
+    # ONS, 21 October 2026: "The public sector borrowed £134.2 billion in the financial year ending March 2026".
+    assert last["fiscal_year"] == "2025-26" and last["cumulative"][-1] == pytest.approx(134.211, abs=1e-3)
 
 
 def test_provenance(bundle):
@@ -74,15 +76,15 @@ def test_provenance(bundle):
              *bundle["so_far"].values()]
     for p in every:
         assert p["quality"] == "sourced" and p["source_id"] and p["vintage"] and p["method_note"]
-    assert bundle["so_far"]["outturn"]["vintage"] == "PSF-2026-09"
+    assert bundle["so_far"]["outturn"]["vintage"] == "PSF-2026-10"
     assert bundle["so_far"]["profile"]["vintage"] == "EFO-2026-03"
     assert {s["id"] for s in bundle["sources"]} == {"ons_psf", "obr_monthly_profiles", "obr_efo"}
 
 
 def test_release_is_the_one_used(bundle):
     r = bundle["release"]
-    assert r["title"] == "Public sector finances, UK: August 2026"
-    assert r["released_at"] == "2026-09-22T06:00:00Z" and (r["next_on"], r["next_at"]) == ("2026-10-21", "2026-10-21T06:00:00Z")
+    assert r["title"] == "Public sector finances, UK: September 2026"
+    assert r["released_at"] == "2026-10-21T06:00:00Z" and (r["next_on"], r["next_at"]) == ("2026-11-20", "2026-11-20T07:00:00Z")
 
 
 # ------------------------------------------------------------------ cases the committed data does not cover
