@@ -1,8 +1,7 @@
 """
 /borrowing (etl/borrowing.py): borrowing so far this year against the OBR's monthly path, from committed
-observations. No network: the newest committed editions are the release of 21 October 2026 (PSF-2026-10) and
-the OBR's March 2026 profiles (EFO-2026-03). The figures below are the bulletin's own, so each monthly data refresh
-updates them from its bulletin.
+observations. No network: the committed editions are the release of 21 October 2026 (PSF-2026-10) and
+the OBR's March 2026 profiles (EFO-2026-03).
 """
 
 from __future__ import annotations
@@ -47,8 +46,8 @@ def test_committed_file_is_up_to_date(bundle):
 
 
 def test_so_far_matches_the_ons_bulletin(bundle):
-    # ONS, 21 October 2026: "£97.8 billion. This was £4.4 billion (4.3%) less than in the same period last year but
-    # £6.0 billion above the Office for Budget Responsibility (OBR) forecast"; Table 8 gives the OBR's as £91.8 billion.
+    # ONS, 21 October 2026: "£97.8 billion. This was £4.4 billion (4.3%) less than in the same period last year
+    # but £6.0 billion above the Office for Budget Responsibility (OBR) forecast".
     s = bundle["so_far"]
     assert (bundle["fiscal_year"], bundle["through"]) == ("2026-27", "2026-09")
     assert round(s["outturn"]["bn"], 1) == 97.8
@@ -67,8 +66,7 @@ def test_paths(bundle):
     assert prof["cumulative"][5] == bundle["so_far"]["profile"]["bn"]
     assert prof["cumulative"][-1] == pytest.approx(prof["year_bn"], abs=1e-3) == pytest.approx(bundle["year_forecast"]["bn"], abs=1e-3)
     assert (prof["edition"], prof["published_on"], prof["range"]) == ("March 2026", "2026-04-23", "point")
-    # ONS, 21 October 2026: "The public sector borrowed £134.2 billion in the financial year ending March 2026".
-    assert last["fiscal_year"] == "2025-26" and last["cumulative"][-1] == pytest.approx(134.211, abs=1e-3)
+    assert last["fiscal_year"] == "2025-26" and last["cumulative"][-1] == pytest.approx(134.211, abs=1e-3)  # ONS, 21 October 2026: "£134.2 billion in the financial year ending March 2026"
 
 
 def test_provenance(bundle):
