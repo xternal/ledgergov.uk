@@ -1,0 +1,81 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-military-planes-and-helicopters-to-fight-wildfires-from-the-.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-22"
+source:
+  id: govuk-military-planes-and-helicopters-to-fight-wildfires-from-the-
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky
+  title: Military planes and helicopters to fight wildfires from the sky
+  date: "2026-10-22"
+  venue_label: Press release (Ministry of Housing, Communities and Local Government)
+quote: >-
+  This includes £25 million to restore dried-out peatlands in England so they hold more water and
+  act as natural firebreaks, as well as financial support for farmers to fireproof their land,
+  through digging ponds and removing burnable materials in high-risk areas.
+source_span: [931, 1193]
+speaker:
+  name: HM Government
+  role: Ministry of Housing, Communities and Local Government
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: housing_env
+  who: Peatlands in England; farmers in high-risk areas
+  how_much: £25 million
+  when: Peatland Restoration Grant Scheme expected to run from April 2027 to April 2029
+  funded_by: null
+  deadline: "2027-04-30"
+why: >-
+  Promises £25 million for peatland restoration in England through a new Natural England grant
+  scheme expected to run from April 2027 to April 2029, plus financial support for farmers to
+  fireproof land.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      The RAF’s Chinook helicopters and A400M aircraft will be equipped so they can fight fires and
+      are ready, when requested, to help crews across the UK battle blazes on remote moorland, steep
+      hillsides and other hard-to-reach terrain.
+    source_span: [64, 295]
+    suggested:
+      policy_area: defence
+      who: Fire and rescue services across the UK; RAF
+      how_much: null
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      Promises to fit RAF Chinook helicopters and A400M aircraft with firefighting equipment so they
+      can support fire crews across the UK, giving the UK a permanently based aerial firefighting
+      capability.
+    confidence: 0.7
+  - quote: >-
+      Firefighters on the front line in England will be boosted by additional specialist wildfire
+      teams and state of the art, wildfire-specific, light weight personal protective equipment,
+      backed by up to £45million, meaning those who work tirelessly to protect others can stay also
+      safe.
+    source_span: [296, 578]
+    suggested:
+      policy_area: public_order
+      who: Firefighters in England
+      how_much: up to £45 million
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      Promises additional specialist wildfire teams and new wildfire-specific lightweight protective
+      equipment for firefighters in England, backed by up to £45 million.
+    confidence: 0.75
+confidence: 0.7
+model: claude-opus-5-5
+status: to_review

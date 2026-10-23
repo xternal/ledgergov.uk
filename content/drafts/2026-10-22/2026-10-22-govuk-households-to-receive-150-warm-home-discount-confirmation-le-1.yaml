@@ -1,0 +1,41 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-households-to-receive-150-warm-home-discount-confirmation-le.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-22"
+source:
+  id: govuk-households-to-receive-150-warm-home-discount-confirmation-le
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/households-to-receive-150-warm-home-discount-confirmation-letter
+  title: Households to receive £150 Warm Home Discount confirmation letter
+  date: "2026-10-22"
+  venue_label: Press release (Department for Energy Security and Net Zero)
+quote: >-
+  Earlier this year the government confirmed that millions of eligible households will receive the
+  Warm Home Discount for the rest of the decade, with the scheme set to continue through to 2030/31.
+source_span: [2129, 2324]
+speaker:
+  name: HM Government
+  role: Department for Energy Security and Net Zero
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: social_protection
+  who: millions of eligible households
+  how_much: null
+  when: through to 2030/31
+  funded_by: null
+  deadline: null
+why: >-
+  Restates an earlier government commitment to keep the Warm Home Discount running for eligible
+  households through to 2030/31; editors should quote the original announcement.
+confidence: 0.55
+model: claude-opus-5-5
+status: to_review
