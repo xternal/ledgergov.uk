@@ -78,7 +78,8 @@ export default defineConfig({
     ],
     otherLicence: "Quoted for reporting; rights stay with the publisher",
   },
-  modules: ["contracts", "lever", "corrections", "reviews"],
+  // metrics: a target as a number, read against the forecast at the time (OpenPromises decision 36).
+  modules: ["contracts", "lever", "corrections", "reviews", "metrics"],
   // Feed entry ids as the site's feeds already publish them (tag:ledgergov.uk,2026:promise/<id>/event/<n>).
   publish: {
     tag: "ledgergov.uk,2026",

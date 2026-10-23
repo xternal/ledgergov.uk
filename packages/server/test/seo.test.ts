@@ -478,3 +478,13 @@ describe("IndexNow", () => {
     expect(await waitForDeploy([card], ctx.siteUrl, never, { timeoutMs: 30, intervalMs: 10, sleep: async () => void (clock += 10), now: () => clock })).toEqual([]);
   });
 });
+
+describe("the target and the forecast at the time in the Markdown (OpenPromises decision 36)", () => {
+  it("lists both, with the forecast's source and the gap, and the target's correction in words", () => {
+    const md = cardMarkdownFile(cards.find((c) => c.id === "uk-halve-inflation-2023")!, ctx);
+    expect(md).toContain("- **Target:** At most 5.25% by 31 December 2023");
+    expect(md).toContain("- **Forecast at the time:** 3.75% by 31 December 2023, the OBR's forecast of 17 November 2022, before the promise ([OBR: Economic and fiscal outlook, November 2022");
+    expect(md).toContain("The forecast at the time already met the target.");
+    expect(md).toContain("Was: not given. Now: at most 5.25% by 31 December 2023.");
+  });
+});
