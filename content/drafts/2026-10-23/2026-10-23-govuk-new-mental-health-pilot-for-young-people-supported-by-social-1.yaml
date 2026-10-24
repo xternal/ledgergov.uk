@@ -1,0 +1,64 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-new-mental-health-pilot-for-young-people-supported-by-social.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-23"
+source:
+  id: govuk-new-mental-health-pilot-for-young-people-supported-by-social
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/new-mental-health-pilot-for-young-people-supported-by-social-care
+  title: New mental health pilot for young people supported by social care
+  date: "2026-10-23"
+  venue_label: Press release (Department of Health and Social Care)
+quote: >-
+  The pilot is set to launch in early 2027 and run until 2029. An evaluation will be carried out
+  during the pilot to assess the potential to scale the programme to other areas across the country.
+source_span: [3230, 3423]
+speaker:
+  name: HM Government
+  role: Department of Health and Social Care
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: health
+  who: >-
+    up to 7,000 children and young people supported by social care in Stockport, Tameside and
+    Rochdale, and their parents, carers and guardians
+  how_much: up to £9.4 million over three years
+  when: launch early 2027, running until 2029
+  funded_by: null
+  deadline: null
+why: >-
+  The Care Together mental health pilot, embedding NHS mental health professionals in children's
+  social care teams in Stockport, Tameside and Rochdale, will launch in early 2027 and run until
+  2029, with an evaluation during the pilot.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      More widely we are reshaping children’s social care so more children can grow up in loving
+      families and communities, backed by £2.4 billion through the Families First Partnership
+      Programme and our commitment to create 10,000 new foster places this Parliament.
+    source_span: [4770, 5029]
+    suggested:
+      policy_area: social_protection
+      who: children in care
+      how_much: null
+      when: this Parliament
+      funded_by: null
+      deadline: null
+    why: >-
+      Restates an earlier government commitment to create 10,000 new foster places by the end of
+      this Parliament; editors should quote the original.
+    confidence: 0.6
+confidence: 0.5
+model: claude-opus-5-5
+status: to_review
