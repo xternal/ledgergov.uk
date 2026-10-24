@@ -1,0 +1,43 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-more-money-reaching-children-than-ever-thanks-to-child-maint.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-23"
+source:
+  id: govuk-more-money-reaching-children-than-ever-thanks-to-child-maint
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/more-money-reaching-children-than-ever-thanks-to-child-maintenance-service
+  title: More money reaching children than ever thanks to Child Maintenance Service
+  date: "2026-10-23"
+  venue_label: Press release (Department for Work and Pensions)
+quote: >-
+  Child maintenance plays a vital role in tackling child poverty, with the Government set to lift
+  550,000 children out of poverty in the final year of this Parliament, thanks to action including
+  the lifting of the two-child benefit limit.
+source_span: [2279, 2515]
+speaker:
+  name: HM Government
+  role: Department for Work and Pensions
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: social_protection
+  who: children in poverty
+  how_much: null
+  when: in the final year of this Parliament
+  funded_by: null
+  deadline: null
+why: >-
+  Restates the Government's earlier child poverty commitment to have 550,000 fewer children in
+  poverty by the final year of this Parliament, partly through lifting the two-child benefit limit;
+  editors should quote the original.
+confidence: 0.5
+model: claude-opus-5-5
+status: to_review
