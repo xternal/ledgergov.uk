@@ -1,0 +1,19 @@
+id: defence-spending-increase
+headline: Add billions of pounds of new defence spending
+area: defence
+summary: >-
+  BBC News, citing a Sunday Times report, says the Chancellor is expected to set out billions of pounds
+  of new defence spending in the Budget, with the details of the money left to next year's spending
+  review. The Guardian reported the day before that the Chancellor will set out how to fully fund the
+  four-year defence investment plan, and that a commitment to spend 3% of GDP on defence is likely to
+  wait for the spending review. Neither report gives a figure.
+reported:
+  - outlet: The Guardian
+    date: "2026-10-24"
+    url: https://www.theguardian.com/uk-news/2026/oct/24/andy-burnham-john-healey-first-budget-devolution-growth-package
+    title: Healey's first budget to include big devolution package to boost growth
+  - outlet: BBC News
+    date: "2026-10-25"
+    url: https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o
+    title: Budget to include £1bn for social and affordable housing
+status: trailed
