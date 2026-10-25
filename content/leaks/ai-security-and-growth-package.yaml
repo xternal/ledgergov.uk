@@ -1,0 +1,23 @@
+id: ai-security-and-growth-package
+headline: Fund a package of AI security and growth measures
+area: economic_affairs
+summary: >-
+  BBC News reports that the Budget will commit £100m to a new AI Biosecurity Lab, alongside spending on
+  cyber, biological and AI-enabled threats. The Treasury set out the package on the record the same
+  morning: £165m for a National AI Biosecurity Initiative (including the £100m lab), £120m more for
+  the AI Security Institute, £60m for a National Cyber Shield, £70m for a cyber vulnerability centre,
+  £120m more for the Sovereign AI Fund and its research procurement scheme, and smaller sums for chip
+  design skills, an AI challenge prize, the AI Economics Institute and local AI partnerships. Neither
+  source gives a single official total or the years covered for every line.
+reported:
+  - outlet: BBC News
+    date: "2026-10-24"
+    url: https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo
+    archived_url: https://web.archive.org/web/20261024084608/https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo
+    title: UK to invest £100m in 'world first' AI Biosecurity Lab
+status: confirmed
+confirmed:
+  date: "2026-10-24"
+  by: HM Treasury (press release quoting John Healey, Chancellor of the Exchequer)
+  url: https://www.gov.uk/government/news/chancellor-unveils-britains-ambitious-plan-for-ai
+  text: The Treasury said the package would be announced by the Chancellor in the Budget and listed each line and its amount.
