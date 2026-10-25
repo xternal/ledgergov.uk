@@ -16,6 +16,6 @@ export default async function Image() {
       { value: String(cards.length), label: "promise cards so far" },
       { value: String(new Set(cards.map((c) => ownerOf(c).id)).size), label: "parties and public bodies" },
     ],
-    foot: "Remote · no coding · any party or none, declared",
+    foot: "Remote, no coding, any party or none (declared)",
   });
 }

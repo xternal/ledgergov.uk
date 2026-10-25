@@ -2,6 +2,28 @@
 
 The owner's decisions for LedgerGov.UK, newest first, in his words where he gave them, with what was done and what was deliberately not.
 
+## A short menu, a Money page, and a first screen of cards (23 Oct 2026)
+
+Pavel, looking at the menu: "it is soooo big.. too big?", then "maybe we should rethink first screen? have a glance of Main Thing we have here: key number(s), promises block, play sandbox ledger with gov money. i want a person to understand both The Scale of our Data and the Easiness he now has", "and a logbook of last changes/additions/check down is a good idea", "we can have a switcher somewhere to easy-go on sister sites and guzh.uk and ruminator.xyz". From the sketches (https://claude.ai/artifact/CoD6wVe8TE26xAqCF4HPpW) he chose option A, "but i'd some more widget cards there and give Header less vertical pixels", then "Build option A as redrawn".
+
+**Done:**
+
+- **The menu** has five pages: Money · Promises · People · Your MP · Method (`components/siteLinks.ts`). Pavel: "'People' = /actor (a-la Managers 🙂)", so People are the people, parties and bodies whose promises the ledger tracks, and their pages highlight it. Then: "population may go wherever you had an idea (btw population can have a widget of level of degrading or smth)… i just meant that Population is a very interesting page and we should not forget it". So the population and long-term spending page (`/people`) sits under Money: the Money page links to it, it highlights Money, and the home page has a Population card (people over pension age for every 100 of working age now and in the ONS projection, with the variants' range, and age-related spending in the OBR baseline).
+- **The family switcher** beside the logo (`components/FamilySwitcher.tsx`, a `<details>` that opens without JavaScript): LedgerGov.UK, BoroughBook.UK, USLedger.org, RussiaLedger.com, UkraineLedger.com and Ruminator.xyz, each with one line, and guzh.uk. This is a second place that names Ruminator.xyz, besides the "Also by the author" card below; Pavel asked for it.
+- **The Money page** (`/money`): the statement, the sandbox and "your share", which were the home page's first sections. Old links to them (`/#statement`, `/#scenario`, `/#you`, with a scenario's `?s=`) open there.
+- **The first screen** (`components/HomeFirstScreen.tsx`):
+  - a one-line headline;
+  - the year's figures (the KPI strip);
+  - the promises at a glance;
+  - one sandbox lever (the basic rate, from the model, carried into the full sandbox);
+  - four promises to watch: the latest delivered, the latest not met, the one due next, and the latest with a forecast at the time;
+  - the way to your MP;
+  - the logbook of what was added, moved, corrected or checked.
+
+  The tiles and the logbook are picked by fixed rules from the cards (`packages/schema/src/home.ts`), never by hand. A card counts as added on its first review, and an editor is named only when they chose to be. The engine's spotlight (OpenPromises decision 30) follows the first screen.
+
+**Deliberately not done:** no change to the other sites yet. LedgerGov.UK goes first, so the pattern is judged on real pages before it spreads.
+
 ## One weekly desk for every ledger (20 Oct 2026)
 
 Pavel asked whether one routine every Sunday should do the background work for all his ledgers: new promises, a check on the promises already published, new emergencies, and any other data to check, add or confirm. He took the recommendation: "go, follow your recos".

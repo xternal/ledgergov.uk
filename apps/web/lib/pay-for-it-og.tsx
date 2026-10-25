@@ -30,7 +30,8 @@ function Brand() {
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 26, fontWeight: 600 }}>
       <img src={MARK_DATA_URI} width={28} height={28} alt="" />
-      {`LedgerGov.UK · ${PAY_TITLE}`}
+      LedgerGov.UK
+      <span style={{ marginLeft: 10, color: OG.muted }}>{PAY_TITLE}</span>
     </div>
   );
 }
@@ -123,7 +124,8 @@ export async function plainPayImage() {
   const fonts = await ogFonts();
   return new ImageResponse(
     <div style={{ display: "flex", width: "100%", height: "100%", background: OG.bg, color: OG.ink, fontSize: 48, alignItems: "center", justifyContent: "center", fontFamily: "Geist" }}>
-      {`LedgerGov.UK · ${PAY_TITLE}`}
+      LedgerGov.UK
+      <span style={{ marginLeft: 20, color: OG.muted }}>{PAY_TITLE}</span>
     </div>,
     { ...OG.size, fonts },
   );

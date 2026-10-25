@@ -98,7 +98,7 @@ export default function BudgetPage() {
             All promises
           </a>
           <p className="m-0 text-label font-medium text-muted">
-            {when} · <a href={BUDGET.source.url}>date: House of Commons Library</a>
+            {when} (<a href={BUDGET.source.url}>date: House of Commons Library</a>)
           </p>
           <h1 className="m-0 text-[clamp(30px,4.4vw,44px)] font-semibold leading-[1.06] tracking-[-0.035em]">
             {after ? `${BUDGET.name}: what it did to the promises` : `${BUDGET.name}: the promises to watch`}
@@ -219,13 +219,12 @@ export default function BudgetPage() {
                 {topic.title}
               </h2>
               <p className="m-0 text-muted">{topic.intro}</p>
-              <p className="m-0 text-label text-muted">
-                Sources:{" "}
-                {topic.sources.map((s, i) => (
-                  <span key={s.url}>
-                    {i > 0 && " · "}
-                    <a href={s.url}>{s.title}</a>
-                  </span>
+              <p className="m-0 flex flex-wrap gap-x-4 gap-y-1 text-label text-muted">
+                <span>Sources:</span>
+                {topic.sources.map((s) => (
+                  <a key={s.url} href={s.url}>
+                    {s.title}
+                  </a>
                 ))}
               </p>
               <p className="m-0 text-label">

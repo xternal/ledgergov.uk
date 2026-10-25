@@ -95,7 +95,7 @@ export default function PredictPage() {
             {round.budget}
           </a>
           <p className="m-0 text-label font-medium text-muted">
-            Budget day {closingDay(round.closes_at)} · {open ? `predictions close at ${closingTime(round.closes_at)}, when the statement starts` : "predictions closed"}
+            Budget day {closingDay(round.closes_at)}, {open ? `predictions close at ${closingTime(round.closes_at)}, when the statement starts` : "predictions closed"}
           </p>
           <h1 className="m-0 text-[clamp(30px,4.4vw,44px)] font-semibold leading-[1.06] tracking-[-0.035em]">{title}</h1>
           <p className="m-0 text-lead text-muted">

@@ -239,6 +239,10 @@ export interface PromiseOut {
   when: string | null;
   funded_by: string | null;
   cost: CostOut | null;
+  /** The target the words set, as a number (OpenPromises decision 36); null when they set none. */
+  target: { series_id: string; value: number; direction: string; unit: string; by: string } | null;
+  /** The forecast at the time: what an official or independent forecaster expected, published before the promise (decision 36); null when none is recorded. */
+  forecast_at_the_time: { value: number; unit: string; for: string; by_kind: string; by_name: string; published_on: string; source_title: string; source_url: string; note: string | null } | null;
   sources: { title: string; url: string; archived_url: string | null }[];
   versions: { version: number; text: string; recorded_on: string; source_url: string; quote_checked_on: string | null; cost: CostOut | null }[];
   events: { date: string; type: string; text: string; evidence_url: string | null; auto: boolean }[];
@@ -302,6 +306,20 @@ export function promiseOut(c: Card, ctx: Ctx): PromiseOut {
     when: p?.when ?? null,
     funded_by: p?.funded_by ?? null,
     cost: costOf(p),
+    target: p?.metric ? { series_id: p.metric.series_id, value: p.metric.target, direction: p.metric.direction, unit: p.metric.unit, by: p.metric.by } : null,
+    forecast_at_the_time: p?.baseline
+      ? {
+          value: p.baseline.value,
+          unit: p.baseline.unit,
+          for: p.baseline.for,
+          by_kind: p.baseline.by.kind,
+          by_name: p.baseline.by.name,
+          published_on: p.baseline.published_on,
+          source_title: p.baseline.source.title,
+          source_url: p.baseline.source.url,
+          note: p.baseline.note ?? null,
+        }
+      : null,
     sources: f.sources.map((s) => ({ title: s.title, url: s.url, archived_url: s.archived_url ?? null })),
     versions: f.versions.map((v) => ({ version: v.version, text: v.text, recorded_on: v.recorded_on, source_url: v.source_url, quote_checked_on: v.quote_checked_on ?? null, cost: costOf(v.parameters) })),
     events: f.events.map((e) => ({ date: e.date, type: e.type, text: e.text, evidence_url: e.evidence_url ?? null, auto: !!e.auto })),
@@ -347,6 +365,18 @@ export const PROMISE_CSV_COLUMNS = [
   "brought_about_by",
   "cost_costed_by_kind",
   "cost_costed_by_name",
+  // Added 23 Oct 2026 (OpenPromises decision 36), at the end so existing column positions stay the same. The forecast
+  // columns use the engine's open-data names.
+  "target_value",
+  "target_direction",
+  "target_unit",
+  "target_by",
+  "baseline_value",
+  "baseline_unit",
+  "baseline_for",
+  "baseline_by",
+  "baseline_published_on",
+  "baseline_source_url",
 ] as const;
 export type PromiseCsvRow = Record<(typeof PROMISE_CSV_COLUMNS)[number], Cell>;
 
@@ -381,6 +411,16 @@ export function promiseRows(seed: Seed, ctx: Ctx): PromiseCsvRow[] {
     brought_about_by: p.brought_about_by,
     cost_costed_by_kind: p.cost?.costed_by?.kind,
     cost_costed_by_name: p.cost?.costed_by?.name,
+    target_value: p.target?.value,
+    target_direction: p.target?.direction,
+    target_unit: p.target?.unit,
+    target_by: p.target?.by,
+    baseline_value: p.forecast_at_the_time?.value,
+    baseline_unit: p.forecast_at_the_time?.unit,
+    baseline_for: p.forecast_at_the_time?.for,
+    baseline_by: p.forecast_at_the_time?.by_name,
+    baseline_published_on: p.forecast_at_the_time?.published_on,
+    baseline_source_url: p.forecast_at_the_time?.source_url,
   }));
 }
 

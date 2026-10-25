@@ -169,7 +169,7 @@ export function PredictForm({ round, siteUrl, closedAtRender }: { round: ClientR
           </button>
           <span id="predict-progress" className="text-label text-muted" aria-live="polite">
             {answered} of {total} answered
-            {missing.length > 0 && <span className="text-bad"> · {missing.length === 1 ? "one question still needs an answer" : `${missing.length} questions still need an answer`}</span>}
+            {missing.length > 0 && <span className="text-bad">, {missing.length === 1 ? "one question still needs an answer" : `${missing.length} questions still need an answer`}</span>}
           </span>
         </div>
         <p className="m-0 text-caption text-muted" aria-live="polite">
@@ -219,8 +219,11 @@ function QuestionField({
       aria-describedby={missing ? errId : undefined}
     >
       <legend className="float-left grid w-full gap-1 p-0">
-        <span className="text-label font-medium text-muted">
-          {index + 1} of {total} · {q.topic}
+        <span className="flex flex-wrap gap-x-4 text-label font-medium text-muted">
+          <span>
+            {index + 1} of {total}
+          </span>
+          <span>{q.topic}</span>
         </span>
         <span className="text-[17px] font-semibold leading-snug text-ink">{q.text}</span>
       </legend>
@@ -259,13 +262,12 @@ function QuestionField({
           <p className="m-0">
             <span className="font-medium text-ink">Settled by:</span> {q.settled_by}
           </p>
-          <p className="m-0">
-            Sources:{" "}
-            {q.sources.map((s, i) => (
-              <span key={s.url}>
-                {i > 0 && " · "}
-                <a href={s.url}>{s.title}</a>
-              </span>
+          <p className="m-0 flex flex-wrap gap-x-4 gap-y-1">
+            <span>Sources:</span>
+            {q.sources.map((s) => (
+              <a key={s.url} href={s.url}>
+                {s.title}
+              </a>
             ))}
           </p>
         </div>
@@ -351,8 +353,9 @@ function PredictResult({ round, result, siteUrl, resultRef }: { round: ClientRou
           })}
         </ol>
       </div>
-      <p className="m-0 text-label">
-        <a href={result.path}>Your predictions on their own page</a> · <a href="/budget">What the Budget could fund or break</a>
+      <p className="m-0 flex flex-wrap gap-x-6 gap-y-1 text-label">
+        <a href={result.path}>Your predictions on their own page</a>
+        <a href="/budget">What the Budget could fund or break</a>
       </p>
     </section>
   );

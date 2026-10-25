@@ -19,6 +19,6 @@ export default async function Image() {
       { value: String(owners), label: "parties and public bodies" },
       { value: String(costed), label: "with a yearly cost" },
     ],
-    foot: "One standard for every party · every status change backed by evidence",
+    foot: "One standard for every party, every status change backed by evidence",
   });
 }

@@ -185,7 +185,7 @@ function Who({ mp, constituency }: { mp: Mp; constituency: string }) {
         </h1>
         <p className="m-0 text-[15px] text-ink">
           {mp.party?.name ?? "No party"}
-          <span className="text-muted"> · MP since {longDate(mp.since)}</span>
+          <span className="text-muted">, MP since {longDate(mp.since)}</span>
         </p>
       </div>
       <p className="col-span-2 m-0 flex flex-wrap gap-x-5 gap-y-1 text-label">
@@ -400,10 +400,10 @@ function OneVote({ v, group }: { v: Vote; group: VoteGroupView }) {
         </a>
         <Pill>{howTheyVoted(v)}</Pill>
       </div>
-      <p className="m-0 text-label text-muted">
-        {question ?? stage ?? ""}
-        {question || stage ? " · " : ""}
-        {longDate(v.date)} · {resultText(v)}
+      <p className="m-0 flex flex-wrap gap-x-4 gap-y-0.5 text-label text-muted">
+        {(question ?? stage) && <span>{question ?? stage}</span>}
+        <span>{longDate(v.date)}</span>
+        <span>{resultText(v)}</span>
       </p>
       <CardLinks group={group} />
     </div>
@@ -423,9 +423,11 @@ function VoteGroupRow({ group: g }: { group: VoteGroupView }) {
           </span>
           <Pill>{groupTally(g)}</Pill>
         </span>
-        <span className="pl-4 text-label text-muted">
-          {g.votes.length} votes · {dayRange(g.first, g.last)}
-          <span className="group-open:hidden"> · Show each vote</span>
+        <span className="flex flex-wrap gap-x-4 gap-y-0.5 pl-4 text-label text-muted">
+          <span>
+            {g.votes.length} votes, {dayRange(g.first, g.last)}
+          </span>
+          <span className="group-open:hidden">Show each vote</span>
         </span>
       </summary>
       <div className="grid gap-3 px-3 pb-4 pl-7">
@@ -442,9 +444,10 @@ function VoteGroupRow({ group: g }: { group: VoteGroupView }) {
                   </a>
                   <span className="text-label font-semibold text-ink">{howTheyVoted(v)}</span>
                 </span>
-                <span className="text-caption text-muted">
-                  {question && stage ? `${stage} · ` : ""}
-                  {longDate(v.date)} · {resultText(v)}
+                <span className="flex flex-wrap gap-x-3 gap-y-0.5 text-caption text-muted">
+                  {question && stage && <span>{stage}</span>}
+                  <span>{longDate(v.date)}</span>
+                  <span>{resultText(v)}</span>
                 </span>
               </li>
             );

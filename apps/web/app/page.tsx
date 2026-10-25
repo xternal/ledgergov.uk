@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { PromiseSpotlight } from "@openpromises/react";
-import { getSeed, getSpotlight } from "@/lib/data";
+import { getPeople, getSeed, getSpotlight } from "@/lib/data";
 import { FAQ } from "@/lib/faq";
 import { todayIso } from "@/lib/promises";
 import { absolute, MAKER, OPEN_GRAPH, SITE_DESCRIPTION, SITE_NAME } from "@/lib/site";
 import { JsonLd } from "@/components/JsonLd";
 import { Ledger } from "@/components/Ledger";
+import { homeData } from "@/lib/home";
 
 const TITLE = "LedgerGov.UK: where UK public money comes from and goes";
 
@@ -49,18 +50,14 @@ function structuredData() {
 }
 
 export default function Home() {
-  // Promises close to the way in (OpenPromises decision 30): the engine's spotlight, second after the opening, and the
-  // opening's "N promises tracked →". The engine picks the cards by its rule, never by hand. Built for the build day,
-  // like /promises.
-  const s = getSpotlight(todayIso());
+  // Promises close to the way in (OpenPromises decision 30): the first screen's promise tiles and logbook, then the
+  // engine's spotlight. Both pick the cards by a fixed rule, never by hand. Built for the build day, like /promises.
+  const today = todayIso();
+  const s = getSpotlight(today);
   return (
     <>
       <JsonLd data={structuredData()} />
-      <Ledger
-        seed={getSeed()}
-        tracked={s.tracked}
-        spotlight={<PromiseSpotlight views={s.views} config={s.config} today={s.today} actors={s.actors} />}
-      />
+      <Ledger seed={getSeed()} home={homeData(getSeed(), today, getPeople())} spotlight={<PromiseSpotlight views={s.views} config={s.config} today={s.today} actors={s.actors} />} />
     </>
   );
 }

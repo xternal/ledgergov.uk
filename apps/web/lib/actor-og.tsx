@@ -52,7 +52,8 @@ export async function actorImage(a: ActorImage) {
       <div style={{ display: "flex", flexDirection: "column", flexGrow: 1, flexBasis: 0, minWidth: 0 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 26, fontWeight: 600 }}>
           <img src={MARK_DATA_URI} width={26} height={26} alt="" />
-          LedgerGov.UK · Promises
+          LedgerGov.UK
+          <span style={{ marginLeft: 10, color: OG.muted }}>Promises</span>
         </div>
         <div style={{ display: "flex", fontSize: nameSize, fontWeight: 600, letterSpacing: -2.4, lineHeight: 1.05, marginTop: 40 }}>{a.name}</div>
         {a.role && <div style={{ display: "flex", fontSize: 28, color: OG.muted, marginTop: 12 }}>{a.role}</div>}
@@ -69,7 +70,7 @@ export async function actorImage(a: ActorImage) {
             ))}
           </div>
         )}
-        <div style={{ display: "flex", marginTop: a.total ? 22 : "auto", fontSize: 20, color: OG.muted }}>Every promise word for word · one standard for every party</div>
+        <div style={{ display: "flex", marginTop: a.total ? 22 : "auto", fontSize: 20, color: OG.muted }}>Every promise word for word, one standard for every party</div>
       </div>
     </div>,
     { ...OG.size, fonts },
