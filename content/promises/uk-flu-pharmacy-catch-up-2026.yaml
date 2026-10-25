@@ -1,0 +1,64 @@
+format: openpromises/1
+id: uk-flu-pharmacy-catch-up-2026
+headline:
+  en: Flu jab catch-up for pupils at pharmacies
+actor_id: hm-government
+made_on: "2026-10-22"
+venue: press_release
+venue_label:
+  en: Press release (Department of Health and Social Care)
+area: health
+status: promised
+status_note:
+  en: >-
+    The release says school vaccination teams have been asked to visit every school by the end of
+    November, and that the school-age catch-up at pharmacies starts on 1 December. It gives no cost
+    and no figure for how many children it should reach. The card moves when the catch-up programme
+    opens at community pharmacies.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department of Health and Social Care press release, 22 Oct 2026: Social media campaign urges
+      Brits to get vaccinated for winter
+    url: https://www.gov.uk/government/news/social-media-campaign-urges-brits-to-get-vaccinated-for-winter
+versions:
+  - version: 1
+    text: >-
+      In a further effort to see more kids vaccinated against the flu, later this year the
+      government will launch the first ever ‘catch-up’ programme from community pharmacies for
+      school children who missed their vaccinations earlier in the year.
+    recorded_on: "2026-10-22"
+    source_url: https://www.gov.uk/government/news/social-media-campaign-urges-brits-to-get-vaccinated-for-winter
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: School-age children in England who missed their flu vaccination at school
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: From 1 December 2026
+      deadline: "2026-12-01"
+      funded_by: null
+events:
+  - date: "2026-10-22"
+    type: promised
+    text:
+      en: >-
+        The government says it will launch the first catch-up flu vaccination programme for
+        schoolchildren at community pharmacies later this year
+  - date: "2026-12-01"
+    type: deadline
+    text:
+      en: School-age flu catch-up at pharmacies due to start on 1 December 2026
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

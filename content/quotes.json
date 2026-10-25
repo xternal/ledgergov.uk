@@ -65,6 +65,18 @@
     "checked_on": "2026-10-25",
     "sha256": "d1934e2e982eb22ccf209683cd1200773a74a5fe5ead4566e4b9f1d6f40cca6c"
   },
+  "1ac9225cd758a15bbeba45b395eddb39b648cdac619fa9e4de6e66719586d35c|https://www.gov.uk/government/news/households-to-receive-150-warm-home-discount-confirmation-letter": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/households-to-receive-150-warm-home-discount-confirmation-letter",
+    "checked_on": "2026-10-25",
+    "sha256": "c0d30e14b5242035885a62c45c1229438f572c441f59faf37f5d4f11eb3defd5"
+  },
+  "1b169e5548854e73872b6a4a2760e31e6bb423b78771b7f04ac91f646709b7a1|https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky",
+    "checked_on": "2026-10-25",
+    "sha256": "c3d85025bc53c437665d09ca029db9a9ae6b61286d260c8237a20c2a08ac950d"
+  },
   "1cf5fe849c032f02f92caa45d284871a08e41b10f8516b3f373f756b23683fd8|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364",
@@ -323,6 +335,12 @@
     "checked_on": "2026-10-25",
     "sha256": "10a5c8d720829b8a3086ca68c3390350f74a5cd6b54f67a449a4e43ecf36a88f"
   },
+  "704d2801840a73e7ca32a980ee2a921687c6fb2a33f342ee7f2c7457899366b8|https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky",
+    "checked_on": "2026-10-25",
+    "sha256": "c3d85025bc53c437665d09ca029db9a9ae6b61286d260c8237a20c2a08ac950d"
+  },
   "728fe00a46fd71c5b8583e23023543abc9b05ddcf751914d4a2f72521f20f826|https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements": {
     "match": "exact",
     "url": "https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements",
@@ -448,6 +466,12 @@
     "url": "https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023",
     "checked_on": "2026-10-20",
     "sha256": "bfd72905eb5de7945125ec6ab889eb1ae2502aa5b2bdb4cfe08771d62391338c"
+  },
+  "9817c0f5a96c2ffd4fe4837d6569ad2b853c28dd4cb9b7375812a156284a1060|https://www.gov.uk/government/consultations/make-work-pay-enhanced-dismissal-protections-for-pregnant-women-and-new-mothers/outcome/government-response-to-enhanced-dismissal-protections-for-pregnant-women-and-new-mothers": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/consultations/make-work-pay-enhanced-dismissal-protections-for-pregnant-women-and-new-mothers/outcome/government-response-to-enhanced-dismissal-protections-for-pregnant-women-and-new-mothers",
+    "checked_on": "2026-10-25",
+    "sha256": "9916dd43f3217e29fd70245d893a27cfb68fa32e5a372d45e179da426951dc3c"
   },
   "984023e6bc54ef27f53f0b4f56f120c10f399c5161318da70261b13b888235a1|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354": {
     "match": "exact",
@@ -587,6 +611,12 @@
     "checked_on": "2026-10-20",
     "sha256": "c79d855fc8c2769495952531f555367d6e71dca115ce0f8d0041e640d16c1527"
   },
+  "bea1311c69794367a20ec5b7b2aa23641a3d1fa34ef56cc4f9d43d0ee48c2a16|https://www.gov.uk/government/publications/government-response-to-the-hsccs-report-on-healthy-ageing-and-physical-activity/government-response-to-the-health-and-social-care-committees-eighth-report-of-2024-to-2026-healthy-ageing-physical-activity-in-an-ageing-society": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/government-response-to-the-hsccs-report-on-healthy-ageing-and-physical-activity/government-response-to-the-health-and-social-care-committees-eighth-report-of-2024-to-2026-healthy-ageing-physical-activity-in-an-ageing-society",
+    "checked_on": "2026-10-25",
+    "sha256": "05fdcd9a102f45aae71d0b559caf4a6d5658acae90cccababcf6cc6ef8c1827c"
+  },
   "bf09bcfa6c3ea5108d2d81b3dd4e081242201999df09cb05d2e99b22e8896924|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372",
@@ -611,6 +641,12 @@
     "checked_on": "2026-10-16",
     "sha256": "910fdca8d34dc6b7b3011c7da57ded84a7c821ac3663cd24096ee6eec8cfbcf4"
   },
+  "c3392857ea9d22ced6ee122eb6c38c788e22dc8f34ae672c53af3b50d3e3b943|https://www.gov.uk/government/news/subsea-cable-saboteurs-face-jail-and-unlimited-fines-under-new-security-crackdown": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/subsea-cable-saboteurs-face-jail-and-unlimited-fines-under-new-security-crackdown",
+    "checked_on": "2026-10-25",
+    "sha256": "955034ab80e45ebf4ed2b2c7af3d94cba46a452af071a7573fa7d620037186c4"
+  },
   "c431306540af1368afd884c0cd4861cdcd0e424a12b4464eab236aaed78300b9|https://www.gov.uk/government/speeches/prime-ministers-speech-on-britain-built-for-all-1-december-2025": {
     "match": "exact",
     "url": "https://www.gov.uk/government/speeches/prime-ministers-speech-on-britain-built-for-all-1-december-2025",
@@ -628,6 +664,12 @@
     "url": "https://www.gov.uk/government/speeches/pm-words-on-gaza-29-july-2025",
     "checked_on": "2026-10-20",
     "sha256": "26887eed8b2c5694ad049a69a80402e2457524f7cd58874c7eee3b1c2019c5de"
+  },
+  "cb2112723e9dbfaaaa167051e9c20756362ab782365c4904e6fef374ca8b9bd7|https://www.gov.uk/government/news/social-media-campaign-urges-brits-to-get-vaccinated-for-winter": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/social-media-campaign-urges-brits-to-get-vaccinated-for-winter",
+    "checked_on": "2026-10-25",
+    "sha256": "9083f22c485270016997180f53de4fd7c5cc6ede1a9977538e47d16691ef2a27"
   },
   "ccdc7e2f68ac8acf5149ff7ca25558e14552e8e012570a3176ac0c0e106fc70c|https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson": {
     "match": "exact",
@@ -664,6 +706,12 @@
     "url": "https://www.gov.uk/government/speeches/pm-statement-on-the-infected-blood-inquiry-20-may-2024",
     "checked_on": "2026-10-20",
     "sha256": "490b1465138e71eebba6562a87798e7c0e5bee7e5f6e9b5e1ac4659cec0d2ac4"
+  },
+  "d2505790ad62050cf1d4080b19fe3222add4f960a40a932991e92add13f5eac6|https://www.gov.uk/government/publications/government-response-to-the-hsccs-report-on-healthy-ageing-and-physical-activity/government-response-to-the-health-and-social-care-committees-eighth-report-of-2024-to-2026-healthy-ageing-physical-activity-in-an-ageing-society": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/government-response-to-the-hsccs-report-on-healthy-ageing-and-physical-activity/government-response-to-the-health-and-social-care-committees-eighth-report-of-2024-to-2026-healthy-ageing-physical-activity-in-an-ageing-society",
+    "checked_on": "2026-10-25",
+    "sha256": "05fdcd9a102f45aae71d0b559caf4a6d5658acae90cccababcf6cc6ef8c1827c"
   },
   "d397783b5e5e0a5be64d20b8f5ab7ce2829e6effdfac6affe8926aba55dc0ae3|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS374": {
     "match": "exact",

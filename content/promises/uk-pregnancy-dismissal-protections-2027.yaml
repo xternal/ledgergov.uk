@@ -1,0 +1,68 @@
+format: openpromises/1
+id: uk-pregnancy-dismissal-protections-2027
+headline:
+  en: Stronger dismissal protection for parents
+actor_id: hm-government
+made_on: "2026-10-22"
+venue: press_release
+venue_label:
+  en: Government response to enhanced dismissal protections for pregnant women and new mothers
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    Part of the plan to Make Work Pay. The department's press release says the measures include
+    replacing the band of reasonable responses test with a proportionality test from October 2027.
+    "October 2027" is read as 31 October 2027. The card moves when the regulations are made.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Business, Innovation, Science and Trade, 22 Oct 2026: Government response to
+      enhanced dismissal protections for pregnant women and new mothers
+    url: https://www.gov.uk/government/consultations/make-work-pay-enhanced-dismissal-protections-for-pregnant-women-and-new-mothers/outcome/government-response-to-enhanced-dismissal-protections-for-pregnant-women-and-new-mothers
+  - title: >-
+      Department for Business, Innovation, Science and Trade press release, 22 Oct 2026: Stronger
+      protections for pregnant women and new parents against unfair dismissal
+    url: https://www.gov.uk/government/news/stronger-protections-for-pregnant-women-and-new-parents-against-unfair-dismissal
+versions:
+  - version: 1
+    text: >-
+      The government will take forward the measures set out in this response, strengthening
+      dismissal protections for pregnant women, new mothers and other parents. These changes will be
+      implemented through regulations, with the government intending for measures to come into force
+      in October 2027.
+    recorded_on: "2026-10-22"
+    source_url: https://www.gov.uk/government/consultations/make-work-pay-enhanced-dismissal-protections-for-pregnant-women-and-new-mothers/outcome/government-response-to-enhanced-dismissal-protections-for-pregnant-women-and-new-mothers
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: Pregnant women, new mothers and other parents at work
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: In force from October 2027
+      deadline: "2027-10-31"
+      funded_by: null
+events:
+  - date: "2026-10-22"
+    type: promised
+    text:
+      en: >-
+        The government says stronger dismissal protections for pregnant women, new mothers and other
+        parents will come into force in October 2027
+  - date: "2027-10-31"
+    type: deadline
+    text:
+      en: Stronger dismissal protections due in force in October 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
