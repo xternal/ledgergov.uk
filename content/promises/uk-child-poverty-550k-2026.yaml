@@ -1,0 +1,59 @@
+format: openpromises/1
+id: uk-child-poverty-550k-2026
+headline:
+  en: Lift 550,000 children out of poverty
+actor_id: hm-government
+made_on: "2026-10-23"
+venue: press_release
+venue_label:
+  en: Press release (Department for Work and Pensions)
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    Stated in a release about the Child Maintenance Service, which calls it the largest reduction in
+    child poverty since records began. The release does not say which measure of poverty is used or
+    when the final year of this Parliament is, so the card has no deadline. The card moves when
+    official child poverty statistics for that year are published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Work and Pensions press release, 23 Oct 2026: More money reaching children than
+      ever thanks to Child Maintenance Service
+    url: https://www.gov.uk/government/news/more-money-reaching-children-than-ever-thanks-to-child-maintenance-service
+versions:
+  - version: 1
+    text: >-
+      Child maintenance plays a vital role in tackling child poverty, with the Government set to
+      lift 550,000 children out of poverty in the final year of this Parliament, thanks to action
+      including the lifting of the two-child benefit limit.
+    recorded_on: "2026-10-23"
+    source_url: https://www.gov.uk/government/news/more-money-reaching-children-than-ever-thanks-to-child-maintenance-service
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: Children in poverty
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: In the final year of this Parliament
+      funded_by: null
+events:
+  - date: "2026-10-23"
+    type: promised
+    text:
+      en: >-
+        The government says it is set to lift 550,000 children out of poverty in the final year of
+        this Parliament
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
