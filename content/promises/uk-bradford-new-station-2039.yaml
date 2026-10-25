@@ -1,0 +1,64 @@
+format: openpromises/1
+id: uk-bradford-new-station-2039
+headline:
+  en: New Bradford station in the 2030s
+actor_id: heidi-alexander
+made_on: "2026-10-20"
+venue: press_release
+venue_label:
+  en: Press release (Department for Transport)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The government confirmed Bradford Interchange as the site of a new station for Northern
+    Powerhouse Rail, chosen with the Mayor of West Yorkshire. The release gives no cost and no year
+    within the 2030s, so the card takes the last day of the decade, 31 December 2039, as its
+    deadline. The card moves when money is allocated or construction starts.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Transport press release, 20 Oct 2026: Full steam ahead: new station for
+      Bradford
+    url: https://www.gov.uk/government/news/full-steam-ahead-new-station-for-bradford
+versions:
+  - version: 1
+    text: >-
+      The new GBR station will be delivered in the 2030s and replace the outdated 1970s station,
+      providing the modern transport hub that Bradford deserves.
+    recorded_on: "2026-10-20"
+    source_url: https://www.gov.uk/government/news/full-steam-ahead-new-station-for-bradford
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: Rail passengers in Bradford and across the North
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: In the 2030s
+      deadline: "2039-12-31"
+      funded_by: null
+events:
+  - date: "2026-10-20"
+    type: promised
+    text:
+      en: >-
+        The Transport Secretary says a new station at Bradford Interchange will be delivered in the
+        2030s, replacing the 1970s station
+  - date: "2039-12-31"
+    type: deadline
+    text:
+      en: >-
+        New Bradford station due in the 2030s (editorial date: end of 2039)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
