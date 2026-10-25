@@ -51,6 +51,11 @@ versions:
             The government's own figure: the youth strand is backed by £24 million over three years,
             shown as £8 million a year on average. The plan does not say which three years. Low–high
             is an editorial ±10% because the source gives a central figure only.
+        sources:
+          - title: >-
+              Department for Digital, Culture, Media and Sport, 21 Oct 2026: Digital and
+              Technologies Jobs Plan
+            url: https://www.gov.uk/government/publications/digital-and-technologies-jobs-plan/digital-and-technologies-jobs-plan
       when:
         en: By 2028
       deadline: "2028-12-31"
