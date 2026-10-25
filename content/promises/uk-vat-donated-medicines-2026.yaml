@@ -1,0 +1,61 @@
+format: openpromises/1
+id: uk-vat-donated-medicines-2026
+headline:
+  en: Remove VAT barrier to donated medicines
+actor_id: andy-burnham
+made_on: "2026-10-21"
+venue: parliament
+venue_label:
+  en: >-
+    Prime Minister's Questions
+area: taxes
+status: promised
+status_note:
+  en: >-
+    Asked about a patient whose cancer drug was no longer given free after a drug company left a
+    compassionate use scheme following the government's VAT changes, the Prime Minister said the
+    Exchequer Secretary has announced a new approach. He gave no cost and no date for the details.
+    The card moves when the government publishes the change.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Hansard, House of Commons, 21 Oct 2026: Engagements (Prime Minister's Questions)
+    url: https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements
+versions:
+  - version: 1
+    text: >-
+      We have been working on a solution that will remove VAT as a barrier to free-of-charge
+      donations of innovative medicines. It will be permanent, backdated to 23 June, so that it
+      supports companies to continue to make donations. We will set out the details shortly
+    recorded_on: "2026-10-21"
+    source_url: https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: >-
+          Patients receiving innovative medicines donated free of charge, and the companies that
+          donate them
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Backdated to 23 June; details to follow shortly
+      funded_by: null
+events:
+  - date: "2026-10-21"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister says the government will remove VAT as a barrier to free donations of
+        innovative medicines, permanently and backdated to 23 June
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

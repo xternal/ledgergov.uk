@@ -1,0 +1,72 @@
+format: openpromises/1
+id: uk-techfirst-women-300-2027
+headline:
+  en: 300 women into tech jobs by March 2027
+actor_id: hm-government
+made_on: "2026-10-21"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Department for Digital, Culture, Media and Sport and Department for Business,
+    Innovation, Science and Trade)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The TechFirst Women's Programme offers mentoring, skills development and matching with live
+    vacancies. The Digital and Technologies Jobs Plan, published the same day, says at least 300
+    women will be supported into paid roles in frontier technologies such as AI, cyber security and
+    quantum. Neither gives a cost. The card moves when the government reports how many women on the
+    programme are in paid roles.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Digital, Culture, Media and Sport and Department for Business, Innovation,
+      Science and Trade press release, 21 Oct 2026: 10,000 young people to get foot in the door of
+      Britain's tech sector as work placements rolled out across the country
+    url: https://www.gov.uk/government/news/10000-young-people-to-get-foot-in-the-door-of-britains-tech-sector-as-work-placements-rolled-out-across-the-country
+  - title: >-
+      Department for Digital, Culture, Media and Sport, 21 Oct 2026: Digital and Technologies Jobs
+      Plan
+    url: https://www.gov.uk/government/publications/digital-and-technologies-jobs-plan/digital-and-technologies-jobs-plan
+versions:
+  - version: 1
+    text: >-
+      Through the TechFirst Women’s Programme, 300 women across the UK will receive mentoring,
+      skills development and matching with live vacancies, with the aim of securing paid roles
+      lasting at least six months by March 2027.
+    recorded_on: "2026-10-21"
+    source_url: https://www.gov.uk/government/news/10000-young-people-to-get-foot-in-the-door-of-britains-tech-sector-as-work-placements-rolled-out-across-the-country
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: Women across the UK moving into technology jobs
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: By March 2027
+      deadline: "2027-03-31"
+      funded_by: null
+events:
+  - date: "2026-10-21"
+    type: promised
+    text:
+      en: >-
+        The government aims for 300 women on the TechFirst Women's Programme to secure paid roles of
+        at least six months by March 2027
+  - date: "2027-03-31"
+    type: deadline
+    text:
+      en: 300 women in paid tech roles due by March 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

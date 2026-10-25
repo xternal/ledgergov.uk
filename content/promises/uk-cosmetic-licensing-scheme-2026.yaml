@@ -1,0 +1,65 @@
+format: openpromises/1
+id: uk-cosmetic-licensing-scheme-2026
+headline:
+  en: License lower-risk cosmetic procedures
+actor_id: karin-smyth
+made_on: "2026-10-21"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: health
+status: promised
+status_note:
+  en: >-
+    The minister made the commitment alongside a consultation on restricting the highest-risk
+    procedures to regulated professionals. The Department of Health and Social Care's release the
+    same day names Botox and lip filler among the lower-risk treatments. Neither gives a date within
+    this Parliament, so the card has no deadline. The card moves when the licensing scheme is set
+    out in regulations.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS402, 21 Oct 2026: Cosmetic regulations consultation
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS402
+  - title: >-
+      Department of Health and Social Care press release, 21 Oct 2026: Cosmetic cowboys crackdown
+      continues with new restrictions
+    url: https://www.gov.uk/government/news/cosmetic-cowboys-crackdown-continues-with-new-restrictions
+versions:
+  - version: 1
+    text: >-
+      We are also committed to introducing a local authority licensing scheme for lower-risk
+      cosmetic procedures in the current Parliament, ensuring that practitioners are appropriately
+      trained, insured, and working to safe standards.
+    recorded_on: "2026-10-21"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS402
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: >-
+          People having lower-risk cosmetic treatments such as Botox and fillers, and the
+          practitioners who provide them
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: In the current Parliament
+      funded_by: null
+events:
+  - date: "2026-10-21"
+    type: promised
+    text:
+      en: >-
+        The health minister commits to a local authority licensing scheme for lower-risk cosmetic
+        procedures in this Parliament
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
