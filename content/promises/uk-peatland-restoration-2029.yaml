@@ -51,6 +51,12 @@ versions:
             2027 to April 2029, shown as £12.5 million a year over two years. The release gives no
             split by year. Low–high is an editorial ±10% because the source gives a central figure
             only.
+        sources:
+          - title: >-
+              Ministry of Housing, Communities and Local Government, Ministry of Defence and Prime
+              Minister's Office press release, 22 Oct 2026: Military planes and helicopters to fight
+              wildfires from the sky
+            url: https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky
       when:
         en: April 2027 to April 2029
       deadline: "2029-04-30"
