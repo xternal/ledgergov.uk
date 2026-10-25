@@ -377,6 +377,12 @@
     "checked_on": "2026-10-20",
     "sha256": "12ce778db5289a4d1689197aea05d42d4f0a1bab4858cea36d71cd2115a9b551"
   },
+  "8df5ddb0bfeea118dca80b7000ad598024675ec32dfb48c6e250bbf0f139238c|https://www.gov.uk/government/news/more-money-reaching-children-than-ever-thanks-to-child-maintenance-service": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/more-money-reaching-children-than-ever-thanks-to-child-maintenance-service",
+    "checked_on": "2026-10-25",
+    "sha256": "69c607a764da8bf7ead51467df49260babd52986800adac08a64c44c15a3782c"
+  },
   "9258e20d58afe05e95754a06bb5d29d5b24ecb83d9bbad0e86d7c0ff346a39e8|https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced",
@@ -418,6 +424,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372",
     "checked_on": "2026-10-16",
     "sha256": "ad43865dd9295d4ab74c26e2dfb01d42bb9ada1b8de1a5a82be852bca730eb51"
+  },
+  "a1dcff76168e7f6b5df81f033649853b0b883269f4437b701c28f81c16a951d6|https://www.gov.uk/government/news/uk-france-deepen-nuclear-defence-ties-in-first-joint-exercise": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/uk-france-deepen-nuclear-defence-ties-in-first-joint-exercise",
+    "checked_on": "2026-10-25",
+    "sha256": "7fbc52fe1bb66de7860d973025defb3e7025f0c093129d42eda5e5d18d92e0dd"
   },
   "a2864f4ecb99211186b5836fc9931689eb2643119fc306ce41e000298373760d|https://hansard.parliament.uk/Commons/2026-10-13/debates/72F06588-BF33-4C21-8542-EE9E1293D7C9/PensionsTripleLock": {
     "match": "exact",

@@ -1,0 +1,57 @@
+format: openpromises/1
+id: uk-f35a-nato-nuclear-2026
+headline:
+  en: Buy 12 F-35A jets for NATO nuclear role
+actor_id: hm-government
+made_on: "2026-10-23"
+venue: press_release
+venue_label:
+  en: Press release (Ministry of Defence)
+area: defence
+status: promised
+status_note:
+  en: >-
+    Restated in a release about the first joint UK–France nuclear air exercise; the release does not
+    say when the purchase was first announced. It gives no cost or delivery date for the aircraft.
+    The card moves when the aircraft are ordered or the UK joins NATO's nuclear mission.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Defence press release, 23 Oct 2026: UK-France deepen nuclear defence ties in first
+      joint exercise
+    url: https://www.gov.uk/government/news/uk-france-deepen-nuclear-defence-ties-in-first-joint-exercise
+versions:
+  - version: 1
+    text: >-
+      The UK will also buy 12 F-35A aircraft and join NATO’s nuclear mission, delivering a more
+      European NATO and reinforcing the UK’s contribution to collective defence.
+    recorded_on: "2026-10-23"
+    source_url: https://www.gov.uk/government/news/uk-france-deepen-nuclear-defence-ties-in-first-joint-exercise
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: The Royal Air Force and NATO allies
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-23"
+    type: promised
+    text:
+      en: >-
+        The government repeats that the UK will buy 12 F-35A aircraft and join NATO's nuclear
+        mission
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
