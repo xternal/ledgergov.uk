@@ -137,6 +137,12 @@
     "checked_on": "2026-10-20",
     "sha256": "16e61777c2b4818c64ba63320948e27f08111ad8bac41ce5d3ab6ea75ad23152"
   },
+  "401354fae3cea11049c4c2728e10bdfc17a1581443a45ec626759c453ac4712c|https://www.gov.uk/government/news/serious-offenders-detained-in-hospital-will-no-longer-receive-benefits": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/serious-offenders-detained-in-hospital-will-no-longer-receive-benefits",
+    "checked_on": "2026-10-25",
+    "sha256": "47f18477da7406ea2b58765605cc0a89ba4981aaa99dd05d5992920b65ef557c"
+  },
   "40430d87416af16b679d25d5a3a29083946fb7239392ac50b511475ee0e6b18e|https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson",
@@ -190,6 +196,12 @@
     "url": "https://www.gov.uk/government/news/prime-minister-blocks-hundreds-more-criminals-from-sentencing-changes",
     "checked_on": "2026-10-20",
     "sha256": "457492381f7ff3ed6a8ab410000421be41c5b349a249eee58e2ed8c841d9851e"
+  },
+  "4e2b71b96e7925ac4598bbf213277672aaf66ee36e0f608ce4ce7c62536afddd|https://www.gov.uk/government/news/domestic-abusers-face-eviction-as-survivors-gain-housing-rights": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/domestic-abusers-face-eviction-as-survivors-gain-housing-rights",
+    "checked_on": "2026-10-25",
+    "sha256": "c3dd434aaba0bb8f837df0388ddb40a327f32b4bbfb70f18429a6bc9d7d0b381"
   },
   "4eb10f46fc96b2b094322ca0ffa85587533ed1d4f808ce8c8fad879227b584c2|https://www.gov.uk/government/speeches/pm-speech-launching-the-nhs-long-term-workforce-plan-30-june-2023": {
     "match": "exact",
@@ -599,6 +611,12 @@
     "checked_on": "2026-10-20",
     "sha256": "490b1465138e71eebba6562a87798e7c0e5bee7e5f6e9b5e1ac4659cec0d2ac4"
   },
+  "d38ebe115291387387a2d830b0d3e730ab84d61345fe960ac241704c1ce37316|https://www.gov.uk/government/news/full-steam-ahead-new-station-for-bradford": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/full-steam-ahead-new-station-for-bradford",
+    "checked_on": "2026-10-25",
+    "sha256": "93c4e1c96a027cbffe36af61e16668ba76730d6cd3496e50b05119756ba35108"
+  },
   "d397783b5e5e0a5be64d20b8f5ab7ce2829e6effdfac6affe8926aba55dc0ae3|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS374": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS374",
@@ -635,6 +653,12 @@
     "checked_on": "2026-10-18",
     "sha256": "1c87a61e8ba9d89355cb72cb183698c58479d11a33d214616536ce2d011fd9cc"
   },
+  "e364a6f31af05419a57cbab90df8932f65baaf9f7e1646b07a1d4a5c9f785a8f|https://www.gov.uk/government/news/domestic-abusers-face-eviction-as-survivors-gain-housing-rights": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/domestic-abusers-face-eviction-as-survivors-gain-housing-rights",
+    "checked_on": "2026-10-25",
+    "sha256": "c3dd434aaba0bb8f837df0388ddb40a327f32b4bbfb70f18429a6bc9d7d0b381"
+  },
   "e5c1896ed5bcb7470a741b845d6d854d0b34f8929a2951a3efe1be67a27fe9f7|https://www.gov.uk/government/news/major-milestone-reached-in-ending-building-safety-crisis": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/major-milestone-reached-in-ending-building-safety-crisis",
@@ -646,6 +670,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363",
     "checked_on": "2026-10-13",
     "sha256": "2be9cdd3c28ee95ac9dfdbcd904cc4eb373252e6f33d22d3f72fadb7e53da8a0"
+  },
+  "eeaebf26eb5bd489a102b08750b88d1ee0883c51264758ea6a5fe5d1010b2012|https://www.gov.uk/government/consultations/private-parking-code-of-practice/outcome/private-parking-code-of-practice-government-response": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/consultations/private-parking-code-of-practice/outcome/private-parking-code-of-practice-government-response",
+    "checked_on": "2026-10-25",
+    "sha256": "f33227571caae8023c622e96c18f27dd46c056d1f883a31165f8f43a7304d55c"
   },
   "ef2bb357085bff3b2aa419becb5b765358dcc4fa2d2e392da566e3f0dc5ff7c3|https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines": {
     "match": "exact",

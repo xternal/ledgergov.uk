@@ -1,0 +1,63 @@
+format: openpromises/1
+id: uk-tmo-freedom-of-information-2027
+headline:
+  en: Freedom of Information for tenant bodies
+actor_id: hm-government
+made_on: "2026-10-20"
+venue: press_release
+venue_label:
+  en: Press release (Ministry of Housing, Communities and Local Government)
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    Tenant Management Organisations let council tenants run their own housing services. The release
+    says residents will be able to request information about repairs, estate management and rent
+    collection. "From April 2027" is read as a deadline of 30 April 2027. The card moves when the
+    change is made in law or the organisations start answering Freedom of Information requests.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government press release, 20 Oct 2026: Domestic
+      abusers face eviction as survivors gain housing rights
+    url: https://www.gov.uk/government/news/domestic-abusers-face-eviction-as-survivors-gain-housing-rights
+versions:
+  - version: 1
+    text: >-
+      Also confirmed today, from April 2027 Tenant Management Organisations that manage council
+      housing will be brought under Freedom of Information rules.
+    recorded_on: "2026-10-20"
+    source_url: https://www.gov.uk/government/news/domestic-abusers-face-eviction-as-survivors-gain-housing-rights
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: Council tenants whose homes are managed by Tenant Management Organisations
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: From April 2027
+      deadline: "2027-04-30"
+      funded_by: null
+events:
+  - date: "2026-10-20"
+    type: promised
+    text:
+      en: >-
+        The government confirms Tenant Management Organisations that manage council housing will
+        come under Freedom of Information rules from April 2027
+  - date: "2027-04-30"
+    type: deadline
+    text:
+      en: Tenant Management Organisations due under Freedom of Information rules from April 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

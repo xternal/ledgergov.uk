@@ -1,0 +1,62 @@
+format: openpromises/1
+id: uk-abusers-made-to-leave-2026
+headline:
+  en: Abusers, not survivors, made to leave
+actor_id: hm-government
+made_on: "2026-10-20"
+venue: press_release
+venue_label:
+  en: Press release (Ministry of Housing, Communities and Local Government)
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The Housing Secretary, Angela Rayner, said: "We are changing the law so the perpetrator, not the
+    survivor, can be made to leave." The change is an amendment tabled on 20 October 2026 to the
+    Social Housing Bill, introduced on 14 May 2026. The release says survivors will no longer have
+    to prove abuse again where a protective order is already in place, because the order will be
+    enough for a court to consider possession, and that the Bill's reforms protect joint tenancies
+    from abusive partners. It gives no date. The card moves when the Social Housing Bill becomes law
+    with this measure in it.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government press release, 20 Oct 2026: Domestic
+      abusers face eviction as survivors gain housing rights
+    url: https://www.gov.uk/government/news/domestic-abusers-face-eviction-as-survivors-gain-housing-rights
+versions:
+  - version: 1
+    text: >-
+      For the first time, domestic abuse survivors will be protected in social housing law without
+      having to flee, helping them keep their tenancy and stay safely in their home while the
+      perpetrator is made to leave.
+    recorded_on: "2026-10-20"
+    source_url: https://www.gov.uk/government/news/domestic-abusers-face-eviction-as-survivors-gain-housing-rights
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: Survivors of domestic abuse in social housing
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: When the Social Housing Bill becomes law (date not stated)
+      funded_by: null
+events:
+  - date: "2026-10-20"
+    type: promised
+    text:
+      en: >-
+        The government says social housing law will protect domestic abuse survivors so they can
+        keep their tenancy while the perpetrator is made to leave
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
