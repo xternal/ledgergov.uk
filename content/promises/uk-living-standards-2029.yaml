@@ -1,0 +1,79 @@
+format: openpromises/1
+id: uk-living-standards-2029
+headline:
+  en: Raise household income and GDP per head
+actor_id: keir-starmer
+made_on: "2024-12-05"
+venue: press_release
+venue_label:
+  en: "Press release on the Plan for Change milestones (Prime Minister's Office)"
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The Plan for Change measures the milestone by higher real household disposable income (RHDI) per
+    person and GDP per head by the end of the Parliament, and names no starting point. In the second
+    quarter of 2026, real GDP per head rose 0.5% and was 1.2% higher than a year earlier; RHDI per
+    head rose 1.0%, after falling 0.8% in the first quarter (Office for National Statistics, 30
+    September 2026). The highest sustained growth in the G7 is stated as an aim and is not scored.
+    The end of the Parliament is taken as 1 July 2029, as on other cards.
+responsible:
+  actor_id: hm-government
+  note:
+    en: "The milestone is part of the government's Plan for Change."
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: PM sets out blueprint for decade of national renewal (5 Dec 2024)"
+    url: https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal
+  - title: "HM Government: Plan for Change, milestones for mission-led government (PDF, 5 Dec 2024)"
+    url: https://assets.publishing.service.gov.uk/media/6751af4719e0c816d18d1df3/Plan_for_Change.pdf
+  - title: >-
+      Office for National Statistics: GDP quarterly national accounts, UK: April to June 2026 (30
+      Sep 2026)
+    url: https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/latest
+versions:
+  - version: 1
+    text: >-
+      Raising living standards in every part of the United Kingdom, so working people have more
+      money in their pocket as we aim to deliver the highest sustained growth in the G7, with higher
+      Real Household Disposable Income per person and GDP per capita by the end of the Parliament.
+    recorded_on: "2024-12-05"
+    source_url: https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: Households in every part of the UK
+      cost:
+        note:
+          en: "No cost: the milestone names an outcome, not a measure, and no costing was published."
+      when:
+        en: By the end of the Parliament that first met on 9 July 2024 (taken as by 1 July 2029)
+      deadline: "2029-07-01"
+      funded_by:
+        en: Not a spending pledge
+events:
+  - date: "2024-12-05"
+    type: promised
+    text:
+      en: The Prime Minister sets higher living standards as the first Plan for Change milestone
+  - date: "2029-07-01"
+    type: deadline
+    text:
+      en: Higher income and GDP per head due by the end of the Parliament (editorial date)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
+  - by: Pavel Guzhikov
+    kind: editor
+    "on": "2026-10-21"
+    approves: true
+    note:
+      en: >-
+        Checked against the editors' checklist (docs/EDITORS.md): quote, sources, dates, status, cost
+        and wording

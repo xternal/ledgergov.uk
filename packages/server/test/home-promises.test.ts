@@ -33,13 +33,18 @@ const spotlightHtml = renderToStaticMarkup(createElement(PromiseSpotlight, { vie
 const rows = (html: string) => [...html.matchAll(/<li\b[^>]*><a\b[^>]*\bhref="(\/promise\/[^"]+)"[^>]*>(.*?)<\/a><\/li>/gs)].map((m) => ({ href: m[1]!, body: m[2]! }));
 
 describe("the home page's promises", () => {
-  it("come second, after the site's own opening and before the budget statement, which stays the main product", () => {
+  it("come right after the first screen, which shows the figures, the promises and the sandbox; the statement is the Money page", () => {
     const ledger = read("components/Ledger.tsx");
-    const at = (s: string) => ledger.indexOf(s);
-    for (const s of ["<Hero", "{spotlight", "<KpiStrip", "<StatementSection", "<PromisesSection"]) expect(at(s), s).toBeGreaterThan(0);
-    expect(at("<Hero")).toBeLessThan(at("{spotlight"));
-    expect(at("{spotlight")).toBeLessThan(at("<KpiStrip"));
-    expect(at("<KpiStrip")).toBeLessThan(at("<StatementSection"));
+    const home = ledger.slice(ledger.indexOf("export function Ledger("), ledger.indexOf("export function MoneyLedger("));
+    const money = ledger.slice(ledger.indexOf("export function MoneyLedger("));
+    const at = (s: string) => home.indexOf(s);
+    for (const s of ["<HomeFirstScreen", "{spotlight", "<PromisesSection"]) expect(at(s), s).toBeGreaterThan(0);
+    expect(at("<HomeFirstScreen")).toBeLessThan(at("{spotlight"));
+    expect(at("{spotlight")).toBeLessThan(at("<PromisesSection"));
+    // The first screen holds the year's figures and a sandbox lever; the full statement and sandbox are on /money.
+    const first = read("components/HomeFirstScreen.tsx");
+    for (const s of ["<KpiStrip", "setLever(", 'href="/promises"', "/money"]) expect(first, s).toContain(s);
+    for (const s of ["<Hero", "<KpiStrip", "<StatementSection", "<YourShare"]) expect(money.indexOf(s), s).toBeGreaterThan(0);
     // The page renders the engine's own component, so every site shows promises the same way.
     expect(read("app/page.tsx")).toMatch(/import \{ PromiseSpotlight \} from "@openpromises\/react"/);
   });
@@ -47,8 +52,8 @@ describe("the home page's promises", () => {
   it("say how many promises are tracked and link to them all", () => {
     expect(spotlightHtml).toContain(`<a href="/promises">${seed.cards.length} promises tracked</a>`);
     expect(spotlightHtml).toContain(`<a href="/promises">All promises →</a>`);
-    // The opening says it too, with a link to the promises page.
-    expect(read("components/Masthead.tsx")).toContain("{tracked.text} →");
+    // The first screen says it too, with a link to the promises page.
+    expect(read("components/HomeFirstScreen.tsx")).toContain("{data.total} promises tracked");
   });
 
   it("open each card in one click, and every row says so", () => {
@@ -63,6 +68,8 @@ describe("the home page's promises", () => {
 
   it("keep Promises in the menu", () => {
     expect(SITE_LINKS).toContainEqual(expect.objectContaining({ href: "/promises", label: "Promises" }));
+    // Five pages, Method last; People are the people whose promises are tracked (docs/DECISIONS.md, 23 Oct 2026).
+    expect(SITE_LINKS.map((l) => `${l.label} ${l.href}`)).toEqual(["Money /money", "Promises /promises", "People /actor", "Your MP /mp", "Method /method"]);
   });
 });
 
@@ -80,7 +87,7 @@ describe("the footer", () => {
   it("separates its items by layout, with no middle dots (docs/DESIGN_HANDOFF.md)", () => {
     const layout = read("app/layout.tsx");
     const footer = layout.slice(layout.indexOf("<footer"), layout.indexOf("</footer>"));
-    expect(footer).toContain("Buy me a coffee");
+    expect(footer).toContain("Buy me a matcha");
     expect(footer).not.toContain("·");
   });
 });

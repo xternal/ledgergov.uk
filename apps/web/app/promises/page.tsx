@@ -146,6 +146,9 @@ export default function PromisesPage() {
               </a>
             ))}
           </p>
+          <p className="m-0">
+            <a href="/actor">Everyone on the ledger: people, parties and public bodies</a>
+          </p>
         </nav>
       </main>
     </>

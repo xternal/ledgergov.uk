@@ -79,13 +79,12 @@ export default async function BudgetTopicPage({ params }: Props) {
           <p className="m-0 text-label font-medium text-muted">Budget day: {budgetDay()}</p>
           <h1 className="m-0 text-[clamp(30px,4.4vw,44px)] font-semibold leading-[1.06] tracking-[-0.035em]">{topic.heading}</h1>
           <p className="m-0 text-lead text-muted">{topic.intro}</p>
-          <p className="m-0 text-label text-muted">
-            Sources:{" "}
-            {topic.sources.map((s, i) => (
-              <span key={s.url}>
-                {i > 0 && " · "}
-                <a href={s.url}>{s.title}</a>
-              </span>
+          <p className="m-0 flex flex-wrap gap-x-4 gap-y-1 text-label text-muted">
+            <span>Sources:</span>
+            {topic.sources.map((s) => (
+              <a key={s.url} href={s.url}>
+                {s.title}
+              </a>
             ))}
           </p>
         </header>

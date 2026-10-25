@@ -1,0 +1,60 @@
+format: openpromises/1
+id: uk-green-fair-rents-guarantee-2026
+headline:
+  en: Create a national Fair Rents Guarantee
+actor_id: zack-polanski
+made_on: "2026-10-02"
+venue: speech
+venue_label:
+  en: "Leader's speech, Green Party autumn conference 2026"
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The Green Party is not in government, so the card stays at Promised. In the same speech he
+    called on the government to put a three-year emergency brake on private rents, with no rise
+    above CPI, wage growth or 2%, whichever is lower; the party's release says the brake would give
+    the government time to develop the Fair Rents Guarantee. Neither says how the guarantee would
+    set rents or by when. In a speech on 18 March 2026 he said a Green government would bring in
+    rent controls.
+responsible: null
+origin: llm_intake
+sources:
+  - title: "Green Party: Zack Polanski's speech to conference in full (2 Oct 2026)"
+    url: https://greenparty.org.uk/2026/10/02/zack-polanskis-speech-to-conference-in-full/
+  - title: "Green Party: Greens announce plan for three-year emergency brake on private rents (2 Oct 2026)"
+    url: https://greenparty.org.uk/2026/10/02/greens-announce-plan-for-three-year-emergency-brake-on-private-rents-to-give-renters-breathing-space/
+  - title: "Green Party: Zack Polanski lays out plans to back the \"caring majority\" in major speech (18 Mar 2026)"
+    url: https://greenparty.org.uk/2026/03/18/zack-polanski-lays-out-plans-to-back-the-caring-majority-in-major-speech/
+versions:
+  - version: 1
+    text: >-
+      And in the long term, we’ll put in place a national Fair Rents Guarantee – to keep rents
+      affordable for everyone, for ever.
+    recorded_on: "2026-10-02"
+    source_url: https://greenparty.org.uk/2026/10/02/zack-polanskis-speech-to-conference-in-full/
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: "Private renters, and their landlords"
+      cost:
+        note:
+          en: No cost was given in the cited sources.
+      when:
+        en: "\"In the long term\"; no date given"
+      funded_by: null
+events:
+  - date: "2026-10-02"
+    type: promised
+    text:
+      en: >-
+        Zack Polanski pledges a national Fair Rents Guarantee in his conference speech
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

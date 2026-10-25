@@ -1,0 +1,73 @@
+format: openpromises/1
+id: uk-police-20000-2023
+headline:
+  en: Have 20,000 extra police by spring 2023
+actor_id: rishi-sunak
+made_on: "2023-01-04"
+venue: speech
+venue_label:
+  en: Speech setting out his five priorities
+area: public_order
+status: delivered
+status_note:
+  en: >-
+    The Home Office's final figures show 20,947 additional officers recruited through the Police
+    Uplift Programme by 31 March 2023, against a target of 20,000, taking the number of officers in
+    England and Wales to 149,566. 42 of the 43 forces met their own allocation; the Metropolitan
+    Police did not. The target was a manifesto commitment of the then government, which the Prime
+    Minister repeated here; "this Spring" is read as 31 May 2023.
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The UK Government was responsible when the pledge fell due in spring 2023, with Rishi Sunak as
+      Prime Minister.
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: PM speech on building a better future, 4 January 2023"
+    url: https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023
+  - title: "Home Office: Police officer uplift, final position as at March 2023 (26 Jul 2023)"
+    url: https://www.gov.uk/government/statistics/police-officer-uplift-final-position-as-at-march-2023/police-officer-uplift-final-position-as-at-march-2023
+versions:
+  - version: 1
+    text: >-
+      By this Spring, we will have an extra 20,000 police officers, patrolling the streets,
+      answering the call for help, and catching criminals.
+    recorded_on: "2023-01-04"
+    source_url: https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: Police forces in England and Wales and the people they serve
+      cost:
+        note:
+          en: No figure in the speech.
+      when:
+        en: By spring 2023
+      deadline: "2023-05-31"
+      funded_by: null
+events:
+  - date: "2023-01-04"
+    type: promised
+    text:
+      en: The Prime Minister says there will be an extra 20,000 police officers by the spring
+  - date: "2023-05-31"
+    type: deadline
+    text:
+      en: 20,000 extra officers due "by this Spring" (editorial date, end of May 2023)
+  - date: "2023-07-26"
+    type: delivered
+    text:
+      en: >-
+        Home Office final figures: 20,947 additional officers recruited by 31 March 2023 against the
+        20,000 target
+    evidence_url: https://www.gov.uk/government/statistics/police-officer-uplift-final-position-as-at-march-2023/police-officer-uplift-final-position-as-at-march-2023
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

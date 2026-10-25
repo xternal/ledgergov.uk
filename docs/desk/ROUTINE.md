@@ -1,6 +1,6 @@
 # The weekly editor's desk
 
-Every Monday at 10:00 UK time a Claude cloud routine ("LedgerGov.UK: weekly editor's desk") reads this file on `main` and follows it. Pavel decided it on 13 October 2026: the daily intake (`.github/workflows/harvest.yml`, docs/OPERATIONS.md §10) finds plenty of candidate promises, so the weekly job is to **sort** them, not to find more. It turns **every** open intake branch, whatever its date, into at most **30 new cards**, then checks the week's big government documents for anything the daily intake missed. A person approves each pull request; the existing intake merge job (`.github/workflows/intake-merge.yml`) merges it once one editor has approved and CI is green.
+Every Sunday at 20:00 UK time the weekly ledger desk, a scheduled task on Pavel's Mac that works through all his ledgers one after another, reaches LedgerGov.UK and follows `docs/desk/WEEKLY.md`, whose first step is this file. Until 25 October 2026 a Claude cloud routine ran it on Mondays at 10:00 ("LedgerGov.UK: weekly editor's desk", now paused); docs/DECISIONS.md, "One weekly desk for every ledger", says why it moved. Pavel decided the desk on 13 October 2026: the daily intake (`.github/workflows/harvest.yml`, docs/OPERATIONS.md §10) finds plenty of candidate promises, so the weekly job is to **sort** them, not to find more. It turns **every** open intake branch, whatever its date, into at most **30 new cards**, then checks the week's big government documents for anything the daily intake missed. A person approves each pull request; the existing intake merge job (`.github/workflows/intake-merge.yml`) merges it once one editor has approved and CI is green.
 
 Since 19 October 2026 (docs/DECISIONS.md, "AI Journalist backtest fixes"): the daily intake writes **one draft per source and speaker**, with the speaker's other commitments in that source under `also`; it drops process steps and grants before writing a draft; it reads GOV.UK policy papers and consultation outcomes itself; and the desk sweeps every open intake branch, not only the week's.
 
@@ -18,7 +18,15 @@ To change what the routine does, change this file by pull request. The routine's
 6. **Facts only from the cited sources.** A status note says what the source says, plus what would move the card next. No background from memory.
 7. If something fails that you cannot fix inside these rules, stop that part, leave the branch as it was, and say so in the report.
 
-## The cloud you run in
+## On Pavel's Mac (every Sunday since 25 October 2026)
+
+- Work in the worktree that `docs/desk/WEEKLY.md` sets up, never in the main checkout. Put Node 22 first on `PATH` (`export PATH="$HOME/.nvm/versions/node/v22.23.4/bin:$PATH"`); its `pnpm` is already set up, so skip the `npm install -g corepack` line in step 0.
+- **`gh` works.** Use it wherever this file names the GitHub tools: `gh pr list`, `gh pr view`, `gh pr create`, `gh pr edit` (title and labels), `gh pr comment`, `gh pr close`, `gh pr checks <n> --watch`. Never `gh pr merge` or `gh pr review`.
+- The web is open, so step 6 runs whenever its check prints 200. Parliament's web pages still refuse curl; use the two Parliament APIs below.
+- Leave the engine check to CI, as in the cloud: it needs the editors list, which this run does not read.
+- One heavy command at a time (`pnpm test` runs at most three test workers on a Mac): this 16 GB Mac hung once under parallel builds.
+
+## The cloud you run in (a run started by hand in the cloud)
 
 A smoke test on 13 October 2026 found what the routine's cloud environment can and cannot do. Work within it.
 

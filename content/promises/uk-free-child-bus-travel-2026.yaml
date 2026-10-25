@@ -1,0 +1,102 @@
+format: openpromises/1
+id: uk-free-child-bus-travel-2026
+headline:
+  en: Free bus travel for every child in August
+actor_id: keir-starmer
+made_on: "2026-05-20"
+venue: press_release
+venue_label:
+  en: "Press release (HM Treasury, Prime Minister's Office and Department for Transport)"
+area: economic_affairs
+status: delivered
+status_note:
+  en: >-
+    The scheme ran from 1 to 31 August 2026 for children aged 5 to 15 on participating local buses
+    in England, as the announcement set out. The Department for Transport said on 25 September 2026
+    that over 14.5 million free bus journeys were taken by children that summer. It ran after Keir
+    Starmer left office on 20 July 2026.
+brought_about_by:
+  actor_id: hm-government
+  note:
+    en: The free fares ran in August 2026, after Keir Starmer had left office on 20 July 2026.
+responsible:
+  actor_id: hm-government
+  note:
+    en: The UK Government was responsible for the scheme, which ran in August 2026.
+origin: llm_intake
+sources:
+  - title: >-
+      HM Treasury, Prime Minister's Office and Department for Transport: Cost of living boost with
+      free bus travel for children and targeted food tariff cuts (20 May 2026)
+    url: https://www.gov.uk/government/news/cost-of-living-boost-with-free-bus-travel-for-children-and-targeted-food-tariff-cuts
+  - title: >-
+      Department for Transport: Summer holiday savings start now with free buses for kids (1 Aug
+      2026)
+    url: https://www.gov.uk/government/news/summer-holiday-savings-start-now-with-free-buses-for-kids
+  - title: >-
+      Department for Transport: Summer savings scheme helped families cut costs with over 14 million
+      free bus journeys (25 Sep 2026)
+    url: https://www.gov.uk/government/news/summer-savings-scheme-helped-families-cut-costs-with-over-14-million-free-bus-journeys
+versions:
+  - version: 1
+    text: >-
+      By giving every child free bus travel throughout August and cutting tariffs on everyday food
+      items, we’re putting money back into people’s pockets and making life that bit easier.
+    recorded_on: "2026-05-20"
+    source_url: https://www.gov.uk/government/news/cost-of-living-boost-with-free-bus-travel-for-children-and-targeted-food-tariff-cuts
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: Children aged 5 to 15 in England and their families
+      cost:
+        note:
+          en: >-
+            The Chancellor committed more than £100 million to the free fares (HM Treasury, 20 May
+            2026), for one month; no other breakdown was given.
+        sources:
+          - title: >-
+              HM Treasury, Prime Minister's Office and Department for Transport: Cost of living
+              boost with free bus travel for children and targeted food tariff cuts (20 May 2026)
+            url: https://www.gov.uk/government/news/cost-of-living-boost-with-free-bus-travel-for-children-and-targeted-food-tariff-cuts
+      when:
+        en: Throughout August 2026
+      deadline: "2026-08-31"
+      funded_by: null
+events:
+  - date: "2026-05-20"
+    type: promised
+    text:
+      en: The Prime Minister and the Chancellor announce free bus travel for children throughout August
+  - date: "2026-08-01"
+    type: delivering
+    text:
+      en: Free bus travel for under-16s starts on participating local buses in England
+    evidence_url: https://www.gov.uk/government/news/summer-holiday-savings-start-now-with-free-buses-for-kids
+  - date: "2026-08-31"
+    type: deadline
+    text:
+      en: Free travel due throughout August 2026
+  - date: "2026-09-25"
+    type: delivered
+    text:
+      en: >-
+        The Department for Transport reports over 14.5 million free bus journeys by children in
+        August
+    evidence_url: https://www.gov.uk/government/news/summer-savings-scheme-helped-families-cut-costs-with-over-14-million-free-bus-journeys
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
+  - by: Pavel Guzhikov
+    kind: editor
+    "on": "2026-10-21"
+    approves: true
+    note:
+      en: >-
+        Checked against the editors' checklist (docs/EDITORS.md): quote, sources, dates, status, cost
+        and wording

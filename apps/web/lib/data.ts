@@ -1,7 +1,9 @@
 import "server-only";
 import { loadSeed } from "@ledger/schema/seed";
 import { readEditors, withVerification } from "@ledger/schema/verification";
-import { spotlightInput, type SpotlightInput } from "@ledger/schema/spotlight";
+import { withQuoteChecks } from "@ledger/schema/quotes";
+import { areaCoverageFor, engineConfig, engineViews, spotlightInput, type AreaCoverage, type SpotlightInput } from "@ledger/schema/spotlight";
+import { loadPortraits, type Portrait } from "@ledger/schema/portraits";
 import { loadPeople } from "@ledger/schema/people";
 import { loadBorrowing } from "@ledger/schema/borrowing";
 import { loadForecasts, readBuildText, type ForecastData } from "@ledger/schema/forecasts";
@@ -16,12 +18,13 @@ import { buildRuns, vintageChangelog, type BuildRun, type Manifest, type Vintage
  * Seed data, parsed and cross-checked through the Zod schemas at build time.
  * A bad seed file fails the build rather than rendering wrong numbers. Each card
  * carries its verification label when the build has the private editors list
- * (docs/OPERATIONS.md §15), and the earlier wording when it has not.
+ * (docs/OPERATIONS.md §15), and the earlier wording when it has not, and what
+ * was checked of its quote (OpenPromises decision 35).
  */
 let cached: Seed | null = null;
 
 export function getSeed(): Seed {
-  cached ??= withVerification(loadSeed(), readEditors());
+  cached ??= withQuoteChecks(withVerification(loadSeed(), readEditors()));
   return cached;
 }
 
@@ -31,6 +34,34 @@ export function getSeed(): Seed {
  */
 export function getSpotlight(today: string): SpotlightInput {
   return spotlightInput(new Set(getSeed().cards.map((c) => c.id)), today);
+}
+
+let views: SpotlightInput["views"] | null = null;
+
+/**
+ * An actor's promises by area (OpenPromises decision 33): every area the site lists, empty ones too, for the cards the
+ * actor's page lists, read as the engine reads them. The areas are the same for every actor.
+ */
+export function getAreaCoverage(ids: ReadonlySet<string>): AreaCoverage[] {
+  views ??= engineViews(new Set(getSeed().cards.map((c) => c.id))).views;
+  return areaCoverageFor(views, ids);
+}
+
+/**
+ * An actor's promises as the engine reads them, with the site's configuration, for the actor's story (OpenPromises
+ * decision 34): key promises, the timeline and promises made each month. The same cards the page lists.
+ */
+export function getActorStory(ids: ReadonlySet<string>): Pick<SpotlightInput, "views" | "config"> {
+  views ??= engineViews(new Set(getSeed().cards.map((c) => c.id))).views;
+  return { views: views.filter((v) => ids.has(v.id)), config: engineConfig() };
+}
+
+let portraitOf: ReturnType<typeof loadPortraits> | null = null;
+
+/** UK Parliament's official portrait of an MP, with its credit (data/portraits.json), or null when there is none. */
+export function getPortrait(memberId: number | undefined | null): Portrait | null {
+  portraitOf ??= loadPortraits();
+  return portraitOf(memberId);
 }
 
 let people: PeopleBundle | null = null;

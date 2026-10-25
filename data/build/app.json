@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-12T21:54:26Z",
+  "built_at": "2026-10-22T13:05:41Z",
   "base_year": "2025-26",
   "years": [
     {
@@ -56,8 +56,8 @@
       "meta": {
         "country": "UK",
         "fiscal_year": "2019-20",
-        "vintage": "PESA-2026 + PSF-2026-09",
-        "vintage_label": "ONS outturn, September 2026 release",
+        "vintage": "PESA-2026 + PSF-2026-10",
+        "vintage_label": "ONS outturn, October 2026 release",
         "note": "Receipts from ONS PSF RECEIPTS; spending by function from HMT PESA (PESA-2026); debt interest and totals as published.",
         "sources": [
           {
@@ -74,7 +74,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/publicsectorfinances",
             "licence": "OGL v3",
-            "published_on": "2026-09-22"
+            "published_on": "2026-10-21"
           },
           {
             "id": "ons_psf_receipts",
@@ -82,7 +82,7 @@
             "publisher": "Office for National Statistics",
             "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/appendixdpublicsectorcurrentreceipts",
             "licence": "OGL v3",
-            "published_on": "2026-09-22"
+            "published_on": "2026-10-21"
           },
           {
             "id": "boe_bank_rate",
@@ -121,14 +121,14 @@
       "macro": {
         "nominal_gdp_bn": 2263.357,
         "psnd_bn": 1814.8,
-        "psnd_pct_gdp": 84.5,
+        "psnd_pct_gdp": 84.1,
         "bank_rate_pct": 0.1,
         "bank_rate_date": "2020-03-19",
         "households_m": 27.824,
         "income_taxpayers_m": 31.5,
         "population_m": 66.627,
         "baseline_psnb_bn": {
-          "2025-26": 134.286,
+          "2025-26": 134.211,
           "2026-27": 115.461,
           "2027-28": 96.467,
           "2028-29": 86.016,
@@ -137,7 +137,7 @@
         },
         "baseline_nominal_growth_pct": 3.522,
         "baseline_psnd_pct_gdp": {
-          "2025-26": 93.3,
+          "2025-26": 93.2,
           "2026-27": 94.815,
           "2027-28": 95.739,
           "2028-29": 96.281,
@@ -305,7 +305,7 @@
       "borrowing_provenance": {
         "quality": "sourced",
         "source_id": "ons_psf",
-        "method_note": "Total spending minus receipts (PSF-2026-09). Published borrowing for 2019-20: 58.8bn."
+        "method_note": "Total spending minus receipts (PSF-2026-10). Published borrowing for 2019-20: 58.8bn."
       },
       "spending": [
         {
@@ -398,7 +398,7 @@
           "bn": 103.663,
           "quality": "approx",
           "source_id": "ons_psf",
-          "method_note": "Reconciles spending by function (HMT PESA) with total spending. Made up of: HMT PESA accounting adjustments 85.5bn; 16.2bn that PESA counts as debt interest but the OBR measure used for the debt interest line does not; 1.9bn difference between total spending here (PSF-2026-09) and PESA's outturn."
+          "method_note": "Reconciles spending by function (HMT PESA) with total spending. Made up of: HMT PESA accounting adjustments 85.5bn; 16.2bn that PESA counts as debt interest but the OBR measure used for the debt interest line does not; 1.9bn difference between total spending here (PSF-2026-10) and PESA's outturn."
         }
       ]
     },
@@ -406,8 +406,8 @@
       "meta": {
         "country": "UK",
         "fiscal_year": "2020-21",
-        "vintage": "PESA-2026 + PSF-2026-09",
-        "vintage_label": "ONS outturn, September 2026 release",
+        "vintage": "PESA-2026 + PSF-2026-10",
+        "vintage_label": "ONS outturn, October 2026 release",
         "note": "Receipts from ONS PSF RECEIPTS; spending by function from HMT PESA (PESA-2026); debt interest and totals as published.",
         "sources": [
           {
@@ -424,7 +424,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/publicsectorfinances",
             "licence": "OGL v3",
-            "published_on": "2026-09-22"
+            "published_on": "2026-10-21"
           },
           {
             "id": "ons_psf_receipts",
@@ -432,7 +432,7 @@
             "publisher": "Office for National Statistics",
             "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/appendixdpublicsectorcurrentreceipts",
             "licence": "OGL v3",
-            "published_on": "2026-09-22"
+            "published_on": "2026-10-21"
           },
           {
             "id": "boe_bank_rate",
@@ -471,14 +471,14 @@
       "macro": {
         "nominal_gdp_bn": 2109.996,
         "psnd_bn": 2157.7,
-        "psnd_pct_gdp": 95.5,
+        "psnd_pct_gdp": 95.2,
         "bank_rate_pct": 0.1,
         "bank_rate_date": "2020-03-19",
         "households_m": 27.893,
         "income_taxpayers_m": 31.7,
         "population_m": 66.74,
         "baseline_psnb_bn": {
-          "2025-26": 134.286,
+          "2025-26": 134.211,
           "2026-27": 115.461,
           "2027-28": 96.467,
           "2028-29": 86.016,
@@ -487,7 +487,7 @@
         },
         "baseline_nominal_growth_pct": 3.522,
         "baseline_psnd_pct_gdp": {
-          "2025-26": 93.3,
+          "2025-26": 93.2,
           "2026-27": 94.815,
           "2027-28": 95.739,
           "2028-29": 96.281,
@@ -655,7 +655,7 @@
       "borrowing_provenance": {
         "quality": "sourced",
         "source_id": "ons_psf",
-        "method_note": "Total spending minus receipts (PSF-2026-09). Published borrowing for 2020-21: 310.8bn."
+        "method_note": "Total spending minus receipts (PSF-2026-10). Published borrowing for 2020-21: 310.8bn."
       },
       "spending": [
         {
@@ -748,7 +748,7 @@
           "bn": 109.916,
           "quality": "approx",
           "source_id": "ons_psf",
-          "method_note": "Reconciles spending by function (HMT PESA) with total spending. Made up of: HMT PESA accounting adjustments 91.5bn; 17.6bn that PESA counts as debt interest but the OBR measure used for the debt interest line does not; 0.9bn difference between total spending here (PSF-2026-09) and PESA's outturn."
+          "method_note": "Reconciles spending by function (HMT PESA) with total spending. Made up of: HMT PESA accounting adjustments 91.5bn; 17.6bn that PESA counts as debt interest but the OBR measure used for the debt interest line does not; 0.9bn difference between total spending here (PSF-2026-10) and PESA's outturn."
         }
       ]
     },
@@ -756,8 +756,8 @@
       "meta": {
         "country": "UK",
         "fiscal_year": "2021-22",
-        "vintage": "PESA-2026 + PSF-2026-09",
-        "vintage_label": "ONS outturn, September 2026 release",
+        "vintage": "PESA-2026 + PSF-2026-10",
+        "vintage_label": "ONS outturn, October 2026 release",
         "note": "Receipts from ONS PSF RECEIPTS; spending by function from HMT PESA (PESA-2026); debt interest and totals as published.",
         "sources": [
           {
@@ -774,7 +774,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/publicsectorfinances",
             "licence": "OGL v3",
-            "published_on": "2026-09-22"
+            "published_on": "2026-10-21"
           },
           {
             "id": "ons_psf_receipts",
@@ -782,7 +782,7 @@
             "publisher": "Office for National Statistics",
             "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/appendixdpublicsectorcurrentreceipts",
             "licence": "OGL v3",
-            "published_on": "2026-09-22"
+            "published_on": "2026-10-21"
           },
           {
             "id": "boe_bank_rate",
@@ -821,14 +821,14 @@
       "macro": {
         "nominal_gdp_bn": 2400.398,
         "psnd_bn": 2379.7,
-        "psnd_pct_gdp": 94.3,
+        "psnd_pct_gdp": 93.9,
         "bank_rate_pct": 0.75,
         "bank_rate_date": "2022-03-17",
         "households_m": 28.119,
         "income_taxpayers_m": 33.0,
         "population_m": 66.978,
         "baseline_psnb_bn": {
-          "2025-26": 134.286,
+          "2025-26": 134.211,
           "2026-27": 115.461,
           "2027-28": 96.467,
           "2028-29": 86.016,
@@ -837,7 +837,7 @@
         },
         "baseline_nominal_growth_pct": 3.522,
         "baseline_psnd_pct_gdp": {
-          "2025-26": 93.3,
+          "2025-26": 93.2,
           "2026-27": 94.815,
           "2027-28": 95.739,
           "2028-29": 96.281,
@@ -1005,7 +1005,7 @@
       "borrowing_provenance": {
         "quality": "sourced",
         "source_id": "ons_psf",
-        "method_note": "Total spending minus receipts (PSF-2026-09). Published borrowing for 2021-22: 116.0bn."
+        "method_note": "Total spending minus receipts (PSF-2026-10). Published borrowing for 2021-22: 116.0bn."
       },
       "spending": [
         {
@@ -1098,7 +1098,7 @@
           "bn": 104.097,
           "quality": "approx",
           "source_id": "ons_psf",
-          "method_note": "Reconciles spending by function (HMT PESA) with total spending. Made up of: HMT PESA accounting adjustments 88.9bn; 17.8bn that PESA counts as debt interest but the OBR measure used for the debt interest line does not (mostly 16.1bn of notional interest on unfunded public-service pensions); -2.7bn difference between total spending here (PSF-2026-09) and PESA's outturn."
+          "method_note": "Reconciles spending by function (HMT PESA) with total spending. Made up of: HMT PESA accounting adjustments 88.9bn; 17.8bn that PESA counts as debt interest but the OBR measure used for the debt interest line does not (mostly 16.1bn of notional interest on unfunded public-service pensions); -2.7bn difference between total spending here (PSF-2026-10) and PESA's outturn."
         }
       ]
     },
@@ -1106,8 +1106,8 @@
       "meta": {
         "country": "UK",
         "fiscal_year": "2022-23",
-        "vintage": "PESA-2026 + PSF-2026-09",
-        "vintage_label": "ONS outturn, September 2026 release",
+        "vintage": "PESA-2026 + PSF-2026-10",
+        "vintage_label": "ONS outturn, October 2026 release",
         "note": "Receipts from ONS PSF RECEIPTS; spending by function from HMT PESA (PESA-2026); debt interest and totals as published.",
         "sources": [
           {
@@ -1124,7 +1124,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/publicsectorfinances",
             "licence": "OGL v3",
-            "published_on": "2026-09-22"
+            "published_on": "2026-10-21"
           },
           {
             "id": "ons_psf_receipts",
@@ -1132,7 +1132,7 @@
             "publisher": "Office for National Statistics",
             "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/appendixdpublicsectorcurrentreceipts",
             "licence": "OGL v3",
-            "published_on": "2026-09-22"
+            "published_on": "2026-10-21"
           },
           {
             "id": "boe_bank_rate",
@@ -1171,14 +1171,14 @@
       "macro": {
         "nominal_gdp_bn": 2634.336,
         "psnd_bn": 2542.7,
-        "psnd_pct_gdp": 93.1,
+        "psnd_pct_gdp": 92.7,
         "bank_rate_pct": 4.25,
         "bank_rate_date": "2023-03-23",
         "households_m": 28.243,
         "income_taxpayers_m": 34.5,
         "population_m": 67.68,
         "baseline_psnb_bn": {
-          "2025-26": 134.286,
+          "2025-26": 134.211,
           "2026-27": 115.461,
           "2027-28": 96.467,
           "2028-29": 86.016,
@@ -1187,7 +1187,7 @@
         },
         "baseline_nominal_growth_pct": 3.522,
         "baseline_psnd_pct_gdp": {
-          "2025-26": 93.3,
+          "2025-26": 93.2,
           "2026-27": 94.815,
           "2027-28": 95.739,
           "2028-29": 96.281,
@@ -1355,7 +1355,7 @@
       "borrowing_provenance": {
         "quality": "sourced",
         "source_id": "ons_psf",
-        "method_note": "Total spending minus receipts (PSF-2026-09). Published borrowing for 2022-23: 123.8bn."
+        "method_note": "Total spending minus receipts (PSF-2026-10). Published borrowing for 2022-23: 123.8bn."
       },
       "spending": [
         {
@@ -1448,7 +1448,7 @@
           "bn": 100.38,
           "quality": "approx",
           "source_id": "ons_psf",
-          "method_note": "Reconciles spending by function (HMT PESA) with total spending. Made up of: HMT PESA accounting adjustments 83.7bn; 19.0bn that PESA counts as debt interest but the OBR measure used for the debt interest line does not (mostly 16.9bn of notional interest on unfunded public-service pensions); -2.3bn difference between total spending here (PSF-2026-09) and PESA's outturn."
+          "method_note": "Reconciles spending by function (HMT PESA) with total spending. Made up of: HMT PESA accounting adjustments 83.7bn; 19.0bn that PESA counts as debt interest but the OBR measure used for the debt interest line does not (mostly 16.9bn of notional interest on unfunded public-service pensions); -2.3bn difference between total spending here (PSF-2026-10) and PESA's outturn."
         }
       ]
     },
@@ -1456,8 +1456,8 @@
       "meta": {
         "country": "UK",
         "fiscal_year": "2023-24",
-        "vintage": "PESA-2026 + PSF-2026-09",
-        "vintage_label": "ONS outturn, September 2026 release",
+        "vintage": "PESA-2026 + PSF-2026-10",
+        "vintage_label": "ONS outturn, October 2026 release",
         "note": "Receipts from ONS PSF RECEIPTS; spending by function from HMT PESA (PESA-2026); debt interest and totals as published.",
         "sources": [
           {
@@ -1474,7 +1474,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/publicsectorfinances",
             "licence": "OGL v3",
-            "published_on": "2026-09-22"
+            "published_on": "2026-10-21"
           },
           {
             "id": "ons_psf_receipts",
@@ -1482,7 +1482,7 @@
             "publisher": "Office for National Statistics",
             "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/appendixdpublicsectorcurrentreceipts",
             "licence": "OGL v3",
-            "published_on": "2026-09-22"
+            "published_on": "2026-10-21"
           },
           {
             "id": "boe_bank_rate",
@@ -1521,14 +1521,14 @@
       "macro": {
         "nominal_gdp_bn": 2789.505,
         "psnd_bn": 2684.1,
-        "psnd_pct_gdp": 94.1,
+        "psnd_pct_gdp": 93.7,
         "bank_rate_pct": 5.25,
         "bank_rate_date": "2023-08-03",
         "households_m": 28.358,
         "income_taxpayers_m": 36.7,
         "population_m": 68.588,
         "baseline_psnb_bn": {
-          "2025-26": 134.286,
+          "2025-26": 134.211,
           "2026-27": 115.461,
           "2027-28": 96.467,
           "2028-29": 86.016,
@@ -1537,7 +1537,7 @@
         },
         "baseline_nominal_growth_pct": 3.522,
         "baseline_psnd_pct_gdp": {
-          "2025-26": 93.3,
+          "2025-26": 93.2,
           "2026-27": 94.815,
           "2027-28": 95.739,
           "2028-29": 96.281,
@@ -1705,7 +1705,7 @@
       "borrowing_provenance": {
         "quality": "sourced",
         "source_id": "ons_psf",
-        "method_note": "Total spending minus receipts (PSF-2026-09). Published borrowing for 2023-24: 135.2bn."
+        "method_note": "Total spending minus receipts (PSF-2026-10). Published borrowing for 2023-24: 135.2bn."
       },
       "spending": [
         {
@@ -1798,7 +1798,7 @@
           "bn": 136.724,
           "quality": "approx",
           "source_id": "ons_psf",
-          "method_note": "Reconciles spending by function (HMT PESA) with total spending. Made up of: HMT PESA accounting adjustments 115.8bn; 19.9bn that PESA counts as debt interest but the OBR measure used for the debt interest line does not (mostly 18.1bn of notional interest on unfunded public-service pensions); 1.0bn difference between total spending here (PSF-2026-09) and PESA's outturn."
+          "method_note": "Reconciles spending by function (HMT PESA) with total spending. Made up of: HMT PESA accounting adjustments 115.8bn; 19.9bn that PESA counts as debt interest but the OBR measure used for the debt interest line does not (mostly 18.1bn of notional interest on unfunded public-service pensions); 1.0bn difference between total spending here (PSF-2026-10) and PESA's outturn."
         }
       ]
     },
@@ -1806,8 +1806,8 @@
       "meta": {
         "country": "UK",
         "fiscal_year": "2024-25",
-        "vintage": "PESA-2026 + PSF-2026-09",
-        "vintage_label": "ONS outturn, September 2026 release",
+        "vintage": "PESA-2026 + PSF-2026-10",
+        "vintage_label": "ONS outturn, October 2026 release",
         "note": "Receipts from ONS PSF RECEIPTS; spending by function from HMT PESA (PESA-2026); debt interest and totals as published.",
         "sources": [
           {
@@ -1824,7 +1824,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/publicsectorfinances",
             "licence": "OGL v3",
-            "published_on": "2026-09-22"
+            "published_on": "2026-10-21"
           },
           {
             "id": "ons_psf_receipts",
@@ -1832,7 +1832,7 @@
             "publisher": "Office for National Statistics",
             "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/appendixdpublicsectorcurrentreceipts",
             "licence": "OGL v3",
-            "published_on": "2026-09-22"
+            "published_on": "2026-10-21"
           },
           {
             "id": "boe_bank_rate",
@@ -1871,14 +1871,14 @@
       "macro": {
         "nominal_gdp_bn": 2933.954,
         "psnd_bn": 2806.7,
-        "psnd_pct_gdp": 93.4,
+        "psnd_pct_gdp": 92.9,
         "bank_rate_pct": 4.5,
         "bank_rate_date": "2025-02-06",
         "households_m": 28.609,
         "income_taxpayers_m": 38.6,
         "population_m": 69.256,
         "baseline_psnb_bn": {
-          "2025-26": 134.286,
+          "2025-26": 134.211,
           "2026-27": 115.461,
           "2027-28": 96.467,
           "2028-29": 86.016,
@@ -1887,7 +1887,7 @@
         },
         "baseline_nominal_growth_pct": 3.522,
         "baseline_psnd_pct_gdp": {
-          "2025-26": 93.3,
+          "2025-26": 93.2,
           "2026-27": 94.815,
           "2027-28": 95.739,
           "2028-29": 96.281,
@@ -1973,7 +1973,7 @@
         {
           "id": "corp_tax",
           "label": "Corporation tax",
-          "bn": 95.01,
+          "bn": 94.97,
           "quality": "sourced",
           "source_id": "ons_psf_receipts",
           "method_note": "Onshore corporation tax (CPSC, incl. bank surcharge, residential property developer tax and diverted profits tax) + offshore corporation tax (CPSB) minus the energy profits levy (JIS6) that ONS records within offshore CT. ONS PSF Appendix D, sum of the 12 monthly values Apr 2024 to Mar 2025."
@@ -2051,11 +2051,11 @@
           "method_note": "Public sector current receipts (JW2O) minus total taxes and social contributions (AHHY); equals interest and dividends (AHHZ) + gross operating surplus (JW2K) + other public sector receipts (AHIO). ONS PSF Appendix D, sum of the 12 monthly values Apr 2024 to Mar 2025. ONS outturn basis; it includes some receipts the OBR forecast shows under business rates."
         }
       ],
-      "borrowing_bn": 149.769,
+      "borrowing_bn": 149.809,
       "borrowing_provenance": {
         "quality": "sourced",
         "source_id": "ons_psf",
-        "method_note": "Total spending minus receipts (PSF-2026-09). Published borrowing for 2024-25: 149.8bn."
+        "method_note": "Total spending minus receipts (PSF-2026-10). Published borrowing for 2024-25: 149.8bn."
       },
       "spending": [
         {
@@ -2148,7 +2148,7 @@
           "bn": 144.836,
           "quality": "approx",
           "source_id": "ons_psf",
-          "method_note": "Reconciles spending by function (HMT PESA) with total spending. Made up of: HMT PESA accounting adjustments 123.6bn; 20.9bn that PESA counts as debt interest but the OBR measure used for the debt interest line does not (mostly 18.7bn of notional interest on unfunded public-service pensions); 0.3bn difference between total spending here (PSF-2026-09) and PESA's outturn."
+          "method_note": "Reconciles spending by function (HMT PESA) with total spending. Made up of: HMT PESA accounting adjustments 123.6bn; 20.9bn that PESA counts as debt interest but the OBR measure used for the debt interest line does not (mostly 18.7bn of notional interest on unfunded public-service pensions); 0.3bn difference between total spending here (PSF-2026-10) and PESA's outturn."
         }
       ]
     },
@@ -2156,8 +2156,8 @@
       "meta": {
         "country": "UK",
         "fiscal_year": "2025-26",
-        "vintage": "PESA-2026 + PSF-2026-09",
-        "vintage_label": "ONS outturn, September 2026 release",
+        "vintage": "PESA-2026 + PSF-2026-10",
+        "vintage_label": "ONS outturn, October 2026 release",
         "note": "Receipts from ONS PSF RECEIPTS; spending by function from HMT PESA (PESA-2026); debt interest and totals as published.",
         "sources": [
           {
@@ -2174,7 +2174,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/publicsectorfinances",
             "licence": "OGL v3",
-            "published_on": "2026-09-22"
+            "published_on": "2026-10-21"
           },
           {
             "id": "ons_psf_receipts",
@@ -2182,7 +2182,7 @@
             "publisher": "Office for National Statistics",
             "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/appendixdpublicsectorcurrentreceipts",
             "licence": "OGL v3",
-            "published_on": "2026-09-22"
+            "published_on": "2026-10-21"
           },
           {
             "id": "boe_bank_rate",
@@ -2221,14 +2221,14 @@
       "macro": {
         "nominal_gdp_bn": 3069.799,
         "psnd_bn": 2916.8,
-        "psnd_pct_gdp": 93.3,
+        "psnd_pct_gdp": 93.2,
         "bank_rate_pct": 3.75,
         "bank_rate_date": "2025-12-18",
         "households_m": 29.003,
         "income_taxpayers_m": 39.8,
         "population_m": 69.484,
         "baseline_psnb_bn": {
-          "2025-26": 134.286,
+          "2025-26": 134.211,
           "2026-27": 115.461,
           "2027-28": 96.467,
           "2028-29": 86.016,
@@ -2237,7 +2237,7 @@
         },
         "baseline_nominal_growth_pct": 3.522,
         "baseline_psnd_pct_gdp": {
-          "2025-26": 93.3,
+          "2025-26": 93.2,
           "2026-27": 94.815,
           "2027-28": 95.739,
           "2028-29": 96.281,
@@ -2299,7 +2299,7 @@
         {
           "id": "income_tax",
           "label": "Income tax",
-          "bn": 329.338,
+          "bn": 329.148,
           "quality": "sourced",
           "source_id": "ons_psf_receipts",
           "method_note": "PAYE (MS6W) + self assessment (LISB) + other income tax (MF6X); excludes capital gains tax (MS62), which ONS includes in its income tax total (LIBR). ONS PSF Appendix D, sum of the 12 monthly values Apr 2025 to Mar 2026."
@@ -2323,7 +2323,7 @@
         {
           "id": "corp_tax",
           "label": "Corporation tax",
-          "bn": 100.196,
+          "bn": 100.461,
           "quality": "sourced",
           "source_id": "ons_psf_receipts",
           "method_note": "Onshore corporation tax (CPSC, incl. bank surcharge, residential property developer tax and diverted profits tax) + offshore corporation tax (CPSB) minus the energy profits levy (JIS6) that ONS records within offshore CT. ONS PSF Appendix D, sum of the 12 monthly values Apr 2025 to Mar 2026."
@@ -2401,11 +2401,11 @@
           "method_note": "Public sector current receipts (JW2O) minus total taxes and social contributions (AHHY); equals interest and dividends (AHHZ) + gross operating surplus (JW2K) + other public sector receipts (AHIO). ONS PSF Appendix D, sum of the 12 monthly values Apr 2025 to Mar 2026. ONS outturn basis; it includes some receipts the OBR forecast shows under business rates."
         }
       ],
-      "borrowing_bn": 134.286,
+      "borrowing_bn": 134.211,
       "borrowing_provenance": {
         "quality": "sourced",
         "source_id": "ons_psf",
-        "method_note": "Total spending minus receipts (PSF-2026-09). Published borrowing for 2025-26: 134.3bn."
+        "method_note": "Total spending minus receipts (PSF-2026-10). Published borrowing for 2025-26: 134.2bn."
       },
       "spending": [
         {
@@ -2498,7 +2498,7 @@
           "bn": 159.623,
           "quality": "approx",
           "source_id": "ons_psf",
-          "method_note": "Reconciles spending by function (HMT PESA) with total spending. Made up of: HMT PESA accounting adjustments 132.5bn; 21.7bn that PESA counts as debt interest but the OBR measure used for the debt interest line does not (mostly 19.4bn of notional interest on unfunded public-service pensions); 5.5bn difference between total spending here (PSF-2026-09) and PESA's outturn."
+          "method_note": "Reconciles spending by function (HMT PESA) with total spending. Made up of: HMT PESA accounting adjustments 132.5bn; 21.7bn that PESA counts as debt interest but the OBR measure used for the debt interest line does not (mostly 19.4bn of notional interest on unfunded public-service pensions); 5.5bn difference between total spending here (PSF-2026-10) and PESA's outturn."
         }
       ]
     },
@@ -2570,7 +2570,7 @@
         "income_taxpayers_m": 40.8,
         "population_m": 69.484,
         "baseline_psnb_bn": {
-          "2025-26": 134.286,
+          "2025-26": 134.211,
           "2026-27": 115.461,
           "2027-28": 96.467,
           "2028-29": 86.016,
@@ -2579,7 +2579,7 @@
         },
         "baseline_nominal_growth_pct": 3.522,
         "baseline_psnd_pct_gdp": {
-          "2025-26": 93.3,
+          "2025-26": 93.2,
           "2026-27": 94.815,
           "2027-28": 95.739,
           "2028-29": 96.281,
@@ -2911,7 +2911,7 @@
         "income_taxpayers_m": 40.8,
         "population_m": 69.484,
         "baseline_psnb_bn": {
-          "2025-26": 134.286,
+          "2025-26": 134.211,
           "2026-27": 115.461,
           "2027-28": 96.467,
           "2028-29": 86.016,
@@ -2920,7 +2920,7 @@
         },
         "baseline_nominal_growth_pct": 3.522,
         "baseline_psnd_pct_gdp": {
-          "2025-26": 93.3,
+          "2025-26": 93.2,
           "2026-27": 94.815,
           "2027-28": 95.739,
           "2028-29": 96.281,
@@ -3252,7 +3252,7 @@
         "income_taxpayers_m": 40.8,
         "population_m": 69.484,
         "baseline_psnb_bn": {
-          "2025-26": 134.286,
+          "2025-26": 134.211,
           "2026-27": 115.461,
           "2027-28": 96.467,
           "2028-29": 86.016,
@@ -3261,7 +3261,7 @@
         },
         "baseline_nominal_growth_pct": 3.522,
         "baseline_psnd_pct_gdp": {
-          "2025-26": 93.3,
+          "2025-26": 93.2,
           "2026-27": 94.815,
           "2027-28": 95.739,
           "2028-29": 96.281,
@@ -3593,7 +3593,7 @@
         "income_taxpayers_m": 40.8,
         "population_m": 69.484,
         "baseline_psnb_bn": {
-          "2025-26": 134.286,
+          "2025-26": 134.211,
           "2026-27": 115.461,
           "2027-28": 96.467,
           "2028-29": 86.016,
@@ -3602,7 +3602,7 @@
         },
         "baseline_nominal_growth_pct": 3.522,
         "baseline_psnd_pct_gdp": {
-          "2025-26": 93.3,
+          "2025-26": 93.2,
           "2026-27": 94.815,
           "2027-28": 95.739,
           "2028-29": 96.281,
@@ -3934,7 +3934,7 @@
         "income_taxpayers_m": 40.8,
         "population_m": 69.484,
         "baseline_psnb_bn": {
-          "2025-26": 134.286,
+          "2025-26": 134.211,
           "2026-27": 115.461,
           "2027-28": 96.467,
           "2028-29": 86.016,
@@ -3943,7 +3943,7 @@
         },
         "baseline_nominal_growth_pct": 3.522,
         "baseline_psnd_pct_gdp": {
-          "2025-26": 93.3,
+          "2025-26": 93.2,
           "2026-27": 94.815,
           "2027-28": 95.739,
           "2028-29": 96.281,
@@ -4974,7 +4974,7 @@
       "publisher": "ONS",
       "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/publicsectorfinances",
       "licence": "OGL v3",
-      "published_on": "2026-09-22"
+      "published_on": "2026-10-21"
     },
     {
       "id": "ons_psf_receipts",
@@ -4982,7 +4982,7 @@
       "publisher": "Office for National Statistics",
       "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/appendixdpublicsectorcurrentreceipts",
       "licence": "OGL v3",
-      "published_on": "2026-09-22"
+      "published_on": "2026-10-21"
     },
     {
       "id": "dft_bus_cap_2026_ws",

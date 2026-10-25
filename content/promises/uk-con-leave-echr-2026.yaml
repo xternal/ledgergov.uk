@@ -1,0 +1,59 @@
+format: openpromises/1
+id: uk-con-leave-echr-2026
+headline:
+  en: Leave the European Convention on Human Rights
+actor_id: kemi-badenoch
+made_on: "2026-08-27"
+venue: press_release
+venue_label:
+  en: Article for The Sun, republished on her website
+area: public_order
+status: promised
+status_note:
+  en: >-
+    The Conservatives are not in government, so the card stays at Promised. The article does not
+    say which other international rules it means, or when. In the same article she says the
+    Conservatives would ban asylum claims by illegal migrants, deport them quickly and double the
+    number of years it takes to qualify for leave to remain.
+responsible: null
+origin: llm_intake
+sources:
+  - title: >-
+      Kemi Badenoch: We will deport every illegal immigrant. Our country is our home, not a hotel
+      (27 Aug 2026, first published in The Sun)
+    url: https://www.kemibadenoch.org.uk/news/kemi-badenoch-mp-we-will-deport-every-illegal-immigrant-our-country-our-home-not-hotel
+versions:
+  - version: 1
+    text: >-
+      The Conservatives will leave the ECHR and other international rules preventing Britain from
+      controlling our borders.
+    recorded_on: "2026-08-27"
+    source_url: https://www.kemibadenoch.org.uk/news/kemi-badenoch-mp-we-will-deport-every-illegal-immigrant-our-country-our-home-not-hotel
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: >-
+          People in the UK, who can now bring cases under the Convention in UK courts and at the
+          European Court of Human Rights
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-08-27"
+    type: promised
+    text:
+      en: >-
+        Kemi Badenoch writes that the Conservatives will leave the ECHR and other international
+        rules that stop Britain controlling its borders
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

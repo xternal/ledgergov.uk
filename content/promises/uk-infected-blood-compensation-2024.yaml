@@ -1,0 +1,91 @@
+format: openpromises/1
+id: uk-infected-blood-compensation-2024
+headline:
+  en: Pay comprehensive infected blood compensation
+actor_id: rishi-sunak
+made_on: "2024-05-20"
+venue: parliament
+venue_label:
+  en: Commons statement on the Infected Blood Inquiry report
+area: health
+status: delivering
+status_note:
+  en: >-
+    Compensation is being paid and not yet complete. The Victims and Prisoners Act 2024, law since
+    24 May 2024, provides for the Infected Blood Compensation Authority and the compensation scheme
+    (Part 3). The authority made its first payment to a living infected person in December 2024; by 31
+    March 2026 it had paid £2.05 billion to 3,153 people, while 17,970 had registered their intent to
+    claim (its annual report for 2025 to 2026).
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The government since July 2024 took the scheme on: its compensation authority has made the
+      payments.
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: PM statement on the Infected Blood Inquiry, 20 May 2024"
+    url: https://www.gov.uk/government/speeches/pm-statement-on-the-infected-blood-inquiry-20-may-2024
+  - title: "Victims and Prisoners Act 2024, Part 3: Infected blood compensation (legislation.gov.uk)"
+    url: https://www.legislation.gov.uk/ukpga/2024/21/part/3
+  - title: "Infected Blood Compensation Authority: Annual report and accounts 2025 to 2026 (14 Sep 2026)"
+    url: https://www.gov.uk/government/publications/ibca-annual-report-and-accounts-2025-to-2026
+versions:
+  - version: 1
+    text: >-
+      First, we will pay comprehensive compensation to those infected and those affected by this
+      scandal
+    recorded_on: "2024-05-20"
+    source_url: https://www.gov.uk/government/speeches/pm-statement-on-the-infected-blood-inquiry-20-may-2024
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: >-
+          People infected through NHS blood and blood products, and people affected: their
+          partners, parents, children, siblings and unpaid carers
+      cost:
+        note:
+          en: >-
+            No figure in the statement, which said: "Whatever it costs to deliver this scheme, we
+            will pay it."
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2024-05-20"
+    type: promised
+    text:
+      en: >-
+        On the day the Infected Blood Inquiry reports, the Prime Minister tells the Commons the
+        government will pay comprehensive compensation
+  - date: "2024-05-24"
+    type: legislated
+    text:
+      en: >-
+        The Victims and Prisoners Act 2024 becomes law, providing for the Infected Blood
+        Compensation Authority and the compensation scheme
+    evidence_url: https://www.legislation.gov.uk/ukpga/2024/21/part/3
+  - date: "2026-09-14"
+    type: delivering
+    text:
+      en: >-
+        The compensation authority's annual report: first payment in December 2024; £2.05 billion
+        paid to 3,153 people by 31 March 2026
+    evidence_url: https://www.gov.uk/government/publications/ibca-annual-report-and-accounts-2025-to-2026
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
+  - by: Pavel Guzhikov
+    kind: editor
+    "on": "2026-10-21"
+    approves: true
+    note:
+      en: >-
+        Checked against the editors' checklist (docs/EDITORS.md): quote, sources, dates, status, cost
+        and wording

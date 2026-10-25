@@ -78,7 +78,8 @@ export default defineConfig({
     ],
     otherLicence: "Quoted for reporting; rights stay with the publisher",
   },
-  modules: ["contracts", "lever", "corrections", "reviews"],
+  // metrics: a target as a number, read against the forecast at the time (OpenPromises decision 36).
+  modules: ["contracts", "lever", "corrections", "reviews", "metrics"],
   // Feed entry ids as the site's feeds already publish them (tag:ledgergov.uk,2026:promise/<id>/event/<n>).
   publish: {
     tag: "ledgergov.uk,2026",
@@ -102,7 +103,6 @@ export default defineConfig({
       "feed.area": "{site}: {area}",
       "feed.sub.all":
         "New timeline events, rewordings, replies and cost changes on every tracked UK political promise, changes to the contracts behind them, and new editions of the headline figures, newest first.",
-      "md.quote_checked": "checked word for word on {date}",
       "md.licence":
         "{site}'s own writing (headlines, status notes, cost notes, summaries) is licensed under {licence}: reuse it, crediting {site} with a link to the card. Official figures are under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) unless their source says otherwise; quotes from Parliament under the [Open Parliament Licence v3.0](https://www.parliament.uk/site-information/copyright-parliament/open-parliament-licence/); other quotes are short extracts whose rights stay with the speaker. How the numbers and statuses are made: https://ledgergov.uk/method.",
     },

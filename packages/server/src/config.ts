@@ -10,7 +10,7 @@
 
 export interface Config {
   production: boolean;
-  /** "alpha": an early version, labelled on every page. "live": launched. */
+  /** "alpha": an early version, which a password can close to testers. "live": launched. */
   stage: "alpha" | "live";
   /** Optional shared password that closes an alpha to testers only (null: public). */
   alphaPassword: string | null;
@@ -93,7 +93,7 @@ export function loadConfig(env: Record<string, string | undefined> = process.env
       webhookSecret: env.TELEGRAM_WEBHOOK_SECRET || null,
     },
     anthropicApiKey: env.ANTHROPIC_API_KEY || null,
-    github: { token: env.GITHUB_TOKEN || null, repo: env.GITHUB_REPOSITORY || "xternal/public-ledger" },
+    github: { token: env.GITHUB_TOKEN || null, repo: env.GITHUB_REPOSITORY || "xternal/ledgergov.uk" },
     admin: { user: env.ADMIN_USER || null, password: env.ADMIN_PASSWORD || null },
     followerCountThreshold: Number(env.FOLLOWER_COUNT_THRESHOLD || 50),
   };

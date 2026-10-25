@@ -2,7 +2,7 @@ format: openpromises/1
 id: keir-starmer
 kind: person
 name:
-  en: Keir Starmer
+  en: Sir Keir Starmer
 party_id: labour
 roles:
   - title:
@@ -14,6 +14,16 @@ roles:
       quote: Prime Minister from 5 July 2024 to 20 July 2026.
 identifiers:
   parliament_member_id: 4514
+# Official social accounts: none in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/4514/Contact (empty since Keir Starmer left the Commons on
+# 1 September 2026), checked 20 October 2026. Taken from his own website, https://www.keirstarmer.com/, which links
+# X, Instagram, Facebook and YouTube, checked 20 October 2026; the Instagram, Facebook ("Former Prime Minister of the
+# United Kingdom") and YouTube ("Official YouTube channel of Keir Starmer") accounts were opened and say they are his.
 same_as:
   - https://www.gov.uk/government/people/keir-starmer
-same_as_checked_on: "2026-10-08"
+  - https://www.keirstarmer.com/
+  - https://x.com/Keir_Starmer
+  - https://www.instagram.com/keirstarmer/
+  - https://www.facebook.com/KeirStarmerLabour
+  - https://www.youtube.com/@KeirStarmer
+same_as_checked_on: "2026-10-20"

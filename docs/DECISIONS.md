@@ -2,6 +2,90 @@
 
 The owner's decisions for LedgerGov.UK, newest first, in his words where he gave them, with what was done and what was deliberately not.
 
+## A short menu, a Money page, and a first screen of cards (23 Oct 2026)
+
+Pavel, looking at the menu: "it is soooo big.. too big?", then "maybe we should rethink first screen? have a glance of Main Thing we have here: key number(s), promises block, play sandbox ledger with gov money. i want a person to understand both The Scale of our Data and the Easiness he now has", "and a logbook of last changes/additions/check down is a good idea", "we can have a switcher somewhere to easy-go on sister sites and guzh.uk and ruminator.xyz". From the sketches (https://claude.ai/artifact/CoD6wVe8TE26xAqCF4HPpW) he chose option A, "but i'd some more widget cards there and give Header less vertical pixels", then "Build option A as redrawn".
+
+**Done:**
+
+- **The menu** has five pages: Money · Promises · People · Your MP · Method (`components/siteLinks.ts`). Pavel: "'People' = /actor (a-la Managers 🙂)", so People are the people, parties and bodies whose promises the ledger tracks, and their pages highlight it. Then: "population may go wherever you had an idea (btw population can have a widget of level of degrading or smth)… i just meant that Population is a very interesting page and we should not forget it". So the population and long-term spending page (`/people`) sits under Money: the Money page links to it, it highlights Money, and the home page has a Population card (people over pension age for every 100 of working age now and in the ONS projection, with the variants' range, and age-related spending in the OBR baseline).
+- **The family switcher** beside the logo (`components/FamilySwitcher.tsx`, a `<details>` that opens without JavaScript): LedgerGov.UK, BoroughBook.UK, USLedger.org, RussiaLedger.com, UkraineLedger.com and Ruminator.xyz, each with one line, and guzh.uk. This is a second place that names Ruminator.xyz, besides the "Also by the author" card below; Pavel asked for it.
+- **The Money page** (`/money`): the statement, the sandbox and "your share", which were the home page's first sections. Old links to them (`/#statement`, `/#scenario`, `/#you`, with a scenario's `?s=`) open there.
+- **The first screen** (`components/HomeFirstScreen.tsx`):
+  - a one-line headline;
+  - the year's figures (the KPI strip);
+  - the promises at a glance;
+  - one sandbox lever (the basic rate, from the model, carried into the full sandbox);
+  - four promises to watch: the latest delivered, the latest not met, the one due next, and the latest with a forecast at the time;
+  - the way to your MP;
+  - the logbook of what was added, moved, corrected or checked.
+
+  The tiles and the logbook are picked by fixed rules from the cards (`packages/schema/src/home.ts`), never by hand. A card counts as added on its first review, and an editor is named only when they chose to be. The engine's spotlight (OpenPromises decision 30) follows the first screen.
+
+**Deliberately not done:** no change to the other sites yet. LedgerGov.UK goes first, so the pattern is judged on real pages before it spreads.
+
+## One weekly desk for every ledger (20 Oct 2026)
+
+Pavel asked whether one routine every Sunday should do the background work for all his ledgers: new promises, a check on the promises already published, new emergencies, and any other data to check, add or confirm. He took the recommendation: "go, follow your recos".
+
+**Done:** one scheduled task on Pavel's Mac, the weekly ledger desk, every Sunday at 20:00 UK time from 25 October 2026. It works through LedgerGov.UK, RussiaLedger.com, BoroughBook.UK, UkraineLedger.com and USLedger.org one at a time, each by its own `docs/desk/WEEKLY.md`, and sends one report, or nothing when there is nothing new. For this site that is the editor's desk (`docs/desk/ROUTINE.md`, moved from the Monday cloud routine, now paused), plus four new checks: evidence on open cards, the cards whose deadline was missed a month ago (an editor confirms them, PROMISE_STANDARD §3), broken links, and the health of the site's jobs and pull requests.
+
+**Why on the Mac, not in the cloud:** one task for every ledger has to run where every ledger's sources can be read. RussiaLedger.com needs archive copies (every connection from the cloud to web.archive.org was reset on 19 October 2026), and BoroughBook.UK reads the council's site and the parties' pages in the app's browser. If the Mac is off at 20:00, the task runs when the app next opens.
+
+**Deliberately not done:** no search for promises beyond the desk (Pavel's decision of 13 October 2026 stands: finding is not the bottleneck). The AI Journalist backtest stays monthly, because a week gives too few drafts to measure. The nightly `deadline_missed` events and the forecast backtest stay nightly.
+
+## The actor page as one story, with official portraits (20 Oct 2026)
+
+Pavel chose the layout: "i like everything in C and the timeline of B! mix it" (the "Chosen" artboard on https://claude.ai/artifact/2rAuASPyGcT6ZYs1cLSys7), after his four answers recorded below ("1 ye to parliament portarait or any other official photo available ; 2 yes ; 3 yes ; 4 yes to sketches"). OpenPromises decision 34 built the timeline, the key promises and the promises by month for every site (0.14.0, released 20 October 2026, approved by Pavel).
+
+**Done:** every actor's page in that layout (docs/OPERATIONS.md §15), the site on OpenPromises 0.14.0, and UK Parliament's official portraits with their credits for every MP on the ledger (§18).
+
+**Deliberately not done:** no photo for anyone without an official portrait under an open licence. Zack Polanski is not an MP, and the licence of London City Hall's photo is not stated. No portrait in the share images yet.
+
+**Then, Pavel: "no photo https://ledgergov.uk/actor/rishi-sunak":** Rishi Sunak's page shows Parliament's official portrait of 2017 (CC BY 3.0, "©House of Commons" as Parliament's list still credits him), marked "Official portrait, 2017". Parliament no longer serves a full-size portrait of him and has no newer one, but the 2017 picture is still the thumbnail its Members API gives for him; the file is the copy of Parliament's original on Wikimedia Commons (docs/OPERATIONS.md §18). Decided: an older official portrait counts when Parliament itself published it under an open licence and has none newer.
+## Key figures: their accounts, their names and their speeches (20 Oct 2026)
+
+Pavel: "why https://ledgergov.uk/actor/andy-burnham doesn't have https://www.instagram.com/andy.burnham/ or https://www.facebook.com/BurnhamGM ? I want key figures to have social links (Sir Kier Starmer (add Sir), Rishi Sunak, Andy Burnham, Badenoch)", then "yes" to filing a leader's speech promises under the leader.
+
+**Done:**
+
+- Official accounts (content/README.md "Official pages"): when Parliament's contact record lists none, a person's own official website counts, and so does an account an editor names once it has been opened and says it is theirs. Andy Burnham, Sir Keir Starmer, Rishi Sunak and Kemi Badenoch now have their websites and accounts; Kemi Badenoch and Zack Polanski are new on the ledger.
+- Names: a person's name is the one UK Parliament displays, without its "Mr" or "Ms" for namesakes, so "Sir Keir Starmer" and "Dame Angela Eagle".
+- Who said it (content/README.md): a promise goes under the person who said it, a party's own document under the party. Two cards moved, each saying so in its status note: Kemi Badenoch's 2025 conference pledge to abolish stamp duty (from the Conservative Party) and Zack Polanski's 2026 conference pledge of a windfall tax on bank profits (from the Green Party).
+
+**Then, Pavel: "3 - yes":** the two Conservative cards from Julia Lopez's Commons statement of 9 September 2026 "for the Conservatives" moved to her (`uk-con-cheap-power-plan-2026`, `uk-con-zev-mandate-abolition-2026`), with her actor file (Shadow Minister (Business, Innovation, Science and Trade) since 31 August 2026, her website and X from Parliament's contact record).
+
+**Deliberately not changed:** the Liberal Democrat £15,000 allowance card stays under the party, because its quote is the party's news release, not the leader's speech.
+
+## Every area on every actor's page, and the actor page as a special project (20 Oct 2026)
+
+Pavel's complaint about the Prime Minister's page: it showed what he promised on pints, VAT and bus fares, but nothing on energy, AI or the long-term future, and a reader could not tell "promised nothing" from "not recorded". OpenPromises decision 33 (0.12.0) answers it with `areaCoverage()`. The same day, seven cards from his speeches since 20 July 2026 were added (#135).
+
+**Done:**
+
+- Every actor's page has a "Promises by area" table after its track record: every area the site lists, with the actor's published promises in it and where they stand, and "None recorded" for an empty area, with a line saying that means not on the ledger yet (docs/OPERATIONS.md §15). The same list for every actor (invariant 6).
+- The site moved to OpenPromises 0.12.0, and the same evening to 0.13.0 (its stylesheet's dark mode is dark brown; the site uses its own styles, so nothing it serves changes; `pnpm parity:check`).
+
+**Decided, to be built after sketches** (Pavel, about 20:30 BST: "1 ye to parliament portarait or any other official photo available ; 2 yes ; 3 yes ; 4 yes to sketches"):
+
+1. An official photo for every person who has one: UK Parliament's official portrait, or another official photo, with its credit, once its licence is confirmed. The same rule for everyone; parties and public bodies have none.
+2. "Key promises" on an actor's page are chosen by the home page's rule (the engine's `spotlight()`: the latest changes and the open promises due next), never by hand.
+3. The timeline of an actor's promises and the key-promises rule are built in OpenPromises first, so BoroughBook.UK and RussiaLedger.com get them too.
+4. Two or three layouts are sketched for Pavel to choose from before anything is built.
+
+## The repository is named after the site (20 Oct 2026)
+
+Pavel, about 17:55 BST: "can we rename the repo public-ledger to ledgergov.uk please?" The GitHub repository `xternal/public-ledger` became `xternal/ledgergov.uk` at about 18:00 BST, in line with naming products by their domain (OpenPromises decision 25). GitHub redirects the old address for web links, the API, `git clone`, `fetch` and `push`, as long as no new repository takes the old name.
+
+**Done:**
+
+- Links and defaults that name the repository now use the new name: the source-code link (`SOURCE_CODE` in `apps/web/lib/site.ts`), the links to the promise standard and the method on the card, area, API and household pages and in the Markdown for AI assistants, `SECURITY.md`, the ETL's user agent, the `GITHUB_REPOSITORY` default in `packages/server/src/config.ts`, the setup scripts and the commands in `docs/`.
+
+**Deliberately not changed:**
+
+- Code names: the workspace package `public-ledger`, the Vercel project `public-ledger` and its `*.vercel.app` addresses, the bot's git name `public-ledger-bot`, the engine setting `legacy: "public-ledger"` (the name of this site's old card format in OpenPromises), and the salt of the alpha password cookie (changing it would sign everyone out).
+- History: card reviews, notes, run files and earlier entries here that cite `xternal/public-ledger#<number>` keep those words; the links redirect.
+
 ## OpenPromises releases install at once, with a provenance check (19 Oct 2026)
 
 Pavel's reply, about 16:09 BST: «решение 32 как предложено» ("decision 32 as proposed"), OpenPromises decision 32. The sites install the engine's packages as soon as a release is published, instead of a day later; in exchange CI checks where each package came from.

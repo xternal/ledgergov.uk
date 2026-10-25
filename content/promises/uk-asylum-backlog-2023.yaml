@@ -1,0 +1,80 @@
+format: openpromises/1
+id: uk-asylum-backlog-2023
+headline:
+  en: Abolish asylum backlog by end of 2023
+actor_id: rishi-sunak
+made_on: "2022-12-13"
+venue: parliament
+venue_label:
+  en: Commons statement
+area: public_order
+status: failed
+status_note:
+  en: >-
+    Home Office statistics show 95,252 asylum cases (128,786 people) still awaiting an initial
+    decision at the end of December 2023, 28% fewer than a year earlier. The Home Office describes
+    the pledge as one to clear the "legacy" backlog of claims made before 28 June 2022, and on 2
+    January 2024 said that target had been met, with every legacy case reviewed and about 4,500
+    complex cases needing further checks; its statistics put the legacy cases still awaiting an
+    initial decision at 3,902 at the end of 2023. On either count the backlog was not abolished by
+    the end of 2023, so the card reads Not met.
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The UK Government was responsible when the pledge fell due at the end of 2023, with Rishi
+      Sunak as Prime Minister.
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: PM statement on illegal migration, 13 December 2022"
+    url: https://www.gov.uk/government/speeches/pm-statement-on-illegal-migration-13-december-2022
+  - title: "Home Office: Legacy backlog cleared as plan to stop the boats delivers (2 Jan 2024)"
+    url: https://www.gov.uk/government/news/legacy-backlog-cleared-as-plan-to-stop-the-boats-delivers
+  - title: >-
+      Home Office: Immigration system statistics, year ending December 2023: how many people do we
+      grant protection to? (29 Feb 2024)
+    url: https://www.gov.uk/government/statistics/immigration-system-statistics-year-ending-december-2023/how-many-people-do-we-grant-protection-to
+versions:
+  - version: 1
+    text: >-
+      we expect to abolish the backlog of initial asylum decisions by the end of next year.
+    recorded_on: "2022-12-13"
+    source_url: https://www.gov.uk/government/speeches/pm-statement-on-illegal-migration-13-december-2022
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: People who had claimed asylum in the UK and were waiting for a first decision
+      cost:
+        note:
+          en: No figure in the statement, and no costing of the pledge was published with it.
+      when:
+        en: By the end of 2023 ("by the end of next year")
+      deadline: "2023-12-31"
+      funded_by: null
+events:
+  - date: "2022-12-13"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister tells the Commons he expects to abolish the backlog of initial asylum
+        decisions by the end of 2023
+  - date: "2023-12-31"
+    type: deadline
+    text:
+      en: Backlog of initial asylum decisions due to be abolished
+  - date: "2024-02-29"
+    type: failed
+    text:
+      en: >-
+        Home Office statistics: 95,252 cases still awaiting an initial decision at the end of
+        December 2023, 3,902 of them legacy cases
+    evidence_url: https://www.gov.uk/government/statistics/immigration-system-statistics-year-ending-december-2023/how-many-people-do-we-grant-protection-to
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

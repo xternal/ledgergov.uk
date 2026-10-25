@@ -26,7 +26,10 @@ jobs:
       # root (the CLI, core, files, quotes, and publish through packages/schema) and in apps/web (react). Then every
       # @openpromises/* package in pnpm-lock.yaml must have been built by the engine's Release workflow, from the tag of
       # its own version, with provenance covering the tarball the registry serves (scripts/openpromises-provenance.ts).
-      - run: npm audit signatures
+      # npm 10's own copy of Sigstore's trusted root is out of date, so on a fresh runner several checks download the new
+      # one at once and one can read it half-written ("invalid attestation"). A second run, like the one in apps/web,
+      # finds it cached and cannot race: a package that was really tampered with fails both times.
+      - run: npm audit signatures || npm audit signatures
       - run: npm audit signatures
         working-directory: apps/web
       - run: pnpm openpromises:provenance
@@ -56,6 +59,8 @@ jobs:
       - run: pnpm build
         env:
           OPENPROMISES_EDITORS_YAML: ${{ secrets.OPENPROMISES_EDITORS }}
+      # No middle dots on any page the build rendered, including text that comes with the data (scripts/middle-dots.ts).
+      - run: pnpm check:dots
 
   data:
     runs-on: ubuntu-latest

@@ -1,0 +1,58 @@
+format: openpromises/1
+id: uk-nhs-waiting-lists-fall-2023
+headline:
+  en: Make NHS waiting lists fall
+actor_id: rishi-sunak
+made_on: "2023-01-04"
+venue: speech
+venue_label:
+  en: Speech setting out his five priorities
+area: health
+status: promised
+status_note:
+  en: >-
+    The pledge gives no date or figure. NHS England counted 7.21 million patients waiting for
+    planned hospital treatment in England at the end of October 2022, the latest figure when it was
+    made, and 7.6 million waiting-list pathways (about 6.4 million people) at the end of June 2024,
+    the last full month before Rishi Sunak left office on 5 July 2024. Without a date the card
+    cannot be marked met or not met, so it stays at Promised. No body in power is committed to it
+    as worded; the present government's commitment is on waiting times (card uk-nhs-18-weeks-2024).
+responsible: null
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: PM speech on building a better future, 4 January 2023"
+    url: https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023
+  - title: "NHS England: RTT waiting times statistical press notice, October 2022 data (8 Dec 2022)"
+    url: https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/12/Oct22-RTT-SPN-publication-version-PDF-438K-39982.pdf
+  - title: "NHS England: RTT waiting times statistical press notice, June 2024 data (8 Aug 2024)"
+    url: https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2024/08/RTT-statistical-press-notice-Jun24-PDF-386K-07252.pdf
+versions:
+  - version: 1
+    text: >-
+      Fourth, NHS waiting lists will fall and people will get the care they need more quickly.
+    recorded_on: "2023-01-04"
+    source_url: https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: Patients in England waiting for planned (elective) hospital treatment
+      cost:
+        note:
+          en: No figure in the speech, and no costing of the pledge was published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2023-01-04"
+    type: promised
+    text:
+      en: The Prime Minister makes falling NHS waiting lists the fourth of five promises
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

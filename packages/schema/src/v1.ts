@@ -41,9 +41,10 @@ const ref = (v: unknown): unknown => (isObj(v) ? clean({ ...v, note: text(v.note
 /** A version's parameters back to their old field names. The deadline is taken off: it belongs to the card. */
 function parameters(p: unknown): unknown {
   if (!isObj(p)) return p;
-  const { who, cost, when, funded_by, deadline: _deadline, ...rest } = p;
+  const { who, cost, when, funded_by, deadline: _deadline, baseline, ...rest } = p;
   const c = isObj(cost) ? cost : {};
   return clean({
+    baseline: isObj(baseline) ? clean({ ...baseline, note: text(baseline.note) }) : baseline,
     who: text(who),
     how_much_bn_per_year: c.range,
     costed_by: c.by,

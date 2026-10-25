@@ -1,0 +1,64 @@
+format: openpromises/1
+id: uk-ten-year-plan-2026
+headline:
+  en: Bring forward a 10-year plan for Britain
+actor_id: andy-burnham
+made_on: "2026-07-20"
+venue: speech
+venue_label:
+  en: First speech as Prime Minister, Downing Street
+area: general_services
+status: promised
+status_note:
+  en: >-
+    "Later this year" is recorded as a deadline of 31 December 2026. The speech says the plan will
+    lay out a path from where Britain is now to where he believes people want it to be, but not
+    what it will cover or in what form it will be published. The card moves when the plan is
+    published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: Andy Burnham's first speech as Prime Minister, 20 July 2026"
+    url: https://www.gov.uk/government/speeches/andy-burnhams-first-speech-as-prime-minister-20-july-2026
+versions:
+  - version: 1
+    text: >-
+      Later this year, I will bring forward a new plan for Britain, a 10-year plan, laying out a
+      path from where we are now to where I believe we all want Britain to be, wherever we’re coming
+      from, whatever party we support.
+    recorded_on: "2026-07-20"
+    source_url: https://www.gov.uk/government/speeches/andy-burnhams-first-speech-as-prime-minister-20-july-2026
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: Everyone in Britain; the speech does not say which areas the plan will cover
+      cost:
+        note:
+          en: >-
+            No separate cost: publishing a plan costs nothing of its own, and no costing has been
+            published.
+      when:
+        en: Later in 2026
+      deadline: "2026-12-31"
+      funded_by: null
+events:
+  - date: "2026-07-20"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister says in his first speech in the job that he will bring forward a 10-year
+        plan for Britain later in the year
+  - date: "2026-12-31"
+    type: deadline
+    text:
+      en: Plan due "later this year" (editorial date, end of 2026)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

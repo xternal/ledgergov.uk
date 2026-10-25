@@ -4,10 +4,12 @@ import { describe, expect, it } from "vitest";
 import { Headline, PolicyArea, type CardView, type PromiseFile } from "@ledger/schema";
 import { loadSeed } from "@ledger/schema/seed";
 import { withVerification } from "@ledger/schema/verification";
+import { withQuoteChecks } from "@ledger/schema/quotes";
 import {
   AREA_SLUG,
   DESCRIPTION_MAX,
   TITLE_MAX,
+  actorIndexJsonLd,
   actorJsonLd,
   actorSameAs,
   areaBySlug,
@@ -25,9 +27,12 @@ import {
   indexNowKey,
   indexNowPayload,
   llmsFull,
+  officialPageLabel,
+  officialPages,
   pagesForCards,
   relatedCards,
   servesCard,
+  socialNetwork,
   submitIndexNow,
   waitForDeploy,
   type FetchLike,
@@ -210,7 +215,15 @@ describe("JSON-LD", () => {
 
   it("speakers link to official pages they can be verified by, and nothing invented", () => {
     const starmer = seed.actors.find((a) => a.id === "keir-starmer")!;
-    expect(actorSameAs(starmer)).toEqual(["https://members.parliament.uk/member/4514", "https://www.gov.uk/government/people/keir-starmer"]);
+    expect(actorSameAs(starmer)).toEqual([
+      "https://members.parliament.uk/member/4514",
+      "https://www.gov.uk/government/people/keir-starmer",
+      "https://www.keirstarmer.com/",
+      "https://x.com/Keir_Starmer",
+      "https://www.instagram.com/keirstarmer/",
+      "https://www.facebook.com/KeirStarmerLabour",
+      "https://www.youtube.com/@KeirStarmer",
+    ]);
     for (const a of seed.actors) {
       const urls = actorSameAs(a);
       expect(urls.length, `${a.id} needs at least one official page`).toBeGreaterThan(0);
@@ -221,9 +234,67 @@ describe("JSON-LD", () => {
     expect(speaker).toMatchObject({
       "@type": "Person",
       name: "Andy Burnham",
-      sameAs: ["https://members.parliament.uk/member/1427", "https://www.gov.uk/government/people/andy-burnham"],
-      affiliation: { "@type": "Organization", name: "Labour Party", sameAs: ["https://labour.org.uk/"] },
+      sameAs: [
+        "https://members.parliament.uk/member/1427",
+        "https://www.gov.uk/government/people/andy-burnham",
+        "https://andyburnham.org.uk/",
+        "https://x.com/andyburnham",
+        "https://www.instagram.com/andy.burnham/",
+        "https://www.facebook.com/BurnhamGM",
+        "https://www.tiktok.com/@andy.burnham",
+      ],
+      affiliation: {
+        "@type": "Organization",
+        name: "Labour Party",
+        sameAs: [
+          "https://labour.org.uk/",
+          "https://x.com/UKLabour",
+          "https://www.instagram.com/uklabour/",
+          "https://www.facebook.com/labourparty",
+          "https://www.tiktok.com/@uklabour",
+          "https://www.youtube.com/labourparty",
+        ],
+      },
     });
+  });
+
+  it("actor pages name each official page, websites first, then social accounts in one order for everyone", () => {
+    expect(officialPageLabel("https://members.parliament.uk/member/4031")).toBe("UK Parliament");
+    expect(officialPageLabel("https://www.gov.uk/government/people/rachel-reeves")).toBe("GOV.UK");
+    expect(officialPageLabel("https://labour.org.uk/")).toBe("labour.org.uk");
+    const social = [
+      "https://x.com/a",
+      "https://twitter.com/a",
+      "https://www.instagram.com/a/",
+      "https://m.facebook.com/a",
+      "https://www.threads.com/@a",
+      "https://threads.net/@a",
+      "https://bsky.app/profile/a.bsky.social",
+      "https://www.tiktok.com/@a",
+      "https://www.youtube.com/@a",
+      "https://www.linkedin.com/company/a/",
+    ];
+    expect(social.map(officialPageLabel)).toEqual(["X", "X", "Instagram", "Facebook", "Threads", "Threads", "Bluesky", "TikTok", "YouTube", "LinkedIn"]);
+    // A file may list them in any order; the page keeps its websites' order and puts the networks after them.
+    const pages = officialPages({ parliament_member_id: 1, same_as: ["https://www.facebook.com/a", "https://x.com/a", "https://www.gov.uk/government/people/a", "https://bsky.app/profile/a"] });
+    expect(pages.map((p) => p.label)).toEqual(["UK Parliament", "GOV.UK", "X", "Facebook", "Bluesky"]);
+    const reeves = officialPages(seed.actors.find((a) => a.id === "rachel-reeves")!);
+    expect(reeves).toEqual([
+      { url: "https://members.parliament.uk/member/4031", label: "UK Parliament" },
+      { url: "https://www.gov.uk/government/people/rachel-reeves", label: "GOV.UK" },
+      { url: "https://x.com/RachelReevesMP", label: "X" },
+    ]);
+  });
+
+  it("every official page is a plain https address, and each social account is in its network's canonical form", () => {
+    for (const a of seed.actors)
+      for (const url of a.same_as ?? []) {
+        const u = new URL(url);
+        expect(u.protocol, url).toBe("https:");
+        expect(u.search + u.hash, url).toBe("");
+        const network = socialNetwork(url);
+        if (network) expect(u.hostname, url).toBe(network.host);
+      }
   });
 
   it("actor pages are ProfilePages with current job titles only", () => {
@@ -246,6 +317,15 @@ describe("JSON-LD", () => {
     expect(shapeIssues(data)).toEqual([]);
     const list = (data[0] as { mainEntity: { itemListElement: { name: string }[] } }).mainEntity.itemListElement;
     expect(list[0]!.name).toBe(`${cards[0]!.file.headline} (${cards[0]!.actor.short_name ?? cards[0]!.actor.name})`);
+  });
+
+  it("the people, parties and public bodies page lists every actor's page", () => {
+    const data = actorIndexJsonLd({ path: "/actor", name: "People, parties and public bodies", description: "…", actors: seed.actors, cards }, ctx);
+    expect(shapeIssues(data)).toEqual([]);
+    const list = (data[0] as { mainEntity: { numberOfItems: number; itemListElement: { url: string; name: string }[] } }).mainEntity;
+    expect(list.numberOfItems).toBe(seed.actors.length);
+    expect(list.itemListElement[0]).toMatchObject({ url: `https://ledger.test/actor/${seed.actors[0]!.id}`, name: seed.actors[0]!.name });
+    expect((data[1] as { "@type": string })["@type"]).toBe("BreadcrumbList");
   });
 
   it("the checker catches a bad shape", () => {
@@ -280,6 +360,19 @@ describe("Markdown for AI assistants", () => {
     expect(md).not.toContain("Goodwill Stranger");
     expect(md).not.toContain("human editor review to come");
     expect(md).not.toContain("undefined");
+  });
+
+  it("says what was checked of the quote beside its source, in the engine's words (OpenPromises decision 35)", () => {
+    const quoted = withQuoteChecks(loadSeed()).cards.find((x) => x.id === "uk-great-british-energy-2024")!;
+    const line = "- **Quote source:** https://labour.org.uk/wp-content/uploads/2024/06/Labour-Party-manifesto-2024.pdf#page=53 (checked word for word at its source on 6 October 2026;";
+    expect(quoted.quote?.md).toBe("checked word for word at its source on 6 October 2026");
+    expect(cardMarkdownFile(quoted, ctx)).toContain(line);
+    // Read without the engine (scripts, these tests' seed): the editor's check alone, in the same words.
+    expect(cardMarkdownFile(cards.find((x) => x.id === quoted.id)!, ctx)).toContain(line);
+    const unchecked = { ...quoted, quote: undefined, current: { ...quoted.current, quote_checked_on: null } };
+    expect(cardMarkdownFile(unchecked, ctx)).toContain("(not yet checked against its source;");
+    const matched = { ...quoted, quote: { kind: "matched" as const, on: null, text: "Quote matches a stored copy of its source word for word", md: "matches a stored copy of its source word for word" } };
+    expect(cardMarkdownFile(matched, ctx)).toContain("(matches a stored copy of its source word for word;");
   });
 
   it("with the editors list, a card's Markdown carries the verification label", () => {
@@ -383,5 +476,15 @@ describe("IndexNow", () => {
     const never: FetchLike = async () => ({ ok: false, status: 404, text: async () => "" });
     clock = 0;
     expect(await waitForDeploy([card], ctx.siteUrl, never, { timeoutMs: 30, intervalMs: 10, sleep: async () => void (clock += 10), now: () => clock })).toEqual([]);
+  });
+});
+
+describe("the target and the forecast at the time in the Markdown (OpenPromises decision 36)", () => {
+  it("lists both, with the forecast's source and the gap, and the target's correction in words", () => {
+    const md = cardMarkdownFile(cards.find((c) => c.id === "uk-halve-inflation-2023")!, ctx);
+    expect(md).toContain("- **Target:** At most 5.25% by 31 December 2023");
+    expect(md).toContain("- **Forecast at the time:** 3.75% by 31 December 2023, the OBR's forecast of 17 November 2022, before the promise ([OBR: Economic and fiscal outlook, November 2022");
+    expect(md).toContain("The forecast at the time already met the target.");
+    expect(md).toContain("Was: not given. Now: at most 5.25% by 31 December 2023.");
   });
 });

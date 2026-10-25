@@ -13,3 +13,5 @@ roles:
       url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS366
 identifiers:
   parliament_member_id: 5123
+# Official social accounts: none in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/5123/Contact, checked 20 October 2026.

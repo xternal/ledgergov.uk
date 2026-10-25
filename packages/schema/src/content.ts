@@ -42,9 +42,11 @@ export const ActorFile = z
     /**
      * Official pages about this actor, for search engines' structured data
      * (schema.org sameAs): a party's own website, a GOV.UK profile or
-     * organisation page. Only pages an editor has checked are about this actor;
-     * the UK Parliament page is derived from parliament_member_id, so it is not
-     * listed here.
+     * organisation page, then the social accounts an official source links (a
+     * UK Parliament contact record, a party's website, a GOV.UK organisation
+     * page). Only pages an editor has checked are about this actor; the UK
+     * Parliament page is derived from parliament_member_id, so it is not listed
+     * here.
      */
     same_as: z.array(z.url()).optional(),
   })
@@ -90,6 +92,40 @@ export type CostedBy = z.infer<typeof CostedBy>;
 /** How readers see the kind: "Central figure: OBR (official)". */
 export const COSTED_BY_LABEL: Record<CostedBy["kind"], string> = { official: "official", party: "party's own figure", independent: "independent" };
 
+/**
+ * A target the speaker's own words set, as a number (OpenPromises decision 36, the engine's metrics module), such as
+ * "at most 5.25% by 31 December 2023" for "halve inflation this year". Only when the words name a measurable figure:
+ * the site never sets a target of its own. `series_id` names the official series it is read on.
+ */
+export const Metric = z.object({
+  series_id: z.string().trim().min(1),
+  target: z.number(),
+  direction: z.enum(["at_least", "at_most", "below"]),
+  unit: z.string().trim().min(1),
+  by: IsoDate,
+});
+export type Metric = z.infer<typeof Metric>;
+
+/**
+ * The forecast at the time (OpenPromises decision 36): what an official or independent forecaster (OBR, the Bank of
+ * England, IFS, IMF) expected for the target's measure, published before the promise, so an outcome is read against
+ * a yardstick neither side chose. Never a party's figure or the site's own.
+ */
+export const Baseline = z.object({
+  value: z.number(),
+  /** The same unit as the target: "%". */
+  unit: z.string().trim().min(1),
+  /** The date the forecast is for. */
+  for: IsoDate,
+  by: z.object({ kind: z.enum(["official", "independent"]), name: z.string().trim().min(1).max(80) }),
+  /** On or before the day the version was recorded. */
+  published_on: IsoDate,
+  source: Link,
+  /** What the forecast assumes, or how it is read against the target. */
+  note: z.string().optional(),
+});
+export type Baseline = z.infer<typeof Baseline>;
+
 export const VersionParameters = z
   .object({
     who: z.string().optional(),
@@ -101,6 +137,8 @@ export const VersionParameters = z
     when: z.string().optional(),
     /** Exactly as stated at announcement; null = "Funding not stated". */
     funded_by: z.string().nullable().optional(),
+    metric: Metric.optional(),
+    baseline: Baseline.optional(),
   })
   .nullable();
 export type VersionParameters = z.infer<typeof VersionParameters>;
@@ -291,6 +329,18 @@ export const PromiseFile = z
     if (current.parameters !== null && p.status === "unscoreable")
       ctx.addIssue({ code: "custom", path: ["status"], message: "an unscoreable card has no parameters" });
     p.versions.forEach((v, i) => {
+      const b = v.parameters?.baseline;
+      const m = v.parameters?.metric;
+      if (b && b.published_on > v.recorded_on)
+        ctx.addIssue({
+          code: "custom",
+          path: ["versions", i, "parameters", "baseline", "published_on"],
+          message: "a forecast at the time is published on or before the day the version was recorded, so nobody chooses it with hindsight (OpenPromises decision 36)",
+        });
+      if (b && m && b.unit !== m.unit)
+        ctx.addIssue({ code: "custom", path: ["versions", i, "parameters", "baseline", "unit"], message: `is "${b.unit}", but the target is in "${m.unit}"; a forecast at the time is for the same measure` });
+    });
+    p.versions.forEach((v, i) => {
       const r = v.parameters?.how_much_bn_per_year;
       if (r && r[0] === r[2])
         ctx.addIssue({
@@ -345,6 +395,23 @@ export interface CardView {
   contracts: ContractLink[];
   /** How far the card has been verified (OpenPromises decision 23), set by withVerification (verification.ts); absent when built without the editors list. */
   verification?: CardVerification;
+  /** What was checked of the current version's quote (OpenPromises decision 35), set by withQuoteChecks (quotes.ts). */
+  quote?: CardQuote;
+}
+
+/**
+ * What was checked of a quote, the strongest that holds (OpenPromises decision 35): an editor's check at its source
+ * (quote_checked_on), else a machine's word-for-word match in a stored copy of the source (an exact archive check in
+ * content/quotes.json), else nothing yet. In the engine's words.
+ */
+export interface CardQuote {
+  kind: "checked" | "matched" | "none";
+  /** The day an editor checked it at its source, when `kind` is "checked". */
+  on: string | null;
+  /** As the card page says it: "Quote checked word for word at its source on 20 October 2026". */
+  text: string;
+  /** As the Markdown's quote-source line says it: "checked word for word at its source on 20 October 2026". */
+  md: string;
 }
 
 export function cardViews(promises: PromiseFile[], actors: ActorFile[], contracts: ContractFile[] = []): CardView[] {
@@ -373,16 +440,27 @@ export function cardViews(promises: PromiseFile[], actors: ActorFile[], contract
  * no correction; once it has a value, changing it is a correction like any other.
  */
 export const LATE_FIELDS: Record<"versions" | "events" | "replies", string[]> = {
-  // Who made the cost's central figure (PROMISE_STANDARD §2), added 9 Oct 2026.
-  versions: [".parameters.costed_by"],
+  // Who made the cost's central figure (PROMISE_STANDARD §2), added 9 Oct 2026. An editor's quote check, which may be
+  // recorded once on a published card (OpenPromises decision 35, a late field in the engine's check since 0.15.0).
+  // The forecast at the time (OpenPromises decision 36), a late field in the engine's check since 0.16.0. A target
+  // (.parameters.metric) is not one: adding it changes how the promise is read, so it comes with a correction.
+  versions: [".parameters.costed_by", ".quote_checked_on", ".parameters.baseline"],
   events: [],
   replies: [],
 };
 
-/** The entry as it stands, minus any late field the published entry did not have. */
+/** The entry as it stands, with any late field the published entry did not have put back as it was there: absent, or null (quote_checked_on: null). */
 function withoutLateFields(key: keyof typeof LATE_FIELDS, published: unknown, now: unknown): unknown {
   let out = now;
-  for (const tail of LATE_FIELDS[key]) if (now !== undefined && fieldAt(published, tail) === null && fieldAt(out, tail) !== null) out = withField(out, tail, null);
+  for (const tail of LATE_FIELDS[key])
+    if (now !== undefined && fieldAt(published, tail) === null && fieldAt(out, tail) !== null) {
+      const at = tail.lastIndexOf(".");
+      const [parent, last] = [tail.slice(0, at), tail.slice(at + 1)];
+      const was = fieldAt(published, parent);
+      out = structuredClone(out);
+      // stable() leaves out a key whose value is undefined, so an absent field compares equal to undefined.
+      (fieldAt(out, parent) as Record<string, unknown>)[last] = was && typeof was === "object" ? (was as Record<string, unknown>)[last] : undefined;
+    }
   return out;
 }
 

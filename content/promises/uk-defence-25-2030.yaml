@@ -1,0 +1,103 @@
+format: openpromises/1
+id: uk-defence-25-2030
+headline:
+  en: Spend 2.5% of GDP on defence by 2030
+actor_id: rishi-sunak
+made_on: "2024-04-23"
+venue: speech
+venue_label:
+  en: Defence speech in Warsaw
+area: defence
+status: funded
+status_note:
+  en: >-
+    The government set out the plan the same day in the policy paper Defending Britain: spending to
+    rise each year to 2.5% of GDP in 2030, £87bn in 2030-31. After the change of government on 5
+    July 2024 the new government kept the 2.5% level and brought it forward: the Spending Review
+    2025 confirms defence spending rising to 2.6% of GDP from 2027 on NATO's measure, which counts
+    more intelligence spending (card uk-defence-25-2027), with the defence budget set to 2028-29.
+    "By 2030" is read as the end of 2030. The card moves to Delivered when spending figures show
+    2.5% of GDP reached.
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The government since July 2024 has taken on the 2.5% level and brought it forward to 2027.
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: Prime Minister's defence speech in Warsaw, 23 April 2024"
+    url: https://www.gov.uk/government/speeches/prime-ministers-defence-speech-in-warsaw-23-april-2024
+  - title: >-
+      Prime Minister's Office: PM announces 'turning point' in European security as UK set to
+      increase defence spending to 2.5% by 2030 (23 Apr 2024)
+    url: https://www.gov.uk/government/news/pm-announces-turning-point-in-european-security-as-uk-set-to-increase-defence-spending-to-25-by-2030
+  - title: "Cabinet Office: Defending Britain, policy paper (23 Apr 2024)"
+    url: https://www.gov.uk/government/publications/defending-britain
+  - title: Spending Review 2025 (HM Treasury)
+    url: https://www.gov.uk/government/publications/spending-review-2025-document/spending-review-2025-html
+versions:
+  - version: 1
+    text: >-
+      We will increase defence spending to a new baseline of 2.5% of GDP, by 2030.
+    recorded_on: "2024-04-23"
+    source_url: https://www.gov.uk/government/speeches/prime-ministers-defence-speech-in-warsaw-23-april-2024
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: The armed forces and the UK's defence budget
+      cost:
+        range: [11.25, 12.5, 13.75]
+        quality: sourced
+        by:
+          kind: official
+          name: No 10
+        note:
+          en: >-
+            Year shown: the average of the six years to 2030. The Prime Minister put the extra
+            spending at £75bn over the next six years (central, £12.5bn a year on average); the
+            policy paper says spending would reach £87bn in 2030-31, £23bn more than in 2024-25, so
+            the yearly amount rises over the period. Low–high is an editorial ±10% because the
+            source gives a central figure only.
+        sources:
+          - title: "Prime Minister's Office: Prime Minister's defence speech in Warsaw, 23 April 2024"
+            url: https://www.gov.uk/government/speeches/prime-ministers-defence-speech-in-warsaw-23-april-2024
+          - title: "Cabinet Office: Defending Britain, policy paper (23 Apr 2024)"
+            url: https://www.gov.uk/government/publications/defending-britain
+      when:
+        en: By 2030
+      deadline: "2030-12-31"
+      funded_by:
+        en: >-
+          The speech says it will be "fully funded with no increase in borrowing or debt"; neither
+          the speech nor the policy paper says from where
+events:
+  - date: "2024-04-23"
+    type: promised
+    text:
+      en: The Prime Minister pledges to raise defence spending to 2.5% of GDP by 2030
+  - date: "2024-04-23"
+    type: in_plan
+    text:
+      en: >-
+        The policy paper Defending Britain sets out spending rising each year to 2.5% of GDP in 2030
+    evidence_url: https://www.gov.uk/government/publications/defending-britain
+  - date: "2025-06-11"
+    type: funded
+    text:
+      en: >-
+        Spending Review 2025 confirms defence spending rising to 2.6% of GDP from 2027 on NATO's
+        measure, with the defence budget set to 2028-29
+    evidence_url: https://www.gov.uk/government/publications/spending-review-2025-document/spending-review-2025-html
+  - date: "2030-12-31"
+    type: deadline
+    text:
+      en: Defence spending due to reach 2.5% of GDP (editorial date, end of 2030)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

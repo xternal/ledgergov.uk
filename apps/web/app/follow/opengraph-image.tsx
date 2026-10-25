@@ -15,6 +15,6 @@ export default async function Image() {
       { value: String(cards.length), label: "promises you can follow" },
       { value: String(new Set(cards.map((c) => c.file.policy_area)).size), label: "policy areas" },
     ],
-    foot: "By email, Telegram or RSS · no account needed",
+    foot: "By email, Telegram or RSS, with no account needed",
   });
 }

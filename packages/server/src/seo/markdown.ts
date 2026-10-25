@@ -1,4 +1,4 @@
-import { APPROVALS_NEEDED, approvedByText, contractChange, CORRECTION_PATH, COSTED_BY_LABEL, editorShownAs, LADDER, type CardView, type Correction, type PromiseFile } from "@ledger/schema";
+import { APPROVALS_NEEDED, approvedByText, contractChange, CORRECTION_PATH, COSTED_BY_LABEL, editorShownAs, forecastGap, LADDER, Metric, type CardView, type Correction, type PromiseFile } from "@ledger/schema";
 import { areaLabel, CONTRACT_STATUSES, displayName, eventLabel, gbpBnText, moneyText, statusLabel, ukDate } from "../alerts/labels";
 import { OGL, OPEN_PARLIAMENT_LICENCE, OWN_WORK_LICENCE, quoteLicence } from "../api/envelope";
 import { absoluteUrl, areaPath, cardCostText, cardHeadline, cardLastUpdated, SITE_NAME, statusCounts, type SeoContext } from "./cards";
@@ -30,6 +30,14 @@ const reviewer = (r: PromiseFile["reviews"][number], named?: readonly string[]) 
       : editorShownAs(r.by, named)
     : `${REVIEWER_NAME[r.by] ?? r.by} (${r.kind === "automated" ? "automated" : "legal review"})`;
 
+/**
+ * What was checked of the quote, in the engine's words (OpenPromises decision 35): withQuoteChecks
+ * (@ledger/schema/quotes) sets it on every card the site serves. Without it, the editor's check alone, as the engine
+ * says it for a card read without its stored copies.
+ */
+const quoteChecked = (c: CardView) =>
+  c.quote?.md ?? (c.current.quote_checked_on ? `checked word for word at its source on ${ukDate(c.current.quote_checked_on)}` : "not yet checked against its source");
+
 /** "Costs £1.5bn to £1.9bn a year (central £1.7bn by Labour Party, party's own figure)", or why there is no figure. */
 function costLine(c: CardView): string {
   const p = c.current.parameters;
@@ -43,6 +51,8 @@ function costLine(c: CardView): string {
 function correctionValue(c: Correction, v: unknown): string {
   if (v === null || v === undefined) return "not given";
   if (c.path.endsWith("how_much_bn_per_year") && Array.isArray(v) && v.length === 3) return `${gbpBnText(v[0])} to ${gbpBnText(v[2])} a year`;
+  const m = c.path.endsWith("parameters.metric") ? Metric.safeParse(v) : null;
+  if (m?.success) return `${{ at_least: "at least", at_most: "at most", below: "below" }[m.data.direction]} ${m.data.target}${m.data.unit.startsWith("%") ? m.data.unit : ` ${m.data.unit}`} by ${ukDate(m.data.by)}`;
   if (typeof v === "string") return /^\d{4}-\d{2}-\d{2}$/.test(v) ? ukDate(v) : `“${flat(v)}”`;
   if (Array.isArray(v)) return v.map((x) => (x && typeof x === "object" && "title" in x ? String((x as { title: unknown }).title) : JSON.stringify(x))).join("; ");
   return JSON.stringify(v);
@@ -78,6 +88,7 @@ export function cardMarkdown(c: CardView, ctx: SeoContext, level: 1 | 2 = 1): st
   };
 
   line(`${h(0)} ${cardHeadline(c)}`, "", `> “${flat(c.current.text)}”`, ">", `> — ${speaker}; ${said}`, "");
+  const gap = forecastGap(p ?? undefined);
   const facts: [string, string | null][] = [
     ["Status", `${statusLabel(f.status)}${c.broughtAboutBy ? `, brought about by ${c.broughtAboutBy.name}${f.brought_about_by?.note ? ` (${flat(f.brought_about_by.note)})` : ""}` : ""}`],
     ["Status ladder", f.status === "unscoreable" ? null : LADDER.map(statusLabel).join(" → ")],
@@ -91,9 +102,11 @@ export function cardMarkdown(c: CardView, ctx: SeoContext, level: 1 | 2 = 1): st
     ["Who it affects", p?.who ? flat(p.who) : null],
     ["When", p?.when ? (/^\d{4}-\d{2}-\d{2}$/.test(p.when) ? ukDate(p.when) : flat(p.when)) : null],
     ["Paid for by", p ? (p.funded_by ? flat(p.funded_by) : "Not stated when it was announced") : null],
+    ["Target", gap ? gap.targetText : null],
+    ["Forecast at the time", gap ? `${gap.forecastText} (${link(gap.baseline.source.title, gap.baseline.source.url)})${gap.baseline.note ? `: ${flat(gap.baseline.note).replace(/\.$/, "")}` : ""}. ${gap.words}` : null],
     [
       "Quote source",
-      `${c.current.source_url} (${c.current.quote_checked_on ? `checked word for word on ${ukDate(c.current.quote_checked_on)}` : "not yet checked against the source"}; ${quoteLicence(c.current.source_url)})`,
+      `${c.current.source_url} (${quoteChecked(c)}; ${quoteLicence(c.current.source_url)})`,
     ],
     ["Last updated", updated ? ukDate(updated) : null],
     ["Card", url],
@@ -177,7 +190,7 @@ export function cardMarkdownFile(c: CardView, ctx: SeoContext): string {
 /** How a card works, in short, for readers who have only the text. */
 export function methodMarkdown(ctx: SeoContext): string[] {
   return [
-    `- One published standard for every party: ${link("the promise standard", "https://github.com/xternal/public-ledger/blob/main/docs/PROMISE_STANDARD.md")}. No code path treats one party differently.`,
+    `- One published standard for every party: ${link("the promise standard", "https://github.com/xternal/ledgergov.uk/blob/main/docs/PROMISE_STANDARD.md")}. No code path treats one party differently.`,
     "- The quote is the speaker's exact words, copied from the source and checked word for word. The headline is our neutral summary of it.",
     `- Status ladder: ${LADDER.map(statusLabel).join(" → ")}. Off the ladder: ${statusLabel("failed")} (the deadline passed and evidence shows it was not met, or it was officially abandoned) and ${statusLabel("quietly_dropped")} (the deadline passed with no official statement and no evidence of delivery). ${statusLabel("unscoreable")}: two or more of who, how much and when are missing, so it cannot be tracked.`,
     "- A status changes only on evidence: every timeline entry after the promise itself links to a plan, a bill, a Budget line or a delivery record.",

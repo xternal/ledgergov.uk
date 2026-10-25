@@ -1,0 +1,94 @@
+format: openpromises/1
+id: uk-infrastructure-decisions-150-2029
+headline:
+  en: Decide 150 major infrastructure projects
+actor_id: keir-starmer
+made_on: "2024-12-05"
+venue: press_release
+venue_label:
+  en: "Press release on the Plan for Change milestones (Prime Minister's Office)"
+area: economic_affairs
+status: delivering
+status_note:
+  en: >-
+    The government said on 22 September 2025 that 21 major infrastructure planning decisions were
+    made in the Parliament's first year, a record, and four more since, 25 in all, with 10 more
+    projects awaiting a decision. The Planning and Infrastructure Act 2025, law since 18 December
+    2025, is meant to speed these decisions up, and the government named the 150 decisions as its
+    aim when it passed. The end of the Parliament is taken as 1 July 2029. The 1.5 million homes in
+    the same sentence are on the Labour Party's manifesto card.
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The government named the 150 decisions as its aim when the Planning and Infrastructure Act
+      2025 became law.
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: PM sets out blueprint for decade of national renewal (5 Dec 2024)"
+    url: https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal
+  - title: "HM Government: Plan for Change, milestones for mission-led government (PDF, 5 Dec 2024)"
+    url: https://assets.publishing.service.gov.uk/media/6751af4719e0c816d18d1df3/Plan_for_Change.pdf
+  - title: >-
+      Ministry of Housing, Communities and Local Government: Record number of major infrastructure
+      projects green-lit (22 Sep 2025)
+    url: https://www.gov.uk/government/news/record-number-of-major-infrastructure-projects-green-lit
+  - title: >-
+      Ministry of Housing, Communities and Local Government: Landmark Planning and Infrastructure
+      Bill becomes law (18 Dec 2025)
+    url: https://www.gov.uk/government/news/landmark-planning-and-infrastructure-bill-becomes-law
+versions:
+  - version: 1
+    text: >-
+      Rebuilding Britain with 1.5 million homes in England and fast-tracking planning decisions on
+      at least 150 major economic infrastructure projects.
+    recorded_on: "2024-12-05"
+    source_url: https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: Promoters of major infrastructure projects and the places they serve
+      cost:
+        note:
+          en: No cost was given with the milestone.
+      when:
+        en: By the end of the Parliament that first met on 9 July 2024 (taken as by 1 July 2029)
+      deadline: "2029-07-01"
+      funded_by: null
+events:
+  - date: "2024-12-05"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister sets planning decisions on at least 150 major infrastructure projects as
+        a milestone
+  - date: "2025-09-22"
+    type: delivering
+    text:
+      en: >-
+        The government reports 25 major infrastructure planning decisions so far, 21 of them in the
+        Parliament's first year
+    evidence_url: https://www.gov.uk/government/news/record-number-of-major-infrastructure-projects-green-lit
+  - date: "2029-07-01"
+    type: deadline
+    text:
+      en: >-
+        Decisions on at least 150 major infrastructure projects due by the end of the Parliament
+        (editorial date)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
+  - by: Pavel Guzhikov
+    kind: editor
+    "on": "2026-10-21"
+    approves: true
+    note:
+      en: >-
+        Checked against the editors' checklist (docs/EDITORS.md): quote, sources, dates, status, cost
+        and wording

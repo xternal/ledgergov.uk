@@ -1,0 +1,90 @@
+format: openpromises/1
+id: uk-bus-fare-2-to-2024
+headline:
+  en: Keep the £2 bus fare through 2024
+actor_id: rishi-sunak
+made_on: "2023-10-04"
+venue: press_release
+venue_label:
+  en: Article by the Prime Minister on GOV.UK
+area: economic_affairs
+status: delivered
+status_note:
+  en: >-
+    The Department for Transport says the £2 cap on single bus fares ran from 1 January 2023 until
+    the end of 2024, and was replaced by a £3 cap in England outside London from 1 January 2025. The
+    cap's last six months ran under the government that took office on 5 July 2024, which kept it in
+    place until the date he named.
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The UK Government was responsible for the cap until the end of December 2024: under Rishi
+      Sunak as Prime Minister until 5 July 2024, and under the next government after that.
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: What the plan to launch Network North means for you (4 Oct 2023)"
+    url: https://www.gov.uk/government/speeches/what-the-plan-to-launch-network-north-means-for-you
+  - title: "Department for Transport: £2 bus fare cap to be extended and bus services protected with new funding (17 Feb 2023)"
+    url: https://www.gov.uk/government/news/2-bus-fare-cap-to-be-extended-and-bus-services-protected-with-new-funding
+  - title: "Department for Transport: Evaluation of the £2 bus fare cap"
+    url: https://www.gov.uk/government/publications/evaluation-of-the-2-bus-fare-cap
+versions:
+  - version: 1
+    text: >-
+      We’ll also invest £6.5 billion across the rest of the country, on schemes like keeping the £2
+      bus fare until the end of December 2024.
+    recorded_on: "2023-10-04"
+    source_url: https://www.gov.uk/government/speeches/what-the-plan-to-launch-network-north-means-for-you
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: People paying single bus fares in England outside London
+      cost:
+        note:
+          en: >-
+            No separate figure for the bus fare in the article: it is one of the schemes in the
+            £6.5 billion he named for the rest of the country.
+      when:
+        en: Until the end of December 2024
+      deadline: "2024-12-31"
+      funded_by:
+        en: >-
+          Money that would have been spent extending HS2 beyond Birmingham, moved into Network North
+          ("we will take every pound that would have been spent extending HS2 and invest over £36
+          billion into Network North")
+events:
+  - date: "2023-10-04"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister says the £2 bus fare will be kept until the end of December 2024, as part
+        of Network North
+  - date: "2024-12-31"
+    type: deadline
+    text:
+      en: The £2 bus fare is due to run until the end of December 2024
+  - date: "2025-01-01"
+    type: delivered
+    text:
+      en: >-
+        Department for Transport: the £2 bus fare cap ran from 1 January 2023 until the end of 2024
+        and was replaced by a £3 cap from 1 January 2025
+    evidence_url: https://www.gov.uk/government/publications/evaluation-of-the-2-bus-fare-cap
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
+  - by: Pavel Guzhikov
+    kind: editor
+    "on": "2026-10-21"
+    approves: true
+    note:
+      en: >-
+        Checked against the editors' checklist (docs/EDITORS.md): quote, sources, dates, status, cost
+        and wording

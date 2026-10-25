@@ -1,0 +1,86 @@
+format: openpromises/1
+id: uk-school-ready-75pc-2028
+headline:
+  en: "75% of five-year-olds ready for school"
+actor_id: keir-starmer
+made_on: "2024-12-05"
+venue: press_release
+venue_label:
+  en: "Press release on the Plan for Change milestones (Prime Minister's Office)"
+area: education
+status: in_plan
+status_note:
+  en: >-
+    The Department for Education's strategy Giving every child the best start in life (7 July 2025)
+    sets the measure: by 2028, 75% of children reaching a good level of development by the end of
+    reception. In 2024/25, 68.3% did (Early years foundation stage profile results, 27 November
+    2025). The deadline is taken as the end of 2028, so the results for children finishing reception
+    in summer 2028 settle it. The card moves when the strategy's money is allocated or its new
+    services are running.
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The Department for Education's strategy of 7 July 2025 is the government's plan for the
+      milestone.
+origin: llm_intake
+sources:
+  - title: "Prime Minister's Office: PM sets out blueprint for decade of national renewal (5 Dec 2024)"
+    url: https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal
+  - title: "HM Government: Plan for Change, milestones for mission-led government (PDF, 5 Dec 2024)"
+    url: https://assets.publishing.service.gov.uk/media/6751af4719e0c816d18d1df3/Plan_for_Change.pdf
+  - title: "Department for Education: Giving every child the best start in life (7 Jul 2025)"
+    url: https://www.gov.uk/government/publications/giving-every-child-the-best-start-in-life
+  - title: "Department for Education: Early years foundation stage profile results, 2024/25 (27 Nov 2025)"
+    url: https://explore-education-statistics.service.gov.uk/find-statistics/early-years-foundation-stage-profile-results/2024-25
+versions:
+  - version: 1
+    text: >-
+      Giving children the best start in life, with a record 75% of five-year-olds in England ready
+      to learn when they start school.
+    recorded_on: "2024-12-05"
+    source_url: https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: Children starting school in England
+      cost:
+        note:
+          en: No cost was given with the milestone.
+      when:
+        en: By 2028
+      deadline: "2028-12-31"
+      funded_by: null
+events:
+  - date: "2024-12-05"
+    type: promised
+    text:
+      en: "The Prime Minister sets 75% of five-year-olds ready to learn as a Plan for Change milestone"
+  - date: "2025-07-07"
+    type: in_plan
+    text:
+      en: >-
+        The Department for Education's best start in life strategy aims for 75% at a good level of
+        development by 2028
+    evidence_url: https://www.gov.uk/government/publications/giving-every-child-the-best-start-in-life
+  - date: "2028-12-31"
+    type: deadline
+    text:
+      en: "75% of children due to be ready to learn when they start school (editorial date, end of 2028)"
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
+  - by: Pavel Guzhikov
+    kind: editor
+    "on": "2026-10-21"
+    approves: true
+    note:
+      en: >-
+        Checked against the editors' checklist (docs/EDITORS.md): quote, sources, dates, status, cost
+        and wording

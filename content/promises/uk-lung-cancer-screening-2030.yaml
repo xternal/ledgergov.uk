@@ -1,0 +1,97 @@
+format: openpromises/1
+id: uk-lung-cancer-screening-2030
+headline:
+  en: Screen high-risk 55 to 74s for lung cancer
+actor_id: rishi-sunak
+made_on: "2023-06-26"
+venue: press_release
+venue_label:
+  en: Press release (Department of Health and Social Care)
+area: health
+status: delivering
+status_note:
+  en: >-
+    The screening programme is running and not yet complete. The National Cancer Plan for England
+    (20 April 2026) says over 1.5 million people have attended a lung health check and over 9,000
+    have been diagnosed with lung cancer, 76% at stage 1 or 2, and commits to complete the roll-out
+    by 2030, when every eligible person will have had a first invitation. The announcement aimed for
+    full coverage by March 2030.
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The government since July 2024 took the roll-out on in the National Cancer Plan for England
+      (20 April 2026): "we will complete the roll out of lung cancer screening by 2030".
+origin: llm_intake
+sources:
+  - title: "Department of Health and Social Care: New lung cancer screening roll out to detect cancer sooner (26 Jun 2023)"
+    url: https://www.gov.uk/government/news/new-lung-cancer-screening-roll-out-to-detect-cancer-sooner
+  - title: "Department of Health and Social Care and NHS England: The National Cancer Plan for England (20 Apr 2026)"
+    url: https://www.gov.uk/government/publications/national-cancer-plan-for-england/the-national-cancer-plan-for-england-delivering-world-class-cancer-care-accessible-version
+versions:
+  - version: 1
+    text: >-
+      Rolling out screening to high-risk 55 to 74 year olds will save lives by detecting up to 9,000
+      lung cancers a year at an early stage.
+    recorded_on: "2023-06-26"
+    source_url: https://www.gov.uk/government/news/new-lung-cancer-screening-roll-out-to-detect-cancer-sooner
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: >-
+          People in England aged 55 to 74 who smoke or used to smoke and are assessed as at high
+          risk of lung cancer, invited for a scan every two years
+      cost:
+        range: [0.243, 0.27, 0.297]
+        quality: sourced
+        by:
+          kind: official
+          name: Department of Health and Social Care
+        note:
+          en: >-
+            The announcement says the programme will cost £270 million a year once fully
+            implemented. Low–high is an editorial ±10% because the source gives a central figure
+            only.
+        sources:
+          - title: "Department of Health and Social Care: New lung cancer screening roll out to detect cancer sooner (26 Jun 2023)"
+            url: https://www.gov.uk/government/news/new-lung-cancer-screening-roll-out-to-detect-cancer-sooner
+      when:
+        en: >-
+          40% of eligible people reached by March 2025; full coverage by March 2030
+      deadline: "2030-03-31"
+      funded_by: null
+events:
+  - date: "2023-06-26"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister and the Health Secretary announce a national targeted lung cancer
+        screening programme for high-risk 55 to 74 year olds
+  - date: "2026-04-20"
+    type: delivering
+    text:
+      en: >-
+        National Cancer Plan: over 1.5 million people have attended a lung health check; the
+        government commits to complete the roll-out by 2030
+    evidence_url: https://www.gov.uk/government/publications/national-cancer-plan-for-england/the-national-cancer-plan-for-england-delivering-world-class-cancer-care-accessible-version
+  - date: "2030-03-31"
+    type: deadline
+    text:
+      en: Full coverage of the eligible population due by March 2030
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
+  - by: Pavel Guzhikov
+    kind: editor
+    "on": "2026-10-21"
+    approves: true
+    note:
+      en: >-
+        Checked against the editors' checklist (docs/EDITORS.md): quote, sources, dates, status, cost
+        and wording

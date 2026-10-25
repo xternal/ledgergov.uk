@@ -14,6 +14,11 @@ roles:
       quote: Lucy Powell was appointed Secretary of State for Education on 20 July 2026.
 identifiers:
   parliament_member_id: 4263
+# Official social accounts in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/4263/Contact, checked 20 October 2026.
 same_as:
   - https://www.gov.uk/government/people/lucy-powell
-same_as_checked_on: "2026-10-08"
+  - https://x.com/LucyMPowell
+  - https://www.instagram.com/lucympowell/
+  - https://www.facebook.com/lucy4mcr
+same_as_checked_on: "2026-10-20"

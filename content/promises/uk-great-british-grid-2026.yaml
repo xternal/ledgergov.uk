@@ -1,0 +1,77 @@
+format: openpromises/1
+id: uk-great-british-grid-2026
+headline:
+  en: Create Great British Grid
+actor_id: andy-burnham
+made_on: "2026-09-29"
+venue: speech
+venue_label:
+  en: Leader's speech, Labour Party Conference 2026
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The Department for Energy Security and Net Zero announced Great British Grid the same day: a
+    new publicly owned body within Great British Energy that will invest public money, alongside
+    private investment, in electricity network infrastructure. Its start-up costs come from Great
+    British Energy's existing budgets; the long-term budget is to be considered at a future spending
+    review. No date is given for setting it up. The card moves when Great British Grid is set up or
+    given a budget of its own.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Labour Party: Andy Burnham's speech to Labour Party Conference 2026 (29 Sep 2026)"
+    url: https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/
+  - title: >-
+      Department for Energy Security and Net Zero and Great British Energy, 29 Sep 2026: Great
+      British Grid to speed up connections and cut bills
+    url: https://www.gov.uk/government/news/great-british-grid-to-speed-up-connections-and-cut-bills
+versions:
+  - version: 1
+    text: >-
+      Today I can announce our plan for Great British Grid. A new branch of Great British Energy. A
+      publicly-owned company that will challenge the private sector operators. It will increase
+      competition, drive down costs and speed up connections so businesses can expand and grow more
+      quickly.
+    recorded_on: "2026-09-29"
+    source_url: https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: >-
+          Households and businesses waiting to connect to the electricity grid, and the private
+          network operators Great British Grid would compete with
+      cost:
+        note:
+          en: >-
+            No figure. The start-up costs are covered by Great British Energy's existing budgets,
+            and the long-term budget is to be considered at a future spending review, so no yearly
+            figure is shown.
+        sources:
+          - title: >-
+              Department for Energy Security and Net Zero and Great British Energy, 29 Sep 2026:
+              Great British Grid to speed up connections and cut bills
+            url: https://www.gov.uk/government/news/great-british-grid-to-speed-up-connections-and-cut-bills
+      when:
+        en: Not stated
+      funded_by:
+        en: >-
+          Start-up costs from Great British Energy's existing budgets; the long-term budget to be
+          considered at a future spending review
+events:
+  - date: "2026-09-29"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister announces Great British Grid, a publicly owned branch of Great British
+        Energy, at Labour's conference
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

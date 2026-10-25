@@ -1,0 +1,89 @@
+format: openpromises/1
+id: uk-intimate-images-48-hours-2026
+headline:
+  en: Intimate images taken down within 48 hours
+actor_id: keir-starmer
+made_on: "2026-02-19"
+venue: press_release
+venue_label:
+  en: Press release (Department for Science, Innovation and Technology)
+area: public_order
+status: delivering
+status_note:
+  en: >-
+    Section 100 of the Crime and Policing Act 2026, law since 29 April 2026, requires online
+    services to take down intimate images shared without consent as soon as reasonably practicable
+    and no later than 48 hours after a report. It came into force on 29 June 2026 (S.I. 2026/689),
+    and Ofcom oversees compliance. No official figures on how platforms comply had been published by
+    20 October 2026; the card moves to Delivered when they show reported images coming down within
+    48 hours.
+responsible:
+  actor_id: hm-government
+  note:
+    en: The duty is law; Ofcom oversees compliance.
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Science, Innovation and Technology: Tech firms will have to take down abusive
+      images within 48 hours under new law (19 Feb 2026)
+    url: https://www.gov.uk/government/news/tech-firms-will-have-to-take-down-abusive-images-within-48-hours-under-new-law-to-protect-women-and-girls
+  - title: Crime and Policing Act 2026, section 100 (legislation.gov.uk)
+    url: https://www.legislation.gov.uk/ukpga/2026/20/section/100
+  - title: >-
+      The Crime and Policing Act 2026 (Commencement No.1 and Saving Provision) Regulations 2026,
+      S.I. 2026/689 (legislation.gov.uk)
+    url: https://www.legislation.gov.uk/uksi/2026/689
+  - title: >-
+      Home Office and Ministry of Justice: Crime and Policing Act 2026, intimate image abuse
+      factsheet (29 Sep 2026)
+    url: https://www.gov.uk/government/publications/crime-and-policing-act-2026-factsheets/crime-and-policing-act-2026-intimate-image-abuse-factsheet
+versions:
+  - version: 1
+    text: >-
+      Today we are going further, putting companies on notice so that any non-consensual image is
+      taken down in under 48 hours.
+    recorded_on: "2026-02-19"
+    source_url: https://www.gov.uk/government/news/tech-firms-will-have-to-take-down-abusive-images-within-48-hours-under-new-law-to-protect-women-and-girls
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: People whose intimate images are shared online without their consent
+      cost:
+        note:
+          en: No cost was given with the promise.
+      when:
+        en: Not stated
+      funded_by:
+        en: Not a spending pledge
+events:
+  - date: "2026-02-19"
+    type: promised
+    text:
+      en: The Prime Minister says non-consensual intimate images must be taken down in under 48 hours
+  - date: "2026-04-29"
+    type: legislated
+    text:
+      en: The Crime and Policing Act 2026 becomes law with the 48-hour duty (section 100)
+    evidence_url: https://www.legislation.gov.uk/ukpga/2026/20/section/100
+  - date: "2026-06-29"
+    type: delivering
+    text:
+      en: The 48-hour takedown duty comes into force
+    evidence_url: https://www.legislation.gov.uk/uksi/2026/689
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
+  - by: Pavel Guzhikov
+    kind: editor
+    "on": "2026-10-21"
+    approves: true
+    note:
+      en: >-
+        Checked against the editors' checklist (docs/EDITORS.md): quote, sources, dates, status, cost
+        and wording

@@ -1,0 +1,58 @@
+format: openpromises/1
+id: uk-green-water-public-ownership-2026
+headline:
+  en: Bring water back into public hands
+actor_id: zack-polanski
+made_on: "2026-03-18"
+venue: speech
+venue_label:
+  en: "Speech to the New Economics Foundation"
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The Green Party is not in government, so the card stays at Promised. In the same speech he said
+    nearly a third of the typical water bill in England goes to shareholder returns and debt
+    servicing, and called for an end to private ownership of water. He did not say how the companies
+    would be brought into public hands, what it would cost or by when. He repeated the plan to
+    nationalise water in his conference speech on 2 October 2026.
+responsible: null
+origin: llm_intake
+sources:
+  - title: "Green Party: Zack Polanski lays out plans to back the \"caring majority\" in major speech (18 Mar 2026)"
+    url: https://greenparty.org.uk/2026/03/18/zack-polanski-lays-out-plans-to-back-the-caring-majority-in-major-speech/
+  - title: "Green Party: Zack Polanski's speech to conference in full (2 Oct 2026)"
+    url: https://greenparty.org.uk/2026/10/02/zack-polanskis-speech-to-conference-in-full/
+versions:
+  - version: 1
+    text: >-
+      So we’d fix this – ending the scandal of shareholder profit and bringing water back into
+      public hands, so every penny we pay goes into making the service better.
+    recorded_on: "2026-03-18"
+    source_url: https://greenparty.org.uk/2026/03/18/zack-polanski-lays-out-plans-to-back-the-caring-majority-in-major-speech/
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: "Water bill payers, and the shareholders of the private water companies"
+      cost:
+        note:
+          en: No cost was given in the cited sources.
+      when:
+        en: "Not stated"
+      funded_by: null
+events:
+  - date: "2026-03-18"
+    type: promised
+    text:
+      en: >-
+        Zack Polanski pledges to bring water back into public hands in a speech to the New Economics
+        Foundation
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

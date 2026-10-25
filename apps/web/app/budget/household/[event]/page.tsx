@@ -444,8 +444,8 @@ export default async function HouseholdPage({ params }: Props) {
               We asked PolicyEngine once, on {computedOn(s)}, not each time someone opens the page, and nothing about readers is ever sent. Every answer
               came from one version of the model: PolicyEngine UK {s.provider.model_version}, data {s.provider.data_version}. An editor checked the
               measures before this page was published. You can open the same comparison in <a href={compareUrl}>PolicyEngine&apos;s own app</a>, or
-              read <a href={`https://github.com/xternal/public-ledger/blob/main/${s.measures_file}`}>the measures file</a> and{" "}
-              <a href="https://github.com/xternal/public-ledger/blob/main/docs/MODEL.md">our method</a>.
+              read <a href={`https://github.com/xternal/ledgergov.uk/blob/main/${s.measures_file}`}>the measures file</a> and{" "}
+              <a href="https://github.com/xternal/ledgergov.uk/blob/main/docs/MODEL.md">our method</a>.
             </p>
           ) : (
             <p className="m-0 text-muted">
@@ -453,8 +453,8 @@ export default async function HouseholdPage({ params }: Props) {
               time someone opens the page, and nothing about readers is ever sent. The salary check needs no model: it applies the Budget&apos;s own
               rates and thresholds, typed from its documents, to the salary you type, in your browser. An editor checked the measures and the
               Treasury&apos;s figures before this page was published. Read{" "}
-              <a href={`https://github.com/xternal/public-ledger/blob/main/${s.measures_file}`}>the measures file</a> and{" "}
-              <a href="https://github.com/xternal/public-ledger/blob/main/docs/MODEL.md">our method</a>.
+              <a href={`https://github.com/xternal/ledgergov.uk/blob/main/${s.measures_file}`}>the measures file</a> and{" "}
+              <a href="https://github.com/xternal/ledgergov.uk/blob/main/docs/MODEL.md">our method</a>.
             </p>
           )}
           <p className="m-0 text-label">

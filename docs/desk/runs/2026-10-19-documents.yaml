@@ -31,3 +31,4 @@ skipped: # listed by the search but not read in full
 dropped:
   - { document: UK-Nigeria joint communiqué, code: event, note: "the only dated item is a jointly led reintegration conference 'early next year'; the rest is continued cooperation with no checkable outcome" }
 # No intake pull requests were open this week: the intakes of 13 to 16 October were triaged on 18 October (#119), and the daily intake of 17 and 18 October found no candidates.
+# Correction, 20 October 2026: the daily intake of 18 October did find candidates, 2 (#122). Its pull request opened after this run; the two cards were triaged in #125.

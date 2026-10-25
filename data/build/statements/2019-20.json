@@ -2,8 +2,8 @@
   "meta": {
     "country": "UK",
     "fiscal_year": "2019-20",
-    "vintage": "PESA-2026 + PSF-2026-09",
-    "vintage_label": "ONS outturn, September 2026 release",
+    "vintage": "PESA-2026 + PSF-2026-10",
+    "vintage_label": "ONS outturn, October 2026 release",
     "note": "Receipts from ONS PSF RECEIPTS; spending by function from HMT PESA (PESA-2026); debt interest and totals as published.",
     "sources": [
       {
@@ -20,7 +20,7 @@
         "publisher": "ONS",
         "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/publicsectorfinances",
         "licence": "OGL v3",
-        "published_on": "2026-09-22"
+        "published_on": "2026-10-21"
       },
       {
         "id": "ons_psf_receipts",
@@ -28,7 +28,7 @@
         "publisher": "Office for National Statistics",
         "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/appendixdpublicsectorcurrentreceipts",
         "licence": "OGL v3",
-        "published_on": "2026-09-22"
+        "published_on": "2026-10-21"
       },
       {
         "id": "boe_bank_rate",
@@ -67,14 +67,14 @@
   "macro": {
     "nominal_gdp_bn": 2263.357,
     "psnd_bn": 1814.8,
-    "psnd_pct_gdp": 84.5,
+    "psnd_pct_gdp": 84.1,
     "bank_rate_pct": 0.1,
     "bank_rate_date": "2020-03-19",
     "households_m": 27.824,
     "income_taxpayers_m": 31.5,
     "population_m": 66.627,
     "baseline_psnb_bn": {
-      "2025-26": 134.286,
+      "2025-26": 134.211,
       "2026-27": 115.461,
       "2027-28": 96.467,
       "2028-29": 86.016,
@@ -83,7 +83,7 @@
     },
     "baseline_nominal_growth_pct": 3.522,
     "baseline_psnd_pct_gdp": {
-      "2025-26": 93.3,
+      "2025-26": 93.2,
       "2026-27": 94.815,
       "2027-28": 95.739,
       "2028-29": 96.281,
@@ -251,7 +251,7 @@
   "borrowing_provenance": {
     "quality": "sourced",
     "source_id": "ons_psf",
-    "method_note": "Total spending minus receipts (PSF-2026-09). Published borrowing for 2019-20: 58.8bn."
+    "method_note": "Total spending minus receipts (PSF-2026-10). Published borrowing for 2019-20: 58.8bn."
   },
   "spending": [
     {
@@ -344,7 +344,7 @@
       "bn": 103.663,
       "quality": "approx",
       "source_id": "ons_psf",
-      "method_note": "Reconciles spending by function (HMT PESA) with total spending. Made up of: HMT PESA accounting adjustments 85.5bn; 16.2bn that PESA counts as debt interest but the OBR measure used for the debt interest line does not; 1.9bn difference between total spending here (PSF-2026-09) and PESA's outturn."
+      "method_note": "Reconciles spending by function (HMT PESA) with total spending. Made up of: HMT PESA accounting adjustments 85.5bn; 16.2bn that PESA counts as debt interest but the OBR measure used for the debt interest line does not; 1.9bn difference between total spending here (PSF-2026-10) and PESA's outturn."
     }
   ]
 }

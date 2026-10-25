@@ -284,10 +284,10 @@ bundle.
 
 ## 11. Merging when CI is green
 
-The repository is private on GitHub's free plan, so `main` cannot require checks. Instead, label a pull request **`merge-when-green`**: `.github/workflows/merge-when-green.yml` merges it once the CI checks `app` and `data` are both green on its latest commit (never a newer, unchecked commit), and starts the alerts run when content changed. Vercel deploys the merge as usual. A pull request that changes `.github/workflows/` is the exception: GitHub does not let a workflow merge workflow changes, so the job leaves one comment asking for a hand merge (`gh pr merge <number> --repo xternal/public-ledger --merge`). Intake pull requests follow their own rule (approvals plus green CI, `.github/workflows/intake-merge.yml`). GitHub starts no workflow when an editor approves a pull request a workflow opened, so a sweep every 3 hours (17 minutes past 00, 03 … 21 UTC; an hour later in BST) merges approved intake pull requests; run the workflow by hand to merge one sooner.
+The repository is private on GitHub's free plan, so `main` cannot require checks. Instead, label a pull request **`merge-when-green`**: `.github/workflows/merge-when-green.yml` merges it once the CI checks `app` and `data` are both green on its latest commit (never a newer, unchecked commit), and starts the alerts run when content changed. Vercel deploys the merge as usual. A pull request that changes `.github/workflows/` is the exception: GitHub does not let a workflow merge workflow changes, so the job leaves one comment asking for a hand merge (`gh pr merge <number> --repo xternal/ledgergov.uk --merge`). Intake pull requests follow their own rule (approvals plus green CI, `.github/workflows/intake-merge.yml`). GitHub starts no workflow when an editor approves a pull request a workflow opened, so a sweep every 3 hours (17 minutes past 00, 03 … 21 UTC; an hour later in BST) merges approved intake pull requests; run the workflow by hand to merge one sooner.
 
 ```bash
-gh pr edit <number> --repo xternal/public-ledger --add-label merge-when-green
+gh pr edit <number> --repo xternal/ledgergov.uk --add-label merge-when-green
 ```
 
 ## 12. GitHub Actions: GitHub's machines only
@@ -343,7 +343,7 @@ pnpm parity:check       # on the change: writes .parity/current, compares, exits
 
 ## 15. The OpenPromises check
 
-LedgerGov.UK's cards are in the format of the open-source OpenPromises engine ([github.com/xternal/openpromises](https://github.com/xternal/openpromises), its `docs/MIGRATING.md`) since 12 October 2026; the site reads them into its own shape (`packages/schema/src/v1.ts`), so nothing readers see changed. The engine is pinned at 0.11.0 (since 19 October 2026): `@openpromises/cli` and `@openpromises/core` as dev dependencies for the check, `@openpromises/core` and `@openpromises/publish` as dependencies of `packages/schema` for the verification label and the home page's promises below, and `@openpromises/react` in `apps/web` for the home page's promises. `openpromises.config.ts` at the repository root describes the site, and CI runs the engine's check after our own one. Since the switch on 12 October 2026 it blocks a merge like any other check; on a fork's pull request, which gets no secrets and so no editors list, it runs as a report only.
+LedgerGov.UK's cards are in the format of the open-source OpenPromises engine ([github.com/xternal/openpromises](https://github.com/xternal/openpromises), its `docs/MIGRATING.md`) since 12 October 2026; the site reads them into its own shape (`packages/schema/src/v1.ts`), so nothing readers see changed. The engine is pinned at 0.16.0 (since 22 October 2026; 0.16.0 adds the forecast at the time and a circumstances-changed event, decision 36, which this site's own card format has no place for yet, so nothing readers see changes): `@openpromises/cli` and `@openpromises/core` as dev dependencies for the check, `@openpromises/core`, `@openpromises/files` and `@openpromises/publish` as dependencies of `packages/schema` for the verification label, what each card says of its quote, the home page's promises and the actor pages' promises by area below, and `@openpromises/react` in `apps/web` for the home page's promises. `openpromises.config.ts` at the repository root describes the site, and CI runs the engine's check after our own one. Since the switch on 12 October 2026 it blocks a merge like any other check; on a fork's pull request, which gets no secrets and so no editors list, it runs as a report only.
 
 ```bash
 pnpm exec openpromises validate --no-base   # everything the engine would object to today
@@ -375,7 +375,7 @@ The list is a YAML file in the engine's format (OpenPromises `docs/FORMAT.md` §
 
 ```bash
 OPENPROMISES_EDITORS=~/path/editors.yaml pnpm exec openpromises validate --no-base
-gh secret set OPENPROMISES_EDITORS --repo xternal/public-ledger < ~/path/editors.yaml
+gh secret set OPENPROMISES_EDITORS --repo xternal/ledgergov.uk < ~/path/editors.yaml
 ```
 
 If CI shows `editors.yaml  should be a set of fields  (schema)`, the secret holds something other than that file: set it again from the file.
@@ -398,6 +398,26 @@ pnpm exec openpromises check-quote <card id> --html /tmp/source.html --record   
 
 Commit `content/quotes.json` with the card. Only `exact` lets a card without approvals through; `close` or `none` means the quote is not the source's words: fix the quote, or wait for editors.
 
+### What each card says of its quote (since 0.15.0)
+
+Beside the date the promise was made, every card page says what was checked of its quote, and so does the "Quote source" line of its Markdown (OpenPromises decision 35), in the engine's words, the strongest check that holds:
+
+* "Quote checked word for word at its source on 20 October 2026": an editor checked it there (`quote_checked_on`);
+* else "Quote matches a stored copy of its source word for word": an `exact` archive check in `content/quotes.json`, or a stored-source span;
+* else "Quote not yet checked against its source".
+
+`packages/schema/src/quotes.ts` (`withQuoteChecks`) asks the engine, with its own key into `content/quotes.json`, so the page agrees with the check above. On 21 October 2026 all 175 cards had an editor's check. An editor's check made after a card was published can be recorded once, with no correction, by `pnpm exec openpromises review <card id> --by "<editor>" --quote-checked --on YYYY-MM-DD`, in a pull request of its own; both the engine's check and `pnpm validate` accept it (`quote_checked_on` is a late field, `LATE_FIELDS` in `packages/schema/src/content.ts`). Changing a day once recorded is a correction.
+
+### The target and the forecast at the time (since 23 October 2026)
+
+A card may record the target its words set, as a number (`versions[n].parameters.metric`: series, figure, `at_least` / `at_most` / `below`, unit, date), and what an official or independent forecaster expected for that measure, published before the promise (`versions[n].parameters.baseline`: value, unit, the date it is for, `by: { kind: official | independent, name }`, `published_on`, `source`, an optional `note`). This is OpenPromises decision 36, the answer to "promised 3%, got 5%, but without it 12%": a forecast published before the promise can be checked; a counterfactual offered afterwards cannot. Never a party's figure or our own; a target only when the speaker named one.
+
+* **The page** shows both under "At a glance" and, above "What has happened", one scale with the target's zone and the forecast's mark, and the gap in words ("The forecast at the time already met the target." or "The target is 1.6 percentage points below the forecast at the time."). The site never scores a promise against the forecast.
+* **The Markdown** and llms-full.txt list "Target" and "Forecast at the time"; **the share image** shows the scale in place of the cost; **the API** has `target` and `forecast_at_the_time` on each promise, and the CSV ten columns at the end (`target_*`, and the engine's `baseline_*`).
+* All three take their numbers and words from `forecastGap()` in `packages/schema/src/forecast.ts`.
+* **On a published card**, a forecast is a late field (`LATE_FIELDS`), added once with no correction. A target is not: adding one changes how the promise is read, so it comes with a correction (`path: versions[0].parameters.metric`, `was: null`), which the card shows. The engine's check needs the `metrics` module, on in `openpromises.config.ts`.
+* The first card with both is `uk-halve-inflation-2023`: at most 5.25% by December 2023 (half of 10.5%), against the OBR's November 2022 forecast of 3.75% for the end of 2023.
+
 ### The verification label and the editors list on Vercel
 
 Every card shows how far it has been verified (decision 23): "Verified by Pavel Guzhikov and 1 independent editor", "Checked automatically by AI Journalist, not yet verified by an editor", or "Not yet verified by an editor". Since 0.7.0 (decision 27) the label names the automated checker too when a card has both an editor's approval and AI Journalist's review: "Verified by Pavel Guzhikov, checked by AI Journalist". Where the site adds the day of the approval, it gets a clause of its own, so it is not read as the checker's: "Verified by Pavel Guzhikov, checked by AI Journalist; approved on 12 October 2026". It appears on the card page, as the tick in the promise list, in the card's Markdown and llms-full.txt, and as `verification` on each card in `/api/v1/promises`. The engine counts it from the approvals on the card and the private editors list: an editor is named if their entry says `named: true`, and counted otherwise.
@@ -414,6 +434,15 @@ Without the list the site keeps the wording it had before 0.6.0 ("Checked by Pav
 ### Promises on the home page (since 0.10.0)
 
 The home page shows the engine's `PromiseSpotlight` second, after the site's own opening and before the budget statement (OpenPromises decision 30; docs/DECISIONS.md): how many promises are tracked and where they stand, the three latest changes and the three open promises due next, each a link to its card ending "Open the promise →", then "All promises →". The opening ends with "N promises tracked →". The engine picks the cards by its rule (`spotlight()`), never by hand, from the cards /promises lists (`packages/schema/src/spotlight.ts` reads them in format v1 with `openpromises.config.ts`). The page is built for its build day, like /promises, so a new deploy refreshes the choice. Its look is the site's (`.op-spotlight` in `apps/web/app/globals.css`), not the engine's stylesheet, whose dark mode is navy; where a party stands reads as on the site's own lists ("in government"), from `standing.*` in the configuration's `messages`. Every row of the site's own promise list ends "Open the promise →" too.
+
+### Promises by area on actor pages (since 0.12.0)
+
+Every actor's page (`/actor/<id>`) has a "Promises by area" table after its track record (OpenPromises decision 33; docs/DECISIONS.md, 20 October 2026): every area the site lists, in the configuration's order, with how many published promises the actor has in it and where they stand, and "None recorded" for an area with none. The rows come from the engine's `areaCoverage()` (`areaCoverageFor` in `packages/schema/src/spotlight.ts`), over the same cards the page lists (a party's with its people's), so the list is the same for every actor (invariant 6). The table is the site's own markup, in its type and tokens, not the engine's `AreaCoverage` component. A line under it says that "None recorded" means nothing is on the ledger yet, not that nothing was promised: an empty area is a prompt to check the intake.
+
+### An actor's page as one story (since 0.14.0)
+
+Every actor's page tells their promises as one story, the same for every actor (OpenPromises decision 34; docs/DECISIONS.md, 20 October 2026; the layout Pavel chose is the "Chosen" artboard on https://claude.ai/artifact/2rAuASPyGcT6ZYs1cLSys7). From the top: the official portrait (§18) beside the name and role; how many promises are on the ledger and when the first was made; delivered, in progress, and not met or undone, as large numbers; how many have a yearly cost, name their funding and have a deadline to come; the ten area tiles ("None recorded" dashed); the engine's `KeyPromises` (the home page's rule: due next with the days left, then the latest changes), `ActorTimeline` (time runs upwards: deadlines to come above "Today", what happened below, undated promises beside it) and `PromisesByMonth` (a bar per month, with a table); what was delivered; the contracts; and every promise. The three engine components are styled in `apps/web/app/globals.css` (`.op-key`, `.op-actor-timeline`, `.op-months`) in the site's own look, light and dark brown, not by the engine's stylesheet.
+
 
 ## 16. Page view counts (Upstash Redis)
 
@@ -432,3 +461,12 @@ The home page shows the engine's `PromiseSpotlight` second, after the site's own
 * **A changed ONS file** (a renamed series, a moved file) makes `ons_psf` fail to parse; the run keeps the committed release and logs a `fetch` warning, so no data pull request opens. If no data pull request appears the morning after a release, run `etl/.venv/bin/python -m etl.build --only ons_psf` locally and read the warning.
 * **A new OBR forecast** (the Budget) moves the whole-year figure at once (`obr_efo`); the page says the comparison still uses the older monthly path until the OBR publishes the new one, which `obr_monthly_profiles` then picks up.
 
+## 18. Official portraits on actor pages
+
+An MP's page shows UK Parliament's official portrait, the same rule for every MP (Pavel's decision, 20 October 2026). Parliament releases them under CC BY 3.0 and asks for a credit per portrait, listed on its [official portraits copyright page](https://www.parliament.uk/site-information/copyright-parliament/use-of-parliamentary-photographic-images/official-portraits-copyright-information/). The page shows "Official portrait: ©House of Commons/…, CC BY 3.0, cropped", linking the credit to the portrait's page on Parliament's site and the licence to its text.
+
+* **Credits:** `data/portraits.json`, one entry per `parliament_member_id`, copied by hand from that list (its pages refuse scripts; read it in a browser), as Parliament names the member there. A member with no official portrait gets `missing` with the reason.
+* **An older official portrait Parliament no longer serves:** `from` gives the copy to fetch (`image`), the page the credit links to (`page`), the year it was taken (`taken`, shown as "Official portrait, 2017") and why. Only for a portrait Parliament itself published under the same licence and still credits. Rishi Sunak: the Members API has no full-size portrait for him and his portrait page says he "does not currently have an official portrait", but his 2017 portrait (Chris McAndrew, CC BY 3.0) is still the thumbnail the API gives for him and Parliament's credit list still names him; the full-size file is the copy of Parliament's original on Wikimedia Commons (20 October 2026).
+* **Images:** `pnpm portraits` fetches Parliament's 3:4 crop from the Members API and saves it resized to 560×747 as `apps/web/public/portraits/<member id>.jpg` (macOS `sips`; `--refresh` to fetch again). The site serves its own copies, so a reader's browser never asks Parliament for them.
+* **A new MP on the ledger:** add the credit, run `pnpm portraits`, commit both. `packages/schema/test/portraits.test.ts` fails until every MP on the ledger has a credit and every credited portrait its image.
+* **Not MPs** (parties, public bodies, people outside Parliament such as Zack Polanski) have no portrait; their pages lay out the same without it.

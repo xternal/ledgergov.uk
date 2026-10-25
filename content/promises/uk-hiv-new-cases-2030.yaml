@@ -1,0 +1,103 @@
+format: openpromises/1
+id: uk-hiv-new-cases-2030
+headline:
+  en: End new HIV cases in England by 2030
+actor_id: keir-starmer
+made_on: "2024-11-29"
+venue: press_release
+venue_label:
+  en: "Press release (Prime Minister's Office)"
+area: health
+status: in_plan
+status_note:
+  en: >-
+    The government published the HIV Action Plan for England, 2025 to 2030, on 1 December 2025,
+    backed by £170 million, to end new HIV transmissions in England by 2030; on the same day the
+    Prime Minister said he had promised it. The UK Health Security Agency (UKHSA) gives the aim as
+    no more than 532 new diagnoses in 2030, a 90% fall from 2010. Its provisional figures from
+    clinics that reported throughout show new diagnoses falling from 2,922 in 2024 to 2,542 in 2025.
+    The deadline is taken as the end of 2030; the card moves to Delivering when an official source
+    shows the plan's new programmes running.
+responsible:
+  actor_id: hm-government
+  note:
+    en: >-
+      The HIV Action Plan for England, 2025 to 2030, is the government's plan, and UKHSA reports
+      progress against it.
+origin: llm_intake
+sources:
+  - title: >-
+      Prime Minister's Office: “I am determined this generation will be the one that ends new cases
+      of HIV within England by 2030” (29 Nov 2024)
+    url: https://www.gov.uk/government/news/i-am-determined-this-generation-will-be-the-one-that-ends-new-cases-of-hiv-within-england-by-2030-prime-minister-said-ahead-of-world-aids-day
+  - title: >-
+      Department of Health and Social Care: Trailblazing scheme to reconnect thousands with HIV
+      treatment (1 Dec 2025)
+    url: https://www.gov.uk/government/news/trailblazing-scheme-to-reconnect-thousands-with-hiv-treatment
+  - title: "Department of Health and Social Care: HIV Action Plan for England, 2025 to 2030 (1 Dec 2025)"
+    url: https://www.gov.uk/government/publications/hiv-action-plan-for-england-2025-to-2030
+  - title: >-
+      UKHSA: New HIV report shows progress but inequalities persist in access to testing, PrEP and
+      early diagnosis (14 May 2026)
+    url: https://www.gov.uk/government/news/new-hiv-report-shows-progress-but-inequalities-persist-in-access-to-testing-prep-and-early-diagnosis
+  - title: "UKHSA: Report on new HIV diagnoses in England, provisional data, 2025 (21 May 2026)"
+    url: https://www.gov.uk/government/publications/new-hiv-diagnoses-in-england-provisional-data/report-on-new-hiv-diagnoses-in-england-provisional-data-2025
+versions:
+  - version: 1
+    text: >-
+      I’m determined that this generation will be the one that ends new cases of HIV within England
+      by 2030.
+    recorded_on: "2024-11-29"
+    source_url: https://www.gov.uk/government/news/i-am-determined-this-generation-will-be-the-one-that-ends-new-cases-of-hiv-within-england-by-2030-prime-minister-said-ahead-of-world-aids-day
+    quote_checked_on: "2026-10-20"
+    parameters:
+      who:
+        en: People in England at risk of HIV or living with it
+      cost:
+        note:
+          en: >-
+            No total was given with the promise; the release confirmed £27 million for opt-out HIV
+            testing in emergency departments. The HIV Action Plan of 1 December 2025 is backed by
+            £170 million (Department of Health and Social Care), with no yearly split given.
+        sources:
+          - title: >-
+              Department of Health and Social Care: Trailblazing scheme to reconnect thousands with
+              HIV treatment (1 Dec 2025)
+            url: https://www.gov.uk/government/news/trailblazing-scheme-to-reconnect-thousands-with-hiv-treatment
+      when:
+        en: By 2030
+      deadline: "2030-12-31"
+      funded_by: null
+events:
+  - date: "2024-11-29"
+    type: promised
+    text:
+      en: The Prime Minister pledges to end new HIV cases in England by 2030, ahead of World AIDS Day
+  - date: "2025-12-01"
+    type: in_plan
+    text:
+      en: >-
+        The government publishes the HIV Action Plan for England, 2025 to 2030, backed by £170
+        million
+    evidence_url: https://www.gov.uk/government/news/trailblazing-scheme-to-reconnect-thousands-with-hiv-treatment
+  - date: "2030-12-31"
+    type: deadline
+    text:
+      en: New HIV cases in England due to end (editorial date, end of 2030)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-20"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
+  - by: Pavel Guzhikov
+    kind: editor
+    "on": "2026-10-21"
+    approves: true
+    note:
+      en: >-
+        Checked against the editors' checklist (docs/EDITORS.md): quote, sources, dates, status, cost
+        and wording

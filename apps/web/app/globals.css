@@ -449,6 +449,171 @@
     box-shadow: none;
   }
 
+  /*
+   * An actor's page as one story (OpenPromises decision 34, 0.14.0): the engine's KeyPromises, ActorTimeline and
+   * PromisesByMonth (op-key, op-actor-timeline, op-months), styled here in the site's look like the spotlight above:
+   * white, hairlines, one typeface, numbers first. Statuses keep the site's colours; time runs upwards on the timeline.
+   */
+  .op-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .op-key,
+  .op-actor-timeline,
+  .op-months {
+    display: grid;
+    gap: 12px;
+    overflow-wrap: anywhere;
+  }
+  :is(.op-key, .op-actor-timeline, .op-months) > h2 {
+    margin: 0;
+    font-size: var(--text-title);
+    line-height: var(--text-title--line-height);
+    font-weight: 600;
+  }
+  :is(.op-key, .op-actor-timeline) h3 {
+    margin: 8px 0 0;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  :is(.op-key, .op-actor-timeline) > p,
+  .op-actor-timeline__undated p {
+    margin: 0;
+    max-width: 65ch;
+    font-size: var(--text-label);
+    color: var(--muted);
+  }
+  .op-key__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 8px 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .op-key a.op-key__card {
+    display: grid;
+    gap: 6px;
+    align-content: start;
+    height: 100%;
+    padding: 14px 0;
+    border-top: 1px solid var(--line-strong);
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .op-key__list[data-list="due"] a.op-key__card { border-top: 2px solid var(--ink); }
+  .op-key a.op-key__card:hover .op-key__headline { text-decoration: underline; }
+  .op-key__days {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: var(--tracking-figure);
+  }
+  .op-key__change { font-size: var(--text-label); font-weight: 600; color: var(--muted); }
+  .op-key__headline { font-weight: 600; }
+  .op-key__meta { font-size: 12.5px; color: var(--muted); }
+
+  .op-actor-timeline__layout { display: grid; gap: 32px 48px; align-items: start; }
+  @media (min-width: 900px) {
+    .op-actor-timeline__layout { grid-template-columns: minmax(0, 1fr) 280px; }
+  }
+  .op-actor-timeline__days { margin: 0; padding: 0; list-style: none; }
+  .op-actor-timeline__day,
+  .op-actor-timeline__today {
+    display: grid;
+    grid-template-columns: 7.5rem minmax(0, 1fr);
+    gap: 0 16px;
+  }
+  .op-actor-timeline__date {
+    padding-top: 1px;
+    font-size: var(--text-label);
+    color: var(--muted);
+    text-align: right;
+  }
+  .op-actor-timeline__entries {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding: 0 0 22px 22px;
+    border-left: 1px solid var(--line-strong);
+    list-style: none;
+  }
+  .op-actor-timeline__entries > li { position: relative; display: grid; gap: 2px; }
+  .op-actor-timeline__dot {
+    position: absolute;
+    top: 5px;
+    left: -27px;
+    width: 9px;
+    height: 9px;
+    border-radius: 999px;
+    background: var(--ink);
+  }
+  .op-actor-timeline__entries > li[data-mark="progress"] .op-actor-timeline__dot { background: var(--rec); }
+  .op-actor-timeline__entries > li[data-mark="top"] .op-actor-timeline__dot { background: var(--good); box-shadow: 0 0 0 3px color-mix(in oklab, var(--good) 22%, transparent); }
+  .op-actor-timeline__entries > li[data-mark="ending"] .op-actor-timeline__dot { background: var(--bad); }
+  .op-actor-timeline__entries > li[data-mark="deadline"] .op-actor-timeline__dot { background: var(--bg); box-shadow: inset 0 0 0 2px var(--ink); }
+  .op-actor-timeline__entries > li[data-mark="missed"] .op-actor-timeline__dot { background: var(--bg); box-shadow: inset 0 0 0 2px var(--bad); }
+  .op-actor-timeline__entries > li:is([data-mark="words"], [data-mark="off_ladder"]) .op-actor-timeline__dot { background: var(--muted); }
+  .op-actor-timeline__label { font-size: 12.5px; font-weight: 600; color: var(--muted); }
+  .op-actor-timeline__entries > li[data-mark="progress"] > .op-actor-timeline__label { color: var(--rec); }
+  .op-actor-timeline__entries > li[data-mark="top"] > .op-actor-timeline__label { color: var(--good); }
+  .op-actor-timeline__entries > li:is([data-mark="ending"], [data-mark="missed"]) > .op-actor-timeline__label { color: var(--bad); }
+  .op-actor-timeline__cards { display: grid; gap: 4px; margin: 0; padding: 0; list-style: none; }
+  .op-actor-timeline__cards a,
+  .op-actor-timeline__undated a { color: var(--ink); font-weight: 600; text-decoration: none; }
+  .op-actor-timeline__cards a:hover,
+  .op-actor-timeline__undated a:hover { text-decoration: underline; }
+  .op-actor-timeline__cards .op-muted { display: block; font-size: 14px; color: var(--muted); }
+  .op-actor-timeline__today {
+    align-items: center;
+    margin: 2px 0 24px;
+    font-size: var(--text-label);
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .op-actor-timeline__today .op-actor-timeline__date { padding: 0; color: inherit; }
+  .op-actor-timeline__today time { display: flex; align-items: center; gap: 10px; }
+  .op-actor-timeline__today time::before { content: ""; flex: 1; height: 2px; background: var(--accent); }
+  .op-actor-timeline__undated { display: grid; gap: 6px; }
+  .op-actor-timeline__undated h3 { margin: 0; }
+  .op-actor-timeline__undated ul { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; }
+  @media (max-width: 560px) {
+    .op-actor-timeline__day,
+    .op-actor-timeline__today { grid-template-columns: 5.25rem minmax(0, 1fr); gap: 0 10px; }
+    .op-actor-timeline__entries { padding-left: 16px; }
+    .op-actor-timeline__dot { left: -21px; }
+  }
+
+  .op-months__bars {
+    display: grid;
+    grid-template-columns: repeat(var(--op-months, 4), minmax(2.75rem, 6rem));
+    align-items: end;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    list-style: none;
+  }
+  .op-months__bars li { display: flex; flex-direction: column; justify-content: flex-end; gap: 4px; min-width: 0; text-align: center; }
+  .op-months__count { font-weight: 600; }
+  .op-months__bar {
+    display: block;
+    height: calc(var(--op-bar, 0) * 9rem);
+    min-height: 1px;
+    margin: 0 6px;
+    border-radius: 4px 4px 0 0;
+    background: var(--ink);
+  }
+  .op-months__bars li[data-so-far] .op-months__bar { background: var(--muted); }
+  .op-months__label { padding: 6px 2px 0; border-top: 1px solid var(--line-strong); font-size: 12.5px; color: var(--muted); }
+  .op-months__table summary { cursor: pointer; font-size: var(--text-label); color: var(--muted); }
+  .op-months__table table { margin-top: 8px; border-collapse: collapse; font-size: 14px; }
+  .op-months__table :is(th, td) { padding: 0.3rem 1.5rem 0.3rem 0; text-align: left; border-bottom: 1px solid var(--line); }
+  .op-months__table tbody th { font-weight: 400; }
+
   /* Hide scrollbars on the section nav */
   .no-scrollbar { scrollbar-width: none; }
   .no-scrollbar::-webkit-scrollbar { display: none; }
