@@ -44,10 +44,11 @@ export async function reckonerCardImage(card: ReckonerCard, edition: ReckonerEdi
     <div style={{ display: "flex", flexDirection: "column", width: "100%", height: "100%", background: OG.bg, color: OG.ink, padding: "52px 64px", fontFamily: "Geist" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 26, fontWeight: 600 }}>
         <img src={MARK_DATA_URI} width={28} height={28} alt="" />
-        {`LedgerGov.UK · ${RECKONER_KICKER}`}
+        LedgerGov.UK
+        <span style={{ marginLeft: 10, color: OG.muted }}>{RECKONER_KICKER}</span>
       </div>
       <div style={{ display: "flex", fontSize: 58, fontWeight: 600, letterSpacing: -2.2, lineHeight: 1.05, marginTop: 34, maxWidth: 1060 }}>{cardTitle(card)}</div>
-      <div style={{ display: "flex", fontSize: 28, color: OG.muted, marginTop: 14 }}>{`${sub} · HMRC's estimate`}</div>
+      <div style={{ display: "flex", fontSize: 28, color: OG.muted, marginTop: 14 }}>{`${sub}, HMRC's estimate`}</div>
       <div style={{ display: "flex", gap: 48, marginTop: "auto" }}>
         {figures.map((f) => (
           <div key={f.label} style={{ display: "flex", flexDirection: "column", maxWidth: 340 }}>

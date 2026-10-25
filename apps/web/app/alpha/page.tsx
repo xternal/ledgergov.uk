@@ -20,7 +20,7 @@ export default async function AlphaPage({ searchParams }: Props) {
   const message = e ? (ERRORS[e] ?? ERRORS.error) : null;
   return (
     <main className="mx-auto grid min-h-[70vh] max-w-[420px] content-center gap-5 px-4 py-16">
-      <p className="m-0 text-label font-medium text-muted">LedgerGov.UK · alpha</p>
+      <p className="m-0 text-label font-medium text-muted">LedgerGov.UK alpha</p>
       <h1 className="m-0 text-[clamp(28px,4vw,36px)] font-semibold leading-tight tracking-[-0.03em]">A private preview</h1>
       <p className="m-0 text-lead text-muted">
         This early version is for testers. Figures come from official sources, but promise cards have not had their editor review yet. Please don&apos;t share

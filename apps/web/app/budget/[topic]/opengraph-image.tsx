@@ -37,7 +37,8 @@ export default async function Image({ params }: { params: Promise<{ topic: strin
     <div style={{ display: "flex", flexDirection: "column", width: "100%", height: "100%", background: OG.bg, color: OG.ink, padding: "44px 60px", fontFamily: "Geist" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 24, fontWeight: 600 }}>
         <img src={MARK_DATA_URI} width={24} height={24} alt="" />
-        {`LedgerGov.UK · ${BUDGET.name}`}
+        LedgerGov.UK
+        <span style={{ marginLeft: 10, color: OG.muted }}>{BUDGET.name}</span>
       </div>
       <div style={{ display: "flex", fontSize: 48, fontWeight: 600, letterSpacing: -1.6, lineHeight: 1.05, marginTop: 18, maxWidth: 1060 }}>{topic.heading}</div>
       <div style={{ display: "flex", flexDirection: "column", marginTop: 22, borderTop: `2px solid ${OG.line}` }}>
@@ -56,7 +57,7 @@ export default async function Image({ params }: { params: Promise<{ topic: strin
         })}
       </div>
       <div style={{ display: "flex", justifyContent: "space-between", marginTop: "auto", fontSize: 19, color: OG.muted }}>
-        <div style={{ display: "flex" }}>Every quote word for word · every cost a year, with its source</div>
+        <div style={{ display: "flex" }}>Every quote word for word, every cost a year with its source</div>
         <div style={{ display: "flex" }}>{cards.length > MAX_ROWS ? `and ${cards.length - MAX_ROWS} more on the page` : ""}</div>
       </div>
     </div>,

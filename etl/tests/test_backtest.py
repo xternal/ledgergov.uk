@@ -132,7 +132,9 @@ def test_a_new_edition_adds_a_new_file_and_leaves_the_old_one(build):
 def test_outturn_prefers_ons_and_ignores_forecast_rows(build):
     store = outturn_store(build / "observations")
     psnb = find_outturn(store, "fiscal.psnb", "2025-26")
-    assert (psnb.source_id, psnb.vintage) == ("ons_psf", "PSF-2026-09")
+    # The newest ONS edition committed, whichever month the last data refresh brought.
+    newest = max(p.stem for p in (BUILD_DIR / "observations" / "ons_psf").glob("PSF-*.csv"))
+    assert (psnb.source_id, psnb.vintage) == ("ons_psf", newest)
     assert find_outturn(store, "fiscal.psnb", "2026-27") is None  # only forecasts so far
     health = find_outturn(store, "statement.spending.health", "2025-26")
     assert health.source_id == "hmt_pesa" and health.value == pytest.approx(257.542, abs=1e-3)
