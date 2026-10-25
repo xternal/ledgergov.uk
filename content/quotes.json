@@ -59,6 +59,12 @@
     "checked_on": "2026-10-16",
     "sha256": "f3d5894157f6faeaf0726f9d5246265177223168a1bbdfc6db52109a01de741d"
   },
+  "1a4a4a6ad97601a3ecd53a903b5c33f0048ea646ef5e2cc8b752269425bbc5d9|https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS397": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS397",
+    "checked_on": "2026-10-25",
+    "sha256": "d1934e2e982eb22ccf209683cd1200773a74a5fe5ead4566e4b9f1d6f40cca6c"
+  },
   "1cf5fe849c032f02f92caa45d284871a08e41b10f8516b3f373f756b23683fd8|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364",
@@ -101,6 +107,12 @@
     "checked_on": "2026-10-16",
     "sha256": "8e45e2e008e17d83e4203a4ac39e76dc7e5fac0fdbbb926349d5204a4c39a413"
   },
+  "273225b85024306a77deb3ce15d8f22efa5142b02b9523d4623a7c1ae2042c5d|https://www.gov.uk/government/publications/digital-and-technologies-jobs-plan/digital-and-technologies-jobs-plan": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/digital-and-technologies-jobs-plan/digital-and-technologies-jobs-plan",
+    "checked_on": "2026-10-25",
+    "sha256": "6fc43689ce7067a7d0eb791f588becc38faeb6140f7c49f952f39846745613f8"
+  },
   "2789f2fcbc0a3021e94c8c28a4325fbf2d4af902856cbb7eec903042b8de5e01|https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity": {
     "match": "exact",
     "url": "https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity",
@@ -112,6 +124,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363",
     "checked_on": "2026-10-13",
     "sha256": "2be9cdd3c28ee95ac9dfdbcd904cc4eb373252e6f33d22d3f72fadb7e53da8a0"
+  },
+  "293954cde24a4ba1be326ff15039f8d33b5e65237f790e2ddde653aa89764dc6|https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS397": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS397",
+    "checked_on": "2026-10-25",
+    "sha256": "d1934e2e982eb22ccf209683cd1200773a74a5fe5ead4566e4b9f1d6f40cca6c"
   },
   "2e19a0313d9a1ff1a669eb412fb98e5805cd01a446f2fcfc59ecf794efd92a7e|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS359": {
     "match": "exact",
@@ -263,6 +281,12 @@
     "checked_on": "2026-10-20",
     "sha256": "563814179433743db41250ea77fb990dd7f04a079a2c836ae3b317c9ce9f74c5"
   },
+  "5d9554334d388fc760d6d134a275a246387a94b32fb55b47ed7a1b7fa6ea444d|https://www.gov.uk/government/news/cosmetic-cowboys-crackdown-continues-with-new-restrictions": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/cosmetic-cowboys-crackdown-continues-with-new-restrictions",
+    "checked_on": "2026-10-25",
+    "sha256": "f2978101dc9e4b5e372a12a53fdc0957a615426656d30a6ba9236e718b128fcb"
+  },
   "5ecb31ad9f15c40e3745bced483bb1973eb988ecf91eb9ba2e23dad648f11e97|https://www.kemibadenoch.org.uk/news/kemi-sets-out-major-plan-defend-our-country": {
     "match": "exact",
     "url": "https://www.kemibadenoch.org.uk/news/kemi-sets-out-major-plan-defend-our-country",
@@ -292,6 +316,18 @@
     "url": "https://www.gov.uk/government/speeches/what-the-plan-to-launch-network-north-means-for-you",
     "checked_on": "2026-10-20",
     "sha256": "cc784d923f8c0aaa8e00551fb025117753ee5d466689a826f182f0b8d208e8a9"
+  },
+  "6804897c5484e05e8cd5b85aa25343b1fa99e4288362eb7e7398cabd2826c203|https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements",
+    "checked_on": "2026-10-25",
+    "sha256": "10a5c8d720829b8a3086ca68c3390350f74a5cd6b54f67a449a4e43ecf36a88f"
+  },
+  "728fe00a46fd71c5b8583e23023543abc9b05ddcf751914d4a2f72521f20f826|https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements",
+    "checked_on": "2026-10-25",
+    "sha256": "10a5c8d720829b8a3086ca68c3390350f74a5cd6b54f67a449a4e43ecf36a88f"
   },
   "73aba857956488a26f5403ddcaf69e4f51043a4c861cda25aee064d90b7598ba|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354": {
     "match": "exact",
@@ -371,11 +407,23 @@
     "checked_on": "2026-10-18",
     "sha256": "5b769a71cbc5f0942b9cfb1963aa31631caa602bcb12f898a8947600c0045c45"
   },
+  "8a39550a04f40590588a53ca6644b3886b1af271d595de12c0b4a2e7ccc7608c|https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements",
+    "checked_on": "2026-10-25",
+    "sha256": "10a5c8d720829b8a3086ca68c3390350f74a5cd6b54f67a449a4e43ecf36a88f"
+  },
   "8cf70b862d2ec0e743044eba1d823255d8d62a71b2ac5b5273f9f7bbaaed00a6|https://www.gov.uk/government/news/prime-minister-to-create-smokefree-generation-by-ending-cigarette-sales-to-those-born-on-or-after-1-january-2009": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/prime-minister-to-create-smokefree-generation-by-ending-cigarette-sales-to-those-born-on-or-after-1-january-2009",
     "checked_on": "2026-10-20",
     "sha256": "12ce778db5289a4d1689197aea05d42d4f0a1bab4858cea36d71cd2115a9b551"
+  },
+  "922dccc064415fa7930709b49e30aaaea6ae2f615c8375ecb9e887fcbb3fe91a|https://www.gov.uk/government/news/major-boost-for-young-people-in-telford-as-youth-hub-opens-to-support-them-towards-work": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/major-boost-for-young-people-in-telford-as-youth-hub-opens-to-support-them-towards-work",
+    "checked_on": "2026-10-25",
+    "sha256": "bf02d15d5f4a23a780146216d391c1733c84a6fca1b13f2b8df12a2cfcfb44ba"
   },
   "9258e20d58afe05e95754a06bb5d29d5b24ecb83d9bbad0e86d7c0ff346a39e8|https://www.gov.uk/government/news/major-drive-to-restore-churches-and-revitalise-heritage-buildings-in-communities-across-england-announced": {
     "match": "exact",
@@ -406,6 +454,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354",
     "checked_on": "2026-10-13",
     "sha256": "f44b4bb943cde778e955dff9f90e2b46cb4e0925dbde9e6e2513633a250649b6"
+  },
+  "98c4818f39f847a6f56424bcac8d825c587e97afc043ca611e3ba621a4298a12|https://www.gov.uk/government/publications/digital-and-technologies-jobs-plan/digital-and-technologies-jobs-plan": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/digital-and-technologies-jobs-plan/digital-and-technologies-jobs-plan",
+    "checked_on": "2026-10-25",
+    "sha256": "6fc43689ce7067a7d0eb791f588becc38faeb6140f7c49f952f39846745613f8"
   },
   "99165c15db6566fb788de9b151b1d42f8f51764ea11bf53aacc542ba0fb20597|https://www.gov.uk/government/news/140-million-boost-to-urgent-care-to-ease-winter-pressures-on-nhs": {
     "match": "exact",
@@ -545,6 +599,12 @@
     "checked_on": "2026-10-16",
     "sha256": "bd305e6f06c6e7c6ef4d02f2ea0ede472c7339a447b80ee440a73a2188df1e6d"
   },
+  "bfd3596bf0a0f87994e9374557419a65e43a7afde56865f2f8d5efae7f058a36|https://www.gov.uk/government/news/cowardly-killers-who-dodge-sentencing-face-tough-new-prison-punishments": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/cowardly-killers-who-dodge-sentencing-face-tough-new-prison-punishments",
+    "checked_on": "2026-10-25",
+    "sha256": "d49d9982f92e6b798ee16ef9e6057e8bf8bdfa101d92f48a5f7fb2fd12033da1"
+  },
   "c319122e7022b295ccac709f5b007101108017c15d98dfb244af587848997a09|https://www.gov.uk/government/news/new-pioneering-certificates-to-help-homeowners-cut-flood-risk": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/new-pioneering-certificates-to-help-homeowners-cut-flood-risk",
@@ -574,6 +634,12 @@
     "url": "https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson",
     "checked_on": "2026-10-13",
     "sha256": "524c3b9ea355c8047e01f63575643c78199a3cbb108737371f4143af61278d46"
+  },
+  "ce4609042efa64a1a96eab3509243d9135f4121fff2497dc7a2445dc25a3bb42|https://www.gov.uk/government/news/10000-young-people-to-get-foot-in-the-door-of-britains-tech-sector-as-work-placements-rolled-out-across-the-country": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/10000-young-people-to-get-foot-in-the-door-of-britains-tech-sector-as-work-placements-rolled-out-across-the-country",
+    "checked_on": "2026-10-25",
+    "sha256": "d420f720fea74291d051c3d17fdb3e73d2e2a88ece94589343ea90894e9a4244"
   },
   "cee332538330892cadbbfaf19d334801ab17047ff47b78c9165673a077334020|https://www.gov.uk/government/news/disposable-vapes-banned-to-protect-childrens-health": {
     "match": "exact",
@@ -641,6 +707,24 @@
     "checked_on": "2026-10-16",
     "sha256": "452c7aa37fb8c0d26e51b5c7aa3ad17827a6efc3cb23fbdfa979aacd723dcb69"
   },
+  "e74d1c7d4e37e83a5783a06a521ac9a2a4f2721dbd57cbd4951a53b5c6d92703|https://hansard.parliament.uk/Commons/2026-10-21/debates/CAAFE9F2-EA1F-42E9-9F73-ECD65FA13C2B/AntisemitismInSchoolsAndColleges": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-10-21/debates/CAAFE9F2-EA1F-42E9-9F73-ECD65FA13C2B/AntisemitismInSchoolsAndColleges",
+    "checked_on": "2026-10-25",
+    "sha256": "0c51a78aeec37c679ac692d7c4612b87323ef09799c837135de250f8573fb90a"
+  },
+  "ea3132199cbebd2b06f2b21f8eaa9b7850634e40f3f1726499082c127b3c2d64|https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS402": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS402",
+    "checked_on": "2026-10-25",
+    "sha256": "c52a8feeb113ab39982c236e0ae3f6e3cb42acaf8b02ce5928df463f6ff4709e"
+  },
+  "eb0008cef1f7c88e2dbf27f4097d2ab53a9ac46ba01712a114d206f1dde04d10|https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS401": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS401",
+    "checked_on": "2026-10-25",
+    "sha256": "5b79550aeca6ebe7f6514b8d1285679aedffadfb4c190b3b9be95196a1c268b0"
+  },
   "ee9e33d6bc513e914fa715f26982f3fa130ed58e60ed95dbd25d902de32d85c1|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363",
@@ -676,5 +760,11 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354",
     "checked_on": "2026-10-13",
     "sha256": "f44b4bb943cde778e955dff9f90e2b46cb4e0925dbde9e6e2513633a250649b6"
+  },
+  "ffa062db61fe762b1251f0db17acc204d9fa801da5422f922b718b3615e33fb0|https://www.gov.uk/government/news/jackdaw-gas-field-gets-green-light": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/jackdaw-gas-field-gets-green-light",
+    "checked_on": "2026-10-25",
+    "sha256": "3acd4a5173c6da736d49186bb4d02a2222566671160de62341d547ec986a9527"
   }
 }

@@ -1,0 +1,78 @@
+format: openpromises/1
+id: uk-techfirst-one-million-2028
+headline:
+  en: TechFirst to reach a million by 2028
+actor_id: hm-government
+made_on: "2026-10-21"
+venue: press_release
+venue_label:
+  en: Digital and Technologies Jobs Plan
+area: education
+status: promised
+status_note:
+  en: >-
+    TechFirst is the government's technology skills programme, backed by up to £250 million in all.
+    The press release the same day says every secondary school can now use it and that 400,000 of
+    the million should come from the most disadvantaged schools. The card moves when the government
+    reports how many young people TechFirst has reached.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Digital, Culture, Media and Sport, 21 Oct 2026: Digital and Technologies Jobs
+      Plan
+    url: https://www.gov.uk/government/publications/digital-and-technologies-jobs-plan/digital-and-technologies-jobs-plan
+  - title: >-
+      Department for Digital, Culture, Media and Sport and Department for Business, Innovation,
+      Science and Trade press release, 21 Oct 2026: 10,000 young people to get foot in the door of
+      Britain's tech sector as work placements rolled out across the country
+    url: https://www.gov.uk/government/news/10000-young-people-to-get-foot-in-the-door-of-britains-tech-sector-as-work-placements-rolled-out-across-the-country
+versions:
+  - version: 1
+    text: >-
+      Through TechFirst we aim to reach one million young people across the UK with meaningful AI
+      and technology learning by 2028, a year earlier than planned, weighted towards the schools
+      furthest from opportunity.
+    recorded_on: "2026-10-21"
+    source_url: https://www.gov.uk/government/publications/digital-and-technologies-jobs-plan/digital-and-technologies-jobs-plan
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: Young people across the UK, weighted towards schools furthest from opportunity
+      cost:
+        range: [0.0072, 0.008, 0.0088]
+        quality: sourced
+        by:
+          kind: official
+          name: Department for Digital, Culture, Media and Sport
+        note:
+          en: >-
+            The government's own figure: the youth strand is backed by £24 million over three years,
+            shown as £8 million a year on average. The plan does not say which three years. Low–high
+            is an editorial ±10% because the source gives a central figure only.
+      when:
+        en: By 2028
+      deadline: "2028-12-31"
+      funded_by:
+        en: The TechFirst youth strand, £24 million over three years
+events:
+  - date: "2026-10-21"
+    type: promised
+    text:
+      en: >-
+        The government aims to reach one million young people with AI and technology learning
+        through TechFirst by 2028, a year earlier than planned
+  - date: "2028-12-31"
+    type: deadline
+    text:
+      en: One million young people reached by TechFirst due by 2028
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

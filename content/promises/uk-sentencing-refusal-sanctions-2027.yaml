@@ -1,0 +1,68 @@
+format: openpromises/1
+id: uk-sentencing-refusal-sanctions-2027
+headline:
+  en: Sanctions for skipping sentencing
+actor_id: hm-government
+made_on: "2026-10-22"
+venue: press_release
+venue_label:
+  en: Press release (Ministry of Justice)
+area: public_order
+status: promised
+status_note:
+  en: >-
+    The rules were laid before Parliament on 22 October 2026. The release says judges could impose
+    loss of prison privileges for up to 84 days, among other sanctions, on offenders who refuse to
+    attend their sentencing. It says the measures will take effect next year after the usual
+    parliamentary process, read here as by 31 December 2027. The card moves when the rules come into
+    force.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Justice press release, 22 Oct 2026: Cowardly killers who dodge sentencing face
+      tough new prison punishments
+    url: https://www.gov.uk/government/news/cowardly-killers-who-dodge-sentencing-face-tough-new-prison-punishments
+versions:
+  - version: 1
+    text: >-
+      The new powers will allow Crown Court judges to impose prison sanctions on offenders who
+      refuse to attend sentencing, including restricting social visits for almost a month - ensuring
+      even those facing decades behind bars have something more to lose.
+    recorded_on: "2026-10-22"
+    source_url: https://www.gov.uk/government/news/cowardly-killers-who-dodge-sentencing-face-tough-new-prison-punishments
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: >-
+          Offenders who refuse to attend their sentencing hearing, and victims' families
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Next year, after the parliamentary process
+      deadline: "2027-12-31"
+      funded_by: null
+events:
+  - date: "2026-10-22"
+    type: promised
+    text:
+      en: >-
+        The government lays rules letting Crown Court judges impose prison sanctions on offenders
+        who refuse to attend sentencing
+  - date: "2027-12-31"
+    type: deadline
+    text:
+      en: >-
+        Sanctions for refusing to attend sentencing due in force next year (editorial date: end of
+        2027)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
