@@ -1,7 +1,7 @@
 format: openpromises/1
 id: uk-mental-health-centres-2026
 headline:
-  en: 159 new community mental health centres
+  en: New community mental health centres across the country
 actor_id: andy-burnham
 made_on: "2026-10-14"
 venue: parliament
@@ -11,12 +11,11 @@ area: health
 status: promised
 status_note:
   en: >-
-    Asked to fund a mental health in-patient hub in Hertfordshire, the Prime Minister said the
-    government will not take that proposal forward, but will bring forward four new community mental
-    health centres in Hertfordshire, as part of 159 across the country. He said the Health and
-    Social Care Secretary will involve the MP in the design of the new hubs. He gave no date, cost
-    or list of places. The card moves when the government publishes where and when the centres will
-    open.
+    On 14 October 2026 the Prime Minister spoke of 159 new community mental health centres, four of
+    them in Hertfordshire. On 21 October he said the forthcoming mental health strategy will confirm
+    100 new centres and that 59 mental health emergency departments, offering same-day crisis
+    support, will also be brought forward, one of each in Sunderland. He gave no date, cost or full
+    list of places. The card moves when the strategy is published.
 responsible:
   actor_id: hm-government
 origin: llm_intake
@@ -24,6 +23,9 @@ sources:
   - title: >-
       Hansard, House of Commons, 14 Oct 2026: Engagements (Prime Minister's Questions)
     url: https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements
+  - title: >-
+      Hansard, House of Commons, 21 Oct 2026: Engagements (Prime Minister's Questions)
+    url: https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements
 versions:
   - version: 1
     text: >-
@@ -42,6 +44,24 @@ versions:
       when:
         en: Not stated
       funded_by: null
+  - version: 2
+    text: >-
+      The mental health strategy will do precisely that. It will confirm the plan to open 100 new
+      community mental health centres across the country to get mental health support right into
+      communities, and the Health Secretary is ensuring that we also bring forward 59 mental health
+      emergency departments to give same-day support to people experiencing a crisis.
+    recorded_on: "2026-10-21"
+    source_url: https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: People who need mental health support, including people in a mental health crisis
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
 events:
   - date: "2026-10-14"
     type: promised
@@ -49,6 +69,14 @@ events:
       en: >-
         The Prime Minister tells the Commons there will be 159 new community mental health centres
         across the country, four of them in Hertfordshire
+  - date: "2026-10-21"
+    type: reworded
+    text:
+      en: >-
+        The Prime Minister tells the Commons the mental health strategy will confirm plans for 100
+        new community mental health centres, with 59 mental health emergency departments, where a
+        week earlier he spoke of 159 centres
+    evidence_url: https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements
 replies: []
 reviews:
   - by: AI Journalist
@@ -64,3 +92,10 @@ reviews:
     approves: true
     note:
       en: Checked against its sources (approval of pull request #115)
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Version 2: quote checked word for word at the source (Hansard, House of Commons, 21 Oct
+        2026).

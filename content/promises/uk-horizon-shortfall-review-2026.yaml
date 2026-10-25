@@ -1,0 +1,71 @@
+format: openpromises/1
+id: uk-horizon-shortfall-review-2026
+headline:
+  en: Independent review of Horizon rejections
+actor_id: kate-dearden
+made_on: "2026-10-21"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    Sir Gary Hickinbottom recommended in May 2026 that a Post Office decision that there is too
+    little evidence for a Horizon Shortfall Scheme fixed sum offer should be independently reviewed
+    before a claim is rejected; the government and the Post Office accepted it. The Department for
+    Business, Innovation, Science and Trade's release says the review will begin later this month.
+    "Late October" is read as 31 October 2026. The card moves when the government confirms the
+    review has started.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS397, 21 Oct 2026: Post Office Redress progress
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS397
+  - title: >-
+      Department for Business, Innovation, Science and Trade press release, 21 Oct 2026: New action
+      on redress for postmasters affected by Post Office scandals
+    url: https://www.gov.uk/government/news/new-action-on-redress-for-postmasters-affected-by-post-office-scandals
+versions:
+  - version: 1
+    text: >-
+      In response, the Shortfall Independent Review will commence in late October. Eligible cases
+      will be referred to an assessor independent of both Post Office and Government. This means no
+      claimant will be refused HSS redress based on Post Office’s decision alone.
+    recorded_on: "2026-10-21"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS397
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: >-
+          Postmasters told there is too little evidence for a Horizon Shortfall Scheme fixed sum
+          offer
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Late October 2026
+      deadline: "2026-10-31"
+      funded_by: null
+events:
+  - date: "2026-10-21"
+    type: promised
+    text:
+      en: >-
+        The Post Office minister says an independent review of claims the Post Office would reject
+        for lack of evidence will start in late October
+  - date: "2026-10-31"
+    type: deadline
+    text:
+      en: Shortfall Independent Review due to start in late October 2026
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

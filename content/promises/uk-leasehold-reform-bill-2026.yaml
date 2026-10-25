@@ -11,15 +11,19 @@ area: housing_env
 status: promised
 status_note:
   en: >-
-    "Before Christmas" is recorded as a deadline of 24 December 2026. The speech does not say what
-    the Bill would contain; it tells leaseholders: "The days of you being squeezed for every penny
-    are coming to an end." The card moves when a leasehold reform Bill is introduced in Parliament.
+    In September the Prime Minister promised a Bill "before Christmas", recorded as 24 December
+    2026. At Prime Minister's Questions on 21 October he said the Bill will come "as soon as
+    possible—hopefully this year", read as 31 December 2026. Neither statement says what the Bill
+    would contain. The card moves when a leasehold reform Bill is introduced in Parliament.
 responsible:
   actor_id: hm-government
 origin: llm_intake
 sources:
   - title: "Labour Party: Andy Burnham's speech to Labour Party Conference 2026 (29 Sep 2026)"
     url: https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/
+  - title: >-
+      Hansard, House of Commons, 21 Oct 2026: Engagements (Prime Minister's Questions)
+    url: https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements
 versions:
   - version: 1
     text: >-
@@ -37,6 +41,24 @@ versions:
         en: Before Christmas 2026
       deadline: "2026-12-24"
       funded_by: null
+  - version: 2
+    text: >-
+      I can give him an assurance that she and many thousands of others up and down the country need
+      wait no longer for leasehold reform. We will bring forward the leasehold reform Bill as soon
+      as possible—hopefully this year.
+    recorded_on: "2026-10-21"
+    source_url: https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: Leaseholders
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: As soon as possible, hopefully in 2026
+      deadline: "2026-12-31"
+      funded_by: null
 events:
   - date: "2026-09-29"
     type: promised
@@ -48,6 +70,13 @@ events:
     type: deadline
     text:
       en: Bill due to be introduced before Christmas (editorial date)
+  - date: "2026-10-21"
+    type: reworded
+    text:
+      en: >-
+        The Prime Minister tells the Commons the leasehold reform Bill will come as soon as
+        possible, "hopefully this year", where in September he said before Christmas
+    evidence_url: https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements
 replies: []
 reviews:
   - by: AI Journalist
@@ -57,3 +86,10 @@ reviews:
       en: >-
         Quote checked word for word at the source; dates, figures and links checked against the
         cited sources.
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Version 2: quote checked word for word at the source (Hansard, House of Commons, 21 Oct
+        2026).

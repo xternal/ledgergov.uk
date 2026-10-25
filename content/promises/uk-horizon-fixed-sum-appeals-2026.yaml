@@ -1,0 +1,68 @@
+format: openpromises/1
+id: uk-horizon-fixed-sum-appeals-2026
+headline:
+  en: Appeals against £75,000 Horizon offers
+actor_id: kate-dearden
+made_on: "2026-10-21"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The process was first announced in May 2026. Postmasters who accepted the £75,000 fixed sum
+    offer will have four months to register and must explain why the sum undervalued their claim; an
+    assessor independent of the government and the Post Office decides whether the claim is assessed
+    in full. "November" is read as 30 November 2026. The card moves when the process opens.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS397, 21 Oct 2026: Post Office Redress progress
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS397
+  - title: >-
+      Department for Business, Innovation, Science and Trade press release, 21 Oct 2026: New action
+      on redress for postmasters affected by Post Office scandals
+    url: https://www.gov.uk/government/news/new-action-on-redress-for-postmasters-affected-by-post-office-scandals
+versions:
+  - version: 1
+    text: >-
+      In May, the department announced that it would establish an independent process through which
+      eligible postmasters who accepted the £75,000 Horizon Shortfall Scheme Fixed Sum Offer could
+      seek permission to have their claim fully assessed through the Horizon Shortfall Scheme
+      Appeals process. I can now confirm that we expect to launch that process in November.
+    recorded_on: "2026-10-21"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS397
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: Postmasters who accepted the £75,000 Horizon Shortfall Scheme fixed sum offer
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: November 2026
+      deadline: "2026-11-30"
+      funded_by: null
+events:
+  - date: "2026-10-21"
+    type: promised
+    text:
+      en: >-
+        The Post Office minister says the process for appealing £75,000 fixed sum offers is expected
+        to launch in November
+  - date: "2026-11-30"
+    type: deadline
+    text:
+      en: Fixed sum offer appeals process due to launch in November 2026
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

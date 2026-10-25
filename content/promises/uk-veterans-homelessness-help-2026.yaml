@@ -1,0 +1,65 @@
+format: openpromises/1
+id: uk-veterans-homelessness-help-2026
+headline:
+  en: Any council to help homeless veterans
+actor_id: matthew-pennycook
+made_on: "2026-10-21"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The minister has tabled an amendment to the Social Housing Bill giving the government a power to
+    say when a council may not refer a homeless household to another council for lack of a local
+    connection; this is how the government means to use it. The housing release of 20 October says
+    the same for councils in England. No date is given. The card moves when the Bill becomes law and
+    the power is used.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS401, 21 Oct 2026: Social Housing Bill: Commons Committee
+      Stage Amendments
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS401
+  - title: >-
+      Ministry of Housing, Communities and Local Government press release, 20 Oct 2026: Domestic
+      abusers face eviction as survivors gain housing rights
+    url: https://www.gov.uk/government/news/domestic-abusers-face-eviction-as-survivors-gain-housing-rights
+versions:
+  - version: 1
+    text: >-
+      We will use this power to ensure that where those who have served our country seek
+      homelessness assistance from a local authority, they will not be referred elsewhere simply
+      because they lack a local connection, thereby allowing them to seek support wherever they
+      present.
+    recorded_on: "2026-10-21"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS401
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: UK armed forces veterans seeking homelessness help in England
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: When the Social Housing Bill becomes law (date not stated)
+      funded_by: null
+events:
+  - date: "2026-10-21"
+    type: promised
+    text:
+      en: >-
+        The housing minister says a new power will stop councils referring homeless veterans
+        elsewhere because they lack a local connection
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
