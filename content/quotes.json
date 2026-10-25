@@ -11,6 +11,18 @@
     "checked_on": "2026-10-20",
     "sha256": "feb1289601d84f281cf617496ae0f21468fb65d16b794c07563bb62fe3df7062"
   },
+  "03e93382d2c70455f17988eb5fae442fa7666f583eccebd015c858a6608319eb|https://www.gov.uk/government/news/stronger-safeguards-for-wheelchair-users-and-better-trained-staff-to-support-disabled-air-passengers": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/stronger-safeguards-for-wheelchair-users-and-better-trained-staff-to-support-disabled-air-passengers",
+    "checked_on": "2026-10-25",
+    "sha256": "0ff07a7f00aec6d4f1f5c566beee3c54e2a28bb3adc0a81e0a11bd12dabba639"
+  },
+  "054824181a3ef305b7a95efc4b69bbe9f1bee41747cbbf11c04c0a576a8d4529|https://www.gov.uk/government/news/pm-puts-the-brakes-on-rip-off-parking-charges-and-car-scams": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/pm-puts-the-brakes-on-rip-off-parking-charges-and-car-scams",
+    "checked_on": "2026-10-25",
+    "sha256": "b0d2ca32affdf3217df217d3e54dc898b68b3375c79174d5700a95f03868a221"
+  },
   "0557c9d5a817a5ff03627fc98e10370f2987af5e1328d67371c35163c33e7158|https://www.gov.uk/government/speeches/pm-statement-on-illegal-migration-13-december-2022": {
     "match": "exact",
     "url": "https://www.gov.uk/government/speeches/pm-statement-on-illegal-migration-13-december-2022",
@@ -94,6 +106,12 @@
     "url": "https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023",
     "checked_on": "2026-10-20",
     "sha256": "bfd72905eb5de7945125ec6ab889eb1ae2502aa5b2bdb4cfe08771d62391338c"
+  },
+  "2376ac9146f988b068e1be6eef3a165010d1fef891edb3874b7fc60a8003cd3c|https://www.gov.uk/government/news/over-100000-job-and-training-opportunities-a-year-to-give-young-people-a-route-into-britains-growth-industries-as-part-of-industrial-strategy": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/over-100000-job-and-training-opportunities-a-year-to-give-young-people-a-route-into-britains-growth-industries-as-part-of-industrial-strategy",
+    "checked_on": "2026-10-25",
+    "sha256": "05c34603995fc9f555c471df2e1f6e678d40c1c32f38f09a010c1c35116d4758"
   },
   "2521be28333968466fbb33cd51a363d8046a60bbe5b006b66983a8d906adad65|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS366": {
     "match": "exact",
