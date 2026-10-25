@@ -1,0 +1,61 @@
+format: openpromises/1
+id: uk-undersea-cable-penalties-2026
+headline:
+  en: Tougher penalties for undersea sabotage
+actor_id: hm-government
+made_on: "2026-10-22"
+venue: press_release
+venue_label:
+  en: Press release (Department for Digital, Culture, Media and Sport)
+area: public_order
+status: promised
+status_note:
+  en: >-
+    The Security Minister, Dan Jarvis, said the government is toughening the law. A White Paper
+    published the same day proposes new offences, prison sentences of up to 14 years for
+    intentionally damaging undersea energy and telecoms infrastructure, and new security duties on
+    subsea telecoms cable providers. It opens a 12-week consultation. No date is given for a Bill.
+    The card moves when legislation is introduced in Parliament.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Digital, Culture, Media and Sport press release, 22 Oct 2026: Subsea cable
+      saboteurs face jail and unlimited fines under new security crackdown
+    url: https://www.gov.uk/government/news/subsea-cable-saboteurs-face-jail-and-unlimited-fines-under-new-security-crackdown
+versions:
+  - version: 1
+    text: >-
+      The UK’s undersea cables and pipelines will be better protected from hostile threats under
+      plans unveiled today to introduce tougher prison sentences and unlimited fines on ship owners
+      that damage critical national infrastructure.
+    recorded_on: "2026-10-22"
+    source_url: https://www.gov.uk/government/news/subsea-cable-saboteurs-face-jail-and-unlimited-fines-under-new-security-crackdown
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: >-
+          The UK's undersea cables and pipelines, and those who damage them
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-22"
+    type: promised
+    text:
+      en: >-
+        The government sets out plans for tougher prison sentences and unlimited fines for damaging
+        undersea cables and pipelines
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

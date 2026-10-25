@@ -1,0 +1,72 @@
+format: openpromises/1
+id: uk-pe-school-sport-1bn-2029
+headline:
+  en: Over £1 billion for school sport by 2029
+actor_id: hm-government
+made_on: "2026-10-22"
+venue: press_release
+venue_label:
+  en: >-
+    Government response to the Health and Social Care Committee's report on healthy ageing and
+    physical activity
+area: education
+status: promised
+status_note:
+  en: >-
+    Listed in the government's response to a Commons committee report on physical activity in an
+    ageing society. The response does not say when the spending starts or how the rest of the £1
+    billion beyond the partnerships network is split. The card moves when the PE and School Sport
+    Partnerships Network is set up or the spending is reported.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department of Health and Social Care, 22 Oct 2026: Government response to the Health and
+      Social Care Committee's eighth report of 2024 to 2026 - Healthy Ageing: physical activity in
+      an ageing society
+    url: https://www.gov.uk/government/publications/government-response-to-the-hsccs-report-on-healthy-ageing-and-physical-activity/government-response-to-the-health-and-social-care-committees-eighth-report-of-2024-to-2026-healthy-ageing-physical-activity-in-an-ageing-society
+versions:
+  - version: 1
+    text: >-
+      invest more than £1 billion in PE, school sport and physical activity by 2029, including £530
+      million for the new PE and School Sport Partnerships Network, to ensure all children can
+      access equal opportunities for physical activity
+    recorded_on: "2026-10-22"
+    source_url: https://www.gov.uk/government/publications/government-response-to-the-hsccs-report-on-healthy-ageing-and-physical-activity/government-response-to-the-health-and-social-care-committees-eighth-report-of-2024-to-2026-healthy-ageing-physical-activity-in-an-ageing-society
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: Children in schools
+      cost:
+        note:
+          en: >-
+            More than £1 billion by 2029, including £530 million for the PE and School Sport
+            Partnerships Network. No start date is given, so no yearly figure is shown.
+      when:
+        en: By 2029
+      deadline: "2029-12-31"
+      funded_by:
+        en: >-
+          More than £1 billion, including £530 million for the PE and School Sport Partnerships
+          Network
+events:
+  - date: "2026-10-22"
+    type: promised
+    text:
+      en: >-
+        The government commits to invest more than £1 billion in PE, school sport and physical
+        activity by 2029
+  - date: "2029-12-31"
+    type: deadline
+    text:
+      en: More than £1 billion for PE and school sport due by 2029
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
