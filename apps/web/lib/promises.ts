@@ -80,9 +80,9 @@ export function actorLine(a: ActorFile, party: ActorFile | null | undefined, tod
 /** "Labour" rather than "Labour Party", where space is tight. */
 export const shortName = (a: ActorFile) => a.short_name ?? a.name;
 
-/** Who, for lists: "Blair McDougall · Labour", "Conservative Party", "HM Government". The role is on the card page. */
+/** Who, for lists: "Blair McDougall, Labour", "Conservative Party", "HM Government". The role is on the card page. */
 export function whoShort(c: CardView): string {
-  if (c.actor.kind === "person" && c.party) return `${c.actor.name} · ${shortName(c.party)}`;
+  if (c.actor.kind === "person" && c.party) return `${c.actor.name}, ${shortName(c.party)}`;
   return c.actor.name;
 }
 

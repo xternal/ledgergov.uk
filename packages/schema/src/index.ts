@@ -6,6 +6,8 @@ export * from "./presets";
 export * from "./tax";
 export * from "./bundle";
 export * from "./content";
+export * from "./forecast";
+export * from "./home";
 export * from "./contracts";
 export * from "./deadlines";
 export * from "./drafts";

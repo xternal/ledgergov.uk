@@ -92,6 +92,40 @@ export type CostedBy = z.infer<typeof CostedBy>;
 /** How readers see the kind: "Central figure: OBR (official)". */
 export const COSTED_BY_LABEL: Record<CostedBy["kind"], string> = { official: "official", party: "party's own figure", independent: "independent" };
 
+/**
+ * A target the speaker's own words set, as a number (OpenPromises decision 36, the engine's metrics module), such as
+ * "at most 5.25% by 31 December 2023" for "halve inflation this year". Only when the words name a measurable figure:
+ * the site never sets a target of its own. `series_id` names the official series it is read on.
+ */
+export const Metric = z.object({
+  series_id: z.string().trim().min(1),
+  target: z.number(),
+  direction: z.enum(["at_least", "at_most", "below"]),
+  unit: z.string().trim().min(1),
+  by: IsoDate,
+});
+export type Metric = z.infer<typeof Metric>;
+
+/**
+ * The forecast at the time (OpenPromises decision 36): what an official or independent forecaster (OBR, the Bank of
+ * England, IFS, IMF) expected for the target's measure, published before the promise, so an outcome is read against
+ * a yardstick neither side chose. Never a party's figure or the site's own.
+ */
+export const Baseline = z.object({
+  value: z.number(),
+  /** The same unit as the target: "%". */
+  unit: z.string().trim().min(1),
+  /** The date the forecast is for. */
+  for: IsoDate,
+  by: z.object({ kind: z.enum(["official", "independent"]), name: z.string().trim().min(1).max(80) }),
+  /** On or before the day the version was recorded. */
+  published_on: IsoDate,
+  source: Link,
+  /** What the forecast assumes, or how it is read against the target. */
+  note: z.string().optional(),
+});
+export type Baseline = z.infer<typeof Baseline>;
+
 export const VersionParameters = z
   .object({
     who: z.string().optional(),
@@ -103,6 +137,8 @@ export const VersionParameters = z
     when: z.string().optional(),
     /** Exactly as stated at announcement; null = "Funding not stated". */
     funded_by: z.string().nullable().optional(),
+    metric: Metric.optional(),
+    baseline: Baseline.optional(),
   })
   .nullable();
 export type VersionParameters = z.infer<typeof VersionParameters>;
@@ -293,6 +329,18 @@ export const PromiseFile = z
     if (current.parameters !== null && p.status === "unscoreable")
       ctx.addIssue({ code: "custom", path: ["status"], message: "an unscoreable card has no parameters" });
     p.versions.forEach((v, i) => {
+      const b = v.parameters?.baseline;
+      const m = v.parameters?.metric;
+      if (b && b.published_on > v.recorded_on)
+        ctx.addIssue({
+          code: "custom",
+          path: ["versions", i, "parameters", "baseline", "published_on"],
+          message: "a forecast at the time is published on or before the day the version was recorded, so nobody chooses it with hindsight (OpenPromises decision 36)",
+        });
+      if (b && m && b.unit !== m.unit)
+        ctx.addIssue({ code: "custom", path: ["versions", i, "parameters", "baseline", "unit"], message: `is "${b.unit}", but the target is in "${m.unit}"; a forecast at the time is for the same measure` });
+    });
+    p.versions.forEach((v, i) => {
       const r = v.parameters?.how_much_bn_per_year;
       if (r && r[0] === r[2])
         ctx.addIssue({
@@ -394,7 +442,9 @@ export function cardViews(promises: PromiseFile[], actors: ActorFile[], contract
 export const LATE_FIELDS: Record<"versions" | "events" | "replies", string[]> = {
   // Who made the cost's central figure (PROMISE_STANDARD §2), added 9 Oct 2026. An editor's quote check, which may be
   // recorded once on a published card (OpenPromises decision 35, a late field in the engine's check since 0.15.0).
-  versions: [".parameters.costed_by", ".quote_checked_on"],
+  // The forecast at the time (OpenPromises decision 36), a late field in the engine's check since 0.16.0. A target
+  // (.parameters.metric) is not one: adding it changes how the promise is read, so it comes with a correction.
+  versions: [".parameters.costed_by", ".quote_checked_on", ".parameters.baseline"],
   events: [],
   replies: [],
 };

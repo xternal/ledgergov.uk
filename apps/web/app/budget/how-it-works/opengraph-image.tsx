@@ -23,7 +23,8 @@ export default async function Image() {
     <div style={{ display: "flex", flexDirection: "column", width: "100%", height: "100%", background: OG.bg, color: OG.ink, padding: "44px 60px", fontFamily: "Geist" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 24, fontWeight: 600 }}>
         <img src={MARK_DATA_URI} width={24} height={24} alt="" />
-        {`LedgerGov.UK · ${BUDGET.name}`}
+        LedgerGov.UK
+        <span style={{ marginLeft: 10, color: OG.muted }}>{BUDGET.name}</span>
       </div>
       <div style={{ display: "flex", fontSize: 46, fontWeight: 600, letterSpacing: -1.5, lineHeight: 1.05, marginTop: 16 }}>How a Budget works: the Chancellor&apos;s headroom</div>
       <div style={{ display: "flex", fontSize: 22, color: OG.muted, marginTop: 10 }}>

@@ -91,8 +91,8 @@ describe("API v1 shapes", () => {
     const p = promises.find((x) => x.cost)!;
     expect(keys(p)).toEqual(
       [
-        "actor_id", "actor_name", "brought_about_by", "contracts", "corrections", "cost", "deadline", "events", "funded_by", "headline", "id", "made_on", "origin", "outcome_by", "party_id",
-        "policy_area", "quote_checked_on", "quote_licence", "quote_source_url", "replies", "sources", "status", "status_label", "status_note", "text",
+        "actor_id", "actor_name", "brought_about_by", "contracts", "corrections", "cost", "deadline", "events", "forecast_at_the_time", "funded_by", "headline", "id", "made_on", "origin", "outcome_by", "party_id",
+        "policy_area", "quote_checked_on", "quote_licence", "quote_source_url", "replies", "sources", "status", "status_label", "status_note", "target", "text",
         "url", "venue", "venue_label", "verification", "version", "versions", "when", "who",
       ].sort(),
     );
@@ -108,6 +108,11 @@ describe("API v1 shapes", () => {
     // An opposition party's pledge rests with no body in power.
     expect(promises.filter((x) => seed.actors.find((a) => a.id === x.party_id)?.standing === "opposition" && x.status === "promised").map((x) => x.outcome_by)).not.toContain("hm-government");
     expect(p.status_label).toBe(`label:${p.status}`);
+    // The target and the forecast at the time (OpenPromises decision 36), only where a card records them.
+    const halve = promises.find((x) => x.id === "uk-halve-inflation-2023")!;
+    expect(halve.target).toEqual({ series_id: "ons-cpi-12-month-rate", value: 5.25, direction: "at_most", unit: "%", by: "2023-12-31" });
+    expect([halve.forecast_at_the_time?.value, halve.forecast_at_the_time?.by_name, halve.forecast_at_the_time?.published_on]).toEqual([3.75, "OBR", "2022-11-17"]);
+    expect(p.target === null || p.id === halve.id).toBe(true);
     const text = JSON.stringify(promises);
     for (const k of ["credit", "submission_ref", "email", "address", "subscription", "consent"]) expect(text).not.toContain(`"${k}"`);
   });

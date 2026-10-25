@@ -15,7 +15,7 @@ function Top({ round }: { round: PredictRound }) {
         LedgerGov.UK
       </div>
       <div style={{ display: "flex", fontSize: 22, color: OG.muted, background: OG.sunk, padding: "6px 16px", borderRadius: 999 }}>
-        {`${round.budget} · ${shortDay(round.budget_date)}`}
+        {`${round.budget}, ${shortDay(round.budget_date)}`}
       </div>
     </div>
   );

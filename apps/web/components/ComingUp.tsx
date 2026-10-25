@@ -13,7 +13,7 @@ export interface DueItem {
   deadline: string;
   status: Status;
   text: string;
-  /** "Wes Streeting · Labour" */
+  /** "Wes Streeting, Labour" */
   who: string;
 }
 

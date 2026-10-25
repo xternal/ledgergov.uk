@@ -13,7 +13,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
       <header className="border-b border-line">
         <div className="mx-auto flex h-14 max-w-[1000px] items-center gap-4 px-4 sm:px-6">
           <a href="/admin" className="text-[15px] font-semibold tracking-[-0.01em] text-ink no-underline">
-            LedgerGov.UK · Editors’ triage
+            LedgerGov.UK editors’ triage
           </a>
         </div>
       </header>

@@ -2,7 +2,7 @@
 
 import { useEffect, useState, type ReactNode } from "react";
 import type { CardView, Provenance, Status } from "@ledger/schema";
-import { COSTED_BY_LABEL, LADDER } from "@ledger/schema";
+import { COSTED_BY_LABEL, LADDER, forecastGap, type ForecastGap } from "@ledger/schema";
 import { EVENT_LABEL, STATUS_LABEL } from "@/lib/copy";
 import { fixed, gbp, gbpBn, longDate, monthYear, perHousehold, rangeText, shareOf } from "@/lib/format";
 import { AREA_LABEL, costSense, todayIso } from "@/lib/promises";
@@ -112,6 +112,53 @@ function Fact({ label, children }: { label: string; children: ReactNode }) {
   );
 }
 
+/**
+ * The target beside the forecast published before the promise (OpenPromises decision 36): one scale with the target's
+ * zone and line and the forecast's mark, then the gap in words. The scale repeats the words, so it is hidden from
+ * screen readers.
+ */
+function TargetAndForecast({ id, g }: { id: string; g: ForecastGap }) {
+  const at = (x: number) => `${Math.min(100, Math.max(0, (x / g.max) * 100))}%`;
+  const edge = (x: number) => (x / g.max > 0.75 ? "-translate-x-full" : x / g.max < 0.2 ? "" : "-translate-x-1/2");
+  const { metric: m, baseline: b } = g;
+  return (
+    <Section id={id} title="The target and the forecast at the time">
+      <figure className="m-0 grid gap-3 rounded-panel bg-surface p-5 shadow-[inset_0_0_0_1px_var(--line)]">
+        <div aria-hidden className="relative mx-1 h-[84px] text-caption tabular-nums">
+          <span className="absolute inset-x-0 top-[34px] h-[10px] rounded-full bg-sunk shadow-[inset_0_0_0_1px_var(--line)]" />
+          <span
+            className="absolute top-[34px] h-[10px] rounded-full bg-good/30"
+            style={g.ceiling ? { left: 0, width: at(m.target) } : { left: at(m.target), right: 0 }}
+          />
+          <span className="absolute top-[26px] h-[26px] w-[3px] -translate-x-1/2 rounded-full bg-good" style={{ left: at(m.target) }} />
+          <span className="absolute top-[29px] size-5 -translate-x-1/2 rounded-full bg-ink shadow-[0_0_0_3px_var(--surface)]" style={{ left: at(b.value) }} />
+          <span className={`absolute top-0 whitespace-nowrap font-semibold text-ink ${edge(b.value)}`} style={{ left: at(b.value) }}>
+            {g.forecastLabel}
+          </span>
+          <span className={`absolute top-[58px] whitespace-nowrap font-semibold text-good ${edge(m.target)}`} style={{ left: at(m.target) }}>
+            {g.targetLabel}
+          </span>
+          {/* The scale's ends, on wide screens only: on a phone they would run into the target's label. */}
+          <span className="absolute left-0 top-[58px] hidden text-muted sm:block">{g.short(0)}</span>
+          <span className="absolute right-0 top-[58px] hidden text-muted sm:block">{g.short(g.max)}</span>
+        </div>
+        <figcaption className="grid gap-1 text-sm leading-relaxed text-muted">
+          <strong className="text-body font-semibold text-ink">{g.words}</strong>
+          <span>
+            {g.targetText}. The forecast: {g.forecastText}.
+          </span>
+        </figcaption>
+      </figure>
+      <p className="m-0 text-caption text-muted">
+        A forecast published before the promise, so nobody chose it with hindsight. The site shows both and never scores the promise against the forecast.{" "}
+        <a href={b.source.url} target="_blank" rel="noopener noreferrer">
+          {b.source.title}
+        </a>
+      </p>
+    </Section>
+  );
+}
+
 /** A folded block under "More detail": the heading shows, the rest opens on demand. */
 function Fold({ title, children }: { title: string; children: ReactNode }) {
   return (
@@ -147,20 +194,15 @@ export function PromiseDetail({ card, householdsM, householdsP, spendingBn, runH
     ...f.events.map((e) => ({ ...e, today: false })),
     ...(today ? [{ date: today, text: "We are here", type: "deadline" as const, today: true, evidence_url: undefined }] : []),
   ].sort((a, b) => a.date.localeCompare(b.date));
+  const gap = forecastGap(p ?? undefined);
   const when = p?.when ? (/^\d{4}-\d{2}-\d{2}$/.test(p.when) ? longDate(p.when) : p.when) : f.deadline ? `By ${longDate(f.deadline)}` : null;
 
   return (
     <article className="grid gap-8" aria-labelledby={`card-${f.id}`}>
       <header className="grid gap-4">
-        <span className="flex flex-wrap items-center gap-x-2 gap-y-1 text-label text-muted">
+        <span className="flex flex-wrap items-center gap-x-4 gap-y-1 text-label text-muted">
           <a href={`/actor/${card.actor.id}`}>{card.actor.name}</a>
-          {card.party && card.party.id !== card.actor.id && (
-            <>
-              <span aria-hidden>·</span>
-              <a href={`/actor/${card.party.id}`}>{card.party.name}</a>
-            </>
-          )}
-          <span aria-hidden>·</span>
+          {card.party && card.party.id !== card.actor.id && <a href={`/actor/${card.party.id}`}>{card.party.name}</a>}
           <a href={areaHref}>{AREA_LABEL[f.policy_area]}</a>
         </span>
         <div className="grid gap-2">
@@ -205,7 +247,7 @@ export function PromiseDetail({ card, householdsM, householdsP, spendingBn, runH
                       </dd>
                     )}
                     <dd className="m-0 mt-1 flex flex-wrap items-center gap-x-2 text-caption text-muted">
-                      about {gbp(perHousehold(cost[1], householdsM))} per household · {fixed(shareOf(cost[1], spendingBn), 2)}% of spending
+                      about {gbp(perHousehold(cost[1], householdsM))} per household, {fixed(shareOf(cost[1], spendingBn), 2)}% of spending
                       <WithProvenance p={householdsP} align="end">
                         <QualityBadge quality={householdsP.quality} />
                       </WithProvenance>
@@ -218,6 +260,13 @@ export function PromiseDetail({ card, householdsM, householdsP, spendingBn, runH
               {p?.who && <Fact label="Who it affects">{p.who}</Fact>}
               {when && <Fact label="When">{when}</Fact>}
               {p && <Fact label="Paid for by">{p.funded_by ?? <span className="font-semibold">Not stated when it was announced</span>}</Fact>}
+              {gap && <Fact label="Target">{gap.targetText}</Fact>}
+              {gap && (
+                <Fact label="Forecast at the time">
+                  {gap.forecastText}
+                  {gap.baseline.note && <span className="mt-1 block text-caption text-muted">{gap.baseline.note}</span>}
+                </Fact>
+              )}
             </dl>
 
             {/* On phones the action comes first, so it is on the first screen; on wide screens it follows the facts. */}
@@ -272,6 +321,8 @@ export function PromiseDetail({ card, householdsM, householdsP, spendingBn, runH
               <p className="m-0 max-w-[65ch] leading-relaxed text-ink">{f.status_note}</p>
             </Section>
           )}
+
+          {gap && <TargetAndForecast id={`target-${f.id}`} g={gap} />}
 
           <Section id={`timeline-${f.id}`} title="What has happened">
             <ol className="m-0 grid list-none p-0" aria-label="Timeline">

@@ -1,0 +1,29 @@
+id: mayors-borrowing-and-growth-funding
+headline: Give English mayors a £1.5bn borrowing facility and growth funding
+area: economic_affairs
+summary: >-
+  Reuters and the Guardian report that the Budget will give mayors and local leaders in England new
+  money and powers: a £1.5bn borrowing facility to be designed with mayors over the next two years,
+  £285m of "good growth" seed funding next year for local priorities such as housing, transport or
+  high streets, and £150m to help local authorities build staff and expertise. The Treasury described
+  the scheme on the record, and the Prime Minister and the Chancellor are quoted backing it. The
+  reports give no yearly cost for the borrowing facility.
+reported:
+  - outlet: Reuters
+    date: "2026-10-24"
+    url: https://uk.finance.yahoo.com/news/uk-budget-set-hand-english-213644760.html
+    title: UK budget set to hand English mayors new borrowing powers, growth funding
+  - outlet: The Guardian
+    date: "2026-10-24"
+    url: https://www.theguardian.com/uk-news/2026/oct/24/andy-burnham-john-healey-first-budget-devolution-growth-package
+    title: Healey's first budget to include big devolution package to boost growth
+  - outlet: BBC News
+    date: "2026-10-25"
+    url: https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o
+    title: Budget to include £1bn for social and affordable housing
+status: confirmed
+confirmed:
+  date: "2026-10-24"
+  by: HM Treasury (statement quoted by Reuters); the Chancellor and the Prime Minister quoted on the record
+  url: https://uk.finance.yahoo.com/news/uk-budget-set-hand-english-213644760.html
+  text: The Treasury said the £285m "Good Growth" scheme would let local leaders invest in their own priorities without asking central government.

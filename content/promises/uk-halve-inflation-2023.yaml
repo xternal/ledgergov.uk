@@ -51,6 +51,28 @@ versions:
       deadline: "2023-12-31"
       funded_by:
         en: Not a spending pledge
+      metric:
+        series_id: ons-cpi-12-month-rate
+        target: 5.25
+        direction: at_most
+        unit: "%"
+        by: "2023-12-31"
+      baseline:
+        value: 3.75
+        unit: "%"
+        for: "2023-12-31"
+        by:
+          kind: official
+          name: OBR
+        published_on: "2022-11-17"
+        source:
+          title: "OBR: Economic and fiscal outlook, November 2022, supplementary economy tables, table 1.7 (CPI, 2023 Q4)"
+          url: https://obr.uk/efo/economic-and-fiscal-outlook-november-2022/
+        note:
+          en: >-
+            CPI inflation over 12 months in the last quarter of 2023 (3.75%), forecast seven weeks
+            before the speech under the energy price guarantee then in place; the target is read on
+            December's rate.
 events:
   - date: "2023-01-04"
     type: promised
@@ -68,6 +90,22 @@ events:
         December 2022
     evidence_url: https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2023
 replies: []
+corrections:
+  - date: "2026-10-23"
+    path: versions[0].parameters.metric
+    was: null
+    now:
+      series_id: ons-cpi-12-month-rate
+      target: 5.25
+      direction: at_most
+      unit: "%"
+      by: "2023-12-31"
+    reason:
+      en: >-
+        The target the words set, written as a number so it can be read against the forecast made
+        before the promise: half of the 10.5% CPI rate in the 12 months to December 2022, by December
+        2023, as the card already read "this year".
+    source_url: https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2022
 reviews:
   - by: AI Journalist
     kind: automated

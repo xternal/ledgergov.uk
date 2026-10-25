@@ -42,7 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </a>
             </span>
             <a href={MAKER.coffee} rel="noopener noreferrer" target="_blank">
-              Buy me a coffee
+              Buy me a matcha
             </a>
             <FooterLink href="/editors">Become an editor</FooterLink>
             <FooterLink href="/privacy">Privacy</FooterLink>
