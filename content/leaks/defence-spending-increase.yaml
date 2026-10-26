@@ -6,7 +6,10 @@ summary: >-
   of new defence spending in the Budget, with the details of the money left to next year's spending
   review. The Guardian reported the day before that the Chancellor will set out how to fully fund the
   four-year defence investment plan, and that a commitment to spend 3% of GDP on defence is likely to
-  wait for the spending review. Neither report gives a figure.
+  wait for the spending review. On 26 October the Prime Minister said on ITV's Good Morning Britain,
+  as reported by Reuters, that the Budget would set out a fully funded plan for existing defence
+  commitments; asked whether it would include a path to 3% of GDP by 2030 and 3.5% by 2035, he said
+  the government would set out a plan. None of the reports gives a figure.
 reported:
   - outlet: The Guardian
     date: "2026-10-24"
@@ -16,4 +19,13 @@ reported:
     date: "2026-10-25"
     url: https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o
     title: Budget to include £1bn for social and affordable housing
-status: trailed
+  - outlet: Reuters
+    date: "2026-10-26"
+    url: https://www.globalbankingandfinance.com/uk-set-out-path-nato-spending-target-wednesdays-budget/
+    title: UK to set out path to NATO target in Wednesday's budget, PM says
+status: confirmed
+confirmed:
+  date: "2026-10-26"
+  by: Andy Burnham, Prime Minister (interview on ITV's Good Morning Britain, reported by Reuters)
+  url: https://www.globalbankingandfinance.com/uk-set-out-path-nato-spending-target-wednesdays-budget/
+  text: The Prime Minister said the Budget would set out a funded plan for existing defence commitments, saying "We will meet our NATO commitments."
