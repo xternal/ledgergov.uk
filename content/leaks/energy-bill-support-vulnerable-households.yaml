@@ -1,0 +1,18 @@
+id: energy-bill-support-vulnerable-households
+headline: Give targeted help with energy bills
+area: social_protection
+summary: >-
+  The Guardian reports that it has already emerged that the Budget will include a package of energy
+  support for the most vulnerable households. Reuters reports the next day that the Chancellor is
+  likely to offer some help to households facing another rise in energy bills, without adding to
+  borrowing. Neither report says who briefed the package, what form it takes or what it costs.
+reported:
+  - outlet: The Guardian
+    date: "2026-10-25"
+    url: https://www.theguardian.com/uk-news/2026/oct/25/john-healey-chancellor-budget-secrecy
+    title: Has Healey's military-style budget secrecy really played out so differently to past budgets?
+  - outlet: Reuters
+    date: "2026-10-26"
+    url: https://www.globalbankingandfinance.com/mindful-markets-uks-healey-set-deliver-careful-budget/
+    title: Mindful of the markets, UK's Healey is set to deliver a careful budget
+status: trailed
