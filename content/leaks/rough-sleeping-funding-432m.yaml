@@ -1,0 +1,35 @@
+id: rough-sleeping-funding-432m
+headline: Add £432m to the plan to end rough sleeping
+area: housing_env
+summary: >-
+  The Prime Minister and the Chancellor said the government will add £432m to its rough sleeping
+  programme, taking it from £442m to £874m and extending it beyond March 2027 to the end of this
+  Parliament, with the aim of offering everyone sleeping rough in England a route off the street by
+  Christmas. The Guardian, BBC News and Reuters reported it on 25 October; the Downing Street release
+  says the money will be set out in the Budget.
+reported:
+  - outlet: The Guardian
+    date: "2026-10-25"
+    url: https://www.theguardian.com/society/2026/oct/25/homelessness-rough-sleeping-double-spending-burnham
+    title: Burnham pledges £900m for homelessness amid drive to end rough sleeping
+  - outlet: BBC News
+    date: "2026-10-25"
+    url: https://www.bbc.co.uk/news/articles/c3n04yxn2yqro
+    archived_url: https://web.archive.org/web/20261025231820/https://www.bbc.co.uk/news/articles/c3n04yxn2yqro
+    title: Funding set to double for plan to get rough sleepers off streets by Christmas
+  - outlet: Reuters
+    date: "2026-10-25"
+    url: https://www.globalbankingandfinance.com/uk-commits-432-million-end-rough-sleeping/
+    title: UK commits to further £432 million to end rough sleeping
+estimated_cost:
+  range: [0.432, 0.432, 0.432]
+  basis: total
+  period: to the end of this Parliament (2029); years not split
+  by: { kind: official, name: Prime Minister's Office }
+  source_url: https://www.gov.uk/government/news/pm-confident-every-rough-sleeper-will-have-route-off-the-street-by-christmas-as-funding-doubles
+status: confirmed
+confirmed:
+  date: "2026-10-25"
+  by: Prime Minister's Office, 10 Downing Street (gov.uk news release)
+  url: https://www.gov.uk/government/news/pm-confident-every-rough-sleeper-will-have-route-off-the-street-by-christmas-as-funding-doubles
+  text: The release says the additional funding is "to be set out at the Budget later this week".
