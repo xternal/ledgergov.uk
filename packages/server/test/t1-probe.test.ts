@@ -83,3 +83,70 @@ describe("PolicyEngine's API, 12 October 2026: comparing two policies of our own
     }
   });
 });
+
+/** The same probe on 27 October 2026 (bundle 6.10.0, policyengine-uk 2.132.6, data Microcosm UK 2024-25): docs/MODEL.md T1, "Live test again". */
+const DIR_1027 = "./fixtures/t1/probe/2026-10-27/";
+const fixture1027 = <T = Record<string, unknown>>(name: string): T => JSON.parse(readFileSync(new URL(DIR_1027 + name, import.meta.url), "utf8")) as T;
+const incomeTax1027 = (name: string) => fixture1027<HouseholdProbe>(`household-${name}.json`).result.people.you.income_tax;
+const economy1027 = (name: string) => fixture1027<EconomyProbe>(`economy-${name}.json`);
+
+describe("PolicyEngine's API, 27 October 2026: a change dated 6 April now reaches that fiscal year", () => {
+  const base = incomeTax1027("current-law");
+
+  it("households: dated 1 January or 6 April 2027, it reaches 2027-28; dated 1 May, only 2028-29", () => {
+    const styleA = incomeTax1027("basic21-2027-01-01");
+    const styleB = incomeTax1027("basic21-2027-04-06");
+    const may = incomeTax1027("basic21-2027-05-01");
+    expect(styleA["2026"]).toBe(base["2026"]);
+    expect(styleA["2027"]! - base["2027"]!).toBeCloseTo(324.3, 1);
+    expect(styleB).toEqual(styleA);
+    expect(may["2027"]).toBe(base["2027"]);
+    expect(may["2028"]! - base["2028"]!).toBeCloseTo(324.3, 1);
+  });
+
+  it("the population: the same, so the job's whole-calendar-year periods still land in the right fiscal year", () => {
+    const b = economy1027("basic21-2027-04-06-2027");
+    const a = economy1027("basic21-2027-01-01-2027");
+    expect(bn(a)).toBeCloseTo(6.98, 2);
+    expect(bn(b)).toBeCloseTo(bn(a), 6);
+  });
+
+  it("a value set year by year still holds each year's own value", () => {
+    const pa = incomeTax1027("pa-year-by-year");
+    expect([pa["2026"], pa["2027"], pa["2028"]]).toEqual([6486, 6400, 6486]);
+    expect(pa["2030"]).toBe(pa["2029"]);
+  });
+
+  it("two custom policies: thresholds frozen over uprated, 2028-29, with decile.relative now a fraction", () => {
+    const e = economy1027("freeze-over-uprated-2028");
+    expect(e.baseline_id).not.toBe(1);
+    expect(bn(e)).toBeCloseTo(3.69, 2);
+    const rel = (e.result as { decile: { average: Record<string, number>; relative: Record<string, number> } }).decile;
+    expect(Math.abs(rel.relative["5"]!)).toBeLessThan(0.01);
+    const { population } = toT1Population(e.result, { policyId: e.policy_id, startYear: 2028, fetchedAt: new Date("2026-10-27T10:00:00Z") });
+    for (const d of population.deciles) {
+      expect(d.rel_change_pct).toBeLessThan(0);
+      expect(d.rel_change_pct).toBeGreaterThan(-1);
+    }
+  });
+
+  it("/budget-window still answers totals only, from the yearly cache", () => {
+    const w = fixture1027<{ response: { status: string; result: { kind: string; annualImpacts: { budgetaryImpact: number }[] } } }>(
+      "budget-window-freeze-over-uprated-2027-2.json",
+    );
+    expect(w.response.status).toBe("ok");
+    expect(w.response.result.kind).toBe("budgetWindow");
+    expect(w.response.result.annualImpacts[1]!.budgetaryImpact / 1e9).toBeCloseTo(bn(economy1027("freeze-over-uprated-2028")), 9);
+  });
+
+  it("one model throughout: bundle 6.10.0, policyengine-uk 2.132.6, Microcosm UK 2024-25", () => {
+    const v = fixture1027<{ bundle_before: string; bundle_after: string; household_model_version: string; years: number[] }>("versions.json");
+    expect([v.bundle_before, v.bundle_after, v.household_model_version]).toEqual(["6.10.0", "6.10.0", "2.132.6"]);
+    expect(v.years).toEqual([2024, 2025, 2026, 2027, 2028, 2029, 2030]);
+    for (const name of ["basic21-2027-04-06-2027", "basic21-2027-01-01-2027", "freeze-over-uprated-2028"]) {
+      const r = economy1027(name).result as { data_version: string; policyengine_bundle: { model_version: string; policyengine_version: string } };
+      expect([r.policyengine_bundle.model_version, r.policyengine_bundle.policyengine_version]).toEqual(["2.132.6", "6.10.0"]);
+      expect(r.data_version).toMatch(/^microcosm-uk-2024-25/);
+    }
+  });
+});

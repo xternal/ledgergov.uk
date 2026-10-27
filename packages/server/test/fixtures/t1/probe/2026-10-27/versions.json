@@ -1,0 +1,22 @@
+{
+ "checked_on": "2026-10-27",
+ "bundle_before": "6.10.0",
+ "bundle_after": "6.10.0",
+ "household_model_version": "2.132.6",
+ "years": [
+  2024,
+  2025,
+  2026,
+  2027,
+  2028,
+  2029,
+  2030
+ ],
+ "current_law_id": 1,
+ "policies": {
+  "styleA": 98691,
+  "styleB": 98690,
+  "pre": 98692,
+  "post": 98693
+ }
+}
