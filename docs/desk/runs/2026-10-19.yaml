@@ -1,0 +1,56 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-10-19"
+triaged_on: "2026-10-25"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 131
+sources_read: 6
+drafts: 6
+candidates: 9
+outcomes:
+  card: 3
+  reworded: 0
+  duplicate: 1
+  existing: 0
+  grant: 0
+  done: 0
+  process: 0
+  broad: 0
+  event: 1
+  cap: 3
+  other: 1 # the Foreign Secretary's settlement goods ban: needs a new MP actor, see dropped
+quotes_exact: 3
+new_actors: []
+cards:
+  - uk-defence-apprentices-14000-2035
+  - uk-ban-car-clocking-2026 # the press release's second quote; HCWS393's matching line (intake 2026-10-20) folded in
+  - uk-wheelchair-compensation-cap-2026
+reworded: []
+dropped:
+  - draft: 2026-10-19-govuk-foreign-secretary-statement-on-the-deadline-for-bids-for-the-1
+    quote: quote
+    code: other
+    source: https://www.gov.uk/government/news/foreign-secretary-statement-on-the-deadline-for-bids-for-the-e1-settlement-tender
+    text: "That is why we committed to introduce legislation to ban goods imported from illegal settlements, and action on services that finance or facilitate them."
+    note: "a fair card (quote exact, speaker Ed Miliband, Foreign Secretary, member 1510), held back because a new MP actor now needs Parliament's portrait credit in data/portraits.json and a saved portrait, which the desk may not edit; revive once the credit is added"
+  - { draft: 2026-10-19-govuk-pm-puts-the-brakes-on-rip-off-parking-charges-and-car-scams-1, quote: quote, code: duplicate, into: uk-private-parking-code-2026, note: "grace periods and appeals under the Private Parking Code; the card (intake 2026-10-20) quotes the government response's dates and cites this release" }
+  - { draft: 2026-10-19-govuk-nottinghams-first-youth-guarantee-jobs-fair-attracts-hundred-1, quote: also1, code: event, note: "at least one Youth Guarantee Jobs Fair in every region of Great Britain: events, not an outcome" }
+  - draft: 2026-10-19-govuk-liverpool-city-region-agencies-fight-back-against-waste-crim-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/news/liverpool-city-region-agencies-fight-back-against-waste-crime
+    text: "This is backed by an additional £45 million from the government over the next three years, on top of the £5.6 million increase for this financial year announced previously. This will strengthen enforcement activity and ensure waste criminals face the consequences of their actions."
+    note: "Environment Agency waste crime enforcement, £45m over three years; the outcome is broad"
+  - draft: 2026-10-19-govuk-nottinghams-first-youth-guarantee-jobs-fair-attracts-hundred-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/news/nottinghams-first-youth-guarantee-jobs-fair-attracts-hundreds-of-young-jobseekers--2
+    text: "The youth employment support package, backed by £2.5 billion investment, will support almost one million young people, and create 500,000 opportunities."
+    note: "overlaps the Youth Hub and work experience cards; no date"
+  - draft: 2026-10-19-govuk-over-100000-job-and-training-opportunities-a-year-to-give-yo-1
+    quote: also1
+    code: cap
+    source: https://www.gov.uk/government/news/over-100000-job-and-training-opportunities-a-year-to-give-young-people-a-route-into-britains-growth-industries-as-part-of-industrial-strategy
+    text: "Industrial Strategy Jobs Plans published today for Professional and Business Services and Construction will support 22,400 new under-25 apprenticeships a year in businesses such as accountants, legal services, and consultants. This will come alongside 40,000 construction placements annually as part of a previously announced construction industry ambition to create 100,000 job opportunities a year."
+    note: "the release says the firms committed to the 22,400 a year over five years, so it is mainly an industry pledge"

@@ -1,0 +1,68 @@
+format: openpromises/1
+id: uk-defence-apprentices-14000-2035
+headline:
+  en: 14,000 defence apprentices a year by 2035
+actor_id: hm-government
+made_on: "2026-10-19"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Department for Business, Innovation, Science and Trade and Department for Work
+    and Pensions)
+area: education
+status: promised
+status_note:
+  en: >-
+    Announced with the first Industrial Strategy Jobs Plans, for professional and business services
+    and for construction. The release says a Defence Jobs Plan is due later the same week; this
+    target is the release's own summary of it. It does not give today's number of defence
+    apprentices, a cost or who pays. The card moves when the Defence Jobs Plan is published or the
+    government reports the number of defence apprentices.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Business, Innovation, Science and Trade and Department for Work and Pensions,
+      19 Oct 2026: Over 100,000 job and training opportunities a year to give young people a route
+      into Britain's growth industries as part of industrial strategy
+    url: https://www.gov.uk/government/news/over-100000-job-and-training-opportunities-a-year-to-give-young-people-a-route-into-britains-growth-industries-as-part-of-industrial-strategy
+versions:
+  - version: 1
+    text: >-
+      The Defence Jobs Plan will help deliver thousands of opportunities for young people, including
+      an increase in the number of people supported through apprenticeship programmes in the defence
+      sector to at least 14,000 annually by 2035.
+    recorded_on: "2026-10-19"
+    source_url: https://www.gov.uk/government/news/over-100000-job-and-training-opportunities-a-year-to-give-young-people-a-route-into-britains-growth-industries-as-part-of-industrial-strategy
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: Young people starting apprenticeships in the defence sector
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: By 2035
+      deadline: "2035-12-31"
+      funded_by: null
+events:
+  - date: "2026-10-19"
+    type: promised
+    text:
+      en: >-
+        The government sets a target of at least 14,000 people a year on defence apprenticeship
+        programmes by 2035
+  - date: "2035-12-31"
+    type: deadline
+    text:
+      en: At least 14,000 defence apprentices a year due by 2035
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
