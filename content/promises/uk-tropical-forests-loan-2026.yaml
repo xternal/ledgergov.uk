@@ -1,0 +1,63 @@
+format: openpromises/1
+id: uk-tropical-forests-loan-2026
+headline:
+  en: Lend £400m to the tropical forests fund
+actor_id: hm-government
+made_on: "2026-10-26"
+venue: press_release
+venue_label:
+  en: >-
+    Growing Places: Mobilising private finance for local nature recovery (Defra policy paper)
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The Tropical Forests Forever Facility (TFFF) is a blended finance fund that pays countries to
+    keep tropical forests standing. The paper says at least 20% of the money it generates goes to
+    Indigenous peoples and local communities. It says the UK "intends" to lend, and gives no date or
+    terms. The card moves when the loan is agreed.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Defra policy paper, 26 Oct 2026: Growing Places: Mobilising private finance for local nature
+      recovery
+    url: https://www.gov.uk/government/publications/mobilising-private-finance-for-local-nature-recovery/growing-places-mobilising-private-finance-for-local-nature-recovery
+versions:
+  - version: 1
+    text: >-
+      The UK intends to invest £400 million in the form of a loan to the facility, helping signal
+      confidence in the model and attract wider public and private investment.
+    recorded_on: "2026-10-26"
+    source_url: https://www.gov.uk/government/publications/mobilising-private-finance-for-local-nature-recovery/growing-places-mobilising-private-finance-for-local-nature-recovery
+    quote_checked_on: "2026-10-27"
+    parameters:
+      who:
+        en: >-
+          Countries that keep their tropical forests standing, and the Indigenous peoples and local
+          communities who live in them
+      cost:
+        note:
+          en: >-
+            A loan of £400 million, not a grant; the paper gives no timetable or terms, so no yearly
+            figure is shown.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-26"
+    type: promised
+    text:
+      en: >-
+        A Defra paper says the UK intends to lend £400 million to the Tropical Forests Forever
+        Facility
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-27"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

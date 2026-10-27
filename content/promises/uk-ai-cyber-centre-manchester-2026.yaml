@@ -1,0 +1,53 @@
+format: openpromises/1
+id: uk-ai-cyber-centre-manchester-2026
+headline:
+  en: AI cyber security centre in Manchester
+actor_id: john-healey
+made_on: "2026-10-26"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: education
+status: promised
+status_note:
+  en: >-
+    From the Chancellor's written statement on the Future of Technology. It gives no opening date,
+    cost or partner for the centre. The card moves when the centre is set up.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Written ministerial statement HCWS412, 26 Oct 2026: Future of Technology"
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS412
+versions:
+  - version: 1
+    text: >-
+      The Government will also establish a new AI Cyber Security Centre of Excellence in Manchester
+      to train the next generation of cyber and AI experts.
+    recorded_on: "2026-10-26"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS412
+    quote_checked_on: "2026-10-27"
+    parameters:
+      who:
+        en: People training to become cyber and AI experts
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-26"
+    type: promised
+    text:
+      en: >-
+        The Chancellor says a new AI Cyber Security Centre of Excellence will be set up in Manchester
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-27"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

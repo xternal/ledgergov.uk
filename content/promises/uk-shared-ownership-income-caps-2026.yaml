@@ -1,0 +1,59 @@
+format: openpromises/1
+id: uk-shared-ownership-income-caps-2026
+headline:
+  en: Raise shared ownership income caps
+actor_id: matthew-pennycook
+made_on: "2026-10-26"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The housing minister says the household income caps for shared ownership have been frozen since
+    2016. Outside London the change will be made in Homes England's Capital Funding Guide, and in
+    London in the next Annual Monitoring Report for the London Plan. The statement gives no exact
+    date. The card moves when the Capital Funding Guide shows the new caps.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Written ministerial statement HCWS417, 26 Oct 2026: Shared Ownership"
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS417
+versions:
+  - version: 1
+    text: >-
+      In recognition of the impact of inflation and earnings growth in the period since, I am today
+      announcing that the government is raising them from £80,000 outside London and £90,000 in
+      London to £90,000 outside London and £110,000 in London.
+
+      The new caps will take effect in the new year.
+    recorded_on: "2026-10-26"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS417
+    quote_checked_on: "2026-10-27"
+    parameters:
+      who:
+        en: Households buying a home through shared ownership, in London and outside it
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: In the new year (2027)
+      funded_by: null
+events:
+  - date: "2026-10-26"
+    type: promised
+    text:
+      en: >-
+        The housing minister announces that shared ownership income caps will rise to £90,000
+        outside London and £110,000 in London
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-27"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

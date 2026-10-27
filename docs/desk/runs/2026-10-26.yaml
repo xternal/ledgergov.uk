@@ -1,0 +1,195 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-10-26"
+triaged_on: "2026-10-27"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 183
+sources_read: 10
+drafts: 11
+candidates: 35
+outcomes:
+  card: 17
+  reworded: 0
+  duplicate: 2
+  existing: 1
+  grant: 0
+  done: 1
+  process: 0
+  broad: 1
+  event: 0
+  cap: 0
+  other: 13
+quotes_exact: 17
+new_actors: []
+cards:
+  - uk-post-office-drop-boxes-2027
+  - uk-mileage-rate-35p-2026
+  - uk-parental-pay-150k-parents-2026
+  - uk-carers-allowance-cliff-edge-2026
+  - uk-tariffs-100-products-2026
+  - uk-jobcentre-fraud-specialists-2026
+  - uk-nature-net-gain-infrastructure-2026
+  - uk-natural-flood-management-2036
+  - uk-flood-performance-certificates-2026
+  - uk-tropical-forests-loan-2026
+  - uk-ai-biosecurity-initiative-2026
+  - uk-ai-security-institute-funding-2026
+  - uk-national-cyber-shield-2026
+  - uk-sovereign-ai-fund-2026
+  - uk-ai-challenge-prize-2026
+  - uk-ai-cyber-centre-manchester-2026
+  - uk-shared-ownership-income-caps-2026
+reworded: []
+dropped:
+  - draft: 2026-10-26-govuk-everyday-fixes-to-make-life-easier-for-millions-of-britons-1
+    quote: also5
+    code: duplicate
+    into: uk-post-office-drop-boxes-2027
+    note: the next sentence of the same note; folded into the drop boxes card
+  - draft: 2026-10-26-hansard-dc1f61e9-1
+    quote: quote
+    code: duplicate
+    into: uk-rough-sleepers-route-off-street-2026
+    note: card on intake 2026-10-25 (#180); this Commons statement added there as a source
+  - draft: 2026-10-26-wms-hcws418-1
+    quote: quote
+    code: existing
+    into: uk-peatland-restoration-2029
+    note: the same £25m for peatland restoration grants, already a card (intake 2026-10-22)
+  - draft: 2026-10-26-wms-hcws416-1
+    quote: also2
+    code: done
+    note: a decision to pause the profit and loss filing requirement for April 2028; nothing left to
+      check
+  - draft: 2026-10-26-govuk-thousands-of-young-people-put-down-roots-in-agricultural-car-1
+    quote: quote
+    code: broad
+    note: a restatement of the £2.5bn youth employment package with no date; the package is in
+      uk-youth-hub-every-area-2029's notes
+  - draft: 2026-10-26-hansard-dc1f61e9-1
+    quote: also1
+    code: other
+    source: https://hansard.parliament.uk/Commons/2026-10-26/debates/DC1F61E9-EA89-474B-90EA-B70F503B3536/RoughSleepingAndGoodGrowthFunds
+    text: Today, we are confirming funding of £285 million for 2027-28, comprising good growth funds and
+      transitional capital funding for other areas progressing towards mayoral devolution.
+    note: "Florence Eshalomi (Minister for Homelessness, Democracy, Communities and Faith); the same
+      measure is in Jim McMahon's HCWS420: a new MP actor needs a portrait credit
+      (data/portraits.json) the desk may not add; an editor can make it a card"
+  - draft: 2026-10-26-hansard-dc1f61e9-1
+    quote: also2
+    code: other
+    source: https://hansard.parliament.uk/Commons/2026-10-26/debates/DC1F61E9-EA89-474B-90EA-B70F503B3536/RoughSleepingAndGoodGrowthFunds
+    text: That is why we are working with mayors to design a new £1.5 billion borrowing facility from
+      2028, giving them access to finance to back major local projects.
+    note: "Florence Eshalomi (Minister for Homelessness, Democracy, Communities and Faith); the same
+      measure is in Jim McMahon's HCWS420: a new MP actor needs a portrait credit
+      (data/portraits.json) the desk may not add; an editor can make it a card"
+  - draft: 2026-10-26-hansard-dc1f61e9-1
+    quote: also3
+    code: other
+    source: https://hansard.parliament.uk/Commons/2026-10-26/debates/DC1F61E9-EA89-474B-90EA-B70F503B3536/RoughSleepingAndGoodGrowthFunds
+    text: We will provide strategic authorities with an additional £150 million in 2027-28 to strengthen
+      their capacity and capability as the range of powers and responsibilities they hold grows,
+      because devolution cannot simply mean giving local leaders more responsibility.
+    note: "Florence Eshalomi (Minister for Homelessness, Democracy, Communities and Faith); the same
+      measure is in Jim McMahon's HCWS420: a new MP actor needs a portrait credit
+      (data/portraits.json) the desk may not add; an editor can make it a card"
+  - draft: 2026-10-26-hansard-dc1f61e9-2
+    quote: quote
+    code: other
+    source: https://hansard.parliament.uk/Commons/2026-10-26/debates/DC1F61E9-EA89-474B-90EA-B70F503B3536/RoughSleepingAndGoodGrowthFunds
+    text: None of this will be fixed without more social homes, so the Liberal Democrats would build
+      150,000 of them a year.
+    note: "Sarah Dyke (Liberal Democrat), in the debate; the party's own document would go under the
+      party: a new MP actor needs a portrait credit (data/portraits.json) the desk may not add; an
+      editor can make it a card"
+  - draft: 2026-10-26-wms-hcws416-1
+    quote: quote
+    code: other
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS416
+    text: Other accounts reforms requirements, including mandatory software-only filing, will be
+      implemented from April 2028 as planned.
+    note: "Chris McDonald (Minister of State for Science, Innovation and Investment): a new MP actor
+      needs a portrait credit (data/portraits.json) the desk may not add; an editor can make it a
+      card"
+  - draft: 2026-10-26-wms-hcws416-1
+    quote: also1
+    code: other
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS416
+    text: The government is committed to reducing the administrative cost of regulation to business by
+      25 per cent over the course of this Parliament.
+    note: "Chris McDonald (Minister of State for Science, Innovation and Investment): a new MP actor
+      needs a portrait credit (data/portraits.json) the desk may not add; an editor can make it a
+      card"
+  - draft: 2026-10-26-wms-hcws418-1
+    quote: also1
+    code: other
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS418
+    text: The Government will establish a nationally coordinated aerial firefighting capability, this
+      will provide a coordinated mechanism for deploying aviation assets during major wildfire
+      incidents, supporting Fire and Rescue Services to contain the spread, reduce duration and
+      protect communities.
+    note: "Angela Rayner (Secretary of State for Housing, Communities and Local Government): a new MP
+      actor needs a portrait credit (data/portraits.json) the desk may not add; an editor can make
+      it a card"
+  - draft: 2026-10-26-wms-hcws418-1
+    quote: also2
+    code: other
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS418
+    text: The Government will establish a new wildfire place-based project, working with twelve
+      communities severely affected by wildfires this summer to develop local resilience plans and
+      identify lessons for wider application.
+    note: "Angela Rayner (Secretary of State for Housing, Communities and Local Government): a new MP
+      actor needs a portrait credit (data/portraits.json) the desk may not add; an editor can make
+      it a card"
+  - draft: 2026-10-26-wms-hcws418-1
+    quote: also3
+    code: other
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS418
+    text: The Government has therefore announced its intention to introduce a statutory flood rescue
+      duty for Fire and Rescue Services in England.
+    note: "Angela Rayner (Secretary of State for Housing, Communities and Local Government): a new MP
+      actor needs a portrait credit (data/portraits.json) the desk may not add; an editor can make
+      it a card"
+  - draft: 2026-10-26-wms-hcws420-1
+    quote: quote
+    code: other
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS420
+    text: The Fiscal Devolution Roadmap and the Rewiring the State Delivery plan will further set out
+      how Good Growth Funds fit within our wider plans to give back control to local leaders,
+      beginning with the retention of a share of business rates from April 2027 and income tax
+      assignment for Mayors from April 2028.
+    note: "Jim McMahon (Minister for Local Government, Devolution and Regional Growth): a new MP actor
+      needs a portrait credit (data/portraits.json) the desk may not add; an editor can make it a
+      card"
+  - draft: 2026-10-26-wms-hcws420-1
+    quote: also1
+    code: other
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS420
+    text: The Government is however determined to help local leaders deliver good growth immediately and
+      today we are confirming £285 million in 2027-28, comprising of mayoral funding for Good Growth
+      Funds and incubator capital funding for other areas transitioning towards mayoral devolution.
+    note: "Jim McMahon (Minister for Local Government, Devolution and Regional Growth): a new MP actor
+      needs a portrait credit (data/portraits.json) the desk may not add; an editor can make it a
+      card"
+  - draft: 2026-10-26-wms-hcws420-1
+    quote: also2
+    code: other
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS420
+    text: The Government will also work with Mayors to design a new £1.5 billion borrowing facility
+      available from 2028, giving them access to the financing they need to back the local
+      priorities that will drive growth in their areas.
+    note: "Jim McMahon (Minister for Local Government, Devolution and Regional Growth): a new MP actor
+      needs a portrait credit (data/portraits.json) the desk may not add; an editor can make it a
+      card"
+  - draft: 2026-10-26-wms-hcws420-1
+    quote: also3
+    code: other
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS420
+    text: The Government will back this up and strengthen delivery by providing strategic authorities
+      with an additional £150 million in 2027-28 to strengthen their capacity and capability as
+      their range of powers and responsibilities grow.
+    note: "Jim McMahon (Minister for Local Government, Devolution and Regional Growth): a new MP actor
+      needs a portrait credit (data/portraits.json) the desk may not add; an editor can make it a
+      card"

@@ -1,0 +1,64 @@
+format: openpromises/1
+id: uk-tariffs-100-products-2026
+headline:
+  en: Remove tariffs on more than 100 products
+actor_id: hm-government
+made_on: "2026-10-26"
+venue: press_release
+venue_label:
+  en: Press release (HM Treasury)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    One of five "everyday fixes" the Chancellor announced ahead of the Budget. It is the
+    government's second cost-of-living tariff package this year; the notes list garlic, gherkins,
+    marmalades, sweets, plant-based drinks, kerosene and fertilisers among the products. With the
+    suspensions already in place, the release says households could save up to £21 a year on their
+    food shop. It does not say when the cuts take effect. The card moves when the tariff cuts are in
+    force.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      HM Treasury press release, 26 Oct 2026: Everyday fixes to make life easier for millions of
+      Britons
+    url: https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons
+versions:
+  - version: 1
+    text: >-
+      Removing import tariffs on more than 100 products, helping lower import costs on family
+      favourites including baked beans, chocolate and gherkins, while also supporting farmers facing
+      higher fertiliser bills and households that rely on kerosene heating oil.
+    recorded_on: "2026-10-26"
+    source_url: https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons
+    quote_checked_on: "2026-10-27"
+    parameters:
+      who:
+        en: Households buying food and heating oil, and farmers buying fertiliser
+      cost:
+        note:
+          en: >-
+            No cost has been published. The release says this second tariff package, with the first
+            from June 2026, is expected to reduce consumer costs by about £245 million to £595
+            million a year.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-26"
+    type: promised
+    text:
+      en: >-
+        The Chancellor announces the removal of import tariffs on more than 100 products, including
+        food, fertiliser and kerosene
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-27"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

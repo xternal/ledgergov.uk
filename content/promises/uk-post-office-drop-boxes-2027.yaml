@@ -1,0 +1,74 @@
+format: openpromises/1
+id: uk-post-office-drop-boxes-2027
+headline:
+  en: Install 1,000 Post Office drop boxes
+actor_id: hm-government
+made_on: "2026-10-26"
+venue: press_release
+venue_label:
+  en: Press release (HM Treasury)
+area: general_services
+status: delivering
+status_note:
+  en: >-
+    One of five "everyday fixes" the Chancellor announced ahead of the Budget. The release says the
+    rollout of self-service parcel drop boxes is already under way, so the card starts at
+    delivering. "The end of the financial year" is read as 31 March 2027. It gives no cost. The card
+    moves when the Post Office or the government reports 1,000 drop boxes in place and 600 branches
+    upgraded.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      HM Treasury press release, 26 Oct 2026: Everyday fixes to make life easier for millions of
+      Britons
+    url: https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons
+versions:
+  - version: 1
+    text: >-
+      The rollout of self-service parcel Drop Boxes is already under way, with 500 set to be in
+      place by the end of this year and 1,000 by the end of the financial year. In addition, 600
+      Post Office branches will benefit from upgrades by the end of the financial year.
+    recorded_on: "2026-10-26"
+    source_url: https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons
+    quote_checked_on: "2026-10-27"
+    parameters:
+      who:
+        en: People sending and returning parcels, and Post Office customers
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: >-
+          500 drop boxes by the end of 2026 and 1,000 by the end of the 2026-27 financial year; 600
+          branches upgraded by the end of the financial year
+      deadline: "2027-03-31"
+      funded_by: null
+events:
+  - date: "2026-10-26"
+    type: promised
+    text:
+      en: >-
+        The government says 500 Post Office parcel drop boxes will be in place by the end of 2026
+        and 1,000 by March 2027, with 600 branches upgraded
+  - date: "2026-10-26"
+    type: delivering
+    text:
+      en: >-
+        The release says the rollout of self-service parcel drop boxes is already under way
+    evidence_url: https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons
+  - date: "2027-03-31"
+    type: deadline
+    text:
+      en: >-
+        1,000 drop boxes and 600 upgraded Post Office branches due by the end of March 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-27"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

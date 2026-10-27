@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-natural-flood-management-2036
+headline:
+  en: £300m for natural flood schemes by 2036
+actor_id: hm-government
+made_on: "2026-10-26"
+venue: press_release
+venue_label:
+  en: >-
+    Growing Places: Mobilising private finance for local nature recovery (Defra policy paper)
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    Natural flood management (NFM) slows and stores floodwater with features such as woodland,
+    wetlands and leaky dams. The paper calls £300 million the highest figure to date, with a target
+    of 3% of capital spend for the current Spending Review period (2026/27 to 2028/29), and says
+    partnership funding is required for projects above £3 million. "2036" is read as the end of
+    2036. The card moves when the Environment Agency reports spending on standalone NFM schemes.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Defra policy paper, 26 Oct 2026: Growing Places: Mobilising private finance for local nature
+      recovery
+    url: https://www.gov.uk/government/publications/mobilising-private-finance-for-local-nature-recovery/growing-places-mobilising-private-finance-for-local-nature-recovery
+versions:
+  - version: 1
+    text: >-
+      Under the government’s new flood programme we have committed to investing £300 million in
+      standalone Natural Flood Management (NFM) schemes between now and 2036.
+    recorded_on: "2026-10-26"
+    source_url: https://www.gov.uk/government/publications/mobilising-private-finance-for-local-nature-recovery/growing-places-mobilising-private-finance-for-local-nature-recovery
+    quote_checked_on: "2026-10-27"
+    parameters:
+      who:
+        en: >-
+          Communities at risk of flooding, through schemes that store water in the landscape
+      cost:
+        note:
+          en: >-
+            The paper gives £300 million between now and 2036, about 4% of the total flood
+            investment programme, with no split by year, so no yearly figure is shown.
+      when:
+        en: Between October 2026 and 2036
+      deadline: "2036-12-31"
+      funded_by:
+        en: The government's flood investment programme
+events:
+  - date: "2026-10-26"
+    type: promised
+    text:
+      en: >-
+        A Defra paper says the government has committed £300 million to standalone natural flood
+        management schemes between now and 2036
+  - date: "2036-12-31"
+    type: deadline
+    text:
+      en: £300 million for natural flood management due to be invested by 2036
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-27"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

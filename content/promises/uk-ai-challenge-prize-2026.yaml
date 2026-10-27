@@ -1,0 +1,62 @@
+format: openpromises/1
+id: uk-ai-challenge-prize-2026
+headline:
+  en: £15m AI prize for public services
+actor_id: john-healey
+made_on: "2026-10-26"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: general_services
+status: promised
+status_note:
+  en: >-
+    From the Chancellor's written statement on the Future of Technology. The prize is meant to
+    reward AI solutions to frontline public service challenges, starting with health; the AI
+    Economics Institute is to study AI's effect on productivity, growth, jobs and living standards.
+    It gives no launch date. The card moves when the prize opens.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Written ministerial statement HCWS412, 26 Oct 2026: Future of Technology"
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS412
+versions:
+  - version: 1
+    text: >-
+      We will provide £15 million for an AI Challenge Prize to incentivise innovators to develop AI
+      solutions to frontline public service challenges, with a first year's focus on health, and
+      £10m per year for the AI Economics Institute to lead the UK's work in understanding the
+      evidence on AI’s impact on productivity, growth, jobs and living standards.
+    recorded_on: "2026-10-26"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS412
+    quote_checked_on: "2026-10-27"
+    parameters:
+      who:
+        en: >-
+          Innovators building AI for frontline public services, first in health; the AI Economics
+          Institute
+      cost:
+        note:
+          en: >-
+            £15 million for the prize and £10 million a year for the AI Economics Institute, for an
+            unstated number of years, so no yearly total is shown.
+      when:
+        en: Not stated; the prize's first year focuses on health
+      funded_by: null
+events:
+  - date: "2026-10-26"
+    type: promised
+    text:
+      en: >-
+        The Chancellor announces a £15 million AI Challenge Prize for public services and £10
+        million a year for the AI Economics Institute
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-27"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

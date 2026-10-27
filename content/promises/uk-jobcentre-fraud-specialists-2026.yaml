@@ -1,0 +1,65 @@
+format: openpromises/1
+id: uk-jobcentre-fraud-specialists-2026
+headline:
+  en: 2,000 more anti-fraud staff in Jobcentres
+actor_id: hm-government
+made_on: "2026-10-26"
+venue: press_release
+venue_label:
+  en: Press release (Department for Work and Pensions)
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    The release says the package will be set out at the Budget, alongside the first use of the new
+    bank-data checks under the Public Authorities (Fraud, Error and Recovery) Act 2025, which are
+    expected to save £1.2 billion by 2030/31. It does not say when the 2,000 specialists will be in
+    post. The card moves when the Budget confirms the measures or the department reports the
+    specialists recruited.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Work and Pensions press release, 26 Oct 2026: Government unleashes £1.2 billion
+      crackdown as part of anti-fraud drive
+    url: https://www.gov.uk/government/news/government-unleashes-12-billion-crackdown-as-part-of-anti-fraud-drive
+versions:
+  - version: 1
+    text: >-
+      A wider package of reforms, set to be unveiled at the Budget, is expected to save the taxpayer
+      a further £1.4 billion between 2027 and 2032. Measures include the deployment of 2000
+      additional anti-fraud specialists into Jobcentres nationwide, as well as tougher checks on
+      Universal Credit claims abroad to tackle fraudsters who fail to report they have left the
+      country to keep payments flowing.
+    recorded_on: "2026-10-26"
+    source_url: https://www.gov.uk/government/news/government-unleashes-12-billion-crackdown-as-part-of-anti-fraud-drive
+    quote_checked_on: "2026-10-27"
+    parameters:
+      who:
+        en: Jobcentres across Great Britain, and Universal Credit claimants who live abroad
+      cost:
+        note:
+          en: >-
+            A saving, not a cost: the release says the package is expected to save the taxpayer a
+            further £1.4 billion between 2027 and 2032. The cost of the extra specialists is not
+            published.
+      when:
+        en: To be set out at the Budget; savings between 2027 and 2032
+      funded_by: null
+events:
+  - date: "2026-10-26"
+    type: promised
+    text:
+      en: >-
+        The Department for Work and Pensions says 2,000 additional anti-fraud specialists will be
+        deployed into Jobcentres, with tougher checks on Universal Credit claims abroad
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-27"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
