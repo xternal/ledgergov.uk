@@ -1,0 +1,94 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/hansard-dc1f61e9.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-26"
+source:
+  id: hansard-dc1f61e9
+  kind: hansard_statement
+  url: https://hansard.parliament.uk/Commons/2026-10-26/debates/DC1F61E9-EA89-474B-90EA-B70F503B3536/RoughSleepingAndGoodGrowthFunds
+  title: Rough Sleeping and Good Growth Funds
+  date: "2026-10-26"
+  venue_label: Commons statement
+quote: >-
+  Our immediate commitment is to offer everyone sleeping rough a route off the streets this
+  Christmas and to bring forward new accommodation and the right support to help people move ahead
+  with their lives. We are backing that commitment with an extra £432 million from next year, so
+  that local areas can continue to provide a route off the streets over the rest of this Parliament.
+source_span: [1826, 2206]
+speaker:
+  name: Florence Eshalomi
+  role: Minister for Homelessness, Democracy, Communities and Faith
+  party: null
+  member_id: 4870
+  actor_id: null
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: housing_env
+  who: everyone sleeping rough; local areas
+  how_much: an extra £432 million from next year, taking the total to £874 million
+  when: this Christmas; funding from next year over the rest of this Parliament
+  funded_by: null
+  deadline: "2026-12-25"
+why: >-
+  The Government commits to offer everyone sleeping rough a route off the streets by Christmas 2026,
+  backed by an extra £432 million from next year for the rest of the Parliament. This restates the
+  Prime Minister's first-day pledge.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      Today, we are confirming funding of £285 million for 2027-28, comprising good growth funds and
+      transitional capital funding for other areas progressing towards mayoral devolution.
+    source_span: [5007, 5186]
+    suggested:
+      policy_area: economic_affairs
+      who: >-
+        mayoral strategic authorities and other areas progressing towards mayoral devolution
+      how_much: £285 million
+      when: 2027-28
+      funded_by: null
+      deadline: null
+    why: >-
+      The Government commits £285 million in 2027-28 for good growth funds and transitional capital
+      funding, delivering the July 'Rewiring the State' commitment to set up good growth funds.
+    confidence: 0.7
+  - quote: >-
+      That is why we are working with mayors to design a new £1.5 billion borrowing facility from
+      2028, giving them access to finance to back major local projects.
+    source_span: [5708, 5865]
+    suggested:
+      policy_area: economic_affairs
+      who: mayors
+      how_much: £1.5 billion borrowing facility
+      when: from 2028
+      funded_by: null
+      deadline: null
+    why: >-
+      The Government is to create a new £1.5 billion borrowing facility for mayors from 2028.
+    confidence: 0.55
+  - quote: >-
+      We will provide strategic authorities with an additional £150 million in 2027-28 to strengthen
+      their capacity and capability as the range of powers and responsibilities they hold grows,
+      because devolution cannot simply mean giving local leaders more responsibility.
+    source_span: [5866, 6131]
+    suggested:
+      policy_area: general_services
+      who: strategic authorities
+      how_much: an additional £150 million
+      when: 2027-28
+      funded_by: null
+      deadline: null
+    why: >-
+      The Government commits an additional £150 million to strategic authorities in 2027-28 to build
+      their capacity.
+    confidence: 0.7
+confidence: 0.8
+model: claude-opus-5-5
+status: to_review

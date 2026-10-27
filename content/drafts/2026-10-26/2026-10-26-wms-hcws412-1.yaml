@@ -1,0 +1,128 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws412.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-26"
+source:
+  id: wms-hcws412
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS412
+  title: Future of Technology
+  date: "2026-10-26"
+  venue_label: Written ministerial statement
+quote: >-
+  The Government will invest £165 million in a new National AI Biosecurity Initiative, including
+  £100 million for an AI Biosecurity Lab and £65 million to strengthen biosurveillance and develop
+  medical countermeasures.
+source_span: [495, 711]
+speaker:
+  name: John Healey
+  role: Chancellor of the Exchequer
+  party: Labour
+  member_id: 400
+  actor_id: john-healey
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: health
+  who: null
+  how_much: >-
+    £165 million, including £100 million for an AI Biosecurity Lab and £65 million for
+    biosurveillance and medical countermeasures
+  when: null
+  funded_by: null
+  deadline: null
+why: >-
+  The government commits to fund a new £165 million National AI Biosecurity Initiative, including a
+  £100 million AI Biosecurity Lab.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      We will provide an additional £120 million for the AI Security Institute to strengthen its
+      testing and research and develop technical standards to help mitigate AI risks.
+    source_span: [712, 882]
+    suggested:
+      policy_area: economic_affairs
+      who: AI Security Institute
+      how_much: an additional £120 million
+      when: null
+      funded_by: null
+      deadline: null
+    why: The government commits an additional £120 million to the AI Security Institute.
+    confidence: 0.6
+  - quote: >-
+      We will also invest £60 million in a National Cyber Shield, including a £25 million challenge
+      fund for UK AI and cyber-security innovators, and establish a £70 million National Exposure
+      and Real-Time Vulnerability Centre to identify cyber vulnerabilities across our critical
+      infrastructure and economy.
+    source_span: [883, 1185]
+    suggested:
+      policy_area: defence
+      who: UK AI and cyber-security innovators
+      how_much: >-
+        £60 million for the National Cyber Shield, including a £25 million challenge fund; £70
+        million for the Vulnerability Centre
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      The government commits to a £60 million National Cyber Shield and a new £70 million National
+      Exposure and Real-Time Vulnerability Centre.
+    confidence: 0.65
+  - quote: >-
+      We will provide an additional £60 million for the Sovereign AI Fund to invest in promising UK
+      AI companies, including a new focus on physical and industrial AI; a further £60 million for
+      the Sovereign AI R&D Procurement Scheme; and £18 million for a new UK Advanced Chip Design
+      Academy to strengthen advanced chip-design capability.
+    source_span: [1446, 1778]
+    suggested:
+      policy_area: economic_affairs
+      who: UK AI companies
+      how_much: £60 million plus £60 million plus £18 million
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      The government commits an extra £60 million to the Sovereign AI Fund, £60 million to the
+      Sovereign AI R&D Procurement Scheme and £18 million for a new UK Advanced Chip Design Academy.
+    confidence: 0.6
+  - quote: >-
+      We will provide £15 million for an AI Challenge Prize to incentivise innovators to develop AI
+      solutions to frontline public service challenges, with a first year's focus on health, and
+      £10m per year for the AI Economics Institute to lead the UK's work in understanding the
+      evidence on AI’s impact on productivity, growth, jobs and living standards.
+    source_span: [2039, 2387]
+    suggested:
+      policy_area: general_services
+      who: innovators; AI Economics Institute
+      how_much: £15 million; £10 million per year
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      The government commits £15 million for an AI Challenge Prize focused first on health and £10
+      million a year for the AI Economics Institute.
+    confidence: 0.55
+  - quote: >-
+      The Government will also establish a new AI Cyber Security Centre of Excellence in Manchester
+      to train the next generation of cyber and AI experts.
+    source_span: [2388, 2535]
+    suggested:
+      policy_area: education
+      who: future cyber and AI experts
+      how_much: null
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      The government commits to set up a new AI Cyber Security Centre of Excellence in Manchester.
+    confidence: 0.6
+confidence: 0.7
+model: claude-opus-5-5
+status: to_review
