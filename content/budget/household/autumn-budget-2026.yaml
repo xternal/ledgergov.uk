@@ -1,0 +1,55 @@
+# "The Budget for your household" (docs/BUDGET_DAY.md): Autumn Budget 2026's tax and benefit measures, run
+# through PolicyEngine UK on the night. Every "with" value is the law as the Budget sets it; every "without"
+# value is what would have applied had the Budget not happened. Rates are fractions (22% is 0.22), as
+# PolicyEngine writes them; amounts are in PolicyEngine's own period (National Insurance thresholds £ a week).
+#
+# Started on 27 October 2026 with no measures and TODO URLs: it stays on the budget-2026-household branch
+# until the night, as a TODO fails `pnpm validate`. Copy the measures from _templates.yaml (step 2).
+#
+# Run: pnpm household -- autumn-budget-2026 (live, about 5 economy runs), or offline from the recording:
+#      pnpm household -- build autumn-budget-2026
+event:
+  id: autumn-budget-2026
+  name: Autumn Budget 2026
+  date: "2026-10-28"
+kind: budget
+years: ["2026-27", "2027-28", "2028-29", "2029-30", "2030-31"]
+headline_year: "2027-28"
+side_year: "2026-27"
+
+sources:
+  - id: budget-2026
+    title: Budget 2026
+    publisher: HM Treasury
+    url: TODO
+    published_on: "2026-10-28"
+    licence: Open Government Licence v3.0
+  - id: impact-on-households-2026
+    title: "Impact on households: distributional analysis to accompany Budget 2026"
+    publisher: HM Treasury
+    url: TODO
+    published_on: "2026-10-28"
+    licence: Open Government Licence v3.0
+  - id: tiins-2026
+    title: Budget 2026, tax information and impact notes
+    publisher: HM Revenue and Customs
+    url: TODO
+    published_on: "2026-10-28"
+    licence: Open Government Licence v3.0
+  - id: hmrc-fuel-duty-2026-27
+    title: "HMRC, Amended Fuel Duty rates: 2026 to 2027 (22 May 2026)"
+    publisher: HM Revenue and Customs
+    url: https://www.gov.uk/government/publications/amended-fuel-duty-rates-for-2026-to-2027/amended-fuel-duty-rates-2026-to-2027
+    published_on: "2026-05-22"
+    licence: Open Government Licence v3.0
+  - id: income-tax-act-2007
+    title: Income Tax Act 2007, section 57 (indexation of allowances and the basic rate limit)
+    publisher: legislation.gov.uk
+    url: https://www.legislation.gov.uk/ukpga/2007/3/section/57
+  - id: policyengine-uk-2-132-6
+    title: PolicyEngine UK 2.132.6, parameters (current law and OBR forecasts)
+    publisher: PolicyEngine
+    url: https://api.policyengine.org/uk/metadata
+    published_on: "2026-10-27"
+
+measures: []
