@@ -1,0 +1,14 @@
+id: alcohol-duty-rpi-rise
+headline: Raise alcohol duty in line with RPI inflation
+area: taxes
+summary: >-
+  The Telegraph reports that the Chancellor is expected to raise alcohol duty in line with RPI
+  inflation of 3.9%, which it says would take the duty on a pint from 50p to 52p and add about 10p to
+  12p to a bottle of wine and 35p to a bottle of gin. The report does not say who briefed it. The
+  Treasury did not comment, saying decisions on tax are for the Chancellor to set out at fiscal events.
+reported:
+  - outlet: The Telegraph
+    date: "2026-10-27"
+    url: https://www.yahoo.com/news/politics/articles/chancellor-add-2p-cost-pint-060000409.html
+    title: Chancellor to add 2p to cost of a pint in fresh blow to pubs
+status: trailed
