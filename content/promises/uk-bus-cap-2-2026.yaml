@@ -8,12 +8,14 @@ venue: press_release
 venue_label:
   en: Government announcement
 area: economic_affairs
-status: in_plan
+status: funded
 status_note:
   en: >-
-    Funding was named when it was announced, but it is not yet in an Estimates line. A promise
-    counts as funded only once a Budget, Spending Review or Estimates allocates the money, so this
-    card stays at In plan. Earlier caps for context: a £2 cap ran in England outside London from
+    The Autumn Budget 2026 funds the cap on single bus fares in England outside London for one year
+    from 1 January 2027, paid for by reprioritising the Department for Energy Security and Net
+    Zero's budgets (Table 6.1, line 4; paragraph 2.8). The Budget's line shows the net effect on
+    borrowing after those savings, not the cap's own cost, so the card keeps the £400m announced in
+    July. Earlier caps for context: a £2 cap ran in England outside London from
     January 2023 under the previous government; it rose to £3 in January 2025, and Spending Review
     2025 (11 June 2025) extended the £3 cap to March 2027 (sources below).
 responsible:
@@ -35,6 +37,8 @@ sources:
     url: https://www.gov.uk/government/news/bus-passengers-to-save-hundreds-as-government-prevents-cliff-edge-fare-hike
   - title: "DfT news, 1 Jan 2023: £2 bus tickets for thousands of routes"
     url: https://www.gov.uk/government/news/new-year-cheer-2-bus-tickets-for-thousands-of-routes
+  - title: "HM Treasury: Budget 2026 (28 Oct 2026), Table 6.1, line 4"
+    url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
 versions:
   - version: 1
     text: >-
@@ -91,6 +95,13 @@ events:
     type: deadline
     text:
       en: Due to start
+  - date: "2026-10-28"
+    type: funded
+    text:
+      en: >-
+        Autumn Budget 2026 funds the £2 cap on single bus fares in England outside London for 2027,
+        from reprioritised energy department budgets
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
 replies: []
 reviews:
   - by: Junior Editor

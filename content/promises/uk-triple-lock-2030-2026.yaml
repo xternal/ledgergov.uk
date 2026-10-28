@@ -11,8 +11,11 @@ area: social_protection
 status: promised
 status_note:
   en: >-
-    The government says it will legislate for the change during this Parliament. Until April 2030
-    the State Pension keeps rising by the triple lock; the Budget sets the April 2027 rise.
+    The government says it will legislate for the change during this Parliament. Autumn Budget 2026
+    sets out the adjusted lock from April 2030: the State Pension rises each year by the highest of
+    2.5%, inflation, or the amount needed to keep its value relative to earnings as reached in April
+    2029 (para 5.23). It names no bill or date for legislation, so the card stays at Promised. Until
+    April 2030 the State Pension keeps rising by the triple lock.
 responsible:
   actor_id: hm-government
 origin: manual

@@ -8,11 +8,13 @@ venue: press_release
 venue_label:
   en: Press release (No 10), additional information
 area: economic_affairs
-status: promised
+status: in_plan
 status_note:
   en: >-
-    The release says it applies only to Established Mayoral Strategic Authorities in England. It
-    gives neither the size of the fund nor a date within 2028.
+    The Autumn Budget 2026 says UK Research and Innovation is devolving Local Innovation
+    Partnerships Fund settlements to Established Mayoral Authorities from 2028 (paragraph 4.77). It
+    gives neither the size of the fund nor a date within 2028, and the Fiscal Devolution Roadmap
+    published the same day does not mention it.
 responsible:
   actor_id: hm-government
 origin: llm_intake
@@ -21,6 +23,8 @@ sources:
       No 10 press release, 9 Oct 2026: Prime Minister to hand regions innovation funding to build
       world-leading industries
     url: https://www.gov.uk/government/news/prime-minister-to-hand-regions-innovation-funding-to-build-world-leading-industries
+  - title: "HM Treasury: Budget 2026 (28 Oct 2026), paragraph 4.77"
+    url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=75
 versions:
   - version: 1
     text: >-
@@ -55,6 +59,13 @@ events:
     type: deadline
     text:
       en: End of 2028 (editorial date for "from 2028")
+  - date: "2026-10-28"
+    type: in_plan
+    text:
+      en: >-
+        Autumn Budget 2026 sets out the devolution of Local Innovation Partnerships Fund settlements
+        to Established Mayoral Authorities from 2028
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=75
 replies: []
 reviews:
   - by: AI Journalist

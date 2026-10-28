@@ -8,15 +8,17 @@ venue: parliament
 venue_label:
   en: Commons statement
 area: economic_affairs
-status: in_plan
+status: funded
 status_note:
   en: >-
-    The scheme is in the government's plans (Modern Industrial Strategy, June 2025; consultation
-    responses of 16 April and July 2026), and applications opened on 1 October 2026 and close on 30
-    November 2026. Exemptions on bills start in April 2027. Draft regulations amending the
-    Renewables Obligation and Capacity Market rules were laid on 7 September 2026 and need approval
-    by both Houses; none had been made by 7 October 2026. The Exchequer funding is due to be scored
-    at Budget 2026, so the card stays at In plan.
+    The Autumn Budget 2026 funds the scheme from 1 April 2027, with a back payment in 2027-28 for
+    the support firms would have had in 2026-27 (Table 6.1, line 70; paragraph 6.31). The
+    Treasury's line is a net figure: £1,235m in 2027-28 including the back payment, then £65m to
+    £465m a year to 2031-32, after savings from removing Carbon Price Support and changing the
+    indexation of energy policy costs, and it also covers the Supercharger scheme (Policy costings,
+    page 80). It is not the scheme's own yearly cost, so the card keeps the department's estimate.
+    Applications close on 30 November 2026. Draft regulations amending the Renewables Obligation
+    and Capacity Market rules were laid on 7 September 2026 and need approval by both Houses.
 responsible:
   actor_id: hm-government
 origin: llm_intake
@@ -50,6 +52,10 @@ sources:
   - title: >-
       BIST impact assessment: British Industrial Competitiveness Scheme (final stage, 7 Sep 2026)
     url: https://www.legislation.gov.uk/ukia/2026/149/pdfs/ukia_20260149_en.pdf
+  - title: "HM Treasury: Budget 2026 (28 Oct 2026), Table 6.1, line 70"
+    url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=112
+  - title: "HM Treasury: Budget 2026 policy costings, page 80"
+    url: https://assets.publishing.service.gov.uk/media/6ae1883fe4367e5c8b0467df/AB26_Policy_Costing.pdf#page=80
 versions:
   - version: 1
     text: >-
@@ -124,6 +130,13 @@ events:
         Applications open until 30 November 2026; the government says eligible firms receive support
         from April 2027
     evidence_url: https://www.gov.uk/government/news/applications-open-for-scheme-to-slash-electricity-bills-for-over-10000-manufacturers
+  - date: "2026-10-28"
+    type: funded
+    text:
+      en: >-
+        Autumn Budget 2026 funds the scheme from 1 April 2027, including a back payment for eligible
+        businesses in 2027-28
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=112
 replies: []
 reviews:
   - by: Junior Editor

@@ -8,13 +8,16 @@ venue: speech
 venue_label:
   en: Speech to Treasury staff
 area: general_services
-status: promised
+status: delivered
 status_note:
   en: >-
-    The test comes at the Budget on 28 October 2026, when the OBR judges whether the government's
-    plans meet the rules in the Charter for Budget Responsibility. The Prime Minister repeated the
-    commitment at Prime Minister's Questions on 2 September 2026, describing the debt rule as debt
-    falling "by the end of the Parliament"; the Charter sets 2029-30.
+    At the Budget on 28 October 2026 the OBR judged both fiscal rules met in 2029-30: the current
+    budget is in surplus by £15bn (0.4% of GDP), £7bn less than at Budget 2025, and debt (public
+    sector net financial liabilities) is falling by a margin of £24bn (Economic and fiscal outlook,
+    October 2026, paragraph 7.17 and Table 7.1). The OBR puts the chance of meeting the first rule
+    at 56%, and its margin at £10bn if planned fuel duty rises do not happen. The welfare cap in the
+    same Charter is on course to be missed by £3bn, though the OBR formally assesses it only at the
+    first Budget of a Parliament. The Budget describes the margins as a buffer (page 2).
 responsible:
   actor_id: hm-government
 origin: manual
@@ -32,6 +35,10 @@ sources:
     url: https://www.gov.uk/government/speeches/chancellor-john-healeys-growth-speech-2026
   - title: "HM Treasury: Charter for Budget Responsibility, autumn 2025"
     url: https://www.gov.uk/government/publications/draft-charter-for-budget-responsibility-autumn-2025
+  - title: "OBR: Economic and fiscal outlook, October 2026, paragraph 7.17 and Table 7.1"
+    url: https://assets.publishing.service.gov.uk/media/6ae1f7b839d29f3f9b9b3f36/economic-and-fiscal-outlook-october-2026-web-accessible.pdf#page=163
+  - title: "HM Treasury: Budget 2026 (28 Oct 2026), page 2"
+    url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=8
 versions:
   - version: 1
     text: >-
@@ -69,6 +76,13 @@ events:
     type: deadline
     text:
       en: The Budget, and the OBR's assessment of the fiscal rules
+  - date: "2026-10-28"
+    type: delivered
+    text:
+      en: >-
+        The OBR judges both fiscal rules met in 2029-30, the current budget surplus rule by £15bn
+        and the rule for debt to fall by £24bn
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae1f7b839d29f3f9b9b3f36/economic-and-fiscal-outlook-october-2026-web-accessible.pdf#page=163
 replies: []
 reviews:
   - by: AI Journalist

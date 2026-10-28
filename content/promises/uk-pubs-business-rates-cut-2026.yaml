@@ -8,12 +8,15 @@ venue: press_release
 venue_label:
   en: Press release from No 10, HM Treasury and the business department
 area: taxes
-status: promised
+status: funded
 status_note:
   en: >-
-    The cut applies to bills from April 2027. The government says details of the exclusion for the
-    very largest live music venues will be set out at the Budget, and the Chancellor told the
-    Commons on 8 September 2026 that he would set out more details of business rates reform there.
+    The Autumn Budget 2026 raises business rates relief for pubs, social clubs and live music
+    venues in England by 20 percentage points, from 15% to 35%, from 1 April 2027 (paragraph 6.189;
+    Table 6.1, line 12). Live music venues with a rateable value of £1 million or more are left
+    out and keep the 15% relief. The Treasury costs it at £160m in 2027-28 and £115m in 2028-29,
+    falling to £5m a year after the 2029 revaluation, when the level is to be reviewed. The same
+    Budget removes reliefs for vape shops and adult gaming centres from April 2027 (line 57).
 responsible:
   actor_id: hm-government
 origin: manual
@@ -27,6 +30,8 @@ sources:
     url: https://www.gov.uk/government/news/treasury-to-call-time-on-uncertainty-for-pubs-and-hotels
   - title: "Hansard (Commons): High Street Renewal (8 Sep 2026)"
     url: https://hansard.parliament.uk/Commons/2026-09-08/debates/316E8598-025F-4C1E-B595-1D7CBC383C7C/HighStreetRenewal
+  - title: "HM Treasury: Budget 2026 (28 Oct 2026), paragraph 6.189"
+    url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=136
 versions:
   - version: 1
     text: >-
@@ -41,17 +46,24 @@ versions:
           Nearly 32,000 pubs, clubs and live music venues in England (the very largest live music
           venues excluded)
       cost:
-        range: [0.09, 0.1, 0.11]
+        range: [0.144, 0.16, 0.176]
         quality: sourced
         by:
           kind: official
-          name: No 10
+          name: HM Treasury
         note:
           en: >-
-            Year shown: 2027-28, the first year of the cut. The government says the package is worth
-            around £100 million a year. No independent costing has been published. Low–high is an
-            editorial ±10% because the source gives a central figure only.
+            Year shown: 2027-28, the first year of the cut. The Autumn Budget 2026 costs it at £160m
+            in 2027-28, £115m in 2028-29 and £5m a year from 2029-30 (Table 6.1, line 12), net of
+            the corporation tax and income tax that business rates reduce and of the devolved
+            nations' share (Policy costings, page 20). The government had said around £100 million
+            a year when it announced the cut. Low–high is an editorial ±10% because the source gives
+            a central figure only.
         sources:
+          - title: "HM Treasury: Budget 2026 (28 Oct 2026), Table 6.1, line 12"
+            url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
+          - title: "HM Treasury: Budget 2026 policy costings, page 20"
+            url: https://assets.publishing.service.gov.uk/media/6ae1883fe4367e5c8b0467df/AB26_Policy_Costing.pdf#page=20
           - title: No 10, HM Treasury and DBT press release (23 Jul 2026)
             url: https://www.gov.uk/government/news/burnham-means-business-pm-slashes-business-rates-bills-for-pubs-clubs-and-live-music-venues
       when:
@@ -72,7 +84,64 @@ events:
     type: deadline
     text:
       en: Due to apply to bills
+  - date: "2026-10-28"
+    type: funded
+    text:
+      en: >-
+        Autumn Budget 2026 raises the relief for pubs, social clubs and live music venues from 15% to
+        35% from 1 April 2027, costed at £160m in 2027-28
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
 replies: []
+corrections:
+  - date: "2026-10-28"
+    path: versions[0].parameters.cost.range
+    was: [0.09, 0.1, 0.11]
+    now: [0.144, 0.16, 0.176]
+    reason:
+      en: >-
+        The Autumn Budget 2026 published the official yearly cost: £160m in 2027-28 (Table 6.1,
+        line 12). Low–high is an editorial ±10% because the source gives a central figure only.
+    source_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
+  - date: "2026-10-28"
+    path: versions[0].parameters.cost.by
+    was: { kind: official, name: No 10 }
+    now: { kind: official, name: HM Treasury }
+    reason:
+      en: The central figure is now the Budget's official costing.
+    source_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
+  - date: "2026-10-28"
+    path: versions[0].parameters.cost.note
+    was:
+      en: >-
+        Year shown: 2027-28, the first year of the cut. The government says the package is worth
+        around £100 million a year. No independent costing has been published. Low–high is an
+        editorial ±10% because the source gives a central figure only.
+    now:
+      en: >-
+        Year shown: 2027-28, the first year of the cut. The Autumn Budget 2026 costs it at £160m
+        in 2027-28, £115m in 2028-29 and £5m a year from 2029-30 (Table 6.1, line 12), net of
+        the corporation tax and income tax that business rates reduce and of the devolved
+        nations' share (Policy costings, page 20). The government had said around £100 million
+        a year when it announced the cut. Low–high is an editorial ±10% because the source gives
+        a central figure only.
+    reason:
+      en: The note now gives the Budget's official costing for each year.
+    source_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
+  - date: "2026-10-28"
+    path: versions[0].parameters.cost.sources
+    was:
+      - title: No 10, HM Treasury and DBT press release (23 Jul 2026)
+        url: https://www.gov.uk/government/news/burnham-means-business-pm-slashes-business-rates-bills-for-pubs-clubs-and-live-music-venues
+    now:
+      - title: "HM Treasury: Budget 2026 (28 Oct 2026), Table 6.1, line 12"
+        url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
+      - title: "HM Treasury: Budget 2026 policy costings, page 20"
+        url: https://assets.publishing.service.gov.uk/media/6ae1883fe4367e5c8b0467df/AB26_Policy_Costing.pdf#page=20
+      - title: No 10, HM Treasury and DBT press release (23 Jul 2026)
+        url: https://www.gov.uk/government/news/burnham-means-business-pm-slashes-business-rates-bills-for-pubs-clubs-and-live-music-venues
+    reason:
+      en: The Budget's costing, the source of the new figure, is added.
+    source_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
 reviews:
   - by: AI Journalist
     kind: automated

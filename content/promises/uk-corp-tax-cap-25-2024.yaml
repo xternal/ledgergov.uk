@@ -13,8 +13,12 @@ status_note:
   en: >-
     The Corporate Tax Roadmap (October 2024) commits to the 25% cap for the Parliament, and Finance
     Acts have set the main rate at 25% for the financial years starting April 2026 and April 2027.
-    Later years are not yet set in law, so the card sits at Legislated until the end of the
-    Parliament, taken as 1 July 2029.
+    Autumn Budget 2026 keeps the cap (para 2.54), and HMRC's rates table shows the main rate at 25%
+    for the financial year starting April 2028 too, though that year is not yet set in law
+    (Overview of tax legislation and rates, Annex A). The same Budget raises the Bank Corporation
+    Tax Surcharge, an extra charge on banks' profits on top of the main rate, from 3% to 6% from 1
+    January 2027 to 31 March 2028 (para 6.252); the main rate does not change. The card sits at
+    Legislated until the end of the Parliament, taken as 1 July 2029.
 responsible:
   actor_id: hm-government
 origin: manual
@@ -29,6 +33,10 @@ sources:
     url: https://www.legislation.gov.uk/ukpga/2026/11/section/11/enacted
   - title: "HM Treasury: Budget 2025 (26 Nov 2025)"
     url: https://assets.publishing.service.gov.uk/media/6929b353345e31ab14ecf735/E03444720_Budget_2025_Web_Accessible.pdf
+  - title: "HM Treasury: Budget 2026 (28 Oct 2026), paragraph 2.54"
+    url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=45
+  - title: "HMRC: Budget 2026, Overview of tax legislation and rates, Annex A: rates and allowances"
+    url: https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances
 versions:
   - version: 1
     text: >-

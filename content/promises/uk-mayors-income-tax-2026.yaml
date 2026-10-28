@@ -8,12 +8,15 @@ venue: press_release
 venue_label:
   en: "Cabinet statement: Rewiring the State"
 area: general_services
-status: promised
+status: in_plan
 status_note:
   en: >-
-    The Chancellor has said he will set out a roadmap to fiscal devolution at the Budget on 28
-    October 2026. The Cabinet statement says detailed arrangements will be confirmed at the upcoming
-    Spending Review, with income tax receipts kept locally from April 2028.
+    The Fiscal Devolution Roadmap, published with the Autumn Budget 2026, gives every mayoral
+    strategic authority in England a share of the income tax raised in its area from April 2028
+    (Table 2.A and paragraph 2.15), taken from the basic rate on earnings and pensions (paragraph
+    2.23). Mayors will not set rates or thresholds. The starting amounts, which replace grants, are
+    to be set at the next Spending Review, and only areas with a directly elected mayor get the
+    share (paragraph 2.53).
 responsible:
   actor_id: hm-government
 origin: manual
@@ -28,6 +31,10 @@ sources:
   - title: >-
       UK Parliament: Written statement HCWS330, Fiscal Devolution in England (10 Sep 2026)
     url: https://questions-statements.parliament.uk/written-statements/detail/2026-09-10/HCWS330
+  - title: "HM Treasury: The Fiscal Devolution Roadmap (28 Oct 2026), Table 2.A and paragraph 2.15"
+    url: https://assets.publishing.service.gov.uk/media/6ae103627b7111c482d80a99/Fiscal_Devolution_Roadmap.pdf#page=16
+  - title: "HM Treasury: Budget 2026 (28 Oct 2026), paragraph 6.40"
+    url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=119
 versions:
   - version: 1
     text: >-
@@ -67,6 +74,13 @@ events:
     type: deadline
     text:
       en: Income tax receipts due to be kept locally
+  - date: "2026-10-28"
+    type: in_plan
+    text:
+      en: >-
+        The Fiscal Devolution Roadmap, published with the Budget, gives every mayoral strategic
+        authority a share of local income tax from April 2028
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae103627b7111c482d80a99/Fiscal_Devolution_Roadmap.pdf#page=16
 replies: []
 reviews:
   - by: AI Journalist

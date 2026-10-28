@@ -8,12 +8,13 @@ venue: press_release
 venue_label:
   en: Press release (No 10)
 area: economic_affairs
-status: promised
+status: in_plan
 status_note:
   en: >-
-    Announced with the Prime Minister's speech on regional innovation on 9 October 2026. The release
-    does not say which four years, or how the money is split by year or by sector. UK Research and
-    Innovation is to run it.
+    The Autumn Budget 2026 says UK Research and Innovation is focusing £1 billion of investment over
+    the next four years on priority innovation clusters aligned with the Industrial Strategy
+    (paragraphs 4.77 and 6.84). It does not say which four years or split the money by year, and it
+    is not a line in the Budget's table of policy decisions, so the card is not yet Funded.
 responsible:
   actor_id: hm-government
 origin: llm_intake
@@ -24,6 +25,8 @@ sources:
     url: https://www.gov.uk/government/news/prime-minister-to-hand-regions-innovation-funding-to-build-world-leading-industries
   - title: "Prime Minister's Office: PM speech at the Innovation Nation Summit, 9 October 2026"
     url: https://www.gov.uk/government/speeches/pm-speech-at-the-innovation-nation-summit-9-october-2026
+  - title: "HM Treasury: Budget 2026 (28 Oct 2026), paragraph 4.77"
+    url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=75
 versions:
   - version: 1
     text: >-
@@ -54,6 +57,13 @@ events:
     text:
       en: >-
         The government commits £1bn through UKRI over four years to high-growth innovation clusters
+  - date: "2026-10-28"
+    type: in_plan
+    text:
+      en: >-
+        Autumn Budget 2026 sets out £1bn of UKRI investment over the next four years in priority
+        innovation clusters
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=75
 replies: []
 reviews:
   - by: AI Journalist
