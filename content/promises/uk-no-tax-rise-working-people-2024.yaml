@@ -91,6 +91,10 @@ events:
         Insurance contributions or VAT; it extends the threshold freeze to April 2031 and raises tax
         rates on dividend, savings and property income
     evidence_url: https://assets.publishing.service.gov.uk/media/6929b353345e31ab14ecf735/E03444720_Budget_2025_Web_Accessible.pdf
+  - date: "2029-07-01"
+    type: deadline
+    text:
+      en: End of the Parliament (editorial date)
   - date: "2026-10-28"
     type: in_plan
     text:
@@ -99,10 +103,6 @@ events:
         Insurance contributions or VAT; it raises the tax rates on savings and property income by a
         further 2 points from April 2027
     evidence_url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=41
-  - date: "2029-07-01"
-    type: deadline
-    text:
-      en: End of the Parliament (editorial date)
 replies: []
 corrections:
   - date: "2026-10-08"

@@ -65,6 +65,10 @@ events:
       en: >-
         The Cabinet agrees to give every mayor a share of local income tax from 2028, in place of
         central grants
+  - date: "2028-04-01"
+    type: deadline
+    text:
+      en: Income tax receipts due to be kept locally
   - date: "2026-10-28"
     type: in_plan
     text:
@@ -73,10 +77,6 @@ events:
         for every mayoral strategic authority from April 2028, with starting points to be set at the
         Spending Review
     evidence_url: https://assets.publishing.service.gov.uk/media/6ae103627b7111c482d80a99/Fiscal_Devolution_Roadmap.pdf#page=17
-  - date: "2028-04-01"
-    type: deadline
-    text:
-      en: Income tax receipts due to be kept locally
 replies: []
 reviews:
   - by: AI Journalist

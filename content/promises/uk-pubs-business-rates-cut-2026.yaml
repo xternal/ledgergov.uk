@@ -55,8 +55,6 @@ versions:
             around £100 million a year. No independent costing has been published. Low–high is an
             editorial ±10% because the source gives a central figure only.
         sources:
-          - title: "HM Treasury: Budget 2026, Table 6.1 (policy decisions), line 12"
-            url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
           - title: No 10, HM Treasury and DBT press release (23 Jul 2026)
             url: https://www.gov.uk/government/news/burnham-means-business-pm-slashes-business-rates-bills-for-pubs-clubs-and-live-music-venues
       when:
@@ -73,6 +71,10 @@ events:
       en: >-
         The government announces a 20% business rates cut for pubs, clubs and live music venues in
         England
+  - date: "2027-04-01"
+    type: deadline
+    text:
+      en: Due to apply to bills
   - date: "2026-10-28"
     type: funded
     text:
@@ -80,10 +82,6 @@ events:
         Budget 2026 raises business rates relief for pubs, social clubs and live music venues by 20
         points to 35% from 1 April 2027, costed at £160m in 2027-28 (Table 6.1, line 12)
     evidence_url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
-  - date: "2027-04-01"
-    type: deadline
-    text:
-      en: Due to apply to bills
 replies: []
 reviews:
   - by: AI Journalist
