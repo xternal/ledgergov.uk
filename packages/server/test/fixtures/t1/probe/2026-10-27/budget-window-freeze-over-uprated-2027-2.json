@@ -1,0 +1,50 @@
+{
+ "policy_id": 98693,
+ "baseline_id": 98692,
+ "start_year": 2027,
+ "window_size": 2,
+ "seconds": 142,
+ "response": {
+  "status": "ok",
+  "message": null,
+  "result": {
+   "kind": "budgetWindow",
+   "startYear": "2027",
+   "endYear": "2028",
+   "windowSize": 2,
+   "annualImpacts": [
+    {
+     "spm_provenance": null,
+     "year": "2027",
+     "taxRevenueImpact": 0,
+     "federalTaxRevenueImpact": 0,
+     "stateTaxRevenueImpact": 0,
+     "benefitSpendingImpact": 0,
+     "budgetaryImpact": 0
+    },
+    {
+     "spm_provenance": null,
+     "year": "2028",
+     "taxRevenueImpact": 3769040583.2527328,
+     "federalTaxRevenueImpact": 3769040583.2527328,
+     "stateTaxRevenueImpact": 0,
+     "benefitSpendingImpact": 84024834.64444594,
+     "budgetaryImpact": 3685015748.608287
+    }
+   ],
+   "totals": {
+    "year": "Total",
+    "taxRevenueImpact": 3769040583.2527328,
+    "federalTaxRevenueImpact": 3769040583.2527328,
+    "stateTaxRevenueImpact": 0,
+    "benefitSpendingImpact": 84024834.64444594,
+    "budgetaryImpact": 3685015748.608287
+   }
+  },
+  "progress": 100,
+  "completed_years": [],
+  "computing_years": [],
+  "queued_years": [],
+  "error": null
+ }
+}

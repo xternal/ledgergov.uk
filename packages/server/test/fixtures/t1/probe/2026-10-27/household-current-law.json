@@ -1,0 +1,130 @@
+{
+ "what": "current law",
+ "request": {
+  "household": {
+   "people": {
+    "you": {
+     "age": {
+      "2026": 40,
+      "2027": 40,
+      "2028": 40,
+      "2029": 40,
+      "2030": 40
+     },
+     "employment_income": {
+      "2026": 45000,
+      "2027": 45000,
+      "2028": 45000,
+      "2029": 45000,
+      "2030": 45000
+     },
+     "income_tax": {
+      "2026": null,
+      "2027": null,
+      "2028": null,
+      "2029": null,
+      "2030": null
+     },
+     "national_insurance": {
+      "2026": null,
+      "2027": null,
+      "2028": null,
+      "2029": null,
+      "2030": null
+     }
+    }
+   },
+   "benunits": {
+    "benunit": {
+     "members": [
+      "you"
+     ]
+    }
+   },
+   "households": {
+    "household": {
+     "members": [
+      "you"
+     ],
+     "region": {
+      "2026": "EAST_MIDLANDS",
+      "2027": "EAST_MIDLANDS",
+      "2028": "EAST_MIDLANDS",
+      "2029": "EAST_MIDLANDS",
+      "2030": "EAST_MIDLANDS"
+     },
+     "household_net_income": {
+      "2026": null,
+      "2027": null,
+      "2028": null,
+      "2029": null,
+      "2030": null
+     }
+    }
+   }
+  },
+  "policy": {}
+ },
+ "result": {
+  "benunits": {
+   "benunit": {
+    "members": [
+     "you"
+    ]
+   }
+  },
+  "households": {
+   "household": {
+    "household_net_income": {
+     "2026": 35739.55,
+     "2027": 35739.55,
+     "2028": 35739.55,
+     "2029": 35687.71,
+     "2030": 35687.71
+    },
+    "members": [
+     "you"
+    ],
+    "region": {
+     "2026": "EAST_MIDLANDS",
+     "2027": "EAST_MIDLANDS",
+     "2028": "EAST_MIDLANDS",
+     "2029": "EAST_MIDLANDS",
+     "2030": "EAST_MIDLANDS"
+    }
+   }
+  },
+  "people": {
+   "you": {
+    "age": {
+     "2026": 40,
+     "2027": 40,
+     "2028": 40,
+     "2029": 40,
+     "2030": 40
+    },
+    "employment_income": {
+     "2026": 45000,
+     "2027": 45000,
+     "2028": 45000,
+     "2029": 45000,
+     "2030": 45000
+    },
+    "income_tax": {
+     "2026": 6486,
+     "2027": 6486,
+     "2028": 6486,
+     "2029": 6471.6,
+     "2030": 6471.6
+    },
+    "national_insurance": {
+     "2026": 2594.4033,
+     "2027": 2594.4033,
+     "2028": 2594.4033,
+     "2029": 2588.6428,
+     "2030": 2588.6428
+    }
+   }
+  }
+ }
+}
