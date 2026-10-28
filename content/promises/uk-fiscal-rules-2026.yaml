@@ -8,13 +8,15 @@ venue: speech
 venue_label:
   en: Speech to Treasury staff
 area: general_services
-status: promised
+status: delivered
 status_note:
   en: >-
-    The test comes at the Budget on 28 October 2026, when the OBR judges whether the government's
-    plans meet the rules in the Charter for Budget Responsibility. The Prime Minister repeated the
-    commitment at Prime Minister's Questions on 2 September 2026, describing the debt rule as debt
-    falling "by the end of the Parliament"; the Charter sets 2029-30.
+    The OBR judges both rules met at Budget 2026 (EFO, paras 1.24 and 1.25): the current budget is
+    in surplus in 2029-30 by £15bn, £7bn less than at Budget 2025, and net financial liabilities
+    fall as a share of GDP in 2029-30 by a margin of £24bn. The buffer the Chancellor promised
+    exists but is smaller than before: the OBR notes the margins are below the average of close to
+    £30bn held by Chancellors since 2010, and the Treasury says some headroom was used to absorb
+    higher debt interest from the conflict in the Middle East (Budget 2026, para 1.20).
 responsible:
   actor_id: hm-government
 origin: manual
@@ -69,6 +71,13 @@ events:
     type: deadline
     text:
       en: The Budget, and the OBR's assessment of the fiscal rules
+  - date: "2026-10-28"
+    type: delivered
+    text:
+      en: >-
+        The OBR judges both fiscal rules met at Budget 2026: the stability rule by £15bn and the
+        investment rule by £24bn in 2029-30 (EFO, paras 1.24 and 1.25)
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae1f7b839d29f3f9b9b3f36/economic-and-fiscal-outlook-october-2026-web-accessible.pdf#page=22
 replies: []
 reviews:
   - by: AI Journalist
