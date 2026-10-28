@@ -8,15 +8,17 @@ venue: parliament
 venue_label:
   en: Commons statement
 area: economic_affairs
-status: in_plan
+status: funded
 status_note:
   en: >-
-    The scheme is in the government's plans (Modern Industrial Strategy, June 2025; consultation
-    responses of 16 April and July 2026), and applications opened on 1 October 2026 and close on 30
-    November 2026. Exemptions on bills start in April 2027. Draft regulations amending the
-    Renewables Obligation and Capacity Market rules were laid on 7 September 2026 and need approval
-    by both Houses; none had been made by 7 October 2026. The Exchequer funding is due to be scored
-    at Budget 2026, so the card stays at In plan.
+    Budget 2026 scores the scheme (Table 6.1, line 70): from 1 April 2027 eligible businesses in
+    Great Britain are exempt from the indirect costs of the Renewables Obligation, Feed-in Tariffs
+    and Capacity Market, with a backdated payment in 2027 (para 6.31). The Exchequer cost in the
+    table is £1,235m in 2027-28, including the backdated payment, then £65m, £135m, £420m and £465m
+    in the years to 2031-32; these are the Exchequer's share, not the scheme's full cost, so the
+    card keeps the government's average of about £600m a year. Applications are open until 30
+    November 2026. Draft regulations amending the Renewables Obligation and Capacity Market rules
+    were laid on 7 September 2026 and need approval by both Houses.
 responsible:
   actor_id: hm-government
 origin: llm_intake
@@ -124,6 +126,13 @@ events:
         Applications open until 30 November 2026; the government says eligible firms receive support
         from April 2027
     evidence_url: https://www.gov.uk/government/news/applications-open-for-scheme-to-slash-electricity-bills-for-over-10000-manufacturers
+  - date: "2026-10-28"
+    type: funded
+    text:
+      en: >-
+        Budget 2026 funds the British Industrial Competitiveness Scheme from 1 April 2027, including
+        a backdated payment for eligible businesses: £1,235m in 2027-28 (Table 6.1, line 70)
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=112
 replies: []
 reviews:
   - by: Junior Editor

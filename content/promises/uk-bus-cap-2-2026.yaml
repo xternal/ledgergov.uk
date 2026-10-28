@@ -8,14 +8,16 @@ venue: press_release
 venue_label:
   en: Government announcement
 area: economic_affairs
-status: in_plan
+status: funded
 status_note:
   en: >-
-    Funding was named when it was announced, but it is not yet in an Estimates line. A promise
-    counts as funded only once a Budget, Spending Review or Estimates allocates the money, so this
-    card stays at In plan. Earlier caps for context: a £2 cap ran in England outside London from
-    January 2023 under the previous government; it rose to £3 in January 2025, and Spending Review
-    2025 (11 June 2025) extended the £3 cap to March 2027 (sources below).
+    The Budget 2026 policy decisions table funds the cap (Table 6.1, line 4): single fares capped at
+    £2 in England outside London for one year from 1 January 2027, funded by reprioritising DESNZ
+    budgets. The table shows the net effect on borrowing, £50m in 2026-27 and £180m in 2027-28,
+    followed by savings of £65m and £170m in the next two years as the reprioritised money comes
+    back; it does not restate the £400m. Earlier caps for context: a £2 cap ran in England outside
+    London from January 2023 under the previous government; it rose to £3 in January 2025, and
+    Spending Review 2025 extended the £3 cap to March 2027.
 responsible:
   actor_id: hm-government
 origin: manual
@@ -87,6 +89,13 @@ events:
         Written statement to Parliament confirms the scheme and names the funding: £400m extra, from
         reprioritising DESNZ's budget
     evidence_url: https://www.gov.uk/government/speeches/2-bus-fares-from-january-2027
+  - date: "2026-10-28"
+    type: funded
+    text:
+      en: >-
+        Budget 2026 funds the £2 single fare cap in England outside London for one year from 1
+        January 2027, paid for by reprioritising DESNZ budgets (Table 6.1, line 4)
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
   - date: "2027-01-01"
     type: deadline
     text:

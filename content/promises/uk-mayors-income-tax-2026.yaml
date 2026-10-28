@@ -8,12 +8,14 @@ venue: press_release
 venue_label:
   en: "Cabinet statement: Rewiring the State"
 area: general_services
-status: promised
+status: in_plan
 status_note:
   en: >-
-    The Chancellor has said he will set out a roadmap to fiscal devolution at the Budget on 28
-    October 2026. The Cabinet statement says detailed arrangements will be confirmed at the upcoming
-    Spending Review, with income tax receipts kept locally from April 2028.
+    The Fiscal Devolution Roadmap, published with Budget 2026, says every mayoral strategic
+    authority will be assigned a share of the income tax generated in its area beginning in 2028
+    (para 2.15), set out in its timetable as from April 2028. Rates and thresholds stay the same
+    across England; mayors get no power to set them (para 2.17). The funding starting points for
+    each area will be set at the Spending Review.
 responsible:
   actor_id: hm-government
 origin: manual
@@ -63,6 +65,14 @@ events:
       en: >-
         The Cabinet agrees to give every mayor a share of local income tax from 2028, in place of
         central grants
+  - date: "2026-10-28"
+    type: in_plan
+    text:
+      en: >-
+        The Fiscal Devolution Roadmap, published with Budget 2026, sets out a share of income tax
+        for every mayoral strategic authority from April 2028, with starting points to be set at the
+        Spending Review
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae103627b7111c482d80a99/Fiscal_Devolution_Roadmap.pdf#page=17
   - date: "2028-04-01"
     type: deadline
     text:
