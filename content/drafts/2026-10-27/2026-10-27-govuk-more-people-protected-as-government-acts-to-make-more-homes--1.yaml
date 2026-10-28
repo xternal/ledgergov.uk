@@ -1,0 +1,82 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-more-people-protected-as-government-acts-to-make-more-homes-.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-27"
+source:
+  id: govuk-more-people-protected-as-government-acts-to-make-more-homes-
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/more-people-protected-as-government-acts-to-make-more-homes-safe
+  title: More people protected as government acts to make more homes safe
+  date: "2026-10-27"
+  venue_label: Press release (Ministry of Housing, Communities and Local Government)
+quote: >-
+  The Bill will speed up action by placing a legal duty on those responsible to fix unsafe
+  buildings, with those failing to act facing criminal penalties and fines of up to £500,000.
+source_span: [3619, 3799]
+speaker:
+  name: HM Government
+  role: Ministry of Housing, Communities and Local Government
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: housing_env
+  who: Those responsible for fixing unsafe buildings
+  how_much: fines of up to £500,000
+  when: null
+  funded_by: null
+  deadline: null
+why: >-
+  The Remediation of Unsafe Cladding Bill will create a legal duty to fix unsafe buildings, backed
+  by criminal penalties and fines of up to £500,000.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      Construction product manufacturers connected to historic unsafe cladding and insulation
+      products will also be made to contribute more towards putting affected buildings right. For
+      the first time, government will have powers it needs to recover contributions from
+      manufacturers - and at scale.
+    source_span: [1071, 1363]
+    suggested:
+      policy_area: housing_env
+      who: >-
+        Construction product manufacturers connected to historic unsafe cladding and insulation
+        products
+      how_much: null
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      A new scheme with statutory powers will require construction product manufacturers linked to
+      unsafe cladding and insulation to contribute to remediation costs.
+    confidence: 0.6
+  - quote: >-
+      The government plans to raise this limit to six, so more people who owned four to six
+      properties and did not qualify on this date will be protected from having these costs passed
+      on to them.
+    source_span: [3259, 3449]
+    suggested:
+      policy_area: housing_env
+      who: >-
+        Leaseholders who owned four to six properties on 14 February 2022 with non-cladding building
+        safety defects
+      how_much: null
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      The Building Safety Act leaseholder protection threshold for non-cladding defects will be
+      raised from owning no more than three properties to no more than six on 14 February 2022.
+    confidence: 0.75
+confidence: 0.7
+model: claude-opus-5-5
+status: to_review

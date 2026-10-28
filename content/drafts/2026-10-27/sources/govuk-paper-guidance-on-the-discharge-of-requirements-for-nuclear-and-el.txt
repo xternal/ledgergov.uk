@@ -1,0 +1,209 @@
+Guidance on the discharge of requirements for nuclear and electricity transmission Development Consent Orders (DCOs)
+1. Introduction
+1.1 The Post-Consent Unit (PCU) will become operational in November 2026. Based within the Department for Energy Security and Net Zero’s (DESNZ) Energy Infrastructure Planning Delivery Team, the PCU was established in response to Recommendation 30 of the Nuclear Task Force Review, which recommended that DESNZ should create a team to oversee and deliver the post-consent discharge functions of Development Consent Orders (DCO) , in consultation with local authorities. The recommendation was made specifically in reference to nuclear developments. In accepting the recommendation, the government said that it would initially apply to both nuclear and electricity transmission developments, and review in due course whether the approach could be extended to other technologies. The rationale for the Unit is to improve the efficiency and pace at which post-consent requirements for nuclear and electricity transmission DCOs are discharged.
+1.2 As soon as it is established, the PCU will take on responsibility for checking and deciding on the discharging post-consent requirements for nuclear and electricity transmission DCOs. These have, to date, mostly been discharged by relevant Local Planning Authorities (LPAs), and in some instances by Highways Authorities, but henceforth will be done in DESNZ by the PCU.
+1.3 There are other types of post-consent requirements that are routinely discharged by Statutory Bodies (SB) such as the Marine Management Organisation; the establishment of the PCU does not affect those types of requirements, which will continue to be discharged by those bodies. The establishment of the PCU also does not affect “agreed exceptions” written into DCOs, whereby relevant planning authorities may agree that a stated requirement does not apply, or may apply differently, in a particular case.
+2. Purpose of this guidance
+2.1 This guidance sets out how the PCU will manage post-consent discharge applications and how stakeholders should engage with the process. This guidance applies to all post-consent requirements that are specified in a DCO for the PCU to discharge. There may be, on occasion, requirements which relate to nuclear or electricity transmission developments which a DCO specifies should be discharged by another authority, such as a different authority (see 1.3 above). Applicants should refer to any guidance provided by those discharging authorities as required.
+2.2 This guidance also sets out the roles and responsibilities of the PCU, nuclear and electricity transmission DCO developers (the Applicant) and consultees, such as LPAs and SBs named in the relevant DCO at each stage of the post-consent discharge process.
+2.3 This guidance is primarily for Applicants and their advisers, and consultees named in DCOs or associated management plans.
+2.4 This guidance does not replace the wording of any DCO. Applicants must always check the specific requirements in the relevant DCO and any supporting documents.
+3. Principles of the PCU’s post-consent discharge process
+3.1 The PCU’s overriding priority is to deliver the post-consent discharge process robustly and at pace, supporting the timely delivery of critical energy infrastructure and, in particular, to support that part of the planning process that takes place after consent is granted but before the project is constructed or operating; that is, requirements that are to be met after consent has been granted, as a condition of that consent. To support efficient and timely decisions on the discharge of requirements, the PCU will operate on three principles of:
+early and collaborative engagement to enable expectations to be clarified, issues worked through and resource planned for prior to application. This is to reduce avoidable delays during consultation and decision-making
+good administrative practices to ensure all parties can make best use of their available resource
+a reliable and consistent process to give Applicants and consultees certainty in how applications will be handled
+3.2 Applicants can best support efficient and timely discharges by:
+ensuring applications meet the terms of the requirements as they are set out in the DCO
+engaging early with the PCU and relevant consultees
+providing an up-to-date discharge schedule to support early resource planning
+ensuring applications reflect pre-application discussions
+responding promptly to information requests
+3.3 Consultees can best support efficient and timely discharge decisions by:
+engaging early with Applicants and the PCU
+planning resource in line with the discharge schedule
+informing the PCU promptly of any resource constraints
+informing the PCU of any niche or novel technical matters that will need to be assessed as part of the discharge process
+3.4. Engagement between the PCU and Applicants on post-consent discharge processes may begin before the DCO has been determined, to support an efficient discharge process should a consent be issued. In these cases, all parties should note that such engagement has no bearing on the determination of the DCO and agreements or discussions on post-consent requirements remain subject to the outcome of that DCO determination. The PCU and DESNZ’s DCO planning consent teams have put in place a protocol to secure the proper separation of functions between the PCU and the relevant planning consent team.
+3.5 Government considers that LPAs and SBs should be compensated for their involvement in the processes listed in this guidance, including engagement on pre-submission. This supports the efficient and effective discharge of requirements and is supported by legislation, in particular regulation 12A of the Infrastructure Planning (Fees) Regulations 2010, made pursuant to section 54A of the Planning Act 2008, which enables public authorities to charge for the provision of relevant services.
+3.6 Discharge applications to DESNZ do not currently require an application fee. DESNZ consulted on application fees for it planning delivery service in early 2025 and intend to introduce fees in financial year 2027-28.
+3.7 All timeframes in the PCU discharge process will be calculated in working days (for example, excluding weekends, and UK bank holidays). All timeframes will begin on the working day following the completion of the previous stage of the process. For example, when an Application is submitted, the validation timeframe will begin on the next working day.
+4. Post-consent discharge stages
+4.1 The following sections set out each stage of the post-consent discharge process. This includes the pre-application stage, through to application, validation, consultation, decision, publication, monitoring and enforcement. These explain the purpose and expected process at each stage, together with the roles and responsibilities of Applicants, the PCU and consultees.
+Stages of the Post-Consent Discharge Process
+Pre-application
+Application
+Validation
+Consultation
+Decision
+Publication
+Monitoring and enforcement
+5. Pre-application
+5.1 Pre-application is the period prior to an Applicant submitting its formal post-consent discharge application. This section of the guidance is advisory, allowing flexibility in its use while setting out best practice to support an efficient discharge process. Note that any agreements or discussions on potential post-consent requirements at pre-application are always subject to change following the determination of the DCO, and the receipt, by the PCU, of the final application to discharge.
+5.2 Objectives
+To agree which documents Applicants should expect to submit, and which documents consultees should expect to review.
+To resolve issues and differences as far as possible prior to application, reducing the need for information requests during consultation.
+To provide the PCU with enough information and notice to prepare for and process the application promptly.
+5.3 Process
+Preparing for pre-application
+Pre-application may begin during the DCO determination stage (subject to the arrangements in 3.4). The Applicant is encouraged to discuss and agree an appropriate start date with the PCU, taking account of the discharge schedule, the Applicant’s readiness and the need to maintain separation from the DCO determination process.
+Applicants can arrange this process by emailing the PCU or Energy Infrastructure Team.
+At the beginning of pre-application, it is recommended that:
+the Applicant arranges an inception meeting with the PCU
+the Applicant shares an indicative discharge schedule with the PCU
+the Applicant sets up a ’Steering Group’ (if not already in place) with consultees and the PCU to facilitate pre-application discussions
+the PCU may provide access to the project SharePoint which will be utilised for document hosting and sharing across the post-consent process. The PCU will provide detailed guidance on use of the SharePoint by email as necessary
+Throughout pre-application, it is recommended that:
+the Steering Group informs what documents are to be submitted for each discharge, what accompanying information should be provided at application, considers the interpretation of wording in the discharges, and works to resolve any differences prior to the application being made. The PCU may make recommendations on what should be submitted, but it is not bound by those recommendations
+the Applicant regularly reviews and shares the discharge schedule with the PCU, updating it whenever timings or dependencies change
+the Applicant shares drafts of discharge application documents, particularly management plans, with consultees where appropriate. The PCU may host these documents on the PCU SharePoint but will not review or comment on draft documents
+5.4 Roles and responsibilities of the PCU
+The PCU will:
+engage with the Applicant to understand the proposed discharge schedule and when pre-application is expected to begin
+engage appropriate technical specialists to support consultation and decision stages
+attend non-technical Steering Group meetings as appropriate and encourage relevant consultees, assessment teams and technical specialists to become involved as appropriate
+support the Applicant and consultees to reach a shared understanding of each requirement
+advise the Applicant which documents should be submitted with their application
+agree with the Applicant and consultees what information should be supplied to support application documents
+prepare and supply an application form
+host working documents on the PCU SharePoint site so consultees can access them easily
+The PCU will not engage in technical conversations or review draft documents at this stage, to avoid pre-determination (see 3.4).
+5.5 Roles and responsibilities of the Applicant
+The Applicant will:
+engage with the PCU to discuss the proposed discharge schedule and when pre-application work should begin
+invite all named consultees to the Steering Group, and relevant SBs, consultees, and LPA technical specialists to separate technical meetings
+work with the consultees to resolve differences before application and flag issues to the PCU at the earliest opportunity
+regularly review and share the discharge schedule
+share draft application documents with consultees where appropriate
+notify the PCU as early as possible of who needs access to the project SharePoint
+upload all certified DCO documents to the project SharePoint
+5.6 Roles and responsibilities of Consultees
+Consultees will:
+attend Steering Groups as appropriate, including technical specialist attendance at technical meetings
+where possible and appropriate, to review the Applicant’s draft discharge documents
+work with Applicants to resolve differences before application and flag issues to the PCU at the earliest opportunity
+notify the PCU as early as possible of who needs access to the project SharePoint
+6. Application
+6.1 The Applicant submits the post-consent discharge application to the PCU.
+6.2 Objectives
+standardise the process for making discharge applications
+ensure the information forming the application and supporting evidence are easily accessible, enabling efficient assessment by consultees and the PCU
+6.3 Process
+The Applicant submits an application, supplying all the documents and information requested in the ‘application checklist’.
+Application documents and accompanying evidence as agreed at pre-application
+Accurate plans and, where relevant, accurate geographic information system data
+Working links to all cited plans, maps, outline management plans, final management plans and drawings
+A completed application form, which requests the following:
+discharge application summary
+the DCO provision the discharge is linked to
+name of application documents
+links to relevant licensing agreements
+references to how discharge relates to management plans and drawings (including document titles, page numbers, and where appropriate, live links within the project SharePoint or to documents stored by the Planning Inspectorate (PINS)
+if draft applications have been previously shared with consultees, the Applicant should submit a copy of the application with track changes from the most recent draft shared
+The Applicant uploads the application and all supporting documents to a secure, dedicated folder on the project SharePoint. This will only be accessible to the Applicant and PCU. Further administrative information about the application stage will be supplied by the PCU at pre-application.
+The Applicant sends the PCU a notification confirming that application has been submitted.
+The PCU acknowledges receipt and moves the application to validation.
+Validation will begin on the next working day following receipt of the application.
+6.4 Roles and responsibilities of the PCU
+The PCU will:
+provide the application form and list of expected documents.
+6.5 Roles and responsibilities of the Applicant
+The Applicant will:
+submit a complete application package that enables validation and consultation to begin without avoidable delay
+submit the application through SharePoint in accordance with the application checklist
+notify the PCU via email once the application has been submitted
+6.6 Roles and responsibilities of consultees
+No routine action is required at application.
+7. Validation
+7.1 The PCU checks the relevant documents against the application Checklist, to assess whether the application is complete and capable of entering the consultation and decision stages. Validation is an administrative check and not an assessment of the technical merits of the application. It does not confirm that the information supplied is sufficient to discharge the requirement. If it is discovered at consultation or decision stage that the information supplied is deficient, this is likely to result in an information request or the application being returned with advice. Validation will take up to 5 working days if all the required information is submitted.
+7.2 Objectives
+To support efficient discharge, by ensuring all the information is in place for consultees to comment on the application, and the PCU to determine the application
+To avoid delays to discharges due to requests for missing information during consultation or decision
+To make information in the application and supporting evidence easily accessible to enable efficient assessment by consultees and the PCU
+7.3 Process
+The PCU will check the application against the application checklist.
+The PCU will work at pace to request correct or missing information.
+Applicants should work at pace to correct administrative errors or supply missing information.
+If critical documents or supporting evidence required for the consultation stage or determination of the application are missing during validation, or if there are administrative errors relating to critical information, the PCU will pause validation until the required information is supplied or return the application with advice.
+The PCU will notify the Applicant when the application is validated.
+The consultation stage will officially begin on the working day after validation is completed. The validation timeframe is not deducted from the consultation timeframe.
+The PCU will keep consultees informed of when the consultation is likely to start.
+7.4 Roles and responsibilities of the PCU
+The PCU will:
+validate the application against the application checklist
+work at pace to request missing information or identify administrative errors
+7.5 Roles and responsibilities of the Applicant
+The Applicant will:
+submit the application in accordance with the application checklist.
+work at pace to supply missing information or correct administrative errors.
+7.6 Roles and responsibilities of consultees
+No routine action is required during validation.
+8. Consultation
+8.1. The PCU will formally consult on the application with all the consultees named in the DCO and any management plans relevant to the Requirement, or any other consultee as necessary to inform the discharge decision. The timeframe for responses will normally be 20 working days (approximately 28 calendar days), with consultees able to put forward information requests to the PCU in the first 10 working days. The timeframe will be set out in the consultation letter, and the Applicant will be notified.
+8.2 Objectives
+To run an efficient, formal exercise.
+To standardise the process and administration so that consultations are straightforward to respond to.
+To avoid delays due to late consultation responses, or responses not being received.
+8.3 Process
+The consultation will begin when the consultation letters are issued to consultees.
+A consultation letter will be sent out via email, which will detail:
+the timeframe for consultation responses
+the timeframe for information requests
+The letter will signpost to:
+the application documents, evidence and form
+Consultees confirm receipt of the consultation.
+Occasionally, consultees may wish to request an extension to the consultation timeframe, for example because significant changes were made by the Applicant between draft and final application of the requirement. Consultees should do this via email at the earliest opportunity. Consultees should detail why an extension is required. The PCU may permit extensions where it considers it is needed to support the discharge of requirements. The PCU may determine that any extension will apply only to the consultee who has requested the extension.
+All consultation responses should be returned by 11.59pm on the day of the deadline.
+If a consultee does not respond by the deadline, the PCU reserves the right to consider this to amount to a ‘nil response’.
+8.4 Information requests
+Consultees and the PCU may wish to request further information from the Applicant to enable their assessment of the discharge.
+Consultees may request this during the consultation stage for a limited time period (usually the first 10 working days – as set out in the consultation letter).
+Consultees should upload the information request to the appropriate SharePoint folder and notify the PCU by email. It should set out the details of the requested information and why it is required to assess the application.
+The PCU will confirm if the information requested is required for the consultee to complete their assessment. They may be supported by technical specialists, as appropriate.
+If the PCU considers the information request should not proceed, it will notify the consultee accordingly. It may be supported by technical specialists, as appropriate.
+If the PCU considers the information request should proceed, it will pass the information request on to the Applicant. The consultation timeframe will be paused for affected consultees until the request is resolved.
+The PCU will work at pace to support resolution of information requests. Applicants can support this process by working at pace to fulfil the information request. Consultees can also support this by confirming whether newly supplied information meets the request.
+The PCU may make information requests throughout the consultation and decision stages. It will do so at the earliest opportunity, to support efficient discharge of applications. This may be accompanied by a pause to the consultation or decision timeframe.
+8.5 Roles and Responsibilities of the PCU
+The PCU will:
+run the consultation, including issuing the consultation letter, hosting all consultation documents and collating responses
+confirm whether an information request submitted by a Consultee is required for their assessment of the application, and whether a pause to the timeframe is necessary
+send any relevant information requests to the Applicant
+work with the Applicant and consultee(s) to support the efficient resolution of the information request
+8.6 Roles and Responsibilities of the Applicant
+The Applicant will:
+work at pace to resolve any information requests that are made
+8.7 Roles and Responsibilities of the consultees
+The consultees will:
+assess the application, using in-house or procured technical specialists as appropriate
+return consultation responses within the specified timeframe
+make any information requests within the specified timeframe
+9. Decision
+9.1. The PCU considers the consultation responses and makes a decision on whether to approve or refuse the discharge application. The timeframe will usually be 15 working days following the close of the consultation.
+9.2 Process
+The PCU will consider the consultation responses. It will be supported by technical expertise and advice as appropriate.
+Where the PCU is satisfied that the application meets the relevant requirements, it will approve the application.
+Where the PCU is not satisfied that the application meets the relevant requirements, it will refuse the application and communicate its rationale in the decision letter. The PCU will work at pace to highlight gaps or issues, to ensure the Applicant can resubmit the application efficiently. The post-consent discharge process is designed to mitigate the possibility of this occurring through pre-application and information requests.
+The PCU will only extend the decision timeframe where it is necessary for the appropriate discharge of the requirement.
+The PCU will issue a decision letter and notify all parties once a decision has been made.
+The PCU will publish the decision, alongside the application, consultation responses and information requests on GOV.UK.
+Any appeal against the PCU’s decision on post-consent discharges must be made in accordance with the appeal process set out in the relevant DCO.
+9.3 Roles and Responsibilities of the PCU
+The PCU will:
+make a decision on the approval or refusal of the application.
+send a decision letter to the Applicant.
+notify all parties of the decision.
+publish the decision and accompanying documents on GOV.UK.
+9.4 Roles and Responsibilities of the Applicant
+No routine action is required at decision.
+9.5 Roles and Responsibilities of the Consultees
+No routine action is required at decision.
+10. Monitoring and enforcement
+10.1 Monitoring and enforcement activity will continue to be undertaken by LPAs.
+10.2 Where monitoring identifies potential non-compliance, the relevant authority should consider what action is appropriate under the DCO and any other applicable legislation or process.
+11. Conclusion
+11.1 The discharge process is intended to operate efficiently where parties engage at an early stage, provide complete and well-structured applications, consult the relevant bodies, and maintain a clear audit trail.
+11.2 The PCU is intended to improve the efficiency, consistency and pace of post-consent decision-making for nuclear and electricity transmission DCOs. It responds to challenges identified in the Nuclear Taskforce Review, including local authority resource constraints and variation in approaches. It also aims to improve coordination for DCO projects that span multiple LPA areas.
+11.3 The PCU will administer the discharge process in a manner that is practical, proportionate, consistent and transparent. The aim is to identify and facilitate issue resolution at an early stage wherever possible, minimise avoidable delays, and support clear, evidence-based decisions in accordance with the relevant DCO and applicable requirements.
+12. Updates to the post-consent discharge process
+The PCU will review this guidance in 2027 to reflect lessons learned from the unit’s initial period of operation.
