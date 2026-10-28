@@ -1,0 +1,44 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-paper-guidance-on-the-discharge-of-requirements-for-nuclear-and-el.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-27"
+source:
+  id: govuk-paper-guidance-on-the-discharge-of-requirements-for-nuclear-and-el
+  kind: govuk_policy_paper
+  url: https://www.gov.uk/government/publications/post-consent-unit-guidance-on-discharging-requirements/guidance-on-the-discharge-of-requirements-for-nuclear-and-electricity-transmission-development-consent-orders-dcos
+  title: >-
+    Guidance on the discharge of requirements for nuclear and electricity transmission Development
+    Consent Orders (DCOs)
+  date: "2026-10-27"
+  venue_label: Policy paper (Department for Energy Security and Net Zero)
+quote: >-
+  DESNZ consulted on application fees for it planning delivery service in early 2025 and intend to
+  introduce fees in financial year 2027-28.
+source_span: [6052, 6190]
+speaker:
+  name: HM Government
+  role: Department for Energy Security and Net Zero
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: economic_affairs
+  who: >-
+    Applicants for discharge of nuclear and electricity transmission DCO requirements
+  how_much: null
+  when: financial year 2027-28
+  funded_by: null
+  deadline: null
+why: >-
+  DESNZ says it will introduce application fees for discharge applications to its planning delivery
+  service in financial year 2027-28.
+confidence: 0.55
+model: claude-opus-5-5
+status: to_review

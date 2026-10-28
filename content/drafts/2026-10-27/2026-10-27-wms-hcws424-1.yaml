@@ -1,0 +1,41 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws424.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-27"
+source:
+  id: wms-hcws424
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-27/HCWS424
+  title: "Lord Mann’s review of antisemitism and other forms of racism in the NHS: update"
+  date: "2026-10-27"
+  venue_label: Written ministerial statement
+quote: >-
+  NHS senior leaders will be invited to take part in further antiracism training by the end of March
+  2027, developed by the NHS Race and Health Observatory.
+source_span: [4396, 4550]
+speaker:
+  name: Karin Smyth
+  role: Minister of State for Health (Secondary Care)
+  party: Labour
+  member_id: 4444
+  actor_id: karin-smyth
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: health
+  who: NHS senior leaders
+  how_much: null
+  when: by the end of March 2027
+  funded_by: null
+  deadline: "2027-03-31"
+why: >-
+  NHS senior leaders are to be invited to further antiracism training developed by the NHS Race and
+  Health Observatory by the end of March 2027.
+confidence: 0.55
+model: claude-opus-5-5
+status: to_review

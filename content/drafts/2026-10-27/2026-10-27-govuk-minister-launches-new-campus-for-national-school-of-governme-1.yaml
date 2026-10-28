@@ -1,0 +1,43 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-minister-launches-new-campus-for-national-school-of-governme.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-27"
+source:
+  id: govuk-minister-launches-new-campus-for-national-school-of-governme
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/minister-launches-new-campus-for-national-school-of-government
+  title: Minister launches new campus for National School of Government
+  date: "2026-10-27"
+  venue_label: Press release (Cabinet Office)
+quote: >-
+  This builds on plans underway to halve government spending on external consultants and reduce
+  departmental administration costs by 16% over the next five years, delivering savings of over £2
+  billion a year for the taxpayer by 2030.
+source_span: [3001, 3232]
+speaker:
+  name: HM Government
+  role: Cabinet Office
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: general_services
+  who: Government departments
+  how_much: savings of over £2 billion a year
+  when: over the next five years, by 2030
+  funded_by: null
+  deadline: null
+why: >-
+  Restates an earlier government commitment to halve spending on external consultants and cut
+  departmental administration costs by 16%, saving over £2 billion a year by 2030; editors should
+  quote the original announcement.
+confidence: 0.55
+model: claude-opus-5-5
+status: to_review

@@ -1,0 +1,123 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws421.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-27"
+source:
+  id: wms-hcws421
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-27/HCWS421
+  title: Cost of Living update
+  date: "2026-10-27"
+  venue_label: Written ministerial statement
+quote: >-
+  Extend parental pay to eligible self-employed fathers, partners and adopters in Great Britain from
+  April 2029. Those who are recently employed or unemployed, or with a broken or irregular pattern
+  of employment will also benefit providing they have sufficient work and earnings history. This new
+  Parental Allowance is expected to benefit over 150,000 parents each year.
+source_span: [1523, 1891]
+speaker:
+  name: John Healey
+  role: Chancellor of the Exchequer
+  party: Labour
+  member_id: 400
+  actor_id: john-healey
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: social_protection
+  who: >-
+    Eligible self-employed fathers, partners and adopters in Great Britain, plus recently employed,
+    unemployed or irregularly employed parents with sufficient work and earnings history; over
+    150,000 parents each year
+  how_much: null
+  when: From April 2029
+  funded_by: null
+  deadline: "2029-04-30"
+why: >-
+  A new Parental Allowance extending parental pay to eligible self-employed fathers, partners and
+  adopters will start from April 2029.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      The government is today announcing that it will make that increase permanent and, to support
+      those who drive the furthest for work, the government is also increasing the rate above 10,000
+      miles from 25p to 35p per mile.
+    source_span: [1068, 1287]
+    suggested:
+      policy_area: taxes
+      who: >-
+        Employees and self-employed people who use their own vehicle for work; around 3 million
+        people
+      how_much: >-
+        Up to £120 a year for someone driving 6,000 business miles; up to £300 for someone driving
+        15,000 business miles
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      The 55p tax-free mileage rate for the first 10,000 business miles will be made permanent, and
+      the rate above 10,000 miles will rise from 25p to 35p per mile.
+    confidence: 0.8
+  - quote: >-
+      Instead, earnings above the Weekly Earnings Limit will be subject to a 100% taper, where
+      support is only reduced by £1 for each £1 increase in earnings. This means carers are no
+      longer left financially worse off for working additional hours or receiving a pay rise. The
+      taper will begin within 2030-31 once the Department for Work and Pensions have developed a new
+      IT system to implement the taper.
+    source_span: [2093, 2491]
+    suggested:
+      policy_area: social_protection
+      who: Unpaid carers receiving Carer's Allowance
+      how_much: null
+      when: Within 2030-31
+      funded_by: null
+      deadline: null
+    why: >-
+      The Carer's Allowance earnings cliff edge will be replaced by a 100% taper beginning in
+      2030-31.
+    confidence: 0.8
+  - quote: >-
+      Suspend import tariffs on over 100 food products, fertilisers and kerosene heating oil to help
+      reduce costs for households and businesses. Lower tariffs on food products are expected to
+      deliver consumer savings worth around £120-185m per year.
+    source_span: [2492, 2735]
+    suggested:
+      policy_area: economic_affairs
+      who: Households and businesses
+      how_much: Consumer savings worth around £120-185m per year
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      Import tariffs will be suspended on over 100 food products, fertilisers and kerosene heating
+      oil.
+    confidence: 0.7
+  - quote: >-
+      Roll out hundreds more Post Office drop boxes, bringing the total to 1,000, making it easier
+      and more convenient for people to send and return parcels without having to queue at a Post
+      Office counter, helping take some of the hassle out of everyday errands in the run-up to
+      Christmas. This comes alongside upgrades to 600 Post Office branches by the end of the
+      financial year, improving services for customers across the country.
+    source_span: [3117, 3546]
+    suggested:
+      policy_area: economic_affairs
+      who: Post Office customers
+      how_much: null
+      when: >-
+        Drop boxes in the run-up to Christmas; branch upgrades by the end of the financial year
+      funded_by: null
+      deadline: "2027-03-31"
+    why: >-
+      Post Office drop boxes will be increased to a total of 1,000 and 600 Post Office branches will
+      be upgraded by the end of the financial year.
+    confidence: 0.7
+confidence: 0.85
+model: claude-opus-5-5
+status: to_review

@@ -1,0 +1,46 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-government-launches-first-ever-misogyny-prevention-fund.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-27"
+source:
+  id: govuk-government-launches-first-ever-misogyny-prevention-fund
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/government-launches-first-ever-misogyny-prevention-fund
+  title: Government launches first ever misogyny prevention fund
+  date: "2026-10-27"
+  venue_label: Press release (Office for Equality and Opportunity)
+quote: >-
+  The Chancellor will provide a £15 million injection to the Office for the Impact Economy (OIE) to
+  be invested in schemes over 3 years that could include mentoring for young people, workplace
+  training and communications campaigns to improve outcomes and safety for women and girls across
+  the UK.
+source_span: [642, 936]
+speaker:
+  name: HM Government
+  role: Office for Equality and Opportunity
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: social_protection
+  who: >-
+    Organisations delivering misogyny prevention programmes; women and girls across the UK
+  how_much: £15 million over 3 years (£5 million each year)
+  when: Over 3 years; expected to be confirmed in the 2026 Budget on 28 October
+  funded_by: >-
+    HM Treasury (the Chancellor), with additional corporate and philanthropic match funding sought
+  deadline: null
+why: >-
+  The government commits £15 million over three years to a new misogyny prevention fund run through
+  the Office for the Impact Economy. Organisations will bid for grants from the fund for prevention
+  programmes.
+confidence: 0.75
+model: claude-opus-5-5
+status: to_review
