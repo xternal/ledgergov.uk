@@ -1,0 +1,42 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-thousands-of-young-people-put-down-roots-in-agricultural-car.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-26"
+source:
+  id: govuk-thousands-of-young-people-put-down-roots-in-agricultural-car
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/thousands-of-young-people-put-down-roots-in-agricultural-careers-at-jobs-fair
+  title: Thousands of young people put down roots in agricultural careers at Jobs Fair
+  date: "2026-10-26"
+  venue_label: Press release (Department for Work and Pensions)
+quote: >-
+  The youth employment support package, backed by £2.5 billion investment, will support almost one
+  million young people, and create 500,000 opportunities.
+source_span: [2631, 2783]
+speaker:
+  name: HM Government
+  role: Department for Work and Pensions
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: social_protection
+  who: young people
+  how_much: £2.5 billion
+  when: null
+  funded_by: null
+  deadline: null
+why: >-
+  Restates an earlier commitment that the £2.5 billion youth employment support package will support
+  almost one million young people and create 500,000 opportunities; editors should quote the
+  original announcement.
+confidence: 0.6
+model: claude-opus-5-5
+status: to_review

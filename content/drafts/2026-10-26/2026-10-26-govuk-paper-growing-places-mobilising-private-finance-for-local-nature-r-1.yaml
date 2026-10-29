@@ -1,0 +1,88 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-paper-growing-places-mobilising-private-finance-for-local-nature-r.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-26"
+source:
+  id: govuk-paper-growing-places-mobilising-private-finance-for-local-nature-r
+  kind: govuk_policy_paper
+  url: https://www.gov.uk/government/publications/mobilising-private-finance-for-local-nature-recovery/growing-places-mobilising-private-finance-for-local-nature-recovery
+  title: "Growing Places: Mobilising private finance for local nature recovery"
+  date: "2026-10-26"
+  venue_label: Policy paper (Department for Environment, Food & Rural Affairs)
+quote: >-
+  BNG will be extended to nationally significant infrastructure projects from November 2026.
+source_span: [9154, 9244]
+speaker:
+  name: HM Government
+  role: Department for Environment, Food & Rural Affairs
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: housing_env
+  who: Developers of nationally significant infrastructure projects
+  how_much: null
+  when: from November 2026
+  funded_by: null
+  deadline: "2026-11-30"
+why: >-
+  Mandatory biodiversity net gain will apply to nationally significant infrastructure projects from
+  November 2026; this likely restates an earlier commitment.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      Under the government’s new flood programme we have committed to investing £300 million in
+      standalone Natural Flood Management (NFM) schemes between now and 2036.
+    source_span: [19563, 19724]
+    suggested:
+      policy_area: housing_env
+      who: null
+      how_much: £300 million
+      when: between now and 2036
+      funded_by: null
+      deadline: null
+    why: >-
+      The government will invest £300 million in standalone natural flood management schemes by
+      2036; this restates an earlier flood programme commitment.
+    confidence: 0.65
+  - quote: >-
+      Flood Re will work with insurers and lenders to introduce FPCs, piloting by the end of 2026,
+      with a wider rollout to follow.
+    source_span: [20471, 20595]
+    suggested:
+      policy_area: housing_env
+      who: Households, insurers and lenders
+      how_much: null
+      when: piloting by the end of 2026
+      funded_by: null
+      deadline: "2026-12-31"
+    why: >-
+      Flood Performance Certificates for properties will be piloted by the end of 2026.
+    confidence: 0.55
+  - quote: >-
+      The UK intends to invest £400 million in the form of a loan to the facility, helping signal
+      confidence in the model and attract wider public and private investment.
+    source_span: [71297, 71461]
+    suggested:
+      policy_area: housing_env
+      who: Tropical Forests Forever Facility
+      how_much: £400 million
+      when: null
+      funded_by: Loan
+      deadline: null
+    why: >-
+      The UK will lend £400 million to the Tropical Forests Forever Facility; this may restate an
+      earlier announcement.
+    confidence: 0.5
+confidence: 0.75
+model: claude-opus-5-5
+status: to_review
