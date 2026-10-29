@@ -1,0 +1,45 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-government-and-rolls-royce-agree-25bn-to-build-jet-engines-i.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-28"
+source:
+  id: govuk-government-and-rolls-royce-agree-25bn-to-build-jet-engines-i
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/government-and-rolls-royce-agree-25bn-to-build-jet-engines-in-the-uk-and-create-tens-of-thousands-of-jobs
+  title: >-
+    Government and Rolls-Royce agree £2.5bn to build jet engines in the UK and create tens of
+    thousands of jobs
+  date: "2026-10-28"
+  venue_label: Press release (Department for Business, Innovation, Science and Trade)
+quote: >-
+  Tens of thousands of new jobs are expected to be created from a new government agreement with
+  Rolls-Royce to help turbocharge Britain’s reindustrialisation, including a £2.5 billion programme
+  for cutting-edge cleaner and more efficient jet engines, jointly funded over 10 years.
+source_span: [498, 776]
+speaker:
+  name: HM Government
+  role: Department for Business, Innovation, Science and Trade
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: economic_affairs
+  who: Rolls-Royce and the UK aerospace sector and supply chain
+  how_much: £2.5 billion, jointly funded
+  when: over 10 years
+  funded_by: jointly by government and Rolls-Royce
+  deadline: null
+why: >-
+  The government commits to a £2.5 billion programme, jointly funded with Rolls-Royce over 10 years,
+  to develop next-generation jet engines in the UK. The source says no grants have been awarded yet
+  and future support depends on value-for-money, affordability and subsidy control checks.
+confidence: 0.55
+model: claude-opus-5-5
+status: to_review

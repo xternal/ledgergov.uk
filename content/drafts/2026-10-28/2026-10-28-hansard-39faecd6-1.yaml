@@ -1,0 +1,81 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/hansard-39faecd6.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-28"
+source:
+  id: hansard-39faecd6
+  kind: hansard_pmqs
+  url: https://hansard.parliament.uk/Commons/2026-10-28/debates/39FAECD6-52B2-4A7F-A437-E0CA9E98C973/Engagements
+  title: Engagements
+  date: "2026-10-28"
+  venue_label: Prime Minister's Questions
+quote: >-
+  The private interest has been allowed to dominate the public interest, which is why we will
+  introduce a strengthened water Bill that will lift the bar on public ownership, alongside other
+  reforms over the next decade.
+source_span: [1840, 2057]
+speaker:
+  name: Andy Burnham
+  role: Prime Minister
+  party: null
+  member_id: 1427
+  actor_id: andy-burnham
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: housing_env
+  who: Water industry and the public
+  how_much: null
+  when: Reforms over the next decade
+  funded_by: null
+  deadline: null
+why: >-
+  The Government will introduce a strengthened water Bill that removes the bar on public ownership
+  of water companies.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      The red lines in our manifesto, including those on freedom of movement, will stay firmly in
+      place for the whole of this Parliament, but what I will not do is defend the deal negotiated
+      by the right hon. Lady and the Government she was in, which, in my view, gave us a harder
+      Brexit than was promised at the referendum, and has been bad for growth and bad for control of
+      immigration.
+    source_span: [2985, 3367]
+    suggested:
+      policy_area: public_order
+      who: null
+      how_much: null
+      when: For the whole of this Parliament
+      funded_by: null
+      deadline: null
+    why: >-
+      The Government will not reintroduce freedom of movement with the EU or breach its other
+      manifesto red lines during this Parliament; this restates the manifesto commitment.
+    confidence: 0.5
+  - quote: >-
+      I am grateful to my right hon. Friend the Chancellor for committing funding for the whole of
+      this Parliament to support a drive to give everybody an offer of support, and I can confirm to
+      the House today that we are increasingly confident that everyone will get such an offer before
+      the Christmas break.
+    source_span: [12479, 12782]
+    suggested:
+      policy_area: housing_env
+      who: People sleeping rough
+      how_much: null
+      when: Before the Christmas break; funding for the whole of this Parliament
+      funded_by: Funding committed by the Chancellor
+      deadline: null
+    why: >-
+      Every rough sleeper is to receive an offer of support before the Christmas break, as part of a
+      drive funded for the whole Parliament to end rough sleeping.
+    confidence: 0.55
+confidence: 0.7
+model: claude-opus-5-5
+status: to_review

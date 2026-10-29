@@ -1,0 +1,43 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws425.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-28"
+source:
+  id: wms-hcws425
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-28/HCWS425
+  title: Social Security update
+  date: "2026-10-28"
+  venue_label: Written ministerial statement
+quote: >-
+  I have decided to increase Child Benefit rates in line with the Consumer Price Index (CPI) for the
+  year to September 2026, which is 3.5%. Guardian’s Allowance will also increase by the same rate.
+source_span: [395, 590]
+speaker:
+  name: Emma Reynolds
+  role: Chief Secretary to the Treasury
+  party: Labour
+  member_id: 4077
+  actor_id: labour
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: social_protection
+  who: Child Benefit and Guardian's Allowance recipients across the United Kingdom
+  how_much: >-
+    3.5% increase; eldest child £27.05 to £28.00 per week, other children £17.90 to £18.55 per week,
+    Guardian's Allowance £22.95 to £23.75 per week
+  when: from 12 April 2027
+  funded_by: null
+  deadline: "2027-04-12"
+why: >-
+  Child Benefit and Guardian's Allowance will rise by 3.5% from 12 April 2027: the eldest-child rate
+  to £28.00, other children to £18.55 and Guardian's Allowance to £23.75 per week.
+confidence: 0.7
+model: claude-opus-5-5
+status: to_review

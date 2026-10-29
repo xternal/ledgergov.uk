@@ -1,0 +1,42 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-paper-changes-following-the-abolition-of-nhs-england.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-28"
+source:
+  id: govuk-paper-changes-following-the-abolition-of-nhs-england
+  kind: govuk_policy_paper
+  url: https://www.gov.uk/government/publications/vat-changes-following-the-abolition-of-nhs-england/changes-following-the-abolition-of-nhs-england
+  title: Changes following the abolition of NHS England
+  date: "2026-10-28"
+  venue_label: Policy paper (HM Revenue & Customs)
+quote: >-
+  The Health Bill, introduced on 14 May 2026, will abolish NHS England and transfer its functions to
+  the Department of Health and Social Care and other parts of the health system by March 2027.
+source_span: [762, 953]
+speaker:
+  name: HM Government
+  role: HM Revenue & Customs
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: health
+  who: NHS England and the Department of Health and Social Care
+  how_much: null
+  when: by March 2027
+  funded_by: null
+  deadline: "2027-03-31"
+why: >-
+  NHS England will be abolished and its functions transferred to the Department of Health and Social
+  Care by March 2027; this restates the earlier government commitment behind the Health Bill, so
+  editors should quote the original announcement.
+confidence: 0.55
+model: claude-opus-5-5
+status: to_review

@@ -1,0 +1,51 @@
+Income Tax: image rights payments treated as employment income
+Who is likely to be affected
+This measure will affect employees who receive image rights payments in relation to their employment, regardless of whether these payments are made directly to them or paid through a third party. The employers who make these payments will also be affected. This measure is likely to mainly affect the professional sports sector.
+General description of the measure
+The government is clarifying the tax treatment of image rights payments, making sure that payments for image rights related to an employment are taxable as employment income, and taxed in the same way as wages. This will clarify the law in an area which has created inconsistencies in how a small number of employers have treated earnings from image rights for Income Tax and National Insurance contributions purposes. This measure only applies to image rights payments related to an individual’s employment. An entirely separate arrangement with a third party would be unaffected by this measure.
+Policy objective
+This measure will improve fairness of the tax system and reduce the risk of these arrangements becoming widespread in other sectors. It will remove uncertainty about the tax treatment of image rights payments, making sure those who receive part of their remuneration through image rights payments pay the same Income Tax and National Insurance contributions on their employment income as other employees.
+Background to the measure
+The measure was announced at Budget 2025 and due to take effect from 6 April 2027. However, the government has decided to delay the implementation of the legislation for one year (to 6 April 2028) to provide employers and employees additional time to adjust to this change.
+Detailed proposal
+Operative date
+The measure will have effect from 6 April 2028.
+Current law
+Current law governing the taxation of employment income is found in Part 3 of the Income Tax (Earnings and Pensions) Act 2003. Image Rights are not defined in UK law but can broadly be described as the legal rights associated with the use or exploitation of an individual’s image, likeness or persona. There is no explicit reference to image rights in the current law, leading to uncertainty on whether arrangements are connected to the employment, and inconsistent tax treatment.
+Proposed revisions
+Primary legislation will be introduced to clarify that payments for image rights related to an employment are taxable as employment income and taxed in the same way as wages. Primary legislation will also introduce a power to make regulations to achieve the same outcome for deemed employment relationships. Regulations using existing powers will be introduced to legislate that these payments are also subject to a Class 1 Primary and Secondary National Insurance contributions charge.
+Summary of impacts
+Exchequer impact (£million)
+2026 to 2027
+2027 to 2028
+2028 to 2029
+2029 to 2030
+2030 to 2031
+2031 to 2032
++10
++10
++40
++45
++45
++45
+These figures are set out in Table 6.1 of Budget 2026 policy decisions in the overall ‘HMRC: Measures to close the tax gap’ costing and in Table 4.1 of Budget 2025 policy decisions HMRC: Further measures to close the tax gap’ costings. These measures have been certified by the Office for Budget Responsibility. More details can be found in the policy costings document published alongside Budget 2026 and Budget 2025.
+Economic impact
+This measure is not expected to have any significant macroeconomic impacts.
+Impact on individuals, households and families
+This measure will directly affect a small number of individuals whose employers pay part of their remuneration as image rights payments. These arrangements are currently mainly used in the professional sports sector, particularly by a minority of employers in professional football. The tax treatment of a portion of their salary will be clarified, meaning it will be treated as employment income and will be subject to Income Tax and National Insurance contributions accordingly.
+The measure is not expected to impact on family formation, stability or breakdown.
+Overall, this measure is expected to have no impact on individuals’ experience of dealing with HMRC as it does not change any processes or introduce additional administrative obligations relating to tax.
+Equalities impacts
+This measure may apply to individuals regardless of their protected characteristics. HMRC does not hold data that it can use to assess whether there are any disproportionate impacts to protected groups.
+Administrative impact on business including civil society organisations
+This measure is expected to have a negligible administrative impact on a very small number of employers, primarily in the professional football sector — who currently use image rights payments. The proposed legislation will clarify that image rights payments should be treated as employment income and taxed accordingly, requiring employers to operate Pay As You Earn and pay Income Tax and employer National Insurance contributions on image rights payments in the same way as for other employee wages.
+One-off costs for employers would include familiarisation with the change, and could in some cases include reviewing or amending contracts if deemed necessary. There are not expected to be any other one-off or ongoing costs or savings.
+This measure is expected overall to have no impact on businesses’ experience of dealing with HMRC as it does not change any processes or introduce additional tax administrative obligations. This measure is not expected to impact civil society organisations.
+Operational impact (£million) (HMRC or other)
+There are no operational impacts on HMRC.
+Other impacts
+This measure does not fall within the scope of the environmental principles duty. Other impacts have been considered and none have been identified.
+Monitoring and evaluation
+The measure will be kept under review through communication with affected taxpayer groups.
+Further advice
+If you have any questions about this change, contact the employment income policy mailbox at employmentincomepolicy@hmrc.gov.uk.
