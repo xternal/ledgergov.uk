@@ -8,11 +8,17 @@ venue: press_release
 venue_label:
   en: MHCLG press release
 area: housing_env
-status: promised
+status: funded
 status_note:
   en: >-
-    The government says the scheme will be confirmed at the Budget on 28 October 2026, with its
-    costs, income and price caps and timetable.
+    Budget 2026 confirms the £4.7bn scheme from April 2027 for around 70,000 first-time buyers in
+    England (para 5.5): 20% equity loans, interest free for five years, a 2.5% deposit, income caps
+    of £110,000 (£140,000 in London) and price caps set from local median prices (£650,000 inner
+    London, £500,000 outer London). The loans are financial transactions: £700m in 2027-28, then
+    £1bn a year to 2031-32, largely met by reprioritising other financial transactions budgets
+    (Table 6.2, lines 5 and 6). On borrowing it costs £15m in 2026-27 and then brings in a net £50m
+    to £95m a year from developer fees (Table 6.1, line 37). The card shows no yearly cost because
+    the money is lent, not spent.
 responsible:
   actor_id: hm-government
 origin: manual
@@ -60,6 +66,13 @@ events:
     type: deadline
     text:
       en: Due to be confirmed at the Budget
+  - date: "2026-10-28"
+    type: funded
+    text:
+      en: >-
+        Budget 2026 confirms the £4.7bn Your First Home equity loan scheme from April 2027, with
+        £1bn a year of loans from 2028-29 (para 5.5; Table 6.2, lines 5 and 6)
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=96
 replies: []
 reviews:
   - by: AI Journalist
