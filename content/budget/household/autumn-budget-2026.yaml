@@ -17,6 +17,7 @@ kind: budget
 years: ["2026-27", "2027-28", "2028-29", "2029-30", "2030-31"]
 headline_year: "2027-28"
 side_year: "2026-27"
+hold: [deciles]
 note: >-
   Measures announced before the Budget and only scored in its table are left out, as they were not decisions
   of this Budget: the summer VAT cut on family days out (line 66), the £1 road tax for lorries (line 65) and
