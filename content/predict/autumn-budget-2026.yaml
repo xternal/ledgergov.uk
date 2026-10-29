@@ -43,6 +43,8 @@ questions:
     settled_by: >-
       The overview of tax legislation and rates published with the Budget (income tax rates), and the Budget
       report's table of policy decisions. A rise announced for any later year counts.
+    answer: "no"
+    evidence_url: https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances#income-tax-rates
 
   - id: personal-allowance
     topic: Tax-free allowance
@@ -67,6 +69,8 @@ questions:
     settled_by: >-
       The overview of tax legislation and rates (income tax allowances) and the Budget report's table of policy
       decisions. A rise for any tax year up to and including 2030-31 counts.
+    answer: "no"
+    evidence_url: https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances#personal-allowance
 
   - id: national-insurance
     topic: National Insurance
@@ -91,6 +95,8 @@ questions:
     settled_by: >-
       The overview of tax legislation and rates (Class 1 National Insurance rates). A change up or down,
       announced for any later year, counts.
+    answer: "no"
+    evidence_url: https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances#employees-primary-class-1-contribution-rates-per-cent
 
   - id: vat-electricity
     topic: VAT on electricity
@@ -114,6 +120,8 @@ questions:
     settled_by: >-
       The Budget report's table of policy decisions and the overview of tax legislation and rates (VAT). Any
       extension past 31 March 2027 counts, however short.
+    answer: "yes"
+    evidence_url: https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar#extending-the-temporary-0-vat-rate-for-domestic-electricity
 
   - id: fuel-duty
     topic: Fuel duty
@@ -141,6 +149,8 @@ questions:
     settled_by: >-
       The fuel duty rates in the overview of tax legislation and rates: the main rate for petrol and diesel
       from 1 January 2027.
+    answer: no-rise
+    evidence_url: https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances#fuel-duty--pound-per-litre-unless-stated
 
   - id: capital-gains-tax
     topic: Capital gains tax
@@ -174,6 +184,8 @@ questions:
       The capital gains tax rates in the overview of tax legislation and rates, and the Budget report's table
       of policy decisions: the highest main rate, from whatever date the Budget sets. Carried interest, taxed
       under its own rules, does not count.
+    answer: same
+    evidence_url: https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances#rates-for-gains-on-assets
 
   - id: tax-measures-total
     topic: Tax rises in total
@@ -208,6 +220,8 @@ questions:
       The OBR's Economic and fiscal outlook published with the Budget: the net effect of the Budget's tax
       measures on receipts in 2029-30, in its chapter on policy measures (the Budget report shows the same
       measures).
+    answer: 5-15bn
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae1f7b839d29f3f9b9b3f36/economic-and-fiscal-outlook-october-2026-web-accessible.pdf#page=64
 
   - id: current-budget-2029-30
     topic: Day-to-day budget
@@ -243,6 +257,8 @@ questions:
     settled_by: >-
       The OBR's Economic and fiscal outlook published with the Budget: its central forecast of the current
       budget balance in 2029-30, in £ billion, as the OBR publishes it.
+    answer: 10-20bn
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae1f7b839d29f3f9b9b3f36/economic-and-fiscal-outlook-october-2026-web-accessible.pdf#page=139
 
   - id: defence-three-percent
     topic: Defence spending
@@ -265,6 +281,8 @@ questions:
     settled_by: >-
       The Budget report. It counts if the documents name a year for spending 3% of GDP on defence; an ambition
       with no year, or a year for another level, does not.
+    answer: "yes"
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=128
 
   - id: bank-surcharge
     topic: Tax on banks
@@ -291,3 +309,5 @@ questions:
     settled_by: >-
       The overview of tax legislation and rates (bank surcharge) and the Budget report's table of policy
       decisions. A new or larger levy of another kind on banks does not count.
+    answer: "yes"
+    evidence_url: https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances#bank-surcharge

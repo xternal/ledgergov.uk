@@ -12,4 +12,9 @@ reported:
     date: "2026-10-23"
     url: https://www.bbc.co.uk/news/articles/c6n8dex0zeg9o
     title: Earnings limit of up to £140K for first-time buyers loan scheme
-status: trailed
+status: announced
+budget:
+  date: "2026-10-28"
+  text: >-
+    Your First Home equity loans are capped at household incomes of £110,000 outside London and £140,000 in London, for around 70,000 first-time buyers from April 2027.
+  evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=96
