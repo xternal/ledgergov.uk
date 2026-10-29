@@ -1,0 +1,36 @@
+# One weekly editor's desk run over the week's big GOV.UK documents (docs/desk/ROUTINE.md, steps 6 and 7).
+# Counts are of the commitments weighed in the documents read; each has exactly one outcome.
+intake_date: "2026-10-27" # documents published 20 to 27 October 2026 (GOV.UK search, policy and engagement: 63 results)
+triaged_on: "2026-10-27"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: null # no cards; this file records the week's numbers
+sources_read: 2
+candidates: 1
+outcomes:
+  card: 0
+  reworded: 0
+  duplicate: 0
+  existing: 0
+  grant: 1
+  done: 0
+  process: 0
+  broad: 0
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 0
+new_actors: []
+cards: []
+reworded: []
+documents:
+  - { title: "From commitment to conservation: Delivering 30by30 for nature and people (Defra, 25 Oct)", url: "https://www.gov.uk/government/publications/delivering-the-30by30-commitment/from-commitment-to-conservation-delivering-30by30-for-nature-and-people-accessible-webpage", cards: [] }
+  - { title: "Spray foam insulation: Remediation, removal and lending (DESNZ, 22 Oct)", url: "https://www.gov.uk/government/publications/spray-foam-insulation-remediation-removal-and-lending/spray-foam-insulation-remediation-removal-and-lending", cards: [] }
+skipped: # listed by the search but not read in full
+  - "Already read by the daily intake: Digital and Technologies Jobs Plan (DCMS, 20 Oct); Growing Places: Mobilising private finance for local nature recovery (Defra, 26 Oct, intake 2026-10-26); government response to the HSCC report on healthy ageing (DHSC, 22 Oct, intake 2026-10-22)"
+  - "Published today, 27 October, so the daily intake reads them tomorrow: UK Defence Footprint 2026 (MOD); Draft Heathrow Expansion National Policy Statement (DfT); minimum emission standard for new road vehicles, consultation outcome (DfT)"
+  - "Not new this week (older documents updated, by first publication date): Industrial Strategy Jobs Plans (July 2026); Hillsborough Law Bill (September 2025); Implementing the Plan to Make Work Pay"
+  - "Fact sheets for Bills already before Parliament (Health Bill), framework agreements, action plans for single prisons, joint statements and technical guidance"
+  - Open consultations and calls for evidence (proposals, not commitments), impact assessments, and technical consultation outcomes
+dropped:
+  - { document: Delivering 30by30, code: grant, note: "an international report; the only UK commitment with a figure is a new £5 million grant to three provincial governments in Bolivia" }
+# The spray foam paper describes work with lenders and gives no commitment with a date or a figure.
