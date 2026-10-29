@@ -11,4 +11,16 @@ reported:
     date: "2026-10-22"
     url: https://www.telegraph.co.uk/business/2026/10/22/healey-to-raise-taxes-on-retiring-entrepreneurs/
     title: Healey to raise taxes on retiring entrepreneurs
-status: trailed
+status: announced
+budget:
+  date: "2026-10-28"
+  text: >-
+    The lifetime limit on gains that qualify for business asset disposal relief is cut from £1m to £500,000 from 6 April 2027 (paragraph 6.261; table of policy decisions, line 60).
+  evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=143
+  cost:
+    range: [-0.305, -0.305, -0.305]
+    basis: per_year
+    period: "2031-32"
+    by: { kind: official, name: HM Treasury }
+    source_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=111
+    note: "Table 6.1 line 60, the year of the largest figure; it raises £5m in 2026-27 rising to £305m in 2031-32."

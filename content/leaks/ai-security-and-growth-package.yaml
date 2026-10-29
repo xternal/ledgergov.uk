@@ -15,9 +15,14 @@ reported:
     url: https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo
     archived_url: https://web.archive.org/web/20261024084608/https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo
     title: UK to invest £100m in 'world first' AI Biosecurity Lab
-status: confirmed
+status: announced
 confirmed:
   date: "2026-10-24"
   by: HM Treasury (press release quoting John Healey, Chancellor of the Exchequer)
   url: https://www.gov.uk/government/news/chancellor-unveils-britains-ambitious-plan-for-ai
   text: The Treasury said the package would be announced by the Chancellor in the Budget and listed each line and its amount.
+budget:
+  date: "2026-10-28"
+  text: >-
+    The Budget invests £100m from 2027-28 to 2029-30 in a new AI Biosecurity Lab and a further £65m in biosecurity surveillance and medical countermeasures (paragraph 6.108). The wider AI package is line 31 of the table of policy decisions.
+  evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=126

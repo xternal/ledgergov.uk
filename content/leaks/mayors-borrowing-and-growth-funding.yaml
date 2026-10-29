@@ -21,9 +21,14 @@ reported:
     date: "2026-10-25"
     url: https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o
     title: Budget to include £1bn for social and affordable housing
-status: confirmed
+status: announced
 confirmed:
   date: "2026-10-24"
   by: HM Treasury (statement quoted by Reuters); the Chancellor and the Prime Minister quoted on the record
   url: https://uk.finance.yahoo.com/news/uk-budget-set-hand-english-213644760.html
   text: The Treasury said the £285m "Good Growth" scheme would let local leaders invest in their own priorities without asking central government.
+budget:
+  date: "2026-10-28"
+  text: >-
+    Good Growth Funds for mayors and local leaders in England: £285m of seed funding in 2027-28 and a £1.5bn borrowing facility for mayoral strategic authorities from April 2028 (paragraph 6.44), with £150m more for mayors' capacity funding in 2027-28 (paragraph 6.46).
+  evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=120

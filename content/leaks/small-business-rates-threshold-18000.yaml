@@ -17,4 +17,16 @@ estimated_cost:
   by: { kind: independent, name: Ryan (tax firm) }
   source_url: https://www.thetimes.com/uk/politics/article/nh18-x85f8btbw
   note: Ryan's analysis as cited in the report; about 75,000 properties would stop paying.
-status: trailed
+status: announced
+budget:
+  date: "2026-10-28"
+  text: >-
+    For retail, hospitality and leisure properties in England only, the rateable value below which small business rates relief is 100% rises from £12,000 to £18,000, and the tapered relief threshold from £15,000 to £21,000, from 1 April 2027 (table of policy decisions, line 13).
+  evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=136
+  cost:
+    range: [0.32, 0.32, 0.32]
+    basis: per_year
+    period: "2028-29"
+    by: { kind: official, name: HM Treasury }
+    source_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
+    note: "Table 6.1 line 13, the year of the largest figure; it costs £315m in 2027-28 and £320m in 2028-29, then £5m a year or less."

@@ -11,4 +11,16 @@ reported:
     date: "2026-10-14"
     url: https://finance.yahoo.com/news/uk-finance-minister-healey-set-054930380.html
     title: UK finance minister Healey set to pay for budget measures without more borrowing, FT reports
-status: trailed
+status: announced
+budget:
+  date: "2026-10-28"
+  text: >-
+    The 5p cut in fuel duty is extended to 30 June 2027 and the planned rises are replaced by a rise in line with RPI inflation from 1 July 2027, so the main rate stays at 52.95p a litre until then (table of policy decisions, line 3).
+  evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=105
+  cost:
+    range: [0.78, 0.78, 0.78]
+    basis: per_year
+    period: "2027-28"
+    by: { kind: official, name: HM Treasury }
+    source_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=105
+    note: "Table 6.1 line 3, the year of the largest figure; it costs £575m in 2026-27 and £780m in 2027-28, then nothing."
