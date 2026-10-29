@@ -1,0 +1,51 @@
+Changes following the abolition of NHS England
+Who is likely to be affected
+The Department of Health and Social Care.
+General description of the measure
+Changes to the VAT Act 1994 are required because NHS England will be abolished and its relevant functions will transfer to the Department of Health and Social Care, changing how the NHS operates in England. The measure will make consequential amendments to transfer eligibility for certain VAT reliefs to the Department of Health and Social Care.
+Policy objective
+To make sure relevant VAT reliefs continue to apply when NHS England’s functions transfer to the Department of Health and Social Care and avoid unintended tax consequences arising solely from the organisational change.
+Background to the measure
+The Health Bill, introduced on 14 May 2026, will abolish NHS England and transfer its functions to the Department of Health and Social Care and other parts of the health system by March 2027. Consequential amendments to Schedule 8 to the Value Added Tax Act 1994 are required following the transfer to make sure that certain reliefs that were available to NHS England remain available to the Department of Health and Social Care where relevant.
+Detailed proposal
+Operative date
+This measure will have effect on a future date specified by HM Treasury in regulations.
+Current law
+VAT Act 1994, Schedule 8: Group 12, Note (5H) and Group 15, Note (4).
+Proposed revisions
+In Group 12, we propose at (5H)(a) to replace ‘NHS England’ with ‘Secretary of State’.
+In Group 15, Note (4)(a) we will omit ‘NHS England or’ from the list of eligible bodies.
+Summary of impacts
+Exchequer impact (£million)
+2026 to 2027
+2027 to 2028
+2028 to 2029
+2029 to 2030
+2030 to 2031
+2031 to 2032
+negligible
+negligible
+negligible
+negligible
+negligible
+negligible
+This measure is expected to have a negligible impact on the Exchequer.
+Economic impact
+This measure is not expected to have any significant macroeconomic impacts.
+Impact on individuals, households and families
+This measure is not expected to have any impact on individuals, households and families, as it makes provision for the Department of Health and Social Care to take over the functions of the former NHS England.
+This measure should have no impact on family formation, stability or breakdown.
+Equalities impacts
+This measure will maintain the existing VAT treatment when NHS England’s functions transfer to the Department of Health and Social Care. Therefore, it is not anticipated that there will be disproportionate impacts on those in groups sharing protected characteristics.
+Administrative impact on business including civil society organisations
+This measure will have no impact on businesses as it specifically relates to a single body, Department of Health and Social Care.
+Overall, this measure is expected to have no impact on businesses or individuals’ experience of dealing with HMRC as the change does not alter any processes or tax administration obligations.
+This measure is not expected to impact civil society organisations.
+Operational impact (£million) (HMRC or other)
+It is not anticipated that implementing this change will incur any additional costs or savings for HMRC.
+Other impacts
+Other impacts have been considered, and none have been identified.
+Monitoring and evaluation
+The measure will be kept under review through communication with affected taxpayer groups.
+Further advice
+If you have any questions about this change, contact Chris Logan by email: christopher.logan@hmrc.gov.uk.

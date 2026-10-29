@@ -1,0 +1,55 @@
+Capital gains — preventing protected cell company avoidance
+Who is likely to be affected
+UK resident individuals, trustees and companies holding assets through a non-UK resident protected cell company.
+General description of the measure
+This measure makes changes to the capital gains rules that apply to gains made by non-resident close companies that are attributed to UK resident individuals, trusts and companies that are ‘participators’. These rules provide that gains made by such non-resident companies should be apportioned to its participators. The rules apply to participators with an interest of more than 25% in a non-resident close company.
+This measure amends the participator test, so that in the case of protected cell companies (PCC) it can apply to the level of interest in an individual cell within a PCC as well as that in the PCC as a whole. PCC are a type of company made up of a number of separate cells where the assets and liabilities of one cell are segregated and protected from those of the other cells.
+Policy objective
+This measure will increase trust in the tax system by clarifying the participator rules as they apply to PCC.
+Background to the measure
+This measure was announced at Budget 2026.
+Detailed proposal
+Operative date
+This measure will have effect in relation to gains accruing on or after 28 October 2026.
+Current law
+Current law can be found in sections 3 to 3G Taxation of Chargeable Gains Act 1992. These rules are targeted at UK-resident individual, trust or company ‘participators’ (defined by section 454 Corporation Tax Act 2010) who, to avoid a liability to Capital Gains Tax or Corporation Tax on gains, hold assets through a non-resident close company.
+These rules provide that gains made by such companies should be attributed to its UK resident ‘participators’ holding an interest of more than 25% in a non-resident close company. The attributed gains are then subject to Capital Gains Tax or Corporation Tax.
+Proposed revisions
+Legislation will be introduced in Finance Bill 2026 providing that the 25% participator test can apply by reference to an individual cell of a PCC.
+Summary of impacts
+Exchequer impact (£million)
+2026 to 2027
+2027 to 2028
+2028 to 2029
+2029 to 2030
+2030 to 2031
+2031 to 2032
+nil
+nil
+nil
+nil
+nil
+nil
+This measure is not expected to have an Exchequer impact. This measure supports the Exchequer in its commitment to protect revenue.
+Economic impact
+This measure is not expected to have any significant macroeconomic impacts.
+Impact on individuals, households and families
+This measure primarily impacts on UK resident individuals who are sheltering assets in non-resident PCC in order to avoid Capital Gains Tax. It prevents the use of PCC to avoid tax.
+As this is a technical change, individuals will not be required to do anything differently.
+This measure is expected overall to have no impact on individuals’ experience of dealing with HMRC.
+This measure is not expected to impact on family formation, stability or breakdown.
+Equalities impacts
+This measure may apply to individuals regardless of their protected characteristics. The population impacted is expected to be a small subset of the Capital Gains Tax population. HMRC does not hold data that it can use to assess whether there are any disproportionate impacts to protected groups.
+Administrative impact on business including civil society organisations
+The measure will have an impact on those businesses that enter into avoidance schemes using PCC to avoid Capital Gains Tax or Corporation Tax.
+One-off administrative costs could include businesses familiarising themselves with the change. There are not expected to be any further one-off or continuing costs.
+This measure is not expected to disproportionately impact civil society organisations.
+This measure is expected overall to have no impact on business experience of dealing with HMRC.
+Operational impact (£million) (HMRC or other)
+This measure will not require changes to HMRC’s processes or resources.
+Other impacts
+Other impacts have been considered and none have been identified.
+Monitoring and evaluation
+The measure will be kept under review through regular communication with affected taxpayer groups.
+Further advice
+If you have any questions about this change, contact the Capital Gains Tax policy team by email cgtbudget@hmrc.gov.uk.
