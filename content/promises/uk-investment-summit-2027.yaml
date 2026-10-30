@@ -1,0 +1,59 @@
+format: openpromises/1
+id: uk-investment-summit-2027
+headline:
+  en: Hold the investment summit in Gateshead
+actor_id: john-healey
+made_on: "2026-10-28"
+venue: parliament
+venue_label:
+  en: Budget statement, House of Commons
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The Chancellor named Gateshead in the Budget statement; the Budget document says the summit
+    "will take place in spring 2027 in Newcastle" (para 4.123). Both are on Tyneside; the card
+    follows the quote and records the difference. "In the spring" is read as by the end of May
+    2027. The card moves to Delivered when the summit is held.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report"
+    url: https://hansard.parliament.uk/Commons/2026-10-28/debates/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC/FinancialStatementAndBudgetReport
+  - title: >-
+      Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report (official
+      report, Hansard API)
+    url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+  - title: Budget 2026 (HC 726), para 4.123 (PDF page 85)
+    url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=85
+versions:
+  - version: 1
+    text: >-
+      I can announce that we will hold the next international investment summit in Gateshead in
+      the spring.
+    recorded_on: "2026-10-28"
+    source_url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+    parameters:
+      who:
+        en: International investors; Gateshead (Newcastle in the Budget document) as host
+      cost:
+        note:
+          en: No cost has been published; the summit is not in the Budget's table of policy decisions.
+      when:
+        en: Spring 2027
+      deadline: "2027-05-31"
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        In the Budget statement, the Chancellor announces the next International Investment Summit
+        in Gateshead in the spring
+  - date: "2027-05-31"
+    type: deadline
+    text:
+      en: Due in spring 2027 (editorial date, end of May 2027)
+replies: []
+reviews: []

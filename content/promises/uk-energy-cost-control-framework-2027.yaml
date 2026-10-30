@@ -1,0 +1,66 @@
+format: openpromises/1
+id: uk-energy-cost-control-framework-2027
+headline:
+  en: Introduce a cost control framework for energy bills
+actor_id: john-healey
+made_on: "2026-10-28"
+venue: parliament
+venue_label:
+  en: Budget statement, House of Commons
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The Budget document says the government will introduce a comprehensive Cost Control Framework
+    "at the spending review in 2027", setting budgets for components of energy costs, including
+    policy costs (para 6.28), and that no new policy costs will be put on bills until it is in place
+    (page 9). The second part of the quote is already done: the Budget drops the Gas Shipper
+    Obligation levy and funds hydrogen contracts from DESNZ's budget instead (para 6.27). The card
+    moves when the framework is published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report"
+    url: https://hansard.parliament.uk/Commons/2026-10-28/debates/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC/FinancialStatementAndBudgetReport
+  - title: >-
+      Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report (official
+      report, Hansard API)
+    url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+  - title: Budget 2026 (HC 726), paras 6.27 and 6.28 (PDF page 118)
+    url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=118
+  - title: Budget 2026 (HC 726), executive summary (PDF page 9)
+    url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=9
+versions:
+  - version: 1
+    text: >-
+      We will introduce a new cost control framework to drive down all aspects of energy bills, and
+      I will scrap the upcoming gas shipper obligation—a levy to fund hydrogen projects—and instead
+      back those projects directly from Government.
+    recorded_on: "2026-10-28"
+    source_url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+    parameters:
+      who:
+        en: Energy billpayers
+      cost:
+        note:
+          en: >-
+            No cost is given for the framework; it is not in the Budget's table of policy decisions.
+      when:
+        en: >-
+          No date in the speech; the Budget document says at the spending review in 2027
+      deadline: "2027-12-31"
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        In the Budget statement, the Chancellor says the government will introduce a new cost
+        control framework to drive down all aspects of energy bills
+  - date: "2027-12-31"
+    type: deadline
+    text:
+      en: Due at the spending review in 2027 (editorial date, end of 2027)
+replies: []
+reviews: []

@@ -1,0 +1,81 @@
+format: openpromises/1
+id: uk-first-time-buyer-isa-2029
+headline:
+  en: Replace the Lifetime ISA for first-time buyers
+actor_id: john-healey
+made_on: "2026-10-28"
+venue: parliament
+venue_label:
+  en: Budget statement, House of Commons
+area: housing_env
+status: in_plan
+status_note:
+  en: >-
+    The Budget document sets it out: a new First Time Buyer ISA from April 2029, keeping the
+    Lifetime ISA's £4,000 a year limit and 25% bonus, with the bonus paid on withdrawal for a first
+    home up to £450,000 and no upper age limit (para 5.8). Table 6.1, line 38 has it replacing the
+    Lifetime ISA for new savers from 6 April 2029. The card moves when the law for the new ISA is
+    made.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report"
+    url: https://hansard.parliament.uk/Commons/2026-10-28/debates/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC/FinancialStatementAndBudgetReport
+  - title: >-
+      Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report (official
+      report, Hansard API)
+    url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+  - title: Budget 2026 (HC 726), para 5.8 (PDF page 96)
+    url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=96
+  - title: Budget 2026 (HC 726), Table 6.1, line 38 (PDF page 109)
+    url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=109
+versions:
+  - version: 1
+    text: >-
+      I am announcing that a first-time buyer ISA will replace the lifetime ISA.
+    recorded_on: "2026-10-28"
+    source_url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+    parameters:
+      who:
+        en: People saving for their first home
+      cost:
+        range: [-0.121, -0.11, -0.099]
+        quality: sourced
+        by:
+          kind: official
+          name: HM Treasury
+        note:
+          en: >-
+            Year shown: 2029-30, the first year. A saving, not a cost: the Treasury scores the
+            switch as reducing borrowing by £110m in 2029-30 and 2030-31 and £235m in 2031-32
+            (Budget 2026, Table 6.1, line 38), so the range is negative. No independent costing has
+            been published. Low–high is an editorial ±10% because the source gives a central figure
+            only.
+        sources:
+          - title: Budget 2026 (HC 726), Table 6.1, line 38
+            url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=109
+      when:
+        en: No date in the speech; from 6 April 2029, the Budget document says
+      deadline: "2029-04-06"
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        In the Budget statement, the Chancellor announces that a first-time buyer ISA will replace
+        the Lifetime ISA
+  - date: "2026-10-28"
+    type: in_plan
+    text:
+      en: >-
+        The Budget document sets out the First Time Buyer ISA from April 2029, replacing the
+        Lifetime ISA for new savers (para 5.8; Table 6.1, line 38)
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=96
+  - date: "2029-04-06"
+    type: deadline
+    text:
+      en: Due from 6 April 2029
+replies: []
+reviews: []

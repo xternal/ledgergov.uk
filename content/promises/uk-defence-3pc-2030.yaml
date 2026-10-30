@@ -1,0 +1,64 @@
+format: openpromises/1
+id: uk-defence-3pc-2030
+headline:
+  en: Spend 3% of GDP on defence by 2030
+actor_id: john-healey
+made_on: "2026-10-28"
+venue: parliament
+venue_label:
+  en: Budget statement, House of Commons
+area: defence
+status: promised
+status_note:
+  en: >-
+    The Budget document repeats it: at the spending review next year the government will set out
+    how it will meet its NATO commitment of 3.5% of GDP on defence by 2035, "with a target date for
+    3% in 2030" (para 5.29). It gives no money or yearly path for 3%. "In 2030" is read as by the
+    end of 2030. The 3.5% by 2035 is part of the card for 5% of GDP on national security by 2035
+    (uk-nato-5pc-2035-2025). The card moves when the spending review sets out the path.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report"
+    url: https://hansard.parliament.uk/Commons/2026-10-28/debates/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC/FinancialStatementAndBudgetReport
+  - title: >-
+      Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report (official
+      report, Hansard API)
+    url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+  - title: Budget 2026 (HC 726), para 5.29 (PDF page 101)
+    url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=101
+versions:
+  - version: 1
+    text: >-
+      At the spending review next year, I confirm that I will set out the details of how we will
+      meet our NATO commitment to spend 3.5% of GDP on defence by 2035, with a target date for 3% in
+      2030.
+    recorded_on: "2026-10-28"
+    source_url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+    parameters:
+      who:
+        en: The armed forces; defence spending to reach 3% of GDP
+      cost:
+        note:
+          en: >-
+            No yearly cost is given. The Budget does not set out the extra spending needed to reach
+            3% of GDP in 2030; the details are due at the spending review next year (para 5.29).
+      when:
+        en: >-
+          Target date 2030; details at the spending review next year
+      deadline: "2030-12-31"
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        In the Budget statement, the Chancellor gives a target date of 2030 for defence spending of
+        3% of GDP, with details at the spending review next year
+  - date: "2030-12-31"
+    type: deadline
+    text:
+      en: Due in 2030 (editorial date, end of 2030)
+replies: []
+reviews: []
