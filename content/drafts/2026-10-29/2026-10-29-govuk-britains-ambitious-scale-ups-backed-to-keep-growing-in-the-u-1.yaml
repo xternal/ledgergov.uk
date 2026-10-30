@@ -1,0 +1,44 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-britains-ambitious-scale-ups-backed-to-keep-growing-in-the-u.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-29"
+source:
+  id: govuk-britains-ambitious-scale-ups-backed-to-keep-growing-in-the-u
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/britains-ambitious-scale-ups-backed-to-keep-growing-in-the-uk
+  title: Britain’s ambitious scale-ups backed to keep growing in the UK
+  date: "2026-10-29"
+  venue_label: Press release (Department for Business, Innovation, Science and Trade)
+quote: >-
+  A new pilot scheme, Scale UK Connect, will tackle this head-on with 200 scale-ups across the UK
+  getting expert account management and tailored advice on how to expand.
+source_span: [1109, 1276]
+speaker:
+  name: HM Government
+  role: Department for Business, Innovation, Science and Trade
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: economic_affairs
+  who: 200 high-growth scale-up firms across the UK
+  how_much: £3.4 million
+  when: >-
+    Applications open until January 2027; cohort launches February 2027, followed by 12 months of
+    support; final report due April 2028
+  funded_by: Department for Business, Innovation, Science and Trade
+  deadline: "2027-02-28"
+why: >-
+  The government commits to run a Scale UK Connect pilot that gives 200 UK scale-ups expert account
+  management and tailored advice, with the cohort launching in February 2027 for 12 months of
+  support.
+confidence: 0.7
+model: claude-opus-5-5
+status: to_review

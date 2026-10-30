@@ -1,0 +1,44 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-government-and-industry-to-take-on-investment-bias-and-workp.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-29"
+source:
+  id: govuk-government-and-industry-to-take-on-investment-bias-and-workp
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/government-and-industry-to-take-on-investment-bias-and-workplace-culture-to-support-more-women-in-tech
+  title: >-
+    Government and industry to take on investment bias and workplace culture to support more women
+    in tech
+  date: "2026-10-29"
+  venue_label: Press release (Department for Digital, Culture, Media and Sport)
+quote: >-
+  Alongside these voluntary standards, in 2027 government will launch a new scale-up women’s
+  programme. This will help women founders of high-potential, high-growth UK businesses to secure
+  investment and scale.
+source_span: [2676, 2884]
+speaker:
+  name: HM Government
+  role: Department for Digital, Culture, Media and Sport
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: economic_affairs
+  who: women founders of high-potential, high-growth UK businesses
+  how_much: null
+  when: in 2027
+  funded_by: null
+  deadline: null
+why: >-
+  The government will launch a new scale-up programme for women founders of high-growth businesses
+  in 2027, run jointly by DCMS and BIST; it was announced at the Budget.
+confidence: 0.65
+model: claude-opus-5-5
+status: to_review

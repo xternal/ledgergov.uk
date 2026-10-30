@@ -1,0 +1,106 @@
+Income Tax — changes to tax rates for property and savings income
+Who is likely to be affected
+This measure will affect individuals and partnerships who receive income from letting property, individuals who earn interest from savings, and trustees of trusts and personal representatives of deceased persons who receive property income or savings income.
+General description of the measure
+Property rates measure
+From April 2027, the tax rates for property income will increase to:
+24% for the property basic rate
+44% for the property higher rate
+49% for the property additional rate and property trust rate
+For individuals, this will apply to England, Wales and Northern Ireland. The governments of Scotland and Wales have been provided with the ability to set property income rates in line with their current Income Tax powers in their fiscal frameworks.
+Savings rates measure
+From April 2027, the tax rates for savings income will increase to:
+24% for the savings basic rate
+44% for the savings higher rate
+49% for the savings additional rate and savings trust rate
+These rates apply across the UK.
+Policy objective
+The government is increasing rates of tax on savings and property income to support its commitment to fiscal discipline and ensure measures to support households and businesses are fully funded. These measures were announced at Budget 2026.
+Background to measure
+This measure was announced at Budget 2026.
+Detailed proposal
+Operative date
+The changes to the property basic, higher and additional rates and the savings basic, higher and additional rates will take effect for the 2027 to 2028 tax year and subsequent tax years.
+The changes to the property trust and savings trust rate tax take effect for the 2027 to 2028 tax year and subsequent years.
+Current law
+Property rates measure
+Property income is defined in Part 3 of the Income Tax (Trading and Other Income) Act 2005.
+The tax rates which apply to property income are set out in Chapter 2 of Part 2 of the Income Tax Act (ITA) 2007.
+Section 6D of ITA 2007 sets out that the property basic, higher and additional rates are set by Parliament for each tax year. Section 7 of the Finance Act 2026 set the rates for 2027 to 2028.
+Section 9 of ITA 2007 prescribes the property trust rate for tax year 2027 to 2028 onwards.
+Section 80C of the Scotland Act 1998 provides for the Scottish Parliament to set Scottish Income Tax rates for Scottish taxpayers.
+Section 116D of the Government of Wales Act 2006 provides for the Senedd to set Welsh Rates of Income Tax for Welsh taxpayers.
+Savings rates measure
+The tax rates which apply to savings income are set out in Chapter 2 of Part 2 of ITA 2007.
+Section 7A of ITA 2007 sets out that the savings basic, higher and additional rates are set by Parliament for each tax year. Section 5 of the Finance Act 2026 set the rates for tax year 2027 to 2028.
+Section 9 of ITA 2007 prescribes the savings trust rate for tax year 2027 to 2028 onwards.
+Proposed revisions
+Property rates measure
+Legislation will be introduced in Finance Bill 26-27 to set out that the property basic, higher and additional rates and the property trust rate will be:
+24% property basic rate
+44% property higher rate
+49% property additional rate
+49% property trust rate
+Savings rates measure
+Legislation will be introduced in Finance Bill 2026-27 to set out that the savings basic, higher and additional rates and the savings trust rate will be:
+24% savings basic rate
+44% savings higher rate
+49% savings additional rate
+49% savings trust rate
+Summary of impacts
+Exchequer impact (£million)
+Property income — increase tax rates on property income by 2 percentage points at the basic, higher and additional rate from 6 April 2027
+2026 to 2027
+2027 to 2028
+2028 to 2029
+2029 to 2030
+2030 to 2031
+2031 to 2032
+—
++35
++575
++435
++445
++455
+Savings Income — increase tax rates on savings income by 2 percentage points at the basic, higher and additional rate from 6 April 2027
+2026 to 2027
+2027 to 2028
+2028 to 2029
+2029 to 2030
+2030 to 2031
+2031 to 2032
++15
++125
++555
++520
++555
++590
+The figures are set out in Table 6.1 of Budget 2026 and have been certified by the Office for Budget Responsibility. More details can be found in the policy costings document published alongside Budget 2026.
+Economic impact
+This measure is not expected to have any significant macroeconomic impacts.
+Impact on individuals, households and families
+It is estimated that around 5% of taxpayers will see an average tax rise of £225 annually in 2027 to 2028 as a result of the increase in property rates, and around 12% of taxpayers will see an average tax rise of £113 annually in 2027 to 2028 as a result of the increase in savings rates. A basic rate taxpayer making full use of the Starting Rate for Savings and the Personal Savings Allowance would need over £150,000 in savings (held outside an ISA), paying 4%, to start paying tax on interest.
+Property rates measure
+It is estimated that by 2031 to 2032, 2.4 million landlords (5% of taxpayers in 2031 to 2032) will face changes in tax as a result of this measure. Administratively this measure will affect individuals (including partners in partnerships) with profits from property rental income. It is anticipated that both the one-off and ongoing administrative burdens for these individuals will be negligible. The only one-off costs will be familiarisation with the change. No ongoing costs are expected, as there will be no additional information requirement.
+Savings rates measure
+It is estimated that by 2031 to 2032, those with savings income above the relevant tax-free allowances, 6 million individuals (13% of taxpayers in 2031 to 2032), will face an increase in tax as a result of this measure. They will not need to do anything differently but will need to be aware of the change. However, most taxpayers are not liable to tax on their savings income, and the majority of those who are liable to tax, have the tax deducted automatically through PAYE.
+These measures are not expected to impact on family formation, stability or breakdown.
+These measures are expected overall to have no impact on individuals’ experience of dealing with HMRC since the changes will not result in any new tax obligations.
+Equalities impact
+This measure may apply to individuals irrespective of protected characteristics, and any protected groups that are overrepresented could therefore be disproportionately impacted.
+Individuals aged 55 or above are estimated to be overrepresented 63% in the impacted population, compared to their prevalence in the UK adult population 39%. Males are estimated to be slightly overrepresented in this population 54% compared to their prevalence in the UK adult population 49%.
+HMRC does not currently hold data on the other protected characteristics of individuals directly impacted by this measure and so cannot assess if there are any impacts on other protected groups.
+Administrative impact on business including civil society organisations
+These measures will have a negligible impact on businesses that provide tax, accounting and payroll software, and tax agents acting on behalf of affected customers.
+One-off costs could include familiarisation with the change and updating systems to reflect the increase in rates. It is not anticipated there will be any continuing costs.
+These measures are not expected to disproportionately impact civil society organisations.
+These measures are expected overall to have no impact on businesses’ experience of dealing with HMRC since the changes will not result in any new tax obligations.
+Operational impact (£million) (HMRC or other)
+HMRC will need to implement changes to IT systems across these measures to help support safe implementation of this measure. Costs are expected to be low as work on changes announced at Budget 2025 is ongoing.
+There are no changes to reporting requirements due to these measures. Customers will report and pay tax liability for both changes through existing Income Tax self-assessment (ITSA) or PAYE (Pay As You Earn) channels. Where collection is through PAYE this is done through tax codes issued to employers.
+Other impacts
+Other impacts have been considered and none have been identified.
+Monitoring and evaluation
+The measure will be monitored through information collected from tax receipts.
+Further advice
+If you have any questions about this change, contact the Income Tax Structure team by email incometax.structure@hmrc.gov.uk.

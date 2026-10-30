@@ -1,0 +1,44 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-paper-machine-games-duty-increasing-the-rate-on-higher-stake-and-p.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-29"
+source:
+  id: govuk-paper-machine-games-duty-increasing-the-rate-on-higher-stake-and-p
+  kind: govuk_policy_paper
+  url: https://www.gov.uk/government/publications/machine-games-duty-changes-to-stake-and-prize-thresholds/machine-games-duty-increasing-the-rate-on-higher-stake-and-prize-machines
+  title: "Machine Games Duty: increasing the rate on higher stake and prize machines"
+  date: "2026-10-29"
+  venue_label: Policy paper (HM Revenue & Customs)
+quote: >-
+  This measure will increase the rate of Machine Games Duty (MGD) from 20% to 25% for machine games
+  with stakes over £1 or prizes over £100, from 1 April 2027.
+source_span: [297, 454]
+speaker:
+  name: HM Government
+  role: HM Revenue & Customs
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: taxes
+  who: >-
+    Businesses providing higher stake gaming machines, particularly adult gaming centres, bingo
+    premises, betting shops and casinos; around 5,100 operators and 12,400 premises
+  how_much: >-
+    Exchequer impact of £135 million in 2027 to 2028 and £130 million a year thereafter
+  when: from 1 April 2027
+  funded_by: null
+  deadline: "2027-04-01"
+why: >-
+  Machine Games Duty on machines with stakes over £1 or prizes over £100 will rise from 20% to 25%
+  from 1 April 2027.
+confidence: 0.9
+model: claude-opus-5-5
+status: to_review
