@@ -202,7 +202,8 @@ describe("Atom feeds", () => {
     const seed = loadSeed();
     const feed = parseXml(buildFeed(seed.cards, "all", "*", { siteUrl: SITE, title: "LedgerGov.UK", alternatePath: "/promises" }));
     const entries = kids(feed, "entry");
-    expect(entries.length).toBeGreaterThan(seed.cards.length);
+    // The feed keeps the newest 200 entries; the cards' events are more than that.
+    expect(entries.length).toBe(200);
     const ids = entries.map((e) => text(kid(e, "id")));
     expect(new Set(ids).size).toBe(ids.length);
     const dates = entries.map((e) => text(kid(e, "updated")));
