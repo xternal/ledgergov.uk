@@ -77,6 +77,12 @@
     "checked_on": "2026-10-25",
     "sha256": "c3d85025bc53c437665d09ca029db9a9ae6b61286d260c8237a20c2a08ac950d"
   },
+  "1b6f24aa370a2c7ef062795681e8e7ada498e02d55689c2b6207f00657ced3b3|https://www.gov.uk/government/publications/capital-gains-tax-reduction-in-the-business-asset-disposal-relief-lifetime-limit/capital-gains-tax-new-business-asset-disposal-relief-lifetime-limit": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/capital-gains-tax-reduction-in-the-business-asset-disposal-relief-lifetime-limit/capital-gains-tax-new-business-asset-disposal-relief-lifetime-limit",
+    "checked_on": "2026-11-01",
+    "sha256": "b5cfad47789028d89f8334db78b6756409db2999b58711a6b26c8f7042661797"
+  },
   "1cf5fe849c032f02f92caa45d284871a08e41b10f8516b3f373f756b23683fd8|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364",
@@ -203,6 +209,12 @@
     "checked_on": "2026-10-20",
     "sha256": "bfd72905eb5de7945125ec6ab889eb1ae2502aa5b2bdb4cfe08771d62391338c"
   },
+  "45af94c864ce9ac2d8b4f806e589bcf72547a64526bdb5c8b7ce1d80c1278963|https://www.gov.uk/government/consultations/social-housing-tenure-standard-direction-to-the-regulator-of-social-housing/outcome/social-housing-tenure-standard-direction-to-the-regulator-of-social-housing-government-response": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/consultations/social-housing-tenure-standard-direction-to-the-regulator-of-social-housing/outcome/social-housing-tenure-standard-direction-to-the-regulator-of-social-housing-government-response",
+    "checked_on": "2026-11-01",
+    "sha256": "14c5b0fe25b98012085161c334172ef60f524a073e25ef14a4fcc8c0ba40b72e"
+  },
   "45c0f59c22c2b482ddf69b58647bc1748864cca70057f5285179c468f7caad6f|https://www.gov.uk/government/news/i-am-determined-this-generation-will-be-the-one-that-ends-new-cases-of-hiv-within-england-by-2030-prime-minister-said-ahead-of-world-aids-day": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/i-am-determined-this-generation-will-be-the-one-that-ends-new-cases-of-hiv-within-england-by-2030-prime-minister-said-ahead-of-world-aids-day",
@@ -214,6 +226,12 @@
     "url": "https://www.gov.uk/government/news/new-digital-id-scheme-to-be-rolled-out-across-uk",
     "checked_on": "2026-10-20",
     "sha256": "6140328778e3404b792e58c6884e3142291aabc663c037b65abb93326efa916b"
+  },
+  "4814f5200fa17e28d61b8dc572e8d16675ba558d383bf4f8263eb6d61b819f40|https://www.gov.uk/government/publications/reduce-the-main-rate-writing-down-allowance-and-increase-the-main-rate-first-year-allowance/capital-allowances-reduce-the-main-rate-writing-down-allowance-and-increase-the-main-rate-first-year-allowance": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/reduce-the-main-rate-writing-down-allowance-and-increase-the-main-rate-first-year-allowance/capital-allowances-reduce-the-main-rate-writing-down-allowance-and-increase-the-main-rate-first-year-allowance",
+    "checked_on": "2026-11-01",
+    "sha256": "442efcaf95834a5236b2cb6dfd96b0b8b2443e607eb788087f29cf79746d2d59"
   },
   "4be3ff0eee93e28f679297bc8fef13f076aa496d3490128d960ce2f7bd91733c|https://www.gov.uk/government/news/prime-minister-blocks-hundreds-more-criminals-from-sentencing-changes": {
     "match": "exact",
@@ -388,6 +406,12 @@
     "url": "https://greenparty.org.uk/2026/03/18/zack-polanski-lays-out-plans-to-back-the-caring-majority-in-major-speech/",
     "checked_on": "2026-10-21",
     "sha256": "5f70fad153ddcf8363e3953402aa24a546ea32c57c1d6f65aa0791126dc4302a"
+  },
+  "7cad7df6c31fc1045d5215710d11ffe83ed238fa9ff40b11678ac86a4fa8028e|https://www.gov.uk/government/publications/income-tax-changes-to-tax-rates-for-property-and-savings-income/income-tax-changes-to-tax-rates-for-property-and-savings-income": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/income-tax-changes-to-tax-rates-for-property-and-savings-income/income-tax-changes-to-tax-rates-for-property-and-savings-income",
+    "checked_on": "2026-11-01",
+    "sha256": "0ef6213d2915adebb81d1882b3d2f1f411732953884aecf342e43cf8597eea8b"
   },
   "805b32b24d522b3da432d7f02b1b4a01d50872ac6204ebbc0d51c7199aa1917e|https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements": {
     "match": "exact",
@@ -784,6 +808,12 @@
     "url": "https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines",
     "checked_on": "2026-10-16",
     "sha256": "bb4b49a5e27ea86f4caaaa3aa018a3e0dd3acf89bf5134c7efd19297c96b32ad"
+  },
+  "f5442457f55e976b68c9c03fe0e2f2848e25eec86b56c7fd2ee7347af4b0cfc6|https://www.gov.uk/government/publications/vat-supply-of-certain-passenger-transport-services-through-agents/vat-treatment-of-private-hire-vehicle-operators": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/vat-supply-of-certain-passenger-transport-services-through-agents/vat-treatment-of-private-hire-vehicle-operators",
+    "checked_on": "2026-11-01",
+    "sha256": "7525c02ff2744e8d12fb383e0a1c7591d664b7f518775ce127b0994ad296fe52"
   },
   "f6f591374abf43519e6a5867d3b18e97f5497560681e88085a929c577a5312d3|https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10": {
     "match": "exact",

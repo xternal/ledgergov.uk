@@ -1,0 +1,70 @@
+format: openpromises/1
+id: uk-vat-private-hire-operators-2028
+headline:
+  en: "VAT on full fares for large minicab operators"
+actor_id: hm-government
+made_on: "2026-10-29"
+venue: press_release
+venue_label:
+  en: "VAT treatment of private hire vehicle operators (HMRC policy paper)"
+area: taxes
+status: promised
+status_note:
+  en: >-
+    The paper says the change applies only to larger operators above a fare turnover threshold, with
+    £50 million a year the lead option for consultation, and takes effect from 2 January 2028. In
+    London operators already act as principal. It says fares may change if operators pass the tax
+    on. The card moves when the threshold is set and the law is made.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      HM Revenue & Customs policy paper, 29 Oct 2026: VAT treatment of private hire vehicle
+      operators
+    url: https://www.gov.uk/government/publications/vat-supply-of-certain-passenger-transport-services-through-agents/vat-treatment-of-private-hire-vehicle-operators
+versions:
+  - version: 1
+    text: >-
+      This measure announces a change in VAT law coming into effect in January 2028 for supplies of
+      passenger transport services by taxi or PHV supplied through an agent, so that the services
+      will be deemed to be made by the agent and not the driver. This means that the operator will
+      account for VAT on the full value of the fare where they are registered for VAT.
+    recorded_on: "2026-10-29"
+    source_url: https://www.gov.uk/government/publications/vat-supply-of-certain-passenger-transport-services-through-agents/vat-treatment-of-private-hire-vehicle-operators
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          Taxi and private hire operators and drivers, and their passengers
+      cost:
+        note:
+          en: >-
+            A measure that raises money, not a cost: the paper puts the Exchequer impact at £95
+            million in 2027-28, rising to £425 million in 2031-32.
+      when:
+        en: >-
+          From 2 January 2028
+      deadline: "2028-01-02"
+      funded_by: null
+events:
+  - date: "2026-10-29"
+    type: promised
+    text:
+      en: >-
+        HMRC says larger taxi and private hire operators will account for VAT on the full fare from
+        January 2028
+  - date: "2028-01-02"
+    type: deadline
+    text:
+      en: >-
+        The VAT change due from 2 January 2028
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,67 @@
+format: openpromises/1
+id: uk-badr-limit-500k-2027
+headline:
+  en: "Cut business sale tax relief limit to £500,000"
+actor_id: hm-government
+made_on: "2026-10-29"
+venue: press_release
+venue_label:
+  en: "Capital Gains Tax: new Business Asset Disposal Relief lifetime limit (HMRC policy paper)"
+area: taxes
+status: promised
+status_note:
+  en: >-
+    Business Asset Disposal Relief lowers Capital Gains Tax, to 18%, when people sell all or part of
+    a business. The paper says three-quarters of claimants will still get relief on their whole
+    gain. It was announced at Budget 2026. The card moves when the change becomes law.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      HM Revenue & Customs policy paper, 29 Oct 2026: Capital Gains Tax: new Business Asset Disposal
+      Relief lifetime limit
+    url: https://www.gov.uk/government/publications/capital-gains-tax-reduction-in-the-business-asset-disposal-relief-lifetime-limit/capital-gains-tax-new-business-asset-disposal-relief-lifetime-limit
+versions:
+  - version: 1
+    text: >-
+      This measure reduces the lifetime limit for Business Asset Disposal Relief from £1 million to
+      £500,000 for qualifying disposals made on or after 6 April 2027.
+    recorded_on: "2026-10-29"
+    source_url: https://www.gov.uk/government/publications/capital-gains-tax-reduction-in-the-business-asset-disposal-relief-lifetime-limit/capital-gains-tax-new-business-asset-disposal-relief-lifetime-limit
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          People and trustees selling a business or shares in their personal company
+      cost:
+        note:
+          en: >-
+            A measure that raises money, not a cost: the paper puts the Exchequer gain at £5 million
+            in 2026-27, rising to £305 million in 2031-32.
+      when:
+        en: >-
+          Disposals on or after 6 April 2027
+      deadline: "2027-04-06"
+      funded_by: null
+events:
+  - date: "2026-10-29"
+    type: promised
+    text:
+      en: >-
+        HMRC confirms the Business Asset Disposal Relief lifetime limit falls from £1 million to
+        £500,000 from 6 April 2027
+  - date: "2027-04-06"
+    type: deadline
+    text:
+      en: >-
+        The lower limit due to apply from 6 April 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
