@@ -1,0 +1,1116 @@
+{
+ "id": "autumn-budget-2026",
+ "name": "Autumn Budget 2026",
+ "date": "2026-10-28",
+ "kind": "budget",
+ "quality": "modelled",
+ "model": "policyengine",
+ "measures_file": "content/budget/household/autumn-budget-2026.yaml",
+ "measures_sha256": "86d12ea59181837a5dc52379768e92c12dc3113bc54e54f802f0291dfbedf7b9",
+ "input": {
+  "event": {
+   "id": "autumn-budget-2026",
+   "name": "Autumn Budget 2026",
+   "date": "2026-10-28"
+  },
+  "kind": "budget",
+  "years": [
+   "2026-27",
+   "2027-28",
+   "2028-29",
+   "2029-30",
+   "2030-31"
+  ],
+  "headline_year": "2027-28",
+  "side_year": "2026-27",
+  "sources": [
+   {
+    "id": "budget-2026",
+    "title": "Budget 2026: Breathing space for today, fresh hope for the future",
+    "publisher": "HM Treasury",
+    "url": "https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf",
+    "published_on": "2026-10-28",
+    "licence": "Open Government Licence v3.0"
+   },
+   {
+    "id": "impact-on-households-2026",
+    "title": "Impact on households: distributional analysis to accompany Budget 2026",
+    "publisher": "HM Treasury",
+    "url": "https://assets.publishing.service.gov.uk/media/6ae1850f16428df53760627d/Impact_on_households.pdf",
+    "published_on": "2026-10-28",
+    "licence": "Open Government Licence v3.0"
+   },
+   {
+    "id": "hmrc-fuel-duty-2026-27",
+    "title": "HMRC, Amended Fuel Duty rates: 2026 to 2027 (22 May 2026)",
+    "publisher": "HM Revenue and Customs",
+    "url": "https://www.gov.uk/government/publications/amended-fuel-duty-rates-for-2026-to-2027/amended-fuel-duty-rates-2026-to-2027",
+    "published_on": "2026-05-22",
+    "licence": "Open Government Licence v3.0"
+   },
+   {
+    "id": "income-tax-act-2007",
+    "title": "Income Tax Act 2007, section 57 (indexation of allowances and the basic rate limit)",
+    "publisher": "legislation.gov.uk",
+    "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/57"
+   },
+   {
+    "id": "policyengine-uk-2-132-6",
+    "title": "PolicyEngine UK 2.132.6, parameters (current law and OBR forecasts)",
+    "publisher": "PolicyEngine",
+    "url": "https://api.policyengine.org/uk/metadata",
+    "published_on": "2026-10-27"
+   }
+  ],
+  "measures": [
+   {
+    "id": "savings-income-tax",
+    "name": "Raise the tax rates on savings income by a further 2 points from April 2027",
+    "source": {
+     "source": "budget-2026",
+     "page": 142,
+     "where": "Paragraph 6.247"
+    },
+    "effective": "2027-04-06",
+    "modelled": true,
+    "parameters": [
+     {
+      "path": "gov.hmrc.income_tax.rates.savings.basic",
+      "unit": "/1",
+      "label": "Savings basic rate",
+      "pre": {
+       "2026-27": 0.2,
+       "2027-28": 0.22,
+       "2028-29": 0.22,
+       "2029-30": 0.22,
+       "2030-31": 0.22
+      },
+      "post": {
+       "2026-27": 0.2,
+       "2027-28": 0.24,
+       "2028-29": 0.24,
+       "2029-30": 0.24,
+       "2030-31": 0.24
+      }
+     },
+     {
+      "path": "gov.hmrc.income_tax.rates.savings.higher",
+      "unit": "/1",
+      "label": "Savings higher rate",
+      "pre": {
+       "2026-27": 0.4,
+       "2027-28": 0.42,
+       "2028-29": 0.42,
+       "2029-30": 0.42,
+       "2030-31": 0.42
+      },
+      "post": {
+       "2026-27": 0.4,
+       "2027-28": 0.44,
+       "2028-29": 0.44,
+       "2029-30": 0.44,
+       "2030-31": 0.44
+      }
+     },
+     {
+      "path": "gov.hmrc.income_tax.rates.savings.additional",
+      "unit": "/1",
+      "label": "Savings additional rate",
+      "pre": {
+       "2026-27": 0.45,
+       "2027-28": 0.47,
+       "2028-29": 0.47,
+       "2029-30": 0.47,
+       "2030-31": 0.47
+      },
+      "post": {
+       "2026-27": 0.45,
+       "2027-28": 0.49,
+       "2028-29": 0.49,
+       "2029-30": 0.49,
+       "2030-31": 0.49
+      }
+     }
+    ],
+    "scorecard_line": 62,
+    "note": "On top of the 2-point rise Budget 2025 set for April 2027 (Table 6.1, line 62, page 111): the savings basic, higher and additional rates become 24%, 44% and 49% across the UK."
+   },
+   {
+    "id": "property-income-tax",
+    "name": "Raise the tax rates on property income by a further 2 points from April 2027",
+    "source": {
+     "source": "budget-2026",
+     "page": 142,
+     "where": "Paragraph 6.246"
+    },
+    "effective": "2027-04-06",
+    "modelled": true,
+    "parameters": [
+     {
+      "path": "gov.hmrc.income_tax.rates.property.basic",
+      "unit": "/1",
+      "label": "Property basic rate",
+      "pre": {
+       "2026-27": 0.2,
+       "2027-28": 0.22,
+       "2028-29": 0.22,
+       "2029-30": 0.22,
+       "2030-31": 0.22
+      },
+      "post": {
+       "2026-27": 0.2,
+       "2027-28": 0.24,
+       "2028-29": 0.24,
+       "2029-30": 0.24,
+       "2030-31": 0.24
+      }
+     },
+     {
+      "path": "gov.hmrc.income_tax.rates.property.higher",
+      "unit": "/1",
+      "label": "Property higher rate",
+      "pre": {
+       "2026-27": 0.4,
+       "2027-28": 0.42,
+       "2028-29": 0.42,
+       "2029-30": 0.42,
+       "2030-31": 0.42
+      },
+      "post": {
+       "2026-27": 0.4,
+       "2027-28": 0.44,
+       "2028-29": 0.44,
+       "2029-30": 0.44,
+       "2030-31": 0.44
+      }
+     },
+     {
+      "path": "gov.hmrc.income_tax.rates.property.additional",
+      "unit": "/1",
+      "label": "Property additional rate",
+      "pre": {
+       "2026-27": 0.45,
+       "2027-28": 0.47,
+       "2028-29": 0.47,
+       "2029-30": 0.47,
+       "2030-31": 0.47
+      },
+      "post": {
+       "2026-27": 0.45,
+       "2027-28": 0.49,
+       "2028-29": 0.49,
+       "2029-30": 0.49,
+       "2030-31": 0.49
+      }
+     }
+    ],
+    "scorecard_line": 61,
+    "note": "On top of the property rates Budget 2025 set for April 2027: 24%, 44% and 49% in England, Wales and Northern Ireland (Table 6.1, line 61, page 111)."
+   },
+   {
+    "id": "trading-allowance",
+    "name": "Raise the income tax trading allowance from £1,000 to £3,000 from April 2027",
+    "source": {
+     "source": "budget-2026",
+     "page": 142,
+     "where": "Paragraph 6.254"
+    },
+    "effective": "2027-04-06",
+    "modelled": true,
+    "parameters": [
+     {
+      "path": "gov.hmrc.income_tax.allowances.trading_allowance",
+      "unit": "currency-GBP",
+      "label": "Trading allowance, £ a year",
+      "pre": {
+       "2026-27": 1000,
+       "2027-28": 1000,
+       "2028-29": 1000,
+       "2029-30": 1000,
+       "2030-31": 1000
+      },
+      "post": {
+       "2026-27": 1000,
+       "2027-28": 3000,
+       "2028-29": 3000,
+       "2029-30": 3000,
+       "2030-31": 3000
+      },
+      "pre_source": {
+       "source": "budget-2026",
+       "page": 107,
+       "where": "Table 6.1, line 15",
+       "note": "The Budget document gives £1,000 as the allowance it replaces."
+      }
+     }
+    ],
+    "scorecard_line": 15
+   },
+   {
+    "id": "fuel-duty",
+    "name": "Keep the 5p cut in fuel duty to 1 July 2027 and put off the planned RPI rise to the same day",
+    "source": {
+     "source": "budget-2026",
+     "page": 138,
+     "where": "Paragraph 6.211"
+    },
+    "effective": "2027-01-01",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "no_parameter",
+     "note": "PolicyEngine has a fuel duty rate, but the Budget document gives no rate in pence for after 1 July 2027 (57.95p plus an RPI rise it does not state), so the 2027-28 averages cannot be typed without guessing. It goes into the model once HMRC's note gives the rates. The Treasury costs it at £575 million in 2026-27 and £780 million in 2027-28 (Table 6.1, line 3, page 105)."
+    },
+    "scorecard_line": 3
+   },
+   {
+    "id": "vat-household-electricity",
+    "name": "Keep VAT on household electricity at 0% for three more months, to 1 July 2027",
+    "source": {
+     "source": "budget-2026",
+     "page": 138,
+     "where": "Paragraph 6.210"
+    },
+    "effective": "2026-10-01",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "needs_code",
+     "note": "PolicyEngine's public model charges VAT on shares of total spending, not on electricity bills, so it cannot target electricity. The Treasury costs the cut from 5% to 0% at £755 million in 2026-27 and £305 million in 2027-28 (Table 6.1, line 2, page 105)."
+    },
+    "scorecard_line": 2
+   },
+   {
+    "id": "household-energy-payment",
+    "name": "A £100 council tax rebate for homes in bands A to D in England from January 2027",
+    "source": {
+     "source": "budget-2026",
+     "page": 117,
+     "where": "Paragraph 6.24"
+    },
+    "effective": "2027-01-01",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "no_parameter",
+     "note": "PolicyEngine has no council tax rebate a policy can set. A one-off £100 paid by councils in 2026-27; the Treasury costs it at £2,625 million (Table 6.1, line 1, page 105)."
+    },
+    "scorecard_line": 1
+   },
+   {
+    "id": "pension-tax-allowance",
+    "name": "A Pension Tax Allowance so pensioners with income up to the full new State Pension pay no income tax, April 2027 to April 2030",
+    "source": {
+     "source": "budget-2026",
+     "page": 135,
+     "where": "Paragraph 6.182"
+    },
+    "effective": "2027-04-06",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "no_parameter",
+     "note": "A new income tax allowance for people over State Pension age, worth 20% of the gap between the full new State Pension and the personal allowance, tapered away just above it. PolicyEngine has no parameter for it, and the Budget document gives neither the allowance in pounds nor the taper. The Treasury costs it at £45 million in 2027-28 (Table 6.1, line 52, page 110)."
+    },
+    "scorecard_line": 52
+   },
+   {
+    "id": "uc-surplus-earnings",
+    "name": "Keep the Universal Credit surplus earnings threshold at £2,500 for another year, to March 2028",
+    "source": {
+     "source": "budget-2026",
+     "page": 116,
+     "where": "Paragraph 6.11"
+    },
+    "effective": "2027-04-01",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "no_parameter",
+     "note": "PolicyEngine works out Universal Credit over a whole year, so it has no surplus earnings rule from month to month. The Treasury costs it at £140 million in 2027-28 (Table 6.1, line 8, page 106)."
+    },
+    "scorecard_line": 8
+   },
+   {
+    "id": "carers-allowance-taper",
+    "name": "Replace the Carer's Allowance earnings cliff edge with a taper in 2030-31",
+    "source": {
+     "source": "budget-2026",
+     "page": 116,
+     "where": "Paragraph 6.13"
+    },
+    "effective": "2030-04-06",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "needs_code",
+     "note": "PolicyEngine withdraws Carer's Allowance in full above the earnings limit and has no taper to switch on. The Budget gives no start date within 2030-31 (the date here is the year's first day). The Treasury costs it at £40 million in 2030-31 (Table 6.1, line 7, page 106)."
+    },
+    "scorecard_line": 7
+   },
+   {
+    "id": "parental-allowance",
+    "name": "A Parental Allowance for fathers, partners and adopters who do not get statutory pay, from April 2029",
+    "source": {
+     "source": "budget-2026",
+     "page": 116,
+     "where": "Paragraph 6.12"
+    },
+    "effective": "2029-04-06",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "new_tax",
+     "note": "A benefit that does not exist yet, so the model has no rules for it. The Treasury costs it at £70 million a year from 2029-30 (Table 6.1, line 6, page 106)."
+    },
+    "scorecard_line": 6
+   },
+   {
+    "id": "triple-lock-adjustment",
+    "name": "From April 2030, raise the State Pension by the highest of 2.5%, inflation or what keeps it level with earnings as in April 2029",
+    "source": {
+     "source": "budget-2026",
+     "page": 99,
+     "where": "Paragraph 5.23"
+    },
+    "effective": "2030-04-06",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "needs_code",
+     "note": "It changes the rule, not an amount: the Budget document gives no rise for 2030-31, and the change is not a line of Table 6.1. PolicyEngine pays pensions uprated by the current triple lock, so modelling it would need the 2030-31 rise under both rules (Box 5A, page 100)."
+    }
+   },
+   {
+    "id": "mileage-rates",
+    "name": "Raise tax-free mileage rates to 55p for the first 10,000 business miles and 35p above",
+    "source": {
+     "source": "budget-2026",
+     "page": 138,
+     "where": "Paragraph 6.213"
+    },
+    "effective": "2026-04-06",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "no_parameter",
+     "note": "PolicyEngine does not model mileage allowance relief. The Treasury costs it at £200 million in 2027-28 (Table 6.1, line 5, page 106)."
+    },
+    "scorecard_line": 5
+   },
+   {
+    "id": "cash-isa-limit",
+    "name": "Keep the cash ISA limit at £20,000 from April 2027",
+    "source": {
+     "source": "budget-2026",
+     "page": 142,
+     "where": "Paragraph 6.248"
+    },
+    "effective": "2027-04-06",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "no_parameter",
+     "note": "PolicyEngine does not model ISA limits. The Treasury costs it at £5 million in 2027-28 (Table 6.1, line 11, page 106)."
+    },
+    "scorecard_line": 11
+   },
+   {
+    "id": "lifetime-isa",
+    "name": "Cut the Lifetime ISA withdrawal charge to 20% for homes above £450,000, and a First Time Buyer ISA from April 2029",
+    "source": {
+     "source": "budget-2026",
+     "page": 141,
+     "where": "Paragraphs 6.239 and 6.240"
+    },
+    "effective": "2026-10-29",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "no_parameter",
+     "note": "PolicyEngine does not model Lifetime ISA bonuses or charges (Table 6.1, lines 38 and 39, page 109)."
+    },
+    "scorecard_line": "38, 39"
+   },
+   {
+    "id": "capital-gains-reliefs",
+    "name": "Capital gains tax: a new Founders' Relief at 10% and a lower £500,000 limit for Business Asset Disposal Relief, from April 2027",
+    "source": {
+     "source": "budget-2026",
+     "page": 143,
+     "where": "Paragraphs 6.257 and 6.261"
+    },
+    "effective": "2027-04-06",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "no_parameter",
+     "note": "PolicyEngine has capital gains tax rates but neither relief. The Treasury costs Founders' Relief at £260 million and the lower limit as raising £60 million in 2027-28 (Table 6.1, lines 26 and 60, pages 108 and 111)."
+    },
+    "scorecard_line": "26, 60"
+   },
+   {
+    "id": "student-loan-interest-cap",
+    "name": "Cap Plan 2 and Plan 3 student loan interest at 6% from September 2026 to August 2027",
+    "source": {
+     "source": "budget-2026",
+     "page": 113,
+     "where": "Table 6.1, line 83"
+    },
+    "effective": "2026-09-01",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "needs_code",
+     "note": "PolicyEngine takes student loan repayments as the survey records them; interest changes balances, not this year's repayments. The Treasury costs it at £230 million in 2026-27."
+    },
+    "scorecard_line": 83
+   },
+   {
+    "id": "bus-fares-cap",
+    "name": "Cap single bus fares at £2 in England outside London for a year from January 2027",
+    "source": {
+     "source": "budget-2026",
+     "page": 106,
+     "where": "Table 6.1, line 4"
+    },
+    "effective": "2027-01-01",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "needs_code",
+     "note": "PolicyEngine has no bus fare rules a policy can change. The Treasury costs it at £180 million in 2027-28."
+    },
+    "scorecard_line": 4
+   },
+   {
+    "id": "company-car-tax",
+    "name": "Raise company car tax rates by 1 point for 2030-31",
+    "source": {
+     "source": "budget-2026",
+     "page": 137,
+     "where": "Paragraph 6.207"
+    },
+    "effective": "2030-04-06",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "no_parameter",
+     "note": "PolicyEngine does not model company car benefits. The Treasury expects it to raise £310 million in 2030-31 (Table 6.1, line 86, page 113)."
+    },
+    "scorecard_line": 86
+   },
+   {
+    "id": "council-tax-surcharge-reliefs",
+    "name": "Deferrals, discounts and exemptions for the council tax surcharge on homes over £2 million, from April 2028",
+    "source": {
+     "source": "budget-2026",
+     "page": 140,
+     "where": "Paragraph 6.234"
+    },
+    "effective": "2028-04-01",
+    "modelled": false,
+    "not_modelled": {
+     "reason": "no_parameter",
+     "note": "The Budget document does not give the discounts' rules, and PolicyEngine has no parameter for them. The Treasury costs them at £45 million in 2028-29 (Table 6.1, line 93, page 113)."
+    },
+    "scorecard_line": 93
+   }
+  ],
+  "treasury": {
+   "source": {
+    "source": "impact-on-households-2026",
+    "page": 9,
+    "where": "Figure 1.A"
+   },
+   "title": "Impact of decisions at Budget 2026 on households in 2027-28, as a percentage of net income, by income decile",
+   "year": "2027-28",
+   "covers": "the tax, welfare and public spending decisions of this Budget (including those announced earlier and funded at it) in 2027-28, including the value of public services households use",
+   "read_from": "chart",
+   "pct": {
+    "deciles": [
+     {
+      "tax": 0.15,
+      "welfare": 0.03,
+      "services": 0.38,
+      "overall": 0.57
+     },
+     {
+      "tax": 0.09,
+      "welfare": 0.04,
+      "services": 0.15,
+      "overall": 0.28
+     },
+     {
+      "tax": 0.06,
+      "welfare": 0.03,
+      "services": 0.14,
+      "overall": 0.24
+     },
+     {
+      "tax": 0.05,
+      "welfare": 0.02,
+      "services": 0.07,
+      "overall": 0.15
+     },
+     {
+      "tax": 0.04,
+      "welfare": 0.01,
+      "services": 0.05,
+      "overall": 0.11
+     },
+     {
+      "tax": 0.04,
+      "welfare": 0.01,
+      "services": 0.04,
+      "overall": 0.08
+     },
+     {
+      "tax": 0.02,
+      "welfare": 0,
+      "services": 0.03,
+      "overall": 0.05
+     },
+     {
+      "tax": 0,
+      "welfare": 0,
+      "services": 0.02,
+      "overall": 0.03
+     },
+     {
+      "tax": -0.03,
+      "welfare": 0,
+      "services": 0.02,
+      "overall": -0.01
+     },
+     {
+      "tax": -0.09,
+      "welfare": 0,
+      "services": 0.01,
+      "overall": -0.08
+     }
+    ],
+    "all": {
+     "tax": 0,
+     "welfare": 0.01,
+     "services": 0.05,
+     "overall": 0.06
+    }
+   },
+   "gbp": {
+    "deciles": [
+     {
+      "tax": 20,
+      "welfare": 4,
+      "services": 51,
+      "overall": 75
+     },
+     {
+      "tax": 22,
+      "welfare": 10,
+      "services": 38,
+      "overall": 70
+     },
+     {
+      "tax": 19,
+      "welfare": 10,
+      "services": 41,
+      "overall": 70
+     },
+     {
+      "tax": 19,
+      "welfare": 8,
+      "services": 25,
+      "overall": 53
+     },
+     {
+      "tax": 18,
+      "welfare": 6,
+      "services": 20,
+      "overall": 43
+     },
+     {
+      "tax": 17,
+      "welfare": 4,
+      "services": 18,
+      "overall": 39
+     },
+     {
+      "tax": 9,
+      "welfare": 2,
+      "services": 15,
+      "overall": 26
+     },
+     {
+      "tax": 0,
+      "welfare": 1,
+      "services": 15,
+      "overall": 17
+     },
+     {
+      "tax": -19,
+      "welfare": 1,
+      "services": 12,
+      "overall": -6
+     },
+     {
+      "tax": -120,
+      "welfare": 0,
+      "services": 15,
+      "overall": -105
+     }
+    ],
+    "all": {
+     "tax": -2,
+     "welfare": 5,
+     "services": 25,
+     "overall": 28
+    },
+    "source": {
+     "source": "impact-on-households-2026",
+     "page": 10,
+     "where": "Figure 1.B"
+    }
+   },
+   "differs": "The Treasury's chart counts this Budget's tax, welfare and spending decisions, including fuel duty, the 0% VAT on electricity and the £100 energy payment, and adds the value of public services; ours counts only the measures PolicyEngine can model, in cash, for each year."
+  },
+  "hold": [
+   "deciles"
+  ],
+  "note": "Measures announced before the Budget and only scored in its table are left out, as they were not decisions of this Budget: the summer VAT cut on family days out (line 66), the £1 road tax for lorries (line 65) and free bus travel for children in August 2026 (line 67). Food tariff suspensions (line 10) change prices, not taxes or benefits households pay or receive."
+ },
+ "provider": {
+  "name": "policyengine_api",
+  "api": "https://api.policyengine.org",
+  "bundle_version": "6.10.0",
+  "model_version": "2.132.6",
+  "data_version": "not used (deciles held)",
+  "dataset": null
+ },
+ "policies": {
+  "pre": 98975,
+  "post": 98976
+ },
+ "computed_at": "2026-10-28T14:50:08.504Z",
+ "results": [],
+ "households": [
+  {
+   "year": "2026-27",
+   "rows": [
+    {
+     "id": "single_25k",
+     "label": "Single adult earning £25,000",
+     "pre_net_gbp": 21112.97,
+     "post_net_gbp": 21112.97,
+     "change_gbp": 0
+    },
+    {
+     "id": "single_45k",
+     "label": "Single adult earning £45,000",
+     "pre_net_gbp": 35462.64,
+     "post_net_gbp": 35462.64,
+     "change_gbp": 0
+    },
+    {
+     "id": "single_120k",
+     "label": "Single adult earning £120,000",
+     "pre_net_gbp": 75754.69,
+     "post_net_gbp": 75754.69,
+     "change_gbp": 0
+    },
+    {
+     "id": "couple_two_children",
+     "label": "Couple earning £35,000 and £15,000, two children",
+     "pre_net_gbp": 44637.39,
+     "post_net_gbp": 44637.39,
+     "change_gbp": 0
+    },
+    {
+     "id": "lone_parent",
+     "label": "Lone parent earning £18,000, one child",
+     "pre_net_gbp": 21901.03,
+     "post_net_gbp": 21901.03,
+     "change_gbp": 0
+    },
+    {
+     "id": "pensioner_couple",
+     "label": "Pensioner couple on the state pension",
+     "pre_net_gbp": 24903.37,
+     "post_net_gbp": 24903.37,
+     "change_gbp": 0
+    }
+   ]
+  },
+  {
+   "year": "2027-28",
+   "rows": [
+    {
+     "id": "single_25k",
+     "label": "Single adult earning £25,000",
+     "pre_net_gbp": 21088.52,
+     "post_net_gbp": 21088.52,
+     "change_gbp": 0
+    },
+    {
+     "id": "single_45k",
+     "label": "Single adult earning £45,000",
+     "pre_net_gbp": 35432.76,
+     "post_net_gbp": 35432.76,
+     "change_gbp": 0
+    },
+    {
+     "id": "single_120k",
+     "label": "Single adult earning £120,000",
+     "pre_net_gbp": 75730.67,
+     "post_net_gbp": 75730.67,
+     "change_gbp": 0
+    },
+    {
+     "id": "couple_two_children",
+     "label": "Couple earning £35,000 and £15,000, two children",
+     "pre_net_gbp": 44630.81,
+     "post_net_gbp": 44630.81,
+     "change_gbp": 0
+    },
+    {
+     "id": "lone_parent",
+     "label": "Lone parent earning £18,000, one child",
+     "pre_net_gbp": 22223.57,
+     "post_net_gbp": 22223.57,
+     "change_gbp": 0
+    },
+    {
+     "id": "pensioner_couple",
+     "label": "Pensioner couple on the state pension",
+     "pre_net_gbp": 25572.05,
+     "post_net_gbp": 25572.05,
+     "change_gbp": 0
+    }
+   ]
+  },
+  {
+   "year": "2028-29",
+   "rows": [
+    {
+     "id": "single_25k",
+     "label": "Single adult earning £25,000",
+     "pre_net_gbp": 21081.01,
+     "post_net_gbp": 21081.01,
+     "change_gbp": 0
+    },
+    {
+     "id": "single_45k",
+     "label": "Single adult earning £45,000",
+     "pre_net_gbp": 35423.58,
+     "post_net_gbp": 35423.58,
+     "change_gbp": 0
+    },
+    {
+     "id": "single_120k",
+     "label": "Single adult earning £120,000",
+     "pre_net_gbp": 75723.28,
+     "post_net_gbp": 75723.28,
+     "change_gbp": 0
+    },
+    {
+     "id": "couple_two_children",
+     "label": "Couple earning £35,000 and £15,000, two children",
+     "pre_net_gbp": 44660.08,
+     "post_net_gbp": 44660.08,
+     "change_gbp": 0
+    },
+    {
+     "id": "lone_parent",
+     "label": "Lone parent earning £18,000, one child",
+     "pre_net_gbp": 22521.39,
+     "post_net_gbp": 22521.39,
+     "change_gbp": 0
+    },
+    {
+     "id": "pensioner_couple",
+     "label": "Pensioner couple on the state pension",
+     "pre_net_gbp": 26084,
+     "post_net_gbp": 26084,
+     "change_gbp": 0
+    }
+   ]
+  },
+  {
+   "year": "2029-30",
+   "rows": [
+    {
+     "id": "single_25k",
+     "label": "Single adult earning £25,000",
+     "pre_net_gbp": 21044.98,
+     "post_net_gbp": 21044.98,
+     "change_gbp": 0
+    },
+    {
+     "id": "single_45k",
+     "label": "Single adult earning £45,000",
+     "pre_net_gbp": 35362.91,
+     "post_net_gbp": 35362.91,
+     "change_gbp": 0
+    },
+    {
+     "id": "single_120k",
+     "label": "Single adult earning £120,000",
+     "pre_net_gbp": 75643.22,
+     "post_net_gbp": 75643.22,
+     "change_gbp": 0
+    },
+    {
+     "id": "couple_two_children",
+     "label": "Couple earning £35,000 and £15,000, two children",
+     "pre_net_gbp": 44633.42,
+     "post_net_gbp": 44633.42,
+     "change_gbp": 0
+    },
+    {
+     "id": "lone_parent",
+     "label": "Lone parent earning £18,000, one child",
+     "pre_net_gbp": 22816.18,
+     "post_net_gbp": 22816.18,
+     "change_gbp": 0
+    },
+    {
+     "id": "pensioner_couple",
+     "label": "Pensioner couple on the state pension",
+     "pre_net_gbp": 26609.16,
+     "post_net_gbp": 26609.16,
+     "change_gbp": 0
+    }
+   ]
+  },
+  {
+   "year": "2030-31",
+   "rows": [
+    {
+     "id": "single_25k",
+     "label": "Single adult earning £25,000",
+     "pre_net_gbp": 21037.31,
+     "post_net_gbp": 21037.31,
+     "change_gbp": 0
+    },
+    {
+     "id": "single_45k",
+     "label": "Single adult earning £45,000",
+     "pre_net_gbp": 35353.54,
+     "post_net_gbp": 35353.54,
+     "change_gbp": 0
+    },
+    {
+     "id": "single_120k",
+     "label": "Single adult earning £120,000",
+     "pre_net_gbp": 75635.69,
+     "post_net_gbp": 75635.69,
+     "change_gbp": 0
+    },
+    {
+     "id": "couple_two_children",
+     "label": "Couple earning £35,000 and £15,000, two children",
+     "pre_net_gbp": 44664.25,
+     "post_net_gbp": 44664.25,
+     "change_gbp": 0
+    },
+    {
+     "id": "lone_parent",
+     "label": "Lone parent earning £18,000, one child",
+     "pre_net_gbp": 23126.14,
+     "post_net_gbp": 23126.14,
+     "change_gbp": 0
+    },
+    {
+     "id": "pensioner_couple",
+     "label": "Pensioner couple on the state pension",
+     "pre_net_gbp": 27147.17,
+     "post_net_gbp": 27147.17,
+     "change_gbp": 0
+    }
+   ]
+  }
+ ],
+ "calculator": {
+  "geography": "England, Wales and Northern Ireland",
+  "base": "data/seed/uk_tax_2026-27.json",
+  "years": [
+   {
+    "year": "2026-27",
+    "pre": {
+     "personal_allowance_gbp": 12570,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 37700,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12570,
+     "ni_upper_earnings_limit_gbp": 50270,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    },
+    "post": {
+     "personal_allowance_gbp": 12570,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 37700,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12570,
+     "ni_upper_earnings_limit_gbp": 50270,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    }
+   },
+   {
+    "year": "2027-28",
+    "pre": {
+     "personal_allowance_gbp": 12570,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 37700,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12570,
+     "ni_upper_earnings_limit_gbp": 50270,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    },
+    "post": {
+     "personal_allowance_gbp": 12570,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 37700,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12570,
+     "ni_upper_earnings_limit_gbp": 50270,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    }
+   },
+   {
+    "year": "2028-29",
+    "pre": {
+     "personal_allowance_gbp": 12570,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 37700,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12570,
+     "ni_upper_earnings_limit_gbp": 50270,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    },
+    "post": {
+     "personal_allowance_gbp": 12570,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 37700,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12570,
+     "ni_upper_earnings_limit_gbp": 50270,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    }
+   },
+   {
+    "year": "2029-30",
+    "pre": {
+     "personal_allowance_gbp": 12570,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 37700,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12570,
+     "ni_upper_earnings_limit_gbp": 50270,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    },
+    "post": {
+     "personal_allowance_gbp": 12570,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 37700,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12570,
+     "ni_upper_earnings_limit_gbp": 50270,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    }
+   },
+   {
+    "year": "2030-31",
+    "pre": {
+     "personal_allowance_gbp": 12570,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 37700,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12570,
+     "ni_upper_earnings_limit_gbp": 50270,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    },
+    "post": {
+     "personal_allowance_gbp": 12570,
+     "allowance_taper_threshold_gbp": 100000,
+     "allowance_taper_rate": 0.5,
+     "basic_band_gbp": 37700,
+     "additional_threshold_gbp": 125140,
+     "basic_rate_pct": 20,
+     "higher_rate_pct": 40,
+     "additional_rate_pct": 45,
+     "ni_primary_threshold_gbp": 12570,
+     "ni_upper_earnings_limit_gbp": 50270,
+     "ni_main_rate_pct": 8,
+     "ni_upper_rate_pct": 2
+    }
+   }
+  ]
+ },
+ "checks": [
+  {
+   "id": "event",
+   "ok": true,
+   "message": "recorded for autumn-budget-2026"
+  },
+  {
+   "id": "policies",
+   "ok": true,
+   "message": "the recorded policies (pre 98975, post 98976) are exactly what the measures file sets: 7 parameters, 5 years"
+  },
+  {
+   "id": "years",
+   "ok": true,
+   "message": "deciles held until an editor has reviewed them: none published"
+  },
+  {
+   "id": "one_model",
+   "ok": true,
+   "message": "the households from policyengine-uk 2.132.6, bundle 6.10.0 before and after"
+  },
+  {
+   "id": "economy",
+   "ok": true,
+   "message": "deciles held: not read"
+  },
+  {
+   "id": "households",
+   "ok": true,
+   "message": "the six example households, every year, without and with the event"
+  },
+  {
+   "id": "calculator",
+   "ok": true,
+   "message": "the measures file sets no income tax or employee National Insurance rate: the salary check shows no change (rates from data/seed/uk_tax_2026-27.json)"
+  }
+ ]
+}
