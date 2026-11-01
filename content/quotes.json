@@ -47,6 +47,12 @@
     "checked_on": "2026-10-21",
     "sha256": "daf1b5d4338d46d68c659808489df8bd7f335cc9431bb6730f51f706f038e910"
   },
+  "0ca6e314a38ac97d8ff5b84e59eb6c0dd27473e022c538d4ea4ed4b1ed763338|https://www.gov.uk/government/news/defence-contracts-to-prioritise-british-jobs-and-skills": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/defence-contracts-to-prioritise-british-jobs-and-skills",
+    "checked_on": "2026-11-01",
+    "sha256": "856a0816d87b935587185ac4e5e36fc3e285b9e049f808871cda42481f100954"
+  },
   "13a001ae01ebcbad5ee4de03d6716e5dcf4f577502df9764a3c0e99ddfa7abe9|https://hansard.parliament.uk/Commons/2026-10-12/debates/54FB2EDB-83AF-40FE-8A98-A914AD221CD7/InternationalUpdate": {
     "match": "exact",
     "url": "https://hansard.parliament.uk/Commons/2026-10-12/debates/54FB2EDB-83AF-40FE-8A98-A914AD221CD7/InternationalUpdate",
@@ -670,6 +676,12 @@
     "url": "https://www.gov.uk/government/news/social-media-campaign-urges-brits-to-get-vaccinated-for-winter",
     "checked_on": "2026-10-25",
     "sha256": "9083f22c485270016997180f53de4fd7c5cc6ede1a9977538e47d16691ef2a27"
+  },
+  "cb788f2f0d851091653d79d0d2249d40e2377604d1486abcf9f8e3135b1c147d|https://www.gov.uk/government/news/faster-planning-decisions-as-new-rules-and-ai-tackle-delays": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/faster-planning-decisions-as-new-rules-and-ai-tackle-delays",
+    "checked_on": "2026-11-01",
+    "sha256": "47a75bd03e0ab2ea91f1ad457511eac67aa005c7bd1f3ee3f8408f655f224349"
   },
   "ccdc7e2f68ac8acf5149ff7ca25558e14552e8e012570a3176ac0c0e106fc70c|https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson": {
     "match": "exact",
