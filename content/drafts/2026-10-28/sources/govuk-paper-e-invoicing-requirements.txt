@@ -1,0 +1,71 @@
+E-invoicing requirements
+Who is likely to be affected
+VAT registered persons or any other person who is required to receive a VAT invoice in order to recover input tax for VAT purposes (including public bodies that are not VAT registered).
+General description of the measure
+At Budget 2025, the government announced that VAT invoices will have to be issued as e-invoices from April 2029.
+At Budget 2026, the government published an e-invoicing implementation roadmap setting out the key decisions, products and delivery milestones that will support the introduction of e-invoicing requirements for VAT registered persons (including public bodies) from 1 April 2029. The government will introduce legislation in Finance Bill 2026-27 to provide the enabling powers necessary to support the implementation of e-invoicing requirements.
+At Tax Update day 2026 the government announced that Peppol will become the core interoperability framework for UK e-invoicing. The use of Peppol requires appropriate oversight and governance of the network in the UK. This measure confers the necessary functions on HMRC to undertake the role of the UK Peppol Authority.
+Policy objective
+Simplifying invoicing processes can make tax compliance easier and more accurate benefitting both businesses and HMRC.
+The measure is a significant step in the digitalisation of VAT in the UK and in the modernisation of the UK’s business landscape. The measure will primarily draw Exchequer benefits by helping to close the tax gap. It is expected to reduce errors as e-invoices require less manual processing than alternative invoice methods, whilst also improving data quality. HMRC also estimate reductions in failure to take reasonable care and evasion due to improvements in accuracy, transparency and the auditability of business records through the automated exchange and processing of invoice data.
+E-invoicing will support greater automation, improve data quality and reduce manual processing and errors, enabling businesses and public bodies to operate more efficiently. The outcome will be a simplified, modernised invoicing environment in which structured digital invoices are the standard, administrative burdens are reduced, business processes are more efficient and high-quality invoice data supports increased productivity and better outcomes for businesses, including improvements in business-to-business late payments.
+Using Peppol as the core interoperability framework for the UK’s e-invoicing regime will provide businesses and public bodies with a common, consistent and internationally recognised approach to exchanging e-invoices. Establishing HMRC as the UK Peppol Authority will provide the governance and assurance needed to support the use of Peppol for this purpose.
+Background to the measure
+Following its consultation on e-invoicing launched in February 2025, the government announced at Budget 2025 that the UK will require that VAT invoices are sent as e-invoices from April 2029. The announcement also set out the intention to develop a UK e-invoicing roadmap, setting out a phased approach to increasing adoption of e-invoicing. This measure fulfils that commitment to publish an e-invoicing roadmap and introduces the enabling powers required to support e-invoicing requirements.
+The government further announced at Tax Update day 2026 that Peppol will be the core interoperability network for e-invoicing in the UK.
+The measure does not affect the operation of the broader VAT regime.
+Detailed proposal
+Operative date
+The legislative powers contained in the Finance Bill 2026 will enable the technical requirements for VAT e-invoicing to be set out in secondary legislation. These enabling powers will come into force from Royal Assent of the Finance Bill 2026-27. The requirements will have effect from April 2029.
+Countries adopting Peppol require a national Peppol Authority to govern the network domestically. The provisions conferring the necessary functions on HMRC to enable it make preparations to become the Peppol Authority will take effect from Royal Assent. It is not yet determined when HMRC will become the Authority.
+Current law
+The current legislative framework for VAT invoicing is set out in schedule 11 to the Value Added Tax Act (VATA) 1994 and regulations 13 to 20 of the VAT Regulations 1995. VAT Notice 700 provides HMRC guidance and sets out HMRC’s interpretation of the law.
+VAT registered persons must normally issue a VAT invoice when making a taxable supply to another VAT registered person. There are detailed rules governing the content of VAT invoices.
+Electronic invoices are currently permitted, where the recipient agrees to receive invoices electronically. The current rules do not prescribe a specific technology, system or platform that must be used.
+Under the existing VAT rules HMRC interprets the term e-invoice very broadly. The guidance contained in VAT notice 700/63 defines:
+‘electronic invoicing as the transmission and storage of invoices in an electronic format’
+‘the electronic format may be a structured format such as XML or an unstructured format such as PDF’
+The UK Peppol Authority currently sits within Supply Chain Coordination Limited, which operates NHS Supply Chain.
+Proposed revisions
+Provisions will be introduced into the Finance Bill enabling HMRC to make more detailed rules in regulations. The Finance Bill 2026 that will amend Schedule 11 to VATA 1994 to enable the commissioners to make regulations prescribing the circumstances in which a VAT invoice must be provided in an electronic format the form and structure of the invoice and the technology, systems and networks to be used. Commissioners will also be able to provide for exemptions and make transitional, supplementary and consequential provision.
+The legislation will confer the necessary functions on HMRC to enable it to act as the Peppol Authority.
+Summary of impacts
+Exchequer impact (£ million)
+2026 to 2027
+2027 to 2028
+2028 to 2029
+2029 to 2030
+2030 to 2031
+2031 to 2032
+0
++10
++55
++140
++160
++150
+The costing of this measure is set out in Table 6.1 of Budget 2026 policy decisions in the overall ‘HMRC: Measures to close the tax gap’ costing. This costing has been certified by the Office for Budget Responsibility. More details can be found in the policy costings document published alongside Budget 2026.
+Economic impact
+This measure is not expected to have any significant macroeconomic impacts.
+Impact on individuals, households and families
+The measure impacts individuals who run their own business and are registered for VAT, this is reflected in the ‘impact on business’ section.
+The measure is not expected to impact on family formation, stability or breakdown.
+Equalities impact
+This measure may apply to individuals regardless of their protected characteristics. HMRC does not hold data that it can use to assess whether there are any disproportionate impacts to protected groups.
+Administrative impact on business including civil society organisations
+The Finance Bill provides enabling legislation for e-invoicing requirements for VAT invoices. The detailed requirements will be set out through secondary legislation. As a result, estimates of the costs and savings to business remain dependent on the final design of the regime and will be published alongside the secondary legislation.
+All businesses will need to be able to send and receive VAT invoices electronically in accordance with the new requirements. Those businesses that already use e-invoicing and other invoicing mechanisms will need to check that their existing arrangements comply and may need to make changes to their software, systems or processes. Businesses not currently using e-invoicing will need to obtain suitable software and learn how to use it. For some, this functionality may already be available through their cloud accounting or Making Tax Digital software. Others may need to obtain new software and integrate e-invoicing into their existing business systems.
+Businesses are expected to incur one-off transitional costs, or software subscription costs, that will vary according to their existing digital invoicing arrangements. These may include the costs of adopting and setting up software, integrating it with existing systems, training staff, changing internal processes and purchasing or upgrading software or hardware where necessary and familiarising themselves with the legislation.
+Actual costs will depend on final software solutions, providers’ pricing structures and hardware requirements.
+Once businesses have transitioned, the measure is expected to generate ongoing savings from reduced manual processing, faster invoice handling and payment, and less time spent on matching, approvals and reconciliation. E-invoicing is expected to reduce errors and disputes, and make it easier for businesses to get their tax right.
+This measure will impact on civil society organisations who may face similar transitional and ongoing impacts to other organisations. Those receiving VAT invoices may need software capable of receiving e-invoices and those issuing VAT invoices may also need to adopt e-invoicing solutions for relevant activities.
+This measure changes the format and exchange of invoice data rather than wider VAT obligations. In the medium to long term, this measure is expected overall to impact businesses’ experience of dealing with HMRC as it will reduce errors, and support more efficient information sharing with HMRC and enable HMRC to focus efforts on non-compliant businesses (minimising disruption to compliant ones).
+The government estimates for the costs and savings to business will be published alongside the secondary legislation that will set out the detail of the e-invoicing requirements for VAT invoices. We will use our continued engagement with stakeholders to develop our estimates and also ensure they take account of latest design details and our understanding of the market for provision of compliant software.
+Operational impact
+HMRC will incur costs of approximately £19 million implementing this change.
+There will also be costs incurred by HMRC to move the Peppol Authority to HMRC. These costs are currently being quantified.
+Other impacts
+Other impacts have been considered, and none have been identified.
+Monitoring and evaluation
+Consideration will be given to monitoring and evaluating aspects of the policy after a sufficient data has been collected and analysed.
+Further advice
+If you have any questions about this change, contact Gerard Groom by telephone on 03000 585 811 or by email at gerard.groom@hmrc.gov.uk.

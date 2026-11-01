@@ -1,0 +1,44 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-paper-capital-gains-preventing-protected-cell-company-avoidance.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-28"
+source:
+  id: govuk-paper-capital-gains-preventing-protected-cell-company-avoidance
+  kind: govuk_policy_paper
+  url: https://www.gov.uk/government/publications/capital-gains-preventing-protected-cell-company-avoidance/capital-gains-preventing-protected-cell-company-avoidance
+  title: Capital gains — preventing protected cell company avoidance
+  date: "2026-10-28"
+  venue_label: Policy paper (HM Revenue & Customs)
+quote: >-
+  Legislation will be introduced in Finance Bill 2026 providing that the 25% participator test can
+  apply by reference to an individual cell of a PCC.
+source_span: [1985, 2132]
+speaker:
+  name: HM Revenue & Customs
+  role: null
+  party: null
+  member_id: null
+  actor_id: null
+  check: unverified # only the model says so; check who said it
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: taxes
+  who: >-
+    UK resident individuals, trustees and companies holding assets through a non-UK resident
+    protected cell company
+  how_much: null
+  when: Finance Bill 2026; effect for gains accruing on or after 28 October 2026
+  funded_by: null
+  deadline: null
+why: >-
+  Commits to legislating in Finance Bill 2026 so the 25% participator test for attributing
+  non-resident close company gains can apply to an individual cell of a protected cell company; this
+  restates a measure announced at Budget 2026.
+confidence: 0.72
+model: claude-opus-5-5
+status: to_review

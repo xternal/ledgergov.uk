@@ -1,0 +1,80 @@
+Changes to Employee Share Schemes
+Who is likely to be affected
+UK companies that operate, may choose to operate, or offer share options plans, such as Company Share Option Plan (CSOP) or Enterprise Management Incentive (EMI) schemes. Also, employees of companies that offer, or will offer, these share schemes.
+General description of the measure
+The measure makes changes to the Company Share Option Plan (CSOP) and Enterprise Management Incentives (EMI), which are tax-advantaged employee share schemes, as well as certain non-tax-advantaged share options. The measure will:
+increase the CSOP option limit for individuals, from £60,000 to £120,000
+remove the interaction between the CSOP and EMI individual option limits so that CSOP options granted do not count towards an individuals’ EMI option limit
+extend the maximum exercise period for CSOP options, from 10 years to 15 years
+extend the period within which certain tax-advantaged and non-tax-advantaged share options reserved by third parties are excepted from the disguised remuneration rules, from 10 years to 15 years
+extend the exception for Employee Ownership Trusts (EOTs) in the EMI rules to companies with arrangements in place to become controlled by an EOT
+extend the exercise window for EMI options following disqualifying events, from 90 days to 180 days
+Policy objective
+This measure supports businesses to attract, incentivise and reward employees through employee share ownership by improving the generosity, access and operation of employee share schemes. The changes will enable companies to make greater use of tax-advantaged share options, provide employees with increased opportunities to share in business success, and give companies and employees greater flexibility in using these share schemes.
+The measure will strengthen the role of CSOP as both a complementary scheme to EMI and a follow-on scheme for companies that have grown beyond the scope of EMI. The changes will support the government’s ambition for CSOP to sit alongside EMI as part of a coherent employee share scheme offer for businesses at different stages of growth — in recognition of this, CSOP will now be referred to as EMI2. The changes will also help preserve access to tax advantages in a wider range of circumstances as well as support companies transitioning to employee ownership.
+Together, these changes will strengthen the employee share scheme offer for UK businesses and support the government’s objective of maintaining a competitive tax system that encourages entrepreneurship, employee participation in business success and long-term economic growth.
+Background to the measure
+At Budget 2024, the government committed to creating a positive environment for entrepreneurship and to working with entrepreneurs and investors to understand how the tax system can support business growth.
+At Budget 2025, the government announced changes to the EMI scheme to support start-up and scale-up companies. The government also published a Call for Evidence on tax support for entrepreneurs to gather views on how the tax system could better support businesses as they grow.
+Detailed proposal
+Operative date
+The measure will have effect from 6 April 2027. This means that CSOP, EMI and non-tax advantaged share options granted on or after this date are subject to the changes outlined in this measure.
+Employees can be granted CSOP options up to the new limit of £120,000 from 6 April 2027, and this would not impact on any of the employee’s existing EMI options.
+Any EMI companies arranging on or after 6 April 2027 to become controlled by an EOT can continue to grant qualifying EMI options.
+The change to the exercise period for CSOP options will also apply retrospectively. This means that CSOP option agreements in existence before 6 April 2027 can be amended to benefit from the new maximum period without losing the tax advantages the scheme offers, provided it is in line with the legislation.
+The change to the period for certain tax-advantaged and non-tax advantaged share options reserved by third parties will also apply retrospectively. This means that the 15-year periods will also apply to unexercised share and share option agreements in existence before 6 April 2027.
+The change to the exercise window for EMI options following disqualifying events will also apply retrospectively. This means that the 180-day window also applies to EMI option agreements in existence before 6 April 2027, provided the disqualifying event occurs on or after 6 April 2027.
+Current law
+Current law is contained in Income Tax (Earnings and Pensions) Act (ITEPA) 2003, particularly Schedules 4 and 5 and Parts 7 and 7A.
+Proposed revisions
+Legislation will be introduced in Finance Bill 2026-27 to modify ITEPA 2003 as follows:
+Paragraph 6 of Schedule 4 will be amended to increase the CSOP options limit to £120,000
+Paragraph 5 of Schedule 5 and section 536 of Part 7 will be amended to remove the interaction between the CSOP options limit and EMI options limit
+Section 524 of Part 7 will be amended to extend the CSOP exercise period to 15 years
+Section 554E and 554L of Part 7A will be amended to extend periods for tax-advantaged and non-tax advantaged shares and share options relevant to ‘earmarking’ exclusions from disguised remuneration rules to 15 years
+Paragraph 9 of Schedule 5 will be amended to extend the existing EOT exception to the EMI independence requirement for companies transitioning to employee ownership
+Section 532 of Part 7 will be amended to increase the EMI exercise window following disqualifying events to 180 days
+Consequential amendments will be made to relevant paragraphs and sections in ITEPA 2003 to account for the changes.
+Summary of impacts
+Exchequer impact (£million)
+2026 to 2027
+2027 to 2028
+2028 to 2029
+2029 to 2030
+2030 to 2031
+2031 to 2032
+—
+-25
+-35
+-45
+-145
+£140
+These figures are set out in Table 6.1 of Budget 2026 and have been certified by the Office for Budget Responsibility. More details can be found in the policy costings document published alongside Budget 2026.
+Economic impact
+This measure is not expected to have any significant macroeconomic impacts.
+Impact on individuals, households and families
+According to HMRC’s latest published statistics for the tax year 2024 to 2025, around 30,000 employees were granted CSOP options and around 42,000 employees were granted CSOP and EMI options.
+This measure is expected to have a positive impact on employees who receive share options under CSOP, EMI or relevant non-TASS. The changes will broaden access to tax-advantaged share schemes, increase the value of tax-advantaged CSOP options that may be offered to employees, provide greater flexibility for employees to benefit from share options over longer periods, preserve access to tax advantages in a wider range of circumstances and support participation in employee share ownership arrangements.
+The changes to the CSOP individual limit and its interaction with EMI are expected to benefit around 36,000 employees between the tax years 2027 to 2028 and 2031 to 2032. During the same period, the change to the CSOP exercise period is expected to benefit around 6,000 employees with CSOP options and the change to the EMI exercise window following disqualifying events is expected to benefit around 950 employees with EMI options.
+Individuals will not be required to do anything differently to benefit from the changes in this measure.
+These changes are expected overall to have no impact on individuals’ experience of dealing with HMRC, as the changes do not change any processes or tax administration obligations. In addition, employees are not responsible for providing annual reports through the Employment Related Securities return.
+This measure is not expected to impact on family formation, stability or breakdown.
+Equalities impacts
+This measure impacts individuals who receive share options under CSOP, EMI, or relevant non-TASS.
+This measure may apply to individuals regardless of their protected characteristics. If a protected group is estimated to be overrepresented in this population, it is considered to be disproportionately impacted. Available data suggests that males may be overrepresented among individuals granted EMI and CSOP options compared with their prevalence in the UK adult population.
+Individuals aged 25 to 44 may also be overrepresented among those granted EMI options, while individuals aged 35 to 64 may be overrepresented among those granted CSOP options relative to their respective prevalence in the UK adult population.
+Where data was available, there were no other protected groups overrepresented.
+Administrative impact on business including civil society organisations
+According to HMRC’s latest published statistics for the tax year 2024 to 2025, around 390 companies granted CSOP options and around 4,840 companies granted EMI options. In total, around 19,730 companies operated either CSOP or EMI schemes.
+This measure is expected to have a negligible administrative impact on companies that operate CSOP, EMI or relevant non-tax-advantaged share schemes, while enabling companies at different stages of growth to offer more attractive share-based rewards to employees. The changes to the CSOP individual limit and its interaction with EMI are expected to benefit around 380 companies between the tax years 2027 to 2028 and 2031 to 2032. Companies that wish to take advantage of the extended CSOP exercise period may need to amend existing option agreements and retain relevant records for longer.
+One-off costs are expected to include familiarisation with the changes, training and upskilling staff, updating software, and legal costs. There are not expected to be any continuing costs.
+These changes are expected overall to have no impact on businesses’ experience of dealing with HMRC, as they do not change any processes or tax administration obligations. Whilst employers are required to submit annual Employment Related Securities returns, the changes will not affect the way employers report to HMRC and will not require any additional information to be provided.
+This measure is not expected to impact civil society organisations.
+Operational impact (£million) (HMRC or other)
+A small IT change, expected to cost in the region of £50,000, will be required to support safe implementation of this measure. As a result, employers and their agents may see minor changes to the Employment Related Securities reporting templates used to provide information to HMRC and to the associated HMRC guidance.
+Other impacts
+Other impacts have been considered and none have been identified.
+Monitoring and evaluation
+Consideration will be given to monitoring this measure through information collected through the Employment Related Securities online service and kept under review through communication with affected taxpayers and stakeholders representing their interests.
+Further advice
+If you have any questions about this change, email employmentincomepolicy@hmrc.gov.uk.

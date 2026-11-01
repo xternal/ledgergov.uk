@@ -1,0 +1,104 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-budget-2026-breathing-space-for-welsh-families-and-businesse.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-28"
+source:
+  id: govuk-budget-2026-breathing-space-for-welsh-families-and-businesse
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/budget-2026-breathing-space-for-welsh-families-and-businesses
+  title: "Budget 2026: Breathing space for Welsh families and businesses"
+  date: "2026-10-28"
+  venue_label: Press release (Wales Office)
+quote: >-
+  The extension of the 5p cut to fuel duty for a further six months until 30 June 2027.
+source_span: [1078, 1163]
+speaker:
+  name: HM Government
+  role: Wales Office
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: taxes
+  who: motorists and fuel users
+  how_much: 5p cut to fuel duty
+  when: a further six months until 30 June 2027
+  funded_by: null
+  deadline: "2027-06-30"
+why: >-
+  The 5p cut to fuel duty will be kept for a further six months until 30 June 2027.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      The removal of the 4% tariff on Kerosene will support the 105,000 Welsh households that rely
+      on heating oil to heat their homes.
+    source_span: [756, 884]
+    suggested:
+      policy_area: taxes
+      who: 105,000 Welsh households that rely on heating oil
+      how_much: null
+      when: null
+      funded_by: null
+      deadline: null
+    why: The 4% import tariff on kerosene will be removed.
+    confidence: 0.6
+  - quote: >-
+      The UK government will extend 0% VAT on household electricity bills for three months, to 30
+      June 2027., while a Debt Relief Scheme will write off crisis-era debt for eligible households.
+    source_span: [885, 1071]
+    suggested:
+      policy_area: taxes
+      who: households paying electricity bills
+      how_much: null
+      when: for three months, to 30 June 2027
+      funded_by: null
+      deadline: "2027-06-30"
+    why: >-
+      The 0% VAT rate on household electricity bills will be extended for three months until 30 June
+      2027.
+    confidence: 0.8
+  - quote: >-
+      By the end of this Parliament, roughly 64,000 low-income pensioners in Wales will pay less tax
+      or none at all on their income, as a result of reducing the disproportionate administrative
+      burden of paying small amounts of tax
+    source_span: [1599, 1823]
+    suggested:
+      policy_area: taxes
+      who: roughly 64,000 low-income pensioners in Wales
+      how_much: null
+      when: by the end of this Parliament
+      funded_by: null
+      deadline: null
+    why: >-
+      Changes to small tax amounts will mean about 64,000 low-income pensioners in Wales pay less or
+      no income tax by the end of this Parliament.
+    confidence: 0.5
+  - quote: >-
+      Increasing the National Living Wage by 3.9% to £13.21 per hour and the National Minimum Wage
+      by 3.9% to £11.27 per hour for 18 to 20-year-olds and by 3.9% to £8.31 per hour for 16 to
+      17-year-olds and eligible apprentices.
+    source_span: [1831, 2052]
+    suggested:
+      policy_area: economic_affairs
+      who: >-
+        low-paid workers, 18 to 20-year-olds, 16 to 17-year-olds and eligible apprentices
+      how_much: £13.21 per hour; £11.27 per hour; £8.31 per hour
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      The National Living Wage will rise to £13.21 an hour, with minimum wage rates for younger
+      workers and apprentices rising to £11.27 and £8.31.
+    confidence: 0.75
+confidence: 0.75
+model: claude-opus-5-5
+status: to_review

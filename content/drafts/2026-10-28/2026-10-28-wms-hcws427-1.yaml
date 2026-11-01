@@ -1,0 +1,108 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws427.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-28"
+source:
+  id: wms-hcws427
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-28/HCWS427
+  title: "Statutory review of state pension and benefit rates: 2027/28"
+  date: "2026-10-28"
+  venue_label: Written ministerial statement
+quote: >-
+  I am pleased to announce that the basic and full rate of the new State Pensions will be increased
+  by 3.9%, in line with the increase in average weekly earnings in the year to May-July 2026.
+source_span: [232, 421]
+speaker:
+  name: Pat McFadden
+  role: Secretary of State for Work and Pensions
+  party: Labour
+  member_id: 1587
+  actor_id: pat-mcfadden
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: social_protection
+  who: State Pension recipients
+  how_much: >-
+    3.9% increase; around £490 a year for the full new State Pension and around £375 a year for the
+    full basic State Pension
+  when: tax year 2027-28, mainly from 12 April 2027
+  funded_by: null
+  deadline: "2027-04-12"
+why: >-
+  The basic and new State Pension rates will rise by 3.9% from April 2027, which the statement says
+  delivers the Triple Lock commitment made for this Parliament.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      From April, it will be £247.30 a week for a single pensioner and £377.40 a week for a couple,
+      ensuring the incomes of the poorest pensioners are protected.
+    source_span: [887, 1042]
+    suggested:
+      policy_area: social_protection
+      who: Pension Credit recipients
+      how_much: £247.30 a week single, £377.40 a week couple
+      when: From April 2027
+      funded_by: null
+      deadline: "2027-04-30"
+    why: >-
+      The Pension Credit Standard Minimum Guarantee will rise by 3.9% to £247.30 a week for single
+      pensioners and £377.40 a week for couples from April 2027.
+    confidence: 0.75
+  - quote: >-
+      Other State Pension and benefit rates covered by my statutory review will be increased by
+      3.5%, in line with the increase in the consumer prices index in the year to September 2026.
+    source_span: [1043, 1224]
+    suggested:
+      policy_area: social_protection
+      who: >-
+        Recipients of working-age benefits, disability benefits, Statutory Sick Pay, Statutory
+        Maternity Pay and Additional State Pension
+      how_much: 3.5% increase
+      when: tax year 2027-28, mainly from 12 April 2027
+      funded_by: null
+      deadline: "2027-04-12"
+    why: >-
+      Most working-age, disability and statutory payment benefit rates will rise by 3.5% for 2027-28.
+    confidence: 0.7
+  - quote: >-
+      The UC Standard Allowance for a single person aged 25 or over will increase by around £219 a
+      year. That’s over £45 more than if up-rated by inflation alone.
+    source_span: [1860, 2016]
+    suggested:
+      policy_area: social_protection
+      who: Universal Credit claimants
+      how_much: around £219 a year for single person aged 25+; around £344 a year for couples
+      when: 2027-28
+      funded_by: null
+      deadline: null
+    why: >-
+      The Universal Credit standard allowance will rise by around £219 a year for single claimants
+      aged 25 or over and around £344 a year for couples in 2027-28.
+    confidence: 0.65
+  - quote: >-
+      While not part of my formal up-rating review, I can confirm that Local Housing Allowance rates
+      and the benefit cap will be maintained at their current levels and not increased for 2027-28.
+    source_span: [2755, 2943]
+    suggested:
+      policy_area: social_protection
+      who: >-
+        Housing benefit and Universal Credit housing claimants; households subject to the benefit cap
+      how_much: null
+      when: 2027-28
+      funded_by: null
+      deadline: null
+    why: >-
+      Local Housing Allowance rates and the benefit cap will be frozen at current levels for 2027-28.
+    confidence: 0.65
+confidence: 0.8
+model: claude-opus-5-5
+status: to_review
