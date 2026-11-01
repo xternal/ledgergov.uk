@@ -1,0 +1,70 @@
+format: openpromises/1
+id: uk-high-value-council-tax-2028
+headline:
+  en: "Council tax surcharge on £2m homes from 2028"
+actor_id: hm-government
+made_on: "2026-10-28"
+venue: press_release
+venue_label:
+  en: "Additional Council Tax charge on high-value properties (HMRC policy paper)"
+area: taxes
+status: promised
+status_note:
+  en: >-
+    First announced at Budget 2025. The paper sets four bands, from £2,500 a year for homes worth £2
+    million to £2.5 million up to £7,500 for £5 million and over, collected by councils for central
+    government, and expects about 150,000 owners to pay. It is in section 3 of the Finance Bill
+    2026-27, with secondary legislation in 2027. The card moves when the Finance Bill becomes law.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      HM Revenue & Customs policy paper, 28 Oct 2026: Additional Council Tax charge on high-value
+      properties
+    url: https://www.gov.uk/government/publications/high-value-council-tax-surcharge-on-residential-properties/additional-council-tax-charge-on-high-value-properties
+versions:
+  - version: 1
+    text: >-
+      The High Value Council Tax Surcharge (HVCTS) is a new annual charge on owners of residential
+      property in England worth £2 million or above.
+
+      The measure will come into force from April 2028.
+    recorded_on: "2026-10-28"
+    source_url: https://www.gov.uk/government/publications/high-value-council-tax-surcharge-on-residential-properties/additional-council-tax-charge-on-high-value-properties
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          About 150,000 owners of homes in England worth £2 million or more
+      cost:
+        note:
+          en: >-
+            A tax that raises money, not a cost: the paper puts the Exchequer impact at £365 million
+            in 2028-29, rising to £405 million in 2031-32.
+      when:
+        en: >-
+          From 1 April 2028
+      deadline: "2028-04-01"
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        HMRC confirms a High Value Council Tax Surcharge on homes in England worth £2 million or
+        more from April 2028
+  - date: "2028-04-01"
+    type: deadline
+    text:
+      en: >-
+        The surcharge due to come into force on 1 April 2028
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
