@@ -3,7 +3,7 @@
 intake_date: "2026-11-01" # documents published 25 October to 1 November 2026 (GOV.UK search, policy and engagement)
 triaged_on: "2026-11-01"
 by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
-pull_request: null # set when the desk/2026-11-01 pull request is opened
+pull_request: 201
 sources_read: 4
 candidates: 4
 outcomes:
