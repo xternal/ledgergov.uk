@@ -1,0 +1,40 @@
+# One weekly editor's desk run over the week's big GOV.UK documents (docs/desk/ROUTINE.md, steps 6 and 7).
+# Counts are of the commitments weighed in the documents read; each has exactly one outcome.
+intake_date: "2026-11-01" # documents published 25 October to 1 November 2026 (GOV.UK search, policy and engagement)
+triaged_on: "2026-11-01"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: null # set when the desk/2026-11-01 pull request is opened
+sources_read: 4
+candidates: 4
+outcomes:
+  card: 2
+  reworded: 0
+  duplicate: 0
+  existing: 0
+  grant: 0
+  done: 0
+  process: 0
+  broad: 0
+  event: 0
+  cap: 0
+  other: 2
+quotes_exact: 2
+new_actors: []
+cards:
+  - uk-bank-surcharge-6pc-2028
+  - uk-energy-debt-relief-scheme-2027
+reworded: []
+documents:
+  - { title: "Increase in rate of banking surcharge for temporary period (HMRC, 28 Oct)", url: "https://www.gov.uk/government/publications/increase-in-the-banking-surcharge-rate-for-a-temporary-period/increase-in-rate-of-banking-surcharge-for-temporary-period", cards: [uk-bank-surcharge-6pc-2028] }
+  - { title: "Energy debt circuit breaker: our joint strategy for domestic energy debt (DESNZ and Ofgem, 28 Oct)", url: "https://www.gov.uk/government/publications/energy-debt-circuit-breaker-a-strategy-for-domestic-energy-debt/energy-debt-circuit-breaker-our-joint-strategy-for-domestic-energy-debt", cards: [uk-energy-debt-relief-scheme-2027] }
+  - { title: "Alcohol Duty uprating and Small Producer Relief changes (HMRC, 28 Oct)", url: "https://www.gov.uk/government/publications/changes-to-alcohol-duty-rates-from-1-february-2027/alcohol-duty-uprating-and-small-producer-relief-changes", cards: [] }
+  - { title: "From commitment to conservation: Delivering 30by30 for nature and people (Defra, 25 Oct)", url: "https://www.gov.uk/government/publications/delivering-the-30by30-commitment/from-commitment-to-conservation-delivering-30by30-for-nature-and-people-accessible-webpage", cards: [] }
+skipped: # listed by the search but not read in full
+  - "171 documents listed, almost all published with Budget 2026 on 28 October; 17 were already read by the daily intake (drafts on intake/2026-10-26 to intake/2026-10-30)"
+  - "Not new this week (older documents updated, by first publication date): Electric Vehicle Excise Duty (July 2026), Reforming customs rules for low value imports (July 2026), Air Passenger Duty and private jets (July 2026), Representation of the People Bill policy summaries (February 2026), Northern Growth Strategy (January 2026), Draft Heathrow Expansion National Policy Statement (June 2026), School Food Standards (April 2026), Infected Blood Compensation Scheme (February 2025)"
+  - "Budget 2026 document and its supporting documents: the Budget's own cards were written by hand (#187, #190, #194)"
+  - Open consultations and calls for evidence (proposals, not commitments), impact assessments, and technical HMRC tax information notes
+  - "Not read for lack of room: the week's limit of 30 new cards was nearly reached by the intake (26 cards)"
+dropped:
+  - { document: Alcohol Duty uprating, code: other, note: "all Alcohol Duty rates up by RPI (4.55%) from 1 February 2027, a fair card; check-quote found the words only as 'close' (the page uses narrow no-break spaces and an abbreviation tag), so no card. An editor can check it by eye" }
+  - { document: Delivering 30by30, code: other, note: "a collection of case studies from the UK and abroad; no new UK commitment with a date or figure" }
