@@ -12,9 +12,14 @@ reported:
     date: "2026-10-24"
     url: https://uk.finance.yahoo.com/news/uks-healey-two-state-backed-005355167.html
     title: UK's Healey to give two state-backed lenders £20 billion capital boost in budget
-status: confirmed
+status: announced
 confirmed:
   date: "2026-10-24"
   by: HM Treasury (spokesperson, emailed statement to Reuters)
   url: https://uk.finance.yahoo.com/news/uks-healey-two-state-backed-005355167.html
   text: The Treasury confirmed the £15.4bn for the National Wealth Fund and £5bn for the British Business Bank.
+budget:
+  date: "2026-10-28"
+  text: >-
+    The National Wealth Fund gets £15.4bn of extra capital, including £2bn for a new Energy Wealth Fund, and the British Business Bank's financial capacity rises by £5bn (paragraphs 6.82 and 6.83).
+  evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=123

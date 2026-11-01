@@ -8,11 +8,14 @@ venue: press_release
 venue_label:
   en: HM Treasury news story
 area: education
-status: promised
+status: funded
 status_note:
   en: >-
-    The Treasury says the Budget will set out how the fund is paid for, from savings found by the
-    Department for Work and Pensions.
+    Budget 2026 re-establishes the fund in England with a budget of £15m a year from 2027-28 (para
+    6.127). The policy decisions table lists it among pre-announced measures at £20m in 2027-28 and
+    £20m in 2028-29, with nothing shown after that (Table 6.1, line 73); the Budget does not explain
+    the difference from £15m or say what happens after 2028-29. The Budget document does not name
+    the DWP savings the Treasury said would pay for it.
 responsible:
   actor_id: hm-government
 origin: manual
@@ -59,6 +62,14 @@ events:
     text:
       en: >-
         The Chancellor confirms £15m a year to restore the Union Learning Fund in England
+  - date: "2026-10-28"
+    type: funded
+    text:
+      en: >-
+        Budget 2026 re-establishes the Union Learning Fund in England with £15m a year from 2027-28
+        (para 6.127); the policy decisions table shows £20m in each of 2027-28 and 2028-29 (Table
+        6.1, line 73)
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=128
 replies: []
 reviews:
   - by: AI Journalist
