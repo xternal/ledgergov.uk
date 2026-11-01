@@ -60,6 +60,11 @@ events:
     type: deadline
     text:
       en: Shortfall Independent Review due to start in late October 2026
+  - date: 2026-11-01
+    type: deadline_missed
+    text:
+      en: The deadline passed with no evidence of delivery recorded. An editor confirms or corrects this within 30 days.
+    auto: true
 replies: []
 reviews:
   - by: AI Journalist
