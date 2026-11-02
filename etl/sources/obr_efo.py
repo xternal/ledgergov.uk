@@ -16,7 +16,7 @@ edition, so fetch() fails and the build keeps the committed one.
 
 Workbooks used (found on the edition page by link pattern):
 
-  * "Charts and tables: annex tables"
+  * "Charts and tables: annex tables" (titled "annex A" since October 2026)
         Table A.3  Determinants of the fiscal forecast  -> nominal GDP (fiscal year, and centred end-March)
         Table A.5  Current receipts                     -> receipts.total, the 13 Statement lines, receipts.detail.*
         Table A.7  Total managed expenditure            -> spending.tme, spending.debt_interest
@@ -79,7 +79,7 @@ SOURCE = Source(
 
 # role -> (regex for the download link on the edition page, local filename suffix)
 FILES = {
-    "annex": (r"/download/[^/?#]*charts-and-tables-annex-tables/", "annex_tables.xlsx"),
+    "annex": (r"/download/[^/?#]*charts-and-tables-annex-(?:tables|a)/", "annex_tables.xlsx"),
     "debt_interest_rr": (r"/download/[^/?#]*debt-interest-ready-reckoner[^/?#]*/", "debt_interest_ready_reckoner.xlsx"),
 }
 
