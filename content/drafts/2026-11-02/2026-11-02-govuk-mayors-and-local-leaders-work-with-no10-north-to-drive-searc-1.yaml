@@ -1,0 +1,65 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-mayors-and-local-leaders-work-with-no10-north-to-drive-searc.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-02"
+source:
+  id: govuk-mayors-and-local-leaders-work-with-no10-north-to-drive-searc
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/mayors-and-local-leaders-work-with-no10-north-to-drive-search-for-top-10-biggest-strategic-investment-sites-across-country
+  title: >-
+    Mayors and local leaders work with No10 North to drive search for 'top 10' biggest strategic
+    investment sites across country
+  date: "2026-11-02"
+  venue_label: Press release (Department for Business, Innovation, Science and Trade)
+quote: >-
+  Starting today [Monday 2 November], the Strategic Sites Accelerator will deploy around £700
+  million alongside expert support to help unlock up to 10 major industrial and commercial sites
+  across the country, helping some of the UK’s most promising investment opportunities get off the
+  ground.
+source_span: [776, 1067]
+speaker:
+  name: HM Government
+  role: Department for Business, Innovation, Science and Trade
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: economic_affairs
+  who: >-
+    Major industrial and commercial sites, mayors and local authorities across the UK
+  how_much: around £700 million
+  when: Starting 2 November
+  funded_by: null
+  deadline: null
+why: >-
+  The government commits to deploying around £700 million through the Strategic Sites Accelerator to
+  unlock up to 10 major industrial and commercial sites.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      Government is also giving mayors a greater stake in the growth they generate, with a share of
+      business rates from 2027 and an assignment of income tax from 2028.
+    source_span: [11664, 11825]
+    suggested:
+      policy_area: taxes
+      who: Mayors and strategic authorities
+      how_much: null
+      when: Business rates share from 2027; income tax assignment from 2028
+      funded_by: null
+      deadline: null
+    why: >-
+      Mayors are to receive a share of business rates from 2027 and an assignment of income tax from
+      2028; this likely restates a commitment from the previous week's Budget.
+    confidence: 0.55
+confidence: 0.6
+model: claude-opus-5-5
+status: to_review
