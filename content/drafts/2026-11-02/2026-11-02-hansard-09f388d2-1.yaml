@@ -1,0 +1,99 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/hansard-09f388d2.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-02"
+source:
+  id: hansard-09f388d2
+  kind: hansard_statement
+  url: https://hansard.parliament.uk/Commons/2026-11-02/debates/09F388D2-539E-4B0A-ABE2-D3195B14AF0E/ImmigrationEarnedSettlement
+  title: "Immigration: Earned Settlement"
+  date: "2026-11-02"
+  venue_label: Commons statement
+quote: >-
+  Everyone else will be placed on a 10-year path, including all those earning less than £50,000.
+  Settlement will still be available to them; they will simply have to show a sustained contribution
+  to this country, and they will be able to renew their existing temporary visas until that point.
+source_span: [3885, 4175]
+speaker:
+  name: Shabana Mahmood
+  role: Secretary of State for the Home Department
+  party: null
+  member_id: 3914
+  actor_id: shabana-mahmood
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: public_order
+  who: >-
+    migrants seeking settlement who earn less than £50,000 and are not in exempt or faster-route
+    groups
+  how_much: null
+  when: >-
+    rules laid from the December immigration rules; implemented over the course of 2027
+  funded_by: null
+  deadline: null
+why: >-
+  Under the earned settlement scheme, the default qualifying period for settlement will rise from
+  five to 10 years for migrants earning under £50,000 outside exempt groups; the Home Secretary said
+  the rules will be laid from December and implemented over 2027.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      At the same time, we will discourage the use of unsafe and illegal routes; the standard
+      qualifying period for all refugees who have not come by a safe and legal route will become 20
+      years. A further 10 years will be added for those who entered the country by an illegal
+      method, such as by small boat.
+    source_span: [9519, 9819]
+    suggested:
+      policy_area: public_order
+      who: refugees who did not arrive by a safe and legal route
+      how_much: null
+      when: implemented over the course of 2027
+      funded_by: null
+      deadline: null
+    why: >-
+      Refugees not arriving by a safe and legal route will face a 20-year standard qualifying period
+      for settlement, rising to 30 years for illegal entry such as by small boat.
+    confidence: 0.5
+  - quote: >-
+      We have made £1 billion-worth of savings in asylum accommodation, and we will fulfil our
+      manifesto commitment to close all hotels in this Parliament.
+    source_span: [63731, 63880]
+    suggested:
+      policy_area: public_order
+      who: asylum seekers housed in hotels; communities hosting asylum hotels
+      how_much: null
+      when: in this Parliament
+      funded_by: null
+      deadline: null
+    why: >-
+      Restates the manifesto commitment that all asylum hotels will be closed by the end of this
+      Parliament.
+    confidence: 0.7
+  - quote: >-
+      We have agreed that we will extend that further to 2035, to enable those people to achieve
+      settlement.
+    source_span: [85866, 85968]
+    suggested:
+      policy_area: public_order
+      who: >-
+        workers already in the country on lower salaries covered by the previous Government's
+        exemption
+      how_much: null
+      when: to 2035
+      funded_by: null
+      deadline: null
+    why: >-
+      The exemption allowing lower-paid workers already in the UK to extend visas on their existing
+      salary will be extended from 2030 to 2035.
+    confidence: 0.5
+confidence: 0.75
+model: claude-opus-5-5
+status: to_review
