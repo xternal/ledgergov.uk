@@ -1,0 +1,70 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-new-government-backed-cyber-security-protections-could-save-.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-03"
+source:
+  id: govuk-new-government-backed-cyber-security-protections-could-save-
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/new-government-backed-cyber-security-protections-could-save-uk-businesses-thousands
+  title: >-
+    New Government-backed cyber security protections could save UK businesses thousands
+  date: "2026-11-03"
+  venue_label: Press release (Department for Digital, Culture, Media and Sport)
+quote: >-
+  The Cyber Essentials for suppliers grant, worth up to £7m until March 2029, will offer eligible
+  UK-based SME suppliers of Cyber Resilience Pledge signatories, fully Government funded first-time
+  certification and tailored Cyber Advisor support through Cyber Essentials.
+source_span: [6824, 7092]
+speaker:
+  name: HM Government
+  role: Department for Digital, Culture, Media and Sport
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: economic_affairs
+  who: >-
+    Eligible UK-based SME suppliers of Cyber Resilience Pledge signatories (government estimates
+    approximately 8,000 businesses)
+  how_much: up to £7m
+  when: until March 2029
+  funded_by: Government funding
+  deadline: "2029-03-31"
+why: >-
+  Government commits up to £7m until March 2029 to fund free first-time Cyber Essentials
+  certification and Cyber Advisor support for SME suppliers of Cyber Resilience Pledge signatories.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      The Cyber Essentials First Step Fund, will provide eligible micro, small and medium-sized UK
+      businesses a 75% discount on the cost of a new Cyber Essentials certification. This discount,
+      covered by £2.4m of Government funding, will be on a first comes first served basis to micro,
+      small and medium businesses who have not been certified in the last four years . It will be
+      available until March 2027, or until the allocated funding runs out.
+    source_span: [6187, 6628]
+    suggested:
+      policy_area: economic_affairs
+      who: >-
+        Micro, small and medium-sized UK businesses not certified in the last four years (government
+        estimates approximately 6,000 businesses)
+      how_much: £2.4m
+      when: until March 2027, or until the allocated funding runs out
+      funded_by: Government funding
+      deadline: "2027-03-31"
+    why: >-
+      Government provides a 75% discount on new Cyber Essentials certification for eligible SMEs,
+      funded by £2.4m and available until March 2027 or until the money runs out; the scheme
+      launched on the day of the release.
+    confidence: 0.5
+confidence: 0.6
+model: claude-opus-5-5
+status: to_review
