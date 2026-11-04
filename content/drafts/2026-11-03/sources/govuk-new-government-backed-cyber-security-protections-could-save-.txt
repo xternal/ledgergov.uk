@@ -1,0 +1,65 @@
+New Government-backed cyber security protections could save UK businesses thousands
+Government launches cyber security offer for small and medium-sized businesses as part of national response to enhance resilience against cyber threats
+Thousands of businesses can get a 75% discount on Government’s certification, with thousands more part of key supply chains to benefit for free
+Organisations including Thales, Capgemini and SANS sign on as software security ambassadors to drive better software security practices and seal shut software vulnerabilities
+Thousands of small and medium-sized business owners across the UK can now take advantage of a new Government-backed 75% discount for its Cyber Essentials certification programme – a scheme helping businesses put essential protections in place to safeguard their systems from cyber threats and attacks.
+Recent estimates suggest a significant cyber-attack on a UK business or organisation could cost on average £195,0001. The cost of these attacks means money coming out of UK businesses and the people they employ, preventing them from re-investing and growing their business and our economy.
+In a speech at the National Cyber Security Centre’s Annual Review today, Cyber Security Minister, Baroness Lloyd will announce how Government is fully backing UK businesses to protect themselves in the cyber race.
+The Cyber Essentials certification will be discounted by 75% for micro, small and medium sized businesses – meaning they could pay as little as £80 and no more than £125 (plus VAT) to get peace of mind that their organisation is protected against the most common online threats.
+Government is also working with over 230 businesses across industry, who have signed up to the Cyber Resilience Pledge, to help them safeguard their supply chains and ensure they have the essential protections in place.
+Pledged organisations will be able to refer groups of SMEs within their supply chains to undertake Cyber Essentials certification completely free of charge. This will include access to a free cyber security advisor for select businesses, who may have limited in-house cyber expertise, to be supported through the process.
+This combined package of support is designed to make it easier for micro, small and medium-sized businesses to take practical action on cyber security, while helping strengthen the supply chains of some of Britain’s biggest brands in food, banking and essential services we rely on every day.
+Cyber Security Minister, Liz Lloyd said:
+Small and medium-sized businesses employ millions of people across our nation, and should not be left vulnerable in the age of rising cyber threats.. We are not going to sit back and let malicious actors take advantage – we will back our SMEs and help them be protected and secure.
+We are making it easier and cheaper to access expert cyber support, identify and plug vulnerabilities in their digital systems, and achieve certification through our Cyber Essentials scheme.
+It doesn’t matter whether you’re sitting at the head of the table in the boardroom, or working from the kitchen counter at home - if you run a business, no matter the size, securing your digital systems must be a top priority and we’re equipping businesses for the evolving digital future.
+This comes alongside a major push to make the software underpinning Britain’s economy more secure. 14 new organisations are joining as the UK’s second cohort of Software Security Ambassadors: Fortinet, Thales, Capgemini, SANS, Risk Ledger, Zscaler, Acubed IT Solutions Ltd, CloudPeek, Dot On, Hippo Digital, Investec, IoT M2M Council, Nine23, and QinetiQ.
+Joining the existing ambassadors the companies will work with Government to champion secure software development and encourage the adoption of the Software Security Code of Practice across their supply chains and the wider economy.
+The scheme aims to encourage more software developers to build their products aligned to the code of practice – safeguarding their systems from common cyber threats. Ambassadors will also encourage companies in their networks, and in their own supply chains, to meet the expectations of this code of practice. The end goal is securing the software backbone of businesses millions of people rely on every day.
+Today’s measures build on the wider package announced as part of the Budget last week, to strengthen the UK’s ability to defend itself as artificial intelligence transforms both the cyber threat and the tools available to tackle it, which included:
+£70 million for a new National Exposure and Real-Time Vulnerability (NERV) Centre within the NCSC to build and maintain a national picture of vulnerabilities across critical national infrastructure and the wider economy.
+Investing £60 million into a national Cyber Shield, using agentic AI to strengthen the UK’s cyber defences, including a £25 million Challenge Fund supporting UK AI and cyber security innovators.
+A new NCSC AI Cyber Security Centre of Excellence in Manchester, focused on training and developing the next generation of government cyber and AI experts.
+£40 million for a National Agentic Security Unit to develop capabilities to monitor and respond to uncontrolled bots and strengthen resilience against agentic incidents.
+£24 million to enhance public-sector cyber defences, putting advanced AI technology to work protecting our vital public services.
+Together with the new support for businesses and collaboration with the software industry, the measures all form part of the government’s concerted drive to strengthen cyber resilience across the UK economy.
+Notes to editors:
+Cyber Essentials scheme
+Cyber Essentials is the minimum standard of cyber security recommended by the Government for organisations of all sizes. Developed by the experts at the NCSC, the certification scheme is aligned to five technical controls designed to prevent the most common internet based cyber security threats.
+On top of increasing cyber resilience, organisations with Cyber Essentials which have a turnover of less than £20m, also receive up to £25,000 of cyber liability insurance.
+See here for further details on the Cyber Essentials Funding Package.
+The Cyber Essentials First Step Fund, will provide eligible micro, small and medium-sized UK businesses a 75% discount on the cost of a new Cyber Essentials certification. This discount, covered by £2.4m of Government funding, will be on a first comes first served basis to micro, small and medium businesses who have not been certified in the last four years . It will be available until March 2027, or until the allocated funding runs out. Government estimates approximately 6,000 new businesses could benefit from this funding. Businesses can start their certification here Link to offer active from 3 November: firststep.iasme.co.uk
+The Cyber Essentials for suppliers grant, worth up to £7m until March 2029, will offer eligible UK-based SME suppliers of Cyber Resilience Pledge signatories, fully Government funded first-time certification and tailored Cyber Advisor support through Cyber Essentials. SME businesses nominated for this offer will be contacted by their Cyber Resilience Pledge signatory organisation and guided to apply through the Cyber Essentials process. Government estimates approximately 8000 businesses could benefit from this funding.
+Cyber Resilience Pledge
+The Cyber Resilience Pledge is a voluntary government initiative through which organisations publicly commit to make cyber security a board-level responsibility, sign up to the NCSC Early Warning service and take a risk-based approach to requiring Cyber Essentials across their supply chains. More than 230 organisations have signed the Pledge so far – a full list of signatories available on GOV.UK.
+Software Security Code of Practice
+The Software Security Code of Practice sets out expectations for the security and resilience of software. The Software Security Ambassadors scheme brings together organisations committed to championing secure software development and supporting a resilient cyber ecosystem.
+Software Security Ambassadors list:
+Accenture
+Acubed IT Solutions Ltd
+Capgemini
+Cisco
+CloudPeek
+Dot On
+Fortinet
+Hexiosec
+Hippo Digital
+Investec
+IoT M2M Council
+ISACA
+ISC2Lloyds Banking Group
+NCC Group
+Nexor
+Nine23
+Palo Alto Networks
+QinetiQ
+Risk Ledger
+Sage
+Salus
+SANS
+Santander
+Thales
+Zaizi
+Zscaler
+Sources:
+[1] Due to lack of available UK-based cost data, the estimate is based on data from primarily US disclosures. The underlying assumption is that average costs for US-based organisations can be compared to the average costs in the UK. The average cost per organisation is scaled up by the estimated number of firms affected by cyber attacks obtained from the CSBS. Please note that for medium and large firms this estimate is based on a limited sample size of 18 and should therefore be interpreted as indicative only.

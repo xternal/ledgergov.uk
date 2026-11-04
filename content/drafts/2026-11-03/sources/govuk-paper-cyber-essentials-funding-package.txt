@@ -1,0 +1,33 @@
+Cyber Essentials funding package
+1. Background
+The UK economy increasingly relies on digital technology, making cyber resilience important to the UK’s national security, economic stability and growth. Increasing adoption of baseline cyber security controls can help reduce vulnerabilities that could otherwise be exploited to disrupt organisations, services and supply chains.
+Cyber Essentials is a government-backed scheme that helps organisations protect themselves against common online threats. It is suitable for organisations of all sizes and sectors and provides a set of fundamental technical controls that organisations should have in place.
+The government is introducing a new package of support to make Cyber Essentials more accessible to small and medium-sized organisations and increase adoption of these baseline cyber security controls. The package brings together two complementary offers: the Cyber Essentials First Step Fund and the Cyber Resilience Pledge: Cyber Essentials for Suppliers Grant.
+2. Cyber Essentials
+Cyber Essentials helps organisations stay safe by ensuring five technical controls are in place:
+Firewalls: Create a security filter between the internet and your network.
+Secure configuration: Set up computers securely to minimise ways that a cyber-criminal can find a way in.
+Security update management: Prevent cyber criminals using vulnerabilities they find in software as an access point to your systems.
+User access control: Control who can access your data and services and what level of access they have.
+Malware protection: Identify and immobilise viruses or other malicious software before they have a chance to cause harm.
+3. Funding package details
+The package consists of two separate offers. The support available and eligibility criteria differ between the schemes.
+Cyber Essentials First Step Fund
+Cyber Essentials for Suppliers
+Target audience
+Broad, economy-wide support for eligible organisations: micro, small and medium-sized organisations
+Targeted support for eligible suppliers - nominated through Cyber Resilience Pledge signatories
+Support
+Cyber Essentials 75% discount
+Free Cyber Essentials voucher plus tailored Cyber Advisor support
+Funding covers the cost of assessment and, where the assessment is passed, certification. It does not guarantee certification.
+4. The Cyber Essentials First Step Fund
+The Cyber Essentials First Step Fund offers a 75% discount on the certification for SMEs seeking a new Cyber Essentials certificate. This makes it more affordable for SMEs to take an important step towards improved cyber resilience. This scheme will run until the end of March 2027 (or until funding runs out).
+Organisations can access the discount through the IASME website*. The discount is still applicable if organisations choose to certify through a Certification Body.
+5. Cyber Resilience Pledge Grant
+The Cyber Resilience Pledge grant offers a higher level of support to eligible SME suppliers of pledging organisations. Through this supply-chain scheme, selected suppliers can receive fully funded Cyber Essentials certification alongside tailored support from an NCSC-assured Cyber Advisor. Participating pledge signatories will identify and notify relevant suppliers and support access through IASME’s process. This scheme will until the end of March 2029.
+If you are a Pledge signatory, please email info@iasme.co.uk to register your interest in funding for your suppliers.
+*IASME are the government’s delivery partner for the Cyber Essentials scheme
+6. Further guidance
+Cyber Essentials
+Cyber Resilience Pledge
