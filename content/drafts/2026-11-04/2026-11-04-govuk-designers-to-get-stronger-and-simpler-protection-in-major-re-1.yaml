@@ -1,0 +1,42 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-designers-to-get-stronger-and-simpler-protection-in-major-re.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-04"
+source:
+  id: govuk-designers-to-get-stronger-and-simpler-protection-in-major-re
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/designers-to-get-stronger-and-simpler-protection-in-major-reforms
+  title: Designers to get stronger and simpler protection in major reforms
+  date: "2026-11-04"
+  venue_label: Press release (Intellectual Property Office)
+quote: >-
+  The government will introduce a new 30-month deferment period, bringing the UK into line with the
+  EU and the international Hague systems. Designers will be able to apply for protection early and
+  delay making their design public for up to 30 months.
+source_span: [4536, 4784]
+speaker:
+  name: HM Government
+  role: Intellectual Property Office
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: economic_affairs
+  who: Designers applying for registered design protection
+  how_much: null
+  when: when parliamentary time allows
+  funded_by: null
+  deadline: null
+why: >-
+  The government commits to introduce a 30-month deferment period for registered designs, the most
+  checkable measure of its designs reform package.
+confidence: 0.7
+model: claude-opus-5-5
+status: to_review

@@ -1,0 +1,49 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws449.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-04"
+source:
+  id: wms-hcws449
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-04/HCWS449
+  title: Law enforcement use of biometrics, facial recognition and similar technologies
+  date: "2026-11-04"
+  venue_label: Written ministerial statement
+quote: >-
+  That is why the Police Reform Bill will introduce a new framework to underpin use of biometric and
+  overt surveillance systems for law enforcement and some safeguarding purposes, by the police and
+  other public bodies. The framework will ensure policing can innovate in a repeatable and
+  consistent manner, supporting adoption of emerging biometric and overt surveillance technologies
+  that improve policing effectiveness and public protection. New powers will be supported by a
+  statutory Code of Practice, and a new independent oversight body will monitor and enforce
+  compliance.
+source_span: [906, 1482]
+speaker:
+  name: Sarah Jones
+  role: Minister of State for Policing and Crime
+  party: Labour
+  member_id: 4631
+  actor_id: labour
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: public_order
+  who: >-
+    Police and other public bodies using biometric and overt surveillance systems in England and
+    Wales; private-sector users of facial recognition for crime prevention
+  how_much: null
+  when: null
+  funded_by: null
+  deadline: null
+why: >-
+  The Police Reform Bill will create a statutory framework for law enforcement use of biometrics and
+  facial recognition in England and Wales, with a statutory Code of Practice and a new independent
+  oversight body; the Bill will also align private-sector crime-prevention rules with it.
+confidence: 0.6
+model: claude-opus-5-5
+status: to_review
