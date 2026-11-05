@@ -1,0 +1,43 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-new-ukrainian-gcse-to-help-young-people-preserve-their-herit.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-04"
+source:
+  id: govuk-new-ukrainian-gcse-to-help-young-people-preserve-their-herit
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/new-ukrainian-gcse-to-help-young-people-preserve-their-heritage
+  title: New Ukrainian GCSE to help young people preserve their heritage
+  date: "2026-11-04"
+  venue_label: Press release (Department for Education)
+quote: >-
+  The Ukrainian GCSE is expected to be available for first teaching in England, Wales and Northern
+  Ireland from September 2028, with first assessments taking place in 2029.
+source_span: [3642, 3812]
+speaker:
+  name: HM Government
+  role: Department for Education
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: education
+  who: >-
+    Pupils in England, Wales and Northern Ireland, particularly Ukrainian children and young people
+    living in the UK
+  how_much: null
+  when: First teaching from September 2028; first assessments in 2029
+  funded_by: null
+  deadline: "2028-09-30"
+why: >-
+  A new Ukrainian GCSE will be available for first teaching from September 2028, with first exams in
+  2029.
+confidence: 0.8
+model: claude-opus-5-5
+status: to_review
