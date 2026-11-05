@@ -19,7 +19,7 @@ interface Kpi {
 const SCENARIO_NOTE = "Scenario value from the sandbox: official costings per unit of change, with no knock-on effects on the wider economy. The range is shown underneath.";
 
 export function KpiStrip() {
-  const { settings, model, view, isBaseYear } = useScenario();
+  const { seed, settings, model, view, isBaseYear } = useScenario();
   const { result, statement } = view;
   const { macro, borrowing_provenance } = statement;
   const { receipts_bn, spending_bn, borrowing_bn } = result.totals;
@@ -33,9 +33,16 @@ export function KpiStrip() {
   const totalP = { quality: "sourced" as const, source_id: borrowing_provenance.source_id };
   const scenarioP = { quality: "modelled" as const, method_note: SCENARIO_NOTE };
 
+  // In the base year the tile follows the sandbox's Bank Rate lever, whose base is the rate in force
+  // today. The base year's own statement holds the rate at the end of that year, which a later MPC
+  // decision makes stale (5 Nov 2026: 3.75% then, 4.00% now), so today's date and source come from
+  // the newest statement, and "changed" means moved off the lever's base.
   const rateLever = model.rateLever;
-  const rate = rateLever && isBaseYear ? (settings[rateLever.id] as number) : macro.bank_rate_pct;
-  const rateChanged = Math.abs(rate - macro.bank_rate_pct) > 1e-9;
+  const sandboxRate = Boolean(rateLever && isBaseYear);
+  const latestPeriod = seed.years.at(-1)?.period;
+  const rateMacro = sandboxRate ? ((latestPeriod && seed.statements[latestPeriod]?.macro) || macro) : macro;
+  const rate = sandboxRate ? (settings[rateLever!.id] as number) : macro.bank_rate_pct;
+  const rateChanged = sandboxRate && Math.abs(rate - rateLever!.base) > 1e-9;
 
   const items: Kpi[] = [
     {
@@ -77,8 +84,8 @@ export function KpiStrip() {
     {
       label: "Bank Rate",
       value: `${fixed(rate, 2)}%`,
-      sub: rateChanged ? "scenario value, set by the Bank of England" : `since ${longDate(macro.bank_rate_date)}`,
-      p: rateChanged ? { quality: "modelled", method_note: "A value you set in the sandbox. The Bank of England sets Bank Rate, not the government." } : macro.provenance.bank_rate_pct!,
+      sub: rateChanged ? "scenario value, set by the Bank of England" : `since ${longDate(rateMacro.bank_rate_date)}`,
+      p: rateChanged ? { quality: "modelled", method_note: "A value you set in the sandbox. The Bank of England sets Bank Rate, not the government." } : rateMacro.provenance.bank_rate_pct!,
     },
   ];
 
