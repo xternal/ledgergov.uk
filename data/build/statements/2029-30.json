@@ -60,8 +60,8 @@
     "nominal_gdp_bn": 3543.028,
     "psnd_bn": 3487.198,
     "psnd_pct_gdp": 96.674,
-    "bank_rate_pct": 3.75,
-    "bank_rate_date": "2026-09-17",
+    "bank_rate_pct": 4.0,
+    "bank_rate_date": "2026-11-05",
     "households_m": 29.003,
     "income_taxpayers_m": 40.8,
     "population_m": 69.484,
@@ -102,8 +102,7 @@
       },
       "bank_rate_pct": {
         "quality": "sourced",
-        "source_id": "boe_bank_rate",
-        "method_note": "MPC decision date: Bank Rate held (not a change)."
+        "source_id": "boe_bank_rate"
       },
       "households_m": {
         "quality": "sourced",
