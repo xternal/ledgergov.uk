@@ -107,7 +107,13 @@ function check(id: string) {
   return file;
 }
 
+/** PolicyEngine asked us (6 November 2026) not to use the economy endpoints or /uk/calculate on api.policyengine.org. */
+const LIVE_CALLS_OFF = true;
+
 async function record(id: string) {
+  // PolicyEngine asked us (6 November 2026) to stop using the economy endpoints and /uk/calculate on api.policyengine.org.
+  // Until the job moves (docs/MODEL.md, "Paused, 6 November 2026"), it asks PolicyEngine nothing.
+  if (LIVE_CALLS_OFF) fail(`record is off: PolicyEngine asked us not to use api.policyengine.org's economy endpoints or /uk/calculate (docs/MODEL.md). Offline builds still work: pnpm household -- build ${id}`);
   const { file } = loadEvent(id);
   const client = policyEngineClient({ userAgent: BUDGET_JOB_USER_AGENT, timeouts: { economy: 60_000, calculate: 120_000 } });
   const householdsOnly = process.argv.includes("--households-only");

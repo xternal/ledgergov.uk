@@ -135,7 +135,7 @@ export default async function HouseholdPage({ params }: Props) {
         : "The Budget's published rates and thresholds, applied to a salary in the reader's browser; a static microsimulation with PolicyEngine UK follows once it answers",
       about: { "@type": "Event", name: s.name, startDate: s.date, organizer: { "@type": "GovernmentOrganization", name: "HM Treasury" } },
       isBasedOn: s.input.sources.map((x) => x.url),
-      citation: "https://policyengine.org/uk",
+      citation: "https://www.policyengine.org/uk",
       isPartOf: { "@type": "WebSite", name: SITE_NAME, url: absolute("/") },
     },
     {
@@ -192,7 +192,7 @@ export default async function HouseholdPage({ params }: Props) {
             <span className="text-caption font-medium text-muted">{l.model}</span>
             <span className="text-caption text-muted">
               {noModel ? "Our estimate: " : "Worked out with "}
-              <a href="https://policyengine.org/uk">PolicyEngine</a>&apos;s open model{noModel ? ", once it answers" : ""}
+              <a href="https://www.policyengine.org/uk">PolicyEngine</a>&apos;s open model{noModel ? ", once it answers" : ""}
             </span>
           </div>
           {noModel && (
@@ -431,7 +431,7 @@ export default async function HouseholdPage({ params }: Props) {
           </h2>
           <p className="m-0 text-muted">
             Editors type each measure from the Budget documents, every figure with its page: the value in each year without the Budget, and with it.
-            We send the two complete sets of rules to <a href="https://policyengine.org/uk">PolicyEngine</a>, a charity whose open-source model of
+            We send the two complete sets of rules to <a href="https://www.policyengine.org/uk">PolicyEngine</a>, a charity whose open-source model of
             UK taxes and benefits runs them over a large survey of households that represents the country (the Family Resources Survey, reweighted
             by PolicyEngine). It works out every household&apos;s income both ways and adds up the differences by income tenth.
           </p>
@@ -443,7 +443,7 @@ export default async function HouseholdPage({ params }: Props) {
             <p className="m-0 text-muted">
               We asked PolicyEngine once, on {computedOn(s)}, not each time someone opens the page, and nothing about readers is ever sent. Every answer
               came from one version of the model: PolicyEngine UK {s.provider.model_version}, data {s.provider.data_version}. An editor checked the
-              measures before this page was published. You can open the same comparison in <a href={compareUrl}>PolicyEngine&apos;s own app</a>, or
+              measures before this page was published. PolicyEngine&apos;s own work on the UK is at <a href={compareUrl}>policyengine.org/uk</a>. You can also
               read <a href={`https://github.com/xternal/ledgergov.uk/blob/main/${s.measures_file}`}>the measures file</a> and{" "}
               <a href="https://github.com/xternal/ledgergov.uk/blob/main/docs/MODEL.md">our method</a>.
             </p>

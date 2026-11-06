@@ -54,6 +54,14 @@ v0 uses Bank Rate for `i_t`; v1 should use the effective interest rate on the gi
 
 Contract: `GET /api/t1?s=<scenario code>` → `T1Response` (`packages/schema/src/t1.ts`). Cache by scenario code and year. The UI shows T0 instantly and fills T1 when ready.
 
+**Paused, 6 November 2026.** Max Ghenis (PolicyEngine) wrote that the economy endpoints on `api.policyengine.org` serve PolicyEngine's own web app and are not offered to outside sites, and asked us to take "Who gains and loses" and the Budget job off them and to move the example households off `/uk/calculate` there. Since then:
+
+- `T1_PAUSED` (`packages/schema/src/t1.ts`) hides "Who gains and loses" and "People like me", and `/api/t1` answers 503 without calling anyone.
+- `pnpm household -- record` and `pnpm pe:probe` refuse to run. Offline builds from the committed recordings (`pnpm household -- build <event>`, `--no-model`) and `check` still work.
+- Links to reforms in PolicyEngine's old app (retired) now go to https://www.policyengine.org/uk.
+
+What PolicyEngine offers instead: for population results, the CSVs behind its Autumn Budget 2026 dashboard (https://www.policyengine.org/uk/autumn-budget-2026; eight policies; revenue, income deciles, constituencies), credited and linked to the dashboard. For households, either its household API (https://www.policyengine.org/uk/api, client credentials on request, policyengine-uk 2.88.18, which overstates VAT by about 23% against 2.151.0) or the Python package run by us on a pinned version (`policyengine[uk]==6.15.0`, policyengine-uk 2.151.0; unmodified use on a public site needs no source release under the AGPL). Population runs of our own would need our own UK Data Service registrations (Family Resources Survey, HMRC's Survey of Personal Incomes and the surveys combined with it). The paragraphs below describe the setup before the pause.
+
 **Where it runs (decided in M5, 7 Oct 2026):** PolicyEngine's public API (`api.policyengine.org`), behind a `T1Provider` interface in `packages/server/src/model/`. Why not a self-hosted `services/model` yet:
 - UK population microdata (the enhanced Family Resources Survey) sits in a private repository that needs PolicyEngine's approval; the public API runs on it for us.
 - No container host to run and pay for; PolicyEngine maintains the model and data.
