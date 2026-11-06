@@ -63,8 +63,12 @@ export const rangeOfSize = (x: number, f: (v: number) => string) => {
   return `${f(lo)} to ${f(hi)}`;
 };
 
-/** The page's title, description and headline facts: the same words for search, share cards and the page. */
-export function householdCopy(s: HouseholdSnapshot) {
+/**
+ * The page's title, description and headline facts: the same words for search, share cards and the page. `peDashboard`
+ * is true when PolicyEngine's own Budget dashboard figures sit beside the snapshot (data/build/budget/policyengine/),
+ * shown by income tenth in place of ours (docs/MODEL.md, since 6 November 2026).
+ */
+export function householdCopy(s: HouseholdSnapshot, peDashboard = false) {
   const y = householdYears(s);
   const rehearsal = s.kind === "rehearsal";
   const title = rehearsal ? `${s.name}: what it did to households` : `${s.name}: what it does to households`;
@@ -76,7 +80,9 @@ export function householdCopy(s: HouseholdSnapshot) {
   const who =
     y.view.population === "shown" && y.view.households === "shown"
       ? "by income tenth and for six example households"
-      : y.view.households === "shown"
+      : y.view.households === "shown" && peDashboard
+        ? "for six example households, with PolicyEngine's own estimate by income tenth"
+        : y.view.households === "shown"
         ? "for six example households now, by income tenth once an editor has checked it"
         : y.view.population === "shown"
           ? "by income tenth now, for six example households once an editor has checked them"
