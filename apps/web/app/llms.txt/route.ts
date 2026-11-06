@@ -1,7 +1,7 @@
 import { backtestSummary, PolicyArea } from "@ledger/schema";
 import { areaPath, cardHeadline } from "@ledger/server/seo";
 import { constituencies, RECENT_VOTES } from "@ledger/server/mp";
-import { getBorrowing, getFiscalTargets, getForecasts, getHouseholdSnapshots, getLeaks, getPeople, getScorecards, getSeed } from "@/lib/data";
+import { getBorrowing, getFiscalTargets, getForecasts, getHouseholdSnapshots, getLeaks, getPeople, getPolicyEngineDashboard, getScorecards, getSeed } from "@/lib/data";
 import { borrowingSentence } from "@/lib/borrowing-copy";
 import { endpoints } from "@/lib/api";
 import { backtestLead } from "@/lib/method-copy";
@@ -106,7 +106,7 @@ export function GET() {
     ...getHouseholdSnapshots().map(
       (h) =>
         h.provider
-          ? `- [${householdCopy(h).title}](${absolute(householdPath(h))}): ${householdCopy(h).description} Income tenths rank households by income after tax and benefits, not adjusted for household size. Static estimate (nobody changes behaviour), shown with a ±10% range; computed once with PolicyEngine UK ${h.provider.model_version}${h.kind === "rehearsal" ? "; a rehearsal on last year's Budget" : ""}.`
+          ? `- [${householdCopy(h, !!getPolicyEngineDashboard(h.id)).title}](${absolute(householdPath(h))}): ${householdCopy(h, !!getPolicyEngineDashboard(h.id)).description} Income tenths rank households by income after tax and benefits, not adjusted for household size. Static estimate (nobody changes behaviour), shown with a ±10% range; example households computed once with PolicyEngine UK ${h.provider.model_version}${getPolicyEngineDashboard(h.id) ? `; figures by income tenth from PolicyEngine's own dashboard, ${getPolicyEngineDashboard(h.id)!.url}` : ""}${h.kind === "rehearsal" ? "; a rehearsal on last year's Budget" : ""}.`
           : `- [${householdCopy(h).title}](${absolute(householdPath(h))}): ${householdCopy(h).description} No model answers yet: the measures, the salary check and the Treasury's chart are complete; the estimate by income tenth and for example households will be computed once with PolicyEngine UK${h.kind === "rehearsal" ? "; a rehearsal on last year's Budget" : ""}.`,
     ),
     budgetHeadroomLine(),

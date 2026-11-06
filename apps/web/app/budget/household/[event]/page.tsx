@@ -44,7 +44,7 @@ export const dynamicParams = false;
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const s = load((await params).event);
   if (!s) return {};
-  const { title, description } = householdCopy(s);
+  const { title, description } = householdCopy(s, !!getPolicyEngineDashboard(s.id));
   const path = householdPath(s);
   return {
     title: `${title} | LedgerGov.UK`,
@@ -96,7 +96,7 @@ const tone = (v: number) => (v > 0.005 ? "text-good" : v < -0.005 ? "text-debt-i
 export default async function HouseholdPage({ params }: Props) {
   const s = load((await params).event);
   if (!s) notFound();
-  const c = householdCopy(s);
+  const c = householdCopy(s, !!getPolicyEngineDashboard(s.id));
   const l = householdLabels(s);
   const path = householdPath(s);
   const rehearsal = s.kind === "rehearsal";
