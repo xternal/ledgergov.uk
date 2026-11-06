@@ -510,8 +510,9 @@ function readHouseholds(file: HouseholdMeasuresFile, rec: HouseholdRecording, ch
   }
 }
 
-/** PolicyEngine's app showing the same comparison: the post policy over the pre one (none before PolicyEngine has answered). */
+/** PolicyEngine's UK home (its old app, which opened the comparison by id, is retired); none before PolicyEngine has answered. */
 export function policyEngineCompareUrl(s: Pick<HouseholdSnapshot, "policies">, startYear: number): string | null {
   if (!s.policies) return null;
-  return `https://policyengine.org/uk/policy?reform=${s.policies.post}&baseline=${s.policies.pre}&focus=policyOutput.policyBreakdown&region=uk&timePeriod=${startYear}`;
+  void startYear;
+  return "https://www.policyengine.org/uk";
 }
