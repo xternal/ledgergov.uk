@@ -1,0 +1,94 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws420.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-26"
+source:
+  id: wms-hcws420
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS420
+  title: Delivering Good Growth in every postcode
+  date: "2026-10-26"
+  venue_label: Written ministerial statement
+quote: >-
+  The Fiscal Devolution Roadmap and the Rewiring the State Delivery plan will further set out how
+  Good Growth Funds fit within our wider plans to give back control to local leaders, beginning with
+  the retention of a share of business rates from April 2027 and income tax assignment for Mayors
+  from April 2028.
+source_span: [3544, 3851]
+speaker:
+  name: Jim McMahon
+  role: Minister for Local Government, Devolution and Regional Growth
+  party: Labour
+  member_id: 4569
+  actor_id: labour
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: taxes
+  who: Mayors and local leaders
+  how_much: null
+  when: business rates from April 2027; income tax from April 2028
+  funded_by: null
+  deadline: "2028-04-30"
+why: >-
+  Restates an earlier commitment that local leaders will retain a share of business rates from April
+  2027 and mayors will be assigned income tax from April 2028.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      The Government is however determined to help local leaders deliver good growth immediately and
+      today we are confirming £285 million in 2027-28, comprising of mayoral funding for Good Growth
+      Funds and incubator capital funding for other areas transitioning towards mayoral devolution.
+    source_span: [2074, 2357]
+    suggested:
+      policy_area: economic_affairs
+      who: mayors and areas transitioning towards mayoral devolution
+      how_much: £285 million
+      when: 2027-28
+      funded_by: null
+      deadline: null
+    why: >-
+      Commits £285 million in 2027-28 for mayoral Good Growth Funds and incubator capital funding
+      for areas moving towards mayoral devolution.
+    confidence: 0.65
+  - quote: >-
+      The Government will also work with Mayors to design a new £1.5 billion borrowing facility
+      available from 2028, giving them access to the financing they need to back the local
+      priorities that will drive growth in their areas.
+    source_span: [2358, 2582]
+    suggested:
+      policy_area: economic_affairs
+      who: Mayors
+      how_much: £1.5 billion
+      when: from 2028
+      funded_by: null
+      deadline: null
+    why: >-
+      Commits to a new £1.5 billion borrowing facility for mayors that will be available from 2028.
+    confidence: 0.75
+  - quote: >-
+      The Government will back this up and strengthen delivery by providing strategic authorities
+      with an additional £150 million in 2027-28 to strengthen their capacity and capability as
+      their range of powers and responsibilities grow.
+    source_span: [2706, 2936]
+    suggested:
+      policy_area: general_services
+      who: strategic authorities
+      how_much: £150 million
+      when: 2027-28
+      funded_by: null
+      deadline: null
+    why: >-
+      Commits an additional £150 million to strategic authorities in 2027-28 for capacity and
+      capability.
+    confidence: 0.7
+confidence: 0.55
+model: claude-opus-5-5
+status: to_review
