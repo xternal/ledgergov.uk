@@ -180,7 +180,7 @@ export function householdFaq(s: HouseholdSnapshot): { q: string; a: string }[] {
   return [
     {
       q: "Is this the government's own figure?",
-      a: `No. It is our estimate, made with PolicyEngine UK, an open-source model of the UK's taxes and benefits run by the charity PolicyEngine. The Treasury publishes its own analysis with every Budget${t ? "; its chart is on this page, beside ours" : ""}. Neither is advice about your own taxes.`,
+      a: `No. ${s.provider?.name === "policyengine_python" ? "The example households are our estimate, made with PolicyEngine UK, an open-source model of the UK's taxes and benefits run by the charity PolicyEngine; the estimate for the whole country is PolicyEngine's own, from its Budget dashboard." : "It is our estimate, made with PolicyEngine UK, an open-source model of the UK's taxes and benefits run by the charity PolicyEngine."} The Treasury publishes its own analysis with every Budget${t ? "; its chart is on this page, beside ours" : ""}. Neither is advice about your own taxes.`,
     },
     {
       q: "Why does it differ from the Treasury's chart?",

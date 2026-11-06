@@ -17,7 +17,7 @@ import {
   type HouseholdYearResult,
 } from "@ledger/schema";
 import { SEED_DIR, calculatorBaseName, taxSeedNames, textSha256 } from "@ledger/schema/household";
-import { archetypeSituation, readNetIncomes } from "./households";
+import { archetypeCases, archetypeSituation, readNetIncomes, type HouseholdCase } from "./households";
 import { POLICYENGINE_API, type PolicyEngineClient, type PolicyEngineMetadata } from "./policyengine";
 import { startYearOf, type Reform } from "./reform";
 import { toT1Population } from "./transform";
@@ -136,13 +136,24 @@ export function differencesFromCurrentLaw(file: HouseholdMeasuresFile, meta: Pic
   return out;
 }
 
+/** PolicyEngine's Python package the job runs the example households on (scripts/pe/requirements.txt). */
+export const PE_PYTHON_PIN = "6.15.0";
+export const PE_PYTHON_URL = `https://pypi.org/project/policyengine/${PE_PYTHON_PIN}/`;
+
 /** Everything the live step got back, enough to build the snapshot offline. */
 export interface HouseholdRecording {
   event: string;
   recorded_at: string;
+  /**
+   * Where the answers came from: "api", PolicyEngine's public API (until 6 November 2026), or "python", its Python
+   * package run here (scripts/pe/households.py), for the example households only. Absent in older recordings: "api".
+   */
+  engine?: "api" | "python";
+  /** The API's address, or the package's page on PyPI. */
   api: string;
   versions: { bundle_before: string; bundle_after: string; household_model_version: string; years: number[] };
-  policies: { pre: { id: number; data: Reform }; post: { id: number; data: Reform } };
+  /** The two policies; their PolicyEngine ids only when the API registered them (null with the Python package). */
+  policies: { pre: { id: number | null; data: Reform }; post: { id: number | null; data: Reform } };
   /** Trimmed economy answer per fiscal year, post over pre (empty when the run skipped them: `--households-only`). */
   economy: Record<string, Record<string, unknown>>;
   /** /uk/calculate results for the six example households, every year of the file, under each policy (null if skipped). */
@@ -221,6 +232,52 @@ export async function recordHouseholdRun(file: HouseholdMeasuresFile, opts: Reco
   };
 }
 
+/** What scripts/pe/households.py writes: the versions it ran, and each policy's net incomes shaped like /uk/calculate's answer. */
+export interface LocalHouseholdAnswer {
+  versions: { policyengine: string; policyengine_uk: string; policyengine_core: string };
+  pre: unknown;
+  post: unknown;
+}
+
+/** What scripts/pe/households.py reads. */
+export interface LocalHouseholdRequest {
+  cases: HouseholdCase[];
+  policies: { pre: Reform; post: Reform };
+}
+
+/**
+ * The live step since 6 November 2026: the six example households under both policies, every year of the file, on
+ * PolicyEngine's Python package run here (`run` starts scripts/pe/households.py). No population results: those are
+ * PolicyEngine's own (its Budget dashboard), so the file must hold deciles back. Refuses an unpinned package.
+ */
+export async function recordLocalHouseholds(
+  file: HouseholdMeasuresFile,
+  run: (req: LocalHouseholdRequest) => Promise<LocalHouseholdAnswer>,
+  now: () => Date = () => new Date(),
+): Promise<HouseholdRecording> {
+  if (!(file.hold ?? []).includes("deciles"))
+    throw new Error("the Python package computes the example households only: the measures file must hold deciles (hold: [deciles])");
+  const { pre, post } = budgetPolicies(file);
+  const answer = await run({ cases: archetypeCases(file.years.map(startYearOf)), policies: { pre, post } });
+  if (answer.versions.policyengine !== PE_PYTHON_PIN)
+    throw new Error(`policyengine ${answer.versions.policyengine} answered, but the job is pinned to ${PE_PYTHON_PIN}: reinstall from scripts/pe/requirements.txt`);
+  return {
+    event: file.event.id,
+    recorded_at: now().toISOString(),
+    engine: "python",
+    api: PE_PYTHON_URL,
+    versions: {
+      bundle_before: answer.versions.policyengine,
+      bundle_after: answer.versions.policyengine,
+      household_model_version: answer.versions.policyengine_uk,
+      years: file.years.map(startYearOf),
+    },
+    policies: { pre: { id: null, data: pre }, post: { id: null, data: post } },
+    economy: {},
+    households: { pre: answer.pre, post: answer.post },
+  };
+}
+
 interface EconomyVersions {
   model_version?: string;
   data_version?: string;
@@ -266,7 +323,7 @@ export function buildHouseholdSnapshot(
     "policies",
     samePolicies,
     samePolicies
-      ? `the recorded policies (pre ${rec.policies.pre.id}, post ${rec.policies.post.id}) are exactly what the measures file sets: ${Object.keys(expected.post).length} parameters, ${file.years.length} years`
+      ? `the recorded policies${rec.policies.pre.id === null ? "" : ` (pre ${rec.policies.pre.id}, post ${rec.policies.post.id})`} are exactly what the measures file sets: ${Object.keys(expected.post).length} parameters, ${file.years.length} years`
       : "the recording was made from other values than the measures file now has: record again",
   );
 
@@ -274,7 +331,9 @@ export function buildHouseholdSnapshot(
   const holdDeciles = hold.includes("deciles");
   const holdHouseholds = hold.includes("households");
   const missingYears = file.years.filter((y) => !rec.economy[y]);
-  if (holdDeciles) check("years", true, "deciles held until an editor has reviewed them: none published");
+  const python = rec.engine === "python";
+  if (python && !holdDeciles) check("years", false, "the Python package computed the example households only: hold deciles in the measures file");
+  else if (holdDeciles) check("years", true, python ? "population results are PolicyEngine's own (its Budget dashboard): none computed here" : "deciles held until an editor has reviewed them: none published");
   else check("years", missingYears.length === 0, missingYears.length ? `no answer for ${missingYears.join(", ")}` : `an answer for every year, ${file.years[0]} to ${file.years.at(-1)}`);
 
   // One model throughout: every year's economy answer, the bundle before and after, and the household engine.
@@ -295,7 +354,9 @@ export function buildHouseholdSnapshot(
     oneModel,
     oneModel
       ? holdDeciles
-        ? `the households from policyengine-uk ${model}, bundle ${rec.versions.bundle_before} before and after`
+        ? python
+          ? `the households from policyengine-uk ${model}, policyengine ${rec.versions.bundle_before}, run here`
+          : `the households from policyengine-uk ${model}, bundle ${rec.versions.bundle_before} before and after`
         : `every answer from policyengine-uk ${model}, data ${versions[0]!.data}, bundle ${rec.versions.bundle_before}; the households from the same model`
       : `answers from more than one model: economy ${[...models].join("/")} (data ${[...datas].join("/")}), bundle ${[...bundles].join("/")}, households ${rec.versions.household_model_version}. PolicyEngine updated during the run: record again`,
   );
@@ -307,7 +368,8 @@ export function buildHouseholdSnapshot(
   const calculator = calculatorChecked(file, calculatorBase, check);
 
   if (checks.some((c) => !c.ok)) return { snapshot: null, checks };
-  const b = versions[0] ?? { model: rec.versions.household_model_version, data: "not used (deciles held)", dataset: null };
+  const b = versions[0] ?? { model: rec.versions.household_model_version, data: python ? "not used (households only)" : "not used (deciles held)", dataset: null };
+  const ids = rec.policies.pre.id !== null && rec.policies.post.id !== null ? { pre: rec.policies.pre.id, post: rec.policies.post.id } : null;
   const snapshot = HouseholdSnapshot.parse({
     id: file.event.id,
     name: file.event.name,
@@ -318,8 +380,8 @@ export function buildHouseholdSnapshot(
     measures_file: measuresPath,
     measures_sha256: textSha256(measuresText),
     input: file,
-    provider: { name: "policyengine_api", api: rec.api, bundle_version: rec.versions.bundle_before, model_version: b.model!, data_version: b.data!, dataset: b.dataset },
-    policies: { pre: rec.policies.pre.id, post: rec.policies.post.id },
+    provider: { name: python ? "policyengine_python" : "policyengine_api", api: rec.api, bundle_version: rec.versions.bundle_before, model_version: b.model!, data_version: b.data!, dataset: b.dataset },
+    policies: ids,
     computed_at: rec.recorded_at,
     results,
     households,
@@ -464,7 +526,7 @@ function readResults(file: HouseholdMeasuresFile, rec: HouseholdRecording, check
     const results = file.years
       .filter((y) => rec.economy[y])
       .map((y) => {
-        const { population } = toT1Population(rec.economy[y], { policyId: rec.policies.post.id, startYear: startYearOf(y), fetchedAt: new Date(rec.recorded_at) });
+        const { population } = toT1Population(rec.economy[y], { policyId: rec.policies.post.id ?? 0, startYear: startYearOf(y), fetchedAt: new Date(rec.recorded_at) });
         return {
           year: y,
           budget: { net_bn: population.budget.net_bn, tax_bn: population.budget.tax_bn, benefits_bn: population.budget.benefits_bn },
