@@ -1,0 +1,47 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-paper-vat-treatment-of-private-hire-vehicle-operators.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-29"
+source:
+  id: govuk-paper-vat-treatment-of-private-hire-vehicle-operators
+  kind: govuk_policy_paper
+  url: https://www.gov.uk/government/publications/vat-supply-of-certain-passenger-transport-services-through-agents/vat-treatment-of-private-hire-vehicle-operators
+  title: VAT treatment of private hire vehicle operators
+  date: "2026-10-29"
+  venue_label: Policy paper (HM Revenue & Customs)
+quote: >-
+  This measure announces a change in VAT law coming into effect in January 2028 for supplies of
+  passenger transport services by taxi or PHV supplied through an agent, so that the services will
+  be deemed to be made by the agent and not the driver. This means that the operator will account
+  for VAT on the full value of the fare where they are registered for VAT.
+source_span: [369, 728]
+speaker:
+  name: HM Government
+  role: HM Revenue & Customs
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: taxes
+  who: >-
+    Larger taxi and private hire vehicle operators acting as agents whose annual fare turnover
+    exceeds a threshold (lead option £50 million); passengers may be affected
+  how_much: >-
+    Exchequer impact of £95 million in 2027 to 2028, rising to £425 million in 2031 to 2032
+  when: From 2 January 2028
+  funded_by: null
+  deadline: "2028-01-02"
+why: >-
+  VAT law will be changed so that, from 2 January 2028, taxi and private hire journeys sold through
+  an agent are treated as supplied by the operator, which must account for VAT on the full fare. The
+  change applies only to larger operators above a turnover threshold.
+confidence: 0.8
+model: claude-opus-5-5
+status: to_review

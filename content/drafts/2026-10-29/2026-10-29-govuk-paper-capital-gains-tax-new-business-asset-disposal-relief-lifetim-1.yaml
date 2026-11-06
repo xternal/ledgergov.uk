@@ -1,0 +1,46 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-paper-capital-gains-tax-new-business-asset-disposal-relief-lifetim.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-10-29"
+source:
+  id: govuk-paper-capital-gains-tax-new-business-asset-disposal-relief-lifetim
+  kind: govuk_policy_paper
+  url: https://www.gov.uk/government/publications/capital-gains-tax-reduction-in-the-business-asset-disposal-relief-lifetime-limit/capital-gains-tax-new-business-asset-disposal-relief-lifetime-limit
+  title: "Capital Gains Tax: new Business Asset Disposal Relief lifetime limit"
+  date: "2026-10-29"
+  venue_label: Policy paper (HM Revenue & Customs)
+quote: >-
+  This measure reduces the lifetime limit for Business Asset Disposal Relief from £1 million to
+  £500,000 for qualifying disposals made on or after 6 April 2027.
+source_span: [520, 678]
+speaker:
+  name: HM Government
+  role: HM Revenue & Customs
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: taxes
+  who: >-
+    Trustees who dispose of business assets and individuals who dispose of all or part of their
+    business or shares in their personal company; an estimated 13,000 individuals affected
+  how_much: >-
+    Lifetime limit cut from £1 million to £500,000; Exchequer gain of £5 million in 2026 to 2027
+    rising to £305 million in 2031 to 2032
+  when: Qualifying disposals made on or after 6 April 2027
+  funded_by: null
+  deadline: "2027-04-06"
+why: >-
+  Restates the Budget 2026 commitment to halve the Business Asset Disposal Relief lifetime limit
+  from £1 million to £500,000 for disposals from 6 April 2027; editors may prefer to quote the
+  original Budget announcement.
+confidence: 0.8
+model: claude-opus-5-5
+status: to_review

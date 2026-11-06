@@ -1,0 +1,56 @@
+Capital allowances: reduce the main rate writing-down allowance and increase the main rate first-year allowance
+Who is likely to be affected
+This measure will impact businesses incurring expenditure that qualifies for the main rate first-year allowance (FYA) and businesses claiming main rate writing-down allowance (WDA).
+General description of the measure
+This measure increases the rate of FYA available for qualifying main rate expenditure from 40% to 50% and reduces main rate WDA from 14% to 12% per year.
+Policy objective
+This measure aims to support business investment by providing greater upfront tax relief for unincorporated businesses and businesses investing in plant and machinery for leasing while contributing to the government’s objective of fiscal consolidation by reducing main rate WDA.
+Background to the measure
+Capital allowances provide tax relief for qualifying capital expenditure on assets such as plant and machinery. Full expensing and the £1m annual investment allowance (AIA) provide full upfront relief for most new investment in plant and machinery. The 40% FYA introduced at Budget 2025 provides a substantial upfront deduction for qualifying new main rate expenditure that would otherwise only qualify for WDAs. It has fewer restrictions than full expensing and therefore particularly benefits unincorporated businesses and businesses investing in plant or machinery for leasing. As announced at Budget 2026, the 40% FYA has been increased to 50% and main rate WDA has been reduced to 12%. Special rate WDA remains at 6%.
+Detailed proposal
+Operative date
+The new rate of WDA will be effective for chargeable periods beginning on or after 1 April 2027 for Corporation Tax and 6 April 2027 for Income Tax.
+A hybrid rate of WDA will apply where a chargeable period begins before, and ends on or after, 1 April 2027 for Corporation Tax and 6 April 2027 for Income Tax.
+The increased rate of FYA will be available for expenditure incurred from 1 January 2027.
+Current law
+The current law is included in Part 2 of the Capital Allowances Act 2001 (CAA 2001).
+Proposed revisions
+Legislation will be introduced in Finance Bill 2026-27 to increase the rate of FYA from 40% to 50% and reduce main rate WDA from 14% to 12%.
+Section 56(1) CAA 2001 will be amended to substitute 14% with 12%. Section 52(3) CAA 2001 will be amended to increase the rate of FYA from 40% to 50%.
+Finance Bill 2026-27 will also provide a hybrid rate of WDA to apply where a chargeable period spans 1 or 6 April 2027. The hybrid rate will be determined by reference to the proportion of the chargeable period which falls before the date the rate changed and that which falls after.
+Summary of impacts
+Exchequer impact (£million)
+2026 to 2027
+2027 to 2028
+2028 to 2029
+2029 to 2030
+2030 to 2031
+2031 to 2032
++125
++765
++1040
++1075
++1100
++1120
+These figures are set out in Table 6.1 of Budget 2026 and have been certified by the Office for Budget Responsibility. More details can be found in the policy costings document published alongside Budget 2026.
+Economic impact
+This measure is not expected to have any significant macroeconomic impacts.
+Impact on individuals, households and families
+This measure will only impact individuals who are eligible to claim capital allowances. In rare cases, employees can claim WDA on certain necessary plant or machinery not provided or reimbursed by their employer. For these employees and for self-employed individuals, the impacts are set out in the section on ‘administrative impact on business’.
+This measure is expected overall to have no impact on individuals’ experience of dealing with HMRC as it does not change any tax administration processes or obligations.
+The measure is not expected to impact on family formation, stability or breakdown.
+Equalities impacts
+This measure may apply to individuals regardless of their protected characteristics. HMRC does not hold data that it can use to assess whether there are any disproportionate impacts to protected groups.
+Administrative impact on business including civil society organisations
+This measure is expected to have a negligible impact on the administrative burdens of 600,000 (incorporated and unincorporated) businesses who claim main rate WDA and the main rate FYA.
+One-off costs may include familiarisation with this change and updating software to reflect the change. There are not expected to be ongoing costs.
+The measure is expected overall to have no impact on businesses’ experience of dealing with HMRC as it does not change any tax administration processes or obligations. For many businesses, main rate writing-down allowances are not relevant to future expenditure as this will be covered by the annual investment allowance and full expensing.
+The measure is not expected to disproportionately impact civil society organisations.
+Operational impact (£million) (HMRC or other)
+To support delivery of this policy, HMRC will need to make changes to its IT systems. The overall cost of these changes is currently estimated at £3.3 million.
+Other impacts
+Other impacts have been considered and none have been identified.
+Monitoring and evaluation
+Consideration will be given to monitoring and evaluating the uptake of the increased FYA and the impact of the revised writing-down allowance rate after sufficient monitoring data have been collected and analysed.
+Further advice
+If you have any questions about this change, contact HMRC’s capital allowances team by email contact.capitalallowances@hmrc.gov.uk.

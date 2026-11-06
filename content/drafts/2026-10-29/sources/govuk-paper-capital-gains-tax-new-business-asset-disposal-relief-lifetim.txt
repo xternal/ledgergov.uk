@@ -1,0 +1,61 @@
+Capital Gains Tax: new Business Asset Disposal Relief lifetime limit
+Who is likely to be affected
+Trustees who dispose of business assets and individuals who dispose of:
+all or part of their business
+shares in their personal company
+General description of the measure
+Business Asset Disposal Relief reduces the rate of Capital Gains Tax payable on qualifying business disposals. The relief is currently subject to a lifetime limit of £1 million of qualifying gains, and gains qualifying for the relief are taxed at 18%. This measure reduces the lifetime limit for Business Asset Disposal Relief from £1 million to £500,000 for qualifying disposals made on or after 6 April 2027.
+Policy objective
+The government is better targeting Business Asset Disposal Relief at business owners with smaller gains, reducing the lifetime limit from £1 million to £500,000. This will ensure that three-quarters of Business Asset Disposal Relief claimants will still receive relief on their entire gain, while supporting focus within the tax system for the start-up and scale-up phases of businesses, when most investment decisions are taken.
+Background to the measure
+This measure was announced at Budget 2026.
+Detailed proposal
+Operative date
+This measure will have effect for qualifying disposals made on or after 6 April 2027.
+Current law
+Current law for Business Asset Disposal Relief is at sections 169H to 169V of, and Schedule 7ZA to, the Taxation of Chargeable Gains Act (TCGA) 1992. Section 169N provides that Business Asset Disposal Relief is available subject to a maximum lifetime limit of £1 million per individual and qualifying gains are subject to an 18% rate of Capital Gains Tax.
+Proposed revisions
+Legislation will be introduced in the Finance Bill 2026 reducing the Business Asset Disposal Relief lifetime limit to £500,000. The rules provide that the lifetime limit must take into account the value of relief claimed in respect of qualifying gains in the past.
+Rules will also be introduced that apply to forestalling arrangements entered into in respect of unconditional but uncompleted contracts before 6 April 2027. Gains eligible for Business Asset Disposal Relief will be subject to the £500,000 lifetime cap unless:
+the parties to the contract can demonstrate that they did not enter into the contract with a purpose of obtaining a tax advantage by reason of the timing rule in section 28 of the TCGA 1992
+where the parties to the contract are connected, that the contract was entered into for wholly commercial reasons
+Where any of these apply, a statement must also be made where the gain exceeds £100,000.
+An additional rule will apply if a person elects not to apply the Capital Gains Tax share reorganisation rules so they can claim Business Asset Disposal Relief. It will apply where:
+shares in a single company are reorganised and, on 6 April 2027, the shareholder still meets the conditions for claiming Business Asset Disposal Relief
+shares in one company are exchanged for shares in another company, and either both companies are owned or controlled by substantially the same people, or the original shareholders hold a greater percentage of shares in the company that issued the new shares and, on 6 April 2027, the shareholder still meets the conditions for claiming Business Asset Disposal Relief on a disposal of those shares
+Then if an election is made to disapply the no disposal rules under section 169Q of the TCGA 1992 on or after 6 April 2027, the share disposal is to be treated as taking place at the time the election is made, meaning that the lifetime limit of £500,000 will apply.
+Summary of impacts
+Exchequer impact (£ million)
+2026 to 2027
+2027 to 2028
+2028 to 2029
+2029 to 2030
+2030 to 2031
+2031 to 2032
++5
++60
++180
++255
++280
++305
+These figures are set out in Table 6.1 of Budget 2026 and have been certified by the Office for Budget Responsibility. More details can be found in the policy costings document published alongside Budget 2026.
+Economic impact
+This measure is not expected to have any significant macroeconomic impacts.
+Impact on individuals, households and families
+This proposal is expected to impact individuals and trustees who are making disposals of all or part of a business, including shares and securities, with gains above the new Business Asset Disposal Relief lifetime limit. The majority (75%) of the approximately 51,000 claimants will be unaffected by the change, with an estimated 13,000 individuals expected to be affected, as some gains that would have previously qualified for the relief will no longer qualify.
+This measure is not expected to impact on family formation, stability or breakdown.
+Customer experience is expected to stay broadly the same because this measure does not bring new taxpayers into the tax system and does not significantly change processes for existing taxpayers.
+Equalities impact
+This measure may apply to individuals regardless of their protected characteristics. If a protected group is estimated to be overrepresented in this population it is considered to be disproportionately impacted.
+Individuals aged between 45 and 74 are estimated to be overrepresented in the population impacted the changes to Business Asset Disposal Relief lifetime limit (81%) compared to their prevalence in the UK adult population (42%), with males likely to be more impacted by the changes to Business Asset Disposal Relief lifetime limit (71%) compared to their prevalence in the UK adult population (49%).
+Where data was available there were no other protected groups overrepresented.
+Administrative impact on business including civil society organisations
+This measure is not expected to impact businesses or civil society organisations.
+Operational impact (£ million) (HMRC or other)
+We will need to make changes to HMRC’s IT estate to implement this policy. The full impacts and requirements of which will be determined in due course.
+Other impacts
+Other impacts have been considered and none have been identified.
+Monitoring and evaluation
+Consideration will be given to evaluating the effect of the reduced Business Asset Disposal Relief lifetime limit after sufficient monitoring data has been collected and analysed.
+Further advice
+If you have any questions about this change, contact the Capital Gains Tax policy team by email at cgtbudget@hmrc.gov.uk.
