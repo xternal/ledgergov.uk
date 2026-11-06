@@ -1,0 +1,68 @@
+format: openpromises/1
+id: uk-planassist-every-council-2027
+headline:
+  en: "AI planning tool for every council by 2027"
+actor_id: hm-government
+made_on: "2026-10-30"
+venue: press_release
+venue_label:
+  en: "Press release (Ministry of Housing, Communities and Local Government)"
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    PlanAssist brings planning applications, policies and site constraints together for planning
+    officers to review; the release says it was developed with Google DeepMind, Google Cloud,
+    Faculty and councils, and cut time on key tasks by 58% in early testing. It is not mandated. The
+    card moves when the government reports how many councils can use it.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government press release, 30 Oct 2026: Faster
+      planning decisions as new rules and AI tackle delays
+    url: https://www.gov.uk/government/news/faster-planning-decisions-as-new-rules-and-ai-tackle-delays
+versions:
+  - version: 1
+    text: >-
+      Following a successful trial in Camden, Barnet and Dorset Councils, the tool will now expand
+      to 15 councils for 12 months, with the government intending to make it available to every
+      council in England by the end of 2027.
+    recorded_on: "2026-10-30"
+    source_url: https://www.gov.uk/government/news/faster-planning-decisions-as-new-rules-and-ai-tackle-delays
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          Councils in England and people applying for planning permission
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          15 councils for 12 months, then every council in England by the end of 2027
+      deadline: "2027-12-31"
+      funded_by: null
+events:
+  - date: "2026-10-30"
+    type: promised
+    text:
+      en: >-
+        The government says the PlanAssist AI tool will expand to 15 councils, with the aim of
+        making it available to every council in England by the end of 2027
+  - date: "2027-12-31"
+    type: deadline
+    text:
+      en: >-
+        PlanAssist due to be available to every council in England by the end of 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

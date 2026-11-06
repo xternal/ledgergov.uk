@@ -1,0 +1,50 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-10-30"
+triaged_on: "2026-11-01"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 198
+sources_read: 5
+drafts: 6
+candidates: 8
+outcomes:
+  card: 2
+  reworded: 0
+  duplicate: 1
+  existing: 2
+  grant: 0
+  done: 0
+  process: 0
+  broad: 0
+  event: 0
+  cap: 2
+  other: 1
+quotes_exact: 2
+new_actors: []
+cards:
+  - uk-defence-offset-policy-2027 # the UK Offset Policy paper added as a source
+  - uk-planassist-every-council-2027
+reworded: []
+dropped:
+  - draft: 2026-10-30-govuk-cornwalls-first-youth-guarantee-jobs-fair-moves-hundreds-of--1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/news/cornwalls-first-youth-guarantee-jobs-fair-moves-hundreds-of-young-people-closer-to-employment
+    text: "The youth employment support package, backed by £2.5 billion investment, will support almost one million young people, and create 500,000 opportunities."
+    note: "the same £2.5bn youth package line, capped on intakes 2026-10-19 and 2026-10-26"
+  - { draft: 2026-10-30-govuk-defence-contracts-to-prioritise-british-jobs-and-skills-1, quote: also1, code: existing, into: uk-defence-3pc-2030, note: "3% of GDP on defence in 2030; the card is in pull request #194" }
+  - draft: 2026-10-30-govuk-faster-planning-decisions-as-new-rules-and-ai-tackle-delays-1
+    quote: also1
+    code: cap
+    source: https://www.gov.uk/government/news/faster-planning-decisions-as-new-rules-and-ai-tackle-delays
+    text: "PlanAssist will not be mandated software and the government is removing blockers to AI adoption by mandating the digitisation and publication of key planning documents as open data by the end of 2027, which will support all property technology tools with better quality data."
+    note: "key planning documents digitised and published as open data by the end of 2027"
+  - draft: 2026-10-30-govuk-faster-planning-decisions-as-new-rules-and-ai-tackle-delays-2
+    quote: quote
+    code: other
+    source: https://www.gov.uk/government/news/faster-planning-decisions-as-new-rules-and-ai-tackle-delays
+    text: "We’ve already beaten our manifesto commitment to recruit 300 planners, and we’re going further with 1,400 new recruits across the planning system by the end of this Parliament.”"
+    note: "Angela Rayner, Housing Secretary (member 4356), quoted in the release: 1,400 planning recruits by the end of this Parliament; a fair card held back: the speaker has no actor file, and a new MP actor needs Parliament's portrait credit in data/portraits.json, which the desk may not add (pull request #199 would lift this)"
+  - { draft: 2026-10-30-govuk-major-boost-for-young-people-in-west-dunbartonshire-as-youth-1, quote: quote, code: existing, into: uk-youth-hub-every-area-2029, note: "Youth Hubs in over 360 areas within three years, as in the card's version 3" }
+  - { draft: 2026-10-30-govuk-paper-uk-offset-policy-1, quote: quote, code: duplicate, into: uk-defence-offset-policy-2027, note: "the policy paper itself, added to the card as a source" }
