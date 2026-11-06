@@ -521,6 +521,12 @@
     "checked_on": "2026-10-18",
     "sha256": "715a2b92d28f2fb28e5b59f485838fcf63370bd4e4dbdab1f9bc8138ee713d15"
   },
+  "a9c9faf7f70f382727e0a6a23719097da8989c64f6d3fb9533f8ae3b180775c2|https://www.gov.uk/government/news/pm-confident-every-rough-sleeper-will-have-route-off-the-street-by-christmas-as-funding-doubles": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/pm-confident-every-rough-sleeper-will-have-route-off-the-street-by-christmas-as-funding-doubles",
+    "checked_on": "2026-10-27",
+    "sha256": "c7089c8baae93b508b00a37c0dab07584b8e76d326e0c914cf6cc5c88cb6b5a4"
+  },
   "abe133042fcc8a07cd54b80904171a5a5a04777902c8bef2ba82b741205bdbe4|https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal",
