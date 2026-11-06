@@ -1,0 +1,46 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-government-backs-local-journalism-with-6-million-funding-whi.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-05"
+source:
+  id: govuk-government-backs-local-journalism-with-6-million-funding-whi
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/government-backs-local-journalism-with-6-million-funding-while-careers-campaign-reaches-thousands-of-youngsters
+  title: >-
+    Government backs local journalism with £6 million funding while careers campaign reaches
+    thousands of youngsters
+  date: "2026-11-05"
+  venue_label: Press release (Department for Digital, Culture, Media and Sport)
+quote: >-
+  Next year, £1 million from the Fund will be dedicated to tackling local ‘news deserts’, areas that
+  have no dedicated local print, online, TV or radio outlet, in collaboration with key community
+  stakeholders and the Fund’s Steering Board. Up to a further £5 million will also be made available
+  next year to continue supporting financial sustainability and innovation in the sector.
+source_span: [28508, 28888]
+speaker:
+  name: HM Government
+  role: Department for Digital, Culture, Media and Sport
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: culture
+  who: >-
+    Local news outlets, particularly in areas with no dedicated local outlet ('news deserts')
+  how_much: £1 million for news deserts plus up to a further £5 million
+  when: Next year (2027)
+  funded_by: Local News Fund
+  deadline: null
+why: >-
+  The government commits to a further round of the Local News Fund next year, with £1 million
+  ring-fenced for news deserts and up to £5 million more for sustainability and innovation.
+confidence: 0.75
+model: claude-opus-5-5
+status: to_review
