@@ -1,28 +1,35 @@
 /**
  * pnpm household: "The Budget for your household" (docs/BUDGET_DAY.md). Run by an editor on Budget night, never
- * by readers. It reads content/budget/household/<event>.yaml, sends the two complete policies (without and with
- * the event) to PolicyEngine's public API, and writes data/build/budget/household/<event>.json for the page.
+ * by readers. It reads content/budget/household/<event>.yaml, runs the six example households under the two complete
+ * policies (without and with the event) on PolicyEngine's Python package, and writes
+ * data/build/budget/household/<event>.json for the page. Until 6 November 2026 it used PolicyEngine's public API,
+ * which PolicyEngine asked us to stop using; population results are now PolicyEngine's own (docs/MODEL.md).
  *
- *   pnpm household -- <event>            check, record and build: the whole run (about 5 economy runs, 4 minutes)
+ *   pnpm household -- <event>            check, record and build: the whole run (about a minute)
  *   pnpm household -- check <event>      offline: the file, its paths against PolicyEngine's metadata (the
  *                                        committed copy), the two policies, and every "without" value that
  *                                        differs from PolicyEngine's current law
- *   pnpm household -- record <event>     live: ask PolicyEngine and keep every answer in
- *                                        packages/server/test/fixtures/t1/household/<event>.json
- *                                        (--households-only: the example households, no population runs)
+ *   pnpm household -- record <event>     the six example households on PolicyEngine's Python package, run here
+ *                                        (scripts/pe/households.py, pinned in scripts/pe/requirements.txt; the
+ *                                        file must hold deciles), kept in packages/server/test/fixtures/t1/household/<event>.json
  *   pnpm household -- build <event>      offline: check the recording and write the snapshot; refuses if any check fails
  *   pnpm household -- build <event> --no-model
  *                                        offline, no recording: when PolicyEngine cannot be reached at all, a snapshot
  *                                        with no model answers (the measures, the Treasury's chart, the salary check);
  *                                        the normal run replaces it once PolicyEngine answers
+ *   pnpm household -- dashboard <event> <url>
+ *                                        live: PolicyEngine's own population results from the CSVs behind its Budget
+ *                                        dashboard (<url>, e.g. https://www.policyengine.org/uk/autumn-budget-2026), the
+ *                                        approved run of all its measures, into data/build/budget/policyengine/<event>.json
  *   pnpm household -- templates          live (one /uk/metadata call): rewrite content/budget/household/_templates.yaml
  *                                        and the metadata fixture from PolicyEngine's current law
  */
+import { spawn } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { stringify } from "yaml";
-import { HOUSEHOLD_DIR, MEASURES_DIR, parseMeasuresFile, readMeasuresFiles } from "@ledger/schema/household";
-import type { HouseholdCheck, HouseholdMeasuresFile, HouseholdSnapshot } from "@ledger/schema";
+import { HOUSEHOLD_DIR, MEASURES_DIR, PE_DASHBOARD_DIR, parseMeasuresFile, readMeasuresFiles, textSha256 } from "@ledger/schema/household";
+import { PolicyEngineDashboard, type HouseholdCheck, type HouseholdMeasuresFile, type HouseholdSnapshot } from "@ledger/schema";
 import {
   BUDGET_2025_SOURCE,
   BUDGET_JOB_USER_AGENT,
@@ -36,9 +43,12 @@ import {
   metadataIssues,
   policyEngineClient,
   readCalculatorBase,
-  recordHouseholdRun,
+  PE_PYTHON_PIN,
+  recordLocalHouseholds,
   unchangedMeasures,
   type HouseholdRecording,
+  type LocalHouseholdAnswer,
+  type LocalHouseholdRequest,
   type PolicyEngineMetadata,
 } from "../packages/server/src/model";
 
@@ -107,18 +117,45 @@ function check(id: string) {
   return file;
 }
 
-/** PolicyEngine asked us (6 November 2026) not to use the economy endpoints or /uk/calculate on api.policyengine.org. */
-const LIVE_CALLS_OFF = true;
+/**
+ * The Python the household script runs on: PE_PYTHON, else .venv-pe/bin/python at the repository root. Set it up once:
+ *   python3.12 -m venv .venv-pe && .venv-pe/bin/pip install -r scripts/pe/requirements.txt
+ */
+function pePython(): string {
+  const py = process.env.PE_PYTHON ?? join(root, ".venv-pe", "bin", "python");
+  if (!existsSync(py))
+    fail(`no Python for PolicyEngine at ${py}: run \`python3.12 -m venv .venv-pe && .venv-pe/bin/pip install -r scripts/pe/requirements.txt\` (or set PE_PYTHON)`);
+  return py;
+}
+
+/** Runs scripts/pe/households.py: the request on stdin, the answer on stdout. */
+function runLocalHouseholds(req: LocalHouseholdRequest): Promise<LocalHouseholdAnswer> {
+  const py = pePython();
+  return new Promise((resolve, reject) => {
+    const child = spawn(py, ["-I", join(root, "scripts", "pe", "households.py")], { stdio: ["pipe", "pipe", "inherit"] });
+    let out = "";
+    child.stdout.on("data", (d: Buffer) => (out += d.toString()));
+    child.on("error", reject);
+    child.on("close", (code) => {
+      if (code !== 0) return reject(new Error(`scripts/pe/households.py exited with ${code}`));
+      try {
+        resolve(JSON.parse(out) as LocalHouseholdAnswer);
+      } catch (e) {
+        reject(e);
+      }
+    });
+    child.stdin.end(JSON.stringify(req));
+  });
+}
 
 async function record(id: string) {
-  // PolicyEngine asked us (6 November 2026) to stop using the economy endpoints and /uk/calculate on api.policyengine.org.
-  // Until the job moves (docs/MODEL.md, "Paused, 6 November 2026"), it asks PolicyEngine nothing.
-  if (LIVE_CALLS_OFF) fail(`record is off: PolicyEngine asked us not to use api.policyengine.org's economy endpoints or /uk/calculate (docs/MODEL.md). Offline builds still work: pnpm household -- build ${id}`);
+  // PolicyEngine asked us (6 November 2026) to stop using api.policyengine.org's economy endpoints and /uk/calculate.
+  // The example households now run on its Python package here; population results are its own (docs/MODEL.md).
   const { file } = loadEvent(id);
-  const client = policyEngineClient({ userAgent: BUDGET_JOB_USER_AGENT, timeouts: { economy: 60_000, calculate: 120_000 } });
-  const householdsOnly = process.argv.includes("--households-only");
-  console.log(`Asking PolicyEngine for ${file.event.name}, ${file.years.join(", ")}${householdsOnly ? ", example households only" : ""}…`);
-  const rec = await recordHouseholdRun(file, { client, log: (l) => console.log(l), householdsOnly });
+  if (process.argv.includes("--households-only")) console.log("--households-only is the only mode now: the flag changes nothing");
+  console.log(`Running the example households for ${file.event.name}, ${file.years.join(", ")}, on policyengine ${PE_PYTHON_PIN} here…`);
+  const rec = await recordLocalHouseholds(file, runLocalHouseholds);
+  console.log(`policyengine ${rec.versions.bundle_before}, policyengine-uk ${rec.versions.household_model_version}`);
   const out = join(root, RECORDINGS, `${id}.json`);
   mkdirSync(dirname(out), { recursive: true });
   writeFileSync(out, `${JSON.stringify(rec, null, 1)}\n`);
@@ -250,13 +287,146 @@ function metadataFromFile(path: string): PolicyEngineMetadata {
   return { version: res.version, parameters };
 }
 
+/** One CSV with a header row, quoted fields allowed (PolicyEngine's reform names hold commas). */
+function parseCsv(text: string): Record<string, string>[] {
+  const rows: string[][] = [];
+  let row: string[] = [];
+  let field = "";
+  let quoted = false;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i]!;
+    if (quoted) {
+      if (ch === '"' && text[i + 1] === '"') (field += '"'), i++;
+      else if (ch === '"') quoted = false;
+      else field += ch;
+    } else if (ch === '"') quoted = true;
+    else if (ch === ",") row.push(field), (field = "");
+    else if (ch === "\n" || ch === "\r") {
+      if (ch === "\r" && text[i + 1] === "\n") i++;
+      row.push(field), rows.push(row), (row = []), (field = "");
+    } else field += ch;
+  }
+  if (field || row.length) row.push(field), rows.push(row);
+  const [head, ...body] = rows.filter((r) => r.some((c) => c !== ""));
+  return body.map((r) => Object.fromEntries(head!.map((h, i) => [h, r[i] ?? ""])));
+}
+
+async function fetchText(url: string): Promise<string> {
+  const res = await fetch(url, { headers: { "user-agent": BUDGET_JOB_USER_AGENT }, signal: AbortSignal.timeout(30_000) });
+  if (!res.ok) fail(`${url}: HTTP ${res.status}`);
+  return res.text();
+}
+
+interface DashboardEntry {
+  name: string;
+  status: string;
+  artifact: string;
+  artifact_sha256: string;
+  measures: string[];
+  years: number[];
+  approval: { at: string };
+}
+
+/**
+ * PolicyEngine's own population results, from the CSVs behind its Budget dashboard: the approved run of all its
+ * measures together, every year our measures file covers. PolicyEngine asked us to credit and link the dashboard.
+ */
+async function dashboard(id: string, pageUrl: string | undefined) {
+  if (!pageUrl || !/^https:\/\/(www\.)?policyengine\.org\//.test(pageUrl)) fail("usage: pnpm household -- dashboard <event> https://www.policyengine.org/uk/<dashboard>");
+  const { file } = loadEvent(id);
+  const page = pageUrl!.replace(/\/$/, "");
+  const base = `${page}/data`;
+  const manifest = JSON.parse(await fetchText(`${base}/manifest.json`)) as {
+    release: string;
+    revision: number;
+    updated_at: string;
+    measures: Record<string, { name: string; status: string }>;
+    combined: Record<string, DashboardEntry>;
+    execution: { identity: { wrapper: { version: string }; model: { version: string }; data: { dataset: string } } };
+  };
+  const all = Object.keys(manifest.measures).sort().join();
+  const runs = Object.entries(manifest.combined).filter(([, e]) => e.status === "approved" && [...e.measures].sort().join() === all);
+  if (runs.length !== 1) fail(`expected one approved run of all ${Object.keys(manifest.measures).length} measures, found ${runs.length}`);
+  const [runId, run] = runs[0]!;
+  const title = (/<title>([^<]+)<\/title>/.exec(await fetchText(page))?.[1] ?? "").replace(/\s*[|·–-]\s*PolicyEngine\s*$/, "").trim();
+
+  const files: { name: string; url: string; sha256: string }[] = [];
+  const csv = async (name: string) => {
+    const url = `${base}/${run.artifact}/${name}`;
+    const text = await fetchText(url);
+    files.push({ name, url, sha256: textSha256(text) });
+    return parseCsv(text);
+  };
+  const budget = await csv("budgetary_impact.csv");
+  const relative = await csv("distributional_impact.csv");
+  const cash = await csv("winners_losers.csv");
+
+  // A blank cell is PolicyEngine's gap, not ours: the year is left out and the gap recorded. Anything else unreadable fails.
+  const gaps: string[] = [];
+  const num = (v: string | undefined, what: string) => {
+    if (v === "") return (gaps.push(what), NaN);
+    const n = Number(v);
+    if (v === undefined || !Number.isFinite(n)) fail(`${what}: not a number (${v})`);
+    return n;
+  };
+  const ordinal = (d: number) => `${d}${d === 1 ? "st" : d === 2 ? "nd" : d === 3 ? "rd" : "th"}`;
+  const allYears = file.years.map((fy) => {
+    const y = fy.slice(0, 4);
+    if (!run.years.includes(Number(y))) fail(`PolicyEngine's run has no ${fy}`);
+    const deciles = Array.from({ length: 10 }, (_, i) => {
+      const d = i + 1;
+      return {
+        decile: d,
+        rel_change_pct: num(relative.find((r) => r.year === y && r.decile === ordinal(d))?.value, `${fy} decile ${d} %`),
+        avg_change_gbp: num(cash.find((r) => r.year === y && r.decile === String(d))?.avg_change, `${fy} decile ${d} £`),
+      };
+    });
+    return {
+      year: fy,
+      net_bn: num(budget.find((r) => r.year === y)?.value, `${fy} budget`),
+      all_avg_change_gbp: num(cash.find((r) => r.year === y && r.decile === "all")?.avg_change, `${fy} all £`),
+      deciles,
+    };
+  });
+  const complete = (y: (typeof allYears)[number]) => [y.net_bn, y.all_avg_change_gbp, ...y.deciles.flatMap((d) => [d.rel_change_pct, d.avg_change_gbp])].every(Number.isFinite);
+  const years = allYears.filter(complete);
+  for (const g of gaps) console.log(`gap in PolicyEngine's CSV: ${g} is blank; that year is left out`);
+
+  const out = PolicyEngineDashboard.parse({
+    event: id,
+    title: title || "PolicyEngine's Budget dashboard",
+    url: page,
+    release: manifest.release,
+    revision: manifest.revision,
+    updated_at: manifest.updated_at,
+    retrieved_at: new Date().toISOString(),
+    run: { id: runId, name: run.name, artifact: run.artifact, artifact_sha256: run.artifact_sha256, approved_at: run.approval.at },
+    model: {
+      policyengine: manifest.execution.identity.wrapper.version,
+      policyengine_uk: manifest.execution.identity.model.version,
+      dataset: manifest.execution.identity.data.dataset,
+    },
+    measures: Object.entries(manifest.measures).map(([mid, m]) => ({ id: mid, name: m.name })),
+    files,
+    years,
+    gaps,
+  });
+  const path = join(root, PE_DASHBOARD_DIR, `${id}.json`);
+  mkdirSync(dirname(path), { recursive: true });
+  writeFileSync(path, `${JSON.stringify(out, null, 1)}\n`);
+  console.log(`${out.title}, revision ${out.revision} (${out.updated_at}): ${out.measures.length} measures, policyengine-uk ${out.model.policyengine_uk}`);
+  for (const y of out.years) console.log(`  ${y.year}: £${y.net_bn.toFixed(2)}bn; tenth 1 ${y.deciles[0]!.rel_change_pct.toFixed(2)}%, tenth 10 ${y.deciles[9]!.rel_change_pct.toFixed(2)}%`);
+  console.log(`written: ${path}`);
+}
+
 async function main() {
   const noModel = process.argv.includes("--no-model");
   const args = process.argv
     .slice(2)
     .filter((a, i, all) => a !== "--" && a !== "--households-only" && a !== "--no-model" && a !== "--file" && all[i - 1] !== "--file");
   const [cmd, id] = args;
-  if (!cmd) fail("usage: pnpm household -- <event> | check <event> | record <event> | build <event> [--no-model] | templates [--from <metadata.json>]");
+  if (!cmd) fail("usage: pnpm household -- <event> | check <event> | record <event> | build <event> [--no-model] | dashboard <event> <url> | templates [--from <metadata.json>]");
+  if (cmd === "dashboard") return dashboard(id!, args[2]);
   if (cmd === "templates") return templates(args.includes("--from") ? args[args.indexOf("--from") + 1] : undefined);
   if (["check", "record", "build"].includes(cmd!) && !id) fail(`usage: pnpm household -- ${cmd} <event>`);
   if (noModel && cmd === "record") fail(`--no-model asks PolicyEngine nothing: use \`pnpm household -- build ${id} --no-model\``);

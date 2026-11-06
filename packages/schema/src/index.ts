@@ -18,6 +18,7 @@ export * from "./borrowing";
 export * from "./forecasts";
 export * from "./budget";
 export * from "./household";
+export * from "./pe-dashboard";
 export * from "./approvals";
 export * from "./v1";
 export type { CardVerification } from "./verification";

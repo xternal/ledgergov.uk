@@ -102,7 +102,7 @@ function fakeClient(rec: HouseholdRecording, opts: { bundleAfter?: string; years
     async createPolicy(data) {
       const pre = JSON.stringify(data) === JSON.stringify(rec.policies.pre.data);
       calls.push(`policy ${pre ? "pre" : "post"}`);
-      return pre ? rec.policies.pre.id : rec.policies.post.id;
+      return (pre ? rec.policies.pre.id : rec.policies.post.id)!;
     },
     async economy(policyId, startYear, baselineId): Promise<EconomyStep> {
       const year = `${startYear}-${String((startYear + 1) % 100).padStart(2, "0")}`;

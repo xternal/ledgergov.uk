@@ -229,6 +229,13 @@ It is data, not a card: the editors' approval rule for cards does not apply, but
 
 ## The Budget for your household
 
+> **Since 6 November 2026 the job no longer calls PolicyEngine's API** (PolicyEngine asked; `docs/MODEL.md`, T1). Read the steps below with these changes until the runbook is rewritten before the next Budget:
+>
+> - Once per machine: `python3.12 -m venv .venv-pe && .venv-pe/bin/pip install -r scripts/pe/requirements.txt`.
+> - The measures file holds deciles (`hold: [deciles]`) for good: `pnpm household -- <event>` (or `record`) runs the six example households on PolicyEngine's pinned Python package here, about four minutes, with no network and no population runs. `--households-only` changes nothing.
+> - Population results are PolicyEngine's own: once its Budget dashboard is published and approved, `pnpm household -- dashboard <event> <its url>`, then credit and link it (the page does).
+> - "Without the model" now means only that the Python run failed on the night; the API checks (`curl … api.policyengine.org`) no longer apply.
+
 `/budget/household/<event>` shows what the Budget's tax and benefit measures do to households: by income tenth, who gains and who loses, six example households before and after, a salary check readers run in their own browser, the measures left out and why, and the Treasury's own chart beside ours. It is built only from `data/build/budget/household/<event>.json`, which one command writes on the night from the measures editors type into `content/budget/household/<event>.yaml`. Readers never call PolicyEngine; the job does, once. How it works and what the live test found: `docs/MODEL.md`, T1, "The Budget for your household". `/budget` links the newest one by itself; until the night it links the rehearsal on Autumn Budget 2025.
 
 It is data, like the scorecard, but it is our estimate, so **an editor** reviews the measures file in the pull request, as for cards: every value against its page.
