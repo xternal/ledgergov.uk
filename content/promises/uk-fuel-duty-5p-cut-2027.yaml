@@ -1,0 +1,65 @@
+format: openpromises/1
+id: uk-fuel-duty-5p-cut-2027
+headline:
+  en: "Extend 5p fuel duty cut to June 2027"
+actor_id: hm-government
+made_on: "2026-10-28"
+venue: press_release
+venue_label:
+  en: "Press release (Wales Office)"
+area: taxes
+status: promised
+status_note:
+  en: >-
+    One of the Budget measures the Wales Office lists for Wales; fuel duty is a UK-wide tax. The
+    release says the 3.7p cut to red diesel duty also continues. It does not say what happens to the
+    rate after 30 June 2027. The card moves when the duty rates in force to that date are confirmed
+    in law.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Wales Office press release, 28 Oct 2026: Budget 2026: Breathing space for Welsh families and
+      businesses
+    url: https://www.gov.uk/government/news/budget-2026-breathing-space-for-welsh-families-and-businesses
+versions:
+  - version: 1
+    text: >-
+      The extension of the 5p cut to fuel duty for a further six months until 30 June 2027.
+    recorded_on: "2026-10-28"
+    source_url: https://www.gov.uk/government/news/budget-2026-breathing-space-for-welsh-families-and-businesses
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          Drivers and businesses that buy road fuel
+      cost:
+        note:
+          en: >-
+            No cost is given in the release.
+      when:
+        en: >-
+          For a further six months, until 30 June 2027
+      deadline: "2027-06-30"
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        The Budget extends the 5p cut to fuel duty for a further six months, until 30 June 2027
+  - date: "2027-06-30"
+    type: deadline
+    text:
+      en: >-
+        The 5p fuel duty cut due to last until 30 June 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
