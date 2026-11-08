@@ -275,6 +275,12 @@
     "checked_on": "2026-10-20",
     "sha256": "7237a376149621388e14655f2db73f6d775221c478578c50f2f2e54a7381d200"
   },
+  "597f0762a1b4f43aed24a51c2f3e15d7c8b876ab8095172cf00298156363a8b7|https://www.gov.uk/government/news/care-workers-women-returning-to-employment-and-builders-to-gain-practical-ai-skills": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/care-workers-women-returning-to-employment-and-builders-to-gain-practical-ai-skills",
+    "checked_on": "2026-11-08",
+    "sha256": "1fe711ddf1a399a7ff7ecddf6bd467a5a783dffdb5d409de665a100e6886b1da"
+  },
   "5983b05000b8cbf938d9b2b25d79ad905c966ebbbbf7773b5cf1784a646778db|https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity": {
     "match": "exact",
     "url": "https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity",
@@ -292,6 +298,12 @@
     "url": "https://www.gov.uk/government/news/tech-firms-will-have-to-take-down-abusive-images-within-48-hours-under-new-law-to-protect-women-and-girls",
     "checked_on": "2026-10-20",
     "sha256": "563814179433743db41250ea77fb990dd7f04a079a2c836ae3b317c9ce9f74c5"
+  },
+  "5befa1a701374863abb69fdb2aa44e04c2c09187e75d195397390419fe2ce941|https://www.gov.uk/government/news/child-trust-fund-injustice-to-end-under-government-plans": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/child-trust-fund-injustice-to-end-under-government-plans",
+    "checked_on": "2026-11-08",
+    "sha256": "1378b065e092ede638f009073448952b9b228cf6cf050b000a711dbad3d5624e"
   },
   "5d9554334d388fc760d6d134a275a246387a94b32fb55b47ed7a1b7fa6ea444d|https://www.gov.uk/government/news/cosmetic-cowboys-crackdown-continues-with-new-restrictions": {
     "match": "exact",
@@ -334,6 +346,12 @@
     "url": "https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements",
     "checked_on": "2026-10-25",
     "sha256": "10a5c8d720829b8a3086ca68c3390350f74a5cd6b54f67a449a4e43ecf36a88f"
+  },
+  "6b68752faf8e16e51d3045755be9999eea0d2cb37f5f102baca38998ff99f1a7|https://www.gov.uk/government/news/one-million-more-scans-to-help-catch-cancer-sooner": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/one-million-more-scans-to-help-catch-cancer-sooner",
+    "checked_on": "2026-11-08",
+    "sha256": "bb2e96afda77c40d448bd425194f427a8fc49be10ec118f9f2b37650a446950d"
   },
   "704d2801840a73e7ca32a980ee2a921687c6fb2a33f342ee7f2c7457899366b8|https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky": {
     "match": "exact",
@@ -532,6 +550,12 @@
     "url": "https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson",
     "checked_on": "2026-10-13",
     "sha256": "524c3b9ea355c8047e01f63575643c78199a3cbb108737371f4143af61278d46"
+  },
+  "aec592d3a046c14ad8202543ae80deb85c10d645173706d27f7b022c36c9b29f|https://www.gov.uk/government/publications/environment-act-2021-post-legislative-scrutiny-memorandum/environment-act-2021-post-legislative-scrutiny-memorandum": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/environment-act-2021-post-legislative-scrutiny-memorandum/environment-act-2021-post-legislative-scrutiny-memorandum",
+    "checked_on": "2026-11-08",
+    "sha256": "bc55a492e0ed7155866baeaaccb3415b0a54d08b9caaae398a2810373eaa7934"
   },
   "b0570603b00422ba986cc938f3b3897c2e6a717cea142dd17bbe212fa65e35ca|https://www.gov.uk/government/news/great-british-railways-takes-shape-as-hq-and-apprenticeship-scheme-confirmed": {
     "match": "exact",

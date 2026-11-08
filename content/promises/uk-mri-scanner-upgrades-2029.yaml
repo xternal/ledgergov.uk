@@ -1,0 +1,70 @@
+format: openpromises/1
+id: uk-mri-scanner-upgrades-2029
+headline:
+  en: "MRI scanner upgrades for every NHS trust"
+actor_id: hm-government
+made_on: "2026-11-03"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Department of Health and Social Care)
+area: health
+status: promised
+status_note:
+  en: >-
+    The health department says AI acceleration software, which speeds up scans, is already installed
+    in 54% of compatible NHS MRI scanners. Every trust will be given the opportunity to upgrade
+    compatible scanners by 2029, and a full rollout would allow up to 162,000 more checks a year.
+    The release does not say what the upgrades cost. 2029 is read as the end of 2029. The card moves
+    when the share of upgraded scanners is next published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department of Health and Social Care press release, 3 Nov 2026: One million more scans to help
+      catch cancer sooner
+    url: https://www.gov.uk/government/news/one-million-more-scans-to-help-catch-cancer-sooner
+versions:
+  - version: 1
+    text: >-
+      Every NHS trust in the country will be given the opportunity to upgrade compatible MRI
+      scanners by 2029. A full rollout would enable existing equipment to deliver up to 162,000 more
+      checks per year.
+    recorded_on: "2026-11-03"
+    source_url: https://www.gov.uk/government/news/one-million-more-scans-to-help-catch-cancer-sooner
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          NHS patients who need MRI scans, and every NHS trust in England
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          By 2029
+      deadline: "2029-12-31"
+      funded_by: null
+events:
+  - date: "2026-11-03"
+    type: promised
+    text:
+      en: >-
+        The health department says every NHS trust will be given the opportunity to upgrade
+        compatible MRI scanners by 2029
+  - date: "2029-12-31"
+    type: deadline
+    text:
+      en: >-
+        Every NHS trust due to have been offered MRI scanner upgrades
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
