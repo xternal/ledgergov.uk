@@ -1,0 +1,63 @@
+format: openpromises/1
+id: uk-no-new-oil-gas-licences-2026
+headline:
+  en: "No new North Sea oil and gas licences"
+actor_id: hm-government
+made_on: "2026-11-04"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Department for Energy Security and Net Zero)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The energy department says the Energy Independence Bill will end new licences to explore new oil
+    and gas fields while supporting production from areas already licensed, and calls this delivery
+    of a manifesto commitment. New Transitional Energy Certificates will allow more production in
+    areas already explored. The card moves when the Bill becomes law.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Energy Security and Net Zero press release, 4 Nov 2026: Energy reforms to cut
+      bills and put power back in people's hands
+    url: https://www.gov.uk/government/news/energy-reforms-to-cut-bills-and-put-power-back-in-peoples-hands
+versions:
+  - version: 1
+    text: >-
+      The Bill will also deliver on the government’s pragmatic approach to the North Sea, by ending
+      new licences to explore new oil and gas fields while supporting continued production from
+      existing licensed areas.
+    recorded_on: "2026-11-04"
+    source_url: https://www.gov.uk/government/news/energy-reforms-to-cut-bills-and-put-power-back-in-peoples-hands
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          The oil and gas industry and its workers
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          Not stated
+      funded_by: null
+events:
+  - date: "2026-11-04"
+    type: promised
+    text:
+      en: >-
+        The energy department says the Energy Independence Bill will end new licences to explore new
+        oil and gas fields
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

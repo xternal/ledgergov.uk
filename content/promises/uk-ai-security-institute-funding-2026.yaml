@@ -1,0 +1,56 @@
+format: openpromises/1
+id: uk-ai-security-institute-funding-2026
+headline:
+  en: £120m more for the AI Security Institute
+actor_id: john-healey
+made_on: "2026-10-26"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    From the Chancellor's written statement on the Future of Technology. It says the money will
+    strengthen the institute's testing and research and develop technical standards to help mitigate
+    AI risks. It does not say over how many years. The card moves when the funding is allocated.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Written ministerial statement HCWS412, 26 Oct 2026: Future of Technology"
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS412
+versions:
+  - version: 1
+    text: >-
+      We will provide an additional £120 million for the AI Security Institute to strengthen its
+      testing and research and develop technical standards to help mitigate AI risks.
+    recorded_on: "2026-10-26"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS412
+    quote_checked_on: "2026-10-27"
+    parameters:
+      who:
+        en: The AI Security Institute, which tests advanced AI models for risks
+      cost:
+        note:
+          en: >-
+            An additional £120 million, with no period or split by year, so no yearly figure is
+            shown.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-26"
+    type: promised
+    text:
+      en: >-
+        The Chancellor announces an additional £120 million for the AI Security Institute
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-27"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

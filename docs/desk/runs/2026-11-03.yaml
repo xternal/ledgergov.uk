@@ -1,0 +1,108 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-11-03"
+triaged_on: "2026-11-08"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 204
+sources_read: 14
+drafts: 14
+candidates: 20
+outcomes:
+  card: 4
+  reworded: 0
+  duplicate: 3
+  existing: 2
+  grant: 0
+  done: 1
+  process: 5
+  broad: 0
+  event: 0
+  cap: 5
+  other: 0
+quotes_exact: 4
+new_actors: []
+cards:
+  - uk-ai-skills-10m-workers-2030
+  - uk-child-trust-fund-access-2026
+  - uk-mri-scanner-upgrades-2029
+  - uk-deposit-return-scheme-2027
+reworded: []
+dropped:
+  - draft: 2026-11-03-govuk-care-workers-women-returning-to-employment-and-builders-to-g-1
+    quote: also0
+    code: cap
+    source: https://www.gov.uk/government/news/care-workers-women-returning-to-employment-and-builders-to-gain-practical-ai-skills
+    text: "A further 10,000 work experience placements will help young people take their first steps into the digital and tech sector over the next three years."
+    note: "10,000 work experience placements in digital and tech over three years"
+  - draft: 2026-11-03-govuk-new-government-backed-cyber-security-protections-could-save--1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/news/new-government-backed-cyber-security-protections-could-save-uk-businesses-thousands
+    text: "The Cyber Essentials for suppliers grant, worth up to £7m until March 2029, will offer eligible UK-based SME suppliers of Cyber Resilience Pledge signatories, fully Government funded first-time certification and tailored Cyber Advisor support through Cyber Essentials."
+    note: "a grant of up to £7m to March 2029 for Cyber Essentials certification of SME suppliers; small"
+  - draft: 2026-11-03-govuk-new-government-backed-cyber-security-protections-could-save--1
+    quote: also0
+    code: cap
+    source: https://www.gov.uk/government/news/new-government-backed-cyber-security-protections-could-save-uk-businesses-thousands
+    text: "The Cyber Essentials First Step Fund, will provide eligible micro, small and medium-sized UK businesses a 75% discount on the cost of a new Cyber Essentials certification. This discount, covered by £2.4m of Government funding, will be on a first comes first served basis to micro, small and medium businesses who have not been certified in the last four years . It will be available until March 2027, or until the allocated funding runs out."
+    note: "the £2.4m Cyber Essentials First Step Fund to March 2027; small"
+  - draft: 2026-11-03-govuk-new-plans-resurrect-genuine-pensions-for-millions-of-private-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/news/new-plans-resurrect-genuine-pensions-for-millions-of-private-sector-workers
+    text: "Guided Retirement will require pension schemes to provide a default pension for savers approaching retirement. After years of saving into a DC pension, savers will have the option of a stable income for the rest of their lives, without having to become investment experts overnight."
+    note: "Guided Retirement default pensions; the release gives no date"
+  - draft: 2026-11-03-govuk-outcome-government-response-to-the-public-consultation-on-proposals--1
+    quote: quote
+    code: process
+    note: "amendments to the pension transfer regulations, planned for April 2027"
+  - draft: 2026-11-03-govuk-outcome-government-response-to-the-public-consultation-on-retirement-1
+    quote: quote
+    code: process
+    note: "the charge cap for a new kind of pension scheme"
+  - draft: 2026-11-03-govuk-outcome-government-response-to-the-public-consultation-on-retirement-1
+    quote: also0
+    code: process
+    note: "\"minded to\" allow a year to convert to drawdown"
+  - draft: 2026-11-03-govuk-outcome-government-response-to-the-public-consultation-on-retirement-1
+    quote: also1
+    code: process
+    note: "a technical Finance Bill change on pension protections"
+  - draft: 2026-11-03-govuk-outcome-proposed-legislative-changes-to-support-implementation-of-th-1
+    quote: quote
+    code: existing
+    into: uk-bics-electricity-2026
+    note: "the first Exchequer payment for the British Industrial Competitiveness Scheme, a step on that card"
+  - draft: 2026-11-03-govuk-paper-better-use-of-new-and-improved-third-party-data-to-make-it-e-1
+    quote: quote
+    code: process
+    note: "a technical HMRC data measure from 6 April 2028"
+  - draft: 2026-11-03-govuk-paper-cyber-essentials-funding-package-1
+    quote: quote
+    code: duplicate
+    note: "the same First Step Fund as the press release (cap)"
+  - draft: 2026-11-03-govuk-paper-cyber-essentials-funding-package-1
+    quote: also0
+    code: duplicate
+    note: "the same supplier scheme as the press release (cap)"
+  - draft: 2026-11-03-govuk-paper-environment-act-2021-post-legislative-scrutiny-memorandum-1
+    quote: also0
+    code: cap
+    source: https://www.gov.uk/government/publications/environment-act-2021-post-legislative-scrutiny-memorandum/environment-act-2021-post-legislative-scrutiny-memorandum
+    text: "Building on the test and learn approach taken in the project, Natural England will deliver at least 20 Protected Site Strategies across England by 2030."
+    note: "Natural England to deliver at least 20 Protected Site Strategies by 2030"
+  - draft: 2026-11-03-govuk-uk-to-lead-multinational-military-training-exercise-to-prepa-1
+    quote: quote
+    code: existing
+    into: uk-defence-25-2027
+    note: "2.7% of GDP from 2027-28 is already on the card"
+  - draft: 2026-11-03-wms-hcws443-1
+    quote: quote
+    code: duplicate
+    into: uk-child-trust-fund-access-2026
+    note: "the justice minister's statement of the same plan, added to the card's sources"
+  - draft: 2026-11-03-wms-hcws444-1
+    quote: quote
+    code: done
+    note: "Automatic Enrolment thresholds for 2027/28 held at 2026/27 levels: decided as announced"
