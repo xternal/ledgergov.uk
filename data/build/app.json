@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-02T13:18:15Z",
+  "built_at": "2026-11-05T13:15:43Z",
   "base_year": "2025-26",
   "years": [
     {
@@ -2582,8 +2582,8 @@
         "nominal_gdp_bn": 3179.867,
         "psnd_bn": 3082.347,
         "psnd_pct_gdp": 95.505,
-        "bank_rate_pct": 3.75,
-        "bank_rate_date": "2026-09-17",
+        "bank_rate_pct": 4.0,
+        "bank_rate_date": "2026-11-05",
         "households_m": 29.003,
         "income_taxpayers_m": 40.8,
         "population_m": 69.484,
@@ -2624,8 +2624,7 @@
           },
           "bank_rate_pct": {
             "quality": "sourced",
-            "source_id": "boe_bank_rate",
-            "method_note": "MPC decision date: Bank Rate held (not a change)."
+            "source_id": "boe_bank_rate"
           },
           "households_m": {
             "quality": "sourced",
@@ -2925,8 +2924,8 @@
         "nominal_gdp_bn": 3291.088,
         "psnd_bn": 3239.104,
         "psnd_pct_gdp": 96.7,
-        "bank_rate_pct": 3.75,
-        "bank_rate_date": "2026-09-17",
+        "bank_rate_pct": 4.0,
+        "bank_rate_date": "2026-11-05",
         "households_m": 29.003,
         "income_taxpayers_m": 40.8,
         "population_m": 69.484,
@@ -2967,8 +2966,7 @@
           },
           "bank_rate_pct": {
             "quality": "sourced",
-            "source_id": "boe_bank_rate",
-            "method_note": "MPC decision date: Bank Rate held (not a change)."
+            "source_id": "boe_bank_rate"
           },
           "households_m": {
             "quality": "sourced",
@@ -3268,8 +3266,8 @@
         "nominal_gdp_bn": 3414.178,
         "psnd_bn": 3383.953,
         "psnd_pct_gdp": 97.285,
-        "bank_rate_pct": 3.75,
-        "bank_rate_date": "2026-09-17",
+        "bank_rate_pct": 4.0,
+        "bank_rate_date": "2026-11-05",
         "households_m": 29.003,
         "income_taxpayers_m": 40.8,
         "population_m": 69.484,
@@ -3310,8 +3308,7 @@
           },
           "bank_rate_pct": {
             "quality": "sourced",
-            "source_id": "boe_bank_rate",
-            "method_note": "MPC decision date: Bank Rate held (not a change)."
+            "source_id": "boe_bank_rate"
           },
           "households_m": {
             "quality": "sourced",
@@ -3611,8 +3608,8 @@
         "nominal_gdp_bn": 3543.028,
         "psnd_bn": 3487.198,
         "psnd_pct_gdp": 96.674,
-        "bank_rate_pct": 3.75,
-        "bank_rate_date": "2026-09-17",
+        "bank_rate_pct": 4.0,
+        "bank_rate_date": "2026-11-05",
         "households_m": 29.003,
         "income_taxpayers_m": 40.8,
         "population_m": 69.484,
@@ -3653,8 +3650,7 @@
           },
           "bank_rate_pct": {
             "quality": "sourced",
-            "source_id": "boe_bank_rate",
-            "method_note": "MPC decision date: Bank Rate held (not a change)."
+            "source_id": "boe_bank_rate"
           },
           "households_m": {
             "quality": "sourced",
@@ -3954,8 +3950,8 @@
         "nominal_gdp_bn": 3673.058,
         "psnd_bn": 3583.213,
         "psnd_pct_gdp": 95.868,
-        "bank_rate_pct": 3.75,
-        "bank_rate_date": "2026-09-17",
+        "bank_rate_pct": 4.0,
+        "bank_rate_date": "2026-11-05",
         "households_m": 29.003,
         "income_taxpayers_m": 40.8,
         "population_m": 69.484,
@@ -3996,8 +3992,7 @@
           },
           "bank_rate_pct": {
             "quality": "sourced",
-            "source_id": "boe_bank_rate",
-            "method_note": "MPC decision date: Bank Rate held (not a change)."
+            "source_id": "boe_bank_rate"
           },
           "households_m": {
             "quality": "sourced",
@@ -4297,8 +4292,8 @@
         "nominal_gdp_bn": 3801.875,
         "psnd_bn": 3694.553,
         "psnd_pct_gdp": 95.611,
-        "bank_rate_pct": 3.75,
-        "bank_rate_date": "2026-09-17",
+        "bank_rate_pct": 4.0,
+        "bank_rate_date": "2026-11-05",
         "households_m": 29.003,
         "income_taxpayers_m": 40.8,
         "population_m": 69.484,
@@ -4339,8 +4334,7 @@
           },
           "bank_rate_pct": {
             "quality": "sourced",
-            "source_id": "boe_bank_rate",
-            "method_note": "MPC decision date: Bank Rate held (not a change)."
+            "source_id": "boe_bank_rate"
           },
           "households_m": {
             "quality": "sourced",
@@ -4639,7 +4633,7 @@
         "group": "rates",
         "controlled_by": "central_bank",
         "unit": "pp",
-        "base": 3.75,
+        "base": 4.0,
         "min": 1.0,
         "max": 7.0,
         "step": 0.25,
