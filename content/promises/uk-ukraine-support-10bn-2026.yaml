@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-ukraine-support-10bn-2026
+headline:
+  en: "£10 billion more support for Ukraine"
+actor_id: hm-government
+made_on: "2026-10-28"
+venue: press_release
+venue_label:
+  en: "Press release (Prime Minister's Office, 10 Downing Street)"
+area: defence
+status: promised
+status_note:
+  en: >-
+    From the Downing Street readout of the Prime Minister and Chancellor's call with President
+    Zelenskyy on Budget day. It splits the £10 billion into £500 million of military support for air
+    defences this winter, £7 billion of economic support over three years and £3 billion of UK
+    Export Finance capacity. The card moves when the money is committed or paid.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Prime Minister's Office press release, 28 Oct 2026: Prime Minister and Chancellor’s call with
+      the President of Ukraine: 28 October 2026
+    url: https://www.gov.uk/government/news/prime-minister-and-chancellors-call-with-the-president-of-ukraine-28-october-2026
+versions:
+  - version: 1
+    text: >-
+      Outlining the UK’s unflinching support, the Prime Minister said he was delighted to be able to
+      update the President this morning, on behalf of the Ukrainian people, how the UK would
+      increase its financial support to Ukraine by £10 billion in today’s Budget.
+
+      That included £500 million additional military support from the Ministry of Defence to plug
+      urgent gaps in Ukraine’s air defences this winter, £7 billion of economic support being made
+      available over three years, and a further £3 billion in UK Export Finance (UKEF) capacity for
+      Ukraine, prioritised for military support, the Prime Minister said.
+    recorded_on: "2026-10-28"
+    source_url: https://www.gov.uk/government/news/prime-minister-and-chancellors-call-with-the-president-of-ukraine-28-october-2026
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          Ukraine
+      cost:
+        note:
+          en: >-
+            £10 billion in all: £500 million of military support this winter, £7 billion of economic
+            support over three years and £3 billion of export finance capacity; mixed periods, so no
+            yearly figure is shown.
+      when:
+        en: >-
+          £500 million this winter; £7 billion over three years
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister tells President Zelenskyy the UK will increase its financial support to
+        Ukraine by £10 billion in the Budget
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

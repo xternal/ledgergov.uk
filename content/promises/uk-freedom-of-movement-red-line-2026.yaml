@@ -1,0 +1,63 @@
+format: openpromises/1
+id: uk-freedom-of-movement-red-line-2026
+headline:
+  en: "Keep manifesto red lines on freedom of movement"
+actor_id: andy-burnham
+made_on: "2026-10-28"
+venue: parliament
+venue_label:
+  en: "Prime Minister's Questions"
+area: general_services
+status: promised
+status_note:
+  en: >-
+    Said in answer to the Leader of the Opposition, who asked whether he wants a referendum on
+    rejoining the European Union. The Prime Minister said the Government has a collectively agreed
+    position. The card would move if the government agreed to restore free movement with the EU
+    before the end of this Parliament.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Hansard, House of Commons, 28 Oct 2026: Engagements (Prime Minister's Questions)
+    url: https://hansard.parliament.uk/Commons/2026-10-28/debates/39FAECD6-52B2-4A7F-A437-E0CA9E98C973/Engagements
+versions:
+  - version: 1
+    text: >-
+      The red lines in our manifesto, including those on freedom of movement, will stay firmly in
+      place for the whole of this Parliament, but what I will not do is defend the deal negotiated
+      by the right hon. Lady and the Government she was in, which, in my view, gave us a harder
+      Brexit than was promised at the referendum, and has been bad for growth and bad for control of
+      immigration.
+    recorded_on: "2026-10-28"
+    source_url: https://hansard.parliament.uk/Commons/2026-10-28/debates/39FAECD6-52B2-4A7F-A437-E0CA9E98C973/Engagements
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          Everyone in the UK, and EU citizens
+      cost:
+        note:
+          en: >-
+            Not a spending commitment.
+      when:
+        en: >-
+          For the whole of this Parliament
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister says the manifesto red lines, including on freedom of movement, will stay
+        in place for the whole of this Parliament
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
