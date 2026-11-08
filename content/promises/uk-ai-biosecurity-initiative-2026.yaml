@@ -1,0 +1,59 @@
+format: openpromises/1
+id: uk-ai-biosecurity-initiative-2026
+headline:
+  en: Fund a £165m AI biosecurity initiative
+actor_id: john-healey
+made_on: "2026-10-26"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: health
+status: promised
+status_note:
+  en: >-
+    From the Chancellor's written statement on the Future of Technology. It says the initiative
+    includes £100 million for an AI Biosecurity Lab and £65 million to strengthen biosurveillance
+    and develop medical countermeasures. It gives no timetable, no host for the lab and no years for
+    the money. The card moves when the lab is set up or the funding allocated.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Written ministerial statement HCWS412, 26 Oct 2026: Future of Technology"
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS412
+versions:
+  - version: 1
+    text: >-
+      The Government will invest £165 million in a new National AI Biosecurity Initiative, including
+      £100 million for an AI Biosecurity Lab and £65 million to strengthen biosurveillance and
+      develop medical countermeasures.
+    recorded_on: "2026-10-26"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS412
+    quote_checked_on: "2026-10-27"
+    parameters:
+      who:
+        en: >-
+          The UK public, through earlier warning of and protection against biological threats
+      cost:
+        note:
+          en: >-
+            £165 million in total, with no period or split by year, so no yearly figure is shown.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-26"
+    type: promised
+    text:
+      en: >-
+        The Chancellor announces £165 million for a new National AI Biosecurity Initiative,
+        including a £100 million AI Biosecurity Lab
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-27"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
