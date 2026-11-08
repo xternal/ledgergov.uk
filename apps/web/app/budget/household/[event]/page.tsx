@@ -643,11 +643,39 @@ function PopulationSections({ s, head, side }: { s: HouseholdSnapshot; head: Hou
  * we have no population results of our own: since 6 November 2026 we no longer compute them (docs/MODEL.md).
  * PolicyEngine's work, credited and linked to its dashboard as it asked, for the measures it chose to model.
  */
+type PeYear = PolicyEngineDashboard["years"][number];
+type PeFullYear = Omit<PeYear, "all_avg_change_gbp" | "deciles"> & { all_avg_change_gbp: number; deciles: { decile: number; rel_change_pct: number; avg_change_gbp: number }[] };
+/** A year with no withheld figure: only these go in the summary, the chart and the table. */
+const peFull = (y: PeYear | undefined): y is PeFullYear =>
+  !!y && y.all_avg_change_gbp !== null && y.deciles.every((x) => x.rel_change_pct !== null && x.avg_change_gbp !== null);
+
+/** The cells PolicyEngine withholds, in words: "in 2030-31, tenths 7 and 9 and the average for all households". */
+function withheldText(gaps: string[]): string {
+  const by = new Map<string, { tenths: Set<number>; all: boolean }>();
+  for (const g of gaps) {
+    const m = /^(\d{4}-\d{2}) (?:decile (\d+)|(all))/.exec(g);
+    if (!m) continue;
+    const e = by.get(m[1]!) ?? { tenths: new Set<number>(), all: false };
+    if (m[2]) e.tenths.add(Number(m[2]));
+    if (m[3]) e.all = true;
+    by.set(m[1]!, e);
+  }
+  const and = (xs: string[]) => (xs.length < 2 ? xs.join("") : `${xs.slice(0, -1).join(", ")} and ${xs.at(-1)}`);
+  return and(
+    [...by].map(([year, e]) => {
+      const t = [...e.tenths].sort((a, b) => a - b).map(String);
+      const parts = [t.length ? `${t.length > 1 ? "tenths" : "tenth"} ${and(t)}` : "", e.all ? "the average for all households" : ""].filter(Boolean);
+      return `in ${year}, ${and(parts)}`;
+    }),
+  );
+}
+
 function PolicyEngineEstimate({ s, d }: { s: HouseholdSnapshot; d: PolicyEngineDashboard }) {
   const c = householdCopy(s);
   const head = d.years.find((y) => y.year === c.head);
   const side = d.years.find((y) => y.year === c.side);
-  if (!head || !side) return <HeldPopulation s={s} />;
+  if (!peFull(head) || !peFull(side)) return <HeldPopulation s={s} />;
+  const withheld = withheldText(d.gaps.filter((g) => !g.endsWith("budget")));
   const net = (v: number) => (v >= 0 ? `raise ${bn1(v)}` : `cost ${bn1(-v)}`);
   const rows = head.deciles.map((h, i) => ({ h, sd: side.deciles[i]! }));
   const credit = (
@@ -765,7 +793,16 @@ function PolicyEngineEstimate({ s, d }: { s: HouseholdSnapshot; d: PolicyEngineD
               <a href={f.url}>{f.name}</a>
             </span>
           ))}
-          ).{d.gaps.length ? ` PolicyEngine's files leave some figures blank (${d.gaps.join("; ")}), so those years are not shown.` : ""}
+          ).
+          {withheld && (
+            <>
+              {" "}
+              PolicyEngine withholds some figures to protect the confidentiality of the survey&apos;s households: when only one or two of them in an
+              income tenth see their income change in a year, it leaves that tenth blank, and the year&apos;s average for all households too, so the
+              blank cannot be worked out from the rest. Withheld: {withheld} (
+              <a href={`${d.url}?tab=methodology#method-by-income`}>its methodology, under &ldquo;Income deciles&rdquo;</a>).
+            </>
+          )}
         </p>
       </section>
     </>
