@@ -3,7 +3,7 @@
 intake_date: "2026-11-08" # documents published 1 to 8 November 2026 (GOV.UK search, policy and engagement)
 triaged_on: "2026-11-08"
 by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
-pull_request: null # filled in by the pull request that carries this file
+pull_request: 217
 sources_read: 1
 candidates: 0
 outcomes:
