@@ -1,0 +1,63 @@
+format: openpromises/1
+id: uk-business-admin-burdens-25pc-2026
+headline:
+  en: "Cut business admin burdens by 25%"
+actor_id: hm-government
+made_on: "2026-11-02"
+venue: press_release
+venue_label:
+  en: >-
+    Hope on the High Street (Housing department policy paper)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The high streets plan says its measures for hospitality and small businesses, such as digital
+    and standard licence applications, are part of the government's commitment to cut the
+    administrative burdens on business by 25% by the end of this Parliament. The plan does not say
+    how the burden is measured or what the starting point is. The card moves when the government
+    publishes a measure of progress.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government policy paper, 2 Nov 2026: Hope on the
+      High Street
+    url: https://www.gov.uk/government/publications/hope-on-the-high-street/hope-on-the-high-street
+versions:
+  - version: 1
+    text: >-
+      These reforms form part of our commitment to reduce administrative burdens on business by 25%
+      by the end of this Parliament.
+    recorded_on: "2026-11-02"
+    source_url: https://www.gov.uk/government/publications/hope-on-the-high-street/hope-on-the-high-street
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          Businesses, especially hospitality and small businesses
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          By the end of this Parliament
+      funded_by: null
+events:
+  - date: "2026-11-02"
+    type: promised
+    text:
+      en: >-
+        The high streets plan restates the commitment to cut administrative burdens on business by
+        25% by the end of this Parliament
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

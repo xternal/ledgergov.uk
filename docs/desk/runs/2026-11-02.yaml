@@ -1,0 +1,106 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-11-02"
+triaged_on: "2026-11-08"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 203
+sources_read: 8
+drafts: 8
+candidates: 22
+outcomes:
+  card: 9
+  reworded: 0
+  duplicate: 1
+  existing: 5
+  grant: 0
+  done: 0
+  process: 0
+  broad: 1
+  event: 0
+  cap: 6
+  other: 0
+quotes_exact: 9
+new_actors: []
+cards:
+  - uk-mtd-income-tax-30k-2027
+  - uk-sme-procurement-30pc-2028
+  - uk-vape-shops-rates-relief-2027
+  - uk-banking-hubs-350-2026
+  - uk-business-admin-burdens-25pc-2026
+  - uk-earned-settlement-10-years-2026
+  - uk-refugee-settlement-20-years-2026
+  - uk-close-asylum-hotels-2026
+  - uk-fire-and-rehire-rules-2027
+reworded: []
+dropped:
+  - draft: 2026-11-02-govuk-hundreds-of-employers-handed-penalties-for-illegally-underpa-1
+    quote: quote
+    code: existing
+    into: uk-national-living-wage-13-21-2027
+    note: "the next minimum wage rise; the April 2027 rise to £13.21 is the card on intake 2026-10-28 (#193)"
+  - draft: 2026-11-02-govuk-mayors-and-local-leaders-work-with-no10-north-to-drive-searc-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/news/mayors-and-local-leaders-work-with-no10-north-to-drive-search-for-top-10-biggest-strategic-investment-sites-across-country
+    text: "Starting today [Monday 2 November], the Strategic Sites Accelerator will deploy around £700 million alongside expert support to help unlock up to 10 major industrial and commercial sites across the country, helping some of the UK’s most promising investment opportunities get off the ground."
+    note: "about £700 million to help unlock up to 10 major investment sites; no date or measurable outcome"
+  - draft: 2026-11-02-govuk-mayors-and-local-leaders-work-with-no10-north-to-drive-searc-1
+    quote: also0
+    code: existing
+    into: uk-mayors-income-tax-2026
+    note: "the share of income tax from 2028 is on uk-mayors-income-tax-2026; business rates on uk-business-rates-100pc-local-2029"
+  - draft: 2026-11-02-govuk-new-chair-appointed-of-the-leasehold-advisory-service-1
+    quote: quote
+    code: existing
+    into: uk-leasehold-reform-bill-2026
+    note: "the department reporting the Prime Minister's promise of a leasehold Bill before the end of the year; his own words are on the card"
+  - draft: 2026-11-02-govuk-paper-cabinet-office-and-hm-treasury-small-and-medium-sized-enterp-1
+    quote: also0
+    code: cap
+    source: https://www.gov.uk/government/publications/cabinet-office-and-hm-treasury-small-and-medium-sized-enterprise-sme-action-plan-2025-to-2028--2/cabinet-office-and-hm-treasury-small-and-medium-sized-enterprise-sme-action-plan-2025-to-2028-html
+    text: "HM Treasury has set the target of 22% procurement expenditure to be with SMEs by the end of the 2027/28 financial year."
+    note: "HM Treasury's own target, 22% of procurement with SMEs by the end of 2027/28; one card for the plan"
+  - draft: 2026-11-02-govuk-paper-hope-on-the-high-street-1
+    quote: quote
+    code: existing
+    into: uk-pubs-business-rates-cut-2026
+    note: "the extra 20% relief for pubs and venues"
+  - draft: 2026-11-02-govuk-paper-hope-on-the-high-street-1
+    quote: also0
+    code: cap
+    source: https://www.gov.uk/government/publications/hope-on-the-high-street/hope-on-the-high-street
+    text: "Subject to consultation, we will remove the ‘aim to permit’ principle that has constrained councils’ ability to refuse new gambling premises, giving greater weight to local concerns when decisions are made."
+    note: "remove the \"aim to permit\" principle for gambling premises, subject to consultation; no date"
+  - draft: 2026-11-02-govuk-paper-hope-on-the-high-street-1
+    quote: also1
+    code: cap
+    source: https://www.gov.uk/government/publications/hope-on-the-high-street/hope-on-the-high-street
+    text: "Subject to consultation, new vape shops will require planning permission, giving councils and communities a greater say over where they are located."
+    note: "planning permission for new vape shops, subject to consultation; no date"
+  - draft: 2026-11-02-govuk-paper-hope-on-the-high-street-1
+    quote: also3
+    code: cap
+    source: https://www.gov.uk/government/publications/hope-on-the-high-street/hope-on-the-high-street
+    text: "As a result of this package, half of all RHL properties in England will not pay business rates at all."
+    note: "a claim about the effect of the reliefs package (half of RHL properties paying no business rates)"
+  - draft: 2026-11-02-govuk-paper-hope-on-the-high-street-1
+    quote: also6
+    code: existing
+    into: uk-community-trees-500k-2030
+    note: "the Community Trees Fund and its 500,000 trees"
+  - draft: 2026-11-02-hansard-09f388d2-1
+    quote: also2
+    code: broad
+    note: "\"extend that further to 2035\" in an answer, with no clear object in the quote"
+  - draft: 2026-11-02-wms-hcws435-1
+    quote: also0
+    code: duplicate
+    into: uk-fire-and-rehire-rules-2027
+    note: "the Code of Practice revoked with the regulations; in the card's status note"
+  - draft: 2026-11-02-wms-hcws435-1
+    quote: also1
+    code: cap
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-11-02/HCWS435
+    text: "The detail of the enhanced dismissal protections will be delivered in secondary legislation and the Government intends for the measures to come into force in October 2027."
+    note: "enhanced dismissal protections intended for October 2027; the statement does not say what they are"
