@@ -1,0 +1,61 @@
+format: openpromises/1
+id: uk-parental-pay-150k-parents-2026
+headline:
+  en: Parental pay for 150,000 more parents
+actor_id: hm-government
+made_on: "2026-10-26"
+venue: press_release
+venue_label:
+  en: Press release (HM Treasury)
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    One of five "everyday fixes" the Chancellor announced ahead of the Budget. It says self-employed
+    dads and partners who have previously missed out will get two weeks of support, currently worth
+    up to £194 a week. It does not say from when, or how the pay will reach self-employed parents.
+    The card moves when the new rules or legislation are published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      HM Treasury press release, 26 Oct 2026: Everyday fixes to make life easier for millions of
+      Britons
+    url: https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons
+versions:
+  - version: 1
+    text: >-
+      Extending parental pay to more than 150,000 additional parents per year, including
+      self-employed dads and partners who have previously missed out, giving eligible parents two
+      weeks of support currently worth up to £194 a week so they can spend more time with their
+      child.
+    recorded_on: "2026-10-26"
+    source_url: https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons
+    quote_checked_on: "2026-10-27"
+    parameters:
+      who:
+        en: >-
+          More than 150,000 additional parents a year, including self-employed dads and partners
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-26"
+    type: promised
+    text:
+      en: >-
+        The Chancellor says parental pay will be extended to more than 150,000 additional parents a
+        year, including self-employed dads and partners
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-27"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
