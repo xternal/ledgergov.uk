@@ -1,0 +1,62 @@
+format: openpromises/1
+id: uk-close-asylum-hotels-2026
+headline:
+  en: "Close all asylum hotels"
+actor_id: shabana-mahmood
+made_on: "2026-11-02"
+venue: parliament
+venue_label:
+  en: >-
+    Commons statement
+area: public_order
+status: promised
+status_note:
+  en: >-
+    Answering a question after her statement on earned settlement, the Home Secretary said the
+    government has already closed a number of asylum hotels and saved £1 billion on asylum
+    accommodation, and will keep its manifesto commitment to close all hotels in this Parliament.
+    She gave no count of hotels still in use. The card moves when the Home Office publishes that
+    number.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Hansard, House of Commons, 2 Nov 2026: Immigration: Earned Settlement
+    url: https://hansard.parliament.uk/Commons/2026-11-02/debates/09F388D2-539E-4B0A-ABE2-D3195B14AF0E/ImmigrationEarnedSettlement
+versions:
+  - version: 1
+    text: >-
+      We have made £1 billion-worth of savings in asylum accommodation, and we will fulfil our
+      manifesto commitment to close all hotels in this Parliament.
+    recorded_on: "2026-11-02"
+    source_url: https://hansard.parliament.uk/Commons/2026-11-02/debates/09F388D2-539E-4B0A-ABE2-D3195B14AF0E/ImmigrationEarnedSettlement
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          People seeking asylum housed in hotels, and the places where the hotels are
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          In this Parliament
+      funded_by: null
+events:
+  - date: "2026-11-02"
+    type: promised
+    text:
+      en: >-
+        The Home Secretary says the government will keep its manifesto commitment to close all
+        asylum hotels in this Parliament
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

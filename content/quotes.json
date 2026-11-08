@@ -131,6 +131,12 @@
     "checked_on": "2026-10-20",
     "sha256": "bfd72905eb5de7945125ec6ab889eb1ae2502aa5b2bdb4cfe08771d62391338c"
   },
+  "21f7db236fe1823256803d9d223d3c3f8d164a6c6233444b8d82a23276d1b396|https://hansard.parliament.uk/Commons/2026-11-02/debates/09F388D2-539E-4B0A-ABE2-D3195B14AF0E/ImmigrationEarnedSettlement": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-11-02/debates/09F388D2-539E-4B0A-ABE2-D3195B14AF0E/ImmigrationEarnedSettlement",
+    "checked_on": "2026-11-08",
+    "sha256": "5c0bcefd4b0fa357a6db32e706aaeeb2a1fbc7954eb58cc1c4f3f6d40cb5da6d"
+  },
   "2233934dac3589b330766775dea13314bd4cf7b0b6062444081a781a0fc58389|https://www.gov.uk/government/news/new-one-stop-shop-for-flood-preparedness-launched-as-we-approach-more-weather-whiplash": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/new-one-stop-shop-for-flood-preparedness-launched-as-we-approach-more-weather-whiplash",
@@ -208,6 +214,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS359",
     "checked_on": "2026-10-13",
     "sha256": "81dc7bcac6911add8e0a8d49b84bc87b14fe4fd70c012e20f1d39911d44bb1d0"
+  },
+  "2f545534a102b8f3357402c266539acb2ee173cf2ff19902179eee4c3abe5bd0|https://www.gov.uk/government/publications/hope-on-the-high-street/hope-on-the-high-street": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/hope-on-the-high-street/hope-on-the-high-street",
+    "checked_on": "2026-11-08",
+    "sha256": "379b51d3c8ad7ca50611d2b818a5bb9fe6914ddc67499544747f8fec98f16fd9"
   },
   "3972470cae0400c655bbddfd6f054ebb681819ddf0e913d427e93815cca820bc|https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people": {
     "match": "exact",
@@ -569,6 +581,12 @@
     "checked_on": "2026-11-01",
     "sha256": "0ef6213d2915adebb81d1882b3d2f1f411732953884aecf342e43cf8597eea8b"
   },
+  "7fd84c04efcff103fea7b89b0a79880038e59dedaaa4cf0b50917ee74441c577|https://hansard.parliament.uk/Commons/2026-11-02/debates/09F388D2-539E-4B0A-ABE2-D3195B14AF0E/ImmigrationEarnedSettlement": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-11-02/debates/09F388D2-539E-4B0A-ABE2-D3195B14AF0E/ImmigrationEarnedSettlement",
+    "checked_on": "2026-11-08",
+    "sha256": "5c0bcefd4b0fa357a6db32e706aaeeb2a1fbc7954eb58cc1c4f3f6d40cb5da6d"
+  },
   "805b32b24d522b3da432d7f02b1b4a01d50872ac6204ebbc0d51c7199aa1917e|https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements": {
     "match": "exact",
     "url": "https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements",
@@ -670,6 +688,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS356",
     "checked_on": "2026-10-13",
     "sha256": "7055f896a04c090c804217af18a1d763a8cacef08a1ddad07f370db7b5dde286"
+  },
+  "97ad4cc2b809bddad7dc6b554729bc8aaefd26dad0785c24bf1f0a017e48cf20|https://www.gov.uk/government/publications/cabinet-office-and-hm-treasury-small-and-medium-sized-enterprise-sme-action-plan-2025-to-2028--2/cabinet-office-and-hm-treasury-small-and-medium-sized-enterprise-sme-action-plan-2025-to-2028-html": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/cabinet-office-and-hm-treasury-small-and-medium-sized-enterprise-sme-action-plan-2025-to-2028--2/cabinet-office-and-hm-treasury-small-and-medium-sized-enterprise-sme-action-plan-2025-to-2028-html",
+    "checked_on": "2026-11-08",
+    "sha256": "7c734806c79afa8cfa6904bed8fe3ae2df95f12ce445b41b5dbdcc4a693fd36b"
   },
   "97bf8cee0c491c715798881845f5e5a7ad9833dca89b197a833691c1f2625dd7|https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023": {
     "match": "exact",
@@ -977,6 +1001,12 @@
     "checked_on": "2026-10-20",
     "sha256": "375a892e1e9651b54dd6462f59b8c11ad34e92a2f14ae247fd10bd1f05cad623"
   },
+  "cee6e0dacf354129f9550599e8b7d6c65e2b9704f446987680112b33e08007de|https://questions-statements.parliament.uk/written-statements/detail/2026-11-02/HCWS435": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-11-02/HCWS435",
+    "checked_on": "2026-11-08",
+    "sha256": "9f760a3972dfbb6e3a60ebbe2314f58b6ce9bd2aec93b8ee47b769dbef46b400"
+  },
   "cf9c2fd495470a4ac00cc92fa0c4b7c11ebbe7a0e98e68caaa13d5711efaded7|https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines",
@@ -1019,6 +1049,12 @@
     "checked_on": "2026-10-18",
     "sha256": "e6f59989d21ce10712c6ae4f7a856c5e96d81fd4eb1b5a28601225a907486412"
   },
+  "d8860b09966b24ae77129b4bd265f8e6e26e1f18ce029917f5cfcf31363c1048|https://www.gov.uk/government/publications/hope-on-the-high-street/hope-on-the-high-street": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/hope-on-the-high-street/hope-on-the-high-street",
+    "checked_on": "2026-11-08",
+    "sha256": "379b51d3c8ad7ca50611d2b818a5bb9fe6914ddc67499544747f8fec98f16fd9"
+  },
   "d90b9caff6ff987a96c2febb30b9054ac15f50e8c0432f17d7fc5b7b81f28020|https://www.gov.uk/government/news/exeter-self-driving-boat-manufacturer-goes-overseas-with-government-backed-finance": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/exeter-self-driving-boat-manufacturer-goes-overseas-with-government-backed-finance",
@@ -1043,6 +1079,12 @@
     "checked_on": "2026-10-27",
     "sha256": "835450fb9f3fbfeaa44d9198ed90c973a741ef45491ca530e31c2ddb81e8468c"
   },
+  "e319b14fa497c2a3c902b6344f02440994cbcfcf62faaa3f49dcfe69c648ed62|https://www.gov.uk/government/news/five-things-you-need-to-know-ahead-of-making-tax-digital-for-income-tax-quarterly-deadline": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/five-things-you-need-to-know-ahead-of-making-tax-digital-for-income-tax-quarterly-deadline",
+    "checked_on": "2026-11-08",
+    "sha256": "f9d50d0815a7ffe6ecdfbf1c024289cb594fb07ff7ecbda1d40af7236da3484e"
+  },
   "e4aad1f3399bc57919d6bd34aee64af35c6937aa0b0534d5b313741361858aab|https://www.gov.uk/government/news/prime-minister-and-chancellors-call-with-the-president-of-ukraine-28-october-2026": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/prime-minister-and-chancellors-call-with-the-president-of-ukraine-28-october-2026",
@@ -1066,6 +1108,12 @@
     "url": "https://hansard.parliament.uk/Commons/2026-10-21/debates/CAAFE9F2-EA1F-42E9-9F73-ECD65FA13C2B/AntisemitismInSchoolsAndColleges",
     "checked_on": "2026-10-25",
     "sha256": "0c51a78aeec37c679ac692d7c4612b87323ef09799c837135de250f8573fb90a"
+  },
+  "e77f49513168bfc055eb68249d3561543ea1ca63e24faa388dfc49be6b42460d|https://www.gov.uk/government/publications/hope-on-the-high-street/hope-on-the-high-street": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/hope-on-the-high-street/hope-on-the-high-street",
+    "checked_on": "2026-11-08",
+    "sha256": "379b51d3c8ad7ca50611d2b818a5bb9fe6914ddc67499544747f8fec98f16fd9"
   },
   "e8676ceb863f4c903134e3097ab0c62109569c457412285b34a8d1bdd89afbab|https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json": {
     "match": "exact",
@@ -1108,6 +1156,12 @@
     "url": "https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10",
     "checked_on": "2026-10-16",
     "sha256": "8d87575efd354320b42e39ae31e7be6e47edda347bc6dfdcadf6a527e96df1ef"
+  },
+  "f9fb43c4d3d8721c5f8f659ac69ca2e1bffba0124e6cd90e371efa471c22047e|https://hansard.parliament.uk/Commons/2026-11-02/debates/09F388D2-539E-4B0A-ABE2-D3195B14AF0E/ImmigrationEarnedSettlement": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-11-02/debates/09F388D2-539E-4B0A-ABE2-D3195B14AF0E/ImmigrationEarnedSettlement",
+    "checked_on": "2026-11-08",
+    "sha256": "5c0bcefd4b0fa357a6db32e706aaeeb2a1fbc7954eb58cc1c4f3f6d40cb5da6d"
   },
   "fa5265caee6759cb448c541387fe54505feb28253594a8e68e486d07c6e3195e|https://greenparty.org.uk/2026/10/02/zack-polanskis-speech-to-conference-in-full/": {
     "match": "exact",
