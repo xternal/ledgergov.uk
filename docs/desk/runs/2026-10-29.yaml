@@ -1,0 +1,68 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-10-29"
+triaged_on: "2026-11-01"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 196
+sources_read: 12
+drafts: 12
+candidates: 16
+outcomes:
+  card: 5
+  reworded: 0
+  duplicate: 0
+  existing: 1
+  grant: 3
+  done: 0
+  process: 2
+  broad: 0
+  event: 0
+  cap: 4
+  other: 1
+quotes_exact: 5
+new_actors: []
+cards:
+  - uk-renters-rights-social-housing-2027
+  - uk-capital-allowances-50pc-2027 # quoted from the paper's general description
+  - uk-badr-limit-500k-2027
+  - uk-property-savings-tax-rates-2027
+  - uk-vat-private-hire-operators-2028
+reworded: []
+dropped:
+  - draft: 2026-10-29-govuk-britains-ambitious-scale-ups-backed-to-keep-growing-in-the-u-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/news/britains-ambitious-scale-ups-backed-to-keep-growing-in-the-uk
+    text: "A new pilot scheme, Scale UK Connect, will tackle this head-on with 200 scale-ups across the UK getting expert account management and tailored advice on how to expand."
+    note: "a pilot giving 200 scale-ups account management; small"
+  - draft: 2026-10-29-govuk-government-and-industry-to-take-on-investment-bias-and-workp-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/news/government-and-industry-to-take-on-investment-bias-and-workplace-culture-to-support-more-women-in-tech
+    text: "Alongside these voluntary standards, in 2027 government will launch a new scale-up women’s programme. This will help women founders of high-potential, high-growth UK businesses to secure investment and scale."
+    note: "a scale-up programme for women founders in 2027; no measurable outcome"
+  - { draft: 2026-10-29-govuk-local-government-reorganisation-moves-forward-in-five-counti-1, quote: quote, code: process, note: "the timetable of a reorganisation the government is only \"minded to\" make in five areas, with final decisions after representations" }
+  - draft: 2026-10-29-govuk-paper-machine-games-duty-increasing-the-rate-on-higher-stake-and-p-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/publications/machine-games-duty-changes-to-stake-and-prize-thresholds/machine-games-duty-increasing-the-rate-on-higher-stake-and-prize-machines
+    text: "This measure will increase the rate of Machine Games Duty (MGD) from 20% to 25% for machine games with stakes over £1 or prizes over £100, from 1 April 2027."
+    note: "Machine Games Duty up from 20% to 25% on higher-stake machines from April 2027; narrow"
+  - { draft: 2026-10-29-govuk-under-18-sales-ban-extended-to-nicotine-products-and-all-vap-1, quote: quote, code: existing, into: uk-smokefree-generation-2023, note: "the 1 January 2027 start is already on the card's legislated event" }
+  - draft: 2026-10-29-govuk-under-18-sales-ban-extended-to-nicotine-products-and-all-vap-1
+    quote: also1
+    code: cap
+    source: https://www.gov.uk/government/news/under-18-sales-ban-extended-to-nicotine-products-and-all-vapes
+    text: "The comprehensive advertising and sponsorship ban which we intend to be in force from 1 June 2027."
+    note: "an advertising and sponsorship ban intended from 1 June 2027; the release does not say what it covers"
+  - { draft: 2026-10-29-wms-hcws432-1, quote: quote, code: process, note: "the reorganisation timetable, as in the press release; Jim McMahon has no actor file either" }
+  - { draft: 2026-10-29-wms-hcws432-1, quote: also1, code: grant, note: "transition support paid in the coming weeks" }
+  - { draft: 2026-10-29-wms-hcws432-1, quote: also2, code: grant, note: "£500,000 to each of two areas" }
+  - { draft: 2026-10-29-wms-hcws432-1, quote: also3, code: grant, note: "the balance of transition support once final decisions are made" }
+  - draft: 2026-10-29-wms-hcws434-1
+    quote: quote
+    code: other
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-29/HCWS434
+    text: "The first arrivals through these routes are expected in Autumn 2027."
+    note: "Anna Turley, border security minister (member 4449): first arrivals through new safe and legal routes in autumn 2027; a fair card held back: the speaker has no actor file, and a new MP actor needs Parliament's portrait credit in data/portraits.json, which the desk may not add (pull request #199 would lift this)"

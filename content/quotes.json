@@ -65,6 +65,18 @@
     "checked_on": "2026-10-21",
     "sha256": "daf1b5d4338d46d68c659808489df8bd7f335cc9431bb6730f51f706f038e910"
   },
+  "0bd05e3b0a136c26dc366b14c76f3d9623fced4944101cf6e3de03a8383f8e0d|https://www.gov.uk/government/news/budget-2026-breathing-space-for-welsh-families-and-businesses": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/budget-2026-breathing-space-for-welsh-families-and-businesses",
+    "checked_on": "2026-11-01",
+    "sha256": "d5e8d80873136535109fd5f5936c91285a44e808c915792fb0bdbd3958f3b0bf"
+  },
+  "0cd2d5958a5c812c1cbaed8454926b8270722f6ca0404956e0f6acfe639619a4|https://www.gov.uk/government/news/leeds-station-set-for-biggest-transformation-in-a-generation-as-government-backs-citys-growth-with-a-303-million-upgrade": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/leeds-station-set-for-biggest-transformation-in-a-generation-as-government-backs-citys-growth-with-a-303-million-upgrade",
+    "checked_on": "2026-11-01",
+    "sha256": "17ed50ddd22601d508bf66aaaaafe2f2143cf268214622c707f5a4e0a0cbe8fb"
+  },
   "0d071c5f28ce308ec2521e6158c5c7388465de566af599daab0afff65dad5f44|https://www.gov.uk/government/publications/mobilising-private-finance-for-local-nature-recovery/growing-places-mobilising-private-finance-for-local-nature-recovery": {
     "match": "exact",
     "url": "https://www.gov.uk/government/publications/mobilising-private-finance-for-local-nature-recovery/growing-places-mobilising-private-finance-for-local-nature-recovery",
@@ -100,6 +112,12 @@
     "url": "https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky",
     "checked_on": "2026-10-25",
     "sha256": "c3d85025bc53c437665d09ca029db9a9ae6b61286d260c8237a20c2a08ac950d"
+  },
+  "1b6f24aa370a2c7ef062795681e8e7ada498e02d55689c2b6207f00657ced3b3|https://www.gov.uk/government/publications/capital-gains-tax-reduction-in-the-business-asset-disposal-relief-lifetime-limit/capital-gains-tax-new-business-asset-disposal-relief-lifetime-limit": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/capital-gains-tax-reduction-in-the-business-asset-disposal-relief-lifetime-limit/capital-gains-tax-new-business-asset-disposal-relief-lifetime-limit",
+    "checked_on": "2026-11-01",
+    "sha256": "b5cfad47789028d89f8334db78b6756409db2999b58711a6b26c8f7042661797"
   },
   "1cf5fe849c032f02f92caa45d284871a08e41b10f8516b3f373f756b23683fd8|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS364": {
     "match": "exact",
@@ -233,6 +251,12 @@
     "checked_on": "2026-10-16",
     "sha256": "452c7aa37fb8c0d26e51b5c7aa3ad17827a6efc3cb23fbdfa979aacd723dcb69"
   },
+  "41ade585e0a2430a44bfd12a5e738638c67e83bfc56112981b6fd4d8b60bb3ab|https://www.gov.uk/government/publications/high-value-council-tax-surcharge-on-residential-properties/additional-council-tax-charge-on-high-value-properties": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/high-value-council-tax-surcharge-on-residential-properties/additional-council-tax-charge-on-high-value-properties",
+    "checked_on": "2026-11-01",
+    "sha256": "4417a0d651a5e839792f5e3972f8743f8e0212772b4be54f2a49d7b1b0c17b97"
+  },
   "425f63aaa5b2b0ee9dd95154ff2cb687b1ab08de9eef180ca32f531d30ccd8b7|https://www.gov.uk/government/news/major-boost-for-young-people-in-exeter-as-youth-hub-opens-to-support-them-towards-work": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/major-boost-for-young-people-in-exeter-as-youth-hub-opens-to-support-them-towards-work",
@@ -263,6 +287,12 @@
     "checked_on": "2026-10-20",
     "sha256": "bfd72905eb5de7945125ec6ab889eb1ae2502aa5b2bdb4cfe08771d62391338c"
   },
+  "45af94c864ce9ac2d8b4f806e589bcf72547a64526bdb5c8b7ce1d80c1278963|https://www.gov.uk/government/consultations/social-housing-tenure-standard-direction-to-the-regulator-of-social-housing/outcome/social-housing-tenure-standard-direction-to-the-regulator-of-social-housing-government-response": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/consultations/social-housing-tenure-standard-direction-to-the-regulator-of-social-housing/outcome/social-housing-tenure-standard-direction-to-the-regulator-of-social-housing-government-response",
+    "checked_on": "2026-11-01",
+    "sha256": "14c5b0fe25b98012085161c334172ef60f524a073e25ef14a4fcc8c0ba40b72e"
+  },
   "45c0f59c22c2b482ddf69b58647bc1748864cca70057f5285179c468f7caad6f|https://www.gov.uk/government/news/i-am-determined-this-generation-will-be-the-one-that-ends-new-cases-of-hiv-within-england-by-2030-prime-minister-said-ahead-of-world-aids-day": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/i-am-determined-this-generation-will-be-the-one-that-ends-new-cases-of-hiv-within-england-by-2030-prime-minister-said-ahead-of-world-aids-day",
@@ -287,6 +317,12 @@
     "checked_on": "2026-10-27",
     "sha256": "3cdf8bdcbce0297b1d525909f127959c89e0bac931697320ec1abc5517dea14b"
   },
+  "4814f5200fa17e28d61b8dc572e8d16675ba558d383bf4f8263eb6d61b819f40|https://www.gov.uk/government/publications/reduce-the-main-rate-writing-down-allowance-and-increase-the-main-rate-first-year-allowance/capital-allowances-reduce-the-main-rate-writing-down-allowance-and-increase-the-main-rate-first-year-allowance": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/reduce-the-main-rate-writing-down-allowance-and-increase-the-main-rate-first-year-allowance/capital-allowances-reduce-the-main-rate-writing-down-allowance-and-increase-the-main-rate-first-year-allowance",
+    "checked_on": "2026-11-01",
+    "sha256": "442efcaf95834a5236b2cb6dfd96b0b8b2443e607eb788087f29cf79746d2d59"
+  },
   "4825c17ac8c0ce8b4aed72732fd16fd995f060670e261fc4409070d996bea5d7|https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS417": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS417",
@@ -304,6 +340,12 @@
     "url": "https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json",
     "checked_on": "2026-10-30",
     "sha256": "80fd9d265ccd097e0329e35a53cd6c3cc6f93a408ac9c5afd8ffe6a6505c8e32"
+  },
+  "4a69736fbd6948bf42ac71ed6c283bdc820b3a637cef600a524141992b1a8de3|https://www.gov.uk/government/news/budget-2026-breathing-space-for-welsh-families-and-businesses": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/budget-2026-breathing-space-for-welsh-families-and-businesses",
+    "checked_on": "2026-11-01",
+    "sha256": "d5e8d80873136535109fd5f5936c91285a44e808c915792fb0bdbd3958f3b0bf"
   },
   "4be3ff0eee93e28f679297bc8fef13f076aa496d3490128d960ce2f7bd91733c|https://www.gov.uk/government/news/prime-minister-blocks-hundreds-more-criminals-from-sentencing-changes": {
     "match": "exact",
@@ -455,6 +497,12 @@
     "checked_on": "2026-10-30",
     "sha256": "80fd9d265ccd097e0329e35a53cd6c3cc6f93a408ac9c5afd8ffe6a6505c8e32"
   },
+  "696b16e8ce5677f3848d3aa1ebc41843c9e88a83de7107d510bbe5b72e501ad0|https://www.gov.uk/government/news/lpc-recommendations-take-the-national-living-wage-to-1321": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/lpc-recommendations-take-the-national-living-wage-to-1321",
+    "checked_on": "2026-11-01",
+    "sha256": "f40706c42dd5fa8eb0e1fbf7e1bc517878cf458abf760568c5a7eedce3e451ee"
+  },
   "6b68752faf8e16e51d3045755be9999eea0d2cb37f5f102baca38998ff99f1a7|https://www.gov.uk/government/news/one-million-more-scans-to-help-catch-cancer-sooner": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/one-million-more-scans-to-help-catch-cancer-sooner",
@@ -472,6 +520,12 @@
     "url": "https://www.gov.uk/government/consultations/legal-framework-for-using-facial-recognition-in-law-enforcement/outcome/new-legal-framework-for-law-enforcement-use-of-biometrics-facial-recognition-and-similar-technologies-government-response-to-the-consultation-acces",
     "checked_on": "2026-11-08",
     "sha256": "654347e7f403e568e390bbe540fd3576a36aa8375f64a69cbdbd43dd6bbb1eac"
+  },
+  "72623974628760337eaa753ce706e16fb11cba0994d8d0721e17e206db12e484|https://questions-statements.parliament.uk/written-statements/detail/2026-10-28/HCWS427": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-28/HCWS427",
+    "checked_on": "2026-11-01",
+    "sha256": "4ded9e0cd554fa99e6529ff7f870693968e9d55ed4f1316b8aee754098543c0f"
   },
   "728fe00a46fd71c5b8583e23023543abc9b05ddcf751914d4a2f72521f20f826|https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements": {
     "match": "exact",
@@ -520,6 +574,12 @@
     "url": "https://greenparty.org.uk/2026/03/18/zack-polanski-lays-out-plans-to-back-the-caring-majority-in-major-speech/",
     "checked_on": "2026-10-21",
     "sha256": "5f70fad153ddcf8363e3953402aa24a546ea32c57c1d6f65aa0791126dc4302a"
+  },
+  "7cad7df6c31fc1045d5215710d11ffe83ed238fa9ff40b11678ac86a4fa8028e|https://www.gov.uk/government/publications/income-tax-changes-to-tax-rates-for-property-and-savings-income/income-tax-changes-to-tax-rates-for-property-and-savings-income": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/income-tax-changes-to-tax-rates-for-property-and-savings-income/income-tax-changes-to-tax-rates-for-property-and-savings-income",
+    "checked_on": "2026-11-01",
+    "sha256": "0ef6213d2915adebb81d1882b3d2f1f411732953884aecf342e43cf8597eea8b"
   },
   "7fd84c04efcff103fea7b89b0a79880038e59dedaaa4cf0b50917ee74441c577|https://hansard.parliament.uk/Commons/2026-11-02/debates/09F388D2-539E-4B0A-ABE2-D3195B14AF0E/ImmigrationEarnedSettlement": {
     "match": "exact",
@@ -586,6 +646,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS412",
     "checked_on": "2026-10-27",
     "sha256": "835450fb9f3fbfeaa44d9198ed90c973a741ef45491ca530e31c2ddb81e8468c"
+  },
+  "8b8c6773ca088b7ba33af5d308e5388d0dfa476534f0d302746a98e0f06416c9|https://hansard.parliament.uk/Commons/2026-10-28/debates/39FAECD6-52B2-4A7F-A437-E0CA9E98C973/Engagements": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-10-28/debates/39FAECD6-52B2-4A7F-A437-E0CA9E98C973/Engagements",
+    "checked_on": "2026-11-01",
+    "sha256": "d5f6f2ee483433c7c4cba760185b495d44af2eb179f0bfcec3071f15ebaf652d"
   },
   "8cf70b862d2ec0e743044eba1d823255d8d62a71b2ac5b5273f9f7bbaaed00a6|https://www.gov.uk/government/news/prime-minister-to-create-smokefree-generation-by-ending-cigarette-sales-to-those-born-on-or-after-1-january-2009": {
     "match": "exact",
@@ -671,6 +737,12 @@
     "checked_on": "2026-10-16",
     "sha256": "ad43865dd9295d4ab74c26e2dfb01d42bb9ada1b8de1a5a82be852bca730eb51"
   },
+  "9d94c065cc386b4da3a778a802be12716a1073574ec1e8870f44eed61b6dc65f|https://www.gov.uk/government/news/government-and-rolls-royce-agree-25bn-to-build-jet-engines-in-the-uk-and-create-tens-of-thousands-of-jobs": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/government-and-rolls-royce-agree-25bn-to-build-jet-engines-in-the-uk-and-create-tens-of-thousands-of-jobs",
+    "checked_on": "2026-11-01",
+    "sha256": "9afb3b7b30d8aab81781cad619a8308446685f5e6e64ba0aff4469f9ecfaf246"
+  },
   "9e8bbc00b650f90ef76202d5f8bb07e873baec0eabea0bef6b4961c525b96c4d|https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons",
@@ -688,6 +760,12 @@
     "url": "https://hansard.parliament.uk/Commons/2026-10-13/debates/72F06588-BF33-4C21-8542-EE9E1293D7C9/PensionsTripleLock",
     "checked_on": "2026-10-16",
     "sha256": "49ace2c518ce7cb121ef0b4eb84ee84e80bbe6c3fd09ce6ed484c11c2060ea8a"
+  },
+  "a3de48cd6d24ab97fd0c1ef98afcb58f065b64754b38da1a49dd3bae71bf6a3e|https://www.gov.uk/government/publications/vat-electronic-invoicing/e-invoicing-requirements": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/vat-electronic-invoicing/e-invoicing-requirements",
+    "checked_on": "2026-11-01",
+    "sha256": "d6fa002e15162cd804871beadeb444ac563209194e2ebc2e32b65f7f02626c18"
   },
   "a76e942022b580621c315fde49a3fc060937b639cc4837c5bf909c2c748539f9|https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity": {
     "match": "exact",
@@ -1007,6 +1085,12 @@
     "checked_on": "2026-11-08",
     "sha256": "f9d50d0815a7ffe6ecdfbf1c024289cb594fb07ff7ecbda1d40af7236da3484e"
   },
+  "e4aad1f3399bc57919d6bd34aee64af35c6937aa0b0534d5b313741361858aab|https://www.gov.uk/government/news/prime-minister-and-chancellors-call-with-the-president-of-ukraine-28-october-2026": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/prime-minister-and-chancellors-call-with-the-president-of-ukraine-28-october-2026",
+    "checked_on": "2026-11-01",
+    "sha256": "b33da3af4c262a44aa0c950fc0f614132c66079bb7395084acb43fbc1ca1a4e4"
+  },
   "e5c1896ed5bcb7470a741b845d6d854d0b34f8929a2951a3efe1be67a27fe9f7|https://www.gov.uk/government/news/major-milestone-reached-in-ending-building-safety-crisis": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/major-milestone-reached-in-ending-building-safety-crisis",
@@ -1060,6 +1144,12 @@
     "url": "https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines",
     "checked_on": "2026-10-16",
     "sha256": "bb4b49a5e27ea86f4caaaa3aa018a3e0dd3acf89bf5134c7efd19297c96b32ad"
+  },
+  "f5442457f55e976b68c9c03fe0e2f2848e25eec86b56c7fd2ee7347af4b0cfc6|https://www.gov.uk/government/publications/vat-supply-of-certain-passenger-transport-services-through-agents/vat-treatment-of-private-hire-vehicle-operators": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/vat-supply-of-certain-passenger-transport-services-through-agents/vat-treatment-of-private-hire-vehicle-operators",
+    "checked_on": "2026-11-01",
+    "sha256": "7525c02ff2744e8d12fb383e0a1c7591d664b7f518775ce127b0994ad296fe52"
   },
   "f6f591374abf43519e6a5867d3b18e97f5497560681e88085a929c577a5312d3|https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10": {
     "match": "exact",
