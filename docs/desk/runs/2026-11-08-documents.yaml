@@ -1,0 +1,31 @@
+# One weekly editor's desk run over the week's big GOV.UK documents (docs/desk/ROUTINE.md, steps 6 and 7).
+# Counts are of the commitments weighed in the documents read; each has exactly one outcome.
+intake_date: "2026-11-08" # documents published 1 to 8 November 2026 (GOV.UK search, policy and engagement)
+triaged_on: "2026-11-08"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: null # filled in by the pull request that carries this file
+sources_read: 1
+candidates: 0
+outcomes:
+  card: 0
+  reworded: 0
+  duplicate: 0
+  existing: 0
+  grant: 0
+  done: 0
+  process: 0
+  broad: 0
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 0
+new_actors: []
+cards: []
+reworded: []
+documents: []
+skipped: # listed by the search but not read in full
+  - "63 documents listed; 11 were already read by the daily intake (drafts on intake/2026-11-02 to intake/2026-11-05) or cited by a card"
+  - "Not new this week (older documents updated, by first publication date): Plan to Make Work Pay and Employment Rights Act timeline update (February 2026; read: its dated measures are already cards or on this week's intake cards), Carbon border adjustment mechanism policy summary (February 2026), Further interim compensation payments for estates (September 2025), Sale of knives voluntary agreement (2016), National policy statement for ports (July 2026), Stocken Prison action plan (2019), and new outcomes added to older consultations (early years space requirements, Ofsted fees, Capacity Market, seafarer protections, bus and HGV licensing, CMA markets remedies, Carer's Allowance summary of findings)"
+  - "New this week but published as PDF only, so no HTML to check a quote against: Transport resilience strategy (DfT, 2 Nov), Government response to the Independent Public Bodies Review of the Legal Services Board (MoJ, 5 Nov), A Fairer Pathway to Settlement: government response (Home Office, 2 Nov; its commitments are on this week's cards from the Home Secretary's statement)"
+  - Open consultations and calls for evidence (proposals, not commitments), impact assessments, explanatory memoranda on EU law, and technical HMRC tax information notes
+dropped: []

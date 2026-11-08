@@ -1,0 +1,41 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-11-06"
+triaged_on: "2026-11-08"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 214
+sources_read: 3
+drafts: 3
+candidates: 3
+outcomes:
+  card: 0
+  reworded: 0
+  duplicate: 0
+  existing: 2
+  grant: 1
+  done: 0
+  process: 0
+  broad: 0
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 0
+new_actors: []
+cards: []
+reworded: []
+dropped:
+  - draft: 2026-11-06-govuk-better-access-to-public-services-central-to-new-class-unit-a-1
+    quote: quote
+    code: existing
+    into: uk-socio-economic-duty-2026
+    note: "commencing the socio-economic duty"
+  - draft: 2026-11-06-govuk-major-boost-for-young-people-in-luton-as-youth-hub-opens-to--1
+    quote: quote
+    code: existing
+    into: uk-youth-hub-every-area-2029
+    note: "Youth Hubs in over 360 areas over three years"
+  - draft: 2026-11-06-govuk-uk-veteran-support-centre-network-to-more-than-double-1
+    quote: quote
+    code: grant
+    note: "the same £13.2m second wave of veteran support centres, from the Scotland Office"
