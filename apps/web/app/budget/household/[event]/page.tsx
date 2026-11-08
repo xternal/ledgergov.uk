@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { sourceRefUrl, t1Range, type HouseholdExampleYear, type HouseholdSnapshot, type HouseholdYearResult } from "@ledger/schema";
+import { sourceRefUrl, t1Range, type HouseholdExampleYear, type PolicyEngineDashboard, type HouseholdSnapshot, type HouseholdYearResult } from "@ledger/schema";
 import { policyEngineCompareUrl } from "@ledger/server/model";
-import { getHouseholdSnapshots, getScorecards } from "@/lib/data";
+import { getHouseholdSnapshots, getPolicyEngineDashboard, getScorecards } from "@/lib/data";
 import { BUDGET } from "@/lib/budget";
 import { longDate } from "@/lib/format";
 import {
@@ -44,7 +44,7 @@ export const dynamicParams = false;
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const s = load((await params).event);
   if (!s) return {};
-  const { title, description } = householdCopy(s);
+  const { title, description } = householdCopy(s, !!getPolicyEngineDashboard(s.id));
   const path = householdPath(s);
   return {
     title: `${title} | LedgerGov.UK`,
@@ -59,7 +59,7 @@ const h2 = "m-0 text-title font-semibold";
 const section = "grid grid-cols-[minmax(0,1fr)] gap-5 scroll-mt-28";
 const figure = "m-0 text-figure font-semibold tracking-figure tabular-nums";
 /** The page's sections, in order, for the "On this page" menu: before PolicyEngine answers, the model's parts are one "To follow" section at the end. */
-function sectionsFor(s: HouseholdSnapshot, noModel: boolean) {
+function sectionsFor(s: HouseholdSnapshot, noModel: boolean, peOnly = false) {
   const treasury = s.input.treasury ? [{ href: "#treasury", label: "Treasury's view" }] : [];
   const end = [
     { href: "#how", label: "How it works" },
@@ -77,7 +77,7 @@ function sectionsFor(s: HouseholdSnapshot, noModel: boolean) {
   return [
     { href: "#summary", label: "Summary" },
     { href: "#deciles", label: "By income" },
-    { href: "#winners", label: "Gains and losses" },
+    ...(peOnly ? [] : [{ href: "#winners", label: "Gains and losses" }]),
     { href: "#households", label: "Example households" },
     { href: "#your-tax", label: "Your tax" },
     { href: "#measures", label: "Measures" },
@@ -96,7 +96,7 @@ const tone = (v: number) => (v > 0.005 ? "text-good" : v < -0.005 ? "text-debt-i
 export default async function HouseholdPage({ params }: Props) {
   const s = load((await params).event);
   if (!s) notFound();
-  const c = householdCopy(s);
+  const c = householdCopy(s, !!getPolicyEngineDashboard(s.id));
   const l = householdLabels(s);
   const path = householdPath(s);
   const rehearsal = s.kind === "rehearsal";
@@ -111,6 +111,8 @@ export default async function HouseholdPage({ params }: Props) {
   // full; the summary, deciles, gains and losses and households follow once it does.
   const noModel = c.view.state === "no_model";
   const compareUrl = policyEngineCompareUrl(s, startYear);
+  // PolicyEngine's own population results (its Budget dashboard), shown where we have none of our own.
+  const pe = c.headResult && c.sideResult ? null : getPolicyEngineDashboard(s.id);
 
   const structuredData = [
     {
@@ -135,7 +137,7 @@ export default async function HouseholdPage({ params }: Props) {
         : "The Budget's published rates and thresholds, applied to a salary in the reader's browser; a static microsimulation with PolicyEngine UK follows once it answers",
       about: { "@type": "Event", name: s.name, startDate: s.date, organizer: { "@type": "GovernmentOrganization", name: "HM Treasury" } },
       isBasedOn: s.input.sources.map((x) => x.url),
-      citation: "https://policyengine.org/uk",
+      citation: "https://www.policyengine.org/uk",
       isPartOf: { "@type": "WebSite", name: SITE_NAME, url: absolute("/") },
     },
     {
@@ -160,7 +162,7 @@ export default async function HouseholdPage({ params }: Props) {
       <SiteHeader current="/promises" />
       <div className="sticky top-14 z-10 border-b border-line bg-bg/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-[1000px] px-2 py-1.5 sm:px-4">
-          <NavLinks links={sectionsFor(s, noModel)} spy label="On this page" />
+          <NavLinks links={sectionsFor(s, noModel, !!pe)} spy label="On this page" />
         </div>
       </div>
       <main className="mx-auto grid max-w-[1000px] grid-cols-[minmax(0,1fr)] gap-14 px-4 pb-20 pt-10 sm:px-6">
@@ -192,7 +194,7 @@ export default async function HouseholdPage({ params }: Props) {
             <span className="text-caption font-medium text-muted">{l.model}</span>
             <span className="text-caption text-muted">
               {noModel ? "Our estimate: " : "Worked out with "}
-              <a href="https://policyengine.org/uk">PolicyEngine</a>&apos;s open model{noModel ? ", once it answers" : ""}
+              <a href="https://www.policyengine.org/uk">PolicyEngine</a>&apos;s open model{noModel ? ", once it answers" : ""}
             </span>
           </div>
           {noModel && (
@@ -229,7 +231,13 @@ export default async function HouseholdPage({ params }: Props) {
           <NoModelSummary s={s} />
         ) : (
           <>
-            {c.headResult && c.sideResult ? <PopulationSections s={s} head={c.headResult} side={c.sideResult} /> : <HeldPopulation s={s} />}
+            {c.headResult && c.sideResult ? (
+              <PopulationSections s={s} head={c.headResult} side={c.sideResult} />
+            ) : pe ? (
+              <PolicyEngineEstimate s={s} d={pe} />
+            ) : (
+              <HeldPopulation s={s} />
+            )}
             {c.headHouseholds && c.sideHouseholds ? (
               <HouseholdsSection s={s} head={c.headHouseholds} side={c.sideHouseholds} />
             ) : (
@@ -261,7 +269,7 @@ export default async function HouseholdPage({ params }: Props) {
           </div>
           <div className="grid gap-2">
             <h3 className="m-0 text-[16px] font-semibold">
-              {noModel ? `In our estimate once PolicyEngine answers (${modelled.length})` : `In the estimate (${modelled.length})`}
+              {noModel ? `In our estimate once PolicyEngine answers (${modelled.length})` : pe ? `In our example households (${modelled.length})` : `In the estimate (${modelled.length})`}
             </h3>
             <ul className="m-0 grid list-none border-t border-line p-0">
               {modelled.map((m) => {
@@ -302,7 +310,7 @@ export default async function HouseholdPage({ params }: Props) {
           </div>
           {left.length > 0 && (
             <div className="grid gap-2">
-              <h3 className="m-0 text-[16px] font-semibold">Not in the estimate ({left.length})</h3>
+              <h3 className="m-0 text-[16px] font-semibold">{pe ? "Not in our example households" : "Not in the estimate"} ({left.length})</h3>
               <ul className="m-0 grid list-none border-t border-line p-0">
                 {left.map((m) => {
                   const links = measureLinks(s, m, scorecardIds);
@@ -429,21 +437,38 @@ export default async function HouseholdPage({ params }: Props) {
           <h2 id="how-h" className={h2}>
             How it works
           </h2>
+          {s.provider?.name === "policyengine_python" ? (
+            <p className="m-0 text-muted">
+              Editors type each measure from the Budget documents, every figure with its page: the value in each year without the Budget, and with it.
+              We run the two complete sets of rules through <a href="https://www.policyengine.org/uk">PolicyEngine</a>&apos;s open-source model of UK
+              taxes and benefits ourselves, for six fixed example households, and work out each one&apos;s income both ways. The estimate for the
+              whole country{pe ? " above" : ""} is PolicyEngine&apos;s own, from its Budget dashboard, for the measures it chose to model.
+            </p>
+          ) : (
           <p className="m-0 text-muted">
             Editors type each measure from the Budget documents, every figure with its page: the value in each year without the Budget, and with it.
-            We send the two complete sets of rules to <a href="https://policyengine.org/uk">PolicyEngine</a>, a charity whose open-source model of
+            We send the two complete sets of rules to <a href="https://www.policyengine.org/uk">PolicyEngine</a>, a charity whose open-source model of
             UK taxes and benefits runs them over a large survey of households that represents the country (the Family Resources Survey, reweighted
             by PolicyEngine). It works out every household&apos;s income both ways and adds up the differences by income tenth.
           </p>
+          )}
           <p className="m-0 text-muted">
             It is a static estimate: nobody changes their work, spending or savings because of the Budget. PolicyEngine gives one figure for each
             result; we show it with a ±10% range and label it an estimate. It is not an official figure and not advice about anyone&apos;s own taxes.
           </p>
-          {s.provider && compareUrl ? (
+          {s.provider?.name === "policyengine_python" ? (
+            <p className="m-0 text-muted">
+              We ran the households once, on {computedOn(s)}, not each time someone opens the page, and nothing about readers is ever sent. Every
+              household came from one pinned version: PolicyEngine UK {s.provider.model_version} (the <a href={s.provider.api}>policyengine {s.provider.bundle_version}</a>{" "}
+              package). An editor checked the measures before this page was published. Read{" "}
+              <a href={`https://github.com/xternal/ledgergov.uk/blob/main/${s.measures_file}`}>the measures file</a> and{" "}
+              <a href="https://github.com/xternal/ledgergov.uk/blob/main/docs/MODEL.md">our method</a>.
+            </p>
+          ) : s.provider && compareUrl ? (
             <p className="m-0 text-muted">
               We asked PolicyEngine once, on {computedOn(s)}, not each time someone opens the page, and nothing about readers is ever sent. Every answer
               came from one version of the model: PolicyEngine UK {s.provider.model_version}, data {s.provider.data_version}. An editor checked the
-              measures before this page was published. You can open the same comparison in <a href={compareUrl}>PolicyEngine&apos;s own app</a>, or
+              measures before this page was published. PolicyEngine&apos;s own work on the UK is at <a href={compareUrl}>policyengine.org/uk</a>. You can also
               read <a href={`https://github.com/xternal/ledgergov.uk/blob/main/${s.measures_file}`}>the measures file</a> and{" "}
               <a href="https://github.com/xternal/ledgergov.uk/blob/main/docs/MODEL.md">our method</a>.
             </p>
@@ -609,6 +634,177 @@ function PopulationSections({ s, head, side }: { s: HouseholdSnapshot; head: Hou
           </div>
         </section>
 
+    </>
+  );
+}
+
+/**
+ * PolicyEngine's own estimate for the whole country, from its Budget dashboard (data/build/budget/policyengine), where
+ * we have no population results of our own: since 6 November 2026 we no longer compute them (docs/MODEL.md).
+ * PolicyEngine's work, credited and linked to its dashboard as it asked, for the measures it chose to model.
+ */
+type PeYear = PolicyEngineDashboard["years"][number];
+type PeFullYear = Omit<PeYear, "all_avg_change_gbp" | "deciles"> & { all_avg_change_gbp: number; deciles: { decile: number; rel_change_pct: number; avg_change_gbp: number }[] };
+/** A year with no withheld figure: only these go in the summary, the chart and the table. */
+const peFull = (y: PeYear | undefined): y is PeFullYear =>
+  !!y && y.all_avg_change_gbp !== null && y.deciles.every((x) => x.rel_change_pct !== null && x.avg_change_gbp !== null);
+
+/** The cells PolicyEngine withholds, in words: "in 2030-31, tenths 7 and 9 and the average for all households". */
+function withheldText(gaps: string[]): string {
+  const by = new Map<string, { tenths: Set<number>; all: boolean }>();
+  for (const g of gaps) {
+    const m = /^(\d{4}-\d{2}) (?:decile (\d+)|(all))/.exec(g);
+    if (!m) continue;
+    const e = by.get(m[1]!) ?? { tenths: new Set<number>(), all: false };
+    if (m[2]) e.tenths.add(Number(m[2]));
+    if (m[3]) e.all = true;
+    by.set(m[1]!, e);
+  }
+  const and = (xs: string[]) => (xs.length < 2 ? xs.join("") : `${xs.slice(0, -1).join(", ")} and ${xs.at(-1)}`);
+  return and(
+    [...by].map(([year, e]) => {
+      const t = [...e.tenths].sort((a, b) => a - b).map(String);
+      const parts = [t.length ? `${t.length > 1 ? "tenths" : "tenth"} ${and(t)}` : "", e.all ? "the average for all households" : ""].filter(Boolean);
+      return `in ${year}, ${and(parts)}`;
+    }),
+  );
+}
+
+function PolicyEngineEstimate({ s, d }: { s: HouseholdSnapshot; d: PolicyEngineDashboard }) {
+  const c = householdCopy(s);
+  const head = d.years.find((y) => y.year === c.head);
+  const side = d.years.find((y) => y.year === c.side);
+  if (!peFull(head) || !peFull(side)) return <HeldPopulation s={s} />;
+  const withheld = withheldText(d.gaps.filter((g) => !g.endsWith("budget")));
+  const net = (v: number) => (v >= 0 ? `raise ${bn1(v)}` : `cost ${bn1(-v)}`);
+  const rows = head.deciles.map((h, i) => ({ h, sd: side.deciles[i]! }));
+  const credit = (
+    <>
+      PolicyEngine&apos;s <a href={d.url}>{d.title}</a>
+    </>
+  );
+  return (
+    <>
+      <section id="summary" aria-labelledby="summary-h" className={section}>
+        <div className="grid max-w-[70ch] gap-1">
+          <h2 id="summary-h" className={h2}>
+            PolicyEngine&apos;s estimate for the whole country
+          </h2>
+          <p className="m-0 text-muted">
+            From {credit}: PolicyEngine&apos;s own work, not ours. It models {d.measures.length} of the Budget&apos;s measures, chosen by PolicyEngine:{" "}
+            {d.measures.map((m) => m.name).join("; ")}. That list is not the same as ours below, so the example households and this estimate can
+            differ. Static: nobody changes what they do.
+          </p>
+        </div>
+        <dl className="m-0 grid grid-cols-2 gap-x-6 gap-y-5 border-y border-line py-5 sm:grid-cols-4">
+          <div className="grid content-start gap-0.5">
+            <dt className="text-label text-muted">Public finances, {c.head}</dt>
+            <dd className={figure}>{bn1(head.net_bn)}</dd>
+            <dd className="m-0 text-caption text-muted">
+              {head.net_bn < 0 ? "a year in cost" : "a year raised"}, range {rangeOfSize(head.net_bn, bn1)}
+            </dd>
+          </div>
+          <div className="grid content-start gap-0.5">
+            <dt className="text-label text-muted">All households, {c.head}</dt>
+            <dd className={`${figure} ${tone(head.all_avg_change_gbp)}`}>{gbpYear(head.all_avg_change_gbp)}</dd>
+            <dd className="m-0 text-caption text-muted">a year on average, range {rangeOf(head.all_avg_change_gbp, gbpYear)}</dd>
+          </div>
+          <div className="grid content-start gap-0.5">
+            <dt className="text-label text-muted">Lowest incomes, tenth 1</dt>
+            <dd className={`${figure} ${tone(head.deciles[0]!.rel_change_pct)}`}>{pct2(head.deciles[0]!.rel_change_pct)}</dd>
+            <dd className="m-0 text-caption text-muted">{gbpYear(head.deciles[0]!.avg_change_gbp)} a year per household</dd>
+          </div>
+          <div className="grid content-start gap-0.5">
+            <dt className="text-label text-muted">Highest incomes, tenth 10</dt>
+            <dd className={`${figure} ${tone(head.deciles[9]!.rel_change_pct)}`}>{pct2(head.deciles[9]!.rel_change_pct)}</dd>
+            <dd className="m-0 text-caption text-muted">{gbpYear(head.deciles[9]!.avg_change_gbp)} a year per household</dd>
+          </div>
+        </dl>
+        <p className="m-0 max-w-[70ch] text-muted">
+          By PolicyEngine&apos;s estimate its measures {net(head.net_bn)} a year for the public finances in {c.head} (range {rangeOfSize(head.net_bn, bn1)}), and{" "}
+          {net(side.net_bn)} in {c.side}. Year by year:{" "}
+          {d.years.map((y) => `${y.year} ${net(y.net_bn)}`).join(", ")}. PolicyEngine UK {d.model.policyengine_uk}, data {d.model.dataset}, run approved{" "}
+          {longDate(d.run.approved_at.slice(0, 10))}.
+        </p>
+      </section>
+
+      <section id="deciles" aria-labelledby="deciles-h" className={section}>
+        <div className="grid max-w-[70ch] gap-1">
+          <h2 id="deciles-h" className={h2}>
+            Change in income, by income tenth
+          </h2>
+          <p className="m-0 text-muted">
+            PolicyEngine&apos;s estimate of the average change in household income after tax and benefits, as a share of that income, for the measures it
+            models. From {credit}; whiskers show our ±10% range.
+          </p>
+        </div>
+        <DecilePair
+          label={`PolicyEngine's estimate of the change in household income by income tenth: in ${c.head} from ${pct2(head.deciles[0]!.rel_change_pct)} in tenth 1 to ${pct2(head.deciles[9]!.rel_change_pct)} in tenth 10; in ${c.side} from ${pct2(side.deciles[0]!.rel_change_pct)} to ${pct2(side.deciles[9]!.rel_change_pct)}.`}
+          valueText={pct2}
+          main={{ label: c.head, values: head.deciles.map((x) => x.rel_change_pct), ranges: head.deciles.map((x) => [t1Range(x.rel_change_pct)[0], t1Range(x.rel_change_pct)[2]]) }}
+          beside={{ label: c.side, values: side.deciles.map((x) => x.rel_change_pct), ranges: side.deciles.map((x) => [t1Range(x.rel_change_pct)[0], t1Range(x.rel_change_pct)[2]]) }}
+        />
+        <TableView label={`PolicyEngine's change in income by income tenth, ${c.head} and ${c.side}`}>
+          <table className="w-full border-collapse whitespace-nowrap text-sm tabular-nums">
+            <caption className="sr-only">PolicyEngine&apos;s estimate of the change in household income by income tenth</caption>
+            <thead>
+              <tr className="border-b border-line text-left text-caption text-muted">
+                <th scope="col" className="py-2 pr-4 font-medium">
+                  Income tenth
+                </th>
+                <th scope="col" className="py-2 pr-4 text-right font-medium">
+                  {c.head}
+                </th>
+                <th scope="col" className="py-2 pr-4 text-right font-medium">
+                  Range
+                </th>
+                <th scope="col" className="py-2 pr-4 text-right font-medium">
+                  £ a year
+                </th>
+                <th scope="col" className="py-2 pr-4 text-right font-medium">
+                  {c.side}
+                </th>
+                <th scope="col" className="py-2 text-right font-medium">
+                  £ a year
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map(({ h, sd }) => (
+                <tr key={h.decile} className="border-b border-line">
+                  <th scope="row" className="py-2 pr-4 text-left font-normal">
+                    {h.decile === 1 ? "1 (lowest)" : h.decile === 10 ? "10 (highest)" : h.decile}
+                  </th>
+                  <td className="py-2 pr-4 text-right">{pct2(h.rel_change_pct)}</td>
+                  <td className="py-2 pr-4 text-right text-muted">{rangeOf(h.rel_change_pct, pct2)}</td>
+                  <td className="py-2 pr-4 text-right">{gbpYear(h.avg_change_gbp)}</td>
+                  <td className="py-2 pr-4 text-right">{pct2(sd.rel_change_pct)}</td>
+                  <td className="py-2 text-right">{gbpYear(sd.avg_change_gbp)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </TableView>
+        <p className="m-0 max-w-[70ch] text-caption text-muted">
+          Source: {credit}, revision {d.revision}, read {longDate(d.retrieved_at.slice(0, 10))} (
+          {d.files.map((f, i) => (
+            <span key={f.name}>
+              {i > 0 && ", "}
+              <a href={f.url}>{f.name}</a>
+            </span>
+          ))}
+          ).
+          {withheld && (
+            <>
+              {" "}
+              PolicyEngine withholds some figures to protect the confidentiality of the survey&apos;s households: when only one or two of them in an
+              income tenth see their income change in a year, it leaves that tenth blank, and the year&apos;s average for all households too, so the
+              blank cannot be worked out from the rest. Withheld: {withheld} (
+              <a href={`${d.url}?tab=methodology#method-by-income`}>its methodology, under &ldquo;Income deciles&rdquo;</a>).
+            </>
+          )}
+        </p>
+      </section>
     </>
   );
 }

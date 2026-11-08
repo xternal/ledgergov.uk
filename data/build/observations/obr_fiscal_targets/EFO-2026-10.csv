@@ -1,0 +1,11 @@
+series_id,period,geography,value,unit,kind,source_id,vintage,quality,method_note
+fiscal_targets.current_budget.margin,2029-30,UK,14.526715,gbp_bn,forecast,obr_fiscal_targets,EFO-2026-10,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 forecast'."
+fiscal_targets.current_budget.margin_pct_gdp,2029-30,UK,0.410009,pct_gdp,forecast,obr_fiscal_targets,EFO-2026-10,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 forecast'."
+fiscal_targets.current_budget.margin_pre_measures,2029-30,UK,12.48855,gbp_bn,forecast,obr_fiscal_targets,EFO-2026-10,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 pre-measures forecast'."
+fiscal_targets.current_budget.probability,2029-30,UK,55.77,pct,forecast,obr_fiscal_targets,EFO-2026-10,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 forecast'."
+fiscal_targets.psnfl.margin,2029-30,UK,24.392008,gbp_bn,forecast,obr_fiscal_targets,EFO-2026-10,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 forecast'."
+fiscal_targets.psnfl.margin_pct_gdp,2029-30,UK,0.67621,pct_gdp,forecast,obr_fiscal_targets,EFO-2026-10,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 forecast'."
+fiscal_targets.psnfl.margin_pre_measures,2029-30,UK,21.755598,gbp_bn,forecast,obr_fiscal_targets,EFO-2026-10,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 pre-measures forecast'."
+fiscal_targets.psnfl.probability,2029-30,UK,53.988571,pct,forecast,obr_fiscal_targets,EFO-2026-10,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 forecast'."
+fiscal_targets.welfare_cap.margin,2029-30,UK,-2.817327,gbp_bn,forecast,obr_fiscal_targets,EFO-2026-10,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 forecast'."
+fiscal_targets.welfare_cap.margin_pct_gdp,2029-30,UK,207.034303,pct_gdp,forecast,obr_fiscal_targets,EFO-2026-10,sourced,"Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 forecast'."

@@ -1,0 +1,90 @@
+format: openpromises/1
+id: uk-small-business-rates-relief-18000-2027
+headline:
+  en: Raise small business rates relief threshold to £18,000
+actor_id: john-healey
+made_on: "2026-10-28"
+venue: parliament
+venue_label:
+  en: Budget statement, House of Commons
+area: taxes
+status: funded
+status_note:
+  en: >-
+    Budget 2026 raises the Small Business Rates Relief thresholds for retail, hospitality and
+    leisure properties in England from 1 April 2027: 100% relief up to a rateable value of £18,000
+    (from £12,000) and tapered relief up to £21,000 (from £15,000), kept under review alongside the
+    2029 revaluation (para 6.190; Table 6.1, line 13). The card moves to Delivering when the higher
+    thresholds apply to bills.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report"
+    url: https://hansard.parliament.uk/Commons/2026-10-28/debates/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC/FinancialStatementAndBudgetReport
+  - title: >-
+      Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report (official
+      report, Hansard API)
+    url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+  - title: Budget 2026 (HC 726), Table 6.1, line 13 (PDF page 106)
+    url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
+  - title: Budget 2026 (HC 726), para 6.190 (PDF page 136)
+    url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=136
+versions:
+  - version: 1
+    text: >-
+      I am increasing the threshold for small business rate relief for retail, hospitality and
+      leisure businesses from £12,000 to £18,000. That means for 70,000 more businesses, I am not
+      just cutting their rates; I am taking them out of paying business rates altogether.
+    recorded_on: "2026-10-28"
+    source_url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+    parameters:
+      who:
+        en: >-
+          Retail, hospitality and leisure businesses in England; 70,000 more taken out of business
+          rates, the Chancellor says
+      cost:
+        range: [0.2835, 0.315, 0.3465]
+        quality: sourced
+        by:
+          kind: official
+          name: HM Treasury
+        note:
+          en: >-
+            Year shown: 2027-28, the first year (Budget 2026, Table 6.1, line 13). The Treasury
+            costs it at £315m in 2027-28 and £320m in 2028-29, nothing in 2029-30 and £5m a year in
+            2030-31 and 2031-32; the Budget does not explain the fall after the 2029 revaluation.
+            No independent costing has been published. Low–high is an editorial ±10% because the
+            source gives a central figure only.
+        sources:
+          - title: Budget 2026 (HC 726), Table 6.1, line 13
+            url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
+      when:
+        en: No date in the speech; from 1 April 2027, the Budget document says
+      deadline: "2027-04-01"
+      funded_by:
+        en: >-
+          "To pay for this support for our high streets, I am raising taxes on gambling by
+          increasing machine games duty from 20% to 25% for higher-stakes machines, while protecting
+          pubs and seaside arcades. I will carve out adult gaming centres and vape shops from
+          business rate reliefs"
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        In the Budget statement, the Chancellor raises the threshold for small business rate relief
+        for retail, hospitality and leisure businesses from £12,000 to £18,000
+  - date: "2026-10-28"
+    type: funded
+    text:
+      en: >-
+        Budget 2026 raises the thresholds from 1 April 2027, costed at £315m in 2027-28 (Table 6.1,
+        line 13)
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
+  - date: "2027-04-01"
+    type: deadline
+    text:
+      en: Due to apply to bills from 1 April 2027
+replies: []
+reviews: []

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import type { Range } from "@ledger/schema";
+import { T1_PAUSED, type Range } from "@ledger/schema";
 import { mortgageDelta, type Change } from "@ledger/engine";
 import { direction, fixed, gbp, gbpBn, millions, rangeText, signed, signedBn } from "@/lib/format";
 import { useScenario } from "@/lib/scenario";
@@ -237,7 +237,7 @@ export function ResultPanel() {
         </div>
       </div>
 
-      <WhoGains />
+      {!T1_PAUSED && <WhoGains />}
     </div>
   );
 }
