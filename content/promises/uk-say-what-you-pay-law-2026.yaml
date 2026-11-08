@@ -1,0 +1,62 @@
+format: openpromises/1
+id: uk-say-what-you-pay-law-2026
+headline:
+  en: "Salaries in every job advert by law"
+actor_id: andy-burnham
+made_on: "2026-11-05"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Prime Minister's Office, 10 Downing Street)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The Prime Minister says employers will be legally required to publish salaries in job adverts.
+    The government says 41% of employers always publish salary ranges and 18% always publish
+    specific salaries, and that early analysis shows 94% of consultation respondents back the
+    change. It will bring forward legislation as soon as possible, with details to follow. The card
+    moves when the legislation is introduced.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Prime Minister's Office, 10 Downing Street press release, 5 Nov 2026: New ‘say what you pay’
+      law to help young people into work
+    url: https://www.gov.uk/government/news/new-say-what-you-pay-law-to-help-young-people-into-work
+versions:
+  - version: 1
+    text: >-
+      That’s why we will make it a legal requirement for all employers to say what you pay.
+    recorded_on: "2026-11-05"
+    source_url: https://www.gov.uk/government/news/new-say-what-you-pay-law-to-help-young-people-into-work
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          Jobseekers, especially young people looking for their first job
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          Legislation as soon as possible; no date given
+      funded_by: null
+events:
+  - date: "2026-11-05"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister says the government will make it a legal requirement for all employers to
+        say what a job pays
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

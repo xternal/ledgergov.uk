@@ -1,0 +1,63 @@
+format: openpromises/1
+id: uk-primary-school-libraries-2026
+headline:
+  en: "A library in every primary school"
+actor_id: hm-government
+made_on: "2026-11-05"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Department for Digital, Culture, Media and Sport)
+area: education
+status: promised
+status_note:
+  en: >-
+    The culture department has committed £12.5 million of dormant assets funding, from the Every
+    Child Can Programme, so that every primary school in England has a library by the end of this
+    Parliament. A further £5 million goes to secondary schools for books. The release does not say
+    how many primary schools lack a library now. The card moves when a count is published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Digital, Culture, Media and Sport press release, 5 Nov 2026: Government
+      announces up to £15 million to bring the joy of reading to 300,000 more young children
+    url: https://www.gov.uk/government/news/government-announces-up-to-15-million-to-bring-the-joy-of-reading-to-300000-more-young-children
+versions:
+  - version: 1
+    text: >-
+      The Department for Digital, Culture, Media and Sport has committed £12.5 million of dormant
+      assets funding from the Every Child Can Programme to ensure every primary school in England
+      has a library by the end of this Parliament.
+    recorded_on: "2026-11-05"
+    source_url: https://www.gov.uk/government/news/government-announces-up-to-15-million-to-bring-the-joy-of-reading-to-300000-more-young-children
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          Primary school pupils in England
+      cost:
+        note:
+          en: >-
+            £12.5 million of dormant assets funding, with no period given.
+      when:
+        en: >-
+          By the end of this Parliament
+      funded_by: null
+events:
+  - date: "2026-11-05"
+    type: promised
+    text:
+      en: >-
+        The culture department commits £12.5 million so that every primary school in England has a
+        library by the end of this Parliament
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

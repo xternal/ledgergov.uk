@@ -17,6 +17,12 @@
     "checked_on": "2026-10-20",
     "sha256": "036fa23932dcc361e055d13da8df4f367e97478aca2533bc5e865093fe2feb9d"
   },
+  "05f9e55cdd0187f92f1cb9956f92a7abf547ca5b6342b9450f6b8abecb286fd5|https://www.gov.uk/government/news/new-say-what-you-pay-law-to-help-young-people-into-work": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/new-say-what-you-pay-law-to-help-young-people-into-work",
+    "checked_on": "2026-11-08",
+    "sha256": "b65fae771cc715dbd4549417b91de8bde8397a321eaee89d2a0b36cfdc0e9140"
+  },
   "06062302f8320bb5b92fc61097c3770e8214d492ce54039b0ef420a890b158c1|https://www.gov.uk/government/speeches/pm-speech-at-the-innovation-nation-summit-9-october-2026": {
     "match": "exact",
     "url": "https://www.gov.uk/government/speeches/pm-speech-at-the-innovation-nation-summit-9-october-2026",
@@ -281,6 +287,12 @@
     "checked_on": "2026-10-13",
     "sha256": "1a6105f8d1f3f504689cf82b0ba404154f9632e3b15dc4c19a7440ed38941786"
   },
+  "5a4774eb42518ccc0df266aba753bcdd5db6546b53b43f0baaffd15e3bdc1b65|https://www.gov.uk/government/news/plan-to-drive-down-homelessness-for-young-people-leaving-care": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/plan-to-drive-down-homelessness-for-young-people-leaving-care",
+    "checked_on": "2026-11-08",
+    "sha256": "d864e8e8df58a9613bb426b798203417e1aac397405de9fce35be348952301c0"
+  },
   "5a7a1f5874c4f19f18fdc1a0780280cd14bab3361ba5850bc78401079cc13dff|https://www.gov.uk/government/news/troubles-bill-reinforced-with-permanent-legal-protections-and-safeguards-for-veterans": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/troubles-bill-reinforced-with-permanent-legal-protections-and-safeguards-for-veterans",
@@ -328,6 +340,12 @@
     "url": "https://www.gov.uk/government/speeches/what-the-plan-to-launch-network-north-means-for-you",
     "checked_on": "2026-10-20",
     "sha256": "cc784d923f8c0aaa8e00551fb025117753ee5d466689a826f182f0b8d208e8a9"
+  },
+  "63c05ac4e31362f21ade19a81c7fe81a418178de903e16afc44caa7d0e1f2550|https://www.gov.uk/government/news/government-announces-up-to-15-million-to-bring-the-joy-of-reading-to-300000-more-young-children": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/government-announces-up-to-15-million-to-bring-the-joy-of-reading-to-300000-more-young-children",
+    "checked_on": "2026-11-08",
+    "sha256": "bdf4a15157ae272e6328bea8899ff4aca9c9471e6a97060abd8c99fe4965e875"
   },
   "6804897c5484e05e8cd5b85aa25343b1fa99e4288362eb7e7398cabd2826c203|https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements": {
     "match": "exact",
@@ -503,6 +521,12 @@
     "checked_on": "2026-10-16",
     "sha256": "49ace2c518ce7cb121ef0b4eb84ee84e80bbe6c3fd09ce6ed484c11c2060ea8a"
   },
+  "a4455381a020cfc996c4c60e4a3e30784603defdce791ba0b7dd2456d77d95d8|https://www.gov.uk/government/news/plan-to-drive-down-homelessness-for-young-people-leaving-care": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/plan-to-drive-down-homelessness-for-young-people-leaving-care",
+    "checked_on": "2026-11-08",
+    "sha256": "d864e8e8df58a9613bb426b798203417e1aac397405de9fce35be348952301c0"
+  },
   "a76e942022b580621c315fde49a3fc060937b639cc4837c5bf909c2c748539f9|https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity": {
     "match": "exact",
     "url": "https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity",
@@ -610,6 +634,12 @@
     "url": "https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/",
     "checked_on": "2026-10-20",
     "sha256": "c79d855fc8c2769495952531f555367d6e71dca115ce0f8d0041e640d16c1527"
+  },
+  "be61874442fab48181e58d63cd46584bda44d27517a930311191d3c1872a0463|https://www.gov.uk/government/news/government-bid-to-make-england-tb-free-by-2038-with-vaccines-for-cattle-and-badgers": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/government-bid-to-make-england-tb-free-by-2038-with-vaccines-for-cattle-and-badgers",
+    "checked_on": "2026-11-08",
+    "sha256": "6b7e5466285898b1d0862e2bae3cc74b56408cb6a8c6e24cbc0f0a6a11e17083"
   },
   "bea1311c69794367a20ec5b7b2aa23641a3d1fa34ef56cc4f9d43d0ee48c2a16|https://www.gov.uk/government/publications/government-response-to-the-hsccs-report-on-healthy-ageing-and-physical-activity/government-response-to-the-health-and-social-care-committees-eighth-report-of-2024-to-2026-healthy-ageing-physical-activity-in-an-ageing-society": {
     "match": "exact",
