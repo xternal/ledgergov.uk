@@ -1,0 +1,80 @@
+format: openpromises/1
+id: uk-self-employed-parental-pay-2029
+headline:
+  en: Paid parental leave for self-employed fathers and partners
+actor_id: john-healey
+made_on: "2026-10-28"
+venue: parliament
+venue_label:
+  en: Budget statement, House of Commons
+area: social_protection
+status: funded
+status_note:
+  en: >-
+    Budget 2026 funds a new Parental Allowance for eligible self-employed fathers, partners and
+    adopters in Great Britain from April 2029, also covering people recently employed or unemployed
+    who do not qualify for statutory paternity or adoption pay (para 6.12; Table 6.1, line 6). The
+    Budget document says it is set to benefit over 150,000 parents a year (page 55). The card moves
+    to Delivering when claims open.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report"
+    url: https://hansard.parliament.uk/Commons/2026-10-28/debates/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC/FinancialStatementAndBudgetReport
+  - title: >-
+      Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report (official
+      report, Hansard API)
+    url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+  - title: Budget 2026 (HC 726), Table 6.1, line 6 (PDF page 106)
+    url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
+  - title: Budget 2026 (HC 726), para 6.12 (PDF page 116)
+    url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=116
+versions:
+  - version: 1
+    text: >-
+      As a mark of respect for their role, I will make self-employed fathers and partners eligible
+      for paid parental leave for the first time.
+    recorded_on: "2026-10-28"
+    source_url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+    parameters:
+      who:
+        en: Self-employed fathers and partners (and adopters) in Great Britain
+      cost:
+        range: [0.063, 0.07, 0.077]
+        quality: sourced
+        by:
+          kind: official
+          name: HM Treasury
+        note:
+          en: >-
+            Year shown: 2029-30, the first year (Budget 2026, Table 6.1, line 6: £70m a year in
+            2029-30, 2030-31 and 2031-32). No independent costing has been published. Low–high is
+            an editorial ±10% because the source gives a central figure only.
+        sources:
+          - title: Budget 2026 (HC 726), Table 6.1, line 6
+            url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
+      when:
+        en: No date in the speech; from April 2029, the Budget document says
+      deadline: "2029-04-01"
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        In the Budget statement, the Chancellor says self-employed fathers and partners will be
+        eligible for paid parental leave for the first time
+  - date: "2026-10-28"
+    type: funded
+    text:
+      en: >-
+        Budget 2026 funds a Parental Allowance for fathers, partners and adopters in Great Britain
+        from April 2029, costed at £70m a year (Table 6.1, line 6)
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=106
+  - date: "2029-04-01"
+    type: deadline
+    text:
+      en: Due from April 2029
+replies: []
+reviews: []
