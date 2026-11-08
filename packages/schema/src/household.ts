@@ -399,9 +399,11 @@ export const HouseholdSnapshot = z
     /** Who answered; null when no model did (model "none"). */
     provider: z
       .object({
-        name: z.literal("policyengine_api"),
+        /** PolicyEngine's public API (until 6 November 2026), or its Python package run by us (the example households only). */
+        name: z.enum(["policyengine_api", "policyengine_python"]),
+        /** The API's address, or the package's page on PyPI. */
         api: z.url(),
-        /** policyengine.py bundle, e.g. "6.2.1". */
+        /** policyengine.py bundle, e.g. "6.2.1"; with the Python package, its version (e.g. "6.15.0"). */
         bundle_version: z.string().min(1),
         /** policyengine-uk, e.g. "2.102.3": the same for every year and for the households, or the job refuses to write this file. */
         model_version: z.string().min(1),
@@ -410,7 +412,7 @@ export const HouseholdSnapshot = z
       })
       .strict()
       .nullable(),
-    /** PolicyEngine's ids for the two policies, so anyone can open them in its app; null when no model answered. */
+    /** PolicyEngine's ids for the two policies (API runs only); null when no model answered or with the Python package. */
     policies: z.object({ pre: z.number().int().positive(), post: z.number().int().positive() }).strict().nullable(),
     /** When the job asked PolicyEngine (the last answer); with no model, when the snapshot was built. */
     computed_at: z.iso.datetime(),
@@ -446,7 +448,10 @@ export function snapshotIssues(s: z.input<typeof HouseholdSnapshot>): string[] {
     for (const id of NO_MODEL_CHECKS) if (!checkIds.has(id)) issues.push(`check ${id} is missing`);
   } else {
     if (s.quality !== "modelled") issues.push(`it holds PolicyEngine's answers: quality is "modelled", not "${s.quality}"`);
-    if (s.provider === null || s.policies === null) issues.push("half-made: PolicyEngine's answers without the model version or the policies they came from");
+    if (s.provider === null || (s.policies === null && s.provider.name === "policyengine_api"))
+      issues.push("half-made: PolicyEngine's answers without the model version or the policies they came from");
+    if (s.provider?.name === "policyengine_python" && !hold.includes("deciles"))
+      issues.push("the Python package computes the example households only: population results must be held");
     if (hold.includes("deciles")) {
       if (got.length) issues.push("deciles are held, so the snapshot carries none");
     } else if (got.join() !== years.join()) issues.push(`results for ${got.join(", ")}, expected ${years.join(", ")}`);

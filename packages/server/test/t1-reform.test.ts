@@ -81,7 +81,7 @@ describe("T1 reform mapping", () => {
   });
 
   it("lists changed levers T1 cannot model and leaves them out of the reform", () => {
-    const r = toPolicyEngineReform(with_({ vat_standard: 21, bank_rate: 4, bus_cap_2: 1, "bus_cap_2.funding": "x" }), model, 2025);
+    const r = toPolicyEngineReform(with_({ vat_standard: 21, bank_rate: Number(base().bank_rate) + 1, bus_cap_2: 1, "bus_cap_2.funding": "x" }), model, 2025);
     expect(r.modelled).toEqual(["vat_standard"]);
     expect(r.not_modelled).toEqual(["bank_rate", "bus_cap_2"]);
     expect(Object.keys(r.data)).toEqual(["gov.hmrc.vat.standard_rate"]);

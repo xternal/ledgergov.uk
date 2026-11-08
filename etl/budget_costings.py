@@ -152,6 +152,21 @@ EVENTS: dict[str, Event] = {
                 ("78:head", "The printed table marks this line Spend and the spreadsheet Tax; the figures are the same."),
             ),
         ),
+        Event(
+            id="autumn-budget-2026",
+            name="Autumn Budget 2026",
+            date="2026-10-28",
+            page_url="https://www.gov.uk/government/publications/budget-2026-document",
+            document_url="https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf",
+            document_title="Budget 2026 (HC 726)",
+            printed_total=(-7595, -2475, 730, 5190, 6135, 7350),
+            copy_url="https://assets.publishing.service.gov.uk/media/6ae187a2779378370fd80a9a/Table_6.1_and_6.2_Budget_2026_Policy_Decisions.xlsx",
+            accepted=tuple(
+                (f"{line}:name", "The spreadsheet has an internal column (\"Fiscal Head check (hide)\") next to the name, read as part of it; the printed wording and the figures are the same.")
+                for line in (2, 3, 9, 16, 18, 23, 33, 34, 41, 43, 57, 73, 76, 77, 81, 83)
+            )
+            + (("67:name", "The spreadsheet writes \"aged 5-15\" where the printed table has \"aged 5 to 15\", and adds its internal \"Fiscal Head check\" column; the figures are the same."),),
+        ),
     ]
 }
 

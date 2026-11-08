@@ -171,6 +171,31 @@ export function archetypeSituation(startYear: number | readonly number[]): Situa
   return situation;
 }
 
+/** One example household in one year, as PolicyEngine's Python package takes it (scripts/pe/households.py): plain values, no periods. */
+export interface HouseholdCase {
+  id: ArchetypeId;
+  /** PolicyEngine's simulation year: 2027 is 2027-28. */
+  year: number;
+  people: Record<string, number | string>[];
+  household: Record<string, number | string>;
+}
+
+/** The same people, earnings, spending and region as archetypeSituation, one case per household and year. */
+export function archetypeCases(years: readonly number[]): HouseholdCase[] {
+  return years.flatMap((year) =>
+    ARCHETYPES.map(({ id }) => ({
+      id,
+      year,
+      people: PEOPLE[id].map((p) => ({
+        age: p.age,
+        ...(p.employment_income ? { employment_income: p.employment_income } : {}),
+        ...(p.pensioner ? { state_pension_type: "NEW", state_pension_reported: fullNewStatePension(year) } : {}),
+      })),
+      household: { region: ARCHETYPE_REGION, ...annualSpending(id) },
+    })),
+  );
+}
+
 /** Household net income (£ a year) of each archetype from a /uk/calculate result. */
 export function readNetIncomes(result: unknown, startYear: number): Record<ArchetypeId, number> {
   const households = (result as { households?: Record<string, { household_net_income?: Record<string, unknown> }> } | null)?.households;

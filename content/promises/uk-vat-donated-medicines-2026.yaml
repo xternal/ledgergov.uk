@@ -9,13 +9,13 @@ venue_label:
   en: >-
     Prime Minister's Questions
 area: taxes
-status: promised
+status: funded
 status_note:
   en: >-
-    Asked about a patient whose cancer drug was no longer given free after a drug company left a
-    compassionate use scheme following the government's VAT changes, the Prime Minister said the
-    Exchequer Secretary has announced a new approach. He gave no cost and no date for the details.
-    The card moves when the government publishes the change.
+    The Autumn Budget 2026 introduces a zero rate of VAT for medicines donated in qualifying
+    circumstances, including through early and expanded access schemes, for donations made on or
+    after 23 June 2026 (paragraph 6.187), and costs it at £20m in 2027-28 (Table 6.1, line 88). The
+    Budget does not say which Finance Bill or order will make the change.
 responsible:
   actor_id: hm-government
 origin: llm_intake
@@ -23,6 +23,8 @@ sources:
   - title: >-
       Hansard, House of Commons, 21 Oct 2026: Engagements (Prime Minister's Questions)
     url: https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements
+  - title: "HM Treasury: Budget 2026 (28 Oct 2026), paragraph 6.187"
+    url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=135
 versions:
   - version: 1
     text: >-
@@ -38,8 +40,20 @@ versions:
           Patients receiving innovative medicines donated free of charge, and the companies that
           donate them
       cost:
+        range: [0.018, 0.02, 0.022]
+        by:
+          kind: official
+          name: HM Treasury
+        quality: sourced
         note:
-          en: No cost has been published.
+          en: >-
+            Year shown: 2027-28, the first full year. The Autumn Budget 2026 costs the zero rate at
+            £15m in 2026-27, £20m a year in 2027-28 and 2028-29 and £25m a year from 2029-30 (Table
+            6.1, line 88). Low–high is an editorial ±10% because the source gives a central figure
+            only.
+        sources:
+          - title: "HM Treasury: Budget 2026 (28 Oct 2026), Table 6.1, line 88"
+            url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=113
       when:
         en: Backdated to 23 June; details to follow shortly
       funded_by: null
@@ -50,7 +64,53 @@ events:
       en: >-
         The Prime Minister says the government will remove VAT as a barrier to free donations of
         innovative medicines, permanently and backdated to 23 June
+  - date: "2026-10-28"
+    type: funded
+    text:
+      en: >-
+        Autumn Budget 2026 introduces a zero rate of VAT for qualifying donated medicines from 23
+        June 2026, costed at £20m in 2027-28
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=135
 replies: []
+corrections:
+  - date: "2026-10-28"
+    path: versions[0].parameters.cost.range
+    was: null
+    now: [0.018, 0.02, 0.022]
+    reason:
+      en: >-
+        The Autumn Budget 2026 published the official yearly cost: £20m in 2027-28 (Table 6.1,
+        line 88). Low–high is an editorial ±10% because the source gives a central figure only.
+    source_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=113
+  - date: "2026-10-28"
+    path: versions[0].parameters.cost.by
+    was: null
+    now: { kind: official, name: HM Treasury }
+    reason:
+      en: The central figure is the Budget's official costing.
+    source_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=113
+  - date: "2026-10-28"
+    path: versions[0].parameters.cost.note
+    was:
+      en: No cost has been published.
+    now:
+      en: >-
+        Year shown: 2027-28, the first full year. The Autumn Budget 2026 costs the zero rate at
+        £15m in 2026-27, £20m a year in 2027-28 and 2028-29 and £25m a year from 2029-30 (Table
+        6.1, line 88). Low–high is an editorial ±10% because the source gives a central figure
+        only.
+    reason:
+      en: The note now gives the Budget's official costing.
+    source_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=113
+  - date: "2026-10-28"
+    path: versions[0].parameters.cost.sources
+    was: null
+    now:
+      - title: "HM Treasury: Budget 2026 (28 Oct 2026), Table 6.1, line 88"
+        url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=113
+    reason:
+      en: The Budget's costing, the source of the figure, is added.
+    source_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=113
 reviews:
   - by: AI Journalist
     kind: automated

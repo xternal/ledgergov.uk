@@ -76,17 +76,20 @@ def test_records_what_the_site_shows_and_earlier_official_forecasts_as_context(b
     # OBR: six aggregates for each forecast year the Statement shows, single numbers, dated by the EFO.
     obr = by("obr", "shown")
     assert {r["series_id"] for r in obr} == set(backtest.OBR_SERIES)
-    assert sorted({r["period"] for r in obr}) == ["2026-27", "2027-28", "2028-29", "2029-30", "2030-31"]
-    assert all(r["range"] == "point" and r["made_on"] == "2026-03-03" and r["quality"] == "sourced" for r in obr)
-    psnb = got["obr:EFO-2026-03:fiscal.psnb:2026-27"]
-    assert psnb["predicted"] == [115.461, 115.461, 115.461]
+    assert sorted({r["period"] for r in obr}) == ["2026-27", "2027-28", "2028-29", "2029-30", "2030-31", "2031-32"]
+    assert all(r["range"] == "point" and r["made_on"] == "2026-10-28" and r["quality"] == "sourced" for r in obr)
+    psnb = got["obr:EFO-2026-10:fiscal.psnb:2026-27"]
+    assert psnb["predicted"] == [133.196, 133.196, 133.196]
     # The year the site now shows as outturn is kept as context, labelled as the OBR's.
-    assert {(r["series_id"], r["period"]) for r in by("obr", "context")} == {(s, "2025-26") for s in backtest.OBR_SERIES}
+    # So are the March 2026 EFO's numbers for the years October 2026 now covers.
+    context = {(r["vintage"], r["series_id"], r["period"]) for r in by("obr", "context")}
+    assert {(s, p) for _, s, p in context} == {(s, p) for s in backtest.OBR_SERIES for p in ["2025-26", "2026-27", "2027-28", "2028-29", "2029-30", "2030-31"]}
+    assert {v for v, _, p in context if p != "2025-26"} == {"EFO-2026-03"}
 
     # Ours: nine function lines a year, approx, made on the day recorded.
     own = by("public_ledger", "shown")
-    assert len(own) == 9 * 5 and all(r["quality"] == "approx" and r["made_on"] == TODAY.isoformat() for r in own)
-    assert all(r["vintage"] == "EFO-2026-03+PESA-2026" for r in own)
+    assert len(own) == 9 * 6 and all(r["quality"] == "approx" and r["made_on"] == TODAY.isoformat() for r in own)
+    assert all(r["vintage"] == "EFO-2026-10+PESA-2026" for r in own)
 
     # ONS: the range /people shows, from the lowest to the highest variant.
     births = got["ons:NPP-2024based-2026-04-28:people.births:2026"]

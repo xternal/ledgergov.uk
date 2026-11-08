@@ -11,4 +11,16 @@ reported:
     date: "2026-10-25"
     url: https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o
     title: Budget to include £1bn for social and affordable housing
-status: trailed
+status: announced
+budget:
+  date: "2026-10-28"
+  text: >-
+    A further £1.5bn for the Social and Affordable Homes Programme, for around 10,000 more homes, taking capital investment in social and affordable housing to more than £40bn over 10 years (paragraph 6.114; table of policy decisions, line 35).
+  evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=126
+  cost:
+    range: [0.5, 0.5, 0.5]
+    basis: per_year
+    period: "2028-29"
+    by: { kind: official, name: HM Treasury }
+    source_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=108
+    note: "Table 6.1 line 35: £250m in 2027-28 and £500m in each year from 2028-29 to 2030-31."
