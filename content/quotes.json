@@ -5,6 +5,12 @@
     "checked_on": "2026-10-13",
     "sha256": "12f66a4458e80cb6ce35efcb12e2c5848c6f87481294083558663b53e21e54c6"
   },
+  "0245b6fa36eee7c5526300bf935879a1ccde871f7603a10094f1e3094ae5501e|https://www.gov.uk/government/news/energy-reforms-to-cut-bills-and-put-power-back-in-peoples-hands": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/energy-reforms-to-cut-bills-and-put-power-back-in-peoples-hands",
+    "checked_on": "2026-11-08",
+    "sha256": "9d5a93dfe8e5bc2748a4ada6dd60ceef7bf562984451ade8d7f9cd5cb055a311"
+  },
   "02ef7a9fcddbaf2c38dbc7e5169c7b76d582061e42acadac2598d258b56bcb5f|https://www.gov.uk/government/speeches/pm-remarks-on-the-fundamental-reform-of-the-british-state-13-march-2025": {
     "match": "exact",
     "url": "https://www.gov.uk/government/speeches/pm-remarks-on-the-fundamental-reform-of-the-british-state-13-march-2025",
@@ -341,6 +347,12 @@
     "checked_on": "2026-10-25",
     "sha256": "c3d85025bc53c437665d09ca029db9a9ae6b61286d260c8237a20c2a08ac950d"
   },
+  "7137810300669714079528f12d8efe98eeddcb31d037e2b2978c0e2e363f2b2d|https://www.gov.uk/government/consultations/legal-framework-for-using-facial-recognition-in-law-enforcement/outcome/new-legal-framework-for-law-enforcement-use-of-biometrics-facial-recognition-and-similar-technologies-government-response-to-the-consultation-acces": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/consultations/legal-framework-for-using-facial-recognition-in-law-enforcement/outcome/new-legal-framework-for-law-enforcement-use-of-biometrics-facial-recognition-and-similar-technologies-government-response-to-the-consultation-acces",
+    "checked_on": "2026-11-08",
+    "sha256": "654347e7f403e568e390bbe540fd3576a36aa8375f64a69cbdbd43dd6bbb1eac"
+  },
   "728fe00a46fd71c5b8583e23023543abc9b05ddcf751914d4a2f72521f20f826|https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements": {
     "match": "exact",
     "url": "https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements",
@@ -634,6 +646,12 @@
     "url": "https://www.gov.uk/government/news/cowardly-killers-who-dodge-sentencing-face-tough-new-prison-punishments",
     "checked_on": "2026-10-25",
     "sha256": "d49d9982f92e6b798ee16ef9e6057e8bf8bdfa101d92f48a5f7fb2fd12033da1"
+  },
+  "c14c3f1496290d57539453a342621989ec7f23c3c4f432c07c919334b0ea28db|https://www.gov.uk/government/news/new-ukrainian-gcse-to-help-young-people-preserve-their-heritage": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/new-ukrainian-gcse-to-help-young-people-preserve-their-heritage",
+    "checked_on": "2026-11-08",
+    "sha256": "b284383142ca0ada90f061ac86ffe51bdd6f805ed8fc6b706bc31353cce03ef7"
   },
   "c319122e7022b295ccac709f5b007101108017c15d98dfb244af587848997a09|https://www.gov.uk/government/news/new-pioneering-certificates-to-help-homeowners-cut-flood-risk": {
     "match": "exact",
