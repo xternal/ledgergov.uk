@@ -8,10 +8,10 @@ import { loadPeople } from "@ledger/schema/people";
 import { loadBorrowing } from "@ledger/schema/borrowing";
 import { loadForecasts, readBuildText, type ForecastData } from "@ledger/schema/forecasts";
 import { loadScorecards } from "@ledger/schema/budget";
-import { loadHouseholdSnapshots } from "@ledger/schema/household";
+import { loadHouseholdSnapshots, loadPolicyEngineDashboards } from "@ledger/schema/household";
 import { loadFiscalTargets } from "@ledger/schema/fiscal-targets";
 import { loadLeaks } from "@ledger/schema/leaks";
-import type { BorrowingBundle, BudgetScorecard, FiscalTargetsBundle, HouseholdSnapshot, LeakFile, PeopleBundle, Seed } from "@ledger/schema";
+import type { BorrowingBundle, BudgetScorecard, FiscalTargetsBundle, HouseholdSnapshot, PolicyEngineDashboard, LeakFile, PeopleBundle, Seed } from "@ledger/schema";
 import { buildRuns, vintageChangelog, type BuildRun, type Manifest, type VintageEntry } from "@ledger/server/api";
 
 /**
@@ -118,6 +118,14 @@ let households: HouseholdSnapshot[] | null = null;
 export function getHouseholdSnapshots(): HouseholdSnapshot[] {
   households ??= loadHouseholdSnapshots();
   return households;
+}
+
+let peDashboards: PolicyEngineDashboard[] | null = null;
+
+/** PolicyEngine's own population results for an event (its Budget dashboard, data/build/budget/policyengine), if we hold them. */
+export function getPolicyEngineDashboard(event: string): PolicyEngineDashboard | null {
+  peDashboards ??= loadPolicyEngineDashboards();
+  return peDashboards.find((d) => d.event === event) ?? null;
 }
 
 let vintages: { manifest: Manifest; changelog: VintageEntry[]; runs: BuildRun[] } | null = null;
