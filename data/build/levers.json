@@ -58,7 +58,7 @@
       "group": "rates",
       "controlled_by": "central_bank",
       "unit": "pp",
-      "base": 3.75,
+      "base": 4.0,
       "min": 1.0,
       "max": 7.0,
       "step": 0.25,

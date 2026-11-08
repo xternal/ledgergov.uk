@@ -4,6 +4,7 @@ import { join } from "node:path";
 import { parse } from "yaml";
 import { repoRoot } from "./content-files";
 import { HouseholdMeasuresFile, HouseholdSnapshot, calculatorRatesInFile, householdByDateDesc, type CalculatorRates } from "./household";
+import { PolicyEngineDashboard } from "./pe-dashboard";
 import { TaxSeed } from "./tax";
 
 /**
@@ -175,6 +176,38 @@ export function taxSeedIssues(root = repoRoot()): string[] {
     }
   }
   return issues;
+}
+
+// ---------------------------------------------------------------------------------------------------------------
+// PolicyEngine's own population results, from its Budget dashboard (pe-dashboard.ts).
+// ---------------------------------------------------------------------------------------------------------------
+
+export const PE_DASHBOARD_DIR = join("data", "build", "budget", "policyengine");
+
+/** Every dashboard file parses and is named for its event. */
+export function parsePolicyEngineDashboards(root = repoRoot()): { data: PolicyEngineDashboard[]; issues: string[] } {
+  const dir = join(root, PE_DASHBOARD_DIR);
+  if (!existsSync(dir)) return { data: [], issues: [] };
+  const issues: string[] = [];
+  const data: PolicyEngineDashboard[] = [];
+  for (const f of readdirSync(dir).filter((x) => x.endsWith(".json")).sort()) {
+    const path = join(PE_DASHBOARD_DIR, f);
+    const r = PolicyEngineDashboard.safeParse(JSON.parse(readFileSync(join(dir, f), "utf8")));
+    if (!r.success) {
+      issues.push(...r.error.issues.map((i) => `${path}:${i.path.join(".")}: ${i.message}`));
+      continue;
+    }
+    if (f !== `${r.data.event}.json`) issues.push(`${path}: file name should be ${r.data.event}.json`);
+    data.push(r.data);
+  }
+  return { data, issues };
+}
+
+/** Throws on any issue, so the build fails rather than show a figure that does not parse. */
+export function loadPolicyEngineDashboards(root = repoRoot()): PolicyEngineDashboard[] {
+  const { data, issues } = parsePolicyEngineDashboards(root);
+  if (issues.length) throw new Error(`PolicyEngine dashboard data failed validation:\n${issues.map((i) => `  ${i}`).join("\n")}`);
+  return data;
 }
 
 /** Every measures file parses; every snapshot parses and matches its file. Throws on any issue, so the build fails rather than publish a stale page. */
