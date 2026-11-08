@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-child-trust-fund-access-2026
+headline:
+  en: "Easier access to Child Trust Funds"
+actor_id: hm-government
+made_on: "2026-11-03"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Ministry of Justice)
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    Young adults who lack the mental capacity to manage their money can reach their Child Trust Fund
+    savings only through the Court of Protection, a complex and often costly process. The Ministry
+    of Justice says new legislation will let parents and carers go directly to Child Trust Fund
+    providers, helping an estimated 63,000 to 126,000 young adults; the justice minister's written
+    statement announces the same plan. No Bill or date is named. The card moves when the legislation
+    is introduced.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Justice press release, 3 Nov 2026: Child Trust Fund injustice to end under
+      Government plans
+    url: https://www.gov.uk/government/news/child-trust-fund-injustice-to-end-under-government-plans
+  - title: >-
+      Written ministerial statement, 3 Nov 2026: Access to Child Trust Funds
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-03/HCWS443
+versions:
+  - version: 1
+    text: >-
+      Following years of campaigning and legal difficulties faced by families, new legislation will
+      be introduced by the Government to allow simpler access to Child Trust Funds, replacing the
+      complex and often costly Court of Protection process.
+    recorded_on: "2026-11-03"
+    source_url: https://www.gov.uk/government/news/child-trust-fund-injustice-to-end-under-government-plans
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          An estimated 63,000 to 126,000 young adults who lack the mental capacity to make financial
+          decisions, and their families
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          Not stated
+      funded_by: null
+events:
+  - date: "2026-11-03"
+    type: promised
+    text:
+      en: >-
+        The Ministry of Justice announces legislation to allow simpler access to Child Trust Funds,
+        replacing the Court of Protection process
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
