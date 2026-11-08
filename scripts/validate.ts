@@ -16,7 +16,7 @@ import { loadBorrowing } from "@ledger/schema/borrowing";
 import { parseForecasts, readBacktestTable, readForecastFiles } from "@ledger/schema/forecasts";
 import { parseScorecards, readScorecardFiles } from "@ledger/schema/budget";
 import { predictIssues } from "@ledger/schema/predict";
-import { parseHouseholdSnapshots, parseMeasuresFile, readHouseholdSnapshotFiles, readMeasuresFiles, taxSeedIssues } from "@ledger/schema/household";
+import { parseHouseholdSnapshots, parseMeasuresFile, parsePolicyEngineDashboards, readHouseholdSnapshotFiles, readMeasuresFiles, taxSeedIssues } from "@ledger/schema/household";
 import { loadFiscalTargets } from "@ledger/schema/fiscal-targets";
 import { parseLeaks } from "@ledger/schema/leaks";
 import { BALANCE_TOLERANCE_BN, appendOnlyIssues, comparableCard, contractAppendOnlyIssues, forecastAppendOnlyIssues } from "@ledger/schema";
@@ -55,6 +55,10 @@ const householdMeasures = readMeasuresFiles(root);
 errors.push(...householdMeasures.flatMap((m) => parseMeasuresFile(m).issues));
 const households = parseHouseholdSnapshots(readHouseholdSnapshotFiles(root), householdMeasures);
 errors.push(...households.issues);
+// PolicyEngine's own population results (its Budget dashboard): every file parses, one per event that has a snapshot.
+const peDashboards = parsePolicyEngineDashboards(root);
+errors.push(...peDashboards.issues);
+for (const d of peDashboards.data) if (!households.data.some((s) => s.id === d.event)) errors.push(`PolicyEngine dashboard for ${d.event}: no household snapshot for that event`);
 // A post-Budget tax seed (the Your share calculator's) says what the Budget's measures file says: one place for the rates.
 errors.push(...taxSeedIssues(root));
 if (households.data.length)

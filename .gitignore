@@ -17,6 +17,7 @@ screenshots/tmp/
 
 # ETL
 etl/.venv/
+.venv-pe/
 data/raw/
 __pycache__/
 .pytest_cache/
