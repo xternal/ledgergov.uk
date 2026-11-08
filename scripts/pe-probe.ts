@@ -158,7 +158,12 @@ async function taxCrossCheck() {
   console.log(`saved ${file} (policyengine-uk ${version})`);
 }
 
+/** PolicyEngine asked us (6 November 2026) not to use the economy endpoints or /uk/calculate on api.policyengine.org. */
+const LIVE_CALLS_OFF = true;
+
 async function main() {
+  // PolicyEngine asked us (6 November 2026) not to use the economy endpoints or /uk/calculate on api.policyengine.org.
+  if (LIVE_CALLS_OFF) throw new Error("pe:probe is off: PolicyEngine asked us not to use api.policyengine.org's economy endpoints or /uk/calculate (docs/MODEL.md).");
   if (process.argv.includes("--tax")) return taxCrossCheck();
   const versionsBefore = await client.versions();
   const householdVersion = (await client.metadata()).version;

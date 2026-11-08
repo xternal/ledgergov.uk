@@ -1,0 +1,4 @@
+# PolicyEngine UK for the Budget job's example households (scripts/pe/households.py; docs/MODEL.md).
+# Pinned: a new version can move every figure, so change it on purpose, rerun the job and say so on the page.
+# policyengine 6.15.0 pins policyengine-uk 2.151.0. Python 3.12.
+policyengine[uk]==6.15.0

@@ -239,6 +239,12 @@
     "checked_on": "2026-10-20",
     "sha256": "6140328778e3404b792e58c6884e3142291aabc663c037b65abb93326efa916b"
   },
+  "489368320cd1bc62b05c7f632a555a1c134cff4ff4147cf6b7a2624708513ad7|https://www.gov.uk/government/publications/increase-in-the-banking-surcharge-rate-for-a-temporary-period/increase-in-rate-of-banking-surcharge-for-temporary-period": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/increase-in-the-banking-surcharge-rate-for-a-temporary-period/increase-in-rate-of-banking-surcharge-for-temporary-period",
+    "checked_on": "2026-11-01",
+    "sha256": "589139012aefa512e906b127544d9e9b2f575d9873e131efea7c9f32f3c84580"
+  },
   "49d7b99354c2403052d58402e1ede17a8d587b8b477d551bafdc6b9e8eba3642|https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json": {
     "match": "exact",
     "url": "https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json",
@@ -628,6 +634,12 @@
     "url": "https://www.kemibadenoch.org.uk/news/local-mp-pledges-more-apprenticeships-students-receive-results",
     "checked_on": "2026-10-20",
     "sha256": "a784c99339cb7d9714ff2ac43cc9ddc63e4ee859cf65d3c0c37af2b7bd363117"
+  },
+  "b44b724f71da34d238b6fdc26f672013e4052de147e207c4fd8b070ea22851ed|https://www.gov.uk/government/publications/energy-debt-circuit-breaker-a-strategy-for-domestic-energy-debt/energy-debt-circuit-breaker-our-joint-strategy-for-domestic-energy-debt": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/energy-debt-circuit-breaker-a-strategy-for-domestic-energy-debt/energy-debt-circuit-breaker-our-joint-strategy-for-domestic-energy-debt",
+    "checked_on": "2026-11-01",
+    "sha256": "412a7208b7243b309a0dbe5f3c82348dcb519837794dfa49bcbf8824089c0e5a"
   },
   "b52ae36c68cbedaced3d116adf597a6749879f732f0b6f6df391e116b684b3a8|https://labour.org.uk/updates/stories/andy-burnhams-speech-to-labour-party-conference-2026/": {
     "match": "exact",
