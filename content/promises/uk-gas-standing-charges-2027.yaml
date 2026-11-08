@@ -1,0 +1,70 @@
+format: openpromises/1
+id: uk-gas-standing-charges-2027
+headline:
+  en: Remove standing charges from household gas bills
+actor_id: john-healey
+made_on: "2026-10-28"
+venue: parliament
+venue_label:
+  en: Budget statement, House of Commons
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The Budget document says the government has asked Ofgem to abolish gas standing charges on
+    domestic energy bills in Great Britain, "aiming for delivery by the end of 2027 or as soon as
+    possible after then", with suppliers recovering the costs through gas unit rates instead and
+    targeted mitigation for households less able to benefit (paras 3.9 and 6.25). The government
+    will set out details of reforms to electricity standing charges next year. "From next year" is
+    read as by the end of 2027, the date the Budget document gives. The card moves when Ofgem
+    decides the change.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report"
+    url: https://hansard.parliament.uk/Commons/2026-10-28/debates/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC/FinancialStatementAndBudgetReport
+  - title: >-
+      Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report (official
+      report, Hansard API)
+    url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+  - title: Budget 2026 (HC 726), para 3.9 (PDF page 51)
+    url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=51
+  - title: Budget 2026 (HC 726), para 6.25 (PDF page 117)
+    url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=117
+versions:
+  - version: 1
+    text: >-
+      Gas standing charges cost people over £100 a year, regardless of how much gas they use, so
+      from next year, through Ofgem, we will remove standing charges from household gas bills. We
+      will set out similar reforms to follow for electricity bills.
+    recorded_on: "2026-10-28"
+    source_url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+    parameters:
+      who:
+        en: Households with gas bills in Great Britain
+      cost:
+        note:
+          en: >-
+            No cost to the Exchequer is given: the measure is not in the Budget's table of policy
+            decisions (Table 6.1). The Budget document says suppliers will recover the costs through
+            gas unit rates instead (para 3.9).
+      when:
+        en: >-
+          "From next year"; the Budget document aims for the end of 2027 "or as soon as possible
+          after then"
+      deadline: "2027-12-31"
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        In the Budget statement, the Chancellor says standing charges will be removed from household
+        gas bills from next year, through Ofgem
+  - date: "2027-12-31"
+    type: deadline
+    text:
+      en: Due by the end of 2027 (the Budget document's date)
+replies: []
+reviews: []
