@@ -361,10 +361,11 @@ async function dashboard(id: string, pageUrl: string | undefined) {
   const relative = await csv("distributional_impact.csv");
   const cash = await csv("winners_losers.csv");
 
-  // A blank cell is PolicyEngine's gap, not ours: the year is left out and the gap recorded. Anything else unreadable fails.
+  // A blank cell is a figure PolicyEngine withholds to protect survey respondents' confidentiality (its methodology,
+  // "Income deciles"): kept as null and named in `gaps`. A year with no public-finance figure is left out. Anything else unreadable fails.
   const gaps: string[] = [];
-  const num = (v: string | undefined, what: string) => {
-    if (v === "") return (gaps.push(what), NaN);
+  const num = (v: string | undefined, what: string): number | null => {
+    if (v === "") return (gaps.push(what), null);
     const n = Number(v);
     if (v === undefined || !Number.isFinite(n)) fail(`${what}: not a number (${v})`);
     return n;
@@ -388,9 +389,8 @@ async function dashboard(id: string, pageUrl: string | undefined) {
       deciles,
     };
   });
-  const complete = (y: (typeof allYears)[number]) => [y.net_bn, y.all_avg_change_gbp, ...y.deciles.flatMap((d) => [d.rel_change_pct, d.avg_change_gbp])].every(Number.isFinite);
-  const years = allYears.filter(complete);
-  for (const g of gaps) console.log(`gap in PolicyEngine's CSV: ${g} is blank; that year is left out`);
+  const years = allYears.flatMap((y) => (y.net_bn === null ? [] : [{ ...y, net_bn: y.net_bn }]));
+  for (const g of gaps) console.log(`withheld in PolicyEngine's CSV: ${g} is blank${g.endsWith("budget") ? "; that year is left out" : ""}`);
 
   const out = PolicyEngineDashboard.parse({
     event: id,
@@ -415,7 +415,8 @@ async function dashboard(id: string, pageUrl: string | undefined) {
   mkdirSync(dirname(path), { recursive: true });
   writeFileSync(path, `${JSON.stringify(out, null, 1)}\n`);
   console.log(`${out.title}, revision ${out.revision} (${out.updated_at}): ${out.measures.length} measures, policyengine-uk ${out.model.policyengine_uk}`);
-  for (const y of out.years) console.log(`  ${y.year}: £${y.net_bn.toFixed(2)}bn; tenth 1 ${y.deciles[0]!.rel_change_pct.toFixed(2)}%, tenth 10 ${y.deciles[9]!.rel_change_pct.toFixed(2)}%`);
+  const p = (v: number | null) => (v === null ? "withheld" : `${v.toFixed(2)}%`);
+  for (const y of out.years) console.log(`  ${y.year}: £${y.net_bn.toFixed(2)}bn; tenth 1 ${p(y.deciles[0]!.rel_change_pct)}, tenth 10 ${p(y.deciles[9]!.rel_change_pct)}`);
   console.log(`written: ${path}`);
 }
 

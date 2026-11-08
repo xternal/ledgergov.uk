@@ -5,7 +5,7 @@
  "release": "uk-autumn-budget-2026",
  "revision": 60,
  "updated_at": "2026-10-29T21:34:54.527268+00:00",
- "retrieved_at": "2026-11-06T20:21:00.035Z",
+ "retrieved_at": "2026-11-08T13:00:32.150Z",
  "run": {
   "id": "combined--7baf4e89377bcc9c",
   "name": "Combined: Single bus fares capped at £2, Carer's Allowance earnings taper, Zero VAT on domestic electricity, Fuel duty cut extended, Household Energy Payment, Property income tax rates up, Pension Tax Allowance, Trading allowance raised to £3,000",
@@ -295,6 +295,63 @@
      "decile": 10,
      "rel_change_pct": -0.031203142935552475,
      "avg_change_gbp": -51.455265798068716
+    }
+   ]
+  },
+  {
+   "year": "2030-31",
+   "net_bn": 0.3012376016880946,
+   "all_avg_change_gbp": null,
+   "deciles": [
+    {
+     "decile": 1,
+     "rel_change_pct": -0.0026999413748629523,
+     "avg_change_gbp": -0.7225460302097775
+    },
+    {
+     "decile": 2,
+     "rel_change_pct": -0.0037625623939277412,
+     "avg_change_gbp": -1.5569575770596116
+    },
+    {
+     "decile": 3,
+     "rel_change_pct": -0.009021601350048921,
+     "avg_change_gbp": -4.263307661074811
+    },
+    {
+     "decile": 4,
+     "rel_change_pct": -0.004154149525254655,
+     "avg_change_gbp": -2.1243061779059165
+    },
+    {
+     "decile": 5,
+     "rel_change_pct": -0.005810746798038985,
+     "avg_change_gbp": -3.285783111470105
+    },
+    {
+     "decile": 6,
+     "rel_change_pct": 0.000689073722026696,
+     "avg_change_gbp": 0.43249625968516114
+    },
+    {
+     "decile": 7,
+     "rel_change_pct": null,
+     "avg_change_gbp": null
+    },
+    {
+     "decile": 8,
+     "rel_change_pct": -0.007633722858089233,
+     "avg_change_gbp": -5.901874113505059
+    },
+    {
+     "decile": 9,
+     "rel_change_pct": null,
+     "avg_change_gbp": null
+    },
+    {
+     "decile": 10,
+     "rel_change_pct": -0.03177811380414901,
+     "avg_change_gbp": -53.694375721001485
     }
    ]
   }

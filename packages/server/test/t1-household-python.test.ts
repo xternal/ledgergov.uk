@@ -96,8 +96,15 @@ describe("PolicyEngine's dashboard figures", () => {
     expect(d!.years.map((y) => y.year)).toContain(file().headline_year);
     expect(d!.years.map((y) => y.year)).toContain(file().side_year);
     for (const f of d!.files) expect(f.url.startsWith(`${d!.url}/data/`)).toBe(true);
-    // A year shown is complete; a year with a blank cell is not shown, and the blank is named.
-    const shown = new Set(d!.years.map((y) => y.year));
-    for (const g of d!.gaps) expect(shown.has(g.slice(0, 7))).toBe(false);
+    // Every year of the measures file is shown with its public-finance figure; a cell PolicyEngine withholds for
+    // confidentiality is null, named in `gaps`, and every null is named there.
+    expect(d!.years.map((y) => y.year)).toEqual(file().years);
+    const nulls = d!.years.flatMap((y) => [
+      ...(y.all_avg_change_gbp === null ? [`${y.year} all £`] : []),
+      ...y.deciles.flatMap((x) => [...(x.rel_change_pct === null ? [`${y.year} decile ${x.decile} %`] : []), ...(x.avg_change_gbp === null ? [`${y.year} decile ${x.decile} £`] : [])]),
+    ]);
+    expect(nulls.sort()).toEqual([...d!.gaps].sort());
+    // The years the page leads with are complete.
+    for (const year of [file().headline_year, file().side_year]) expect(d!.gaps.some((g) => g.startsWith(year))).toBe(false);
   });
 });

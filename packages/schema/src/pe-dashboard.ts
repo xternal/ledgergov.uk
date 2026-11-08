@@ -14,10 +14,10 @@ const Sha256 = z.string().regex(/^[0-9a-f]{64}$/);
 export const PolicyEngineDashboardDecile = z
   .object({
     decile: z.number().int().min(1).max(10),
-    /** Average change in household net income, % (0.42 is 0.42%). */
-    rel_change_pct: z.number(),
-    /** Average change in household net income, £ a year. */
-    avg_change_gbp: z.number(),
+    /** Average change in household net income, % (0.42 is 0.42%); null where PolicyEngine withholds it (see `gaps`). */
+    rel_change_pct: z.number().nullable(),
+    /** Average change in household net income, £ a year; null where PolicyEngine withholds it (see `gaps`). */
+    avg_change_gbp: z.number().nullable(),
   })
   .strict();
 
@@ -26,8 +26,8 @@ export const PolicyEngineDashboardYear = z
     year: FiscalYear,
     /** Effect on the public finances, £bn a year: positive raises money, negative costs it. */
     net_bn: z.number(),
-    /** Average change for all households, £ a year. */
-    all_avg_change_gbp: z.number(),
+    /** Average change for all households, £ a year; null where PolicyEngine withholds it (see `gaps`). */
+    all_avg_change_gbp: z.number().nullable(),
     deciles: z.array(PolicyEngineDashboardDecile).length(10),
   })
   .strict();
@@ -61,7 +61,13 @@ export const PolicyEngineDashboard = z
     measures: z.array(z.object({ id: z.string().min(1), name: z.string().min(1) }).strict()).min(1),
     /** Every CSV read, with its SHA-256 as fetched, so a change on PolicyEngine's side shows up as a diff. */
     files: z.array(z.object({ name: z.string().min(1), url: z.url(), sha256: Sha256 }).strict()).min(1),
-    /** The years with every figure; a year with a blank cell in PolicyEngine's CSVs is left out, and the blank listed in `gaps`. */
+    /**
+     * Every year with an effect on the public finances. A blank income cell in PolicyEngine's CSVs is a figure it
+     * withholds to protect survey respondents' confidentiality (when only one or two survey households in a tenth see
+     * their income change that year, it blanks that tenth and the year's "all" cell, and the same cells in the combined
+     * run; Max Ghenis, PolicyEngine, 7 November 2026, and its methodology under "Income deciles"). It is kept as null and
+     * named in `gaps`, and the rest of the year is shown. A year whose public-finance figure is blank is left out.
+     */
     years: z.array(PolicyEngineDashboardYear).min(1),
     gaps: z.array(z.string().min(1)),
   })
