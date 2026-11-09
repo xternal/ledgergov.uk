@@ -1,0 +1,70 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-11-05"
+triaged_on: "2026-11-08"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 210
+sources_read: 8
+drafts: 8
+candidates: 12
+outcomes:
+  card: 5
+  reworded: 0
+  duplicate: 0
+  existing: 0
+  grant: 1
+  done: 0
+  process: 0
+  broad: 1
+  event: 0
+  cap: 5
+  other: 0
+quotes_exact: 5
+new_actors: []
+cards:
+  - uk-primary-school-libraries-2026
+  - uk-bovine-tb-free-2038
+  - uk-say-what-you-pay-law-2026
+  - uk-staying-close-duty-2029
+  - uk-corporate-parents-2027
+reworded: []
+dropped:
+  - draft: 2026-11-05-govuk-communities-to-get-a-stronger-say-over-billions-of-pounds-of-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/news/communities-to-get-a-stronger-say-over-billions-of-pounds-of-water-investment
+    text: "Eight new regional water councils will bring local leaders, customers and businesses together to set the priorities for their region, helping shape billions of pounds of investment in water and flood infrastructure."
+    note: "eight regional water councils; no date"
+  - draft: 2026-11-05-govuk-government-announces-up-to-15-million-to-bring-the-joy-of-re-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/news/government-announces-up-to-15-million-to-bring-the-joy-of-reading-to-300000-more-young-children
+    text: "A new programme announced in the Budget will give up to 300,000 children across England greater access to books in the run up to starting school, regardless of their background or circumstances."
+    note: "books for up to 300,000 children before school, up to £15 million; no date"
+  - draft: 2026-11-05-govuk-government-backs-local-journalism-with-6-million-funding-whi-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/news/government-backs-local-journalism-with-6-million-funding-while-careers-campaign-reaches-thousands-of-youngsters
+    text: "Next year, £1 million from the Fund will be dedicated to tackling local ‘news deserts’, areas that have no dedicated local print, online, TV or radio outlet, in collaboration with key community stakeholders and the Fund’s Steering Board. Up to a further £5 million will also be made available next year to continue supporting financial sustainability and innovation in the sector."
+    note: "£1 million for news deserts and up to £5 million more for local news next year; small"
+  - draft: 2026-11-05-govuk-paper-government-response-to-the-recommended-bovine-tb-control-str-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/publications/government-response-to-the-recommended-bovine-tb-control-strategy-for-england/government-response-to-the-recommended-bovine-tb-control-strategy-for-england
+    text: "Delivering another commitment made in 2024, later this November we will introduce a new government scheme to collect found-dead badgers for TB testing. Building on similar initiatives in Wales and Northern Ireland, the scheme will improve our understanding of the role of badgers in the epidemiology of bovine TB. It will initially focus on five counties in the High-Risk Area of England."
+    note: "a scheme to collect found-dead badgers for TB testing in five counties, later in November"
+  - draft: 2026-11-05-govuk-paper-government-response-to-the-recommended-bovine-tb-control-str-1
+    quote: also0
+    code: cap
+    source: https://www.gov.uk/government/publications/government-response-to-the-recommended-bovine-tb-control-strategy-for-england/government-response-to-the-recommended-bovine-tb-control-strategy-for-england
+    text: "This year, three new vaccination areas have been established in North Shropshire, North Worcestershire and South-East Oxfordshire, with further areas planned for 2027 and 2028."
+    note: "further badger vaccination areas in 2027 and 2028, with no number"
+  - draft: 2026-11-05-govuk-plan-to-drive-down-homelessness-for-young-people-leaving-car-1
+    quote: also0
+    code: broad
+    note: "halve the proportion of care-experienced people who are homeless; no date or starting figure"
+  - draft: 2026-11-05-govuk-veteran-support-centre-network-to-more-than-double-across-th-1
+    quote: quote
+    code: grant
+    note: "over £13.2m shared by 21 named organisations for the second wave of veteran support centres"

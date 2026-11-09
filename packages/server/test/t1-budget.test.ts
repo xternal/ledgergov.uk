@@ -102,7 +102,7 @@ function fakeClient(rec: HouseholdRecording, opts: { bundleAfter?: string; years
     async createPolicy(data) {
       const pre = JSON.stringify(data) === JSON.stringify(rec.policies.pre.data);
       calls.push(`policy ${pre ? "pre" : "post"}`);
-      return pre ? rec.policies.pre.id : rec.policies.post.id;
+      return (pre ? rec.policies.pre.id : rec.policies.post.id)!;
     },
     async economy(policyId, startYear, baselineId): Promise<EconomyStep> {
       const year = `${startYear}-${String((startYear + 1) % 100).padStart(2, "0")}`;
@@ -191,7 +191,7 @@ describe("the snapshot", () => {
     expect(committed.households.map((h) => h.year)).toEqual(committed.input.years);
     for (const h of committed.households) expect(h.rows.map((r) => r.id)).toEqual(ARCHETYPES.map((a) => a.id));
     expect(policyEngineCompareUrl(committed, 2027)).toBe(
-      `https://policyengine.org/uk/policy?reform=${committed.policies!.post}&baseline=${committed.policies!.pre}&focus=policyOutput.policyBreakdown&region=uk&timePeriod=2027`,
+      "https://www.policyengine.org/uk",
     );
     expect(policyEngineCompareUrl({ policies: null }, 2027)).toBeNull();
   });

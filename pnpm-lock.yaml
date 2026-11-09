@@ -173,11 +173,11 @@ importers:
         specifier: workspace:*
         version: link:packages/schema
       '@openpromises/cli':
-        specifier: 0.16.0
-        version: 0.16.0
+        specifier: 0.16.1
+        version: 0.16.1
       '@openpromises/core':
-        specifier: 0.16.0
-        version: 0.16.0
+        specifier: 0.16.1
+        version: 0.16.1
       tsx:
         specifier: ^4.23.15
         version: 4.23.15
@@ -203,8 +203,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/server
       '@openpromises/react':
-        specifier: 0.16.0
-        version: 0.16.0(react@19.3.0)
+        specifier: 0.16.1
+        version: 0.16.1(react@19.3.0)
       altcha:
         specifier: ^3.3.0
         version: 3.3.0
@@ -219,10 +219,10 @@ importers:
         version: 3.2.0
       geist:
         specifier: ^1.7.2
-        version: 1.7.2(next@16.3.8(@types/node@22.20.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))
+        version: 1.7.2(next@16.4.5(@types/node@22.20.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))
       next:
-        specifier: 16.3.8
-        version: 16.3.8(@types/node@22.20.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        specifier: 16.4.5
+        version: 16.4.5(@types/node@22.20.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       react:
         specifier: ^19.3.0
         version: 19.3.0
@@ -280,14 +280,14 @@ importers:
   packages/schema:
     dependencies:
       '@openpromises/core':
-        specifier: 0.16.0
-        version: 0.16.0
+        specifier: 0.16.1
+        version: 0.16.1
       '@openpromises/files':
-        specifier: 0.16.0
-        version: 0.16.0
+        specifier: 0.16.1
+        version: 0.16.1
       '@openpromises/publish':
-        specifier: 0.16.0
-        version: 0.16.0
+        specifier: 0.16.1
+        version: 0.16.1
       yaml:
         specifier: ^2.9.1
         version: 2.9.1
@@ -768,84 +768,84 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@next/env@16.3.8':
-    resolution: {integrity: sha512-Al9zqHVV7TJv0eFuOU4U7Lvv74PTih4Ch63sk2xCIpSTkE3udFnaOcnzP2lQVymiL7yS9Cj2iClUXlR3EQ5sEw==}
+  '@next/env@16.4.5':
+    resolution: {integrity: sha512-JwSPwpdkZL5VMl2jA/q+JI8MZdweAL3xmw5/tb9y/TLtmS0YXZnmYDzSihwk8xTj1OL+WM53gTqaj96yuLp6Xw==}
 
-  '@next/swc-darwin-arm64@16.3.8':
-    resolution: {integrity: sha512-2JPRMh2nmQG5CiL7cXGL9AGwnPWJQ//cTtAUCT+w511QHk79SYz3LGv/pc5X643B/WEO0rvu3Yww0hqwt3kgeA==}
+  '@next/swc-darwin-arm64@16.4.5':
+    resolution: {integrity: sha512-W5TniBzWKASbNNwHZ/S/f1MxQUXU/LdjklVMWA0Ujbfl7SZnUzFls45hO0i/sF7Bx1jJBWp7WWmoQajXtX/O8A==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@next/swc-darwin-x64@16.3.8':
-    resolution: {integrity: sha512-GZtCCOBKJ4leVIT/Th0llWKhD1ca92lzbQiS5R5ON9QkoiFnilFsebDae1JU2a3HWoKMEmEZWGs1AGLavVM72Q==}
+  '@next/swc-darwin-x64@16.4.5':
+    resolution: {integrity: sha512-uWq4qkHapBDS1oFltWS4YxTb9pLHAtLNcpbuK6SmRsebLYZqpBML/j/C0op+50JYGTpZgVL/DWNt/6oWlamrrw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@next/swc-linux-arm64-gnu@16.3.8':
-    resolution: {integrity: sha512-O659ygeQYqneJ1fBKMpFxIFqYkYswu8IAS1OCKK/4f3ZgJJm1dRz4fVJZRi/kLLWjnBKnebOePA4WNv+sV1pVA==}
+  '@next/swc-linux-arm64-gnu@16.4.5':
+    resolution: {integrity: sha512-FdRcyOx5u5P51mlAqLB9EXdd8jZO5fsdHtk4BAQSkqOywCsbTNN/rmw+jO7pnmjNdAtu2AG46NzbCL2FPDrrgw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@next/swc-linux-arm64-musl@16.3.8':
-    resolution: {integrity: sha512-dSjKSyWpzxoO1d3DIZZcP4XJcNaKeLmxQMFOiYl5vuBRMmweIqnAhty8tAmRsvTss779cK1FtYnDMj40e4TQlg==}
+  '@next/swc-linux-arm64-musl@16.4.5':
+    resolution: {integrity: sha512-cyvmmgtRXR8aGVT86wi9Py53IlfyCx7P2fZxuAXAoTummDnhKtUyjrMeXfapqp4qgD+gT5RqyGD/VfA16jEK7Q==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@next/swc-linux-x64-gnu@16.3.8':
-    resolution: {integrity: sha512-lbqOuz3RPRcv+o9msNsJw5x4+Y1ZwPTs6vmL6DCf7i0fZfvng/F59wyeDwqHIvV0mK//RBy/jJkZ+nCKsSMXjQ==}
+  '@next/swc-linux-x64-gnu@16.4.5':
+    resolution: {integrity: sha512-hPc+Fl+N22DAvqZHq559NmamXboOX5Lu8I5Wl0DezfrhTk1Zz21NQeYoZDmNI/NjTcrdsVxM72Fzn2lI+Q+vAw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@next/swc-linux-x64-musl@16.3.8':
-    resolution: {integrity: sha512-+316WswI8ScVgZeUd+1KGaXkHhaYQzCjvH/05TZSpJ8zBizb1a4G7DtO7F12jcBIqMOtsz9ji1t48fmKtzqsGA==}
+  '@next/swc-linux-x64-musl@16.4.5':
+    resolution: {integrity: sha512-gbACYE8IP/jlprNTpiWXHb8N9CofOzpnEwH2SrIz1dUbiJf1FbDssDupCAPeP1Taxe8mgG20sGZamJI7KFOdZw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@next/swc-win32-arm64-msvc@16.3.8':
-    resolution: {integrity: sha512-ji0gd4kMYUxO+1fJBIbiBVRCjzG/lloiyCccnlebvb1ZJ5qXCPZqYg4Jl1DrrixnWNMKylzgpmMWx0yNDYXlzw==}
+  '@next/swc-win32-arm64-msvc@16.4.5':
+    resolution: {integrity: sha512-+8gj++ZMo8H20Xh2ijjNqyFk5LPLw0AC4Fs4Tq/G94rjjQXhOjN4jgSWsWKPFsyY26hfIeemJIwKtMxOsp5GBA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@next/swc-win32-x64-msvc@16.3.8':
-    resolution: {integrity: sha512-WcTlaKt/TWkh5kUjdJcUmB1XgZ+1c6fz4Y9fDHL73YNSdGaUWjceeWrrlwF0nv19iABYWC4iAq1oX1w4Bn0vfg==}
+  '@next/swc-win32-x64-msvc@16.4.5':
+    resolution: {integrity: sha512-qNZj66pYXnaWLiF9R9GUbfBdrCv7kC6TaZfIwB2KH5WPc/8pEM3nVOj8hpQhWJU8S94rlH5MPDcX15+RrgUhiw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
 
-  '@openpromises/cli@0.16.0':
-    resolution: {integrity: sha512-m2VwLAmlL4pCCBt5MyYChmHbBdXgF5FgR+1z8WyKfV+aacWsgjfUIc79SVEqOX1mrbdJdd2zhKVcvowg3rEE5w==}
+  '@openpromises/cli@0.16.1':
+    resolution: {integrity: sha512-mLGo9iQMK1XQb8vySE7Ir/q57QqZupBPCfzrnerlIiuvXz+kV/gmLHYwUgJ9mTuBWQZ1WscC28o0bdkpmgftiw==}
     engines: {node: '>=22.18.0'}
     hasBin: true
 
-  '@openpromises/core@0.16.0':
-    resolution: {integrity: sha512-7PKkiup8R9w5xpuq/07po1eoLpAIUTmbM8nmXGqqNJ1z1hQo8YgNFauzXQpS2iwMk+wszHP8367BQBnWjUz8iQ==}
+  '@openpromises/core@0.16.1':
+    resolution: {integrity: sha512-GtU3cOv6wJQOMSKEN9cfZfra5aBvJG+CcCukmEEA+fFzndcJvwqRDkaZGUlN8UntXy0GEinttQqSbRtS/VxU/g==}
     engines: {node: '>=22.18.0'}
 
-  '@openpromises/files@0.16.0':
-    resolution: {integrity: sha512-62GWSsaJ3vucnLpc8bcV198wEA9cOGUgQwJ4CbljKhtGpo9qYpRHaS/QmplxTlt4YM74W2FNbKUy+4wE4OYR8Q==}
+  '@openpromises/files@0.16.1':
+    resolution: {integrity: sha512-w1KBdqgu7nliVMNv3qwpJyXJdAvzhltVOC3YypnANfl0fNtNVKIIGgN/Y7rr3lVnKgre1EtQE/iMgILHhYXsvQ==}
     engines: {node: '>=22.18.0'}
 
-  '@openpromises/publish@0.16.0':
-    resolution: {integrity: sha512-UHA3XEfEeSvUWvd0JIDuBOtESCpPtC5F0DhDs72i1OcPRNCcC7ZuelBFz/LtrZcPeEBlem84/1cLqr6kO2fxFg==}
+  '@openpromises/publish@0.16.1':
+    resolution: {integrity: sha512-jrbbDmXmoCPwRZSMC7VG7X6nNOg22maHpZGUOp6kWebN1rY0y/3LSPIm9y85Mgflr1ArjKZLV4TqppxawYA64A==}
     engines: {node: '>=22.18.0'}
 
-  '@openpromises/quotes@0.16.0':
-    resolution: {integrity: sha512-2lvOxxtmj6WKsp6qIoW0BAkYl/INTYWwQFPN5EEEF1eOXbb78o9kjCVxIKPzj601scDbz2Vlz355A8xUD4p65g==}
+  '@openpromises/quotes@0.16.1':
+    resolution: {integrity: sha512-nCnAP87WeCQOqcW0EvB1Zlapo3cKk01HDMKRYlaJdULX4utcLEKC0H+FaVhepljK2Kob9u3aee4dwrgU/84KDw==}
     engines: {node: '>=22.18.0'}
 
-  '@openpromises/react@0.16.0':
-    resolution: {integrity: sha512-CnUiwSeUe+t5jqORMQriwOuP4l/VSlRISzvOSC3y3Z0LdUV77i6ZqfBxHj9xffn6/buYTDOteu0bDG3OreEL/w==}
+  '@openpromises/react@0.16.1':
+    resolution: {integrity: sha512-aM2qwjoliw0yITLhnR+3ZxnVPPqQxOjtFAFVZ2l7ZYzL4zZjPCl3Xt2drOyKE6zmt5QqVZOzSm/0E3M1FVT/gA==}
     engines: {node: '>=22.18.0'}
     peerDependencies:
       react: '>=19'
@@ -1481,8 +1481,8 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  next@16.3.8:
-    resolution: {integrity: sha512-U7QEZaTini6wKrb8A8hqLLqYQyCetegKjCpJOyxk642vWoMoU1x5PyZCJFvgYgiptA8xc5j/9xYlZFO7w9Sjmw==}
+  next@16.4.5:
+    resolution: {integrity: sha512-rmdfsWosjTUO+6R0S3KokoIk6Kj0sWDRTe86tZHdqaWH/oXq/udX3/4xb+YQi7aWbyEFoglDU54kaifLCdXbBw==}
     engines: {node: '>=20.9.0'}
     hasBin: true
     peerDependencies:
@@ -2141,60 +2141,60 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  '@next/env@16.3.8': {}
+  '@next/env@16.4.5': {}
 
-  '@next/swc-darwin-arm64@16.3.8':
+  '@next/swc-darwin-arm64@16.4.5':
     optional: true
 
-  '@next/swc-darwin-x64@16.3.8':
+  '@next/swc-darwin-x64@16.4.5':
     optional: true
 
-  '@next/swc-linux-arm64-gnu@16.3.8':
+  '@next/swc-linux-arm64-gnu@16.4.5':
     optional: true
 
-  '@next/swc-linux-arm64-musl@16.3.8':
+  '@next/swc-linux-arm64-musl@16.4.5':
     optional: true
 
-  '@next/swc-linux-x64-gnu@16.3.8':
+  '@next/swc-linux-x64-gnu@16.4.5':
     optional: true
 
-  '@next/swc-linux-x64-musl@16.3.8':
+  '@next/swc-linux-x64-musl@16.4.5':
     optional: true
 
-  '@next/swc-win32-arm64-msvc@16.3.8':
+  '@next/swc-win32-arm64-msvc@16.4.5':
     optional: true
 
-  '@next/swc-win32-x64-msvc@16.3.8':
+  '@next/swc-win32-x64-msvc@16.4.5':
     optional: true
 
-  '@openpromises/cli@0.16.0':
+  '@openpromises/cli@0.16.1':
     dependencies:
-      '@openpromises/core': 0.16.0
-      '@openpromises/files': 0.16.0
-      '@openpromises/publish': 0.16.0
-      '@openpromises/quotes': 0.16.0
+      '@openpromises/core': 0.16.1
+      '@openpromises/files': 0.16.1
+      '@openpromises/publish': 0.16.1
+      '@openpromises/quotes': 0.16.1
 
-  '@openpromises/core@0.16.0':
+  '@openpromises/core@0.16.1':
     dependencies:
-      '@openpromises/quotes': 0.16.0
+      '@openpromises/quotes': 0.16.1
       zod: 4.6.5
 
-  '@openpromises/files@0.16.0':
+  '@openpromises/files@0.16.1':
     dependencies:
-      '@openpromises/core': 0.16.0
-      '@openpromises/quotes': 0.16.0
+      '@openpromises/core': 0.16.1
+      '@openpromises/quotes': 0.16.1
       yaml: 2.9.1
 
-  '@openpromises/publish@0.16.0':
+  '@openpromises/publish@0.16.1':
     dependencies:
-      '@openpromises/core': 0.16.0
+      '@openpromises/core': 0.16.1
 
-  '@openpromises/quotes@0.16.0': {}
+  '@openpromises/quotes@0.16.1': {}
 
-  '@openpromises/react@0.16.0(react@19.3.0)':
+  '@openpromises/react@0.16.1(react@19.3.0)':
     dependencies:
-      '@openpromises/core': 0.16.0
-      '@openpromises/publish': 0.16.0
+      '@openpromises/core': 0.16.1
+      '@openpromises/publish': 0.16.1
       react: 19.3.0
 
   '@oxc-project/types@0.152.0': {}
@@ -2536,9 +2536,9 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
-  geist@1.7.2(next@16.3.8(@types/node@22.20.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)):
+  geist@1.7.2(next@16.4.5(@types/node@22.20.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)):
     dependencies:
-      next: 16.3.8(@types/node@22.20.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+      next: 16.4.5(@types/node@22.20.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
 
   graceful-fs@4.2.11: {}
 
@@ -2663,9 +2663,9 @@ snapshots:
 
   nanoid@3.3.20: {}
 
-  next@16.3.8(@types/node@22.20.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0):
+  next@16.4.5(@types/node@22.20.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0):
     dependencies:
-      '@next/env': 16.3.8
+      '@next/env': 16.4.5
       '@swc/helpers': 0.5.23
       baseline-browser-mapping: 2.11.27
       caniuse-lite: 1.0.30001814
@@ -2674,14 +2674,14 @@ snapshots:
       react-dom: 19.3.0(react@19.3.0)
       styled-jsx: 5.1.6(react@19.3.0)
     optionalDependencies:
-      '@next/swc-darwin-arm64': 16.3.8
-      '@next/swc-darwin-x64': 16.3.8
-      '@next/swc-linux-arm64-gnu': 16.3.8
-      '@next/swc-linux-arm64-musl': 16.3.8
-      '@next/swc-linux-x64-gnu': 16.3.8
-      '@next/swc-linux-x64-musl': 16.3.8
-      '@next/swc-win32-arm64-msvc': 16.3.8
-      '@next/swc-win32-x64-msvc': 16.3.8
+      '@next/swc-darwin-arm64': 16.4.5
+      '@next/swc-darwin-x64': 16.4.5
+      '@next/swc-linux-arm64-gnu': 16.4.5
+      '@next/swc-linux-arm64-musl': 16.4.5
+      '@next/swc-linux-x64-gnu': 16.4.5
+      '@next/swc-linux-x64-musl': 16.4.5
+      '@next/swc-win32-arm64-msvc': 16.4.5
+      '@next/swc-win32-x64-msvc': 16.4.5
       sharp: 0.35.5(@types/node@22.20.5)
     transitivePeerDependencies:
       - '@babel/core'

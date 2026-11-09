@@ -1,0 +1,72 @@
+format: openpromises/1
+id: uk-state-pension-3-9pc-2027
+headline:
+  en: "Raise the State Pension by 3.9% in April"
+actor_id: pat-mcfadden
+made_on: "2026-10-28"
+venue: parliament
+venue_label:
+  en: "Written ministerial statement"
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    The yearly statutory review of state pension and benefit rates for 2027-28. The 3.9% follows
+    earnings growth in May to July 2026, under the triple lock. Pension Credit's standard minimum
+    guarantee also rises by 3.9%, and other benefits by 3.5%. "From April" is read as by 30 April
+    2027. The card moves when the uprating order is made.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS427, 28 Oct 2026: Statutory review of state pension and
+      benefit rates: 2027/28
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-28/HCWS427
+versions:
+  - version: 1
+    text: >-
+      I am pleased to announce that the basic and full rate of the new State Pensions will be
+      increased by 3.9%, in line with the increase in average weekly earnings in the year to
+      May-July 2026.
+
+      This delivers on our Triple Lock commitment throughout this Parliament to increase these rates
+      in line with the highest of growth in prices, growth in earnings or 2.5%. From April, the full
+      annual rate of the new State Pension will increase by around £490.
+    recorded_on: "2026-10-28"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-28/HCWS427
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          People receiving the basic or new State Pension
+      cost:
+        note:
+          en: >-
+            No cost is given in the statement.
+      when:
+        en: >-
+          From April 2027
+      deadline: "2027-04-30"
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        The Work and Pensions Secretary announces a 3.9% rise in the basic and new State Pensions
+        from April 2027
+  - date: "2027-04-30"
+    type: deadline
+    text:
+      en: >-
+        The 3.9% State Pension rise due from April 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,64 @@
+format: openpromises/1
+id: uk-earned-settlement-10-years-2026
+headline:
+  en: "Ten years to settle for most migrants"
+actor_id: shabana-mahmood
+made_on: "2026-11-02"
+venue: parliament
+venue_label:
+  en: >-
+    Commons statement
+area: public_order
+status: promised
+status_note:
+  en: >-
+    The Home Secretary set out earned settlement: a five-year path for people earning over £50,000
+    and for professions such as doctors, nurses and teachers, three years for those earning over
+    £125,000, and ten years for everyone else, who must show a sustained contribution. Some groups,
+    including Hong Kong British nationals overseas and members of the armed forces, keep today's
+    path. The card moves when the immigration rules are changed.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Hansard, House of Commons, 2 Nov 2026: Immigration: Earned Settlement
+    url: https://hansard.parliament.uk/Commons/2026-11-02/debates/09F388D2-539E-4B0A-ABE2-D3195B14AF0E/ImmigrationEarnedSettlement
+versions:
+  - version: 1
+    text: >-
+      Everyone else will be placed on a 10-year path, including all those earning less than £50,000.
+      Settlement will still be available to them; they will simply have to show a sustained
+      contribution to this country, and they will be able to renew their existing temporary visas
+      until that point.
+    recorded_on: "2026-11-02"
+    source_url: https://hansard.parliament.uk/Commons/2026-11-02/debates/09F388D2-539E-4B0A-ABE2-D3195B14AF0E/ImmigrationEarnedSettlement
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          People who come to work in the UK and earn less than £50,000, outside the faster routes
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          Not stated in the statement
+      funded_by: null
+events:
+  - date: "2026-11-02"
+    type: promised
+    text:
+      en: >-
+        The Home Secretary says most migrants, including all those earning less than £50,000, will
+        be placed on a 10-year path to settlement
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

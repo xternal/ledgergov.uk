@@ -1,0 +1,70 @@
+format: openpromises/1
+id: uk-staying-close-duty-2029
+headline:
+  en: "Staying Close duty for care leavers"
+actor_id: hm-government
+made_on: "2026-11-05"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Department for Education)
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    Staying Close helps care leavers up to 25 find and keep a safe home and reach health, education
+    and work. It runs in 50 areas; the Department for Education's plan on homelessness among care
+    leavers says it becomes a national duty on councils from 2029. The plan builds on the Children's
+    Wellbeing and Schools Act 2026. 2029 is read as the end of 2029. The card moves when the duty
+    takes effect.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Education press release, 5 Nov 2026: Plan to drive down homelessness for young
+      people leaving care
+    url: https://www.gov.uk/government/news/plan-to-drive-down-homelessness-for-young-people-leaving-care
+versions:
+  - version: 1
+    text: >-
+      Staying Close, which helps care leavers find and keep a safe home and access health, education
+      and work up to the age of 25, is already running in 50 areas and will become a national duty
+      on councils for care leavers up to 25 from 2029.
+    recorded_on: "2026-11-05"
+    source_url: https://www.gov.uk/government/news/plan-to-drive-down-homelessness-for-young-people-leaving-care
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          Care leavers up to the age of 25 in England, and councils
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          From 2029
+      deadline: "2029-12-31"
+      funded_by: null
+events:
+  - date: "2026-11-05"
+    type: promised
+    text:
+      en: >-
+        The Department for Education says Staying Close will become a national duty on councils for
+        care leavers up to 25 from 2029
+  - date: "2029-12-31"
+    type: deadline
+    text:
+      en: >-
+        Staying Close due to be a national duty on councils
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

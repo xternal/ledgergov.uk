@@ -1,0 +1,103 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-10-28"
+triaged_on: "2026-11-01"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 193
+sources_read: 17
+drafts: 17
+candidates: 31
+outcomes:
+  card: 10
+  reworded: 0
+  duplicate: 2
+  existing: 7
+  grant: 0
+  done: 1
+  process: 2
+  broad: 0
+  event: 0
+  cap: 6
+  other: 3
+quotes_exact: 10
+new_actors: []
+cards:
+  - uk-fuel-duty-5p-cut-2027
+  - uk-electricity-vat-zero-2027 # the release's own sentence, typo "2027.," included
+  - uk-national-living-wage-13-21-2027 # the Wales Office release added as a source
+  - uk-rolls-royce-jet-engines-2026
+  - uk-leeds-station-upgrade-2030
+  - uk-high-value-council-tax-2028 # quoted from the paper's general description, which names the charge and gives the date
+  - uk-vat-e-invoicing-2029 # quoted from the paper's general description, which says what is required
+  - uk-ukraine-support-10bn-2026 # the readout's two paragraphs, the total and its split
+  - uk-freedom-of-movement-red-line-2026
+  - uk-state-pension-3-9pc-2027
+reworded: []
+dropped:
+  - { draft: 2026-10-28-govuk-budget-2026-breathing-space-for-welsh-families-and-businesse-1, quote: also1, code: duplicate, into: uk-food-tariffs-suspended-2026, note: "the kerosene tariff, part of the suspension on intake 2026-10-27" }
+  - { draft: 2026-10-28-govuk-budget-2026-breathing-space-for-welsh-families-and-businesse-1, quote: also3, code: existing, into: uk-state-pension-no-income-tax-2026, note: "low-income pensioners paying less tax or none" }
+  - { draft: 2026-10-28-govuk-budget-2026-breathing-space-for-welsh-families-and-businesse-1, quote: also4, code: duplicate, into: uk-national-living-wage-13-21-2027, note: "the same rates; the release added as a source" }
+  - { draft: 2026-10-28-govuk-paper-capital-gains-preventing-protected-cell-company-avoidance-1, quote: quote, code: process, note: "a technical anti-avoidance amendment in the Finance Bill" }
+  - { draft: 2026-10-28-govuk-paper-changes-following-the-abolition-of-nhs-england-1, quote: quote, code: existing, into: uk-abolish-nhs-england-2025, note: "the Health Bill abolishing NHS England by March 2027, from a VAT paper; the March 2027 date is for an editor to add to the card" }
+  - draft: 2026-10-28-govuk-paper-changes-to-employee-share-schemes-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/publications/changes-to-employee-share-schemes-including-company-share-option-plan-and-enterprise-management-incentives/changes-to-employee-share-schemes
+    text: "Employees can be granted CSOP options up to the new limit of £120,000 from 6 April 2027, and this would not impact on any of the employee’s existing EMI options."
+    note: "CSOP option limit raised to £120,000 from 6 April 2027; narrow"
+  - { draft: 2026-10-28-govuk-paper-corporation-tax-exemption-for-investment-life-insurance-cont-1, quote: quote, code: process, note: "a technical corporation tax change with negligible Exchequer impact" }
+  - draft: 2026-10-28-govuk-paper-income-tax-image-rights-payments-treated-as-employment-incom-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/publications/income-tax-treatment-of-image-rights-payments-connected-to-employment/income-tax-image-rights-payments-treated-as-employment-income
+    text: "The measure was announced at Budget 2025 and due to take effect from 6 April 2027. However, the government has decided to delay the implementation of the legislation for one year (to 6 April 2028) to provide employers and employees additional time to adjust to this change."
+    note: "image rights payments taxed as employment income, delayed to 6 April 2028; narrow"
+  - { draft: 2026-10-28-govuk-paper-reduce-lifetime-isa-withdrawal-charge-for-properties-over-th-1, quote: quote, code: done, note: "in effect from 29 October 2026, the day after it was announced" }
+  - { draft: 2026-10-28-hansard-39faecd6-1, quote: quote, code: existing, into: uk-water-company-share-limits-2026, note: "the strengthened Water Bill lifting the bar on public ownership" }
+  - { draft: 2026-10-28-hansard-39faecd6-1, quote: also2, code: existing, into: uk-rough-sleepers-route-off-street-2026, note: "the Christmas offer to everyone sleeping rough" }
+  - draft: 2026-10-28-wms-hcws425-1
+    quote: quote
+    code: other
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-28/HCWS425
+    text: "I have decided to increase Child Benefit rates in line with the Consumer Price Index (CPI) for the year to September 2026, which is 3.5%. Guardian’s Allowance will also increase by the same rate."
+    note: "Emma Reynolds, Chief Secretary to the Treasury (member 4077): Child Benefit up 3.5%; a fair card held back: the speaker has no actor file, and a new MP actor needs Parliament's portrait credit in data/portraits.json, which the desk may not add (pull request #199 would lift this)"
+  - draft: 2026-10-28-wms-hcws427-1
+    quote: also1
+    code: cap
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-28/HCWS427
+    text: "From April, it will be £247.30 a week for a single pensioner and £377.40 a week for a couple, ensuring the incomes of the poorest pensioners are protected."
+    note: "Pension Credit standard minimum guarantee up 3.9%; named in the State Pension card's status note"
+  - draft: 2026-10-28-wms-hcws427-1
+    quote: also2
+    code: cap
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-28/HCWS427
+    text: "Other State Pension and benefit rates covered by my statutory review will be increased by 3.5%, in line with the increase in the consumer prices index in the year to September 2026."
+    note: "other pension and benefit rates up 3.5%; named in the State Pension card's status note"
+  - draft: 2026-10-28-wms-hcws427-1
+    quote: also3
+    code: cap
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-28/HCWS427
+    text: "The UC Standard Allowance for a single person aged 25 or over will increase by around £219 a year. That’s over £45 more than if up-rated by inflation alone."
+    note: "Universal Credit standard allowance up about £219 a year"
+  - draft: 2026-10-28-wms-hcws427-1
+    quote: also4
+    code: cap
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-28/HCWS427
+    text: "While not part of my formal up-rating review, I can confirm that Local Housing Allowance rates and the benefit cap will be maintained at their current levels and not increased for 2027-28."
+    note: "Local Housing Allowance and the benefit cap frozen for 2027-28"
+  - { draft: 2026-10-28-wms-hcws428-1, quote: quote, code: existing, into: uk-pubs-business-rates-cut-2026, note: "the extra 20% relief, total 35%, already a Budget event on the card" }
+  - { draft: 2026-10-28-wms-hcws428-1, quote: also1, code: existing, into: uk-small-business-rates-relief-18000-2027, note: "half of retail, hospitality and leisure properties paying no business rates; the card is in pull request #194" }
+  - { draft: 2026-10-28-wms-hcws428-1, quote: also2, code: existing, into: uk-pubs-business-rates-cut-2026, note: "reliefs removed from vape shops and adult gaming centres, named in the card's Budget event" }
+  - draft: 2026-10-28-wms-hcws428-1
+    quote: also3
+    code: other
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-28/HCWS428
+    text: "Our £210 million Community Assets Programme will provide practical investment to tackle vacancy and dereliction, protect valued community assets, support co-operative development and strengthen local capacity to renew high streets. This funding is available within England."
+    note: "Angela Rayner, Housing Secretary (member 4356): £210 million Community Assets Programme; a fair card held back: the speaker has no actor file, and a new MP actor needs Parliament's portrait credit in data/portraits.json, which the desk may not add (pull request #199 would lift this)"
+  - draft: 2026-10-28-wms-hcws428-1
+    quote: also4
+    code: other
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-28/HCWS428
+    text: "To accelerate adaptation, the government will empower local authorities to better take on business rates avoidance by expanding the funding provided for the costs of challenging avoidance in courts; and introducing a General Anti-Avoidance Rule, giving local authorities the powers they need to better take on non-compliance."
+    note: "a business rates General Anti-Avoidance Rule for councils; a fair card held back: the speaker has no actor file, and a new MP actor needs Parliament's portrait credit in data/portraits.json, which the desk may not add (pull request #199 would lift this)"

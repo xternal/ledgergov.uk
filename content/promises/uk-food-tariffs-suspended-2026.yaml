@@ -1,0 +1,66 @@
+format: openpromises/1
+id: uk-food-tariffs-suspended-2026
+headline:
+  en: "Suspend tariffs on over 100 foods and fuels"
+actor_id: john-healey
+made_on: "2026-10-27"
+venue: parliament
+venue_label:
+  en: "Written ministerial statement"
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The second government tariff package of 2026, after one in June covering pasta, fruit juice and
+    tuna, the Treasury's release of 26 October says. It lists garlic, gherkins, marmalades, sweets,
+    plant-based drinks, kerosene (4%) and fertilisers among the products. Neither source gives the
+    date the suspensions start. The card moves when the suspensions are in force.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS421, 27 Oct 2026: Cost of Living update
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-27/HCWS421
+  - title: >-
+      HM Treasury press release, 26 Oct 2026: Everyday fixes to make life easier for millions of
+      Britons
+    url: https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons
+versions:
+  - version: 1
+    text: >-
+      Suspend import tariffs on over 100 food products, fertilisers and kerosene heating oil to help
+      reduce costs for households and businesses. Lower tariffs on food products are expected to
+      deliver consumer savings worth around £120-185m per year.
+    recorded_on: "2026-10-27"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-27/HCWS421
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          Households and businesses, including farmers and homes heated by oil
+      cost:
+        note:
+          en: >-
+            The statement gives a saving to consumers, not a cost: around £120-185 million a year
+            from lower tariffs on food products.
+      when:
+        en: >-
+          Not stated
+      funded_by: null
+events:
+  - date: "2026-10-27"
+    type: promised
+    text:
+      en: >-
+        The Chancellor says import tariffs will be suspended on over 100 food products, fertilisers
+        and kerosene heating oil
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

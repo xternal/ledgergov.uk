@@ -1,0 +1,66 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-10-27"
+triaged_on: "2026-11-01"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 185
+sources_read: 8
+drafts: 8
+candidates: 14
+outcomes:
+  card: 2
+  reworded: 0
+  duplicate: 2
+  existing: 4
+  grant: 0
+  done: 0
+  process: 1
+  broad: 0
+  event: 0
+  cap: 5
+  other: 0
+quotes_exact: 2
+new_actors: []
+cards:
+  - uk-carers-allowance-taper-2031 # the Treasury release of 26 October added as a source
+  - uk-food-tariffs-suspended-2026 # the Treasury release of 26 October added as a source
+reworded: []
+dropped:
+  - draft: 2026-10-27-govuk-government-launches-first-ever-misogyny-prevention-fund-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/news/government-launches-first-ever-misogyny-prevention-fund
+    text: "The Chancellor will provide a £15 million injection to the Office for the Impact Economy (OIE) to be invested in schemes over 3 years that could include mentoring for young people, workplace training and communications campaigns to improve outcomes and safety for women and girls across the UK."
+    note: "£15 million over three years for misogyny prevention schemes; the outcome is broad"
+  - { draft: 2026-10-27-govuk-minister-launches-new-campus-for-national-school-of-governme-1, quote: quote, code: existing, into: uk-halve-consultancy-spend-2029, note: "halving consultancy spend; the 16% administration cut and £2bn a year by 2030 are mentioned as plans already under way" }
+  - { draft: 2026-10-27-govuk-more-people-protected-as-government-acts-to-make-more-homes--1, quote: quote, code: existing, into: uk-cladding-legal-duty-2026, note: "the legal duty in the Remediation of Unsafe Cladding Bill" }
+  - draft: 2026-10-27-govuk-more-people-protected-as-government-acts-to-make-more-homes--1
+    quote: also1
+    code: cap
+    source: https://www.gov.uk/government/news/more-people-protected-as-government-acts-to-make-more-homes-safe
+    text: "Construction product manufacturers connected to historic unsafe cladding and insulation products will also be made to contribute more towards putting affected buildings right. For the first time, government will have powers it needs to recover contributions from manufacturers - and at scale."
+    note: "powers to recover contributions from construction product manufacturers, a Bill measure with no date"
+  - draft: 2026-10-27-govuk-more-people-protected-as-government-acts-to-make-more-homes--1
+    quote: also2
+    code: cap
+    source: https://www.gov.uk/government/news/more-people-protected-as-government-acts-to-make-more-homes-safe
+    text: "The government plans to raise this limit to six, so more people who owned four to six properties and did not qualify on this date will be protected from having these costs passed on to them."
+    note: "raising the leaseholder protection limit to six properties, a Bill measure with no date"
+  - { draft: 2026-10-27-govuk-paper-guidance-on-the-discharge-of-requirements-for-nuclear-and-el-1, quote: quote, code: process, note: "planning fees for nuclear and transmission consents in 2027-28: a fee inside government" }
+  - draft: 2026-10-27-govuk-uk-sets-pace-on-new-undersea-sensors-to-detect-threats-as-au-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/news/uk-sets-pace-on-new-undersea-sensors-to-detect-threats-as-aukus-partners-test-advanced-kit-in-san-diego
+    text: "The payloads will be available across the three nations’ UUV fleets from 2027, enhancing the reach and effectiveness of those fleets and reinforcing strategic deterrence across the Euro-Atlantic, High North and Indo-Pacific."
+    note: "AUKUS undersea sensor payloads available from 2027; hard to check from public sources"
+  - { draft: 2026-10-27-hansard-033a4632-1, quote: quote, code: existing, into: uk-defence-3pc-2030, note: "the 3.5% NATO commitment by 2035 and a date for 3%; the card (pull request #194) has the Budget's 2030 date; Dan Jarvis has no actor file either" }
+  - { draft: 2026-10-27-wms-hcws421-1, quote: quote, code: existing, into: uk-self-employed-parental-pay-2029, note: "the card is in pull request #194, with the April 2029 date" }
+  - { draft: 2026-10-27-wms-hcws421-1, quote: also1, code: duplicate, into: uk-mileage-rates-permanent-2026, note: "card on intake 2026-10-26, which cites this statement" }
+  - { draft: 2026-10-27-wms-hcws421-1, quote: also4, code: duplicate, into: uk-post-office-drop-boxes-1000-2027, note: "card on intake 2026-10-26, which cites this statement" }
+  - draft: 2026-10-27-wms-hcws424-1
+    quote: quote
+    code: cap
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-10-27/HCWS424
+    text: "NHS senior leaders will be invited to take part in further antiracism training by the end of March 2027, developed by the NHS Race and Health Observatory."
+    note: "NHS senior leaders invited to antiracism training by March 2027: an invitation, not an outcome"

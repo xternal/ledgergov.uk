@@ -1,0 +1,19 @@
+id: national-living-wage-13-20
+headline: Raise the national living wage to £13.20 an hour
+area: economic_affairs
+summary: >-
+  The Times reports, citing sources, that the Chancellor will raise the national living wage for
+  workers aged 21 and over by about 3.9%, from £12.71 to about £13.20 an hour from April 2027, and the
+  rate for 18 to 20-year-olds by the same percentage, to about £11.27. The Times says this ends the
+  manifesto pledge to bring the under-21 rate into line with the adult rate. Reuters, following The
+  Times, says the Treasury declined to comment.
+reported:
+  - outlet: The Times
+    date: "2026-10-26"
+    url: https://www.thetimes.com/uk/politics/article/national-minimum-age-increase-uk-2026-john-healey-budget-0xl9d6c90
+    title: John Healey to increase minimum wage but slow rise for young people
+  - outlet: Reuters
+    date: "2026-10-26"
+    url: https://www.globalbankingandfinance.com/uk-minimum-wage-rise-3-9-13-20-times-reports/
+    title: Britain's minimum wage to rise nearly 4%, Times reports
+status: trailed

@@ -1,0 +1,75 @@
+format: openpromises/1
+id: uk-carers-allowance-taper-2031
+headline:
+  en: "End the Carer's Allowance earnings cliff edge"
+actor_id: john-healey
+made_on: "2026-10-27"
+venue: parliament
+venue_label:
+  en: "Written ministerial statement"
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    The Chancellor says carers now lose £86.45 a week for a 1p rise in earnings above the weekly
+    limit. He says a £1-for-£1 taper will replace that, but only once the Department for Work and
+    Pensions has built a new IT system, within 2030-31, read here as by 31 March 2031. The Treasury
+    announced it the day before, without a date. The card moves when the law for the taper is made
+    or the new system is in place.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS421, 27 Oct 2026: Cost of Living update
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-27/HCWS421
+  - title: >-
+      HM Treasury press release, 26 Oct 2026: Everyday fixes to make life easier for millions of
+      Britons
+    url: https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons
+versions:
+  - version: 1
+    text: >-
+      End the cliff edge within Carer’s Allowance, which sees carers lose £86.45 per week for a 1p
+      increase in earnings above the weekly limit. Instead, earnings above the Weekly Earnings Limit
+      will be subject to a 100% taper, where support is only reduced by £1 for each £1 increase in
+      earnings. This means carers are no longer left financially worse off for working additional
+      hours or receiving a pay rise. The taper will begin within 2030-31 once the Department for
+      Work and Pensions have developed a new IT system to implement the taper.
+    recorded_on: "2026-10-27"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-27/HCWS421
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          Unpaid carers who claim Carer's Allowance and work
+      cost:
+        note:
+          en: >-
+            No cost has been published in either source.
+      when:
+        en: >-
+          Within 2030-31, once the new IT system is built
+      deadline: "2031-03-31"
+      funded_by: null
+events:
+  - date: "2026-10-27"
+    type: promised
+    text:
+      en: >-
+        The Chancellor says earnings above the Carer's Allowance limit will be tapered at £1 for
+        each £1, starting within 2030-31
+  - date: "2031-03-31"
+    type: deadline
+    text:
+      en: >-
+        Carer's Allowance taper due to begin within 2030-31
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

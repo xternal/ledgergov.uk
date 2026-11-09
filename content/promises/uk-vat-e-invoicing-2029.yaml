@@ -1,0 +1,65 @@
+format: openpromises/1
+id: uk-vat-e-invoicing-2029
+headline:
+  en: "VAT invoices issued as e-invoices from 2029"
+actor_id: hm-government
+made_on: "2026-10-28"
+venue: press_release
+venue_label:
+  en: "E-invoicing requirements (HMRC policy paper)"
+area: taxes
+status: promised
+status_note:
+  en: >-
+    First announced at Budget 2025. The paper says the Finance Bill 2026-27 gives HMRC the enabling
+    powers, that an implementation roadmap was published at Budget 2026, and that the requirements
+    apply to VAT-registered persons, including public bodies, from 1 April 2029. The card moves when
+    the Finance Bill becomes law and the detailed rules are made.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      HM Revenue & Customs policy paper, 28 Oct 2026: E-invoicing requirements
+    url: https://www.gov.uk/government/publications/vat-electronic-invoicing/e-invoicing-requirements
+versions:
+  - version: 1
+    text: >-
+      At Budget 2025, the government announced that VAT invoices will have to be issued as
+      e-invoices from April 2029.
+    recorded_on: "2026-10-28"
+    source_url: https://www.gov.uk/government/publications/vat-electronic-invoicing/e-invoicing-requirements
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          VAT-registered businesses and public bodies
+      cost:
+        note:
+          en: >-
+            No cost to the government is given in the summary quoted.
+      when:
+        en: >-
+          From 1 April 2029
+      deadline: "2029-04-01"
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        HMRC confirms VAT invoices will have to be issued as e-invoices from April 2029
+  - date: "2029-04-01"
+    type: deadline
+    text:
+      en: >-
+        E-invoicing for VAT due from 1 April 2029
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

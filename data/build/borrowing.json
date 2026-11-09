@@ -147,12 +147,12 @@
     }
   },
   "year_forecast": {
-    "bn": 115.461,
-    "edition": "March 2026",
+    "bn": 133.196,
+    "edition": "October 2026",
     "quality": "sourced",
     "source_id": "obr_efo",
-    "vintage": "EFO-2026-03",
-    "method_note": "The OBR's forecast of borrowing for the whole of 2026-27, from its March 2026 Economic and fiscal outlook."
+    "vintage": "EFO-2026-10",
+    "method_note": "The OBR's forecast of borrowing for the whole of 2026-27, from its October 2026 Economic and fiscal outlook."
   },
   "release": {
     "title": "Public sector finances, UK: September 2026",
@@ -165,11 +165,11 @@
   "sources": [
     {
       "id": "obr_efo",
-      "title": "OBR Economic and fiscal outlook – March 2026",
+      "title": "OBR Economic and fiscal outlook – October 2026",
       "publisher": "Office for Budget Responsibility",
-      "url": "https://obr.uk/efo/economic-and-fiscal-outlook-march-2026/",
+      "url": "https://obr.uk/efo/economic-and-fiscal-outlook-october-2026/",
       "licence": "OGL v3",
-      "published_on": "2026-03-03"
+      "published_on": "2026-10-28"
     },
     {
       "id": "obr_monthly_profiles",

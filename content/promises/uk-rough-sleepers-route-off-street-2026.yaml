@@ -1,0 +1,84 @@
+format: openpromises/1
+id: uk-rough-sleepers-route-off-street-2026
+headline:
+  en: Route off the streets for rough sleepers
+actor_id: hm-government
+made_on: "2026-10-25"
+venue: press_release
+venue_label:
+  en: Press release (Prime Minister's Office, 10 Downing Street)
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    Announced on the day of the first Rough Sleeping Summit at Downing Street. The release says the
+    programme, backed by an initial £442 million, is focused on offering everyone who needs it a
+    route off the streets before Christmas, with outreach teams and new bedspaces already operating
+    in Coventry. In a Commons statement on 26 October the homelessness minister Florence Eshalomi
+    called it the government's immediate commitment. "Before Christmas" is read as 25 December 2026.
+    The card moves when the government reports how many people sleeping rough have been offered a
+    route off the street.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Prime Minister's Office press release, 25 Oct 2026: PM confident every rough sleeper will have
+      route off the street by Christmas as funding doubles
+    url: https://www.gov.uk/government/news/pm-confident-every-rough-sleeper-will-have-route-off-the-street-by-christmas-as-funding-doubles
+  - title: >-
+      Hansard, House of Commons, 26 Oct 2026: Rough Sleeping and Good Growth Funds (statement by
+      Florence Eshalomi, Minister for Homelessness)
+    url: https://hansard.parliament.uk/Commons/2026-10-26/debates/DC1F61E9-EA89-474B-90EA-B70F503B3536/RoughSleepingAndGoodGrowthFunds
+versions:
+  - version: 1
+    text: >-
+      The Prime Minister today set out his confidence that everyone sleeping rough will be offered a
+      route off the street or wider support before Christmas, as he announces a further £432 million
+      to help deliver the ambition and sustain support for years to come.
+
+      The additional funding, to be set out at the Budget later this week, reflects the Prime
+      Minister’s determination to make tackling rough sleeping a national priority. It will extend
+      support beyond March 2027 and through to the end of this Parliament, taking total investment
+      behind his commitment to £874 million.
+    recorded_on: "2026-10-25"
+    source_url: https://www.gov.uk/government/news/pm-confident-every-rough-sleeper-will-have-route-off-the-street-by-christmas-as-funding-doubles
+    quote_checked_on: "2026-10-27"
+    parameters:
+      who:
+        en: People sleeping rough, and the frontline services that support them
+      cost:
+        note:
+          en: >-
+            The release gives a further £432 million, to be set out at the Budget, taking total
+            investment behind the commitment to £874 million through to the end of this Parliament.
+            It gives no split by year and no end date, so no yearly figure is shown.
+      when:
+        en: >-
+          An offer of a route off the street before Christmas 2026; support extended beyond March
+          2027 to the end of this Parliament
+      deadline: "2026-12-25"
+      funded_by:
+        en: >-
+          £874 million in total, including a further £432 million to be set out at the Budget
+events:
+  - date: "2026-10-25"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister sets out his confidence that everyone sleeping rough will be offered a
+        route off the street before Christmas, with a further £432 million
+  - date: "2026-12-25"
+    type: deadline
+    text:
+      en: >-
+        Offer of a route off the street to everyone sleeping rough due before Christmas 2026
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-27"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

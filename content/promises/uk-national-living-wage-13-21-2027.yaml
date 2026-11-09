@@ -1,0 +1,67 @@
+format: openpromises/1
+id: uk-national-living-wage-13-21-2027
+headline:
+  en: "Raise the National Living Wage to £13.21"
+actor_id: hm-government
+made_on: "2026-10-28"
+venue: press_release
+venue_label:
+  en: "Press release (Low Pay Commission)"
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The Low Pay Commission says the government has accepted its recommendations in full. Its
+    recommended rate does not reach two thirds of median earnings, the reference point in its remit.
+    The release gives no start date; it compares the rate with inflation forecasts from April 2027
+    to March 2028. The card moves when the new rates are set in law.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Low Pay Commission press release, 28 Oct 2026: LPC recommendations take the National Living
+      Wage to £13.21
+    url: https://www.gov.uk/government/news/lpc-recommendations-take-the-national-living-wage-to-1321
+  - title: >-
+      Wales Office press release, 28 Oct 2026: Budget 2026: Breathing space for Welsh families and
+      businesses
+    url: https://www.gov.uk/government/news/budget-2026-breathing-space-for-welsh-families-and-businesses
+versions:
+  - version: 1
+    text: >-
+      The National Living Wage (NLW), the minimum wage rate for all workers aged 21 and over, will
+      rise by 3.9 per cent to £13.21. The minimum wage for 18-20 year olds will increase to £11.27
+      and the rates for 16-17 year olds and apprentices will increase to £8.31, all of which are 3.9
+      per cent increases in line with that for the NLW.
+    recorded_on: "2026-10-28"
+    source_url: https://www.gov.uk/government/news/lpc-recommendations-take-the-national-living-wage-to-1321
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          Workers on the minimum wage, including apprentices
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          Not stated in the release
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        The government accepts the Low Pay Commission's recommendation to raise the National Living
+        Wage by 3.9% to £13.21, with matching rises for younger workers and apprentices
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
