@@ -8,13 +8,14 @@ venue: parliament
 venue_label:
   en: Written ministerial statement
 area: economic_affairs
-status: promised
+status: delivered
 status_note:
   en: >-
     The process was first announced in May 2026. Postmasters who accepted the £75,000 fixed sum
-    offer will have four months to register and must explain why the sum undervalued their claim; an
+    offer have four months to register and must explain why the sum undervalued their claim; an
     assessor independent of the government and the Post Office decides whether the claim is assessed
-    in full. "November" is read as 30 November 2026. The card moves when the process opens.
+    in full. It opened to registrations on 2 November 2026, when GOV.UK added the registration form
+    to its guidance, within the November date promised.
 responsible:
   actor_id: hm-government
 origin: llm_intake
@@ -53,6 +54,13 @@ events:
       en: >-
         The Post Office minister says the process for appealing £75,000 fixed sum offers is expected
         to launch in November
+  - date: "2026-11-02"
+    type: delivered
+    text:
+      en: >-
+        The fixed sum offer permission to appeal process opens to registrations, with the
+        registration form added to its GOV.UK guidance
+    evidence_url: https://www.gov.uk/government/publications/horizon-shortfall-scheme-hss-fixed-sum-offer-permission-to-appeal-process/proposed-fixed-sum-offer-permission-to-appeal-process-guide
   - date: "2026-11-30"
     type: deadline
     text:
