@@ -1,0 +1,61 @@
+format: openpromises/1
+id: uk-carers-allowance-cliff-edge-2026
+headline:
+  en: End the Carer's Allowance cliff edge
+actor_id: hm-government
+made_on: "2026-10-26"
+venue: press_release
+venue_label:
+  en: Press release (HM Treasury)
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    One of five "everyday fixes" the Chancellor announced ahead of the Budget. Today a carer who
+    earns a penny over the Weekly Earnings Limit, equal to 16 hours at the National Living Wage,
+    loses the whole allowance; instead £1 of support would taper away for each extra £1 earned. The
+    Work and Pensions Secretary says the government intends to end the cliff edge, without a date.
+    The card moves when the change is legislated or a start date is set.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      HM Treasury press release, 26 Oct 2026: Everyday fixes to make life easier for millions of
+      Britons
+    url: https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons
+versions:
+  - version: 1
+    text: >-
+      Ending the Carer’s Allowance cliff edge, so unpaid carers no longer lose their entire
+      allowance simply for earning a penny over the Weekly Earnings Limit, equivalent to 16 hours of
+      the National Living Wage. Instead, only £1 of support will taper away for every additional £1
+      earned.
+    recorded_on: "2026-10-26"
+    source_url: https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons
+    quote_checked_on: "2026-10-27"
+    parameters:
+      who:
+        en: Unpaid carers who receive Carer's Allowance and work
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-26"
+    type: promised
+    text:
+      en: >-
+        The Chancellor says unpaid carers will no longer lose all their Carer's Allowance for
+        earning just over the limit, with £1 tapered away for each extra £1
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-27"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

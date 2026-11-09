@@ -1,0 +1,66 @@
+format: openpromises/1
+id: uk-digital-v-level-2027
+headline:
+  en: Teach a Digital Systems and Data V Level
+actor_id: hm-government
+made_on: "2026-10-21"
+venue: press_release
+venue_label:
+  en: Digital and Technologies Jobs Plan
+area: education
+status: promised
+status_note:
+  en: >-
+    V Levels are a new Level 3 vocational route alongside A Levels and T Levels, which the plan says
+    will replace many existing vocational qualifications over time. The plan also promises two new
+    Level 2 certificates, in Digital Systems and Data from September 2027 and in Digital
+    Administration from September 2028, subject to final content development. "From September 2027"
+    is read as 30 September 2027. The card moves when the qualification is approved for first
+    teaching.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Digital, Culture, Media and Sport, 21 Oct 2026: Digital and Technologies Jobs
+      Plan
+    url: https://www.gov.uk/government/publications/digital-and-technologies-jobs-plan/digital-and-technologies-jobs-plan
+versions:
+  - version: 1
+    text: >-
+      Digital Systems and Data is among the first V Level subjects, with teaching due to begin from
+      September 2027, giving the technology sector an early opportunity to shape practical,
+      employer-relevant content.
+    recorded_on: "2026-10-21"
+    source_url: https://www.gov.uk/government/publications/digital-and-technologies-jobs-plan/digital-and-technologies-jobs-plan
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: Students aged 16 to 19 in England choosing a vocational route into technology
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Teaching from September 2027
+      deadline: "2027-09-30"
+      funded_by: null
+events:
+  - date: "2026-10-21"
+    type: promised
+    text:
+      en: >-
+        The government says teaching of the Digital Systems and Data V Level is due to begin from
+        September 2027
+  - date: "2027-09-30"
+    type: deadline
+    text:
+      en: Teaching of the Digital Systems and Data V Level due to begin by September 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,68 @@
+format: openpromises/1
+id: uk-active-travel-routes-2030
+headline:
+  en: 5,000 walking and cycling routes by 2030
+actor_id: hm-government
+made_on: "2026-10-22"
+venue: press_release
+venue_label:
+  en: >-
+    Government response to the Health and Social Care Committee's report on healthy ageing and
+    physical activity
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The commitment is listed in the government's response to a Commons committee report on physical
+    activity in an ageing society. The response does not say when the £4.5 billion is spent, where
+    the routes go or how many exist today. The card moves when the government reports routes and
+    crossings built.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department of Health and Social Care, 22 Oct 2026: Government response to the Health and
+      Social Care Committee's eighth report of 2024 to 2026 - Healthy Ageing: physical activity in
+      an ageing society
+    url: https://www.gov.uk/government/publications/government-response-to-the-hsccs-report-on-healthy-ageing-and-physical-activity/government-response-to-the-health-and-social-care-committees-eighth-report-of-2024-to-2026-healthy-ageing-physical-activity-in-an-ageing-society
+versions:
+  - version: 1
+    text: >-
+      deliver 5,000 new walking, wheeling and cycling routes and 10,000 safer crossings by 2030 - a
+      commitment backed by £4.5 billion in investment to make active travel a practical choice for
+      millions more journeys
+    recorded_on: "2026-10-22"
+    source_url: https://www.gov.uk/government/publications/government-response-to-the-hsccs-report-on-healthy-ageing-and-physical-activity/government-response-to-the-health-and-social-care-committees-eighth-report-of-2024-to-2026-healthy-ageing-physical-activity-in-an-ageing-society
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: People walking, wheeling and cycling
+      cost:
+        note:
+          en: £4.5 billion in investment, with no period given, so no yearly figure is shown.
+      when:
+        en: By 2030
+      deadline: "2030-12-31"
+      funded_by:
+        en: £4.5 billion of investment in active travel
+events:
+  - date: "2026-10-22"
+    type: promised
+    text:
+      en: >-
+        The government commits to 5,000 new walking, wheeling and cycling routes and 10,000 safer
+        crossings by 2030
+  - date: "2030-12-31"
+    type: deadline
+    text:
+      en: 5,000 routes and 10,000 crossings due by 2030
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

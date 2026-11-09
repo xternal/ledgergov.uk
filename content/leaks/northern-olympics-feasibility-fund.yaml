@@ -18,9 +18,14 @@ estimated_cost:
   by: { kind: official, name: HM Government }
   source_url: https://www.theguardian.com/sport/2026/oct/24/northern-olympics-campaign-funds-john-healey-budget
   note: The £7m size of the fund, as announced and reported by the Guardian; the report does not say over how many years it is spent.
-status: confirmed
+status: announced
 confirmed:
   date: "2026-10-24"
   by: John Healey, Chancellor of the Exchequer, and Andy Burnham, Prime Minister (quoted by the Guardian)
   url: https://www.theguardian.com/sport/2026/oct/24/northern-olympics-campaign-funds-john-healey-budget
   text: The Chancellor said he was "picking up the pace" on work towards a possible bid.
+budget:
+  date: "2026-10-28"
+  text: >-
+    The government funds a £7m feasibility study of a bid to host the Olympics and Paralympics in the north of England in the 2040s (paragraph 6.52).
+  evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=120

@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-sme-procurement-30pc-2028
+headline:
+  en: "30% Cabinet Office spend with small firms"
+actor_id: hm-government
+made_on: "2026-11-02"
+venue: press_release
+venue_label:
+  en: >-
+    Small and Medium-Sized Enterprise (SME) Action Plan: 2025 to 2028 (Cabinet Office and HM
+    Treasury policy paper)
+area: general_services
+status: promised
+status_note:
+  en: >-
+    Under the National Procurement Policy Statement, every department must set a three-year target
+    for direct spending with small and medium-sized enterprises (SMEs) from 1 April 2025 and publish
+    progress each year. The Cabinet Office set 30% by the end of 2027/28 and calls it a challenging
+    target; HM Treasury set 22%. The card moves on the Cabinet Office's annual progress report.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Cabinet Office policy paper, 2 Nov 2026: Cabinet Office and HM Treasury: Small and
+      Medium-Sized Enterprise (SME) Action Plan: 2025 to 2028 (HTML)
+    url: https://www.gov.uk/government/publications/cabinet-office-and-hm-treasury-small-and-medium-sized-enterprise-sme-action-plan-2025-to-2028--2/cabinet-office-and-hm-treasury-small-and-medium-sized-enterprise-sme-action-plan-2025-to-2028-html
+versions:
+  - version: 1
+    text: >-
+      Cabinet Office has set the target of 30% procurement expenditure to be with SMEs by the end of
+      the 2027/28 financial year.
+    recorded_on: "2026-11-02"
+    source_url: https://www.gov.uk/government/publications/cabinet-office-and-hm-treasury-small-and-medium-sized-enterprise-sme-action-plan-2025-to-2028--2/cabinet-office-and-hm-treasury-small-and-medium-sized-enterprise-sme-action-plan-2025-to-2028-html
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          Small and medium-sized businesses that supply the Cabinet Office
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          By the end of the 2027/28 financial year
+      deadline: "2028-03-31"
+      funded_by: null
+events:
+  - date: "2026-11-02"
+    type: promised
+    text:
+      en: >-
+        The Cabinet Office sets a target of 30% of its procurement spending with SMEs by the end of
+        2027/28
+  - date: "2028-03-31"
+    type: deadline
+    text:
+      en: >-
+        30% of Cabinet Office procurement spending due to be with SMEs
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

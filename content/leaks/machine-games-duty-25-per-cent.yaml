@@ -11,4 +11,16 @@ reported:
     date: "2026-10-21"
     url: https://www.racingpost.com/news/industry/racing-industry/horseracing-and-betting-industries-braced-for-further-tax-hit-as-reports-suggest-machine-games-duty-will-go-up-by-a-quarter-asPnC1W3plnw/
     title: Horseracing and betting industries braced for further tax hit as reports suggest machine games duty will go up by a quarter
-status: trailed
+status: announced
+budget:
+  date: "2026-10-28"
+  text: >-
+    Machine games duty rises from 20% to 25% from 1 April 2027 for games with stakes over £1 or prizes over £100 (paragraph 6.226; table of policy decisions, line 56).
+  evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=139
+  cost:
+    range: [-0.15, -0.15, -0.15]
+    basis: per_year
+    period: "2028-29"
+    by: { kind: official, name: HM Treasury }
+    source_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=110
+    note: "Table 6.1 line 56, the year of the largest figure; it raises £135m in 2027-28, £150m in 2028-29 and £145m a year after."

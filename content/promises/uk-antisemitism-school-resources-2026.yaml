@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-antisemitism-school-resources-2026
+headline:
+  en: Antisemitism training for every school
+actor_id: lucy-powell
+made_on: "2026-10-21"
+venue: parliament
+venue_label:
+  en: Commons statement
+area: education
+status: promised
+status_note:
+  en: >-
+    The Education Secretary said the government accepts all 27 recommendations of Sir David Bell's
+    review of antisemitism in schools and colleges, including treating antisemitism as a
+    safeguarding issue. The Department for Education's release lists training for education leaders,
+    safeguarding and impartiality guidance, better reporting of incidents and support for complex
+    cases. She said there will be new funding but gave no figure, and "within the year" does not say
+    whether she means 2026 or the next twelve months, so the card has no deadline. The card moves
+    when the resources and training are published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Hansard, House of Commons, 21 Oct 2026: Antisemitism in Schools and Colleges (Education
+      Secretary's statement)
+    url: https://hansard.parliament.uk/Commons/2026-10-21/debates/CAAFE9F2-EA1F-42E9-9F73-ECD65FA13C2B/AntisemitismInSchoolsAndColleges
+  - title: >-
+      Department for Education press release, 21 Oct 2026: "Generational moment" as government acts
+      on landmark antisemitism review
+    url: https://www.gov.uk/government/news/generational-moment-as-government-acts-on-landmark-antisemitism-review
+  - title: >-
+      Written ministerial statement HCWS400, 21 Oct 2026: Sir David Bell review into antisemitism in
+      schools and colleges
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS400
+versions:
+  - version: 1
+    text: >-
+      All the resources, materials and training to implement the report will be available for our
+      schools and colleges within the year.
+    recorded_on: "2026-10-21"
+    source_url: https://hansard.parliament.uk/Commons/2026-10-21/debates/CAAFE9F2-EA1F-42E9-9F73-ECD65FA13C2B/AntisemitismInSchoolsAndColleges
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: Schools and colleges in England, their staff and Jewish pupils
+      cost:
+        note:
+          en: The Education Secretary said there will be new funding, without a figure.
+      when:
+        en: Within the year
+      funded_by: null
+events:
+  - date: "2026-10-21"
+    type: promised
+    text:
+      en: >-
+        The Education Secretary tells the Commons that resources, materials and training to
+        implement the antisemitism review will be available to schools and colleges within the year
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
