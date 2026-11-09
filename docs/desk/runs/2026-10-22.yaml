@@ -1,0 +1,52 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-10-22"
+triaged_on: "2026-10-25"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 170
+sources_read: 9
+drafts: 9
+candidates: 15
+outcomes:
+  card: 8
+  reworded: 0
+  duplicate: 3
+  existing: 1
+  grant: 0
+  done: 0
+  process: 1
+  broad: 0
+  event: 0
+  cap: 2
+  other: 0
+quotes_exact: 8
+new_actors: []
+cards:
+  - uk-warm-home-discount-2031 # status delivering: this winter's letters are going out
+  - uk-peatland-restoration-2029
+  - uk-wildfire-teams-kit-2026
+  - uk-pregnancy-dismissal-protections-2027 # the DBT press release's proportionality test folded in
+  - uk-active-travel-routes-2030
+  - uk-pe-school-sport-1bn-2029
+  - uk-flu-pharmacy-catch-up-2026
+  - uk-undersea-cable-penalties-2026 # quoted from the release's own words, not the Security Minister's: a new MP actor needs a portrait credit the desk may not add
+reworded: []
+dropped:
+  - { draft: 2026-10-22-govuk-new-action-on-redress-for-postmasters-affected-by-post-offic-1, quote: quote, code: duplicate, into: uk-horizon-shortfall-review-2026, note: "card on intake 2026-10-21, from HCWS397" }
+  - { draft: 2026-10-22-govuk-new-action-on-redress-for-postmasters-affected-by-post-offic-1, quote: also1, code: process, note: "closing dates for the Capture and Horizon Convictions redress schemes" }
+  - { draft: 2026-10-22-govuk-new-action-on-redress-for-postmasters-affected-by-post-offic-1, quote: also2, code: duplicate, into: uk-horizon-fixed-sum-appeals-2026, note: "card on intake 2026-10-21, from HCWS397" }
+  - { draft: 2026-10-22-govuk-stronger-protections-for-pregnant-women-and-new-parents-agai-1, quote: quote, code: duplicate, into: uk-pregnancy-dismissal-protections-2027 }
+  - { draft: 2026-10-22-wms-hcws405-1, quote: quote, code: existing, into: uk-school-ready-75pc-2028, note: "75% of children at a good level of development by 2028: the same target, already a card" }
+  - draft: 2026-10-22-govuk-military-planes-and-helicopters-to-fight-wildfires-from-the--1
+    quote: also1
+    code: cap
+    source: https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky
+    text: "The RAF’s Chinook helicopters and A400M aircraft will be equipped so they can fight fires and are ready, when requested, to help crews across the UK battle blazes on remote moorland, steep hillsides and other hard-to-reach terrain."
+    note: "no date or cost of its own; mentioned in uk-wildfire-teams-kit-2026's status note"
+  - draft: 2026-10-22-govuk-paper-government-response-to-the-health-and-social-care-committees-1
+    quote: also2
+    code: cap
+    source: https://www.gov.uk/government/publications/government-response-to-the-hsccs-report-on-healthy-ageing-and-physical-activity/government-response-to-the-health-and-social-care-committees-eighth-report-of-2024-to-2026-healthy-ageing-physical-activity-in-an-ageing-society
+    text: "The government plans to publish the full MSF by the end of this calendar year, as recommended by Baroness Casey."
+    note: "publishing the frailty and dementia framework by 31 December 2026: close to a process step"

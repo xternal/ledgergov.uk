@@ -1,0 +1,68 @@
+format: openpromises/1
+id: uk-ukrainian-gcse-2028
+headline:
+  en: "A GCSE in Ukrainian from September 2028"
+actor_id: hm-government
+made_on: "2026-11-04"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Department for Education)
+area: education
+status: promised
+status_note:
+  en: >-
+    The Department for Education says the exam board AQA will develop a GCSE in Ukrainian for
+    England, Wales and Northern Ireland, assessing listening, speaking, reading and writing, with
+    first teaching from September 2028 and first exams in 2029. September 2028 is read as 30
+    September. The card moves when first teaching begins.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Education press release, 4 Nov 2026: New Ukrainian GCSE to help young people
+      preserve their heritage
+    url: https://www.gov.uk/government/news/new-ukrainian-gcse-to-help-young-people-preserve-their-heritage
+versions:
+  - version: 1
+    text: >-
+      The Ukrainian GCSE is expected to be available for first teaching in England, Wales and
+      Northern Ireland from September 2028, with first assessments taking place in 2029.
+    recorded_on: "2026-11-04"
+    source_url: https://www.gov.uk/government/news/new-ukrainian-gcse-to-help-young-people-preserve-their-heritage
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          Young people who speak or learn Ukrainian in England, Wales and Northern Ireland
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          First teaching from September 2028; first exams in 2029
+      deadline: "2028-09-30"
+      funded_by: null
+events:
+  - date: "2026-11-04"
+    type: promised
+    text:
+      en: >-
+        The Department for Education says a Ukrainian GCSE is expected for first teaching from
+        September 2028
+  - date: "2028-09-30"
+    type: deadline
+    text:
+      en: >-
+        The Ukrainian GCSE due to be available for first teaching
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

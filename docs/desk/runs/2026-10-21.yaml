@@ -1,0 +1,68 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-10-21"
+triaged_on: "2026-10-25"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 163
+sources_read: 15
+drafts: 15
+candidates: 31
+outcomes:
+  card: 12
+  reworded: 3
+  duplicate: 4
+  existing: 0
+  grant: 0
+  done: 1
+  process: 3
+  broad: 5
+  event: 0
+  cap: 2
+  other: 1 # tech employers' own pledge of 10,000 opportunities, not the government's
+quotes_exact: 15
+new_actors: []
+cards:
+  - uk-techfirst-women-300-2027 # the jobs plan's line on 300 women folded in
+  - uk-techfirst-one-million-2028 # from the jobs plan; the press release's line folded in
+  - uk-digital-v-level-2027
+  - uk-cosmetic-high-risk-rules-2026
+  - uk-cosmetic-licensing-scheme-2026 # the DHSC release's licensing line folded in
+  - uk-sentencing-refusal-sanctions-2027 # the release is dated 22 October 2026
+  - uk-antisemitism-school-resources-2026 # the DfE release's package folded in
+  - uk-energy-wealth-fund-2026
+  - uk-vat-donated-medicines-2026
+  - uk-horizon-shortfall-review-2026
+  - uk-horizon-fixed-sum-appeals-2026
+  - uk-veterans-homelessness-help-2026
+reworded:
+  - { card: uk-mental-health-centres-2026, version: 2, draft: 2026-10-21-hansard-75c8a826-1, quote: quote, note: "159 community mental health centres (14 Oct) becomes 100 centres plus 59 mental health emergency departments" }
+  - { card: uk-leasehold-reform-bill-2026, version: 2, draft: 2026-10-21-hansard-75c8a826-1, quote: also1, note: "a Bill before Christmas becomes as soon as possible, hopefully this year" }
+  - { card: uk-youth-hub-every-area-2029, version: 3, draft: 2026-10-21-govuk-major-boost-for-young-people-in-telford-as-youth-hub-opens-t-1, quote: quote, note: "over 360 local areas within three years, with no young person more than an hour away by public transport" }
+dropped:
+  - { draft: 2026-10-21-govuk-10000-young-people-to-get-foot-in-the-door-of-britains-tech--1, quote: also1, code: duplicate, into: uk-techfirst-one-million-2028 }
+  - { draft: 2026-10-21-govuk-10000-young-people-to-get-foot-in-the-door-of-britains-tech--1, quote: also2, code: other, note: "Microsoft, Cisco, IBM and other employers opening 10,000 opportunities over three years: the employers' pledge, not the government's" }
+  - { draft: 2026-10-21-govuk-10000-young-people-to-get-foot-in-the-door-of-britains-tech--1, quote: also3, code: process, note: "the TechFirst platform replaces the Isaac platform from the end of 2026/27" }
+  - { draft: 2026-10-21-govuk-cosmetic-cowboys-crackdown-continues-with-new-restrictions-1, quote: also1, code: duplicate, into: uk-cosmetic-licensing-scheme-2026 }
+  - { draft: 2026-10-21-govuk-generational-moment-as-government-acts-on-landmark-antisemit-1, quote: quote, code: duplicate, into: uk-antisemitism-school-resources-2026 }
+  - { draft: 2026-10-21-govuk-government-confirms-indefinite-recognition-of-ce-marked-medi-1, quote: quote, code: done, note: "CE marked medical devices recognised indefinitely: decided on announcement" }
+  - { draft: 2026-10-21-govuk-jackdaw-gas-field-gets-green-light-1, quote: also1, code: broad, note: "\"substantially delink gas and electricity by the end of this Parliament\": no measure given" }
+  - { draft: 2026-10-21-govuk-major-investment-to-drive-growth-and-jobs-across-britain-as--1, quote: also1, code: broad, note: "UK Export Finance capacity up to £7bn for exports to Oman: a ceiling, not an outcome" }
+  - { draft: 2026-10-21-govuk-paper-digital-and-technologies-jobs-plan-1, quote: also3, code: duplicate, into: uk-techfirst-women-300-2027 }
+  - { draft: 2026-10-21-hansard-caafe9f2-1, quote: also1, code: broad, note: "accept all 27 recommendations" }
+  - { draft: 2026-10-21-hansard-caafe9f2-1, quote: also2, code: broad, note: "new funding and resources, no figure; in the card's cost note" }
+  - { draft: 2026-10-21-wms-hcws397-1, quote: also2, code: process, note: "the Horizon Convictions Redress Scheme closes to new submissions on 31 July 2027" }
+  - { draft: 2026-10-21-wms-hcws397-1, quote: also3, code: process, note: "the Capture Redress Scheme closes to new applications on 31 March 2027" }
+  - { draft: 2026-10-21-wms-hcws400-1, quote: quote, code: broad, note: "accept all 27 of Sir David Bell's recommendations; the checkable part is uk-antisemitism-school-resources-2026" }
+  - draft: 2026-10-21-govuk-major-investment-to-drive-growth-and-jobs-across-britain-as--1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/news/major-investment-to-drive-growth-and-jobs-across-britain-as-sultan-of-oman-visits-uk
+    text: "The UK will also announce the return of the Chevening Educational Scholarship Programme to Oman, supporting Oman’s future leaders and generations with access to British education institutions. Welcoming applications from August 2027, the programme, run by the Foreign, Commonwealth & Development Office, will give more people the opportunity to study and build lifelong connections between both countries."
+    note: "Chevening scholarships for Oman from August 2027"
+  - draft: 2026-10-21-govuk-paper-digital-and-technologies-jobs-plan-1
+    quote: also2
+    code: cap
+    source: https://www.gov.uk/government/publications/digital-and-technologies-jobs-plan/digital-and-technologies-jobs-plan
+    text: "A Foundation Certificate in Digital Systems and Data will be available for first teaching from September 2027, and an Occupational Certificate in Digital Administration from September 2028, subject to final content development, for students who know the kind of work they want to move into."
+    note: "two Level 2 certificates; mentioned in uk-digital-v-level-2027's status note"

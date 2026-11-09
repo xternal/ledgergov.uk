@@ -1,0 +1,70 @@
+format: openpromises/1
+id: uk-fire-and-rehire-rules-2027
+headline:
+  en: "Fire and rehire rules by March 2027"
+actor_id: kate-dearden
+made_on: "2026-11-02"
+venue: parliament
+venue_label:
+  en: >-
+    Written ministerial statement
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The minister's update on the Employment Rights Act says regulations will set which changes to
+    pay and shift patterns are restricted variations under the fire and rehire provisions, following
+    a government response published on 22 October 2026. They come into force in March 2027, subject
+    to debates in Parliament, when the old Code of Practice on fire and rehire is revoked; a new
+    Code follows in summer 2027. March 2027 is read as 31 March. The card moves when the regulations
+    are made.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement, 2 Nov 2026: Implementing the Employment Rights Act
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-02/HCWS435
+versions:
+  - version: 1
+    text: >-
+      The Government response was published on 22 October 2026 and, subject to debates in
+      Parliament, regulations will come into force in March 2027.
+    recorded_on: "2026-11-02"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-02/HCWS435
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          Employees whose employers try to change their pay or shift patterns by dismissing and
+          re-engaging them
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          March 2027, subject to debates in Parliament
+      deadline: "2027-03-31"
+      funded_by: null
+events:
+  - date: "2026-11-02"
+    type: promised
+    text:
+      en: >-
+        The minister says the fire and rehire regulations will come into force in March 2027,
+        subject to debates in Parliament
+  - date: "2027-03-31"
+    type: deadline
+    text:
+      en: >-
+        Fire and rehire regulations due to come into force
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

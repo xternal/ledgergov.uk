@@ -1,0 +1,63 @@
+format: openpromises/1
+id: uk-ban-car-clocking-2026
+headline:
+  en: Add car clocking to the banned practices list
+actor_id: hm-government
+made_on: "2026-10-20"
+venue: press_release
+venue_label:
+  en: Press release (Ministry of Housing, Communities and Local Government)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    Car clocking is winding back a car's odometer to hide its true mileage. The release says
+    fraudulently selling a clocked car is already illegal, and that adding it to the list of banned
+    practices will make it easier for enforcers to act; the change applies to businesses selling
+    cars to consumers. The minister's written statement the same day (HCWS393) calls it plans to ban
+    car clocking and gives no date. The card moves when the change to Schedule 20 of the Digital
+    Markets, Competition and Consumers Act 2024 is made.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government press release, 20 Oct 2026: PM puts the
+      brakes on rip-off parking charges and car scams
+    url: https://www.gov.uk/government/news/pm-puts-the-brakes-on-rip-off-parking-charges-and-car-scams
+  - title: >-
+      Written ministerial statement HCWS393, 20 Oct 2026: Private Parking Code of Practice
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-20/HCWS393
+versions:
+  - version: 1
+    text: >-
+      Car clocking will be added to the banned practices list (Schedule 20) under the Digital
+      Markets, Competition and Consumers Act 2024.
+    recorded_on: "2026-10-20"
+    source_url: https://www.gov.uk/government/news/pm-puts-the-brakes-on-rip-off-parking-charges-and-car-scams
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: People buying second-hand cars from businesses
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-20"
+    type: promised
+    text:
+      en: >-
+        The government says car clocking will be added to the banned practices list under the
+        Digital Markets, Competition and Consumers Act 2024
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -386,68 +386,146 @@
           "method_note": "Table 7.1 (Performance against the Government's fiscal targets), row 'November 2025 forecast'."
         }
       ]
-    }
-  ],
-  "latest_forecast": {
-    "vintage": "EFO-2026-03",
-    "edition": "March 2026",
-    "url": "https://obr.uk/efo/economic-and-fiscal-outlook-march-2026/",
-    "status": "not_assessed",
-    "observations": [
-      {
-        "series_id": "fiscal.current_budget_deficit",
-        "period": "2029-30",
-        "geography": "UK",
-        "value": -23.563635,
-        "unit": "gbp_bn",
-        "kind": "forecast",
-        "source_id": "obr_efo",
-        "vintage": "EFO-2026-03",
-        "quality": "sourced",
-        "method_note": "Current spending plus depreciation minus current receipts; a negative value is a surplus."
-      },
-      {
-        "series_id": "fiscal.psnfl_pct_gdp",
-        "period": "2028-29",
-        "geography": "UK",
-        "value": 82.931146,
-        "unit": "pct_gdp",
-        "kind": "forecast",
-        "source_id": "obr_efo",
-        "vintage": "EFO-2026-03",
-        "quality": "sourced",
-        "method_note": "End-March position over nominal GDP centred on end-March (A.9 footnote)."
-      },
-      {
-        "series_id": "fiscal.psnfl_pct_gdp",
-        "period": "2029-30",
-        "geography": "UK",
-        "value": 82.172651,
-        "unit": "pct_gdp",
-        "kind": "forecast",
-        "source_id": "obr_efo",
-        "vintage": "EFO-2026-03",
-        "quality": "sourced",
-        "method_note": "End-March position over nominal GDP centred on end-March (A.9 footnote)."
-      }
-    ]
-  },
-  "sources": [
-    {
-      "id": "obr_efo",
-      "title": "OBR Economic and fiscal outlook – March 2026",
-      "publisher": "Office for Budget Responsibility",
-      "url": "https://obr.uk/efo/economic-and-fiscal-outlook-march-2026/",
-      "licence": "OGL v3",
-      "published_on": "2026-03-03"
     },
     {
+      "vintage": "EFO-2026-10",
+      "edition": "October 2026",
+      "url": "https://obr.uk/efo/economic-and-fiscal-outlook-october-2026/",
+      "table": "Table 7.1",
+      "table_title": "Performance against the Government's fiscal targets",
+      "observations": [
+        {
+          "series_id": "fiscal_targets.current_budget.margin",
+          "period": "2029-30",
+          "geography": "UK",
+          "value": 14.526715,
+          "unit": "gbp_bn",
+          "kind": "forecast",
+          "source_id": "obr_fiscal_targets",
+          "vintage": "EFO-2026-10",
+          "quality": "sourced",
+          "method_note": "Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 forecast'."
+        },
+        {
+          "series_id": "fiscal_targets.current_budget.margin_pct_gdp",
+          "period": "2029-30",
+          "geography": "UK",
+          "value": 0.410009,
+          "unit": "pct_gdp",
+          "kind": "forecast",
+          "source_id": "obr_fiscal_targets",
+          "vintage": "EFO-2026-10",
+          "quality": "sourced",
+          "method_note": "Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 forecast'."
+        },
+        {
+          "series_id": "fiscal_targets.current_budget.margin_pre_measures",
+          "period": "2029-30",
+          "geography": "UK",
+          "value": 12.48855,
+          "unit": "gbp_bn",
+          "kind": "forecast",
+          "source_id": "obr_fiscal_targets",
+          "vintage": "EFO-2026-10",
+          "quality": "sourced",
+          "method_note": "Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 pre-measures forecast'."
+        },
+        {
+          "series_id": "fiscal_targets.current_budget.probability",
+          "period": "2029-30",
+          "geography": "UK",
+          "value": 55.77,
+          "unit": "pct",
+          "kind": "forecast",
+          "source_id": "obr_fiscal_targets",
+          "vintage": "EFO-2026-10",
+          "quality": "sourced",
+          "method_note": "Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 forecast'."
+        },
+        {
+          "series_id": "fiscal_targets.psnfl.margin",
+          "period": "2029-30",
+          "geography": "UK",
+          "value": 24.392008,
+          "unit": "gbp_bn",
+          "kind": "forecast",
+          "source_id": "obr_fiscal_targets",
+          "vintage": "EFO-2026-10",
+          "quality": "sourced",
+          "method_note": "Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 forecast'."
+        },
+        {
+          "series_id": "fiscal_targets.psnfl.margin_pct_gdp",
+          "period": "2029-30",
+          "geography": "UK",
+          "value": 0.67621,
+          "unit": "pct_gdp",
+          "kind": "forecast",
+          "source_id": "obr_fiscal_targets",
+          "vintage": "EFO-2026-10",
+          "quality": "sourced",
+          "method_note": "Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 forecast'."
+        },
+        {
+          "series_id": "fiscal_targets.psnfl.margin_pre_measures",
+          "period": "2029-30",
+          "geography": "UK",
+          "value": 21.755598,
+          "unit": "gbp_bn",
+          "kind": "forecast",
+          "source_id": "obr_fiscal_targets",
+          "vintage": "EFO-2026-10",
+          "quality": "sourced",
+          "method_note": "Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 pre-measures forecast'."
+        },
+        {
+          "series_id": "fiscal_targets.psnfl.probability",
+          "period": "2029-30",
+          "geography": "UK",
+          "value": 53.988571,
+          "unit": "pct",
+          "kind": "forecast",
+          "source_id": "obr_fiscal_targets",
+          "vintage": "EFO-2026-10",
+          "quality": "sourced",
+          "method_note": "Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 forecast'."
+        },
+        {
+          "series_id": "fiscal_targets.welfare_cap.margin",
+          "period": "2029-30",
+          "geography": "UK",
+          "value": -2.817327,
+          "unit": "gbp_bn",
+          "kind": "forecast",
+          "source_id": "obr_fiscal_targets",
+          "vintage": "EFO-2026-10",
+          "quality": "sourced",
+          "method_note": "Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 forecast'."
+        },
+        {
+          "series_id": "fiscal_targets.welfare_cap.margin_pct_gdp",
+          "period": "2029-30",
+          "geography": "UK",
+          "value": 207.034303,
+          "unit": "pct_gdp",
+          "kind": "forecast",
+          "source_id": "obr_fiscal_targets",
+          "vintage": "EFO-2026-10",
+          "quality": "sourced",
+          "method_note": "Table 7.1 (Performance against the Government's fiscal targets), row 'October 2026 forecast'."
+        }
+      ]
+    }
+  ],
+  "latest_forecast": null,
+  "sources": [
+    {
       "id": "obr_fiscal_targets",
-      "title": "OBR Economic and fiscal outlook – November 2025: performance against the fiscal targets",
+      "title": "OBR Economic and fiscal outlook – October 2026: performance against the fiscal targets",
       "publisher": "Office for Budget Responsibility",
-      "url": "https://obr.uk/efo/economic-and-fiscal-outlook-november-2025/",
+      "url": "https://obr.uk/efo/economic-and-fiscal-outlook-october-2026/",
       "licence": "OGL v3",
-      "published_on": "2025-11-26"
+      "published_on": "2026-10-28"
     }
   ]
 }

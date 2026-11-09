@@ -1,0 +1,62 @@
+format: openpromises/1
+id: uk-cosmetic-high-risk-rules-2026
+headline:
+  en: High-risk cosmetics only by professionals
+actor_id: hm-government
+made_on: "2026-10-21"
+venue: press_release
+venue_label:
+  en: Press release (Department of Health and Social Care)
+area: health
+status: promised
+status_note:
+  en: >-
+    Draft regulations for England would make fillers injected outside the face, such as liquid
+    Brazilian butt lifts, surgery that only doctors may perform, and limit procedures such as deep
+    chemical peels and vampire facials to doctors, dentists and some nurses, midwives and
+    pharmacists. Under-18s would be barred from high-risk treatments. A consultation is open until
+    13 January 2027, and the release says the Parliamentary process is currently planned for spring
+    2027; it gives no date for the rules to take effect. The card moves when the regulations are
+    made.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department of Health and Social Care press release, 21 Oct 2026: Cosmetic cowboys crackdown
+      continues with new restrictions
+    url: https://www.gov.uk/government/news/cosmetic-cowboys-crackdown-continues-with-new-restrictions
+versions:
+  - version: 1
+    text: >-
+      Under the new rules, anyone carrying out the highest-risk cosmetic procedures will need to be
+      a qualified, trained and regulated professional, giving people confidence they’re in safe
+      hands.
+    recorded_on: "2026-10-21"
+    source_url: https://www.gov.uk/government/news/cosmetic-cowboys-crackdown-continues-with-new-restrictions
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: People having cosmetic procedures in England
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Parliamentary process planned for spring 2027; start date not stated
+      funded_by: null
+events:
+  - date: "2026-10-21"
+    type: promised
+    text:
+      en: >-
+        The government publishes draft regulations restricting the highest-risk cosmetic procedures
+        to qualified, regulated professionals
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

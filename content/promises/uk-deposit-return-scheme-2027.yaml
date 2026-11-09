@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-deposit-return-scheme-2027
+headline:
+  en: "Deposit return scheme for drinks"
+actor_id: hm-government
+made_on: "2026-11-03"
+venue: press_release
+venue_label:
+  en: >-
+    Environment Act 2021: Post Legislative Scrutiny Memorandum (Department for Environment, Food &
+    Rural Affairs policy paper)
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    Defra's review of the Environment Act 2021 says joint regulations for England and Northern
+    Ireland have appointed an industry-led Deposit Management Organisation to run the deposit return
+    scheme for drinks containers, and that delivery is progressing well. Wales has its own
+    legislation and Scotland a separate scheme. The card moves when the scheme goes live on 1
+    October 2027.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Environment, Food & Rural Affairs policy paper, 3 Nov 2026: Environment Act
+      2021: Post Legislative Scrutiny Memorandum
+    url: https://www.gov.uk/government/publications/environment-act-2021-post-legislative-scrutiny-memorandum/environment-act-2021-post-legislative-scrutiny-memorandum
+versions:
+  - version: 1
+    text: >-
+      The DRS will go live on 1 October 2027.
+    recorded_on: "2026-11-03"
+    source_url: https://www.gov.uk/government/publications/environment-act-2021-post-legislative-scrutiny-memorandum/environment-act-2021-post-legislative-scrutiny-memorandum
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          People who buy drinks in containers in England and Northern Ireland, and drinks producers
+          and retailers
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          1 October 2027
+      deadline: "2027-10-01"
+      funded_by: null
+events:
+  - date: "2026-11-03"
+    type: promised
+    text:
+      en: >-
+        Defra says the deposit return scheme for drinks containers will go live on 1 October 2027
+  - date: "2027-10-01"
+    type: deadline
+    text:
+      en: >-
+        The deposit return scheme due to go live
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

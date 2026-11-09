@@ -1,0 +1,65 @@
+format: openpromises/1
+id: uk-wildfire-teams-kit-2026
+headline:
+  en: Wildfire teams and kit for firefighters
+actor_id: hm-government
+made_on: "2026-10-22"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Ministry of Housing, Communities and Local Government, Ministry of Defence and
+    Prime Minister's Office)
+area: public_order
+status: promised
+status_note:
+  en: >-
+    Announced ahead of the Prime Minister's wildfire summit, with RAF Chinook helicopters and A400M
+    aircraft to be fitted to fight fires. The release says the new kit will be lighter and more
+    breathable than kit designed for building fires. It does not say how many teams, when they start
+    or over what period the money is spent. The card moves when the teams are set up or the kit is
+    issued.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government, Ministry of Defence and Prime
+      Minister's Office press release, 22 Oct 2026: Military planes and helicopters to fight
+      wildfires from the sky
+    url: https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky
+versions:
+  - version: 1
+    text: >-
+      Firefighters on the front line in England will be boosted by additional specialist wildfire
+      teams and state of the art, wildfire-specific, light weight personal protective equipment,
+      backed by up to £45million, meaning those who work tirelessly to protect others can stay also
+      safe.
+    recorded_on: "2026-10-22"
+    source_url: https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: Firefighters in England
+      cost:
+        note:
+          en: Up to £45 million, with no period given, so no yearly figure is shown.
+      when:
+        en: Not stated
+      funded_by:
+        en: Up to £45 million
+events:
+  - date: "2026-10-22"
+    type: promised
+    text:
+      en: >-
+        The government announces specialist wildfire teams and wildfire protective equipment for
+        firefighters in England, backed by up to £45 million
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

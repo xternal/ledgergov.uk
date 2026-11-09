@@ -1,0 +1,71 @@
+format: openpromises/1
+id: uk-leeds-station-upgrade-2030
+headline:
+  en: "Upgrade Leeds station by 2030"
+actor_id: hm-government
+made_on: "2026-10-28"
+venue: press_release
+venue_label:
+  en: "Press release (Department for Transport)"
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The Budget adds £200 million, taking total investment in the station to over £300 million (£303
+    million in the title). The release says the station expects almost 12 million extra passengers a
+    year by 2043, and promises nearly 40% more ticket barriers and more lift capacity. "By 2030" is
+    read as by the end of 2030. The card moves when work starts or the new entrances open.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Transport press release, 28 Oct 2026: Leeds station set for biggest
+      transformation in a generation as government backs city’s growth with a £303 million upgrade
+    url: https://www.gov.uk/government/news/leeds-station-set-for-biggest-transformation-in-a-generation-as-government-backs-citys-growth-with-a-303-million-upgrade
+versions:
+  - version: 1
+    text: >-
+      With additional funding announced at the budget today (28 October 2026), the upgrades are set
+      to be delivered by 2030 and will include the construction of a new central overbridge, 3 new
+      entrances, more space on the concourses and a longer platform 14 to transform the UK’s third
+      busiest station outside of London.
+    recorded_on: "2026-10-28"
+    source_url: https://www.gov.uk/government/news/leeds-station-set-for-biggest-transformation-in-a-generation-as-government-backs-citys-growth-with-a-303-million-upgrade
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          Passengers using Leeds station
+      cost:
+        note:
+          en: >-
+            A further £200 million, taking the total to over £300 million; the release gives no
+            yearly split, so no yearly figure is shown.
+      when:
+        en: >-
+          By 2030
+      deadline: "2030-12-31"
+      funded_by:
+        en: >-
+          Department for Transport funding announced at Budget 2026
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        The government adds £200 million for upgrades to Leeds station, set to be delivered by 2030
+  - date: "2030-12-31"
+    type: deadline
+    text:
+      en: >-
+        Leeds station upgrades due by 2030 (editorial date, end of 2030)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

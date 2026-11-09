@@ -1,0 +1,50 @@
+format: openpromises/1
+id: uk-starter-isa-2026
+headline:
+  en: Create a "starter ISA" for first-time investors
+actor_id: john-healey
+made_on: "2026-10-28"
+venue: parliament
+venue_label:
+  en: Budget statement, House of Commons
+area: taxes
+status: promised
+status_note:
+  en: >-
+    Said in the Budget statement; the Budget document has no starter ISA, no costing and no date.
+    The card moves when the government publishes the design or a start date.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report"
+    url: https://hansard.parliament.uk/Commons/2026-10-28/debates/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC/FinancialStatementAndBudgetReport
+  - title: >-
+      Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report (official
+      report, Hansard API)
+    url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+versions:
+  - version: 1
+    text: >-
+      To make investment more accessible, I will work with the sector to create a new “starter ISA”
+      to reward first-time investors.
+    recorded_on: "2026-10-28"
+    source_url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+    parameters:
+      who:
+        en: First-time investors
+      cost:
+        note:
+          en: No cost has been published; the measure is not in the Budget's table of policy decisions.
+      when:
+        en: No date given
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        In the Budget statement, the Chancellor says he will work with the sector to create a new
+        "starter ISA" for first-time investors
+replies: []
+reviews: []

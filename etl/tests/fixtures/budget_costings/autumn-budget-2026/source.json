@@ -1,0 +1,21 @@
+{
+  "event": "autumn-budget-2026",
+  "document_url": "https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf",
+  "sha256": "bed70546c026487e3141799968f6df08210c182b0695fed0e8adf7efd6697e03",
+  "fetched_at": "2026-10-28T14:12:25+00:00",
+  "pages": [
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114
+  ],
+  "extractor": "pdftotext 24.02.0 -tsv (poppler), level-5 rows of the table's pages",
+  "copy_url": "https://assets.publishing.service.gov.uk/media/6ae187a2779378370fd80a9a/Table_6.1_and_6.2_Budget_2026_Policy_Decisions.xlsx",
+  "copy_sha256": "359958df6b1ab9746073725f6f8017ebdbb55040e57cf28612891f1e294a7f15"
+}

@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-hospital-offenders-benefits-2027
+headline:
+  en: End benefits for offenders in hospital
+actor_id: hm-government
+made_on: "2026-10-20"
+venue: press_release
+venue_label:
+  en: Press release (Department for Work and Pensions)
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    Regulations laid on 20 October 2026 would remove Universal Credit, Employment and Support
+    Allowance, State Pension and Pension Credit from people convicted of specified serious offences
+    and detained in hospital under a hospital order. They need Parliament's approval. The Work and
+    Pensions Secretary's written statement (HCWS391) says he announced the intention in January
+    2026. The release gives no exact date for "early next year", so the card has no deadline. The
+    card moves when Parliament approves the regulations.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Work and Pensions press release, 20 Oct 2026: Serious offenders detained in
+      hospital will no longer receive benefits
+    url: https://www.gov.uk/government/news/serious-offenders-detained-in-hospital-will-no-longer-receive-benefits
+  - title: >-
+      Written ministerial statement HCWS391, 20 Oct 2026: Entitlement for Offenders Detained in
+      Hospital
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-20/HCWS391
+versions:
+  - version: 1
+    text: >-
+      As part of ongoing action to put fairness back at the heart of the welfare system, this
+      intervention will stop hundreds of offenders receiving benefits from early next year – those
+      already in hospital and future cases.
+    recorded_on: "2026-10-20"
+    source_url: https://www.gov.uk/government/news/serious-offenders-detained-in-hospital-will-no-longer-receive-benefits
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: >-
+          People convicted of specified serious offences and detained in hospital under a hospital
+          order
+      cost:
+        note:
+          en: >-
+            Not a cost: the release says the change will save in the low tens of millions of pounds
+            each year, with full figures to come in the 2026 Budget.
+      when:
+        en: Early 2027
+      funded_by: null
+events:
+  - date: "2026-10-20"
+    type: promised
+    text:
+      en: >-
+        The government says serious offenders detained in hospital will stop receiving benefits from
+        early 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

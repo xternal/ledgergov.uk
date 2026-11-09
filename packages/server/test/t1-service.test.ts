@@ -79,7 +79,7 @@ describe("T1 service", () => {
   });
 
   it("answers not_applicable, without calling the provider, when no T1 lever changed", async () => {
-    const a = await getT1(db, req({ ...base(), bank_rate: 4.5 }), deps(T0));
+    const a = await getT1(db, req({ ...base(), bank_rate: Number(base().bank_rate) + 1 }), deps(T0));
     expect(a).toEqual({ response: { status: "not_applicable", not_modelled: ["bank_rate"] }, httpStatus: 200, outcome: "not_applicable" });
     expect(fake.state.simulate).toEqual([]);
     expect(await row()).toBeUndefined();
