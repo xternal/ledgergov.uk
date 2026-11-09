@@ -1,5 +1,5 @@
 import { createModel, decodeScenario, encodeScenario, type Model } from "@ledger/engine";
-import type { T1Response } from "@ledger/schema";
+import { T1_PAUSED, type T1Response } from "@ledger/schema";
 import { clientKeyFrom, errorText, migrate, type Db } from "@ledger/server";
 import { getT1, policyEngineProvider, RETRY_AFTER_S } from "@ledger/server/model";
 import { getSeed } from "@/lib/data";
@@ -47,6 +47,8 @@ function answer(body: T1Response, status: number): Response {
  * nothing about the reader is sent to PolicyEngine.
  */
 export async function GET(req: Request) {
+  // Paused at PolicyEngine's request (T1_PAUSED): never reaches api.policyengine.org.
+  if (T1_PAUSED) return answer({ status: "error", message: "Who gains and loses is paused while we move it to a new home." }, 503);
   const code = new URL(req.url).searchParams.get("s") ?? "";
   try {
     const seed = getSeed();

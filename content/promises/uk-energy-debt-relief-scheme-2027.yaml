@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-energy-debt-relief-scheme-2027
+headline:
+  en: "Launch the energy Debt Relief Scheme in 2027"
+actor_id: hm-government
+made_on: "2026-10-28"
+venue: press_release
+venue_label:
+  en: "Energy debt circuit breaker: our joint strategy for domestic energy debt (DESNZ and Ofgem)"
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The scheme targets energy debt built up during the bill increases after Russia's invasion of
+    Ukraine. The joint strategy of the energy department and Ofgem says Ofgem will consult further
+    on its design in late 2026 and intends, subject to that consultation, to launch it in 2027, read
+    here as by the end of 2027. It gives no cost or eligibility rules. The card moves when Ofgem
+    publishes the final design or the scheme opens.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Energy Security and Net Zero and Ofgem policy paper, 28 Oct 2026: Energy debt
+      circuit breaker: our joint strategy for domestic energy debt
+    url: https://www.gov.uk/government/publications/energy-debt-circuit-breaker-a-strategy-for-domestic-energy-debt/energy-debt-circuit-breaker-our-joint-strategy-for-domestic-energy-debt
+versions:
+  - version: 1
+    text: >-
+      We will build on the work already undertaken to launch the Debt Relief Scheme, with a focus on
+      promoting sustainable debt reductions by facilitating consumers to take action on their energy
+      debt, as soon as possible in 2027.
+    recorded_on: "2026-10-28"
+    source_url: https://www.gov.uk/government/publications/energy-debt-circuit-breaker-a-strategy-for-domestic-energy-debt/energy-debt-circuit-breaker-our-joint-strategy-for-domestic-energy-debt
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          Households in energy debt, especially vulnerable households
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          As soon as possible in 2027
+      deadline: "2027-12-31"
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        The energy department and Ofgem say they will launch the Debt Relief Scheme for energy debt
+        as soon as possible in 2027
+  - date: "2027-12-31"
+    type: deadline
+    text:
+      en: >-
+        Debt Relief Scheme due to launch in 2027 (editorial date, end of 2027)
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

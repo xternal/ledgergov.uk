@@ -64,7 +64,14 @@ def test_paths(bundle):
     assert len(prof["values"]) == len(prof["cumulative"]) == len(last["values"]) == 12
     assert out["cumulative"][-1] == bundle["so_far"]["outturn"]["bn"]
     assert prof["cumulative"][5] == bundle["so_far"]["profile"]["bn"]
-    assert prof["cumulative"][-1] == pytest.approx(prof["year_bn"], abs=1e-3) == pytest.approx(bundle["year_forecast"]["bn"], abs=1e-3)
+    assert prof["cumulative"][-1] == pytest.approx(prof["year_bn"], abs=1e-3)
+    # The year forecast comes from the newest EFO, which can be newer than the monthly path:
+    # the OBR publishes its profile for an EFO a few weeks after it.
+    year = bundle["year_forecast"]
+    if year["edition"] == prof["edition"]:
+        assert year["bn"] == pytest.approx(prof["year_bn"], abs=1e-3)
+    else:
+        assert (year["edition"], year["vintage"]) == ("October 2026", "EFO-2026-10")
     assert (prof["edition"], prof["published_on"], prof["range"]) == ("March 2026", "2026-04-23", "point")
     assert last["fiscal_year"] == "2025-26" and last["cumulative"][-1] == pytest.approx(134.211, abs=1e-3)  # ONS, 21 October 2026: "£134.2 billion in the financial year ending March 2026"
 

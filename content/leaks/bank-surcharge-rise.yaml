@@ -19,4 +19,16 @@ estimated_cost:
   by: { kind: independent, name: TUC }
   source_url: https://www.theguardian.com/uk-news/2026/oct/15/john-healey-raise-taxes-banks-budget
   note: For a return of the surcharge to 8%, as quoted in the Guardian report; the report itself says reversing the cut would raise upwards of £2bn a year.
-status: trailed
+status: announced
+budget:
+  date: "2026-10-28"
+  text: >-
+    The bank surcharge rises from 3% to 6%, not the 8% reported, for 15 months from 1 January 2027, and returns to 3% from 1 April 2028 (table of policy decisions, line 55).
+  evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=110
+  cost:
+    range: [-0.95, -0.95, -0.95]
+    basis: per_year
+    period: "2027-28"
+    by: { kind: official, name: HM Treasury }
+    source_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=110
+    note: "Table 6.1 line 55, the year of the largest figure; £305m in 2026-27, £950m in 2027-28 and £220m in 2028-29, then nothing."

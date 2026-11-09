@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-business-rates-100pc-local-2029
+headline:
+  en: Keep 100% of business rates locally
+actor_id: john-healey
+made_on: "2026-10-28"
+venue: parliament
+venue_label:
+  en: Budget statement, House of Commons
+area: general_services
+status: promised
+status_note:
+  en: >-
+    The Budget document says the government intends for local and regional government to retain
+    100% of business rates income "before the end of the decade in place of grants from central
+    government", with the share kept by local authorities rising to at least 70%. It starts with
+    mayoral strategic authorities receiving a 20% share of business rates from April 2027, and the
+    government will seek views on how best to reach 100% (paras 4.60 and 4.66). "By the end of the
+    decade" is read as the end of 2029. The card moves when a plan or legislation for 100%
+    retention is published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report"
+    url: https://hansard.parliament.uk/Commons/2026-10-28/debates/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC/FinancialStatementAndBudgetReport
+  - title: >-
+      Hansard, House of Commons, 28 Oct 2026: Financial Statement and Budget Report (official
+      report, Hansard API)
+    url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+  - title: Budget 2026 (HC 726), para 4.60 (PDF page 70)
+    url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=70
+  - title: Budget 2026 (HC 726), para 4.66 (PDF pages 71 to 72)
+    url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=71
+versions:
+  - version: 1
+    text: >-
+      For the first time, I am making the commitment that 100% of business rates will be retained
+      locally by the end of the decade, so if local leaders help businesses to start and grow, more
+      of the rates they pay will stay in that area.
+    recorded_on: "2026-10-28"
+    source_url: https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json
+    parameters:
+      who:
+        en: Councils and mayoral and other strategic authorities in England
+      cost:
+        note:
+          en: >-
+            No cost is given for 100% retention. The Budget's table of policy decisions costs only
+            the first step, a share of business rates for mayoral strategic authorities from April
+            2027 (Table 6.1, line 21: £10m in 2027-28 rising to £140m in 2031-32). The Budget
+            document says the retained rates replace grants from central government.
+      when:
+        en: By the end of the decade
+      deadline: "2029-12-31"
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        In the Budget statement, the Chancellor commits that 100% of business rates will be retained
+        locally by the end of the decade
+  - date: "2029-12-31"
+    type: deadline
+    text:
+      en: Due by the end of the decade (editorial date, end of 2029)
+replies: []
+reviews: []

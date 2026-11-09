@@ -75,20 +75,22 @@
     "population_m": 66.74,
     "baseline_psnb_bn": {
       "2025-26": 134.211,
-      "2026-27": 115.461,
-      "2027-28": 96.467,
-      "2028-29": 86.016,
-      "2029-30": 63.403,
-      "2030-31": 59.02
+      "2026-27": 133.196,
+      "2027-28": 111.98,
+      "2028-29": 99.536,
+      "2029-30": 73.78,
+      "2030-31": 66.9,
+      "2031-32": 68.339
     },
-    "baseline_nominal_growth_pct": 3.522,
+    "baseline_nominal_growth_pct": 3.629,
     "baseline_psnd_pct_gdp": {
       "2025-26": 93.2,
-      "2026-27": 94.815,
-      "2027-28": 95.739,
-      "2028-29": 96.281,
-      "2029-30": 96.065,
-      "2030-31": 95.051
+      "2026-27": 95.505,
+      "2027-28": 96.7,
+      "2028-29": 97.285,
+      "2029-30": 96.674,
+      "2030-31": 95.868,
+      "2031-32": 95.611
     },
     "provenance": {
       "nominal_gdp_bn": {
@@ -137,7 +139,7 @@
       "baseline_nominal_growth_pct": {
         "quality": "approx",
         "source_id": "obr_efo",
-        "method_note": "Average annual growth of OBR nominal GDP, 2025-26 to 2030-31 (EFO-2026-03)."
+        "method_note": "Average annual growth of OBR nominal GDP, 2025-26 to 2031-32 (EFO-2026-10)."
       }
     }
   },

@@ -8,14 +8,14 @@ venue: press_release
 venue_label:
   en: Press release (Department for Energy Security and Net Zero and HM Treasury)
 area: economic_affairs
-status: promised
+status: funded
 status_note:
   en: >-
-    Announced on the day the Energy Secretary agreed the Jackdaw gas field can produce gas. The fund
-    will sit within the National Wealth Fund and invest in renewable and low carbon energy
-    infrastructure, and the release says the announcement comes ahead of the Budget. It does not say
-    when the £2 billion will be paid in or how much of future North Sea revenue will follow. The
-    card moves when the fund is set up or the money is allocated.
+    The Autumn Budget 2026 provides £2 billion for the Energy Wealth Fund to the National Wealth
+    Fund, as part of extra capital for the National Wealth Fund (paragraphs 4.34 and 4.44; Table
+    6.2, line 2). The fund will invest in renewable and low carbon energy
+    infrastructure and be linked to future North Sea revenues. The Budget does not split the £2
+    billion by year or say how much North Sea revenue will follow.
 responsible:
   actor_id: hm-government
 origin: llm_intake
@@ -24,6 +24,10 @@ sources:
       Department for Energy Security and Net Zero and HM Treasury press release, 21 Oct 2026:
       Jackdaw gas field gets green light
     url: https://www.gov.uk/government/news/jackdaw-gas-field-gets-green-light
+  - title: "HM Treasury: Budget 2026 (28 Oct 2026), paragraph 4.34"
+    url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=65
+  - title: "HM Treasury: Budget 2026 (28 Oct 2026), Table 6.2, line 2"
+    url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=115
 versions:
   - version: 1
     text: >-
@@ -56,6 +60,12 @@ events:
       en: >-
         The Chancellor announces a new Energy Wealth Fund, starting with £2 billion, to invest North
         Sea tax revenues in renewable and low carbon energy
+  - date: "2026-10-28"
+    type: funded
+    text:
+      en: >-
+        Autumn Budget 2026 provides £2 billion for the Energy Wealth Fund to the National Wealth Fund
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=65
 replies: []
 reviews:
   - by: AI Journalist

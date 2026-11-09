@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-capital-allowances-50pc-2027
+headline:
+  en: "Raise first-year capital allowance to 50%"
+actor_id: hm-government
+made_on: "2026-10-29"
+venue: press_release
+venue_label:
+  en: "Capital allowances: reduce the main rate writing-down allowance and increase the main rate first-year allowance (HMRC policy paper)"
+area: taxes
+status: promised
+status_note:
+  en: >-
+    Capital allowances let businesses deduct spending on plant and machinery from taxable profits.
+    The paper says the higher first-year allowance applies to spending from 1 January 2027, and the
+    lower writing-down allowance to periods from 1 April 2027 for Corporation Tax and 6 April 2027
+    for Income Tax. It is in the Finance Bill 2026-27. The card moves when the Bill becomes law.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      HM Revenue & Customs policy paper, 29 Oct 2026: Capital allowances: reduce the main rate
+      writing-down allowance and increase the main rate first-year allowance
+    url: https://www.gov.uk/government/publications/reduce-the-main-rate-writing-down-allowance-and-increase-the-main-rate-first-year-allowance/capital-allowances-reduce-the-main-rate-writing-down-allowance-and-increase-the-main-rate-first-year-allowance
+versions:
+  - version: 1
+    text: >-
+      This measure increases the rate of FYA available for qualifying main rate expenditure from 40%
+      to 50% and reduces main rate WDA from 14% to 12% per year.
+    recorded_on: "2026-10-29"
+    source_url: https://www.gov.uk/government/publications/reduce-the-main-rate-writing-down-allowance-and-increase-the-main-rate-first-year-allowance/capital-allowances-reduce-the-main-rate-writing-down-allowance-and-increase-the-main-rate-first-year-allowance
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          Businesses investing in plant and machinery, especially unincorporated businesses and
+          lessors
+      cost:
+        note:
+          en: >-
+            A measure that raises money overall, not a cost: the paper puts the Exchequer gain at
+            £125 million in 2026-27, rising to £1,120 million in 2031-32.
+      when:
+        en: >-
+          From 1 January 2027 (first-year allowance) and April 2027 (writing-down allowance)
+      deadline: "2027-04-06"
+      funded_by: null
+events:
+  - date: "2026-10-29"
+    type: promised
+    text:
+      en: >-
+        HMRC sets out a rise in the main rate first-year allowance from 40% to 50% and a cut in the
+        main rate writing-down allowance from 14% to 12%
+  - date: "2027-04-06"
+    type: deadline
+    text:
+      en: >-
+        Both rates due to apply by 6 April 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

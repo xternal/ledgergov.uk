@@ -138,7 +138,7 @@ describe("card headlines, titles and descriptions", () => {
       expect(d, c.id).toContain(`Promised by ${c.actor.name} on `);
     }
     const bus = cards.find((c) => c.id === "uk-bus-cap-2-2026")!;
-    expect(cardDescription(bus)).toMatch(/^In plan\. Costs £0\.36bn to £0\.44bn a year\. Paid for by: /);
+    expect(cardDescription(bus)).toMatch(/^Funded\. Costs £0\.36bn to £0\.44bn a year\. Paid for by: /);
     expect(new Set(cards.map(cardDescription)).size).toBe(cards.length);
   });
 

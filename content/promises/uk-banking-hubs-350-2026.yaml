@@ -1,0 +1,62 @@
+format: openpromises/1
+id: uk-banking-hubs-350-2026
+headline:
+  en: "350 banking hubs this Parliament"
+actor_id: hm-government
+made_on: "2026-11-02"
+venue: press_release
+venue_label:
+  en: >-
+    Hope on the High Street (Housing department policy paper)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The government's high streets plan, Hope on the High Street, says it is supporting the rollout
+    of 350 banking hubs by the end of the Parliament, while taking powers to protect access to
+    banking services where needed. The plan does not say how many hubs are open now or who pays for
+    them. The card moves when a count of open hubs is published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government policy paper, 2 Nov 2026: Hope on the
+      High Street
+    url: https://www.gov.uk/government/publications/hope-on-the-high-street/hope-on-the-high-street
+versions:
+  - version: 1
+    text: >-
+      We are also supporting the rollout of 350 banking hubs by the end of the Parliament, while
+      taking powers to protect access to banking services where this is needed.
+    recorded_on: "2026-11-02"
+    source_url: https://www.gov.uk/government/publications/hope-on-the-high-street/hope-on-the-high-street
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          High streets and the people who use them
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          By the end of the Parliament
+      funded_by: null
+events:
+  - date: "2026-11-02"
+    type: promised
+    text:
+      en: >-
+        The high streets plan says the government is supporting the rollout of 350 banking hubs by
+        the end of the Parliament
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
