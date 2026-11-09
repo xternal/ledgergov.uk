@@ -1,0 +1,63 @@
+format: openpromises/1
+id: uk-refugee-settlement-20-years-2026
+headline:
+  en: "20 years to settle for most refugees"
+actor_id: shabana-mahmood
+made_on: "2026-11-02"
+venue: parliament
+venue_label:
+  en: >-
+    Commons statement
+area: public_order
+status: promised
+status_note:
+  en: >-
+    The Home Secretary said refugees who come on new safe and legal routes will be on a five-year
+    path to settlement, while the standard wait for refugees who did not becomes 20 years, with 10
+    more years for those who entered illegally, such as by small boat. Refugees who work or study
+    can earn settlement 10 years earlier. The card moves when the immigration rules are changed.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Hansard, House of Commons, 2 Nov 2026: Immigration: Earned Settlement
+    url: https://hansard.parliament.uk/Commons/2026-11-02/debates/09F388D2-539E-4B0A-ABE2-D3195B14AF0E/ImmigrationEarnedSettlement
+versions:
+  - version: 1
+    text: >-
+      At the same time, we will discourage the use of unsafe and illegal routes; the standard
+      qualifying period for all refugees who have not come by a safe and legal route will become 20
+      years. A further 10 years will be added for those who entered the country by an illegal
+      method, such as by small boat.
+    recorded_on: "2026-11-02"
+    source_url: https://hansard.parliament.uk/Commons/2026-11-02/debates/09F388D2-539E-4B0A-ABE2-D3195B14AF0E/ImmigrationEarnedSettlement
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          Refugees who did not come by a safe and legal route
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          Not stated in the statement
+      funded_by: null
+events:
+  - date: "2026-11-02"
+    type: promised
+    text:
+      en: >-
+        The Home Secretary says the standard qualifying period for settlement will become 20 years
+        for refugees who did not come by a safe and legal route
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

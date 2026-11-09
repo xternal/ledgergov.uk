@@ -6,8 +6,8 @@ import { PORTRAITS_DIR, loadPortraits, loadPortraitsFile } from "../src/portrait
 import { repoRoot } from "../src/content-files";
 
 /**
- * Official portraits on actor pages (docs/OPERATIONS.md §18): every MP on the ledger has Parliament's credit recorded,
- * every credited portrait is on the site, and each is shown with its credit and licence. The same rule for every MP.
+ * Official portraits on actor pages (docs/OPERATIONS.md §18): an MP's photo is shown only with Parliament's credit
+ * recorded (an MP still waiting for one is listed, and shows none), every credited portrait is on the site, and each is shown with its credit and licence. The same rule for every MP.
  */
 const root = repoRoot();
 const file = loadPortraitsFile(root);
@@ -15,8 +15,13 @@ const portraitOf = loadPortraits(root);
 const mps = loadSeed().actors.filter((a) => a.kind === "person" && a.parliament_member_id);
 
 describe("official portraits", () => {
-  it("record Parliament's credit for every MP on the ledger", () => {
-    for (const a of mps) expect(file.portraits[String(a.parliament_member_id)], `${a.id}: add Parliament's credit to data/portraits.json`).toBeDefined();
+  it("show no photo for an MP whose credit is not recorded yet, and name them", () => {
+    // A new MP actor must not hold a card back: in October 2026 the desk dropped 14 quotes by ministers, and credited 3
+    // cards to a department's release instead of the minister, because this test failed until the credit was added by
+    // hand (AI Journalist backtest, 1 Nov 2026). The page lays out without the photo, as for anyone who is not an MP.
+    const waiting = mps.filter((a) => !file.portraits[String(a.parliament_member_id)]);
+    for (const a of waiting) expect(portraitOf(a.parliament_member_id), `${a.id}: no credit, so no photo`).toBeNull();
+    if (waiting.length) console.warn(`MPs waiting for Parliament's credit in data/portraits.json: ${waiting.map((a) => a.id).join(", ")}`);
   });
 
   it("are on the site, small enough to send, for every credited MP with a portrait", () => {

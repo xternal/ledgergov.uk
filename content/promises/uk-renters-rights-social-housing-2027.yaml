@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-renters-rights-social-housing-2027
+headline:
+  en: "Renters' Rights Act for social housing by 2027"
+actor_id: hm-government
+made_on: "2026-10-29"
+venue: press_release
+venue_label:
+  en: "Social Housing Tenure Standard: Direction to the Regulator of Social Housing - government response"
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The Renters' Rights Act 2025 abolishes "no fault" evictions under Section 21 and moves tenants
+    to rolling tenancies. The government response says it is working towards starting the Act for
+    the social rented sector in October 2027, read here as by 31 October 2027, and will update its
+    direction to the Regulator of Social Housing to match. The card moves when the commencement
+    regulations for social housing are made.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government consultation outcome, 29 Oct 2026:
+      Social Housing Tenure Standard: Direction to the Regulator of Social Housing - government
+      response
+    url: https://www.gov.uk/government/consultations/social-housing-tenure-standard-direction-to-the-regulator-of-social-housing/outcome/social-housing-tenure-standard-direction-to-the-regulator-of-social-housing-government-response
+versions:
+  - version: 1
+    text: >-
+      The Act commenced for the private rented sector on 1 May 2026, and government is working
+      towards commencing the Act for the social rented sector in October 2027.
+    recorded_on: "2026-10-29"
+    source_url: https://www.gov.uk/government/consultations/social-housing-tenure-standard-direction-to-the-regulator-of-social-housing/outcome/social-housing-tenure-standard-direction-to-the-regulator-of-social-housing-government-response
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          Tenants of housing associations and other private registered providers of social housing
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          October 2027
+      deadline: "2027-10-31"
+      funded_by: null
+events:
+  - date: "2026-10-29"
+    type: promised
+    text:
+      en: >-
+        The government says it is working towards starting the Renters' Rights Act for social
+        housing in October 2027
+  - date: "2027-10-31"
+    type: deadline
+    text:
+      en: >-
+        Renters' Rights Act due to start for social housing in October 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

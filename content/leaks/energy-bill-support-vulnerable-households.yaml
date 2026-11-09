@@ -1,0 +1,30 @@
+id: energy-bill-support-vulnerable-households
+headline: Give targeted help with energy bills
+area: social_protection
+summary: >-
+  The Guardian reports that it has already emerged that the Budget will include a package of energy
+  support for the most vulnerable households. Reuters reports the next day that the Chancellor is
+  likely to offer some help to households facing another rise in energy bills, without adding to
+  borrowing. Neither report says who briefed the package, what form it takes or what it costs.
+reported:
+  - outlet: The Guardian
+    date: "2026-10-25"
+    url: https://www.theguardian.com/uk-news/2026/oct/25/john-healey-chancellor-budget-secrecy
+    title: Has Healey's military-style budget secrecy really played out so differently to past budgets?
+  - outlet: Reuters
+    date: "2026-10-26"
+    url: https://www.globalbankingandfinance.com/mindful-markets-uks-healey-set-deliver-careful-budget/
+    title: Mindful of the markets, UK's Healey is set to deliver a careful budget
+status: announced
+budget:
+  date: "2026-10-28"
+  text: >-
+    A £2.6bn Household Energy Payment, a £100 council tax rebate for homes in bands A to D in England from January 2027, which the Treasury estimates reaches 83% of fuel-stressed households in England, plus £100m for councils to give further targeted help (paragraphs 3.5 and 3.6). VAT on household electricity also stays at 0% until 1 July 2027.
+  evidence_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=50
+  cost:
+    range: [2.625, 2.625, 2.625]
+    basis: per_year
+    period: "2026-27"
+    by: { kind: official, name: HM Treasury }
+    source_url: https://assets.publishing.service.gov.uk/media/6ae20b85460c1346f7be784e/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=105
+    note: "Table 6.1 line 1, the Household Energy Payment only; it costs £2,625m in 2026-27 and nothing after."

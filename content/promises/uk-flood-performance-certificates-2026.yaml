@@ -1,0 +1,64 @@
+format: openpromises/1
+id: uk-flood-performance-certificates-2026
+headline:
+  en: Pilot home flood certificates in 2026
+actor_id: hm-government
+made_on: "2026-10-26"
+venue: press_release
+venue_label:
+  en: >-
+    Growing Places: Mobilising private finance for local nature recovery (Defra policy paper)
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The paper says Flood Performance Certificates (FPCs) will give a standard assessment of a
+    property's flood risk and resilience, so that steps a household takes to protect its home are
+    reflected in its insurance premium. Flood Re, the flood reinsurance scheme, is to run the pilot
+    with insurers and lenders. The card moves when the pilot starts.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Defra policy paper, 26 Oct 2026: Growing Places: Mobilising private finance for local nature
+      recovery
+    url: https://www.gov.uk/government/publications/mobilising-private-finance-for-local-nature-recovery/growing-places-mobilising-private-finance-for-local-nature-recovery
+versions:
+  - version: 1
+    text: >-
+      Flood Re will work with insurers and lenders to introduce FPCs, piloting by the end of 2026,
+      with a wider rollout to follow.
+    recorded_on: "2026-10-26"
+    source_url: https://www.gov.uk/government/publications/mobilising-private-finance-for-local-nature-recovery/growing-places-mobilising-private-finance-for-local-nature-recovery
+    quote_checked_on: "2026-10-27"
+    parameters:
+      who:
+        en: Households at risk of flooding, their insurers and their lenders
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Pilot by the end of 2026, with a wider rollout to follow
+      deadline: "2026-12-31"
+      funded_by: null
+events:
+  - date: "2026-10-26"
+    type: promised
+    text:
+      en: >-
+        A Defra paper says Flood Re will pilot Flood Performance Certificates with insurers and
+        lenders by the end of 2026
+  - date: "2026-12-31"
+    type: deadline
+    text:
+      en: Flood Performance Certificate pilot due by the end of 2026
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-27"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

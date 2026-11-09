@@ -1,0 +1,84 @@
+format: openpromises/1
+id: uk-peatland-restoration-2029
+headline:
+  en: Restore peatlands to stop wildfires
+actor_id: hm-government
+made_on: "2026-10-22"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Ministry of Housing, Communities and Local Government, Ministry of Defence and
+    Prime Minister's Office)
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    Announced ahead of the Prime Minister's wildfire summit, after the UK's hottest summer on
+    record. The release says Natural England will run a new Peatland Restoration Grant Scheme,
+    expected from April 2027 to April 2029; it does not say how many hectares will be restored or
+    how much goes to farmers. "April 2029" is read as 30 April 2029. The card moves when the grant
+    scheme opens.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government, Ministry of Defence and Prime
+      Minister's Office press release, 22 Oct 2026: Military planes and helicopters to fight
+      wildfires from the sky
+    url: https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky
+versions:
+  - version: 1
+    text: >-
+      This includes £25 million to restore dried-out peatlands in England so they hold more water
+      and act as natural firebreaks, as well as financial support for farmers to fireproof their
+      land, through digging ponds and removing burnable materials in high-risk areas.
+    recorded_on: "2026-10-22"
+    source_url: https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: Peatlands and farmland in England at high risk of wildfire
+      cost:
+        range: [0.01125, 0.0125, 0.01375]
+        quality: sourced
+        by:
+          kind: official
+          name: Department for Environment, Food and Rural Affairs
+        note:
+          en: >-
+            The government's own figure: £25 million for a grant scheme expected to run from April
+            2027 to April 2029, shown as £12.5 million a year over two years. The release gives no
+            split by year. Low–high is an editorial ±10% because the source gives a central figure
+            only.
+        sources:
+          - title: >-
+              Ministry of Housing, Communities and Local Government, Ministry of Defence and Prime
+              Minister's Office press release, 22 Oct 2026: Military planes and helicopters to fight
+              wildfires from the sky
+            url: https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky
+      when:
+        en: April 2027 to April 2029
+      deadline: "2029-04-30"
+      funded_by:
+        en: £25 million for the Peatland Restoration Grant Scheme, run by Natural England
+events:
+  - date: "2026-10-22"
+    type: promised
+    text:
+      en: >-
+        The government announces £25 million to restore dried-out peatlands in England as natural
+        firebreaks
+  - date: "2029-04-30"
+    type: deadline
+    text:
+      en: Peatland Restoration Grant Scheme due to run until April 2029
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,72 @@
+format: openpromises/1
+id: uk-vape-shops-rates-relief-2027
+headline:
+  en: "No business rates relief for vape shops"
+actor_id: hm-government
+made_on: "2026-11-02"
+venue: press_release
+venue_label:
+  en: >-
+    Hope on the High Street (Housing department policy paper)
+area: taxes
+status: promised
+status_note:
+  en: >-
+    From April 2027, vape shops and adult gaming centres in England lose the lower business rates
+    multipliers for retail, hospitality and leisure (RHL) properties, and vape shops also lose Small
+    Business Rates Relief. The government's high streets plan says these businesses do not make a
+    positive contribution to communities. It gives no figure for the money raised. April 2027 is
+    read as 1 April 2027. The card moves when the change takes effect.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government policy paper, 2 Nov 2026: Hope on the
+      High Street
+    url: https://www.gov.uk/government/publications/hope-on-the-high-street/hope-on-the-high-street
+versions:
+  - version: 1
+    text: >-
+      We will also remove business rates reliefs for businesses that do not make a positive
+      contribution to communities, so that these businesses do not receive preferential treatment
+      through the business rates system: from April 2027, vape shops and adult gaming centres in
+      England will no longer be eligible for the RHL multipliers, and vape shops will also lose
+      eligibility for Small Business Rates Relief.
+    recorded_on: "2026-11-02"
+    source_url: https://www.gov.uk/government/publications/hope-on-the-high-street/hope-on-the-high-street
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          Vape shops and adult gaming centres in England
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          From April 2027
+      deadline: "2027-04-01"
+      funded_by: null
+events:
+  - date: "2026-11-02"
+    type: promised
+    text:
+      en: >-
+        The high streets plan says vape shops and adult gaming centres will lose business rates
+        reliefs from April 2027
+  - date: "2027-04-01"
+    type: deadline
+    text:
+      en: >-
+        Vape shops and adult gaming centres due to lose business rates reliefs
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

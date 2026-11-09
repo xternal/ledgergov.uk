@@ -8,11 +8,13 @@ venue: press_release
 venue_label:
   en: Press release (No 10), additional information
 area: economic_affairs
-status: promised
+status: in_plan
 status_note:
   en: >-
-    The release says it applies only to Established Mayoral Strategic Authorities in England. It
-    gives neither the size of the fund nor a date within 2028.
+    Budget 2026 says UKRI is devolving Local Innovation Partnerships Fund settlements to Established
+    Mayoral Authorities from 2028 (para 4.77). It still gives neither the size of the fund nor a
+    date within 2028, and the Fiscal Devolution Roadmap published the same day does not mention the
+    fund.
 responsible:
   actor_id: hm-government
 origin: llm_intake
@@ -55,6 +57,13 @@ events:
     type: deadline
     text:
       en: End of 2028 (editorial date for "from 2028")
+  - date: "2026-10-28"
+    type: in_plan
+    text:
+      en: >-
+        Budget 2026 says Local Innovation Partnerships Fund settlements will be devolved to
+        Established Mayoral Authorities from 2028 (para 4.77)
+    evidence_url: https://assets.publishing.service.gov.uk/media/6ae1ec57bdb574cf1c9b3f12/E03668986_HMT_Budget_2026_ELAY__2_.pdf#page=75
 replies: []
 reviews:
   - by: AI Journalist

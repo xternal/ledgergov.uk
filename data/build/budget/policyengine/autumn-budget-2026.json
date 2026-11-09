@@ -1,0 +1,366 @@
+{
+ "event": "autumn-budget-2026",
+ "title": "UK Autumn Budget 2026 dashboard",
+ "url": "https://www.policyengine.org/uk/autumn-budget-2026",
+ "release": "uk-autumn-budget-2026",
+ "revision": 60,
+ "updated_at": "2026-10-29T21:34:54.527268+00:00",
+ "retrieved_at": "2026-11-08T13:00:32.150Z",
+ "run": {
+  "id": "combined--7baf4e89377bcc9c",
+  "name": "Combined: Single bus fares capped at £2, Carer's Allowance earnings taper, Zero VAT on domestic electricity, Fuel duty cut extended, Household Energy Payment, Property income tax rates up, Pension Tax Allowance, Trading allowance raised to £3,000",
+  "artifact": "artifacts/combined--7baf4e89377bcc9c/dd5d4843f7f76782",
+  "artifact_sha256": "dd5d4843f7f767825032972a6ad556b49e45282298b66c0c4f10d5ab3031c82b",
+  "approved_at": "2026-10-29T19:22:38.418299+00:00"
+ },
+ "model": {
+  "policyengine": "6.11.1",
+  "policyengine_uk": "2.151.0",
+  "dataset": "microcosm_uk_2024_25"
+ },
+ "measures": [
+  {
+   "id": "bus_fare_cap_2027",
+   "name": "Single bus fares capped at £2"
+  },
+  {
+   "id": "carers_allowance_earnings_taper",
+   "name": "Carer's Allowance earnings taper"
+  },
+  {
+   "id": "domestic_electricity_zero_vat",
+   "name": "Zero VAT on domestic electricity"
+  },
+  {
+   "id": "fuel_duty_rise_deferral",
+   "name": "Fuel duty cut extended"
+  },
+  {
+   "id": "household_energy_payment_2026",
+   "name": "Household Energy Payment"
+  },
+  {
+   "id": "property_income_rates_up",
+   "name": "Property income tax rates up"
+  },
+  {
+   "id": "state_pension_income_tax_protection",
+   "name": "Pension Tax Allowance"
+  },
+  {
+   "id": "trading_allowance_raise",
+   "name": "Trading allowance raised to £3,000"
+  }
+ ],
+ "files": [
+  {
+   "name": "budgetary_impact.csv",
+   "url": "https://www.policyengine.org/uk/autumn-budget-2026/data/artifacts/combined--7baf4e89377bcc9c/dd5d4843f7f76782/budgetary_impact.csv",
+   "sha256": "ff671f36a97c39ec3333fb0342cea7f1d01aad2e8df987ac871fce9edcd65aab"
+  },
+  {
+   "name": "distributional_impact.csv",
+   "url": "https://www.policyengine.org/uk/autumn-budget-2026/data/artifacts/combined--7baf4e89377bcc9c/dd5d4843f7f76782/distributional_impact.csv",
+   "sha256": "61858162f9974aedb355d02d4e544221c1b08ce139748697eb0edd0178f09aca"
+  },
+  {
+   "name": "winners_losers.csv",
+   "url": "https://www.policyengine.org/uk/autumn-budget-2026/data/artifacts/combined--7baf4e89377bcc9c/dd5d4843f7f76782/winners_losers.csv",
+   "sha256": "06e2b10bcd4f8463e1759db985007bffa6ae1b939acdd085b66b74037849c98e"
+  }
+ ],
+ "years": [
+  {
+   "year": "2026-27",
+   "net_bn": -3.17372769815256,
+   "all_avg_change_gbp": 108.72590337829561,
+   "deciles": [
+    {
+     "decile": 1,
+     "rel_change_pct": 0.4173905803587229,
+     "avg_change_gbp": 106.95406926105198
+    },
+    {
+     "decile": 2,
+     "rel_change_pct": 0.279276838488137,
+     "avg_change_gbp": 110.06735293799034
+    },
+    {
+     "decile": 3,
+     "rel_change_pct": 0.24837712951514312,
+     "avg_change_gbp": 109.21798231892895
+    },
+    {
+     "decile": 4,
+     "rel_change_pct": 0.23380775817483487,
+     "avg_change_gbp": 111.0255571027748
+    },
+    {
+     "decile": 5,
+     "rel_change_pct": 0.20724968800859286,
+     "avg_change_gbp": 110.0324833132674
+    },
+    {
+     "decile": 6,
+     "rel_change_pct": 0.18945048823521624,
+     "avg_change_gbp": 109.92710323909414
+    },
+    {
+     "decile": 7,
+     "rel_change_pct": 0.1749178818378491,
+     "avg_change_gbp": 111.12201969302261
+    },
+    {
+     "decile": 8,
+     "rel_change_pct": 0.1548952291270951,
+     "avg_change_gbp": 112.17576206565528
+    },
+    {
+     "decile": 9,
+     "rel_change_pct": 0.12710481979992472,
+     "avg_change_gbp": 108.47822000399604
+    },
+    {
+     "decile": 10,
+     "rel_change_pct": 0.06396689685730278,
+     "avg_change_gbp": 99.01920818395213
+    }
+   ]
+  },
+  {
+   "year": "2027-28",
+   "net_bn": -0.8050851740683468,
+   "all_avg_change_gbp": 27.479058187076753,
+   "deciles": [
+    {
+     "decile": 1,
+     "rel_change_pct": 0.12273919301828981,
+     "avg_change_gbp": 31.782624476118524
+    },
+    {
+     "decile": 2,
+     "rel_change_pct": 0.08021367957385489,
+     "avg_change_gbp": 32.03386581965738
+    },
+    {
+     "decile": 3,
+     "rel_change_pct": 0.06757149210637305,
+     "avg_change_gbp": 30.11783603560663
+    },
+    {
+     "decile": 4,
+     "rel_change_pct": 0.06261220318107842,
+     "avg_change_gbp": 30.30745514414144
+    },
+    {
+     "decile": 5,
+     "rel_change_pct": 0.06306247716385374,
+     "avg_change_gbp": 34.19450928499757
+    },
+    {
+     "decile": 6,
+     "rel_change_pct": 0.05753473877941589,
+     "avg_change_gbp": 34.026382693646646
+    },
+    {
+     "decile": 7,
+     "rel_change_pct": 0.054646102135503895,
+     "avg_change_gbp": 35.617031387329725
+    },
+    {
+     "decile": 8,
+     "rel_change_pct": 0.04405622969315124,
+     "avg_change_gbp": 32.40538582715416
+    },
+    {
+     "decile": 9,
+     "rel_change_pct": 0.026659428591303012,
+     "avg_change_gbp": 23.23181057089052
+    },
+    {
+     "decile": 10,
+     "rel_change_pct": -0.004826103869005545,
+     "avg_change_gbp": -7.648900986835028
+    }
+   ]
+  },
+  {
+   "year": "2028-29",
+   "net_bn": 0.2103332062379924,
+   "all_avg_change_gbp": -7.14954024486314,
+   "deciles": [
+    {
+     "decile": 1,
+     "rel_change_pct": 0.01250765975152093,
+     "avg_change_gbp": 3.245640291188212
+    },
+    {
+     "decile": 2,
+     "rel_change_pct": 0.0058474640308989806,
+     "avg_change_gbp": 2.377364975327456
+    },
+    {
+     "decile": 3,
+     "rel_change_pct": 0.002523546229994061,
+     "avg_change_gbp": 1.1531652245550448
+    },
+    {
+     "decile": 4,
+     "rel_change_pct": -0.0017277264089300484,
+     "avg_change_gbp": -0.8562263210585895
+    },
+    {
+     "decile": 5,
+     "rel_change_pct": 0.001993747421507168,
+     "avg_change_gbp": 1.0911412532627454
+    },
+    {
+     "decile": 6,
+     "rel_change_pct": -0.00042938327590350613,
+     "avg_change_gbp": -0.2593112196262505
+    },
+    {
+     "decile": 7,
+     "rel_change_pct": -0.0005277344593396626,
+     "avg_change_gbp": -0.3516113030280458
+    },
+    {
+     "decile": 8,
+     "rel_change_pct": -0.009458544930539912,
+     "avg_change_gbp": -7.051999369855974
+    },
+    {
+     "decile": 9,
+     "rel_change_pct": -0.023098608203892246,
+     "avg_change_gbp": -20.43357184391245
+    },
+    {
+     "decile": 10,
+     "rel_change_pct": -0.030862615359058897,
+     "avg_change_gbp": -49.90166799661667
+    }
+   ]
+  },
+  {
+   "year": "2029-30",
+   "net_bn": 0.1663345877624669,
+   "all_avg_change_gbp": -5.629894748176283,
+   "deciles": [
+    {
+     "decile": 1,
+     "rel_change_pct": 0.023141728458156596,
+     "avg_change_gbp": 6.096848175098092
+    },
+    {
+     "decile": 2,
+     "rel_change_pct": 0.013635037371175036,
+     "avg_change_gbp": 5.585423144078068
+    },
+    {
+     "decile": 3,
+     "rel_change_pct": 0.01271247156415801,
+     "avg_change_gbp": 5.913685666449551
+    },
+    {
+     "decile": 4,
+     "rel_change_pct": 0.004689930512768042,
+     "avg_change_gbp": 2.3541001240718353
+    },
+    {
+     "decile": 5,
+     "rel_change_pct": 0.0020958452181690226,
+     "avg_change_gbp": 1.1700026834340662
+    },
+    {
+     "decile": 6,
+     "rel_change_pct": 0.006885837070597542,
+     "avg_change_gbp": 4.222177891128057
+    },
+    {
+     "decile": 7,
+     "rel_change_pct": -0.003739788037102272,
+     "avg_change_gbp": -2.521121227481809
+    },
+    {
+     "decile": 8,
+     "rel_change_pct": -0.008144604835834936,
+     "avg_change_gbp": -6.180063541036804
+    },
+    {
+     "decile": 9,
+     "rel_change_pct": -0.02328805594195019,
+     "avg_change_gbp": -20.933510042991564
+    },
+    {
+     "decile": 10,
+     "rel_change_pct": -0.031203142935552475,
+     "avg_change_gbp": -51.455265798068716
+    }
+   ]
+  },
+  {
+   "year": "2030-31",
+   "net_bn": 0.3012376016880946,
+   "all_avg_change_gbp": null,
+   "deciles": [
+    {
+     "decile": 1,
+     "rel_change_pct": -0.0026999413748629523,
+     "avg_change_gbp": -0.7225460302097775
+    },
+    {
+     "decile": 2,
+     "rel_change_pct": -0.0037625623939277412,
+     "avg_change_gbp": -1.5569575770596116
+    },
+    {
+     "decile": 3,
+     "rel_change_pct": -0.009021601350048921,
+     "avg_change_gbp": -4.263307661074811
+    },
+    {
+     "decile": 4,
+     "rel_change_pct": -0.004154149525254655,
+     "avg_change_gbp": -2.1243061779059165
+    },
+    {
+     "decile": 5,
+     "rel_change_pct": -0.005810746798038985,
+     "avg_change_gbp": -3.285783111470105
+    },
+    {
+     "decile": 6,
+     "rel_change_pct": 0.000689073722026696,
+     "avg_change_gbp": 0.43249625968516114
+    },
+    {
+     "decile": 7,
+     "rel_change_pct": null,
+     "avg_change_gbp": null
+    },
+    {
+     "decile": 8,
+     "rel_change_pct": -0.007633722858089233,
+     "avg_change_gbp": -5.901874113505059
+    },
+    {
+     "decile": 9,
+     "rel_change_pct": null,
+     "avg_change_gbp": null
+    },
+    {
+     "decile": 10,
+     "rel_change_pct": -0.03177811380414901,
+     "avg_change_gbp": -53.694375721001485
+    }
+   ]
+  }
+ ],
+ "gaps": [
+  "2030-31 decile 7 %",
+  "2030-31 decile 7 £",
+  "2030-31 decile 9 %",
+  "2030-31 decile 9 £",
+  "2030-31 all £"
+ ]
+}

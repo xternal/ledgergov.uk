@@ -84,10 +84,12 @@ describe("the two policies", () => {
   it("list where the file departs from PolicyEngine's current law, for the editors to explain", () => {
     expect(currentLawValue(meta, "gov.hmrc.income_tax.rates.savings.basic", "2027-28")).toBe(0.22);
     expect(currentLawValue(meta, "gov.hmrc.income_tax.rates.savings.basic", "2026-27")).toBe(0.2);
-    // For a rehearsal of an event PolicyEngine already has, "with" matches its current law except where it is behind the law.
+    // For a rehearsal of an event PolicyEngine already has, "with" matches its current law except where it is behind
+    // the law (the council tax surcharge) or the law moved after the Budget: HMRC's amended fuel duty schedule of
+    // May 2026, which PolicyEngine 2.132.6 follows, in 2026-27 and 2027-28.
     const post = differencesFromCurrentLaw(file(), meta, "post");
-    expect(new Set(post.map((d) => d.measure))).toEqual(new Set(["personal-tax-thresholds", "council-tax-surcharge"]));
-    expect(post.filter((d) => d.measure === "personal-tax-thresholds").every((d) => d.path.includes("national_insurance"))).toBe(true);
+    expect(new Set(post.map((d) => d.measure))).toEqual(new Set(["fuel-duty", "council-tax-surcharge"]));
+    expect(post.filter((d) => d.measure === "fuel-duty").map((d) => d.year)).toEqual(["2026-27", "2027-28"]);
   });
 });
 
@@ -100,7 +102,7 @@ function fakeClient(rec: HouseholdRecording, opts: { bundleAfter?: string; years
     async createPolicy(data) {
       const pre = JSON.stringify(data) === JSON.stringify(rec.policies.pre.data);
       calls.push(`policy ${pre ? "pre" : "post"}`);
-      return pre ? rec.policies.pre.id : rec.policies.post.id;
+      return (pre ? rec.policies.pre.id : rec.policies.post.id)!;
     },
     async economy(policyId, startYear, baselineId): Promise<EconomyStep> {
       const year = `${startYear}-${String((startYear + 1) % 100).padStart(2, "0")}`;
@@ -189,7 +191,7 @@ describe("the snapshot", () => {
     expect(committed.households.map((h) => h.year)).toEqual(committed.input.years);
     for (const h of committed.households) expect(h.rows.map((r) => r.id)).toEqual(ARCHETYPES.map((a) => a.id));
     expect(policyEngineCompareUrl(committed, 2027)).toBe(
-      `https://policyengine.org/uk/policy?reform=${committed.policies!.post}&baseline=${committed.policies!.pre}&focus=policyOutput.policyBreakdown&region=uk&timePeriod=2027`,
+      "https://www.policyengine.org/uk",
     );
     expect(policyEngineCompareUrl({ policies: null }, 2027)).toBeNull();
   });

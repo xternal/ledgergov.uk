@@ -1,0 +1,70 @@
+format: openpromises/1
+id: uk-warm-home-discount-2031
+headline:
+  en: Warm Home Discount until 2030/31
+actor_id: hm-government
+made_on: "2026-10-22"
+venue: press_release
+venue_label:
+  en: Press release (Department for Energy Security and Net Zero)
+area: social_protection
+status: delivering
+status_note:
+  en: >-
+    The release repeats a commitment made earlier this year, without giving its date. The scheme is
+    running: letters confirming the £150 discount for this winter go out from this week to January
+    2027, and anyone asked to call the helpline must do so by 26 February 2027. 2030/31 is read as
+    the year ending 31 March 2031. The card moves when the discount is paid for each winter up to
+    2030/31.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Energy Security and Net Zero press release, 22 Oct 2026: Households to receive
+      £150 Warm Home Discount confirmation letter
+    url: https://www.gov.uk/government/news/households-to-receive-150-warm-home-discount-confirmation-letter
+versions:
+  - version: 1
+    text: >-
+      Earlier this year the government confirmed that millions of eligible households will receive
+      the Warm Home Discount for the rest of the decade, with the scheme set to continue through to
+      2030/31.
+    recorded_on: "2026-10-22"
+    source_url: https://www.gov.uk/government/news/households-to-receive-150-warm-home-discount-confirmation-letter
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: Millions of eligible households on low incomes
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Through to 2030/31
+      deadline: "2031-03-31"
+      funded_by: null
+events:
+  - date: "2026-10-22"
+    type: promised
+    text:
+      en: The government repeats that the Warm Home Discount will continue through to 2030/31
+  - date: "2026-10-22"
+    type: delivering
+    text:
+      en: >-
+        Letters confirming this winter's £150 Warm Home Discount start going out to eligible
+        households
+    evidence_url: https://www.gov.uk/government/news/households-to-receive-150-warm-home-discount-confirmation-letter
+  - date: "2031-03-31"
+    type: deadline
+    text:
+      en: Warm Home Discount due to continue through 2030/31
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

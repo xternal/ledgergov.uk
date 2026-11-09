@@ -1,0 +1,62 @@
+format: openpromises/1
+id: uk-national-cyber-shield-2026
+headline:
+  en: Fund a £60m National Cyber Shield
+actor_id: john-healey
+made_on: "2026-10-26"
+venue: parliament
+venue_label:
+  en: Written ministerial statement
+area: public_order
+status: promised
+status_note:
+  en: >-
+    From the Chancellor's written statement on the Future of Technology. It promises a National
+    Cyber Shield with a £25 million challenge fund, and a new £70 million National Exposure and
+    Real-Time Vulnerability Centre to find cyber weaknesses across critical infrastructure and the
+    economy. It gives no timetable. The card moves when the shield or the centre is set up.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: "Written ministerial statement HCWS412, 26 Oct 2026: Future of Technology"
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS412
+versions:
+  - version: 1
+    text: >-
+      We will also invest £60 million in a National Cyber Shield, including a £25 million challenge
+      fund for UK AI and cyber-security innovators, and establish a £70 million National Exposure
+      and Real-Time Vulnerability Centre to identify cyber vulnerabilities across our critical
+      infrastructure and economy.
+    recorded_on: "2026-10-26"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS412
+    quote_checked_on: "2026-10-27"
+    parameters:
+      who:
+        en: >-
+          Critical infrastructure and businesses in the UK, and UK AI and cyber-security innovators
+      cost:
+        note:
+          en: >-
+            £60 million for the National Cyber Shield, including a £25 million challenge fund, and
+            £70 million for the vulnerability centre, with no period or split by year, so no yearly
+            figure is shown.
+      when:
+        en: Not stated
+      funded_by: null
+events:
+  - date: "2026-10-26"
+    type: promised
+    text:
+      en: >-
+        The Chancellor announces a £60 million National Cyber Shield and a £70 million National
+        Exposure and Real-Time Vulnerability Centre
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-27"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

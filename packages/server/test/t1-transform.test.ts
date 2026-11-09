@@ -68,7 +68,7 @@ describe("T1 transform (VAT 21%, real PolicyEngine result)", () => {
       data_version: "policyengine-uk-data-1.56.16",
       dataset: "gs://policyengine-uk-data-private/enhanced_frs_2024_25.h5@1.56.16",
       policy_id: 93107,
-      url: "https://policyengine.org/uk/policy?reform=93107&focus=policyOutput.policyBreakdown&region=uk&timePeriod=2025",
+      url: "https://www.policyengine.org/uk",
       fetched_at: "2026-10-07T12:00:00.000Z",
     });
   });
