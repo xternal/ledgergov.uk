@@ -1,0 +1,66 @@
+format: openpromises/1
+id: uk-electricity-vat-zero-2027
+headline:
+  en: "Keep 0% VAT on electricity to June 2027"
+actor_id: hm-government
+made_on: "2026-10-28"
+venue: press_release
+venue_label:
+  en: "Press release (Wales Office)"
+area: taxes
+status: promised
+status_note:
+  en: >-
+    The Budget extends by three months the zero rate of VAT on household electricity tracked on the
+    card "Cut taxes on energy bills", the Wales Office release says. The same sentence adds a Debt
+    Relief Scheme to write off crisis-era debt for eligible households, without saying who is
+    eligible or when. The card moves when the order extending the zero rate is made.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Wales Office press release, 28 Oct 2026: Budget 2026: Breathing space for Welsh families and
+      businesses
+    url: https://www.gov.uk/government/news/budget-2026-breathing-space-for-welsh-families-and-businesses
+versions:
+  - version: 1
+    text: >-
+      The UK government will extend 0% VAT on household electricity bills for three months, to 30
+      June 2027., while a Debt Relief Scheme will write off crisis-era debt for eligible households.
+    recorded_on: "2026-10-28"
+    source_url: https://www.gov.uk/government/news/budget-2026-breathing-space-for-welsh-families-and-businesses
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          Households paying for electricity
+      cost:
+        note:
+          en: >-
+            No cost is given in the release.
+      when:
+        en: >-
+          Three more months, to 30 June 2027
+      deadline: "2027-06-30"
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        The Budget extends 0% VAT on household electricity bills for three months, to 30 June 2027
+  - date: "2027-06-30"
+    type: deadline
+    text:
+      en: >-
+        0% VAT on household electricity due to last until 30 June 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

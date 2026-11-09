@@ -1,0 +1,61 @@
+format: openpromises/1
+id: uk-wheelchair-compensation-cap-2026
+headline:
+  en: Remove the cap on compensation for damaged wheelchairs
+actor_id: hm-government
+made_on: "2026-10-19"
+venue: press_release
+venue_label:
+  en: Press release (Department for Transport)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The bill is the Civil Aviation Bill, which the release says is progressing through Parliament.
+    The release says more than 1,000 wheelchairs were damaged in transit in 2023, and that a
+    consultation on wider accessibility reforms will launch within 12 months of the bill receiving
+    royal assent. It gives no date for the change. The card moves when the Civil Aviation Bill
+    becomes law with this measure in it.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Transport press release, 19 Oct 2026: Stronger safeguards for wheelchair users
+      and better-trained staff to support disabled air passengers
+    url: https://www.gov.uk/government/news/stronger-safeguards-for-wheelchair-users-and-better-trained-staff-to-support-disabled-air-passengers
+versions:
+  - version: 1
+    text: >-
+      The bill will also remove the compensation cap for lost or damaged wheelchairs and mobility
+      aids on domestic UK flights, to ensure compensation is appropriate for any damage.
+    recorded_on: "2026-10-19"
+    source_url: https://www.gov.uk/government/news/stronger-safeguards-for-wheelchair-users-and-better-trained-staff-to-support-disabled-air-passengers
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: >-
+          Disabled passengers on domestic UK flights whose wheelchairs or mobility aids are lost or
+          damaged
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: When the Civil Aviation Bill becomes law (date not stated)
+      funded_by: null
+events:
+  - date: "2026-10-19"
+    type: promised
+    text:
+      en: >-
+        The government says the Civil Aviation Bill will remove the compensation cap for lost or
+        damaged wheelchairs and mobility aids on domestic UK flights
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

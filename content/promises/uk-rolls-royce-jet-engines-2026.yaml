@@ -1,0 +1,66 @@
+format: openpromises/1
+id: uk-rolls-royce-jet-engines-2026
+headline:
+  en: "£2.5bn jet engine programme with Rolls-Royce"
+actor_id: hm-government
+made_on: "2026-10-28"
+venue: press_release
+venue_label:
+  en: "Press release (Department for Business, Innovation, Science and Trade)"
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    Announced by the Chancellor in the Budget. The release says the programme is a joint one for
+    next-generation jet engines for passenger and military planes, and the new engines are for
+    single-aisle aircraft. It does not say how the £2.5 billion is split between the government and
+    Rolls-Royce, and the jobs figure is an expectation. The card moves when the agreement's terms or
+    first funding are published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Business, Innovation, Science and Trade press release, 28 Oct 2026: Government
+      and Rolls-Royce agree £2.5bn to build jet engines in the UK and create tens of thousands of
+      jobs
+    url: https://www.gov.uk/government/news/government-and-rolls-royce-agree-25bn-to-build-jet-engines-in-the-uk-and-create-tens-of-thousands-of-jobs
+versions:
+  - version: 1
+    text: >-
+      Tens of thousands of new jobs are expected to be created from a new government agreement with
+      Rolls-Royce to help turbocharge Britain’s reindustrialisation, including a £2.5 billion
+      programme for cutting-edge cleaner and more efficient jet engines, jointly funded over 10
+      years.
+    recorded_on: "2026-10-28"
+    source_url: https://www.gov.uk/government/news/government-and-rolls-royce-agree-25bn-to-build-jet-engines-in-the-uk-and-create-tens-of-thousands-of-jobs
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          Aerospace workers and the UK aerospace industry
+      cost:
+        note:
+          en: >-
+            £2.5 billion over 10 years, jointly funded with Rolls-Royce; the government's share is
+            not given, so no yearly figure is shown.
+      when:
+        en: >-
+          Over 10 years
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        The government agrees a £2.5 billion programme for new jet engines with Rolls-Royce, jointly
+        funded over 10 years
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

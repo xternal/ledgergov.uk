@@ -1,0 +1,77 @@
+format: openpromises/1
+id: uk-facial-recognition-law-2026
+headline:
+  en: "Law on police use of facial recognition"
+actor_id: hm-government
+made_on: "2026-11-04"
+venue: press_release
+venue_label:
+  en: >-
+    New legal framework for law enforcement use of biometrics, facial recognition and similar
+    technologies: government response to the consultation (Home Office)
+area: public_order
+status: promised
+status_note:
+  en: >-
+    The Home Office's response to its consultation, which drew over 13,800 responses, says the
+    government will create a statutory framework for police and other public bodies using biometrics
+    and facial recognition, with a new independent oversight body. The policing minister's written
+    statement says the Police Reform Bill will carry it, backed by a statutory Code of Practice. No
+    date is given. The card moves when the Bill is introduced.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Home Office consultation outcome, 4 Nov 2026: New legal framework for law enforcement use of
+      biometrics, facial recognition and similar technologies: government response to the
+      consultation (accessible)
+    url: https://www.gov.uk/government/consultations/legal-framework-for-using-facial-recognition-in-law-enforcement/outcome/new-legal-framework-for-law-enforcement-use-of-biometrics-facial-recognition-and-similar-technologies-government-response-to-the-consultation-acces
+  - title: >-
+      Written ministerial statement, 4 Nov 2026: Law enforcement use of biometrics, facial
+      recognition and similar technologies
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-04/HCWS449
+versions:
+  - version: 1
+    text: >-
+      The Government intends to introduce a new statutory framework for use of biometrics, facial
+      recognition, and similar technologies by law enforcement and other public bodies. This
+      framework will include specific powers and obligations for those authorised to use these
+      technologies and it will ensure policing can innovate in a repeatable and consistent manner,
+      supporting adoption of emerging biometric and overt surveillance technologies that improve
+      policing effectiveness and public protection, while maintaining appropriate safeguards and
+      oversight. The framework will also establish a new independent oversight body, which will
+      consolidate and expand the functions of existing oversight roles and have powers to monitor
+      compliance and enforce standards.
+    recorded_on: "2026-11-04"
+    source_url: https://www.gov.uk/government/consultations/legal-framework-for-using-facial-recognition-in-law-enforcement/outcome/new-legal-framework-for-law-enforcement-use-of-biometrics-facial-recognition-and-similar-technologies-government-response-to-the-consultation-acces
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          The public in England and Wales, and the police and public bodies that use these
+          technologies
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          Not stated
+      funded_by: null
+events:
+  - date: "2026-11-04"
+    type: promised
+    text:
+      en: >-
+        The Home Office says it will introduce a statutory framework for the use of biometrics and
+        facial recognition by law enforcement, with a new oversight body
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

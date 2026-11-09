@@ -1,0 +1,70 @@
+format: openpromises/1
+id: uk-mtd-income-tax-30k-2027
+headline:
+  en: "Making Tax Digital for £30,000 earners"
+actor_id: hm-government
+made_on: "2026-11-02"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (HM Revenue & Customs)
+area: taxes
+status: promised
+status_note:
+  en: >-
+    Making Tax Digital for Income Tax requires sole traders and landlords to send quarterly updates
+    to HMRC through recognised software. It became mandatory for those earning more than £50,000
+    from 6 April 2026; the press release confirms the next two steps, to £30,000 and then £20,000.
+    The card moves when the £30,000 threshold takes effect in April 2027.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      HM Revenue & Customs press release, 2 Nov 2026: Five things you need to know ahead of Making
+      Tax Digital for Income Tax quarterly deadline
+    url: https://www.gov.uk/government/news/five-things-you-need-to-know-ahead-of-making-tax-digital-for-income-tax-quarterly-deadline
+versions:
+  - version: 1
+    text: >-
+      MTD for Income Tax will extend to sole traders and landlords earning more than £30,000 from 6
+      April 2027, and to those earning more than £20,000 from 6 April 2028.
+    recorded_on: "2026-11-02"
+    source_url: https://www.gov.uk/government/news/five-things-you-need-to-know-ahead-of-making-tax-digital-for-income-tax-quarterly-deadline
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          Sole traders and landlords earning more than £30,000 from April 2027, and more than
+          £20,000 from April 2028
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          From 6 April 2027 (over £30,000) and 6 April 2028 (over £20,000)
+      deadline: "2027-04-06"
+      funded_by: null
+events:
+  - date: "2026-11-02"
+    type: promised
+    text:
+      en: >-
+        HMRC confirms Making Tax Digital for Income Tax extends to earners over £30,000 from 6 April
+        2027 and over £20,000 from 6 April 2028
+  - date: "2027-04-06"
+    type: deadline
+    text:
+      en: >-
+        Making Tax Digital for Income Tax due to apply to sole traders and landlords earning over
+        £30,000
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

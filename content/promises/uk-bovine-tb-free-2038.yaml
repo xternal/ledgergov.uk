@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-bovine-tb-free-2038
+headline:
+  en: "England free of bovine TB by 2038"
+actor_id: hm-government
+made_on: "2026-11-05"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Department for Environment, Food & Rural Affairs)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    On 5 November Defra formally adopted a long-term strategy, first published in June, that aims to
+    eradicate bovine TB from England by 2038. It includes vaccines for cattle and badgers, mandatory
+    blood tests, more wildlife surveillance and more test choice. The release says new herd
+    breakdowns are down by a fifth on the previous 12 months. 2038 is read as the end of 2038. The
+    card moves when Defra reports progress against the aim.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Environment, Food & Rural Affairs press release, 5 Nov 2026: Government bid to
+      make England TB-free by 2038, with vaccines for cattle and badgers
+    url: https://www.gov.uk/government/news/government-bid-to-make-england-tb-free-by-2038-with-vaccines-for-cattle-and-badgers
+versions:
+  - version: 1
+    text: >-
+      Progress in the fight back against the devastating disease comes as the Government (Thursday
+      5th November) formally adopts a long-term strategy, aimed at eradicating TB from England
+      altogether by 2038.
+    recorded_on: "2026-11-05"
+    source_url: https://www.gov.uk/government/news/government-bid-to-make-england-tb-free-by-2038-with-vaccines-for-cattle-and-badgers
+    quote_checked_on: "2026-11-08"
+    parameters:
+      who:
+        en: >-
+          Cattle farmers in England
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          By 2038
+      deadline: "2038-12-31"
+      funded_by: null
+events:
+  - date: "2026-11-05"
+    type: promised
+    text:
+      en: >-
+        Defra formally adopts a strategy aimed at eradicating bovine TB from England by 2038
+  - date: "2038-12-31"
+    type: deadline
+    text:
+      en: >-
+        England due to be free of bovine TB
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-08"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

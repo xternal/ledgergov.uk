@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { yourShare } from "@ledger/engine";
-import { ARCHETYPES, REGIONS, t1Range, type ArchetypeId, type RegionId, type T1Result } from "@ledger/schema";
+import { ARCHETYPES, REGIONS, T1_PAUSED, t1Range, type ArchetypeId, type RegionId, type T1Result } from "@ledger/schema";
 import { gbp, grouped, rangeText, signed } from "@/lib/format";
 import { useScenario } from "@/lib/scenario";
 import { useT1 } from "@/lib/t1";
@@ -104,7 +104,7 @@ export function YourShare() {
           </li>
         </ul>
       </div>
-      <PeopleLikeMe />
+      {!T1_PAUSED && <PeopleLikeMe />}
     </section>
   );
 }

@@ -1,0 +1,74 @@
+format: openpromises/1
+id: uk-private-parking-code-2026
+headline:
+  en: Bring the private parking code into force
+actor_id: hm-government
+made_on: "2026-10-20"
+venue: press_release
+venue_label:
+  en: >-
+    Private Parking Code of Practice: government response
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The Code was laid before Parliament on 20 October 2026 for 40 days. The press release and the
+    minister's written statement (HCWS393) say it gives drivers 5 minutes to decide whether to park
+    and 10 minutes to leave, caps charges at £60 if paid within a fortnight and freezes the maximum
+    at £100, and limits charges for honest mistakes such as a forgotten permit to £20. Issue on 30
+    November 2026 depends on no objection in Parliament; 21 days after issue gives 21 December 2026.
+    The card moves when the Code is issued and comes into force.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government, 20 Oct 2026: Private Parking Code of
+      Practice: government response
+    url: https://www.gov.uk/government/consultations/private-parking-code-of-practice/outcome/private-parking-code-of-practice-government-response
+  - title: >-
+      Ministry of Housing, Communities and Local Government press release, 20 Oct 2026: PM puts the
+      brakes on rip-off parking charges and car scams
+    url: https://www.gov.uk/government/news/pm-puts-the-brakes-on-rip-off-parking-charges-and-car-scams
+  - title: >-
+      Written ministerial statement HCWS393, 20 Oct 2026: Private Parking Code of Practice
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-10-20/HCWS393
+versions:
+  - version: 1
+    text: >-
+      The Code will be issued on 30 November 2026 providing there are no objections from
+      parliamentarians. The Code will come into force 21 calendar days from the point of issue,
+      replacing the Single Sector Code.
+    recorded_on: "2026-10-20"
+    source_url: https://www.gov.uk/government/consultations/private-parking-code-of-practice/outcome/private-parking-code-of-practice-government-response
+    quote_checked_on: "2026-10-25"
+    parameters:
+      who:
+        en: Drivers using private car parks in England, Scotland and Wales
+      cost:
+        note:
+          en: No cost has been published.
+      when:
+        en: Issued on 30 November 2026 if Parliament does not object; in force 21 days later
+      deadline: "2026-12-21"
+      funded_by: null
+events:
+  - date: "2026-10-20"
+    type: promised
+    text:
+      en: >-
+        The government says the Private Parking Code of Practice will be issued on 30 November 2026
+        and come into force 21 days later
+  - date: "2026-12-21"
+    type: deadline
+    text:
+      en: Private Parking Code of Practice due in force 21 days after issue on 30 November 2026
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-10-25"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -2,6 +2,14 @@ import { z } from "zod";
 import { FiscalYear } from "./provenance";
 
 /**
+ * "Who gains and loses" and "People like me" are paused (6 November 2026). PolicyEngine asked us to stop using the
+ * economy endpoints on api.policyengine.org, which serve its own web app, and to move the example households off
+ * /uk/calculate there (Max Ghenis, PolicyEngine, 6 November 2026). While true, /api/t1 calls nobody and the site hides
+ * both panels. See docs/MODEL.md, "Paused, 6 November 2026".
+ */
+export const T1_PAUSED = true;
+
+/**
  * T1: microsimulation (docs/MODEL.md). A scenario's tax and benefit levers
  * run through PolicyEngine UK, a public, open-source tax-benefit model, over
  * representative survey households. It gives what T0 arithmetic cannot: who

@@ -218,7 +218,7 @@ describe("changelog of data vintages", () => {
     const dated = log.map((e) => e.published_on).filter((d): d is string => !!d);
     expect(dated).toEqual([...dated].sort().reverse());
     const efo = log.find((e) => e.source_id === "obr_efo")!;
-    expect(efo).toMatchObject({ vintage: "EFO-2026-03", published_on: "2026-03-03", latest: true });
+    expect(efo).toMatchObject({ vintage: "EFO-2026-10", published_on: "2026-10-28", latest: true });
     expect(efo.first_loaded).toMatch(/^\d{4}-\d{2}-\d{2}$/);
   });
 

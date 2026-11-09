@@ -1,0 +1,72 @@
+format: openpromises/1
+id: uk-bank-surcharge-6pc-2028
+headline:
+  en: "Raise the bank surcharge to 6% until 2028"
+actor_id: hm-government
+made_on: "2026-10-28"
+venue: press_release
+venue_label:
+  en: "Increase in rate of banking surcharge for temporary period (HMRC policy paper)"
+area: taxes
+status: promised
+status_note:
+  en: >-
+    The banking surcharge is a tax on banks' profits above £100 million, on top of Corporation Tax.
+    The paper says the higher rate will help fund measures to ease pressures on working people and
+    families, and that it is time-limited. It is in the Finance Bill 2026-27. The card moves when
+    the Bill becomes law, and again when the rate returns to 3% on 1 April 2028.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      HM Revenue & Customs policy paper, 28 Oct 2026: Increase in rate of banking surcharge for
+      temporary period
+    url: https://www.gov.uk/government/publications/increase-in-the-banking-surcharge-rate-for-a-temporary-period/increase-in-rate-of-banking-surcharge-for-temporary-period
+versions:
+  - version: 1
+    text: >-
+      This measure temporarily increases the surcharge rate, setting it at 6% from 1 January 2027
+      for a period of 15 months, returning to 3% from 1 April 2028.
+    recorded_on: "2026-10-28"
+    source_url: https://www.gov.uk/government/publications/increase-in-the-banking-surcharge-rate-for-a-temporary-period/increase-in-rate-of-banking-surcharge-for-temporary-period
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          Banks and building societies with surcharge profits above £100 million
+      cost:
+        note:
+          en: >-
+            A tax rise, not a cost: the paper's Exchequer impact table shows the yield by year.
+      when:
+        en: >-
+          From 1 January 2027 to 31 March 2028
+      deadline: "2028-04-01"
+      funded_by: null
+events:
+  - date: "2026-10-28"
+    type: promised
+    text:
+      en: >-
+        HMRC sets out a temporary rise in the banking surcharge from 3% to 6% from 1 January 2027,
+        returning to 3% from 1 April 2028
+  - date: "2027-01-01"
+    type: deadline
+    text:
+      en: >-
+        The 6% surcharge rate due from 1 January 2027
+  - date: "2028-04-01"
+    type: deadline
+    text:
+      en: >-
+        The surcharge due to return to 3% from 1 April 2028
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

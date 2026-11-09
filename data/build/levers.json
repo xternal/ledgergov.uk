@@ -58,7 +58,7 @@
       "group": "rates",
       "controlled_by": "central_bank",
       "unit": "pp",
-      "base": 3.75,
+      "base": 4.0,
       "min": 1.0,
       "max": 7.0,
       "step": 0.25,
@@ -66,14 +66,14 @@
         "target": "debt_interest",
         "per_unit_bn": {
           "y1": [
-            5.3876,
-            6.7345,
-            8.0813
+            5.212,
+            6.515,
+            7.818
           ],
           "y5": [
-            4.0344,
-            5.043,
-            6.0516
+            4.1642,
+            5.2053,
+            6.2463
           ]
         }
       },
@@ -87,7 +87,7 @@
       },
       "quality": "sourced",
       "source_id": "obr_efo",
-      "method_note": "OBR ready reckoner: a 1 point rise in short-term interest rates adds 6.73bn to debt interest in 2026-27 and 5.04bn in 2030-31 (EFO-2026-03). Gilt yields are held fixed. Low–high is an editorial ±20%."
+      "method_note": "OBR ready reckoner: a 1 point rise in short-term interest rates adds 6.52bn to debt interest in 2026-27 and 5.21bn in 2031-32 (EFO-2026-10). Gilt yields are held fixed. Low–high is an editorial ±20%."
     },
     {
       "id": "income_tax_basic",

@@ -1,0 +1,109 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-11-04"
+triaged_on: "2026-11-08"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 208
+sources_read: 12
+drafts: 12
+candidates: 18
+outcomes:
+  card: 3
+  reworded: 0
+  duplicate: 4
+  existing: 2
+  grant: 0
+  done: 0
+  process: 0
+  broad: 0
+  event: 1
+  cap: 4
+  other: 4
+quotes_exact: 3
+new_actors: []
+cards:
+  - uk-no-new-oil-gas-licences-2026
+  - uk-ukrainian-gcse-2028
+  - uk-facial-recognition-law-2026
+reworded: []
+dropped:
+  - draft: 2026-11-04-govuk-designers-to-get-stronger-and-simpler-protection-in-major-re-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/news/designers-to-get-stronger-and-simpler-protection-in-major-reforms
+    text: "The government will introduce a new 30-month deferment period, bringing the UK into line with the EU and the international Hague systems. Designers will be able to apply for protection early and delay making their design public for up to 30 months."
+    note: "a 30-month deferment for design registration, when parliamentary time allows; narrow"
+  - draft: 2026-11-04-govuk-energy-reforms-to-cut-bills-and-put-power-back-in-peoples-ha-1
+    quote: quote
+    code: existing
+    into: uk-gas-standing-charges-2027
+    note: "scrapping gas standing charges"
+  - draft: 2026-11-04-govuk-major-upgrades-at-beacon-barracks-now-underway-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/news/major-upgrades-at-beacon-barracks-now-underway
+    text: "The project, which is being delivered for the Army under the Defence Estate Optimisation (DEO) Portfolio, will prepare the barracks for the relocation of the Royal Engineers Works Groups from Chetwynd Barracks in Chilwell, and 174 Provost Company and 262 Military Intelligence Section from Venning and Parsons Barracks in Telford, from 2029."
+    note: "Army units relocating to Beacon Barracks from 2029; narrow"
+  - draft: 2026-11-04-govuk-new-visitor-levy-powers-to-put-money-back-into-local-communi-1
+    quote: quote
+    code: cap
+    source: https://www.gov.uk/government/news/new-visitor-levy-powers-to-put-money-back-into-local-communities
+    text: "But the government will continue to protect lower cost family breaks by requiring the levy to be charged as a percentage rate of the cost of accommodation, rather than as a flat fee, meaning those choosing cheaper accommodation will pay less."
+    note: "how new visitor levies must be charged (a percentage, not a flat fee); the levy powers themselves have no date in the quote"
+  - draft: 2026-11-04-govuk-outcome-government-response-to-the-consultation-on-changes-to-the-uk-1
+    quote: quote
+    code: duplicate
+    note: "the same 30-month deferment as the IPO press release (cap)"
+  - draft: 2026-11-04-govuk-outcome-government-response-to-the-consultation-on-changes-to-the-uk-1
+    quote: also0
+    code: cap
+    source: https://www.gov.uk/government/consultations/consultation-on-changes-to-the-uk-designs-framework/outcome/government-response-to-the-consultation-on-changes-to-the-uk-designs-framework
+    text: "The government will legislate when parliamentary time allows to give the registrar the power to conduct a search and examination of designs on the grounds of novelty and individual character. In practice, the search and examination will be carried out for a proportion of applications."
+    note: "search and examination of designs by the registrar, when parliamentary time allows"
+  - draft: 2026-11-04-wms-hcws448-1
+    quote: quote
+    code: existing
+    into: uk-peatland-restoration-2029
+    note: "£25 million for peatland restoration"
+  - draft: 2026-11-04-wms-hcws448-1
+    quote: also0
+    code: other
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-11-04/HCWS448
+    text: "The UK also announced that, over the next three financial years, around £6 billion of UK aid will support International Climate Finance, with around a quarter expected to benefit nature."
+    note: "around £6 billion of International Climate Finance over three years; Jenny Riddell-Carpenter has no actor file and the stored statement does not print her role, so none can be written"
+  - draft: 2026-11-04-wms-hcws448-1
+    quote: also1
+    code: other
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-11-04/HCWS448
+    text: "This includes delivering on our commitment to protect 30% of land and sea for nature by 2030 (30by30)."
+    note: "protect 30% of land and sea for nature by 2030 (30by30); a fair card held back for the same reason"
+  - draft: 2026-11-04-wms-hcws448-1
+    quote: also2
+    code: other
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-11-04/HCWS448
+    text: "This sits alongside other measures to accelerate our work to drive nature recovery at home, including investing £60 million to support 130 conservation projects across England in 2026/27–2028/29, helping to support the recovery of over 350 threatened species."
+    note: "£60 million for 130 conservation projects; same reason"
+  - draft: 2026-11-04-wms-hcws449-1
+    quote: quote
+    code: duplicate
+    into: uk-facial-recognition-law-2026
+    note: "the policing minister's statement of the same framework, added to the card's sources"
+  - draft: 2026-11-04-wms-hcws450-1
+    quote: quote
+    code: duplicate
+    note: "the same 30-month design deferment (cap)"
+  - draft: 2026-11-04-wms-hcws454-1
+    quote: quote
+    code: other
+    source: https://questions-statements.parliament.uk/written-statements/detail/2026-11-04/HCWS454
+    text: "We will legislate to introduce a mandatory human rights due diligence regime across the UK for services, and in Great Britain for goods. Only the largest businesses, with the capability and leverage to manage these risks within their supply chains, will be in scope. It will apply to UK businesses with a global turnover of over £350 million, as well as non-UK businesses with a UK-generated turnover of over £350 million."
+    note: "a mandatory human rights due diligence regime for businesses with turnover over £350 million; a fair card held back: Jonathan Reynolds has no actor file and the stored statement does not print his role"
+  - draft: 2026-11-04-wms-hcws455-1
+    quote: quote
+    code: event
+    note: "signing a joint declaration on Northern Ireland parcels at the Joint Committee on 10 November"
+  - draft: 2026-11-04-wms-hcws455-1
+    quote: also0
+    code: duplicate
+    note: "the same due diligence regime as HCWS454 (other), aimed to take effect in December 2027"

@@ -55,9 +55,13 @@ export class TransformError extends Error {
   }
 }
 
-/** Policy page anyone can open to see the same reform in PolicyEngine's own app. */
-export function policyUrl(policyId: number, startYear: number): string {
-  return `https://policyengine.org/uk/policy?reform=${policyId}&focus=policyOutput.policyBreakdown&region=uk&timePeriod=${startYear}`;
+/**
+ * PolicyEngine's UK home. Its old app, which opened a reform by id, is retired; PolicyEngine asked us to link here
+ * instead (6 November 2026). The arguments stay so callers need not change.
+ */
+export const POLICYENGINE_UK = "https://www.policyengine.org/uk";
+export function policyUrl(_policyId: number, _startYear: number): string {
+  return POLICYENGINE_UK;
 }
 
 const bn = (gbp: number) => gbp / 1e9;
