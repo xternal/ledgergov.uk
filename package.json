@@ -33,8 +33,8 @@
   "devDependencies": {
     "@ledger/engine": "workspace:*",
     "@ledger/schema": "workspace:*",
-    "@openpromises/cli": "0.16.0",
-    "@openpromises/core": "0.16.0",
+    "@openpromises/cli": "0.16.1",
+    "@openpromises/core": "0.16.1",
     "tsx": "^4.23.15",
     "typescript": "^5.9.3",
     "yaml": "^2.9.1",
