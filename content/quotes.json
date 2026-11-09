@@ -857,6 +857,12 @@
     "checked_on": "2026-10-27",
     "sha256": "835450fb9f3fbfeaa44d9198ed90c973a741ef45491ca530e31c2ddb81e8468c"
   },
+  "a9c9faf7f70f382727e0a6a23719097da8989c64f6d3fb9533f8ae3b180775c2|https://www.gov.uk/government/news/pm-confident-every-rough-sleeper-will-have-route-off-the-street-by-christmas-as-funding-doubles": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/pm-confident-every-rough-sleeper-will-have-route-off-the-street-by-christmas-as-funding-doubles",
+    "checked_on": "2026-10-27",
+    "sha256": "c7089c8baae93b508b00a37c0dab07584b8e76d326e0c914cf6cc5c88cb6b5a4"
+  },
   "ab653f78f6a9a0365041c8acfe7cabbde43711e8be0e474afe8e2c32c1accdd7|https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons",
