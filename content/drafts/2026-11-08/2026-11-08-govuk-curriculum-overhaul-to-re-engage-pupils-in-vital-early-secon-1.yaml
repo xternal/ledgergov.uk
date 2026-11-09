@@ -1,0 +1,63 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-curriculum-overhaul-to-re-engage-pupils-in-vital-early-secon.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-08"
+source:
+  id: govuk-curriculum-overhaul-to-re-engage-pupils-in-vital-early-secon
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/curriculum-overhaul-to-re-engage-pupils-in-vital-early-secondary-years
+  title: Curriculum overhaul to re-engage pupils in vital early secondary years
+  date: "2026-11-08"
+  venue_label: Press release (Department for Education)
+quote: >-
+  The new National Curriculum, due to be published in full later this year, which has been developed
+  by subject experts, will see over-crowded content slimmed down and better sequenced across all
+  school stages to create more space for deeper understanding and richer experiences that ignite a
+  love of learning, ensure more children are stretched and make progress.
+source_span: [986, 1348]
+speaker:
+  name: HM Government
+  role: Department for Education
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: education
+  who: pupils across all school stages
+  how_much: null
+  when: later this year (2026)
+  funded_by: null
+  deadline: null
+why: >-
+  The government will publish the new National Curriculum in full by the end of 2026, with content
+  slimmed down and better sequenced across all school stages.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      As part of its wide-ranging plans to tackle disengagement, the disadvantage gap and the rising
+      number of young people not in education, employment or training, the government will make the
+      first three years of secondary school count, by restoring Key Stage 3 as a distinct three-year
+      phase.
+    source_span: [695, 985]
+    suggested:
+      policy_area: education
+      who: pupils in the first three years of secondary school
+      how_much: null
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      Key Stage 3 will be restored as a distinct three-year phase in the new National Curriculum.
+    confidence: 0.55
+confidence: 0.6
+model: claude-opus-5-5
+status: to_review
