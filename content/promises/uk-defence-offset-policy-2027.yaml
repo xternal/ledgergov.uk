@@ -1,0 +1,72 @@
+format: openpromises/1
+id: uk-defence-offset-policy-2027
+headline:
+  en: "Overseas defence suppliers to invest back in UK"
+actor_id: hm-government
+made_on: "2026-10-30"
+venue: press_release
+venue_label:
+  en: "Press release (Ministry of Defence)"
+area: defence
+status: promised
+status_note:
+  en: >-
+    Under the policy, overseas companies that win significant UK defence contracts must deliver
+    benefits in the UK, such as jobs, apprenticeships and factories, that could reach the value of
+    the contract. The release says contracts worth over £50 million will be considered. "From April
+    2027" is read as by 30 April 2027. The card moves when the first contract with offset
+    requirements is signed.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Defence press release, 30 Oct 2026: Defence contracts to prioritise British jobs
+      and skills
+    url: https://www.gov.uk/government/news/defence-contracts-to-prioritise-british-jobs-and-skills
+  - title: >-
+      Ministry of Defence policy paper, 30 Oct 2026: UK Offset Policy
+    url: https://www.gov.uk/government/publications/uk-offset-policy/uk-offset-policy
+versions:
+  - version: 1
+    text: >-
+      The Offset Policy is published today (30 October) and will apply to a select number of
+      procurements from April 2027, with suppliers notified early and clearly where offset
+      requirements will apply.
+    recorded_on: "2026-10-30"
+    source_url: https://www.gov.uk/government/news/defence-contracts-to-prioritise-british-jobs-and-skills
+    quote_checked_on: "2026-11-01"
+    parameters:
+      who:
+        en: >-
+          UK workers, apprentices and suppliers in defence
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          From April 2027, for a select number of procurements
+      deadline: "2027-04-30"
+      funded_by: null
+events:
+  - date: "2026-10-30"
+    type: promised
+    text:
+      en: >-
+        The Ministry of Defence publishes an Offset Policy to apply to a select number of
+        procurements from April 2027
+  - date: "2027-04-30"
+    type: deadline
+    text:
+      en: >-
+        Offset requirements due to apply from April 2027
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-01"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
