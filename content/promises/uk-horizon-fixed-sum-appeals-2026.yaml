@@ -54,6 +54,10 @@ events:
       en: >-
         The Post Office minister says the process for appealing £75,000 fixed sum offers is expected
         to launch in November
+  - date: "2026-11-30"
+    type: deadline
+    text:
+      en: Fixed sum offer appeals process due to launch in November 2026
   - date: "2026-11-02"
     type: delivered
     text:
@@ -61,10 +65,6 @@ events:
         The fixed sum offer permission to appeal process opens to registrations, with the
         registration form added to its GOV.UK guidance
     evidence_url: https://www.gov.uk/government/publications/horizon-shortfall-scheme-hss-fixed-sum-offer-permission-to-appeal-process/proposed-fixed-sum-offer-permission-to-appeal-process-guide
-  - date: "2026-11-30"
-    type: deadline
-    text:
-      en: Fixed sum offer appeals process due to launch in November 2026
 replies: []
 reviews:
   - by: AI Journalist
