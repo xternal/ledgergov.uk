@@ -143,6 +143,12 @@
     "checked_on": "2026-10-13",
     "sha256": "87f1b462d759dab2c7aeac0aeab23c2af51589e9784c62f51a7bdc4b7989e8bb"
   },
+  "1e28618f101b47b074191d918abd0402d79ceb93cb7b6ac3f6f636d7afa5b511|https://questions-statements.parliament.uk/written-statements/detail/2026-10-27/HCWS421": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-27/HCWS421",
+    "checked_on": "2026-11-01",
+    "sha256": "12b6c495e2ea346c51a9d45fec7aba6a37bfed37e05bad1a942168a402af4d40"
+  },
   "1e5f79494ca7daf0a78aade26e7b5660f1587e70d9e560d03cfe137cff3cfdae|https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023": {
     "match": "exact",
     "url": "https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023",
@@ -880,6 +886,12 @@
     "url": "https://www.gov.uk/government/news/technology-to-bolster-justice-for-victims-as-government-responds-to-leveson",
     "checked_on": "2026-10-13",
     "sha256": "524c3b9ea355c8047e01f63575643c78199a3cbb108737371f4143af61278d46"
+  },
+  "ae146acd6265a4bc19f4d78c61ddbfea19666d052b36ad2207a1bd1056ead5f6|https://questions-statements.parliament.uk/written-statements/detail/2026-10-27/HCWS421": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-27/HCWS421",
+    "checked_on": "2026-11-01",
+    "sha256": "12b6c495e2ea346c51a9d45fec7aba6a37bfed37e05bad1a942168a402af4d40"
   },
   "aec592d3a046c14ad8202543ae80deb85c10d645173706d27f7b022c36c9b29f|https://www.gov.uk/government/publications/environment-act-2021-post-legislative-scrutiny-memorandum/environment-act-2021-post-legislative-scrutiny-memorandum": {
     "match": "exact",
