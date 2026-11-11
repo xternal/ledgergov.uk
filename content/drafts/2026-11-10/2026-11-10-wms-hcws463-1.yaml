@@ -1,0 +1,46 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws463.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-10"
+source:
+  id: wms-hcws463
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-10/HCWS463
+  title: GP Winter Proactive Care Programme
+  date: "2026-11-10"
+  venue_label: Written ministerial statement
+quote: >-
+  On 9 November, the Prime Minister and the Secretary of State for Health and Social Care announced
+  that £40 million of funding will be reinvested in general practice to help GPs proactively
+  identify and support up to 300,000 vulnerable patients this winter. This ring-fenced funding will
+  help keep people well at home, prevent serious illness and reduce avoidable hospital admissions as
+  we strengthen preparations for extra pressure on the NHS over winter.
+source_span: [0, 455]
+speaker:
+  name: Diana Johnson
+  role: Minister of State (Minister for Public Health and Patient Safety)
+  party: Labour
+  member_id: 1533
+  actor_id: labour
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: health
+  who: >-
+    up to 300,000 vulnerable patients, including those with heart disease, frailty or chronic
+    obstructive pulmonary disease; GP practices
+  how_much: £40 million
+  when: this winter
+  funded_by: reinvested funding, ring-fenced for general practice
+  deadline: null
+why: >-
+  Restates the 9 November announcement that £40 million of ring-fenced funding will go to general
+  practice so GPs can identify and support up to 300,000 vulnerable patients this winter.
+confidence: 0.7
+model: claude-opus-5-5
+status: to_review

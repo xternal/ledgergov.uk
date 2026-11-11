@@ -1,0 +1,42 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-new-royal-navy-led-northern-navies-initiative.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-10"
+source:
+  id: govuk-new-royal-navy-led-northern-navies-initiative
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/new-royal-navy-led-northern-navies-initiative
+  title: New Royal Navy-Led Northern Navies Initiative
+  date: "2026-11-10"
+  venue_label: Press release (Ministry of Defence)
+quote: >-
+  The Royal Navy will also bring the first phase of Atlantic Net, part of Atlantic Bastion, into
+  operation within months. Working with Ocean Infinity, it will help detect hostile underwater
+  activity earlier and protect critical infrastructure.
+source_span: [3825, 4066]
+speaker:
+  name: HM Government
+  role: Ministry of Defence
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: defence
+  who: Royal Navy, working with Ocean Infinity; NATO and JEF allies
+  how_much: null
+  when: within months
+  funded_by: null
+  deadline: null
+why: >-
+  The Royal Navy commits to bringing the first phase of the Atlantic Net undersea detection system,
+  part of Atlantic Bastion, into operation within months.
+confidence: 0.6
+model: claude-opus-5-5
+status: to_review

@@ -1,0 +1,43 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/hansard-98bed7da.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-10"
+source:
+  id: hansard-98bed7da
+  kind: hansard_statement
+  url: https://hansard.parliament.uk/Commons/2026-11-10/debates/98BED7DA-2BAA-487C-9BE5-EB7CD6C6657C/CommonwealthHeadsOfGovernmentMeeting
+  title: Commonwealth Heads of Government Meeting
+  date: "2026-11-10"
+  venue_label: Commons statement
+quote: >-
+  We announced a new resilient infrastructure programme worth up to £40 million, building on the UK
+  Caribbean infrastructure fund. The new programme will support renewable energy and infrastructure
+  that can withstand the growing effects of climate change.
+source_span: [3083, 3336]
+speaker:
+  name: Chris Elmore
+  role: >-
+    Parliamentary Under-Secretary of State for Foreign, Commonwealth and Development Affairs
+  party: null
+  member_id: 4572
+  actor_id: null
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: economic_affairs
+  who: Caribbean countries
+  how_much: up to £40 million
+  when: null
+  funded_by: null
+  deadline: null
+why: >-
+  The UK commits up to £40 million to a new Caribbean resilient infrastructure programme for
+  renewable energy and climate-resilient infrastructure.
+confidence: 0.55
+model: claude-opus-5-5
+status: to_review
