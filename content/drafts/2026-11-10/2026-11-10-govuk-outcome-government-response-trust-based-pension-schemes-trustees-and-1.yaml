@@ -1,0 +1,127 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-outcome-government-response-trust-based-pension-schemes-trustees-and.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-10"
+source:
+  id: govuk-outcome-government-response-trust-based-pension-schemes-trustees-and
+  kind: govuk_consultation_outcome
+  url: https://www.gov.uk/government/consultations/trust-based-pension-schemes-trustees-and-governance-building-a-stronger-future/outcome/government-response-trust-based-pension-schemes-trustees-and-governance-building-a-stronger-future
+  title: >-
+    Government response: Trust-based pension schemes: Trustees and governance, building a stronger
+    future
+  date: "2026-11-10"
+  venue_label: Consultation outcome (Department for Work and Pensions)
+quote: >-
+  In particular, we will introduce a new requirement for existing trustee boards to approve any
+  transition to a PCST model proposed by the sponsoring employer, in line with these criteria, and
+  for a resolution process if the existing trustee board reject the proposal made by the sponsoring
+  employer.
+source_span: [41180, 41478]
+speaker:
+  name: HM Government
+  role: Department for Work and Pensions
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: social_protection
+  who: Trustee boards and sponsoring employers of trust-based pension schemes
+  how_much: null
+  when: null
+  funded_by: null
+  deadline: null
+why: >-
+  Existing trustee boards will have to approve any employer-proposed move to a professional
+  corporate sole trustee, with a resolution process if they reject it.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      To align with the common view expressed in consultation responses that trustee capability
+      should be assessed across the board as a whole rather than on an individual trustee basis, we
+      will introduce a new principle-based requirement for trustee chairs to assess and monitor
+      their board’s collective skills.
+    source_span: [5723, 6029]
+    suggested:
+      policy_area: social_protection
+      who: Chairs of pension scheme trustee boards
+      how_much: null
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      Trustee board chairs will be required to assess and monitor their board's collective skills.
+    confidence: 0.5
+  - quote: >-
+      We will extend the authorisation and supervision framework to include governance and conflict
+      management arrangements across the wider commercial model. We will also introduce requirements
+      for TPR to approve key function holders within master trust providers.
+    source_span: [6538, 6797]
+    suggested:
+      policy_area: social_protection
+      who: Master Trust providers and their key function holders
+      how_much: null
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      The Master Trust authorisation regime will be extended to cover provider governance and
+      conflicts, with TPR approval of key function holders and earlier intervention powers.
+    confidence: 0.6
+  - quote: >-
+      The government will continue to work with TPR to establish and test the feasibility of an
+      initial Trustee Directory by 2029, using existing data and powers where possible.
+    source_span: [53210, 53381]
+    suggested:
+      policy_area: social_protection
+      who: Trustees of pension schemes and The Pensions Regulator
+      how_much: null
+      when: by 2029
+      funded_by: null
+      deadline: null
+    why: >-
+      Restates the 2023 government and TPR commitment to produce a trustee directory, now with an
+      initial directory to be established and tested by 2029.
+    confidence: 0.6
+  - quote: >-
+      Therefore, the government intends to work with the industry to design and introduce mandatory
+      minimum standards for pension scheme administration providers.
+    source_span: [84877, 85033]
+    suggested:
+      policy_area: social_protection
+      who: Pension scheme administration providers
+      how_much: null
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      Mandatory minimum standards covering accurate records, resilience and transferability will be
+      introduced for pension scheme administration providers.
+    confidence: 0.55
+  - quote: >-
+      We also intend to require pension scheme administrators who administer schemes regulated by
+      TPR (public and private sector) to register with TPR.
+    source_span: [86789, 86934]
+    suggested:
+      policy_area: social_protection
+      who: >-
+        Pension scheme administrators administering TPR-regulated schemes, public and private sector
+      how_much: null
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      Pension scheme administrators of TPR-regulated schemes will have to register with TPR, which
+      will gain powers to issue warnings, improvement notices and financial penalties.
+    confidence: 0.65
+confidence: 0.65
+model: claude-opus-5-5
+status: to_review

@@ -1,0 +1,41 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-paper-the-older-peoples-housing-taskforce-report-government-respon.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-10"
+source:
+  id: govuk-paper-the-older-peoples-housing-taskforce-report-government-respon
+  kind: govuk_policy_paper
+  url: https://www.gov.uk/government/publications/the-older-peoples-housing-taskforce-report-government-response/the-older-peoples-housing-taskforce-report-government-response
+  title: "The Older People's Housing Taskforce Report: government response"
+  date: "2026-11-10"
+  venue_label: Policy paper (Ministry of Housing, Communities and Local Government)
+quote: >-
+  At Autumn Budget 2025, the government announced its commitment to deliver 250 neighbourhood health
+  centres, with 120 delivered by 2030.
+source_span: [21917, 22052]
+speaker:
+  name: HM Government
+  role: Ministry of Housing, Communities and Local Government
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: health
+  who: null
+  how_much: null
+  when: 120 by 2030
+  funded_by: null
+  deadline: "2030-12-31"
+why: >-
+  Restates the Autumn Budget 2025 commitment to deliver 250 neighbourhood health centres, 120 of
+  them by 2030; editors should quote the original.
+confidence: 0.6
+model: claude-opus-5-5
+status: to_review

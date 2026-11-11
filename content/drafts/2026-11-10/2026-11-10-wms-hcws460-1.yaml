@@ -1,0 +1,42 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws460.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-10"
+source:
+  id: wms-hcws460
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-10/HCWS460
+  title: Regional water councils
+  date: "2026-11-10"
+  venue_label: Written ministerial statement
+quote: >-
+  Demonstrating its commitment to supporting this work from the outset, the Government will provide
+  £1 million this year to the councils to support technical expertise, partnership coordination and
+  engagement activity this year.
+source_span: [3913, 4139]
+speaker:
+  name: Emma Hardy
+  role: Minister for Water and Flooding
+  party: Labour
+  member_id: 4645
+  actor_id: labour
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: housing_env
+  who: Regional water councils
+  how_much: £1 million
+  when: this year
+  funded_by: null
+  deadline: null
+why: >-
+  The Government commits to provide £1 million this year to the new regional water councils for
+  technical expertise, partnership coordination and engagement.
+confidence: 0.6
+model: claude-opus-5-5
+status: to_review
