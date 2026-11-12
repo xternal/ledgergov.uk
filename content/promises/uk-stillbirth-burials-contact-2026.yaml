@@ -56,6 +56,11 @@ events:
     type: deadline
     text:
       en: A dedicated point of contact due in every Trust by 10 November 2026
+  - date: 2026-11-12
+    type: deadline_missed
+    text:
+      en: The deadline passed with no evidence of delivery recorded. An editor confirms or corrects this within 30 days.
+    auto: true
 replies: []
 reviews:
   - by: AI Journalist
