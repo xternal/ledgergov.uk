@@ -1,0 +1,110 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-flat-owners-handed-massive-boost-to-fight-rip-off-service-ch.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-11"
+source:
+  id: govuk-flat-owners-handed-massive-boost-to-fight-rip-off-service-ch
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/flat-owners-handed-massive-boost-to-fight-rip-off-service-charges
+  title: Flat owners handed massive boost to fight rip-off service charges
+  date: "2026-11-11"
+  venue_label: Press release (Ministry of Housing, Communities and Local Government)
+quote: >-
+  From 1 April 2027, leaseholders will gain strong powers to demand information about their service
+  charges, making it easier to see what they are paying for and why.
+source_span: [625, 789]
+speaker:
+  name: HM Government
+  role: Ministry of Housing, Communities and Local Government
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: housing_env
+  who: Over three million leaseholders
+  how_much: null
+  when: From 1 April 2027
+  funded_by: null
+  deadline: "2027-04-01"
+why: >-
+  Leaseholders will get a legal right to demand information about their service charges, including
+  from previous years, from 1 April 2027.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      Landlords will need court or tribunal approval to pass on any legal costs to leaseholders and
+      to balance the scales of justice, leaseholders will get the new right to claw back their own
+      legal expenses too.
+    source_span: [1326, 1532]
+    suggested:
+      policy_area: housing_env
+      who: Leaseholders challenging service charges
+      how_much: null
+      when: From 1 April 2027
+      funded_by: null
+      deadline: "2027-04-01"
+    why: >-
+      From 1 April 2027, landlords will need court or tribunal approval to pass legal costs to
+      leaseholders, and leaseholders will gain a right to recover their own legal costs.
+    confidence: 0.65
+  - quote: >-
+      From 1 November 2027, leaseholders will automatically get clearer information about the
+      charges they are being asked to pay – whether their building is owned by a private landlord,
+      council or housing association.
+    source_span: [2744, 2956]
+    suggested:
+      policy_area: housing_env
+      who: Leaseholders of private landlords, councils and housing associations
+      how_much: null
+      when: From 1 November 2027
+      funded_by: null
+      deadline: "2027-11-01"
+    why: >-
+      From 1 November 2027, leaseholders will automatically receive clearer service charge,
+      insurance and admin fee information, and private landlords must use standardised demand forms,
+      accounts and annual reports.
+    confidence: 0.65
+  - quote: >-
+      From 1 November 2028, councils and housing associations will also have to provide their
+      leaseholders with the new standardised service charge demand forms, financial accounts and
+      annual reports.
+    source_span: [3607, 3801]
+    suggested:
+      policy_area: housing_env
+      who: Leaseholders of councils and housing associations
+      how_much: null
+      when: From 1 November 2028
+      funded_by: null
+      deadline: "2028-11-01"
+    why: >-
+      Councils and housing associations must provide leaseholders with standardised service charge
+      demands, accounts and annual reports from 1 November 2028.
+    confidence: 0.6
+  - quote: >-
+      It will also make it easier for existing leaseholders to move to commonhold, will cap existing
+      ground rents at £250 and replace the current forfeiture system with a fairer enforcement
+      regime.
+    source_span: [6298, 6489]
+    suggested:
+      policy_area: housing_env
+      who: Existing leaseholders
+      how_much: Ground rents capped at £250
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      The Commonhold and Leasehold Reform Bill will cap existing ground rents at £250 and replace
+      forfeiture; likely restates an earlier government commitment.
+    confidence: 0.55
+confidence: 0.8
+model: claude-opus-5-5
+status: to_review

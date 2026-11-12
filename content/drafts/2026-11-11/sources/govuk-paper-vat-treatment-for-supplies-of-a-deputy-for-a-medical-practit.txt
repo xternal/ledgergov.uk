@@ -1,0 +1,29 @@
+VAT treatment for supplies of a deputy for a medical practitioner — repeal of Item 5 of Group 7 of Schedule 9 of the VAT Act 1994
+Purpose of the brief
+The government announced at Budget 2026 that it would amend VAT legislation, with effect from 1 May 2027, to remove the VAT exemption for the supply of a deputy for a registered medical practitioner.
+This brief explains:
+the change to the VAT treatment of supplies of a deputy for a medical practitioner — this includes General Medical Council (GMC) registered medical practitioners supplied as locum doctors (referred to in this brief as registered locum doctors)
+where businesses can find further information about claims of overdeclared VAT relating to supplies affected by the First-tier Tribunal decision in Isle of Wight NHS Foundation Trust v HMRC [2025] UKFTT 1114 (TC)
+The change has no impact on supplies of deputising services that primarily constitute medical care. They will remain exempt from VAT under other existing VAT provisions.
+Who should read this
+You should read this brief if you are:
+an NHS body
+a private healthcare provider
+a business supplying locum doctors, including employment businesses and umbrella companies (HMRC view umbrella companies making eligible supplies of registered locum doctors to be included within the scope)
+a VAT adviser
+How the VAT treatment of locum doctors is changing
+Under Item 5, Group 7, Schedule 9 of the VAT Act 1994, “The provision of a deputy for a person registered in the register of medical practitioners” is exempt from VAT.
+The original interpretation was that the exemption applied only to the supply of deputising services, such as GP out-of-hours services. HMRC considered that supplies of registered locum doctors were taxable supplies of staff, subject to the standard rate of VAT.
+The First-tier Tribunal in Isle of Wight found that the exemption was not limited to medical care. It also applied to supplies of staff, specifically registered locum doctors.
+At Budget 2026, it was announced that Item 5 will be repealed from Group 7, Schedule 9 of the VAT Act 1994, with effect from 1 May 2027. This change restores HMRC’s interpretation of the exemption before the Isle of Wight decision. Supplies of medical care will continue to be exempt from VAT, but staff will not.
+Deputising services that fall within medical care will remain exempt under Item 1. For example, where an out-of-hours service involving the provision of urgent primary care to patients is made, this is exempt medical care. A supply of staff is not a supply of care, as the supplier is not directly responsible for the delivery of care and does not maintain the direction and control of the individual who carries out that care.
+Until the legislative change takes effect on 1 May 2027, the VAT treatment of supplies of registered locum doctors will remain as determined by the First-tier Tribunal in the Isle of Wight, and as set out in Revenue and Customs Brief 6 (2026).
+How claims of overdeclared output tax will be affected
+Following the Isle of Wight decision, claims for a refund of overdeclared output tax on the supply of a registered locum doctor will not be affected by this change.
+The Isle of Wight decision found that such supplies were exempt from VAT under Item 5. These supplies will continue to be exempt while Item 5 remains in force.
+Where exempt supplies are made, the recovery of associated input tax is restricted. Any claims must be reduced appropriately before HMRC pays the claim.
+Further guidance on how to make a claim for a refund of overdeclared output tax on supplies of a registered locum doctor can be found in Revenue and Customs Brief 6 (2026).
+How HMRC interprets “the register of medical practitioners” in Item 5
+HMRC interprets “the register of medical practitioners” in Item 5 as only referring to the statutory medical register maintained under the Medical Act 1983. The term does not extend to individuals entered solely on the separate GMC registers for physician associates or anaesthesia associates. These registers are distinct from the statutory register of medical practitioners.
+More information
+HMRC guidance will be updated to reflect these changes, including Supply of staff and staff bureaux (VAT Notice 700/34) and Health professionals and pharmaceutical products (VAT Notice 701/57).
