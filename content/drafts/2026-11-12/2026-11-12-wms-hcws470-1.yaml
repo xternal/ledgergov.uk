@@ -1,0 +1,136 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws470.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-12"
+source:
+  id: wms-hcws470
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470
+  title: "Regulation of leasehold: service charges, litigation costs and insurance costs"
+  date: "2026-11-12"
+  venue_label: Written ministerial statement
+quote: >-
+  From 1 November 2027, commission-sharing with landlords and managing agents will be banned and
+  replaced with transparent permitted insurance payments. This will ensure leaseholders are only
+  charged for specific insurance-related services provided to them by their landlord or managing
+  agent, thereby preventing the cost of excessive commissions being passed on.
+source_span: [4731, 5092]
+speaker:
+  name: Matthew Pennycook
+  role: Minister of State for Housing and Planning
+  party: Labour
+  member_id: 4520
+  actor_id: matthew-pennycook
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: housing_env
+  who: leaseholders, landlords and managing agents
+  how_much: null
+  when: From 1 November 2027
+  funded_by: null
+  deadline: "2027-11-01"
+why: >-
+  Commission-sharing on buildings insurance with landlords and managing agents will be banned from 1
+  November 2027 and replaced with transparent permitted insurance payments; this is part of the
+  package of five statutory instruments laid under the Leasehold and Freehold Reform Act 2024.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      Our forthcoming Commonhold and Leasehold Reform Bill will contain a number of provisions that
+      provide existing leaseholders with greater rights, powers and protections over their homes,
+      including capping ground rents at £250 a year and the abolition of leasehold forfeiture and
+      its replacement with a modern, proportionate lease enforcement system that addresses breaches
+      fairly, with appropriate safeguards and judicial oversight.
+    source_span: [701, 1132]
+    suggested:
+      policy_area: housing_env
+      who: existing leaseholders
+      how_much: ground rents capped at £250 a year
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      The forthcoming Commonhold and Leasehold Reform Bill will cap ground rents at £250 a year,
+      abolish leasehold forfeiture and make commonhold the default tenure; this restates the
+      manifesto commitment to end the leasehold system.
+    confidence: 0.6
+  - quote: >-
+      From 1 April 2027, leaseholders will gain stronger rights to request information about their
+      service charges, building insurance, and the management, maintenance and repair of their
+      buildings.
+    source_span: [2345, 2537]
+    suggested:
+      policy_area: housing_env
+      who: leaseholders
+      how_much: null
+      when: From 1 April 2027
+      funded_by: null
+      deadline: "2027-04-01"
+    why: >-
+      From 1 April 2027 leaseholders will gain stronger legal rights to request information about
+      service charges, insurance and building management.
+    confidence: 0.5
+  - quote: >-
+      From 1 November 2027, landlords will be required to provide leaseholders with a standardised
+      Building Insurance Disclosure Document, giving them clear information about their insurance
+      cover and costs, how it was arranged and any financial incentives, relationships or potential
+      conflicts of interest between the parties involved.
+    source_span: [2538, 2868]
+    suggested:
+      policy_area: housing_env
+      who: leaseholders and landlords
+      how_much: null
+      when: From 1 November 2027
+      funded_by: null
+      deadline: "2027-11-01"
+    why: >-
+      From 1 November 2027 landlords must provide leaseholders with a standardised Building
+      Insurance Disclosure Document.
+    confidence: 0.55
+  - quote: >-
+      From 1 November 2027, all landlords other than social landlords must proactively give
+      leaseholders clearer information through standardised service charge demands, annual reports
+      and accounts.
+    source_span: [2869, 3061]
+    suggested:
+      policy_area: housing_env
+      who: >-
+        leaseholders; all landlords other than social landlords (social landlords from 1 November
+        2028)
+      how_much: null
+      when: From 1 November 2027
+      funded_by: null
+      deadline: "2027-11-01"
+    why: >-
+      From 1 November 2027 non-social landlords must issue standardised service charge demands,
+      annual reports and accounts, with the requirement extending to social landlords from 1
+      November 2028.
+    confidence: 0.65
+  - quote: >-
+      From 1 April 2027, the litigation costs regime will be reformed to address the current
+      imbalance between leaseholders and landlords, thereby removing a significant barrier to
+      challenging poor practice.
+    source_span: [3786, 3987]
+    suggested:
+      policy_area: housing_env
+      who: leaseholders and landlords
+      how_much: null
+      when: From 1 April 2027
+      funded_by: null
+      deadline: "2027-04-01"
+    why: >-
+      From 1 April 2027 landlords will in most cases need court or tribunal approval to recover
+      litigation costs through service charges, and leaseholders will gain a right to recover their
+      own litigation costs.
+    confidence: 0.7
+confidence: 0.75
+model: claude-opus-5-5
+status: to_review

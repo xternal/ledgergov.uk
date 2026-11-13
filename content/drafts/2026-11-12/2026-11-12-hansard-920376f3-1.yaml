@@ -1,0 +1,62 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/hansard-920376f3.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-12"
+source:
+  id: hansard-920376f3
+  kind: hansard_statement
+  url: https://hansard.parliament.uk/Commons/2026-11-12/debates/920376F3-251F-409D-BD8D-BA5A5B8A3D19/GazaHumanitarianSituation
+  title: "Gaza: Humanitarian Situation"
+  date: "2026-11-12"
+  venue_label: Commons statement
+quote: >-
+  We are working at pace to bring in the wider settlement trade ban. The Foreign Secretary said it
+  will take six to nine months, but I hope we can be at the earlier end of that spectrum.
+source_span: [25646, 25830]
+speaker:
+  name: Stephen Doughty
+  role: Minister of State, Foreign, Commonwealth and Development Office
+  party: null
+  member_id: 4264
+  actor_id: null
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: economic_affairs
+  who: businesses and others trading with illegal settlements
+  how_much: null
+  when: six to nine months from the Foreign Secretary's September announcement
+  funded_by: null
+  deadline: null
+why: >-
+  Restates the Foreign Secretary's earlier commitment to bring in a ban on trade with illegal
+  Israeli settlements within six to nine months.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      Overall, UK support will make a tangible difference to the people of Gaza, aiming to provide
+      winter clothing for 100,000 children, tarpaulins for 62,500 people, family tents for 1,250
+      households and blankets for 150,000 people.
+    source_span: [5485, 5712]
+    suggested:
+      policy_area: general_services
+      who: people of Gaza, including 100,000 children and 1,250 households
+      how_much: null
+      when: this winter
+      funded_by: >-
+        UK humanitarian funding, including a further £5 million to UNICEF from the bilateral budget
+      deadline: null
+    why: >-
+      The UK says its support will provide winter clothing for 100,000 children, tarpaulins for
+      62,500 people, family tents for 1,250 households and blankets for 150,000 people in Gaza.
+    confidence: 0.55
+confidence: 0.6
+model: claude-opus-5-5
+status: to_review
