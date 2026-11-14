@@ -1,0 +1,95 @@
+{
+ "base_path": "/government/publications/benefit-expenditure-and-caseload-tables-2025",
+ "first_published_at": "2025-04-23T00:00:00+01:00",
+ "public_updated_at": "2026-01-29T09:30:06+00:00",
+ "details": {
+  "attachments": [
+   {
+    "title": "Outturn and forecast tables: Autumn Budget 2025 (ODS) ",
+    "url": "https://assets.publishing.service.gov.uk/media/694931a672075a1d4a5089d9/outturn-and-forecast-tables-autumn-budget-2025.ods",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet"
+   },
+   {
+    "title": "Outturn and forecast tables: Autumn Budget 2025 (XLS)",
+    "url": "https://assets.publishing.service.gov.uk/media/694931be888ddc41b48a546f/outturn-and-forecast-tables-autumn-budget-2025.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+   },
+   {
+    "title": "Outturn and forecast tables: Spring Statement 2025  (ODS)",
+    "url": "https://assets.publishing.service.gov.uk/media/68f8b21d190c6607448bb731/outturn-and-forecast-tables-spring-statement-2025.ods",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet"
+   },
+   {
+    "title": "Outturn and forecast tables: Spring Statement 2025 (XLS)",
+    "url": "https://assets.publishing.service.gov.uk/media/68f8923724fc2bb7eed11ac8/outturn-and-forecast-tables-spring-statement-2025.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+   },
+   {
+    "title": "Benefit expenditure by country and region, 1996/97 to 2024/25",
+    "url": "https://assets.publishing.service.gov.uk/media/6940017ac72b0f8ccf33d78f/benefit-expenditure-by-country-and-region-2024-25.ods",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet"
+   },
+   {
+    "title": "Benefit expenditure by local authority, 2002/03 to 2024/25",
+    "url": "https://assets.publishing.service.gov.uk/media/693ffb536a12691d48491fb3/benefit-expenditure-by-local-authority-2024-25.ods",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet"
+   },
+   {
+    "title": "Benefit expenditure by parliamentary constituency, 2010/11 to 2024/25",
+    "url": "https://assets.publishing.service.gov.uk/media/693ffc50c72b0f8ccf33d788/benefit-expenditure-by-parliamentary-constituency-2024-25.ods",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet"
+   },
+   {
+    "title": "PIP expenditure by reported medical condition, 2013/14 to 2024/25 ",
+    "url": "https://assets.publishing.service.gov.uk/media/695b8ddfa2fb6c15f98d1954/pip-expenditure-2024-to-2025.ods",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet"
+   },
+   {
+    "title": "DLA expenditure by reported medical condition, 2002/03 to 2024/25 ",
+    "url": "https://assets.publishing.service.gov.uk/media/695b8db197f1c5e3c92a83d5/dla-expenditure-2024-to-2025.ods",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet"
+   },
+   {
+    "title": "Housing Benefit and Council Tax Benefit expenditure by local authority, 1996/97 to 2024/25",
+    "url": "https://assets.publishing.service.gov.uk/media/693fff915cc812f50aa421c1/housing-benefit-and-council-tax-benefit-to-2024-2025.ods",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet"
+   },
+   {
+    "title": "State Pension expenditure by country of residence, 1995/96 to 2024/25",
+    "url": "https://assets.publishing.service.gov.uk/media/693ffff9cfacd5e888491fb6/State-Pension-by-country-2024-25.ods",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet"
+   },
+   {
+    "title": "Protected Payments inflows, 2016/17 to 2030/31",
+    "url": "https://assets.publishing.service.gov.uk/media/694000505cc812f50aa421c2/Protected-payments-inflows-2016-17-to-2030-31.ods",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet"
+   }
+  ],
+  "change_history": [
+   {
+    "note": "Added 'PIP expenditure by reported medical condition' and 'DLA expenditure by reported medical condition' tables.",
+    "public_timestamp": "2026-01-29T09:30:06Z"
+   },
+   {
+    "note": "The  'Outturn and forecast tables: Autumn Budget 2025' ODS and XLS attachments have been updated.",
+    "public_timestamp": "2026-01-05T09:30:02Z"
+   },
+   {
+    "note": "Added the latest Autumn Budget 2025 outturn and forecast tables, and 6 other supplementary tables.",
+    "public_timestamp": "2025-12-18T09:30:08Z"
+   },
+   {
+    "note": "The Spring 2025 outturn and forecast table has been updated so that the Incapacity Benefit caseload totals in tables 4, 4(i) and 4(ii) no longer include Income Support, as it overlaps with other benefits. These lines are now correct and consistent with the Incapacity Benefit caseload total in the Incapacity Benefits table.",
+    "public_timestamp": "2025-10-22T10:35:40Z"
+   },
+   {
+    "note": "Removed PIP expenditure by reported medical condition, 2013-14 to 2023-24. This document has now been added to https://www.gov.uk/government/publications/benefit-expenditure-and-caseload-tables-2024. ",
+    "public_timestamp": "2025-07-23T10:13:05Z"
+   },
+   {
+    "note": "First published.",
+    "public_timestamp": "2025-04-22T23:00:00Z"
+   }
+  ]
+ }
+}
