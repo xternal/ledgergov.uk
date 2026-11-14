@@ -1,0 +1,63 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws472.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-13"
+source:
+  id: wms-hcws472
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-13/HCWS472
+  title: Youth Opportunities and Dormant Assets Funding
+  date: "2026-11-13"
+  venue_label: Written ministerial statement
+quote: >-
+  The Government is announcing the 60 local areas in England which will receive support through the
+  new Youth Matters Fund. These areas will benefit from over £20 million immediately and over £400
+  million of investment over the coming three years.
+source_span: [419, 664]
+speaker:
+  name: Vicky Foxcroft
+  role: Minister for Youth, Gambling, Digital Inclusion, Civil Society & Loneliness
+  party: Labour
+  member_id: 4491
+  actor_id: labour
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: culture
+  who: Young people in 60 local areas in England facing the greatest challenges
+  how_much: over £20 million immediately and over £400 million over the coming three years
+  when: over the coming three years
+  funded_by: null
+  deadline: null
+why: >-
+  Commits over £400 million of Youth Matters Fund investment over three years to 60 named local
+  areas in England for youth activities and facilities.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      Alongside this, the Government is announcing an additional £106 million of dormant assets
+      funding in England for the youth cause, taking the total to £238 million between 2024 and
+      2028.
+    source_span: [841, 1026]
+    suggested:
+      policy_area: culture
+      who: Young people in England
+      how_much: an additional £106 million, total £238 million
+      when: between 2024 and 2028
+      funded_by: dormant assets funding
+      deadline: null
+    why: >-
+      Commits an additional £106 million of dormant assets funding to youth programmes in England,
+      for a total of £238 million by 2028, with about £173 million going to a new Every Child Can
+      Fund.
+    confidence: 0.5
+confidence: 0.6
+model: claude-opus-5-5
+status: to_review

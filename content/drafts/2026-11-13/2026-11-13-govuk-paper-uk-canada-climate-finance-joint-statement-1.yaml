@@ -1,0 +1,44 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-paper-uk-canada-climate-finance-joint-statement.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-13"
+source:
+  id: govuk-paper-uk-canada-climate-finance-joint-statement
+  kind: govuk_policy_paper
+  url: https://www.gov.uk/government/publications/uk-canada-climate-finance-joint-statement/uk-canada-climate-finance-joint-statement
+  title: "UK-Canada climate finance: joint statement"
+  date: "2026-11-13"
+  venue_label: Policy paper (Department for Energy Security and Net Zero)
+quote: >-
+  The UK has now announced around £6 billion of ICF ODA over the next three years, the majority of
+  which is to be provided as grants, alongside £6.7 billion in public finance through UK-backed
+  climate and nature-positive non-ODA investments.
+source_span: [2802, 3041]
+speaker:
+  name: Katie White
+  role: null
+  party: null
+  member_id: null
+  actor_id: null
+  check: unverified # only the model says so; check who said it
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: general_services
+  who: developing countries
+  how_much: >-
+    around £6 billion of ICF ODA over three years, plus £6.7 billion in non-ODA public finance
+  when: over the next three years
+  funded_by: null
+  deadline: null
+why: >-
+  Restates an earlier UK announcement to provide around £6 billion of International Climate Finance
+  ODA over the next three years, mostly as grants, plus £6.7 billion in non-ODA public climate and
+  nature investment; editors should quote the original announcement.
+confidence: 0.5
+model: claude-opus-5-5
+status: to_review

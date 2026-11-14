@@ -1,0 +1,61 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-new-1700-place-leicestershire-prison-moves-a-step-closer.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-13"
+source:
+  id: govuk-new-1700-place-leicestershire-prison-moves-a-step-closer
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/new-1700-place-leicestershire-prison-moves-a-step-closer
+  title: New 1,700-place Leicestershire prison moves a step closer
+  date: "2026-11-13"
+  venue_label: Press release (Ministry of Justice)
+quote: >-
+  The new prison forms part of the largest prison building boom since the Victorian era, as the
+  Government delivers 14,000 additional places by 2031, after just 500 net places were added in the
+  14 years to July 2024.
+source_span: [1021, 1235]
+speaker:
+  name: HM Government
+  role: Ministry of Justice
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: public_order
+  who: null
+  how_much: null
+  when: by 2031
+  funded_by: null
+  deadline: null
+why: >-
+  Restates the Government's earlier commitment to deliver 14,000 additional prison places by 2031;
+  editors should quote the original commitment.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      It is being built by Wates Construction and will hold around 1,700 men and is due to receive
+      its first prisoners at the start of 2029.
+    source_span: [2722, 2856]
+    suggested:
+      policy_area: public_order
+      who: adult men in category B custody
+      how_much: null
+      when: start of 2029
+      funded_by: null
+      deadline: null
+    why: >-
+      HMP Welland Oaks, a 1,700-place category B prison in Market Harborough, will open and receive
+      its first prisoners at the start of 2029.
+    confidence: 0.6
+confidence: 0.7
+model: claude-opus-5-5
+status: to_review
