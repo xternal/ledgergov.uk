@@ -1,0 +1,42 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-new-online-tool-to-help-parents-choose-the-right-school.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-13"
+source:
+  id: govuk-new-online-tool-to-help-parents-choose-the-right-school
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/new-online-tool-to-help-parents-choose-the-right-school
+  title: New online tool to help parents choose the right school
+  date: "2026-11-13"
+  venue_label: Press release (Department for Education)
+quote: >-
+  The service will continue to develop after launch, with a side-by-side comparison feature
+  currently offered for secondary schools rolled out to primary, and Ofsted reports added to show
+  where different schools excel launching next year.
+source_span: [952, 1188]
+speaker:
+  name: HM Government
+  role: Department for Education
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: education
+  who: parents choosing primary and secondary schools
+  how_much: null
+  when: next year (2027)
+  funded_by: null
+  deadline: null
+why: >-
+  The Department commits to extend the school profiles service next year, adding the side-by-side
+  comparison feature for primary schools and adding Ofsted reports.
+confidence: 0.7
+model: claude-opus-5-5
+status: to_review
