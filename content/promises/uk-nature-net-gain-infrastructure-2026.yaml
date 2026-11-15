@@ -9,14 +9,15 @@ venue_label:
   en: >-
     Growing Places: Mobilising private finance for local nature recovery (Defra policy paper)
 area: housing_env
-status: promised
+status: delivered
 status_note:
   en: >-
     Biodiversity net gain (BNG) requires a development to leave nature in a better state than
     before. The paper says it has applied to development under the Town and Country Planning Act
     since 2024 and will be extended to nationally significant infrastructure projects, such as large
     energy and transport schemes, from November 2026. "From November 2026" is read as by 30 November
-    2026. The card moves when the requirement takes effect for those projects.
+    2026. Defra's guidance says the requirement became mandatory for those projects on 2 November
+    2026, inside that deadline, so the card reads Delivered.
 responsible:
   actor_id: hm-government
 origin: llm_intake
@@ -57,6 +58,13 @@ events:
       en: >-
         Biodiversity net gain due to apply to nationally significant infrastructure projects by
         November 2026
+  - date: "2026-11-02"
+    type: delivered
+    text:
+      en: >-
+        Defra guidance: biodiversity net gain became mandatory for nationally significant
+        infrastructure projects on 2 November 2026
+    evidence_url: https://www.gov.uk/guidance/biodiversity-net-gain-nationally-significant-infrastructure-projects
 replies: []
 reviews:
   - by: AI Journalist
