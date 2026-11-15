@@ -1,0 +1,63 @@
+format: openpromises/1
+id: uk-settlement-trade-ban-2026
+headline:
+  en: "Ban trade with illegal settlements"
+actor_id: stephen-doughty
+made_on: "2026-11-12"
+venue: parliament
+venue_label:
+  en: >-
+    Commons statement
+area: general_services
+status: promised
+status_note:
+  en: >-
+    In a statement on the humanitarian situation in Gaza, the minister said the government is
+    working at pace to bring in a wider trade ban on illegal settlements, which the Foreign
+    Secretary has said will take six to nine months; he hoped it would be at the earlier end. He did
+    not say from when the six to nine months run, so the card has no deadline. He also said work is
+    under way on a new sanctions regime targeting illegal settlement activity, announced in
+    September. The card moves when legislation for the ban is laid.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Hansard, House of Commons, 12 Nov 2026: Gaza: Humanitarian Situation
+    url: https://hansard.parliament.uk/Commons/2026-11-12/debates/920376F3-251F-409D-BD8D-BA5A5B8A3D19/GazaHumanitarianSituation
+versions:
+  - version: 1
+    text: >-
+      We are working at pace to bring in the wider settlement trade ban. The Foreign Secretary said
+      it will take six to nine months, but I hope we can be at the earlier end of that spectrum.
+    recorded_on: "2026-11-12"
+    source_url: https://hansard.parliament.uk/Commons/2026-11-12/debates/920376F3-251F-409D-BD8D-BA5A5B8A3D19/GazaHumanitarianSituation
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          Trade with illegal settlements
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          Six to nine months, as the Foreign Secretary said; the start is not stated
+      funded_by: null
+events:
+  - date: "2026-11-12"
+    type: promised
+    text:
+      en: >-
+        The Foreign Office minister says the government is working at pace to bring in a wider trade
+        ban on illegal settlements
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

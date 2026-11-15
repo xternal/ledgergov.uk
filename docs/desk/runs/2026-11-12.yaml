@@ -1,0 +1,60 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-11-12"
+triaged_on: "2026-11-15"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 228
+sources_read: 4
+drafts: 4
+candidates: 11
+outcomes:
+  card: 5
+  reworded: 0
+  duplicate: 2
+  existing: 2
+  grant: 1
+  done: 0
+  process: 1
+  broad: 0
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 5
+new_actors: [stephen-doughty]
+cards:
+  - uk-settlement-trade-ban-2026
+  - uk-building-insurance-commissions-2027
+  - uk-leasehold-information-rights-2027
+  - uk-service-charge-standard-bills-2027
+  - uk-leasehold-legal-costs-2027
+reworded: []
+dropped:
+  - draft: 2026-11-12-hansard-920376f3-1
+    quote: also0
+    code: grant
+    note: "winter supplies for Gaza from UK support, including a further £5 million to UNICEF"
+  - draft: 2026-11-12-wms-hcws466-1
+    quote: quote
+    code: duplicate
+    into: uk-glass-packaging-fees-pubs-2027
+    note: "the minister's statement on the same change, added to the card's sources (intake 2026-11-11)"
+  - draft: 2026-11-12-wms-hcws466-1
+    quote: also0
+    code: existing
+    into: uk-bics-electricity-2026
+    note: "the British Industrial Competitiveness Scheme cutting electricity bills by up to 25% from April 2027"
+  - draft: 2026-11-12-wms-hcws467-1
+    quote: quote
+    code: process
+    note: "a Departmental Minute on the contingent liability from waiving third-party liability for novel space missions launched before the end of 2030, announced with the Space Strategy on 8 September"
+  - draft: 2026-11-12-wms-hcws470-1
+    quote: also0
+    code: existing
+    into: uk-ground-rent-cap-250-2026
+    note: "the Commonhold and Leasehold Reform Bill: the £250 ground rent cap and abolishing forfeiture"
+  - draft: 2026-11-12-wms-hcws470-1
+    quote: also2
+    code: duplicate
+    into: uk-building-insurance-commissions-2027
+    note: "the standard Building Insurance Disclosure Document from the same date, in the card's status note"

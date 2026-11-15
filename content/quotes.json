@@ -281,6 +281,12 @@
     "checked_on": "2026-11-15",
     "sha256": "c3f27836d29725fed0af4328cfa5032d6a186d276ee41e000852ec157d70b17b"
   },
+  "37dc3f790bf989bc7b32fadb4226a8cbd924f919fd63eb3d2fb6b5970affb156|https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470",
+    "checked_on": "2026-11-15",
+    "sha256": "556add3cb68696221b94e83deaa1b49b47c82a34c424676baa2fd4ba4e152697"
+  },
   "3972470cae0400c655bbddfd6f054ebb681819ddf0e913d427e93815cca820bc|https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people",
@@ -485,6 +491,12 @@
     "checked_on": "2026-10-20",
     "sha256": "5fa1aa9b46be7cb8f0e63a3c0516d583830bd13651491799eb75d30fa2df8aae"
   },
+  "566d3d93c1339bbff46bf01c8132ead1bacfe703a68bebe62487308d2d8a4782|https://hansard.parliament.uk/Commons/2026-11-12/debates/920376F3-251F-409D-BD8D-BA5A5B8A3D19/GazaHumanitarianSituation": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-11-12/debates/920376F3-251F-409D-BD8D-BA5A5B8A3D19/GazaHumanitarianSituation",
+    "checked_on": "2026-11-15",
+    "sha256": "a8b337137152760fb1cc784746b207e5c00ffc58b2a1494e47f6b0519a7a30a1"
+  },
   "58565777b30bf34280903b976962c582d0c9e28f7db6ded4247d8d3d83579c68|https://www.gov.uk/government/speeches/prime-ministers-speech-on-ai-26-october-2023": {
     "match": "exact",
     "url": "https://www.gov.uk/government/speeches/prime-ministers-speech-on-ai-26-october-2023",
@@ -659,11 +671,23 @@
     "checked_on": "2026-10-20",
     "sha256": "e340c96c9e7adc61d010a779f58718bf7eb8ed59338a7ffbc2fe1d7e4f65976f"
   },
+  "79d4d3478136d9904e0d6d03d8f9cd3cbd56e12a51b44707e5d0f098299d055c|https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470",
+    "checked_on": "2026-11-15",
+    "sha256": "556add3cb68696221b94e83deaa1b49b47c82a34c424676baa2fd4ba4e152697"
+  },
   "7a510a9525cfc992b055f82e8025ab4452a98b20aff2f9e845a80cd921249895|https://greenparty.org.uk/2026/03/18/zack-polanski-lays-out-plans-to-back-the-caring-majority-in-major-speech/": {
     "match": "exact",
     "url": "https://greenparty.org.uk/2026/03/18/zack-polanski-lays-out-plans-to-back-the-caring-majority-in-major-speech/",
     "checked_on": "2026-10-21",
     "sha256": "5f70fad153ddcf8363e3953402aa24a546ea32c57c1d6f65aa0791126dc4302a"
+  },
+  "7c7b4197b8298cae2bf1b4fa505fdde12b5c2f1f07082557bbc03a060041f9a1|https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470",
+    "checked_on": "2026-11-15",
+    "sha256": "556add3cb68696221b94e83deaa1b49b47c82a34c424676baa2fd4ba4e152697"
   },
   "7cad7df6c31fc1045d5215710d11ffe83ed238fa9ff40b11678ac86a4fa8028e|https://www.gov.uk/government/publications/income-tax-changes-to-tax-rates-for-property-and-savings-income/income-tax-changes-to-tax-rates-for-property-and-savings-income": {
     "match": "exact",
@@ -1348,6 +1372,12 @@
     "url": "https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap",
     "checked_on": "2026-11-15",
     "sha256": "a6a8e9701173bc056ba866011e5d3443cd42362935a27546d2d388b4ab63988d"
+  },
+  "f49158d68adc06ca2a406227b3a64c3bbe969530fe3ba9ef28a4a5517a9d0e12|https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470",
+    "checked_on": "2026-11-15",
+    "sha256": "556add3cb68696221b94e83deaa1b49b47c82a34c424676baa2fd4ba4e152697"
   },
   "f5442457f55e976b68c9c03fe0e2f2848e25eec86b56c7fd2ee7347af4b0cfc6|https://www.gov.uk/government/publications/vat-supply-of-certain-passenger-transport-services-through-agents/vat-treatment-of-private-hire-vehicle-operators": {
     "match": "exact",

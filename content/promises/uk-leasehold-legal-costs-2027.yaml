@@ -1,0 +1,75 @@
+format: openpromises/1
+id: uk-leasehold-legal-costs-2027
+headline:
+  en: "Limit landlords' legal cost recovery"
+actor_id: matthew-pennycook
+made_on: "2026-11-12"
+venue: parliament
+venue_label:
+  en: >-
+    Written ministerial statement
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    Landlords will in most cases need court or tribunal approval before recovering their litigation
+    costs through a service or administration charge, and leaseholders get a new right to recover
+    their own litigation costs from their landlord, with approval. Lower-value costs recovered
+    through an administration charge are exempt. A further statutory instrument on litigation costs
+    is to be laid later this year and come into force at the same time. The card moves when the
+    regulations are in force.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS470, 12 Nov 2026: Regulation of leasehold: service charges,
+      litigation costs and insurance costs
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470
+  - title: >-
+      Ministry of Housing, Communities and Local Government press release, 11 Nov 2026: Flat owners
+      handed massive boost to fight rip-off service charges
+    url: https://www.gov.uk/government/news/flat-owners-handed-massive-boost-to-fight-rip-off-service-charges
+versions:
+  - version: 1
+    text: >-
+      From 1 April 2027, the litigation costs regime will be reformed to address the current
+      imbalance between leaseholders and landlords, thereby removing a significant barrier to
+      challenging poor practice.
+    recorded_on: "2026-11-12"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          Leaseholders and landlords
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          From 1 April 2027
+      deadline: "2027-04-01"
+      funded_by: null
+events:
+  - date: "2026-11-12"
+    type: promised
+    text:
+      en: >-
+        The Housing Minister says the litigation costs regime between leaseholders and landlords
+        will be reformed from 1 April 2027
+  - date: "2027-04-01"
+    type: deadline
+    text:
+      en: >-
+        Reformed litigation costs rules for leaseholders and landlords due
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
