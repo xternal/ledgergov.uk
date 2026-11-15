@@ -1,0 +1,23 @@
+format: openpromises/1
+id: stephen-doughty
+kind: person
+name:
+  en: Stephen Doughty
+party_id: labour
+# The draft gives no party for him; it comes from the UK Parliament Members API
+# (members-api.parliament.uk, searched 15 November 2026): member 4264, Labour (Co-op), the same
+# party as the labour actor.
+roles:
+  - title:
+      en: Minister of State, Foreign, Commonwealth and Development Office
+    source:
+      url: https://hansard.parliament.uk/Commons/2026-11-12/debates/920376F3-251F-409D-BD8D-BA5A5B8A3D19/GazaHumanitarianSituation
+      quote: The Minister of State, Foreign, Commonwealth and Development Office (Stephen Doughty)
+identifiers:
+  parliament_member_id: 4264
+# Official social accounts in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/4264/Contact, checked 15 November 2026.
+same_as:
+  - https://x.com/SDoughtyMP
+  - https://www.facebook.com/StephenDoughtyMP
+same_as_checked_on: "2026-11-15"

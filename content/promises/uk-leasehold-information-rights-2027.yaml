@@ -1,0 +1,73 @@
+format: openpromises/1
+id: uk-leasehold-information-rights-2027
+headline:
+  en: "Right to ask about service charges"
+actor_id: matthew-pennycook
+made_on: "2026-11-12"
+venue: parliament
+venue_label:
+  en: >-
+    Written ministerial statement
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    Set out in regulations the minister laid on 12 November 2026 to switch on measures from the
+    Leasehold and Freehold Reform Act 2024. The government's press release of 11 November says
+    leaseholders will be able to ask for information from previous years and landlords will need a
+    good reason to refuse. The card moves when the regulations are in force.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS470, 12 Nov 2026: Regulation of leasehold: service charges,
+      litigation costs and insurance costs
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470
+  - title: >-
+      Ministry of Housing, Communities and Local Government press release, 11 Nov 2026: Flat owners
+      handed massive boost to fight rip-off service charges
+    url: https://www.gov.uk/government/news/flat-owners-handed-massive-boost-to-fight-rip-off-service-charges
+versions:
+  - version: 1
+    text: >-
+      From 1 April 2027, leaseholders will gain stronger rights to request information about their
+      service charges, building insurance, and the management, maintenance and repair of their
+      buildings.
+    recorded_on: "2026-11-12"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          Leaseholders (the government says over three million)
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          From 1 April 2027
+      deadline: "2027-04-01"
+      funded_by: null
+events:
+  - date: "2026-11-12"
+    type: promised
+    text:
+      en: >-
+        The Housing Minister says leaseholders will gain stronger rights to request information
+        about their service charges from 1 April 2027
+  - date: "2027-04-01"
+    type: deadline
+    text:
+      en: >-
+        Stronger information rights for leaseholders due
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,76 @@
+format: openpromises/1
+id: uk-service-charge-standard-bills-2027
+headline:
+  en: "Standard service charge bills"
+actor_id: matthew-pennycook
+made_on: "2026-11-12"
+venue: parliament
+venue_label:
+  en: >-
+    Written ministerial statement
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    From 1 November 2027 landlords other than social landlords must use standard service charge
+    demands and give annual reports and accounts, and all landlords must set out administration fees
+    in a standard schedule. The requirement extends to social landlords, councils and housing
+    associations, from 1 November 2028. The regulations were laid on 12 November 2026; three of the
+    five need Parliament's approval. The deadline is the first date. The card moves when the
+    regulations are in force.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS470, 12 Nov 2026: Regulation of leasehold: service charges,
+      litigation costs and insurance costs
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470
+  - title: >-
+      Ministry of Housing, Communities and Local Government press release, 11 Nov 2026: Flat owners
+      handed massive boost to fight rip-off service charges
+    url: https://www.gov.uk/government/news/flat-owners-handed-massive-boost-to-fight-rip-off-service-charges
+versions:
+  - version: 1
+    text: >-
+      From 1 November 2027, all landlords other than social landlords must proactively give
+      leaseholders clearer information through standardised service charge demands, annual reports
+      and accounts.
+    recorded_on: "2026-11-12"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          Leaseholders; landlords other than social landlords first, social landlords from 1
+          November 2028
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          From 1 November 2027 (social landlords from 1 November 2028)
+      deadline: "2027-11-01"
+      funded_by: null
+events:
+  - date: "2026-11-12"
+    type: promised
+    text:
+      en: >-
+        The Housing Minister says landlords other than social landlords must give leaseholders
+        standardised service charge demands, annual reports and accounts from 1 November 2027
+  - date: "2027-11-01"
+    type: deadline
+    text:
+      en: >-
+        Standard service charge demands due from landlords other than social landlords
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

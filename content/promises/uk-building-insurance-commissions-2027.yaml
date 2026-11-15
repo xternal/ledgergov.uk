@@ -1,0 +1,76 @@
+format: openpromises/1
+id: uk-building-insurance-commissions-2027
+headline:
+  en: "Ban building insurance commissions"
+actor_id: matthew-pennycook
+made_on: "2026-11-12"
+venue: parliament
+venue_label:
+  en: >-
+    Written ministerial statement
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    One of five statutory instruments the minister laid on 12 November 2026 to switch on remaining
+    measures from the Leasehold and Freehold Reform Act 2024; three of them need Parliament's
+    approval before they come into force. From the same date landlords must also give leaseholders a
+    standard Building Insurance Disclosure Document on their cover, its cost and any financial
+    incentives or conflicts of interest. The card moves when the regulations are approved and in
+    force.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS470, 12 Nov 2026: Regulation of leasehold: service charges,
+      litigation costs and insurance costs
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470
+  - title: >-
+      Ministry of Housing, Communities and Local Government press release, 11 Nov 2026: Flat owners
+      handed massive boost to fight rip-off service charges
+    url: https://www.gov.uk/government/news/flat-owners-handed-massive-boost-to-fight-rip-off-service-charges
+versions:
+  - version: 1
+    text: >-
+      From 1 November 2027, commission-sharing with landlords and managing agents will be banned and
+      replaced with transparent permitted insurance payments. This will ensure leaseholders are only
+      charged for specific insurance-related services provided to them by their landlord or managing
+      agent, thereby preventing the cost of excessive commissions being passed on.
+    recorded_on: "2026-11-12"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          Leaseholders, landlords and managing agents
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          From 1 November 2027
+      deadline: "2027-11-01"
+      funded_by: null
+events:
+  - date: "2026-11-12"
+    type: promised
+    text:
+      en: >-
+        The Housing Minister says commission-sharing on building insurance will be banned from 1
+        November 2027
+  - date: "2027-11-01"
+    type: deadline
+    text:
+      en: >-
+        Ban on insurance commission-sharing with landlords and managing agents due
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
