@@ -71,6 +71,12 @@
     "checked_on": "2026-10-30",
     "sha256": "80fd9d265ccd097e0329e35a53cd6c3cc6f93a408ac9c5afd8ffe6a6505c8e32"
   },
+  "070335031636bbc4a9339903f8ef4bf589d1405db1eb9fa32ffac466e40553f2|https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap",
+    "checked_on": "2026-11-15",
+    "sha256": "a6a8e9701173bc056ba866011e5d3443cd42362935a27546d2d388b4ab63988d"
+  },
   "08716a1b877f172551f1c2db2d40b6f30d28eee44014db390b9b1041e047ee38|https://www.kemibadenoch.org.uk/news/kemi-badenoch-mp-net-zero-has-failed-and-made-your-electricity-more-expensive-heres-my-plan": {
     "match": "exact",
     "url": "https://www.kemibadenoch.org.uk/news/kemi-badenoch-mp-net-zero-has-failed-and-made-your-electricity-more-expensive-heres-my-plan",
@@ -191,6 +197,12 @@
     "checked_on": "2026-10-20",
     "sha256": "bfd72905eb5de7945125ec6ab889eb1ae2502aa5b2bdb4cfe08771d62391338c"
   },
+  "23492c97be1f89621ddea71eeee16ede2b45c076d1483024ebb49df5b87c96a4|https://www.gov.uk/government/news/90000-young-people-furthest-from-work-to-be-given-guaranteed-job-no-matter-where-they-live": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/90000-young-people-furthest-from-work-to-be-given-guaranteed-job-no-matter-where-they-live",
+    "checked_on": "2026-11-15",
+    "sha256": "b74b3b2140852cb8b21f4fe790fcd4d60cef172ff47c8ab97b5e3913d8828a2a"
+  },
   "2376ac9146f988b068e1be6eef3a165010d1fef891edb3874b7fc60a8003cd3c|https://www.gov.uk/government/news/over-100000-job-and-training-opportunities-a-year-to-give-young-people-a-route-into-britains-growth-industries-as-part-of-industrial-strategy": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/over-100000-job-and-training-opportunities-a-year-to-give-young-people-a-route-into-britains-growth-industries-as-part-of-industrial-strategy",
@@ -262,6 +274,12 @@
     "url": "https://hansard.parliament.uk/Commons/2026-11-10/debates/5AB72929-9239-4CE1-AB33-3AB878B6B36E/MobilePhonesInSchools",
     "checked_on": "2026-11-15",
     "sha256": "742b63d7d45b1aa4e15d410b231beb951fb10c9a33f3e688ee039019adc0d8ca"
+  },
+  "363bac4f99bbc2b2f78bf61ab8b590ffc9b3650c30065a2b4ece64714c806fe9|https://www.gov.uk/government/news/curriculum-overhaul-to-re-engage-pupils-in-vital-early-secondary-years": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/curriculum-overhaul-to-re-engage-pupils-in-vital-early-secondary-years",
+    "checked_on": "2026-11-15",
+    "sha256": "c3f27836d29725fed0af4328cfa5032d6a186d276ee41e000852ec157d70b17b"
   },
   "3972470cae0400c655bbddfd6f054ebb681819ddf0e913d427e93815cca820bc|https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people": {
     "match": "exact",
@@ -551,6 +569,12 @@
     "checked_on": "2026-11-08",
     "sha256": "bdf4a15157ae272e6328bea8899ff4aca9c9471e6a97060abd8c99fe4965e875"
   },
+  "665729e922da169c951d6259cf8232586550fa2162f0d1e5a560af96d7b795b2|https://www.gov.uk/government/news/90000-young-people-furthest-from-work-to-be-given-guaranteed-job-no-matter-where-they-live": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/90000-young-people-furthest-from-work-to-be-given-guaranteed-job-no-matter-where-they-live",
+    "checked_on": "2026-11-15",
+    "sha256": "b74b3b2140852cb8b21f4fe790fcd4d60cef172ff47c8ab97b5e3913d8828a2a"
+  },
   "6804897c5484e05e8cd5b85aa25343b1fa99e4288362eb7e7398cabd2826c203|https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements": {
     "match": "exact",
     "url": "https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements",
@@ -724,6 +748,12 @@
     "url": "https://www.gov.uk/government/news/prime-minister-to-create-smokefree-generation-by-ending-cigarette-sales-to-those-born-on-or-after-1-january-2009",
     "checked_on": "2026-10-20",
     "sha256": "12ce778db5289a4d1689197aea05d42d4f0a1bab4858cea36d71cd2115a9b551"
+  },
+  "8df3ba3c7c29374e3b5cc93d1ba7a63ffb6870d0ccd429d9f20faa0be4623811|https://www.gov.uk/government/news/investigation-into-illegal-waste-dumping-in-yorkshire-town": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/investigation-into-illegal-waste-dumping-in-yorkshire-town",
+    "checked_on": "2026-11-15",
+    "sha256": "3b2b79096654891ee155fb580da000703ff7ad495e85b8708e845e6b6543f39e"
   },
   "8df5ddb0bfeea118dca80b7000ad598024675ec32dfb48c6e250bbf0f139238c|https://www.gov.uk/government/news/more-money-reaching-children-than-ever-thanks-to-child-maintenance-service": {
     "match": "exact",
@@ -1079,6 +1109,12 @@
     "checked_on": "2026-10-20",
     "sha256": "7db77227800a600c8a7af44f083f5550e1f32740cb7eee7b50020a718b7d654b"
   },
+  "c8bb28e1e3c3fd07992cfff5eb0076cd12a5e4e3008aa812e3b62011b1b4d16e|https://www.gov.uk/government/news/new-online-tool-to-help-parents-choose-the-right-school": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/new-online-tool-to-help-parents-choose-the-right-school",
+    "checked_on": "2026-11-15",
+    "sha256": "95fe5e3d9a85171c82d555d12b5540b2f8f317ecae21266df4574d225a7a83f8"
+  },
   "ca549c83f23ffc43d5e2f02677332d77892cb5cbd9ca5f241531be2b22593f2b|https://www.gov.uk/government/speeches/pm-words-on-gaza-29-july-2025": {
     "match": "exact",
     "url": "https://www.gov.uk/government/speeches/pm-words-on-gaza-29-july-2025",
@@ -1121,6 +1157,12 @@
     "checked_on": "2026-11-08",
     "sha256": "9f760a3972dfbb6e3a60ebbe2314f58b6ce9bd2aec93b8ee47b769dbef46b400"
   },
+  "cf3c05cffb67968fa5987151d07ed3e271ba98f6f6cd7fc907e625f8bc2c8834|https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap",
+    "checked_on": "2026-11-15",
+    "sha256": "a6a8e9701173bc056ba866011e5d3443cd42362935a27546d2d388b4ab63988d"
+  },
   "cf9c2fd495470a4ac00cc92fa0c4b7c11ebbe7a0e98e68caaa13d5711efaded7|https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines",
@@ -1162,6 +1204,12 @@
     "url": "https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts",
     "checked_on": "2026-10-18",
     "sha256": "4ab1450e223678aabc953c4eec9960dc45fbb09b2450f3feac3cb172e8995a56"
+  },
+  "d74540be279e7eed3dcd0ac1f2464888481f6d8ebc9213e730206e9d8917638b|https://www.gov.uk/government/publications/uk-canada-climate-finance-joint-statement/uk-canada-climate-finance-joint-statement": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/uk-canada-climate-finance-joint-statement/uk-canada-climate-finance-joint-statement",
+    "checked_on": "2026-11-15",
+    "sha256": "aa5b0162c18c097a8cb4fc9665641f69bf7ea035bf336237bf09b2a046995ee0"
   },
   "d867da066dde79f22e0209c037d28f38ec868a6116c6d61ddee9786f2c2adc41|https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people": {
     "match": "exact",
@@ -1216,6 +1264,12 @@
     "url": "https://www.gov.uk/government/news/domestic-abusers-face-eviction-as-survivors-gain-housing-rights",
     "checked_on": "2026-10-25",
     "sha256": "c3dd434aaba0bb8f837df0388ddb40a327f32b4bbfb70f18429a6bc9d7d0b381"
+  },
+  "e405f3510fdf162850fc72061ade8e592507d3890630265a9287be462761d591|https://www.gov.uk/government/news/new-1700-place-leicestershire-prison-moves-a-step-closer": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/new-1700-place-leicestershire-prison-moves-a-step-closer",
+    "checked_on": "2026-11-15",
+    "sha256": "e3b264e8f12051eb0c4c9c41c7556c9c41626dc13f06f76623fbfdaa9c8e7afd"
   },
   "e4aad1f3399bc57919d6bd34aee64af35c6937aa0b0534d5b313741361858aab|https://www.gov.uk/government/news/prime-minister-and-chancellors-call-with-the-president-of-ukraine-28-october-2026": {
     "match": "exact",
@@ -1288,6 +1342,12 @@
     "url": "https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines",
     "checked_on": "2026-10-16",
     "sha256": "bb4b49a5e27ea86f4caaaa3aa018a3e0dd3acf89bf5134c7efd19297c96b32ad"
+  },
+  "ef816c167d4250d4baa61cbe43ee1153e96e72b015532556a8c0c140fb686978|https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap",
+    "checked_on": "2026-11-15",
+    "sha256": "a6a8e9701173bc056ba866011e5d3443cd42362935a27546d2d388b4ab63988d"
   },
   "f5442457f55e976b68c9c03fe0e2f2848e25eec86b56c7fd2ee7347af4b0cfc6|https://www.gov.uk/government/publications/vat-supply-of-certain-passenger-transport-services-through-agents/vat-treatment-of-private-hire-vehicle-operators": {
     "match": "exact",

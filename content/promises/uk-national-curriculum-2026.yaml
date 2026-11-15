@@ -1,0 +1,71 @@
+format: openpromises/1
+id: uk-national-curriculum-2026
+headline:
+  en: "Publish the new National Curriculum"
+actor_id: hm-government
+made_on: "2026-11-08"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Department for Education)
+area: education
+status: promised
+status_note:
+  en: >-
+    The Department for Education says the new National Curriculum, developed by subject experts, is
+    due to be published in full later this year, read as by 31 December 2026. It will slim down
+    content, restore Key Stage 3 as a distinct three-year phase, and say that schools should not
+    start GCSE courses early for large groups of pupils. The release gives no cost and does not say
+    when schools start teaching it. The card moves when the curriculum is published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Education press release, 8 Nov 2026: Curriculum overhaul to re-engage pupils in
+      vital early secondary years
+    url: https://www.gov.uk/government/news/curriculum-overhaul-to-re-engage-pupils-in-vital-early-secondary-years
+versions:
+  - version: 1
+    text: >-
+      The new National Curriculum, due to be published in full later this year, which has been
+      developed by subject experts, will see over-crowded content slimmed down and better sequenced
+      across all school stages to create more space for deeper understanding and richer experiences
+      that ignite a love of learning, ensure more children are stretched and make progress.
+    recorded_on: "2026-11-08"
+    source_url: https://www.gov.uk/government/news/curriculum-overhaul-to-re-engage-pupils-in-vital-early-secondary-years
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          Pupils at every school stage
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          Later this year (2026)
+      deadline: "2026-12-31"
+      funded_by: null
+events:
+  - date: "2026-11-08"
+    type: promised
+    text:
+      en: >-
+        The Department for Education says the new National Curriculum will be published in full
+        later this year
+  - date: "2026-12-31"
+    type: deadline
+    text:
+      en: >-
+        New National Curriculum due to be published in full
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

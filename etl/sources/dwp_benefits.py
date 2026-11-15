@@ -50,12 +50,41 @@ def _content(path: str, name: str) -> dict:
 
 
 def _vintage(title: str, fallback_year: str) -> str:
-    """'Outturn and forecast tables: Spring Forecast 2026' -> 'DWP-SF-2026'."""
-    m = re.search(r":\s*([A-Za-z ]+?)\s+(\d{4})\s*$", title.strip())
+    """'Outturn and forecast tables: Spring Forecast 2026' -> 'DWP-SF-2026'; a trailing '(XLS)' is ignored."""
+    m = re.search(r":\s*([A-Za-z ]+?)\s+(\d{4})\s*$", _event(title))
     if not m:
         return f"DWP-{fallback_year}"
     initials = "".join(w[0].upper() for w in m.group(1).split())
     return f"DWP-{initials}-{m.group(2)}"
+
+
+def _event(title: str) -> str:
+    """The title without a trailing '(XLS)' / '(ODS)' and spare spaces: 'Outturn and forecast tables: Autumn Budget 2025'."""
+    return re.sub(r"\s*\([A-Z]+\)\s*$", "", " ".join(title.split()))
+
+
+def choose_edition(page: dict) -> tuple[dict, str, date]:
+    """
+    The newest 'Outturn and forecast tables' xlsx on a yearly GOV.UK page, its vintage, and the day it appeared.
+
+    DWP adds the autumn tables to the same yearly page as the spring ones (Autumn Budget 2025 joined the
+    2025 page on 18 Dec 2025), so an autumn edition beats a spring one of the same year, and its date is
+    the first change note that names it, not the page's first_published_at (the spring edition's date).
+    """
+    xlsx = [a for a in page.get("details", {}).get("attachments", [])
+            if (a.get("url") or "").lower().endswith(".xlsx") and re.search(r"outturn and forecast", a.get("title") or "", re.I)]
+    if not xlsx:
+        raise RuntimeError(f"{page.get('base_path')}: no 'Outturn and forecast tables' xlsx")
+    # Autumn editions come after spring ones; otherwise keep GOV.UK's order (newest first).
+    best = max(enumerate(xlsx), key=lambda ia: ("autumn" in (ia[1].get("title") or "").lower(), -ia[0]))[1]
+    title = _event(best.get("title") or "")
+    year = re.search(r"(\d{4})$", page.get("base_path", "")) or re.search(r"(\d{4})", title)
+    vintage = _vintage(title, year.group(1) if year else "unknown")
+    name = title.split(":", 1)[-1].strip().lower()
+    named = [c["public_timestamp"][:10] for c in page.get("details", {}).get("change_history", [])
+             if name and name in " ".join((c.get("note") or "").split()).lower()]
+    published = date.fromisoformat(min(named) if named else page["first_published_at"][:10])
+    return best, vintage, published
 
 
 def fetch(since: date | None = None) -> list[RawArtifact]:
@@ -69,16 +98,10 @@ def fetch(since: date | None = None) -> list[RawArtifact]:
         raise RuntimeError("no benefit expenditure and caseload tables edition in the GOV.UK collection")
     year, doc = best
     page = _content(doc["base_path"], f"dwp_{year}")
-    published = date.fromisoformat(page["first_published_at"][:10])
+    attachment, vintage, published = choose_edition(page)
     if since and published < since:
         return []
-    out = []
-    for a in page.get("details", {}).get("attachments", []):
-        url, title = a.get("url") or "", a.get("title") or ""
-        if url.lower().endswith(".xlsx") and re.search(r"outturn and forecast", title, re.I):
-            out.append(download(SOURCE.id, url, vintage=_vintage(title, str(year))))
-    if not out:
-        raise RuntimeError(f"{doc['base_path']}: no 'Outturn and forecast tables' xlsx")
+    out = [download(SOURCE.id, attachment["url"], vintage=vintage)]
     SOURCE.published_on = max(SOURCE.published_on or published, published)
     return out
 

@@ -1,0 +1,70 @@
+format: openpromises/1
+id: uk-jobs-guarantee-12-months-2027
+headline:
+  en: "Jobs Guarantee after 12 months, not 18"
+actor_id: hm-government
+made_on: "2026-11-14"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Department for Work and Pensions)
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    Young people aged 18 to 24 on Universal Credit and looking for work are now referred to the Jobs
+    Guarantee after 18 months out of work; the release says this falls to 12 months from April 2027,
+    read as by 30 April 2027. From the same month, those receiving the health element of Universal
+    Credit can take part voluntarily, as announced in September. The card moves when the change
+    takes effect.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Work and Pensions press release, 14 Nov 2026: 90,000 young people furthest from
+      work to be given guaranteed job, no matter where they live
+    url: https://www.gov.uk/government/news/90000-young-people-furthest-from-work-to-be-given-guaranteed-job-no-matter-where-they-live
+versions:
+  - version: 1
+    text: >-
+      From April 2027 eligibility for the scheme will be widened to enable young people who are
+      claiming Universal Credit and looking for work to access the Jobs Guarantee scheme after 12
+      months.
+    recorded_on: "2026-11-14"
+    source_url: https://www.gov.uk/government/news/90000-young-people-furthest-from-work-to-be-given-guaranteed-job-no-matter-where-they-live
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          18 to 24 year olds on Universal Credit who are looking for work
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          From April 2027
+      deadline: "2027-04-30"
+      funded_by: null
+events:
+  - date: "2026-11-14"
+    type: promised
+    text:
+      en: >-
+        The government says young people on Universal Credit will be able to join the Jobs Guarantee
+        after 12 months instead of 18 from April 2027
+  - date: "2027-04-30"
+    type: deadline
+    text:
+      en: >-
+        Jobs Guarantee due to open after 12 months on Universal Credit
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

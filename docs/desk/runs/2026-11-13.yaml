@@ -1,0 +1,61 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-11-13"
+triaged_on: "2026-11-15"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 229
+sources_read: 7
+drafts: 7
+candidates: 11
+outcomes:
+  card: 4
+  reworded: 0
+  duplicate: 1
+  existing: 1
+  grant: 2
+  done: 0
+  process: 3
+  broad: 0
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 4
+new_actors: []
+cards:
+  - uk-waste-dumping-fines-5000-2026
+  - uk-welland-oaks-prison-2029
+  - uk-school-profiles-ofsted-2027
+  - uk-climate-finance-6bn-2026
+reworded: []
+dropped:
+  - draft: 2026-11-13-govuk-new-1700-place-leicestershire-prison-moves-a-step-closer-1
+    quote: quote
+    code: existing
+    into: uk-prison-places-14000-2031
+    note: "14,000 additional prison places by 2031"
+  - draft: 2026-11-13-govuk-no-talent-goes-to-waste-as-biffa-announces-2000-new-jobs-for-1
+    quote: quote
+    code: duplicate
+    into: uk-jobs-guarantee-90000-2029
+    note: "the Jobs Guarantee terms, restated the day before its national rollout; added to the card's sources (intake 2026-11-14)"
+  - draft: 2026-11-13-govuk-school-tours-workshops-and-10-tickets-to-open-up-the-magic-o-1
+    quote: quote
+    code: process
+    note: "the remaining £173 million of the Every Child Can Fund opens to organisations in 2027; a fund opening for applications"
+  - draft: 2026-11-13-govuk-school-tours-workshops-and-10-tickets-to-open-up-the-magic-o-1
+    quote: also0
+    code: grant
+    note: "up to £15 million to the National Theatre and 12 partners for the Nationwide programme, to reach over 100,000 young people"
+  - draft: 2026-11-13-govuk-school-tours-workshops-and-10-tickets-to-open-up-the-magic-o-1
+    quote: also1
+    code: process
+    note: "the Youth Matters Fund opens for applications in early 2027"
+  - draft: 2026-11-13-wms-hcws472-1
+    quote: quote
+    code: grant
+    note: "the 60 named areas for the Youth Matters Fund, over £20 million now and over £400 million over three years"
+  - draft: 2026-11-13-wms-hcws472-1
+    quote: also0
+    code: process
+    note: "a further £106 million of dormant assets funding for the youth cause, £238 million between 2024 and 2028, allocated to Every Child Can"
