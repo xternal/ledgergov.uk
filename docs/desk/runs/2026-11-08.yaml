@@ -1,0 +1,33 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-11-08"
+triaged_on: "2026-11-15"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 220
+sources_read: 1
+drafts: 1
+candidates: 2
+outcomes:
+  card: 1
+  reworded: 0
+  duplicate: 1
+  existing: 0
+  grant: 0
+  done: 0
+  process: 0
+  broad: 0
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 1
+new_actors: []
+cards:
+  - uk-national-curriculum-2026
+reworded: []
+dropped:
+  - draft: 2026-11-08-govuk-curriculum-overhaul-to-re-engage-pupils-in-vital-early-secon-1
+    quote: also0
+    code: duplicate
+    into: uk-national-curriculum-2026
+    note: "restoring Key Stage 3 as a distinct three-year phase, part of the new curriculum; named in the status note"
