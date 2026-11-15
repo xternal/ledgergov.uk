@@ -1,0 +1,63 @@
+format: openpromises/1
+id: uk-waste-dumping-fines-5000-2026
+headline:
+  en: "Raise illegal waste fines to £5,000"
+actor_id: hm-government
+made_on: "2026-11-13"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Environment Agency)
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The Environment Agency's release on an investigation into about 1,000 tonnes of waste dumped in
+    Birstall says people who dump waste illegally or fail to treat it correctly are set to face
+    fines of up to £5,000, up from the current maximum of £300. It does not say when or how the
+    change will be made. The card moves when the higher fines are brought in.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Environment Agency press release, 13 Nov 2026: Investigation into illegal waste dumping in
+      Yorkshire town
+    url: https://www.gov.uk/government/news/investigation-into-illegal-waste-dumping-in-yorkshire-town
+versions:
+  - version: 1
+    text: >-
+      Rogue actors who dump waste illegally or fail to treat it correctly are set to face fines of
+      up to £5,000, up from the current maximum of £300, while those responsible for serious
+      offences can already face much tougher sanctions, including prosecution and imprisonment.
+    recorded_on: "2026-11-13"
+    source_url: https://www.gov.uk/government/news/investigation-into-illegal-waste-dumping-in-yorkshire-town
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          People who dump waste illegally or fail to treat it correctly
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          Not stated
+      funded_by: null
+events:
+  - date: "2026-11-13"
+    type: promised
+    text:
+      en: >-
+        The Environment Agency says people who dump waste illegally are set to face fines of up to
+        £5,000, up from £300
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

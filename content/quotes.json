@@ -743,6 +743,12 @@
     "checked_on": "2026-10-20",
     "sha256": "12ce778db5289a4d1689197aea05d42d4f0a1bab4858cea36d71cd2115a9b551"
   },
+  "8df3ba3c7c29374e3b5cc93d1ba7a63ffb6870d0ccd429d9f20faa0be4623811|https://www.gov.uk/government/news/investigation-into-illegal-waste-dumping-in-yorkshire-town": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/investigation-into-illegal-waste-dumping-in-yorkshire-town",
+    "checked_on": "2026-11-15",
+    "sha256": "3b2b79096654891ee155fb580da000703ff7ad495e85b8708e845e6b6543f39e"
+  },
   "8df5ddb0bfeea118dca80b7000ad598024675ec32dfb48c6e250bbf0f139238c|https://www.gov.uk/government/news/more-money-reaching-children-than-ever-thanks-to-child-maintenance-service": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/more-money-reaching-children-than-ever-thanks-to-child-maintenance-service",
@@ -1091,6 +1097,12 @@
     "checked_on": "2026-10-20",
     "sha256": "7db77227800a600c8a7af44f083f5550e1f32740cb7eee7b50020a718b7d654b"
   },
+  "c8bb28e1e3c3fd07992cfff5eb0076cd12a5e4e3008aa812e3b62011b1b4d16e|https://www.gov.uk/government/news/new-online-tool-to-help-parents-choose-the-right-school": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/new-online-tool-to-help-parents-choose-the-right-school",
+    "checked_on": "2026-11-15",
+    "sha256": "95fe5e3d9a85171c82d555d12b5540b2f8f317ecae21266df4574d225a7a83f8"
+  },
   "ca549c83f23ffc43d5e2f02677332d77892cb5cbd9ca5f241531be2b22593f2b|https://www.gov.uk/government/speeches/pm-words-on-gaza-29-july-2025": {
     "match": "exact",
     "url": "https://www.gov.uk/government/speeches/pm-words-on-gaza-29-july-2025",
@@ -1181,6 +1193,12 @@
     "checked_on": "2026-10-18",
     "sha256": "4ab1450e223678aabc953c4eec9960dc45fbb09b2450f3feac3cb172e8995a56"
   },
+  "d74540be279e7eed3dcd0ac1f2464888481f6d8ebc9213e730206e9d8917638b|https://www.gov.uk/government/publications/uk-canada-climate-finance-joint-statement/uk-canada-climate-finance-joint-statement": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/uk-canada-climate-finance-joint-statement/uk-canada-climate-finance-joint-statement",
+    "checked_on": "2026-11-15",
+    "sha256": "aa5b0162c18c097a8cb4fc9665641f69bf7ea035bf336237bf09b2a046995ee0"
+  },
   "d867da066dde79f22e0209c037d28f38ec868a6116c6d61ddee9786f2c2adc41|https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people",
@@ -1228,6 +1246,12 @@
     "url": "https://www.gov.uk/government/news/domestic-abusers-face-eviction-as-survivors-gain-housing-rights",
     "checked_on": "2026-10-25",
     "sha256": "c3dd434aaba0bb8f837df0388ddb40a327f32b4bbfb70f18429a6bc9d7d0b381"
+  },
+  "e405f3510fdf162850fc72061ade8e592507d3890630265a9287be462761d591|https://www.gov.uk/government/news/new-1700-place-leicestershire-prison-moves-a-step-closer": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/new-1700-place-leicestershire-prison-moves-a-step-closer",
+    "checked_on": "2026-11-15",
+    "sha256": "e3b264e8f12051eb0c4c9c41c7556c9c41626dc13f06f76623fbfdaa9c8e7afd"
   },
   "e4aad1f3399bc57919d6bd34aee64af35c6937aa0b0534d5b313741361858aab|https://www.gov.uk/government/news/prime-minister-and-chancellors-call-with-the-president-of-ukraine-28-october-2026": {
     "match": "exact",
