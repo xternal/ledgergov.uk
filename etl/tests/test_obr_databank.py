@@ -279,3 +279,14 @@ def test_business_rates_plausible(ons, outturn_years):
     print("\nBusiness rates (ONS CUKY), £bn:", {k: round(v, 2) for k, v in br.items()})
     assert all(10 < v < 45 for v in br.values())
     assert min(br, key=br.get) == "2020-21"  # pandemic retail, hospitality and leisure relief
+
+
+def test_published_on_reads_plain_and_efo_titles():
+    from datetime import date
+
+    from etl.sources.obr_databank import _published_on
+
+    plain = '<a>Public finances databank – September 2026</a><div class="meta">24 September 2026 &ndash; 501.75 KB</div>'
+    efo = '<a>Public finances databank – October 2026 EFO</a><div class="meta">28 October 2026 &ndash; 385.99 KB</div>'
+    assert _published_on(plain) == date(2026, 9, 24)
+    assert _published_on(efo) == date(2026, 10, 28)

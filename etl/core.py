@@ -25,6 +25,7 @@ import hashlib
 import json
 import logging
 import re
+import time
 from dataclasses import asdict, dataclass
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -185,6 +186,51 @@ def client() -> httpx.Client:
     )
 
 
+# Politeness between requests to one host. ONS answers "429 Too Many Requests" when the six ONS sources
+# fetch back to back from a GitHub runner (14 Nov 2026), so space ONS requests out and wait when told to.
+MIN_GAP_S = 1.0
+HOST_GAP_S = {"www.ons.gov.uk": 5.0}
+# A 429 or 503 is retried after the server's Retry-After (seconds), else after a growing pause, up to
+# RETRIES more times; a wait longer than MAX_WAIT_S is cut to it, so one source cannot stall the run.
+RETRY_STATUS = {429, 503}
+RETRIES = 3
+BACKOFF_S = (15.0, 45.0, 90.0)
+MAX_WAIT_S = 120.0
+_last_request: dict[str, float] = {}
+_gave_up: set[str] = set()  # hosts that kept refusing after every retry: answer at once from now on
+_sleep = time.sleep  # tests replace it
+_now = time.monotonic
+
+
+def _retry_after(r: httpx.Response, attempt: int) -> float:
+    """Seconds to wait before retrying: the server's Retry-After when it gives seconds, else our own backoff."""
+    raw = (r.headers.get("retry-after") or "").strip()
+    wait = float(raw) if raw.isdigit() else BACKOFF_S[min(attempt, len(BACKOFF_S) - 1)]
+    return min(wait, MAX_WAIT_S)
+
+
+def polite_get(http: httpx.Client, url: str) -> httpx.Response:
+    """GET with a minimum gap between requests to the same host, retrying 429/503 after a pause."""
+    host = urlparse(url).hostname or ""
+    gap = HOST_GAP_S.get(host, MIN_GAP_S)
+    retries = 0 if host in _gave_up else RETRIES
+    for attempt in range(retries + 1):
+        last = _last_request.get(host)
+        if last is not None and (wait := gap - (_now() - last)) > 0:
+            _sleep(wait)
+        _last_request[host] = _now()
+        r = http.get(url)
+        if r.status_code not in RETRY_STATUS:
+            return r
+        if attempt == retries:
+            _gave_up.add(host)
+            return r
+        wait = _retry_after(r, attempt)
+        log.info("%s answered %s; waiting %.0f s before retry %d of %d", url, r.status_code, wait, attempt + 1, retries)
+        _sleep(wait)
+    return r  # unreachable: the loop returns on its last attempt
+
+
 def _safe_name(url: str) -> str:
     name = Path(urlparse(url).path).name or "index.html"
     return re.sub(r"[^A-Za-z0-9._-]", "_", name)
@@ -226,7 +272,7 @@ def download(
     http = http or client()
     try:
         try:
-            r = http.get(url)
+            r = polite_get(http, url)
             r.raise_for_status()
             content = r.content
             got = {"url": str(r.url), "fetched_url": str(r.url), "archived_at": None, "content_type": r.headers.get("content-type")}

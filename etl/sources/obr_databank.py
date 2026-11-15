@@ -251,11 +251,16 @@ def _edition(book: dict[str, list[tuple]], vintage: str | None) -> Edition:
 
 
 def _published_on(page_html: str) -> date | None:
-    """The date OBR shows under the databank link: 'Public finances databank – September 2026 24 September 2026 – 501.75 KB'."""
+    """
+    The date OBR shows under the databank link: 'Public finances databank – September 2026 24 September 2026 – 501.75 KB'.
+    After an EFO the title carries a word after the year ('– October 2026 EFO 28 October 2026 – …'), so allow
+    words between the title's month-year and the date; without that the date fell back to the PSF release and
+    the staleness check counted from the wrong day.
+    """
     from bs4 import BeautifulSoup
 
     text = " ".join(BeautifulSoup(page_html, "html.parser").get_text(" ").split())
-    m = re.search(r"Public finances databank\s*[–-]\s*\w+ \d{4}\s+(\d{1,2} \w+ \d{4})\s*[–-]", text)
+    m = re.search(r"Public finances databank\s*[–-]\s*\w+ \d{4}(?:\s+[A-Za-z]+)*?\s+(\d{1,2} \w+ \d{4})\s*[–-]", text)
     try:
         return datetime.strptime(m.group(1), "%d %B %Y").date() if m else None
     except ValueError:
