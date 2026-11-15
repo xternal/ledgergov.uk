@@ -257,6 +257,12 @@
     "checked_on": "2026-11-08",
     "sha256": "379b51d3c8ad7ca50611d2b818a5bb9fe6914ddc67499544747f8fec98f16fd9"
   },
+  "363bac4f99bbc2b2f78bf61ab8b590ffc9b3650c30065a2b4ece64714c806fe9|https://www.gov.uk/government/news/curriculum-overhaul-to-re-engage-pupils-in-vital-early-secondary-years": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/curriculum-overhaul-to-re-engage-pupils-in-vital-early-secondary-years",
+    "checked_on": "2026-11-15",
+    "sha256": "c3f27836d29725fed0af4328cfa5032d6a186d276ee41e000852ec157d70b17b"
+  },
   "3972470cae0400c655bbddfd6f054ebb681819ddf0e913d427e93815cca820bc|https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people",
