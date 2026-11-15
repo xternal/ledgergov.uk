@@ -1,0 +1,70 @@
+format: openpromises/1
+id: uk-zev-petrol-diesel-end-2030
+headline:
+  en: "No new petrol or diesel cars from 2030"
+actor_id: hm-government
+made_on: "2026-11-12"
+venue: press_release
+venue_label:
+  en: >-
+    The UK's clean electrification roadmap (Department for Energy Security and Net Zero)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    A restatement in the Department for Energy Security and Net Zero's clean electrification
+    roadmap: the Zero Emission Vehicle mandate will phase out new cars running solely on petrol or
+    diesel from 2030, and new cars and vans that are not zero emission from 2035. The roadmap says
+    more than one in four new cars sold are now electric. 2030 is read as the end of 2030. The card
+    moves when the government reports the 2030 step in force.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Energy Security and Net Zero, 12 Nov 2026: The UK's clean electrification
+      roadmap
+    url: https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap
+versions:
+  - version: 1
+    text: >-
+      The Zero Emission Vehicle (ZEV) mandate is driving the uptake of EVs and will phase out new
+      cars running solely on petrol or diesel from 2030, and phase out new non-zero emission cars
+      and vans from 2035
+    recorded_on: "2026-11-12"
+    source_url: https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          Buyers and makers of new cars and vans
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          From 2030; all new cars and vans zero emission from 2035
+      deadline: "2030-12-31"
+      funded_by: null
+events:
+  - date: "2026-11-12"
+    type: promised
+    text:
+      en: >-
+        The clean electrification roadmap says the Zero Emission Vehicle mandate will phase out new
+        petrol and diesel cars from 2030
+  - date: "2030-12-31"
+    type: deadline
+    text:
+      en: >-
+        New cars running solely on petrol or diesel due to be phased out
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

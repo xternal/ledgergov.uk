@@ -40,3 +40,33 @@ def test_state_pension_series(obs):
     for o in obs:
         assert math.isfinite(o.value)
         assert o.geography == "GB" and o.quality == "sourced" and o.vintage.startswith("DWP-")
+
+
+# ------------------------------------------------------------- edition choice (recorded GOV.UK pages, no network)
+
+def _page(year: int) -> dict:
+    from pathlib import Path
+
+    return json.loads((Path(__file__).parent / "fixtures" / "dwp" / f"govuk_tables_{year}.json").read_text())
+
+
+def test_autumn_edition_on_the_same_yearly_page_wins_and_is_dated_when_added():
+    from datetime import date
+
+    att, vintage, published = dwp_benefits.choose_edition(_page(2025))
+    assert "autumn-budget-2025.xlsx" in att["url"]
+    assert vintage == "DWP-AB-2025"  # the title ends "(XLS)"; it used to fall back to "DWP-2025"
+    assert published == date(2025, 12, 18)  # the change note that added it, not the page's 22 Apr 2025
+
+
+def test_spring_only_page_uses_first_published():
+    from datetime import date
+
+    att, vintage, published = dwp_benefits.choose_edition(_page(2026))
+    assert "spring-forecast-2026.xlsx" in att["url"]
+    assert vintage == "DWP-SF-2026"
+    assert published == date(2026, 4, 14)
+
+
+def test_spring_edition_title_with_xls_suffix():
+    assert dwp_benefits._vintage("Outturn and forecast tables: Spring Statement 2025 (XLS)", "2025") == "DWP-SS-2025"

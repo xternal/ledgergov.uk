@@ -1,0 +1,77 @@
+format: openpromises/1
+id: uk-welland-oaks-prison-2029
+headline:
+  en: "Open HMP Welland Oaks by early 2029"
+actor_id: hm-government
+made_on: "2026-11-13"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Ministry of Justice)
+area: public_order
+status: delivering
+status_note:
+  en: >-
+    HMP Welland Oaks is a category B prison for adult men under construction in Market Harborough,
+    Leicestershire, built by Wates Construction. The Ministry of Justice says its final building
+    beam has been installed and that, as of September 2026, 501 jobs had been created on site and
+    £269 million, 85.5% of project spend, had gone to businesses within 50 miles. "The start of
+    2029" is read as by 31 March 2029. It counts towards the 14,000 prison places due by 2031. The
+    card moves when the prison receives its first prisoners.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Justice press release, 13 Nov 2026: New 1,700-place Leicestershire prison moves a
+      step closer
+    url: https://www.gov.uk/government/news/new-1700-place-leicestershire-prison-moves-a-step-closer
+versions:
+  - version: 1
+    text: >-
+      It is being built by Wates Construction and will hold around 1,700 men and is due to receive
+      its first prisoners at the start of 2029.
+    recorded_on: "2026-11-13"
+    source_url: https://www.gov.uk/government/news/new-1700-place-leicestershire-prison-moves-a-step-closer
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          Around 1,700 adult men in category B custody
+      cost:
+        note:
+          en: >-
+            No total cost is given; the release says £269 million, 85.5% of project spend, had gone
+            to businesses within 50 miles of the site by September 2026.
+      when:
+        en: >-
+          First prisoners at the start of 2029
+      deadline: "2029-03-31"
+      funded_by: null
+events:
+  - date: "2026-11-13"
+    type: promised
+    text:
+      en: >-
+        The Ministry of Justice says HMP Welland Oaks will hold around 1,700 men and is due to
+        receive its first prisoners at the start of 2029
+  - date: "2026-11-13"
+    type: delivering
+    text:
+      en: >-
+        The Ministry of Justice says the final building beam at HMP Welland Oaks has been installed
+    evidence_url: https://www.gov.uk/government/news/new-1700-place-leicestershire-prison-moves-a-step-closer
+  - date: "2029-03-31"
+    type: deadline
+    text:
+      en: >-
+        HMP Welland Oaks due to receive its first prisoners
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,29 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-11-14"
+triaged_on: "2026-11-15"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 235
+sources_read: 1
+drafts: 1
+candidates: 2
+outcomes:
+  card: 2
+  reworded: 0
+  duplicate: 0
+  existing: 0
+  grant: 0
+  done: 0
+  process: 0
+  broad: 0
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 2
+new_actors: []
+cards:
+  - uk-jobs-guarantee-90000-2029
+  - uk-jobs-guarantee-12-months-2027
+reworded: []
+dropped: []

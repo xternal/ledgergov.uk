@@ -56,7 +56,7 @@ SOURCE = Source(
     url=GOVUK + PESA_COLLECTION,
     licence="OGL v3",
     published_on=date(2026, 7, 16),  # PESA 2026; fetch() updates it to the newest edition found
-    cadence_days=120,  # PSS releases Feb, May, July (with PESA), Nov
+    cadence_days=120,  # PSS releases Feb, May, July (with PESA), Nov (18 Dec in 2025, after a late Budget)
     grace_days=45,
 )
 

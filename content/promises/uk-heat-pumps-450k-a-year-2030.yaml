@@ -1,0 +1,70 @@
+format: openpromises/1
+id: uk-heat-pumps-450k-a-year-2030
+headline:
+  en: "450,000 heat pumps a year by 2030"
+actor_id: hm-government
+made_on: "2026-11-12"
+venue: press_release
+venue_label:
+  en: >-
+    The UK's clean electrification roadmap (Department for Energy Security and Net Zero)
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The clean electrification roadmap says the Warm Homes Plan sets an ambition of 450,000 heat pump
+    installations a year by 2030, and of solar panels on the rooftops of up to 3 million more homes,
+    tripling the number of homes with solar. It says the Warm Homes Loan Scheme, with no- and
+    low-interest loans, launched last month, read as October 2026. 2030 is read as the end of 2030.
+    The card moves when installation figures are published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Energy Security and Net Zero, 12 Nov 2026: The UK's clean electrification
+      roadmap
+    url: https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap
+versions:
+  - version: 1
+    text: >-
+      For households, the Warm Homes Plan outlines the UK’s ambition to deliver 450,000 heat pump
+      installations per year by 2030 and to triple the number of homes with solar today by deploying
+      panels on the rooftops of up to 3 million more homes.
+    recorded_on: "2026-11-12"
+    source_url: https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          Households in the UK
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          By 2030
+      deadline: "2030-12-31"
+      funded_by: null
+events:
+  - date: "2026-11-12"
+    type: promised
+    text:
+      en: >-
+        The clean electrification roadmap restates the Warm Homes Plan ambition of 450,000 heat pump
+        installations a year by 2030
+  - date: "2030-12-31"
+    type: deadline
+    text:
+      en: >-
+        450,000 heat pump installations a year due
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
