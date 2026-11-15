@@ -1,0 +1,70 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-11-10"
+triaged_on: "2026-11-15"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 223
+sources_read: 8
+drafts: 8
+candidates: 13
+outcomes:
+  card: 4
+  reworded: 0
+  duplicate: 2
+  existing: 1
+  grant: 1
+  done: 0
+  process: 3
+  broad: 2
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 4
+new_actors: [josh-macalister]
+cards:
+  - uk-atlantic-net-first-phase-2026
+  - uk-pension-administrators-register-2026
+  - uk-neighbourhood-health-centres-2030
+  - uk-school-phones-out-of-reach-2027
+reworded: []
+dropped:
+  - draft: 2026-11-10-govuk-outcome-government-response-trust-based-pension-schemes-trustees-and-1
+    quote: quote
+    code: process
+    note: "existing trustee boards to approve any move to a professional corporate sole trustee model; a governance rule inside pension regulation, no date"
+  - draft: 2026-11-10-govuk-outcome-government-response-trust-based-pension-schemes-trustees-and-1
+    quote: also0
+    code: process
+    note: "trustee chairs to assess the board's collective skills; a governance rule, no date"
+  - draft: 2026-11-10-govuk-outcome-government-response-trust-based-pension-schemes-trustees-and-1
+    quote: also1
+    code: process
+    note: "wider master trust authorisation and TPR approval of key function holders; a regulatory change, no date"
+  - draft: 2026-11-10-govuk-outcome-government-response-trust-based-pension-schemes-trustees-and-1
+    quote: also2
+    code: broad
+    note: "establish and test the feasibility of an initial Trustee Directory by 2029; a feasibility test cannot be checked as met"
+  - draft: 2026-11-10-govuk-outcome-government-response-trust-based-pension-schemes-trustees-and-1
+    quote: also3
+    code: duplicate
+    into: uk-pension-administrators-register-2026
+    note: "mandatory minimum standards for administration providers, named in the status note"
+  - draft: 2026-11-10-hansard-98bed7da-1
+    quote: quote
+    code: broad
+    note: "a new resilient infrastructure programme of up to £40 million for the Caribbean; no outcome, date or recipients that could be checked"
+  - draft: 2026-11-10-wms-hcws459-1
+    quote: quote
+    code: existing
+    into: uk-say-what-you-pay-law-2026
+    note: "pay information in job adverts 'when parliamentary time allows'; said by Bridget Phillipson on a card under Andy Burnham, so for an editor, not a new version"
+  - draft: 2026-11-10-wms-hcws460-1
+    quote: quote
+    code: grant
+    note: "£1 million this year to the eight regional water councils for expertise and coordination"
+  - draft: 2026-11-10-wms-hcws463-1
+    quote: quote
+    code: duplicate
+    into: uk-gp-winter-proactive-care-2027
+    note: "the minister's statement on the same £40 million, added to the card's sources (intake 2026-11-09)"

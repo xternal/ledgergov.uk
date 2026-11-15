@@ -1,0 +1,67 @@
+format: openpromises/1
+id: uk-pension-administrators-register-2026
+headline:
+  en: "Regulate pension scheme administrators"
+actor_id: hm-government
+made_on: "2026-11-10"
+venue: press_release
+venue_label:
+  en: >-
+    Government response: Trust-based pension schemes: Trustees and governance, building a stronger
+    future
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    The Department for Work and Pensions' response to its consultation on trustees and governance
+    says administrators of schemes regulated by The Pensions Regulator, public and private sector,
+    will have to register with it, and that the government intends to work with industry on
+    mandatory minimum standards for administration providers. The regulator would be able to request
+    information, investigate, and issue warnings, improvement notices and financial penalties. The
+    response gives no date or cost. The card moves when legislation for the registration framework
+    is introduced.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Work and Pensions, 10 Nov 2026: Government response: Trust-based pension
+      schemes: Trustees and governance, building a stronger future
+    url: https://www.gov.uk/government/consultations/trust-based-pension-schemes-trustees-and-governance-building-a-stronger-future/outcome/government-response-trust-based-pension-schemes-trustees-and-governance-building-a-stronger-future
+versions:
+  - version: 1
+    text: >-
+      We also intend to require pension scheme administrators who administer schemes regulated by
+      TPR (public and private sector) to register with TPR.
+    recorded_on: "2026-11-10"
+    source_url: https://www.gov.uk/government/consultations/trust-based-pension-schemes-trustees-and-governance-building-a-stronger-future/outcome/government-response-trust-based-pension-schemes-trustees-and-governance-building-a-stronger-future
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          Administrators of pension schemes regulated by The Pensions Regulator, public and private
+          sector
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          Not stated
+      funded_by: null
+events:
+  - date: "2026-11-10"
+    type: promised
+    text:
+      en: >-
+        The government says administrators of pension schemes regulated by The Pensions Regulator
+        will have to register with it
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

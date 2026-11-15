@@ -1,0 +1,64 @@
+format: openpromises/1
+id: uk-atlantic-net-first-phase-2026
+headline:
+  en: "Start the first phase of Atlantic Net"
+actor_id: hm-government
+made_on: "2026-11-10"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Ministry of Defence)
+area: defence
+status: promised
+status_note:
+  en: >-
+    Atlantic Net is part of Atlantic Bastion. The Ministry of Defence says the Royal Navy, working
+    with Ocean Infinity, will use it to detect hostile underwater activity earlier and protect
+    critical infrastructure, and that NATO and Joint Expeditionary Force allies will get a clearer
+    picture of what is happening beneath the surface. The release gives no date beyond "within
+    months" and no cost, so the card has no deadline. The card moves when the Royal Navy says the
+    first phase is in operation.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Defence press release, 10 Nov 2026: New Royal Navy-Led Northern Navies Initiative
+    url: https://www.gov.uk/government/news/new-royal-navy-led-northern-navies-initiative
+versions:
+  - version: 1
+    text: >-
+      The Royal Navy will also bring the first phase of Atlantic Net, part of Atlantic Bastion, into
+      operation within months. Working with Ocean Infinity, it will help detect hostile underwater
+      activity earlier and protect critical infrastructure.
+    recorded_on: "2026-11-10"
+    source_url: https://www.gov.uk/government/news/new-royal-navy-led-northern-navies-initiative
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          The Royal Navy, and NATO and Joint Expeditionary Force allies
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          Within months
+      funded_by: null
+events:
+  - date: "2026-11-10"
+    type: promised
+    text:
+      en: >-
+        The Ministry of Defence says the Royal Navy will bring the first phase of Atlantic Net into
+        operation within months
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
