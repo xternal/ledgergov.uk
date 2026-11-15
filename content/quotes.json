@@ -71,6 +71,12 @@
     "checked_on": "2026-10-30",
     "sha256": "80fd9d265ccd097e0329e35a53cd6c3cc6f93a408ac9c5afd8ffe6a6505c8e32"
   },
+  "070335031636bbc4a9339903f8ef4bf589d1405db1eb9fa32ffac466e40553f2|https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap",
+    "checked_on": "2026-11-15",
+    "sha256": "a6a8e9701173bc056ba866011e5d3443cd42362935a27546d2d388b4ab63988d"
+  },
   "08716a1b877f172551f1c2db2d40b6f30d28eee44014db390b9b1041e047ee38|https://www.kemibadenoch.org.uk/news/kemi-badenoch-mp-net-zero-has-failed-and-made-your-electricity-more-expensive-heres-my-plan": {
     "match": "exact",
     "url": "https://www.kemibadenoch.org.uk/news/kemi-badenoch-mp-net-zero-has-failed-and-made-your-electricity-more-expensive-heres-my-plan",
@@ -1109,6 +1115,12 @@
     "checked_on": "2026-11-08",
     "sha256": "9f760a3972dfbb6e3a60ebbe2314f58b6ce9bd2aec93b8ee47b769dbef46b400"
   },
+  "cf3c05cffb67968fa5987151d07ed3e271ba98f6f6cd7fc907e625f8bc2c8834|https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap",
+    "checked_on": "2026-11-15",
+    "sha256": "a6a8e9701173bc056ba866011e5d3443cd42362935a27546d2d388b4ab63988d"
+  },
   "cf9c2fd495470a4ac00cc92fa0c4b7c11ebbe7a0e98e68caaa13d5711efaded7|https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines",
@@ -1264,6 +1276,12 @@
     "url": "https://www.gov.uk/government/news/mhra-2030-strategy-to-modernise-patient-centred-regulation-for-the-era-of-ai-and-personalised-medicines",
     "checked_on": "2026-10-16",
     "sha256": "bb4b49a5e27ea86f4caaaa3aa018a3e0dd3acf89bf5134c7efd19297c96b32ad"
+  },
+  "ef816c167d4250d4baa61cbe43ee1153e96e72b015532556a8c0c140fb686978|https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap",
+    "checked_on": "2026-11-15",
+    "sha256": "a6a8e9701173bc056ba866011e5d3443cd42362935a27546d2d388b4ab63988d"
   },
   "f5442457f55e976b68c9c03fe0e2f2848e25eec86b56c7fd2ee7347af4b0cfc6|https://www.gov.uk/government/publications/vat-supply-of-certain-passenger-transport-services-through-agents/vat-treatment-of-private-hire-vehicle-operators": {
     "match": "exact",

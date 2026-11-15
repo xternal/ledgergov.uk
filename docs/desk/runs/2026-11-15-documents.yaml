@@ -1,0 +1,39 @@
+# One weekly editor's desk run over the week's big GOV.UK documents (docs/desk/ROUTINE.md, steps 6 and 7).
+# Counts are of the commitments weighed in the documents read; each has exactly one outcome.
+intake_date: "2026-11-15" # documents published 8 to 15 November 2026 (GOV.UK search, policy and engagement)
+triaged_on: "2026-11-15"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: null
+sources_read: 2
+candidates: 5
+outcomes:
+  card: 3
+  reworded: 0
+  duplicate: 0
+  existing: 2
+  grant: 0
+  done: 0
+  process: 0
+  broad: 0
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 3
+new_actors: []
+cards:
+  - uk-zev-petrol-diesel-end-2030
+  - uk-heat-pumps-450k-a-year-2030
+  - uk-future-homes-standard-2027
+reworded: []
+documents:
+  - { title: "The UK's clean electrification roadmap (DESNZ, 12 Nov)", url: "https://www.gov.uk/government/publications/uk-clean-electrification-roadmap/the-uks-clean-electrification-roadmap", cards: [uk-zev-petrol-diesel-end-2030, uk-heat-pumps-450k-a-year-2030, uk-future-homes-standard-2027] }
+  - { title: "Proposed benefit and pension rates 2027 to 2028 (DWP, 11 Nov)", url: "https://www.gov.uk/government/publications/benefit-and-pension-rates-2027-to-2028/proposed-benefit-and-pension-rates-2027-to-2028", cards: [] }
+skipped: # listed by the search but not read in full
+  - "51 documents listed; 5 were already read by the daily intake (drafts on intake/2026-11-09 to intake/2026-11-13: remote electronic monitoring for pelagic trawlers, the trust-based pensions response, the Older People's Housing Taskforce response, Revenue and Customs Brief 14 (2026), the UK-Canada climate finance statement) and 1 is cited by a card (Earned settlement, uk-earned-settlement-10-years-2026)"
+  - "Not new this week (older documents updated, by first publication date): Courts and Tribunals Bill (February 2026), Health Bill fact sheets (May 2026), The UK's approach to deforestation regulations (June 2026), Child Focused Courts delivery update and target operating model (October 2026, PDF), DVLA privacy policy"
+  - "New this week but published as PDF only, so no HTML to check a quote against: National Planning Policy Framework reforms, government response (MHCLG, 12 Nov)"
+  - "Reports, joint statements and action plans with no new UK commitment with a date or figure: Greening Government Commitments 2024 to 2025 report, EU-UK Financial Regulatory Forum and UK-Ukraine Strategic Dialogue joint statements, Global Clean Power Alliance mission updates, UK-Japan offshore wind compact, HS2 ancient woodland reports, prison and probation inspection action plans, fisheries management plans information, terms of reference for the Special Representative for Climate Security"
+  - Open consultations and calls for evidence (proposals, not commitments), and consultation outcomes on technical rules (Competition Act technology transfer, radio selection services, Proceeds of Crime Act bodies, voluntary carbon markets, elective home education guidance)
+dropped:
+  - { document: clean electrification roadmap, code: existing, into: uk-bics-electricity-2026, note: "the British Industrial Competitiveness Scheme cutting electricity costs by up to 25% from April 2027" }
+  - { document: Proposed benefit and pension rates 2027 to 2028, code: existing, into: uk-state-pension-3-9pc-2027, note: "a table of rates for 2027 to 2028; the State Pension rise is already a card" }
