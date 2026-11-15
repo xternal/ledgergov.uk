@@ -1,0 +1,74 @@
+format: openpromises/1
+id: uk-jobs-guarantee-90000-2029
+headline:
+  en: "Jobs Guarantee for 90,000 young people"
+actor_id: hm-government
+made_on: "2026-11-14"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Department for Work and Pensions)
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    The Jobs Guarantee, run first in six areas, is being rolled out across England, Scotland and
+    Wales for 18 to 24 year olds on Universal Credit who are looking for work. The government fully
+    funds up to 25 hours of paid work a week for six months at the relevant minimum wage, with
+    support before and during the job. No cost is given for the scheme alone. The card moves when
+    the government reports how many young people it has helped into work.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Work and Pensions press release, 14 Nov 2026: 90,000 young people furthest from
+      work to be given guaranteed job, no matter where they live
+    url: https://www.gov.uk/government/news/90000-young-people-furthest-from-work-to-be-given-guaranteed-job-no-matter-where-they-live
+  - title: >-
+      Department for Work and Pensions press release, 13 Nov 2026: No talent goes to waste as Biffa
+      announces 2,000 new jobs for young people
+    url: https://www.gov.uk/government/news/no-talent-goes-to-waste-as-biffa-announces-2000-new-jobs-for-young-people
+versions:
+  - version: 1
+    text: >-
+      The scheme will help more than 90,000 young people into work by March 2029.
+    recorded_on: "2026-11-14"
+    source_url: https://www.gov.uk/government/news/90000-young-people-furthest-from-work-to-be-given-guaranteed-job-no-matter-where-they-live
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          18 to 24 year olds on Universal Credit who are looking for work, in England, Scotland and
+          Wales
+      cost:
+        note:
+          en: >-
+            No cost is given for the scheme alone; the release says it is part of £2.5 billion of
+            investment in employment support for young people.
+      when:
+        en: >-
+          By March 2029
+      deadline: "2029-03-31"
+      funded_by: null
+events:
+  - date: "2026-11-14"
+    type: promised
+    text:
+      en: >-
+        The government says the Jobs Guarantee will help more than 90,000 young people into work by
+        March 2029
+  - date: "2029-03-31"
+    type: deadline
+    text:
+      en: >-
+        90,000 young people due to be helped into work by the Jobs Guarantee
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
