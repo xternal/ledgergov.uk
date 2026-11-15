@@ -1,0 +1,80 @@
+format: openpromises/1
+id: uk-climate-finance-6bn-2026
+headline:
+  en: "£6bn of climate aid over three years"
+actor_id: hm-government
+made_on: "2026-11-13"
+venue: press_release
+venue_label:
+  en: >-
+    UK-Canada climate finance: joint statement
+area: general_services
+status: promised
+status_note:
+  en: >-
+    A joint statement at COP31 by Katie White, UK Minister for Climate Transition, and Canada's
+    environment minister says the UK has announced around £6 billion of International Climate
+    Finance from the aid budget over the next three years, mostly as grants, alongside £6.7 billion
+    of public finance through UK-backed investments that are not aid. It says the UK delivered £12.8
+    billion between 2021/22 and 2025/26. It does not say which three years, so the card has no
+    deadline. The card moves when the government reports what it has spent.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Energy Security and Net Zero, 13 Nov 2026: UK-Canada climate finance: joint
+      statement
+    url: https://www.gov.uk/government/publications/uk-canada-climate-finance-joint-statement/uk-canada-climate-finance-joint-statement
+versions:
+  - version: 1
+    text: >-
+      The UK has now announced around £6 billion of ICF ODA over the next three years, the majority
+      of which is to be provided as grants, alongside £6.7 billion in public finance through
+      UK-backed climate and nature-positive non-ODA investments.
+    recorded_on: "2026-11-13"
+    source_url: https://www.gov.uk/government/publications/uk-canada-climate-finance-joint-statement/uk-canada-climate-finance-joint-statement
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          Developing countries
+      cost:
+        range: [1.8, 2, 2.2]
+        quality: sourced
+        by:
+          kind: official
+          name: Department for Energy Security and Net Zero
+        note:
+          en: >-
+            The government's own figure: around £6 billion of International Climate Finance from the
+            aid budget over the next three years, shown as £2bn a year on average. The statement
+            gives no split by year. Low–high is an editorial ±10% because the source gives a central
+            figure only.
+        sources:
+          - title: >-
+              Department for Energy Security and Net Zero, 13 Nov 2026: UK-Canada climate finance:
+              joint statement
+            url: https://www.gov.uk/government/publications/uk-canada-climate-finance-joint-statement/uk-canada-climate-finance-joint-statement
+      when:
+        en: >-
+          Over the next three years
+      funded_by:
+        en: >-
+          The UK aid budget (official development assistance)
+events:
+  - date: "2026-11-13"
+    type: promised
+    text:
+      en: >-
+        The UK says it has announced around £6 billion of International Climate Finance from the aid
+        budget over the next three years
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
