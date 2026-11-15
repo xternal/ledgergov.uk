@@ -1,0 +1,22 @@
+format: openpromises/1
+id: josh-macalister
+kind: person
+name:
+  en: Josh MacAlister
+party_id: labour
+# The draft gives no party for him; it comes from the UK Parliament Members API
+# (members-api.parliament.uk, searched 15 November 2026): member 5033, Labour.
+roles:
+  - title:
+      en: Parliamentary Under-Secretary of State for Education
+    source:
+      url: https://hansard.parliament.uk/Commons/2026-11-10/debates/5AB72929-9239-4CE1-AB33-3AB878B6B36E/MobilePhonesInSchools
+      quote: The Parliamentary Under-Secretary of State for Education (Josh MacAlister)
+identifiers:
+  parliament_member_id: 5033
+# Official social accounts in the UK Parliament Members API contact record,
+# https://members-api.parliament.uk/api/Members/5033/Contact, checked 15 November 2026.
+same_as:
+  - https://x.com/joshmacalister
+  - https://www.facebook.com/josh4wc
+same_as_checked_on: "2026-11-15"

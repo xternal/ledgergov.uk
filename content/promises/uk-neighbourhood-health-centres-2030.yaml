@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-neighbourhood-health-centres-2030
+headline:
+  en: "120 neighbourhood health centres by 2030"
+actor_id: hm-government
+made_on: "2026-11-10"
+venue: press_release
+venue_label:
+  en: >-
+    The Older People's Housing Taskforce Report: government response
+area: health
+status: promised
+status_note:
+  en: >-
+    A restatement: the government's response to the Older People's Housing Taskforce says the
+    commitment to 250 neighbourhood health centres, 120 of them by 2030, was announced at Autumn
+    Budget 2025. It says the first wave of schemes has been announced: 27 sites across England that
+    combine GP practices with community, local authority and voluntary sector services. 2030 is read
+    as the end of 2030. The card moves when the government reports centres open.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government, 10 Nov 2026: The Older People's Housing
+      Taskforce Report: government response
+    url: https://www.gov.uk/government/publications/the-older-peoples-housing-taskforce-report-government-response/the-older-peoples-housing-taskforce-report-government-response
+versions:
+  - version: 1
+    text: >-
+      At Autumn Budget 2025, the government announced its commitment to deliver 250 neighbourhood
+      health centres, with 120 delivered by 2030.
+    recorded_on: "2026-11-10"
+    source_url: https://www.gov.uk/government/publications/the-older-peoples-housing-taskforce-report-government-response/the-older-peoples-housing-taskforce-report-government-response
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          Communities across England
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          120 by 2030, 250 in all
+      deadline: "2030-12-31"
+      funded_by: null
+events:
+  - date: "2026-11-10"
+    type: promised
+    text:
+      en: >-
+        The government restates its commitment to 250 neighbourhood health centres, 120 of them by
+        2030
+  - date: "2030-12-31"
+    type: deadline
+    text:
+      en: >-
+        120 neighbourhood health centres due
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

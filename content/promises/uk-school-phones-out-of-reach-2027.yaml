@@ -1,0 +1,70 @@
+format: openpromises/1
+id: uk-school-phones-out-of-reach-2027
+headline:
+  en: "Phones out of pupils' reach in school"
+actor_id: josh-macalister
+made_on: "2026-11-10"
+venue: parliament
+venue_label:
+  en: >-
+    Commons statement
+area: education
+status: promised
+status_note:
+  en: >-
+    The minister said the revised statutory guidance will come into effect from September 2027, read
+    as by 30 September 2027, and encouraged schools to move sooner. Schools can still choose how:
+    collecting phones at the start of the day, secure lockers, lockable pouches or another way that
+    keeps phones out of reach, with reasonable adjustments and exemptions, including for pupils with
+    medical needs and those with special educational needs and disabilities. The statement gives no
+    cost. The card moves when the revised guidance is published.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Hansard, House of Commons, 10 Nov 2026: Mobile Phones in Schools
+    url: https://hansard.parliament.uk/Commons/2026-11-10/debates/5AB72929-9239-4CE1-AB33-3AB878B6B36E/MobilePhonesInSchools
+versions:
+  - version: 1
+    text: >-
+      That is why I am today announcing that we will update statutory guidance to make it clear that
+      schools should have policies that ensure children cannot have unsecured mobile phones in their
+      blazer or bag throughout the school day.
+    recorded_on: "2026-11-10"
+    source_url: https://hansard.parliament.uk/Commons/2026-11-10/debates/5AB72929-9239-4CE1-AB33-3AB878B6B36E/MobilePhonesInSchools
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          Schools and their pupils
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          From September 2027
+      deadline: "2027-09-30"
+      funded_by: null
+events:
+  - date: "2026-11-10"
+    type: promised
+    text:
+      en: >-
+        The Education Minister announces statutory guidance so that children cannot have unsecured
+        mobile phones during the school day
+  - date: "2027-09-30"
+    type: deadline
+    text:
+      en: >-
+        Revised guidance on phones in schools due to come into effect
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

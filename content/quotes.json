@@ -257,6 +257,12 @@
     "checked_on": "2026-11-08",
     "sha256": "379b51d3c8ad7ca50611d2b818a5bb9fe6914ddc67499544747f8fec98f16fd9"
   },
+  "32348ed9615fbd44c2a778af4ba2a2461e896e66c37546d0eed8ae95f8e2dec0|https://hansard.parliament.uk/Commons/2026-11-10/debates/5AB72929-9239-4CE1-AB33-3AB878B6B36E/MobilePhonesInSchools": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-11-10/debates/5AB72929-9239-4CE1-AB33-3AB878B6B36E/MobilePhonesInSchools",
+    "checked_on": "2026-11-15",
+    "sha256": "742b63d7d45b1aa4e15d410b231beb951fb10c9a33f3e688ee039019adc0d8ca"
+  },
   "3972470cae0400c655bbddfd6f054ebb681819ddf0e913d427e93815cca820bc|https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/britains-biggest-hospitality-brands-partner-with-government-to-deliver-100000-jobs-for-neet-young-people",
@@ -725,6 +731,12 @@
     "checked_on": "2026-10-25",
     "sha256": "69c607a764da8bf7ead51467df49260babd52986800adac08a64c44c15a3782c"
   },
+  "90ccfe4d6da2888797125eff23e7cbb19bfa856d9d0fab3462e2afaa1b5c0458|https://www.gov.uk/government/publications/the-older-peoples-housing-taskforce-report-government-response/the-older-peoples-housing-taskforce-report-government-response": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/the-older-peoples-housing-taskforce-report-government-response/the-older-peoples-housing-taskforce-report-government-response",
+    "checked_on": "2026-11-15",
+    "sha256": "ef5efac763432cff6cecd13f7ee66235d41258228a38997c31651c899c4def0f"
+  },
   "922dccc064415fa7930709b49e30aaaea6ae2f615c8375ecb9e887fcbb3fe91a|https://www.gov.uk/government/news/major-boost-for-young-people-in-telford-as-youth-hub-opens-to-support-them-towards-work": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/major-boost-for-young-people-in-telford-as-youth-hub-opens-to-support-them-towards-work",
@@ -1169,6 +1181,12 @@
     "checked_on": "2026-10-18",
     "sha256": "cb2d6256bd9d4b0892889aed25414eef77a0aca206ffc1bd1c92fda6dd7cc6ff"
   },
+  "da68041ab90acf8f302d47bd9cb1146eaae760033276f223f8f82000ef972d22|https://www.gov.uk/government/news/new-royal-navy-led-northern-navies-initiative": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/new-royal-navy-led-northern-navies-initiative",
+    "checked_on": "2026-11-15",
+    "sha256": "a0160e1adf27956e99594d8425b9a2075b159da51af62022b2a8b5db40a1d8d4"
+  },
   "dc2e8de04ee53eeed3f798eb888a72ee2804b6c34b45d71851a27348329c388a|https://www.gov.uk/government/news/140-million-boost-to-urgent-care-to-ease-winter-pressures-on-nhs": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/140-million-boost-to-urgent-care-to-ease-winter-pressures-on-nhs",
@@ -1246,6 +1264,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS401",
     "checked_on": "2026-10-25",
     "sha256": "5b79550aeca6ebe7f6514b8d1285679aedffadfb4c190b3b9be95196a1c268b0"
+  },
+  "ebc2407e5eb95db3f85e2776e3b225f453b9a1ca868e743f6259ddc218835c28|https://www.gov.uk/government/consultations/trust-based-pension-schemes-trustees-and-governance-building-a-stronger-future/outcome/government-response-trust-based-pension-schemes-trustees-and-governance-building-a-stronger-future": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/consultations/trust-based-pension-schemes-trustees-and-governance-building-a-stronger-future/outcome/government-response-trust-based-pension-schemes-trustees-and-governance-building-a-stronger-future",
+    "checked_on": "2026-11-15",
+    "sha256": "cd2b36f214e6db0eeaccb0bc07cc400c508dc19b244e2b35c5db86a116991478"
   },
   "ee9e33d6bc513e914fa715f26982f3fa130ed58e60ed95dbd25d902de32d85c1|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363": {
     "match": "exact",
