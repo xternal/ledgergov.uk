@@ -191,6 +191,12 @@
     "checked_on": "2026-10-20",
     "sha256": "bfd72905eb5de7945125ec6ab889eb1ae2502aa5b2bdb4cfe08771d62391338c"
   },
+  "23492c97be1f89621ddea71eeee16ede2b45c076d1483024ebb49df5b87c96a4|https://www.gov.uk/government/news/90000-young-people-furthest-from-work-to-be-given-guaranteed-job-no-matter-where-they-live": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/90000-young-people-furthest-from-work-to-be-given-guaranteed-job-no-matter-where-they-live",
+    "checked_on": "2026-11-15",
+    "sha256": "b74b3b2140852cb8b21f4fe790fcd4d60cef172ff47c8ab97b5e3913d8828a2a"
+  },
   "2376ac9146f988b068e1be6eef3a165010d1fef891edb3874b7fc60a8003cd3c|https://www.gov.uk/government/news/over-100000-job-and-training-opportunities-a-year-to-give-young-people-a-route-into-britains-growth-industries-as-part-of-industrial-strategy": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/over-100000-job-and-training-opportunities-a-year-to-give-young-people-a-route-into-britains-growth-industries-as-part-of-industrial-strategy",
@@ -550,6 +556,12 @@
     "url": "https://www.gov.uk/government/news/government-announces-up-to-15-million-to-bring-the-joy-of-reading-to-300000-more-young-children",
     "checked_on": "2026-11-08",
     "sha256": "bdf4a15157ae272e6328bea8899ff4aca9c9471e6a97060abd8c99fe4965e875"
+  },
+  "665729e922da169c951d6259cf8232586550fa2162f0d1e5a560af96d7b795b2|https://www.gov.uk/government/news/90000-young-people-furthest-from-work-to-be-given-guaranteed-job-no-matter-where-they-live": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/90000-young-people-furthest-from-work-to-be-given-guaranteed-job-no-matter-where-they-live",
+    "checked_on": "2026-11-15",
+    "sha256": "b74b3b2140852cb8b21f4fe790fcd4d60cef172ff47c8ab97b5e3913d8828a2a"
   },
   "6804897c5484e05e8cd5b85aa25343b1fa99e4288362eb7e7398cabd2826c203|https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements": {
     "match": "exact",
