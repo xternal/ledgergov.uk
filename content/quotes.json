@@ -113,11 +113,23 @@
     "checked_on": "2026-10-13",
     "sha256": "8f7e57b95431ba6fb4e8c63ee5ba7d21818edf72fe628943c5cc3e5203cc76d9"
   },
+  "13d5f8371bffef0845613b0328c75c9ed11040b20328af88ab1a019f79f076b8|https://www.gov.uk/government/news/40-million-for-gps-to-keep-vulnerable-patients-out-of-hospital-this-winter": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/40-million-for-gps-to-keep-vulnerable-patients-out-of-hospital-this-winter",
+    "checked_on": "2026-11-15",
+    "sha256": "8a5df5af190488bee820e045d8b86633bb1bbc8dd789b88d0fb08e77a7e5b0a7"
+  },
   "15a76df312d196d2030b3912acfcc64ff591f7764b94837c1f1f7ddb6430f44c|https://www.gov.uk/government/news/quantum-firms-backed-to-keep-railways-running-and-cut-waiting-lists-as-uk-harnesses-potential-of-future-tech": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/quantum-firms-backed-to-keep-railways-running-and-cut-waiting-lists-as-uk-harnesses-potential-of-future-tech",
     "checked_on": "2026-10-16",
     "sha256": "f3d5894157f6faeaf0726f9d5246265177223168a1bbdfc6db52109a01de741d"
+  },
+  "178ce2750bf953805b9ec6ad1a08f0add7de5cd9efa6628300dd2b7ce2b4b747|https://www.gov.uk/government/news/new-cameras-and-sensors-to-help-protect-fish-stocks-marine-life-in-english-waters": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/new-cameras-and-sensors-to-help-protect-fish-stocks-marine-life-in-english-waters",
+    "checked_on": "2026-11-15",
+    "sha256": "ac4412103e57e133184cc509ed7625e3ac22c67b2947c2dd0b513263d36c5ebb"
   },
   "1a4a4a6ad97601a3ecd53a903b5c33f0048ea646ef5e2cc8b752269425bbc5d9|https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS397": {
     "match": "exact",

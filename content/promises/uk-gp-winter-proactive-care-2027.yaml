@@ -1,0 +1,79 @@
+format: openpromises/1
+id: uk-gp-winter-proactive-care-2027
+headline:
+  en: "GP support for 300,000 at-risk patients"
+actor_id: hm-government
+made_on: "2026-11-09"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Department of Health and Social Care)
+area: health
+status: promised
+status_note:
+  en: >-
+    A £40 million ring-fenced programme, set out by the Prime Minister and the Health and Social
+    Care Secretary, for GP practices to give extra care, such as medication reviews, health checks
+    and nurse-led respiratory clinics, to up to 300,000 people most at risk of becoming seriously
+    unwell. The Minister for Public Health told Parliament the next day that it is the GP Winter
+    Proactive Care Programme. "This winter" is read as by 28 February 2027. The card moves when the
+    government or NHS England reports how many patients were supported.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department of Health and Social Care press release, 9 Nov 2026: £40 million for GPs to keep
+      vulnerable patients out of hospital this winter
+    url: https://www.gov.uk/government/news/40-million-for-gps-to-keep-vulnerable-patients-out-of-hospital-this-winter
+  - title: >-
+      Written ministerial statement HCWS463, 10 Nov 2026: GP Winter Proactive Care Programme
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-10/HCWS463
+versions:
+  - version: 1
+    text: >-
+      The ring-fenced funding will support GP practices to proactively identify and provide
+      additional care for the patients they consider most at risk of becoming seriously unwell this
+      winter. Primary care networks (PCNs) will be able to receive £126 for each eligible patient
+      supported.
+    recorded_on: "2026-11-09"
+    source_url: https://www.gov.uk/government/news/40-million-for-gps-to-keep-vulnerable-patients-out-of-hospital-this-winter
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          Up to 300,000 patients most at risk this winter, such as people with heart disease,
+          frailty or COPD
+      cost:
+        note:
+          en: >-
+            £40 million for this winter, ring-fenced for general practice; primary care networks can
+            receive £126 for each eligible patient supported.
+      when:
+        en: >-
+          This winter
+      deadline: "2027-02-28"
+      funded_by:
+        en: >-
+          £40 million of ring-fenced funding for general practice
+events:
+  - date: "2026-11-09"
+    type: promised
+    text:
+      en: >-
+        The government sets out £40 million for GPs to give extra care to up to 300,000 vulnerable
+        patients this winter
+  - date: "2027-02-28"
+    type: deadline
+    text:
+      en: >-
+        Extra GP support for vulnerable patients due over the winter
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

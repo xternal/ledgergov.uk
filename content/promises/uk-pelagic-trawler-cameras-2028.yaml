@@ -1,0 +1,77 @@
+format: openpromises/1
+id: uk-pelagic-trawler-cameras-2028
+headline:
+  en: "Cameras on large pelagic trawlers by 2028"
+actor_id: hm-government
+made_on: "2026-11-09"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Department for Environment, Food & Rural Affairs)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    Remote electronic monitoring uses on-board cameras, sensors and GPS to record where vessels fish
+    and what they catch, including accidental catches of marine mammals, seabirds and sharks.
+    Defra's guidance, published the same day, says it will apply to large pelagic trawlers of all
+    nationalities fishing in English waters and to English-registered ones wherever they operate,
+    and that a full technical specification will be available in 2027. The date is subject to
+    parliamentary timings; November 2028 is read as 30 November 2028. The card moves when the
+    legislation is made.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Environment, Food & Rural Affairs press release, 9 Nov 2026: New cameras and
+      sensors to help protect fish stocks & marine life in English waters
+    url: https://www.gov.uk/government/news/new-cameras-and-sensors-to-help-protect-fish-stocks-marine-life-in-english-waters
+  - title: >-
+      Defra guidance, 9 Nov 2026: Remote electronic monitoring requirement: large pelagic trawlers
+      fishing in English waters
+    url: https://www.gov.uk/government/publications/remote-electronic-monitoring-large-pelagic-trawlers/remote-electronic-monitoring-requirement-large-pelagic-trawlers-fishing-in-english-waters
+versions:
+  - version: 1
+    text: >-
+      Fish stocks and marine wildlife in English waters will benefit from greater protection, as new
+      monitoring technology becomes a legal requirement for large pelagic fishing vessels from
+      November 2028, subject to parliamentary timings.
+    recorded_on: "2026-11-09"
+    source_url: https://www.gov.uk/government/news/new-cameras-and-sensors-to-help-protect-fish-stocks-marine-life-in-english-waters
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          Large pelagic trawlers (18 metres or more) fishing in English waters, and
+          English-registered ones wherever they operate
+      cost:
+        note:
+          en: >-
+            No cost is given in the source.
+      when:
+        en: >-
+          From November 2028, subject to parliamentary timings
+      deadline: "2028-11-30"
+      funded_by: null
+events:
+  - date: "2026-11-09"
+    type: promised
+    text:
+      en: >-
+        Defra says remote electronic monitoring will become a legal requirement for large pelagic
+        fishing vessels from November 2028
+  - date: "2028-11-30"
+    type: deadline
+    text:
+      en: >-
+        Remote electronic monitoring on large pelagic trawlers due to be required by law
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
