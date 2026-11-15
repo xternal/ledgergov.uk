@@ -1,0 +1,72 @@
+format: openpromises/1
+id: uk-locum-doctor-vat-2027
+headline:
+  en: "Charge VAT on supplying locum doctors"
+actor_id: hm-government
+made_on: "2026-11-11"
+venue: press_release
+venue_label:
+  en: >-
+    Revenue and Customs Brief 14 (2026): VAT treatment for supplies of a deputy for a medical
+    practitioner
+area: taxes
+status: promised
+status_note:
+  en: >-
+    HMRC's brief says the government announced at Budget 2026 that it would remove the VAT exemption
+    for supplying a deputy for a registered medical practitioner, from 1 May 2027. The First-tier
+    Tribunal found in Isle of Wight NHS Foundation Trust v HMRC that the exemption also covered
+    supplying locum doctors as staff; the change restores HMRC's earlier reading, so such supplies
+    of staff would carry VAT while medical care stays exempt. Until then they stay exempt. The card
+    moves when the legislation is made.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      HM Revenue & Customs, 11 Nov 2026: VAT treatment for supplies of a deputy for a medical
+      practitioner — repeal of Item 5 of Group 7 of Schedule 9 of the VAT Act 1994
+    url: https://www.gov.uk/government/publications/revenue-and-customs-brief-14-2026-vat-treatment-of-a-deputy-for-a-medical-practitioner-repeal-of-item-5-of-group-7-of-schedule-9-of-the-vat-act-1994/vat-treatment-for-supplies-of-a-deputy-for-a-medical-practitioner-repeal-of-item-5-of-group-7-of-schedule-9-of-the-vat-act-1994
+versions:
+  - version: 1
+    text: >-
+      At Budget 2026, it was announced that Item 5 will be repealed from Group 7, Schedule 9 of the
+      VAT Act 1994, with effect from 1 May 2027. This change restores HMRC’s interpretation of the
+      exemption before the Isle of Wight decision.
+    recorded_on: "2026-11-11"
+    source_url: https://www.gov.uk/government/publications/revenue-and-customs-brief-14-2026-vat-treatment-of-a-deputy-for-a-medical-practitioner-repeal-of-item-5-of-group-7-of-schedule-9-of-the-vat-act-1994/vat-treatment-for-supplies-of-a-deputy-for-a-medical-practitioner-repeal-of-item-5-of-group-7-of-schedule-9-of-the-vat-act-1994
+    quote_checked_on: "2026-11-15"
+    parameters:
+      who:
+        en: >-
+          NHS bodies, private healthcare providers and businesses that supply locum doctors
+      cost:
+        note:
+          en: >-
+            No figure is given in the brief.
+      when:
+        en: >-
+          From 1 May 2027
+      deadline: "2027-05-01"
+      funded_by: null
+events:
+  - date: "2026-11-11"
+    type: promised
+    text:
+      en: >-
+        HMRC says the VAT exemption for supplying a deputy for a medical practitioner will be
+        repealed from 1 May 2027, as announced at Budget 2026
+  - date: "2027-05-01"
+    type: deadline
+    text:
+      en: >-
+        Repeal of the VAT exemption for supplying locum doctors due to take effect
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-15"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

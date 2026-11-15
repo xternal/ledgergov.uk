@@ -389,6 +389,12 @@
     "checked_on": "2026-11-01",
     "sha256": "d5e8d80873136535109fd5f5936c91285a44e808c915792fb0bdbd3958f3b0bf"
   },
+  "4ad52ad9dad42a6a51fe9ef8e900fff83ef0ed870d26d4e60d6d13dac3727926|https://www.gov.uk/government/news/government-steps-in-to-reduce-packaging-costs-for-british-businessesand-pubs": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/government-steps-in-to-reduce-packaging-costs-for-british-businessesand-pubs",
+    "checked_on": "2026-11-15",
+    "sha256": "98f5283cb113a03471dfee565f0757f47e09dd6baceb9d25ca474c9251b59e90"
+  },
   "4be3ff0eee93e28f679297bc8fef13f076aa496d3490128d960ce2f7bd91733c|https://www.gov.uk/government/news/prime-minister-blocks-hundreds-more-criminals-from-sentencing-changes": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/prime-minister-blocks-hundreds-more-criminals-from-sentencing-changes",
@@ -700,6 +706,12 @@
     "url": "https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements",
     "checked_on": "2026-10-25",
     "sha256": "10a5c8d720829b8a3086ca68c3390350f74a5cd6b54f67a449a4e43ecf36a88f"
+  },
+  "8b1e8da6c32acdcad4b07f3985cebcc692f9ed395aec73054fc3d40356884d1c|https://www.gov.uk/government/publications/revenue-and-customs-brief-14-2026-vat-treatment-of-a-deputy-for-a-medical-practitioner-repeal-of-item-5-of-group-7-of-schedule-9-of-the-vat-act-1994/vat-treatment-for-supplies-of-a-deputy-for-a-medical-practitioner-repeal-of-item-5-of-group-7-of-schedule-9-of-the-vat-act-1994": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/revenue-and-customs-brief-14-2026-vat-treatment-of-a-deputy-for-a-medical-practitioner-repeal-of-item-5-of-group-7-of-schedule-9-of-the-vat-act-1994/vat-treatment-for-supplies-of-a-deputy-for-a-medical-practitioner-repeal-of-item-5-of-group-7-of-schedule-9-of-the-vat-act-1994",
+    "checked_on": "2026-11-15",
+    "sha256": "1df664de01d64c35f65f9a07ffd4b52e371ae3f0c9ddc512120a3e22a6bcf342"
   },
   "8b3bfe8f62e5eddb258eed12e801bca5e8c5a19a4f5fa16f4efa9438bd38c938|https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS412": {
     "match": "exact",
