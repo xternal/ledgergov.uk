@@ -1,0 +1,42 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws475.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-16"
+source:
+  id: wms-hcws475
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-16/HCWS475
+  title: Financial Services and Markets Bill – Government Amendment
+  date: "2026-11-16"
+  venue_label: Written ministerial statement
+quote: >-
+  The Government intends to legislate to establish a new statutory framework that ensures reasonable
+  access to essential in-person banking services for customers who need them, while recognising the
+  important role of accessible digital and telephone banking.
+source_span: [1553, 1809]
+speaker:
+  name: Lucy Rigby
+  role: Economic Secretary to the Treasury
+  party: Labour
+  member_id: 5333
+  actor_id: labour
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: economic_affairs
+  who: customers who need in-person banking services
+  how_much: null
+  when: null
+  funded_by: null
+  deadline: null
+why: >-
+  The Government commits to legislate, by amending the Financial Services and Markets Bill, for a
+  statutory framework guaranteeing reasonable access to essential in-person banking services.
+confidence: 0.6
+model: claude-opus-5-5
+status: to_review
