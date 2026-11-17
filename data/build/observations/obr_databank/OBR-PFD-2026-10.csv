@@ -572,6 +572,7 @@ spending.depreciation,2029-30,UK,89.83153,gbp_bn,forecast,obr_databank,OBR-PFD-2
 spending.depreciation,2030-31,UK,93.09508,gbp_bn,forecast,obr_databank,OBR-PFD-2026-10,sourced,"Forecast: OBR Economic and fiscal outlook forecast published October 2026, as carried in the databank."
 spending.depreciation,2031-32,UK,96.752897,gbp_bn,forecast,obr_databank,OBR-PFD-2026-10,sourced,"Forecast: OBR Economic and fiscal outlook forecast published October 2026, as carried in the databank."
 spending.psce,2019-20,UK,792.176,gbp_bn,outturn,obr_databank,OBR-PFD-2026-10,sourced,
+spending.psce,2020-21,UK,977.272,gbp_bn,outturn,obr_databank,OBR-PFD-2026-10,sourced,
 spending.psce,2021-22,UK,934.501,gbp_bn,outturn,obr_databank,OBR-PFD-2026-10,sourced,
 spending.psce,2022-23,UK,1051.704,gbp_bn,outturn,obr_databank,OBR-PFD-2026-10,sourced,
 spending.psce,2023-24,UK,1097.276,gbp_bn,outturn,obr_databank,OBR-PFD-2026-10,sourced,
