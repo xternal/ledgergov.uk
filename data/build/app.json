@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-05T13:15:43Z",
+  "built_at": "2026-11-18T16:39:07Z",
   "base_year": "2025-26",
   "years": [
     {
@@ -70,7 +70,7 @@
             "publisher": "HM Treasury",
             "url": "https://www.gov.uk/government/collections/public-expenditure-statistical-analyses-pesa",
             "licence": "OGL v3",
-            "published_on": "2026-07-16"
+            "published_on": "2026-11-18"
           },
           {
             "id": "ons_psf",
@@ -422,7 +422,7 @@
             "publisher": "HM Treasury",
             "url": "https://www.gov.uk/government/collections/public-expenditure-statistical-analyses-pesa",
             "licence": "OGL v3",
-            "published_on": "2026-07-16"
+            "published_on": "2026-11-18"
           },
           {
             "id": "ons_psf",
@@ -774,7 +774,7 @@
             "publisher": "HM Treasury",
             "url": "https://www.gov.uk/government/collections/public-expenditure-statistical-analyses-pesa",
             "licence": "OGL v3",
-            "published_on": "2026-07-16"
+            "published_on": "2026-11-18"
           },
           {
             "id": "ons_psf",
@@ -1126,7 +1126,7 @@
             "publisher": "HM Treasury",
             "url": "https://www.gov.uk/government/collections/public-expenditure-statistical-analyses-pesa",
             "licence": "OGL v3",
-            "published_on": "2026-07-16"
+            "published_on": "2026-11-18"
           },
           {
             "id": "ons_psf",
@@ -1478,7 +1478,7 @@
             "publisher": "HM Treasury",
             "url": "https://www.gov.uk/government/collections/public-expenditure-statistical-analyses-pesa",
             "licence": "OGL v3",
-            "published_on": "2026-07-16"
+            "published_on": "2026-11-18"
           },
           {
             "id": "ons_psf",
@@ -1830,7 +1830,7 @@
             "publisher": "HM Treasury",
             "url": "https://www.gov.uk/government/collections/public-expenditure-statistical-analyses-pesa",
             "licence": "OGL v3",
-            "published_on": "2026-07-16"
+            "published_on": "2026-11-18"
           },
           {
             "id": "ons_psf",
@@ -2182,7 +2182,7 @@
             "publisher": "HM Treasury",
             "url": "https://www.gov.uk/government/collections/public-expenditure-statistical-analyses-pesa",
             "licence": "OGL v3",
-            "published_on": "2026-07-16"
+            "published_on": "2026-11-18"
           },
           {
             "id": "ons_psf",
@@ -2534,7 +2534,7 @@
             "publisher": "HM Treasury",
             "url": "https://www.gov.uk/government/collections/public-expenditure-statistical-analyses-pesa",
             "licence": "OGL v3",
-            "published_on": "2026-07-16"
+            "published_on": "2026-11-18"
           },
           {
             "id": "obr_efo",
@@ -2876,7 +2876,7 @@
             "publisher": "HM Treasury",
             "url": "https://www.gov.uk/government/collections/public-expenditure-statistical-analyses-pesa",
             "licence": "OGL v3",
-            "published_on": "2026-07-16"
+            "published_on": "2026-11-18"
           },
           {
             "id": "obr_efo",
@@ -3218,7 +3218,7 @@
             "publisher": "HM Treasury",
             "url": "https://www.gov.uk/government/collections/public-expenditure-statistical-analyses-pesa",
             "licence": "OGL v3",
-            "published_on": "2026-07-16"
+            "published_on": "2026-11-18"
           },
           {
             "id": "obr_efo",
@@ -3560,7 +3560,7 @@
             "publisher": "HM Treasury",
             "url": "https://www.gov.uk/government/collections/public-expenditure-statistical-analyses-pesa",
             "licence": "OGL v3",
-            "published_on": "2026-07-16"
+            "published_on": "2026-11-18"
           },
           {
             "id": "obr_efo",
@@ -3902,7 +3902,7 @@
             "publisher": "HM Treasury",
             "url": "https://www.gov.uk/government/collections/public-expenditure-statistical-analyses-pesa",
             "licence": "OGL v3",
-            "published_on": "2026-07-16"
+            "published_on": "2026-11-18"
           },
           {
             "id": "obr_efo",
@@ -4244,7 +4244,7 @@
             "publisher": "HM Treasury",
             "url": "https://www.gov.uk/government/collections/public-expenditure-statistical-analyses-pesa",
             "licence": "OGL v3",
-            "published_on": "2026-07-16"
+            "published_on": "2026-11-18"
           },
           {
             "id": "obr_efo",
@@ -5251,7 +5251,7 @@
       "publisher": "HM Treasury",
       "url": "https://www.gov.uk/government/collections/public-expenditure-statistical-analyses-pesa",
       "licence": "OGL v3",
-      "published_on": "2026-07-16"
+      "published_on": "2026-11-18"
     },
     {
       "id": "nato_defence",
