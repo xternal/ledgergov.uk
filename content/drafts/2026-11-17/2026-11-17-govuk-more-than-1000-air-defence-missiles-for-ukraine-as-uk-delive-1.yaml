@@ -1,0 +1,43 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-more-than-1000-air-defence-missiles-for-ukraine-as-uk-delive.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-17"
+source:
+  id: govuk-more-than-1000-air-defence-missiles-for-ukraine-as-uk-delive
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/more-than-1000-air-defence-missiles-for-ukraine-as-uk-delivers-240-million-in-winter-support
+  title: >-
+    More than 1,000 air defence missiles for Ukraine as UK delivers £240 million in winter support
+  date: "2026-11-17"
+  venue_label: Press release (Ministry of Defence)
+quote: >-
+  More than 1,000 new air defence systems proven against Russia’s jet-powered drones will be
+  supplied by the UK to strengthen Ukraine’s defences this winter.
+source_span: [551, 706]
+speaker:
+  name: HM Government
+  role: Ministry of Defence
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: defence
+  who: Ukraine's armed forces
+  how_much: £240 million
+  when: Deliveries begin from mid-December, this winter
+  funded_by: Part of the £500 million for Ukraine this winter announced at the Budget
+  deadline: "2026-12-31"
+why: >-
+  The UK will supply Ukraine with more than 1,000 short-range air defence missiles and launchers,
+  plus over a dozen air defence radars, with deliveries beginning from mid-December. This is a £240
+  million package drawn from the £500 million announced earlier at the Budget.
+confidence: 0.75
+model: claude-opus-5-5
+status: to_review
