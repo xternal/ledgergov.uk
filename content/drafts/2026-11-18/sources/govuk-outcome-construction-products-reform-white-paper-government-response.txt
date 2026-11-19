@@ -1,0 +1,574 @@
+Construction Products Reform White Paper: government response
+Ministerial foreword
+The Grenfell Tower tragedy in June 2017 led to a devastating loss of life and exposed profound failures across the built environment, including construction products. This government is committed to reforming the built environment to ensure that a tragedy like Grenfell can never happen again. Construction products reform is a critical pillar of this system-wide change.
+Earlier this year, we published the Construction Products Reform White Paper and the General Safety Requirement consultation, which built on proposals set out in the green paper (published in 2025). We received a strong and constructive response to the consultation from across the sector. I am grateful to everyone who took the time to engage. Your expertise, challenge and insight have helped shape the next phase of this programme. The message was clear: there is strong support for reform and agreement that the current system must change. Stakeholders recognised the need for a stronger regime that places safety, accountability, transparency and public confidence at its heart, while continuing to support innovation, investment and growth
+This document sets out the government’s response to that consultation. It confirms the reforms we will take forward and how we intend to deliver them. It provides clarity for industry, regulators and consumers on the future direction of the construction products regulatory regime and the steps that will now be taken to implement these changes.
+Next year will mark 10 years since the Grenfell Tower tragedy. That anniversary is a stark reminder of the consequences of regulatory failure and of the responsibility we all share to ensure that such a tragedy can never happen again. It is also a reminder that reform must not stall. This government is committed to seeing this programme through and delivering the changes needed to create a system that properly protects people and commands public confidence.
+Parliamentary Under Secretary of State (Lords) Baroness Blake of Leeds CBE
+Executive summary
+In February 2026, the government published the Construction Products Reform White Paper and the General Safety Requirement consultation alongside the Grenfell Tower Inquiry Annual Report. Following consultation and engagement with the sector, this response summarises what we heard and confirms proposals for reform in light of consultation responses. We have also published the response to the General Safety Requirement consultation.
+Reforms are supported by the sector
+Responses to the white paper consultation reconfirmed support from the sector for the ambition and direction of reform, coupled with a strong expectation that implementation should be clear, proportionate and deliverable. Respondents consistently highlighted the importance of building confidence in the regulatory framework through greater clarity of roles and responsibilities, clear accountability, stronger oversight, and a more coherent approach across the construction products regime. Stakeholders also emphasised the need to balance improved safety and performance outcomes with practical considerations, including the impacts on industry, regulatory burdens, transition arrangements and market capacity.
+Throughout the consultation, respondents reinforced the importance of collaboration between government, regulators and industry to ensure that reforms are effective, workable and capable of restoring trust in the system. This response therefore sets out how construction product reform will be taken forward and how these reforms will form part of the government’s wider ambition to bring products, buildings and professions regulation together into a coherent regulatory system.
+Construction products as part of broader built environment system reform
+These reforms form part of the government’s wider programme to create a clearer, more coherent and more effective regulatory system for the built environment. In July 2026, the government published a response to the Single Construction Regulator Prospectus consultation and confirmed its intention to bring the regulation of buildings, construction products and built environment professions into a coherent regulatory system. The new and strengthened regulatory functions for construction products and other reforms described in the white paper will therefore be developed with the future integration into a single construction regulator in mind.
+Summary of response conclusions
+This response confirms the government’s steadfast commitment to deliver reforms and to continuing to work with industry, regulators and the public to get the detail and delivery right. This response confirms the following:
+The general safety requirement will apply to construction products which are not currently regulated by construction product regulations
+Where products are already regulated under construction product regulations, they will not also be regulated by the general safety requirement. The regulator will have powers to remove unsafe products from the market under both the construction products regulations regime and the general safety requirement. The government will implement complementary construction products regulations and general safety requirement regimes to ensure product safety, regulatory clarity and consistency with the European Union system.
+Products critical to safe construction
+Stakeholders noted that enhanced assurance around the safe selection, installation and use of products is more effectively regulated through building regulations than through product regulations. As announced in the white paper, the government will therefore review Building Regulation 7 (1) of the Building Regulations 2010 to explore additional assurance around the safe selection and installation of products. The government does not intend to create an additional statutory list of safety critical products on top of the construction products regulations and the general safety requirement.
+Conformity assessment bodies licensing regime
+All UK construction product conformity assessment bodies (CABs) will be required to operate under a licensing regime overseen by the national regulator for construction products. The regime will be mandatory and based on principles of competence, independence, transparency and proportionality. The regulator will have powers to monitor CAB performance and act where necessary, including where there are concerns about product safety. Government is also exploring whether overseas CABs could voluntarily join the UK licensing regime to demonstrate an additional level of regulatory assurance.
+Strengthening public sector testing capacity
+The government remains committed to establishing new public sector testing and research capacity to support regulators and improve the evidence base for product safety. New arrangements will be designed to provide independent expertise and capacity while complementing existing industry infrastructure.
+Role and responsibilities of regulators: whistleblowing and intelligence gathering
+The national regulator for construction products will be recognised as a prescribed whistleblowing body. Information received through whistleblowing channels will help inform a risk-based programme of regulatory enforcement and investigation. The government wants businesses, including CABs, to maintain effective internal whistleblowing processes to identify safety concerns early. We will work with industry and the regulator to promote best practice and support a positive reporting culture.
+Environmental requirements and standards
+For products covered by standards or technical assessments, environmental requirements will be incorporated into the reformed construction products regime and remain aligned with relevant elements of the EU Construction Products Regulation 2024 (EU-CPR 2024). For products not in scope of construction products regulations, the government will explore how digital product data can improve the consistency, accessibility and comparability of environmental information across the construction sector.
+Accountability
+Responsibility should sit with those best placed to control decisions, information and activities that affect safety outcomes. We agree with consultation responses that accountability must be clearly defined throughout the product lifecycle, including through legislation where necessary.
+Delivering reform
+The government intends to implement reforms through a combination of primary legislation, secondary legislation and non-legislative measures such as guidance. Reform will be phased to support industry readiness, regulatory capacity and supply chain stability. The government will continue working with regulators, trade bodies and industry to prepare organisations, particularly small and medium-sized enterprises, for the transition. A strong focus will be placed on guidance, communications, capability building and regulator readiness throughout implementation.
+Single Construction Regulator
+As confirmed in the government response to the prospectus, the single construction regulator will ultimately be responsible for overseeing construction products regulation. The transition to the new institutional model will be managed alongside the rollout of wider reforms.
+Achieving reform objectives proportionately
+The government is committed to ensuring the costs of reform remain proportionate for businesses of all sizes. We believe that any additional costs will be justified by the long-term benefits of improved safety, information quality, traceability and market confidence.
+Introduction
+Construction product reforms – overview and context
+This programme of reforms is designed to address the systemic failures laid bare by the tragedy at Grenfell Tower on 14 June 2017, and responding to recommendations from the subsequent Grenfell Tower Inquiry. The Inquiry found that the mechanisms designed to safeguard the built environment, including the regulation and oversight of construction products, failed to protect people in their homes. These failures were further detailed by two independent reviews: the Building a Safer Future: Independent Review of Building Regulations and Fire Safety and the Independent Review of the Construction Product Testing Regime.
+The Construction Products Reform White Paper set out a vision of “safe products, safely used”. It proposed system-wide reform structured around four pillars: a robust regulatory regime; a trusted testing and certification system; clear and reliable product information; and stronger market oversight and enforcement. Together reforms are intended to improve safety, support growth and innovation, and ensure accountability across the entire product chain.
+Reaffirming government commitment to reforms
+Nearly 10 years on from the Grenfell Tower tragedy, the government is committed to driving forward reform to the built environment system to give confidence that a tragedy like Grenfell can never happen again. As the September Grenfell Tower Inquiry Government progress report set out, we continue to expect to implement all Inquiry recommendations by 2029, and to update the legislative framework when Parliamentary time allows.
+This will include delivery of the single construction regulator. The Office for Product Safety and Standards currently carries out the functions of the national regulator for construction products. The new and strengthened regulator functions described in the white paper and confirmed in this response will, in due course, become the responsibility of the single construction regulator.
+Reform of the system that regulates and oversees the manufacture, marketing, sale, use and maintenance of construction products, is central to meeting government ambitions for a more coherent regulatory system that results in better outcomes for residents, building users and the wider sector. The government remains steadfast in its commitment to deliver construction product reforms and will continue to work with industry, regulators and the public to get the detail and delivery right.
+About this government response
+The white paper consultation asked 11 questions to support us in refining the policy detail, following the more extensive consultation conducted last year on the green paper proposals. The majority of this response therefore focuses on the specific issues raised by respondents in the white paper. The government policy position on these questions can be found in the following areas:
+Products critical to safe construction
+Conformity assessment bodies
+Research and development, public sector testing capacity, and expertise
+Market surveillance
+Products not covered by a designated standard or technical assessment
+Responsibilities of key parties
+Government commitments and roadmap of reform
+Further evidence
+We also heard views from industry through consultation responses and during engagement about issues beyond the consultation questions posed. In publishing the government response, we want to take the opportunity to confirm key aspects of reforms and to explain the rationale. These issues and clarity on these points are set out in detail alongside question 11 in the Further themes section.
+Overview of consultation responses
+The consultation was open for 12 weeks, running from 25 February 2026 to 20 May 2026. It contained 11 questions, including 5 Yes/No questions. Responses were received via online survey and email.
+The consultation received 165 responses. 148 responded on behalf of organisations or trade bodies, with 17 respondents answering in a personal capacity.
+Some respondents answered consultation questions only, some respondents provided a general narrative response only without answering any consultation questions, and some responses were a combination of the two.
+In addition, during the consultation period, the Ministry of Housing, Communities and Local Government (MHCLG) carried out extensive engagement with the sector. This included hosting two public webinars reaching 456 attendees in total from across the construction sector, three industry-government roundtables, and attendance and participation in 31 individual externally-hosted events and meetings. Through this engagement, MHCLG reached more than 500 representatives from across the sector.
+Figure 1: Respondents by profession
+Type of respondent
+Total
+Architectural
+12
+Builder/contractor
+5
+Building control approved inspector/registered building control approver
+1
+Central government
+1
+Charity
+1
+Competent Persons Scheme operator
+1
+Consultant
+3
+Conformity assessment body
+9
+Designer
+1
+Distributor
+2
+Housing association
+2
+Insurance/warranty provider
+2
+Local authority/local government/regional government
+12
+Manufacturer
+38
+Marketer (online and/or offline)
+1
+Member of the public
+3
+National representative or trade body/association
+40
+Professional body or institution
+11
+Research/academic body or institution
+4
+Other
+16
+Figure 2: Organisations by size
+Size of organisation
+Total
+Large (250 plus employees)
+50
+Medium (50 to 249 employees)
+33
+Small (10 to 49 employees)
+47
+Micro (1 to 9 employees)
+18
+How we approached our analysis in this response
+This document provides a summary of the consultation responses received to the questions asked. It does not attempt to capture every point made.
+Quantitative analysis of individual questions is based on 154 responses and does not include responses who provided only narrative feedback on themes or chapters. Analysis of the 154 responses was carried out through use of the ‘Consult’ tool (see methodology below). Narrative responses were included in the thematic qualitative analysis and the overall response number. Analysis on the narrative responses was carried out by officials utilising manual and AI methods.
+A number of respondents chose not to answer some Yes/No questions. For the statistical summary, we set out both the breakdown based on the overall number of respondents and the breakdown based on only those who responded to the question, excluding those that did not answer.
+Some respondents provided only qualitative responses to Yes/No questions. These responses have been captured in the “qualitative response only” category.
+Methodology
+All responses to this consultation have been considered as part of the analysis.
+For the purposes of this analytical summary, the team used a government artificial intelligence (AI)-assisted tool, ‘Consult’, developed by the Incubator for Artificial Intelligence (i.AI), to support the identification and assignment of themes.
+Consult identifies key themes from the responses to each question and maps each response against those themes, with policy officials reviewing the outputs at every stage, making adjustments where appropriate. Using their understanding of the policy area, subject matter expertise and the consultation objectives, officials amended the themes to ensure it accurately reflected the content of responses and addressed the consultation questions. The final framework was then used to categorise responses across the dataset.
+Personal data collected as part of the consultation was processed in accordance with the privacy notice published in the consultation. Care was taken to avoid using AI to analyse personal data.
+White Paper Chapter 6: Regulating products
+Products critical to safe construction
+We asked:
+In Chapter 6 of the white paper, we proposed that in addition to the GB Construction Product Regulation (GB-CPR) and implementing the general safety requirement, additional measures may be needed where products are used in safety critical scenarios. The white paper recognised that criticality is often determined by the product’s exact context and end use within a building, rather than by product category alone, although a limited number of products may be critical in most circumstances. The white paper proposed further guidance to help industry understand how responsibilities should apply across the supply chain, including in relation to product information, evidence, installation, competence and the roles of principal designers and principal contractors. We therefore asked what should be included in guidance to support industry to understand their responsibilities regarding products critical to safe construction.
+Question 1
+What should be included in guidance to support industry to understand their responsibilities regarding products critical to safe construction?
+You said:
+Respondents broadly recognised the need for clearer expectations and, in appropriate cases, enhanced assurance for products used in safety-critical construction contexts.
+Respondents stressed that safety criticality is contextual, rather than product-based. The same product may be safety critical in one use but not another, depending on its function, location, building type, consequence of failure and whether it has been correctly installed and adequately maintained.
+Respondents emphasised the need to align with wider regimes, including building safety duties, Regulation 7 (1) of the Building Regulations 2010 and Approved Document 7, the construction products regulations, the general safety requirement, PAS 2000, United Kingdom Conformity Assessed marking (UKCA) and Conformité Européenne (CE) marking, Assessment and Verification of Constancy of Performance (AVCP) systems, British Standards, devolved building standards and Northern Ireland arrangements.
+Respondents also supported competence requirements, installer schemes, digital product information, product passports or quick response (QR) codes, batch traceability, golden thread records, record retention, accessible guidance for small and medium-sized enterprises, sector-specific examples, and guidance co-developed with industry.
+Respondents wanted clarity on requirements in relation to product information, evidence, testing, conformity assessment, certification, documentation and traceability. This included what evidence would be acceptable, how test reports should be interpreted, and what information would be needed to support safe specification, installation, inspection, maintenance and remediation.
+Some respondents highlighted risks from generic, outdated or poorly scoped test evidence, particularly where product performance depends on installation conditions, product combinations, fixings, interfaces or wider system performance.
+Government response
+We welcome the strong engagement on this issue and the support for clearer expectations where products and systems are used in safety-critical scenarios. As set out in the white paper, the government’s objective is to ensure that the regulatory regime provides sufficient assurance where products are used in scenarios that are critical to safety.
+We agree with respondents that further assurance may be needed where safety risks are greatest. Consultation responses reinforced the view that safety depends not only on the product, but on how and where it is specified, selected, substituted, installed and maintained. A fixed statutory list of products would not reflect that reality, would be slow to respond as products and systems evolve, and risks creating additional regulatory complexity. We therefore do not currently intend to establish a fixed statutory list of products critical to safe construction.
+Additional assurance around the installation and use of products is best managed through improvements to competence and the building regulations regime, rather than through product regulations. Assurance should also be targeted where the consequences of failure of a product pose a critical safety risk. This reflects the white paper’s position that safety criticality should not be treated as a fixed, static product label. While a limited number of products may be critical to safety in most circumstances, enhanced measures should only apply where the end use and context of a product make additional assurance necessary.
+As set out in the white paper, we will take forward a review of Building Regulation 7 (1). This will include consideration of how safety-critical scenarios should be identified, what information and evidence is needed, and how responsibilities should apply to those best placed to control the relevant decision or activity, including specifiers, designers, contractors and installers.
+One output of this work is likely to be guidance. We agree with respondents that this will need to be practical and operational, not simply explanatory, and should help relevant parties understand when additional assurance may be needed for products used in safety-critical scenarios, what evidence should be relied on, and how relevant decisions or actions should be recorded. This may include worked examples on issues such as substitutions, compatibility, limitations of use and evidence that applies only to defined configurations or conditions. As set out in the implementation chapter, we will work with the regulator, trade associations and industry to ensure guidance is accessible, practical and available sufficiently ahead of commencement.
+We will also consider how wider reforms on product information, traceability and digitalisation can support safe outcomes. A key aim will be to ensure that accurate, usable product information is available to those responsible for specifying and installing products, so they can make informed decisions in safety-critical scenarios. Increased take-up of robust third-party certification schemes could also support product selection and installation.
+Next steps
+The next phase of work will draw on consultation responses and further engagement with industry and regulators to support our review of Regulation 7 (1) of the Building Regulations 2010. Our aim is to develop an approach that is clear, proportionate, workable, and supports safer outcomes.
+White Paper Chapter 8: Assurance and oversight of testing, conformity assessment and certification
+Conformity assessment bodies
+We asked:
+In the white paper, we confirmed that all UK conformity assessment bodies (CABs) operating in relation to construction products will be required to obtain a licence from the national regulator. We sought views on the following principles that could apply to the CABs licensing regime:
+it has clear criteria for the regulator to evaluate against in regard to competency, transparency, independence and accountability
+it supports wider reforms, such as the new regulatory framework for third-party certification schemes
+the requirements and costs are proportionate to the risk
+it incentivises CABs to go beyond statutory minimums
+it can be used to enforce against poor performing CABs
+that licence information is easily accessible
+We asked the following question in the white paper:
+Question 2
+Do you agree that the above principles should underpin the licensing regime for CABs? [Yes/No]. Please explain your answer.
+Please outline how you think a licensing regime for CABs could work operationally.
+You said:
+Question 2
+Number of responses
+% of all responses
+% of Question 2 responses
+Yes
+115
+74.7%
+87.8%
+No
+10
+6.5%
+7.6%
+Qualitative response only
+6
+3.9%
+4.6%
+Not answered
+23
+14.9%
+-
+The majority of respondents supported our proposal for the UK CABs licensing system. This included agreeing with the principles we outlined. Respondents also said that the licence must be mandatory, universal, proportionate, and uphold core principles of competence, independence and transparency.
+Respondents emphasised that the licence should integrate and align with existing frameworks, like United Kingdom Accreditation Service (UKAS) accreditation, International Organization for Standardization standards and the European Union regime to prevent duplication. They made clear that the licence needs to be well designed, with clarity on the scope, definitions and criteria. And, for the licence to be effective, it needs strong oversight, enforcement, audit and whistle blowing mechanisms.
+Respondents called for licence information to be made public, with standardised digital reporting and interface systems to enhance ease of use and transparency.
+Finally, respondents suggested that the licence should be tiered and proportionate to the risk, with baseline licensing for all and enhanced requirements for safety-critical products. Respondents also suggested that there should be conditional licences for CABs entering the market; expedited routes for established UKAS CABs; and shorter licence terms or more frequent audits for higher-risk activities.
+Government response
+As set out in the white paper, government intends to implement a mandatory licensing regime for all UK construction products CABs. Licences to operate will be issued by the national regulator for construction products. This will ensure that all UK construction products CABs are regulated and will enable the national regulator to enforce against breaches.
+The majority of respondents supported our proposal for the UK CABs licensing system, including agreeing with the principles we outlined. Respondents felt that the licence should be mandatory, universal, proportionate, and uphold core principles of competence, independence and transparency.
+Several respondents highlighted the importance of minimising burdens and costs on CABs associated with a licensing regime. We recognise this concern and commit to designing the licence so that it is proportionate to the risk and avoids the risk of duplication. To support transparency, licence information will be available and accessible to the public.
+Given that the requirement for a licence will only apply to UK CABs, concerns were also raised about how the UK can assure the competence of overseas CABs. It is important to be clear that irrespective of where a product is produced and tested, every construction product will be required to meet relevant regulations to be placed on the market in the UK. The regulator will have enhanced enforcement powers to remove unsafe construction products from the UK market, including where there are concerns about the underlying testing or assessment by a CAB. As set out in the white paper, the regulator will have a ‘backstop’ power in specific circumstances (for example, where the regulator has a safety concern) to take responsibility for assessing and certifying the conformity of a product against the legislative requirements before it can be placed on the market. Furthermore, we are exploring the possibility for overseas CABs to opt into the licence to gain commercial advantages of being regulated by the national regulator.
+Accreditation, which is undertaken in the UK by UKAS, will be separate to the licensing regime. Accreditation verifies technical competence in accordance to international standards, but does not consider wider outcomes such as whether construction products are safe. The regulator will be responsible for decisions on licensing, and to monitor and enforce CABs’ adherence to legal obligations. However, to avoid the risk of duplicative activities and higher costs, CABs may use UKAS accreditation as part of their evidence when making a licensing application to the regulator.
+Next steps
+We will continue to develop the licence in line with the principles above. The next phase of work will focus on designing the licence so that it integrates with existing regulatory frameworks, has clear scope, has adequate enforcement powers, and is proportionate to the risk. We will engage with the wider conformity assessment sector through a series of workshops to co-develop key aspects of the licence design and tackle key challenges collaboratively.
+Research and development, public sector testing capacity, and expertise
+We asked:
+In the white paper, we set our that the government would develop new public sector testing capacity, to provide much needed capacity and enable both enforcement and research testing. Intended benefits included increasing the regulators’ ready access to testing capacity, recognising that new public testing capacity will be crucial in underpinning the new regime.
+To support this, we presented methods in which public testing capacity could be increased, such as construction of a new national testing facility or government partnerships with private test houses or academia. We wanted to gauge respondents’ interest and support in these potential methods, as well as seek suggestions for partnerships to support government.
+We asked the following questions in the white paper:
+Question 3
+Do you agree that this national testing and research facility would lead to the highlighted benefits? [Yes/No]. Please explain your answer.
+Question 4
+What opportunities are there for government to establish partnership models to establish new public sector testing and research capacity?
+You said:
+Question 3
+Number of responses
+% of all responses
+% of Question 3 responses
+Yes
+111
+72.1%
+81.0%
+No
+16
+10.4%
+11.7%
+Qualitative response only
+10
+6.5%
+7.3%
+Not answered
+17
+11.0%
+-
+A large majority of respondents supported a national testing and research facility, agreeing that it would lead to the highlighted benefits.
+Nearly half of respondents felt that the facility could strongly aid the regulators in gathering evidence for regulatory research, assist in enforcement actions, and contribute to the development and validation of standards and technical guidance.
+Many respondents stressed that if government were to embark on such a facility, it must operate independently with robust governance, transparency, and accountability to foster credibility, public trust, and impartiality, particularly in response to previous failures such as Grenfell.
+Some respondents stressed that such a facility should work alongside the private sector, academia and conformity assessment bodies rather than compete with them.
+For Question 4, a significant majority of respondents suggested that robust public-private partnerships could be developed with trade bodies, manufacturers, testing houses and industry groups.
+A majority of respondents also highlighted the utility of partnerships with academia in particular, stating that this would increase access to expertise and skills development.
+Government response
+We remain committed to establishing new public sector testing and research capacity, to ensure the national regulator for construction products and the Building Safety Regulator (and in due course, the single construction regulator) have sufficient testing resource to properly ensure construction products are safe, and to support reviews and updates to the building regulations and wider legislative framework.
+We will continue to develop and test options to deliver this new capacity, including whether our objectives are best met by a new national facility, and/or through partnerships (such as between the government and academic institutions). Whichever model(s) are ultimately taken forward, this must be in a way which ensures that the government has access to truly independent expertise. We recognise that some respondents sought clarification about how any new capacity would operate alongside the existing landscape of private sector labs, conformity assessment bodies, and academia. The intention is for this new capacity to address a specific gap in the current landscape: to provide expert, impartial advice to the government. It will operate alongside the existing infrastructure, filling a specific, targeted need.
+Next steps
+Increasing public sector capacity is a significant, long-term undertaking. Our focus in the next phase will be on developing and testing options further. In the meantime we welcome continued engagement from the sector on what these potential increases could look like. We will provide more detail in due course.
+This will include ensuring that, where necessary, and subject to parliamentary time, we have the legal powers in place to establish and fund new public testing and research capacity.
+White Paper Chapter 9: Role and responsibilities of regulators
+Market surveillance
+We asked:
+In the white paper we set out how market surveillance is essential to a well-functioning regulatory system. We set out our aim for the sector to be able to contribute to surveillance by reporting safety concerns and issues to the national regulator for construction products. This will enable the regulator to use industry insights to inform and deliver a targeted, risk-based programme of surveillance and investigations.
+There may be individuals who have identified risks within their own organisations and feel they must escalate their concerns to the regulator to be addressed appropriately. As part of the consultation, we wanted to understand if it would be beneficial to introduce employment protections for these individuals, to encourage whistleblowing, for this we asked the following question in the white paper:
+Question 5
+Would there be a benefit to enabling employment protections, for individuals reporting risks, bad practices and non-compliance within their own organisation, to the national regulator for construction products? [Yes/No]. Please explain your answer.
+You said:
+Question 5
+Number of responses
+% of all responses
+% of Question 5 responses
+Yes
+117
+76.0%
+88.0%
+No
+7
+4.5%
+5.3%
+Qualitative response only
+9
+5.8%
+6.7%
+Not answered
+21
+13.7%
+-
+Many respondents noted that whistleblowing protections would encourage early reporting and therefore improve accountability. Benefits raised include that the proposal could provide protection against retaliation and career harm, which is a barrier to reporting, and that it would support a culture of safety and openness.
+Many respondents said there was a need for clear, confidential routes for reporting, including digital channels. However, some respondents flagged that anonymity may not always work in practice, where markets are niche and highly technical, and therefore only a few individuals would have access to the information being reported. Some respondents highlighted the need for guidance and competence development so individuals felt confident in using processes.
+Respondents wanted to ensure fairness in reporting processes. They argued for protections against malicious claims such as a right of reply for businesses but also said that reports should lead to meaningful enforcement action. Some respondents said concerns should ideally be raised internally first, before being escalated to the regulator, and some suggested that other parties, such as trade associations, intermediaries or an ombudsman could play a role before escalation. Others suggested that businesses should be supported to develop effective internal whistleblowing practices, and that for conformity assessment bodies, these internal procedures could form part of proposed licensing requirements.
+Many respondents pointed to existing whistleblowing legislation and reporting processes. They said that any new protections should align with and build on existing structures in order to ensure consistency and clarity.
+There were suggestions that protections should apply across the supply chain, not just to employees who report against manufacturers, to ensure comprehensive coverage. This could include contractors and third-party assessors.
+Generally, where people responded ‘no’ to the question, they noted that there were existing reporting systems, and replication could duplicate efforts. Some respondents argued that even if benefits are limited or difficult to predict or measure, it is still important to have appropriate protections in place.
+Government response
+We want to support workers who report, in the public interest, concerns about construction products to the national regulator.
+To achieve this, we will amend the Public Interest Disclosure (Prescribed Persons) Order 2014 to add matters concerning performance and safety standards for construction products to the list of matters for which the Secretary of State for Business, Innovation, Science, and Trade (BIST) is prescribed to receive protected (whistleblowing) disclosures. This will provide a clear route for workers to raise concerns relating to construction products to the current national regulator, the Office for Product Safety and Standards, which sits within BIST. We set out in the white paper that there will be a clear and effective process for stakeholders to report issues to the regulator, and we will make sure this is also the case for whistleblowing reports. We will ensure that the Single Construction Regulator is able to receive protected (whistleblowing) disclosures in the future.
+Workers who make qualifying disclosures to the national regulator will be entitled to protections available under the Employment Rights Act 1996, including protection from dismissal and other forms of detriment, provided the relevant statutory conditions are met.
+We also want to encourage good practice in industry, such as businesses having effective internal whistleblowing processes that staff can access before considering escalation to the regulator. We will work with the regulator and industry to explore opportunities to support this. We will also require UK conformity assessment bodies to develop such processes as a licence condition.
+Any whistleblowing reports will be considered by the national regulator alongside other intelligence it holds and will inform its risk-based programme of investigatory work. Should the regulator decide to investigate further and take enforcement action, this will follow its enforcement policy, and businesses subject to any action will have access to appeal routes.
+White Paper Chapter 10: Environment and sustainability
+Products not covered by a designated standard or technical assessment
+We asked:
+The white paper set out the government’s intention to maintain consistency with the revised EU Construction Products Regulation (EU-CPR 2024), including environmental aspects such as provisions relating to environmental assessment and reporting, and environmental characteristics in standards. This approach is intended to support the construction products sector in adopting and embedding more sustainable practices while maintaining product safety and supporting innovation, productivity and growth. It will enable the sector to contribute to the government’s commitments reduce carbon emissions and to transition to a circular economy, with a target of net zero by 2050.
+For products not covered by a designated standard or subject to a technical assessment, the white paper considered whether further government intervention on environmental reporting was needed. The white paper concluded that introducing a mandatory approach to environmental reporting and data for these products was not required at this time, recognising the need to avoid placing additional costs and burdens on industry, particularly small and medium-sized enterprises (SMEs).
+The white paper also recognised that many manufacturers already assess and report the environmental impacts of their products. Environmental Product Declarations are widely used across the sector, with the vast majority produced using EN 15804+A2. To support greater consistency in the presentation of environmental information and encourage best practice across the market, the white paper proposed raising awareness and encouraging the use of EN 15804+A2.
+We asked the following question in the white paper:
+Question 6
+We would like to raise awareness and encourage the use of EN 15804+A2 as the methodology for producing an Environmental Product Declaration. What other opportunities could support best practice for products not covered by a designated standard? Please explain your answer.
+You said:
+Many respondents supported promoting EN 15804+A2 as the preferred methodology for producing Environmental Product Declarations. They also emphasised the benefits of aligning UK approaches with international and European Union standards to support consistency, facilitate trade and avoid unnecessary duplication. There was support from both manufacturers and national representatives or trade bodies/associations regarding the promotion of EN 15804+A2.
+Many respondents also raised the need for clear, standardised guidance for environmental reporting. Within this, respondents highlighted a range of aspects such as the importance of technical guidance, standards, templates, and sector or product-specific Product Category Rules to support consistency, comparability and confidence in environmental data.
+Some respondents highlighted the importance of transparent, comparable and reliable environmental data. Respondents pointed to the value of digital product information systems, including Digital Product Passports, consistent databases and interoperable formats, to support informed decision-making and market confidence.
+Some respondents also emphasised that environmental reporting should be proportionate and practical, particularly for small and medium-sized enterprises. Suggested support included templates, clearer guidance, reduced cost or complexity, phased implementation, and financial or technical assistance.
+Some respondents emphasised that environmental requirements should be aligned and harmonised with safety requirements, so that products are both safe and sustainable.
+Government response
+The government remains committed to the approach set out in the white paper. For products covered by a designated standard or technical assessment, environmental requirements will be incorporated through the new GB Construction Prodcuts Regulation (GB-CPR), maintaining consistency with the environmental aspects of the revised EU-CPR 2024. This approach supports wider sustainability objectives while helping to maintain product safety, facilitate trade and reduce unnecessary burdens on industry.
+Next steps
+The government will continue to work on how construction product data and digitalisation can support greater consistency and interoperability of environmental information, including opportunities to improve the way environmental data is reported, shared and compared across the sector. Alongside this, we will continue to engage with industry and other government departments to monitor developments in environmental assessment and reporting, ensuring our approach remains proportionate and responsive to future developments.
+White Paper Chapter 11: Competence and accountability
+Responsibilities of key parties
+We asked:
+In the white paper, we outlined the ambitions and important role of government to support the construction industry to create a culture where accountability for ensuring that construction products are safe and used safely is clearly understood, by all actors across every stage of the product lifecycle.
+We also set out our intention to ensure that accountability is supported by competence within the construction process, such that all actors within the supply chain understand their roles and responsibilities, and have the skills required to fulfil them capably.
+We asked the following question in the white paper:
+Question 7
+Are there any specific roles or points where you think accountability is not clear? [Yes/No]. If yes, please explain your answer and include who should be responsible.
+You said:
+Question 7
+Number of responses
+% of all responses
+% of Question 7 responses
+Yes
+124
+80.5%
+89.2%
+No
+7
+4.5%
+5.0%
+Qualitative response only
+8
+5.2%
+5.8%
+Not answered
+15
+9.8%
+-
+Many respondents asserted that responsibilities need to be more consistent and clearly defined, for all actors across the supply chain. Where respondents did however specify the roles for which they see accountability to be particularly unclear, these included:
+manufacturers, designers and specifiers for whom it was felt that the boundaries of accountability between roles could be more clearly defined.
+importers, distributors, merchants and online marketplaces who respondents felt could benefit from more explicitly defined responsibilities and clearer obligations to apply due diligence.
+clients and building owners who respondents suggested need more clearly defined, and enforceable responsibilities.
+A number of respondents said accountability should sit with the party able to control the relevant decision or activity, and that actors should not be made responsible for matters outside their control, such as design decisions, inappropriate substitution, misuse or installation outside instructions where these sit with others.
+A number of respondents also suggested that accountability needs to be more transparent and mapped across all points in the product lifecycle and supply chain. Responses that isolated specific areas where accountability is not clear pinpointed particular challenges around traceability, points of handover, the end of a product’s lifecycle, and where product substitutions occur.
+In addition to highlighting where accountability is unclear, some respondents indicated that in certain contexts, clearer accountability could be enabled by creating worked examples, practical guidance and responsibility matrices to clarify accountability in complex scenarios. Respondents also noted that demonstrable competence and robust frameworks for capability would improve understanding of responsibilities.
+Some respondents expressed that the proposed single construction regulator should have integrated oversight to prevent confusion, duplication and gaps in accountability. Additionally, responses highlighted a need for clear roles for regulatory authorities and conformity assessment bodies.
+Some responses also stressed the complexity of definitions of roles and responsibilities in overlapping legal instruments, and sought alignment across different regulatory regimes. Responses suggested that alignment could be achieved in part by using consistent expectations and concepts across the different legal frameworks, to help actors to understand and meet their obligations.
+Government response
+As the white paper set out, and as respondents to the consultation recognised, clear accountability is central to ensuring that construction products are safe and are used safely across all stages of the product lifecycle and supply chain. In implementing the future construction products regime, we will communicate and provide information to help to ensure that each actor is clear about the responsibilities that apply to them, including when responsibility passes from one actor or stage in the system to another. This will be enabled through legislation where necessary.
+We also recognise the strong message from respondents that responsibility should sit with the party able to control the relevant decision, information or activity. We will ensure that responsibilities follow the functions and decisions that different actors are best placed to manage, so that accountability is clear, fair and effective.
+We acknowledge the useful role that supporting material can play, including illustrative worked examples and responsibility matrices. We will continue to work with industry to determine where this material is needed and how best to develop it, building on existing good practice.
+We recognise that clearer accountability must be supported by the competence needed to discharge those responsibilities. The white paper defined competence as the skills, knowledge, experience and behaviours of the people and organisations responsible for undertaking work across the construction chain. It also set out our intention to ensure that all actors within the construction supply chain understand their roles and responsibilities, and have the skills required to fulfil them capably. Clear expectations on competence are therefore an important part of ensuring that accountability works in practice.
+This work will form part of the government’s wider work to strengthen competence, skills, behaviours and accountability across the built environment professions, trades and occupations, including through the forthcoming Building Professions Strategy, following the call for evidence.
+Next steps
+To ensure clear accountability across the sector, government will continue to work closely with industry to produce practical supporting materials and guidance explaining how accountability applies.
+We will also further develop and test proposals for how the baseline expectation of competence should be reflected in the future regime, including where legislation, regulator guidance or supporting material is needed. We will develop these expectations in a way that recognises existing and emerging competence frameworks, training and certification schemes, while ensuring that future requirements are clear, proportionate, enforceable and workable for the sector.
+This work will sit alongside wider work on building professions, the Regulation 7(1) and Approved Document 7 review, and industry-led competence initiatives.
+White Paper Chapter 12: Implementation plan
+Government commitments and roadmap of reform
+We asked:
+In the white paper we set out a detailed and ambitious programme of reform. To support and realise this programme, we set out in chapter 12 the principles and commitments that we will guide the design and plan the implementation of these reforms.
+These principles were:
+That we would be ambitious in our reforms, with logical and proportional phasing.
+That we will tailor the implementation to the makeup of the sector, recognising the different actors that play a role.
+That the construction products regime is complex, so we will make compliance clear to minimise costs to businesses.
+We also set out the role that industry must play in implementing the reforms and welcomed industry led efforts to support the objective of safe products, safely used. We noted that successful implementation will require Industry, regulators and government working together. We asked the following questions in the white paper:
+Question 8
+Do you have views on appropriate lead times or transition periods relating to specific reforms set out in this white paper?
+Question 9
+What should we take into account when developing the proposed tranches and sequencing? Please explain your answer.
+You said:
+Respondents suggested a range of transition periods in answer to the above questions. While a number of respondents supported a transition of 18 to 24 months as noted in the white paper for some measures, a large number suggested that 24 months should be the minimum transition. We saw a mixture of lengths on the upper range, with suggestions of 36 months, 48 months and five years. A transition period between 24 months and 36 months was the most common of these timeframes.
+A key consideration across many respondents was for the capacity and readiness of the sector, including the regulator. The need for a logically sequenced, proportionate transition that maintains supply chain stability and industry confidence was seen as critical.
+There was strong support for a phased, proportionate and risk-based approach. Respondents suggested that implementation phases be led by risk, which would allow a proportionate approach and timeframes, with the most at-risk areas being implemented first.
+Many respondents stressed the need for early and clear guidance, with regulatory certainty to provide industry with the clarity it needs to adapt to reforms over the transition. This included some suggestions of worked examples, templates and a clear accountability matrix to avoid confusing interpretations. Respondents felt that guidance must precede the coming into force date with sufficient time.
+Respondents particularly referenced that small and medium-sized enterprises (SMEs) have a different capacity and capability to adapt to reforms, but make up a large part of the sector and may require additional support through transitions due to costs, capacity and awareness. Some suggestions included SME-specific transition provisions, targeted engagement with the sector, and early and clear guidance including compliance routes, accountability matrices, worked examples and templates.
+Government response
+The government welcomes respondents’ broad support for the principles for implementing a reformed construction products regime. The responses reflected strong support for reform, but also a clear message that implementation must be carefully planned, clearly communicated and deliverable for the sector and regulators. This is consistent with the approach set out in the white paper, which recognised that the path to long-term reform will take time and will require a concerted effort from government, regulators and industry.
+We remain committed to progressing reform at pace where it is right to do so, while ensuring the route to implementation is proportionate and operationally robust. As implementation plans develop, we will set out further detail, and the actions industry should expect to take.
+How reforms will be implemented
+Reforms will be implemented via several routes. Where measures need to be set in law, we will deliver this through a combination of primary legislation for new powers and secondary legislation to develop existing powers. Some measures will be delivered through non legislative means where appropriate, such as guidance.
+We will seek to legislate as soon as Parliamentary time allows. We intend to deliver measures on the rules for placing products on the market through secondary legislation from 2027:
+1. The government intends to lay the general safety requirement regulations in 2027, with the new requirements coming into force no earlier than 12 months later. This approach will provide time for preparation and support effective implementation of the new regime. The general safety requirement will close gaps in the current regulatory system by creating a safety duty for construction products not covered by a designated standard, or subject to a technical assessment. It will operate alongside the construction products regulations, strengthen accountability across the supply chain and help make sure that only safe products are made available on the market.
+2. New construction product regulations for products subject to a designated standard or subject to a technical assessment, when placed on the market in Great Britain. The new GB Construction Products Regulation (GB-CPR) will be developed in a way that is consistent with the European Union Construction Products Regulation 2024 (EU-CPR 2024) where that meets our reform objectives. The new GB-CPR is expected to be in force in 2028 for products that have a standard or technical assessment that has been developed under this new framework (for example, a standard which applies a new ‘Assessment and Verification System’). Products will continue to be regulated under the 2011 GB-CPR until a new standard or technical assessment is adopted. We will consult further with industry as we develop the new GB-CPR.
+3. Northern Ireland follows relevant European Union rules and we will introduce legislation in the coming months to provide the necessary market surveillance and enforcement powers under the EU-CPR 2024.
+A phased and proportionate transition
+Transition is the period between legislation being enacted or regulations being made, and the point at which new requirements take full effect. We recognise that transition is not a single event, and agree it must be both logically sequenced and proportionate to maintain supply chain stability and industry confidence. We will implement reforms with appropriate transition phases to accommodate regulatory capacity and sector readiness. This means that some measures may be implemented more quickly where it is necessary to support our objectives and where delivery routes are well understood and ready. Other measures may require longer lead times to allow businesses to adapt systems, build capability, or develop testing and certification processes.
+The government has confirmed that the single construction regulator will ultimately be accountable for the delivery of construction products regulation. As such, the phased approach will apply to both the implementation of construction products reform and the institutional transition towards the single construction regulator. We will therefore design and implement new construction product regulatory functions so they can be integrated effectively into the single construction regulator. The timing and sequencing of these changes will consider the dependencies between legislation, regulator capacity, supporting operational systems and sector readiness, to maintain regulatory continuity and avoiding disruption during transition.
+Sector and regulator readiness
+The government recognises that small and medium-sized enterprises (SMEs) form a significant part of the construction products sector and may face different challenges in adapting to reform. Respondents highlighted that SMEs may have less access to technical and legal resource, and less capacity overall than larger businesses, and may therefore require clearer communications, practical guidance and proportionate lead-in times to understand and meet new requirements.
+Regulator capacity and readiness will be central to implementation. Effective delivery depends on regulators having the necessary people, expertise, operational processes and enforcement capability. We will continue working with regulators to assess the capacity and capability required and ensure implementation reflects operational realities.
+The white paper committed the government to working with industry and regulators to ensure businesses are aware of proposed changes and their responsibilities, and to identify how best to deliver guidance and communications aimed at reaching SMEs. We remain committed to that approach.
+Developing guidance
+We recognise the important role that guidance can play in supporting the sector to prepare for and transition to the new regime. However, guidance will not be able to foresee every scenario, and individuals will be required to consider their specific situation and context to make informed and defensible decisions. This is in line with the overall vision for a reformed regime in which all actors in the product chain take responsibility for safety. We will work with the regulator, trade associations and industry partners to support guidance that is accessible, practical and available sufficiently ahead of commencement so that businesses can plan with confidence.
+Ongoing engagement with industry
+During the consultation, the government carried out an extensive programme of engagement that reached more than 500 representatives across the construction products sector, including manufacturers, trade associations, regulators, and stakeholders from across the wider supply chain. Respondents consistently highlighted the value of ongoing engagement between government and industry and emphasised that continued dialogue will be essential as reforms move from policy development into implementation.
+The government remains committed to ongoing engagement with the sector to explain the direction of reform, test practical implications, identify barriers to readiness and support a shared understanding of new responsibilities. This approach will ensure reforms are informed by real-world delivery issues and contribute to a coherent, trusted and effective regulatory system.
+White Paper Chapter 13: Next steps
+Further evidence
+We asked:
+The white paper set out a package of reforms intended to strengthen the construction products regulatory framework, improve product safety and accountability, and increase confidence in the market.
+The proposed reforms will affect requirements across the construction products regime, including areas such as testing and certification, product information and traceability, and regulatory oversight and enforcement.
+Recognising that implementation could create both costs and benefits for businesses, as well as wider impacts across the construction sector, we asked the following question in the white paper:
+Question 10
+Do you have any views, evidence or insights regarding the impact that reforms might have regarding the costs and benefits to businesses, as well as any wider impacts?
+You said:
+Many respondents expected the reforms to create additional costs for businesses, particularly through testing and certification, product documentation and traceability, digital systems, training, and additional technical or compliance resource.
+Many respondents identified small and medium-sized enterprises (SMEs), microbusinesses and specialist manufacturers potentially facing proportionately greater impacts. Some raised concerns about higher costs being passed through the supply chain, reduced product ranges, product withdrawal and resources being diverted away from innovation.
+Some respondents noted that impacts would vary considerably across sectors and businesses. Firms with established testing, certification, traceability and digital systems were generally expected to face lower additional costs where reforms build on existing arrangements.
+Many respondents also identified longer-term benefits, including safer construction products and buildings, clearer product information, improved traceability and accountability, greater confidence in the market and fairer competition.
+Some respondents raised concerns about unnecessary duplication between United Kingdom and European Union testing, certification, marking and digital requirements. Others highlighted the importance of maintaining sufficient United Kingdom testing and conformity assessment capacity.
+Many respondents considered that the balance of costs and benefits would depend on how the reforms are implemented, including the proportionality of requirements, clarity of guidance, transition arrangements, effective enforcement and sufficient regulatory and testing capacity.
+Government response
+By reforming the construction products sector, the government aims to ensure that construction products are safe and trusted; that the regulatory regime supports innovation, growth, and productivity; and that there are clear responsibilities and accountability throughout the product journey.
+The government will aim to have the costs of reform be proportionate for industry, including businesses of different sizes, and that costs are in proportion to the reform objectives and the long-term benefits of improved product safety, better information and traceability, stronger accountability, and greater confidence in the construction products market.
+Evidence from the consultation is informing policy development and we will publish impact assessments to support legislation where appropriate. We will continue to engage with stakeholders as reforms are developed and implemented.
+Further themes
+Sector engagement
+We asked:
+The white paper set out comprehensive proposals for system-wide reform of the construction products sector. Following extensive consultation on the green paper, the white paper consultation questions focused on specific policy areas. However, we also captured views and heard from the sector during engagement on a broader range of topics and themes.
+We asked the following question in the white paper:
+Question 11
+Do you have any other useful information that you wish to share that is not covered by your previous answers?
+This section summarises a number of broader, cross-cutting themes that emerged through responses to Question 11 of the consultation, alongside insights gathered through targeted stakeholder engagement. These issues cut across multiple aspects of the proposed construction products reform programme and reflect respondents’ views on how the different elements of the future regulatory framework should operate together in practice.
+While respondents generally supported the direction of reform, many emphasised the importance of ensuring that individual measures form part of a coherent, proportionate and effective system. Common themes included the need to reduce complexity, provide clarity on the interaction between product and system-level requirements, maintain effective arrangements across the United Kingdom (UK), improve the quality and accessibility of product information, and ensure that wider reforms to building safety and product regulation are aligned. Respondents also highlighted specific issues relating to Regulation 7 (1), product reuse and products used within heritage buildings, underlining the importance of ensuring that reforms remain practical, consistent and workable across the full range of products, buildings and users that the framework serves.
+Broader crosscutting themes
+Regulatory complexity
+You said:
+Some respondents expressed fears over the system becoming overly complex, with potential for multiple overlapping regimes and differing rules depending on a product’s route to market. Respondents felt this could lead to the inconsistent application of reforms and confusion across the supply chain, and they sought greater clarify on how reforms could be simplified to avoid replicating existing fragmentation.
+Many respondents also pointed to the complexity of the existing construction products system and stressed that reforms could exacerbate this complexity. As examples of this, respondents highlighted the potential for more complex overlaps between a reformed regime for construction products and wider existing regimes (e.g. under the Building Safety Act 2022, dutyholder regime, planning and procurement regulations, and wider product safety and consumer protection laws).
+Government response
+We recognise these concerns: a key objective for reform is to ensure that responsibilities and accountability are clear at every stage. To manage these potential challenges, we will work across government to ensure that wherever possible, alignment is achieved across the different regimes that govern and interact with the construction products system. We will remain mindful of the need to minimise complexity and ensure coherence across the system, and will work closely with the sector to achieve this.
+Great Britain-Northern Ireland alignment
+You said:
+Respondents highlighted the importance of ensuring that reforms operate effectively across all parts of the UK, including Northern Ireland. Many emphasised the need for clear and coherent arrangements that support businesses and regulators operating across different regulatory frameworks, while maintaining consistency wherever possible.
+Several respondents stressed the importance of alignment between construction product regulations, building control requirements, wider safety legislation and the revised European Union Construction Products Regulation (EU-CPR 2024). They argued that inconsistent requirements, definitions or regulatory approaches could create unnecessary complexity and make compliance more difficult.
+Government response
+The government recognises the importance of ensuring that the construction products regulatory framework operates effectively across all parts of the United Kingdom, and in all cases, the UK government will safeguard the UK internal market. The regulation of placing or making construction products available on the market has not been delegated by the UK parliament to the Northern Ireland Assembly. However, under the Windsor Framework, the European Union construction products regime continues to apply in Northern Ireland for products within its scope, and the EU-CPR 2024 fully entered into force there in January 2026. The government will introduce legislation to provide the necessary market surveillance powers to oversee and enforce the EU-CPR 2024 in Northern Ireland.
+In terms of the rules for placing a product on the market in Great Britain, the government’s intention is to maintain consistency, where it meets our objectives, with the EU-CPR 2024. This will help protect established supply chains, reduce burdens on manufacturers operating across multiple markets, and support the effective functioning of the UK internal market.
+The new regulatory framework will strengthen market surveillance and enforcement capabilities, helping to ensure that construction products placed on the market meet the required standards and support a coherent approach to product safety across the regime.
+Digital infrastructure, product information and the construction library
+You said:
+Digitisation was generally viewed positively, but respondents stressed that it would only be effective if it was supported by consistent, high-quality data and information. Respondents highlighted differing levels of digital capability and readiness across the sector and warned that any new requirements must be accessible to organisations of all sizes. There was also support for ensuring that digital processes complement existing European Union approaches. Respondents emphasised that information should be designed to meet the needs of multiple users across the product lifecycle.
+Government response
+We recognise the strong support for greater digitisation across the construction sector, alongside concerns that its success will depend on the availability of consistent, accurate and accessible product information. We also acknowledge the differing levels of digital capability and readiness across the supply chain, particularly for smaller businesses, and the need for any future requirements to be proportionate and practical.
+Product information is often difficult to obtain and maintain throughout the building lifecycle, with no shared approach to how it is created, managed and exchanged. Where information is missing, poor quality or inaccessible, this can lead to inefficiencies, delays and, in the most serious cases, risks to safety.
+The Grenfell Tower Inquiry Phase 2 recommended the development of a library of construction product information. The Ministry of Housing, Communities and Local Government (MHCLG) commissioned preliminary research into the potential role and impact of a new construction product library. Whilst the review showed agreement that better access to product data will improve building safety outcomes, reduce business costs and improve efficiency, it also identified barriers to making those benefits achievable. The review concluded that the benefits of a library are likely to be limited by underlying data and information issues (such as the lack of standardisation, inconsistent product categorisation and information access difficulties). We will not take forward any work on introducing a construction product library until these underlying data and information issues are addressed.
+In response to this consultation, and related feedback received through the single construction regulator and general safety requirement consultations, we are exploring the role government can play in driving up the quality and accessibility of product information, including how the government can support industry to adopt a more consistent approach to creating, managing and sharing product data and information across the building lifecycle. This includes considering how information can be structured to meet the needs of different users, from manufacturers and designers through to contractors, building owners and regulators. This is an essential first step in meeting the intent of the recommendation made in the Grenfell Tower Inquiry Phase 2 for a library of construction product information.
+We will also examine opportunities to build on the Planning Data (England) Regulations 2026 and support greater standardisation of information flows across other parts of the building lifecycle. Our vision is for a system in which information about construction products and buildings is clear, accessible, available and useful to everyone who needs it.
+As we take this work forward, we will ensure that any future approach is proportionate, supports organisations of all sizes, and where appropriate, aligns with international developments, including emerging European Union initiatives, such as Digital Product Passports (a type of digital product record). The government is currently exploring whether a UK digital product record policy could be used to streamline the provision of product information and recently ran a call for evidence inviting views on digital product records.
+Regulation 7(1) of the Building Regulations 2010
+You said:
+Respondents welcomed the White Paper commitment to review Regulation 7(1) and Approved Document 7, but emphasised that any reforms should be considered alongside wider changes to building and product regulation, including the Future Homes Standard. Many called for greater clarity and consistency across the regulatory framework, particularly through clearer requirements for the selection and use of construction products.
+A common theme was the need to define and apply the terms “combustible” and “non-combustible” consistently across Regulation 7 (1) and Approved Documents. Respondents considered this would improve regulatory certainty, support compliance and reduce ambiguity.
+Respondents also supported maintaining and strengthening existing restrictions on combustible materials in external walls. Some argued that the review should consider extending these protections and take greater account of factors such as building use, occupancy and vulnerability when assessing fire safety risks.
+Respondents also raised points about existing restrictions on combustible materials in external walls, including whether those restrictions should be maintained, strengthened or extended. These points relate to Regulation 7(2), which is being reviewed separately.
+Government response
+The government welcomes respondents’ support for reviewing Regulation 7(1) and Approved Document 7. We agree that safe outcomes depend not only on products being safe when placed on the market, but on how they are specified, selected, substituted, installed, inspected and evidenced in practice.
+The review will consider Regulation 7(1) and Approved Document 7 in the context of wider building safety and construction products reform. This will help ensure any changes strengthen the framework without creating duplication or further complexity.
+The government notes the points raised about the need for greater clarity and consistency in how construction product requirements are expressed and applied across the wider building regulatory framework. The Regulation 7(1) and Approved Document 7 review will focus on the safe selection and use of construction products within its scope. As that work develops, the government will consider relevant interfaces with wider fire safety requirements, devolved building standards and other parts of the Building Regulations, and will work through these with the relevant policy and legal leads as appropriate.
+Respondents supported keeping strong controls on combustible materials in external walls, and some called for the controls to go further. Since 2017, the guidance in Approved Document B has been updated several times, including to reflect the ban introduced in 2018 on combustible materials in and on the external walls of relevant buildings over 18 metres.
+In March 2026, the Building Safety Regulator consulted on further changes to Approved Document B, including whether the guidance is clear and whether the scope and exemptions under Regulation 7(2) are appropriate. The consultation closed on 1 July 2026. The responses are now being considered and will inform the Government’s conclusions and next steps.
+How the general safety requirement and construction product regulations work together
+You said:
+Many respondents suggested that the general safety requirement (GSR) should be applied to all construction products, rather than having two mutually exclusive regulatory regimes. The GSR to assess the risks associated with a product was seen by many as an integral step to placing safe products on the market, and many advocated for it to be applied universally to construction products.
+Government response
+We recognise and share the desire to ensure that products are safe. The European Union’s regime applies in Northern Ireland but we have considered carefully the option of applying the GSR to all products placed on the market in Great Britain.
+Following this further consideration we have decided that we will proceed with our proposal that construction product regulations (CPR) and the GSR operate as mutually exclusive regimes, as set out in the white paper. We have reached this view for a number of reasons:
+all construction products on the UK market must be safe. To achieve this all products must be subject to regulatory oversight. Introducing GSR for currently unregulated products achieves this
+further, we will ensure that the regulator can remove any unsafe product from the market. This power can be used even where the product is compliant with the CPR. Therefore, irrespective of which regime applies, the regulator will be empowered to remove unsafe products from the market
+the construction sector has consistently called for alignment with Europe to support trade. Applying the GSR to all products placed on the market in Great Britain would create divergence from the European Union regime, which would likely cause product shortages, which would negatively affect UK businesses and impact key government priorities such as housebuilding
+we believe that it would be disproportionate for products to be regulated under two regimes (by requiring them to adhere to both the CPR and GSR)
+applying the GSR to all products placed on the market in Great Britain would jeopardise the integrity of the United Kingdom internal market, by applying different rules for placing the same product on the market in Norther Ireland and Great Britain
+Reforms to the GB-CPR and new powers for the regulator will ensure that both CPR and GSR have a safety focus.
+Conclusion
+Government is committed to driving forward reform to the built environment system, and we intend to legislate for these and wider construction products reforms from 2027 through both primary and secondary legislation, subject to parliamentary time.
+Delivering construction products reform is a shared endeavour that will continue to rely on close partnership between government, industry, regulators, devolved administrations, academics, civil society, residents and communities. The government remains committed to ongoing engagement as reforms are developed and implemented, recognising the invaluable expertise and experience that stakeholders across the sector bring.
+Through continued dialogue, engagement and collaboration, we will ensure that policy is informed by real-world insight, that challenges and opportunities are understood, and that reforms are delivered in a practical and proportionate way. By working together, we can drive the cultural and system-wide change needed to create a safer, more accountable construction products regime, rebuild public confidence, support innovation and growth, and ensure that the lessons of the Grenfell Tower tragedy lead to lasting improvements for residents, communities and industry.
+Annexes
+Annex A: Construction Products Reform White Paper Question List
+Chapter
+Heading
+Question number
+Question text
+Chapter 6: Regulating products
+6.8: Products critical to safe construction
+1.
+What should be included in guidance to support industry to understand their responsibilities regarding products critical to safe construction?
+Chapter 8: Assurance and oversight of testing, conformity assessment and certification
+8.2: Conformity assessment bodies (CABs)
+2.
+Do you agree that the above principles should underpin the licensing regime for CABs? [Yes/No]. Please explain your answer. Please outline how you think a licensing regime for CABs could work operationally.
+Chapter 8: Assurance and oversight of testing, conformity assessment and certification
+8.5: Research and development, public sector testing capacity, and expertise
+3.
+Do you agree that this national testing and research facility would lead to the highlighted benefits? [Yes/No]. Please explain your answer.
+Chapter 8: Assurance and oversight of testing, conformity assessment and certification
+8.5: Research and development, public sector testing capacity, and expertise
+4.
+What opportunities are there for government to establish partnership models to establish new public sector testing and research capacity?
+Chapter 9: Role and responsibilities of regulators
+9.3: Market surveillance
+5.
+Would there be a benefit to enabling employment protections, for individuals reporting risks, bad practices and non-compliance within their own organisation, to the national regulator for construction products? [Yes/No]. Please explain your answer.
+Chapter 10: Environment and sustainability
+10.3: Products not covered by a designated standard or technical assessment
+6.
+We would like to raise awareness and encourage the use of EN 15804+A2 as the methodology for producing an Environmental Product Declaration. What other opportunities could support best practice for products not covered by a designated standard? Please explain your answer.
+Chapter 11: Competence and accountability
+11.4: Responsibilities of key parties
+7.
+Are there any specific roles or points where you think accountability is not clear? [Yes/No]. If yes, please explain your answer and include who should be responsible.
+Chapter 12: Implementation plan
+12.4: Government commitments
+8.
+Do you have views on appropriate lead times or transition periods relating to specific reforms set out in this white paper?
+Chapter 12: Implementation plan
+12.5: Roadmap of reform
+9.
+What should we take into account when developing the proposed tranches and sequencing? Please explain your answer.
+Chapter 13: Next steps
+13.2: Further evidence
+10.
+Do you have any views, evidence or insights regarding the impact that reforms might have regarding the costs and benefits to businesses, as well as any wider impacts?
+Chapter 13: Next steps
+13.4: Sector engagement
+11.
+Do you have any other useful information that you wish to share that is not covered by your previous answers?
+Annex B: Acronyms and Definitions
+Term
+Definition
+Assessment and Verification of Constancy of Performance (AVCP)
+A harmonised system defining how to assess products and control the constancy of the assessment results.
+Building Safety Act 2022 (BSA)
+A major law reforming building safety regulation to protect residents, holding developers and owners accountable, especially for high-risk buildings, by creating new roles, clearer standards, and a tougher regulatory regime after the Grenfell tragedy.
+Building Safety Regulator (BSR)
+Established under the Building Safety Act 2022 to regulate higher-risk buildings, raise safety standards of all buildings, help professionals in design, construction, and building control, to improve their competence. As of January 2026 the BSR moved to a new standalone body.
+Conformité Européenne Mark (CE Mark)
+The marking affixed to a product to indicate that it conforms to the applicable requirements in EU law.
+Conformity Assessment Bodies (CABs)
+Comprises testing and calibration laboratories, certification bodies as well as inspection bodies that provide conformity assessment services.
+Designated standard
+A standard, developed by consensus, which is recognised by government by publishing its reference on GOV.UK in a formal notice of publication. Construction products designated standards are designated by the Secretary of State for Housing, Communities and Local Government and are mandatory standards.
+Digital Product Passports (DPP)
+A tool, introduced through the EU Ecodesign for Sustainable Products Regulations and the EU-CPR 2024 , to provide easily accessible digital information about a product and its performance criteria, including its environmental impact, to users, the supply chain and regulators, by offering relevant and comprehensive information about the product’s lifecycle.
+Digital product records
+A tool to provide easily accessible digital information about a product and its performance, which could fulfil a similar function to Digital Product Passports (as outlined above).
+Distributors
+A person in the supply chain other than the manufacturer or importer who makes a product available on the market (includes merchants of construction products and builders’ merchants).
+Economic operators
+The manufacturer or other person with obligations in relation to placing a product on the market, including the authorised representatives, importers, distributors (including merchants), and fulfilment service providers This definition of ‘economic operators’ does not include online marketplaces.
+Environmental Product Declaration (EPD)
+Measures the environmental impact of a product. It is generated based on data obtained through life cycle assessment.
+EU-CPR
+The EU legislation that sets standards for the safety, performance, and environmental impact of construction products sold in the EU. It applies to a subset of construction products.
+EU-CPR 2011
+An EU law that sets out harmonised rules for how construction products are marketed and sold across the European Union. Its goal is to remove technical barriers and ensure that construction products meet essential health and safety requirements, allowing for the free movement of these products within the Single Market. This regulation requires manufacturers to provide information on a product’s performance through a Declaration of Performance (DoP) and to affix a CE marking. It applies to a subset of construction products.
+EU-CPR 2024
+Adopted in 2024 and entered into force on 7 January, 2025. This updated regulation introduces new rules for construction products to improve safety, sustainability, and digital transparency within the EU. Key changes include the mandatory introduction of Digital Product Passports, which provide detailed information about a product’s technical and environmental data, and an expansion of the CE marking to reflect both performance and environmental impact. It applies to a subset of construction products.
+GB-CPR
+UK’s version of the Construction Products Regulation (CPR) as it applies to Great Britain (England, Scotland, and Wales) post-EU Exit. The legislation provides a harmonised set of rules for placing construction products on the market.
+General safety requirement (GSR)
+Schedule 11 of the Building Safety Act 2022 provided enabling powers to implement through secondary legislation a general duty on economic operators to only market or supply safe construction products and impose safety requirements in relation to that duty.
+Golden Thread
+The information clients, principal designers, principal contractors and accountable persons need to keep in relation to higher-risk buildings.
+Importer
+The first person who makes available a product from outside of the UK on the GB market.
+National regulator for construction products (the national regulator)
+The regulator was established in the Office for Products Safety and Standards (OPSS) in April 2021, and reports to the Secretary of State for Housing, Communities and Local Government. It is leading and coordinating work that will set a new regulatory approach for construction products.
+Office for Product Safety and Standards (OPSS)
+The national regulator for all consumer products, except for vehicles, medicines and food. The national regulator for construction products sits within the OPSS (since April 2021).
+Placed on the market
+Defined in the GB-CPR 2011 as “the first making available of a construction product on the market”.
+Quick Response (QR) Code
+Two-dimensional codes that you can scan with a smartphone. The code contains information, usually a site address, and once you scan it, the code connects you with a resource on the web
+Reuse
+Refers to the process of taking a previously used construction product and placing it back on the market for incorporation into construction works, either in its original form or with minimal processing.
+Single Construction Regulator
+The first recommendation of the Grenfell Tower Inquiry’s Phase 2 Report was to create a single construction regulator to reduce fragmentation in how the construction sector is regulated and drive cultural change within the industry. The government is committed to delivering this recommendation. A prospectus containing plans for the regulator was published in December 2025 and closed March 2026. A response to this consultation was published July 2026.
+Small and Medium-sized Enterprises (SME’s)
+Businesses that have revenues, assets, or a number of employees below a certain threshold. In the UK and EU, the general rule is under 250 employees, with specific thresholds for turnover (e.g., under £44m) or balance sheet total (e.g., under £38m).
+Technical assessment (TA)
+A formal, documented evaluation of a construction product’s or system’s performance and suitability for its intended use, often when a harmonised European or UK standard doesn’t fully cover it. This assessment is based on rigorous testing and technical data, and for European products, it leads to a European Technical Assessment (ETA) (or UK Technical Assessment (UKTA) in the UK) that enables CE marking (or UKCA marking), confirming its performance and facilitating its market entry.
+Test house
+A facility that tests products, components, or systems to ensure they meet specific standards, regulations, and/or quality requirements.
+United Kingdom Accreditation Service (UKAS)
+The sole national accreditation body recognised by the government to assess the competence of organisations that provide certification, testing, inspection and calibration services.
+United Kingdom Conformity Assessed (UKCA)
+A conformity mark that indicates conformity with the applicable requirements for products sold within Great Britain.

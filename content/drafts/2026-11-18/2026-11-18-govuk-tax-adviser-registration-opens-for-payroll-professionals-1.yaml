@@ -1,0 +1,41 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-tax-adviser-registration-opens-for-payroll-professionals.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-18"
+source:
+  id: govuk-tax-adviser-registration-opens-for-payroll-professionals
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/tax-adviser-registration-opens-for-payroll-professionals
+  title: Tax adviser registration opens for payroll professionals
+  date: "2026-11-18"
+  venue_label: Press release (HM Revenue & Customs)
+quote: >-
+  Tax advisers who already have an ASA do not need to register again. They will be moved to the new
+  digital service in the financial year 2027 to 2028.
+source_span: [3506, 3655]
+speaker:
+  name: HM Government
+  role: HM Revenue & Customs
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: taxes
+  who: Tax advisers who already have an agent services account (ASA)
+  how_much: null
+  when: financial year 2027 to 2028
+  funded_by: null
+  deadline: null
+why: >-
+  HMRC commits to moving tax advisers who already hold an agent services account onto the new MMTAR
+  digital service during 2027-28.
+confidence: 0.5
+model: claude-opus-5-5
+status: to_review

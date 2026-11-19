@@ -1,0 +1,940 @@
+General Safety Requirement for Construction Products: government response
+Executive summary
+In February 2026, the government published the General Safety Requirement for Construction Products consultation (“the consultation”) and the Construction Products Reform White Paper consultation alongside the Grenfell Tower Inquiry Annual Report.
+Following consultation and engagement with the sector on the general safety requirement and white paper, this response summarises what we heard and confirms proposals for reform in light of consultation responses.
+The response to the white paper has been published on GOV.UK.
+Reforms are supported by the sector
+Across the consultation, respondents generally showed strong support for the proposals, with most receiving over 60% agreement. Most respondents supported the introduction of the general safety requirement and recognised the need to strengthen product safety across the construction products sector. Many considered that reform was necessary to address existing gaps in the regulatory framework, improve accountability and support safer products throughout the supply chain.
+While there was support for the overall direction of travel, some respondents emphasised the importance of proportionate regulation, improved traceability, clear guidance and effective implementation.
+Summary of response conclusions
+A number of recurring themes emerged across the consultation and were raised by a wide range of stakeholder groups.
+Proportionality and risk-based regulation
+The general safety requirement (GSR) will take a proportionate, risk-based approach that supports safety without placing unnecessary burdens on business or holding back growth and innovation. Manufacturers will be responsible for ensuring that products are safe when placed on the market. They must assess the safety risks arising from a product’s intended and normal and reasonably foreseeable conditions of use and apply mitigations proportionate to the severity of the risks identified. They must also provide accurate, reliable and up-to-date product information, so that those specifying, purchasing or using construction products can make safe and informed choices. Responsibility then sits with downstream users to select and use products in line with their safe use, taking account of information on intended use, limitations, installation, maintenance and any competence required. Manufacturers should not market products outside their safe use, and downstream users should not select or use them outside that safe use.
+Scope of the general safety requirement and interaction with existing regimes
+Where products are already regulated under construction product regulations, they will not also be regulated by the general safety requirement. The regulator will have powers to remove unsafe products from the market under both the construction products regulations regime and the general safety requirement. The government will implement complementary construction products regulations and general safety requirement regimes to ensure product safety, regulatory clarity and consistency with the European Union system.
+Traceability, transparency and product information
+The general safety requirement will require accurate and accessible product information so that those specifying, purchasing or using construction products can make safe and informed choices. Digitalisation will play an important role in ensuring that the right people can access the right information at the right time. Our approach will support the integration of product information through digital data carriers, alongside record-keeping requirements that ensure relevant information is retained, strengthening transparency and accountability.
+A systems-based approach to product safety
+Safe outcomes depend not only on products being safe when placed on the market, but on how they are specified, selected, substituted, installed, inspected and evidenced in practice. This work will sit alongside wider building safety and construction products reforms, including the Regulation 7(1) and Approved Document 7 review, work on building professions and industry-led competence initiatives. The Regulation 7(1) and Approved Document 7 review will consider these wider responsibilities, helping to strengthen the overall framework without creating duplication or unnecessary complexity.
+Clear responsibilities and accountability across the supply chain
+We also recognise the strong message from respondents that responsibility should sit with the party able to control the relevant decision, information or activity. We will ensure that responsibilities follow the functions and decisions that different actors are best placed to manage, so that accountability is clear, fair and effective. All economic operators play an important role in ensuring that construction products are safe. The general safety requirement will set clear, specific duties for relevant actors throughout the supply chain, so that each understands their responsibilities. This will strengthen accountability and help ensure that unsafe products can be identified and addressed.
+Clear guidance and regulatory certainty
+We recognise the importance of providing the sector with clear and timely information on the new requirements and how they will work in practice. We will support the national regulator for construction products, whose functions are currently carried out by the Office for Product Safety and Standards (OPSS), in developing practical guidance to support implementation of the general safety requirement. This will include guidance to help manufacturers carry out proportionate risk assessments. This will support a consistent understanding of the regime and help businesses prepare for and comply with their duties.
+Effective enforcement supported by sufficient capability and resources
+Effective enforcement will be central to the success of the general safety requirement. Enforcement authorities will have proportionate powers to investigate non-compliance, require corrective action and penalise poor behaviour. The national regulator for construction products will lead enforcement, supported by local regulators with complementary powers. We will continue working with regulators to ensure that they have the capacity, capability and specialist expertise needed to implement and enforce the new regime effectively and consistently.
+Competence and culture change
+We recognise that clearer accountability must be supported by the competence needed to discharge those responsibilities. The Construction Product White Paper defined competence as the skills, knowledge, experience and behaviours of the people and organisations responsible for undertaking work across the construction chain. It also set out our intention to ensure that all actors within the construction supply chain understand their roles and responsibilities, and have the skills required to fulfil them capably. Clear expectations on competence are therefore an important part of ensuring that accountability works in practice.
+This work will form part of the government’s wider work to strengthen competence, skills, behaviours and accountability across the built environment professions, trades and occupations, including through the forthcoming Building Professions Strategy.
+Effective implementation and continued collaboration
+Effective implementation will be critical to the success of these reforms. We can confirm that businesses will have at least a 12-month implementation period to prepare for the new requirements. We will continue to work with industry and other stakeholders as the GSR is developed and implemented, including to identify where practical support can help businesses adapt, particularly small and medium-sized enterprises.
+Introduction
+Overview and context
+The programme of Construction Products Reforms is designed to address the systemic failures laid bare by the tragedy at Grenfell Tower on 14 June 2017, responding to recommendations from the subsequent Grenfell Tower Inquiry. The Inquiry found that the mechanisms designed to safeguard the built environment including the regulation and oversight of construction products, failed to protect people in their homes.
+These failures were further detailed by the 2 independent reviews:
+the Building a Safer Future: Independent Review of Building Regulations and Fire Safety
+Independent Review of the Construction Product Testing Regime
+Construction product regulations currently only apply to products covered by designated standards or technical assessments. This leaves a central estimate of 63% of all construction products outside the scope of the regulatory regime.[footnote 1]
+To address this, the government proposed introducing a general safety requirement (GSR) that will apply to these construction products.
+The proposed GSR regulations will require that construction products placed on the UK market are safe and establish specific obligations for businesses throughout the supply chain. The regulations will also provide enforcement powers to the national regulator for construction products.
+We sought views on our proposed approach, including:
+the scope of the GSR and its interaction with the wider construction products regulatory framework
+the proposed requirements on economic operators within the supply chain of construction products
+enforcement action that should be taken where a product is found to be non-compliant with the GSR
+About this government response
+The consultation included 21 questions and used a combination of multiple choice and open-text responses. Respondents were not required to submit a response to all questions and therefore response totals may vary between questions. Percentages are based on the number of respondents who answered each question. A table showing the full list of questions can be found at Annex A.
+Overview of consultation responses and how we approached our analysis
+A total of 123 responses were received, of which 101 were submitted directly on citizen space and 22 were received by email. No responses were received via post.
+Of the 22 responses submitted via email outside the Citizen Space platform, ten of those responses were incorporated into the Citizen Space analysis because respondents provided answers directly against the consultation questions. These responses were included in the quantitative analysis presented in this document. The remaining 12 email responses contained broader narrative comments or did not align directly with the consultation questions. These responses were analysed separately using a thematic approach to identify key issues and themes. All 22 email responses were considered as part of the overall email analysis. A summary of the analysis of email responses is provided at Annex B.
+Respondents were asked whether they were responding as an individual, on behalf of a company or organisation, or on behalf of a trade body or association. They were also asked which category best described them or their company or organisation. The breakdown of responses is provided below.
+Figure 1: Respondents by profession
+Trade bodies and national representative organisations formed the largest group, accounting for 39 responses (31.7%). Manufacturers formed the second-largest group, with 24 responses (19.5%), followed by professional bodies and institutions, with 16 responses (13.0%). The consultation also received responses from local government, conformity assessment bodies, distributors, researchers, contractors, housing providers, regulators and members of the public.
+Type of respondent
+Citizen Space
+Email Responses
+Total
+Percentage
+National representative or trade body or association
+34
+5
+39
+31.7%
+Manufacturer
+24
+0
+24
+19.5%
+Professional body or institution
+12
+4
+16
+13.0%
+Local authority or Local government or regional government
+9
+0
+9
+7.3%
+Conformity assessment body
+6
+0
+6
+4.9%
+Architectural
+4
+0
+4
+3.3%
+Distributor
+4
+0
+4
+3.3%
+Research or academic body or institution
+4
+0
+4
+3.3%
+Technical assessment body
+3
+0
+3
+2.4%
+Builder or contractor
+2
+0
+2
+1.6%
+Insurance or warranty provider
+2
+0
+2
+1.6%
+Member of the public
+2
+0
+2
+1.6%
+Other
+0
+2
+2
+1.6%
+Central government
+1
+0
+1
+0.8%
+Consultancy
+1
+0
+1
+0.8%
+Designer
+1
+0
+1
+0.8%
+Housing association
+1
+0
+1
+0.8%
+Regulator
+1
+0
+1
+0.8%
+Individual or not stated
+0
+1
+1
+0.8%
+Total
+111
+12
+123
+100%
+Figure 2: Respondents by profession (simplified)
+To provide a simpler overview, the detailed respondent types have also been grouped into 4 broader categories. This shows whether respondents replied on behalf of a company or organisation, a trade body or association, in a personal capacity, or through an email response that could not be classified. Companies and organisations accounted for 61 responses (49.6%), while trade bodies and associations accounted for 44 responses (35.8%). Twelve responses (9.8%) were submitted in a personal capacity. The remaining 6 narrative email responses could not be placed within these broader categories.
+Type of respondent (simplified)
+Citizen Space
+Email Responses
+Total
+Percentage
+Company or organisation
+61
+0
+61
+49.6%
+Trade body or association
+39
+5
+44
+35.8%
+Personal capacity
+11
+1
+12
+9.8%
+Other or unclassified email responses
+0
+6
+6
+4.9%
+Total
+111
+12
+123
+100.0%
+Figure 3: Organisations by size
+Respondents represented organisations of different sizes across the construction products sector. Large organisations (250+ employees) accounted for the largest proportion of responses (29.7%), although responses were also received from medium, small and micro businesses. This provided views from a broad range of organisations across the sector.
+Size of organisation
+Number
+Percentage
+Large (250+ employees)
+33
+29.7%
+Medium (50 to 249 employees)
+21
+18.9%
+Small (10 to 49 employees)
+22
+19.8%
+Micro (1 to 9 employees)
+13
+11.7%
+Sole trader
+0
+0.0%
+Not answered
+22
+19.8%
+Total
+111
+100.0%
+Methodology
+All responses to this consultation have been considered as part of the analysis.
+For the purposes of this analytical summary, the team used a Government Artificial Intelligence (AI)-assisted tool, ‘Consult’, developed by the Incubator for Artificial Intelligence (i.AI), to support the identification and assignment of themes.
+Consult identifies key themes from the responses to each question and maps each response against those themes, with policy officials reviewing the outputs at every stage, making adjustments where appropriate. Themes generated by Consult were reviewed and refined by policy officials. Using their understanding of the policy area, subject matter expertise and the consultation objectives, officials amended the themes to ensure they accurately reflected the content of responses and addressed the consultation questions. The final framework was then used to categorise responses across the dataset.
+Personal data collected as part of the consultation was processed in accordance with the privacy notice published in the consultation. Care was taken to avoid using AI to analyse personal data.
+Consultation Chapter 4: Scope of the general safety requirement
+Question 1
+We asked:
+Chapter 4 proposed bringing all construction products within the regulatory regime by introducing a general safety requirement (GSR) for construction products not covered by a designated standard or technical assessment. The consultation also outlined how the GSR would interact with other regulatory regimes and how previously used products would be treated under the regime.
+Question 1
+Do you agree that previously used products should be regulated in the same way as new products, unless the exemption applies as set out in paragraphs 4.9 to 4.10?
+104 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+71
+68.3%
+Disagree
+13
+12.5%
+Neither agree nor disagree
+19
+18.3%
+Don’t know
+1
+1.0%
+Total
+104
+100.0%
+You said:
+Most respondents agreed that previously used products should be regulated in the same way as new products. Many considered that applying equivalent safety requirements would help maintain product safety, improve consistency across the market and reduce the risk of unsafe products re-entering the supply chain.
+Many respondents supported this approach provided it included proportionate exemptions. Heritage, conservation and reclaimed products were frequently cited as areas where flexibility may be required to avoid undermining repair, reuse and preservation activities. Respondents also frequently called for clear definitions, guidance and clarification of legal responsibilities throughout the supply chain.
+The majority of respondents who disagreed with the proposal argued that applying the same requirements as new products could create disproportionate compliance costs and practical challenges for the reuse sector. These respondents generally favoured a more risk-based approach, supported by clear standards, traceability arrangements and guidance which would enable the safe reuse of products while supporting circular economy objectives.
+Government response
+We intend to regulate previously used construction products in the same way as new products. This will ensure that previously used products placed on the market are subject to appropriate safety requirements and regulatory oversight. We recognise concerns that applying these requirements to previously used products could create practical challenges and additional costs for the reuse sector. However, we consider that all construction products placed on the market should be safe, including those that have previously been used.
+At the same time, we recognise that the reuse sector functions differently from the new product market, which is why we are moving forward with our proposed exemption on products marketed as needing repair or reconditioning. We also recognise that requirements should not create unintended barriers to placing otherwise safe reused products on the market. As we develop the detail of these requirements, we continue to work across government and industry to consider whether further specific exemptions would be appropriate to deliver a safe and proportionate system for reused products. This approach strikes a proportionate balance between improving construction product safety and supporting the circular economy through the repair, reuse and life extension of products. It will support the growth of second-hand and refurbishment markets while reducing the environmental impacts associated with manufacturing new products. We also recognise the importance of clear guidance to support businesses in understanding and meeting the requirements, including responsibilities across the supply chain.
+Consultation Chapter 6: Overarching safety duty
+Question 2
+We asked:
+Chapter 6 proposed introducing an overarching safety duty on economic operators in scope of the GSR. The proposal would prohibit economic operators in scope of the GSR from marketing or supplying unsafe construction products.
+Question 2
+Do you agree with the proposal of an overarching safety requirement on economic operators as set out at paragraphs 6.5 to 6.9?
+You said:
+106 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+89
+84.0%
+Disagree
+8
+7.5%
+Neither agree nor disagree
+8
+7.5%
+Don’t know
+1
+0.9%
+Total
+106
+100.0%
+A significant number of respondents agreed with the proposal for an overarching safety requirement on economic operators in scope of the GSR. Respondents generally considered that it would strengthen accountability across the supply chain, help ensure that only safe construction products are placed on the market and establish a clear baseline for product safety. Many respondents also considered that it would help address existing regulatory gaps.
+Many respondents who agreed with the proposal emphasised that responsibilities should be proportionate and reflect the role and level of control of different economic operators. Respondents frequently called for clear guidance and definitions, particularly for importers, distributors and SMEs. Some also highlighted the importance of aligning the GSR with existing regulations and standards.
+The majority of respondents who disagreed with the proposal generally argued that the requirement should apply to all construction products, including products regulated under the construction products regulations (CPR). Some respondents also raised concerns about the practical application of the proposals, particularly in relation to construction systems, component parts and bespoke products, and highlighted the need for effective enforcement.
+Government response
+Safe products, safely used is a key objective of our reforms. We will therefore proceed with plans for an overarching safety duty on economic operators in scope of the GSR. We have also considered calls for the GSR to apply to all construction products carefully and will proceed with our proposal that the construction products regulations (CPR) and the GSR operate as complementary regimes. Where products are already regulated under construction product regulations, they will not also be regulated by the GSR. We will instead strengthen GB CPR.
+The construction sector has consistently called for alignment with the EU to support trade. Remaining aligned with the EU-CPR 2024 supports ongoing trade with our biggest trading partner. Respondents noted that divergence from the EU could cause product shortages, create a trade barrier for products moving from Great Britain to Northern Ireland and add to the complexity faced by those navigating different regulatory requirements.
+There can be no compromise on safety. Under both the GSR and CPR we will ensure that the regulator can remove any unsafe product from the market. This power can be used even where the product is compliant with the CPR. Therefore, irrespective of whether a product is regulated under CPR or the GSR, the regulator will be empowered to remove unsafe products from the market.
+We recognise that the CPR does not cover all products and are committed to bringing all products within scope of the regulatory regime. Introducing the GSR for currently unregulated products achieves this and will continue to do this as new products are innovated and brought to market.
+We will proceed with the requirement that products placed on the market must be safe and will establish specific obligations on economic operators throughout the supply chain. These requirements will help improve accountability across the supply chain, support safer construction products and address existing gaps in the current regulatory framework. In developing the specific obligations, we will consider the role and level of control of different economic operators to ensure that their responsibilities are proportionate.
+We recognise the concerns about practical application of proposals in some instances such as construction product systems, component parts and bespoke products. We are continuing to work with stakeholders to test how the reforms will work in practice for bespoke products. Wider reforms will consider how products are safely selected and used, including where individual products form part of a wider system.
+The importance respondents placed on clarity and regulatory certainty is recognised. Greater certainty will be provided through the definition of key concepts and guidance to support implementation and compliance across the sector, including for different types of economic operator.
+Consultation Chapter 7: Obligations on economic operators and online marketplaces
+Chapter 7 set out proposed obligations on economic operators, reflecting their differing roles and responsibilities across the supply chain. The proposed obligations aimed to improve product safety, accountability and traceability by strengthening product information and risk management.
+Obligations on construction product manufacturers
+The consultation sought views on obligations on manufacturers relating to:
+assessment of risk
+provision of product information
+product labelling
+requirement to retain records
+Question 3
+We asked:
+We proposed requiring manufacturers to proactively assess the risks their products may pose to the health and safety of persons and to take steps to eliminate or reduce those risks as far as reasonably possible before placing a product on the market. We proposed that risk assessments should cover a range of factors, including technical information, normal and reasonably foreseeable conditions of use, identified risks, risk mitigations and quality assurance arrangements. We also proposed that risk assessments should be evidence-based and kept up to date.
+Question 3
+Do you agree that the measures described as part of the process for assessing risk are reasonable and proportionate as set out in paragraphs 7.5 to 7.11?
+You said:
+101 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+72
+71.3%
+Disagree
+11
+10.9%
+Neither agree nor disagree
+14
+13.9%
+Don’t know
+4
+4.0%
+Total
+101
+100.0%
+Most respondents agreed that the proposed approach to assessing risk was reasonable and proportionate. Respondents generally supported risk-based safety assessments and considered that requirements should reflect the level of risk posed by different products. Many also considered that the proposals would provide a structured approach to identifying and managing safety risks.
+A strong theme emerging from the responses was an emphasis on the need for clear guidance, templates and practical examples to support consistent implementation. Respondents frequently highlighted the importance of recognising existing standards, certification schemes and quality assurance processes to avoid duplication and unnecessary administrative burdens.
+Those respondents who disagreed with the proposal generally raised concerns about potential administrative and cost burdens, particularly for SMEs and manufacturers of bespoke, innovative or lower-risk products. Some respondents also highlighted the need for additional guidance on assessing novel products, system interactions and lifecycle risks, and called for greater clarity around responsibilities across the supply chain.
+Government response
+The government remains of the view that manufacturers should be required to assess the risks posed by their products. Written risk assessments are an important mechanism for demonstrating that safety has been properly considered and embedded throughout product development and the product lifecycle. In the consultation, our proposals set out detailed, prescriptive requirements that manufacturers would need to meet as part of the risk assessment process. In light of consultation feedback and further engagement with stakeholders, we are assessing whether an outcomefocused approach could best address concerns about potential administrative and cost burdens for SMEs and for bespoke, innovative and low-risk products.
+While some manufacturers may deem it necessary or helpful to use voluntary standards and third-party certification to support the placing of safe products on the market, we do not intend for compliance with standards or certifications schemes to provide an automatic route to compliance with the GSR. However, these may provide useful evidence to support manufacturers in making a holistic assessment of product risks.
+The need for clarity and practical support raised by respondents is recognised. MHCLG intends to assist the national regulator for construction products, whose functions are currently carried out by the Office for Product Safety and Standards (OPSS), in developing guidance to support manufacturers in carrying out risk assessments and understanding what information should be included.
+We will take account of the suggestions made by respondents and continue to engage with the sector to introduce a requirement which balances regulatory certainty with flexibility for businesses.
+Question 4
+We asked:
+We proposed requiring manufacturers to supply product information with a construction product and to any other economic operator involved in its marketing or supply. We proposed that this information should include technical information, instructions for safe use, installation, assembly, maintenance, storage, transport and disposal, and be accurate, clear and kept up to date. Product information should support the safe use of the product and be made publicly accessible in a digital format, such as through a website.
+Question 4
+Do you think the list of criteria for product information is proportionate, as well as sufficient to support decisions to select the right product as set out in paragraphs 7.12 to 7.16? If not, what further information do you think would be helpful?
+You said:
+102 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Yes
+69
+67.6%
+No
+31
+30.4%
+Don’t know
+2
+2.0%
+Total
+102
+100.0%
+Feedback consistently agreed that the proposed criteria for product information were proportionate and would support informed product selection. Respondents generally considered that product information should clearly set out intended use, limitations, installation requirements, maintenance requirements and any competence needed for safe use. Many also emphasised that performance claims should be supported by robust evidence.
+Supporters of the proposal emphasised that information requirements should remain proportionate to product risk and complexity. Respondents frequently called for clear guidance and highlighted the benefits of digitally accessible product information, including digital product passports, QR codes and unique identifiers to improve traceability.
+Respondents’ reasons for not supporting the proposed list of product information were mixed. Some respondents who did not agree with the proposal argued that additional information would be required for certain products and applications, such as environmental information, products critical to safe construction or those with heritage applications. These respondents frequently highlighted the need for clearer guidance on reused, non-standard and system-based products. Some raised concerns about potential burdens on smaller businesses, arguing that the proposed criteria may not be proportionate for lower risk products, and the need to align requirements with existing standards and legislation. Other respondents questioned whether manufacturers had sufficient knowledge of how products are used in practice to be able to meet requirements around conditions of use.
+Government response
+Noting that respondents generally agreed that the proposed list of criteria was proportionate and met the objectives set out in the consultation, we will proceed with our consultation proposals.
+Of those asking for additional criteria, several respondents suggested that environmental performance data and information to support the circular economy should be included. For products covered by the GSR, the focus remains on safety. Where information, including information related to environmental performance, is relevant to the safety of the product when installed in a building this will come under the scope of the GSR. Other information will remain voluntary for the GSR and where relevant, government will encourage manufacturers to follow industry best practice, guidance or standards.
+Other respondents noted the need for explicit version control and dated information. The consultation set out that information has to be up to date, and in the accompanying guidance we will make clear that this includes ensuring that the relevant version of the product information is made available with the product.
+Many asked for further guidance, particularly to ensure that economic operators (particularly SMEs) understand how to meet digital requirements, and to set out how requirements can be met in a proportionate way considering the risk of the product and its uses. We will work with the regulator to develop guidance to support manufacturers and others in meeting their responsibilities.
+Some respondents noted that to be most useful and effective digital information needed to be structured and interoperable. We share these objectives and agree. We want data relating to construction products and also the wider building life cycle to be interoperable and to achieve this we recognise the need for a transition period. As such, we intend to maintain more flexible requirements in the GSR before setting broader data standards across the building life cycle in future legislation. We will, however, work with industry and produce guidance to support best practice and encourage the use of structured, interoperable data.
+Question 5
+We asked:
+We proposed requiring manufacturers to label products with identifying information, including their name, registered address, a unique product identifier and a data carrier linking to digital product information. We proposed that this information should be provided on the product itself, its packaging, or, where neither is feasible, within the accompanying product information.
+Question 5
+Do you agree with the proposals on product labelling as set out in paragraph 7.17 to 7.18?
+You said:
+105 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+80
+76.2%
+Disagree
+15
+14.3%
+Neither agree nor disagree
+10
+9.5%
+Total
+105
+100.0%
+A large proportion of respondents agreed with the proposals on product labelling. Respondents generally considered that clear and consistent labelling would improve traceability, support product identification and help users access important product information. Many respondents also supported the use of unique identifiers and digital tools, such as QR codes, to provide access to more detailed product information.
+Respondents emphasised that labelling requirements should be proportionate and flexible. Respondents frequently highlighted the need for alternative approaches where physical labelling may not be practical and stressed the importance of ensuring labels remain clear and accessible throughout the product lifecycle.
+Those who disagreed with the proposal generally argued that additional flexibility and guidance would be needed for certain products and sectors. Some respondents highlighted the need to align requirements with existing regulatory frameworks and industry practice, while others raised concerns about implementation, supply chain responsibilities and the potential for regulatory gaps.
+Government response
+Having considered the responses received, the government intends to proceed with the proposed labelling requirements.
+The government recognises the need for flexibility and practicality, given the wide range of construction products and the different ways in which they are handled on site and throughout the supply chain. This includes systems, bulk products, products cut to length, bespoke products and other circumstances where physical labelling may not be straightforward. The labelling requirements will therefore be designed to be flexible and proportionate, supported by guidance to help businesses understand how to meet them in practice.
+The consultation also showed support for digital labelling and for ensuring that labelling forms part of the wider product information framework, helping users access accurate and up-to-date product information. The government agrees that labelling should support access to product information. We consider that the current proposals provide a foundation for meeting this objective and we will consider further development as part of future work on data standards for the built environment.
+Question 6
+We asked:
+We proposed requiring manufacturers to retain key records for 10 years after the last supply of a product. This would include records of risk assessments and mitigations, product documentation and subsequent amendments, safety incidents, actions taken in response to those incidents, and any advice or guidance provided on the use of products in novel or unforeseen applications.
+Question 6
+Do you agree that the manufacturer should maintain records of such actions for a period of 10 years beyond the last supply of the product as set out in paragraphs 7.19 to 7.20?
+You said:
+102 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+74
+72.5%
+Disagree
+14
+13.7%
+Neither agree nor disagree
+14
+13.7%
+Total
+102
+100.0%
+There was significant agreement that manufacturers should retain records for 10 years beyond the last supply of a product. Respondents generally considered that this would support traceability, accountability and the investigation of safety issues, while aligning with existing regulatory requirements and industry practice.
+However, there were questions about whether a 10-year period would be sufficient for all products. Safety-critical and long-life products were frequently cited as examples where longer retention periods may be more appropriate, particularly where products remain in use for several decades. Many respondents also supported the use of digital record-keeping and called for clear guidance on the scope of records that should be retained.
+The majority of respondents who disagreed with the proposal generally argued that a fixed 10-year retention period was not appropriate for all products. Some favoured longer, risk-based retention periods linked to product lifespan, liability or warranty periods, while others raised concerns about administrative burdens, particularly for SMEs and manufacturers with large product portfolios.
+Government response
+Having considered the responses received, the government intends to proceed with this proposal.
+The importance respondents placed on traceability and accountability across the supply chain is recognised. We have considered calls from some respondents for longer retention periods for safety-critical and long-life products, as well as for risk-based periods linked to factors such as product lifespan. However, we consider that a consistent 10-year period strikes an appropriate balance between supporting traceability and regulatory oversight, while providing greater clarity for businesses and avoiding the additional complexity and burden that could arise from different requirements for different products. This approach also aligns with the EU Construction Products Regulation (EU-CPR 2024), helping to support consistency for industry.
+We also recognise concerns from some respondents about the administrative and cost burdens associated with these requirements, particularly for SMEs and manufacturers with large product portfolios. However, retaining appropriate records is important to support traceability, demonstrate compliance and enable effective regulatory action where safety concerns arise.
+We recognise the strong support for greater digitalisation across the sector, including for record retention. Digitalisation plays an important role in ensuring that the right people have access to the right information at the right time. However, we also acknowledge differing levels of digital capability and readiness across the supply chain, particularly among smaller businesses, and the need for any future requirements to be proportionate and practical. We will ensure that any future approach reflects these differences and supports organisations of all sizes.
+We will continue to engage with the sector and provide guidance to support consistent implementation of these requirements.
+Requirements on importers
+The consultation sought views on obligations on importers relating to:
+confirming manufacturers had fulfilled their obligations
+product labelling
+requirements to retain records
+Question 7
+We asked:
+We proposed requiring importers to confirm that manufacturers had completed a risk assessment, produced and made available the required product information and correctly labelled products with the relevant manufacturer information. We also proposed requiring importers to provide product information in a digital format when supplying a product and on request from other economic operators in the supply chain.
+Question 7
+Do you agree with the proposals for the responsibilities of importers as set out in paragraphs 7.21 to 7.22?
+You said:
+96 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+69
+71.9%
+Neither agree nor disagree
+20
+20.8%
+Disagree
+5
+5.2%
+Don’t know
+2
+2.1%
+Total
+96
+100.0%
+The proposed responsibilities for importers received significant support from respondents. Respondents generally considered that the proposals would strengthen product safety, improve traceability and help ensure that imported products are subject to the same standards and scrutiny as products placed on the market by UK manufacturers.
+Many who agreed with the proposal emphasised that importer obligations should be proportionate and focused on confirming compliance information rather than undertaking independent testing. Respondents frequently called for clear guidance and definitions, particularly for SMEs, complex supply chains and stressed that responsibilities should reflect the level of control importers have over products. Some respondents also sought clarity on how the requirements would apply in Northern Ireland, where a business may be treated as an importer or distributor depending on the product’s origin. They called for guidance explaining which checks apply and when they must be completed.
+Most who did not agree with the proposal generally raised concerns about the practical challenges and potential burdens placed on importers. Some respondents highlighted the need for greater clarity regarding the role of authorised representatives and the interaction with existing regulatory frameworks, while others called for stronger enforcement and market surveillance to ensure imported products are subject to consistent regulatory oversight.
+Government response
+Products must be safe in order to be placed on the UK market, and the general safety requirement applies to products which are manufactured abroad then imported just as it applies to products which are manufactured domestically. Importers are critical gatekeepers to the UK market and therefore play an important role in safeguarding against the importation of unsafe construction products. Importers must satisfy themselves that a product is safe before placing it on the market in the UK – failure to do so will breach compliance with the general safety requirement. Requirements on importers are also important to ensure that products can be traced where a safety incident arises. It is therefore appropriate that importers are responsible for checking that the manufacturer has completed an assessment of risk of the product. They will also be responsible for wider checks, including product information and labelling. However, this does not mean that importers will be required to duplicate manufacturers’ assessments or undertake independent product testing.
+Where an importer fails to meet these requirements, enforcement authorities will be able to take proportionate action against them, including requiring corrective action and, where necessary, restricting or removing unsafe products from the UK market. It is important that the GSR provides effective safeguards against unsafe products, including appropriate accountability and effective enforcement where products are manufactured outside the UK and there is no UK-based importer. We will determine the most appropriate approach to achieve this as we develop the regulations.
+We consider these requirements proportionate and necessary to help prevent unsafe products entering the supply chain while maintaining a level playing field for domestic and imported products.
+Guidance will support importers in understanding and meeting these requirements in practice, including where different responsibilities may apply in Northern Ireland.
+Question 8
+We asked:
+We proposed requiring importers to label products with their registered name or trademark and postal address. We proposed that this information should be provided on the product itself, its packaging, or, where neither is feasible, in accompanying documentation.
+Question 8
+Do you agree with the proposals to make importers label products as set out in paragraph 7.23?
+You said:
+99 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+75
+75.8%
+Disagree
+4
+4.0%
+Neither agree nor disagree
+17
+17.2%
+Don’t know
+3
+3.0%
+Total
+99
+100.0%
+Respondents generally agreed with the proposal to require importers to label products. Respondents generally considered that importer labelling would improve traceability, accountability and enforcement, while helping to ensure imported products can be linked to a responsible economic operator. Many also considered that imported products should be subject to the same labelling requirements as products placed on the market by UK manufacturers.
+Those who agreed with the proposal emphasised that labelling requirements should be practical and proportionate. Respondents frequently highlighted the need for flexibility where physical labelling may not be suitable and supported the use of packaging, documentation and digital solutions, such as QR codes, to provide product information and improve traceability.
+The majority who did not agree with the proposal generally raised concerns about the practical implementation of labelling requirements in certain circumstances, particularly for smaller products and complex supply chains. Respondents also sought greater clarity on how the requirements would apply in Northern Ireland, particularly the obligations on manufacturers and importers and the interaction with existing Northern Ireland market access arrangements.
+Government response
+Having considered the responses received, the government intends to proceed with this proposal. Importer labelling will support traceability and accountability across the supply chain and help ensure regulators can identify the responsible economic operator when needed.
+Following responses to the consultation, we will work with the national regulator to provide guidance that clarifies the responsibilities of economic operators, the role of importers in Northern Ireland, and the application of labelling requirements.
+We will address these topics through the guidance produced that will accompany these regulations.
+Question 9
+We asked:
+We proposed requiring importers to retain key records for 10 years after a product was last placed on the market. This would include product documentation and amendments, records of product supply, information relating to safety incidents and other relevant records needed to support traceability and regulatory oversight.
+Question 9
+Do you agree with the proposed requirements on importers to retain records as set out in paragraph 7.24?
+You said:
+101 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+85
+84.2%
+Disagree
+7
+6.9%
+Neither agree nor disagree
+8
+7.9%
+Don’t know
+1
+1.0%
+Total
+101
+100.0%
+A large proportion of respondents agreed with the proposed record retention requirements for importers. Respondents generally considered that retaining records would improve traceability, support product recalls and investigations, and strengthen accountability throughout the supply chain.
+Respondents who agreed with the proposal highlighted the importance of aligning importer record retention requirements with those applying to manufacturers and existing regulatory frameworks. Many also supported a digital-first approach to record keeping and called for clear guidance on the records that should be retained and how requirements should operate in practice.
+Criticisms of these proposals generally argued that record retention requirements should be proportionate to product risk, lifespan and safety criticality. Some respondents suggested that longer retention periods may be appropriate for safety-critical or long-life products, while others raised concerns about administrative burdens, particularly for SMEs and businesses operating in complex supply chains.
+Government response
+The government intends to proceed with this proposal. We consider this a proportionate requirement that strikes the right balance between regulatory needs and business burden. Requiring importers to retain relevant records will help ensure that information can be made available to regulators when needed, supporting the effective operation of the regulatory regime while remaining practical for businesses to implement.
+The government recognises the views of some respondents that retention periods should vary according to product risk, lifespan or safety criticality. However, a consistent retention requirement provides greater clarity for businesses and avoids the additional complexity of applying different periods to different products. Guidance will support importers in understanding which records should be retained and how the requirements should operate in practice.
+Obligations on construction products distributors
+Question 10
+We asked:
+We proposed requiring distributors to confirm that manufacturers and, where relevant, importers had met their obligations under the GSR before supplying a construction product. This included checks on risk assessments, product documentation and labelling, alongside requirements to maintain purchase and supply records for 10 years to support traceability.
+Question 10
+Do you agree with the proposed requirements on distributors as set out in paragraphs 7.25 to 7.26?
+You said:
+102 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+78
+76.5%
+Disagree
+6
+5.9%
+Neither agree nor disagree
+14
+13.7%
+Don’t know
+4
+3.9%
+Total
+102
+100.0%
+Most agreed with the proposed requirements on distributors. Respondents generally considered that distributors have an important role in supporting product safety, traceability and compliance through verifying documentation, maintaining records and ensuring that products are accompanied by the necessary information.
+Respondents consistently emphasised that distributor obligations should be proportionate and clearly defined. Respondents frequently highlighted that distributors should not be expected to duplicate manufacturer risk assessments or technical compliance assessments and called for clear guidance, particularly for SMEs and complex supply chains.
+The majority of respondents who did not agree with the proposal generally raised concerns about the practical burden of the requirements, particularly for SMEs and distributors handling large volumes of products. Some respondents also argued that distributors should not be held liable for the accuracy or completeness of manufacturer-provided information and called for a clearer allocation of responsibilities across the supply chain.
+Government response
+In the consultation, we proposed that distributors should check that product documentation is suitable, comprehensive and compliant with the GSR. Distributors will be required to confirm that the manufacturer has completed a risk assessment, undertake reasonable due diligence in relation to the safety of the products they stock and sell, and ensure the necessary documentation is provided with the product. This recognises that distributors may not be best placed to assess or advise on the technical performance of a product, while maintaining their important role in ensuring customers receive the information needed to use products safely.
+We consider the proposals to provide product information to customers and confirm labelling is correct and affixed to the product are proportionate and intend to move forward with them. The revised approach maintains an important role for distributors in supporting product safety, while ensuring that responsibilities remain proportionate for each economic operator in the supply chain.
+Guidance will support distributors, including smaller businesses and those operating across complex supply chains, in understanding the checks they are expected to undertake.
+Question 11
+We asked:
+Question 11
+Do you think the requirement of creating records of purchase and supply and retaining such records for 10 years to allow for traceability is proportionate as set out in paragraphs 7.25 to 7.26?
+You said:
+99 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Yes
+77
+77.8%
+No
+12
+12.1%
+Don’t know
+10
+10.1%
+Total
+99
+100.0%
+Respondents agreed that requiring distributors to retain records of purchase and supply for 10 years was proportionate. Respondents generally considered that the requirement would support traceability, product recalls and investigations, while aligning with existing product safety frameworks.
+Many who agreed with the proposal highlighted that digital record-keeping would make long-term retention more practical and cost-effective. Many also emphasised the need for clear guidance on the information that should be recorded and retained to support effective traceability across the supply chain.
+Critics of the proposal generally argued that record retention requirements should be more proportionate to product risk, lifespan and legal obligations. Some respondents raised concerns about the burden on SMEs and distributors handling large volumes of products, while others called for clearer definitions of responsibilities and flexibility for lower-risk products.
+Government response
+Having considered the responses received, the government intends to proceed with this proposal. Requiring distributors to create and retain records of purchase and supply for 10 years will support traceability and help ensure that relevant information can be made available when needed, supporting the effective operation of the regulatory regime in a proportionate and practical way. We recognise that different considerations apply where products are sold directly to consumers and are considering how these requirements should apply in those circumstances, including the practical challenges of collecting and retaining customer information.
+The government considers that a single 10-year retention period provides a clear and consistent requirement for businesses, avoiding the complexity of applying different retention periods to different products. The 10-year period also aligns with the approach taken under the EU Construction Products Regulation (EU-CPR 2024), supporting consistency for businesses operating across markets while ensuring relevant information remains available throughout the lifecycle of many construction products.
+We recognise respondents’ calls for clear guidance on record keeping. We will support businesses in understanding which purchase and supply records should be retained and how the requirements should be met in practice.
+Requirements on fulfilment service providers
+Question 12
+We asked:
+We proposed requiring fulfilment service providers to check that product documentation and labelling comply with the GSR and are provided to customers and to maintain records of product purchase and supply to support traceability.
+Question 12
+Do you agree with the proposed requirements on fulfilment service providers as set out in paragraphs 7.27 to 7.29?
+You said:
+100 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+78
+78.0%
+Disagree
+10
+10.0%
+Neither agree nor disagree
+10
+10.0%
+Don’t know
+2
+2.0%
+Total
+100
+100.0%
+A significant proportion of respondents agreed with the proposed requirements on fulfilment service providers. Respondents generally considered that the proposals would help address gaps in modern supply chains, improve traceability and accountability, and help ensure that products supplied through fulfilment service providers are accompanied by the appropriate information and documentation.
+Most who agreed with the proposal emphasised that obligations should be proportionate and clearly reflect the role of fulfilment service providers. Respondents frequently highlighted that requirements should focus on storage, handling, documentation and traceability, without duplicating the responsibilities of manufacturers or importers. Many also called for clear definitions and guidance, particularly to distinguish fulfilment service providers from online marketplaces and other actors in the supply chain.
+Those who did not agree with the proposal generally raised concerns about the potential burden and practicality of the requirements. Some respondents questioned whether the proposals could place disproportionate obligations on fulfilment service providers, while others highlighted the need to align requirements with existing international frameworks and provide clear guidance to support implementation.
+Government response
+Having considered the responses received, the government remains of the view that fulfilment service providers should fall within the scope of the general safety requirement and they will therefore be included within the new regulatory framework.
+The government will refine requirements for fulfilment service providers to ensure they are clear, proportionate and reflect the level of control these businesses have over product safety, while supporting the overarching objective of delivering safer construction products and greater confidence in the built environment. This will include focusing requirements on activities relevant to their role, including the safe storage and handling of products, documentation and traceability rather than duplicating responsibilities that properly sit with manufacturers or importers of products. Guidance will support fulfilment service providers in understanding these responsibilities and how they apply in practice.
+Requirements on online marketplaces
+Government response
+Online marketplaces are an increasingly important part of the supply chain. Our consultation signalled government’s intention to consult on proposals to strengthen and clarify the responsibilities of online marketplaces via Department for Business, Innovation, Science and Trade (BIST) programme of reform to modernise the wider product safety framework. BIST’s consultation on these reforms, including proposed new duties for online marketplaces, has now ended and the government will issue its response in due course. We continue to work closely with BIST on proposals to regulate online marketplaces.
+Common requirements
+Question 13
+We asked:
+In the consultation we proposed that economic operator should be responsible for making sure the way they store and transport products does not cause them to become unsafe.
+Question 13
+Do you agree that we should require economic operators to make sure that the way they store, or transport, products does not cause them to become unsafe as set out in paragraph 7.35?
+You said:
+99 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+91
+91.9%
+Disagree
+4
+4.0%
+Neither agree nor disagree
+4
+4.0%
+Total
+99
+100.0%
+Respondents agreed that economic operators should be required to ensure that storage and transportation arrangements do not cause products to become unsafe. Respondents generally considered that these requirements reflect existing good practice, help maintain product integrity and support product safety throughout the supply chain.
+Many who agreed with the proposal highlighted the importance of clear guidance and well-defined responsibilities across the supply chain. Respondents frequently emphasised that manufacturers should provide clear instructions on safe storage and transportation and that requirements should align with existing regulatory frameworks and industry standards. Some also suggested that obligations should apply to all relevant supply chain actors involved in handling products.
+The respondents who did not agree with the proposal generally raised concerns about proportionality and implementation. Some respondents argued that requirements should reflect the risk posed by different products and avoid creating unnecessary burdens for SMEs and lower-risk products, while others highlighted the need for greater clarity on accountability and record-keeping requirements.
+Government response
+As most respondents supported the proposal and considered it consistent with existing good practice, the government will proceed with requirements to ensure products remain safe during storage and transportation.
+Requiring economic operators to store, transport and handle construction products in a manner that preserves their safety and integrity is considered proportionate and will help ensure that products remain safe throughout the supply chain.
+The government also recognises the importance of economic operators having access to appropriate information about how products should be stored, transported and handled safely. Manufacturers will therefore have an important role in providing relevant information and instructions where these are necessary to ensure that the safety of a product is maintained.
+Economic operators will be expected to implement product safety measures proportionate to the product and risks associated with its storage, transportation and handling.
+Question 14
+We asked:
+We proposed requiring manufacturers and importers to monitor products proactively after they have been placed on the market, including investigating complaints and safety incidents, maintaining records and taking a risk-based approach to identifying emerging safety issues. Distributors and fulfilment service providers would be required to support these activities, and all economic operators would be required to take appropriate corrective action where a product may be unsafe.
+Question 14
+Do you agree or disagree with the proposals for economic operators to monitor construction products that have been placed on the market as set out in paragraphs 7.36 to 7.38?
+You said:
+97 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+80
+82.5%
+Disagree
+6
+6.2%
+Neither agree nor disagree
+9
+9.3%
+Don’t know
+2
+2.1%
+Total
+97
+100.0%
+There was significant support for the proposals for economic operators to monitor products placed on the market. Respondents generally considered that ongoing monitoring would improve product safety, strengthen accountability and help identify and address risks at an earlier stage.
+The respondents who agreed with the proposal emphasised that monitoring requirements should be proportionate and risk-based, with greater oversight for higher-risk products. Respondents frequently highlighted the importance of investigating complaints, maintaining records and taking corrective action where safety issues arise. Many also called for clear guidance on monitoring expectations, reporting requirements and the responsibilities of different economic operators.
+Criticisms of these proposals generally centred around concerns about the potential administrative and financial burden of monitoring requirements, particularly for SMEs and lower-risk products. Some respondents also highlighted practical challenges associated with product traceability and called for greater clarity on responsibilities, reporting thresholds and the interaction with existing regulatory requirements.
+Government response
+Having considered the responses received, the government intends to proceed with requirements for economic operators to monitor products proactively and, where necessary, support withdrawal or recall action.
+The importance respondents placed on ensuring that post-market monitoring obligations remain proportionate and reflect the role, responsibilities and level of control exercised by different economic operators is recognised. These requirements will help ensure that safety issues are identified and addressed promptly, while maintaining a proportionate approach across the supply chain.
+Question 15
+We asked:
+We proposed requiring economic operators to cooperate with enforcement authorities by providing information and documentation needed for market surveillance and enforcement activities. This included product documentation, risk assessment records, supply chain information and other relevant records, which would need to be retained for up to 10 years to support investigations and traceability.
+Question 15
+Do you agree that economic operators should have a duty to co-operate and carry out actions when they are asked to by an enforcement authority as set out in paragraphs 7.39 to 7.42?
+You said:
+103 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+99
+96.1%
+Disagree
+2
+1.9%
+Neither agree nor disagree
+2
+1.9%
+Total
+103
+100.0%
+The overwhelming majority respondents agreed that economic operators should have a duty to co-operate with enforcement authorities. Respondents generally considered it is essential for effective enforcement, market surveillance and product safety, and noted that it would support regulators in investigating and addressing safety issues.
+Respondents emphasised that requests from enforcement authorities should be proportionate, clearly defined and supported by appropriate guidance for economic operators. Respondents frequently highlighted the importance of due process, clear communication and safeguards for confidential or commercially sensitive information.
+The small number of respondents who did not agree with the proposal generally raised concerns about the scope of enforcement powers and the handling of commercially sensitive information. Some respondents also highlighted the need for clear limits on information requests and for responsibilities to be applied proportionately according to the role of the economic operator.
+Government response
+The government intends to empower enforcement authorities to sanction economic operators and individuals who fail to co-operate with them. Economic operators will be required to provide reasonable assistance and information, and to take appropriate action when required by an enforcement authority.
+The government recognises that requests should be clear, necessary and proportionate. Enforcement authorities will be required to exercise their functions in line with the Regulators’ Code, including by taking a proportionate, consistent and targeted approach to enforcement and engaging transparently with those they regulate. This will help enforcement authorities investigate potential non-compliance and address product safety risks effectively.
+Consultation Chapter 8: Responsibilities and powers of enforcement authorities
+Question 16
+We asked:
+Chapter 8 considered the role of enforcement authorities when enforcing the GSR within the construction products regulatory regime, including market surveillance and intervention powers.
+As set out in the white paper, we propose that the national regulator for construction products will act as the lead enforcement authority. Its work will be complemented by Local Authority Trading Standards (LATS, in GB) and Environmental Health (EH) (in Northern Ireland), which will have relevant market surveillance and enforcement powers, but not be under a duty to enforce the GSR regulations.
+The chapter set out strengthened market surveillance powers to enable more effective investigation of non-compliance.
+It also set out a range of intervention powers to address risks, including powers to require compliance, improve business practices, restrict market availability, require product recalls and, where necessary, require the forfeiture of unsafe products. It also sought views on allowing enforcement authorities to accept undertakings from economic operators as an alternative to formal enforcement action where this would provide a proportionate means of securing compliance.
+Question 16
+Do you agree that enforcement authorities should be able to accept an undertaking instead of taking formal enforcement action as set out in paragraphs 8.17 to 8.19?
+You said:
+102 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+86
+84.3%
+Disagree
+7
+6.9%
+Neither agree nor disagree
+8
+7.8%
+Don’t know
+1
+1.0%
+Total
+102
+100.0%
+Most agreed that enforcement authorities should be able to accept undertakings instead of taking formal enforcement action. Respondents generally considered that undertakings would provide a proportionate and flexible approach to enforcement, allowing businesses to address non-compliance while supporting compliance and reducing unnecessary regulatory burdens.
+Respondents who agreed with the proposal emphasised the importance of clear and transparent criteria governing when undertakings should be used. Respondents frequently highlighted that undertakings should be reserved for less serious breaches, be enforceable and time-bound, and operate as part of a wider graduated approach to enforcement. Some respondents also highlighted the need for sufficient regulatory resources to monitor compliance and ensure undertakings are effective. There were also calls for publishing undertakings, to support transparency.
+Those who did not agree with the proposal generally raised concerns that undertakings could weaken deterrence and accountability if used inappropriately. Some respondents highlighted the need for safeguards, monitoring and escalation mechanisms for serious or repeated non-compliance.
+Government response
+The government intends to introduce provisions allowing enforcement authorities to accept undertakings. Undertakings will be available at the discretion of the enforcement authority and will not be an automatic right for businesses. They will generally be appropriate where they offer an effective and proportionate means of addressing non-compliance. They will not normally be appropriate for serious or repeated breaches.
+Authorities will be able to take further enforcement action where the economic operator who proposed the undertaking does not meet its commitments. Enforcement authorities will take a consistent and coordinated approach when accepting undertakings instead of taking formal enforcement action.
+Consultation Chapter 9: Offences, sanctions and appeals
+Question 17
+We asked:
+Chapter 9 set out proposals relating to offences, sanctions and appeals under the GSR. The proposals are intended to provide enforcement authorities with a range of proportionate tools to address and deter non-compliance, while ensuring appropriate safeguards and routes of appeal.
+The consultation proposed a range of criminal offences under the GSR, alongside civil monetary penalties, as an alternative sanction available to enforcement authorities. It also proposed the introduction of cost recovery powers and set out mechanisms for appeal.
+Respondents were specifically asked for their views on the role of local regulators (LATS in GB, and EH in NI) in issuing civil monetary penalties and cost recovery notices, given their proposed new complementary role in the regulatory regime.
+Question 17
+Do you agree with the proposal to introduce civil monetary penalties for non-compliance with requirements under the GSR as set out in paragraphs 9.13 to 9.19?
+You said:
+96 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+75
+78.1%
+Disagree
+1
+1.0%
+Neither agree nor disagree
+10
+10.4%
+Don’t know
+10
+10.4%
+Total
+96
+100.0%
+Respondents generally considered that civil monetary penalties would provide a proportionate enforcement tool and alternative to prosecution, and that they could help deter non-compliance and encourage a stronger culture of compliance across the construction products sector. Many respondents said penalties should be proportionate to the nature and severity of the breach, as part of a graduated approach to enforcement.
+Respondents also highlighted the importance of guidance on how penalties would be calculated and applied, as well as procedural safeguards and appeal mechanisms, to ensure transparent, consistent, fair and effective use of the powers. Some respondents also noted the need for proper resourcing of regulators to apply these powers.
+Only one respondent disagreed with the proposal to introduce civil monetary penalties for non-compliance with the GSR.
+Government response
+The government intends to introduce provisions for the national regulator to issue civil monetary penalties. These will provide an alternative to criminal prosecution where a financial penalty is an appropriate and proportionate response.
+The government recognises the importance respondents placed on proportionality, transparency and clear procedural safeguards. The penalty framework will take account of matters including the nature and seriousness of the breach, the level of culpability, and ability to pay. Appropriate procedural safeguards and rights of appeal will apply.
+Question 18
+We asked:
+Question 18
+Do you agree with the proposal not to extend powers to issue civil monetary penalties to LATS under the GSR, recognising their reduced role in enforcing construction product regulations as set out in paragraphs 9.1 to 9.19?
+You said:
+98 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+64
+65.3%
+Disagree
+6
+6.1%
+Neither agree nor disagree
+16
+16.3%
+Don’t know
+12
+12.2%
+Total
+98
+100.0%
+Most respondents agreed with the proposal not to extend civil monetary penalty powers to local regulators and generally considered that enforcement would be more consistent if these powers were held by the national regulator. They highlighted concerns that local regulators may not have the specialist expertise, resources or capacity required to administer penalties effectively.
+Some respondents said that local regulators should focus on intelligence gathering, local investigations and supporting enforcement activity, with more complex enforcement decisions remaining the responsibility of the national regulator. Many also highlighted the importance of clear responsibilities, effective coordination and sufficient resources to support enforcement activity.
+Some respondents requested greater clarity on the role of local enforcement bodies, particularly in Northern Ireland and at ports and borders.
+Government response
+The government intends to proceed with the proposal not to extend these powers to local regulators. Civil monetary penalties under the GSR will therefore only be issued by the national regulator for construction products.
+Extending civil monetary penalty powers to local regulators, which includes both Local Authority Trading Standards (LATS) and Environmental Health Northern Ireland, could impose a disproportionate administrative burden, as they would need to establish additional processes for investigation, evidence gathering, decision-making and appeals. Retaining these powers with the national regulator is therefore consistent with local regulators’ complementary role under the reformed regime.
+Local regulators will continue to play an important complementary role in market surveillance, intelligence gathering and local enforcement activity, particularly at ports and borders. The government considers that retaining responsibility for civil monetary penalties with the national regulator will support consistency, clear accountability and the effective use of specialist regulatory expertise.
+Question 19
+We asked:
+Question 19
+Do you agree with the proposal on cost recovery notices that the enforcement authority is able to issue as set out in paragraphs 9.20 to 9.26?
+You said:
+96 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+74
+77.1%
+Disagree
+2
+2.1%
+Neither agree nor disagree
+10
+10.4%
+Don’t know
+10
+10.4%
+Total
+96
+100.0%
+Most respondents agreed with the proposal to introduce cost recovery notices and generally considered that enforcement authorities should be able to recover reasonable costs from non-compliant businesses, rather than placing the financial burden on taxpayers or compliant operators, reinforcing the polluter-pays principle.
+Respondents emphasised that cost recovery arrangements should be transparent, proportionate and clearly linked to the costs incurred by enforcement activity. Respondents frequently called for clear guidance on how costs would be calculated and recovered, while highlighting the need to take account of the potential impact on SMEs and smaller operators. Many also emphasised that cost recovery should remain distinct from civil or criminal penalties, as it should not be used an additional punitive measure. Some respondents noted that in practice it may be challenging to target cost recovery notices fairly, given the need to identify the root cause of failings and non-compliance within complex construction projects and supply chains.
+Government response
+The government intends to introduce provisions for cost recovery notices. The national regulator will be able to recover costs that it has reasonably incurred and that are directly connected to enforcement action following a confirmed breach.
+The government recognises the need for transparency, proportionality and appropriate safeguards. Cost recovery notices will explain the amount payable and provide a breakdown of the costs incurred. Economic operators will have rights to make representations and appeal.
+Cost recovery will remain separate from any civil or criminal penalty imposed for the underlying breach. Under this measure, an economic operator may be required to pay the reasonable costs of enforcement in addition to any civil or criminal penalty imposed for the breach.
+Question 20
+We asked:
+Question 20
+Do you have views on whether LATS should have powers to issue cost recovery notices, as well as the national regulator for construction products as set out in paragraphs 9.20 to 9.26?
+You said:
+99 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Yes
+54
+54.5%
+No
+17
+17.2%
+Don’t know
+28
+28.3%
+Total
+99
+100.0%
+This question received a mixed response. Some respondents supported LATS having powers to issue cost recovery notices, alongside the national regulator. They generally considered that these powers could support local enforcement activity and improve the effectiveness of the regulatory regime, provided there are clear roles, responsibilities and coordination arrangements in place.
+In contrast, some respondents were opposed to the proposal. Many of them argued that only the national regulator should have cost recovery powers, to ensure consistency, avoid regional disparities, and maintain clear accountability, and that LATS should only have a limited role within enforcement.
+Many said that any powers granted to LATS should be accompanied by clear national guidance, adequate resources, a coordinated approach and appropriate oversight. Respondents frequently highlighted the importance of ensuring consistent application and avoiding duplication of effort between LATS and the national regulator.
+Specifically looking at responses from stakeholders representing local regulator interests, most respondents were generally supportive of local regulators having powers to issue cost recovery notices alongside the national regulator. These respondents considered that the power would help support local enforcement activity and ensure that reasonable costs incurred through investigating non-compliance could be recovered.
+Government response
+The government intends to enable local regulators to issue cost recovery notices where they have taken enforcement action under the GSR and non-compliance has been confirmed. This will ensure that a local authority can recover reasonable costs directly arising from its own enforcement activity.
+All cost recovery notices will need to be proportionate and transparent, and there will be opportunities for representations and appeals, whichever enforcement authority has issued the notice.
+Question 21
+We asked:
+Question 21
+Do you agree with the time periods that an economic operator has to lodge their appeal as set out in paragraphs 9.27 to 9.35?
+You said:
+96 respondents answered this question, and the responses are set out below.
+Response
+Number
+Percentage
+Agree
+51
+53.1%
+Disagree
+14
+14.6%
+Neither agree nor disagree
+22
+22.9%
+Don’t know
+9
+9.4%
+Total
+96
+100.0%
+Most respondents agreed with the proposed time periods and noted that they were reasonable, proportionate and consistent with other regimes. Respondents generally considered that the proposed timescales would support timely enforcement while providing economic operators with an appropriate opportunity to challenge regulatory decisions.
+Many emphasised the importance of a clear, transparent and independent appeals process. Respondents frequently highlighted the need for clear guidance on appeal procedures and evidence requirements, and that requirements should apply for economic operators and for regulators, to ensure transparency and fairness. Some respondents also considered that shorter appeal periods may be appropriate where urgent safety risks are present.
+Critics of these proposals generally argued that standard time periods may be too short for complex, technical or resource-intensive cases, or where overseas parties are involved, and greater flexibility may be required. Some respondents raised concerns that the proposed timescales could be challenging for SMEs or organisations with limited resources and suggested that extensions should be available in appropriate circumstances.
+Government response
+The government intends to introduce a 28-day period for lodging an appeal, beginning on the day the relevant notice is given or the penalty is imposed.
+The government recognises that respondents highlighted the need for flexibility in complex or technical cases. The government considers that 28 days provides an appropriate balance between allowing an economic operator sufficient time to prepare an appeal and ensuring that enforcement matters are resolved without unnecessary delay. A 28-day period for lodging an appeal is also consistent with the general time limit for appealing to the First-tier Tribunal.
+The First-tier Tribunal will be able to extend the appeal period where appropriate. This will provide flexibility in exceptional or complex cases while maintaining a clear and consistent general time limit.
+Next steps
+The government intends to lay the general safety requirement (GSR) regulations in 2027, with the new requirements coming into force no earlier than 12 months later. This approach will provide time for preparation and support effective implementation of the new regime. The GSR will close gaps in the current regulatory system by creating a safety duty for construction products not covered by a designated standard, or subject to a technical assessment. It will operate alongside the construction products regulations (CPR), strengthen accountability across the supply chain and help make sure that only safe products are made available on the market.
+Sector and regulator readiness
+The government recognises that small and medium-sized enterprises (SMEs) form a significant part of the construction products sector and may face different challenges in adapting to reform. Respondents highlighted that SMEs may have less access to technical and legal resource, and less capacity overall than larger businesses, and may therefore require clearer communications, practical guidance and proportionate lead-in times to understand and meet new requirements.
+Regulator capacity and readiness will be central to implementation. Effective delivery depends on regulators having the necessary people, expertise, operational processes and enforcement capability. We will continue working with regulators to assess the capacity and capability required and ensure implementation reflects operational realities.
+The government will work with industry and regulators to ensure businesses are aware of proposed changes and their responsibilities, and to identify how best to deliver guidance and communications aimed at reaching SMEs.
+Developing guidance
+We recognise the important role that guidance can play in supporting the sector to prepare for and transition to the new regime. However, guidance will not be able to foresee every scenario, and individuals will be required to consider their specific situation and context to make informed and defensible decisions. This is in line with the overall vision for a reformed regime in which all actors in the product chain take responsibility for safety. We will work with the regulator, trade associations and industry partners to support guidance that is accessible, practical and available sufficiently ahead of commencement so that businesses can plan with confidence.
+Ongoing engagement with industry
+During the consultation, the government carried out an extensive programme of engagement that reached representatives across the construction products sector, including manufacturers, trade associations, regulators, and stakeholders from across the wider supply chain. Respondents consistently highlighted the value of ongoing engagement between government and industry and emphasised that continued dialogue will be essential as reforms move from policy development into implementation.
+The government remains committed to ongoing engagement with the sector to explain the direction of reform, test practical implications, identify barriers to readiness and support a shared understanding of new responsibilities. This approach will ensure reforms are informed by real-world delivery issues and contribute to a coherent, trusted and effective regulatory system.
+Annex A: Consultation questions
+A full list of the questions we asked can be found in the consultation document.
+In Citizen Space, for most of these questions, respondents could answer:
+agree
+disagree
+neither agree nor disagree
+don’t know
+not answered
+For some questions, respondents were instead asked to select:
+yes
+no
+don’t know
+not answered
+Blank text boxes were provided to allow respondents to provide more information.
+Annex B: Email responses
+MHCLG received 22 responses by email outside the Citizen Space platform. Ten provided answers against specific consultation questions and were also included in the question-by-question analysis. The remaining 12 provided broader comments that could not be assigned to individual questions and were analysed thematically. This Annex brings together the analysis of all 22 email responses and summarises the main themes raised.
+Scope of the general safety requirement and interaction with existing regimes
+Respondents frequently commented on the scope of the general safety requirement (GSR) and its interaction with existing regulatory frameworks. A recurring theme across responses was whether the proposed approach would create a single and consistent safety baseline, noting that products subject to a designated standard or a technical assessment which has been issued for it (such products would be affixed with a CE marking or UKCA marking) would remain subject to different regulatory routes.
+Some respondents argued that this could create overlapping requirements, regulatory complexity and inconsistent safety outcomes. A few respondents suggested that the GSR should apply more broadly across construction products, with standards and conformity assessment acting as a means of demonstrating compliance rather than exempting products from the overarching safety duty.
+Proportionality and practical implementation
+Respondents consistently emphasised highlighted the importance of a proportionate and risk-based approach. Respondents generally considered that requirements should reflect product risk and complexity, with stronger controls applying to safety-critical products and proportionate requirements applying to lower-risk products.
+A significant number of respondents raised concerns about potential impacts on SMEs, and those supplying reused products, innovative materials and products without established standards. Some respondents also raised concerns about implementation challenges, including regulatory capacity, transition periods, industry readiness and the cumulative cost of compliance across the supply chain. A few respondents raised specific concerns about the practical costs of compliance and the readiness of parts of the sector to implement the proposed requirements.
+Supply chain responsibilities and accountability
+A common view expressed by respondents was that the importance of clearly defined responsibilities across the supply chain. While most respondents supported duties applying to manufacturers, importers, distributors and other economic operators, many emphasised that obligations should reflect the level of control exercised by each actor.
+Some respondents raised concerns about placing unrealistic expectations on distributors, merchants and importers, particularly where they rely on information provided by manufacturers. Some respondents also highlighted the need to consider how products are used in practice and the interaction between products, systems and installation.
+Product information, traceability and digitalisation
+A strong theme emerging from responses was support for improvements to product information, traceability and digitalisation. Common themes included the use of digital product information, unique product identifiers, structured product data and enhanced traceability throughout the supply chain.
+A few respondents highlighted the importance of common data standards, interoperability and shared digital systems to support compliance, improve transparency and enable more effective market surveillance and enforcement.
+Enforcement, assurance and regulatory capacity
+Many respondents highlighted the importance of effective enforcement and regulatory oversight. Some respondents emphasised the need for strong market surveillance, post-market monitoring, accredited testing and conformity assessment, and sufficient regulatory resource to ensure the regime operates effectively in practice.
+Respondents also frequently highlighted the importance of clear guidance, consistency of approach and ongoing engagement with industry to support implementation and compliance.
+Overall view
+Overall, the email responses demonstrated broad support for the objectives of the GSR and the need to address gaps in the current regulatory framework. However, respondents consistently emphasised the importance of a clear scope, coherent regulatory framework, proportionate requirements and effective implementation to ensure the regime delivers improved safety outcomes in practice.
+Source: Adroit Consortium (2025) – commissioned by MHCLG: Construction Product Sector and Subsectors Evidence and Data Final Report (Project 1). Analysis suggests that the proportion of UK/GB construction products that fall under designated standards is between 29% and 61%, with a central estimate of 37%. It is assumed that the proportion of products that fall under designated standards is likely to fall under the lower half of the range given, hence the central estimate is not the mid-point. However, given uncertainty, the full range has been provided. Therefore a central estimate of 63% are not covered by designated standards. ↩
