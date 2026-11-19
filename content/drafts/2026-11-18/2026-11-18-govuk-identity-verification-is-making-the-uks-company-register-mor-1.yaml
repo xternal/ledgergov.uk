@@ -1,0 +1,74 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-identity-verification-is-making-the-uks-company-register-mor.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-18"
+source:
+  id: govuk-identity-verification-is-making-the-uks-company-register-mor
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/identity-verification-is-making-the-uks-company-register-more-trustworthy
+  title: Identity verification is making the UK's company register more trustworthy
+  date: "2026-11-18"
+  venue_label: Press release (Companies House)
+quote: We aim to take 225,000 actions by the end of the financial year (31 March 2027).
+source_span: [6464, 6544]
+speaker:
+  name: Companies House
+  role: null
+  party: null
+  member_id: null
+  actor_id: null
+  check: nearby # the name is printed just before the quote; check it
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: economic_affairs
+  who: corporate bodies on the UK company register
+  how_much: null
+  when: by the end of the financial year (31 March 2027)
+  funded_by: null
+  deadline: "2027-03-31"
+why: >-
+  Companies House sets a target of 225,000 Registrar's-power actions against abuse of the company
+  register by 31 March 2027.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      By the end of March 2027, all companies will have met identity verification requirements
+      linked to their confirmation statement or be on an appropriate pathway to compliance or
+      enforcement action.
+    source_span: [2259, 2455]
+    suggested:
+      policy_area: economic_affairs
+      who: all companies on the UK register
+      how_much: null
+      when: by the end of March 2027
+      funded_by: null
+      deadline: "2027-03-31"
+    why: >-
+      Companies House says every company will have met identity verification requirements, or be on
+      a compliance or enforcement pathway, by the end of March 2027.
+    confidence: 0.5
+  - quote: >-
+      In future, we will put notes on the public register where identity verification requirements
+      have not been completed by the legal deadline.
+    source_span: [2998, 3137]
+    suggested:
+      policy_area: economic_affairs
+      who: directors, PSCs and companies that have not completed identity verification
+      how_much: null
+      when: in future
+      funded_by: null
+      deadline: null
+    why: >-
+      Companies House will add public notes to the register for companies or individuals that miss
+      the identity verification legal deadline.
+    confidence: 0.5
+confidence: 0.6
+model: claude-opus-5-5
+status: to_review

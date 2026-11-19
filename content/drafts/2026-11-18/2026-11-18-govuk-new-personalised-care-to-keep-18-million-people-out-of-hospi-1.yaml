@@ -1,0 +1,46 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-new-personalised-care-to-keep-18-million-people-out-of-hospi.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-18"
+source:
+  id: govuk-new-personalised-care-to-keep-18-million-people-out-of-hospi
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/new-personalised-care-to-keep-18-million-people-out-of-hospital
+  title: New personalised care to keep 1.8 million people out of hospital
+  date: "2026-11-18"
+  venue_label: Press release (Department of Health and Social Care)
+quote: >-
+  At least 1% of the population in England - more than half a million people - will receive
+  dedicated support under these plans by April 2027, expanding over subsequent years to reach more
+  of those at greatest risk.
+source_span: [1639, 1852]
+speaker:
+  name: HM Government
+  role: Department of Health and Social Care
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: health
+  who: >-
+    the most frail and vulnerable patients, including frail older people, people living with
+    dementia, those in care homes and people approaching the end of life
+  how_much: null
+  when: by April 2027, expanding over subsequent years
+  funded_by: >-
+    existing NHS budgets used differently, with savings from fewer avoidable hospital admissions
+    reinvested in community care
+  deadline: "2027-04-30"
+why: >-
+  At least 1% of England's population (over half a million people) will be enrolled with dedicated
+  neighbourhood support teams by April 2027.
+confidence: 0.85
+model: claude-opus-5-5
+status: to_review
