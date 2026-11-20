@@ -1,0 +1,43 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-government-backs-modernisation-of-gene-therapy-definitions.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-19"
+source:
+  id: govuk-government-backs-modernisation-of-gene-therapy-definitions
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/government-backs-modernisation-of-gene-therapy-definitions
+  title: Government backs modernisation of gene therapy definitions
+  date: "2026-11-19"
+  venue_label: Press release (Medicines and Healthcare products Regulatory Agency)
+quote: >-
+  Subject to international notification procedures and parliamentary approval, they will amend the
+  Human Medicines Regulations 2012 to reflect advances in synthetic genetic material and
+  genome-editing technologies.
+source_span: [574, 786]
+speaker:
+  name: HM Government
+  role: Medicines and Healthcare products Regulatory Agency
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: health
+  who: Developers of synthetic gene therapies and genome-editing treatments
+  how_much: null
+  when: null
+  funded_by: null
+  deadline: null
+why: >-
+  The government commits to amend the Human Medicines Regulations 2012 so that certain synthetic
+  gene therapies and genome-editing treatments are classified as gene therapy medicinal products,
+  without reclassifying medicines already licensed.
+confidence: 0.5
+model: claude-opus-5-5
+status: to_review
