@@ -14,96 +14,98 @@
     "2027-02",
     "2027-03"
   ],
-  "through": "2026-09",
+  "through": "2026-10",
   "outturn": {
     "values": [
-      23.132,
-      19.274,
-      13.289,
-      0.374,
-      17.252,
-      24.52
+      23.114,
+      19.043,
+      13.038,
+      -0.242,
+      16.435,
+      22.881,
+      17.036
     ],
     "cumulative": [
-      23.132,
-      42.406,
-      55.695,
-      56.069,
-      73.321,
-      97.841
+      23.114,
+      42.157,
+      55.195,
+      54.953,
+      71.388,
+      94.269,
+      111.305
     ],
     "provenance": {
       "quality": "sourced",
       "source_id": "ons_psf",
-      "vintage": "PSF-2026-10",
-      "method_note": "Public sector net borrowing excluding public sector banks (PSNB ex, ONS series DZLS) in each month, as published in the ONS release of PSF-2026-10."
+      "vintage": "PSF-2026-11",
+      "method_note": "Public sector net borrowing excluding public sector banks (PSNB ex, ONS series DZLS) in each month, as published in the ONS release of PSF-2026-11."
     }
   },
   "so_far": {
     "outturn": {
-      "bn": 97.841,
+      "bn": 111.305,
       "quality": "sourced",
       "source_id": "ons_psf",
-      "vintage": "PSF-2026-10",
-      "method_note": "Sum of the monthly values ONS published for April to September 2026 (series DZLS). The ONS bulletin gives the same total for the financial year so far."
+      "vintage": "PSF-2026-11",
+      "method_note": "Sum of the monthly values ONS published for April to October 2026 (series DZLS). The ONS bulletin gives the same total for the financial year so far."
     },
     "last_year": {
-      "bn": 102.29,
+      "bn": 118.56,
       "quality": "sourced",
       "source_id": "ons_psf",
-      "vintage": "PSF-2026-10",
-      "method_note": "Sum of the monthly values for April to September 2025 in the ONS release of PSF-2026-10 (series DZLS). ONS revises past months, so this can differ from what it published a year ago."
+      "vintage": "PSF-2026-11",
+      "method_note": "Sum of the monthly values for April to October 2025 in the ONS release of PSF-2026-11 (series DZLS). ONS revises past months, so this can differ from what it published a year ago."
     },
     "profile": {
-      "bn": 91.803,
+      "bn": 108.047,
       "quality": "sourced",
       "source_id": "obr_monthly_profiles",
       "vintage": "EFO-2026-03",
-      "method_note": "Sum of the OBR's monthly profile for April to September 2026, consistent with its March 2026 forecast."
+      "method_note": "Sum of the OBR's monthly profile for April to October 2026, consistent with its March 2026 forecast."
     },
     "difference": {
-      "bn": 6.038,
+      "bn": 3.258,
       "quality": "sourced",
       "source_id": "ons_psf",
-      "vintage": "PSF-2026-10 + EFO-2026-03",
-      "method_note": "ONS borrowing for April to September 2026 minus the OBR's monthly profile for the same months (March 2026 forecast). The ONS bulletin makes the same comparison."
+      "vintage": "PSF-2026-11 + EFO-2026-03",
+      "method_note": "ONS borrowing for April to October 2026 minus the OBR's monthly profile for the same months (March 2026 forecast). The ONS bulletin makes the same comparison."
     }
   },
   "last_year": {
     "fiscal_year": "2025-26",
     "values": [
-      20.158,
-      18.245,
-      24.273,
-      1.489,
-      15.361,
-      22.764,
-      16.177,
-      9.921,
-      12.93,
+      20.171,
+      18.258,
+      24.286,
+      1.502,
+      15.374,
+      22.778,
+      16.191,
+      9.935,
+      12.943,
       -31.96,
       12.827,
-      12.026
+      12.022
     ],
     "cumulative": [
-      20.158,
-      38.403,
-      62.676,
-      64.165,
-      79.526,
-      102.29,
-      118.467,
-      128.388,
-      141.318,
-      109.358,
-      122.185,
-      134.211
+      20.171,
+      38.429,
+      62.715,
+      64.217,
+      79.591,
+      102.369,
+      118.56,
+      128.495,
+      141.438,
+      109.478,
+      122.305,
+      134.327
     ],
     "provenance": {
       "quality": "sourced",
       "source_id": "ons_psf",
-      "vintage": "PSF-2026-10",
-      "method_note": "ONS borrowing in each month of 2025-26, as revised in the release of PSF-2026-10 (series DZLS)."
+      "vintage": "PSF-2026-11",
+      "method_note": "ONS borrowing in each month of 2025-26, as revised in the release of PSF-2026-11 (series DZLS)."
     }
   },
   "profile": {
@@ -155,12 +157,12 @@
     "method_note": "The OBR's forecast of borrowing for the whole of 2026-27, from its October 2026 Economic and fiscal outlook."
   },
   "release": {
-    "title": "Public sector finances, UK: September 2026",
-    "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/september2026",
-    "calendar_url": "https://www.ons.gov.uk/releases/publicsectorfinancesukseptember2026",
-    "released_at": "2026-10-21T06:00:00Z",
-    "next_on": "2026-11-20",
-    "next_at": "2026-11-20T07:00:00Z"
+    "title": "Public sector finances, UK: October 2026",
+    "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/october2026",
+    "calendar_url": "https://www.ons.gov.uk/releases/publicsectorfinancesukoctober2026",
+    "released_at": "2026-11-20T07:00:00Z",
+    "next_on": "2026-12-22",
+    "next_at": "2026-12-22T07:00:00Z"
   },
   "sources": [
     {
@@ -185,7 +187,7 @@
       "publisher": "ONS",
       "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/datasets/publicsectorfinances",
       "licence": "OGL v3",
-      "published_on": "2026-10-21"
+      "published_on": "2026-11-20"
     }
   ]
 }
