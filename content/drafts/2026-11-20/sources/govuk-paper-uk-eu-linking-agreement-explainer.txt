@@ -1,0 +1,464 @@
+UK-EU ETS linking agreement: explainer
+Section 1: Introduction
+Executive summary
+The UK has long been at the forefront of emissions trading, which is a proven and effective way to cut emissions while ensuring the transition to net zero is as cost-effective as possible.
+In the Trade and Cooperation Agreement (TCA) the UK and EU agreed to cooperate on carbon pricing as well as give serious consideration to linking their respective carbon pricing systems, the UK Emissions Trading Scheme (UK ETS) and the EU Emissions Trading System (EU ETS).
+In the years following the signing of the TCA, UK businesses led sustained calls for the UK government to pursue a link and provide industry with access to a deeper and more liquid carbon market. In April 2021, 40 leading industry bodies wrote to the UK government and European Commission, urging them to start the process of linking.
+Reflecting the TCA commitment, and in response to industry requests, the UK and EU committed to pursue ETS linking at the UK-EU Summit in May 2025 and published the parameters for negotiations in the Common Understanding. The government is pleased to announce that we have now reached an agreement to link the UK ETS and EU ETS.
+This agreement will support UK economic growth, adding up to £3.8 billion to the UK economy each year by 2040, and reduce costs for UK businesses by creating the conditions for an exemption from the EU CBAM for £6.5 billion worth of UK exports.
+By removing regulatory barriers, the agreement will also enable the UK to capitalise on commercial opportunities in CO2 storage in the North Sea.
+UK ETS participants will gain access to a larger, more stable and liquid carbon market, providing them with greater certainty around their ETS compliance obligations which helps to support their investment decisions.
+Those operating across both the UK and EU ETSs will also benefit from greater regulatory consistency between the linked schemes. For example, aircraft operators currently have to navigate the complexity of operating in two separate schemes covering different legs of return flights between the UK and European Economic Area (EEA). The linking agreement commits the UK and EU to deliver a one-stop shop that will simplify administration and reduce costs for operators.
+Faced with the intensifying impacts of climate change, this agreement demonstrates the UK and EU’s shared commitment to advancing ambitious climate action through international cooperation. Creating the world’s largest linked carbon market sends a powerful signal that globally integrated carbon markets are achievable and demonstrates the UK’s commitment to carbon pricing as an efficient and cost-effective tool for emissions reduction.
+Purpose of this document
+The purpose of this document is to explain what the UK-EU ETS linking agreement legal text means. It represents the UK government’s understanding of the obligations under the linking agreement, and how linking will impact UK ETS policy, at the time the agreement was reached. It is intended for use by UK ETS participants, and wider stakeholders, as a guide to what the agreement will mean in practice. We are publishing this explainer ahead of the legal text to ensure stakeholders are informed about the key outcomes of the agreement at the earliest opportunity. We will update it when the legal text is published to include cross-references to the relevant articles.
+Key features of the agreement
+The UK and EU are aiming for the link to become operational on 1 January 2028. From this point ETS allowances issued in either the UK or EU can be used for compliance purposes across either scheme. This includes compliance with surrender obligations for emissions produced during the 2027 scheme year.
+The UK ETS and EU ETS will continue to operate as two separate but linked systems. The agreement sets out key aspects of ETS policy design that underpin the link, including specific arrangements agreed for the UK ETS. The agreement also establishes the arrangements for managing the link.
+Mutual exemptions from our respective CBAMs will be in place when the ETS link is fully operational. This is subject to EU legislative procedures, which they will launch without delay.
+Structure of the agreement text
+The agreement is split into two main parts:
+The main framework agreement sets out the overarching rules for how the UK-EU ETS link will work. This includes its objectives and scope, the arrangements for dynamic alignment and UK decision-shaping rights, how the agreement will be governed, amended or terminated and how it interacts with wider UK-EU agreements. It also covers the basis for the mutual CBAM exemptions delivered by this agreement.
+The annexes contain the more detailed provisions that underpin the link. Annex I identifies the relevant EU legislation that the UK is dynamically aligning to and sets out the agreed UK adaptations to those rules. A more detailed explanation of what these UK adaptations mean in practice is provided in the second section of this document. The remaining annexes set out the detailed technical and operational arrangements needed to make the link work in practice. The Joint Declaration records the Parties’ shared intentions in areas where the relevant rules have not yet been legislated for, providing a basis for future cooperation as those policies develop.
+The European Union’s review of the EU ETS
+The European Union is currently undertaking a review of the EU ETS. The European Commission has published a set of proposed reforms in the form of draft legislative proposals, and these are now subject to the EU’s legislative process.
+The EU ETS review will have implications for the linking agreement between the UK and the EU. Once the revisions are finalised, as per the processes outlined in the linking agreement, the UK will be able to use the Joint Committee on ETS Linking to agree necessary adaptations to these new proposals for the UK. The UK ETS Authority is committed to continuing to engage with stakeholders throughout this process.
+The UK ETS Authority
+The UK ETS Authority, comprised of the UK government, Scottish Government, Welsh Government and Northern Ireland Department of Agriculture, Environment and Rural Affairs (DAERA), will continue to function as the main decision-making body for the UK ETS, overseeing the operation and future development of the scheme.
+Section 2: The framework agreement
+This section explains the structure and content of the core elements of the framework agreement. The framework agreement covers:
+General Provisions, covering the objectives, scope and process for extending the scope of the Agreement and its relation to the Withdrawal Agreement and Trade and Cooperation Agreement (TCA).
+Technical Provisions, covering core provisions on how the ETS link will operate and the basis for a mutual CBAM exemption.
+Institutional Provisions, covering the joint governance between the UK and EU, the UK’s obligation to dynamically align to EU rules and UK “decision-shaping” rights, dispute resolution procedures and financial contribution framework.
+Final Provisions, covering future linking, suspension of the agreement and termination.
+General Provisions
+Recitals and objectives
+Recitals provide the context and shared rationale for the agreement.
+The objectives define what the agreement is intended to achieve and guide how its provisions are interpreted and implemented. These objectives will be relevant for key parts of the agreement, including how the UK keeps its rules aligned with the EU’s, how the rules are interpreted consistently, how the agreement is put into practice, and how any disagreements are resolved. The objectives cover both the overarching aim to establish regulatory consistency and fairness between the UK and EU and more specific objectives in relation to the operation of the ETS link, such as maintaining ambition and avoiding carbon leakage risk.
+Material scope
+The sectors and activities covered by the linking agreement are: electricity generation, incineration of waste (excluding landfill), industrial heat generation (excluding the individual heating of houses and commercial buildings), industry, domestic and international maritime transport, domestic and international aviation and the removal of greenhouse gases.
+EU ETS 2 (an EU scheme covering emissions from fuel combustion in buildings, road transport and additional sectors) is not in scope of this agreement.
+Annex I of the Agreement sets out the relevant EU legislation in scope of dynamic alignment alongside the adaptations to EU law agreed for the UK.
+Extending the material scope
+This is the process for bringing additional sectors into the material scope of the agreement.
+Where the EU plans to extend the EU ETS to a sector not already within the material scope, it will notify the UK and request that the Partnership Council (established under the TCA) decide to bring that sector within the scope of the linking agreement.
+If the Partnership Council agrees, the UK will be required to align with the relevant EU rules for that sector, subject to any adaptations agreed between the UK and EU.
+If the UK does not agree to extend the material scope, the EU may adopt appropriate temporary measures, where necessary and proportionate, to address risks of carbon leakage and distortions of competition between the UK and EU. Such measures cannot be taken until at least eight months after the request to the Partnership Council.
+There is a separate process by which the UK can expand the UK ETS beyond the activities and gases covered by the material scope of the agreement. This is explained below.
+Technical Provisions
+The Technical Provisions cover key elements for the functioning of the ETS link.
+Emissions allowances and accounting
+UK, EU and Swiss allowances will be recognised for compliance in the UK and EU ETS. Recognition of Swiss allowances is due to the existing EU-Switzerland ETS link.
+The UK and EU will be able to discuss the methodology for accounting the flow of allowances between the UK and EU ETS.
+Procedure for unilateral inclusion of additional activities and greenhouse gases
+The UK is able to expand the UK ETS to wholly new sectors or to new activities or greenhouse gases from existing sectors that are not covered by the EU ETS.
+To do this, the UK will submit its proposals to the European Commission for approval, including where additional allowances may need to be issued.
+The UK can use this procedure to integrate activities ahead of the EU, for example greenhouse gas removals. Further detail on where this may be relevant is provided in Section 3.
+UK ETS coverage of upstream oil and gas venting CO2 emissions, which is not currently covered by the EU ETS, will continue in the UK ETS under the link.
+Carbon Border Adjustment Mechanisms
+The agreement facilitates mutual CBAM exemptions between the UK and the EU.
+The exemptions will apply to goods that originate in the UK and EU respectively. Goods that originate outside of the UK or EU will still benefit from carbon price relief when crossing the border.
+The EU CBAM exemption is expected to apply from 1 January 2028. This is subject to EU legislative procedures, which they will launch without delay.
+The UK government intends to exempt goods originating in the EU, EEA and Switzerland from the UK CBAM from 1 January 2027.
+Registries and Linking Technical Standards
+The UK ETS Registry and Union Registry will be connected through a continuous registry link, enabling allowances to be transferred between accounts across the two systems.
+The Linking Technical Standards (LTS) Annex sets the framework for establishing and operating this link. Detailed LTS will be agreed by the Joint Committee on ETS Linking before the link becomes operational, based on the principles in the Annex.
+The LTS will set out the detailed technical, operational and security requirements for the link, including how data is exchanged, the functions the link will support, testing requirements and arrangements for maintaining its operation. They will also include security requirements and processes for responding to security incidents.
+UK and EU registry administrators will work together to minimise the risk of fraud, misuse or criminal activity involving the registries, respond to incidents, and protect the integrity of both ETSs.
+The UK ETS Authority will continue to centrally administer the UK ETS Registry, and the Environment Agency will continue to administer user accounts. Both registries will maintain separate publications of data, but transparency levels will be aligned.
+Sensitive information, sensitivity levels and handling instructions
+The agreement sets out arrangements for protecting sensitive information shared between the UK and EU in connection with the ETS link, including how it is identified, marked and handled. The accompanying annex sets common sensitivity markings and handling and security requirements for information exchanged between the UK and EU.
+Institutional Provisions
+Dynamic alignment and decision-shaping
+This agreement includes elements of dynamic alignment, with the UK and EU applying the same rules, at the same time, on an ongoing basis. Where we dynamically align, the UK will have an early decision-shaping role on EU rules in development. This is essential for ensuring that UK interests are reflected, and that the agreement can function effectively.
+Partnership Council and Joint Committee
+The Partnership Council, established under the TCA, is co-chaired between the UK and EU at Ministerial level and meets at least once a year. It will oversee implementation of this agreement. It also has a specific role in the ETS link for deciding whether to extend the material scope of the agreement.
+It will be supported by a newly established Joint Committee on ETS Linking, co-chaired by the UK and EU Commission. It will meet as often as is needed at the request of either Party, or in any event at least every 6 months.
+The Joint Committee’s role will be to monitor and review the implementation of the agreement and make decisions regarding the adoption of EU acts into Annex 1 of the agreement, including any necessary technical adaptations.
+The Joint Committee will be established under the powers for committees set out in the TCA. The Joint Committee will take binding decisions by mutual consent.
+Other elements of the TCA will also apply. This includes arrangements for parliamentary cooperation, whereby parliamentarians from the UK and EU may exchange views on the agreement and make recommendations. Likewise, participation of civil society also applies, enabling consultation via the domestic advisory groups and Civil Society Forum established under the TCA.
+The agreement also includes a dispute resolution mechanism whereby disputes are decided by an independent arbitration panel.
+Final Provisions
+Territorial scope and Windsor Framework
+For the UK, the agreement will apply to the territory of Great Britain and Northern Ireland, with the exception of the areas covered by the Windsor Framework.
+Areas covered by the Windsor Framework – electricity generators and Energy from Waste facilities in Northern Ireland – will continue to operate under the EU ETS as stipulated under the Windsor Framework agreement.
+Linking with Third Parties
+The UK will be kept informed if the EU enters negotiations for a future ETS linking agreement with another third party. If the EU reaches an agreement with this third party, the UK will be able to decide whether it accepts this agreement or if it wants to terminate the UK-EU ETS link.
+If a link between the EU ETS and the third party ETS is agreed, the allowances from the third party will be eligible for surrender in the UK ETS. The UK and EU will discuss the impact of this link on the UK registry.
+Suspension
+The agreement provides for the possibility for either Party to suspend the mutual recognition of allowances and the CBAM exemption.
+A decision to suspend would not be taken lightly, given the potential impacts on the operation of both the UK and EU ETS markets.
+Suspension of mutual recognition of allowances would mean that allowances from one system would no longer be recognised for compliance in the other. All other transactions, including trading, would remain possible.
+If a Party wishes to suspend the mutual recognition of allowances or the mutual CBAM exemption, it must first notify the other Party in writing, giving reasons and the date the suspension will take effect. Any suspension must be temporary, necessary and proportionate to the gravity of the breach. The Parties are also required to discuss in the Joint Committee within 10 days of the notification of intention to suspend, unless the breach has been remedied in the meantime.
+Furthermore, the party suspending the mutual recognition of allowances would need to consider the applicable deadline for surrender of allowances for compliance when deciding the date on which the suspension would take effect.
+Termination
+Either the UK or EU can terminate the agreement by giving written notice.
+Termination would not take place immediately. The article has been designed to ensure sufficient notice for operators and market participants to prepare for de-linking.
+The notice period, i.e. the period between the notification of termination and the termination taking effect, will be between 18 and 30 months depending on when notice is given. This is set out in the diagram below.
+If the Trade and Cooperation Agreement, or relevant sections of it, are terminated, this agreement will also be terminated unless the UK and EU agree otherwise. The same 18-to-30-month notice period will apply for termination of the ETS linking agreement in this scenario.
+Rights and obligations already acquired by individuals and economic operators under the agreement before termination takes effect will be preserved, subject to the separate provisions allowing either Party to prohibit the use of allowances in specified circumstances.
+Figure 1: Termination procedure representative timeline
+Prohibiting use of allowances
+The parties can protect the environmental integrity of their ETS by suspending the use of allowances from the other system in specific circumstances. This is separate from suspending mutual recognition of allowances and provides an additional safeguard if parts of the linking agreement are no longer being applied as required.
+Section 3: What the agreement means for the UK ETS
+The UK ETS Cap
+In line with the Common Understanding commitment that the UK cap and reduction pathway be guided by UK’s Climate Change Act obligations, the UK ETS Authority will continue to set the UK ETS cap trajectory and the distribution of allowances underneath the cap.
+This includes the volume of allowances to be auctioned, the industry cap (i.e. the proportion of allowances in the overall cap which can be made available for Free Allocation) and the volume of allowances which can be made available for new entrants.
+In line with the Common Understanding commitment that the UK cap be at least as ambitious as the EU cap and reduction pathway, this agreement applies an ambition test to the UK’s cap.
+The ambition test will provide an absolute upper limit on the UK’s cap in any given year. This upper limit will not prevent the Authority from setting its cap below this level and recognises that the existing UK ETS Phase I cap meets the test.
+All UK allowances created before the date of this agreement remain valid and can continue to be carried forward into future scheme years (otherwise known as “banking”).
+In line with our decision in the December 2025 ‘Extending the UK ETS cap beyond 2030’ consultation response, Phase II of the UK ETS will be 10 years long, from 2031 to 2040.
+Within a UK ETS phase, participants will be able to use allowances issued at the beginning of one compliance year for the previous year’s compliance obligations (otherwise known as “borrowing”).
+Between UK ETS phases, participants will not be able to use allowances issued at the beginning of a new phase for the previous year’s compliance (“interphase borrowing”). For example, free allocation issued or allowances auctioned in early 2031 will not be permitted to be used for 2030 compliance.
+As before, international credits cannot be used for compliance with UK ETS obligations.
+The UK ETS Authority intends to consult in due course on the cap and distribution of allowances under the cap for the second phase of the UK ETS. This will build on the certainty provided by this agreement and the December 2025 ‘Extending the UK ETS cap beyond 2030’ consultation response.
+From 2028-2030
+For the remainder of Phase I, the ambition test is set as a maximum number of emissions allowances which can be issued annually in 2028, 2029 and 2030. The figures in the agreement account for the cap adjustments as a result of expansion to international maritime and Outermost Region flights from 2028.
+In Phase I, the UK’s cap can be no greater than:
+62.2 million allowances in 2028;
+59.5 million allowances in 2029; and
+57.6 million allowances in 2030.
+To account for the expansion to international maritime and Outermost Region flights from 2028, the UK intends to increase its cap in line with Carbon Budgets. The Authority will confirm any new cap figures for 2028-30 in due course.
+The linking agreement also provides a mechanism whereby the upper limit on the UK ETS cap can be increased. This would be to account for any further scope expansion after the link goes live to mirror EU ETS scope changes in this period.
+From 2031
+From 2031 onwards, the ambition test applied to the UK’s cap will be based on a calculation. As in 2028-2030, this will determine an absolute upper limit for the UK ETS cap. It will not determine the exact level of the UK ETS cap, and it will not prevent the UK from setting its cap below this level in line with a net zero consistent trajectory.
+The agreement ensures that from 2031 onwards, the UK ETS cap in a given year will be no higher than the sum of:
+7.1% of the equivalent EU ETS cap of that year for activities covered by both schemes at the point of linking; and
+For new activities subsequently added to the UK ETS to align with EU ETS scope changes where required, additional allowances, calculated using the methodology provided for in the EU ETS and reduced in line with the EU ETS linear reduction factor (LRF).
+Where the UK unilaterally expands its ETS to an activity or gas not covered by the EU ETS, any additional allowances associated with this expansion will not be part of the ambition test.
+The Joint Committee on ETS Linking can be convened to amend the cap provisions of the linking agreement. This includes, but is not limited to, circumstances in which:
+The EU changes its cap, for example in response to a decision on the approach to international credits.
+Either the UK or the EU alter their approach to integration of greenhouse gas removals (GGRs).
+The EU ETS Review
+The European Commission has proposed several reforms to the EU ETS cap for the later years of Phase IV (2021-2030) and for Phase V (2031-2040) in the EU ETS 2026 Review. Proposed changes to the Linear Reduction Factor and cap adjustment approaches for new activities will be relevant to the ambition test. The proposals remain subject to the EU legislative process and may change before they are finalised. The UK will continue to engage with the proposals as they develop and consider their implications for the UK ETS through the UK–EU ETS linking arrangements.
+Free Allocation in the UK ETS
+Free allocation supports sectors at risk of carbon leakage by providing allowances free of charge. To support a level playing field, deliver the same effective carbon price across the UK and the EU markets, and deliver the exemption from UK and EU CBAMs, the UK will align with key EU rules on free allocation. There are also UK-specific arrangements and transitional measures to manage the move to the new framework.
+Overall approach from 2028
+From 2028, the UK will dynamically align with the EU rules covered by the agreement, subject to the UK-specific adaptations set out in the agreement.
+The UK ETS Authority will continue to decide how allowances are distributed within the UK ETS industry cap, except where the agreement requires a common rule or outcome.
+Several transitional measures will allow existing UK approaches to continue when determining free allocation for the 2028-2030 scheme years.
+Cross-sectoral correction factor
+The cross-sectoral correction factor (CSCF) is a uniform adjustment applied where the total preliminary amount of free allocation would otherwise exceed the amount available for free allocation. If the EU applies a CSCF, the UK will apply the same factor and adjust UK free allocation accordingly.
+This does not determine how the UK must distribute the wider supply of allowances under the UK ETS cap. The UK ETS Authority will retain its domestic flexibility over the distribution of allowances, subject to applying the agreed CSCF to free allocation.
+The UK will align with the EU’s approach of exempting the 10% most efficient installations from any future application of the EU CSCF. This will be based on a combined assessment of UK and EU sites from 2031. This protects the best-performing installations across the UK and EU from the reduction that would otherwise apply.
+Free allocation for new entrants
+From 2028, free allocation for new entrants will be adjusted using the EU ETS linear reduction factor (LRF). The LRF reduces the amount of free allocation calculated for new entrants over time.
+Existing UK Reduction Factor for New Entrants
+New Reduction Factor for New Entrants in a linked scheme
+2028
+0.9560
+0.9130
+2029
+0.9130
+0.8690
+2030
+0.8700
+0.8250
+CBAM-related free allocation phase-out
+As part of the agreement to enable an EU Carbon Border Adjustment (CBAM) exemption, from 2028, the UK will align with the EU trajectory for phasing out free allocation for products covered by the EU CBAM. The adjustment will be based on the scope of EU CBAM coverage. The EU CBAM currently covers iron and steel, aluminium, cement, fertilisers, hydrogen and electricity. This aligns with current UK CBAM scope with the exception of electricity, which is not eligible to receive free allocation under the UK or EU ETS.
+As free allocation is phased out for relevant products, the amount provided to affected UK installations will reduce in line with the EU trajectory. This alignment supports the mutual UK-EU CBAM exemptions by maintaining a comparable approach to carbon leakage protection in the two systems.
+In October 2026, the UK government announced an intention to expand the UK CBAM to refinery products subject to assessing feasibility and impacts. The UK ETS Authority will look carefully at the future treatment of UK ETS Free Allocation for refinery products, noting its previously announced phased reduction of Free Allocation for CBAM-covered sectors. This does not impact the position presented in this explainer on CBAM exemption.
+Potential changes to the CBAM-related free allocation phase-out
+The European Commission’s 2026 EU ETS review may change the rules governing the phase-out of free allocation for CBAM goods, including the trajectory or the products to which the phase-out applies. These proposals are not final and remain subject to the EU legislative process.
+Where the final EU reforms amend rules that fall within the scope of the linking agreement, the UK would need to reflect those changes in the UK ETS. This could change the rate or coverage of the UK’s CBAM-related free allocation phase-out after the relevant EU legislation is adopted.
+Any future UK changes would therefore depend on the final outcome of the EU ETS review and the application of the agreement’s dynamic alignment and governance processes.
+Benchmarks
+From 2028, in line with the UK ETS Authority’s stated intention, the UK ETS will align with EU ETS benchmark values. There will also be transitional arrangements for benchmark definitions and system boundaries between 2028 and 2030, as set out below.
+From 2028, the UK ETS will align with the EU ETS process emissions factor used to calculate free allocation for process emissions sub-installations (0.91 compared to the 0.97 currently used in the UK ETS).
+Data submitted by UK installations will be included in the determination of any benchmark updates or changes that may be applied for the period after 2030.
+Carbon Leakage List
+The UK ETS will continue to use the current Carbon Leakage List (CLL), which is also used in the EU ETS, and will align with any future changes.
+As part of the closer collaboration with the EU secured through this agreement, UK industry data will feed directly into any potential future updates to the CLL, ensuring decisions on which sectors are most exposed to carbon leakage are informed by UK as well as EU evidence.
+Electricity Generators Definition
+The UK ETS will retain flexibility to use its existing rules regarding the classification of installations as electricity generators and treatment of such installations.
+Permanent cessations and the Decarbonisation Exemption
+The UK ETS will retain its existing rules regarding the treatment of the permanent cessation of operations, including discretion to exempt operators from returning free allocation for final year activity, where the cessation can be demonstrated to have been for the purpose of decarbonisation. This flexibility helps support major industrial decarbonisation projects, ensuring that businesses are not penalised through the free allocation rules when existing operations cease as part of the transition to lower-carbon production.
+Transitional measures for 2028-2030
+For the purpose of determining free allocation for the 2028-2030 scheme years, the agreement supports continuity by enabling the UK to continue applying a number of existing UK rules rather than moving immediately to the corresponding updated EU rules. From 2031 the UK will dynamically align with the EU’s approach in these areas.
+The UK may retain its existing approach to:
+Historical activity levels: the UK ETS will retain its current approach to calculating historical activity levels (HAL) throughout the 2027-2030 allocation period. The UK ETS currently defines HAL as the arithmetic mean of annual activity levels in the baseline years. Applicants for free allocation for the 2027-2030 allocation period had the option of excluding activity for 2020, or 2020 and 2021, to mitigate the impact of COVID-19 on HAL.
+Benchmark definitions and system boundaries: the UK ETS will retain its existing benchmark definitions and system boundaries for the purpose of free allocations calculated for the 2027-2030 allocation period.
+Activity level changes: the UK ETS will retain its existing methodology for determining activity level changes, including for fallback benchmark sub-installations, for the 2027-2030 allocation period, with the exception of aligning with the EU ETS emissions allowance threshold from 2028 (i.e. from 2028, activity level changes will only be considered where the resulting change in annual free allocation is 300 allowances or more, compared to the 100 allowance threshold currently used in the UK ETS).
+Attributing activity levels to sub-installations for the purpose of determining exposure to carbon leakage: for heat benchmark, fuel benchmark and process emissions sub-installations where at least 95% of the activity level serves sectors or subsectors on the Carbon Leakage List, the UK ETS will retain its current approach of exempting operators from providing data allowing for the distinction in terms of carbon leakage exposure.
+The recovery of heat from fuel benchmark and process emissions sub-installations.
+Allocation in respect of steam cracking and vinyl chloride monomer.
+Rules determining heat flows between installations.
+The exchangeability of fuel and electricity.
+The determination of allocation periods and which installations are treated as incumbents or new entrants, based on the UK ETS rules applying on 1 April 2026.
+Conditionality
+The EU ETS currently applies several conditionality requirements to free allocation, including requirements relating to energy efficiency, district heating and Climate Neutrality Plans (CNPs). The UK ETS does not currently apply any conditionality requirements to free allocation.
+Conditionality requirements in the Linking Agreement
+The UK will not introduce the EU’s Energy Efficiency Directive (EED) conditionality or district heating conditionality before 2031.
+Under the EU ETS, the EED condition links free allocation to the implementation of certain recommendations arising from energy audits, subject to exemptions. This requirement will not apply in the UK. Therefore, UK ETS operators will not face a separate free allocation condition linked to implementing recommendations arising from energy audits or the Energy Savings Opportunity Scheme (ESOS).
+The UK will also not introduce the EU’s district heating conditionality requirement which in the EU requires district heating operators in certain member states to submit CNPs in order to access an additional 30% free allocation. This is separate from the existing UK ETS rules for calculating free allocation for measurable heat exported for district heating, which will continue to form part of the allocation framework.
+The UK will apply the CNP condition from 2028 as set out below.
+What is a Climate Neutrality Plan?
+A CNP sets out how an installation plans to reduce its emissions towards climate neutrality by 2050. It must include quantitative emissions-reduction targets and qualitative milestones describing the steps the operator will take to meet them.
+The plan must also set out the measures and investments the operator intends to make and their expected impact on the installation’s emissions.
+Climate Neutrality Plan conditionality – before 2031
+Under CNP conditionality, certain less-efficient installations must produce plans setting out their decarbonisation pathway, including targets, milestones and planned measures and investments. Failure to meet the applicable conditionality requirements can result in a reduction in free allocation.
+From 2028, the UK will apply CNP conditionality to certain less-efficient installations. CNP conditionality will apply to installations with a product benchmark sub-installation that falls within the 20% least efficient for the relevant benchmark. UK sub-installation data (as described below) will be compared to the 80th percentile of emissions efficiency based on 2016 and 2017 emissions efficiencies of EU sites (as described here).
+The UK installations in scope will be identified using 2019 and 2022 sub-installation-level data, submitted as part of the second stage Baseline Data Reporting Exercise. The assessment of efficiency is made at sub-installation level, but the CNP requirement applies to the installation as a whole. This means that, if the requirements are not met, the resulting reduction in free allocation applies to the whole installation.
+For the UK installations in scope, the targets and milestones must cover:
+the period from approval of the plan to 31 December 2029
+the period from 1 January 2030 to 31 December 2030
+the period from 1 January 2031 to 31 December 2035 and
+each subsequent five-year period to 2050
+How will conditionality work?
+There are two main requirements: operators must first submit a compliant CNP and must then report on progress against it.
+Affected operators must submit their CNP to the UK ETS regulator responsible for their installation by 30 June 2028. The UK ETS Authority must also have checked that plans meet the required conditions by this date. Operators may therefore need to submit their plans earlier to allow sufficient time for these checks. Further guidance on deadlines will be provided in due course.
+If an operator does not submit a CNP, or the plan does not meet the required conditions, the whole installation’s free allocation will be reduced by 20% in 2028, 2029 and 2030.
+Operators must then report on their progress against the targets and milestones in their CNP. These reports must be independently verified. Failure to comply with the relevant targets and milestones will result in a 20% reduction in free allocation for 2030 (this is not cumulative if a 20% reduction has already been applied due to failure to submit a CNP).
+Deadline
+Requirement
+What this means for Free Allocation
+30 June 2028
+CNP submitted and checked
+If a plan is not submitted or does not meet the required conditions, the whole installation’s free allocation will be reduced by 20% in 2028, 2029 and 2030.
+31 March 2030
+Verified report submitted alongside the Annual Level Report, covering progress to 31 December 2029
+Failure to submit the required report, or comply with the relevant targets and milestones, will result in a 20% reduction in free allocation for 2030.
+31 March 2031
+Report submitted alongside the Annual Level Report, covering progress during 2030
+This relates to the post-2030 arrangements, which may be superseded by the proposed new conditionality framework described below.
+Conditionality post-2031
+The European Commission has proposed replacing the existing EU ETS conditionality requirements with a single investment-based conditionality framework from 2031. Rather than requiring certain operators to prepare and report against Climate Neutrality Plans, the proposed system would link receipt of free allocation more directly to decarbonisation planning and investment.
+The proposals remain subject to the EU legislative process and may change before they are finalised. The UK will continue to engage with the proposals as they develop and consider their implications for the UK ETS through the UK–EU ETS linking arrangements. From 2031, the UK’s approach to conditionality will be determined following the outcome of the EU review, to support continued alignment between the UK and EU schemes.
+UK ETS Markets Policy
+Linking will create a common carbon market in which allowances can be traded and used for compliance across both schemes, contributing to convergence of the carbon price. The effectiveness of market stability in the linked market therefore requires a coordinated approach. The agreement seeks to ensure a cohesive, coherent approach to market stability across the linked market; this will support the smooth functioning of the linking agreement.
+The UK will remove the UK ETS Auction Reserve Price (ARP), will align its intervention for excessive price spikes with the EU ETS Article 29a, and will establish its own reserve (the UK Market Stability Reserve, or UK MSR), which will enable the UK to respond in a coordinated way to adjustments made through the EU Market Stability Reserve mechanism (EU MSR).
+Auction Reserve Price
+The UK will remove the UK ETS Auction Reserve Price (ARP) when the link goes live. It would not be practical or desirable to maintain a price floor in only one part of a linked market.
+Cost Containment Mechanism and Article 29a
+The UK will align its intervention for excessive price increases with the EU ETS Article 29a. This will ensure that both schemes are able to respond in a proportionate and coordinated way to excessive price increases in the linked market.
+From 2028, the UK ETS’s intervention for excessive price increases will no longer operate through the existing UK ETS Cost Containment Mechanism.
+Instead, the UK will respond to the EU ETS Article 29a mechanism for “Measures in the event of excessive price fluctuations”.
+Article 29a is triggered when the average EU allowance auction price over the previous six calendar months is more than 2.4 times the average EU allowance auction price over the preceding two-year reference period. If this condition is met, 75 million allowances are released from the EU MSR and added to EU auction supply.
+The trigger for the UK ETS will be based on prices in the EU ETS. This means the relevant price assessment is linked to the EU ETS trigger, rather than a separate UK ETS price trigger.
+Where the Article 29a condition is met and allowances are released from the EU MSR, the UK will release 5 million UK allowances from the UK MSR and add them to the volume of allowances to be auctioned in the UK ETS.
+Where fewer than 5 million allowances are available in the UK MSR, all allowances in the reserve will be released.
+Market Stability Reserve
+The UK will establish a Market Stability Reserve and will align with the EU’s MSR mechanism for managing supply and demand imbalances across the linked market. This will enable both schemes to respond in a coordinated way to either persistent surplus or a significant shortage of allowances.
+As set out below, the UK will align with any release of allowances from 2028 and will subsequently align with any intake of allowances from 1 January 2031.
+The UK will retain responsibility for administering the UK reserve (containing UK allowances).
+Size of the UK Market Stability Reserve
+The UK will establish a UK MSR in 2028.
+The UK MSR will contain UK allowances that will be used for the purposes of responding to the EU MSR operation and intervention required in case of excessive price increases (Article 29a). The reserve will initially contain 29.5 million UK allowances.
+The UK will increase the UK MSR size to 34.5 million allowances by 31 December 2032.
+The Joint Committee on ETS Linking will decide before 1 January 2030 whether further adjustment is needed to ensure that the UK reserve size corresponds to 6.7% of the EU Market Stability Reserve size in 2029.
+If further adjustment is required, the UK will make it by 31 December 2034. However, if that adjustment is more than 5.5 million allowances, the Joint Committee on ETS Linking may review the UK MSR provisions at the request of either the UK or the EU. If necessary, the Joint Committee may amend the relevant Article and associated technical adaptations.
+MSR Operations
+The UK’s MSR operations will be linked to the EU MSR mechanism.
+The UK’s intervention will follow the triggering of the EU MSR, which will continue to be based on the EU’s Total Number of Allowances in Circulation, i.e. the EU TNAC.[footnote 1]
+Where the EU MSR is triggered and the EU places allowances into, or releases allowances from, the EU MSR, the UK will make a corresponding adjustment to the UK MSR using the agreed UK contribution rate of 6.7%.
+The UK’s MSR intake and release rate will be set at 6.7% of the EU’s MSR intake and release amount, and the UK’s intervention will be on top of the EU’s intervention.
+From 2028, where the EU releases allowances from the EU MSR, the UK will release UK allowances from the UK MSR equivalent to 6.7% of the EU amount released in the same month.
+From 1 January 2031, where the EU places allowances into the EU MSR, the UK will place UK allowances from the UK auction share into the UK MSR equivalent to 6.7% of the EU amount placed in the same month.
+Auction adjustments in the UK ETS if the EU MSR is triggered.
+The UK’s MSR action will follow the triggering of the EU MSR, which is based on the EU’s TNAC.
+Where the EU MSR is triggered, UK auction volumes will be adjusted through corresponding movements into or out of the UK MSR.
+This means UK auction supply will be adjusted in line with the direction of the EU MSR intervention, while the UK and EU reserves will remain separate.
+The European Commission publishes the annual EU TNAC figure and resulting EU MSR adjustment by 1 June each year. Where this results in a change to auction volumes, the EU updates its auction calendars to reflect revised auction volumes for the period from September of that year to August of the following year. Consistent with this approach, the UK would publish an updated auction calendar reflecting any required adjustment to UK auction volumes for the remainder of that year. The UK will publish its annual auction calendar, as it does currently, before the start of the following calendar year.
+Market monitoring
+The UK and the EU will meet as appropriate, at least annually, to discuss matters affecting the EU and UK ETS markets. These discussions will include events or developments liable to affect the management of the UK and EU Market Stability Reserves.
+Table: Summary of UK application of the EU MSR
+EU MSR position
+What the EU does
+What the UK does under linking
+EU TNAC above 1,096m
+EU withdraws 24% of TNAC from future EU auctions and places those allowances into the EU MSR.
+From 1 January 2031, the UK places UK allowances into the UK MSR equivalent to 6.7% of the EU amount placed into the EU MSR in the same month.
+EU TNAC between 833m and 1,096m
+EU withdraws the difference between TNAC and 833m from future EU auctions and places that amount into the EU MSR.
+From 1 January 2031, the UK places UK allowances into the UK MSR equivalent to 6.7% of the EU amount placed into the EU MSR in the same month.
+EU TNAC between 400m and 833m
+EU MSR does not adjust auction volumes.
+The UK does not make a corresponding MSR adjustment because the EU MSR has not triggered.
+EU TNAC below 400m
+EU releases 100m allowances from the EU MSR and adds them to EU auction supply.
+The UK releases UK allowances from the UK MSR equivalent to 6.7% of the EU amount released from the EU MSR in the same month.
+The EU ETS Review
+The EU ETS review set out proposed reforms to the EU Market Stability Reserve as well as a separate legislative process to review the EU MSR invalidation mechanism; these are not final and are subject to co-decision.
+Markets operations
+Auctions
+The UK will maintain domestic auctioning of UK allowances currently delivered on an auction platform provided by ICE Futures Europe[footnote 2]. Access to auctions for UK and EU market participants will be facilitated by the UK and EU auction platforms. This means bidders eligible under current EU and UK rules will be eligible to bid in any auction in the EU or UK ETS. Moreover, UK and EU auction platforms will be able to deliver allowances to both Union and UK registry accounts.
+The annual volume of allowances available at auction will be calculated by the UK auctioneer in accordance with the current approach. However, the UK ETS auction calendar will be determined with the Commission to ensure there is consistent supply of allowances with sufficient demand across all auctions in the linked market.
+Secondary market
+Auction platforms in the linked market will continue to be required to organise a secondary market in emission allowances. We will continue to engage closely with these auction platforms to determine the exact structure of the secondary market and products offered.
+Market oversight and financial services
+The UK and EU will retain responsibility for oversight of their respective markets. The relevant UK and EU authorities will establish co-operation arrangements to support the effective oversight of the linked carbon market.
+The UK and EU recognise that their respective financial services regulatory frameworks for ETS markets ensure a level playing field at the time the agreement enters into force. The Agreement preserves the UK’s ability to develop its financial services regulatory framework, while maintaining high regulatory standards to maintain a level playing field and avoid distortions in a linked ETS market.
+Maritime
+Since 1 July 2026, the UK ETS has covered emissions from UK domestic voyages and in-port emissions from ships of 5,000 gross tonnage (GT) and above, with limited exemptions.
+Under the linking agreement, the UK ETS will expand to include 50% of emissions from international voyages from 1 January 2028. The UK ETS will continue to cover 100% of emissions from domestic voyages and at berth emissions in the UK, shipping companies will continue to report through the Managing Your UK ETS Service (METS).
+The UK ETS will align with the EU ETS approach to maritime emissions. This will standardise rules for shipping companies across the UK ETS and EU ETS, aiming to reduce administrative burden and support a level playing field for shipping companies across Europe. This will ensure that the maritime sector contributes fairly to the UK’s legally binding commitments to reduce its share of international emissions.
+Alongside this, the UK continues to pursue ambitious global action through the International Maritime Organization (IMO). Should a global measure be adopted at the IMO, the UK will review its interactions with our own policy, to avoid any double charging of emissions and minimise administrative burden for industry. Any review would take into account any relevant changes to the EU ETS, and its outcomes will maintain support for maritime decarbonisation, and remain consistent with net zero.
+From 2028
+The UK will dynamically align with EU ETS rules for maritime, including on scope, island derogations, and monitoring, reporting and verification requirements. There are already many similarities between existing UK and EU ETS policy for maritime. For many shipping companies, who are already compliant with one or both schemes, this will not require many new or significant changes. However, some key changes will take effect from 2028 when the linking agreement is implemented.
+Scope
+The UK ETS will continue to cover 100% of emissions from UK-UK voyages and in-port activities in the UK for ships of 5,000 GT and above.
+The UK ETS will also include 50% of international voyage emissions by ships of 5,000 GT and above. These are voyages between a port of call in the UK and a port of call outside of the UK. The cap will be adjusted to account for the inclusion of international voyages. For more information, see “The UK ETS Cap” section.
+The UK ETS will include 50% of emissions from journeys between the UK and Crown Dependencies and the UK and Overseas Territories from 2028.
+Offshore and general cargo vessels of 400 GT to 4999 GT will be required to comply with MRV rules but will not have a UK ETS surrender obligation.
+The UK ETS will align with the EU’s treatment of neighbouring transhipment ports. Ports on the Commission’s list of neighbouring container transhipment ports will not count as a UK port of call. This list is revised every two years.
+Exemptions and temporary surrender derogations
+The inclusion of 50% of international voyage emissions means that, as planned, the temporary 50% surrender derogation for ships travelling on voyages between Northern Ireland and Great Britain will be removed. All covered Irish Sea voyages will therefore face the same 100% obligation, removing any carbon pricing disparity.
+Exemptions will remain for government ships used for non-commercial purposes, and fish-catching and fish-processing ships.
+The UK ETS will align with the EU ETS temporary surrender derogation applicable only in respect of passenger and ro-pax voyages to and from islands with a population of less than 200,000 and no road or rail link to the mainland until at least 31 December 2030.
+Ice-class ships will be eligible for a 5% surrender derogation until at least 31 December 2030.
+Compliance
+Shipping companies will continue to use METS for monitoring and reporting.
+Shipping companies will continue to be assigned UK ETS regulators based on the location of their registered office.
+To evidence that an ISM Company has been duly mandated by the shipowner to comply with the ETS obligations, a mandate document signed by both parties will need to be submitted to the regulator.
+There will be enforcement powers provided for non-compliance, including expulsion and detention of ships.
+The UK and EU have also agreed to cooperate on developing a “one stop shop” approach for maritime, meaning administrative setups with UK ETS and EU ETS would be handled simultaneously to further streamline compliance. We will keep shipping companies updated on progress.
+The UK ETS will align with the EU MRV rules, which means:
+Shipping companies will submit ship-level monitoring plans, emissions reports and partial emissions reports, as well as aggregated emissions reports as appropriate, in line with the requirements and templates of the EU MRV regime.
+Verifiers will assess plans and verify reports in line with MRV rules.
+There will be a requirement to monitor and report energy efficiency-related parameters, such as distance travelled and transport work.
+UK Documents of Compliance will be introduced. These will be issued by the verifier and must be carried on board when visiting UK ports.
+Shipping companies can apply an emission factor of zero to biofuels, RFNBOs and recycled carbon fuels that meet the sustainability and greenhouse gas saving criteria in the Renewable Energy Directive (RED).
+Aviation
+The agreement will provide new support for decarbonising the aviation sector, with 1.5 million UK ETS allowances made available to support the uptake of sustainable aviation fuel (SAF). It also commits the UK and EU to deliver a ‘one-stop shop’ to simplify compliance, so that aircraft operators covered by both schemes report to a single authority.
+Core elements of the UK ETS for aviation will remain the same. CO2 emissions on UK domestic flights, flights between the UK and Gibraltar, and flights from the UK to the European Economic Area and Switzerland will continue to be covered by the UK ETS. Aircraft operators will continue to be required to monitor, report and verify, and surrender allowances for, their CO2 emissions on flights in scope of the UK ETS.
+Aircraft operators will also continue to be able to claim a reduction in their surrender obligations for the use of SAF, meaning they need to purchase fewer allowances. Eligible SAF will continue to be ‘zero rated’.
+The UK continues to support global action on international aviation emissions through the International Civil Aviation Organization (ICAO), including implementation of the Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA). Rules governing the implementation of CORSIA are not covered by the UK-EU ETS Linking Agreement and the UK will continue to independently implement CORSIA.
+The UK has decided not to require operators to comply with CORSIA for flights already in scope of the UK ETS (flights from the UK to the EEA and Switzerland). This approach will avoid double-charging, ensure simplicity for airlines, maintain consistency of carbon pricing policy on flights within Europe and support delivery of the UK’s ambitious climate targets. We will implement and enforce CORSIA’s offsetting requirements robustly on all other routes in scope.[footnote 3]
+From 2028
+The UK will dynamically align with EU ETS rules for aviation, including on geographic scope, monitoring, reporting and verification requirements, and treatment of SAF. As there are already many similarities between existing UK and EU ETS policy for aviation, this will not require significant changes in many areas. However, some important changes will take effect in 2028.
+Administration of aircraft operators
+The UK and the EU have agreed to implement a ‘one-stop shop’ arrangement for aircraft operators to simplify participation in both schemes. The UK and EU intend for this to take effect from 2028. A one-stop shop means aircraft operators covered by both the UK ETS and the EU ETS will be administered for both schemes by a single competent authority, either the UK or an EU Member State, reducing administrative burdens and removing unnecessary duplication. The UK will work with the European Commission to determine and publicise the attribution of aircraft operators as soon as possible.
+Sustainable aviation fuel (SAF)
+In addition to the incentive provided by zero rating, the UK will award UK ETS allowances to aircraft operators to support the uptake of SAF. In accordance with the scale of support provided through the EU ETS, 1.5 million UK allowances will be set aside for this purpose until 2030, equivalent to around £120 million of support[footnote 4].
+Eligibility criteria for SAF in the UK ETS, both for zero rating and allowances, will align with the corresponding criteria in the EU ETS. These are predominantly based on the EU’s Renewable Energy Directive. To be eligible to claim for zero rating and allowances, the SAF will need to be used on flights in scope of the UK ETS.
+Scope
+The UK and EU ETS will maintain aligned scope for aviation, including any future changes. This includes geographic coverage and rules on exemptions. The UK ETS will therefore be extended to apply to flights from the UK to the EU Outermost Regions (EU OMRs), to match the existing application of the EU ETS to flights from EU OMRs to the UK. The UK ETS cap will be adjusted to account for the inclusion of flights from the UK to the EU OMRs. For more information, see “The UK ETS Cap” section.
+Consistent with existing exemptions in the EU ETS, an additional exemption will be introduced in the UK ETS for routes with an annual seat capacity of less than 50,000 subject to a Public Service Obligation[footnote 5], supporting essential connectivity.
+Non-CO2 climate impact
+Aircraft operators will be required to monitor, report and verify their non-CO2 climate impacts through the UK ETS, in alignment with requirements set out in the EU ETS Monitoring and Reporting Regulation. Aircraft operators will be able to use the EU‘s Non-CO2 Aviation Effects Tracking System (NEATS) to comply with these requirements in the UK ETS. There will be no obligation to surrender allowances in respect of non-CO2 impacts.
+Operational
+There will be some small changes to other operational aspects of the UK ETS for aviation to provide for alignment with the EU ETS. These are:
+Aircraft operators will be required to use either Method A or Method B to determine their fuel use.
+Virtual site visits for aviation will continue to be permitted, providing the conditions currently applied in the EU ETS[footnote 6] are met.
+Introduction of a new discretionary operating ban that could be used to address any persistent non-compliance.
+Carbon Capture, Usage and Storage (CCUS)
+CCUS will decarbonise industry and power, supporting high productivity jobs and growth. A Europe-wide market for CO2 storage could generate significant value for the UK and lower the costs of decarbonisation across the region. This agreement is fundamental to achieving this.
+The UK will dynamically align with EU rules in the following areas from 2028:
+Enabling cross-border CO2 storage: dynamic alignment with EU CCUS rules will establish a harmonised permitting and monitoring framework. This will enable mutual recognition of permanent CO2 storage across UK and EU / EEA territories, subject to the EU ETS Review proposal to enable recognition of storage in third countries with a linked ETS from 2031.
+Aligning with the definitions and scope of CO2 transportation, including pipeline and non-pipeline forms.
+Permanent CCU: recognising a wider range of products that permanently bind captured CO2.
+Cross-border CCUS
+As stated in the “Declaration of the Parties”, from 2031 the UK and EU intend to enable CO2 originating in either jurisdiction to be permanently stored in the other, subject to the necessary changes being made under EU law. The Commission has proposed this as part of its 2026 EU ETS Review. This will remove a significant barrier to commercial deployment of CCUS across Europe.
+To support this, the UK will dynamically align with the EU CCS Directive, including future changes. UK CO2 storage sites will meet the same technical requirements as EU / EEA sites, ensuring the safe, environmentally secure geological storage and transport of CO2.
+From 2028
+Dynamic alignment with the CCS Directive. This will require some minor amendments to UK legislation and regulatory processes, including introducing a scrutiny process to ensure consistency in implementation between the EU/EEA and the UK for storage permits, mirroring the equivalent system in the EU/EEA and the role of the Commission.
+CO2 transport and storage networks
+The UK ETS already recognises transport of CO2 to permanent storage by pipeline, which will continue. From 2028, the UK will also recognise CO2 transported by non-pipeline transport (NPT) modes, aligning with EU ETS rules.
+From 2028
+‘CO2 transport infrastructure’ will also include non-pipeline transport (in particular ships, trains and trucks), including connected liquefaction devices and temporary storage facilities, so installations can deduct CO2 sent to permanent storage by these routes.
+CO2 transport operators must monitor and report emissions from at least the following potential emission sources:
+combustion and other processes from booster stations and liquefaction stations;
+combustion units, including internal combustion units in CO2 transport vehicles;
+fugitive emissions from the transport infrastructure;
+vented emissions from the transport infrastructure; and
+emissions from leakage incidents in the transport infrastructure.
+Emissions already accounted for under another ETS regulated activity (e.g. ship engines) do not need to be reported again.
+Installation boundaries (entry and exit points) will be set in permits and monitoring plans, giving clear handover points of responsibility while reflecting different operational models for CO2 transport. UK ETS installations will be able to deduct from their reported emissions any CO2 transported and permanently geologically stored in any UK store issued with a storage permit in accordance with the EU CCS Directive.
+Carbon Capture and Utilisation (CCU)
+The rules for recognising CO2 will be expanded to recognise a wider range of permanent CCU applications, creating additional decarbonisation opportunities for UK businesses while maintaining strict permanence requirements to ensure the CO2 remains out of the atmosphere.
+From 2028
+The UK ETS will align with EU ETS rules on permanent CCU, based on Article 12(3b) of the EU ETS Directive and Commission Delegated Regulation (EU) 2024/2620. The precipitated calcium carbonate provision will be replaced by a broader framework covering a wider range of products in which CO2 is permanently chemically bound.
+Strict criteria will apply: operators must show the CO2 stays bound under normal use after the product’s life.
+Inclusion of Waste Incineration
+The EU and UK have agreed to align ETS policies for waste incineration. Expansion to waste incineration will support the waste sector to decarbonise in the most efficient way reflecting the waste hierarchy.
+There will be a coordinated approach to introducing ETS costs across the two linked schemes. By coordinating ETS expansion with the EU we will ensure there is a level playing field across both schemes that will prevent the diversion of waste to export to avoid ETS costs. The UK ETS will dynamically align with the EU ETS rules for bringing waste incineration emissions into scope.
+The European Commission has proposed extending the EU ETS to municipal waste incineration from 2031, with allowance surrender obligations phased in gradually until 2034. These proposals are not final and remain subject to the EU legislative process.
+The EU ETS applies in Northern Ireland under the terms of Article 9 and Annex 4 to the Windsor Framework (formerly the Northern Ireland Protocol) in respect of energy from waste installations. Linking will mean that Northern Ireland and Great Britain will be aligned on emissions trading for waste incineration from 1 January 2028.
+The current voluntary monitoring, reporting and verification (MRV) period will continue until the end of 2027. From 1 January 2028, mandatory MRV will apply followed by a coordinated approach to full inclusion in the ETS. Final policy positions for full inclusion will depend on the outcome of the EU ETS review.
+From 2028: Mandatory MRV
+From 1 January 2028, operators will be required to monitor, report and verify emissions in accordance with relevant EU legislative requirements.
+Facilities in scope
+The UK voluntary MRV-only period uses a Small Waste Incineration Plant (SWIP) inclusion threshold. This will no longer apply from 1 January 2028. Instead, installations with a total rated thermal input of 20MW or greater will be required to participate in mandatory MRV.
+High-temperature incinerators that predominantly incinerate hazardous waste will be exempt from the mandatory MRV requirements. This is expected to include most high-temperature clinical waste incinerators.
+Permitting and compliance
+Waste incineration facilities will be regulated under the UK ETS as combustion installations.
+Operators will be required to hold a greenhouse gas permit and comply with the applicable monitoring, reporting and verification requirements.
+Annual Emissions Reports will need to be independently verified before submission.
+Monitoring emissions
+Operators must monitor their emissions in accordance with the EU’s Monitoring and Reporting Regulation (Commission Implementing Regulation (EU) 2018/2066)
+We expect all operators will use Continuous Emissions Monitoring Systems (CEMS) to measure total (biogenic and fossil) CO2 emissions.
+We consider carbon-14 analysis to be the most accurate method to ascertain the biogenic fraction of waste incineration emissions:
+Larger operators (with emissions greater than 50,000 tCO2e per annum) will be expected to use carbon-14 analysis unless they can demonstrate that this is technically infeasible or would incur unreasonable costs.
+Operators with emissions less than 50,000 tCO2e per annum may use alternative biomass fraction methodologies if they can demonstrate carbon-14 analysis is not possible or not proportionate.
+Default uncertainty requirements established under the EU MRR will apply. We recommend that operators use the uncertainty template developed by the Environment Agency.
+For eligible facilities with low emissions, or where primary monitoring methodologies fail, conservative emissions factors will be made available.
+For further information, operators should refer to EU guidance on the Interpretation of Annex I of the EU ETS Directive.
+Voluntary MRV-only period
+The current UK voluntary monitoring, reporting and verification (MRV) period will continue until the end of 2027. The data from the voluntary MRV-only will support further policy development by the Authority ahead of the inclusion of waste incineration in the UK ETS.
+Operators who wish to participate in the remainder of the voluntary MRV-only period should submit applications by 31 December 2026. Please contact your regulator if you are having issues meeting this deadline. Participation in the voluntary MRV-only period gives participants an opportunity to gain familiarity with monitoring requirements and compliance processes before MRV becomes mandatory.
+We will be working with operators to manage the transition from the voluntary to mandatory MRV. Further guidance will be provided ahead of implementation as required.
+Introduction of ETS surrender obligation
+The UK will align with the relevant EU ETS rules on bringing waste incineration fully within the scope of emissions trading. Full inclusion means that, in addition to mandatory MRV, operators will be required to purchase and surrender allowances for their reportable emissions.
+The EU has set out proposals for full inclusion of waste incineration in the EU ETS Review. The proposals remain subject to the EU legislative process and may change before they are finalised. The UK will continue to engage with the proposals as they develop and consider their implications for the UK ETS through the UK–EU ETS linking arrangements.
+Further details will be provided once that process is complete, with sufficient notice for operators to prepare for implementation.
+The EU is considering including landfill in the EU ETS. The UK does not intend to do the same. Landfill is explicitly excluded from the material scope of the agreement, therefore the UK will not be required to align with the EU in this area.
+We recognise the challenges the expansion of the scheme places on local authorities who have limited control over the composition of the waste they are required to collect and manage. The Authority will confirm proposals to help local authorities to manage the impacts of the scheme before facilities are exposed to the carbon price.
+As stated in the “Joint Declaration of the Parties”, the UK will be able to address the impacts on local authorities through measures outside the design of the UK ETS, if necessary.
+Greenhouse Gas Removals (GGRs)
+The UK retains its stated intention to integrate GGRs in the UK ETS by the end of 2029. The agreement records the UK and EU’s shared intention that the UK should be able to retain its model of integration, i.e. distribute allowances in respect of greenhouse gas removals directly to operators, under the linked system. The UK will also be able to integrate GGRs earlier than the EU via specific procedures in the agreement.
+UK and EU approaches to GGR integration
+In July 2025, the UK set out the details of the proposed market design for integration of GGRs in the UK ETS. The UK is aiming for integration to be operational by the end of 2029. Eligible GGR operators will be awarded UK ETS allowances once the removal has taken place and been verified. For initial integration, the UK will maintain the existing overall cap on the number of allowances that can be created, meaning the integration of removals will not increase the overall supply of allowances under the cap.
+As part of the EU ETS Review, the Commission has proposed integrating GGRs into the EU ETS from 2031. The Commission proposes to auction 250 million additional allowances between 2031 and 2040 and use the revenues to purchase an equivalent volume of eligible permanent removals. The proposals initially cover permanent removals from BioCCS and DACCS certified under the EU’s Carbon Removals and Carbon Farming framework. These are Commission proposals and remain subject to the EU’s co-decision process, including negotiation and agreement by the European Parliament and Council.
+GGRs in the Linking Agreement
+GGRs are within the material scope of the agreement, demonstrating that both the UK and EU agree that GGRs will play an important role in the future evolution of both schemes. Whilst the engineered removals sector is growing, it is nascent, with relatively few commercial scale projects operating globally, and demand from ETS integration will be an important enabler of the sector.
+Neither the UK nor the EU have legislated to integrate removals in their respective ETSs, and therefore the agreement does not contain technical adaptations to EU law as is the case for other policy areas. When the EU legislates to integrate GGRs into the EU ETS, the UK will need to agree relevant adaptations to the EU rules at that point, via the Joint Committee on ETS Linking, to reflect the policy design in the UK.
+The “Joint Declaration of the Parties” confirms the UK and EU’s shared intention that the UK should be able to continue with the market design set out above by distributing allowances for GGRs directly to eligible operators. The adaptations to provide for this will need to be agreed once the relevant EU legislation is in place.
+The UK will continue to aim to integrate GGRs in the UK ETS by 2029. If this is earlier than the integration in the EU ETS, the UK will use the “Unilateral inclusion of activities and gases” procedure to enable this.
+The UK will set out our updated market design as soon as possible to provide stakeholders with clarity and to support investment decisions. UK integration is being designed to ensure minimal changes are required when the EU integrates and to ensure allowances are fungible across the two jurisdictions. For example, the UK GGR Standard, which will detail the quantification of GGR removal units in the UK, is already being designed to align with the CRCF methodologies where feasible and appropriate in the UK context.
+Woodland and nature-based removals
+High-quality UK woodland will not be included as part of the initial integration of GGRs into the UK ETS. As set out above, the UK will align with EU standards for removals wherever possible to ensure fungibility of removals entering the linked market. The EU framework does not currently include an afforestation standard that meets the necessary permanence requirements for inclusion. The UK government continues to see woodland creation as important for its net-zero goals and to endorse the Woodland Carbon Code as a high-quality GGR scheme that can create removals with a permanence well in excess of hundreds of years.
+The European Commission has proposed a review of the role of nature-based removals in its ETS before the end of 2034. The UK will use its experience in developing and managing high-quality UK woodland to support the Commission in this review.
+Trees and woodland creation remain a critical part of all four nations’ plans to reach net zero. In England, over £1 billion has been secured this parliament for tree planting and the forestry sector through England’s Trees Programme. UK government is also exploring purchasing woodland carbon units through a proposed Woodland Carbon Purchase Fund, with further information to be provided in 2027.
+Monitoring, reporting and verification (MRV) of installation emissions
+From 2028
+A consistent approach to MRV across the link ensures parity in how emissions are accounted for and streamlines dual scheme compliance for operators with installations in the UK and EU. The UK will dynamically align to the EU’s Monitoring and Reporting Regulation (Commission Implementing Regulation (EU) 2018/2066) and Accreditation and Verification Regulation (Commission Implementing Regulation (EU) 2018/2067). However, as the UK has given effect to these EU regulations for the purposes of the UK ETS with limited modifications, there is little change to existing MRV rules for UK ETS installations for linking except for installations applying for free allocation (please see the free allocation section of this explainer). Emissions of installations will remain regulated by current UK regulators and will remain verified by current UKAS accredited verifiers.
+The most substantive changes are for CCUS, waste incineration (both covered in their respective sections of this explainer) and how biomass is accounted for which is detailed in the next section of this explainer.
+Guidance and templates in METS for MRV will be updated well in advance of compliance requirements.
+Regulators will support operators to vary their permits and monitoring plans in order to comply with any new monitoring requirements under linked rules.
+For changes in MRV requirements for Aviation and Maritime operators, please see the Aviation and Maritime sections of this explainer.
+Biomass combustion
+From 2028
+Dynamic alignment with EU ETS rules on zero-rating of emissions means that biomass will only continue to be zero rated in the UK ETS where it complies with sustainability criteria set out in Articles 29–31 of the Renewable Energy Directive (RED II/III).
+The UK will also dynamically align to the EU ETS scope for fuel combustion installations. This means all biomass combustion, regardless of whether the biomass meets the sustainability criteria, counts towards the 20 MW capacity threshold for inclusion in the scheme. However, an installation will be excluded where more than 95% of an installation’s total emissions are from combustion of RED II compliant biomass.
+Grid-injected biomethane
+The UK will continue to recognise emissions reductions where biomethane is produced and consumed directly by an installation. Where biomethane is injected into the gas grid and mixed with fossil methane, an installation in the UK will not be able to claim emissions reductions until a system is introduced in accordance with relevant EU legislation that can account for grid-injected biomethane and prevent double counting.
+Hospital and Small Emitter and Ultra Small Emitter Status
+Currently installations in-scope of the UK ETS with low emissions may qualify for Hospital and Small Emitters (HSE) or Ultra-Small Emitters (USE) status. This will continue. In the EU ETS, Member States may implement a similar policy known as the small installation (also including hospitals) and very small installation “opt-outs”.
+From 2028
+The linking agreement protects current HSE and USE statuses granted under current UK ETS rules for the 2026-2030 period.
+From 2031
+For applications for these statuses in the next period commencing in 2031, the UK has agreed to dynamically align to the EU’s rules for Article 27 (small installation) and 27a (very small installations) opt outs in the EU ETS Directive. The Authority intends to explore potential HSE and USE policy improvements within the implementation flexibility of the EU ETS Directive and will communicate any new requirements for HSE and USE status applications in advance of the next application window.
+Section 4: Next steps
+Implementation of the agreement
+The UK and EU are now working to implement this agreement and are aiming to operationalise the link by 1 January 2028.
+From this point, UK and EU allowances will be fungible. The first surrender deadline where UK and EU allowances can be used interchangeably across both schemes will be 30 September 2028, with respect to operators’ obligations for the 2027 compliance year. Free Allocation issuance in the UK ETS will also move to 30 June annually from 2028.
+A business change programme has been established to ensure all parties are ready and suitably supported for implementation to achieve the benefits of linking the schemes. Implementation work will involve:
+Making the necessary technical changes to the UK and EU registries to allow trading between UK and EU ETS allowances, including the use of eligible allowances across the two systems.
+Completing the necessary parliamentary and legislative steps to implement the agreement in the UK.
+Updating “Managing Your UK ETS” (METS), Authority and regulator guidance to reflect specific changes arising from this agreement.
+Onboarding new operators who have come into scope of UK ETS and supporting them to understand their obligations.
+Supporting existing operators to understand and prepare for changes to their compliance obligations.
+The UK will lay the necessary legislation to fully implement the ETS linking agreement. We will provide further details in due course.
+Stakeholder engagement and impact assessments
+UK stakeholders have provided extensive views and evidence on linking through the submission of position papers, correspondence, and participation in roundtables and meetings. We appreciate the extent and quality of these submissions which have helped inform the UK’s approach to these negotiations.
+We will continue to engage with stakeholders during the implementation period and will continue to provide updates where helpful.
+An impact assessment for the summit package will be published alongside the introduction of the European Partnership Bill and an impact assessment for the linking agreement specifically will be published alongside the secondary legislation.
+Wider UK ETS Authority consultations
+The linking agreement also delivers the outcomes of several wider UK ETS Authority consultations to which stakeholders have provided substantial input. This includes those on the impact of the end of aviation free allocation on regional connectivity, the inclusion of international maritime voyages, the treatment of Sustainable Aviation Fuel (SAF), non-pipeline transport (NPT) of CO2 for CCUS and UK ETS free allocation rules for hydrogen production. The UK ETS Authority will not publish a full response to these but will publish a summary of responses for each consultation in due course.
+On behalf of the UK ETS Authority, the UK government would like to thank stakeholders for the detailed information provided in their responses to these consultations.
+EU TNAC, or the Total Number of Allowances in Circulation, is the EU’s measure of the surplus of allowances in the EU ETS. In simple terms, it shows whether there are more allowances available in the EU carbon market than are currently needed for emissions. The EU uses this figure to decide whether its Market Stability Reserve should remove allowances from auctions or release allowances back into auctions. ↩
+ICE Futures Europe will remain as the appointed auction platform until the end of their contract, at which point a new auction platform would be appointed or ICE Futures Europe would be reappointed. ↩
+The UK will also not apply CORSIA where UK aeroplane operators conduct international flights currently in scope of the EU ETS and the Swiss ETS. The government will publish a full response to the consultation on implementing CORSIA in the UK, including a summary of responses and an accompanying impact assessment, before the end of this year. ↩
+This is based on an illustrative carbon price of £80. The actual value will depend on future UK ETS allowance prices. ↩
+A PSO is an arrangement by which the government protects a minimum level of air services on a particular route that is socially and economically vital for the regions it serves. Public service obligation: regional air connectivity protection - GOV.UK ↩
+See the Accreditation and Verification Regulation for further detail. ↩

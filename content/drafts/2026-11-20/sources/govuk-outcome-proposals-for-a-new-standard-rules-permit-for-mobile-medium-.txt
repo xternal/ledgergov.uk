@@ -1,0 +1,101 @@
+Proposals for a new standard rules permit for mobile medium combustion plant (MCP) which are boilers: summary of consultation responses
+Introduction
+The Environment Agency consulted to get feedback on a proposal to introduce a new standard rules permit in England for mobile MCP that are boilers. These are referred to as ‘mobile boilers’ in this document.
+The consultation was to help us decide:
+whether to introduce a new standard rules permit for mobile boilers
+how to design the permit, if it is introduced
+A standard rules permit allows operators to carry out activities if they can meet a fixed set of conditions. The proposal to introduce a standard rules permit would make regulations simpler and more consistent, while ensuring environmental risks are properly controlled.
+This consultation included proposals for:
+a new standard rules permit (SR2026 No 1) for mobile boilers, including a generic risk assessment and proposed charges
+how mobile boilers would be regulated and deployed
+This document:
+summarises the responses we received
+explains how we have considered and addressed the feedback
+explains what we will do next
+How we ran the consultation
+We ran the consultation for 11 weeks from 15 June 2026 to 30 August 2026. It was hosted on our consultation website. It was open to all stakeholders with an interest in mobile boiler deployments and their emissions to air.
+We ran the consultation in line with our legal requirements to consult following Cabinet Office’s consultation principles.
+We promoted the consultation through direct engagement with industry stakeholders, including operators, trade associations and public sector bodies. We also shared information through our existing networks and published details on GOV.UK to encourage broad participation.
+We asked respondents to provide feedback on the proposed new standard rule set for mobile boilers. They could send responses using the consultation website or by emailing a completed response form.
+We have reviewed and analysed all of the responses received within the consultation period.
+We received 9 responses in total:
+3 from operators of stationary boilers who hire mobile boilers
+2 from trade bodies whose members hire mobile boilers
+1 from a trade body whose members own mobile boilers
+1 from an individual member of the public
+1 from a consultancy
+1 from a supplier of combustion plant equipment
+Summary of the main findings and actions we will take
+General
+Most respondents supported the use of standard rules as a proportionate risk-based approach to regulating the environmental impacts from use of mobile boilers. Respondents recognised that using standard rules reduces the administrative burden of regulating low-risk activities.
+Some respondents proposed that existing permits for stationary boiler plant could be varied (changed) to allow the use of temporary boilers. This is because many boilers will be deployed at locations where there is an environmental permit for a stationary boiler. We think this would create a disproportionately high administrative burden to regularise this low-risk activity, as existing permits would need to be varied. It also would not resolve the obligations for operators of mobile boilers to hold a permit for deployments at non-regulated facilities.
+Companies who hire boilers may need different configurations at different times. Revising permits for all hire scenarios will be more challenging. We think the proposed standard rules will provide a more flexible framework for situations that meet the permit criteria for instant deployment.
+Who the operator is
+There was a clear split in responses between the users of mobile boilers and those who own them and hire them out to those users. Respondents referred to our RGN1 guidance when identifying the mobile boiler owner has limited influence over how they are operated once deployed. For example, they cited that they would not be able to control day-to-day operational practices such as:
+fuel type usage
+hours of operation
+load
+exact deployment location
+However, the user of the mobile boilers has no influence on:
+maintenance and condition of the boiler
+investment decisions to ensure compliance with emission limit values (ELVs)
+The owner is also better placed to carry out periodic emissions monitoring to ensure compliance with the ELVs before deployment. They will do this using our guidance Monitoring stack emissions: low risk MCPs and specified generators.
+We acknowledge that there are advantages and disadvantages for both scenarios of who the operator is. However, we think the owner has more control over the mobile plant than the hirer. While this puts the administrative burden on the owner of the plant, there are more benefits to this approach. This includes the Environment Agency being in a better position to support a small number of businesses with challenges relating to:
+permit applications
+habitat screening using the Simple Calculation of Atmospheric Impact Limits (SCAIL) assessment tool
+reporting requirements
+We think this approach would:
+enable us to centralise compliance
+allow for faster individual deployments to a location
+be less disruptive to the sector overall
+There was general agreement that a single permit for an operator’s fleet of mobile boilers would minimise administration, if the permit distinguished between individual plant. Respondents also said the permits would need to be updated easily, for example when adding or removing plant from their fleet.
+The proposed permit will enable individual plant to be identified readily. We propose that variations to the fleet will be handled as a compliance exercise rather than as permit variation applications.
+Assessment and deployment
+Most respondents agreed in principle that a 2-stage assessment approach was appropriate and proportionate, in line with existing approaches to permitting MCP.
+Some respondents asked who would be best placed to carry out the screening assessment, as:
+the owner of the boiler is more aware of the input parameters required to complete a SCAIL assessment, such as emission rate, stack dimensions and gas velocity, and temperature
+the hirer would be more aware of location and operating conditions
+We propose that the SCAIL assessment can be completed by either party involved in hiring the boiler – separately or together. The assessment must be supported by evidence. The permit holder must maintain these records and make them available to the hirer if requested. We propose to make this part of the permit conditions.
+Respondents also raised concerns that introducing the SCAIL assessment will require both owners and hirers of mobile boilers to become familiar with the screening tool. They asked for examples of how to complete a screening exercise. The Environment Agency will provide support to develop knowledge of the tool as the proposed approach is established. As permits will be held by owners of the fleet, we think there will be a smaller number of permit holders. This will consolidate knowledge, and reduce complexity and burden on businesses hiring the boilers.
+Some respondents suggested using the SCAIL habitat screening tool to justify extending mobile boilers deployments beyond the time limits in the permit conditions. We will change the permit conditions to allow extensions under certain circumstances, if agreed with us. For example, if the screening tool confirms there is no significant impact to receptors. This also addresses concerns raised about needing a flexible escalation route if the standard rules criteria cannot be met for specific deployments, but a temporary deployment remains necessary. If a stationary permit is required, it still may meet the criteria for stationary standard rules. It does not automatically mean that complex air dispersion modelling is required.
+One respondent raised concerns that existing boilers may not be suitable for deployment at every location where they may be needed. Our proposed approach intends to allow deployment of mobile boilers to locations without needing our approval first, in most situations.
+Several respondents said mobile boilers deployed in emergencies, such as outages or equipment failure, may not pass the initial screening. If detailed modelling is required, there may not be enough time to complete it before the boiler is needed. We will change the permit to allow like-for-like deployments to regulated facilities without assessment. We will also change the deployment criteria to allow mobile boilers to permanently replace operational combustion capacity at regulated facilities with our written agreement.
+One respondent questioned the basis for:
+the separate habitats screening distances for aggregated mobile boilers
+the restrictions to maximum numbers of deployed units
+The screening distances are based on technically and scientifically justified screening criteria, in line with our approach to standard rules for new combustion activities.
+Most respondents said the proposed time limits for deploying temporary boilers during inspection of stationary boiler plant were impractical and would unnecessarily restrict their legitimate use. We think the 3 permitted deployment scenarios in the permit cover deployments regardless of their purpose. We have removed the specific maximum time limit for deployments to cover statutory inspection of stationary boilers from the standard rules conditions.
+Conditions
+There was some concern that the proposed approach would limit the deployment of boilers as they are currently used. Respondents mentioned stack height restrictions, prohibition of caps and cowls, and maximum deployment times. We have reviewed these requirements and decided to change the following limitations:
+allow horizontal stacks and caps and cowls where needed
+allow deviation from minimum stack heights when replacing capacity of stationary combustion plant at a regulated facility
+incorporated a clause to allow extension of deployments through agreement in writing
+Almost all respondents said the standard rules permit would be improved by including other fuel types. Of the fuels suggested, we will include the option to use hydrogen and liquefied petroleum gas (LPG). Other fuels suggested included biogas, biomass and heavy fuel oil, which will require new screening distances to be calculated. In future, we may consult separately with the operators of mobile boilers about whether it is appropriate to use fuels such as biogas in their appliances.
+One respondent raised concerns that existing boilers may not comply with the emission limits in the permit. These proposals are part of the staged implementation of the Medium Combustion Plant Directive (MCPD) requirements, which apply to mobile boilers. The emission limits have been published for some time and the regulations provide transitional periods for existing plant. The requirements apply to existing MCPs above 5MWth (megawatt thermal) from 1 January 2025. Smaller existing boilers have until 1 January 2030 to comply.
+A few respondents asked why some environmental risks were not identified in the generic risk assessment. For example, risks from storage of oils and liquid fuels, and water emissions from boiler blowdown. This is because the requirements for permitting MCP under the Environmental Permitting (England and Wales) Regulations 2016 are derived from the requirements of the MCPD, which concerns emissions to air from combustion only. Operators of MCPs that are directly associated to an activity that is subject to the Industrial Emissions Directive need to consider wider environmental risks. This requirement is captured under the deployment scenario, allowing mobile MCP to be deployed as a like-for-like replacement for currently permitted stationary combustion plant at a regulated facility.
+We will also update the generic risk assessment and interpretation section of the standard rules to improve clarity in line with respondents’ comments.
+Several respondents raised the issue of cross-border deployments of mobile boilers within the UK. Under the Environmental Permitting (England and Wales) Regulations 2016, the Environment Agency regulates mobile plant operated by businesses whose principal registered place of business is in England. As the regulations only apply in England and Wales, use of mobile boiler plant in Scotland and Northern Ireland is not within our remit. Should other environmental regulators develop an approach to permitting mobile boilers, we will discuss options for reducing regulatory burden where possible.
+We propose to develop detailed guidance specific to the regulation of mobile boilers and will clarify cross-border deployment requirements within it.
+Charges and economic impact
+Most respondents wanted more clarity about what the subsistence charges would cover. Some said the charge must be proportionate, noting that the costs for permitting would be passed down the supply chain. For subsistence charges, the consultation indicated that we would take an audit-based approach to compliance. This may require travel to registered operator’s premises while we embed the new permitting approach. We anticipate the need to:
+check how SCAIL is being applied
+check how monitoring is carried out
+audit a proportion of deployments against the permit conditions as part of annual compliance checks
+We may be able to carry out subsequent compliance activity remotely. We will look to reduce charges if they are no longer proportionate. We will work closely with operators as we implement the requirements of the directive to mobile boilers.
+Respondents supported 2-tier application charges, which are based on the difference of regulatory effort needed to permit boiler fleets of different sizes. We propose to implement the charges as detailed in the consultation.
+Regulation of mobile generators
+Several respondents who hire mobile generators identified inconsistencies in the regulation of mobile generators above and below 1 MWth, both on and off regulated facilities. We will consider developing a standard rules that would allow the use of temporary generation plant in a similar manner to this approach for mobile boilers. In the meantime we will look to clarify the regulation of some temporary generation plant in guidance.
+Next steps
+We will consider these consultation responses when we further develop the new standard rule set for mobile boilers.
+We aim to publish the new standard rule set along with updated application forms by 1 April 2027. We will aim to develop and publish specific guidance on the regulation of mobile boilers on GOV.UK at the same time.
+If you want to discuss your consultation response or the points made within this document, contact combustion@environment-agency.gov.uk.
+List of respondents
+Weishaupt UK Ltd
+NFU Energy Ltd
+Combustion Engineering Association (CEA), representing owners of mobile boiler plant
+United Utilities Water
+Agricultural Industries Confederation
+Joint Environment Programme (JEP), a co-funded programme of research into the environmental impacts of electricity generation
+Thames Water Utilities Limited
+Speciality Steel
+a private individual

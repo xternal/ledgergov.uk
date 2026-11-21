@@ -1,0 +1,81 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-k.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-20"
+source:
+  id: govuk-costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-k
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-keep-prices-down-and-create-opportunities-for-young-people-worth-up-to-17-billion-per-year
+  title: >-
+    'Costs cut': Prime Minister secures deal with EU to cut costs, keep prices down and create
+    opportunities for young people worth up to £17 billion per year
+  date: "2026-11-20"
+  venue_label: Press release (Prime Minister's Office, 10 Downing Street)
+quote: >-
+  Linking the UK and EU’s emissions trading schemes creates the world’s largest linked carbon
+  market. It will exempt £6.5 billion of British exports, including steel and aluminium, from the
+  EU’s Carbon Border Adjustment Mechanism (CBAM), removing a major post-Brexit barrier to trade.
+source_span: [3093, 3375]
+speaker:
+  name: HM Government
+  role: Prime Minister's Office, 10 Downing Street
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: economic_affairs
+  who: British exporters, including steel and aluminium producers
+  how_much: £6.5 billion of British exports exempted
+  when: null
+  funded_by: null
+  deadline: null
+why: >-
+  The UK and EU emissions trading schemes will be linked, exempting British exports such as steel
+  and aluminium from the EU's Carbon Border Adjustment Mechanism.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      Under the deal, Export Health Certificates – which can cost up to £200 each – will be
+      scrapped. Fresh produce will reach supermarket shelves faster, with less waste and lower
+      costs.
+    source_span: [2251, 2432]
+    suggested:
+      policy_area: economic_affairs
+      who: British food, farming and plant producers and exporters
+      how_much: null
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      Under the UK-EU food and drink deal, Export Health Certificates for food, farming and plant
+      products moving between Britain and the EU will be abolished.
+    confidence: 0.75
+  - quote: >-
+      Restoring opportunities lost to a generation of young people, a new Youth Experience Scheme
+      will allow those aged 18 to 31 to live, work, study, and travel in Europe for up to three
+      years. There will be no need for a job offer, and no language or salary requirements.
+    source_span: [3519, 3786]
+    suggested:
+      policy_area: economic_affairs
+      who: Young people aged 18 to 31 in the UK and EU
+      how_much: null
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      A new reciprocal Youth Experience Scheme will let 18 to 31-year-olds live, work, study and
+      travel in the EU for up to three years without needing a job offer or meeting language or
+      salary requirements.
+    confidence: 0.8
+confidence: 0.7
+model: claude-opus-5-5
+status: to_review

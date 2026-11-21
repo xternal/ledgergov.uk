@@ -1,0 +1,25 @@
+New AI guidance to cut paperwork and free more time for care
+First ever cross-sector guidance on the use of artificial intelligence in children’s and adult social care published
+Clear guidelines set out how more social care services and providers can make best use of artificial intelligence
+AI will slash administrative burden on staff and improve the quality of care
+AI can free up care staff to spend more time supporting people and families by cutting paperwork and making everyday tasks quicker and easier. From transcribing and summarising case notes to translating information, searching complex case histories and identifying gaps in support, AI tools can help staff plan and deliver better care while making services easier for people to understand and access.
+A pilot in Swindon Borough Council’s adult social care found that using an AI tool to support social workers delivered a 63% reduction in administrative time, enabling them to spend more time to caring for people. It also slashed the average time taken to complete a Care Act assessment conversation from 1.5 hours to just 30 minutes, and the time to write up assessments from 4 hours to just 1.5 hours.
+The tool has been particularly beneficial for colleagues with visual impairments and those where English is not their first language.
+Minister of State for Social Care and Mental Health Alison McGovern said:
+The administrative load and endless paperwork in social care can all too often take the focus away from patients. By harnessing the power of AI, we can shift that focus right back on what matters most, caring.
+Whether it’s giving carers back more time to look after people or using translation to make sure that they understand patients’ needs or simply transcribing interactions to cut paperwork – the national guidance will clearly set out how providers can best adopt AI to improve the care patients receive.
+Children and Families Minister, Josh MacAlister, said:
+The best children’s social work is built on relationships. No technology can replace the knowledge and skill of a brilliant social worker, but by taking away some of the admin, AI can free them up to put those skills where they matter most.
+That means more time listening to children, working with families and making sure every child gets the support and protection they need.
+Staff at Peterborough council developed a bespoke AI assistant called Hey Geraldine which utilised the knowledge of an experienced occupational therapist to provide instant guidance to staff. Hey Geraldine answered over 1,200 questions and saved around 15 minutes per interaction.
+The guidance supports the safe and responsible adoption of AI as a single national reference point for leaders, practitioners and sector organisations. It sets out key principles on governance, accountability, data protection and professional oversight, alongside practical advice.
+This will lead to better consistency in how AI is adopted across the sector, reducing variation in approach and increasing confidence amongst leaders and practitioners. At an organisational level, the guidance will support local authorities and providers to make informed decisions about AI adoption.
+Sara McClinton, Chief Social Worker at the Department of Health and Social Care said:
+AI offers a significant opportunity to improve outcomes in adult social care, supporting a more efficient, responsive and person-centred system.
+By helping to reduce administrative burden and making it easier for practitioners to access and use information, AI-enabled tools can free up valuable time to focus on what matters most: supporting people to live independent, fulfilling lives.
+This guidance will help the sector embrace these opportunities safely, responsibly and with confidence.
+Isabelle Trowler, Chief Social Worker at the Department for Education said:
+This is an important step towards the safe use of AI in social care, recognising its potential while keeping practitioners and their professional judgement central. Organisations must take responsibility for governing, implementing and supporting its use.
+I welcome departments working together with practitioners, social care organisations, and sector partners: no single profession, organisation or part of government can answer these questions alone.
+To further support the digital revolution, 4 in 5 care providers are now using digital social care records, helping almost 90% of people who draw on care. This is delivering millions more caring hours in a boost to productivity and efficiency, cutting paper records, repeated conversations, errors and inaccuracies.
+The government aims for all care providers to be fully digitised by the end of this Parliament.
