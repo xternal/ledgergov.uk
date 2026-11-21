@@ -12,7 +12,7 @@
         "publisher": "HM Treasury",
         "url": "https://www.gov.uk/government/collections/public-expenditure-statistical-analyses-pesa",
         "licence": "OGL v3",
-        "published_on": "2026-07-16"
+        "published_on": "2026-11-18"
       },
       {
         "id": "obr_efo",
@@ -66,7 +66,7 @@
     "income_taxpayers_m": 40.8,
     "population_m": 69.484,
     "baseline_psnb_bn": {
-      "2025-26": 134.211,
+      "2025-26": 134.327,
       "2026-27": 133.196,
       "2027-28": 111.98,
       "2028-29": 99.536,
@@ -76,7 +76,7 @@
     },
     "baseline_nominal_growth_pct": 3.629,
     "baseline_psnd_pct_gdp": {
-      "2025-26": 93.2,
+      "2025-26": 93.0,
       "2026-27": 95.505,
       "2027-28": 96.7,
       "2028-29": 97.285,
