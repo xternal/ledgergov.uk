@@ -1,0 +1,72 @@
+format: openpromises/1
+id: uk-leasehold-reserve-funds-2026
+headline:
+  en: "Make leasehold reserve funds mandatory"
+actor_id: matthew-pennycook
+made_on: "2026-11-19"
+venue: parliament
+venue_label:
+  en: >-
+    Written ministerial statement
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    Announced as the Commonhold and Leasehold Reform Bill was introduced on 19 November 2026. The
+    government response to the consultation says the duty will sit in that Bill and be phased in
+    over a number of years, alongside mandatory asset management plans. No start date is given. The
+    card moves when the Bill passes and when the duty is in force.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS492, 19 Nov 2026: Commonhold and Leasehold Reform Bill
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-19/HCWS492
+  - title: >-
+      Ministry of Housing, Communities and Local Government, 19 Nov 2026: Government response to the
+      Strengthening leaseholder protections over charges and services consultation: further service
+      charge measures
+    url: https://www.gov.uk/government/consultations/strengthening-leaseholder-protections-over-charges-and-services-consultation/outcome/government-response-to-the-strengthening-leaseholder-protections-over-charges-and-services-consultation-further-service-charge-measures
+  - title: >-
+      Ministry of Housing, Communities and Local Government, 19 Nov 2026: Commonhold and Leasehold
+      Reform Bill: government response to pre-legislative scrutiny by the Housing, Communities and
+      Local Government Select Committee
+    url: https://www.gov.uk/government/publications/commonhold-and-leasehold-reform-bill-government-response-to-pre-legislative-scrutiny-report/commonhold-and-leasehold-reform-bill-government-response-to-pre-legislative-scrutiny-by-the-housing-communities-and-local-government-select-committe
+versions:
+  - version: 1
+    text: >-
+      We will legislate to make reserve funds mandatory with a view to reducing the risk of large,
+      unaffordable one-off bills for leaseholders and to support the timely delivery of important
+      works.
+    recorded_on: "2026-11-19"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-19/HCWS492
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Leaseholders, and the landlords who collect their service charges
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          Not stated
+      funded_by: null
+events:
+  - date: "2026-11-19"
+    type: promised
+    text:
+      en: >-
+        The housing minister says the government will legislate to make reserve funds mandatory for
+        leasehold buildings
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

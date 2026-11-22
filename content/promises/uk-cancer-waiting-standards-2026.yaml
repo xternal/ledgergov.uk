@@ -1,0 +1,61 @@
+format: openpromises/1
+id: uk-cancer-waiting-standards-2026
+headline:
+  en: "Meet cancer waiting time standards"
+actor_id: hm-government
+made_on: "2026-11-19"
+venue: press_release
+venue_label:
+  en: >-
+    Policy paper (Department of Health and Social Care): Men's Health Strategy one year on
+area: health
+status: promised
+status_note:
+  en: >-
+    One of three ambitions of the National Cancer Plan, published in February 2026, restated in this
+    report. A reformed National Cancer Board, which first met in September 2026, is accountable for
+    it, and an annual report on the plan is due in 2027. No date is given for the end of this
+    Parliament, so the card has no deadline. The card moves with the monthly cancer waiting times
+    statistics.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department of Health and Social Care, 19 Nov 2026: Men's Health Strategy: one year on report
+    url: https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report
+versions:
+  - version: 1
+    text: >-
+      we will meet the cancer waiting time standards by the end of this Parliament
+    recorded_on: "2026-11-19"
+    source_url: https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          People in England waiting for cancer diagnosis and treatment
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          By the end of this Parliament
+      funded_by: null
+events:
+  - date: "2026-11-19"
+    type: promised
+    text:
+      en: >-
+        The government restates its National Cancer Plan ambition to meet the cancer waiting time
+        standards by the end of this Parliament
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
