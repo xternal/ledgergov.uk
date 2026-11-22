@@ -1582,5 +1582,47 @@
     "url": "https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements",
     "checked_on": "2026-11-22",
     "sha256": "f8c7eeba1ae81dcfa4cc3556144898a2d197f3c87dd6fecae381c3078082dc27"
+  },
+  "3b08bc517a6be473278351752657f71e1d4833e5198c4e3f96360ff6571e1afd|https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer",
+    "checked_on": "2026-11-22",
+    "sha256": "2fb906b251519f7185174535a2fe2735ee9c273025669c714f2d20a0d3c30d0f"
+  },
+  "3be6a3405a798bdf4644814d94385c2c12913a14bb6796ea4331c2e5529cfbc9|https://www.gov.uk/government/news/grants-up-to-45-million-boost-uk-growth-as-ministry-of-defence-funds-national-munitions-production": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/grants-up-to-45-million-boost-uk-growth-as-ministry-of-defence-funds-national-munitions-production",
+    "checked_on": "2026-11-22",
+    "sha256": "b794ef5b73b55372cca023d40d5d3e049f275c0ac149db2a652f9423167c8a53"
+  },
+  "6f7bcffbf245d8faf3f747f3642d6966a947d7f44068450072d95a4c3b02bb14|https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer",
+    "checked_on": "2026-11-22",
+    "sha256": "2fb906b251519f7185174535a2fe2735ee9c273025669c714f2d20a0d3c30d0f"
+  },
+  "8d8e4debe97343ac20b9999b66869bf8c8048b7e37507e52acd49365e71ae602|https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer",
+    "checked_on": "2026-11-22",
+    "sha256": "2fb906b251519f7185174535a2fe2735ee9c273025669c714f2d20a0d3c30d0f"
+  },
+  "d4731fd0963c3ea86cc250fb6743e2bb093555f4727fc46e1425f033e3d8d7fb|https://www.gov.uk/government/news/costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-keep-prices-down-and-create-opportunities-for-young-people-worth-up-to-17-billion-per-year": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-keep-prices-down-and-create-opportunities-for-young-people-worth-up-to-17-billion-per-year",
+    "checked_on": "2026-11-22",
+    "sha256": "b2113dc598896c361fb7660d51dea4bd1244d30ff93774c5313662ad1094a745"
+  },
+  "dd53f760c9a256abcfc28e536e3c61531cfaae56f184b808cdfc60c9570a2a94|https://www.gov.uk/government/news/costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-keep-prices-down-and-create-opportunities-for-young-people-worth-up-to-17-billion-per-year": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-keep-prices-down-and-create-opportunities-for-young-people-worth-up-to-17-billion-per-year",
+    "checked_on": "2026-11-22",
+    "sha256": "b2113dc598896c361fb7660d51dea4bd1244d30ff93774c5313662ad1094a745"
+  },
+  "f90d543e6c11552bacb45f9dda12dbc58d14148af1088fd513b92e8c8a40b3ce|https://www.gov.uk/government/news/new-ai-guidance-to-cut-paperwork-and-free-more-time-for-care": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/new-ai-guidance-to-cut-paperwork-and-free-more-time-for-care",
+    "checked_on": "2026-11-22",
+    "sha256": "a01426122a336cc16243cc92145a45e3458f2916b8f07f2f342c3b356368e10f"
   }
 }

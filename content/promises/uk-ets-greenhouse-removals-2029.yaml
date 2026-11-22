@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-ets-greenhouse-removals-2029
+headline:
+  en: "Greenhouse gas removals in the UK ETS"
+actor_id: hm-government
+made_on: "2026-11-20"
+venue: press_release
+venue_label:
+  en: >-
+    Policy paper (Department for Energy Security and Net Zero): UK-EU ETS linking agreement
+    explainer
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    A restatement: the UK set out its proposed market design in July 2025. Eligible removal
+    operators would get UK ETS allowances once a removal is verified, and the linking agreement lets
+    the UK do this before the EU. Neither side has legislated yet, and the explainer says an updated
+    market design will follow as soon as possible. The card moves when the rules are made.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Energy Security and Net Zero, 20 Nov 2026: UK-EU ETS linking agreement:
+      explainer
+    url: https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer
+versions:
+  - version: 1
+    text: >-
+      The UK retains its stated intention to integrate GGRs in the UK ETS by the end of 2029.
+    recorded_on: "2026-11-20"
+    source_url: https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Companies that remove greenhouse gases from the atmosphere, and businesses in the UK
+          Emissions Trading Scheme
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          By the end of 2029
+      deadline: "2029-12-31"
+      funded_by: null
+events:
+  - date: "2026-11-20"
+    type: promised
+    text:
+      en: >-
+        The government restates its intention to bring greenhouse gas removals into the UK Emissions
+        Trading Scheme by the end of 2029
+  - date: "2029-12-31"
+    type: deadline
+    text:
+      en: >-
+        Greenhouse gas removals due to be integrated into the UK Emissions Trading Scheme
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
