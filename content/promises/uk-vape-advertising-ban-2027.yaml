@@ -1,0 +1,66 @@
+format: openpromises/1
+id: uk-vape-advertising-ban-2027
+headline:
+  en: "Ban vape and nicotine advertising"
+actor_id: hm-government
+made_on: "2026-11-19"
+venue: press_release
+venue_label:
+  en: >-
+    Policy paper (Department of Health and Social Care): Men's Health Strategy one year on
+area: health
+status: promised
+status_note:
+  en: >-
+    The report also says a consultation on the packaging, device appearance and display of vapes
+    closed on 2 October 2026, with final plans to follow. It does not name the law the ban will use.
+    The card moves when the regulations are made and in force.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department of Health and Social Care, 19 Nov 2026: Men's Health Strategy: one year on report
+    url: https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report
+versions:
+  - version: 1
+    text: >-
+      We also intend to ban the advertising and sponsorship of vapes and nicotine products from 1
+      June 2027.
+    recorded_on: "2026-11-19"
+    source_url: https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Children and young people, and the firms that advertise vapes and nicotine products
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          From 1 June 2027
+      deadline: "2027-06-01"
+      funded_by: null
+events:
+  - date: "2026-11-19"
+    type: promised
+    text:
+      en: >-
+        The government says it intends to ban the advertising and sponsorship of vapes and nicotine
+        products from 1 June 2027
+  - date: "2027-06-01"
+    type: deadline
+    text:
+      en: >-
+        Ban on vape and nicotine advertising and sponsorship due to start
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

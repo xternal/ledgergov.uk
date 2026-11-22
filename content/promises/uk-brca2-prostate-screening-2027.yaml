@@ -1,0 +1,67 @@
+format: openpromises/1
+id: uk-brca2-prostate-screening-2027
+headline:
+  en: "Prostate cancer screening for BRCA2 carriers"
+actor_id: hm-government
+made_on: "2026-11-19"
+venue: press_release
+venue_label:
+  en: >-
+    Policy paper (Department of Health and Social Care): Men's Health Strategy one year on
+area: health
+status: promised
+status_note:
+  en: >-
+    The government decided in June 2026 to introduce the programme, after considering evidence from
+    the UK National Screening Committee and patient groups; men who qualify are to be tested every
+    two years. The report gives no cost. "In 2027" is read as by the end of 2027. The card moves
+    when the first invitations go out.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department of Health and Social Care, 19 Nov 2026: Men's Health Strategy: one year on report
+    url: https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report
+versions:
+  - version: 1
+    text: >-
+      The targeted screening programme will be implemented in 2027.
+    recorded_on: "2026-11-19"
+    source_url: https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Men aged 45 to 61 with a BRCA2 gene variant and a family history of pancreatic, prostate,
+          breast or ovarian cancer
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          In 2027
+      deadline: "2027-12-31"
+      funded_by: null
+events:
+  - date: "2026-11-19"
+    type: promised
+    text:
+      en: >-
+        The government says England’s first targeted prostate cancer screening programme will be
+        implemented in 2027
+  - date: "2027-12-31"
+    type: deadline
+    text:
+      en: >-
+        Targeted prostate cancer screening due to be in place
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
