@@ -5,7 +5,7 @@ on:
     # 04:30 UTC every day (05:30 BST, 04:30 GMT in winter)
     - cron: "30 4 * * *"
     # And 07:30 UTC (08:30 BST, 07:30 GMT): ONS and OBR publish at 07:00 UK time, so a release reaches its data
-    # pull request the same morning. A second run the same day updates that day's branch and pull request.
+    # pull request the same morning. Every run updates the one standing data branch and pull request.
     - cron: "30 7 * * *"
   workflow_dispatch:
 
@@ -56,12 +56,23 @@ jobs:
             echo "No data changes."
             exit 0
           fi
-          branch="data/refresh-$(date -u +%Y-%m-%d)"
+          # One standing branch and pull request: each run rebuilds it from main as it is now, so the newest data
+          # replaces the last night's instead of opening another pull request (and another Vercel preview).
+          # Merging it (and deleting the branch) lets the next change open a fresh one.
+          branch="data/refresh"
+          today=$(date -u +%Y-%m-%d)
+          title="Data refresh (latest $today)"
           git config user.name "public-ledger-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -c "$branch"
           git add data/build content/promises
-          git commit -m "Data refresh $(date -u +%Y-%m-%d)"
-          git push --force-with-lease origin "$branch"
+          git commit -m "Data refresh $today"
+          # Only the bot's own data branch is overwritten, never main.
+          git push --force origin "HEAD:refs/heads/$branch"
           summary=$(python -m etl.summary)
-          gh pr create --base main --head "$branch" --title "Data refresh $(date -u +%Y-%m-%d)" --body "$summary" || gh pr edit "$branch" --body "$summary"
+          num=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$num" ]; then
+            gh pr edit "$num" --title "$title" --body "$summary"
+          else
+            gh pr create --base main --head "$branch" --title "$title" --body "$summary"
+          fi
