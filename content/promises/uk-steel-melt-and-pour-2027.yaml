@@ -1,0 +1,72 @@
+format: openpromises/1
+id: uk-steel-melt-and-pour-2027
+headline:
+  en: "Steel importers to report melt and pour"
+actor_id: blair-mcdougall
+made_on: "2026-11-16"
+venue: parliament
+venue_label:
+  en: >-
+    Written ministerial statement
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The statement, made in the Commons on behalf of the Minister of State for Trade, Lord Sarwar,
+    says importers will have to declare the country where their steel was first melted and poured
+    and keep evidence for HM Revenue and Customs. It is for data gathering and does not itself
+    change tariffs, quotas or rules of origin; consignments under £2,000 are exempt. The card moves
+    when the reporting rules are in force.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS474, 16 Nov 2026: Melt and Pour Reporting Requirement for
+      Steel
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-16/HCWS474
+versions:
+  - version: 1
+    text: >-
+      Today, I am announcing that the Government will introduce a melt and pour reporting
+      requirement for steel products within the scope of the UK’s steel trade measure. The
+      requirement will begin on a voluntary basis from 1 April 2027 and become mandatory from 1 July
+      2027.
+    recorded_on: "2026-11-16"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-16/HCWS474
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Importers of steel products covered by the UK’s steel trade measure; consignments under
+          £2,000 are exempt
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          Voluntary from 1 April 2027, mandatory from 1 July 2027
+      deadline: "2027-07-01"
+      funded_by: null
+events:
+  - date: "2026-11-16"
+    type: promised
+    text:
+      en: >-
+        The government announces a melt and pour reporting requirement for imported steel, voluntary
+        from April 2027 and mandatory from July 2027
+  - date: "2027-07-01"
+    type: deadline
+    text:
+      en: >-
+        Melt and pour reporting for imported steel due to become mandatory
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

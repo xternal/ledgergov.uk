@@ -623,6 +623,12 @@
     "checked_on": "2026-11-01",
     "sha256": "f40706c42dd5fa8eb0e1fbf7e1bc517878cf458abf760568c5a7eedce3e451ee"
   },
+  "6b33a959b7efd6d351ab7128e0cf4fc41c8bc0e357ca336e32912d42cb64c275|https://www.gov.uk/government/news/government-commits-to-safeguard-face-to-face-banking": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/government-commits-to-safeguard-face-to-face-banking",
+    "checked_on": "2026-11-22",
+    "sha256": "225a893138394952ffd85738f5eec3dc64cd416b308499d2ec758d16bc05fb7b"
+  },
   "6b68752faf8e16e51d3045755be9999eea0d2cb37f5f102baca38998ff99f1a7|https://www.gov.uk/government/news/one-million-more-scans-to-help-catch-cancer-sooner": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/one-million-more-scans-to-help-catch-cancer-sooner",
@@ -1432,6 +1438,12 @@
     "url": "https://www.gov.uk/government/speeches/pm-speech-on-making-2023-the-first-year-of-a-new-and-better-future-4-january-2023",
     "checked_on": "2026-10-20",
     "sha256": "bfd72905eb5de7945125ec6ab889eb1ae2502aa5b2bdb4cfe08771d62391338c"
+  },
+  "fbfb211a6a2cc53bdded85cce1e27de0edec7125a8025d67feee3618c0c4ed78|https://questions-statements.parliament.uk/written-statements/detail/2026-11-16/HCWS474": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-11-16/HCWS474",
+    "checked_on": "2026-11-22",
+    "sha256": "152104cff8699116c22a7268a9c1b7d6802b723ca90973baed0418cacb6b4bb7"
   },
   "fc219ae43e8cc6c96ac865be4ba085f26df0056a8cfb6eecc5c573a0a68981cd|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354": {
     "match": "exact",
