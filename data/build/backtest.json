@@ -6,27 +6,27 @@
     },
     {
       "source_id": "ons_psf",
-      "vintage": "PSF-2026-10"
+      "vintage": "PSF-2026-11"
     }
   ],
   "results": [
     {
       "forecast_id": "obr:EFO-2026-03:fiscal.psnb:2025-26",
-      "outturn": 134.211,
+      "outturn": 134.327,
       "outturn_source_id": "ons_psf",
-      "outturn_vintage": "PSF-2026-10",
+      "outturn_vintage": "PSF-2026-11",
       "outturn_quality": "sourced",
       "result": "miss_above",
-      "miss": 1.476,
-      "miss_pct": 1.11,
-      "error": 1.476,
-      "error_pct": 1.11
+      "miss": 1.592,
+      "miss_pct": 1.2,
+      "error": 1.592,
+      "error_pct": 1.2
     },
     {
       "forecast_id": "obr:EFO-2026-03:fiscal.psnd:2025-26",
       "outturn": 2916.8,
       "outturn_source_id": "ons_psf",
-      "outturn_vintage": "PSF-2026-10",
+      "outturn_vintage": "PSF-2026-11",
       "outturn_quality": "sourced",
       "result": "miss_below",
       "miss": 5.507,
@@ -36,33 +36,33 @@
     },
     {
       "forecast_id": "obr:EFO-2026-03:fiscal.psnd_pct_gdp:2025-26",
-      "outturn": 93.2,
+      "outturn": 93.0,
       "outturn_source_id": "ons_psf",
-      "outturn_vintage": "PSF-2026-10",
+      "outturn_vintage": "PSF-2026-11",
       "outturn_quality": "sourced",
       "result": "miss_below",
-      "miss": 1.11,
-      "miss_pct": 1.18,
-      "error": -1.11,
-      "error_pct": -1.18
+      "miss": 1.31,
+      "miss_pct": 1.39,
+      "error": -1.31,
+      "error_pct": -1.39
     },
     {
       "forecast_id": "obr:EFO-2026-03:receipts.total:2025-26",
-      "outturn": 1231.387,
+      "outturn": 1231.271,
       "outturn_source_id": "ons_psf",
-      "outturn_vintage": "PSF-2026-10",
+      "outturn_vintage": "PSF-2026-11",
       "outturn_quality": "sourced",
       "result": "miss_below",
-      "miss": 3.866,
-      "miss_pct": 0.31,
-      "error": -3.866,
-      "error_pct": -0.31
+      "miss": 3.982,
+      "miss_pct": 0.32,
+      "error": -3.982,
+      "error_pct": -0.32
     },
     {
       "forecast_id": "obr:EFO-2026-03:spending.debt_interest:2025-26",
       "outturn": 108.632,
       "outturn_source_id": "ons_psf",
-      "outturn_vintage": "PSF-2026-10",
+      "outturn_vintage": "PSF-2026-11",
       "outturn_quality": "approx",
       "result": "miss_below",
       "miss": 1.05,
@@ -74,7 +74,7 @@
       "forecast_id": "obr:EFO-2026-03:spending.tme:2025-26",
       "outturn": 1365.598,
       "outturn_source_id": "ons_psf",
-      "outturn_vintage": "PSF-2026-10",
+      "outturn_vintage": "PSF-2026-11",
       "outturn_quality": "sourced",
       "result": "miss_below",
       "miss": 2.39,
