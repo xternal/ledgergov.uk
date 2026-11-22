@@ -305,11 +305,23 @@
     "checked_on": "2026-10-18",
     "sha256": "e6f59989d21ce10712c6ae4f7a856c5e96d81fd4eb1b5a28601225a907486412"
   },
+  "3b08bc517a6be473278351752657f71e1d4833e5198c4e3f96360ff6571e1afd|https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer",
+    "checked_on": "2026-11-22",
+    "sha256": "2fb906b251519f7185174535a2fe2735ee9c273025669c714f2d20a0d3c30d0f"
+  },
   "3b765ee816538508e948a7720ae4db9f88273c43c6dd2b213d5ee25a30ca8009|https://www.gov.uk/government/news/victims-of-abuse-to-be-better-supported-by-their-community": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/victims-of-abuse-to-be-better-supported-by-their-community",
     "checked_on": "2026-10-18",
     "sha256": "f7969dca22801a78931a28106c84fcf9ace97d05d0e9416567d825a2ffa2fdee"
+  },
+  "3be6a3405a798bdf4644814d94385c2c12913a14bb6796ea4331c2e5529cfbc9|https://www.gov.uk/government/news/grants-up-to-45-million-boost-uk-growth-as-ministry-of-defence-funds-national-munitions-production": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/grants-up-to-45-million-boost-uk-growth-as-ministry-of-defence-funds-national-munitions-production",
+    "checked_on": "2026-11-22",
+    "sha256": "b794ef5b73b55372cca023d40d5d3e049f275c0ac149db2a652f9423167c8a53"
   },
   "3ec3e9e6cf22a013fe9950908137a188a92644b5eb0152bc8417f8453cf7c1f9|https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal": {
     "match": "exact",
@@ -629,6 +641,12 @@
     "checked_on": "2026-11-08",
     "sha256": "bb2e96afda77c40d448bd425194f427a8fc49be10ec118f9f2b37650a446950d"
   },
+  "6f7bcffbf245d8faf3f747f3642d6966a947d7f44068450072d95a4c3b02bb14|https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer",
+    "checked_on": "2026-11-22",
+    "sha256": "2fb906b251519f7185174535a2fe2735ee9c273025669c714f2d20a0d3c30d0f"
+  },
   "704d2801840a73e7ca32a980ee2a921687c6fb2a33f342ee7f2c7457899366b8|https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky",
@@ -796,6 +814,12 @@
     "url": "https://www.gov.uk/government/news/prime-minister-to-create-smokefree-generation-by-ending-cigarette-sales-to-those-born-on-or-after-1-january-2009",
     "checked_on": "2026-10-20",
     "sha256": "12ce778db5289a4d1689197aea05d42d4f0a1bab4858cea36d71cd2115a9b551"
+  },
+  "8d8e4debe97343ac20b9999b66869bf8c8048b7e37507e52acd49365e71ae602|https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer",
+    "checked_on": "2026-11-22",
+    "sha256": "2fb906b251519f7185174535a2fe2735ee9c273025669c714f2d20a0d3c30d0f"
   },
   "8df3ba3c7c29374e3b5cc93d1ba7a63ffb6870d0ccd429d9f20faa0be4623811|https://www.gov.uk/government/news/investigation-into-illegal-waste-dumping-in-yorkshire-town": {
     "match": "exact",
@@ -1247,6 +1271,12 @@
     "checked_on": "2026-10-16",
     "sha256": "90916311816a040a9ea9c33ba04bbb172a506c1e6819c72f6b141949677ca6b3"
   },
+  "d4731fd0963c3ea86cc250fb6743e2bb093555f4727fc46e1425f033e3d8d7fb|https://www.gov.uk/government/news/costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-keep-prices-down-and-create-opportunities-for-young-people-worth-up-to-17-billion-per-year": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-keep-prices-down-and-create-opportunities-for-young-people-worth-up-to-17-billion-per-year",
+    "checked_on": "2026-11-22",
+    "sha256": "b2113dc598896c361fb7660d51dea4bd1244d30ff93774c5313662ad1094a745"
+  },
   "d5b691608d7727f663697b41da701c6838319a987dcc13f390df11ed89fd0917|https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts": {
     "match": "exact",
     "url": "https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts",
@@ -1288,6 +1318,12 @@
     "url": "https://www.gov.uk/government/news/140-million-boost-to-urgent-care-to-ease-winter-pressures-on-nhs",
     "checked_on": "2026-10-19",
     "sha256": "fe587e89a8b25967e4fea8b820b5b9272278caf7365a0881c20e6cb17e9606d3"
+  },
+  "dd53f760c9a256abcfc28e536e3c61531cfaae56f184b808cdfc60c9570a2a94|https://www.gov.uk/government/news/costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-keep-prices-down-and-create-opportunities-for-young-people-worth-up-to-17-billion-per-year": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-keep-prices-down-and-create-opportunities-for-young-people-worth-up-to-17-billion-per-year",
+    "checked_on": "2026-11-22",
+    "sha256": "b2113dc598896c361fb7660d51dea4bd1244d30ff93774c5313662ad1094a745"
   },
   "dd9b0baf477ea257f035317b29afe4ee46c64a1d662e3de398d54a3adf127d7a|https://questions-statements.parliament.uk/written-statements/detail/2026-10-16/HCWS387": {
     "match": "exact",
@@ -1414,6 +1450,12 @@
     "url": "https://www.gov.uk/government/news/national-call-to-recruit-more-foster-carers-launched-at-number-10",
     "checked_on": "2026-10-16",
     "sha256": "8d87575efd354320b42e39ae31e7be6e47edda347bc6dfdcadf6a527e96df1ef"
+  },
+  "f90d543e6c11552bacb45f9dda12dbc58d14148af1088fd513b92e8c8a40b3ce|https://www.gov.uk/government/news/new-ai-guidance-to-cut-paperwork-and-free-more-time-for-care": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/new-ai-guidance-to-cut-paperwork-and-free-more-time-for-care",
+    "checked_on": "2026-11-22",
+    "sha256": "a01426122a336cc16243cc92145a45e3458f2916b8f07f2f342c3b356368e10f"
   },
   "f9fb43c4d3d8721c5f8f659ac69ca2e1bffba0124e6cd90e371efa471c22047e|https://hansard.parliament.uk/Commons/2026-11-02/debates/09F388D2-539E-4B0A-ABE2-D3195B14AF0E/ImmigrationEarnedSettlement": {
     "match": "exact",

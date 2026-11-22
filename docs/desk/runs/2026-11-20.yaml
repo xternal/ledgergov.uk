@@ -1,0 +1,38 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-11-20"
+triaged_on: "2026-11-22"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 248
+sources_read: 7
+drafts: 7
+candidates: 11
+outcomes:
+  card: 7
+  reworded: 0
+  duplicate: 2
+  existing: 0
+  grant: 0
+  done: 0
+  process: 2
+  broad: 0
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 7
+new_actors: []
+cards:
+  - uk-eu-carbon-market-link-2028
+  - uk-cbam-eu-goods-exempt-2027
+  - uk-ets-greenhouse-removals-2029
+  - uk-eu-export-health-certificates-2026
+  - uk-eu-youth-experience-scheme-2026
+  - uk-munitions-factories-six-2026
+  - uk-care-providers-digitised-2026
+reworded: []
+dropped:
+  - { draft: 2026-11-20-govuk-costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-k-1, quote: quote, code: duplicate, into: uk-eu-carbon-market-link-2028, note: "linking the emissions trading schemes exempts £6.5 billion of British exports from the EU's CBAM; added to the card's sources" }
+  - { draft: 2026-11-20-govuk-outcome-proposals-for-a-new-standard-rules-permit-for-mobile-medium--1, quote: quote, code: process, note: "the Environment Agency aims to publish a standard rules permit for mobile medium combustion plant boilers by 1 April 2027" }
+  - { draft: 2026-11-20-govuk-paper-vat-drugs-and-medicines-health-and-welfare-order-2026-1, quote: quote, code: process, note: "a VAT order keeping the zero rate for medicines dispensed under new pharmacy arrangements: lay an order" }
+  - { draft: 2026-11-20-govuk-supermarket-sweep-morrisons-tesco-and-ms-back-governments-bu-1, quote: quote, code: duplicate, into: uk-eu-export-health-certificates-2026, note: "fresh sausages, burgers, seed potatoes and shellfish exportable to the EU again under the food deal; added to the card's sources" }

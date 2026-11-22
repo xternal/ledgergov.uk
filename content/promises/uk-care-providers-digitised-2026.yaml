@@ -1,0 +1,62 @@
+format: openpromises/1
+id: uk-care-providers-digitised-2026
+headline:
+  en: "All care providers fully digitised"
+actor_id: hm-government
+made_on: "2026-11-20"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Department of Health and Social Care)
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    The release, on new guidance for using AI in social care, says 4 in 5 care providers now use
+    digital social care records, covering almost 90% of people who draw on care. It does not define
+    "fully digitised" or give a date for the end of this Parliament, so the card has no deadline.
+    The card moves when the government reports how many providers use digital records.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department of Health and Social Care press release, 20 Nov 2026: New AI guidance to cut
+      paperwork and free more time for care
+    url: https://www.gov.uk/government/news/new-ai-guidance-to-cut-paperwork-and-free-more-time-for-care
+versions:
+  - version: 1
+    text: >-
+      The government aims for all care providers to be fully digitised by the end of this
+      Parliament.
+    recorded_on: "2026-11-20"
+    source_url: https://www.gov.uk/government/news/new-ai-guidance-to-cut-paperwork-and-free-more-time-for-care
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Adult social care providers in England and the people who draw on care
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          By the end of this Parliament
+      funded_by: null
+events:
+  - date: "2026-11-20"
+    type: promised
+    text:
+      en: >-
+        The government says it aims for all care providers to be fully digitised by the end of this
+        Parliament
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-cbam-eu-goods-exempt-2027
+headline:
+  en: "Exempt EU goods from the UK carbon levy"
+actor_id: hm-government
+made_on: "2026-11-20"
+venue: press_release
+venue_label:
+  en: >-
+    Policy paper (Department for Energy Security and Net Zero): UK-EU ETS linking agreement
+    explainer
+area: taxes
+status: promised
+status_note:
+  en: >-
+    The UK’s own carbon border levy (CBAM) is a separate card. The explainer says the matching EU
+    exemption for UK goods is expected from 1 January 2028, subject to EU law-making, and goods made
+    outside the UK and EU still get carbon price relief. The card moves when the UK exemption is in
+    law.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Energy Security and Net Zero, 20 Nov 2026: UK-EU ETS linking agreement:
+      explainer
+    url: https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer
+versions:
+  - version: 1
+    text: >-
+      The UK government intends to exempt goods originating in the EU, EEA and Switzerland from the
+      UK CBAM from 1 January 2027.
+    recorded_on: "2026-11-20"
+    source_url: https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Importers of goods made in the EU, EEA and Switzerland
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          From 1 January 2027
+      deadline: "2027-01-01"
+      funded_by: null
+events:
+  - date: "2026-11-20"
+    type: promised
+    text:
+      en: >-
+        The government says it intends to exempt goods from the EU, EEA and Switzerland from the UK
+        carbon border levy from 1 January 2027
+  - date: "2027-01-01"
+    type: deadline
+    text:
+      en: >-
+        Exemption of EU, EEA and Swiss goods from the UK carbon border levy due to start
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-eu-export-health-certificates-2026
+headline:
+  en: "Scrap export health certificates to the EU"
+actor_id: hm-government
+made_on: "2026-11-20"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Prime Minister's Office, 10 Downing Street)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    Part of the deal agreed at the UK-EU summit on 20 November 2026. The release says checks on
+    food, farm and plant goods between Britain and the EU will end, products such as fresh sausages,
+    burgers and seed potatoes can be sold in the EU again, and the deal could add up to £5.1 billion
+    a year to the economy by 2040. It gives no date for the deal to take effect. The card moves when
+    the agreement is in force.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Prime Minister's Office press release, 20 Nov 2026: 'Costs cut': Prime Minister secures deal
+      with EU to cut costs, keep prices down and create opportunities for young people worth up to
+      £17 billion per year
+    url: https://www.gov.uk/government/news/costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-keep-prices-down-and-create-opportunities-for-young-people-worth-up-to-17-billion-per-year
+  - title: >-
+      Prime Minister's Office press release, 20 Nov 2026: Supermarket sweep: Morrisons, Tesco and
+      M&S back Government's business-boosting food trade deal with Europe
+    url: https://www.gov.uk/government/news/supermarket-sweep-morrisons-tesco-and-ms-back-governments-business-boosting-food-trade-deal-with-europe
+versions:
+  - version: 1
+    text: >-
+      Under the deal, Export Health Certificates – which can cost up to £200 each – will be
+      scrapped. Fresh produce will reach supermarket shelves faster, with less waste and lower
+      costs.
+    recorded_on: "2026-11-20"
+    source_url: https://www.gov.uk/government/news/costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-keep-prices-down-and-create-opportunities-for-young-people-worth-up-to-17-billion-per-year
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          British food, farm and plant exporters, and shoppers
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          Not stated
+      funded_by: null
+events:
+  - date: "2026-11-20"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister’s Office says the UK-EU food and drink deal will scrap export health
+        certificates
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

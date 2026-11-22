@@ -1,0 +1,64 @@
+format: openpromises/1
+id: uk-eu-youth-experience-scheme-2026
+headline:
+  en: "Youth Experience Scheme with the EU"
+actor_id: hm-government
+made_on: "2026-11-20"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Prime Minister's Office, 10 Downing Street)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    Agreed at the UK-EU summit on 20 November 2026. The release says the scheme is reciprocal and
+    needs no job offer, language or salary requirement. It will be capped, time-limited and
+    visa-based, with no access to benefits and no right to bring dependants; the release gives no
+    start date and no size for the cap. The card moves when the scheme opens to applications.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Prime Minister's Office press release, 20 Nov 2026: 'Costs cut': Prime Minister secures deal
+      with EU to cut costs, keep prices down and create opportunities for young people worth up to
+      £17 billion per year
+    url: https://www.gov.uk/government/news/costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-keep-prices-down-and-create-opportunities-for-young-people-worth-up-to-17-billion-per-year
+versions:
+  - version: 1
+    text: >-
+      Restoring opportunities lost to a generation of young people, a new Youth Experience Scheme
+      will allow those aged 18 to 31 to live, work, study, and travel in Europe for up to three
+      years. There will be no need for a job offer, and no language or salary requirements.
+    recorded_on: "2026-11-20"
+    source_url: https://www.gov.uk/government/news/costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-keep-prices-down-and-create-opportunities-for-young-people-worth-up-to-17-billion-per-year
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Young people aged 18 to 31 in the UK and the EU
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          Not stated
+      funded_by: null
+events:
+  - date: "2026-11-20"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister’s Office says a new Youth Experience Scheme will let 18 to 31 year olds
+        live, work, study and travel in Europe for up to three years
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

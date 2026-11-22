@@ -1,0 +1,75 @@
+format: openpromises/1
+id: uk-eu-carbon-market-link-2028
+headline:
+  en: "Link the UK and EU carbon markets"
+actor_id: hm-government
+made_on: "2026-11-20"
+venue: press_release
+venue_label:
+  en: >-
+    Policy paper (Department for Energy Security and Net Zero): UK-EU ETS linking agreement
+    explainer
+area: taxes
+status: promised
+status_note:
+  en: >-
+    Agreed at the UK-EU summit on 20 November 2026. The No 10 release says the link will exempt £6.5
+    billion of British exports, including steel and aluminium, from the EU’s carbon border levy; the
+    explainer says that exemption is expected from 1 January 2028, subject to EU law-making. From
+    the link, UK and EU allowances can be used in both schemes. The card moves when the link is in
+    operation.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Energy Security and Net Zero, 20 Nov 2026: UK-EU ETS linking agreement:
+      explainer
+    url: https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer
+  - title: >-
+      Prime Minister's Office press release, 20 Nov 2026: 'Costs cut': Prime Minister secures deal
+      with EU to cut costs, keep prices down and create opportunities for young people worth up to
+      £17 billion per year
+    url: https://www.gov.uk/government/news/costs-cut-prime-minister-secures-deal-with-eu-to-cut-costs-keep-prices-down-and-create-opportunities-for-young-people-worth-up-to-17-billion-per-year
+versions:
+  - version: 1
+    text: >-
+      The UK and EU are now working to implement this agreement and are aiming to operationalise the
+      link by 1 January 2028.
+    recorded_on: "2026-11-20"
+    source_url: https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Businesses in the UK Emissions Trading Scheme, and exporters to the EU
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          By 1 January 2028
+      deadline: "2028-01-01"
+      funded_by: null
+events:
+  - date: "2026-11-20"
+    type: promised
+    text:
+      en: >-
+        The government says the UK and EU aim to put their emissions trading link into operation by
+        1 January 2028
+  - date: "2028-01-01"
+    type: deadline
+    text:
+      en: >-
+        UK-EU emissions trading link due to be in operation
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

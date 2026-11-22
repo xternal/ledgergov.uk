@@ -1,0 +1,68 @@
+format: openpromises/1
+id: uk-munitions-factories-six-2026
+headline:
+  en: "At least six new munitions factories"
+actor_id: hm-government
+made_on: "2026-11-20"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Ministry of Defence)
+area: defence
+status: promised
+status_note:
+  en: >-
+    The release opens the first capital grants window of the energetics programme, with grants of up
+    to £45 million, and links it to the Strategic Defence Review’s commitment to rebuild sovereign
+    production. It gives no date for the factories. The card moves when the grants are awarded and
+    the factories are built.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Defence press release, 20 Nov 2026: Grants up to £45 million boost UK growth as
+      Ministry of Defence funds national munitions production
+    url: https://www.gov.uk/government/news/grants-up-to-45-million-boost-uk-growth-as-ministry-of-defence-funds-national-munitions-production
+versions:
+  - version: 1
+    text: >-
+      The grants will form part of the Government’s £1.5 billion pledge to establish an ‘always on’
+      munitions production pipeline and support the creation of at least six new energetics and
+      munitions factories across the UK
+    recorded_on: "2026-11-20"
+    source_url: https://www.gov.uk/government/news/grants-up-to-45-million-boost-uk-growth-as-ministry-of-defence-funds-national-munitions-production
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          The Armed Forces, and UK companies making explosives, propellants and other energetic
+          materials
+      cost:
+        note:
+          en: >-
+            The government’s £1.5 billion pledge for munitions production; the release gives no
+            period or split by year.
+      when:
+        en: >-
+          Not stated
+      funded_by:
+        en: >-
+          The Government’s £1.5 billion munitions pledge, including capital grants of up to £45
+          million
+events:
+  - date: "2026-11-20"
+    type: promised
+    text:
+      en: >-
+        The Ministry of Defence says its £1.5 billion pledge will support at least six new
+        energetics and munitions factories across the UK
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
