@@ -1,0 +1,61 @@
+format: openpromises/1
+id: uk-jodrell-bank-funding-2026
+headline:
+  en: "Find funding for Jodrell Bank telescopes"
+actor_id: andy-burnham
+made_on: "2026-11-18"
+venue: parliament
+venue_label:
+  en: >-
+    Prime Minister's Questions
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    Helen Morgan MP said the e-MERLIN network, the national radio astronomy facility headquartered
+    at Jodrell Bank, is set to lose its funding in 2028 and asked the Prime Minister to commit to
+    finding the money. He said he would ensure a solution is found, without naming a sum or a
+    source. The card moves when funding for the network after 2028 is announced.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Hansard, House of Commons, 18 Nov 2026: Engagements (Prime Minister's Questions)
+    url: https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements
+versions:
+  - version: 1
+    text: >-
+      I am with the hon. Lady on this one. We need to find a solution, and I will ensure one is
+      found.
+    recorded_on: "2026-11-18"
+    source_url: https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          The e-MERLIN radio telescope network and the Lovell telescope at Jodrell Bank
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          Not stated
+      funded_by: null
+events:
+  - date: "2026-11-18"
+    type: promised
+    text:
+      en: >-
+        Asked to find the money to save the e-MERLIN network and the Lovell telescope, the Prime
+        Minister says he will ensure a solution is found
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

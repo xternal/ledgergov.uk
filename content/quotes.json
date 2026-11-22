@@ -311,6 +311,12 @@
     "checked_on": "2026-10-18",
     "sha256": "f7969dca22801a78931a28106c84fcf9ace97d05d0e9416567d825a2ffa2fdee"
   },
+  "3de1de7680ac24bd61b62a3d7bed3152a3cea9b7324098fba7ed424ecd448077|https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements",
+    "checked_on": "2026-11-22",
+    "sha256": "f8c7eeba1ae81dcfa4cc3556144898a2d197f3c87dd6fecae381c3078082dc27"
+  },
   "3ec3e9e6cf22a013fe9950908137a188a92644b5eb0152bc8417f8453cf7c1f9|https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal",
@@ -496,6 +502,12 @@
     "url": "https://www.gov.uk/government/news/new-lung-cancer-screening-roll-out-to-detect-cancer-sooner",
     "checked_on": "2026-10-20",
     "sha256": "af61c7577f9129f572bfd5415fa5acf52d4e508b6b8071fde461b486cfbe267b"
+  },
+  "5378ec5f0e175106f15f8049425071fbc741f95a7e1d14686211b0c74704f8b8|https://www.gov.uk/government/news/new-personalised-care-to-keep-18-million-people-out-of-hospital": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/new-personalised-care-to-keep-18-million-people-out-of-hospital",
+    "checked_on": "2026-11-22",
+    "sha256": "7cc241010718ddc0f5785ef594c962f53f1bed47f6877e74554e3dca8ed9c81a"
   },
   "55082fbe46b196b85f13f0c7619bdbf6475bc219da6b521a04c216081cc4fb87|https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements": {
     "match": "exact",
@@ -743,6 +755,12 @@
     "checked_on": "2026-10-20",
     "sha256": "56a269962899052da2df5f6b8040cb033e95cabd11bdbc8d2fff12ed3fcc764d"
   },
+  "83a57614208e991850f9098c4aaf59b6446ed8780b511262fb804b3941de7d78|https://www.gov.uk/government/consultations/construction-products-reform-white-paper/outcome/construction-products-reform-white-paper-government-response": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/consultations/construction-products-reform-white-paper/outcome/construction-products-reform-white-paper-government-response",
+    "checked_on": "2026-11-22",
+    "sha256": "c2f216c4d528dadd19317909fb9ee0956bb3bcd6c15c988b7bd650f5bf2ce382"
+  },
   "8447ab75c8351d073ef22e5116727be698c9fdab90b47fad34435b5535d647dc|https://www.gov.uk/government/news/great-british-railways-takes-shape-as-hq-and-apprenticeship-scheme-confirmed": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/great-british-railways-takes-shape-as-hq-and-apprenticeship-scheme-confirmed",
@@ -886,6 +904,12 @@
     "url": "https://www.gov.uk/government/publications/mobilising-private-finance-for-local-nature-recovery/growing-places-mobilising-private-finance-for-local-nature-recovery",
     "checked_on": "2026-10-27",
     "sha256": "4d0e12743a620c33ce2296fd30d83ced3b301683ab34ee22b3e1ec3740902967"
+  },
+  "9adebf091a40854ce5285834d3c99d30267d31273a8988bf60d2fcd6a7f028d6|https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements",
+    "checked_on": "2026-11-22",
+    "sha256": "f8c7eeba1ae81dcfa4cc3556144898a2d197f3c87dd6fecae381c3078082dc27"
   },
   "9b66dc97a6abd032e0928d90f2c108588bcb941dff7c0fc695f1a58c27fd4551|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372": {
     "match": "exact",
@@ -1277,6 +1301,12 @@
     "checked_on": "2026-10-18",
     "sha256": "cb2d6256bd9d4b0892889aed25414eef77a0aca206ffc1bd1c92fda6dd7cc6ff"
   },
+  "d9e1d0689f6b40ce4d7d69677ffb67785da3933147ee5ac66a1b5fc5fc0adc96|https://www.gov.uk/government/news/beginning-of-the-end-for-thousand-year-old-leasehold-system": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/beginning-of-the-end-for-thousand-year-old-leasehold-system",
+    "checked_on": "2026-11-22",
+    "sha256": "41eefba7cbacf4675b05ea4485a490cfd74277f6660f3c7fc089e0466defeabc"
+  },
   "da68041ab90acf8f302d47bd9cb1146eaae760033276f223f8f82000ef972d22|https://www.gov.uk/government/news/new-royal-navy-led-northern-navies-initiative": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/new-royal-navy-led-northern-navies-initiative",
@@ -1360,6 +1390,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS402",
     "checked_on": "2026-10-25",
     "sha256": "c52a8feeb113ab39982c236e0ae3f6e3cb42acaf8b02ce5928df463f6ff4709e"
+  },
+  "eae1a9ea1822b5b2bcd1aa7db9ff7db2e5a9a401ef483338ed27c023d60fa22f|https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements",
+    "checked_on": "2026-11-22",
+    "sha256": "f8c7eeba1ae81dcfa4cc3556144898a2d197f3c87dd6fecae381c3078082dc27"
   },
   "eb0008cef1f7c88e2dbf27f4097d2ab53a9ac46ba01712a114d206f1dde04d10|https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS401": {
     "match": "exact",

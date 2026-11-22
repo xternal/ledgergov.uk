@@ -1,0 +1,67 @@
+format: openpromises/1
+id: uk-social-leaseholder-bills-2028
+headline:
+  en: "Standard bills for social housing leaseholders"
+actor_id: hm-government
+made_on: "2026-11-18"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Ministry of Housing, Communities and Local Government)
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    Private landlords must give leaseholders standardised bills, reports and accounts from 1
+    November 2027 (a separate card); the release lists social landlords a year later, on 1 November
+    2028. The card moves when the rules for social landlords are in force.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government press release, 18 Nov 2026: Beginning of
+      the end for thousand year old leasehold system
+    url: https://www.gov.uk/government/news/beginning-of-the-end-for-thousand-year-old-leasehold-system
+versions:
+  - version: 1
+    text: >-
+      Clearer service charge bills for social housing leaseholders: standardised bills, annual
+      reports and accounts will also apply to social landlords.
+    recorded_on: "2026-11-18"
+    source_url: https://www.gov.uk/government/news/beginning-of-the-end-for-thousand-year-old-leasehold-system
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Leaseholders whose landlord is a social landlord
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          From 1 November 2028
+      deadline: "2028-11-01"
+      funded_by: null
+events:
+  - date: "2026-11-18"
+    type: promised
+    text:
+      en: >-
+        The government says standardised service charge bills, annual reports and accounts will
+        apply to social landlords from 1 November 2028
+  - date: "2028-11-01"
+    type: deadline
+    text:
+      en: >-
+        Standardised service charge bills due from social landlords
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

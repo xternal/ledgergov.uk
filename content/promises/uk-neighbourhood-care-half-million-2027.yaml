@@ -1,0 +1,78 @@
+format: openpromises/1
+id: uk-neighbourhood-care-half-million-2027
+headline:
+  en: "Personal care teams for half a million patients"
+actor_id: hm-government
+made_on: "2026-11-18"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Department of Health and Social Care)
+area: health
+status: promised
+status_note:
+  en: >-
+    Yvette Cooper announced neighbourhood support teams giving each of the most vulnerable patients
+    one point of contact and a care plan, eventually for nearly 2 million people. The release
+    estimates around 4.3 million fewer hospital bed days and net savings of more than £1 billion a
+    year. "By April 2027" is read as 30 April 2027. The card moves when the NHS reports how many
+    people are supported.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department of Health and Social Care press release, 18 Nov 2026: New personalised care to keep
+      1.8 million people out of hospital
+    url: https://www.gov.uk/government/news/new-personalised-care-to-keep-18-million-people-out-of-hospital
+  - title: >-
+      Written ministerial statement HCWS483, 18 Nov 2026: Neighbourhood Health and Care
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-18/HCWS483
+versions:
+  - version: 1
+    text: >-
+      At least 1% of the population in England - more than half a million people - will receive
+      dedicated support under these plans by April 2027, expanding over subsequent years to reach
+      more of those at greatest risk.
+    recorded_on: "2026-11-18"
+    source_url: https://www.gov.uk/government/news/new-personalised-care-to-keep-18-million-people-out-of-hospital
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          The most frail and vulnerable patients in England, including frail older people, people
+          living with dementia, care home residents and people near the end of life
+      cost:
+        note:
+          en: >-
+            No cost is given; the minister’s statement says the service is funded through existing
+            NHS allocations.
+      when:
+        en: >-
+          By April 2027, then expanding
+      deadline: "2027-04-30"
+      funded_by:
+        en: >-
+          Existing NHS allocations, including money moved to care outside hospital and, over time,
+          savings from fewer avoidable hospital stays
+events:
+  - date: "2026-11-18"
+    type: promised
+    text:
+      en: >-
+        The Health and Social Care Secretary says at least 1% of England’s population will get
+        dedicated neighbourhood support by April 2027
+  - date: "2027-04-30"
+    type: deadline
+    text:
+      en: >-
+        At least 1% of the population of England due to receive dedicated neighbourhood support
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
