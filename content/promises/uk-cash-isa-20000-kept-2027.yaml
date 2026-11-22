@@ -1,0 +1,67 @@
+format: openpromises/1
+id: uk-cash-isa-20000-kept-2027
+headline:
+  en: "Keep the £20,000 cash ISA limit"
+actor_id: hm-government
+made_on: "2026-11-19"
+venue: press_release
+venue_label:
+  en: >-
+    Policy paper (HM Revenue & Customs): Individual Savings Account changes to reporting
+area: taxes
+status: promised
+status_note:
+  en: >-
+    At Budget 2025 the government said the cash ISA limit for under-65s would fall from £20,000 to
+    £12,000 from 6 April 2027. The paper says Budget 2026 dropped that cut, and the regulations that
+    made it are revoked from 6 April 2027. The card moves when the 2027-28 tax year starts with the
+    limit unchanged.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      HM Revenue & Customs, 19 Nov 2026: Individual Savings Account — changes to reporting
+    url: https://www.gov.uk/government/publications/changes-to-individual-savings-account-reporting/individual-savings-account-changes-to-reporting
+versions:
+  - version: 1
+    text: >-
+      This measure also maintains the annual cash ISA subscription limit at £20,000 for individuals
+      under 65 from 6 April 2027.
+    recorded_on: "2026-11-19"
+    source_url: https://www.gov.uk/government/publications/changes-to-individual-savings-account-reporting/individual-savings-account-changes-to-reporting
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Savers under 65 who pay into a cash ISA
+      cost:
+        note:
+          en: >-
+            The paper gives no cost for keeping the limit.
+      when:
+        en: >-
+          From 6 April 2027
+      deadline: "2027-04-06"
+      funded_by: null
+events:
+  - date: "2026-11-19"
+    type: promised
+    text:
+      en: >-
+        HM Revenue & Customs says the measure keeps the cash ISA limit at £20,000 for under-65s from
+        6 April 2027
+  - date: "2027-04-06"
+    type: deadline
+    text:
+      en: >-
+        Cash ISA limit for under-65s due to stay at £20,000
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

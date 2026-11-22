@@ -1,0 +1,72 @@
+format: openpromises/1
+id: uk-opportunity-support-guarantee-2026
+headline:
+  en: "Opportunity and Support Guarantee for young people"
+actor_id: pat-mcfadden
+made_on: "2026-11-17"
+venue: parliament
+venue_label:
+  en: >-
+    Written ministerial statement
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    Alan Milburn’s final report on young people and work recommended the guarantee, backed by
+    legislation; the Secretary of State told the Commons the same day that the government supports
+    that recommendation. It is to be delivered through new locally led youth services, a separate
+    card. The statement gives no date or cost, and the government will set out next steps on welfare
+    reform ahead of a white paper next year. The card moves when the guarantee is set in law or
+    starts.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS479, 17 Nov 2026: Review into Young People and Work
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-17/HCWS479
+  - title: >-
+      Hansard, House of Commons, 17 Nov 2026: Milburn Review: Final Report
+    url: https://hansard.parliament.uk/Commons/2026-11-17/debates/3A423B53-86A8-44D6-9C28-671C893A9434/MilburnReviewFinalReport
+  - title: >-
+      Department for Work and Pensions press release, 17 Nov 2026: Government commits to new
+      settlement for young people and to invest in success rather than pay for failure
+    url: https://www.gov.uk/government/news/government-commits-to-new-settlement-for-young-people-and-to-invest-in-success-rather-than-pay-for-failure
+versions:
+  - version: 1
+    text: >-
+      That is why, today, we are committing to provide an Opportunity and Support Guarantee, as
+      Milburn has recommended, so that every young person who is at risk of becoming NEET has a
+      credible route into education, training, an apprenticeship, high-quality work experience, or a
+      job.
+    recorded_on: "2026-11-17"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-17/HCWS479
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Every young person at risk of not being in education, employment or training
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          Not stated
+      funded_by: null
+events:
+  - date: "2026-11-17"
+    type: promised
+    text:
+      en: >-
+        The Work and Pensions Secretary commits to an Opportunity and Support Guarantee, as the
+        Milburn review recommended
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

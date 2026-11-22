@@ -1,0 +1,81 @@
+format: openpromises/1
+id: uk-child-house-every-region-2029
+headline:
+  en: "A Child House in every NHS region"
+actor_id: hm-government
+made_on: "2026-11-19"
+venue: press_release
+venue_label:
+  en: >-
+    Policy paper (Department of Health and Social Care): Men's Health Strategy one year on
+area: health
+status: promised
+status_note:
+  en: >-
+    Child House is an internationally recognised model of joined-up, multi-agency support for child
+    victims and survivors of sexual abuse. The report says it will help meet the Independent Inquiry
+    into Child Sexual Abuse recommendation that child victims are guaranteed specialist therapeutic
+    support. "By 2029" is read as the end of 2029. The card moves when the first services open.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department of Health and Social Care, 19 Nov 2026: Men's Health Strategy: one year on report
+    url: https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report
+versions:
+  - version: 1
+    text: >-
+      DHSC is also investing up to £50 million over 3 years to establish a Child House in every NHS
+      region by 2029, with the first services expected in 2027 to 2028.
+    recorded_on: "2026-11-19"
+    source_url: https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Children who are victims and survivors of sexual abuse
+      cost:
+        range: [0.015, 0.0167, 0.0183]
+        quality: sourced
+        by:
+          kind: official
+          name: DHSC
+        note:
+          en: >-
+            The government’s own figure: up to £50 million over three years, shown as about £16.7
+            million a year on average. The report gives no split by year. Low–high is an editorial
+            ±10% because the source gives a central figure only.
+        sources:
+          - title: >-
+              Department of Health and Social Care, 19 Nov 2026: Men's Health Strategy: one year on
+              report
+            url: https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report
+      when:
+        en: >-
+          By 2029, with the first services in 2027 to 2028
+      deadline: "2029-12-31"
+      funded_by:
+        en: >-
+          The Department of Health and Social Care
+events:
+  - date: "2026-11-19"
+    type: promised
+    text:
+      en: >-
+        The Department of Health and Social Care says it is investing up to £50 million over three
+        years for a Child House in every NHS region by 2029
+  - date: "2029-12-31"
+    type: deadline
+    text:
+      en: >-
+        A Child House due in every NHS region
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

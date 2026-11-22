@@ -1,0 +1,61 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-11-16"
+triaged_on: "2026-11-22"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 240
+sources_read: 8
+drafts: 8
+candidates: 9
+outcomes:
+  card: 2
+  reworded: 0
+  duplicate: 2
+  existing: 2
+  grant: 0
+  done: 0
+  process: 3
+  broad: 0
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 2
+new_actors: []
+cards:
+  - uk-in-person-banking-law-2026
+  - uk-steel-melt-and-pour-2027
+reworded: []
+dropped:
+  - draft: 2026-11-16-govuk-90000-young-people-furthest-from-work-to-be-given-guaranteed-1
+    quote: quote
+    code: existing
+    into: uk-jobs-guarantee-90000-2029
+    note: "the Jobs Guarantee across England, Scotland and Wales; the same release (same address) the card already cites"
+  - draft: 2026-11-16-govuk-crackdown-on-child-sexual-abuse-material-as-new-laws-force-p-1
+    quote: quote
+    code: existing
+    into: uk-social-media-ban-under-16s-2027
+    note: "the plans to ban social media platforms for under-16s, restated in a release on new laws for pornography sites"
+  - draft: 2026-11-16-govuk-paper-health-bill-supporting-joined-up-local-health-and-care-servi-1
+    quote: quote
+    code: process
+    note: "a Health Bill provision that integrated care boards have at least one board member nominated by each mayor in their area"
+  - draft: 2026-11-16-hansard-52fedf8f-1
+    quote: quote
+    code: duplicate
+    into: uk-gigabit-99pc-premises-2032
+    note: "Ian Murray: Project Gigabit is trying to reach 99% of premises by 2032; added to the card's sources (card on intake/2026-11-19)"
+  - draft: 2026-11-16-hansard-fbaaf525-1
+    quote: quote
+    code: process
+    note: "the federated data platform contract ends in March 2029, when the NHS intends to complete the move to a new platform: an IT procurement step"
+  - draft: 2026-11-16-hansard-fbaaf525-1
+    quote: also0
+    code: process
+    note: "common standards for health and care data to flow consistently, with no date or measure"
+  - draft: 2026-11-16-wms-hcws475-1
+    quote: quote
+    code: duplicate
+    into: uk-in-person-banking-law-2026
+    note: "Lucy Rigby's written statement: legislate for a statutory framework for in-person banking, by amending the Financial Services and Markets Bill"

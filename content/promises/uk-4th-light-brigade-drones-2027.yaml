@@ -1,0 +1,71 @@
+format: openpromises/1
+id: uk-4th-light-brigade-drones-2027
+headline:
+  en: "New drones for troops in Estonia"
+actor_id: hm-government
+made_on: "2026-11-17"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Ministry of Defence)
+area: defence
+status: promised
+status_note:
+  en: >-
+    The £25 million buys hundreds of one-way attack and first-person view drones, electronic warfare
+    systems and battlefield protection for the troops in Estonia, and doubles their reconnaissance
+    drones. "By April 2027" is read as 30 April 2027. The card moves when the Ministry of Defence
+    reports the brigade equipped.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Defence press release, 17 Nov 2026: Army buys hundreds more drones and electronic
+      warfare kit in £25 million boost to strengthen Britain’s defences on NATO’s eastern flank
+    url: https://www.gov.uk/government/news/army-buys-hundreds-more-drones-and-electronic-warfare-kit-in-25-million-boost-to-strengthen-britains-defences-on-natos-eastern-flank
+versions:
+  - version: 1
+    text: >-
+      By April 2027, 4th Light Brigade will be equipped with the new capabilities, strengthening the
+      lethality and protection of British forces committed to NATO’s eastern flank and ensuring
+      troops are equipped to respond to the threats they are most likely to face.
+    recorded_on: "2026-11-17"
+    source_url: https://www.gov.uk/government/news/army-buys-hundreds-more-drones-and-electronic-warfare-kit-in-25-million-boost-to-strengthen-britains-defences-on-natos-eastern-flank
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          4th Light Brigade, the British forces on NATO’s eastern flank in Estonia
+      cost:
+        note:
+          en: >-
+            £25 million from the Defence Investment Plan; the release gives no split by year.
+      when:
+        en: >-
+          By April 2027
+      deadline: "2027-04-30"
+      funded_by:
+        en: >-
+          The Defence Investment Plan
+events:
+  - date: "2026-11-17"
+    type: promised
+    text:
+      en: >-
+        The Ministry of Defence says £25 million of drones and electronic warfare kit will equip 4th
+        Light Brigade by April 2027
+  - date: "2027-04-30"
+    type: deadline
+    text:
+      en: >-
+        4th Light Brigade due to be equipped with the new drones and electronic warfare kit
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
