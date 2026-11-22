@@ -12,10 +12,10 @@ status: legislated
 status_note:
   en: >-
     Awaab's Law sets legal deadlines for social landlords in England to investigate and fix
-    dangerous hazards; since October 2025 it has covered damp and mould. Draft regulations published
-    on 13 July 2026 would add excess cold, excess heat, domestic hygiene, falls, electrical,
-    explosion and structural collapse hazards from 30 November 2026; they need Parliament's
-    approval.
+    dangerous hazards; since October 2025 it has covered damp and mould. The amending regulations
+    (SI 2026/1195), approved by both Houses and made on 13 November 2026, add excess cold, excess
+    heat, domestic hygiene, falls, electrical, explosion and structural collapse hazards from
+    30 November 2026.
 responsible:
   actor_id: hm-government
 origin: llm_intake
@@ -30,6 +30,10 @@ sources:
     url: https://www.legislation.gov.uk/ukdsi/2026/9780348285611/contents
   - title: Impact assessment for the draft regulations (13 Jul 2026), legislation.gov.uk
     url: https://www.legislation.gov.uk/ukia/2026/128/pdfs/ukia_20260128_en.pdf
+  - title: >-
+      Hazards in Social Housing (Prescribed Requirements) (England) (Amendment) Regulations 2026
+      (SI 2026/1195), as made
+    url: https://www.legislation.gov.uk/uksi/2026/1195/made
   - title: >-
       Hazards in Social Housing (Prescribed Requirements) (England) Regulations 2025 (SI 2025/1042)
     url: https://www.legislation.gov.uk/uksi/2025/1042/contents/made
