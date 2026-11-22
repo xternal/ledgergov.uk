@@ -1,0 +1,63 @@
+format: openpromises/1
+id: uk-taxi-licensing-local-2026
+headline:
+  en: "Taxis licensed where they operate"
+actor_id: andy-burnham
+made_on: "2026-11-18"
+venue: parliament
+venue_label:
+  en: >-
+    Prime Minister's Questions
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    Peter Lamb MP asked whether the Prime Minister would act so that taxis are licensed in the areas
+    in which they operate, saying licensing authorities no longer know who is driving cabs in their
+    area. Andy Burnham answered yes and said he would correct this in this House. No plan, Bill or
+    date was given. The card moves when the government sets out how it will end cross-border hire.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Hansard, House of Commons, 18 Nov 2026: Engagements (Prime Minister's Questions)
+    url: https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements
+versions:
+  - version: 1
+    text: >-
+      Yes, I will. This is a matter of public safety—and, actually, of the safety of women and
+      girls. I do not believe it is acceptable that we can have people with licence plates from 100
+      or 200 miles away operating in an area where the driver cannot be held to account, so the
+      simple answer is yes.
+    recorded_on: "2026-11-18"
+    source_url: https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Taxi and private hire passengers, drivers and licensing authorities
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          Not stated
+      funded_by: null
+events:
+  - date: "2026-11-18"
+    type: promised
+    text:
+      en: >-
+        Asked whether he will ensure taxis are licensed in the areas where they operate, the Prime
+        Minister says yes
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

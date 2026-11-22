@@ -1,0 +1,104 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-11-18"
+triaged_on: "2026-11-22"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 244
+sources_read: 12
+drafts: 12
+candidates: 22
+outcomes:
+  card: 6
+  reworded: 0
+  duplicate: 1
+  existing: 6
+  grant: 0
+  done: 0
+  process: 8
+  broad: 1
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 6
+new_actors: []
+cards:
+  - uk-social-leaseholder-bills-2028
+  - uk-neighbourhood-care-half-million-2027
+  - uk-grenfell-recommendations-2029
+  - uk-youth-work-placements-25000-2026
+  - uk-taxi-licensing-local-2026
+  - uk-jodrell-bank-funding-2026
+reworded: []
+dropped:
+  - draft: 2026-11-18-govuk-1000-long-range-strike-drones-announced-for-ukraine-as-prime-1
+    quote: quote
+    code: existing
+    into: uk-ukraine-support-10bn-2026
+    note: "over 1,000 long-range strike drones in a £260 million package; the MoD release of 21 November says it comes from the £500 million set out at the Budget"
+  - draft: 2026-11-18-govuk-beginning-of-the-end-for-thousand-year-old-leasehold-system-1
+    quote: quote
+    code: existing
+    into: uk-leasehold-legal-costs-2027
+    note: "fairer rules on landlords' litigation costs from 1 April 2027"
+  - draft: 2026-11-18-govuk-beginning-of-the-end-for-thousand-year-old-leasehold-system-1
+    quote: also0
+    code: existing
+    into: uk-ground-rent-cap-250-2026
+    note: "ground rents capped at £250 a year in 2028; the card is Keir Starmer's, so the new year from MHCLG is left for an editor rather than added as a version"
+  - draft: 2026-11-18-govuk-beginning-of-the-end-for-thousand-year-old-leasehold-system-1
+    quote: also1
+    code: existing
+    into: uk-service-charge-standard-bills-2027
+    note: "standardised service charge bills from private landlords from 1 November 2027"
+  - draft: 2026-11-18-govuk-identity-verification-is-making-the-uks-company-register-mor-1
+    quote: quote
+    code: process
+    note: "Companies House aims to take 225,000 enforcement actions by 31 March 2027: an agency's operational target"
+  - draft: 2026-11-18-govuk-identity-verification-is-making-the-uks-company-register-mor-1
+    quote: also0
+    code: broad
+    note: "all companies to have met identity verification requirements by March 2027 'or be on an appropriate pathway to compliance or enforcement action'"
+  - draft: 2026-11-18-govuk-identity-verification-is-making-the-uks-company-register-mor-1
+    quote: also1
+    code: process
+    note: "notes on the public register where identity verification was not done, 'in future'"
+  - draft: 2026-11-18-govuk-more-familiar-carers-and-less-travel-under-new-social-care-p-1
+    quote: quote
+    code: existing
+    into: uk-gp-winter-proactive-care-2027
+    note: "£40 million for GPs to support around 300,000 vulnerable patients"
+  - draft: 2026-11-18-govuk-new-champion-to-give-unpaid-carers-a-stronger-voice-1
+    quote: quote
+    code: existing
+    into: uk-national-care-service-2026
+    note: "a national care service in the next Parliament, funded by changes to the triple lock, as DHSC reports the Prime Minister's announcement; the card is Andy Burnham's, so DHSC's words are left for an editor"
+  - draft: 2026-11-18-govuk-outcome-construction-products-reform-white-paper-government-response-1
+    quote: quote
+    code: process
+    note: "lay the general safety requirement regulations for construction products in 2027, in force no earlier than 12 months later"
+  - draft: 2026-11-18-govuk-outcome-construction-products-reform-white-paper-government-response-1
+    quote: also1
+    code: process
+    note: "amend the Public Interest Disclosure (Prescribed Persons) Order 2014 for construction product whistleblowing"
+  - draft: 2026-11-18-govuk-outcome-construction-products-reform-white-paper-government-response-1
+    quote: also2
+    code: process
+    note: "the new GB construction products regulation expected in force in 2028 for products with a standard made under the new framework"
+  - draft: 2026-11-18-govuk-outcome-general-safety-requirement-for-construction-products-governm-1
+    quote: quote
+    code: process
+    note: "the same general safety requirement regulations, laid in 2027"
+  - draft: 2026-11-18-govuk-tax-adviser-registration-opens-for-payroll-professionals-1
+    quote: quote
+    code: process
+    note: "tax advisers with an agent services account moved to the new digital service in 2027 to 2028"
+  - draft: 2026-11-18-wms-hcws483-1
+    quote: quote
+    code: duplicate
+    into: uk-neighbourhood-care-half-million-2027
+    note: "Diana Johnson's written statement: the service begins next year, reaching around half a million people, funded from existing NHS allocations; added to the card's sources"
+  - draft: 2026-11-18-wms-hcws484-1
+    quote: quote
+    code: process
+    note: "the legislative process to expand the West of England Combined Authority to North Somerset, to conclude by early 2027"

@@ -1,0 +1,64 @@
+format: openpromises/1
+id: uk-youth-work-placements-25000-2026
+headline:
+  en: "25,000 work placements for 16-17 year olds"
+actor_id: andy-burnham
+made_on: "2026-11-18"
+venue: parliament
+venue_label:
+  en: >-
+    Prime Minister's Questions
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    Answering at Prime Minister’s Questions the day after the Milburn review, Andy Burnham said he
+    had asked the Cabinet to reprioritise spending plans for 2027-28 to start a fund for the youth
+    opportunity service. He gave no date for the placements and no amount. The card moves when the
+    fund and the first placements are announced.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Hansard, House of Commons, 18 Nov 2026: Engagements (Prime Minister's Questions)
+    url: https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements
+versions:
+  - version: 1
+    text: >-
+      Specifically, I have asked the Cabinet to reprioritise spending plans for ’27-28 to put the
+      beginnings of a fund together to support the youth opportunity service, initially delivering
+      25,000 quality work placements for 16 and 17-year-olds.
+    recorded_on: "2026-11-18"
+    source_url: https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          16 and 17 year olds
+      cost:
+        note:
+          en: >-
+            No cost is given; the money is to come from reprioritised 2027-28 spending plans.
+      when:
+        en: >-
+          Funded from the 2027-28 spending plans; no date given for the placements
+      funded_by:
+        en: >-
+          Reprioritised departmental spending plans for 2027-28
+events:
+  - date: "2026-11-18"
+    type: promised
+    text:
+      en: >-
+        The Prime Minister says a youth opportunity service will initially deliver 25,000 quality
+        work placements for 16 and 17 year olds
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

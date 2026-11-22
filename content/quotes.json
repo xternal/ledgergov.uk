@@ -1546,5 +1546,41 @@
     "url": "https://www.gov.uk/government/news/jackdaw-gas-field-gets-green-light",
     "checked_on": "2026-10-25",
     "sha256": "3acd4a5173c6da736d49186bb4d02a2222566671160de62341d547ec986a9527"
+  },
+  "3de1de7680ac24bd61b62a3d7bed3152a3cea9b7324098fba7ed424ecd448077|https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements",
+    "checked_on": "2026-11-22",
+    "sha256": "f8c7eeba1ae81dcfa4cc3556144898a2d197f3c87dd6fecae381c3078082dc27"
+  },
+  "5378ec5f0e175106f15f8049425071fbc741f95a7e1d14686211b0c74704f8b8|https://www.gov.uk/government/news/new-personalised-care-to-keep-18-million-people-out-of-hospital": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/new-personalised-care-to-keep-18-million-people-out-of-hospital",
+    "checked_on": "2026-11-22",
+    "sha256": "7cc241010718ddc0f5785ef594c962f53f1bed47f6877e74554e3dca8ed9c81a"
+  },
+  "83a57614208e991850f9098c4aaf59b6446ed8780b511262fb804b3941de7d78|https://www.gov.uk/government/consultations/construction-products-reform-white-paper/outcome/construction-products-reform-white-paper-government-response": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/consultations/construction-products-reform-white-paper/outcome/construction-products-reform-white-paper-government-response",
+    "checked_on": "2026-11-22",
+    "sha256": "c2f216c4d528dadd19317909fb9ee0956bb3bcd6c15c988b7bd650f5bf2ce382"
+  },
+  "9adebf091a40854ce5285834d3c99d30267d31273a8988bf60d2fcd6a7f028d6|https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements",
+    "checked_on": "2026-11-22",
+    "sha256": "f8c7eeba1ae81dcfa4cc3556144898a2d197f3c87dd6fecae381c3078082dc27"
+  },
+  "d9e1d0689f6b40ce4d7d69677ffb67785da3933147ee5ac66a1b5fc5fc0adc96|https://www.gov.uk/government/news/beginning-of-the-end-for-thousand-year-old-leasehold-system": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/beginning-of-the-end-for-thousand-year-old-leasehold-system",
+    "checked_on": "2026-11-22",
+    "sha256": "41eefba7cbacf4675b05ea4485a490cfd74277f6660f3c7fc089e0466defeabc"
+  },
+  "eae1a9ea1822b5b2bcd1aa7db9ff7db2e5a9a401ef483338ed27c023d60fa22f|https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements",
+    "checked_on": "2026-11-22",
+    "sha256": "f8c7eeba1ae81dcfa4cc3556144898a2d197f3c87dd6fecae381c3078082dc27"
   }
 }
