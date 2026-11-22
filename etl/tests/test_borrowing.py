@@ -1,6 +1,6 @@
 """
 /borrowing (etl/borrowing.py): borrowing so far this year against the OBR's monthly path, from committed
-observations. No network: the committed editions are the release of 21 October 2026 (PSF-2026-10) and
+observations. No network: the committed editions are the release of 20 November 2026 (PSF-2026-11) and
 the OBR's March 2026 profiles (EFO-2026-03).
 """
 
@@ -46,24 +46,25 @@ def test_committed_file_is_up_to_date(bundle):
 
 
 def test_so_far_matches_the_ons_bulletin(bundle):
-    # ONS, 21 October 2026: "£97.8 billion. This was £4.4 billion (4.3%) less than in the same period last year
-    # but £6.0 billion above the Office for Budget Responsibility (OBR) forecast".
+    # ONS, 20 November 2026: "Borrowing in the financial year (FY) to October 2026 was £111.3 billion. This was
+    # £7.3 billion (6.1%) less than in the FY to October 2025 but £3.3 billion above the March 2026 Office for Budget
+    # Responsibility (OBR) forecast."
     s = bundle["so_far"]
-    assert (bundle["fiscal_year"], bundle["through"]) == ("2026-27", "2026-09")
-    assert round(s["outturn"]["bn"], 1) == 97.8
-    assert round(s["last_year"]["bn"] - s["outturn"]["bn"], 1) == 4.4
-    assert round(s["difference"]["bn"], 1) == 6.0
+    assert (bundle["fiscal_year"], bundle["through"]) == ("2026-27", "2026-10")
+    assert round(s["outturn"]["bn"], 1) == 111.3
+    assert round(s["last_year"]["bn"] - s["outturn"]["bn"], 1) == 7.3
+    assert round(s["difference"]["bn"], 1) == 3.3
     assert s["difference"]["bn"] == pytest.approx(s["outturn"]["bn"] - s["profile"]["bn"], abs=1e-3)
-    assert round(s["profile"]["bn"], 1) == 91.8
+    assert round(s["profile"]["bn"], 1) == 108.0
 
 
 def test_paths(bundle):
     assert len(bundle["months"]) == 12 and bundle["months"][0] == "2026-04" and bundle["months"][-1] == "2027-03"
     out, prof, last = bundle["outturn"], bundle["profile"], bundle["last_year"]
-    assert len(out["values"]) == len(out["cumulative"]) == 6
+    assert len(out["values"]) == len(out["cumulative"]) == 7
     assert len(prof["values"]) == len(prof["cumulative"]) == len(last["values"]) == 12
     assert out["cumulative"][-1] == bundle["so_far"]["outturn"]["bn"]
-    assert prof["cumulative"][5] == bundle["so_far"]["profile"]["bn"]
+    assert prof["cumulative"][6] == bundle["so_far"]["profile"]["bn"]
     assert prof["cumulative"][-1] == pytest.approx(prof["year_bn"], abs=1e-3)
     # The year forecast comes from the newest EFO, which can be newer than the monthly path:
     # the OBR publishes its profile for an EFO a few weeks after it.
@@ -73,7 +74,7 @@ def test_paths(bundle):
     else:
         assert (year["edition"], year["vintage"]) == ("October 2026", "EFO-2026-10")
     assert (prof["edition"], prof["published_on"], prof["range"]) == ("March 2026", "2026-04-23", "point")
-    assert last["fiscal_year"] == "2025-26" and last["cumulative"][-1] == pytest.approx(134.211, abs=1e-3)  # ONS, 21 October 2026: "£134.2 billion in the financial year ending March 2026"
+    assert last["fiscal_year"] == "2025-26" and last["cumulative"][-1] == pytest.approx(134.327, abs=1e-3)  # ONS, 20 November 2026: "£134.3 billion in the financial year ending March 2026"
 
 
 def test_provenance(bundle):
@@ -81,15 +82,15 @@ def test_provenance(bundle):
              *bundle["so_far"].values()]
     for p in every:
         assert p["quality"] == "sourced" and p["source_id"] and p["vintage"] and p["method_note"]
-    assert bundle["so_far"]["outturn"]["vintage"] == "PSF-2026-10"
+    assert bundle["so_far"]["outturn"]["vintage"] == "PSF-2026-11"
     assert bundle["so_far"]["profile"]["vintage"] == "EFO-2026-03"
     assert {s["id"] for s in bundle["sources"]} == {"ons_psf", "obr_monthly_profiles", "obr_efo"}
 
 
 def test_release_is_the_one_used(bundle):
     r = bundle["release"]
-    assert r["title"] == "Public sector finances, UK: September 2026"
-    assert r["released_at"] == "2026-10-21T06:00:00Z" and (r["next_on"], r["next_at"]) == ("2026-11-20", "2026-11-20T07:00:00Z")
+    assert r["title"] == "Public sector finances, UK: October 2026"
+    assert r["released_at"] == "2026-11-20T07:00:00Z" and (r["next_on"], r["next_at"]) == ("2026-12-22", "2026-12-22T07:00:00Z")
 
 
 # ------------------------------------------------------------------ cases the committed data does not cover
