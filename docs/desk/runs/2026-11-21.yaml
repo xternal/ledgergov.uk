@@ -1,0 +1,34 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+# Every draft was dropped, so the desk closed pull request #250 and kept the branch; this file reaches main
+# through the desk's own pull request instead.
+intake_date: "2026-11-21"
+triaged_on: "2026-11-22"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 250
+sources_read: 1
+drafts: 1
+candidates: 1
+outcomes:
+  card: 0
+  reworded: 0
+  duplicate: 0
+  existing: 1
+  grant: 0
+  done: 0
+  process: 0
+  broad: 0
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 0
+new_actors: []
+cards: []
+reworded: []
+dropped:
+  - draft: 2026-11-21-govuk-defence-secretary-meets-president-zelensky-and-minister-khma-1
+    quote: quote
+    code: existing
+    into: uk-ukraine-support-10bn-2026
+    note: "the £260 million package of more than 1,000 long-range strike drones, from the £500 million of further military support set out at the Budget"
