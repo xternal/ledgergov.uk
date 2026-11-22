@@ -4,6 +4,8 @@ on:
   pull_request:
   push:
     branches: [main]
+  # The nightly data workflow starts this on its branch: a pull request opened with GITHUB_TOKEN starts no workflows.
+  workflow_dispatch:
 
 permissions:
   contents: read

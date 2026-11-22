@@ -10,6 +10,8 @@ on:
   workflow_dispatch:
 
 permissions:
+  # actions: start CI on the data branch (below).
+  actions: write
   contents: write
   pull-requests: write
 
@@ -76,3 +78,6 @@ jobs:
           else
             gh pr create --base main --head "$branch" --title "$title" --body "$summary"
           fi
+          # A pull request opened with this token starts no workflows: start CI on the branch so its checks show on the
+          # pull request (on 22 Nov 2026 a refresh with new ONS data was merged unchecked and broke the borrowing tests).
+          gh workflow run ci.yml --ref "$branch"
