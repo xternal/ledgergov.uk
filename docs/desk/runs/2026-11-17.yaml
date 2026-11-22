@@ -1,0 +1,71 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-11-17"
+triaged_on: "2026-11-22"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 242
+sources_read: 7
+drafts: 7
+candidates: 13
+outcomes:
+  card: 5
+  reworded: 0
+  duplicate: 3
+  existing: 4
+  grant: 0
+  done: 0
+  process: 1
+  broad: 0
+  event: 0
+  cap: 0
+  other: 0
+quotes_exact: 5
+new_actors: []
+cards:
+  - uk-4th-light-brigade-drones-2027
+  - uk-opportunity-support-guarantee-2026
+  - uk-local-youth-services-2027
+  - uk-funded-college-place-2026
+  - uk-ukef-clean-growth-10bn-2029
+reworded: []
+dropped:
+  - draft: 2026-11-17-govuk-government-commits-to-new-settlement-for-young-people-and-to-1
+    quote: quote
+    code: existing
+    into: uk-jobs-guarantee-12-months-2027
+    note: "the Jobs Guarantee after 12 months on Universal Credit rather than 18, from April"
+  - draft: 2026-11-17-govuk-government-commits-to-new-settlement-for-young-people-and-to-1
+    quote: also1
+    code: duplicate
+    into: uk-opportunity-support-guarantee-2026
+    note: "the Opportunity and Support Guarantee in the DWP release; added to the card's sources"
+  - draft: 2026-11-17-govuk-government-fires-starting-gun-on-new-settlement-for-young-pe-1
+    quote: also0
+    code: process
+    note: "flexibilities on hours of English and maths study for young people returning to learning, aimed for 2027/28"
+  - draft: 2026-11-17-govuk-government-fires-starting-gun-on-new-settlement-for-young-pe-1
+    quote: also1
+    code: duplicate
+    into: uk-local-youth-services-2027
+    note: "the locally led youth services from next year, in the DfE release; added to the card's sources"
+  - draft: 2026-11-17-govuk-more-than-1000-air-defence-missiles-for-ukraine-as-uk-delive-1
+    quote: quote
+    code: existing
+    into: uk-ukraine-support-10bn-2026
+    note: "more than 1,000 air defence missiles this winter: £240 million of the £500 million for Ukraine this winter announced at the Budget"
+  - draft: 2026-11-17-hansard-3a423b53-1
+    quote: quote
+    code: existing
+    into: uk-jobs-guarantee-12-months-2027
+    note: "Pat McFadden in the Commons: the Jobs Guarantee after 12 months rather than 18, in the same terms"
+  - draft: 2026-11-17-hansard-3a423b53-1
+    quote: also0
+    code: duplicate
+    into: uk-opportunity-support-guarantee-2026
+    note: "Pat McFadden supports Milburn's guarantee backed by legislation; added to the card's sources"
+  - draft: 2026-11-17-wms-hcws479-1
+    quote: quote
+    code: existing
+    into: uk-jobs-guarantee-12-months-2027
+    note: "the Jobs Guarantee from 12 months of unemployment rather than 18, from spring next year"

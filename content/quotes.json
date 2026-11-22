@@ -293,6 +293,12 @@
     "checked_on": "2026-11-15",
     "sha256": "c3f27836d29725fed0af4328cfa5032d6a186d276ee41e000852ec157d70b17b"
   },
+  "37d5b59d9bed4054709c89c0e19eacf3ad72b48f6cbf68acb954d0dfa173b7b3|https://www.gov.uk/government/news/army-buys-hundreds-more-drones-and-electronic-warfare-kit-in-25-million-boost-to-strengthen-britains-defences-on-natos-eastern-flank": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/army-buys-hundreds-more-drones-and-electronic-warfare-kit-in-25-million-boost-to-strengthen-britains-defences-on-natos-eastern-flank",
+    "checked_on": "2026-11-22",
+    "sha256": "e160c11a116c8caa48d824161e19ed583cda050c593aa14f582291f2643454cc"
+  },
   "37dc3f790bf989bc7b32fadb4226a8cbd924f919fd63eb3d2fb6b5970affb156|https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470",
@@ -497,6 +503,12 @@
     "checked_on": "2026-10-20",
     "sha256": "af61c7577f9129f572bfd5415fa5acf52d4e508b6b8071fde461b486cfbe267b"
   },
+  "5355293128b4722b8254ef97b953c31d3a043380017c653e3307a07eaaf74801|https://www.gov.uk/government/news/government-fires-starting-gun-on-new-settlement-for-young-people": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/government-fires-starting-gun-on-new-settlement-for-young-people",
+    "checked_on": "2026-11-22",
+    "sha256": "4ec0fcf10431f0baeb2a50c61afab5f94cd364d2845cc7e93f99591f02e3f529"
+  },
   "55082fbe46b196b85f13f0c7619bdbf6475bc219da6b521a04c216081cc4fb87|https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements": {
     "match": "exact",
     "url": "https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements",
@@ -628,6 +640,18 @@
     "url": "https://www.gov.uk/government/news/one-million-more-scans-to-help-catch-cancer-sooner",
     "checked_on": "2026-11-08",
     "sha256": "bb2e96afda77c40d448bd425194f427a8fc49be10ec118f9f2b37650a446950d"
+  },
+  "6c9851932d2665132e21bf0c1caeb9325fcb6f6218608926d2c84102fe2578cc|https://www.gov.uk/government/news/government-commits-to-new-settlement-for-young-people-and-to-invest-in-success-rather-than-pay-for-failure": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/government-commits-to-new-settlement-for-young-people-and-to-invest-in-success-rather-than-pay-for-failure",
+    "checked_on": "2026-11-22",
+    "sha256": "b22ec8b98dde245c1b97b4813f62b5eebc22d5782d1baaf17a77cd558158c112"
+  },
+  "6efcbda2900f3ff1be3aabbb03e2e32b1e9b6469198a597518b579bbcd233ce3|https://questions-statements.parliament.uk/written-statements/detail/2026-11-17/HCWS479": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-11-17/HCWS479",
+    "checked_on": "2026-11-22",
+    "sha256": "99dac82d7c669cf844c107ba03300eda04dd7b09cb2af7fb8b8cabac0b2b7419"
   },
   "704d2801840a73e7ca32a980ee2a921687c6fb2a33f342ee7f2c7457899366b8|https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky": {
     "match": "exact",
@@ -1144,6 +1168,12 @@
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS412",
     "checked_on": "2026-10-27",
     "sha256": "835450fb9f3fbfeaa44d9198ed90c973a741ef45491ca530e31c2ddb81e8468c"
+  },
+  "c3e0e555144b4b645a4f60e164575d28b7778ce97f5d1b56cf1e9bfee12365ba|https://www.gov.uk/government/news/uk-leads-international-cooperation-on-sustainable-export-finance": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/uk-leads-international-cooperation-on-sustainable-export-finance",
+    "checked_on": "2026-11-22",
+    "sha256": "18a00520e80e843896693cbb79dee2d964e79aa8ab03db7344d8705d5fc162f7"
   },
   "c431306540af1368afd884c0cd4861cdcd0e424a12b4464eab236aaed78300b9|https://www.gov.uk/government/speeches/prime-ministers-speech-on-britain-built-for-all-1-december-2025": {
     "match": "exact",
