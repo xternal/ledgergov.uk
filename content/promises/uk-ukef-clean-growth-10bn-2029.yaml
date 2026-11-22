@@ -1,0 +1,68 @@
+format: openpromises/1
+id: uk-ukef-clean-growth-10bn-2029
+headline:
+  en: "£10bn of clean growth export finance"
+actor_id: hm-government
+made_on: "2026-11-17"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (UK Export Finance)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    A target UK Export Finance has set; the release does not say when it was first set or how much
+    has been provided so far. "By 2029" is read as the end of 2029. The card moves when UK Export
+    Finance reports its clean growth totals.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      UK Export Finance press release, 17 Nov 2026: UK leads international cooperation on
+      sustainable export finance
+    url: https://www.gov.uk/government/news/uk-leads-international-cooperation-on-sustainable-export-finance
+versions:
+  - version: 1
+    text: >-
+      UKEF has set a target to provide £10 billion of clean growth finance by 2029, supporting the
+      government’s mission to make Britain a clean energy superpower and achieve at least 95% clean
+      power by 2030.
+    recorded_on: "2026-11-17"
+    source_url: https://www.gov.uk/government/news/uk-leads-international-cooperation-on-sustainable-export-finance
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Clean growth projects and the UK exporters that supply them
+      cost:
+        note:
+          en: >-
+            The £10 billion is finance UK Export Finance provides (loans, guarantees and insurance),
+            not spending.
+      when:
+        en: >-
+          By 2029
+      deadline: "2029-12-31"
+      funded_by: null
+events:
+  - date: "2026-11-17"
+    type: promised
+    text:
+      en: >-
+        UK Export Finance sets a target of £10 billion of clean growth finance by 2029
+  - date: "2029-12-31"
+    type: deadline
+    text:
+      en: >-
+        £10 billion of clean growth finance due from UK Export Finance
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

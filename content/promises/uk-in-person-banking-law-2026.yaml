@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-in-person-banking-law-2026
+headline:
+  en: "Protect access to face-to-face banking"
+actor_id: hm-government
+made_on: "2026-11-16"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (HM Treasury)
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    The government accepted the central recommendation of the independent Access to Banking Services
+    Review, chaired by Richard Lloyd and published on 16 November 2026. The Economic Secretary’s
+    written statement the same day says the government will amend the Financial Services and Markets
+    Bill to create a statutory framework for reasonable access to essential in-person banking,
+    designed with the FCA, industry and consumer groups. No date is given. The card moves when the
+    amendment is tabled and when the framework is in law.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      HM Treasury press release, 16 Nov 2026: Government commits to safeguard face-to-face banking
+    url: https://www.gov.uk/government/news/government-commits-to-safeguard-face-to-face-banking
+  - title: >-
+      Written ministerial statement HCWS475, 16 Nov 2026: Financial Services and Markets Bill –
+      Government Amendment
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-16/HCWS475
+versions:
+  - version: 1
+    text: >-
+      The Review recommends new legal protections to ensure people can continue to access the
+      essential face to face banking services they need. The government has accepted this
+      recommendation and will legislate to protect access.
+    recorded_on: "2026-11-16"
+    source_url: https://www.gov.uk/government/news/government-commits-to-safeguard-face-to-face-banking
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          People and small businesses who need in-person banking; the release says more than three
+          million people regularly rely on it
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          Not stated
+      funded_by: null
+events:
+  - date: "2026-11-16"
+    type: promised
+    text:
+      en: >-
+        The government accepts the independent review’s call for legal protections and says it will
+        legislate to protect access to face-to-face banking
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

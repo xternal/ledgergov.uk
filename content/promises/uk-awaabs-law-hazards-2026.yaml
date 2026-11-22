@@ -8,7 +8,7 @@ venue: press_release
 venue_label:
   en: Press release (MHCLG), notes to editors
 area: housing_env
-status: in_plan
+status: legislated
 status_note:
   en: >-
     Awaab's Law sets legal deadlines for social landlords in England to investigate and fix
@@ -86,6 +86,13 @@ events:
     type: deadline
     text:
       en: Phase 2 due to come into force
+  - date: "2026-11-13"
+    type: legislated
+    text:
+      en: >-
+        The Hazards in Social Housing (Prescribed Requirements) (England) (Amendment) Regulations
+        2026 are made, approved by both Houses, and come into force on 30 November 2026
+    evidence_url: https://www.legislation.gov.uk/uksi/2026/1195/made
 replies: []
 reviews:
   - by: AI Journalist

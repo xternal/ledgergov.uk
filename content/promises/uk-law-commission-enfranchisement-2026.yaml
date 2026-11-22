@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-law-commission-enfranchisement-2026
+headline:
+  en: "Enact the rest of the Law Commission reforms"
+actor_id: matthew-pennycook
+made_on: "2026-11-19"
+venue: parliament
+venue_label:
+  en: >-
+    Written ministerial statement
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    A restatement made as the Commonhold and Leasehold Reform Bill was introduced; the minister
+    calls it a previously stated commitment but the statement does not say when it was first made.
+    The Bill itself makes fixes to the Leasehold and Freehold Reform Act 2024. No date is given for
+    the end of this Parliament, so the card has no deadline. The card moves when legislation for the
+    remaining recommendations is introduced.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Written ministerial statement HCWS492, 19 Nov 2026: Commonhold and Leasehold Reform Bill
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-19/HCWS492
+  - title: >-
+      Ministry of Housing, Communities and Local Government, 19 Nov 2026: Commonhold and Leasehold
+      Reform Bill: government response to pre-legislative scrutiny by the Housing, Communities and
+      Local Government Select Committee
+    url: https://www.gov.uk/government/publications/commonhold-and-leasehold-reform-bill-government-response-to-pre-legislative-scrutiny-report/commonhold-and-leasehold-reform-bill-government-response-to-pre-legislative-scrutiny-by-the-housing-communities-and-local-government-select-committe
+versions:
+  - version: 1
+    text: >-
+      We have also taken the opportunity to reiterate our previously stated commitment to enact
+      through legislation over the course of this Parliament remaining Law Commission
+      recommendations on enfranchisement and the right to manage.
+    recorded_on: "2026-11-19"
+    source_url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-19/HCWS492
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Leaseholders who want to extend their lease, buy their freehold or take over management of
+          their building
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          Over the course of this Parliament
+      funded_by: null
+events:
+  - date: "2026-11-19"
+    type: promised
+    text:
+      en: >-
+        The housing minister restates the commitment to enact the remaining Law Commission
+        recommendations on enfranchisement and the right to manage this Parliament
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

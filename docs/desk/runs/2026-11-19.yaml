@@ -1,0 +1,77 @@
+# One weekly editor's desk run over one intake pull request (docs/desk/ROUTINE.md, step 7).
+# Since 19 October 2026 `candidates` counts quotes (each draft's `quote` and each of its `also`) and
+# `drafts` counts draft files; every quote has exactly one outcome, so the outcomes add up to `candidates`.
+intake_date: "2026-11-19"
+triaged_on: "2026-11-22"
+by: Claude as AI Journalist (weekly ledger desk, Pavel's Mac)
+pull_request: 246
+sources_read: 19
+drafts: 20
+candidates: 45
+outcomes:
+  card: 10
+  reworded: 0
+  duplicate: 6
+  existing: 14
+  grant: 3
+  done: 2
+  process: 9
+  broad: 0
+  event: 0
+  cap: 1
+  other: 0
+quotes_exact: 10
+new_actors: []
+cards:
+  - uk-gigabit-99pc-premises-2032
+  - uk-new-leasehold-ban-2031
+  - uk-commonhold-in-force-2029
+  - uk-law-commission-enfranchisement-2026
+  - uk-leasehold-reserve-funds-2026
+  - uk-cash-isa-20000-kept-2027
+  - uk-vape-advertising-ban-2027
+  - uk-child-house-every-region-2029
+  - uk-cancer-waiting-standards-2026
+  - uk-brca2-prostate-screening-2027
+reworded: []
+dropped:
+  - { draft: 2026-11-19-govuk-brothers-sentenced-for-illegal-waste-wood-fire-risk-site-1, quote: quote, code: existing, into: uk-waste-dumping-fines-5000-2026, note: "fines of up to £5,000 for illegal waste dumping, in the same words" }
+  - { draft: 2026-11-19-govuk-environment-secretary-launches-43-million-schemes-to-test-fa-1, quote: quote, code: process, note: "the Water Management Grant opens for applications from 30 November to 23 February 2027: a fund opening for applications" }
+  - { draft: 2026-11-19-govuk-first-ever-lifelong-guardianship-ceremonies-for-care-leavers-1, quote: quote, code: grant, note: "£8.4 million for the national rollout of Lifelong Links, a family finding service" }
+  - { draft: 2026-11-19-govuk-first-ever-lifelong-guardianship-ceremonies-for-care-leavers-1, quote: also0, code: existing, into: uk-foster-places-10k-2026, note: "10,000 new foster placements this parliament" }
+  - { draft: 2026-11-19-govuk-government-backs-modernisation-of-gene-therapy-definitions-1, quote: quote, code: process, note: "amend the Human Medicines Regulations 2012 definitions of gene therapy: a minor amendment by regulations" }
+  - { draft: 2026-11-19-govuk-historic-move-to-dismantle-leasehold-and-transform-homeowner-1, quote: quote, code: existing, into: uk-ground-rent-cap-250-2026, note: "the £250 cap in force six months after the Bill becomes law, expected in 2028; Keir Starmer's card, so the new timing is left for an editor" }
+  - { draft: 2026-11-19-govuk-new-1700-place-leicestershire-prison-moves-a-step-closer-1, quote: quote, code: existing, into: uk-prison-places-14000-2031, note: "14,000 additional prison places by 2031" }
+  - { draft: 2026-11-19-govuk-new-mens-health-ambassador-to-help-improve-mens-health-1, quote: quote, code: process, note: "Suicide Prevention Pathfinders grants of up to £3.6 million to open shortly: a fund opening for applications" }
+  - { draft: 2026-11-19-govuk-outcome-government-response-to-the-strengthening-leaseholder-protect-1, quote: quote, code: existing, into: uk-cap-leasehold-permission-fees-2026, note: "powers to cap permission fees and administration charges" }
+  - { draft: 2026-11-19-govuk-outcome-government-response-to-the-strengthening-leaseholder-protect-2, quote: quote, code: process, note: "raise the section 20 consultation thresholds from £250 to £500 and £100 to £200: a technical measure of the Bill" }
+  - { draft: 2026-11-19-govuk-outcome-government-response-to-the-strengthening-leaseholder-protect-2, quote: also0, code: duplicate, into: uk-leasehold-reserve-funds-2026, note: "mandatory reserve funds in the consultation response; added to the card's sources" }
+  - { draft: 2026-11-19-govuk-outcome-government-response-to-the-strengthening-leaseholder-protect-2, quote: also1, code: process, note: "overturn the effect of the Daejan judgment on dispensation from consultation: a technical measure of the Bill" }
+  - { draft: 2026-11-19-govuk-outcome-legislative-proposals-to-address-broadband-rollout-in-leaseh-1, quote: quote, code: process, note: "implied lease terms giving flat tenants a route to request gigabit broadband: a measure of the Bill, with no date" }
+  - { draft: 2026-11-19-govuk-outcome-moving-to-commonhold-banning-leasehold-for-new-flats-summary-1, quote: also0, code: process, note: "lower the consent threshold for converting to commonhold from 100% to 50%: a measure of the Bill" }
+  - { draft: 2026-11-19-govuk-outcome-moving-to-commonhold-banning-leasehold-for-new-flats-summary-1, quote: also1, code: existing, into: uk-homes-1-5m-2024, note: "1.5 million new homes in England over the Parliament" }
+  - { draft: 2026-11-19-govuk-outcome-moving-to-commonhold-banning-leasehold-for-new-flats-summary-1, quote: also2, code: duplicate, into: uk-new-leasehold-ban-2031, note: "the ban on new leasehold houses starts at the same time as the ban on flats; folded into the card" }
+  - { draft: 2026-11-19-govuk-paper-commonhold-and-leasehold-reform-bill-government-response-to--1, quote: quote, code: existing, into: uk-ground-rent-cap-250-2026, note: "the cap in force six months after Royal Assent; Keir Starmer's card, for an editor" }
+  - { draft: 2026-11-19-govuk-paper-commonhold-and-leasehold-reform-bill-government-response-to--1, quote: also0, code: duplicate, into: uk-law-commission-enfranchisement-2026, note: "the same commitment in the response to pre-legislative scrutiny; added to the card's sources" }
+  - { draft: 2026-11-19-govuk-paper-commonhold-and-leasehold-reform-bill-government-response-to--1, quote: also1, code: duplicate, into: uk-leasehold-reserve-funds-2026, note: "mandatory reserve funds within the Bill; added to the card's sources" }
+  - { draft: 2026-11-19-govuk-paper-commonhold-and-leasehold-reform-bill-government-response-to--1, quote: also2, code: duplicate, into: uk-new-leasehold-ban-2031, note: "the ban 2.5 years after the commonhold regulations, with live projects protected; added to the card's sources" }
+  - { draft: 2026-11-19-govuk-paper-commonhold-implementation-direction-of-travel-1, quote: quote, code: duplicate, into: uk-new-leasehold-ban-2031, note: "the Bill as the framework ahead of a future ban on new leasehold flats; added to the card's sources" }
+  - { draft: 2026-11-19-govuk-paper-individual-savings-account-changes-to-reporting-1, quote: also0, code: process, note: "the ISA digital reporting framework from April 2028: an administrative change for ISA managers" }
+  - { draft: 2026-11-19-govuk-paper-mens-health-strategy-one-year-on-report-1, quote: also0, code: existing, into: uk-neighbourhood-health-centres-2030, note: "120 neighbourhood health centres by 2030" }
+  - { draft: 2026-11-19-govuk-paper-mens-health-strategy-one-year-on-report-1, quote: also2, code: existing, into: uk-social-media-ban-under-16s-2027, note: "social media banned for those aged 15 and under from spring 2027; Keir Starmer's card, so the date from DHSC is left for an editor" }
+  - { draft: 2026-11-19-govuk-paper-mens-health-strategy-one-year-on-report-1, quote: also3, code: existing, into: uk-healthy-babies-every-hub-2026, note: "Healthy Babies funding to all local authorities from April 2027; Karin Smyth's card, so the date from DHSC is left for an editor" }
+  - { draft: 2026-11-19-govuk-paper-mens-health-strategy-one-year-on-report-1, quote: also4, code: existing, into: uk-parental-pay-150k-parents-2026, note: "parental pay for around 150,000 more parents, up to 2 weeks at up to £194 a week" }
+  - { draft: 2026-11-19-govuk-sport-and-in-person-gaming-used-to-help-tackle-loneliness-am-1, quote: quote, code: grant, note: "more than £600,000 for Sport Cares' Offload programme in 10 more areas" }
+  - { draft: 2026-11-19-govuk-sport-and-in-person-gaming-used-to-help-tackle-loneliness-am-1, quote: also0, code: grant, note: "more than £740,000 for a three-year Connections Through Gaming pilot" }
+  - draft: 2026-11-19-govuk-uk-and-norway-further-boost-ukrainian-navy-at-coalition-of-t-1
+    quote: quote
+    code: cap
+    note: "two fast attack boats for Ukraine, built in the UK and jointly funded with Norway (more than £100 million together), with no date; left out of this week's 30"
+    quote_text: "Two advanced fast attack boats for Ukraine are being jointly funded by the UK and Norway to boost Ukrainian defence and apply further pressure on Russia."
+    source: https://www.gov.uk/government/news/uk-and-norway-further-boost-ukrainian-navy-at-coalition-of-the-willing-meeting--2
+  - { draft: 2026-11-19-govuk-uk-and-norway-further-boost-ukrainian-navy-at-coalition-of-t-1, quote: also0, code: existing, into: uk-ukraine-support-10bn-2026, note: "1,000 more long-range strike drones, from the £500 million winter package" }
+  - { draft: 2026-11-19-wms-hcws485-1, quote: quote, code: process, note: "publish a men's health measurement framework in 2027" }
+  - { draft: 2026-11-19-wms-hcws491-1, quote: quote, code: done, note: "the core schools budget of £66.7 billion in 2027-28, set by the allocations published that day" }
+  - { draft: 2026-11-19-wms-hcws491-1, quote: also0, code: done, note: "high needs funding of £12.4 billion in 2027-28, with provisional allocations published that day" }
+  - { draft: 2026-11-19-wms-hcws492-1, quote: quote, code: existing, into: uk-ground-rent-cap-250-2026, note: "Matthew Pennycook: the cap in force six months after Royal Assent; Keir Starmer's card, so another person's rewording is left for an editor" }
+  - { draft: 2026-11-19-wms-hcws492-1, quote: also2, code: existing, into: uk-regulate-property-agents-2026, note: "Matthew Pennycook: regulate all property agents through an independent statutory regulator, covering managing, estate and letting agents and estate managers; more detail on his own card, not new terms" }

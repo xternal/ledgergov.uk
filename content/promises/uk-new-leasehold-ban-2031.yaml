@@ -1,0 +1,80 @@
+format: openpromises/1
+id: uk-new-leasehold-ban-2031
+headline:
+  en: "Ban leasehold for new flats and houses"
+actor_id: hm-government
+made_on: "2026-11-19"
+venue: press_release
+venue_label:
+  en: >-
+    Government response: Moving to commonhold: banning leasehold for new flats
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The response says the ban on new leasehold houses will start at the same time, and developers
+    who applied for or got planning permission before the ban may still sell leasehold flats on
+    those sites. The Commonhold and Leasehold Reform Bill was introduced on 19 November 2026; an
+    implementation roadmap is promised closer to Royal Assent. "Approximately 2031" is read as the
+    end of 2031. The card moves when the Bill passes and the ban is commenced.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government, 19 Nov 2026: Moving to commonhold:
+      banning leasehold for new flats: Summary of consultation responses and UK government response
+    url: https://www.gov.uk/government/consultations/moving-to-commonhold-banning-leasehold-for-new-flats/outcome/moving-to-commonhold-banning-leasehold-for-new-flats-summary-of-consultation-responses-and-uk-government-response
+  - title: >-
+      Ministry of Housing, Communities and Local Government, 19 Nov 2026: Commonhold and Leasehold
+      Reform Bill: government response to pre-legislative scrutiny by the Housing, Communities and
+      Local Government Select Committee
+    url: https://www.gov.uk/government/publications/commonhold-and-leasehold-reform-bill-government-response-to-pre-legislative-scrutiny-report/commonhold-and-leasehold-reform-bill-government-response-to-pre-legislative-scrutiny-by-the-housing-communities-and-local-government-select-committe
+  - title: >-
+      Ministry of Housing, Communities and Local Government, 19 Nov 2026: Commonhold implementation:
+      Direction of Travel
+    url: https://www.gov.uk/government/publications/commonhold-implementation-direction-of-travel/commonhold-implementation-direction-of-travel
+versions:
+  - version: 1
+    text: >-
+      As we have set out in this UK government response, it is intended that the ban on the use of
+      leasehold for new flats, subject to defined exemptions, will commence two and a half years
+      after the commonhold regulations come into force, and we will work with consumers and industry
+      to ensure a smooth transition. The ban will therefore commence in approximately 2031.
+    recorded_on: "2026-11-19"
+    source_url: https://www.gov.uk/government/consultations/moving-to-commonhold-banning-leasehold-for-new-flats/outcome/moving-to-commonhold-banning-leasehold-for-new-flats-summary-of-consultation-responses-and-uk-government-response
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Buyers and developers of new flats and houses in England and Wales
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          Approximately 2031, two and a half years after the commonhold rules are in force
+      deadline: "2031-12-31"
+      funded_by: null
+events:
+  - date: "2026-11-19"
+    type: promised
+    text:
+      en: >-
+        The government says the ban on leasehold for new flats will start about two and a half years
+        after the commonhold rules, in approximately 2031
+  - date: "2031-12-31"
+    type: deadline
+    text:
+      en: >-
+        Ban on leasehold for new flats due to have started
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

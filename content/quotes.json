@@ -275,6 +275,12 @@
     "checked_on": "2026-10-13",
     "sha256": "81dc7bcac6911add8e0a8d49b84bc87b14fe4fd70c012e20f1d39911d44bb1d0"
   },
+  "2ed2d29b3ec1074d2a5cb2c9eda6b2b1f83144762255c6ce5fe686711a44e149|https://www.gov.uk/government/consultations/legislative-proposals-to-address-broadband-rollout-in-leasehold-flats/outcome/legislative-proposals-to-address-broadband-rollout-in-leasehold-flats-government-response": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/consultations/legislative-proposals-to-address-broadband-rollout-in-leasehold-flats/outcome/legislative-proposals-to-address-broadband-rollout-in-leasehold-flats-government-response",
+    "checked_on": "2026-11-22",
+    "sha256": "ac9cdaeff8c63e3a954defd639b27392f9704a6749c374996e8ad57cff2f18a5"
+  },
   "2f545534a102b8f3357402c266539acb2ee173cf2ff19902179eee4c3abe5bd0|https://www.gov.uk/government/publications/hope-on-the-high-street/hope-on-the-high-street": {
     "match": "exact",
     "url": "https://www.gov.uk/government/publications/hope-on-the-high-street/hope-on-the-high-street",
@@ -293,6 +299,12 @@
     "checked_on": "2026-11-15",
     "sha256": "c3f27836d29725fed0af4328cfa5032d6a186d276ee41e000852ec157d70b17b"
   },
+  "37d5b59d9bed4054709c89c0e19eacf3ad72b48f6cbf68acb954d0dfa173b7b3|https://www.gov.uk/government/news/army-buys-hundreds-more-drones-and-electronic-warfare-kit-in-25-million-boost-to-strengthen-britains-defences-on-natos-eastern-flank": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/army-buys-hundreds-more-drones-and-electronic-warfare-kit-in-25-million-boost-to-strengthen-britains-defences-on-natos-eastern-flank",
+    "checked_on": "2026-11-22",
+    "sha256": "e160c11a116c8caa48d824161e19ed583cda050c593aa14f582291f2643454cc"
+  },
   "37dc3f790bf989bc7b32fadb4226a8cbd924f919fd63eb3d2fb6b5970affb156|https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-11-12/HCWS470",
@@ -310,12 +322,6 @@
     "url": "https://www.gov.uk/government/news/victims-of-abuse-to-be-better-supported-by-their-community",
     "checked_on": "2026-10-18",
     "sha256": "f7969dca22801a78931a28106c84fcf9ace97d05d0e9416567d825a2ffa2fdee"
-  },
-  "3de1de7680ac24bd61b62a3d7bed3152a3cea9b7324098fba7ed424ecd448077|https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements": {
-    "match": "exact",
-    "url": "https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements",
-    "checked_on": "2026-11-22",
-    "sha256": "f8c7eeba1ae81dcfa4cc3556144898a2d197f3c87dd6fecae381c3078082dc27"
   },
   "3ec3e9e6cf22a013fe9950908137a188a92644b5eb0152bc8417f8453cf7c1f9|https://www.gov.uk/government/news/pm-sets-out-blueprint-for-decade-of-national-renewal": {
     "match": "exact",
@@ -352,6 +358,12 @@
     "url": "https://www.gov.uk/government/news/major-boost-for-young-people-in-exeter-as-youth-hub-opens-to-support-them-towards-work",
     "checked_on": "2026-10-13",
     "sha256": "89d36b372c705af7b475fe1f5bee03c9bd215e231c001e128491b16f207b96c2"
+  },
+  "431a1387fbf432add9ad80b83b065b8473d3949f6a21fb876437b25cc5b40ea4|https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report",
+    "checked_on": "2026-11-22",
+    "sha256": "d0d96abfe66a095e7ee2f599695b5e98ad063b62db84d5e81a1d5939f9e9ee66"
   },
   "433a11fb8182d892d1aea37a8e986b51e7b5e177d711a9af2819177247a523dc|https://www.gov.uk/government/publications/government-response-to-the-independent-review-of-the-criminal-courts/government-response-to-the-independent-review-of-the-criminal-courts": {
     "match": "exact",
@@ -503,11 +515,11 @@
     "checked_on": "2026-10-20",
     "sha256": "af61c7577f9129f572bfd5415fa5acf52d4e508b6b8071fde461b486cfbe267b"
   },
-  "5378ec5f0e175106f15f8049425071fbc741f95a7e1d14686211b0c74704f8b8|https://www.gov.uk/government/news/new-personalised-care-to-keep-18-million-people-out-of-hospital": {
+  "5355293128b4722b8254ef97b953c31d3a043380017c653e3307a07eaaf74801|https://www.gov.uk/government/news/government-fires-starting-gun-on-new-settlement-for-young-people": {
     "match": "exact",
-    "url": "https://www.gov.uk/government/news/new-personalised-care-to-keep-18-million-people-out-of-hospital",
+    "url": "https://www.gov.uk/government/news/government-fires-starting-gun-on-new-settlement-for-young-people",
     "checked_on": "2026-11-22",
-    "sha256": "7cc241010718ddc0f5785ef594c962f53f1bed47f6877e74554e3dca8ed9c81a"
+    "sha256": "4ec0fcf10431f0baeb2a50c61afab5f94cd364d2845cc7e93f99591f02e3f529"
   },
   "55082fbe46b196b85f13f0c7619bdbf6475bc219da6b521a04c216081cc4fb87|https://hansard.parliament.uk/Commons/2026-10-14/debates/0BFDA327-FA8B-44F9-85C3-02A2F2712280/Engagements": {
     "match": "exact",
@@ -544,6 +556,12 @@
     "url": "https://hansard.parliament.uk/Commons/2026-10-12/debates/BAD9E091-76DE-478A-AD67-00B68C6E7FEE/NationalSecurity",
     "checked_on": "2026-10-13",
     "sha256": "1a6105f8d1f3f504689cf82b0ba404154f9632e3b15dc4c19a7440ed38941786"
+  },
+  "59fd874709d4aeb443b7332d93e23171460fc830d757b8502f8ac2aefbc3e529|https://www.gov.uk/government/consultations/moving-to-commonhold-banning-leasehold-for-new-flats/outcome/moving-to-commonhold-banning-leasehold-for-new-flats-summary-of-consultation-responses-and-uk-government-response": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/consultations/moving-to-commonhold-banning-leasehold-for-new-flats/outcome/moving-to-commonhold-banning-leasehold-for-new-flats-summary-of-consultation-responses-and-uk-government-response",
+    "checked_on": "2026-11-22",
+    "sha256": "591d5235c8e7ccd8539e0f84cbc59a9abf9b70af35d92914d38eda5300ea84b1"
   },
   "5a4774eb42518ccc0df266aba753bcdd5db6546b53b43f0baaffd15e3bdc1b65|https://www.gov.uk/government/news/plan-to-drive-down-homelessness-for-young-people-leaving-care": {
     "match": "exact",
@@ -605,6 +623,12 @@
     "checked_on": "2026-10-20",
     "sha256": "cc784d923f8c0aaa8e00551fb025117753ee5d466689a826f182f0b8d208e8a9"
   },
+  "639b50dd8b1c75c313c34c4e651470475e53b7a5441721ea92275ffa69a464d4|https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report",
+    "checked_on": "2026-11-22",
+    "sha256": "d0d96abfe66a095e7ee2f599695b5e98ad063b62db84d5e81a1d5939f9e9ee66"
+  },
   "63c05ac4e31362f21ade19a81c7fe81a418178de903e16afc44caa7d0e1f2550|https://www.gov.uk/government/news/government-announces-up-to-15-million-to-bring-the-joy-of-reading-to-300000-more-young-children": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/government-announces-up-to-15-million-to-bring-the-joy-of-reading-to-300000-more-young-children",
@@ -623,6 +647,12 @@
     "checked_on": "2026-10-25",
     "sha256": "10a5c8d720829b8a3086ca68c3390350f74a5cd6b54f67a449a4e43ecf36a88f"
   },
+  "6809ce0227aff1420d05638dfeb7a5942d519ef5fdbc5f266c81297dcc915481|https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report",
+    "checked_on": "2026-11-22",
+    "sha256": "d0d96abfe66a095e7ee2f599695b5e98ad063b62db84d5e81a1d5939f9e9ee66"
+  },
   "68c0db7304c177e05c3e13c11a22bbee385a59e2488fb1b64f7d80c61546fa79|https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json": {
     "match": "exact",
     "url": "https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json",
@@ -635,11 +665,29 @@
     "checked_on": "2026-11-01",
     "sha256": "f40706c42dd5fa8eb0e1fbf7e1bc517878cf458abf760568c5a7eedce3e451ee"
   },
+  "6b33a959b7efd6d351ab7128e0cf4fc41c8bc0e357ca336e32912d42cb64c275|https://www.gov.uk/government/news/government-commits-to-safeguard-face-to-face-banking": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/government-commits-to-safeguard-face-to-face-banking",
+    "checked_on": "2026-11-22",
+    "sha256": "225a893138394952ffd85738f5eec3dc64cd416b308499d2ec758d16bc05fb7b"
+  },
   "6b68752faf8e16e51d3045755be9999eea0d2cb37f5f102baca38998ff99f1a7|https://www.gov.uk/government/news/one-million-more-scans-to-help-catch-cancer-sooner": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/one-million-more-scans-to-help-catch-cancer-sooner",
     "checked_on": "2026-11-08",
     "sha256": "bb2e96afda77c40d448bd425194f427a8fc49be10ec118f9f2b37650a446950d"
+  },
+  "6c9851932d2665132e21bf0c1caeb9325fcb6f6218608926d2c84102fe2578cc|https://www.gov.uk/government/news/government-commits-to-new-settlement-for-young-people-and-to-invest-in-success-rather-than-pay-for-failure": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/government-commits-to-new-settlement-for-young-people-and-to-invest-in-success-rather-than-pay-for-failure",
+    "checked_on": "2026-11-22",
+    "sha256": "b22ec8b98dde245c1b97b4813f62b5eebc22d5782d1baaf17a77cd558158c112"
+  },
+  "6efcbda2900f3ff1be3aabbb03e2e32b1e9b6469198a597518b579bbcd233ce3|https://questions-statements.parliament.uk/written-statements/detail/2026-11-17/HCWS479": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-11-17/HCWS479",
+    "checked_on": "2026-11-22",
+    "sha256": "99dac82d7c669cf844c107ba03300eda04dd7b09cb2af7fb8b8cabac0b2b7419"
   },
   "704d2801840a73e7ca32a980ee2a921687c6fb2a33f342ee7f2c7457899366b8|https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky": {
     "match": "exact",
@@ -755,12 +803,6 @@
     "checked_on": "2026-10-20",
     "sha256": "56a269962899052da2df5f6b8040cb033e95cabd11bdbc8d2fff12ed3fcc764d"
   },
-  "83a57614208e991850f9098c4aaf59b6446ed8780b511262fb804b3941de7d78|https://www.gov.uk/government/consultations/construction-products-reform-white-paper/outcome/construction-products-reform-white-paper-government-response": {
-    "match": "exact",
-    "url": "https://www.gov.uk/government/consultations/construction-products-reform-white-paper/outcome/construction-products-reform-white-paper-government-response",
-    "checked_on": "2026-11-22",
-    "sha256": "c2f216c4d528dadd19317909fb9ee0956bb3bcd6c15c988b7bd650f5bf2ce382"
-  },
   "8447ab75c8351d073ef22e5116727be698c9fdab90b47fad34435b5535d647dc|https://www.gov.uk/government/news/great-british-railways-takes-shape-as-hq-and-apprenticeship-scheme-confirmed": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/great-british-railways-takes-shape-as-hq-and-apprenticeship-scheme-confirmed",
@@ -784,6 +826,12 @@
     "url": "https://www.gov.uk/government/consultations/improving-enforcement-of-council-tax/outcome/improving-enforcement-of-council-tax-government-response",
     "checked_on": "2026-10-18",
     "sha256": "5b769a71cbc5f0942b9cfb1963aa31631caa602bcb12f898a8947600c0045c45"
+  },
+  "89ec528f7d6d263303d4cb490bc154d3aa4bbbf653548034480f1a1ddfcc83a7|https://questions-statements.parliament.uk/written-statements/detail/2026-11-19/HCWS492": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-11-19/HCWS492",
+    "checked_on": "2026-11-22",
+    "sha256": "cc89b4e25220df5a069181c94f37076c6f95c3aaf14f8afeed570a66258ced78"
   },
   "8a39550a04f40590588a53ca6644b3886b1af271d595de12c0b4a2e7ccc7608c|https://hansard.parliament.uk/Commons/2026-10-21/debates/75C8A826-17E0-47BD-A4C3-A2DCD01144FB/Engagements": {
     "match": "exact",
@@ -814,6 +862,12 @@
     "url": "https://www.gov.uk/government/news/prime-minister-to-create-smokefree-generation-by-ending-cigarette-sales-to-those-born-on-or-after-1-january-2009",
     "checked_on": "2026-10-20",
     "sha256": "12ce778db5289a4d1689197aea05d42d4f0a1bab4858cea36d71cd2115a9b551"
+  },
+  "8cfe6d05a7a9a63b40046d0be26917f60196340822c31d2e88bd39fac363ccdd|https://www.gov.uk/government/consultations/moving-to-commonhold-banning-leasehold-for-new-flats/outcome/moving-to-commonhold-banning-leasehold-for-new-flats-summary-of-consultation-responses-and-uk-government-response": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/consultations/moving-to-commonhold-banning-leasehold-for-new-flats/outcome/moving-to-commonhold-banning-leasehold-for-new-flats-summary-of-consultation-responses-and-uk-government-response",
+    "checked_on": "2026-11-22",
+    "sha256": "591d5235c8e7ccd8539e0f84cbc59a9abf9b70af35d92914d38eda5300ea84b1"
   },
   "8df3ba3c7c29374e3b5cc93d1ba7a63ffb6870d0ccd429d9f20faa0be4623811|https://www.gov.uk/government/news/investigation-into-illegal-waste-dumping-in-yorkshire-town": {
     "match": "exact",
@@ -905,12 +959,6 @@
     "checked_on": "2026-10-27",
     "sha256": "4d0e12743a620c33ce2296fd30d83ced3b301683ab34ee22b3e1ec3740902967"
   },
-  "9adebf091a40854ce5285834d3c99d30267d31273a8988bf60d2fcd6a7f028d6|https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements": {
-    "match": "exact",
-    "url": "https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements",
-    "checked_on": "2026-11-22",
-    "sha256": "f8c7eeba1ae81dcfa4cc3556144898a2d197f3c87dd6fecae381c3078082dc27"
-  },
   "9b66dc97a6abd032e0928d90f2c108588bcb941dff7c0fc695f1a58c27fd4551|https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-13/HCWS372",
@@ -928,6 +976,12 @@
     "url": "https://www.gov.uk/government/news/everyday-fixes-to-make-life-easier-for-millions-of-britons",
     "checked_on": "2026-10-27",
     "sha256": "80d5d6d4ed6c271b1d8ae57b16e18fa255662c1e8fba75da8755311b6f75f91e"
+  },
+  "9ea680e35b3ac45d810b7d94d6f809fb66e430f1fe6cdc5ed04cb19561aab72a|https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report",
+    "checked_on": "2026-11-22",
+    "sha256": "d0d96abfe66a095e7ee2f599695b5e98ad063b62db84d5e81a1d5939f9e9ee66"
   },
   "a0bda37bfb0a09a6a30eafd8fc6857e5a53de1e752a6bcd20a3060e3ebf01d6b|https://hansard-api.parliament.uk/debates/debate/3C01A9B5-6F3F-4C82-95F2-21BDCBEBF7AC.json": {
     "match": "exact",
@@ -976,6 +1030,12 @@
     "url": "https://www.gov.uk/government/news/mhra-introduces-new-safeguards-to-strengthen-antidepressant-safety-information-following-major-review",
     "checked_on": "2026-10-18",
     "sha256": "715a2b92d28f2fb28e5b59f485838fcf63370bd4e4dbdab1f9bc8138ee713d15"
+  },
+  "a972c946153c17ae980da6ff909e7b634162c825d320e952b2361faa1ea8308a|https://questions-statements.parliament.uk/written-statements/detail/2026-11-19/HCWS492": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-11-19/HCWS492",
+    "checked_on": "2026-11-22",
+    "sha256": "cc89b4e25220df5a069181c94f37076c6f95c3aaf14f8afeed570a66258ced78"
   },
   "a9c87f039a1ebfe8f18fc4ac727b76f97aa257c7d953e651863d38aa71a1444e|https://questions-statements.parliament.uk/written-statements/detail/2026-10-26/HCWS412": {
     "match": "exact",
@@ -1169,6 +1229,12 @@
     "checked_on": "2026-10-27",
     "sha256": "835450fb9f3fbfeaa44d9198ed90c973a741ef45491ca530e31c2ddb81e8468c"
   },
+  "c3e0e555144b4b645a4f60e164575d28b7778ce97f5d1b56cf1e9bfee12365ba|https://www.gov.uk/government/news/uk-leads-international-cooperation-on-sustainable-export-finance": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/uk-leads-international-cooperation-on-sustainable-export-finance",
+    "checked_on": "2026-11-22",
+    "sha256": "18a00520e80e843896693cbb79dee2d964e79aa8ab03db7344d8705d5fc162f7"
+  },
   "c431306540af1368afd884c0cd4861cdcd0e424a12b4464eab236aaed78300b9|https://www.gov.uk/government/speeches/prime-ministers-speech-on-britain-built-for-all-1-december-2025": {
     "match": "exact",
     "url": "https://www.gov.uk/government/speeches/prime-ministers-speech-on-britain-built-for-all-1-december-2025",
@@ -1301,12 +1367,6 @@
     "checked_on": "2026-10-18",
     "sha256": "cb2d6256bd9d4b0892889aed25414eef77a0aca206ffc1bd1c92fda6dd7cc6ff"
   },
-  "d9e1d0689f6b40ce4d7d69677ffb67785da3933147ee5ac66a1b5fc5fc0adc96|https://www.gov.uk/government/news/beginning-of-the-end-for-thousand-year-old-leasehold-system": {
-    "match": "exact",
-    "url": "https://www.gov.uk/government/news/beginning-of-the-end-for-thousand-year-old-leasehold-system",
-    "checked_on": "2026-11-22",
-    "sha256": "41eefba7cbacf4675b05ea4485a490cfd74277f6660f3c7fc089e0466defeabc"
-  },
   "da68041ab90acf8f302d47bd9cb1146eaae760033276f223f8f82000ef972d22|https://www.gov.uk/government/news/new-royal-navy-led-northern-navies-initiative": {
     "match": "exact",
     "url": "https://www.gov.uk/government/news/new-royal-navy-led-northern-navies-initiative",
@@ -1391,12 +1451,6 @@
     "checked_on": "2026-10-25",
     "sha256": "c52a8feeb113ab39982c236e0ae3f6e3cb42acaf8b02ce5928df463f6ff4709e"
   },
-  "eae1a9ea1822b5b2bcd1aa7db9ff7db2e5a9a401ef483338ed27c023d60fa22f|https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements": {
-    "match": "exact",
-    "url": "https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements",
-    "checked_on": "2026-11-22",
-    "sha256": "f8c7eeba1ae81dcfa4cc3556144898a2d197f3c87dd6fecae381c3078082dc27"
-  },
   "eb0008cef1f7c88e2dbf27f4097d2ab53a9ac46ba01712a114d206f1dde04d10|https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS401": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-21/HCWS401",
@@ -1408,6 +1462,12 @@
     "url": "https://www.gov.uk/government/consultations/trust-based-pension-schemes-trustees-and-governance-building-a-stronger-future/outcome/government-response-trust-based-pension-schemes-trustees-and-governance-building-a-stronger-future",
     "checked_on": "2026-11-15",
     "sha256": "cd2b36f214e6db0eeaccb0bc07cc400c508dc19b244e2b35c5db86a116991478"
+  },
+  "ec799f613336c79da9e8824de10205a5bd22640452dce5983acc52b4ced6b1b3|https://www.gov.uk/government/publications/changes-to-individual-savings-account-reporting/individual-savings-account-changes-to-reporting": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/publications/changes-to-individual-savings-account-reporting/individual-savings-account-changes-to-reporting",
+    "checked_on": "2026-11-22",
+    "sha256": "f8738aa2739841ed74456b4c5002276395744de03b166fa58064f9efecc0e00f"
   },
   "ee9e33d6bc513e914fa715f26982f3fa130ed58e60ed95dbd25d902de32d85c1|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS363": {
     "match": "exact",
@@ -1469,6 +1529,12 @@
     "checked_on": "2026-10-20",
     "sha256": "bfd72905eb5de7945125ec6ab889eb1ae2502aa5b2bdb4cfe08771d62391338c"
   },
+  "fbfb211a6a2cc53bdded85cce1e27de0edec7125a8025d67feee3618c0c4ed78|https://questions-statements.parliament.uk/written-statements/detail/2026-11-16/HCWS474": {
+    "match": "exact",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-11-16/HCWS474",
+    "checked_on": "2026-11-22",
+    "sha256": "152104cff8699116c22a7268a9c1b7d6802b723ca90973baed0418cacb6b4bb7"
+  },
   "fc219ae43e8cc6c96ac865be4ba085f26df0056a8cfb6eecc5c573a0a68981cd|https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354": {
     "match": "exact",
     "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/HCWS354",
@@ -1480,5 +1546,41 @@
     "url": "https://www.gov.uk/government/news/jackdaw-gas-field-gets-green-light",
     "checked_on": "2026-10-25",
     "sha256": "3acd4a5173c6da736d49186bb4d02a2222566671160de62341d547ec986a9527"
+  },
+  "3de1de7680ac24bd61b62a3d7bed3152a3cea9b7324098fba7ed424ecd448077|https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements",
+    "checked_on": "2026-11-22",
+    "sha256": "f8c7eeba1ae81dcfa4cc3556144898a2d197f3c87dd6fecae381c3078082dc27"
+  },
+  "5378ec5f0e175106f15f8049425071fbc741f95a7e1d14686211b0c74704f8b8|https://www.gov.uk/government/news/new-personalised-care-to-keep-18-million-people-out-of-hospital": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/new-personalised-care-to-keep-18-million-people-out-of-hospital",
+    "checked_on": "2026-11-22",
+    "sha256": "7cc241010718ddc0f5785ef594c962f53f1bed47f6877e74554e3dca8ed9c81a"
+  },
+  "83a57614208e991850f9098c4aaf59b6446ed8780b511262fb804b3941de7d78|https://www.gov.uk/government/consultations/construction-products-reform-white-paper/outcome/construction-products-reform-white-paper-government-response": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/consultations/construction-products-reform-white-paper/outcome/construction-products-reform-white-paper-government-response",
+    "checked_on": "2026-11-22",
+    "sha256": "c2f216c4d528dadd19317909fb9ee0956bb3bcd6c15c988b7bd650f5bf2ce382"
+  },
+  "9adebf091a40854ce5285834d3c99d30267d31273a8988bf60d2fcd6a7f028d6|https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements",
+    "checked_on": "2026-11-22",
+    "sha256": "f8c7eeba1ae81dcfa4cc3556144898a2d197f3c87dd6fecae381c3078082dc27"
+  },
+  "d9e1d0689f6b40ce4d7d69677ffb67785da3933147ee5ac66a1b5fc5fc0adc96|https://www.gov.uk/government/news/beginning-of-the-end-for-thousand-year-old-leasehold-system": {
+    "match": "exact",
+    "url": "https://www.gov.uk/government/news/beginning-of-the-end-for-thousand-year-old-leasehold-system",
+    "checked_on": "2026-11-22",
+    "sha256": "41eefba7cbacf4675b05ea4485a490cfd74277f6660f3c7fc089e0466defeabc"
+  },
+  "eae1a9ea1822b5b2bcd1aa7db9ff7db2e5a9a401ef483338ed27c023d60fa22f|https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements": {
+    "match": "exact",
+    "url": "https://hansard.parliament.uk/Commons/2026-11-18/debates/A8A9B825-68F6-494E-AD08-4723820DA876/Engagements",
+    "checked_on": "2026-11-22",
+    "sha256": "f8c7eeba1ae81dcfa4cc3556144898a2d197f3c87dd6fecae381c3078082dc27"
   }
 }

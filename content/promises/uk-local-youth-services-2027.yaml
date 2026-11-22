@@ -1,0 +1,74 @@
+format: openpromises/1
+id: uk-local-youth-services-2027
+headline:
+  en: "Locally led youth services from 2027"
+actor_id: hm-government
+made_on: "2026-11-17"
+venue: press_release
+venue_label:
+  en: >-
+    Press release (Department for Work and Pensions)
+area: social_protection
+status: promised
+status_note:
+  en: >-
+    Part of the government’s response to the Milburn review. Mayors and local leaders are to shape
+    the services, which become the main route into support for young people not in education or
+    work. The release is dated 17 November 2026, so "next year" is read as 2027 and the deadline as
+    its last day; it gives no cost. The card moves when the first services open.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Work and Pensions press release, 17 Nov 2026: Government commits to new
+      settlement for young people and to invest in success rather than pay for failure
+    url: https://www.gov.uk/government/news/government-commits-to-new-settlement-for-young-people-and-to-invest-in-success-rather-than-pay-for-failure
+  - title: >-
+      Department for Education press release, 17 Nov 2026: Government fires starting gun on new
+      settlement for young people
+    url: https://www.gov.uk/government/news/government-fires-starting-gun-on-new-settlement-for-young-people
+versions:
+  - version: 1
+    text: >-
+      New locally led youth services will bring together employment, health, skills and wider youth
+      support in one place starting from next year. This will give young people one route to get the
+      help they need, one plan to get back on track and guaranteed opportunities in education,
+      training or work.
+    recorded_on: "2026-11-17"
+    source_url: https://www.gov.uk/government/news/government-commits-to-new-settlement-for-young-people-and-to-invest-in-success-rather-than-pay-for-failure
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          18 to 24 year olds not in education or work, or at serious risk of it
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          Starting from 2027
+      deadline: "2027-12-31"
+      funded_by: null
+events:
+  - date: "2026-11-17"
+    type: promised
+    text:
+      en: >-
+        The government says new locally led youth services joining up employment, health and skills
+        support will start next year
+  - date: "2027-12-31"
+    type: deadline
+    text:
+      en: >-
+        Locally led youth services due to have started
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

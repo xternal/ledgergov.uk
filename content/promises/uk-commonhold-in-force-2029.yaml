@@ -1,0 +1,69 @@
+format: openpromises/1
+id: uk-commonhold-in-force-2029
+headline:
+  en: "Reformed commonhold in force by 2029"
+actor_id: hm-government
+made_on: "2026-11-19"
+venue: press_release
+venue_label:
+  en: >-
+    Government response: Moving to commonhold: banning leasehold for new flats
+area: housing_env
+status: promised
+status_note:
+  en: >-
+    The Commonhold and Leasehold Reform Bill was introduced on 19 November 2026, and secondary
+    legislation is also needed. The response says it cannot pre-empt Parliament, and that the ban on
+    new leasehold flats follows two and a half years later (a separate card). The source gives 2029
+    without a month, so the deadline is read as the end of 2029. The card moves when the Bill passes
+    and the commonhold regulations are made.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Ministry of Housing, Communities and Local Government, 19 Nov 2026: Moving to commonhold:
+      banning leasehold for new flats: Summary of consultation responses and UK government response
+    url: https://www.gov.uk/government/consultations/moving-to-commonhold-banning-leasehold-for-new-flats/outcome/moving-to-commonhold-banning-leasehold-for-new-flats-summary-of-consultation-responses-and-uk-government-response
+versions:
+  - version: 1
+    text: >-
+      We cannot pre-empt the Parliamentary process, but it is the intention that the reformed
+      commonhold model will come into force before the end of this Parliament in 2029.
+    recorded_on: "2026-11-19"
+    source_url: https://www.gov.uk/government/consultations/moving-to-commonhold-banning-leasehold-for-new-flats/outcome/moving-to-commonhold-banning-leasehold-for-new-flats-summary-of-consultation-responses-and-uk-government-response
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Homeowners and developers of flats in England and Wales
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          Before the end of this Parliament in 2029
+      deadline: "2029-12-31"
+      funded_by: null
+events:
+  - date: "2026-11-19"
+    type: promised
+    text:
+      en: >-
+        The government says it intends the reformed commonhold model to be in force before the end
+        of this Parliament in 2029
+  - date: "2029-12-31"
+    type: deadline
+    text:
+      en: >-
+        Reformed commonhold model due to be in force
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.

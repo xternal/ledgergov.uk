@@ -1,0 +1,75 @@
+format: openpromises/1
+id: uk-gigabit-99pc-premises-2032
+headline:
+  en: "Gigabit broadband for 99% of premises"
+actor_id: hm-government
+made_on: "2026-11-19"
+venue: press_release
+venue_label:
+  en: >-
+    Government response: Legislative proposals to address broadband rollout in leasehold flats
+area: economic_affairs
+status: promised
+status_note:
+  en: >-
+    A restated target. The response cites Ofcom’s Connected Nations Spring 2026 report: 88% of UK
+    premises could get a gigabit-capable connection in January 2026. The minister Ian Murray told
+    the Commons on 16 November that Building Digital UK’s Project Gigabit is trying to reach 99% of
+    premises by 2032. "By 2032" is read as the end of 2032. The card moves with Ofcom’s coverage
+    reports.
+responsible:
+  actor_id: hm-government
+origin: llm_intake
+sources:
+  - title: >-
+      Department for Science, Innovation and Technology, 19 Nov 2026: Legislative proposals to
+      address broadband rollout in leasehold flats: government response
+    url: https://www.gov.uk/government/consultations/legislative-proposals-to-address-broadband-rollout-in-leasehold-flats/outcome/legislative-proposals-to-address-broadband-rollout-in-leasehold-flats-government-response
+  - title: >-
+      Hansard, House of Commons, 16 Nov 2026: Microsoft 365 Outage
+    url: https://hansard.parliament.uk/Commons/2026-11-16/debates/52FEDF8F-7F19-47A6-9FB7-1930054C9061/Microsoft365Outage
+  - title: >-
+      Written ministerial statement HCWS492, 19 Nov 2026: Commonhold and Leasehold Reform Bill
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-19/HCWS492
+versions:
+  - version: 1
+    text: >-
+      The government remains committed to delivering nationwide gigabit-capable broadband coverage
+      by 2032, reaching a minimum of 99% of premises across all populated areas of the UK.
+    recorded_on: "2026-11-19"
+    source_url: https://www.gov.uk/government/consultations/legislative-proposals-to-address-broadband-rollout-in-leasehold-flats/outcome/legislative-proposals-to-address-broadband-rollout-in-leasehold-flats-government-response
+    quote_checked_on: "2026-11-22"
+    parameters:
+      who:
+        en: >-
+          Homes and businesses across all populated areas of the UK
+      cost:
+        note:
+          en: >-
+            No cost has been published.
+      when:
+        en: >-
+          By 2032
+      deadline: "2032-12-31"
+      funded_by: null
+events:
+  - date: "2026-11-19"
+    type: promised
+    text:
+      en: >-
+        The government restates its commitment to gigabit-capable broadband for at least 99% of UK
+        premises by 2032
+  - date: "2032-12-31"
+    type: deadline
+    text:
+      en: >-
+        Gigabit-capable broadband due for at least 99% of UK premises
+replies: []
+reviews:
+  - by: AI Journalist
+    kind: automated
+    "on": "2026-11-22"
+    note:
+      en: >-
+        Quote checked word for word at the source; dates, figures and links checked against the
+        cited sources.
