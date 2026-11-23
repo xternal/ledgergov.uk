@@ -16,8 +16,10 @@ status_note:
     McFadden, told the Commons that savings from adjusting the triple lock will make a significant
     contribution to "a rising, more sustainable state pension alongside free personal care through a
     new national care service", and that Baroness Louise Casey will set out the pace and scale of
-    its roll-out in a final report next summer. Neither gave a date or a cost for the service. The
-    card moves when that report or a plan for the service is published.
+    its roll-out in a final report next summer. Neither gave a date or a cost for the service. On
+    12 November 2026 the Department of Health and Social Care said the service will be established
+    in the next Parliament and funded by changes to the triple lock pension. The card moves when
+    that report or a plan for the service is published.
 responsible:
   actor_id: hm-government
 origin: llm_intake
@@ -29,6 +31,8 @@ sources:
       Hansard, House of Commons, 13 Oct 2026: Pensions Triple Lock (Work and Pensions Secretary's
       statement)
     url: https://hansard.parliament.uk/Commons/2026-10-13/debates/72F06588-BF33-4C21-8542-EE9E1293D7C9/PensionsTripleLock
+  - title: "DHSC press release, 12 Nov 2026: More familiar carers and less travel under new social care plans"
+    url: https://www.gov.uk/government/news/more-familiar-carers-and-less-travel-under-new-social-care-plans
 versions:
   - version: 1
     text: >-

@@ -14,9 +14,11 @@ status_note:
     The cap is in the draft Commonhold and Leasehold Reform Bill, published on 27 January 2026: £250
     a year, falling to a peppercorn after 40 years, for leaseholders in England and Wales. The
     King's Speech of 13 May 2026 named the Bill, including the capping of ground rents, and the
-    Leader of the House said on 10 September 2026 that it will be introduced; by 20 October 2026 it
-    had not been. The government said the cap could come into force in late 2028, subject to
-    parliamentary timings. The card moves to Legislated when the Bill becomes law.
+    Leader of the House said on 10 September 2026 that it will be introduced. It was introduced on
+    19 November 2026, when the housing minister restated the government's aim of bringing the cap
+    into force six months after Royal Assent. The government had said the cap could come into
+    force in late 2028, subject to parliamentary timings. The card moves to Legislated when the
+    Bill becomes law.
 responsible:
   actor_id: hm-government
   note:
@@ -41,6 +43,8 @@ sources:
     url: https://www.gov.uk/government/consultations/quid-pro-quo-leases-and-the-ground-rent-cap
   - title: "Hansard, House of Commons, 10 Sep 2026: Business of the House"
     url: https://hansard.parliament.uk/Commons/2026-09-10/debates/F6E9AB72-395B-4C77-9643-084029ACC336/BusinessOfTheHouse
+  - title: "Written statement HCWS492, 19 Nov 2026: Commonhold and Leasehold Reform Bill (Matthew Pennycook)"
+    url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-19/HCWS492
 versions:
   - version: 1
     text: >-

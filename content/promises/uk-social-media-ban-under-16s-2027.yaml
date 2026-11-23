@@ -16,7 +16,8 @@ status_note:
     regulations would be laid before Parliament by the end of 2026 and come into force in spring
     2027, and the Digital, Culture, Media and Sport Secretary told the Commons on 8 September 2026
     that the government is on track for that timetable. No regulations had been laid by 20 October
-    2026. Spring 2027 is read as 31 May 2027.
+    2026. The Department of Health and Social Care's report of 19 November 2026 says the ban covers
+    those aged 15 and under from spring 2027. Spring 2027 is read as 31 May 2027.
 responsible:
   actor_id: hm-government
   note:
@@ -41,6 +42,8 @@ sources:
     url: https://www.legislation.gov.uk/ukpga/2026/21/section/70
   - title: "Hansard, House of Commons, 8 Sep 2026: Online Safety"
     url: https://hansard.parliament.uk/Commons/2026-09-08/debates/30B4AD07-8ACF-462B-A262-B98157506439/OnlineSafety
+  - title: "DHSC, 19 Nov 2026: Men's Health Strategy, one year on report"
+    url: https://www.gov.uk/government/publications/mens-health-strategy-one-year-on-report/mens-health-strategy-one-year-on-report
 versions:
   - version: 1
     text: >-
