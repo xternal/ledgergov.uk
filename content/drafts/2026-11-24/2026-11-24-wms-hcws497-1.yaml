@@ -1,0 +1,45 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws497.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-24"
+source:
+  id: wms-hcws497
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-24/HCWS497
+  title: Domestic Abuse Protection Notices and Domestic Abuse Protection Orders Rollout
+  date: "2026-11-24"
+  venue_label: Written ministerial statement
+quote: >-
+  My hon. Friend the Parliamentary Under-Secretary of State for Victims, Violence Against Women and
+  Girls and International Justice (Alex Davies-Jones) and I are today pleased to announce the
+  rollout of Domestic Abuse Protection Notices (DAPNs) and Domestic Abuse Protection Orders (DAPOs)
+  from 25 November across England and Wales.
+source_span: [0, 330]
+speaker:
+  name: Satvir Kaur
+  role: >-
+    Parliamentary Under-Secretary of State for Safeguarding and Violence Against Women and Girls
+  party: Labour
+  member_id: 5271
+  actor_id: labour
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: public_order
+  who: >-
+    victims and survivors of domestic abuse, police and courts across England and Wales
+  how_much: null
+  when: from 25 November
+  funded_by: null
+  deadline: "2026-11-25"
+why: >-
+  Domestic Abuse Protection Notices and Orders will be available across all of England and Wales
+  from 25 November 2026, extending them beyond the pilot areas.
+confidence: 0.75
+model: claude-opus-5-5
+status: to_review
