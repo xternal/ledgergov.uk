@@ -1,0 +1,64 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/hansard-c95d1b7e.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-24"
+source:
+  id: hansard-c95d1b7e
+  kind: hansard_statement
+  url: https://hansard.parliament.uk/Commons/2026-11-24/debates/C95D1B7E-B442-4839-9356-37DADA8245C5/TimmsReviewFinalReport
+  title: "Timms Review: Final Report"
+  date: "2026-11-24"
+  venue_label: Commons statement
+quote: >-
+  There will need to be careful planning around who will be eligible for the fast track that we will
+  introduce. It will be a minority of applicants—those with the most severe and enduring
+  conditions—but we will need to specify that more fully.
+source_span: [18187, 18428]
+speaker:
+  name: Stephen Timms
+  role: Minister for Social Security and Disability
+  party: null
+  member_id: 163
+  actor_id: null
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: social_protection
+  who: >-
+    PIP applicants with the most severe and enduring conditions, a minority of applicants
+  how_much: null
+  when: null
+  funded_by: null
+  deadline: null
+why: >-
+  The Government will introduce a fast-track PIP route without a full assessment for people with
+  serious, well-evidenced conditions.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      The policy that was there on paper has not been applied as rigorously as it should have been
+      in practice. We are going to change that and make sure that the policy is applied in the
+      future.
+    source_span: [18705, 18894]
+    suggested:
+      policy_area: social_protection
+      who: >-
+        PIP claimants with lifelong or degenerative conditions whose needs are unlikely to improve
+      how_much: null
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      People on PIP with lifelong or degenerative conditions will no longer face repeated award
+      reviews, implementing a review recommendation the Government agreed in the statement.
+    confidence: 0.6
+confidence: 0.7
+model: claude-opus-5-5
+status: to_review

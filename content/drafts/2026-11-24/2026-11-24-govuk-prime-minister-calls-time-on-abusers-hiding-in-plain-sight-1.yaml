@@ -1,0 +1,44 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-prime-minister-calls-time-on-abusers-hiding-in-plain-sight.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-24"
+source:
+  id: govuk-prime-minister-calls-time-on-abusers-hiding-in-plain-sight
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/prime-minister-calls-time-on-abusers-hiding-in-plain-sight
+  title: Prime Minister calls time on abusers hiding in plain sight
+  date: "2026-11-24"
+  venue_label: Press release (Prime Minister's Office, No 10)
+quote: >-
+  Sending a clear signal that nobody is too powerful to be held to account, the Prime Minister has
+  brought forward changes to NDAs that will mean, from January, they cannot be used to silence
+  victims of crime or someone who has experienced harassment in the workplace.
+source_span: [791, 1057]
+speaker:
+  name: HM Government
+  role: Prime Minister's Office, No 10
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: public_order
+  who: >-
+    Victims of crime and people who experience or witness harassment in the workplace
+  how_much: null
+  when: From January (2027)
+  funded_by: null
+  deadline: "2027-01-31"
+why: >-
+  From January, NDAs will no longer be able to stop victims of crime or people who experience or
+  witness workplace harassment from speaking out, and confidentiality clauses in new worker–employer
+  NDAs covering harassment will be automatically void.
+confidence: 0.75
+model: claude-opus-5-5
+status: to_review

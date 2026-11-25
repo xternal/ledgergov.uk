@@ -1,0 +1,39 @@
+Analysis of gigabit-capable broadband rollout in multi dwelling units (MDUs)
+Introduction
+The government is committed to delivering nationwide gigabit coverage by 2032, reaching a minimum of 99% of premises across all populated areas of the UK. Despite significant progress, deployment to flats, particularly leasehold flats, continues to lag other property types.
+The government published its response to the legislative proposals to address broadband rollout in leasehold flats on 19 November 2026. This annex provides the statistics and statistical methods underpinning the government response.
+Data on coverage by property type, rurality and ownership was previously published to support the initial consultation document. This annex includes additional transparency data used in the government response.
+Data and methodology
+1.1 Data Sources
+We used a range of data sources to produce the analysis:
+The premises base used and building classifications were derived from the Ordnance Survey AddressBase Premium product.
+The rurality of premises were taken from the Office for National Statistics (ONS) 2021 Rural-Urban. Classifications.
+ONS National Statistics UPRN Lookup (November 2025) (Epoch 123) was used for geographic locations.
+HM Land Registry data on Registered Leases was used to identify leasehold flats.
+HM Land Registry data on Overseas companies that own property in England and Wales.
+HM Land Registry data on UK companies that own property in England and Wales.
+The May 2026 Open Market Review (OMR) publication from BDUK was used to determine current connectivity and future connectivity of properties.
+Business sizes from FAME, Moodys.
+Demographic Data from Census 2021, ONS.
+1.2 Data Coverage
+For this analysis the coverage was shaped by Ofcom’s premises base. This premises base covers the UK, but for the purposes of this work we linked only to properties in England and Wales. This premises base covers 28.67 million residential and commercial properties in England and Wales, of which 6.0 million are self-contained flats.
+Data on connectivity is acquired by Building Digital UK (BDUK) from supplier returns. Not all suppliers will provide data returns so there may be gaps in the coverage data. The connectivity data may therefore differ from other reporting by Ofcom or ThinkBroadband for this reason.
+1.3 Data collection period
+The connectivity data was collected by BDUK in May 2026. Data on registered leases was correct as of August 2025.
+2.1 Methodology
+2.1.1 Address matching
+The Ofcom premises base was reproduced using the approach detailed in the methodology document that accompanies their Connected Nations report.
+Using the unique property reference numbers (UPRNs) in the Ofcom premises base we joined on the building classifications, geographic regions, rural-urban classifications and the registered leases.
+Prior to joining, the data on Registered Leases was cleaned to drop duplicate entries and remove leases for non-residential or commercial properties. Leases were dropped if they were for airspace, garages, carparking, parking spaces, pipelines, transformers, substations, exchanges or cell sites.
+The data contained a mix of “child” unique property reference numbers (UPRNs), “parent” UPRNs and properties where UPRNs were missing. Where a parent UPRN was present in the data we assumed that all “child” premises associated with the parent were leasehold properties.
+856k leases had no UPRN in their record. We matched on postcodes and then used a bigram-based fingerprint hash for fuzzy entity matching to link to addresses and UPRNs. Using this approach, we were able to match 505k premises to a UPRN record.
+Of the 7.6mn records in the registered leases data we were able to match 3.3mn to a UPRN belonging to a flat.
+2.1.2 Business Size
+Business size, measured by number of employees, was taken from Moody’s FAME database, which contained 2,541,095 unique companies. We joined this to the Land Registry data on property ownership using company registration number, returning 2,681,091 unique property titles. These were then joined to the Ofcom premises base, returning 2,200,704 unique UPRNs, of which 1,013,266 are identifiable by business size.
+2.1.3 Analysis
+We identified MDUs using the building classification code “RD06”/self-contained Flat.
+A count of the total premises with the flag current gigabit was used to measure gigabit coverage. Future gigabit was measured if premises had a flag of current gigabit OR future gigabit.
+3.1 Accuracy and reliability
+Whilst each data supplier has undertaken extensive quality assurance, the scale and complexity of the geographic data means that some inaccuracies or inconsistencies may remain. The scale of the inaccuracy is difficult to quantify and detect using automated processes. However, manual checks suggest that inaccurate reporting should be very limited.
+When joining registered leases onto the rest of the data we had to make several assumptions. Registered leases described property such as “land near 29 Acacia Road”. These may have been assigned an address as described in the methodology.
+Where a registered lease refers to a building we assume that all premises within the building are leasehold properties. Although the total number of leasehold flats corresponds with figures reported elsewhere, there may be instances where leasehold flats have not been correctly identified.
