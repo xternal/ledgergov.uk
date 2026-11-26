@@ -1,0 +1,60 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/hansard-614a2324.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-25"
+source:
+  id: hansard-614a2324
+  kind: hansard_statement
+  url: https://hansard.parliament.uk/Commons/2026-11-25/debates/614A2324-BFE2-40D7-A4A9-6A3E1AED8ED5/NuclearTestVeterans
+  title: Nuclear Test Veterans
+  date: "2026-11-25"
+  venue_label: Commons statement
+quote: >-
+  I can tell the House that Bishop James has agreed to deliver an interim report in time for the
+  75th anniversary of the first test on 3 October 2027.
+source_span: [7830, 7978]
+speaker:
+  name: Andy Burnham
+  role: Prime Minister
+  party: null
+  member_id: 1427
+  actor_id: andy-burnham
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: defence
+  who: Nuclear test veterans, descendants and their families
+  how_much: null
+  when: By 3 October 2027
+  funded_by: null
+  deadline: "2027-10-03"
+why: >-
+  The nuclear test veterans independent panel will publish an interim report by 3 October 2027.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      I am absolutely certain that on or around 3 October next year, I will be standing here doing
+      just that, but I want to talk to the families and others affected to ensure that it is
+      meaningful and right.
+    source_span: [22928, 23129]
+    suggested:
+      policy_area: defence
+      who: Nuclear test veterans and their families
+      how_much: null
+      when: On or around 3 October 2027
+      funded_by: null
+      deadline: "2027-10-31"
+    why: >-
+      The Prime Minister will make a full Government apology to nuclear test veterans in the Commons
+      on or around 3 October 2027.
+    confidence: 0.5
+confidence: 0.55
+model: claude-opus-5-5
+status: to_review

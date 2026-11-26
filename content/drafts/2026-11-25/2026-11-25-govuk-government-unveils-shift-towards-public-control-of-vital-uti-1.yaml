@@ -1,0 +1,41 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-government-unveils-shift-towards-public-control-of-vital-uti.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-25"
+source:
+  id: govuk-government-unveils-shift-towards-public-control-of-vital-uti
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/government-unveils-shift-towards-public-control-of-vital-utilities
+  title: Government unveils shift towards public control of vital utilities.
+  date: "2026-11-25"
+  venue_label: Press release (Cabinet Office)
+quote: >-
+  She affirmed the Government’s commitment to ensuring the whole of the water industry works in the
+  public interest, with the Water Bill coming next year.
+source_span: [3568, 3720]
+speaker:
+  name: HM Government
+  role: Cabinet Office
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: housing_env
+  who: the water industry
+  how_much: null
+  when: next year
+  funded_by: null
+  deadline: null
+why: >-
+  The government commits to bringing forward a Water Bill in 2027 to make the water industry work in
+  the public interest.
+confidence: 0.6
+model: claude-opus-5-5
+status: to_review
