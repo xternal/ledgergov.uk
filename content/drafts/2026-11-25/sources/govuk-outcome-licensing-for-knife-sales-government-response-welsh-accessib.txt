@@ -1,0 +1,620 @@
+Licensing for knife sales: government response (Welsh accessible)
+Trwyddedu ar gyfer Gwerthu Cyllyll: Ymateb y llywodraeth
+Cyhoeddwyd ar: 25 Tachwedd 2026
+Cyflwyniad a manylion cyswllt
+Dyma ymateb y Llywodraeth i’r papur ymgynghori, ‘Trwyddedu ar gyfer Gwerthu Cyllyll’.
+Bydd yn cwmpasu:
+cefndir yr ymgynghoriad
+dull arfaethedig y Llywodraeth
+crynodeb o’r ymatebion i’r ymgynghoriad
+ymateb manwl i’r cwestiynau penodol a godwyd yn yr adroddiad
+Y camau nesaf yn dilyn yr ymgynghoriad hwn.
+Gellir cael rhagor o gopïau o’r ymateb hwn a’r papur ymgynghori drwy gysylltu â’r Uned Polisi Arfau Tanio ac Arfau yn y cyfeiriad isod:
+Y Gyfarwyddiaeth Troseddu
+Swyddfa Gartref
+2 Marsham Street
+Llundain SW1P 4DF
+E-bost: knifelicensingconsultation@homeoffice.gov.uk
+Mae’r adroddiad hwn hefyd ar gael yn https://www.gov.uk/government/consultations/licensing-for-knife-sales
+Gellir gofyn am fersiynau fformat amgen o’r cyhoeddiad hwn gan knifelicensingconsultation@homeoffice.gov.uk
+Cwynion neu sylwadau
+Os oes gennych unrhyw gwynion neu sylwadau am y broses ymgynghori, dylech gysylltu â’r Swyddfa Gartref yn y cyfeiriad uchod.
+Crynodeb Gweithredol
+1. Roedd yr ymgynghoriad yn agored i’r cyhoedd. Codwyd ymwybyddiaeth o’r ymgynghoriad drwy’r cyfryngau, y Senedd, a chyfarfodydd amrywiol â rhanddeiliaid. Fe wnaethom hefyd drafod y polisi gydag arweinydd Cyngor Cenedlaethol Penaethiaid yr Heddlu ar droseddau cyllyll.
+2. Derbyniodd yr ymgynghoriad gyfanswm o 3413 o ymatebion ar-lein wedi’u cwblhau, a 138 o ymatebion drwy e-bost: cyfanswm o 3551 o ymatebion.
+3. O’r rhain, nododd tua 17% eu hunain fel gwerthwyr cyllyll, a dywedodd 82% nad oeddent yn gwerthu cyllyll. Roedd y mwyafrif helaeth o’r gwerthwyr yn fusnesau bach neu werthwyr preifat. Ymatebodd cymdeithasau masnach, consortiwm manwerthu ac undebau ar ran eu haelodau.
+4. Derbyniwyd ymatebion hefyd gan gynrychiolwyr yr heddlu, awdurdodau lleol, amgueddfeydd a chasglwyr treftadaeth, ymarferwyr celfyddydau cleddyf, ac aelodau eraill o’r cyhoedd sydd â diddordeb.
+5. Nododd rhai ymatebwyr eu bod am i’w hymateb fod yn gyfrinachol. Nid oedd pob ymatebydd yn ateb pob cwestiwn; felly, mae’r ffigurau a ddarperir yn seiliedig ar yr ymatebion a dderbyniwyd ar gyfer pob cwestiwn trwy’r arolwg ar-lein ac e-bost. Mae’r holl ymatebion wedi’u dadansoddi a’u hystyried yn llawn wrth baratoi’r ymateb hwn gan y Llywodraeth.
+Cefndir
+6. Cyhoeddwyd y papur ymgynghori ‘Trwyddedu ar gyfer Gwerthu Cyllyll’ ar 16 Rhagfyr 2025. Gwahoddodd sylwadau ar gynigion y llywodraeth i gyflwyno system drwyddedu ar gyfer gwerthwyr a mewnforwyr cyllyll ac eitemau â llafn.
+7. Mae rheolaethau deddfwriaethol wedi bodoli gyda chyfyngiadau oedran ar werthu cyllyll ers 1996, pan ddaeth yn drosedd i werthu cyllyll i bobl dan 16 oed. Cafodd hyn ei ddiwygio yn 2006 pan newidiwyd y gyfraith yng Nghymru a Lloegr i’w gwneud yn drosedd gwerthu cyllell i berson dan 18 oed. Mae’r gyfraith yn berthnasol i werthu cyllyll wyneb yn wyneb mewn siopau a gwerthiannau o bell ac mae’n cael ei gorfodi gan yr heddlu a swyddogion safonau masnach. Cryfhawyd mesurau ynghylch gwirio oedran a chyflenwi eitemau â llafn i adeiladau domestig yn Neddf Arfau Ymosodol 2019.
+8. Mae cynllun trwyddedu eisoes ar waith yn yr Alban, cynllun[footnote 1] trwyddedu Delwyr Cyllyll yr Alban, sy’n berthnasol i fusnesau ac yn rheoleiddio gwerthu cyllyll annomestig. Fodd bynnag, mewn mannau eraill yn y DU, gall unrhyw un werthu neu fewnforio cyllell, boed yn fusnes neu’n werthwr preifat heb orfod cael trwydded. Mae hyn yn golygu nad yw Safonau Masnach a’r heddlu yn gwybod yn union pwy sy’n gwerthu neu’n mewnforio cyllyll. Mae’n golygu bod gorfodi’r gyfraith yn gorfod dibynnu ar chwiliadau rhagweithiol neu wybodaeth i adnabod gwerthwyr ac o ble mae cyllyll wedi dod mewn ymchwiliadau.
+9. Amlinellodd yr adolygiad Annibynnol o werthiannau cyllyll ar-lein[footnote 2] bryderon am y system ar-lein ar gyfer gwerthu a chyflenwi cyllyll, yn enwedig gyda dilysu oedran yn y pwynt gwerthu a chyflenwi.
+10. Nodwyd dau gategori o werthwyr ar-lein yn yr Adolygiad Annibynnol: manwerthwyr a gwerthwyr cyfoedion. Mae manwerthwyr fel arfer yn cynnal siopau ar-lein[footnote 3] gyda’r gallu i brynu cyllyll trwy eu platfform eu hunain, gan gynnig y cyfle i weld a phrynu cyllyll gan ddefnyddio eu systemau a’u prosesau eu hunain. Mae cyfoedion yn cynnwys yr hyn a ddisgrifir yn yr adroddiad fel gwerthwyr ‘marchnad lwyd’, y gall eu gweithgaredd fod yn gyfreithlon neu’n anghyfreithlon, ond yn aml yn cynnwys ailwerthu cyllyll trwy gyfryngau cymdeithasol a llwyfannau gwerthu. Mae hyn yn arwain at y cyfle i blant gael cyllyll heb unrhyw fath o wirio oedran neu sgrinio o gwbl.
+11. Canfu’r Adolygiad Annibynnol y gellid olrhain cyllyll a ddefnyddir mewn troseddau treisgar yn ôl i fanwerthwyr a gwerthwyr cyfoedion, ond mae’r ‘farchnad lwyd’ yn aml yn methu â chynnig yr atebolrwydd sy’n ofynnol i fanwerthwyr sy’n gweithredu fel busnesau cofrestredig. Mae’r llwyfannau cyfryngau cymdeithasol a ddefnyddir gan werthwyr ‘marchnad lwyd’ hefyd yn darparu lefel o anhysbysrwydd a’r posibilrwydd o hysbysebu anfwriadol i blant.
+12. Argymhellodd yr adolygiad y dylai amodau a gymhwysir trwy gofrestru neu drwyddedu fod:
+Adrodd gorfodol am bryniannau amheus neu swmpus.
+Manylion y prynwr i’w cofnodi, eu cadw a’u rhoi ar gael i orfodi’r gyfraith yn y DU ar gais.
+Yr holl ddeunydd marchnata i arddangos cyflwyno gwirio oedran clir.
+Bydd cofrestrwyr yn cytuno i arolygiad a phrofi prynu gan yr Heddlu a Safonau Masnach.
+Troseddau troseddol newydd o werthu, cynnig gwerthu a marchnata cyllyll heb eu cofrestru (treialadwy y naill ffordd neu’r llall).
+Bydd gwerthu cyllyll heb eu cofrestru yn cael ei drin yn fwy difrifol na throseddau meddiant.
+Bydd manwerthwyr yn cael eu gwahardd rhag gwerthu ‘blychau dirgelwch’, ‘cyllyll dirgel’ a ‘ychwanegiadau pris gostyngol’.
+Rhaid i fanwerthwr cofrestredig beidio â bod yn berson gwaharddedig (i’w ddiffinio).
+Bydd pobl ac adeiladau yn destun gwiriadau am briodoldeb i storio a gwerthu cyllyll.
+Yn ymestyn i unrhyw fusnes sy’n gwerthu eitemau llafn perthnasol.
+13. Argymhellodd yr adolygiad hefyd gyflwyno ‘cynllun trwyddedu mewnforio i wahardd mewnforio cyllyll ac arfau gwaharddedig heb drwydded’.
+Y Cynnig
+14. Fe wnaethon ni gynnig cyflwyno cofrestru drwy gynllun trwyddedu ar gyfer gwerthu cyllyll ac eitemau llafn. Fe wnaethon ni holi barn ynghylch a ddylid gofyn i fusnesau sy’n gwerthu cyllyll ac eitemau llafn fod yn ofynnol i fusnesau sydd â thrwydded ac a ddylai hyn fod yn berthnasol i werthwyr preifat hefyd.
+15. Ochr yn ochr â’r trwyddedu ar gyfer gwerthwyr cyllyll, fe wnaethon ni hefyd gynnig cyflwyno trwyddedau ar gyfer mewnforio cyllyll ac eitemau llafn. Cydnabyddir y gallai rheoleiddio cryfach marchnad y DU annog pobl i geisio prynu gan werthwyr sydd wedi’u lleoli dramor, ac felly bydd trwyddedu mewnforio yn bwysig wrth atal osgoi trwyddedu gwerthwyr.
+16. Fe wnaethon ni gynnig y canlynol i’w hystyried:
+a. Cynllun trwyddedu ar gyfer gwerthwyr busnes a phreifat a fyddai’n cael ei redeg gan yr heddlu ac yn ddarostyngedig i ffioedd sy’n daladwy a gwiriadau addasrwydd ar ymgeiswyr, yn ogystal ag amodau a osodir ar ddeiliad y drwydded. Gall yr amodau hyn gynnwys storio ac arddangos llafnau wedi’u rheoleiddio, a gweithredu mesurau gwerthu gwirio oedran cadarn.
+b. Byddai’r drwydded yn para am dair blynedd ac yn cael ei hadnewyddu gyda ffi adnewyddu.
+c. Gallai’r heddlu ddirymu’r drwydded o dan rai amgylchiadau.
+d. Ar gyfer busnesau mawr, aml-siop, byddai angen i bob siop ddal trwydded, a gallai’r heddlu ddirymu pob trwydded unigol.
+e. Byddai’n drosedd i werthu cyllell neu eitem â llafn heb y drwydded berthnasol i wneud hynny.
+f. Cynllun trwyddedu ar gyfer mewnforwyr, gyda phedwar opsiwn yn cael eu hystyried:
+Mewnforio yn bosibl dim ond trwy ddefnyddio mewnforiwr awdurdodedig yn y DU;
+Trwydded mewnforiwr manwerthwr yn y DU, ac ni fyddai unigolion preifat yn gallu mewnforio;
+Trwydded fewnforiwr ar gael i unrhyw un sydd â diddordeb, gan gynnwys unigolion preifat;
+Trwydded fewnforio a gwerthu gyfunol ar gyfer manwerthwyr sy’n mewnforio ac yn gwerthu.
+g. Byddai’n drosedd i fewnforio unrhyw gyllell neu eitem â llafn heb drwydded fewnforio.
+Crynodeb o’r ymatebion
+17. Derbyniwyd cyfanswm o 3551 o ymatebion i’r papur ymgynghori: 3413 ar-lein a 138 drwy e-bost. Dadansoddwyd y rhain i weld pa gategori o ymatebwyr oeddent. Roedd 76% o’r ymatebwyr ar-lein a 30% o’r ymatebwyr e-bost yn aelodau o’r cyhoedd neu’n ymatebwyr nad oeddent wedi nodi bod ganddynt ddiddordeb penodol (fel yr heddlu, manwerthwr neu gasglwr).
+18. Nododd tua 17% o’r ymatebwyr ar-lein eu hunain fel gwerthwyr cyllyll, tra dywedodd 82% nad oeddent yn gwerthu cyllyll. Ni atebodd y gweddill y cwestiwn. Roedd y mwyafrif helaeth (94%) o’r gwerthwyr yn fusnesau bach neu’n werthwyr preifat. Fodd bynnag, dylid nodi, lle ymatebodd cymdeithasau masnach a chonsortiwm manwerthu, er y byddai eu hymateb yn cael ei ‘gyfrif’ fel un, eu bod yn cynrychioli nifer o fanwerthwyr unigol.
+19. Fel rhan o’r ymgynghoriad, cynhaliwyd cyfarfodydd hefyd gyda manwerthwyr, gweithgynhyrchwyr a chymdeithasau masnach i drafod y cynigion.
+20. Dadansoddwyd yr holl ymatebion i nodi ble mae cefnogaeth neu wrthwynebiad i’r cynigion yn gorwedd, ac i nodi unrhyw effaith negyddol bosibl y gallai eu gweithredu ei gael ar unigolion, grwpiau o bobl neu fusnesau.
+21. Roedd yr ymatebion yn dangos ystod eang o farn ar drwyddedu ar gyfer gwerthu cyllyll, gydag ymatebion wedi’u casglu i raddau helaeth o fewn grwpiau penodol o ymatebwyr.
+22. Fe wnaeth pob ymateb a gafwyd gan ymatebwyr yr heddlu drwy e-bost ddangos cefnogaeth gyffredinol i drwyddedu cyllyll.
+23. O’r rhai a ymatebodd ar-lein, roedd yr heddlu ac awdurdodau lleol yn bennaf o blaid trwydded i fusnesau sy’n gwerthu cyllyll, (82% o’r heddlu a 90% o Awdurdodau Lleol/Safonau Masnach).
+24. Nododd 79% o fusnesau bach a chanolig a gweithgynhyrchwyr a ymatebodd nad oeddent yn cefnogi trwyddedu ar gyfer busnesau sy’n gwerthu cyllyll, tra bod 89% yn erbyn gwerthwyr preifat sydd angen trwydded.
+25. Roedd 76% o gasglwyr neu hobïwyr a ymatebodd ar-lein yn erbyn y cynnig i drwyddedu gwerthwyr busnes. Roedd aelodau o’r cyhoedd a ymatebodd ar-lein ac nad oeddent wedi datgan diddordeb penodol wedi’u rhannu yn eu barn i raddau helaeth ar oddeutu 51% o blaid a 48% yn erbyn (ni roddodd y gweddill farn).
+26. Roedd y mwyafrif (95%) o gasglwyr a hobïwyr a ymatebodd ar-lein hefyd yn erbyn trwyddedu gwerthwyr preifat. Ar y mater hwn roedd aelodau’r cyhoedd hefyd wedi’u rhannu, gyda 55% yn erbyn y cynnig. Roedd 88% o ymatebwyr ar-lein o’r heddlu, Gwasanaeth Erlyn y Goron (CPS) ac awdurdodau lleol yn cefnogi’r cynnig hwn.
+27. Pan ofynnwyd am eu barn ar faint o amser y dylai trwydded fod yn ddilys, dywedodd 880 o ymatebwyr (26%) nad oedden nhw’n credu bod angen trwydded. O’r 2045 a ymatebodd gyda hyd amser penodol o 1, 2, 3, 5 neu 10 mlynedd, neu a ddywedodd y dylai’r drwydded fod yn barhaol neu’n amhenodol, roedd barn y mwyafrif (43% o’r ymatebion hyn) o blaid 3 blynedd fel yr hyd priodol. Roedd 65% o’r heddlu, 77% o’r CPS a 58% o ymatebwyr yr Awdurdod Lleol o blaid yr opsiwn 3 blynedd.
+28. Ynglŷn â’r cwestiwn o drwyddedu ar gyfer mewnforio cyllyll ac eitemau llafn, roedd 40% o’r cyhoedd a atebodd ar-lein o blaid ‘unrhyw un’ angen trwydded, gan gynnwys unigolion preifat. Dyma hefyd farn y mwyafrif o ymatebwyr yr heddlu, yr Awdurdod Lleol a’r CPS, ar 69%. Roedd casglwyr ac amgueddfeydd, ynghyd â busnesau bach/canolig, yn ffafrio bod ‘Neb’ angen trwydded, ar 47% o’u hymatebion.
+Dadansoddiad cwestiwn wrth gwestiwn
+29. Nodyn: Cafodd yr holl ymatebion ar-lein eu cynnwys yn y data isod. Dadansoddwyd ymatebion e-bost a’u hymgorffori lle bynnag yw’n berthnasol. Fodd bynnag, yn y rhan fwyaf o achosion, ni chafodd y cwestiynau eu hateb yn benodol mewn ymatebion e-bost, felly dadansoddwyd yr ymatebion yn ansoddol ac fe’u cynhwysir yn y dadansoddiad naratif isod.
+30. C1. Ydych chi’n gwerthu cyllyll neu eitemau llafn eraill?
+Cynigiwyd yr opsiynau canlynol i’r ymatebwyr:
+Ydw
+Na
+Ydych chi’n gwerthu cyllyll neu eitemau llafn eraill?
+Mae’r siart gylch uchod yn dangos bod 82% o’r ymatebwyr wedi ateb Ie i’r cwestiwn hwn; tra bod 17% wedi ateb Na a gadawodd 1% yr ateb yn wag.
+31. C2. Os ateboch chi ‘Ydw’ uchod, ydych chi’n ystyried eich hun i fod yn(ticiwch y cyfan sy’n berthnasol):
+Cynigiwyd yr opsiynau canlynol i’r ymatebwyr:
+Gwerthwr Ar-lein
+Gwerthwr wyneb yn wyneb
+Gwerthwr preifat/ail-law
+Mewnforiwr
+Arall (esboniwch os gwelwch yn dda)
+Pa fath o werthwr cyllyll ydych chi’n ystyried eich hun?
+Gwerthwr Ar-lein
+199
+Gwerthwr wyneb yn wyneb
+265
+Gwerthwr preifat/ail-law
+317
+Importer
+74
+Mae’r graff bar uchod yn dangos bod 199 o ymatebwyr wedi dweud eu bod yn werthwyr ar-lein; dywedodd 265 eu bod yn werthwyr wyneb yn wyneb; dywedodd 317 eu bod yn werthwyr preifat neu ail-law; a dywedodd 74 eu bod yn fewnforwyr.
+Nodyn: Roedd ymatebwyr yn gallu nodi mwy nag un maes.
+32. C3. Os ydych chi’n gwerthu cyllyll neu eitemau llafn pa mor fawr yw eich busnes?
+Cynigiwyd yr opsiynau ymateb i’r ymatebwyr:
+Bach (1-10 o weithwyr)
+Canolig (11-50 o weithwyr)
+Mawr (dros 51 o weithwyr)
+Os ydych chi’n gwerthu cyllyll neu eitemau llafn, pa mor fawr yw eich busnes?
+Bach (1-10 o weithwyr)
+499
+Canolig (11-50 o weithwyr)
+18
+Mawr (Dros 51 o weithwyr)
+16
+Mae’r graff bar uchod yn dangos bod 499 o ymatebwyr wedi nodi bod ganddyn nhw fusnes bach, gyda rhwng 1 a 10 o weithwyr; tra dywedodd 18 fod ganddyn nhw fusnes canolig gydag 11 i 50 o weithwyr; a dywedodd 16 fod ganddyn nhw fusnes mawr gyda dros 51 o weithwyr.
+33. C4. A ddylai fod yn ofynnol ar fusnesau sy’n gwerthu cyllyll ac eitemau llafn i feddu ar drwydded?
+Cynigiwyd yr opsiynau canlynol i’r ymatebwyr:
+Dylai
+Na
+A ddylai fod yn ofynnol ar fusnesau sy’n gwerthu cyllyll ac eitemau llafn i feddu ar drwydded?
+Cyfrif (ar-lein)
+Canran
+Dylai
+1,591
+47%
+Na
+1,793
+52%
+Gwag
+29
+1%
+Cyfanswm
+3,413
+Mae’r tabl uchod yn dangos niferoedd a chanrannau ymateb.
+A ddylai fod yn ofynnol ar fusnesau sy’n gwerthu cyllyll ac eitemau llafn i feddu ar drwydded?
+Mae’r siart cylch yn dangos bod 1591 o ymatebwyr ar-lein wedi ateb Dylai; atebodd 1793 Na; a gadawodd 29 yr ymateb yn wag.
+Math o ymatebydd
+Dylai
+Na
+Gwag
+Cyfanswm
+Heddlu
+28
+6
+0
+34
+Awdurdodau lleol/safonau masnach/trwyddedu/diogelwch cymunedol
+43
+5
+0
+48
+CPS
+26
+0
+0
+26
+Elusennau
+16
+2
+0
+18
+Casglwyr/ail-berfformwyr/Crefftau Ymladd Hanesyddol Ewrop/amgueddfeydd
+60
+195
+0
+255
+Manwerthwyr
+4
+7
+0
+11
+Tai arwerthu
+1
+2
+0
+3
+Cynhyrchwyr
+2
+5
+0
+7
+Aelod o’r cyhoedd
+1325
+1231
+27
+2583
+Mentrau Bach a Chanolig (SME)
+86
+340
+2
+428
+Cyfanswm
+1591
+1793
+29
+3413
+Mae’r tabl uchod yn dangos ymateb yn ôl math o ymatebydd.
+34. C5. A ddylai fod yn ofynnol ar werthwyr preifat sy’n gwerthu cyllyll ac eitemau llafn i ddal trwydded?
+Cynigiwyd yr opsiynau canlynol i’r ymatebwyr:
+Dylai
+Na
+A ddylai fod yn ofynnol ar werthwyr preifat sy’n gwerthu cyllyll ac eitemau llafn i ddal trwydded?
+Cyfrif (ar-lein)
+Canran
+Dylai
+1,305
+38%
+Na
+2,077
+61%
+Gwag
+31
+1%
+Cyfanswm
+3,413
+Mae’r tabl uchod yn dangos niferoedd a chanrannau ymateb.
+A ddylai fod yn ofynnol ar werthwyr preifat sy’n gwerthu cyllyll ac eitemau llafn i ddal trwydded?
+Mae’r siart cylch uchod yn dangos bod 2,077 o ymatebwyr ar-lein wedi ateb Na; Atebodd 1305 Dylai; a gadawodd 31 yr ymateb yn wag.
+Math o ymatebydd
+Dylai
+Na
+Gwag
+Cyfanswm
+Heddlu
+26
+8
+0
+34
+Awdurdodau lleol/safonau masnach/trwyddedu/diogelwch cymunedol
+43
+5
+0
+48
+CPS
+26
+0
+0
+26
+Elusennau
+15
+3
+0
+18
+Casglwyr/ail-berfformwyr/Crefftau Ymladd Hanesyddol Ewrop/amgueddfeydd
+13
+241
+1
+255
+Manwerthwyr
+1
+2
+0
+3
+Tai arwerthu
+9
+1
+1
+11
+Cynhyrchwyr
+4
+3
+0
+7
+Aelod o’r cyhoedd
+1127
+1428
+28
+2583
+Mentrau Bach a Chanolig (SME)
+41
+386
+1
+428
+Prif Gyfanswm
+1305
+2077
+31
+3413
+Mae’r tabl uchod yn dangos ymateb yn ôl math o ymatebydd.
+Ymatebion e-bost (gan gyfuno cefnogaeth i drwyddedau busnesau a gwerthwyr preifat, oherwydd nid oedd y rhain wedi’u gwahanu yn y rhan fwyaf o ymatebion):
+Ymateb
+Cyfrif (ar-lein)
+Canran
+Cefnogaeth (gan gynnwys cefnogaeth gyda rhybuddion wedi’u nodi)
+48
+35%
+Gwrthwynebu
+76
+55%
+Arall (gwag/dim ymateb)
+14
+10%
+Cyfanswm
+138
+100%
+Ymatebion e-bost yn nodi cefnogaeth neu wrthwynebiad i drwydded gwerthwyr cyllyll (gwerthwyr busnes neu breifat)
+Mae’r siart cylch uchod yn dangos bod 76 o ymatebion e-bost yn nodi eu bod yn gwrthwynebu trwyddedau; 48 yn eu cefnogi; ac ni roddodd 14 ymateb i’r cwestiwn hwn.
+35. C6. Am ba hyd ydych chi’n meddwl y dylai trwydded gwerthwr neu fewnforiwr fod yn ddilys cyn y bydd angen ei hadnewyddu?
+Cynigiwyd yr opsiynau canlynol i’r ymatebwyr:
+3 blynedd
+5 mlynedd
+10 mlynedd
+Arall
+Am ba hyd ydych chi’n meddwl y dylai trwydded gwerthwr neu fewnforiwr fod yn ddilys cyn y bydd angen ei hadnewyddu?
+Gwag
+286
+Dim angen trwydded
+880
+1 flwyddyn
+228
+2 flynedd
+57
+3 blynedd
+886
+5 mlynedd
+412
+10 mlynedd
+352
+Parhaol/Amhenodol
+110
+Arall
+202
+Mae’r graff bar uchod yn dangos bod 286 o ymatebion yn wag; 880 o’r farn nad oes angen trwydded; 228 o’r farn y dylai trwydded bara 1 flwyddyn; 57 y dylai bara 2 flynedd; 886 y dylai bara 3 blynedd; 412 y dylai bara 5 mlynedd; 352 y dylai bara 10 mlynedd; 110 y dylai fod yn amhenodol; a rhoddodd 202 ateb aneglur neu arall.
+Math o ymatebydd
+Prif Gyfanswm
+1 flwyddyn
+2 flynedd
+3 blynedd
+5 mlynedd
+10 mlynedd
+Parhaol / Amhenodol
+Dim angen trwydded
+Arall
+Heddlu
+34
+1
+22
+3
+1
+0
+3
+1
+Awdurdodau lleol/safonau masnach/trwyddedu/diogelwch cymunedol
+48
+4
+1
+28
+7
+2
+1
+2
+2
+CPS
+26
+2
+2
+20
+1
+1
+0
+0
+0
+Elusennau
+18
+1
+1
+11
+1
+2
+0
+0
+1
+Casglwyr/ail-berfformwyr/Crefftau Ymladd Hanesyddol Ewrop/amgueddfeydd
+255
+0
+2
+17
+41
+39
+14
+96
+14
+Manwerthwyr
+3
+0
+0
+0
+1
+0
+0
+2
+0
+Tai arwerthu
+11
+0
+0
+4
+2
+1
+1
+1
+2
+Cynhyrchwyr
+7
+0
+0
+0
+2
+2
+1
+2
+0
+Aelod o’r cyhoedd
+2583
+218
+50
+756
+291
+232
+70
+590
+140
+Mentrau Bach a Chanolig (SME)
+428
+3
+0
+28
+63
+72
+23
+184
+42
+Prif Gyfanswm
+3413
+228
+57
+886
+412
+352
+110
+880
+202
+Mae’r tabl blaenorol yn dangos nifer yr ymatebion yn ôl math o ymatebydd (atebion gwag wedi’u heithrio).
+36. C7. I bwy y dylai fod yn ofynnol i fod â thrwydded i fewnforio cyllyll ac eitemau llafn?
+Cynigiwyd yr opsiynau canlynol i’r ymatebwyr:
+Mewnforiwr awdurdodedig yn y DU
+Manwerthwyr, heb gynnwys unigolion preifat
+Unrhyw un – gan gynnwys gwerthwyr preifat ac unigolion sy’n mewnforio eitemau at ddefnydd personol
+Arall
+I bwy y dylai fod yn ofynnol i fod â thrwydded i fewnforio cyllyll ac eitemau llafn?
+Unrhyw un (gan gynnwys preifat/personol)
+1207
+Mewnforiwr awdurdodedig yn y DU
+433
+Manwerthwyr (ddim yn breifat)
+398
+Neb (gan gynnwys neb/unrhyw un)
+1084
+Arall
+151
+Gwag
+140
+Mae’r graff bar uchod yn dangos bod 1207 o ymatebion yn nodi y dylai unrhyw un angen trwydded i fewnforio; dywedodd 433 y dylid defnyddio mewnforiwr awdurdodedig yn y DU; 398 y dylai manwerthwr ac nid gwerthwyr preifat fod angen trwydded i fewnforio; dywedodd 1084 na ddylai unrhyw un fod angen trwydded i fewnforio; rhoddodd 151 ateb arall neu aneglur; a gadawodd 140 yr ymateb yn wag.
+Math o ymatebydd
+Prif Gyfanswm
+Arall
+Unrhyw un (gan gynnwys preifat/personol)
+Manwerthwyr (ddim yn breifat)
+Mewnforiwr awdurdodedig yn y DU
+Neb (gan gynnwys neb /unrhyw un)
+Heddlu
+34
+2
+19
+4
+5
+2
+Awdurdodau lleol/safonau masnach/trwyddedu/diogelwch cymunedol
+48
+1
+36
+2
+6
+3
+CPS
+26
+20
+3
+3
+0
+Elusennau
+18
+0
+10
+3
+4
+1
+Casglwyr/ail-berfformwyr/Crefftau Ymladd Hanesyddol Ewrop/amgueddfeydd
+255
+17
+27
+47
+35
+114
+Manwerthwyr
+3
+0
+0
+1
+0
+2
+Tai arwerthu
+11
+1
+7
+1
+1
+1
+Cynhyrchwyr
+7
+0
+2
+0
+2
+3
+Aelod o’r cyhoedd
+2583
+103
+1029
+277
+307
+749
+Mentrau Bach a Chanolig (SME)
+428
+27
+57
+60
+70
+209
+Prif Gyfanswm
+3413
+151
+1207
+398
+433
+1084
+Mae’r tabl uchod yn dangos nifer yr ymatebion yn ôl math o ymatebydd (atebion gwag wedi’u heithrio).
+37. C8. Ydych chi’n rhagweld y bydd y mesur hwn yn effeithio ar eich busnes/gweithrediadau busnes?
+Cynigiwyd yr opsiynau canlynol i’r ymatebwyr:
+Ydw
+Na
+Gwahoddwyd sylwadau.
+a C9. Oes gennych chi unrhyw sylwadau eraill?
+Cynigiwyd yr opsiynau canlynol i’r ymatebwyr:
+Oes
+Na
+Gwahoddwyd sylwadau.
+Mae’r ymatebion naratif i gwestiynau 8 a 9 wedi’u dadansoddi, lle cynhwyswyd sylwadau, a’r themâu allweddol wedi’u nodi yn ôl math o ymatebydd. Cyflwynir y rhain isod o dan ‘Dadansoddiad naratif’.
+Dadansoddiad naratif
+Cefnogaeth dros drwyddedu
+38. Daeth 15 o ymatebion e-bost a 108 o ymatebion ar-lein gan gynrychiolwyr yr heddluoedd, Safonau Masnach, y CPS, ac Awdurdodau Lleol. Roedd y rhain yn bennaf yn arwydd o gefnogaeth i’r cynigion naill ai’n llwyr neu gyda chais am rywfaint o eglurhad, os a phryd, y cynigion hyn yn cael eu cymryd ymlaen.
+39. Gofynnodd yr ymatebwyr i’r Llywodraeth eu cynnwys yn agos yn y modd y byddai’r cynllun yn cael ei weithredu’n ymarferol, gan nodi’r baich gweinyddol a chostau y byddai hyn yn ei roi ar y rhai sy’n gyfrifol. Fe wnaethon nhw godi’r angen am ystyried eithriadau ar gyfer mathau a defnyddiau penodol o gyllell. Ar ben hynny, fe wnaethon nhw gydnabod, er y bydd trwyddedu yn helpu, mai dim ond un o ystod o fesurau sy’n mynd i’r afael ag achosion sylfaenol troseddau sy’n gysylltiedig â chyllyll.
+40. Pwysleisiodd manwerthwyr a oedd yn gefnogol yn gyffredinol y dylai unrhyw gynllun trwyddedu fod yn gymesur â’r nod y mae’r llywodraeth yn ceisio ei gyflawni ac na ddylai fod yn rhy anodd ar fusnesau:
+41. Pan nodwyd cefnogaeth eang, roedd hefyd yn destun pryderon a bod y llywodraeth o’r farn nad oedd grwpiau celfyddydol, chwaraeon neu dreftadaeth cyfreithlon yn cael eu heffeithio’n anfwriadol gan ddeddfwriaeth catch-all, ac i gynnwys eithriadau penodol i osgoi hyn.
+42. Ymateb y llywodraeth: Rydym yn disgwyl y byddai cyflwyno cynllun trwyddedu ar gyfer gwerthu a mewnforio cyllyll yn arwain at well cydymffurfiaeth â’r ddeddfwriaeth berthnasol. Rydym yn ymwybodol o’r effaith bosibl y byddai cynllun trwyddedu yn ei chael ar werthwyr a mewnforwyr a byddwn yn ystyried yn ofalus yr angen i’r cynllun fod yn gymesur.
+43. Byddwn hefyd yn ystyried yr angen am eithriadau penodol i leihau’r effaith andwyol ar gasgliadau celf a threftadaeth cyfreithlon.
+44. Byddwn yn gweithio ochr yn ochr â’r heddlu, y Llu Ffiniau, Safonau Masnach ac Awdurdodau Lleol i sicrhau bod unrhyw gynllun trwyddedu sy’n cael ei symud ymlaen yn ymarferol, yn orfodadwy ac yn cael goblygiadau rhesymol ar yr asiantaethau gweithredu.
+45. Mater a godwyd yn aml gan fanwerthwyr, gweithgynhyrchwyr ac ymatebwyr eraill yn ystod yr ymgynghoriad oedd a fyddai’n briodol eithrio cyllyll a ffyrc a chyllyll risg is eraill o unrhyw gynllun trwyddedu.
+46. Ymateb y llywodraeth: Rydym yn deall y rhesymeg y tu ôl i alwadau am eithrio rhai eitemau llafn rhag trwyddedu ac yn credu bod hwn yn ddull synhwyrol a chytbwys o ran risg. Rydym yn edrych ar a ddylem godi cyfyngiadau oedran o rai cyllyll â phen crwn
+Pryderon a godwyd gan ymatebwyr am gynigion y llywodraeth
+47. O’r ymatebion e-bost a fynegodd bryderon, roedd 36 o ymatebion (47%) gan gasglwyr hen bethau, ymarferwyr celf a chwaraeon, crefftwyr ac ail-actorion. Roedd 12 ymateb (16%) gan fanwerthwyr, cymdeithasau masnach, gweithgynhyrchwyr ac undebau staff.
+48. Roedd y mwyafrif helaeth (76%) o’r ymatebwyr ar-lein yn aelodau o’r cyhoedd, neu ymatebwyr nad oedden nhw wedi nodi eu bod â diddordeb penodol heblaw fel y cyfryw.
+49. Mater a godwyd: Dylai arfau dynodedig a ddefnyddir ar gyfer celf sy’n seiliedig ar gleddyf, ail-greu hanesyddol, neu sy’n ffurfio rhan o gasgliad hynafol gael eu heithrio rhag rheoleiddio trwyddedu generig, neu byddai effaith anghymesur negyddol ar dreftadaeth, y celfyddydau a chwaraeon.
+50. Roedd 255 o’r ymatebion ar-lein a 45 o’r ymatebion e-bost gan gasglwyr, hobïwyr a’r rhai sydd â diddordeb chwaraeon a hynafiaethau. Cododd mwy na hanner y rhain bryderon penodol ynghylch y cynigion trwyddedu yn cael rhyw fath o effaith negyddol ar y meysydd hyn o ddefnyddio neu berchnogaeth cyllyll.
+51. Ymateb y llywodraeth: Rydym yn cydnabod y pryderon ynghylch perchnogaeth gyfreithlon a defnyddio eitemau llafn ar gyfer casgliadau chwaraeon, treftadaeth, hanesyddol a budd y cyhoedd, ac mae posibilrwydd y bydd cynllun trwyddedu yn effeithio’n negyddol arnynt. Byddwn yn ystyried yn ofalus yr angen am eithriadau penodol i leihau unrhyw effaith andwyol a byddwn yn gweithio gyda rhanddeiliaid wrth i ni ddatblygu’r cynllun.
+52. Mater a godwyd: Bydd trwyddedu yn aneffeithiol neu ddim yn atal troseddau cyllell, gan nad yw’n mynd i’r afael â’r achosion sylfaenol. Bydd yn effeithio’n anghymesur ar bobl a busnesau sy’n ufuddhau i’r gyfraith.
+53. Roedd ymatebwyr yn aml yn codi pryderon ynghylch a fydd cynllun trwyddedu yn mynd i’r afael â throseddau cyllell. Dywedon nhw fod cyllyll ar gael yn eang (yn enwedig, cyllyll cegin domestig) ac nad yw trwyddedu yn mynd i’r afael ag achosion sylfaenol troseddau cyllyll. Roedd pryder hefyd na fydd cynllun trwyddedu yn atal troseddwyr a busnesau anghyfreithlon.
+54. Ymateb y llywodraeth: Rydym yn cydnabod bod troseddau cyllyll yn fater cymhleth ac amlochrog, na ellir ei ddatrys gan un ateb yn unig. Byddai trwyddedu gwerthu a mewnforio cyllyll yn helpu’r heddlu i adnabod ac erlyn gwerthiannau a gwerthwyr anghyfreithlon ac yn galluogi gorfodi’r gyfraith yn fwy effeithiol - yn enwedig ym maes gwerthiannau ‘marchnad lwyd’, ond nid yn unig. Mae’n un o gyfres o fesurau sy’n cael eu hystyried ac eisoes yn cael eu gweithredu gan y Llywodraeth i fynd i’r afael â throseddau cyllyll.
+55. Mater a godwyd: Cost a dichonoldeb ymarferol trwyddedu i’r heddlu.
+56. Nododd 44% o’r heddlu a 17% o awdurdodau lleol a safonau masnach a ymatebodd ar-lein fod ganddynt bryderon ynghylch sut y byddai’r cynllun trwyddedu yn cael ei weithredu gan yr heddlu a/neu Awdurdodau Lleol gydag adnoddau cyfredol. Pwysleisiodd y dylai’r gost o weinyddu’r cynllun fod yn gallu cael ei adennill o ffioedd.
+57. Roedd pryderon eraill ynglŷn â heriau ymarferol a allai gael eu hwynebu o ganlyniad i raddfa’r cynllun.
+58. Ymateb y llywodraeth: Byddwn yn gweithio’n agos gyda’r heddlu i sicrhau bod unrhyw gynllun wedi’i gynllunio mewn ffordd ymarferol, gorfodadwy a chynaliadwy.
+59. Mater a godwyd: Gorfodadwyedd unrhyw gynllun trwyddedu.
+60. Dywedodd ymatebwyr o ystod o gategorïau, gan gynnwys busnesau bach / canolig i elusennau ac ail-actorion, fod ganddyn nhw bryderon ynghylch gorfodadwyedd y cynigion.
+61. Ymateb y llywodraeth: Rydym yn cydnabod pryderon ynglŷn ag ymarferoldeb gorfodi unrhyw gynllun trwyddedu a byddwn yn gweithio gyda’r awdurdodau perthnasol i sicrhau bod unrhyw gynllun arfaethedig yn ymarferol. Byddwn hefyd yn ymgysylltu â rhanddeiliaid fel busnesau bach i sicrhau bod unrhyw gynllun yn gosod gofynion rhesymol sy’n gyraeddadwy, gan gydbwyso effaith busnes â phryderon diogelwch y cyhoedd.
+62. Mater a godwyd: Diffyg eglurder yn y cynigion.
+63. Pan ofynnodd ymatebwyr am eglurder pellach ynghylch cynigion, roedd hyn yn disgyn bennaf i’r categorïau canlynol:
+a. Eglurder ynghylch beth yw ‘eitem cyllell neu lafn’ a pha eithriadau fyddai’n cael eu cynnwys (a fyddai’r rhain yn unol â’r ddeddfwriaeth gyfredol fel eithriadau crefyddol neu dreftadaeth)
+b. Sicrwydd y byddai math penodol o weithgaredd, rôl neu sefydliad yn cael ei eithrio o gynllun trwyddedu (er enghraifft casgliadau Amgueddfeydd, gwerthwyr hynafiaethau, garddwriaethwyr ac ymarferwyr celfyddydau cleddyf);
+c. Eglurder ar sut y byddai cynllun yn gweithio, gan gynnwys pa wiriadau addasrwydd fyddai’n cael eu cynnal, sut y byddai monitro a gwiriadau yn cael eu gwneud, a phryd a sut y byddai dirymu trwyddedau yn cael eu deddfu.
+64. Ymateb y llywodraeth: Byddwn yn sicrhau bod unrhyw ddeddfwriaeth mor glir â phosibl, ac maes o law bydd yn cael ei chefnogi gan ganllawiau, i sicrhau eglurder ar faterion allweddol. Byddwn yn ystyried yn ofalus yr achos dros eithriadau ar gyfer casgliadau treftadaeth, crefftau a chrefft. Byddwn yn gweithio’n agos gyda’r cyrff gorfodi perthnasol i ddylunio proses glir ac ymarferol.
+Effaith ar fusnes a masnach
+Trwyddedu gwerthu
+65. Ymatebodd 463 o fusnesau (gan gynnwys manwerthwyr, gweithgynhyrchwyr a mentrau bach/canolig) a chymdeithasau masnach/manwerthu i’r ymgynghoriad.
+66. Cododd yr ymatebwyr hyn bryderon am gyflenwad llai o’r farchnad, effaith anghymesur ar fusnesau bach / canolig a/neu elw llai a chostau busnes uwch. Cyfeiriwyd at faich gweinyddol hefyd fel pryder, yn enwedig i fusnesau bach y gallai hyn fod yn anghymesur o effaith iddynt. Roedd gwerthwyr bach yn pryderu am ostyngiad posibl yn eu gallu i werthu a masnachu.
+67. Ymateb y llywodraeth: Byddwn yn ystyried effaith cost a gweinyddiaeth wrth ddylunio cynllun trwyddedu. Byddwn yn gweithio i sicrhau nad yw’n cael effaith anghymesur ar werthwyr llai.
+Trwyddedu mewnforio
+68. Nodwyd cefnogaeth gref i drwyddedu mewnforio gan ymatebwyr sy’n pryderu am yr effaith ar fusnesau’r DU os nad yw hyn yn cael ei weithredu ochr yn ochr â chynllun trwyddedu gwerthu yn y DU.
+69. Nododd ymatebwyr sy’n cefnogi trwyddedu mewnforio mai dyma’r system fwyaf effeithiol ac effeithlon i gyfuno trwyddedau gwerthu a mewnforio, gan osgoi gweinyddu dwbl neu faich cost ar y busnes a’r awdurdodau.
+70. Nododd rhai ymatebwyr y risg na fydd mewnforwyr sy’n barod i fynd o gwmpas cynllun mewnforio yn gallu datgan neu ddatgan cyllyll yn anghywir.
+71. Ymateb y llywodraeth: Byddwn yn sicrhau bod unrhyw gynllun trwyddedu mewnforio yn ymarferol ac yn rheoladwy. Ein bwriad yw bod yr holl gyllell a fewnforiwyd i’r DU ac yn ddarostyngedig i drwydded yn cael eu trosglwyddo i gyfryngwr trwyddedig yn y DU a fydd yn sicrhau bod y gwerthiant yn cydymffurfio â’n deddfwriaeth ddomestig. Bydd yn rhaid i werthwyr sydd wedi’u lleoli dramor enwebu cyfryngwr yn y DU a fydd yn gyfrifol am y cyllyll pan fyddant yn cyrraedd y DU. Yna bydd y cwmni cyfryngol yn gyfrifol am sicrhau bod yr eitemau yn cael eu danfon i’r prynwr yn unol â deddfwriaeth ddomestig ar werthu cyllyll.
+Casgliad a’r camau nesaf
+72. Rydym yn ddiolchgar i bawb a gymerodd yr amser i ymateb i’r ymgynghoriad hwn a rhannu profiad a mewnwelediadau perthnasol i’w hystyried.
+73. Mae’r Llywodraeth yn bwriadu deddfu i gyflwyno cynllun trwyddedu ar gyfer gwerthu a mewnforio cyllyll.
+74. Bydd trwyddedu ar gyfer gwerthwyr cyllyll yn cynnwys:
+a. Gofyniad ar werthwyr preifat a busnes i gael eu trwyddedu i werthu cyllyll,
+b. Gofyniad i werthwyr o bell a gwerthwyr mewn adeilad i ddal trwydded;
+c. Bydd ffi yn cael ei chodi am y drwydded, sydd i’w phenderfynu, ond bydd yn cael ei gosod ar adennill cost llawn;
+d. Bydd y drwydded yn ddilys am gyfnod sy’n debygol o fod o dair blynedd;
+e. Bydd asiantaethau gorfodi yn gallu dirymu trwyddedau os nad yw’r amodau trwyddedu yn cael eu bodloni;
+f. Byddwn yn ystyried yr achos dros eithriadau mewn perthynas â chasgliadau treftadaeth, crefftau a chrefftau.
+75. Byddwn yn datblygu model hybrid ar gyfer mewnforio cyllyll. Bydd busnesau sydd wedi’u lleoli yn y DU yn gallu cael trwydded fewnforio ar gais ac rydym yn archwilio a ddylid darparu trwydded gwerthwr/mewnforio gyfunol i’r rhai sy’n dymuno gwneud cais am y ddwy.
+76. Byddai’n ofynnol i fusnesau sydd wedi’u lleoli y tu allan i’r DU benodi cwmni cyfryngol wedi’i leoli yn y DU er mwyn mewnforio cyllyll yn y DU. Dyma fersiwn o’r model mewnforiwr awdurdodedig trydydd parti a gynigiwyd yn yr ymgynghoriad. Credwn mai dyma’r ffordd fwyaf effeithiol o alluogi gwerthwyr yn y DU i fewnforio cyllyll yn ddiogel ac osgoi cosbi cwmnïau sydd wedi’u lleoli yn y DU o’i gymharu â thramor. Bydd y model hwn hefyd yn galluogi unrhyw un sy’n dymuno prynu cyllyll gan werthwyr y tu allan i’r DU wneud hynny heb orfod gwneud cais am drwydded, gan y byddai’r cwmni cyfryngol yn gyfrifol am wneud cais am drwydded a chydymffurfio â’r holl amodau trwyddedu. Ni fydd unigolion preifat yn gallu gwneud cais am drwydded fewnforio.
+Methodoleg dadansoddi ymgynghori
+77. Gwahoddwyd ymatebion i’r ymgynghoriad hwn trwy ffurflen ymateb ar-lein a thrwy e-bost. Ym mhob achos, ystyriwyd y rhain ar gyfer eu hatebion i’r cwestiynau penodedig ac unrhyw destun rhydd a ychwanegwyd. Mewn rhai achosion, darparwyd gwybodaeth ychwanegol trwy atodiadau e-bost. Ystyriwyd yr holl wybodaeth a gyflwynwyd.
+78. Ymatebion a gyflwynwyd trwy’r ffurflen ar-lein, a oedd â dau sylw testun rhydd penagored lle gwahoddwyd hyn, wedi’u codio ar gyfer math o ymateb gan ddefnyddio sbectrwm eang o godau. Dyluniwyd y fframwaith codio i ddechrau gan ymchwilwyr cymdeithasol ac yna ei adolygu gan grŵp ehangach o ddadansoddwyr yn seiliedig ar yr ymatebion.
+79. Defnyddiwyd offeryn AI wedi’i addasu o un a ddefnyddiwyd gan Adrannau eraill y Llywodraeth i ddadansoddi, cymhwyso’r fframwaith codio i’r ymatebion, ac roedd yr allbynnau wedi’u sicrhau yn ddadansoddol.
+Egwyddorion ymgynghori
+80. Mae’r egwyddorion y dylai adrannau’r Llywodraeth a chyrff cyhoeddus eraill eu mabwysiadu ar gyfer ymgysylltu â rhanddeiliaid wrth ddatblygu polisi a deddfwriaeth wedi’u nodi yn Egwyddorion Ymgynghori Swyddfa’r Cabinet 2018.
+Trwydded delwyr cyllyll (Yr Alban) - GOV.UK - https://www.gov.uk/find-licences/knife-dealers-licence-scotland ↩
+Adolygiad annibynnol o’r diwedd i’r diwedd o werthiannau cyllyll ar-lein - GOV.UK ↩
+Efallai bod gan rai bresenoldeb ar-lein a blaen siop ↩

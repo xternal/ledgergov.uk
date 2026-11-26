@@ -1,0 +1,61 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws504.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-25"
+source:
+  id: wms-hcws504
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-25/HCWS504
+  title: "Licensing for the Sale of Knives: Government Response to the Consultation"
+  date: "2026-11-25"
+  venue_label: Written ministerial statement
+quote: >-
+  We will introduce a licensing scheme for the sale of knives that will apply to both businesses and
+  private sellers
+source_span: [1152, 1266]
+speaker:
+  name: Sarah Jones
+  role: Minister of State for Policing and Crime
+  party: Labour
+  member_id: 4631
+  actor_id: labour
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: public_order
+  who: businesses and private sellers of knives and bladed articles
+  how_much: null
+  when: null
+  funded_by: null
+  deadline: null
+why: >-
+  The government commits to introducing a licensing scheme that businesses and private sellers must
+  hold to sell knives and bladed articles.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      We will introduce a licensing scheme for importation whereby sellers based abroad will need to
+      appoint an intermediary company that will ensure that the sale is compliant with domestic
+      legislation.
+    source_span: [1268, 1465]
+    suggested:
+      policy_area: public_order
+      who: sellers of knives based abroad and intermediary companies
+      how_much: null
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      The government commits to an import licensing scheme requiring overseas knife sellers to
+      appoint a UK intermediary company responsible for compliance and delivery under UK law.
+    confidence: 0.6
+confidence: 0.75
+model: claude-opus-5-5
+status: to_review
