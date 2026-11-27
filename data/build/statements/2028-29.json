@@ -43,7 +43,7 @@
         "publisher": "ONS",
         "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/timeseries/ukpop/pop",
         "licence": "OGL v3",
-        "published_on": "2026-10-01"
+        "published_on": "2026-11-26"
       },
       {
         "id": "hmrc_taxpayers",
@@ -64,7 +64,7 @@
     "bank_rate_date": "2026-11-05",
     "households_m": 29.003,
     "income_taxpayers_m": 40.8,
-    "population_m": 69.484,
+    "population_m": 69.564,
     "baseline_psnb_bn": {
       "2025-26": 134.327,
       "2026-27": 133.196,
@@ -117,7 +117,7 @@
       "population_m": {
         "quality": "sourced",
         "source_id": "ons_population",
-        "method_note": "ONS mid-year population estimate, UK, 2025 (MYE-2026-10)."
+        "method_note": "ONS mid-year population estimate, UK, 2026 (MYE-2026-11)."
       },
       "baseline_psnb_bn": {
         "quality": "sourced",

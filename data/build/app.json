@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-22T15:30:49Z",
+  "built_at": "2026-11-27T17:35:26Z",
   "base_year": "2025-26",
   "years": [
     {
@@ -109,7 +109,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/timeseries/ukpop/pop",
             "licence": "OGL v3",
-            "published_on": "2026-10-01"
+            "published_on": "2026-11-26"
           },
           {
             "id": "hmrc_taxpayers",
@@ -123,7 +123,7 @@
         "kind": "outturn"
       },
       "macro": {
-        "nominal_gdp_bn": 2263.357,
+        "nominal_gdp_bn": 2272.703,
         "psnd_bn": 1814.8,
         "psnd_pct_gdp": 84.1,
         "bank_rate_pct": 0.1,
@@ -182,7 +182,7 @@
           "population_m": {
             "quality": "sourced",
             "source_id": "ons_population",
-            "method_note": "ONS mid-year population estimate, UK, 2019 (MYE-2026-10)."
+            "method_note": "ONS mid-year population estimate, UK, 2019 (MYE-2026-11)."
           },
           "baseline_psnb_bn": {
             "quality": "sourced",
@@ -461,7 +461,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/timeseries/ukpop/pop",
             "licence": "OGL v3",
-            "published_on": "2026-10-01"
+            "published_on": "2026-11-26"
           },
           {
             "id": "hmrc_taxpayers",
@@ -475,7 +475,7 @@
         "kind": "outturn"
       },
       "macro": {
-        "nominal_gdp_bn": 2109.996,
+        "nominal_gdp_bn": 2116.337,
         "psnd_bn": 2157.7,
         "psnd_pct_gdp": 95.2,
         "bank_rate_pct": 0.1,
@@ -534,7 +534,7 @@
           "population_m": {
             "quality": "sourced",
             "source_id": "ons_population",
-            "method_note": "ONS mid-year population estimate, UK, 2020 (MYE-2026-10)."
+            "method_note": "ONS mid-year population estimate, UK, 2020 (MYE-2026-11)."
           },
           "baseline_psnb_bn": {
             "quality": "sourced",
@@ -813,7 +813,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/timeseries/ukpop/pop",
             "licence": "OGL v3",
-            "published_on": "2026-10-01"
+            "published_on": "2026-11-26"
           },
           {
             "id": "hmrc_taxpayers",
@@ -827,7 +827,7 @@
         "kind": "outturn"
       },
       "macro": {
-        "nominal_gdp_bn": 2400.398,
+        "nominal_gdp_bn": 2411.947,
         "psnd_bn": 2379.7,
         "psnd_pct_gdp": 93.9,
         "bank_rate_pct": 0.75,
@@ -886,7 +886,7 @@
           "population_m": {
             "quality": "sourced",
             "source_id": "ons_population",
-            "method_note": "ONS mid-year population estimate, UK, 2021 (MYE-2026-10)."
+            "method_note": "ONS mid-year population estimate, UK, 2021 (MYE-2026-11)."
           },
           "baseline_psnb_bn": {
             "quality": "sourced",
@@ -1165,7 +1165,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/timeseries/ukpop/pop",
             "licence": "OGL v3",
-            "published_on": "2026-10-01"
+            "published_on": "2026-11-26"
           },
           {
             "id": "hmrc_taxpayers",
@@ -1179,7 +1179,7 @@
         "kind": "outturn"
       },
       "macro": {
-        "nominal_gdp_bn": 2634.336,
+        "nominal_gdp_bn": 2645.721,
         "psnd_bn": 2542.7,
         "psnd_pct_gdp": 92.7,
         "bank_rate_pct": 4.25,
@@ -1238,7 +1238,7 @@
           "population_m": {
             "quality": "sourced",
             "source_id": "ons_population",
-            "method_note": "ONS mid-year population estimate, UK, 2022 (MYE-2026-10)."
+            "method_note": "ONS mid-year population estimate, UK, 2022 (MYE-2026-11)."
           },
           "baseline_psnb_bn": {
             "quality": "sourced",
@@ -1517,7 +1517,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/timeseries/ukpop/pop",
             "licence": "OGL v3",
-            "published_on": "2026-10-01"
+            "published_on": "2026-11-26"
           },
           {
             "id": "hmrc_taxpayers",
@@ -1531,7 +1531,7 @@
         "kind": "outturn"
       },
       "macro": {
-        "nominal_gdp_bn": 2789.505,
+        "nominal_gdp_bn": 2796.047,
         "psnd_bn": 2684.1,
         "psnd_pct_gdp": 93.7,
         "bank_rate_pct": 5.25,
@@ -1590,7 +1590,7 @@
           "population_m": {
             "quality": "sourced",
             "source_id": "ons_population",
-            "method_note": "ONS mid-year population estimate, UK, 2023 (MYE-2026-10)."
+            "method_note": "ONS mid-year population estimate, UK, 2023 (MYE-2026-11)."
           },
           "baseline_psnb_bn": {
             "quality": "sourced",
@@ -1869,7 +1869,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/timeseries/ukpop/pop",
             "licence": "OGL v3",
-            "published_on": "2026-10-01"
+            "published_on": "2026-11-26"
           },
           {
             "id": "hmrc_taxpayers",
@@ -1883,7 +1883,7 @@
         "kind": "outturn"
       },
       "macro": {
-        "nominal_gdp_bn": 2933.954,
+        "nominal_gdp_bn": 2955.008,
         "psnd_bn": 2806.7,
         "psnd_pct_gdp": 92.9,
         "bank_rate_pct": 4.5,
@@ -1942,7 +1942,7 @@
           "population_m": {
             "quality": "sourced",
             "source_id": "ons_population",
-            "method_note": "ONS mid-year population estimate, UK, 2024 (MYE-2026-10)."
+            "method_note": "ONS mid-year population estimate, UK, 2024 (MYE-2026-11)."
           },
           "baseline_psnb_bn": {
             "quality": "sourced",
@@ -2221,7 +2221,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/timeseries/ukpop/pop",
             "licence": "OGL v3",
-            "published_on": "2026-10-01"
+            "published_on": "2026-11-26"
           },
           {
             "id": "hmrc_taxpayers",
@@ -2235,7 +2235,7 @@
         "kind": "outturn"
       },
       "macro": {
-        "nominal_gdp_bn": 3069.799,
+        "nominal_gdp_bn": 3076.302,
         "psnd_bn": 2916.8,
         "psnd_pct_gdp": 93.0,
         "bank_rate_pct": 3.75,
@@ -2294,7 +2294,7 @@
           "population_m": {
             "quality": "sourced",
             "source_id": "ons_population",
-            "method_note": "ONS mid-year population estimate, UK, 2025 (MYE-2026-10)."
+            "method_note": "ONS mid-year population estimate, UK, 2025 (MYE-2026-11)."
           },
           "baseline_psnb_bn": {
             "quality": "sourced",
@@ -2565,7 +2565,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/timeseries/ukpop/pop",
             "licence": "OGL v3",
-            "published_on": "2026-10-01"
+            "published_on": "2026-11-26"
           },
           {
             "id": "hmrc_taxpayers",
@@ -2586,7 +2586,7 @@
         "bank_rate_date": "2026-11-05",
         "households_m": 29.003,
         "income_taxpayers_m": 40.8,
-        "population_m": 69.484,
+        "population_m": 69.564,
         "baseline_psnb_bn": {
           "2025-26": 134.327,
           "2026-27": 133.196,
@@ -2639,7 +2639,7 @@
           "population_m": {
             "quality": "sourced",
             "source_id": "ons_population",
-            "method_note": "ONS mid-year population estimate, UK, 2025 (MYE-2026-10)."
+            "method_note": "ONS mid-year population estimate, UK, 2026 (MYE-2026-11)."
           },
           "baseline_psnb_bn": {
             "quality": "sourced",
@@ -2907,7 +2907,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/timeseries/ukpop/pop",
             "licence": "OGL v3",
-            "published_on": "2026-10-01"
+            "published_on": "2026-11-26"
           },
           {
             "id": "hmrc_taxpayers",
@@ -2928,7 +2928,7 @@
         "bank_rate_date": "2026-11-05",
         "households_m": 29.003,
         "income_taxpayers_m": 40.8,
-        "population_m": 69.484,
+        "population_m": 69.564,
         "baseline_psnb_bn": {
           "2025-26": 134.327,
           "2026-27": 133.196,
@@ -2981,7 +2981,7 @@
           "population_m": {
             "quality": "sourced",
             "source_id": "ons_population",
-            "method_note": "ONS mid-year population estimate, UK, 2025 (MYE-2026-10)."
+            "method_note": "ONS mid-year population estimate, UK, 2026 (MYE-2026-11)."
           },
           "baseline_psnb_bn": {
             "quality": "sourced",
@@ -3249,7 +3249,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/timeseries/ukpop/pop",
             "licence": "OGL v3",
-            "published_on": "2026-10-01"
+            "published_on": "2026-11-26"
           },
           {
             "id": "hmrc_taxpayers",
@@ -3270,7 +3270,7 @@
         "bank_rate_date": "2026-11-05",
         "households_m": 29.003,
         "income_taxpayers_m": 40.8,
-        "population_m": 69.484,
+        "population_m": 69.564,
         "baseline_psnb_bn": {
           "2025-26": 134.327,
           "2026-27": 133.196,
@@ -3323,7 +3323,7 @@
           "population_m": {
             "quality": "sourced",
             "source_id": "ons_population",
-            "method_note": "ONS mid-year population estimate, UK, 2025 (MYE-2026-10)."
+            "method_note": "ONS mid-year population estimate, UK, 2026 (MYE-2026-11)."
           },
           "baseline_psnb_bn": {
             "quality": "sourced",
@@ -3591,7 +3591,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/timeseries/ukpop/pop",
             "licence": "OGL v3",
-            "published_on": "2026-10-01"
+            "published_on": "2026-11-26"
           },
           {
             "id": "hmrc_taxpayers",
@@ -3612,7 +3612,7 @@
         "bank_rate_date": "2026-11-05",
         "households_m": 29.003,
         "income_taxpayers_m": 40.8,
-        "population_m": 69.484,
+        "population_m": 69.564,
         "baseline_psnb_bn": {
           "2025-26": 134.327,
           "2026-27": 133.196,
@@ -3665,7 +3665,7 @@
           "population_m": {
             "quality": "sourced",
             "source_id": "ons_population",
-            "method_note": "ONS mid-year population estimate, UK, 2025 (MYE-2026-10)."
+            "method_note": "ONS mid-year population estimate, UK, 2026 (MYE-2026-11)."
           },
           "baseline_psnb_bn": {
             "quality": "sourced",
@@ -3933,7 +3933,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/timeseries/ukpop/pop",
             "licence": "OGL v3",
-            "published_on": "2026-10-01"
+            "published_on": "2026-11-26"
           },
           {
             "id": "hmrc_taxpayers",
@@ -3954,7 +3954,7 @@
         "bank_rate_date": "2026-11-05",
         "households_m": 29.003,
         "income_taxpayers_m": 40.8,
-        "population_m": 69.484,
+        "population_m": 69.564,
         "baseline_psnb_bn": {
           "2025-26": 134.327,
           "2026-27": 133.196,
@@ -4007,7 +4007,7 @@
           "population_m": {
             "quality": "sourced",
             "source_id": "ons_population",
-            "method_note": "ONS mid-year population estimate, UK, 2025 (MYE-2026-10)."
+            "method_note": "ONS mid-year population estimate, UK, 2026 (MYE-2026-11)."
           },
           "baseline_psnb_bn": {
             "quality": "sourced",
@@ -4275,7 +4275,7 @@
             "publisher": "ONS",
             "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/timeseries/ukpop/pop",
             "licence": "OGL v3",
-            "published_on": "2026-10-01"
+            "published_on": "2026-11-26"
           },
           {
             "id": "hmrc_taxpayers",
@@ -4296,7 +4296,7 @@
         "bank_rate_date": "2026-11-05",
         "households_m": 29.003,
         "income_taxpayers_m": 40.8,
-        "population_m": 69.484,
+        "population_m": 69.564,
         "baseline_psnb_bn": {
           "2025-26": 134.327,
           "2026-27": 133.196,
@@ -4349,7 +4349,7 @@
           "population_m": {
             "quality": "sourced",
             "source_id": "ons_population",
-            "method_note": "ONS mid-year population estimate, UK, 2025 (MYE-2026-10)."
+            "method_note": "ONS mid-year population estimate, UK, 2026 (MYE-2026-11)."
           },
           "baseline_psnb_bn": {
             "quality": "sourced",
@@ -5036,15 +5036,15 @@
           "target": "defence",
           "per_unit_bn": {
             "y1": [
-              30.698,
-              30.698,
-              30.698
+              30.763,
+              30.763,
+              30.763
             ]
           }
         },
         "quality": "sourced",
         "source_id": "nato_defence",
-        "method_note": "Starting point: UK defence spending on NATO's definition, 2.32% of GDP in 2025-26 (a NATO estimate), NATO-DE-2026-07. NATO counts more items than the UK's own COFOG figure (65.4bn, 2.13% of GDP). Each point of GDP is 30.7bn (2025-26 nominal GDP, as in the Statement), added to defence spending."
+        "method_note": "Starting point: UK defence spending on NATO's definition, 2.32% of GDP in 2025-26 (a NATO estimate), NATO-DE-2026-07. NATO counts more items than the UK's own COFOG figure (65.4bn, 2.13% of GDP). Each point of GDP is 30.8bn (2025-26 nominal GDP, as in the Statement), added to defence spending."
       },
       {
         "id": "health_change",
@@ -5267,7 +5267,7 @@
       "publisher": "Office for Budget Responsibility",
       "url": "https://obr.uk/data/",
       "licence": "OGL v3",
-      "published_on": "2026-10-28"
+      "published_on": "2026-11-23"
     },
     {
       "id": "obr_efo",
@@ -5331,7 +5331,7 @@
       "publisher": "ONS",
       "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/timeseries/ukpop/pop",
       "licence": "OGL v3",
-      "published_on": "2026-10-01"
+      "published_on": "2026-11-26"
     },
     {
       "id": "ons_psf",

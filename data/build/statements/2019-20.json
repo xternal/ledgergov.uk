@@ -51,7 +51,7 @@
         "publisher": "ONS",
         "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/timeseries/ukpop/pop",
         "licence": "OGL v3",
-        "published_on": "2026-10-01"
+        "published_on": "2026-11-26"
       },
       {
         "id": "hmrc_taxpayers",
@@ -65,7 +65,7 @@
     "kind": "outturn"
   },
   "macro": {
-    "nominal_gdp_bn": 2263.357,
+    "nominal_gdp_bn": 2272.703,
     "psnd_bn": 1814.8,
     "psnd_pct_gdp": 84.1,
     "bank_rate_pct": 0.1,
@@ -124,7 +124,7 @@
       "population_m": {
         "quality": "sourced",
         "source_id": "ons_population",
-        "method_note": "ONS mid-year population estimate, UK, 2019 (MYE-2026-10)."
+        "method_note": "ONS mid-year population estimate, UK, 2019 (MYE-2026-11)."
       },
       "baseline_psnb_bn": {
         "quality": "sourced",
