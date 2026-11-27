@@ -1,0 +1,41 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-tariffs-cut-to-give-breathing-space-to-families-with-the-foo.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-26"
+source:
+  id: govuk-tariffs-cut-to-give-breathing-space-to-families-with-the-foo
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/tariffs-cut-to-give-breathing-space-to-families-with-the-food-shop
+  title: Tariffs cut to give breathing space to families with the food shop
+  date: "2026-11-26"
+  venue_label: Press release (HM Treasury)
+quote: >-
+  The suspensions will remain in place until December 2028, with fertiliser tariffs suspended until
+  December 2027.
+source_span: [1899, 2011]
+speaker:
+  name: HM Government
+  role: HM Treasury
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: economic_affairs
+  who: Consumers, lower-income households, farmers and households using heating oil
+  how_much: up to £185 million a year in consumer savings
+  when: until December 2028 (fertilisers until December 2027)
+  funded_by: null
+  deadline: "2028-12-31"
+why: >-
+  Tariff suspensions on more than 100 products will stay in place until December 2028, and on
+  fertilisers until December 2027.
+confidence: 0.5
+model: claude-opus-5-5
+status: to_review

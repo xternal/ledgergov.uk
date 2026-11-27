@@ -1,0 +1,122 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-paper-local-government-finance-policy-statement-2027-to-2028.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-26"
+source:
+  id: govuk-paper-local-government-finance-policy-statement-2027-to-2028
+  kind: govuk_policy_paper
+  url: https://www.gov.uk/government/publications/local-government-finance-policy-statement-2027-to-2028/local-government-finance-policy-statement-2027-to-2028
+  title: Local government finance policy statement 2027 to 2028
+  date: "2026-11-26"
+  venue_label: Policy paper (Ministry of Housing, Communities and Local Government)
+quote: >-
+  To help households with the rising cost of energy, the government will provide a £100 Household
+  Energy Payment for households in council tax bands A to D for this year. This will be paid
+  directly into bank accounts where possible from January, giving up to 20 million households in
+  England some breathing space from rising energy prices.
+source_span: [11409, 11746]
+speaker:
+  name: HM Government
+  role: Ministry of Housing, Communities and Local Government
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: social_protection
+  who: Up to 20 million households in council tax bands A to D in England
+  how_much: £100 per household
+  when: From January (2027)
+  funded_by: null
+  deadline: "2027-01-31"
+why: >-
+  Households in council tax bands A to D in England will receive a £100 Household Energy Payment,
+  paid from January.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      From 2027-28, we are taking the first step towards this ambition by introducing a 20% mayoral
+      share of business rates, with further detail on the path towards 100% retention, including
+      increasing the share retained by local authorities, to be set out in due course.
+    source_span: [3764, 4029]
+    suggested:
+      policy_area: general_services
+      who: Mayoral strategic authorities
+      how_much: null
+      when: From 2027-28 (April 2027)
+      funded_by: >-
+        Swapping existing mayoral grants for a share of retained business rates of the same value
+      deadline: "2027-04-30"
+    why: >-
+      Mayoral strategic authorities will receive a 20% share of business rates in place of existing
+      grants from 2027-28.
+    confidence: 0.75
+  - quote: >-
+      Overall, the Settlement will make available over £80 billion in Core Spending Power, an
+      increase of over £3 billion compared with 2026-27.
+    source_span: [6098, 6236]
+    suggested:
+      policy_area: general_services
+      who: Local authorities in England
+      how_much: over £80 billion; an increase of over £3 billion
+      when: 2027-28
+      funded_by: null
+      deadline: null
+    why: >-
+      The 2027-28 Local Government Finance Settlement will provide over £80 billion in Core Spending
+      Power, over £3 billion more than 2026-27.
+    confidence: 0.55
+  - quote: The National Minimum Allowance uplift for 2027-28 will be 2.92%.
+    source_span: [17751, 17815]
+    suggested:
+      policy_area: social_protection
+      who: Foster carers
+      how_much: 2.92% uplift
+      when: 2027-28
+      funded_by: null
+      deadline: null
+    why: The National Minimum Allowance for foster carers will rise by 2.92% in 2027-28.
+    confidence: 0.75
+  - quote: >-
+      Local authorities with an approved plan will receive their High Needs Stability Grant payment
+      in November 2026, with those approved following resubmission receiving payment by February
+      2027.
+    source_span: [19145, 19335]
+    suggested:
+      policy_area: education
+      who: Local authorities with approved local SEND reform plans
+      how_much: null
+      when: November 2026 / by February 2027
+      funded_by: null
+      deadline: "2027-02-28"
+    why: >-
+      Councils with approved SEND reform plans will receive High Needs Stability Grant payments in
+      November 2026, or by February 2027 if approved after resubmission (part of the earlier SEND
+      deficit support commitment).
+    confidence: 0.6
+  - quote: >-
+      From 2028-29, SEND spending will be covered within the government’s DEL budget, so local
+      authorities are not expected to fund future SEND costs from general funds.
+    source_span: [19887, 20050]
+    suggested:
+      policy_area: education
+      who: Local authorities
+      how_much: null
+      when: From 2028-29
+      funded_by: Government DEL budget
+      deadline: null
+    why: >-
+      SEND spending will move into central government's DEL budget from 2028-29, so councils no
+      longer fund it from general funds.
+    confidence: 0.7
+confidence: 0.85
+model: claude-opus-5-5
+status: to_review

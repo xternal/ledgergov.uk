@@ -1,0 +1,43 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-cutting-costs-bill-to-make-doing-business-with-europe-cheape.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-26"
+source:
+  id: govuk-cutting-costs-bill-to-make-doing-business-with-europe-cheape
+  kind: govuk_press_release
+  url: https://www.gov.uk/government/news/cutting-costs-bill-to-make-doing-business-with-europe-cheaper-and-easier
+  title: "'Cutting Costs' Bill to make doing business with Europe cheaper and easier"
+  date: "2026-11-26"
+  venue_label: Press release (Cabinet Office)
+quote: >-
+  Legislation will save industry millions by cutting red tape, lifting bans on iconic British
+  exports, and exempting £6.5 billion of British exports from EU carbon taxes.
+source_span: [206, 374]
+speaker:
+  name: HM Government
+  role: Cabinet Office
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: economic_affairs
+  who: >-
+    British exporters and food and drink traders, including steel and aluminium exporters
+  how_much: approximately £6.5 billion of British exports exempted from EU carbon taxes
+  when: null
+  funded_by: null
+  deadline: null
+why: >-
+  The government commits, through the Cutting Costs (European Partnership) Bill, to implement the
+  UK-EU SPS and ETS linking agreements, including exempting about £6.5 billion of British exports
+  from the EU carbon border tax and ending Export Health Certificates for EU trade.
+confidence: 0.6
+model: claude-opus-5-5
+status: to_review

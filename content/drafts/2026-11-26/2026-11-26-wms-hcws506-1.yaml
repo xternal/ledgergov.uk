@@ -1,0 +1,45 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/wms-hcws506.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-26"
+source:
+  id: wms-hcws506
+  kind: hansard_wms
+  url: https://questions-statements.parliament.uk/written-statements/detail/2026-11-26/HCWS506
+  title: Submarine Maintenance and Naval Base support services
+  date: "2026-11-26"
+  venue_label: Written ministerial statement
+quote: >-
+  It will create 3,000 new British jobs – 1,600 in Devonport, 900 in Clyde and 500 in Bristol and
+  other locations, and create around 2,500 apprenticeship and graduate opportunities, boosting
+  growth and supporting government drive to get young people into work.
+source_span: [682, 940]
+speaker:
+  name: Luke Pollard
+  role: Minister for Defence Readiness and Industry
+  party: Labour
+  member_id: 4682
+  actor_id: labour
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: defence
+  who: >-
+    Workers in Devonport, Clyde, Bristol and other locations; young people seeking apprenticeships
+    and graduate roles
+  how_much: null
+  when: null
+  funded_by: Gateway Agreement contract with Babcock (Devonport Royal Dockyard Limited)
+  deadline: null
+why: >-
+  The Babcock Gateway Agreement for submarine maintenance and naval base support is to create 3,000
+  new UK jobs (1,600 Devonport, 900 Clyde, 500 Bristol and elsewhere) and about 2,500 apprenticeship
+  and graduate opportunities.
+confidence: 0.6
+model: claude-opus-5-5
+status: to_review

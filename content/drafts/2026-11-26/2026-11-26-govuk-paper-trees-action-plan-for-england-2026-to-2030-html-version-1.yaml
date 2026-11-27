@@ -1,0 +1,156 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/govuk-paper-trees-action-plan-for-england-2026-to-2030-html-version.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-26"
+source:
+  id: govuk-paper-trees-action-plan-for-england-2026-to-2030-html-version
+  kind: govuk_policy_paper
+  url: https://www.gov.uk/government/publications/trees-action-plan-for-england-2026-to-2030/trees-action-plan-for-england-2026-to-2030-html-version
+  title: Trees Action Plan for England 2026 to 2030 (HTML version)
+  date: "2026-11-26"
+  venue_label: Policy paper (Department for Environment, Food & Rural Affairs)
+quote: >-
+  create 3,700 hectares of new publicly accessible woodland by March 2030 by expanding the public
+  forest estate and dedicate this woodland in perpetuity as open access land.
+source_span: [18993, 19164]
+speaker:
+  name: HM Government
+  role: Department for Environment, Food & Rural Affairs
+  party: null
+  member_id: null
+  actor_id: hm-government
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: housing_env
+  who: The public; Forestry England
+  how_much: null
+  when: by March 2030
+  funded_by: government funding
+  deadline: "2030-03-31"
+why: >-
+  Commits Forestry England to create 3,700 hectares of new public woodland, dedicated as open access
+  land, by March 2030.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      This action plan will support delivery of the interim target set in the Environmental
+      Improvement Plan (EIP) 2025 to achieve a 0.33% increase in tree canopy and woodland cover by
+      2030 (equivalent to a net increase of 43,000 hectares)
+    source_span: [13838, 14071]
+    suggested:
+      policy_area: housing_env
+      who: null
+      how_much: null
+      when: by December 2030
+      funded_by: null
+      deadline: "2030-12-31"
+    why: >-
+      Restates the earlier Environmental Improvement Plan 2025 commitment to increase tree canopy
+      and woodland cover by 0.33% of land (about 43,000 hectares net) by December 2030; editors
+      should quote the EIP original.
+    confidence: 0.5
+  - quote: >-
+      We will plant up to 500,000 trees outside woodland as part of a new Community Trees Fund.
+    source_span: [21842, 21931]
+    suggested:
+      policy_area: housing_env
+      who: >-
+        Strategic authorities, local authorities, mayors, community groups and environmental
+        organisations; areas of higher deprivation and less green space
+      how_much: null
+      when: null
+      funded_by: null
+      deadline: null
+    why: >-
+      Commits to planting up to 500,000 trees outside woodland through a new Community Trees Fund
+      aimed at deprived and low tree cover areas.
+    confidence: 0.6
+  - quote: >-
+      increase the proportion of conifer species planted through Forestry England’s woodland
+      creation programme from 36% to approximately 50% by March 2030 to support future domestic
+      timber supply.
+    source_span: [31851, 32042]
+    suggested:
+      policy_area: housing_env
+      who: Forestry England woodland creation programme
+      how_much: null
+      when: by March 2030
+      funded_by: null
+      deadline: "2030-03-31"
+    why: >-
+      Commits to raising the conifer share of Forestry England's new planting from 36% to about 50%
+      by March 2030.
+    confidence: 0.7
+  - quote: >-
+      ensure that the biosecure procurement requirement is adopted into central government tree
+      planting and woodland creation grants by the 2027 to 2028 tree planting season.
+    source_span: [55003, 55172]
+    suggested:
+      policy_area: housing_env
+      who: Recipients of central government tree planting and woodland creation grants
+      how_much: null
+      when: by the 2027 to 2028 tree planting season
+      funded_by: null
+      deadline: null
+    why: >-
+      Commits to making a biosecure procurement requirement a condition of central government tree
+      planting and woodland creation grants by the 2027 to 2028 planting season.
+    confidence: 0.55
+  - quote: >-
+      increase the percentage of woodlands in sustainable management from the current level of 56%
+      to between 65% and 70% by 2040.
+    source_span: [73029, 73153]
+    suggested:
+      policy_area: housing_env
+      who: Woodland owners and managers in England
+      how_much: null
+      when: by 2040
+      funded_by: null
+      deadline: null
+    why: >-
+      Commits to raising the share of England's woodlands under sustainable management from 56% to
+      65–70% by 2040, a new target set in this plan.
+    confidence: 0.8
+  - quote: >-
+      more than 50% of PAWS are to be either restored to native woodland or be undergoing
+      restoration to native woodland by 2030. Forestry England will support this by doubling the
+      rate of restoration of PAWS sites on the public forest estate by 2031.
+    source_span: [78166, 78411]
+    suggested:
+      policy_area: housing_env
+      who: Plantations on ancient woodland sites in England
+      how_much: null
+      when: by 2030; restoration rate doubled by 2031
+      funded_by: null
+      deadline: null
+    why: >-
+      Commits that over half of plantations on ancient woodland sites will be restored or undergoing
+      restoration by 2030, with Forestry England doubling its restoration rate by 2031.
+    confidence: 0.75
+  - quote: >-
+      by March 2029, build and certify a new high-containment research facility at Forest Research’s
+      Alice Holt Research Station to strengthen the UK’s capability to study high-risk tree pests
+      and diseases, improving early detection, preparedness and protection of trees and woodlands.
+    source_span: [119538, 119817]
+    suggested:
+      policy_area: housing_env
+      who: Forest Research
+      how_much: null
+      when: by March 2029
+      funded_by: null
+      deadline: "2029-03-31"
+    why: >-
+      Commits to building and certifying a new high-containment tree pest and disease research
+      facility at Alice Holt by March 2029.
+    confidence: 0.7
+confidence: 0.8
+model: claude-opus-5-5
+status: to_review
