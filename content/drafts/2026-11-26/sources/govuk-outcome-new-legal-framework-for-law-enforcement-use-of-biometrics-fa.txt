@@ -1,0 +1,232 @@
+New legal framework for law enforcement use of biometrics, facial recognition and similar technologies: government response to the consultation (Welsh accessible)
+Cyhoeddwyd 4 Tachwedd 2026
+Cyflwyniad a manylion cyswllt
+Mae’r ddogfen hon yn nodi ymateb y Llywodraeth i’r ymgynghoriad cyhoeddus: Ymgynghoriad ar fframwaith cyfreithiol newydd ar gyfer defnyddio biometreg, technoleg adnabod wynebau a thechnolegau tebyg gan asiantaethau gorfodi’r gyfraith (hygyrch).
+Mae’n cynnwys y canlynol:
+Cyflwyniad
+Cefndir yr ymgynghoriad
+Crynodeb o’r ymatebion i’r ymgynghoriad
+Y camau nesaf yn dilyn yr ymgynghoriad hwn.
+Gellir cael copïau pellach o’r adroddiad hwn a’r ddogfen ymgynghori drwy gysylltu â Polisi a Strategaeth Data a Thechnoleg yn y cyfeiriad isod:
+Polisi a Strategaeth Data a Thechnoleg
+Y Swyddfa Gartref
+2 Marsham Street
+Llundain SW1P 4DF
+E-bost: fr-consultation@homeoffice.gov.uk
+Mae’r adroddiad hwn hefyd ar gael yn https://www.gov.uk/Llywodraeth/consultations/legal-framework-for-using-facial-recognition-in-law-enforcement.
+Gellir gofyn am fersiynau o’r cyhoeddiad hwn mewn fformatau eraill drwy anfon e-bost at fr-consultation@homeoffice.gov.uk
+Cwynion neu sylwadau
+Os oes gennych unrhyw gŵynion neu sylwadau ynghylch y broses ymgynghori, dylech gysylltu â’r Swyddfa Gartref yn y cyfeiriad uchod.
+1. Cyflwyniad
+Mae’r Llywodraeth yn ddiolchgar i bawb a ymatebodd i’r ymgynghoriad ar ddatblygu fframwaith cyfreithiol newydd ar gyfer defnyddio biometreg, adnabod wynebau a thechnolegau tebyg gan asiantaethau gorfodi’r gyfraith, a gyhoeddwyd ar 4 Rhagfyr 2025. Roedd y broses ymgynghori yn un helaeth, ac fe chwaraeodd ran bwysig wrth lywio dull y Llywodraeth o lunio fframwaith cyfreithiol newydd.
+Roedd yr ymgynghoriad yn ceisio barn ar faterion allweddol, gan gynnwys pa dechnolegau y dylid eu cynnwys, i bwy y dylai’r fframwaith fod yn berthnasol, pryd y dylid defnyddio’r technolegau hyn, a pha fesurau diogelu a goruchwyliaeth y dylid eu rhoi ar waith i ddiogelu preifatrwydd a hawliau eraill tra’n galluogi plismona effeithiol. Daeth yr ymgynghoriad i ben ar 12 Chwefror 2026.
+Mae’r ymateb hwn gan y Llywodraeth yn crynhoi’r safbwyntiau a dderbyniwyd ac yn amlinellu cynigion lefel uchel y Llywodraeth ar gyfer fframwaith cyfreithiol newydd. Wrth ddatblygu’r cynigion hyn, rydym wedi:
+Ymgysylltu ag ystod o randdeilaiad, gan gynnwys grwpiau cymdeithas sifil, academyddion, gorfodi’r gyfraith, comisynwyr a rheoleiddwyr.
+Ystyried canfyddiadau o’r ymchwil i agweddau’r cyhoedd a gyhoeddwyd yn flaenorol[footnote 1]. Ymgysylltodd yr ymchwil hon â sampl gynrychioliadol genedlaethol o 3,920 o oedolion yng Nghymru a Lloegr ac archwiliodd ymwybyddiaeth y cyhoedd, yn ogystal â derbynioldeb a phryderon cysylltiedig ar draws gwahanol ddefnyddiau. Ochr yn ochr ag ymatebion i’r ymgynghoriad ac ymgysylltu â rhanddeiliaid wedi’i dargedu, mae’r dystiolaeth hon yn darparu cyd-destun pwysig, gan helpu’r Llywodraeth i ddeall meysydd cefnogaeth, pryder a safbwyntiau gwahanol yn well.
+Cynnal ymgysylltiad wedi’i dargedu â grwpiau sydd heb gynrychiolaeth ddigonol cyhoeddwyd adroddiad ar y canfyddiadau yma: Defnydd yr heddlu o dechnoleg adnabod wynebau: deialog gyhoeddus - GOV.UK
+Mae’r broses ymgynghori ac ymgysylltu wedi dangos bod cefnogaeth gyhoeddus i fframwaith deddfwriaethol penodol ar gyfer defnydd gorfodi’r gyfraith o dechnolegau biometrig gan gynnwys adnabod wynebau. Fodd bynnag, rydym yn cydnabod bod gwahanol safbwyntiau ar sut y dylid ffurfio fframwaith yn y dyfodol.
+Mae’r Llywodraeth yn bwriadu cyflwyno fframwaith statudol newydd ar gyfer defnyddio biometreg, adnabod wynebau, a thechnolegau tebyg gan asiantaethau gorfodi’r gyfraith a chyrff cyhoeddus eraill. Bydd y fframwaith hwn yn cynnwys pwerau a rhwymedigaethau penodol i’r rhai sydd wedi’u hawdurdodi i ddefnyddio’r technolegau hyn a bydd yn sicrhau y gall plismona arloesi mewn modd ailadroddus a chyson, gan gefnogi mabwysiadu technolegau biometreg a gwyliadwriaeth agored sy’n dod i’r amlwg sy’n gwella effeithiolrwydd plismona a diogelwch y cyhoedd, gan gynnal mesurau diogelwch a goruchwyliaeth briodol. Bydd y fframwaith hefyd yn sefydlu corff goruchwylio annibynnol newydd, a fydd yn cydgrynhoi ac yn ehangu swyddogaethau rolau goruchwylio presennol ac sydd â phwerau i fonitro cydymffurfiaeth a gorfodi safonau.
+Bydd y fframwaith newydd hefyd yn cynnwys mesurau i sicrhau cysondeb rhwng dulliau gweithredu gorfodi’r gyfraith a’r sector preifat, gan gydnabod ar yr un pryd eu cyd-destunau cyfreithiol a gweithredol gwahanol.
+Bydd dogfen ymateb yn y Gymraeg ar gael ochr yn ochr â’r fersiwn Saesneg – gweler y canllawiau ar y Gymraeg yn: https://www.gov.uk/Llywodraeth/organisations/home-office/about/welsh-language-scheme
+2. Crynodeb o’r ymatebion
+i. Proses ymgynghori a methodoleg
+Derbyniwyd yr ymatebion i’r ymgynghoriad drwy holiadur ar-lein, a oedd ar gael trwy borth ymgynghori pwrpasol. Derbyniwyd ymatebion hefyd drwy e-bost; adolygwyd cyfanswm o 12,584 e-bost. O’r rhain, roedd 588 yn ymatebion unigryw, tra nodwyd bod 11,996* yn ddyblygiadau neu’n ymatebion nad oeddent yn ymwneud â’r ymgynghoriad.
+Nodwyd testun dyblyg mewn negeseuon e-bost gan ddefnyddio sgorau tebygrwydd, gyda negeseuon gwreiddiol wedi’u hynysu i dynnu’r prif syniadau. Lle’r oedd y cynnwys yn union yr un fath, dadansoddwyd yr ymatebion yn thematig unwaith er mwyn osgoi ailadrodd. Adolygwyd a chodiwyd pob e-bost unigryw i gofnodi ehangder y pryderon, y safbwyntiau cadarnhaol, yr effeithiau personol posibl, yr argymhellion a’r disgwyliadau a ddeilliodd o’r ymgynghoriad. Mae’r negeseuon e-bost hyn yn parhau i fod yn rhan o’r set ddata gyffredinol.
+Fe wnaethom hefyd ddadansoddi ymatebion i’r ymgynghoriad a dderbyniwyd drwy ffurflen ar-lein; roedd 1,261 o ymatebion wedi’u cwblhau allan o gyfanswm o 1,826 o gofnodion. Gwaharddwyd ymatebion nad oeddent ond wedi’u cwblhau’n rhannol o’r dadansoddiadau meintiol ac ansoddol.
+Gweler Tablau 1 a 2 am y niferoedd ar gyfer pob categori, a dadansoddiad manwl o’r modd y cafodd y cyflwyniadau eu categoreiddio.
+Tabl 1. Nifer y cyflwyniadau
+Metrig
+Disgrifiad
+Gwerth
+Cyfanswm y cyflwyniadau e-bost
+588 cyflwyniad unigryw a 11,996 naill ai gyda thestun unfath neu heb ymateb i’r ymgynghoriad
+12,584
+Ymatebion ffurflenni ar-lein wedi’u cwblhau
+Nifer wedi’u cwblhau
+1,261
+CYFANSWM (wedi’u cyflwyno’n llawn)
+13,845
+*Mae’r nifer hwn yn cynnwys nifer bach o e-byst gweinyddol.
+Tabl 2. Categorïau eang o ymatebwyr i’r ymgynghoriad
+Categori ymatebydd
+Disgrifiad
+Aelodau’r cyhoedd
+Unigolion sy’n ymateb yn rhinwedd bersonol, yn bennaf drwy barthau e-bost preifat neu’r ffurflen ymgynghori ar-lein.
+Cymdeithas sifil a sefydliadau eiriolaeth
+Sefydliadau sy’n cynrychioli budd y cyhoedd, rhyddidau sifil, cydraddoldeb, a safbwyntiau sy’n seiliedig ar hawliau, gan gynnwys elusennau, cyrff anllywodraethol, grwpiau ymgyrchu a melinau trafod.
+Academia a sefydliadau ymchwil
+Prifysgolion, sefydliadau academaidd a chyrff ymchwil.
+Cyrff gofodi’r gyfraith
+Heddluoedd, cyrff plismona a sefydliadau plismona proffesiynol.
+Rheoleiddwyr a chyrff goruchwylio
+Rheoleiddwyr statudol a chyrff goruchwylio â chyfrifoldebau yn ymwneud â diogelu data, hawliau dynol, gwyddoniaeth fforensig, achredu neu safonau.
+Sefydliadau’r sector cyhoeddus
+Adrannau’r Llywodraeth, awdurdodau lleol a chyrff cyhoeddus eraill sy’n ymateb y tu allan i rôl blismona neu reoleiddio.
+Darparwyr diwydiant a thechnoleg
+Sefydliadau yn y sector preifat, gan gynnwys datblygwyr technoleg, cyflenwyr a defnyddwyr masnachol technolegau biometrig neu dechnolegau gwyliadwriaeth.
+Mae categorïau’r ymatebwyr yn ddangosol ac yn adlewyrchu grwpiau eang yn seiliedig ar y wybodaeth sydd ar gael. Ni chafodd yr ymatebion eu dadansoddi ar sail gynrychioliadol, a gallai ymatebwyr berthyn i fwy nag un categori.
+ii. Dull dadansoddol
+Roedd yr ymgynghoriad yn cynnwys cwestiynau strwythuredig ac awgrymiadau testun agored. Er bod y rhan fwyaf o’r cyfranogwyr wedi mynd i’r afael â’r cwestiynau penodol yn y ffurflen ar-lein, ni wnaeth rhai. O ganlyniad, cafodd yr ymatebion eu categoreiddio yn ôl meysydd polisi thematig a ddiffiniwyd ymlaen llaw gan gofnodi lled y pryderon a leisiwyd gan yr ymatebwyr.
+Mae’r prif themâu o’r dadansoddiad hwn yn cynnwys:
+cwmpas technolegau
+pwy all ddefnyddio’r technolegau hyn
+pryderon ynghylch preifatrwydd a gwyliadwriaeth
+cymesuredd, angenrheidrwydd a chyfiawnhad
+mesurau diogelu, goruchwyliaeth a llywodraethu
+Crynhoir y themâu hyn yn yr adrannau sy’n dilyn.
+1. Pryderon ynghylch preifatrwydd a gwyliadwriaeth
+Er mwyn casglu barn ar yr amcan hwn o’r fframwaith cyfreithiol newydd, gofynnwyd dau gwestiwn ar y ffurflen ar-lein:
+Pa ffactorau eraill sy’n berthnasol wrth asesu ymyrraeth â phreifatrwydd?
+Pa ffactorau sy’n berthnasol wrth asesu ymyrraeth â hawliau eraill?
+Crynodeb o ymatebion i’r ymgynghoriad
+i. Mynediad at ddata personol
+Roedd ymatebwyr o’r farn y dylai’r fframwaith newydd sicrhau bod data personol yn cael ei drin yn briodol ar ôl iddo gael ei gasglu. Roedd hyn yn cynnwys lliniaru risgiau posibl yn ymwneud â diogelwch data, tor-diogelwch, mynediad heb awdurdodiad, rhannu amhriodol, ac ail-bwrpasu. Roedd rhai hefyd o’r farn y dylid ystyried y risg o gyfuno data biometrig â setiau data eraill a’r posibilrwydd y byddai preifatrwydd yn cael ei dorri ymhellach pe bai data a gasglwyd at ddibenion gwahanol yn cael ei gyfuno. Pwysleisiodd yr ymatebion yr angen am gyfyngiadau llym o ran pwy sy’n gallu cael mynediad at ddata, ac at ba ddibenion.
+Tynnwyd sylw hefyd at gadw data, gyda rhai yn nodi bod ymyrraeth â phreifatrwydd yn cynyddu po hiraf y cedwir data. Awgrymodd rhai y dylai’r ddeddfwriaeth gyfyngu ar gadw data i gyfnodau penodol a’i gwneud yn ofynnol i ddileu data pan nad oes ei angen mwyach. Mynegodd rhai ymatebwyr hefyd ddiffyg hyder yn y modd y mae cyrff gorfodi’r gyfraith neu gyflenwyr technoleg yn trin data.
+ii. Caniatâd
+Nodwyd y gallu i roi caniatâd i ddefnyddio technoleg adnabod wynebau, neu i ddewis peidio â chymryd rhan, fel thema allweddol. Nododd rhai y byddai’n anodd cynnig dewis ystyrlon, yn enwedig os defnyddir cronfeydd data mawr o ddelweddau. Roedd tryloywder yn ddisgwyliad craidd, gyda’r ymatebwyr yn cefnogi’r heddlu wrth ddefnyddio’r dechnoleg lle mae pwrpas wedi’i ddiffinio’n glir.
+Dadleuodd rhai y dylid ymdrin â chydsyniad ar lefel leol a phwysleisiwyd y dylid hysbysu’r cyhoedd bob amser pryd a ble y defnyddir technoleg adnabod wynebau. Ystyriwyd bod rhoi gwybod ymlaen llaw yn bwysig, a theimlai llawer ei bod yn hanfodol gwneud ymdrech wirioneddol i sicrhau bod arwyddion yn ddigon gweladwy. Pwysleisiodd ymatebwyr o blith asiantaethau gorfodi’r gyfraith hefyd pa mor bwysig yw tryloywder.
+Codwyd pryderon ynghylch defnyddio technoleg adnabod wynebau mewn sefyllfaoedd sy’n ymwneud â phlant ac oedolion agored i niwed, efallai na fyddent yn gallu rhoi caniatâd. Roedd consensws y dylai unrhyw ddeddfwriaeth ddiogelu plant yn benodol rhag cael eu cynnwys mewn chwiliadau sy’n defnyddio technoleg adnabod wynebau. Rhybuddiodd rhai grwpiau eirioli y gallai mesurau diogelu arwain at ganlyniadau anfwriadol i unigolion nad ydynt yn dymuno cael eu lleoli. Nodwyd y gallai hyn gynyddu’r risg o niwed a dadleuwyd y dylai rhieni neu warcheidwaid cyfreithiol allu gwrthod cael rhywun wedi’i gynnwys ar restr wylio mewn achosion o’r fath.
+iii. Rhyddidau sifil a chyfranogiad y cyhoedd
+Roedd rhai ymatebwyr hefyd yn pryderu y gallai technoleg adnabod wynebau ymyrryd â chynulliad heddychlon a rhyddid mynegiant. Cyfeiriwyd at y “effaith ataliol” (chilling effect), gan awgrymu y gallai’r dechnoleg hon atal gweithgarwch cyfreithlon a defnydd rhydd o leoedd cyhoeddus. Dywedodd yr ymatebwyr hynny a gododd faterion yn ymwneud â rhyddidau sifil yn aml y dylid gwahardd technoleg adnabod wynebau mewn protestiadau ac arddangosiadau, gan ofni y gallai gael ei defnyddio i dargedu cyfranogwyr neu eu digalonni rhag cymryd rhan. Rhybuddiodd grwpiau eirioli y gallai hyn effeithio’n anghymesur ar gymunedau ymylol, ac achosi rhagor o niwed i ymddiriedaeth mewn gorfodi’r gyfraith.
+Disgrifiodd yr ymatebwyr hefyd anghysur gydag arsylwi cyson, gan nodi effeithiau ymddygiadol a seicolegol fel gorbryder a llai o barodrwydd i symud yn rhydd. Dadleuodd rhai y byddai’r awyrgylch hwn yn atal mynegiant rhydd a chyfranogiad mewn bywyd dinesig.
+iv. Ymddiriedaeth yn y berthynas rhwng y cyhoedd a’r wladwriaeth
+Dadleuodd rhai ymatebwyr y gallai technoleg adnabod wynebau danseilio’r rhagdybiaeth o ddiniweidrwydd ac arwain y wladwriaeth i drin y boblogaeth gyffredinol fel pobl dan amheuaeth bosibl. Mynegwyd pryderon ynghylch symud tuag at “wladwriaeth wyliadwriaeth”, sy’n erydu rhyddidau a disgwyliadau o ran preifatrwydd.
+Dadleuodd eraill na ddylid cynnwys unigolion diniwed yn rheolaidd ar restrau gwyliadwriaeth, a bod ehangu cronfeydd data biometreg, megis drwy ddefnyddio delweddau pasbort, yn peri risgiau democrataidd difrifol drwy normaleiddio gwyliadwriaeth, symud pŵer tuag at y wladwriaeth, a gwanhau ymddiriedaeth y cyhoedd.
+Cwestiynodd rhai ymatebwyr effeithiolrwydd technoleg adnabod wynebau, gan awgrymu y byddai troseddwyr yn cuddio eu hwynebau. Ofnai eraill y gallai’r heddlu gael eu gwthio i orfodi pobl i dynnu gorchuddion wyneb, cam a ystyrid yn ymyrraeth bellach â rhyddidau sifil a phreifatrwydd.
+v. Pryderon ynghylch gwyliadwriaeth dorfol
+Cododd ymatebwyr bryderon y gallai adnabod wynebau gael ei ddefnyddio y tu hwnt i’w ddiben gwreiddiol ac esblygu i fod yn wyliadwriaeth dorfol arferol heb derfynau rhwymol. Roedd rhai’n ofni camddefnydd gan Lywodraethau yn y dyfodol, gan gynnwys ar gyfer monitro anghydfod, gwrthwynebiad gwleidyddol, neu eithrio unigolion o fannau cyhoeddus.
+Dadleuodd carfan mai dim ond lle mae’n amlwg ei bod yn angenrheidiol y dylid defnyddio adnabod wynebau a lle nad oes opsiynau llai ymwthiol ar gael. Teimlai rhai y dylai defnyddiau adnabod wynebau byw fod yn rhywbeth dros dro ac at ddibenion wedi’u diffinio’n fanwl, yn hytrach na dod yn rhan barhaol mewn lleoliad penodol. Y pryder cyffredinol oedd atal offer a awdurdodwyd at ddibenion gweithredol penodol rhag dod yn fecanweithiau diofyn ar gyfer gwyliadwriaeth y wladwriaeth.
+Ymateb y Llywodraeth
+Mae’r Llywodraeth yn cytuno bod gan dechnolegau fel adnabod wynebau’r potensial i ymyrryd â hawliau, megis yr hawl i breifatrwydd, rhyddid mynegiant a’r hawl i gynulliad heddychlon. Er bod fframwaith cyfreithiol sefydledig eisoes ar gyfer defnyddio technoleg adnabod wynebau, bydd y fframwaith newydd yn cael ei lunio i wella hyder y cyhoedd wrth i ddefnydd o’r mathau hyn o dechnoleg gynyddu. Dyna pam yr ydym yn bwriadu cyflwyno deddfau newydd, penodol sy’n llywodraethu eu defnydd. Bydd y fframwaith newydd hwn yn adeiladu ar yr egwyddorion a nodwyd yn Neddf Diogelu Rhyddidau 2012, a bydd yn nodi pwerau clir i gaffael, cadw a defnyddio data biometrig, ynghyd â rhwymedigaethau clir ar y rhai sy’n arfer y pwerau hynny.
+Bydd y fframwaith yn cynnwys gofynion gweithredol manwl a mesurau diogelu, gan adeiladu ar ganllawiau presennol yr heddlu ond o fewn Cod Ymarfer statudol. Bydd hyn yn sicrhau y gall asiantaethau gorfodi’r gyfraith fanteisio’n briodol ar bŵer technolegau fel adnabod wynebau yn y dyfodol, ond dim ond pan fo gwneud hynny wedi’i gyfiawnhau’n amlwg, a phan fo’n angenrheidiol ac yn gymesur. Drwy’r fframwaith cyfreithiol newydd hwn, bydd y Llywodraeth yn cydbwyso’r angen i barchu a diogelu hawliau dynol unigolion â hawl y cyhoedd i fod yn ddiogel ar y strydoedd ac yn eu cymunedau.
+2. Cwmpas y fframwaith cyfreithiol newydd
+Mae’r adran hon yn ymwneud â chwestiynau ymgynghori ar gwmpas fframwaith cyfreithiol newydd sy’n llywodraethu defnydd yr heddlu o fiometreg, adnabod wynebau a thechnolegau tebyg. Gofynnodd yr ymgynghoriad am farn ar ba fathau o dechnolegau y dylid eu cynnwys yn y fframwaith newydd, a ddylai fod yn berthnasol i bob technoleg fiometrig a ddefnyddir gan orfodi’r gyfraith, a ddylai ymestyn i dechnolegau casgliadol, ac a ddylai gynnwys systemau sy’n adnabod dillad, eiddo neu wrthrychau. Gofynnodd hefyd am farn ynghylch a ddylai’r fframwaith fod yn ddigon hyblyg i ddarparu ar gyfer technolegau sy’n dod i’r amlwg dros amser.
+Gofynnwyd y cwestiynau canlynol:
+I ba raddau ydych chi’n cytuno neu’n anghytuno y dylai fframwaith cyfreithiol newydd fod yn berthnasol i bob defnydd o ‘dechnolegau biometrig’ gan sefydliadau gorfodi’r gyfraith?
+Ydych chi’n credu y dylai fframwaith cyfreithiol newydd fod yn berthnasol i dechnoleg ‘gasgliadol’ h.y. technoleg sy’n dadansoddi’r corff a’i symudiadau i gasglu gwybodaeth am y person, fel eu hemosiynau neu eu gweithredoedd?
+A ddylai’r fframwaith fod yn berthnasol i dechnoleg a all adnabod dillad, eiddo neu wrthrychau?
+A ddylai’r fframwaith fod yn ddigon hyblyg i gynnwys technolegau newydd?
+Crynodeb o ymatebion i’r ymgynghoriad
+i. Mathau o ddata biometrig a data tebyg o fewn cwmpas y fframwaith
+Ymhlith y rhai a ymatebodd gan ddefnyddio’r ffurflen ar-lein, cytunodd y rhan fwyaf y dylai’r fframwaith gwmpasu pob math o ddata biometrig, gan gynnwys technoleg gasgliadol ac adnabod dillad neu wrthrychau. Cytunodd yr ymatebwyr yn fras fod technolegau biometrig, gan gynnwys adnabod wynebau, yn ddigon sensitif i warantu fframwaith cyfreithiol clir a phenodol. Mynegodd llawer y farn bod technolegau o’r fath yn ymwthiol yn eu hanfod ac na ddylent ddibynnu ar glytwaith o bwerau cyffredinol neu ganllawiau yn unig. Ar draws yr ymatebion, pwysleisiodd yr ymgyngoreion fod terfynau statudol clir a mesurau diogelwch yn hanfodol i gynnal ymddiriedaeth y cyhoedd ac atal ehangu defnydd amhriodol.
+Cododd rhai ymatebwyr bryderon ynghylch technolegau casgliadol, sef systemau sy’n ceisio casglu gwybodaeth am emosiynau neu fwriadau unigolyn, gan awgrymu y dylent ddod o fewn cwmpas fframwaith newydd. Roedd y pryderon hyn yn canolbwyntio ar ddilysrwydd gwyddonol offer o’r fath, eu dibynadwyedd ar draws poblogaethau a chyd-destunau gwahanol, a’u cydnawsedd â diogelwch hawliau. Dadleuodd rhai ymatebwyr fod angen cyfyngiadau llym iawn ar dechnolegau o’r fath o fewn fframwaith newydd, neu bod yn rhaid wrth ddeddfwriaeth i wahardd eu defnyddio’n llwyr; roedd eraill, fodd bynnag, yn ffafrio craffu trylwyr cyn y caniateir eu defnyddio o fewn y gyfraith.
+Roedd y safbwyntiau ar dechnolegau adnabod gwrthrychau, dillad a cherbydau yn fwy cymysg. Roedd rhai ymatebwyr yn cydnabod y gallai fod gwerth ymchwiliol cyfyngedig o ran offer o’r fath mewn amgylchiadau penodol, yn enwedig lle nad oes delweddau wyneb ar gael. Tynnodd eraill sylw at y ffaith y gallai’r technolegau hyn weithredu fel offer adnabod neu olrhain anuniongyrchol, gan godi pryderon ynghylch cywirdeb, cymesuredd ac effeithiau gwahaniaethol posibl. Felly, rhybuddiodd ymatebwyr rhag trin technolegau o’r fath fel rhai risg isel yn eu hanfod o fewn unrhyw fframwaith yn y dyfodol.
+Cododd ymatebwyr yn gyson bwysigrwydd sicrhau bod unrhyw fframwaith yn parhau i fod yn effeithiol yn wyneb newid technolegol cyflym, gan osgoi dulliau rhy ganiataol a allai alluogi ehangu heb ei wirio. Roedd rhai o blaid fframwaith sy’n niwtral o ran technoleg neu’n seiliedig ar egwyddorion a allai addasu i offer newydd heb newid deddfwriaethol dro ar ôl tro. Pwysleisiodd eraill yr angen am graffu seneddol ar dechnolegau newydd, yn enwedig lle maent yn cyflwyno risgiau newydd neu risgiau uwch. Ar draws y safbwyntiau hyn, tynnodd ymgyngoreion sylw at bryderon ynghylch ehangu graddol ar ymyrraeth, gan gynnwys y risg y gallai technolegau a gyflwynir at ddibenion cul gael eu defnyddio’n raddol mewn ffyrdd mwy arferol neu eang heb ddigon o ddadl gyhoeddus na diogelwch.
+ii. I bwy y dylai’r fframwaith newydd fod yn berthnasol
+Cwestiynodd llawer o ymatebwyr a fyddai cyfyngu’r fframwaith i sefydliadau gorfodi’r gyfraith yn creu bylchau atebolrwydd, yn enwedig o ystyried defnydd y sector preifat o dechnolegau tebyg a bodolaeth partneriaethau traws-sector. Codwyd pryderon ynghylch rheoleiddio anwastad ar draws sectorau, y potensial i alluoedd gwyliadwriaeth gael eu hallanoli, a defnyddio setiau data trydydd parti gan yr heddlu heb ddiogelwch cyson.
+Dadleuodd ymatebwyr eraill, lle defnyddir technolegau biometrig ac adnabod wynebau i arfer pwerau gorfodol y wladwriaeth, megis y pŵer i arestio rhywun, fod defnydd gorfodi’r gyfraith yn codi materion penodol sy’n cyfiawnhau fframwaith cyfreithiol sy’n benodol i ddefnyddiau gorfodi’r gyfraith. Mynegodd rhai ymatebwyr hefyd y farn y dylid cyfyngu’n llym neu wahardd defnydd y sector preifat ar wahân.
+Ymateb y Llywodraeth
+Rydym yn cytuno y byddai hyder yr heddlu a’r cyhoedd yn gwella pe bai fframwaith pwrpasol yn cael ei gyflwyno, gyda rheolau penodol sy’n llywodraethu caffael, prosesu a chadw biometreg gan gynnwys delweddau wyneb gan asiantaethau gorfodi’r gyfraith. Rydym yn bwriadu cyflwyno cynigion ar gyfer delweddau wyneb sy’n adeiladu ar reolau statudol presennol ar gyfer casglu, cadw a defnyddio deunydd biometrig, megis y fframwaith cyfreithiol sy’n llywodraethu DNA ac olion bysedd. Rydym yn cydnabod bod galluoedd technoleg yn esblygu’n gyson, felly er mwyn parhau i fod yn wydn i ddatblygiadau technolegol yn y dyfodol wrth sicrhau atebolrwydd a chraffu priodol, bydd y ddeddfwriaeth yn caniatáu mecanwaith clir i ymestyn y fframwaith i fathau eraill o ddata biometrig yn y dyfodol.
+Mae’n amlwg bod gan y defnydd o dechnolegau biometrig i wneud casgliadau am ymddygiad unigolyn y potensial i effeithio ar ei breifatrwydd a hawliau eraill. Ymhellach, rydym yn cytuno y gallai’r defnydd o offer gwyliadwriaeth agored i nodi ac olrhain gwrthrychau effeithio ar breifatrwydd a hawliau eraill. Gan gydnabod hyn, ac adeiladu ar yr egwyddorion a nodir yn Neddf Diogelu Rhyddidau 2012 a rôl bresennol y Comisiynydd Camerâu Gwyliadwriaeth, bydd y fframwaith newydd hefyd yn cwmpasu’r defnydd o dechnolegau gwyliadwriaeth agored a thechnolegau sy’n galluogi gwneud casgliadau.
+Bydd y Llywodraeth yn cyflwyno fframwaith sy’n rheoleiddio’r defnydd o fiometreg, technoleg adnabod wynebau a thechnolegau tebyg gan sefydliadau gorfodi’r gyfraith, gan gynnwys yr heddlu a chyrff cyhoeddus eraill, at ddibenion gorfodi’r gyfraith a dibenion diogelu cyfyngedig. Bydd y pwerau newydd yn cael eu hategu gan God Ymarfer statudol sy’n nodi’r gofynion ar gyfer sefydliadau gorfodi’r gyfraith a chyrff cyhoeddus eraill.
+Rydym yn cydnabod bod awydd am fwy o gysondeb rhwng y defnydd a wneir o dechnolegau, megis adnabod wynebau, gan asiantaethau gorfodi’r gyfraith a’r sector preifat. Mae’r defnydd yn y sector preifat eisoes yn ddarostyngedig i’r gyfraith diogelu data bresennol, ond rydym yn cydnabod gwerth cael canllawiau mwy clir ac ymarferol ar sut y mae’r gofynion hynny’n berthnasol yn ymarferol. Felly, rydym wedi ymrwymo i gyflwyno Cod Ymarfer ar gyfer y defnydd yn y sector preifat at ddibenion atal a chanfod troseddau; bydd hwn yn ategu’r fframwaith ar gyfer gorfodi’r gyfraith, gan gydnabod ar yr un pryd y cyd-destunau cyfreithiol a gweithredol gwahanol y defnyddir y technolegau hyn ynddynt.
+3. Cymesuredd, angenrheidrwydd a chyfiawnhad
+Gofynnodd yr ymgynghoriad hefyd am farnau ar ddibenion dilys dros ddefnyddio technoleg adnabod wynebau a thechnolegau tebyg. Er mwyn casglu barnau ar y cynnig hwn, gofynnodd yr ymgynghoriad y cwestiynau canlynol:
+A ydych yn cytuno neu’n anghytuno y dylai ‘difrifoldeb’ niwed fod yn ffactor wrth benderfynu sut a phryd y gall sefydliadau gorfodi’r gyfraith gaffael, cadw a defnyddio biometreg, technoleg adnabod wynebau, a thechnoleg debyg?
+Pa ffactorau, yn eich barn chi, sy’n berthnasol wrth asesu ‘difrifoldeb’ niwed?
+Crynodeb o ymatebion i’r ymgynghoriad
+i. Cyfiawnhad dros ddefnydd
+Thema gyson ar draws yr ymatebion oedd y dylai defnyddio technolegau biometrig ac adnabod wynebau fod yn eithriadol yn hytrach nag yn arferol a dylid ei gyfiawnhau’n glir. Dadleuodd llawer o ymatebwyr mai dim ond lle mae angen gweithredol amlwg y dylid defnyddio technolegau o’r fath a lle byddai dulliau llai ymwthiol yn aneffeithiol.
+Gwrthwynebodd rhai ymatebwyr ddefnyddio adnabod wynebau a thechnolegau cysylltiedig mewn unrhyw amgylchiadau, gan nodi pryderon ynghylch cywirdeb, rhagfarn ac effeithiau cymdeithasol ehangach. Derbyniodd eraill ddefnydd cyfyngedig, yn enwedig mewn sefyllfaoedd difrifol neu amser-gritigol, ar yr amod bod mesurau diogelwch cryf ar waith. Ar draws y safbwyntiau gwahanol hyn, pwysleisiodd ymatebwyr dro ar ôl tro bwysigrwydd terfynau clir a gwneud penderfyniadau strwythuredig.
+ii. Difrifoldeb niwed
+Roedd barn gymysg ynghylch a ddylai difrifoldeb niwed fod yn ffactor penderfynol wrth benderfynu pryd y gellir defnyddio technolegau. Ystyriodd rhai ymatebwyr fod difrifoldeb, yn enwedig lle mae risg uniongyrchol, yn ystyriaeth berthnasol. Dadleuodd eraill nad yw difrifoldeb yn unig yn ddigonol a gellid ei gymhwyso’n rhy eang neu’n oddrychol. Cododd ymatebwyr bryderon y gallai dibynnu ar ddifrifoldeb yn unig alluogi ehangu graddol ar ymyrraeth, gyda thechnolegau’n cael eu cyfiawnhau at ddibenion cynyddol arferol. Felly pwysleisiodd llawer o ymatebwyr y dylid ystyried difrifoldeb ochr yn ochr â ffactorau eraill, yn hytrach na gweithredu fel trothwy annibynnol.
+iii. Asesu angenrheidrwydd, cymesuredd ac ymyrraeth
+Pwysleisiodd yr ymatebwyr y dylai penderfyniadau ynghylch y defnydd ystyried graddau’r ymyrraeth dan sylw. Ymhlith y ffactorau a godwyd roedd:
+graddfa’r defnydd a nifer y bobl yr effeithir arnynt
+y lleoliad, yn enwedig mannau cyhoeddus lle gall fod gan unigolion allu cyfyngedig i osgoi goruchwyliaeth
+yr effaith ar bobl nad ydynt dan amheuaeth, gwylwyr, plant ac unigolion agored i niwed, a
+hyd y defnydd a’r modd y caiff y data a gesglir ei drin.
+Mynegwyd pryderon ynghylch preifatrwydd, gwyliadwriaeth a rhyddidau sifil yn aml yn y cyd-destun hwn. Yn hytrach na gweld preifatrwydd fel mater ar wahân bob amser, roedd pryderon ynghylch preifatrwydd yn aml yn cael eu llunio fel canlyniad rheolaethau annigonol ar angenrheidrwydd, cymesuredd ac awdurdodiad.
+Ymateb y Llywodraeth
+Mae’r Llywodraeth yn credu bod technolegau biometrig, adnabod wynebau a thechnolegau tebyg yn offer gwerthfawr wrth fynd i’r afael â throseddau difrifol a gwella diogelwch y cyhoedd, ond rydym yn cydnabod mai dim ond pan fo angen, yn gymesur ac yn gyfiawn y dylid eu defnyddio, a bod rheolau clir i gefnogi defnydd a mabwysiadu cyson o dechnolegau fel adnabod wynebau yn hanfodol i gynnal ymddiriedaeth y cyhoedd. Credwn na ddylai difrifoldeb y drosedd fod yr unig faen prawf ar gyfer asesu a yw defnyddio’r technolegau yn angenrheidiol ac yn gymesur, ond yn hytrach bod yn rhaid ei ystyried ochr yn ochr â ffactorau eraill gan gynnwys graddfa a natur y defnydd a’r effaith ar hawliau unigol. Bydd y gyfraith yn ei gwneud yn ofynnol i gyfiawnhau yn unol â meini prawf penodol ac ystyried canllawiau manwl.
+4. Goruchwyliaeth, mesurau diogelu a llywodraethu
+Mae’r adran hon yn crynhoi’r adborth i’r ymgynghoriad ynghylch mesurau diogelwch, goruchwylio a threfniadau llywodraethu ar gyfer defnyddio adnabod wynebau a thechnolegau biometrig eraill mewn gorfodi’r gyfraith. Mae’r thema hon yn ymwneud â’r cwestiynau ymgynghori isod:
+A ddylai rhai defnyddiau fod angen awdurdodiad uwch?
+A ddylai fod angen awdurdodiad goruchwylio annibynnol mewn rhai amgylchiadau?
+O dan ba amgylchiadau y dylid caniatáu chwiliadau biometrig o gronfeydd data eraill y llywodraeth?
+Os cynhelir chwiliadau biometrig, pa ddiogelwch ddylai fod ar waith?
+A ddylai un corff goruchwylio annibynnol gyflawni swyddogaethau?
+Pa bwerau neu rwymedigaethau ddylai fod gan y corff goruchwylio?
+A ddylai’r corff goruchwylio osod rheolau i warchod rhag rhagfarn a gwahaniaethu?
+Pa fathau o reolau y gallai’r corff goruchwylio fod yn gyfrifol am eu gosod?
+i. Disgwyliad cryf o ddiogelwch clir a gwneud penderfyniadau atebol
+Thema gyson yn yr adborth i’r ymgynghoriad oedd y dylai technolegau biometrig, adnabod wynebau a thechnolegau tebyg weithredu o fewn fframwaith cyfreithiol clir a chadarn a gefnogir gan ddiogelwch sy’n ddealladwy, yn orfodadwy, ac yn gallu cynnal hyder y cyhoedd. Yn aml, roedd ymatebwyr, gan gynnwys y rhai a oedd fel arall yn feirniadol o’r technolegau hyn, yn llunio mesurau diogelwch fel rhai hanfodol i sicrhau bod y defnydd yn parhau i fod yn gyfreithlon, yn gymesur ac yn gyfyngedig i ddibenion cyfiawn.
+ii. Awdurdodiad
+Cefnogodd llawer o ymatebwyr y farn y dylai rhai defnyddiau fod angen awdurdodiad uwch, gyda gofynion cymeradwyo yn adlewyrchu lefel yr ymyrraeth a’r risg. Dadleuodd sawl ymgynghorai dros ddull haenog, lle mae defnyddiau risg uwch yn denu lefelau uwch o graffu.
+Pwynt a gododd dro ar ôl tro oedd y dylai goruchwyliaeth annibynnol chwarae rhan ystyrlon yn llywodraethu defnyddiau mwy ymwthiol, yn enwedig lle gallai defnydd effeithio ar hawliau, ymddiriedaeth y cyhoedd, neu gynnwys setiau data ehangach.
+iii. Mesurau diogelu yn ymarferol: tryloywder, gallu i archwilio, safonau ac unioni
+Ar draws yr ymatebion, tynnodd yr ymgyngoreion sylw at ddiogelwch ymarferol yr oeddent yn ei ystyried yn angenrheidiol i wneud llywodraethu’n effeithiol, gan gynnwys:
+terfynau gweithredol clir ynghylch pryd a sut y gellir defnyddio technolegau
+gofynion cofnodi ac archwilio ar gyfer chwiliadau a chael mynediad at setiau data
+mesurau tryloywder (gan gynnwys gwybodaeth ystyrlon i’r cyhoedd)
+systemau a gweithdrefnau i leihau’r risg o gam-adnabod a chamau gweithredu amhriodol, a
+mecanweithiau ar gyfer adolygu, dysgu, ac, lle bo’n berthnasol, unioni
+Cododd ymatebwyr bryderon dro ar ôl tro hefyd ynghylch tuedd, cyfraddau gwallau a gwahaniaethu, gan alw am safonau cyson a monitro i sicrhau bod perfformiad yn deg ar draws grwpiau demograffig ac amgylcheddau defnyddio. Nododd nifer o ymatebwyr bwysigrwydd safonau sy’n ymdrin â chywirdeb, trothwyon hyder, ac amodau gweithredu yn y byd go iawn, yn hytrach na pherfformiad mewn amgylchedd labordy yn unig.
+iv. Modelau a phwerau goruchwylio
+Roedd barn yn amrywio ynghylch a ddylai swyddogaethau goruchwylio fod o fewn un corff annibynnol neu ar draws set o fecanweithiau goruchwylio. Fodd bynnag, roedd ymgyngoreion yn cefnogi’r cynnig yn gyffredinol y dylai goruchwyliaeth fod yn annibynnol, yn effeithiol, ac wedi’i chyfarparu â phwerau ystyrlon. Nododd ymatebwyr ystod o swyddogaethau goruchwylio yr oeddent yn eu hystyried yn bwysig, gan gynnwys y gallu:
+i osod a chyhoeddi rheolau, safonau neu godau ymarfer
+i ymchwilio i achosion posibl o gamddefnydd, methiant i gydymffurfio neu effeithiau ar hawliau
+i ofyn am wybodaeth gan gyrff gorfodi’r gyfraith
+i gefnogi tryloywder drwy adrodd a chyhoeddi, ac
+i orfodi cydymffurfiaeth drwy fesurau cymesur.
+Roedd rhai ymatebwyr hefyd yn dadlau y dylai goruchwyliaeth allu ymateb i risgiau sy’n dod i’r amlwg, gan gynnwys technolegau newydd a defnyddiau newydd.
+v. Cronfeydd data eraill y llywodraeth
+Pan oedd ymatebwyr wedi ymdrin â chwiliadau biometrig mewn cronfeydd data eraill y Llywodraeth, canolbwyntiodd pryderon ar sensitifrwydd cael mynediad at ddata a gasglwyd at ddibenion eraill, ac ar y risg y byddai’r defnydd yn ehangu y tu hwnt i’r bwriad gwreiddiol. Pwysleisiodd y rhai a ymgynghorwyd yn aml, os caniateir chwiliadau o’r fath, y dylent fod yn ddarostyngedig i feini prawf statudol llym, trefn awdurdodi gadarn, a goruchwyliaeth annibynnol gref, ynghyd â therfynau clir o ran cadw a defnyddio’r data.
+Ymateb y Llywodraeth
+Mae’r Llywodraeth yn cydnabod y disgwyliad clir bod yn rhaid i’r ateb gorau gynnwys mesurau diogelwch cadarn, llywodraethu effeithiol a goruchwyliaeth ystyrlon wrth i dechnolegau gwyliadwriaeth biometrig ac agored newydd gael eu mabwysiadu. Mae’r elfennau hyn yn hanfodol i sicrhau defnydd cyfreithlon a chymesur o’r technolegau hyn ac i gynnal hyder y cyhoedd yn eu defnydd. Bydd y Llywodraeth yn creu un corff goruchwylio i oruchwylio defnydd gorfodi’r gyfraith o fiometreg, adnabod wynebau a thechnolegau tebyg. Bydd dyluniad y corff hwn a’i berthynas â rheoleiddwyr eraill yn ystyried rolau presennol y Comisiynydd Biometreg a Chamerâu Gwyliadwriaeth a’r Rheoleiddiwr Gwyddoniaeth Fforensig yng Nghymru a Lloegr ac yn ceisio sicrhau dull di-dor a chyson ar draws y swyddogaethau o fewn ei gwmpas. Bydd y corff goruchwylio annibynnol hwn yn gyfrifol am oruchwylio cydymffurfiaeth â’r rheolau a’r rhwymedigaethau statudol newydd, gan gynnwys y Cod Ymarfer statudol. Bydd gan y corff newydd bwerau gorfodi i sicrhau y cydymffurfir â’r rheolau hyn.
+Mae amddiffyn rhag rhagfarn a gwahaniaethu yn flaenoriaeth allweddol i’r Llywodraeth wrth lunio’r fframwaith hwn, a bydd y ddeddfwriaeth yn cyflwyno rheolau i sicrhau bod unrhyw dechnoleg a ddefnyddir yn cael ei phrofi’n ddigonol, ei bod yn ddilys yn wyddonol, ac yn destun monitro priodol.
+Mae’r Llywodraeth yn cydnabod y gallai galluogi awdurdodau gorfodi’r gyfraith i gynnal gwiriadau wedi’u targedu yn erbyn cronfeydd data a weithredir gan awdurdodau cyhoeddus nad ydynt yn gorfodi’r gyfraith gyflwyno lefel uwch o ymyrraeth â hawl unigolion i breifatrwydd. Byddwn yn sicrhau bod y fframwaith yn cydnabod hyn ac yn parhau i gyfyngu ar y defnydd y gall gorfodi’r gyfraith ei wneud o setiau data o’r fath i ddibenion penodol gyda throthwyon clir a diogelwch statudol.
+Dylai’r defnydd o dechnolegau sy’n dibynnu ar ddata biometrig barhau i fod yn destun proses awdurdodi lem, a bydd y ddeddfwriaeth yn nodi rheng leiaf swyddog heddlu (neu berson mewn swydd gyfatebol) sy’n gallu rhoi awdurdodiad gweithredol. Mae’r dull hwn yn cyd-fynd â’r mesurau diogelu presennol ar gyfer pwerau’r heddlu sy’n ymyrryd â hawliau unigolion – er enghraifft, y gofyniad o dan Ddeddf yr Heddlu a Thystiolaeth Droseddol 1984 mewn perthynas â chwiliadau personol manwl.
+5. Gweithgareddau ymgynghori eraill
+i. Ymgysylltu wedi’i dargedu â grwpiau sydd heb gynrychiolaeth ddigonol
+Ynghyd â’r ymgynghoriad cyhoeddus, comisiynodd y Llywodraeth ymgysylltiad wedi’i dargedu â grwpiau penodol, er mwyn sicrhau bod barn y rhai sy’n llai tebygol o ymateb i ymgyngoriadau’r Llywodraeth, ond y mae eu hymddiriedaeth a’u hyder yn bwysig i ddilysrwydd fframwaith yn y dyfodol, yn cael ei chynnwys mewn modd ystyrlon. Roedd y gwaith hwn yn cynnwys cyfranogwyr a oedd yn amheus ynghylch, neu’n gwrthwynebu, defnydd yr heddlu o dechnoleg adnabod wynebau, gan gynnwys pobl o gefndiroedd hil leiafrifiedig. Cynhaliwyd y gwaith ymgysylltu drwy sesiynau trafod a gynhaliwyd yn Llundain a Manceinion.
+Cynlluniwyd yr ymgysylltiad i ategu’r ymgynghoriad cyhoeddus drwy ddarparu sylfaen dystiolaeth sy’n fwy cyfoethog ac yn fwy cynhwysol. Rhoddodd gyfle i gyfranogwyr ymgysylltu â gwybodaeth gytbwys am dechnoleg adnabod wynebau, ystyried cynigion y Llywodraeth, a thrafod mesurau diogelu a goruchwyliaeth priodol. Roedd y dull hwn yn helpu i ddod â safbwyntiau, profiadau bywyd a phryderon i’r amlwg, pethau nad ydynt fel arfer yn cael eu cofnodi, gan gryfhau cadernid y broses o ddatblygu polisi.
+Crynodeb o ymatebion
+Canfu’r ymgysylltiad nad oedd y cyfranogwyr yn gwrthod defnydd yr heddlu o dechnoleg adnabod wynebau ond eu bod wedi cymryd safbwynt gofalus ac amodol. Daeth ymddiriedaeth mewn plismona i’r amlwg fel ffactor canolog sy’n llunio derbynioldeb. Pwysleisiodd y cyfranogwyr bwysigrwydd terfynau cyfreithiol clir, angenrheidrwydd a chymesuredd, mesurau diogelwch cryf i fynd i’r afael â risgiau fel camadnabod, rhagfarn a chamddefnydd bwriadol, tryloywder ynghylch sut mae’r dechnoleg yn cael ei defnyddio, a goruchwyliaeth annibynnol gyda phwerau ystyrlon. Awgrymwyd hefyd ganddynt y dylai trefniadau goruchwylio gynnwys cyfranogiad a chynrychiolaeth y cyhoedd, gan gynnwys lleisiau o’r cymunedau yr effeithir arnynt fwyaf. Teimlai’r cyfranogwyr y byddai hyn yn helpu i gryfhau atebolrwydd, adlewyrchu cyd-destun lleol, ac adeiladu ymddiriedaeth mewn penderfyniadau ynghylch pryd a sut mae adnabod wynebau yn cael ei ddefnyddio.
+Ymateb y Llywodraeth
+Mae’r Llywodraeth yn croesawu’r canfyddiadau hyn, sy’n cyd-fynd â bwriad y Llywodraeth i roi mwy o sicrwydd i’r cyhoedd, ac i roi mwy o hyder i heddluoedd yng Nghymru a Lloegr ddefnyddio technoleg adnabod wynebau o fewn fframwaith cyfreithiol cadarn sydd wedi’i ddiffinio’n glir. Fel rhan o’r fframwaith hwn, mae’r Llywodraeth yn bwriadu gwneud cyfranogiad y cyhoedd yn y broses oruchwylio yn ofyniad statudol ar gyfer yr heddluoedd a’r corff goruchwylio annibynnol newydd fel ei gilydd.
+Mae adroddiad llawn yr ymgysylltu wedi’i dargedu wedi’i gyhoeddi ochr yn ochr â’r ymateb hwn.
+Tabl o ddiffiniadau
+Darperir y diffiniadau isod er mwyn sicrhau eglurder a hygyrchedd ac maent yn adlewyrchu sut y defnyddir termau at ddibenion yr ymateb hwn i’r ymgynghoriad.
+Termau allweddol a ddefnyddir yn yr ymateb hwn
+Term
+Diffiniad (at ddibenion yr ymateb hwn i’r ymgynghoriad)
+Data biometrig / technolegau biometrig
+Data a thechnolegau sy’n ymwneud â nodweddion corfforol, ffisiolegol neu ymddygiadol y gellir eu defnyddio i alluogi neu gadarnhau adnabod unigolyn yn unigryw. Mae hyn yn cynnwys, er enghraifft, delweddau o’r wyneb, olion bysedd a DNA, yn ogystal â thechnolegau sy’n dadansoddi’r nodweddion hyn.
+Technoleg adnabod wynebau (FRT)
+Technolegau sy’n prosesu delweddau wyneb er mwyn nodi neu ddilysu hunaniaeth unigolyn, neu i asesu a yw delwedd o berson yn cyfateb i ddelweddau a gedwir mewn set ddata neu restr wylio. Mae hyn yn cynnwys defnyddiau byw a defnyddiau ôl-weithredol.
+Technoleg adnabod wynebau byw (LFR)
+Prosesu delweddau wyneb, a ddaliwyd gan gamerâu, mewn amser real er mwyn adnabod unigolion o ddiddordeb, drwy gymharu’r delweddau hynny â set ddata neu restr wylio a ddiffiniwyd ymlaen llaw.
+Adnabod wynebau ôl-weithredol (RFR)
+Prosesu delweddau neu ddeunydd fideo a gafwyd eisoes, megis delweddau a dynnwyd wrth gadw unigolyn yn y ddalfa neu ddeunydd TCC a recordiwyd, er mwyn adnabod unigolyn neu ddilysu ei hunaniaeth ar ôl i ddigwyddiad ddigwydd.
+Technolegau casgliadol
+Technolegau sy’n dadansoddi data biometrig neu ddata tebyg er mwyn casglu gwybodaeth am nodweddion, priodoleddau neu gyflwr unigolyn, megis emosiynau, ymddygiad, bwriadau neu weithredoedd, yn hytrach na’u defnyddio i’w adnabod.
+Technolegau gwyliadwriaeth agored
+Technolegau a ddefnyddir mewn modd gweladwy ac amlwg, lle mae’n debygol bod unigolion yn ymwybodol y gallai gwyliadwriaeth fod yn digwydd er enghraifft, camerâu sefydlog neu gamerâu sydd wedi’u gosod yn amlwg mewn mannau cyhoeddus..
+Sefydliadau gorfodi’r gyfraith
+Awdurdodau cyhoeddus sydd â swyddogaethau statudol yn ymwneud â phlismona, atal a chanfod troseddau, trefn gyhoeddus, neu ddiogelu, gan gynnwys heddluoedd yng Nghymru a Lloegr.
+Rhestr wylio
+Set ddata neu gasgliad o ddelweddau y defnyddir technoleg adnabod wynebau yn ei herbyn i nodi unigolion o ddiddordeb at ddiben penodol a diffiniedig.
+Goruchwyliaeth
+Trefniadau a gynlluniwyd i ddarparu atebolrwydd, craffu a sicrwydd bod technolegau’n cael eu defnyddio’n gyfreithlon, yn briodol ac yn unol â’r rheolau, y mesurau diogelu a’r safonau perthnasol.
+3. Asesiad Effaith, Cydraddoldebau a’r Iaith Gymraeg
+Asesiad Effaith ac Asesiad Effaith Cydraddoldebau
+Cyhoeddwyd Asesiad Effaith cydraddoldeb ac asesiad o opsiynau ochr yn ochr â’r ymgynghoriad. Bydd y Llywodraeth yn cyhoeddi asesiad effaith llawn ac asesiad effaith cydraddoldeb diwygiedig pan gyflwynir deddfwriaeth i roi’r fframwaith newydd ar waith.
+Prawf Effaith ar yr Iaith Gymraeg
+Yn unol â Deddf yr Iaith Gymraeg 1993, mae Cynllun Iaith Gymraeg y Swyddfa Gartref yn ei gwneud yn ofynnol i ni ‘asesu canlyniadau ieithyddol polisïau sy’n effeithio ar wasanaethau a ddarperir i bobl yng Nghymru’. Ystyriwyd y meysydd canlynol yng ngoleuni’r ymatebion i’r broses ymgynghori.
+A oedd unrhyw ymatebion gan randdeiliaid Cymreig a gododd faterion neu ystyriaethau penodol i Gymru neu siaradwyr Cymraeg y mae angen ymateb iddynt?
+Ni chodwyd unrhyw faterion penodol yn ymwneud â’r iaith Gymraeg yn yr ymatebion i’r ymgynghoriad.
+Os oedd, a ydych wedi asesu’r effeithiau tebygol ar ddarparu gwasanaethau a allai ddeillio o’r cynigion polisi sy’n ymwneud â defnyddio’r Gymraeg yng Nghymru?
+Dim effeithiau wedi’u nodi.
+Pa gamau rydych chi wedi’u cymryd i sicrhau bod y cynigion polisi yn cyd-fynd â’r gofynion a nodir yng Nghynllun Iaith Gymraeg y Swyddfa Gartref? (e.e. a ydych wedi ystyried cael cyfieithiad Cymraeg o’r ymateb i’r ymgynghoriad?)
+Mae’r cynigion yn niwtral yn ieithyddol. Ystyriwyd darparu cyfieithiad Cymraeg o Ymateb y Llywodraeth, a bydd y gofynion iaith Gymraeg presennol yn parhau i fod yn berthnasol.
+Gellir dod o hyd i ragor o ganllawiau yma: https://www.gov.uk/Llywodraeth/organisations/home-office/about/welsh-language-scheme
+4. Egwyddorion ymgynghori
+Mae’r egwyddorion y dylai adrannau’r Llywodraeth a chyrff cyhoeddus eraill eu mabwysiadu ar gyfer ymgysylltu â rhanddeiliaid wrth ddatblygu polisi a deddfwriaeth wedi’u nodi yn Egwyddorion Ymgynghori Swyddfa’r Cabinet 2018:
+https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/703564/Consultation_principles_.pdf
+© Hawlfraint y Goron 2026
+Mae’r cyhoeddiad hwn wedi’i drwyddedu o dan delerau’r Drwydded Llywodraeth Agored f3.0, oni nodir fel arall. I weld y drwydded hon, ewch i nationalarchives.gov.uk/doc/open-government-licence/version/3
+Lle rydym wedi nodi unrhyw wybodaeth hawlfraint sy’n perthyn i drydydd parti, bydd angen i chi gael caniatâd gan ddeiliaid yr hawlfraint dan sylw.
+Mae’r cyhoeddiad hwn ar gael yn https://www.gov.uk/Llywodraeth/consultations/legal-framework-for-using-facial-recognition-in-law-enforcement
+Dylid anfon unrhyw ymholiadau ynghylch y cyhoeddiad hwn atom yn fr-consultation@homeoffice.gov.uk.
+Public attitudes to police use of facial recognition technology - GOV.UK ↩

@@ -1,0 +1,61 @@
+# Draft from automatic intake. Not published.
+# Editors: check the quote against the source, fill the card, move it to
+# content/promises/ (see content/README.md), or delete it.
+
+# The quote is source_span of sources/hansard-26d03681.txt beside this file
+# (JavaScript string offsets). pnpm validate re-checks it character for character.
+
+draft: llm_intake
+intake_date: "2026-11-26"
+source:
+  id: hansard-26d03681
+  kind: hansard_statement
+  url: https://hansard.parliament.uk/Commons/2026-11-26/debates/26D03681-1ACE-45F7-BF53-19DA7FEE30B6/OfgemJanuaryEnergyPriceCap
+  title: Ofgem January Energy Price Cap
+  date: "2026-11-26"
+  venue_label: Commons statement
+quote: >-
+  From January, our household energy payment will get help to those who need it most, with 20
+  million households automatically receiving an extra £100 straight into their bank accounts, where
+  councils hold direct debit details.
+source_span: [2642, 2867]
+speaker:
+  name: Polly Billington
+  role: Parliamentary Under-Secretary of State for Energy Security and Net Zero
+  party: null
+  member_id: 5123
+  actor_id: polly-billington
+  check: segment # the source's own data (or the uploader) says this person spoke these words
+# Unverified suggestions from the language model. Editors confirm each one at the source.
+suggested:
+  policy_area: social_protection
+  who: 20 million households, those who need it most
+  how_much: £100 per household
+  when: From January
+  funded_by: null
+  deadline: "2027-01-31"
+why: >-
+  Restates the Budget commitment that 20 million households will receive a £100 household energy
+  payment from January 2027; the Minister later corrected this to 13 million paid automatically,
+  with the rest paid by other means.
+# The same speaker's other commitments in this source, folded into this draft so one source
+# gives one draft. Each quote is exactly its source_span too. Decide each one: a card of its own,
+# part of another card, or dropped.
+also:
+  - quote: >-
+      I am pleased that we have finally agreed to regulate the heating oil market, on the
+      recommendation of the Competition and Markets Authority, and we will work at pace to get that
+      right.
+    source_span: [28140, 28324]
+    suggested:
+      policy_area: housing_env
+      who: Off-grid households using heating oil
+      how_much: null
+      when: null
+      funded_by: null
+      deadline: null
+    why: The Government commits to bringing the heating oil market under regulation.
+    confidence: 0.5
+confidence: 0.65
+model: claude-opus-5-5
+status: to_review
